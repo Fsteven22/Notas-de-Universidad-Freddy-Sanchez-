@@ -25,7 +25,7 @@ tags: [IDIG2012, unidad2, pensamiento-complejo, comunicacion]
 > | **Solución** | Parche rápido | Intervención en varios puntos |
 > | **En comunicación** | "Habla más claro" | Ajusta mensaje + canal + audiencia + contexto |
 
-![[Diagramas/01_-_Pensamiento_complejo_vs_pensamiento_lineal_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pensamiento_complejo_vs_pensamiento_lineal_01.svg]]
 
 ---
 
@@ -39,7 +39,7 @@ tags: [IDIG2012, unidad2, pensamiento-complejo, comunicacion]
 >
 > Es pensar el todo sin mutilar las partes: orden + desorden + organización interactuando. Un equipo, un texto y una audiencia son sistemas, no sumas de piezas.
 >
-> ![[Diagramas/01_-_Pensamiento_complejo_vs_pensamiento_lineal_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pensamiento_complejo_vs_pensamiento_lineal_02.svg]]
 >
 > **Principios operativos para tus talleres:**
 >
@@ -134,7 +134,7 @@ tags: [IDIG2012, unidad2, pensamiento-complejo, comunicacion]
 
 ## 📊 Resumen Visual
 
-![[Diagramas/01_-_Pensamiento_complejo_vs_pensamiento_lineal_03.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pensamiento_complejo_vs_pensamiento_lineal_03.svg]]
 
 > [!success] 🔍 Comparación Final
 >

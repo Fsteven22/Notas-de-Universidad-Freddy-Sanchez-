@@ -28,7 +28,7 @@ dg-publish: true
 > |**Geometría**|Crea sistemas de coordenadas ortogonales|Gráficos 3D, animación|
 > |**Señales**|Análisis de Fourier y wavelets|Procesamiento de audio/video|
 
-![[Diagramas/05_–_Proceso_de_Gram-Schmidt_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_01.svg]]
 
 ---
 
@@ -40,7 +40,7 @@ dg-publish: true
 > 
 > **Transformación visual de vectores:**
 > 
-> ![[Diagramas/05_–_Proceso_de_Gram-Schmidt_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_02.svg]]
 > 
 > **Ejemplo concreto en 2D:**
 > 
@@ -54,7 +54,7 @@ dg-publish: true
 > 
 > **Representación gráfica del proceso:**
 > 
-> ![[Diagramas/05_–_Proceso_de_Gram-Schmidt_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_03.svg]]
 > 
 > **Propiedades visuales clave:**
 > 
@@ -71,7 +71,7 @@ dg-publish: true
 > 
 > **Conceptos relacionados pero distintos:**
 > 
-> ![[Diagramas/05_–_Proceso_de_Gram-Schmidt_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_04.svg]]
 > 
 > **Tabla comparativa:**
 > 
@@ -125,7 +125,7 @@ dg-publish: true
 > 
 > **Proceso algorítmico:**
 > 
-> ![[Diagramas/05_–_Proceso_de_Gram-Schmidt_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_05.svg]]
 > 
 > **Propiedades importantes:**
 > 
@@ -293,7 +293,7 @@ dg-publish: true
 > 
 > **Comparación visual:**
 > 
-> ![[Diagramas/05_–_Proceso_de_Gram-Schmidt_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_06.svg]]
 > Vectores casi paralelos:
 > v₁ = [1, 0, 0]
 > v₂ = [1, 1e-10, 0]
@@ -338,7 +338,7 @@ dg-publish: true
 > 
 > **Proceso de construcción:**
 > 
-> ![[Diagramas/05_–_Proceso_de_Gram-Schmidt_07.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_07.svg]]
 > 
 > **Ejemplo numérico:**
 > 
@@ -390,7 +390,7 @@ dg-publish: true
 > 
 > **Solución usando QR:**
 > 
-> ![[Diagramas/05_–_Proceso_de_Gram-Schmidt_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_08.svg]]
 > 
 > **Ventajas sobre ecuaciones normales (AᵀAx = Aᵀb):**
 > 
@@ -456,7 +456,7 @@ dg-publish: true
 > 
 > **Proceso con Gram-Schmidt:**
 > 
-> ![[Diagramas/05_–_Proceso_de_Gram-Schmidt_09.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_09.svg]]
 > 
 > **Ejemplo: Wavelets de Haar**
 > 
@@ -502,7 +502,7 @@ dg-publish: true
 > 
 > **Caso típico: Cámara virtual**
 > 
-> ![[Diagramas/05_–_Proceso_de_Gram-Schmidt_10.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_10.svg]]
 > 
 > **Algoritmo:**
 > 
@@ -640,7 +640,7 @@ dg-publish: true
 > 
 > **Situaciones problemáticas:**
 > 
-> ![[Diagramas/05_–_Proceso_de_Gram-Schmidt_11.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_11.svg]]
 > 
 > **Caso 1: Dependencia lineal**
 > 
@@ -897,7 +897,7 @@ dg-publish: true
 
 ### 🗺️ Mapa Conceptual
 
-![[Diagramas/05_–_Proceso_de_Gram-Schmidt_12.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_12.svg]]
 
 ---
 

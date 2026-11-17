@@ -32,7 +32,7 @@ dg-publish: true
 > |**Implementación numérica**|Directo en software (MATLAB, Python)|Algoritmos computacionales|
 > |**Generalización**|Mismo marco para cualquier dimensión|Escalabilidad|
 
-![[Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_01.svg]]
 
 ---
 
@@ -103,7 +103,7 @@ dg-publish: true
 > 
 > **Visualización del proceso:**
 > 
-> ![[Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_02.svg]]
 > 
 > **Propiedades fundamentales:**
 > 
@@ -141,7 +141,7 @@ dg-publish: true
 > 
 > **Ventajas computacionales:**
 > 
-> ![[Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_03.svg]]
 > 
 > **Ejemplo en ℝ³:**
 > 
@@ -258,7 +258,7 @@ dg-publish: true
 > 
 > **Estructura de aa^T:**
 > 
-> ![[Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_04.svg]]
 
 ---
 
@@ -326,7 +326,7 @@ dg-publish: true
 > 
 > **Visualización:**
 > 
-> ![[Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_05.svg]]
 
 ### 🔄 Simetría
 
@@ -446,7 +446,7 @@ dg-publish: true
 > 
 > **Diagrama de espacios:**
 > 
-> ![[Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_06.svg]]
 
 ### 🔢 Valores y Vectores Propios
 
@@ -636,7 +636,7 @@ dg-publish: true
 > 
 > **Flujo del algoritmo:**
 > 
-> ![[Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_07.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_07.svg]]
 > En lugar de usar la base original directamente:
 > 
 > 1. Aplicar Gram-Schmidt a {v₁, ..., vₖ}
@@ -819,7 +819,7 @@ dg-publish: true
 > 
 > **Interpretación geométrica:**
 > 
-> ![[Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_08.svg]]
 > 
 > **Ejemplo numérico:**
 > 
@@ -904,7 +904,7 @@ dg-publish: true
 > 
 > **Diagrama del proceso:**
 > 
-> ![[Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_09.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_09.svg]]
 
 ### 🖼️ Compresión y Aproximación
 
@@ -1205,7 +1205,7 @@ dg-publish: true
 > 
 > **Fórmulas fundamentales:**
 > 
-> ![[Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_10.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_10.svg]]
 > 
 > **Tabla de fórmulas:**
 > 

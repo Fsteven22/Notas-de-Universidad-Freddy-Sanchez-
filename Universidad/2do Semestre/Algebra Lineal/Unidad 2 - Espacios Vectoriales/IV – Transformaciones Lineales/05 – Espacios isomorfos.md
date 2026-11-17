@@ -26,7 +26,7 @@ dg-publish: true
 > |**Biyección**|Correspondencia uno a uno|No se pierde ni duplica información|
 > |**Invertibilidad**|Transformación reversible|Puedo ir y volver sin pérdida|
 
-![[Diagramas/05_–_Espacios_isomorfos_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_01.svg]]
 
 > [!notes] *Definición formal:*
 > 
@@ -69,7 +69,7 @@ dg-publish: true
 
 **Ejemplo visual:**
 
-![[Diagramas/05_–_Espacios_isomorfos_02.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_02.svg]]
 
 ### ✅ Criterios para Verificar Isomorfismo
 
@@ -81,7 +81,7 @@ dg-publish: true
 > 
 > **Proceso de verificación:**
 > 
-> ![[Diagramas/05_–_Espacios_isomorfos_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_03.svg]]
 > 
 > **Checklist para verificar isomorfismo:**
 > 
@@ -198,13 +198,13 @@ dg-publish: true
 > 3. $T \circ T^{-1} = I_W$ (identidad en $W$)
 > 4. $(T^{-1})^{-1} = T$
 > 
-> ![[Diagramas/05_–_Espacios_isomorfos_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_04.svg]]
 > 
 > **Teorema 2: Composición de isomorfismos**
 > 
 > Si $T: U \to V$ y $S: V \to W$ son isomorfismos, entonces $S \circ T: U \to W$ es un isomorfismo.
 > 
-> ![[Diagramas/05_–_Espacios_isomorfos_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_05.svg]]
 > 
 > **Demostración:**
 > 
@@ -271,7 +271,7 @@ dg-publish: true
 > 
 > $$T(2, -3, 5) = 2 - 3x + 5x^2$$ $$T^{-1}(1 + 4x - 2x^2) = (1, 4, -2)$$
 > 
-> ![[Diagramas/05_–_Espacios_isomorfos_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_06.svg]]
 >
 
 > [!example] 🔢 Ejemplo 2: $\mathbb{R}^4 \cong M_{2 \times 2}(\mathbb{R})$
@@ -324,7 +324,7 @@ dg-publish: true
 > 
 > Este isomorfismo muestra que trabajar con polinomios de grado ≤ n es equivalente a trabajar con vectores en $\mathbb{R}^{n+1}$.
 > 
-> ![[Diagramas/05_–_Espacios_isomorfos_07.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_07.svg]]
 
 ---
 
@@ -362,7 +362,7 @@ dg-publish: true
 > 
 > **Diagrama conceptual:**
 > 
-> ![[Diagramas/05_–_Espacios_isomorfos_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_08.svg]]
 >
 
 > [!example] 📐 Ejemplo: Coordenadas en $\mathcal{P}_2(\mathbb{R})$
@@ -430,7 +430,7 @@ dg-publish: true
 > 
 > **Diagrama:**
 > 
-> ![[Diagramas/05_–_Espacios_isomorfos_09.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_09.svg]]
 > 
 > **Propiedades:**
 > 
@@ -490,7 +490,7 @@ dg-publish: true
 > 3. Resolver problema en espacio concreto
 > 4. Traducir solución al espacio original
 > 
-> ![[Diagramas/05_–_Espacios_isomorfos_10.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_10.svg]]
 > 
 > **Ejemplo: Encontrar base ortogonal en $\mathcal{P}_2(\mathbb{R})$**
 > 
@@ -523,7 +523,7 @@ dg-publish: true
 > 
 > **Perspectiva 2:** Matrices 2×2 (arreglos numéricos)
 > 
-> ![[Diagramas/05_–_Espacios_isomorfos_11.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_11.svg]]
 > 
 > **Ventajas:**
 > 
@@ -537,7 +537,7 @@ dg-publish: true
 
 ### Mapa Conceptual
 
-![[Diagramas/05_–_Espacios_isomorfos_12.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_12.svg]]
 
 ### Tabla Resumen
 
@@ -571,7 +571,7 @@ dg-publish: true
 
 ### Diagrama de Flujo: ¿Son Isomorfos?
 
-![[Diagramas/05_–_Espacios_isomorfos_13.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_13.svg]]
 
 ---
 
@@ -648,7 +648,7 @@ dg-publish: true
 > 
 > **Roadmap:**
 > 
-> ![[Diagramas/05_–_Espacios_isomorfos_14.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_14.svg]]
 
 ---
 

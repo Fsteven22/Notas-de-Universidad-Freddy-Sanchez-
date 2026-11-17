@@ -15,7 +15,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > - Un circuito eléctrico es como un sistema de tuberías cerrado: la **fuente** es la bomba, los **conductores** son las tuberías, y los **elementos pasivos** (resistencias, capacitores, inductores) son válvulas, depósitos y serpentines que controlan o almacenan el flujo.
 >
-> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_01.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_01.svg]]
 >
 > **Condición esencial:** El circuito debe ser **cerrado** para que la corriente fluya. Un circuito abierto interrumpe el flujo.
 >
@@ -27,13 +27,27 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Capacitor** | Almacena energía en campo eléctrico | ⊣⊢ |
 > | **Inductor** | Almacena energía en campo magnético | ⌇ |
 > 
-> ![[../../Anexos/Pasted image 20260519225402.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260519225402.png]]
+>
+> **Se lee así:** la figura recoge los cinco elementos básicos del circuito (fuente, conductor, resistencia, capacitor, inductor) con el símbolo con que aparecerán en todos los diagramas de la materia.
+>
+> **Por qué importa:** reconocer cada símbolo de un vistazo es el prerrequisito de todo lo que sigue: serie, paralelo, teoremas de análisis y, más adelante, semiconductores.
 
+> [!note] 🖼️ Introducción
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260519230346.png]]
+>
+> **Se lee así:** la figura da la panorámica del tema: qué es un circuito (trayectoria cerrada), qué elementos lo forman y por qué debe cerrarse para que la corriente fluya.
+>
+> **Por qué importa:** fija el modelo mental antes de entrar al detalle de cada componente.
 
-
-![[Pasted image 20260519230346.png]]
-
-![[Pasted image 20260519225934.png]]
+> [!note] 🖼️ Introducción
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260519225934.png]]
+>
+> **Se lee así:** segunda figura de la introducción: la misma idea de circuito cerrado en una configuración concreta, para ver cómo se conectan en la práctica.
+>
+> **Por qué importa:** evita confundir una lista suelta de componentes con un circuito que de verdad conduce.
 
 ---
 
@@ -45,7 +59,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > > A diferencia de las fuentes independientes (batería, generador), las fuentes dependientes **no tienen valor fijo**: su salida varía proporcionalmente a una variable de control $V_x$ o $I_x$ medida en otro punto del circuito.
 >
-> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_02.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_02.svg]]
 >
 > **Los cuatro tipos y su simbología:**
 >
@@ -91,7 +105,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > Los **conductores** son materiales que permiten el flujo libre de electrones con muy poca oposición. Son el medio por el que la corriente viaja entre los componentes del circuito.
 >
-> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_03.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_03.svg]]
 >
 > **Materiales conductores más usados:**
 >
@@ -113,11 +127,17 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > > **Calibre AWG:** En América Latina se usa el estándar **AWG (American Wire Gauge)** para medir el diámetro de los conductores. A menor número AWG, mayor diámetro y mayor capacidad de corriente (ej. AWG 12 para circuitos de 20 A en hogares).
 
-![[../../Anexos/Pasted image 20260519225615.png]]
+> [!note] 🖼️ Conductores
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260519225615.png]]
+>
+> **Se lee así:** conductores físicos y su calibre AWG: la sección del cable define cuánta corriente admite, y los materiales (plata, cobre, oro, aluminio) se eligen por conductividad y uso.
+>
+> **Por qué importa:** un calibre mal elegido se sobrecalienta; un material mal elegido encarece o degrada la unión.
 
 ---
 
-## ⊟ Resistencias
+## 🔌 Resistencias
 
 > [!tip]- 🔩 Disipadores de Energía
 >
@@ -125,7 +145,11 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > $$P = I^2 \cdot R \qquad \text{(Calor disipado)}$$
 >
-> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_04.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_04.svg]]
+>
+> **Se lee así:** el mapa de las resistencias: fijas (carbón, película metálica, bobinadas) y variables (potenciómetro de 3 terminales, reóstato de 2, termistor NTC/PTC según temperatura).
+>
+> **Por qué importa:** elegir fija o variable y el tipo correcto depende de la corriente que circula y del ajuste que exige el circuito.
 > 
 > $$R = \frac{\rho \cdot l}{A}$$
 >
@@ -167,11 +191,25 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Potencia** | Máxima potencia disipable sin dañarse (¼ W, ½ W, 1 W, 2 W…) |
 > | **Coeficiente de temperatura** | Variación de R con la temperatura (ppm/°C) |
 
-![[../../Anexos/Pasted image 20260519225108.png]]
+> [!note] 🖼️ Potencia vs energía
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260519222726.png]]
+> 
+> **Se lee así:** La figura compara "Potencia eléctrica vs energía": a la izquierda, la **potencia** (vatios, kilovatios) equiparada al caudal del agua que sale del tubo; a la derecha, la **energía** (horas watt, kilowatt horas) equiparada a la cantidad de agua que termina en el balde.
+> 
+> **Por qué importa:** Separa dos magnitudes que la factura eléctrica confunde a diario — el ritmo de consumo (kW) y lo acumulado (kWh) — evitando el error de dimensionar medidores o planificar cargas creyendo que son lo mismo.
+
+> [!note] 🖼️ ⊟ Resistencias
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260519225108.png]]
+>
+> **Se lee así:** resistencias reales y su código de 4 bandas: las dos primeras dan dígitos, la tercera multiplica y la cuarta fija la tolerancia.
+>
+> **Por qué importa:** leer las bandas de memoria es la verificación más rápida sin multímetro; una banda corrida es un factor 10 o 100 de error.
 
 ---
 
-## ⊣⊢ Capacitores
+## 🔋 Capacitores
 
 > [!tip]- ⚡ Almacenadores de Carga Eléctrica
 >
@@ -191,7 +229,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > $$E = \frac{1}{2} C V^2$$
 >
-> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_05.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_05.svg]]
 >
 > **Comparación de tipos:**
 >
@@ -211,8 +249,13 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > > ⚠️ Los capacitores electrolíticos **deben conectarse respetando la polaridad** (+ y −). Invertirlos puede dañarlos o causar cortocircuito.
 
-
- ![[../../Anexos/Pasted image 20260519225814.png]]
+> [!note] 🖼️ ⊣⊢ Capacitores
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260519225814.png]]
+>
+> **Se lee así:** los cuatro tipos del cuadro (cerámico, poliéster, electrolítico, tántalo) en su encapsulamiento real, con la polaridad marcada en los electrolíticos.
+>
+> **Por qué importa:** electrolítico y tántalo son polarizados: invertirlos los daña; los no polarizados van a alta frecuencia sin miedo.
 
 ---
 
@@ -233,7 +276,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > $$E = \frac{1}{2} L I^2$$
 >
-> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_06.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_06.svg]]
 >
 > **Comportamiento en DC y AC:**
 >
@@ -251,8 +294,13 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Fuentes conmutadas** | Almacena y libera energía en ciclos |
 > | **Motores y relés** | Genera campo magnético para movimiento mecánico |
 
-
-![[../../Anexos/Pasted image 20260519225956.png]]
+> [!note] 🖼️ Inductores
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260519225956.png]]
+>
+> **Se lee así:** bobinas reales: espiras sobre núcleo de aire o ferrita, y cómo almacenan campo magnético mientras circula corriente por ellas.
+>
+> **Por qué importa:** el $dI/dt$ que manda $V_L$ explica por qué un relé chasquea y por qué las fuentes conmutadas necesitan bobinas de calidad.
 
 ---
 ## 🌍 Simbología EU vs US
@@ -279,7 +327,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > Los **elementos de control** permiten abrir o cerrar un circuito, ya sea manualmente o de forma automática/eléctrica.
 >
-> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_07.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_07.svg]]
 >
 > | Elemento | Descripción | Estado por defecto | Acción |
 > |---|---|---|---|
@@ -292,8 +340,18 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > > Una pequeña corriente de control energiza la **bobina** del relé, generando un campo magnético que atrae un contacto metálico y cierra (o abre) un circuito de mayor potencia. Permite controlar cargas grandes con señales pequeñas.
 >
-> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_08.svg]]
-![[../../Anexos/ChatGPT Image 30 may 2026, 18_49_08.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_08.svg]]
+>
+> **Se lee así:** el flujo del relé en cuatro pasos: señal de control pequeña → energiza la bobina → el campo magnético cierra el contacto → el circuito de potencia deja pasar.
+>
+> **Por qué importa:** es el esquema mental de todo el control industrial: miliamperios gobiernan kilovatios.
+> [!note] 🖼️ Elementos de Control
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 30 may 2026, 18_49_08.png]]
+>
+> **Se lee así:** los elementos de control en su forma práctica: interruptor, pulsadores NA/NC y el relé como pieza entre control y potencia.
+>
+> **Por qué importa:** distinguir el estado por defecto (NA/NC, bobina fría) del accionado es la clave para programar automatismos sin quemar nada.
 
 ---
 ## ⚖️ Comparación de los Tres Elementos Pasivos
@@ -309,15 +367,31 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **En AC** | Igual para toda f | Impide baja f | Impide alta f |
 > | **Relación V-I** | $V = IR$ | $I = C\frac{dV}{dt}$ | $V = L\frac{dI}{dt}$ |
 >
-> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_09.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_09.svg]]
+>
+> **Se lee así:** el flujo «Elemento AC»: la señal AC llega a una bifurcación — resistencia disipa $P = I^2R$, capacitor almacena campo eléctrico y lo libera, inductor almacena campo magnético y lo libera.
+>
+> **Por qué importa:** resume de un vistazo qué hace cada elemento con la energía en AC —la base de impedancia y de filtros.
 > 
-![[../../Anexos/ChatGPT Image 19 may 2026, 23_02_18.png]]
+> [!note] 🖼️ Comparación de los Tres Elementos Pasivos
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 19 may 2026, 23_02_18.png]]
+>
+> **Se lee así:** la versión visual de la tabla R vs C vs L: unidades, qué almacena cada uno y qué pasa en DC estacionario (bloqueo en C, corto en L).
+>
+> **Por qué importa:** memorizarla elimina el 80 % de las dudas al analizar filtros y temporizaciones.
 
 ---
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_10.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_10.svg]]
+>
+> **Se lee así:** mapa mental «Elementos de un Circuito»: conductores (cobre/al/AWG/PCB), resistencias (fijas/variables/código/Joule), capacitores (cerámico/electrolítico, bloquea DC), inductores (núcleo aire/ferrita, bloquea AC).
+>
+> **Por qué importa:** es el índice visual para repasar toda la nota de un vistazo antes del examen.
 
 ---
 
@@ -335,31 +409,47 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > [5] T. L. Floyd, *Electronic Devices*, 10th ed. Hoboken, NJ, USA: Pearson, 2017, pp. 1–40.
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Basico
+>
 > - [ ] Identifico los 5 elementos basicos (fuente, conductor, R, C, L) y su funcion.
 > - [ ] Leo el codigo de colores de una resistencia y calculo su valor y tolerancia.
 > - [ ] Distingo fuente independiente y dependiente (VCVS, CCVS, VCCS, CCCS).
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Calculo R = rho·l/A y explico el efecto del calibre AWG.
 > - [ ] Diferencio capacitores (C=Q/V) e inductores (VL=L·dI/dt) en DC vs AC.
 > - [ ] Explico el comportamiento de un rele y pulsador NA/NC.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Selecciono tipo de capacitor/inductor segun aplicacion y frecuencia.
 > - [ ] Modelo un BJT/FET/OpAmp como fuente dependiente (IC=beta·IB).
 > - [ ] Comparo simbologia US vs EU y justifico el uso de ANSI.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
+>
 > - Previo: [[02 - Principios de Generacion de Energia Electrica]] — fuentes que alimentan estos elementos
 > - Siguiente: [[04 - Circuitos en Serie Paralelo y Mixtos]] — como se conectan R, C, L
 > - Adelante: [[01 - Semiconductores y Bandas de Energía]] — de pasivos lineales a no lineales
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[04 - Circuitos en Serie Paralelo y Mixtos]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #circuito #conductor #resistencia #capacitor #inductor #elementos #pasivos #EYAG1037 #FESD #ESPOL #unidad1

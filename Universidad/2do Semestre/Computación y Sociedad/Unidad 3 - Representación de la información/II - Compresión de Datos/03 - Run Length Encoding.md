@@ -13,7 +13,7 @@ dg-publish: true
 > - Hoy en día sigue siendo la base de formatos como `.bmp` (en algunos modos), `.tiff`, y se usa dentro de otros algoritmos más complejos como parte del pipeline de compresión de video e imagen.
 > - Es especialmente efectivo en datos con **muchas repeticiones consecutivas**: imágenes con áreas de color sólido, faxes, iconos simples, o ciertos tipos de datos de sensores.
 > 
-> ![[Diagramas/03_-_Run_Length_Encoding_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Run_Length_Encoding_01.svg]]
 
 ---
 
@@ -112,7 +112,7 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — ¿Conviene usar RLE?
 
-![[Diagramas/03_-_Run_Length_Encoding_02.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Run_Length_Encoding_02.svg]]
 
 ---
 

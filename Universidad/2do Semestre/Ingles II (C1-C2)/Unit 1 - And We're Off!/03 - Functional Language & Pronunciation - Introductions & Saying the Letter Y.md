@@ -12,7 +12,7 @@ dg-publish: true
 > - **Functional Language:** frases útiles para presentarse, presentar a alguien y responder a presentaciones en contextos sociales y profesionales.
 > - **Pronunciation:** reglas y ejemplos para pronunciar correctamente la letra **Y** en inglés según su posición en la palabra.
 > 
-> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_-_Introductions_&_Saying_the_Letter_Y_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Functional_Language_&_Pronunciation_-_Introductions_&_Saying_the_Letter_Y_01.svg]]
 > 
 > |Bloque|Enfoque|Sección del libro|
 > |---|---|---|

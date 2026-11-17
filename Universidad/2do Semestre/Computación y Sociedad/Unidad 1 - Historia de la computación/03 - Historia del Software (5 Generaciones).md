@@ -10,7 +10,7 @@ dg-publish: true
 >
 > A medida que el hardware se volvió más potente, la forma de comunicarse con las máquinas también tuvo que evolucionar. Lo que comenzó como secuencias de ceros y unos se transformó progresivamente en lenguajes cada vez más cercanos al lenguaje humano.
 >
-> ![[Diagramas/03_-_Historia_del_Software_(5_Generaciones)_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Historia_del_Software_(5_Generaciones)_01.svg]]
 
 ---
 
@@ -36,7 +36,7 @@ dg-publish: true
 > | **Traductor** | Programa que convierte ensamblador a lenguaje máquina |
 > | **Programadores de sistemas** | Quienes creaban herramientas para facilitar la programación |
 >
-> ![[Diagramas/03_-_Historia_del_Software_(5_Generaciones)_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Historia_del_Software_(5_Generaciones)_02.svg]]
 >
 > > ⚠️ La programación en lenguaje máquina **demandaba mucho tiempo y era propensa a errores**, lo que impulsó la búsqueda de mejores herramientas.
 
@@ -54,7 +54,7 @@ dg-publish: true
 > | **COBOL** | Aplicaciones empresariales y comerciales | 1959 |
 > | **LISP** | Inteligencia artificial e investigación | 1958 |
 >
-> ![[Diagramas/03_-_Historia_del_Software_(5_Generaciones)_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Historia_del_Software_(5_Generaciones)_03.svg]]
 >
 > > 💡 Un compilador traduce el código de alto nivel a lenguaje máquina, permitiendo que el programador se enfoque en resolver el problema y no en los detalles del hardware.
 
@@ -74,7 +74,7 @@ dg-publish: true
 > | **SPSS** | Paquete Estadístico para Ciencias Sociales, escrito en FORTRAN |
 > | **Usuarios no programadores** | Por primera vez, personas sin conocimiento técnico usaban computadoras |
 >
-> ![[Diagramas/03_-_Historia_del_Software_(5_Generaciones)_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Historia_del_Software_(5_Generaciones)_04.svg]]
 >
 > > 💡 Los programadores de sistemas comenzaron a crear **herramientas de software para que otros las usaran**, naciendo así la distinción entre desarrolladores y usuarios finales.
 
@@ -169,7 +169,7 @@ dg-publish: true
 
 > [!summary] 📅 Evolución de los lenguajes de programación
 >
-> ![[Diagramas/03_-_Historia_del_Software_(5_Generaciones)_05.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Historia_del_Software_(5_Generaciones)_05.svg]]
 
 ---
 

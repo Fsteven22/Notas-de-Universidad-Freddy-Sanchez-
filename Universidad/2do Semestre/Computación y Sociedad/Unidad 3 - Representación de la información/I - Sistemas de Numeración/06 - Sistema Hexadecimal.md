@@ -9,7 +9,7 @@ dg-publish: true
 >
 > El sistema hexadecimal usa base **16**, con 16 símbolos: 0-9 y luego A, B, C, D, E, F para representar los valores 10 a 15. Como $16 = 2^4$, **cada dígito hexadecimal corresponde exactamente a 4 dígitos binarios** — un grupo conocido como **nibble**.
 >
-> ![[Diagramas/06_-_Sistema_Hexadecimal_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Sistema_Hexadecimal_01.svg]]
 
 ---
 
@@ -167,7 +167,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[Diagramas/06_-_Sistema_Hexadecimal_02.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Sistema_Hexadecimal_02.svg]]
 
 ---
 

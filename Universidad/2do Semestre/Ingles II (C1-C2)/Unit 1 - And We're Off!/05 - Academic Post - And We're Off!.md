@@ -16,7 +16,7 @@ dg-publish: true
 > |**Fuente**|Academic Writing Center (AWC) — ESPOL|
 > |**Archivo original**|[[Academic Post KYdA.pdf]]|
 > 
-> ![[Diagramas/05_-_Academic_Post_-_And_We're_Off!_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Academic_Post_-_And_We're_Off!_01.svg]]
 > 
 > |Parte|Función|Señal de apertura típica|
 > |---|---|---|

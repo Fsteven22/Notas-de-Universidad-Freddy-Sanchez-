@@ -17,7 +17,7 @@ dg-publish: true
 > 
 > **Diferencia fundamental:**
 > 
-> ![[Diagramas/05_-_Miembros_estáticos_(static)_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Miembros_estáticos_(static)_01.svg]]
 > 
 > |Aspecto|Miembro de Instancia|Miembro Static|
 > |---|---|---|
@@ -36,7 +36,7 @@ dg-publish: true
 > 
 > **Casos de uso comunes:**
 > 
-> ![[Diagramas/05_-_Miembros_estáticos_(static)_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Miembros_estáticos_(static)_02.svg]]
 > 
 > **Ejemplo básico:**
 > 
@@ -109,7 +109,7 @@ dg-publish: true
 > 
 > **Visualización del proceso:**
 > 
-> ![[Diagramas/05_-_Miembros_estáticos_(static)_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Miembros_estáticos_(static)_03.svg]]
 > 
 > **Uso práctico:**
 > 
@@ -175,7 +175,7 @@ dg-publish: true
 > 
 > **Razón de las restricciones:**
 > 
-> ![[Diagramas/05_-_Miembros_estáticos_(static)_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Miembros_estáticos_(static)_04.svg]]
 
 ### 🧮 Métodos Utilitarios
 
@@ -365,7 +365,7 @@ dg-publish: true
 > 
 > **Orden de ejecución:**
 > 
-> ![[Diagramas/05_-_Miembros_estáticos_(static)_05.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Miembros_estáticos_(static)_05.svg]]
 > 
 > **Ejemplo completo:**
 > 
@@ -421,7 +421,7 @@ dg-publish: true
 > 
 > **Visualización en memoria:**
 > 
-> ![[Diagramas/05_-_Miembros_estáticos_(static)_06.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Miembros_estáticos_(static)_06.svg]]
 
 ---
 
@@ -433,7 +433,7 @@ dg-publish: true
 > 
 > **1. Cuándo usar static:**
 > 
-> ![[Diagramas/05_-_Miembros_estáticos_(static)_07.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Miembros_estáticos_(static)_07.svg]]
 > 
 > **2. Constantes siempre public static final:**
 > 
@@ -499,7 +499,7 @@ dg-publish: true
 
 ## 📚 Resumen Visual
 
-![[Diagramas/05_-_Miembros_estáticos_(static)_08.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Miembros_estáticos_(static)_08.svg]]
 
 > [!quote] 🎓 Puntos Clave para Recordar
 > 

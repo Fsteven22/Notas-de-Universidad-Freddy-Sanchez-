@@ -11,13 +11,18 @@ tags: [EYAG1037, laboratorio, practicas]
 >
 > Esta práctica valida experimentalmente las leyes que viste en teoría: **Ley de Ohm** ($V=IR$), **KCL** ($\sum I = 0$ en nodos) y **KVL** ($\sum V = 0$ en mallas). Además aplicas los métodos de **divisor de tensión** y **divisor de corriente** para dimensionar redes eléctricas.
 >
-> ![[../../../Diagramas/Práctica_2_—_Ley_de_Ohm_y_Kirchhoff_01.svg]]
+> ![[../../Teórico/Unidad 0 - Guías y Ejercicios/Diagramas/Práctica_2_—_Ley_de_Ohm_y_Kirchhoff_01.svg]]
+> 
+> **Se lee así:** El diagrama es el mapa de la práctica: de «Práctica 2» se ramifican tres procedimientos — ① Ley de Ohm, donde se mide I en función de R; ② divisor de corriente con KCL, donde se mide la corriente por cada rama; y ③ divisor de tensión con KVL, donde se mide el voltaje en cada elemento.
+> 
+> **Por qué importa:** Saber de antemano qué se mide en cada procedimiento te permite planificar el orden del montaje y verificar KCL/KVL con datos reales en vez de improvisar sobre la protoboard.
 
 ---
 
 ## ⚠️ Seguridad
 
-> [!danger]
+> [!danger] ⚠️ Seguridad
+>
 > - Trabaja con fuente DC a 10–15 V.
 > - Manipula conexiones **solo con la fuente apagada** (OUTPUT off).
 > - No exceder 1 A por resistencia.
@@ -185,29 +190,34 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ## 📄 Informe
 
-> Usa [[FORMATO INFORME DE PRÁCTICA.pdf]] y [[Formato Pre-prácticas.pdf]] para entregar. Simulaciones en Proteus.
+> [!tip] 📄 Informe
+>
+> Usa [[../Fundamentos del Laboratorio/FORMATO INFORME DE PRÁCTICA.pdf|FORMATO INFORME DE PRÁCTICA.pdf]] y [[../Fundamentos del Laboratorio/Formato Pre-prácticas.pdf|Formato Pre-prácticas.pdf]] para entregar. Simulaciones en Proteus.
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Básico
+>
 > - [ ] Identifico la fuente, el amperímetro en serie y la resistencia en el diagrama de montaje.
 > - [ ] Conecto la fuente apagada y verifico polaridad antes de energizar.
 > - [ ] Cambio el rango del amperímetro entre mA y 10A según la corriente estimada.
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Explico la Ley de Ohm ($V=IR$) y uso $R=V/I$ para predecir corriente con R de 100 KΩ.
 > - [ ] Leo la corriente en los 4 valores de resistencia y confirmo que crece cuando R disminuye.
 > - [ ] Identifico un nodo y cuento corrientes que entran y salen para verificar KCL.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Mido corriente por cada resistencia en paralelo y confirmo que la suma es igual a la total.
 > - [ ] Uso el divisor de corriente para predecir la fracción por cada rama y la comparo con lo medido.
 > - [ ] Mido voltajes en serie y confirmo que suman el voltaje de la fuente (KVL).
 >
 
 > [!quote] 🔗 Conexiones
+>
 > - Teoría: [[05 - Leyes de Ohm y Kirchhoff]], [[04 - Circuitos en Serie Paralelo y Mixtos]] y [[06 - Teoremas de Analisis de Circuitos]]
 > - Previa: [[Práctica 1 — Manejo de Equipos del Laboratorio]]
 > - Equipos: [[Equipos del Laboratorio - FESD]]
@@ -215,9 +225,7 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ---
 
----
-
 ## 📎 Guía oficial (sitio web)
 
-![[Práctica 2 Ley de Ohm y Leyes de Kirchof.pdf]]
+[[../Fundamentos del Laboratorio/Práctica 2 Ley de Ohm y Leyes de Kirchof.pdf|Práctica 2 Ley de Ohm y Leyes de Kirchof.pdf]]
 **Tags:** #practica #laboratorio #EYAG1037 #FESD #ESPOL #unidad1 #leyDeOhm #kirchhoff

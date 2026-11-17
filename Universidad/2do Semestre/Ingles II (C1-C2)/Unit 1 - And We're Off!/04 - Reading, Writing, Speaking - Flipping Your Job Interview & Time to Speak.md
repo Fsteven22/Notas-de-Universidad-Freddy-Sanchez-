@@ -13,7 +13,7 @@ dg-publish: true
 > - **Writing:** frases para expresar acuerdo, desacuerdo y apreciación en comentarios de blog, con registro formal e informal.
 > - **Speaking:** frases útiles organizadas por etapa para un roleplay de entrevista de trabajo.
 > 
-> ![[Diagramas/04_-_Reading,_Writing,_Speaking_-_Flipping_Your_Job_Interview_&_Time_to_Speak_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Reading,_Writing,_Speaking_-_Flipping_Your_Job_Interview_&_Time_to_Speak_01.svg]]
 > 
 > |Bloque|Enfoque|Sección del libro|
 > |---|---|---|

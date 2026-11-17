@@ -25,7 +25,7 @@ tags: [IDIG2012, unidad4, argumentacion, persuadir, comunicacion]
 > | **Evaluación** | Esquema flojo S8 | Esquema aprobado → guion S10 |
 > | **TED final** | Charla olvidable | Charla finalista Voces con Ciencia |
 
-![[Diagramas/01_-_Argumentación_efectiva,_convencer_vs_persuadir_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Argumentación_efectiva,_convencer_vs_persuadir_01.svg]]
 
 ---
 
@@ -37,7 +37,7 @@ tags: [IDIG2012, unidad4, argumentacion, persuadir, comunicacion]
 >
 > **Estructura que pide el syllabus 4.1:**
 >
-> ![[Diagramas/01_-_Argumentación_efectiva,_convencer_vs_persuadir_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Argumentación_efectiva,_convencer_vs_persuadir_02.svg]]
 >
 > | Tipo de argumento | Cuándo usarlo en tu charla | Ejemplo |
 > |---|---|---|
@@ -120,7 +120,7 @@ tags: [IDIG2012, unidad4, argumentacion, persuadir, comunicacion]
 
 ## 📊 Resumen Visual
 
-![[Diagramas/01_-_Argumentación_efectiva,_convencer_vs_persuadir_03.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Argumentación_efectiva,_convencer_vs_persuadir_03.svg]]
 
 > [!success] 🔍 Comparación Final
 >

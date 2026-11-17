@@ -26,7 +26,7 @@ dg-publish: true
 > |**Universalidad**|Aplica a gran variedad de matrices|Física, estadística, ML|
 > |**Interpretación**|Da significado geométrico profundo|Visualización de datos|
 
-![[Diagramas/08_–_Teorema_espectral_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_–_Teorema_espectral_01.svg]]
 
 ---
 
@@ -59,7 +59,7 @@ dg-publish: true
 > 
 > **Visualización geométrica:**
 > 
-> ![[Diagramas/08_–_Teorema_espectral_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_–_Teorema_espectral_02.svg]]
 > 
 > **Ejemplo en ℝ²:**
 > 
@@ -213,7 +213,7 @@ dg-publish: true
 > 
 > **4. Interpretación geométrica**
 > 
-> ![[Diagramas/08_–_Teorema_espectral_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_–_Teorema_espectral_03.svg]]
 
 ---
 
@@ -711,7 +711,7 @@ dg-publish: true
 > 
 > **Jerarquía de matrices:**
 > 
-> ![[Diagramas/08_–_Teorema_espectral_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_–_Teorema_espectral_04.svg]]
 > 
 > **Teorema espectral para operadores normales:**
 > 
@@ -1199,7 +1199,7 @@ dg-publish: true
 > 
 > **Aplicaciones principales:**
 > 
-> ![[Diagramas/08_–_Teorema_espectral_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_–_Teorema_espectral_05.svg]]
 > 
 > **Fórmulas clave:**
 > 

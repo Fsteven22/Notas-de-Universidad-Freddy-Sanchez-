@@ -16,7 +16,7 @@ dg-publish: true
 > | **2** | Characteristics of a sentence |
 > | **3** | Independent vs. Dependent Clauses |
 >
-> ![[Diagramas/01_-_Grammar_Review_-_The_Sentence_&_Clauses_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Grammar_Review_-_The_Sentence_&_Clauses_01.svg]]
 
 ---
 
@@ -53,7 +53,7 @@ dg-publish: true
 >
 > **Estructura visual:**
 >
-> ![[Diagramas/01_-_Grammar_Review_-_The_Sentence_&_Clauses_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Grammar_Review_-_The_Sentence_&_Clauses_02.svg]]
 >
 > *She runs every morning.* — Mayúscula + Sujeto + Verbo + Complemento + Punto.
 
@@ -65,7 +65,7 @@ dg-publish: true
 >
 > A **clause** is a group of words that contains a **subject** and a **verb**. There are two types:
 >
-> ![[Diagramas/01_-_Grammar_Review_-_The_Sentence_&_Clauses_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Grammar_Review_-_The_Sentence_&_Clauses_03.svg]]
 >
 > ---
 >

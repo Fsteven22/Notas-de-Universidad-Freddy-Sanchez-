@@ -9,7 +9,7 @@ dg-publish: true
 >
 > El sistema octal usa base **8**, con dígitos del 0 al 7. Su razón de ser (más allá del decimal) es que $8 = 2^3$, así que **cada dígito octal corresponde exactamente a 3 dígitos binarios**. Esto lo convierte en un "atajo" legible para representar grupos de bits sin pasar por decimal.
 >
-> ![[Diagramas/05_-_Sistema_Octal_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Sistema_Octal_01.svg]]
 
 ![[ChatGPT Image 14 jul 2026, 21_17_54.png]]
 
@@ -206,7 +206,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[Diagramas/05_-_Sistema_Octal_02.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Sistema_Octal_02.svg]]
 
 ---
 

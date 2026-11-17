@@ -12,7 +12,11 @@ dg-publish: true
 > 
 > Este tema conecta directamente con lo visto en [[04 - Circuitos de Filtrado y Fuentes Lineales]] (el rizado de una fuente lineal es, en el fondo, un tipo de ruido de baja frecuencia) y sirve de puente hacia las aplicaciones de amplificadores operacionales para minimización de ruido de la Unidad 3.
 > 
-> ![[../../Diagramas/06_-_Ruido_Electrónico_e_Interferencia_01.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/06_-_Ruido_Electrónico_e_Interferencia_01.svg]]
+> 
+> **Se lee así:** el diagrama de flujo separa cualquier perturbación no deseada según su origen — interna al componente (ruido electrónico) o externa al circuito (interferencia EMI/RFI) — y muestra que ambos caminos desembocan en el mismo final: una señal degradada.
+> 
+> **Por qué importa:** es la clave de clasificación de todo el tema; identificar primero el origen ordena el diagnóstico y evita atacar el síntoma con la técnica de mitigación equivocada.
 
 ---
 
@@ -55,7 +59,7 @@ dg-publish: true
 > 
 > Una señal de ruido externa (motores, líneas de potencia, radiofrecuencia, conmutación digital) puede acoplarse al circuito de cuatro maneras:
 > 
-> ![[../../Diagramas/06_-_Ruido_Electrónico_e_Interferencia_02.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/06_-_Ruido_Electrónico_e_Interferencia_02.svg]]
 > 
 > |Modo|Mecanismo|Mitigación típica|
 > |---|---|---|
@@ -87,7 +91,13 @@ dg-publish: true
 > 
 > Una de las técnicas más potentes contra el ruido —sobre todo el que se acopla igual a dos líneas de señal— es amplificar solo la **diferencia** entre dos entradas y rechazar lo que sea común a ambas (modo común). Esto se logra con un **amplificador diferencial** basado en amplificadores operacionales, tema que se profundiza en la Unidad 3 (Aplicaciones de los OPAMs — Minimización de ruido).
 
-![[../../Anexos/ChatGPT Image 22 jul 2026, 13_11_08.png]]
+> [!note] 🖼️ Técnicas de Mitigación con Semiconductores y Componentes Pasivos
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 22 jul 2026, 13_11_08.png]]
+> 
+> **Se lee así:** el póster cubre el tema completo: tipos de ruido interno y modos de acoplamiento EMI con sus fuentes típicas (fuentes conmutadas, motores, iluminación, descargas), efectos sobre la señal, y —su énfasis— ocho técnicas prácticas de mitigación con pasivos y semiconductores: filtrado de alimentación, desacoplo (bypass), filtros RC, supresión con TVS/Zener/MOV, diseño de PCB, blindaje, ferritas y chokes, y puesta a tierra en estrella.
+> 
+> **Por qué importa:** traduce el diagnóstico a decisiones de diseño concretas — qué capacitor, qué ferrita o qué supresión aplicar — en lugar de una lista suelta de nombres de técnicas.
 
 ---
 
@@ -131,9 +141,17 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/06_-_Ruido_Electrónico_e_Interferencia_03.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/06_-_Ruido_Electrónico_e_Interferencia_03.svg]]
+> 
+> **Se lee así:** el mapa mental resume la nota en una raíz «Ruido e Interferencia»: los tres ruidos internos (térmico Johnson-Nyquist, shot, flicker 1/f), los cuatro modos de acoplamiento externo (conducida, capacitiva, inductiva, radiada), las seis técnicas de mitigación clave y el puente hacia el amplificador diferencial de la Unidad 3.
+> 
+> **Por qué importa:** es el índice visual para repasar antes del examen; el emparejamiento técnica ↔ tipo de acoplamiento es el núcleo de casi toda pregunta de mitigación.
 
 ---
+
+## 📚 Referencias
 
 > [!quote] 📖 Fuentes consultadas
 > 
@@ -144,13 +162,26 @@ dg-publish: true
 > [3] A. R. Hambley, _Electrical Engineering: Principles and Applications_, 7th ed. Hoboken, NJ, USA: Pearson, 2018 — sección de compatibilidad electromagnética y técnicas de blindaje.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
-> 
+>
 > - [[04 - Circuitos de Filtrado y Fuentes Lineales]] — el filtro capacitivo y los conceptos de LPF/HPF ya vistos son la base de varias técnicas de mitigación de ruido.
 > - [[05 - Reguladores en Fuentes Lineales]] — el diodo Zener regulador reaparece aquí como elemento de recorte de transitorios (TVS).
 > - [[02 - El Diodo - Unión P-N]] — el ruido de disparo (shot noise) se origina en la misma unión P-N estudiada ahí.
 > - Siguiente tema (Unidad 3): Aplicaciones de los OPAMs para minimización de ruido — amplificador diferencial y rechazo de modo común.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[01 - CI no programables]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #ruidoElectronico #interferenciaEMI #fuentesLineales #EYAG1037 #FESD #ESPOL #unidad2

@@ -24,7 +24,7 @@ tags: [IDIG2012, unidad3, redaccion, precision, claridad, comunicacion]
 > | **Tiempo del lector** | Pierde 5 min para nada | Resuelve al instante |
 > | **Resultado** | Dudas en tu capacidad | Confianza en tu criterio |
 
-![[Diagramas/04_-_Precisión_y_claridad_en_la_redacción_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Precisión_y_claridad_en_la_redacción_01.svg]]
 
 ---
 
@@ -67,7 +67,7 @@ tags: [IDIG2012, unidad3, redaccion, precision, claridad, comunicacion]
 >
 > Es un mecanismo de evolución lingüística que busca **simplificar el mensaje** y lograr el **menor esfuerzo en la descodificación** de su significado. Pipeline para aplicarlo:
 >
-> ![[Diagramas/04_-_Precisión_y_claridad_en_la_redacción_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Precisión_y_claridad_en_la_redacción_03.svg]]
 >
 > **Regla de oro:** si al quitar la palabra sobrante nada se pierde, sobraba.
 
@@ -105,13 +105,13 @@ tags: [IDIG2012, unidad3, redaccion, precision, claridad, comunicacion]
 > | **Dos puntos** | Completar, aclarar o resumir lo ya expuesto; anunciar lo que sigue | "Martin Luther King dijo: 'Si el hombre no ha descubierto nada por lo que morir, no es digno de vivir'." |
 > | **Punto** | Seguido: amplía la misma idea en el párrafo; aparte: cierra el párrafo; final: cierra el texto | "Se cancelaron 54 vuelos, la mayoría hacia Europa. Como compensación, las aerolíneas cubrieron el hotel de los afectados." |
 >
-> ![[Diagramas/04_-_Precisión_y_claridad_en_la_redacción_05.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Precisión_y_claridad_en_la_redacción_05.svg]]
 
 ---
 
 ## 📊 Resumen Visual
 
-![[Diagramas/04_-_Precisión_y_claridad_en_la_redacción_06.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Precisión_y_claridad_en_la_redacción_06.svg]]
 
 > [!success] 🔍 Comparación Final
 >

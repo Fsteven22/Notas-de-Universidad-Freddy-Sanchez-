@@ -5,10 +5,20 @@ tags: [EYAG1037, laboratorio, practicas]
 
 # 🧪 Práctica 1 — Manejo de Equipos del Laboratorio
 
+## ⚠️ Seguridad
+
 > [!danger] ⚠️ Riesgo Eléctrico Se trabaja con **5 VDC**. El riesgo está en la fuente DC y el generador de funciones.
 > 
 > - ❌ No manipular conexiones sin supervisión del profesor.
 > - 🧤 Usar **guantes dieléctricos de baja tensión**.
+
+> [!note] 🔌 Tomacorrientes en paralelo
+>
+> ![[../../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260519230457.png]]
+> 
+> **Se lee así:** la imagen muestra la conexión en paralelo de varios tomacorrientes alimentados desde la misma línea, neutro y tierra (cableado de instalaciones).
+> 
+> **Por qué importa:** cada tomacorriente recibe el mismo voltaje de línea y las corrientes se suman en el punto común; por eso no se deben conectar más equipos de los que la línea admite, y por eso en el laboratorio las fuentes separadas alimentan cada práctica de forma controlada.
 
 ---
 
@@ -64,7 +74,11 @@ tags: [EYAG1037, laboratorio, practicas]
 > 
 > ---
 > 
-> ![[../../../Anexos/Pasted image 20260525223659.png]]
+> ![[../../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525223659.png]]
+> 
+> **Se lee así:** La figura (Figura 18 de la guía) muestra el montaje para la medición de voltaje: dos fuentes de 15 V en serie con el nodo central referenciado a tierra en el punto C (cable entre CH3(+) y CH1(−)), y la resistencia R conectada entre A (+Vcc) y B (−Vcc), con C como referencia.
+> 
+> **Por qué importa:** Es el circuito exacto sobre el que se completa la Tabla 1: sin el punto C como referencia, las lecturas (A↔B, A↔C, C↔B) no tendrían un signo consistente y la tabla saldría mal.
 > 
 > **Paso 3 — Medir voltaje DC con el multímetro**
 > 
@@ -83,7 +97,11 @@ tags: [EYAG1037, laboratorio, practicas]
 > 
 > ---
 > 
-> ![[../../../Anexos/Pasted image 20260525223728.png]]
+> ![[../../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525223728.png]]
+> 
+> **Se lee así:** La figura (Figura 19 de la guía) muestra el montaje para medir corriente: dos fuentes de 5 V en serie con el nodo central referenciado a tierra, y el multímetro conectado en serie en la rama derecha, entre el nodo superior y la resistencia R.
+> 
+> **Por qué importa:** Medir corriente exige romper la rama y poner el instrumento en medio — nunca en paralelo —; la figura deja claro dónde va el multímetro antes de que lo conectes a 5 V.
 > 
 > **Paso 4 — Medir corriente DC**
 > 
@@ -101,7 +119,11 @@ tags: [EYAG1037, laboratorio, practicas]
 > 
 > ---
 > 
-> ![[../../../Anexos/Pasted image 20260525223751.png]]
+> ![[../../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525223751.png]]
+> 
+> **Se lee así:** La figura (Figura 20 de la guía) muestra el montaje del Procedimiento 2: el generador de funciones en su puerto de 50 Ω conectado con cable BNC–lagarto (rojo a la terminal positiva de la resistencia R y negro a referencia GND), que es también el punto donde conectarás la punta CH1 del osciloscopio.
+> 
+> **Por qué importa:** Armar primero este lazo simple es lo que permite al osciloscopio mostrar las ondas sinusoidal, triangular y cuadrada con las amplitudes de la tabla (10, 5 y 12 Vpp) sin ambigüedad en el GND de referencia.
 > 
 > **Paso 1 — Conectar el generador a la resistencia**
 > 
@@ -143,13 +165,35 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ## 📝 Notas personales
 
-> [!question] 🤔 Mis observaciones de la práctica _(Espacio para agregar reflexiones, errores encontrados, diferencias entre valor teórico y medido, etc.)_
+> [!question]- 🤔 Mis observaciones de la práctica _(espacio para tus reflexiones)_
+>
+> - Diferencias teórico vs medido:
+> - Errores encontrados:
+> - Dudas para el informe:
 
 ---
+
+## 📄 Informe
+
+> [!tip] 📄 Informe de la práctica
+>
+> Completa las tablas de medición (Tabla 1 y tabla de ondas) y tus observaciones de la señal, y entrega junto con el formato de informe oficial del laboratorio.
+
+---
+
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Metas de la práctica
+>
+> - [ ] Armo la fuente en modo dual (±15 V) siguiendo la convención de cables (verde referencia, rojo +Vcc, azul −Vcc).
+> - [ ] Uso el multímetro FLUKE 179 en continuidad, tensión DC y corriente DC (bornera mA o 10 A según la corriente).
+> - [ ] Mido voltaje y corriente DC en un circuito sencillo e identifico la polaridad correcta.
+> - [ ] Configuro el generador de funciones y veo ondas sinusoidal, triangular y cuadrada en el osciloscopio.
+> - [ ] Uso AUTOSET, MEASURE y CURSOR del osciloscopio para leer Vpp, frecuencia, período y duty cycle.
 
 ---
 
 ## 📎 Guía oficial (sitio web)
 
-![[PRÁCTICA 1 FESD GUÍA.pdf]]
+[[../Fundamentos del Laboratorio/PRÁCTICA 1 FESD GUÍA.pdf|PRÁCTICA 1 FESD GUÍA.pdf]]
 **Tags:** #practica #laboratorio #EYAG1037 #FESD #ESPOL #unidad1 #multimetro #osciloscopio #fuenteDC

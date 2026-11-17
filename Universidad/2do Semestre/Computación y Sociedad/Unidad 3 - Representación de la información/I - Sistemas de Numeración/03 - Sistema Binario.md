@@ -9,7 +9,7 @@ dg-publish: true
 >
 > El sistema binario usa únicamente dos símbolos: **0** y **1**. Es la base de toda la computación moderna porque coincide exactamente con los dos estados físicos que puede distinguir un circuito eléctrico (ver [[01 - Análogo vs Digital]]): voltaje alto y voltaje bajo.
 >
-> ![[Diagramas/03_-_Sistema_Binario_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Sistema_Binario_01.svg]]
 
 ![[ChatGPT Image 21 jun 2026, 13_15_18.png]]
 
@@ -91,7 +91,7 @@ dg-publish: true
 > - 16 bits: máximo = 2¹⁶ − 1 = **65535**
 > - 32 bits: máximo = 2³² − 1 = **4294967295**
 >
-> ![[Diagramas/03_-_Sistema_Binario_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Sistema_Binario_02.svg]]
 
 ---
 
@@ -137,7 +137,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[Diagramas/03_-_Sistema_Binario_03.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Sistema_Binario_03.svg]]
 
 ---
 

@@ -10,7 +10,7 @@ dg-publish: true
 > 
 > La **accesibilidad** es la posibilidad que tengan todas las personas _sin_ que medien **exclusiones de ningún tipo**, como ser culturales, físicas o técnicas, para acceder a un servicio o llegar a visitar un lugar o utilizar un objeto.
 > 
-> ![[Diagramas/02_-_Accesibilidad_y_WCAG_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Accesibilidad_y_WCAG_01.svg]]
 
 ---
 
@@ -86,7 +86,7 @@ dg-publish: true
 > 
 > WCAG 2.0 se organiza en una jerarquía de 4 niveles: **Principios → Pautas → Criterios de Conformidad → Técnicas**.
 > 
-> ![[Diagramas/02_-_Accesibilidad_y_WCAG_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Accesibilidad_y_WCAG_02.svg]]
 >
 > > 📌 **25 criterios de Nivel A** se distribuyen así entre los 4 principios: Perceptible (9), Operable (9), Comprensible (5), Robusto (2).
 
@@ -214,7 +214,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[Diagramas/02_-_Accesibilidad_y_WCAG_03.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Accesibilidad_y_WCAG_03.svg]]
 
 ---
 

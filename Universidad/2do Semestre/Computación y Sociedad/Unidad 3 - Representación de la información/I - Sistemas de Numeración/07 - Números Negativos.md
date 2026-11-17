@@ -13,7 +13,7 @@ dg-publish: true
 > - A partir de los años 60, casi todas las arquitecturas migraron a **complemento a 2**, porque simplifica enormemente el diseño del hardware aritmético (un solo circuito suma y resta).
 > - Hoy en día, **complemento a 2** es el estándar universal: lo usan procesadores x86, ARM, RISC-V, y prácticamente cualquier lenguaje de programación cuando trabajas con tipos `int` con signo.
 > 
-> ![[Diagramas/07_-_Números_Negativos_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Números_Negativos_01.svg]]
 
 ---
 
@@ -112,7 +112,7 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — Convertir un número a Complemento a 2
 
-![[Diagramas/07_-_Números_Negativos_02.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Números_Negativos_02.svg]]
 
 ---
 

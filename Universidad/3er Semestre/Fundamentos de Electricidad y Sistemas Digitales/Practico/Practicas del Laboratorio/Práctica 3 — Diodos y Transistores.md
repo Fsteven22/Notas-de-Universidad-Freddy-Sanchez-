@@ -14,13 +14,18 @@ tags: [EYAG1037, laboratorio, practicas]
 > - El BJT como **switch electrónico** (corte vs saturación).
 > - Un **sensor de luz** con LDR que acciona un LED mediante un transistor.
 >
-> ![[../../../Diagramas/Práctica_3_—_Diodos_y_Transistores_01.svg]]
+> ![[../../Teórico/Unidad 0 - Guías y Ejercicios/Diagramas/Práctica_3_—_Diodos_y_Transistores_01.svg]]
+> 
+> **Se lee así:** El diagrama resume los tres montajes de la práctica: el Procedimiento 1 con el diodo 1N4007 para ver la rectificación de la señal senoidal, el Procedimiento 2 con el BJT 2N3904 como switch en corte y saturación, y el Procedimiento 3 con el sensor LDR respondiendo a la luz.
+> 
+> **Por qué importa:** Entender que son tres bloques independientes te permite depurar por partes cuando algo no funciona: primero el diodo, luego el transistor, por último el sensor.
 
 ---
 
 ## ⚠️ Seguridad
 
-> [!danger]
+> [!danger] ⚠️ Seguridad
+>
 > - Trabaja con fuente DC a 12 V.
 > - Manipula conexiones solo con la fuente apagada.
 > - No invertir polaridad del diodo ni del transistor.
@@ -151,38 +156,41 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ## 📄 Informe
 
-> Usa [[FORMATO INFORME DE PRÁCTICA.pdf]] y [[Formato Pre-prácticas.pdf]] para entregar. Simulaciones en Proteus.
+> [!tip] 📄 Informe
+>
+> Usa [[../Fundamentos del Laboratorio/FORMATO INFORME DE PRÁCTICA.pdf|FORMATO INFORME DE PRÁCTICA.pdf]] y [[../Fundamentos del Laboratorio/Formato Pre-prácticas.pdf|Formato Pre-prácticas.pdf]] para entregar. Simulaciones en Proteus.
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Básico
+>
 > - [ ] Identifico el ánodo y cátodo del diodo 1N4007 y verifico la polaridad en el montaje.
 > - [ ] Uso el osciloscopio para observar la rectificación de un semiciclo en la salida del diodo.
 > - [ ] Distinguo la diferencia entre entrada (cuadrada) y salida (rectificada) en CH1 vs CH2.
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Identifico terminales B, C, E del 2N3904 y verifico la orientación NPN en el circuito.
 > - [ ] Mido $V_{BE}$ y determino si el transistor está en corte ($V_{BE} < 0.7\text{ V}$) o saturación.
 > - [ ] Explico por qué $V_{CE(sat)}$ es aprox. 0.2 V cuando el transistor conduce completamente.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Reconozco la función de protección del diodo 1N4007 en el circuito del relé.
 > - [ ] Monto el circuito con LDR y ajusto el potenciómetro para controlar la sensibilidad del LED.
 > - [ ] Relaciono el comportamiento del sensor de luz con la región de operación del BJT (corte vs saturación).
 >
 
 > [!quote] 🔗 Conexiones
+>
 > - Teoría: [[01 - Semiconductores y Bandas de Energía]], [[02 - El Diodo - Unión P-N]] y [[03 - Transistor BJT]]
 > - Previa: [[Práctica 2 — Ley de Ohm y Kirchhoff]]
 > - Siguiente: [[Práctica 4 — Fuentes Lineales]]
 
 ---
 
----
-
 ## 📎 Guía oficial (sitio web)
 
-![[Práctica 3 - Funcionamiento de Diodos y Transistores.pdf]]
+[[../Fundamentos del Laboratorio/Práctica 3 - Funcionamiento de Diodos y Transistores.pdf|Práctica 3 - Funcionamiento de Diodos y Transistores.pdf]]
 **Tags:** #practica #laboratorio #EYAG1037 #FESD #ESPOL #unidad2 #diodo #BJT #transistor

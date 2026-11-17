@@ -77,7 +77,7 @@ dg-publish: true
 > 
 > Siguiendo la analogía de la llave: **corte** = llave cerrada (nada pasa), **activa** = llave a medio abrir (tú controlas cuánto pasa), **saturación** = llave abierta al máximo (ya no puedes controlar más, pasa todo lo que la tubería permite).
 > 
-> ![[../../Diagramas/03_-_Transistor_BJT_01.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/03_-_Transistor_BJT_01.svg]]
 > 
 > |Región|Condición|$I_C$|$V_{CE}$|Uso|
 > |---|---|---|---|---|
@@ -85,8 +85,13 @@ dg-publish: true
 > |**Activa**|$I_B > 0$, sin saturar|$beta \cdot I_B$|Variable|Amplificador|
 > |**Saturación**|$I_B$ suficientemente grande|$I_{C_{max}}$|$\approx 0$|Switch cerrado|
 
-
-![[ChatGPT Image 20 jun 2026, 21_58_10.png]]
+> [!note] 🖼️ Regiones de Operación
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 21_58_10.png]]
+> 
+> **Se lee así:** el póster desarrolla la estructura física NPN vs PNP (tres capas y la flecha en el emisor), el dopado y funcionamiento básico (unión E-B en directa, B-C en inversa, $I_B$ controlando $I_C$), y las tres regiones de operación — corte (interruptor abierto), activa directa (amplificador) y saturación (interruptor cerrado) — con sus circuitos equivalentes y el resumen comparativo NPN vs PNP.
+> 
+> **Por qué importa:** concentra la decisión clave de cada ejercicio — identificar la región antes de aplicar $I_C = \beta \cdot I_B$, $I_C \approx 0$ o $I_{C(sat)}$ — y evita calcular sin verificar primero la región de operación.
 
 ---
 
@@ -94,7 +99,7 @@ dg-publish: true
 
 > [!warning] 🧮 Pasos para determinar la región de operación
 > 
-> ![[../../Diagramas/03_-_Transistor_BJT_02.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/03_-_Transistor_BJT_02.svg]]
 > 
 > **Datos típicos del problema:**
 > 
@@ -113,21 +118,23 @@ dg-publish: true
 
 ---
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Basico
+>
 > - [ ] Identifico terminales B, C, E y leo la flecha del simbolo para distinguir NPN vs PNP.
 > - [ ] Escribo IE = IC + IB y en activa IC = beta·IB con beta tipico 20-500.
 > - [ ] Distingo corte (IB=0, switch abierto), activa (amplificador) y saturacion (VCE 0.2 V, switch cerrado).
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Aplico la metodologia de 5 pasos (asumir activa -> KVL base -> IC -> KVL colector -> verificar VCE).
 > - [ ] Calculo ICsat = (VCC-VCEsat)/(RC+RE) y verifico si ICactiva > ICsat para declarar saturacion.
 > - [ ] Aplico la regla de saturacion forzada con beta forzada 5-10 para garantizar margen.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Diseno la RB o VIN minima para forzar saturacion dado VCC, RC, RE y beta.
 > - [ ] Justifico por que la union EB debe estar en directa y BC en inversa para amplificar.
 > - [ ] Predigo el modo de un BJT en un circuito mixto y uso la analogia de la llave de agua.
@@ -136,27 +143,44 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/03_-_Transistor_BJT_03.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/03_-_Transistor_BJT_03.svg]]
+> 
+> **Se lee así:** el mapa mental resume la nota en una raíz «Transistor BJT»: la analogía de la llave de agua ($I_B$ abre o cierra, $I_C$ fluye controlado), los terminales Base/Colector/Emisor, NPN vs PNP con la flecha del símbolo y las polaridades típicas, las ecuaciones $I_E = I_C + I_B$ e $I_C = \beta \cdot I_B$ en activa, y las tres regiones con su uso (corte, activa, saturación).
+> 
+> **Por qué importa:** es el índice visual para repasar el BJT completo; la analogía de la llave resuelve dudas rápido y las tres regiones son el criterio que separa un switch de un amplificador.
 
 ---
+
+## 📚 Referencias
 
 > [!quote] 📖 Fuentes consultadas
 > 
 > [1] A. Sedra y K. Smith, _Microelectronic Circuits_, 7th ed. New York, USA: Oxford University Press, 2015, pp. 139–220.
 >
 
-> [!quote] 🔗 Conexiones
-> 
-> - [[02 - El Diodo - Unión P-N]] — el transistor BJT combina dos uniones P-N.
-> - [[01 - Semiconductores y Bandas de Energía]] — base física de las regiones N y P.
->
->
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🔗 Conexiones
+>
+> - [[02 - El Diodo - Unión P-N]] — el transistor BJT combina dos uniones P-N.
+> - [[01 - Semiconductores y Bandas de Energía]] — base física de las regiones N y P.
 > - Previo: [[02 - El Diodo - Unión P-N]] y [[01 - Semiconductores y Bandas de Energía]]
 > - Siguiente: [[04 - Circuitos de Filtrado y Fuentes Lineales]] — donde el BJT conmuta
 > - Adelante: [[02 - Aplicaciones de los OPAMs - Minimización de Ruido]]
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[04 - Circuitos de Filtrado y Fuentes Lineales]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #transistor #BJT #NPN #PNP #switch #amplificador #saturacion #EYAG1037 #FESD #ESPOL #unidad2

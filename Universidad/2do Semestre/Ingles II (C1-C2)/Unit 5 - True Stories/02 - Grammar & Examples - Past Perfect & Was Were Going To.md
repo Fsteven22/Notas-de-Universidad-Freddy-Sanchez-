@@ -12,7 +12,7 @@ dg-publish: true
 > - **Past perfect:** para hablar del orden entre dos eventos pasados (sección 5.1).
 > - **Was/were going to & was/were supposed to:** para hablar de planes pasados que cambiaron o no se cumplieron (sección 5.2).
 > 
-> ![[Diagramas/02_-_Grammar_&_Examples_-_Past_Perfect_&_Was_Were_Going_To_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Grammar_&_Examples_-_Past_Perfect_&_Was_Were_Going_To_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -118,7 +118,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión
 
-![[Diagramas/02_-_Grammar_&_Examples_-_Past_Perfect_&_Was_Were_Going_To_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Grammar_&_Examples_-_Past_Perfect_&_Was_Were_Going_To_02.svg]]
 
 ---
 

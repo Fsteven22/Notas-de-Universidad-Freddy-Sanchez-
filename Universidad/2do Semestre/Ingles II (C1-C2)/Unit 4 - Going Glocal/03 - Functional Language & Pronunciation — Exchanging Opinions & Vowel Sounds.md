@@ -13,7 +13,7 @@ dg-publish: true
 > - **Making opinions more emphatic:** expresiones para reforzar un desacuerdo fuerte (sección 4.3, Real-World Strategy).
 > - **Pronunciation:** distinción entre los sonidos vocálicos /ɒ/ y /ʌ/ (sección 4.3) y el uso del **stress** (énfasis) para organizar temas en un discurso (sección 4.4).
 > 
-> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_—_Exchanging_Opinions_&_Vowel_Sounds_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Functional_Language_&_Pronunciation_—_Exchanging_Opinions_&_Vowel_Sounds_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -139,7 +139,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión
 
-![[Diagramas/03_-_Functional_Language_&_Pronunciation_—_Exchanging_Opinions_&_Vowel_Sounds_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Functional_Language_&_Pronunciation_—_Exchanging_Opinions_&_Vowel_Sounds_02.svg]]
 
 ---
 

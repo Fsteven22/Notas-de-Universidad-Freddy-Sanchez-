@@ -11,13 +11,18 @@ tags: [EYAG1037, laboratorio, practicas]
 >
 > Esta práctica integra **acondicionamiento de señales**, **compuertas lógicas** y **Arduino** para controlar actuadores. Comparas la implementación con hardware puro (compuertas 74LS/74HC) vs software embebido (Arduino), y analizas las ventajas de cada enfoque.
 >
-> ![[../../../Diagramas/Práctica_6_—_Logica_Combinatoria_y_Arduino_01.svg]]
+> ![[../../Teórico/Unidad 0 - Guías y Ejercicios/Diagramas/Práctica_6_—_Logica_Combinatoria_y_Arduino_01.svg]]
+> 
+> **Se lee así:** El diagrama desglosa la práctica en tres procedimientos encadenados: el Procedimiento 1 acondiciona la señal con un LM358 como comparador con umbrales, el Procedimiento 2 arma la lógica combinatoria F = A′ + BC con compuertas 74LS/74HC, y el Procedimiento 3 replica el control en Arduino con analogRead y LEDs.
+> 
+> **Por qué importa:** Entender que la misma función F se implementa primero en hardware puro y luego en software embebido es la base para comparar sus ventajas reales — velocidad, costo, flexibilidad — que es lo que se evalúa al final.
 
 ---
 
 ## ⚠️ Seguridad
 
-> [!danger]
+> [!danger] ⚠️ Seguridad
+>
 > - No exceder **5 V** en entradas lógicas de los IC (74LS/74HC).
 > - Manipula conexiones con la fuente apagada.
 > - El Zener 1N4733A protege las entradas — verificar su presencia antes de energizar.
@@ -201,38 +206,41 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ## 📄 Informe
 
-> Usa [[FORMATO INFORME DE PRÁCTICA.pdf]] y [[Formato Pre-prácticas.pdf]] para entregar. Simulaciones en Proteus.
+> [!tip] 📄 Informe
+>
+> Usa [[../Fundamentos del Laboratorio/FORMATO INFORME DE PRÁCTICA.pdf|FORMATO INFORME DE PRÁCTICA.pdf]] y [[../Fundamentos del Laboratorio/Formato Pre-prácticas.pdf|Formato Pre-prácticas.pdf]] para entregar. Simulaciones en Proteus.
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Básico
+>
 > - [ ] Identifico los integrados 74LS04, 74LS08 y 74HC32 y verifico sus pines VCC y GND en el datasheet.
 > - [ ] Acondiciono una señal analógica a 0–5 V usando Zener 1N4733A para proteger las entradas lógicas.
 > - [ ] Implemento la función lógica $F = A' + (B \cdot C)$ con compuertas NOT, AND y OR.
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Verifico la tabla de verdad midiendo voltajes en las salidas de cada compuerta.
 > - [ ] Uso el mapa de Karnaugh para simplificar una función booleana y la comparo con la implementación física.
 > - [ ] Programo el Arduino para leer un sensor analógico con `analogRead()` y mapear el valor a un rango útil.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Controlo 3 LEDs (rojo, amarillo, verde) con `digitalWrite()` según rangos del sensor.
 > - [ ] Uso `Serial.println()` para enviar datos al Monitor Serial y graficar el comportamiento del sensor.
 > - [ ] Comparo ventajas y desventajas de controlar con compuertas lógicas vs Arduino en una aplicación real.
 >
 
 > [!quote] 🔗 Conexiones
+>
 > - Teoría: [[01 - Introducción a la Electrónica Digital]], [[02 - Minimización de Funciones Lógicas]] y [[07 - Lógica fija y tablas de verdad]]
 > - Previa: [[Práctica 5 — Filtros Activos]]
 > - Equipos: [[Equipos del Laboratorio - FESD]]
 
 ---
 
----
-
 ## 📎 Guía oficial (sitio web)
 
-![[Practica__6_FESD.pdf]]
+[[../Fundamentos del Laboratorio/Practica__6_FESD.pdf|Practica__6_FESD.pdf]]
 **Tags:** #practica #laboratorio #EYAG1037 #FESD #ESPOL #unidad4 #logica #Arduino #compuertas

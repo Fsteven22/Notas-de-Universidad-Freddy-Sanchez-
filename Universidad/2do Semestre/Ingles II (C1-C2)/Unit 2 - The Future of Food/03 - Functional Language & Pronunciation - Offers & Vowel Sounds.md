@@ -14,7 +14,7 @@ dg-publish: true
 > - **Real-World Strategy:** cómo confirmar que atendiste una oferta de forma natural.
 > - **Pronunciation:** los tres sonidos vocálicos más problemáticos — /aɪ/, /iː/ y /eɪ/.
 >
-> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_-_Offers_&_Vowel_Sounds_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Functional_Language_&_Pronunciation_-_Offers_&_Vowel_Sounds_01.svg]]
 >
 > | Bloque | ¿Para qué sirve? | Contexto |
 > |---|---|---|

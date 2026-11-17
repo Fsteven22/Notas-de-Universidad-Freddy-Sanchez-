@@ -24,7 +24,7 @@ dg-publish: true
 > - **Transmitir** → Enviar las cajas por correo
 > - **Deserializar** → Recibir las cajas, rearmar el mueble
 > 
-> ![[Diagramas/03_-_Serialización_de_objetos_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Serialización_de_objetos_01.svg]]
 
 ---
 
@@ -127,7 +127,7 @@ dg-publish: true
 > 
 > **Proceso:**
 > 
-> ![[Diagramas/03_-_Serialización_de_objetos_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Serialización_de_objetos_02.svg]]
 > 
 > **Código básico:**
 > 
@@ -207,7 +207,7 @@ dg-publish: true
 > 
 > **Proceso:**
 > 
-> ![[Diagramas/03_-_Serialización_de_objetos_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Serialización_de_objetos_03.svg]]
 > 
 > **Código básico:**
 > 
@@ -447,7 +447,7 @@ dg-publish: true
 > |**Velocidad**|✅ Rápida|Media|Lenta|Depende|
 > |**Mejor para**|Objetos Java complejos|APIs, configs|Documentos|Grandes volúmenes|
 > 
-> ![[Diagramas/03_-_Serialización_de_objetos_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Serialización_de_objetos_04.svg]]
 
 ---
 
@@ -499,7 +499,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[Diagramas/03_-_Serialización_de_objetos_05.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Serialización_de_objetos_05.svg]]
 
 ---
 

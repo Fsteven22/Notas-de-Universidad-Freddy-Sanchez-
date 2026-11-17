@@ -13,7 +13,7 @@ dg-publish: true
 > - **Responding to an apology:** estrategias para aceptar una disculpa y quitarle peso al error.
 > - **Pronunciation:** el sonido /s/ inicial en inglés y por qué es problemático para hispanohablantes.
 > 
-> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_-_Apologies_&_S-Sounds_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Functional_Language_&_Pronunciation_-_Apologies_&_S-Sounds_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Contexto|
 > |---|---|---|

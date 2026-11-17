@@ -1712,7 +1712,7 @@ dg-publish: true
 
 ## 📊 Diagrama Conceptual
 
-![[Diagramas/01_-_Dimensión_y_descripción_del_conjunto_solución_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Dimensión_y_descripción_del_conjunto_solución_01.svg]]
 
 ## 🔗 Relación con Otros Conceptos
 
@@ -3539,7 +3539,7 @@ dg-publish: true
 
 ## 📊 Diagrama Conceptual
 
-![[Diagramas/01_-_Dimensión_y_descripción_del_conjunto_solución_02.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Dimensión_y_descripción_del_conjunto_solución_02.svg]]
 
 ## 🔗 Relación con Otros Conceptos
 
@@ -5695,7 +5695,7 @@ dg-publish: true
 
 > [!note] 🗺️ Flujo de Clasificación Visual
 > 
-> ![[Diagramas/01_-_Dimensión_y_descripción_del_conjunto_solución_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Dimensión_y_descripción_del_conjunto_solución_03.svg]]
 > 
 > ```
 > Leyenda del diagrama:

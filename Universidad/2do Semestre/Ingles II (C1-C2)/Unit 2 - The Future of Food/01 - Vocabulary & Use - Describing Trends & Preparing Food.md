@@ -13,7 +13,7 @@ dg-publish: true
 > - **Describing trends:** expresiones para hablar de lo que está de moda, lo que ya pasó de moda y lo que está en auge.
 > - **Preparing food:** verbos esenciales para describir técnicas y pasos de cocina.
 >
-> ![[Diagramas/01_-_Vocabulary_&_Use_-_Describing_Trends_&_Preparing_Food_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Vocabulary_&_Use_-_Describing_Trends_&_Preparing_Food_01.svg]]
 >
 > | Bloque | ¿Para qué sirve? | Sección del libro |
 > |---|---|---|

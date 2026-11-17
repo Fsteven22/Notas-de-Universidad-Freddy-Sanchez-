@@ -639,7 +639,7 @@ dg-publish: true
 
 ## 🎨 Diagrama del Proceso de Gauss
 
-![[Diagramas/01_-_Algoritmo_de_Gauss_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Algoritmo_de_Gauss_01.svg]]
 
 ## 📝 Algoritmo Formal (Pseudocódigo)
 

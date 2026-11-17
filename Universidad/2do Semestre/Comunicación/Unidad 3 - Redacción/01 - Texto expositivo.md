@@ -25,7 +25,7 @@ tags: [IDIG2012, unidad3, texto-expositivo, redaccion]
 > | **Evaluación** | Baja en Evaluación 3 y 4 (S4) | Puntos seguros gramaticales y APA |
 > | **Profesionalismo** | Correo confuso al jefe | Correo ejecutivo preciso |
 
-![[Diagramas/01_-_Texto_expositivo_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Texto_expositivo_01.svg]]
 
 > [!success] 🧭 Alcance de Esta Nota
 >
@@ -55,7 +55,7 @@ tags: [IDIG2012, unidad3, texto-expositivo, redaccion]
 > | **Estructura** | Introducción, desarrollo y cierre | Se entiende el orden sin releer |
 > | **Neutralidad** | Sin carga emocional ni juicios | Quien lo lea sin saber del tema lo entiende igual |
 
-![[Diagramas/01_-_Texto_expositivo_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Texto_expositivo_02.svg]]
 
 > [!tip] 💡 Dónde lo vas a usar
 >
@@ -76,7 +76,7 @@ tags: [IDIG2012, unidad3, texto-expositivo, redaccion]
 > | **Desarrollo** | 3 ideas, cada una con evidencia citada | 60 % del texto | Párrafos con 4 ideas mezcladas |
 > | **Cierre** | Síntesis + recomendación | 3-4 líneas | Terminar con opinión suelta |
 
-![[Diagramas/01_-_Texto_expositivo_03.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Texto_expositivo_03.svg]]
 
 > [!example] 🧪 Estructura lista para el Taller 2
 >
@@ -99,7 +99,7 @@ tags: [IDIG2012, unidad3, texto-expositivo, redaccion]
 >
 > La diferencia no es el tono: es la **intención**. Si el lector debe decidir algo, el texto es ejecutivo (ver [[02 - Informes técnicos y ejecutivos, síntesis y paráfrasis]]). Si debe seguir pasos, es instructivo.
 
-![[Diagramas/01_-_Texto_expositivo_04.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Texto_expositivo_04.svg]]
 
 ---
 
@@ -225,7 +225,7 @@ tags: [IDIG2012, unidad3, texto-expositivo, redaccion]
 
 ## 📊 Resumen Visual
 
-![[Diagramas/01_-_Texto_expositivo_05.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Texto_expositivo_05.svg]]
 
 > [!success] 🔍 Comparación Final
 >

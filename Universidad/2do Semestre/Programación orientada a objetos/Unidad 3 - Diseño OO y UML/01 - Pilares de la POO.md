@@ -19,7 +19,7 @@ dg-publish: true
 > |**Polimorfismo**|Código rígido que no se adapta a nuevos tipos|✅ Flexibilidad y extensibilidad|
 > |**Abstracción**|Complejidad expuesta innecesariamente|✅ Interfaces simples y claras|
 
-![[Diagramas/01_-_Pilares_de_la_POO_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_01.svg]]
 
 ---
 
@@ -133,7 +133,7 @@ dg-publish: true
 > |**extends**|Palabra clave para heredar|
 > |**super**|Referencia a la superclase|
 
-![[Diagramas/01_-_Pilares_de_la_POO_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_02.svg]]
 
 ### 🛠️ Implementación
 
@@ -247,7 +247,7 @@ dg-publish: true
 > 
 > **Analogía:** Un control remoto (interfaz) funciona con diferentes dispositivos (TV, reproductor, aire) - mismo botón "encender", diferente comportamiento.
 
-![[Diagramas/01_-_Pilares_de_la_POO_03.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_03.svg]]
 
 ### 🛠️ Implementación
 
@@ -364,7 +364,7 @@ dg-publish: true
 > |**Clases Abstractas**|Herencia con métodos parcialmente implementados|Medio|
 > |**Interfaces**|Contratos puros - solo definiciones|Alto|
 
-![[Diagramas/01_-_Pilares_de_la_POO_04.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_04.svg]]
 
 ### 🛠️ Clases Abstractas
 
@@ -527,7 +527,7 @@ dg-publish: true
 
 ## 🔗 Relación entre los Pilares
 
-![[Diagramas/01_-_Pilares_de_la_POO_05.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_05.svg]]
 
 > [!example] 🚗 Ejemplo Integrador
 > 
@@ -585,7 +585,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[Diagramas/01_-_Pilares_de_la_POO_06.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_06.svg]]
 
 > [!success] ✅ Checklist de Aplicación
 > 

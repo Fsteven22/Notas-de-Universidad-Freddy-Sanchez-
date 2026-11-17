@@ -14,7 +14,7 @@ dg-publish: true
 > 
 > Internet (con ARPANET como antecesora) existió casi **25 años antes** que la Web. La red y sus protocolos se construyeron primero; la Web fue una aplicación construida **encima** de esa red ya existente, para hacerla usable por personas comunes y no solo especialistas.
 > 
-> ![[Diagramas/01_-_Historia_de_Internet_y_Cómo_Funciona_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Historia_de_Internet_y_Cómo_Funciona_01.svg]]
 
 ---
 
@@ -24,7 +24,7 @@ dg-publish: true
 > 
 > La Internet moderna nació como un proyecto militar/académico en plena Guerra Fría, y evolucionó por décadas antes de convertirse en la Web que usamos hoy.
 > 
-> ![[Diagramas/01_-_Historia_de_Internet_y_Cómo_Funciona_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Historia_de_Internet_y_Cómo_Funciona_02.svg]]
 >
 
 > [!example]- 🟢 Detalle de cada hito
@@ -53,7 +53,7 @@ dg-publish: true
 > 
 > Cuando escribes una URL o haces clic en un enlace, ocurre un intercambio de solicitud/respuesta entre tu computadora (**cliente**) y la computadora que aloja el sitio (**servidor**):
 > 
-> ![[Diagramas/01_-_Historia_de_Internet_y_Cómo_Funciona_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Historia_de_Internet_y_Cómo_Funciona_03.svg]]
 > 
 > El **navegador** es el software que arma la solicitud, la envía al servidor correcto, y cuando llega la respuesta (texto, imágenes, etc.) la interpreta y la muestra en pantalla.
 
@@ -74,7 +74,7 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — ¿Es un problema de Internet o de la Web?
 
-![[Diagramas/01_-_Historia_de_Internet_y_Cómo_Funciona_04.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Historia_de_Internet_y_Cómo_Funciona_04.svg]]
 
 ---
 

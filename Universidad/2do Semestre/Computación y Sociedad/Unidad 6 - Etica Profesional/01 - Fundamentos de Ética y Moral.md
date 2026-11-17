@@ -10,7 +10,7 @@ dg-publish: true
 > 
 > En el lenguaje cotidiano usamos "ética" y "moral" casi como sinónimos. Pero en el contexto profesional — y especialmente en computación, donde las decisiones técnicas tienen consecuencias sociales reales — vale la pena distinguirlos con precisión, porque **no responden a la misma pregunta**.
 > 
-> ![[Diagramas/01_-_Fundamentos_de_Ética_y_Moral_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Fundamentos_de_Ética_y_Moral_01.svg]]
 
 ---
 
@@ -85,7 +85,7 @@ dg-publish: true
 
 ## 🧭 Flujograma de Decisión — ¿Es esto un dilema ético?
 
-![[Diagramas/01_-_Fundamentos_de_Ética_y_Moral_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Fundamentos_de_Ética_y_Moral_02.svg]]
 
 ---
 

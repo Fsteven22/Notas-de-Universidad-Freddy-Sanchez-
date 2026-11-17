@@ -25,7 +25,7 @@ dg-publish: true
 > |**Flexibilidad**|Permite cambiar implementaciones sin afectar el código cliente|Mantenimiento sencillo|
 > |**Diseño robusto**|Fuerza una estructura clara|Menos errores|
 
-![[Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_01.svg]]
 
 ---
 
@@ -37,7 +37,7 @@ dg-publish: true
 > 
 > Java ofrece **dos formas** de implementar abstracción:
 > 
-> ![[Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_02.svg]]
 > 
 > **Tabla comparativa rápida:**
 > 
@@ -447,7 +447,7 @@ dg-publish: true
 > 
 > **Usa CLASE ABSTRACTA cuando:**
 > 
-> ![[Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_03.svg]]
 > 
 > - Tienes código común que varias clases relacionadas pueden heredar
 > - Necesitas mantener estado (atributos no constantes)
@@ -459,7 +459,7 @@ dg-publish: true
 > 
 > **Usa INTERFAZ cuando:**
 > 
-> ![[Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_04.svg]]
 > 
 > - Quieres que clases no relacionadas compartan capacidades
 > - Necesitas herencia múltiple
@@ -698,7 +698,7 @@ dg-publish: true
 > 
 > **4. No abuses de la herencia**
 > 
-> ![[Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_05.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_05.svg]]
 > 
 > **5. Documenta tus abstracciones**
 > 
@@ -719,7 +719,7 @@ dg-publish: true
 
 ### 🗺️ Mapa Mental Completo
 
-![[Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_06.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_06.svg]]
 
 ### 📋 Tabla de Decisión Rápida
 

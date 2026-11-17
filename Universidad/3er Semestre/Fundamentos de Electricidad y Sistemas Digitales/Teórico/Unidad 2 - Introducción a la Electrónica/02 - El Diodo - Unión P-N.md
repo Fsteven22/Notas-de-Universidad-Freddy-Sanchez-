@@ -18,7 +18,13 @@ dg-publish: true
 > 
 > La corriente fluye de **Ánodo → Cátodo** en polarización directa (sentido convencional = flujo de huecos).
 
-![[../../Anexos/ChatGPT Image 14 jul 2026, 21_25_28.png]]
+> [!note] 🖼️ Introducción
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 14 jul 2026, 21_25_28.png]]
+> 
+> **Se lee así:** el póster presenta el diodo de un vistazo: qué es (unión P-N que deja pasar corriente en un solo sentido), el símbolo con ánodo y cátodo marcados, la comparación Si ($V_F \approx 0.7\text{ V}$, más usado y robusto) vs Ge ($V_F \approx 0.3\text{ V}$, menor umbral pero más sensible y con más corriente de fuga), y los tipos según aplicación (rectificador, LED, Zener, Schottky, fotodiodo, varactor).
+> 
+> **Por qué importa:** concentra en una lámina el umbral, la polaridad y los tipos, y evita el error más común de los ejercicios — confundir ánodo con cátodo antes de calcular.
 
 ---
 
@@ -79,7 +85,7 @@ dg-publish: true
 > 
 > La curva muestra tres zonas claramente diferenciadas:
 > 
-> ![[../../Diagramas/02_-_El_Diodo_-_Unión_P-N_01.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/02_-_El_Diodo_-_Unión_P-N_01.svg]]
 > 
 > - **Zona directa:** para $V_D > V_{umbral}$, la corriente crece exponencialmente.
 > - **Zona inversa:** corriente prácticamente nula ($\approx -I_S$).
@@ -97,7 +103,13 @@ dg-publish: true
 > 
 > > 📌 **Regla práctica:** diodo ideal en directa = interruptor cerrado; en inversa = interruptor abierto.
 
-![[../../Anexos/ChatGPT Image 20 jun 2026, 21_45_03.png]]
+> [!note] 🖼️ Curva Característica I-V
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 21_45_03.png]]
+> 
+> **Se lee así:** la infografía recorre el diodo entero: formación de la unión y región de vaciamiento por difusión y recombinación, equilibrio sin polarización con la barrera interna (≈ 0.7 V Si, ≈ 0.3 V Ge), los efectos de polarización directa e inversa sobre esa barrera, y la curva I-V con sus tres zonas (directa, inversa y ruptura) y los parámetros $V_{umbral}$, $I_S$ y $V_{BR}$.
+> 
+> **Por qué importa:** une en una sola figura formación, polarización y curva — la secuencia completa que el análisis de cualquier circuito con diodos exige dominar antes de elegir un modelo de aproximación.
 
 ---
 
@@ -144,21 +156,23 @@ dg-publish: true
 
 ---
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Basico
+>
 > - [ ] Describo la union P-N, la region de vaciamiento y Vbarrera (0.7 V Si, 0.3 V Ge).
 > - [ ] Distingo polarizacion directa (vaciamiento se reduce, conduce) vs inversa (se ensancha, Is).
 > - [ ] Identifico anodo (P) y catodo (N) y el sentido convencional de corriente.
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Interpreto la curva I-V en sus 3 zonas (directa exponencial, inversa ~-Is, ruptura) y ubico Zener.
 > - [ ] Aplico modelo ideal (0 V) y 2a aproximacion (0.7 V) para calcular IL en un circuito con diodo.
 > - [ ] Diferencio diodo rectificador, Zener, LED y varicap por aplicacion.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Resuelvo un circuito con 2-3 resistencias y diodo determinando si conduce antes de calcular.
 > - [ ] Justifico por que Is(Si) << Is(Ge) y que implica en bloqueo inverso.
 > - [ ] Predigo el comportamiento en ruptura y por que solo el Zener esta disenado para operar ahi.
@@ -167,9 +181,17 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/02_-_El_Diodo_-_Unión_P-N_02.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/02_-_El_Diodo_-_Unión_P-N_02.svg]]
+> 
+> **Se lee así:** el mapa mental resume la nota en una raíz «Diodo unión P-N»: región de vaciamiento, conducción en directa ($I_D$) y bloqueo en inversa ($I_S$), umbrales (0.7 V Si, 0.3 V Ge), ruptura (breakdown), los modelos ideal y de segunda aproximación, y los tipos vistos (Zener, LED, varicap).
+> 
+> **Por qué importa:** es el índice visual para repasar el diodo de un vistazo; si no puedes explicar en cada rama qué pasa con la corriente, ahí está el hueco antes del examen.
 
 ---
+
+## 📚 Referencias
 
 > [!quote] 📖 Fuentes consultadas
 > 
@@ -178,18 +200,27 @@ dg-publish: true
 > [2] R. L. Boylestad y L. Nashelsky, _Electrónica: Teoría de Circuitos y Dispositivos Electrónicos_, 10th ed. México: Pearson, 2009, pp. 1–80.
 >
 
-> [!quote] 🔗 Conexiones
-> 
-> - [[01 - Semiconductores y Bandas de Energía]] — fundamento de la unión P-N.
-> - [[03 - Transistor BJT]] — dos uniones P-N combinadas forman el transistor.
->
->
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🔗 Conexiones
+>
+> - [[01 - Semiconductores y Bandas de Energía]] — fundamento de la unión P-N.
+> - [[03 - Transistor BJT]] — dos uniones P-N combinadas forman el transistor.
 > - Previo: [[01 - Semiconductores y Bandas de Energía]] — base fisica
 > - Siguiente: [[03 - Transistor BJT]] — dos uniones P-N
 > - Adelante: [[06 - Ruido Electrónico e Interferencia]] y [[04 - Circuitos de Filtrado y Fuentes Lineales]]
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[03 - Transistor BJT]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #diodo #unionPN #regionVaciamiento #zener #LED #varicap #EYAG1037 #FESD #ESPOL #unidad2

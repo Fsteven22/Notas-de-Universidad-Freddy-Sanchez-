@@ -10,7 +10,7 @@ dg-publish: true
 > 
 > Los medios sociales pueden verse desde dos perspectivas contrapuestas sobre su efecto en la sociedad:
 > 
-> ![[Diagramas/04_-_Impacto_de_los_Medios_Sociales_en_el_Individualismo,_Colectivismo_y_Cultura_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Impacto_de_los_Medios_Sociales_en_el_Individualismo,_Colectivismo_y_Cultura_01.svg]]
 
 ---
 
@@ -38,7 +38,7 @@ dg-publish: true
 > 
 > Su investigación original analizó empleados de IBM en más de 50 países, y con el tiempo expandió el modelo a 6 dimensiones:
 > 
-> ![[Diagramas/04_-_Impacto_de_los_Medios_Sociales_en_el_Individualismo,_Colectivismo_y_Cultura_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Impacto_de_los_Medios_Sociales_en_el_Individualismo,_Colectivismo_y_Cultura_02.svg]]
 > 
 > |Dimensión|Descripción|Extremo bajo|Extremo alto|
 > |---|---|---|---|

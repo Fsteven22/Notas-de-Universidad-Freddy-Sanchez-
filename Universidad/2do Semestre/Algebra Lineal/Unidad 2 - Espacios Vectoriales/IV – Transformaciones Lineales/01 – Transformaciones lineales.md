@@ -351,7 +351,7 @@ dg-publish: true
 > 
 > La dimensión del dominio se "conserva": parte se "pierde" en el núcleo y parte se "proyecta" en la imagen.
 > 
-> ![[Diagramas/01_–_Transformaciones_lineales_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Transformaciones_lineales_01.svg]]
 > 
 > **DEMOSTRACIÓN (esquema):**
 > 

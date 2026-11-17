@@ -27,7 +27,7 @@ dg-publish: true
 > |**Código más legible**|Clases auxiliares cerca de donde se usan|Comparadores específicos|
 > |**Reducir namespace**|Evitar contaminación del espacio de nombres|Clases helper internas|
 
-![[Diagramas/03_-_Clases_internas_y_anónimas_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_01.svg]]
 
 ---
 
@@ -37,7 +37,7 @@ dg-publish: true
 
 > [!note] 🌳 Organización de Clases Internas
 > 
-> ![[Diagramas/03_-_Clases_internas_y_anónimas_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_02.svg]]
 > 
 > **Comparación de características:**
 > 
@@ -54,7 +54,7 @@ dg-publish: true
 > 
 > **Ciclo de vida de clases internas:**
 > 
-> ![[Diagramas/03_-_Clases_internas_y_anónimas_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_03.svg]]
 > 
 > **Niveles de acceso:**
 > 
@@ -103,7 +103,7 @@ dg-publish: true
 > 
 > **Características clave:**
 > 
-> ![[Diagramas/03_-_Clases_internas_y_anónimas_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_04.svg]]
 
 ### 🛠️ Creación e Instanciación
 
@@ -165,7 +165,7 @@ dg-publish: true
 > 
 > **Flujo de creación:**
 > 
-> ![[Diagramas/03_-_Clases_internas_y_anónimas_05.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_05.svg]]
 
 ### 💼 Casos de Uso Reales
 
@@ -332,7 +332,7 @@ dg-publish: true
 > 
 > **Restricciones importantes:**
 > 
-> ![[Diagramas/03_-_Clases_internas_y_anónimas_06.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_06.svg]]
 > 
 > **Effectively final:** Una variable que no se declara como `final` pero nunca se modifica después de su inicialización. Java 8+ permite usarlas en clases internas locales.
 
@@ -455,7 +455,7 @@ dg-publish: true
 > 
 > **Estructura visual:**
 > 
-> ![[Diagramas/03_-_Clases_internas_y_anónimas_07.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_07.svg]]
 > 
 > **Características:**
 > 
@@ -660,7 +660,7 @@ dg-publish: true
 > 
 > **Limitaciones:**
 > 
-> ![[Diagramas/03_-_Clases_internas_y_anónimas_08.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_08.svg]]
 > 
 > 
 > 
@@ -730,7 +730,7 @@ dg-publish: true
 > 
 > **Diferencias clave con clases internas normales:**
 > 
-> ![[Diagramas/03_-_Clases_internas_y_anónimas_09.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_09.svg]]
 > 
 > **Tabla comparativa:**
 > 
@@ -789,7 +789,7 @@ dg-publish: true
 > 
 > **Comparación visual de instanciación:**
 > 
-> ![[Diagramas/03_-_Clases_internas_y_anónimas_10.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_10.svg]]
 
 ### 💼 Casos de Uso
 
@@ -999,7 +999,7 @@ dg-publish: true
 
 > [!tip] 🤔 ¿Qué Tipo Usar?
 > 
-> ![[Diagramas/03_-_Clases_internas_y_anónimas_11.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_11.svg]]
 > 
 > **Escenarios específicos:**
 > 
@@ -1449,7 +1449,7 @@ dg-publish: true
 ### 🗺️ Mapa Mental Completo
 
 
-![[Diagramas/03_-_Clases_internas_y_anónimas_12.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_12.svg]]
 
 ### 📋 Tabla de Decisión Rápida
 

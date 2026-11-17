@@ -26,7 +26,7 @@ dg-publish: true
 > |**Mantenibilidad**|Cambios internos no afectan código externo|Cambiar implementación sin romper el código|
 > |**Abstracción**|Oculta complejidad innecesaria|Usar `depositar()` en vez de `saldo += monto`|
 
-![[Diagramas/04_-_Encapsulamiento_y_visibilidad_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Encapsulamiento_y_visibilidad_01.svg]]
 
 ---
 
@@ -77,7 +77,7 @@ dg-publish: true
 
 > [!success] 📋 Guía de Decisión
 > 
-> ![[Diagramas/04_-_Encapsulamiento_y_visibilidad_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Encapsulamiento_y_visibilidad_02.svg]]
 > 
 > **Reglas generales:**
 > 
@@ -766,7 +766,7 @@ Total de empleados: " + Empleado.getTotalEmpleados());
 ---
 ## 📊 Resumen Visual
 
-![[Diagramas/04_-_Encapsulamiento_y_visibilidad_03.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Encapsulamiento_y_visibilidad_03.svg]]
 >
 
 > [!example] 🎯 Práctica 2: Clase Temperatura

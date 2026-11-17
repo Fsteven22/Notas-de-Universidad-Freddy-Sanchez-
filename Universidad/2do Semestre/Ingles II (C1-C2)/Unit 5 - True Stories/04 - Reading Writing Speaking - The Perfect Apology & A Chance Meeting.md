@@ -12,7 +12,7 @@ dg-publish: true
 > - **The Perfect Apology:** análisis de una disculpa corporativa real (JetBlue) para identificar qué hace que una disculpa sea efectiva, y redacción de tu propia disculpa formal (sección 5.4).
 > - **A Chance Meeting:** una tarea de speaking en grupo para construir y narrar colaborativamente una historia de un encuentro casual (sección 5.5, Time to Speak).
 > 
-> ![[Diagramas/04_-_Reading_Writing_Speaking_-_The_Perfect_Apology_&_A_Chance_Meeting_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Reading_Writing_Speaking_-_The_Perfect_Apology_&_A_Chance_Meeting_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -155,7 +155,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión — ¿Sigue mi disculpa las 3 reglas?
 
-![[Diagramas/04_-_Reading_Writing_Speaking_-_The_Perfect_Apology_&_A_Chance_Meeting_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Reading_Writing_Speaking_-_The_Perfect_Apology_&_A_Chance_Meeting_02.svg]]
 
 ---
 

@@ -26,7 +26,7 @@ dg-publish: true
 > |**Interpretabilidad**|Componentes claramente separadas|Análisis de datos, PCA|
 > |**Eficiencia**|Optimización de cálculos|Gráficos por computadora, compresión|
 
-![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_01.svg]]
 
 ---
 
@@ -73,7 +73,7 @@ dg-publish: true
 > 
 > **Propiedades fundamentales:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_02.svg]]
 
 ### ⊥ Definición de Ortogonalidad
 
@@ -85,7 +85,7 @@ dg-publish: true
 > 
 > **Interpretación geométrica:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_03.svg]]
 > 
 > **Casos especiales importantes:**
 > 
@@ -120,7 +120,7 @@ dg-publish: true
 > 
 > $$||u + v||^2 = ||u||^2 + ||v||^2$$
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_04.svg]]
 
 ### 📐 Relación con Ángulos
 
@@ -159,7 +159,7 @@ dg-publish: true
 > 
 > **Diagrama de decisión:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_05.svg]]
 
 ---
 
@@ -235,7 +235,7 @@ dg-publish: true
 > 
 > **Ventajas sobre bases arbitrarias:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_06.svg]]
 > 
 > **Fórmula de coordenadas:**
 > 
@@ -302,7 +302,7 @@ dg-publish: true
 > 
 > **Relación entre conceptos:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_07.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_07.svg]]
 > 
 > **Ejemplo clásico - Base estándar de ℝⁿ:**
 > 
@@ -354,7 +354,7 @@ dg-publish: true
 > 
 > **Algoritmo paso a paso:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_08.svg]]
 > 
 > **Ejemplos numéricos:**
 > 
@@ -458,7 +458,7 @@ dg-publish: true
 > 
 > **Ventajas en aplicaciones:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_09.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_09.svg]]
 > 
 > **Algoritmo paso a paso:**
 > 
@@ -613,7 +613,7 @@ dg-publish: true
 > 
 > **Cuándo usar alternativas:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_10.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_10.svg]]
 
 ---
 
@@ -645,7 +645,7 @@ dg-publish: true
 > 
 > **Visualización:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_11.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_11.svg]]
 > 
 > **Ejemplo numérico:**
 > 
@@ -738,7 +738,7 @@ dg-publish: true
 > 
 > **Proceso:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_12.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_12.svg]]
 > 
 > **Ejemplo con DCT (Discrete Cosine Transform):**
 > 
@@ -768,7 +768,7 @@ dg-publish: true
 
 ### 🗺️ Mapa Conceptual Completo
 
-![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_13.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_13.svg]]
 
 ### 📋 Tabla Comparativa de Conceptos
 
@@ -785,7 +785,7 @@ dg-publish: true
 
 ### 🎯 Flujo de Trabajo Típico
 
-![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_14.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_14.svg]]
 
 ---
 
@@ -909,7 +909,7 @@ dg-publish: true
 > 
 > **Has dominado:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_15.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_15.svg]]
 > 
 > **Próximos temas naturales:**
 > 
@@ -923,7 +923,7 @@ dg-publish: true
 > 
 > **Roadmap de evolución:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_16.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_16.svg]]
 > 
 > ```
 > 
@@ -960,7 +960,7 @@ dg-publish: true
 > |**Descomposición**|Representar vectores como combinaciones|Análisis de Fourier, compresión|
 > |**Geometría**|Ángulos y distancias simples|Gráficos por computadora, física|
 
-![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_17.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_17.svg]]
 
 ---
 
@@ -1014,7 +1014,7 @@ dg-publish: true
 > 
 > **Visualización en ℝ²:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_18.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_18.svg]]
 
 ### 🧮 Propiedades del Producto Interno
 
@@ -1054,7 +1054,7 @@ dg-publish: true
 > 
 > **Consecuencias importantes:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_19.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_19.svg]]
 
 ### 📐 Norma y Normalización
 
@@ -1112,7 +1112,7 @@ dg-publish: true
 > 
 > **Visualización de normalización:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_20.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_20.svg]]
 
 ---
 
@@ -1194,7 +1194,7 @@ dg-publish: true
 > 
 > **Visualización:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_21.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_21.svg]]
 
 ### 🎨 Representación de Vectores
 
@@ -1261,7 +1261,7 @@ dg-publish: true
 > 
 > **Flujo de cálculo:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_22.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_22.svg]]
 
 ---
 
@@ -1332,7 +1332,7 @@ dg-publish: true
 > 
 > **Proceso de ortonormalización:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_23.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_23.svg]]
 
 ### 🧮 Representación en Bases Ortonormales
 
@@ -1400,7 +1400,7 @@ dg-publish: true
 > 
 > **Visualización del proceso:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_24.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_24.svg]]
 > Entrada: Base {v₁, v₂, ..., vₙ} (linealmente independiente)
 > Salida: Base ortonormal {u₁, u₂, ..., uₙ}
 > 
@@ -1504,7 +1504,7 @@ dg-publish: true
 > 
 > **Diagrama del proceso:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_25.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_25.svg]]
 
 ### ⚠️ Consideraciones Numéricas
 
@@ -1642,7 +1642,7 @@ dg-publish: true
 > 
 > donde **\hat{y}** ∈ W y **z** ∈ W^⊥ (complemento ortogonal de W)
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_26.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_26.svg]]
 
 ### 📈 Regresión Lineal y Mínimos Cuadrados
 
@@ -1819,7 +1819,7 @@ dg-publish: true
 > - ‖Q**x**‖ = ‖**x**‖ para todo **x**
 > - ⟨Q**x**, Q**y**⟩ = ⟨**x**, **y**⟩ para todos **x**, **y**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_27.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_27.svg]]
 
 ### 🔄 Descomposición QR
 
@@ -1957,7 +1957,7 @@ dg-publish: true
 > 
 > **Visualización:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_28.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_28.svg]]
 
 ### 🔄 Teorema de Descomposición
 
@@ -2025,7 +2025,7 @@ dg-publish: true
 
 ### Mapa Conceptual Global
 
-![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_29.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_29.svg]]
 
 ### Tabla Comparativa Final
 
@@ -2056,7 +2056,7 @@ dg-publish: true
 
 ### Diagrama de Flujo de Decisiones
 
-![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_30.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_30.svg]]
 
 ---
 
@@ -2232,7 +2232,7 @@ dg-publish: true
 > 
 > **Roadmap:**
 > 
-> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_31.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_31.svg]]
 > 
 > **Aplicaciones futuras:**
 > 

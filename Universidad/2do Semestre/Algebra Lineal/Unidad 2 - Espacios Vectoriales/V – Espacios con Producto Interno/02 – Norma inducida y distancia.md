@@ -19,7 +19,7 @@ dg-publish: true
 > - La **norma** es usar esa regla para medir la longitud de una flecha
 > - La **distancia** es usar esa regla para medir cuán separados están dos puntos
 > 
-> ![[Diagramas/02_–_Norma_inducida_y_distancia_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_01.svg]]
 > 
 > **Jerarquía de estructuras:**
 > 
@@ -46,7 +46,7 @@ dg-publish: true
 > 
 > La norma $|\mathbf{v}|$ representa la **longitud** o **magnitud** del vector $\mathbf{v}$.
 > 
-> ![[Diagramas/02_–_Norma_inducida_y_distancia_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_02.svg]]
 > 
 > **Notación:**
 > 
@@ -68,7 +68,7 @@ dg-publish: true
 > 
 > **Verificación de axiomas:**
 > 
-> ![[Diagramas/02_–_Norma_inducida_y_distancia_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_03.svg]]
 
 ### 📊 Demostración de Propiedades
 
@@ -138,7 +138,7 @@ dg-publish: true
 > - En $\mathbb{R}^2$: Es la longitud de la hipotenusa (Teorema de Pitágoras)
 > - En $\mathbb{R}^3$: Es la diagonal del paralelepípedo
 > 
-> ![[Diagramas/02_–_Norma_inducida_y_distancia_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_04.svg]]
 > 
 > **Casos especiales:**
 > 
@@ -289,7 +289,7 @@ dg-publish: true
 > 
 > La distancia $d(\mathbf{u}, \mathbf{v})$ es la longitud del vector diferencia $\mathbf{u} - \mathbf{v}$.
 > 
-> ![[Diagramas/02_–_Norma_inducida_y_distancia_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_05.svg]]
 > 
 > **Expandiendo la definición:**
 > 
@@ -310,7 +310,7 @@ dg-publish: true
 > 
 > **Verificación de axiomas:**
 > 
-> ![[Diagramas/02_–_Norma_inducida_y_distancia_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_06.svg]]
 
 ### 📊 Demostración de Propiedades
 
@@ -547,7 +547,7 @@ dg-publish: true
 > 
 > ### En $\mathbb{R}^2$
 > 
-> ![[Diagramas/02_–_Norma_inducida_y_distancia_07.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_07.svg]]
 > 
 > ### Bolas y Esferas
 > 
@@ -646,7 +646,7 @@ dg-publish: true
 > 
 > ### Jerarquía de Estructuras
 > 
-> ![[Diagramas/02_–_Norma_inducida_y_distancia_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_08.svg]]
 > 
 > ### Próximo Tema
 > 
@@ -681,7 +681,7 @@ dg-publish: true
 > |**Compresión de datos**|Estimar tamaños de representaciones|Algoritmos de compresión|
 > |**Geometría computacional**|Validar construcciones geométricas|Gráficos por computadora|
 
-![[Diagramas/02_–_Norma_inducida_y_distancia_09.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_09.svg]]
 
 ---
 
@@ -728,7 +728,7 @@ dg-publish: true
 > |**ℝⁿ estándar**|\|\|u + v\|\|₂ ≤ \|
 > |**Números complejos**|\|z₁ + z₂\| ≤ \|z₁\| + \|z₂\||Complejos|Análisis complejo|
 
-![[Diagramas/02_–_Norma_inducida_y_distancia_10.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_10.svg]]
 
 ### 🔍 Interpretación Geométrica
 
@@ -742,7 +742,7 @@ dg-publish: true
 > - B = (3, 4)
 > - C = (6, 0)
 > 
-> ![[Diagramas/02_–_Norma_inducida_y_distancia_11.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_11.svg]]
 > 
 > **Cálculo de distancias:**
 > 
@@ -764,7 +764,7 @@ dg-publish: true
 > 
 > **Visualización de casos:**
 
-![[Diagramas/02_–_Norma_inducida_y_distancia_12.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_12.svg]]
 
 ---
 
@@ -845,7 +845,7 @@ dg-publish: true
 > Por lo tanto, la desigualdad se cumple. ∎
 > 
 > **Flujo lógico de la demostración:**
-> ![[Diagramas/02_–_Norma_inducida_y_distancia_13.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_13.svg]]
 > **Caso de igualdad:**
 > 
 > La igualdad ||u + v|| = ||u|| + ||v|| se alcanza cuando:
@@ -977,7 +977,7 @@ dg-publish: true
 > |**Inversa**|\| \|\|u\|
 > |**n-dimensional**|d(x,z) ≤ Σd(xᵢ,xᵢ₊₁)|Caminos en grafos|
 
-![[Diagramas/02_–_Norma_inducida_y_distancia_14.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_14.svg]]
 
 ### 🔄 Variantes Importantes
 
@@ -1032,7 +1032,7 @@ dg-publish: true
 > |**Supremo**|C[a,b]|\|\|f+g\|
 > |**Matricial**|Mₙₓₙ(ℝ)|\|\|A+B\|
 
-![[Diagramas/02_–_Norma_inducida_y_distancia_15.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_15.svg]]
 
 ---
 
@@ -1132,7 +1132,7 @@ dg-publish: true
 > 
 > **3. Jerarquía de fuerza:**
 
-![[Diagramas/02_–_Norma_inducida_y_distancia_16.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_16.svg]]
 
 ---
 
@@ -1540,7 +1540,7 @@ dg-publish: true
 > 
 > **Conexión con otras desigualdades:**
 > 
-> ![[Diagramas/02_–_Norma_inducida_y_distancia_17.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_17.svg]]
 > 
 ---
 
@@ -1550,7 +1550,7 @@ dg-publish: true
 > 
 > **Has dominado:**
 > 
-> ![[Diagramas/02_–_Norma_inducida_y_distancia_18.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_18.svg]]
 > 
 > **Progresión natural del aprendizaje:**
 > 
@@ -1564,7 +1564,7 @@ dg-publish: true
 > 
 > **Roadmap de evolución:**
 > 
-> ![[Diagramas/02_–_Norma_inducida_y_distancia_19.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_19.svg]]
 
 ---
 

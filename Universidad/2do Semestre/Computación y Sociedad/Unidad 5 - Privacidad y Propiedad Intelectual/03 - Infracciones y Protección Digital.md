@@ -10,7 +10,7 @@ dg-publish: true
 > 
 > Las dos notas anteriores definieron **qué** se protege y **con qué figura legal**. Esta nota cierra el bloque con la parte práctica: **cómo se infringe** la propiedad intelectual en el mundo digital, y **qué mecanismos existen** para hacer cumplir esa protección — desde la ingeniería inversa de un producto, hasta el registro de dominios falsos, pasando por la responsabilidad legal de las plataformas y el cifrado técnico del contenido.
 > 
-> ![[Diagramas/03_-_Infracciones_y_Protección_Digital_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Infracciones_y_Protección_Digital_01.svg]]
 
 ---
 
@@ -22,7 +22,7 @@ dg-publish: true
 > 
 > La **ingeniería inversa** invierte ese flujo: parte de un producto ya **construido** y trabaja hacia atrás — **construcción → diseño final → diseño básico → prediseño** — para entender cómo fue diseñado, sin haber tenido acceso a los planos o especificaciones originales.
 
-![[Diagramas/03_-_Infracciones_y_Protección_Digital_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Infracciones_y_Protección_Digital_02.svg]]
 
 > [!warning] ⚠️ Ingeniería inversa y propiedad intelectual — la tensión
 > 
@@ -115,7 +115,7 @@ dg-publish: true
 
 ## 🧭 Flujograma de Decisión — ¿Qué mecanismo aplica?
 
-![[Diagramas/03_-_Infracciones_y_Protección_Digital_03.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Infracciones_y_Protección_Digital_03.svg]]
 
 ---
 

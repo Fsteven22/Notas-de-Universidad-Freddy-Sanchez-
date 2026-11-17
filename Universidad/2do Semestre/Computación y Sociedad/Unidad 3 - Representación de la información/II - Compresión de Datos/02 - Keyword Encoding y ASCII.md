@@ -13,7 +13,7 @@ dg-publish: true
 > - **Keyword encoding** es la técnica de sustituir palabras o símbolos frecuentes por códigos más cortos — la base conceptual detrás de casi todo algoritmo de compresión de texto, incluyendo Huffman más adelante.
 > - Hoy en día, ASCII sigue siendo la base de Unicode (el estándar moderno que soporta miles de idiomas y emojis), ya que los primeros 128 caracteres de Unicode son idénticos a ASCII.
 > 
-> ![[Diagramas/02_-_Keyword_Encoding_y_ASCII_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Keyword_Encoding_y_ASCII_01.svg]]
 
 ---
 
@@ -94,7 +94,7 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — ¿Vale la pena aplicar Keyword Encoding?
 
-![[Diagramas/02_-_Keyword_Encoding_y_ASCII_02.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Keyword_Encoding_y_ASCII_02.svg]]
 
 ---
 

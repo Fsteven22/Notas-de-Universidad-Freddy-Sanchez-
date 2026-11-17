@@ -25,7 +25,7 @@ tags: [IDIG2012, unidad3, ia-etica, prompts, redaccion]
 > | **Riesgo** | Plagio / datos falsos | Declarado y verificado |
 > | **Evaluación** | Cero por deshonestidad | Participación 4 S6 a favor |
 
-![[Diagramas/03_-_IA_ética_y_prompts_para_redacción_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_IA_ética_y_prompts_para_redacción_01.svg]]
 
 ---
 
@@ -49,7 +49,7 @@ tags: [IDIG2012, unidad3, ia-etica, prompts, redaccion]
 >
 > **Regla práctica:** la IA te ahorra la *búsqueda*, no la *verificación*.
 
-![[Diagramas/03_-_IA_ética_y_prompts_para_redacción_03.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_IA_ética_y_prompts_para_redacción_03.svg]]
 
 ---
 
@@ -91,7 +91,7 @@ tags: [IDIG2012, unidad3, ia-etica, prompts, redaccion]
 > | **Ejemplo** | Calibra el estilo esperado | Sin ejemplo → inventa formato |
 > | **Verificación** | Evita alucinaciones | Sin pedir fuentes → citas falsas |
 
-![[Diagramas/03_-_IA_ética_y_prompts_para_redacción_04.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_IA_ética_y_prompts_para_redacción_04.svg]]
 
 > [!tip] 💡 Seis Consejos de la Cátedra para un Buen Prompt
 >
@@ -157,7 +157,7 @@ tags: [IDIG2012, unidad3, ia-etica, prompts, redaccion]
 >
 > Elaborado por **Mariuxi León Molina, Ph.D.** para la asignatura IDIG2012.
 
-![[Diagramas/03_-_IA_ética_y_prompts_para_redacción_05.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_IA_ética_y_prompts_para_redacción_05.svg]]
 
 > [!success] 🏆 Me comprometo a
 >
@@ -189,7 +189,7 @@ tags: [IDIG2012, unidad3, ia-etica, prompts, redaccion]
 > | **Idiomas** | Apoyo en la traducción | Leer una fuente en inglés que aún no dominas |
 > | **Análisis** | Procesar productos textuales grandes | Extraer patrones de un corpus de mensajes |
 
-![[Diagramas/03_-_IA_ética_y_prompts_para_redacción_07.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_IA_ética_y_prompts_para_redacción_07.svg]]
 
 ### 🎓 Qué Buscan los Profesores
 
@@ -206,7 +206,7 @@ tags: [IDIG2012, unidad3, ia-etica, prompts, redaccion]
 > | **Contrastar** | ¿Choca con mis datos o con el contexto? | Revisa que las cifras coincidan con tus fuentes |
 > | **Mejorar** | ¿Mi versión final está mejor que el borrador? | Reescribe con tus palabras y tu criterio |
 
-![[Diagramas/03_-_IA_ética_y_prompts_para_redacción_06.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_IA_ética_y_prompts_para_redacción_06.svg]]
 
 ### 🌱 Principio de Contribución Social
 
@@ -276,7 +276,7 @@ tags: [IDIG2012, unidad3, ia-etica, prompts, redaccion]
 
 ## 📊 Resumen Visual
 
-![[Diagramas/03_-_IA_ética_y_prompts_para_redacción_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_IA_ética_y_prompts_para_redacción_02.svg]]
 
 > [!success] 🔍 Comparación Final
 >

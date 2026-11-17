@@ -21,7 +21,7 @@ dg-publish: true
 > |**Documentación**|Representación visual del sistema|Más fácil de entender que código|
 > |**Análisis**|Identificar problemas de diseño|Corregir antes de implementar|
 
-![[Diagramas/02_-_UML_y_diagrama_de_clases_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_01.svg]]
 
 > [!note] 🎯 Enfoque de este Tema
 > 
@@ -37,7 +37,7 @@ dg-publish: true
 > 
 > Una clase se representa como un **rectángulo dividido en 3 secciones**:
 > 
-> ![[Diagramas/02_-_UML_y_diagrama_de_clases_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_02.svg]]
 > 
 > **Secciones:**
 > 
@@ -82,7 +82,7 @@ dg-publish: true
 > 
 > **Ejemplos:**
 > 
-> ![[Diagramas/02_-_UML_y_diagrama_de_clases_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_03.svg]]
 > 
 > **Equivalente en Java:**
 > 
@@ -123,7 +123,7 @@ dg-publish: true
 > 
 > **Símbolo:** Flecha con triángulo vacío `<|--`
 > 
-> ![[Diagramas/02_-_UML_y_diagrama_de_clases_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_04.svg]]
 > 
 > **Lectura:** "Perro hereda de Animal" o "Perro ES-UN Animal"
 
@@ -133,7 +133,7 @@ dg-publish: true
 > 
 > **Símbolo:** Flecha punteada con triángulo `<|..`
 > 
-> ![[Diagramas/02_-_UML_y_diagrama_de_clases_05.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_05.svg]]
 > 
 > **Nota:** Las interfaces se marcan con `<<interface>>`
 
@@ -145,7 +145,7 @@ dg-publish: true
 > 
 > Indica que una clase **conoce** o **usa** otra clase.
 > 
-> ![[Diagramas/02_-_UML_y_diagrama_de_clases_06.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_06.svg]]
 > 
 > **Multiplicidad:**
 > 
@@ -162,7 +162,7 @@ dg-publish: true
 > 
 > Las partes pueden existir **independientemente** del todo.
 > 
-> ![[Diagramas/02_-_UML_y_diagrama_de_clases_07.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_07.svg]]
 > 
 > **Característica:** Si el Departamento se elimina, los Empleados siguen existiendo.
 
@@ -174,7 +174,7 @@ dg-publish: true
 > 
 > Las partes **NO pueden existir** sin el todo.
 > 
-> ![[Diagramas/02_-_UML_y_diagrama_de_clases_08.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_08.svg]]
 > 
 > **Característica:** Si el Coche se destruye, su Motor específico también se destruye.
 
@@ -186,7 +186,7 @@ dg-publish: true
 > 
 > Una clase **usa** temporalmente otra (parámetro, variable local).
 > 
-> ![[Diagramas/02_-_UML_y_diagrama_de_clases_09.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_09.svg]]
 
 ---
 
@@ -198,7 +198,7 @@ dg-publish: true
 > 
 > Se representan con el nombre en **cursiva** o con `<<abstract>>`.
 > 
-> ![[Diagramas/02_-_UML_y_diagrama_de_clases_10.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_10.svg]]
 > 
 > **Nota:** Los métodos abstractos se marcan con `*` o en _cursiva_.
 
@@ -208,7 +208,7 @@ dg-publish: true
 > 
 > Se **subrayan** para indicar que son `static`.
 > 
-> ![[Diagramas/02_-_UML_y_diagrama_de_clases_11.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_11.svg]]
 > 
 > **Nota:** `$` indica miembro estático (algunos diagramadores usan subrayado).
 
@@ -216,7 +216,7 @@ dg-publish: true
 
 > [!example] 🎯 Tipos Enumerados
 > 
-> ![[Diagramas/02_-_UML_y_diagrama_de_clases_12.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_12.svg]]
 
 ---
 
@@ -226,19 +226,19 @@ dg-publish: true
 
 > [!example] 💳 Diagrama Completo
 > 
-> ![[Diagramas/02_-_UML_y_diagrama_de_clases_13.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_13.svg]]
 
 ### 🎓 Sistema Universitario
 
 > [!example] 📖 Gestión Académica
 > 
-> ![[Diagramas/02_-_UML_y_diagrama_de_clases_14.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_14.svg]]
 
 ### 🛒 Sistema de Comercio
 
 > [!example] 🏪 E-commerce
 > 
-> ![[Diagramas/02_-_UML_y_diagrama_de_clases_15.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_15.svg]]
 
 ---
 
@@ -309,7 +309,7 @@ dg-publish: true
 > |¿Clase A contiene Clase B pero B puede existir independiente?|**Agregación** `o--`|Siguiente pregunta|
 > |¿Clase A solo usa temporalmente Clase B?|**Dependencia** `..>`|**Asociación** `--`|
 
-![[Diagramas/02_-_UML_y_diagrama_de_clases_16.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_16.svg]]
 
 ---
 
@@ -330,7 +330,7 @@ dg-publish: true
 
 ## 📋 Resumen Visual
 
-![[Diagramas/02_-_UML_y_diagrama_de_clases_17.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_17.svg]]
 
 > [!quote] 💡 Recuerda
 > 

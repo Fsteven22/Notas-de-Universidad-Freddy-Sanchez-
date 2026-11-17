@@ -11,13 +11,18 @@ tags: [EYAG1037, laboratorio, practicas]
 >
 > Los **filtros activos** usan OPAMPs para selectar frecuencias deseadas y atenuar ruido. En esta práctica construyes un filtro activo y un acondicionador de señal, midiendo la respuesta en frecuencia y la ganancia en cada punto.
 >
-> ![[../../../Diagramas/Práctica_5_—_Filtros_Activos_01.svg]]
+> ![[../../Teórico/Unidad 0 - Guías y Ejercicios/Diagramas/Práctica_5_—_Filtros_Activos_01.svg]]
+> 
+> **Se lee así:** El diagrama organiza la práctica en dos procedimientos: el Procedimiento 1 arma el filtro activo con LM358 y mide su respuesta en frecuencia de 10 KHz a 1 MHz; el Procedimiento 2 construye el acondicionador de señal que mapea 0–10 V de entrada a −5 V…+5 V de salida.
+> 
+> **Por qué importa:** Separar mentalmente los dos montajes evita mezclar la etapa de filtrado con la de acondicionamiento al medir ganancia y respuesta en frecuencia, que es donde más se confunden los valores.
 
 ---
 
 ## ⚠️ Seguridad
 
-> [!danger]
+> [!danger] ⚠️ Seguridad
+>
 > - Trabaja con fuente DC dual ±15 V.
 > - Manipula conexiones solo con la fuente apagada.
 > - Verifica polaridad de alimentación del LM358 antes de energizar.
@@ -151,38 +156,41 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ## 📄 Informe
 
-> Usa [[FORMATO INFORME DE PRÁCTICA.pdf]] y [[Formato Pre-prácticas.pdf]] para entregar. Simulaciones en Proteus.
+> [!tip] 📄 Informe
+>
+> Usa [[../Fundamentos del Laboratorio/FORMATO INFORME DE PRÁCTICA.pdf|FORMATO INFORME DE PRÁCTICA.pdf]] y [[../Fundamentos del Laboratorio/Formato Pre-prácticas.pdf|Formato Pre-prácticas.pdf]] para entregar. Simulaciones en Proteus.
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Básico
+>
 > - [ ] Identifico las entradas (+) y (-) del LM358 y verifico la conexión correcta en el montaje.
 > - [ ] Uso fuente dual ±15 V para alimentar el OPAMP y verifico los voltajes con el multimetro.
 > - [ ] Calculo $f_c = 1/(2\pi RC)$ con los valores R y C del filtro y la comparo con la frecuencia medida.
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Observo en el osciloscopio cómo el filtro atenúa frecuencias altas de ruido en Vo vs Vsum.
 > - [ ] Calculo la ganancia en dB usando $20 \cdot \log(V_o/V_{sum})$ y la registro en la tabla.
 > - [ ] Ajusto el potenciómetro R6 del acondicionador para mapear 0–10 V a -5 V a +5 V.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Verifico la linealidad de la función de transferencia del acondicionador con al menos 5 puntos.
 > - [ ] Dibujo la gráfica Vo vs Vin e identifico pendiente y punto medio.
 > - [ ] Explico por qué el voltaje DC persiste en todo el barrido de frecuencia del filtro.
 >
 
 > [!quote] 🔗 Conexiones
+>
 > - Teoría: [[02 - Aplicaciones de los OPAMs - Minimización de Ruido]], [[03 - Configuraciones Lineales Básicas del OPAM]] y [[04 - Integrador, Derivador y Circuitos No Lineales]]
 > - Previa: [[Práctica 4 — Fuentes Lineales]]
 > - Siguiente: [[Práctica 6 — Logica Combinatoria y Arduino]]
 
 ---
 
----
-
 ## 📎 Guía oficial (sitio web)
 
-![[Práctica 5 - Funcionamiento de Filtros Activos.pdf]]
+[[../Fundamentos del Laboratorio/Práctica 5 - Funcionamiento de Filtros Activos.pdf|Práctica 5 - Funcionamiento de Filtros Activos.pdf]]
 **Tags:** #practica #laboratorio #EYAG1037 #FESD #ESPOL #unidad3 #OPAMP #filtro #LM358

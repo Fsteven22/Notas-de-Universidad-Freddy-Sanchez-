@@ -35,7 +35,7 @@ dg-publish: true
 
 ---
 
-## 1. Ley de Coulomb + Campo Eléctrico
+## 📝 1. Ley de Coulomb + Campo Eléctrico
 
 > [!example] ✏️ Tres cargas en línea — fuerza neta y campo en el punto central
 > 
@@ -59,7 +59,7 @@ dg-publish: true
 > | $E = K_e\dfrac{Q}{r^2}$ | Obtener el campo eléctrico que crea cada carga en el punto P, sin colocar ahí la carga de prueba (Paso 4) |
 > | $F = q\cdot E$ | Verificar el resultado relacionando fuerza y campo (chequeo final) |
 > 
-> ![[../../Anexos/ChatGPT Image 20 jun 2026, 23_16_31.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 23_16_31.png]]
 > 
 > ---
 > 
@@ -99,7 +99,7 @@ dg-publish: true
 
 ---
 
-## 2. Fuentes Dependientes en Circuito Resistivo
+## 📝 2. Fuentes Dependientes en Circuito Resistivo
 
 > [!example] ✏️ Red con CCCS — encontrar voltaje de salida
 > 
@@ -121,7 +121,7 @@ dg-publish: true
 > | $V = I \times R$ (Ohm) | Obtener $V_{R3}$ una vez que toda la corriente de la fuente dependiente se conoce (Paso 3) |
 > | $P = V \times I$ | Calcular la potencia entregada por la fuente dependiente (Paso 4) |
 > 
-> ![[../../Anexos/ChatGPT Image 20 jun 2026, 23_19_46.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 23_19_46.png]]
 > 
 > ---
 > 
@@ -153,7 +153,7 @@ dg-publish: true
 
 ---
 
-## 3. Ley de Ohm + Potencia
+## 📝 3. Ley de Ohm + Potencia
 
 > [!example] ✏️ Diseño con restricción de disipación máxima
 > 
@@ -177,7 +177,7 @@ dg-publish: true
 > | $V = I \times R$ (Ohm) | Obtener el voltaje máximo aplicable con la corriente límite y $R_{eq}$ (Paso 3) |
 > | $P = I^2 R$ | Verificar que ninguna resistencia exceda su potencia máxima (Paso 4) |
 > 
-> ![[../../Anexos/ChatGPT Image 20 jun 2026, 23_21_32.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 23_21_32.png]]
 > 
 > ---
 > 
@@ -213,7 +213,7 @@ dg-publish: true
 
 ---
 
-## 4. KCL — Nodo con Cuatro Ramas
+## 📝 4. KCL — Nodo con Cuatro Ramas
 
 > [!example] ✏️ Dos nodos desconocidos con fuente de corriente compartida
 > 
@@ -227,7 +227,7 @@ dg-publish: true
 > 
 > **Encontrar:** $V_A$, $V_B$ y todas las corrientes de rama.
 > 
-> ![[../../Anexos/ChatGPT Image 21 jun 2026, 00_52_30.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 21 jun 2026, 00_52_30.png]]
 > 
 > **🔑 Fórmulas que vamos a usar:**
 > 
@@ -284,7 +284,7 @@ dg-publish: true
 
 ---
 
-## 5. KVL — Malla con Dos Fuentes Opuestas
+## 📝 5. KVL — Malla con Dos Fuentes Opuestas
 
 > [!example] ✏️ Tres fuentes en una sola malla — signo crítico
 > 
@@ -299,7 +299,7 @@ dg-publish: true
 > 
 > **Encontrar:** $I$, la potencia de cada fuente (¿entrega o absorbe?) y verificar balance.
 > 
-> ![[../../Anexos/ChatGPT Image 20 jun 2026, 23_32_40.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 23_32_40.png]]
 > 
 > **🔑 Fórmulas que vamos a usar:**
 > 
@@ -338,7 +338,7 @@ dg-publish: true
 
 ---
 
-## 6. Análisis de Tres Mallas
+## 📝 6. Análisis de Tres Mallas
 
 > [!example] ✏️ Tres mallas con dos ramas compartidas
 > 
@@ -361,7 +361,7 @@ dg-publish: true
 > | Sistema matricial $[R][I]=[V]$ | Organizar las tres ecuaciones para resolver por Cramer (Paso 2) |
 > | Regla de Cramer: $I_k = \dfrac{\Delta_k}{\Delta}$ | Resolver el sistema 3×3 despejando cada corriente de malla (Paso 3) |
 > 
-> ![[../../Anexos/ChatGPT Image 20 jun 2026, 23_38_28.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 23_38_28.png]]
 > 
 > ---
 > 
@@ -399,13 +399,13 @@ dg-publish: true
 
 ---
 
-## 7. Forma Matricial — Mallas 3×3
+## 📝 7. Forma Matricial — Mallas 3×3
 
 > [!example] ✏️ Sistema completo por inspección directa con Cramer
 > 
 > **🖊️ Cómo se ve el circuito:** Es el mismo circuito de S6. Este ejercicio muestra cómo construir la matriz directamente sin escribir KVL línea por línea.
 > 
-> ![[../../Anexos/ChatGPT Image 20 jun 2026, 23_38_28.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 23_38_28.png]]
 > 
 > **🔑 Fórmulas que vamos a usar:**
 > 
@@ -437,7 +437,7 @@ dg-publish: true
 
 ---
 
-## 8. Forma Matricial — Nodos 3×3
+## 📝 8. Forma Matricial — Nodos 3×3
 
 > [!example] ✏️ Tres nodos desconocidos con conductancias
 > 
@@ -459,7 +459,7 @@ dg-publish: true
 > | $G_{kj} = -G_{\text{compartida entre nodo }k\text{ y }j}$ | Llenar las posiciones fuera de la diagonal |
 > | Regla de Cramer: $V_k = \dfrac{\Delta_k}{\Delta}$ | Resolver el sistema 3×3 para cada tensión de nodo |
 > 
-> ![[../../Anexos/ChatGPT Image 20 jun 2026, 23_47_46.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 23_47_46.png]]
 > 
 > ---
 > 
@@ -492,7 +492,7 @@ dg-publish: true
 
 ---
 
-## 9. Interconexión de Fuentes Mixtas
+## 📝 9. Interconexión de Fuentes Mixtas
 
 > [!example] ✏️ Reducción de fuentes antes de plantear KVL
 > 
@@ -515,7 +515,7 @@ dg-publish: true
 > | Transformación de fuente: $V = I \times R$ | Convertir la fuente de corriente equivalente en una fuente de voltaje en serie con $R_2$ (Paso 4) |
 > | KVL: $\sum V = 0$ | Resolver la malla final ya simplificada (Paso 5) |
 > 
-> ![[../../Anexos/ChatGPT Image 20 jun 2026, 23_50_21.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 23_50_21.png]]
 > 
 > ---
 > 
@@ -543,7 +543,7 @@ dg-publish: true
 
 ---
 
-## 10. Circuito Mixto de Cinco Resistencias
+## 📝 10. Circuito Mixto de Cinco Resistencias
 
 > [!example] ✏️ Tres etapas de simplificación — topología compleja
 > 
@@ -564,7 +564,7 @@ dg-publish: true
 > | $V = I \times R$ (Ohm) | Calcular el voltaje sobre el grupo paralelo (Paso 5) |
 > | $P = V \times I$ y $P = I^2 R$ | Calcular potencia total y por elemento, y verificar con el teorema de Tellegen (Paso 7) |
 > 
-> ![[../../Anexos/ChatGPT Image 21 jun 2026, 00_00_35.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 21 jun 2026, 00_00_35.png]]
 > 
 > ---
 > 
@@ -606,7 +606,7 @@ dg-publish: true
 
 ---
 
-## 11. Capacitores e Inductores en Red Mixta
+## 📝 11. Capacitores e Inductores en Red Mixta
 
 > [!example] ✏️ Reducción en dos etapas con C y L combinados
 > 
@@ -628,7 +628,7 @@ dg-publish: true
 > | $L_{serie} = L_a + L_b$ | Combinar $L_2$ y $L_3$, que están en serie |
 > | $L_{paralelo} = \dfrac{L_a L_b}{L_a+L_b}$ | Combinar $L_1$ en paralelo con el grupo $L_{23}$ |
 > 
-> ![[../../Anexos/ChatGPT Image 21 jun 2026, 00_06_46.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 21 jun 2026, 00_06_46.png]]
 > 
 > ---
 > 
@@ -648,7 +648,7 @@ dg-publish: true
 
 ---
 
-## 12. Divisor de Voltaje en Circuito de Tres Etapas
+## 📝 12. Divisor de Voltaje en Circuito de Tres Etapas
 
 > [!example] ✏️ Divisor encadenado con dos grupos paralelos
 > 
@@ -666,7 +666,7 @@ dg-publish: true
 > | $R_{eq} = \sum R_i$ (serie) | Sumar todo el circuito ya reducido a una sola malla serie (Paso 2) |
 > | Divisor de voltaje: $V_k = V_s \cdot \dfrac{R_k}{R_{eq}}$ | Repartir el voltaje de la fuente entre cada elemento serie, incluidos los grupos reducidos (Paso 3) |
 > 
-> ![[../../Anexos/ChatGPT Image 21 jun 2026, 00_11_05.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 21 jun 2026, 00_11_05.png]]
 > 
 > ---
 > 
@@ -686,7 +686,7 @@ dg-publish: true
 
 ---
 
-## 13. Divisor de Corriente con Tres Ramas
+## 📝 13. Divisor de Corriente con Tres Ramas
 
 > [!example] ✏️ Distribución de corriente con verificación de potencia
 > 
@@ -703,7 +703,7 @@ dg-publish: true
 > | Divisor de corriente: $I_{Ri} = I_f \cdot \dfrac{R_{eq}}{R_i}$ | Repartir la corriente de la fuente entre las tres ramas (Paso 3) |
 > | $P = I^2 R$ | Verificar la potencia de cada rama y la potencia total (Paso 4) |
 > 
-> ![[../../Anexos/ChatGPT Image 21 jun 2026, 00_12_48.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 21 jun 2026, 00_12_48.png]]
 > 
 > **Paso 1 — $R_{eq}$:**
 > 
@@ -723,7 +723,7 @@ dg-publish: true
 
 ---
 
-## 14. Superposición con Tres Fuentes
+## 📝 14. Superposición con Tres Fuentes
 
 > [!example] ✏️ Tres sub-circuitos independientes — verificación cruzada
 > 
@@ -748,7 +748,7 @@ dg-publish: true
 
 ---
 
-## 15. Thévenin con Fuente Dependiente
+## 📝 15. Thévenin con Fuente Dependiente
 
 > [!example] ✏️ $R_{Th}$ con fuente de prueba — caso con fuente controlada
 > 
@@ -772,7 +772,7 @@ dg-publish: true
 
 ---
 
-## 16. Norton y Máxima Transferencia de Potencia
+## 📝 16. Norton y Máxima Transferencia de Potencia
 
 > [!example] ✏️ Cadena completa: Thévenin → Norton → MTP
 > 
@@ -799,7 +799,7 @@ dg-publish: true
 
 ---
 
-## 17. Transformación de Fuentes Encadenada
+## 📝 17. Transformación de Fuentes Encadenada
 
 > [!example] ✏️ Tres transformaciones sucesivas para simplificar a una malla
 > 
@@ -847,5 +847,34 @@ dg-publish: true
 > |Transformación encadenada|$I_N = V_s/R_s$ ↔ $V_{Th} = I_N \cdot R_N$|S17|
 
 ---
+
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Metas de este recopilado
+>
+> - [ ] Resuelvo el banco S1–S17 sin mirar la solución y verifico cada resultado.
+> - [ ] Planteo KCL/KVL en nodos y mallas con fuentes dependientes cuidando el signo.
+> - [ ] Aplico Thévenin/Norton y la transferencia de máxima potencia aunque la red tenga fuentes dependientes.
+> - [ ] Reduzco redes con capacitores/inductores combinados en dos etapas.
+
+---
+
+## 🔗 Conexiones
+
+> [!quote] 🔗 Conexiones
+>
+> - Teoría: [[01 - Conceptos Fundamentales de la Electricidad]], [[03 - Elementos Basicos de un Circuito Electrico]], [[04 - Circuitos en Serie Paralelo y Mixtos]], [[05 - Leyes de Ohm y Kirchhoff]] y [[06 - Teoremas de Analisis de Circuitos]]
+> - Práctica: [[Práctica 2 — Ley de Ohm y Kirchhoff|🧪 Práctica 2 — Ley de Ohm y Kirchhoff]]
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[02 - Principios de Generacion de Energia Electrica]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #ejercicios #práctica #repaso #ohm #kirchhoff #KCL #KVL #thévenin #norton #superposición #serie #paralelo #mixto #divisor #fuentes #dependientes #matricial #EYAG1037 #FESD #ESPOL #unidad1

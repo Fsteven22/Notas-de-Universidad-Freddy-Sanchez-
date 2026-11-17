@@ -20,7 +20,11 @@ tags: [EYAG1037, unidad1, electricidad]
 > - KCL es como un cruce de tuberías: el agua que entra debe ser igual al agua que sale.
 > - KVL es como una ruta circular de montaña: si subes 1000 m, al volver al punto de inicio habrás bajado exactamente 1000 m.
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_01.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_01.svg]]
+> 
+> **Se lee así:** Diagrama de flujo que organiza la unidad en dos ramas a partir de "Análisis de Circuitos": la Ley de Ohm (relación V, I, R en un elemento individual) y las Leyes de Kirchhoff (KCL en nodos, con conservación de la carga; KVL en mallas, con conservación de la energía). Es el índice conceptual que la tabla de abajo detalla.
+> 
+> **Por qué importa:** Fija el reparto de responsabilidades entre las leyes: Ohm describe cada elemento y Kirchhoff describe el circuito completo. Evita esperar que KCL o KVL reemplacen a la Ley de Ohm, o viceversa.
 > 
 > |Ley|Postulado|Aplica a|
 > |---|---|---|
@@ -52,7 +56,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > $$I = \frac{V}{R} \qquad\qquad R = \frac{V}{I}$$
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_02.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_02.svg]]
 > 
 > ### 📐 Relación gráfica: curva V-I
 > 
@@ -92,7 +96,13 @@ tags: [EYAG1037, unidad1, electricidad]
 > > 
 > > $$V = I \cdot R = 3 \times 15 = 45\text{ V}$$
 
-![[../../Anexos/ChatGPT Image 19 may 2026, 23_07_06.png]]
+> [!note] 🖼️ Ley de Ohm
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 19 may 2026, 23_07_06.png]]
+> 
+> **Se lee así:** Infografía de la Ley de Ohm: el triángulo V–I–R (voltaje arriba, corriente y resistencia abajo) con la regla de "cubrir la variable que buscas", la fórmula principal $V = I \cdot R$, las unidades y las tres formas derivadas ($V = IR$, $I = V/R$, $R = V/I$). Incluye un ejemplo práctico (12 V sobre 4 Ω → 3 A) y la idea clave de que, a mayor voltaje, mayor corriente; a mayor resistencia, menor corriente.
+> 
+> **Por qué importa:** Es el recurso para despejar cualquiera de las tres variables sin memorizar tres fórmulas separadas. Evita el error más común al principio: invertir la división al despejar I o R.
 
 ---
 
@@ -121,7 +131,11 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > Un **nodo** es cualquier punto de conexión entre dos o más elementos. Un **nodo principal** conecta tres o más elementos.
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_03.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_03.svg]]
+> 
+> **Se lee así:** Esquema mínimo de un nodo A con dos corrientes entrantes (I1, I2) y tres salientes (I3, I4, I5), dibujadas como flechas que llegan al mismo punto y que parten de él. Es la representación gráfica de la ecuación $I_1 + I_2 - I_3 - I_4 - I_5 = 0$ que se enuncia justo debajo.
+> 
+> **Por qué importa:** Ver las flechas entrantes y salientes deja claro qué signo lleva cada término. Evita equivocar el signo de una corriente al plantear KCL en un nodo con varias ramas.
 > 
 > > KCL en el nodo A: $I_1 + I_2 - I_3 - I_4 - I_5 = 0$
 > > 
@@ -141,7 +155,11 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > $$I_{total} = I_1 + I_2 + \cdots + I_n = V_s \left(\frac{1}{R_1} + \frac{1}{R_2} + \cdots + \frac{1}{R_n}\right)$$
 > 
-> ![[../../Anexos/ChatGPT Image 31 may 2026, 23_42_42.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 31 may 2026, 23_42_42.png]]
+> 
+> **Se lee así:** Infografía de KCL: la plantea como conservación de la carga (la suma algebraica de corrientes en un nodo es cero; lo que entra debe salir), muestra un nodo con flechas entrantes y salientes y la equivalencia $\sum I_{entrantes} = \sum I_{salientes}$, y lista los pasos para aplicarla (identificar el nodo, asignar direcciones, entra + / sale −, escribir $\sum I = 0$ y resolver). Trae ejemplos resueltos, incluido uno sobre un circuito paralelo (12 V, 2/3/6 Ω → 6/4/2 A; $I_T$ = 12 A).
+> 
+> **Por qué importa:** Reúne en un solo panel el concepto, la convención de signos y la verificación con un caso numérico. Evita el doble error de contar mal las ramas o de asignar el mismo signo a corrientes que entran y a corrientes que salen.
 
 ---
 
@@ -173,7 +191,11 @@ tags: [EYAG1037, unidad1, electricidad]
 > |**Resistencia**|La corriente asumida va en el mismo sentido del recorrido|−|
 > |**Resistencia**|La corriente asumida va en sentido contrario al recorrido|+|
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_04.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_04.svg]]
+> 
+> **Se lee así:** Diagrama de una única malla recorrida en un mismo sentido: la fuente Vs (de − a +) y las resistencias R1, R2, R3 en serie, con las señales $+V_s$, $-V_{R1}$, $-V_{R2}$ y $-V_{R3}$ sobre cada tramo del recorrido, cerrando el lazo de vuelta a la fuente. Es el circuito que ilustra la ecuación $+V_s - V_{R1} - V_{R2} - V_{R3} = 0$ que aparece justo debajo.
+> 
+> **Por qué importa:** Muestra la convención de signos en contexto: fuente positiva cuando se recorre de − a + y caídas negativas en las resistencias recorridas en el sentido de la corriente. Evita el error de mezclar signos al plantear KVL en una malla.
 > 
 > > KVL: $+V_s - V_{R1} - V_{R2} - V_{R3} = 0$
 > > 
@@ -189,7 +211,13 @@ tags: [EYAG1037, unidad1, electricidad]
 > > 
 > > ✅ Verificación KVL: $4 + 8 + 6 = 18\text{ V}$ ✓
 
-![[../../Anexos/ChatGPT Image 31 may 2026, 23_46_11.png]]
+> [!note] 🖼️ KVL — Ley de Voltaje de Kirchhoff
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 31 may 2026, 23_46_11.png]]
+> 
+> **Se lee así:** Infografía de KVL: la enuncia como conservación de la energía (en un lazo cerrado la suma algebraica de voltajes es cero; las elevaciones igualan a las caídas), define las convenciones de signo para resistencias y fuentes según el sentido de recorrido, y lista los pasos para aplicarla (seleccionar la malla, elegir el sentido, asignar polaridades, sumar algebraicamente y escribir $\sum V = 0$). Incluye ejemplos resueltos, uno de una sola malla (20 V, 2/3/5 Ω → I = 2 A) verificado como 4+6+10 = 20 V.
+> 
+> **Por qué importa:** Condensa el método completo junto con su verificación, de modo que KVL se pueda aplicar mecánicamente en cualquier malla. Evita olvidar el signo de una caída o invertir una fuente al recorrerla de + a −.
 
 ---
 
@@ -199,7 +227,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > Para circuitos con múltiples mallas, se asigna una **corriente de malla** a cada malla independiente y se aplica KVL en cada una. Esto genera un sistema de ecuaciones que se resuelve simultáneamente.
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_05.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_05.svg]]
 > 
 > **Procedimiento:**
 > 
@@ -219,7 +247,13 @@ tags: [EYAG1037, unidad1, electricidad]
 > > 
 > > Resolviendo el sistema: $$I_1 = \frac{60}{26} \approx 2.31\text{ A} \qquad I_2 = \frac{12}{26} \approx 0.46\text{ A}$$
 
-![[../../Anexos/ChatGPT Image 31 may 2026, 23_56_09.png]]
+> [!note] 🖼️ Análisis de Circuitos con Múltiples Mallas
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 31 may 2026, 23_56_09.png]]
+> 
+> **Se lee así:** Infografía del método de corrientes de malla con un ejemplo de tres mallas: define la malla independiente ($m = b - n + 1$), asigna corrientes de malla en sentido horario, aplica KVL a cada una expresando las ramas compartidas como diferencia ($I_{rama} = I_i - I_j$) y resuelve el sistema con su verificación ($I_1$ = 3.00 A, $I_2$ = 2.00 A, $I_3$ = 3.33 A). La nota desarrolla el caso de dos mallas; la figura muestra el mismo procedimiento escalado a tres.
+> 
+> **Por qué importa:** Presenta el algoritmo completo (numerar mallas, plantear, resolver y convertir a corrientes de rama) con un caso más grande que el de la nota. Evita tratar las corrientes de las ramas compartidas como independientes, el error central de este método.
 
 ---
 
@@ -303,7 +337,11 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > > Una vez memorizado el patrón, construir la matriz toma **menos de un minuto** por circuito. No se necesita recorrer mallas ni escribir KVL/KCL paso a paso — el sistema completo surge directamente de la topología del circuito.
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_06.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_06.svg]]
+> 
+> **Se lee así:** Diagrama de flujo del armado de la matriz por inspección: identificar mallas o nodos → llenar la diagonal con los términos propios (suma de las resistencias o conductancias asociadas, signo positivo) → llenar fuera de la diagonal con los términos mutuos (resistencia o conductancia compartida, signo negativo) → llenar el vector de fuentes con el signo según el sentido → resolver por regla de Cramer o sustitución.
+> 
+> **Por qué importa:** Convierte las reglas de llenado de la sección en una secuencia de cuatro pasos mecánica. Evita los dos errores típicos: olvidar el signo negativo de los términos mutuos y equivocar el signo del vector de fuentes.
 
 ---
 
@@ -390,7 +428,11 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > > ⚠️ Dos fuentes de corriente **no pueden conectarse en serie** a menos que entreguen exactamente la misma corriente; de lo contrario, violan KCL.
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_07.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_07.svg]]
+> 
+> **Se lee así:** Diagrama con dos entradas y una salida común: "Fuentes en SERIE → sumar voltajes ($V_{eq} = \sum V_k$)" y "Fuentes en PARALELO → sumar corrientes ($I_{eq} = \sum I_k$)" convergen en "Fuente equivalente única". Es el resumen gráfico de las dos reglas de la sección, válidas sumando algebraicamente según la orientación o el sentido de cada fuente.
+> 
+> **Por qué importa:** Deja claras las dos únicas combinaciones válidas antes de simplificar un circuito con varias fuentes. Evita conectar fuentes de voltaje en paralelo o fuentes de corriente en serie con valores distintos, lo que viola KVL o KCL.
 
 ---
 
@@ -404,7 +446,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > |**Mallas (KVL)**|$\sum V = 0$|Corrientes de malla|Hay pocas mallas y muchos nodos|
 > |**Nodos (KCL)**|$\sum I = 0$|Tensiones de nodo|Hay pocos nodos y muchas mallas|
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_08.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_08.svg]]
 > 
 > > 💡 Ambos métodos producen el mismo resultado. La elección depende de la estructura del circuito y la cantidad de incógnitas que genera cada enfoque.
 
@@ -416,7 +458,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > En la práctica, las tres leyes se aplican de manera conjunta e iterativa para resolver cualquier circuito:
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_09.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_09.svg]]
 > 
 > **Resumen de fórmulas esenciales:**
 > 
@@ -434,7 +476,13 @@ tags: [EYAG1037, unidad1, electricidad]
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_10.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_10.svg]]
+> 
+> **Se lee así:** Mapa mental con raíz "Ohm y Kirchhoff" y seis ramas: Ley de Ohm ($V = IR$, elemento lineal, tres formas, curva V–I), KCL (nodos, $\sum I = 0$, conservación de la carga, paralelo), KVL (mallas, $\sum V = 0$, conservación de la energía, serie), Métodos de análisis (corrientes de malla, tensiones de nodo, sistema de ecuaciones), Forma Matricial ($[R]\cdot[I] = [V]$, $[G]\cdot[V] = [I]$, propio positivo, mutuo negativo) e Interconexión de Fuentes (voltaje en serie y corriente en paralelo se suman algebraicamente, con sus restricciones).
+> 
+> **Por qué importa:** Es el mapa de repaso de toda la unidad: cubre las tres leyes, los dos métodos y la simplificación de fuentes. Evita confundir qué ley o qué método conviene según la estructura del circuito.
 
 ---
 
@@ -452,31 +500,47 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > [5] A. Hermosa Donante, _Electrónica Aplicada_, 1.ª ed. Mexico: Alfaomega Grupo Editor, 2013, pp. 30–75. ISBN-13: 9786077074045.
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Basico
+>
 > - [ ] Escribo V=IR y sus formas I=V/R, R=V/I y distingo elemento lineal vs no lineal.
 > - [ ] Enuncio KCL sum Ik=0 y KVL sum Vk=0 con su convencion de signos.
 > - [ ] Identifico nodos, mallas y lazos en un circuito.
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Resuelvo circuito de 2 mallas con KVL y 2 nodos con KCL paso a paso.
 > - [ ] Aplico forma matricial R·I=V y G·V=If.
 > - [ ] Combino fuentes de voltaje en serie y de corriente en paralelo.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Elijo entre mallas vs nodos segun incognitas y resuelvo por inspeccion.
 > - [ ] Interpreto curva V-I y determino R por pendiente.
 > - [ ] Integro Ohm+KCL+KVL para hallar corrientes y voltajes completos.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
+>
 > - Previo: [[04 - Circuitos en Serie Paralelo y Mixtos]] — donde aplicas KVL/KCL
 > - Siguiente: [[06 - Teoremas de Analisis de Circuitos]] — atajos que derivan de estas leyes
 > - Adelante: [[03 - Transistor BJT]] — donde estas leyes se usan en polarizacion
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[06 - Teoremas de Analisis de Circuitos]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #ohm #kirchhoff #KCL #KVL #nodos #mallas #análisis #corriente #voltaje #resistencia #matrices #conductancia #fuentes #EYAG1037 #FESD #ESPOL #unidad1

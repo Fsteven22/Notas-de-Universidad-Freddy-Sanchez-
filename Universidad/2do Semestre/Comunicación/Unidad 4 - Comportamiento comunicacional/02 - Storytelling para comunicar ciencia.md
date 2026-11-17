@@ -25,7 +25,7 @@ tags: [IDIG2012, unidad4, storytelling, divulgacion, ted]
 > | **Acción** | Aplauden y nada | Adoptan tu recomendación |
 > | **Concurso** | Eliminada en semifinal | Finalista Voces con Ciencia |
 
-![[Diagramas/02_-_Storytelling_para_comunicar_ciencia_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Storytelling_para_comunicar_ciencia_01.svg]]
 
 ---
 
@@ -102,7 +102,7 @@ tags: [IDIG2012, unidad4, storytelling, divulgacion, ted]
 
 ## 📊 Resumen Visual
 
-![[Diagramas/02_-_Storytelling_para_comunicar_ciencia_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Storytelling_para_comunicar_ciencia_02.svg]]
 
 > [!success] 🔍 Comparación Final
 >

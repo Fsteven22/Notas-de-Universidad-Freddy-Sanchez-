@@ -10,7 +10,7 @@ dg-publish: true
 > 
 > Este script explora las diferencias entre **hardware** y **software** usando analogías cotidianas. La estructura sigue el esquema clásico de introducción, desarrollo, ejemplo real y conclusión.
 > 
-> ![[Diagramas/Guion_del_3MIT_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Guion_del_3MIT_01.svg]]
 
 ---
 
@@ -70,7 +70,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[Diagramas/Guion_del_3MIT_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/Guion_del_3MIT_02.svg]]
 
 ---
 

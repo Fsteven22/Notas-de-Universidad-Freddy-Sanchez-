@@ -15,7 +15,7 @@ dg-publish: true
 >
 > Todos usan el mismo método: **OPAM ideal** $\Rightarrow$ $V_+\approx V_-$, $I_+\approx I_-\approx 0$, luego **KCL en nodos clave**.
 >
-> ![[../../Diagramas/05_-_Ejercicios_Resueltos_y_de_Oposición_01.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/05_-_Ejercicios_Resueltos_y_de_Oposición_01.svg]]
 >
 
 > [!note] 🧭 Cómo usar esta nota
@@ -261,9 +261,17 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/05_-_Ejercicios_Resueltos_y_de_Oposición_02.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/05_-_Ejercicios_Resueltos_y_de_Oposición_02.svg]]
+> 
+> **Se lee así:** mapa mental de la nota en tres ramas: método (V+ ≈ V-, I ≈ 0, KCL en nodo C/X, Rin = Vs/I1, Thévenin Vth/Rth), numéricos del PDF (V2/V1 = -6.4, vs = sin 100t, nodo C a 3 V y 6 V, dos etapas) y los ejercicios de oposición (Murcia 04, Valladolid 96, MEC 94, Extremadura 00).
+> 
+> **Por qué importa:** repasa la nota de un vistazo: cubre método, dificultad creciente y las preguntas tipo del examen final.
 
 ---
+
+## 📚 Referencias
 
 > [!quote] 📖 Fuentes consultadas
 >
@@ -271,6 +279,10 @@ dg-publish: true
 > [2] Ing. Adriana Aguirre Alonso, _Tarea Autónoma #2 — Amplificadores Operacionales_, EYAG1037, 2026 (referencia cruzada con [[02 - Aplicaciones de los OPAMs - Minimización de Ruido]]).
 > [3] A. Sedra y K. Smith, _Microelectronic Circuits_, 7th ed., cap. 2 — método nodal para OPAM ideal.
 >
+
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🔗 Conexiones
 >
@@ -280,5 +292,14 @@ dg-publish: true
 > - Previo: [[01 - CI no programables]] — por qué el OPAM es un CI no programable.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[06 - Aplicaciones de Integrados 555 - ADC - PWM]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #amplificadorOperacional #ejerciciosResueltos #oposicion #analisisNodal #thevenin #EYAG1037 #FESD #ESPOL #unidad3
