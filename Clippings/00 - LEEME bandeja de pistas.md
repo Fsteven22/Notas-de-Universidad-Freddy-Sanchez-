@@ -2879,6 +2879,8 @@ el commit de esta línea de PUSHEADO.
 > - **Verificado:** post-fix 0 rutas `Diagramas/` rotas; `qa_links.py` raíz `Universidad` **bad=7 sin cambios** (los 7 son de SBD, preexistentes, ajenos); `qa_mojibake --check` 2do Semestre: 0; los 58 "rotos" de un escáner estricto propio son 56 falsos positivos (basename puro que resuelve en su materia) + 2 wikilinks Álgebra Lineal → Cálculo Vectorial con ruta sin `Universidad/` al inicio (resuelven por basename en sitio y en `qa_links`; caso límite para el dueño, no tocado).
 > - **No se tocó:** Cálculo Vectorial, el `D` de Inglés III de `opencode-onedrive`, `site/**`, cambios sin commitear ajenos.
 > - **Siguiente fase (contrato + validador por materia):** pendiente de confirmación del dueño sobre la materia piloto.
+>
+> **PUSHEO EN CURSO** — `857388ae`
 
 
 > [!success] PUSHEADO `f8b4b2ac` · 16/11/2026 — `origin/master` = `master` = `f8b4b2ac`
