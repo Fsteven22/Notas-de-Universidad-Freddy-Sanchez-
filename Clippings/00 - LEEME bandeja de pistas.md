@@ -2763,3 +2763,37 @@ el commit de esta línea de PUSHEADO.
 > **Sigue pendiente** (aviso de `opencode`): las **18 PNG huérfanas** `tabla-verdad-*.png` de
 > MatDisc — embeber o borrar — tras cerrar Cálculo 1.
 
+---
+
+### `opencode-onedrive` — Cálculo 1: U6-IV al formato de la casa (51 de 65) — 16/11/2026
+
+> [!success] PUSHEADO `9b7c5642` · 16/11/2026 — `origin/master` = `master` = `9b7c5642`
+>
+> **1 commit atómico** con `git add` de rutas exactas: `9b7c5642` reescribe las **4 notas**
+> de `IV - Integrales Impropias y Avanzadas` (`01 - Integrales Impropias`, `02 - Criterios de
+> Convergencia y Divergencia`, `03 - Teoremas de Comparación y Desigualdades` y
+> `04 - Asíntotas en Integrales Definidas`) al esqueleto completo de 8 secciones: sin bloques
+> de código, H1 único con emoji, definiciones en callouts con la figura dentro (R15), lecturas
+> R14, soluciones plegadas R8, flashcards `cal1-u6` (R16) y metas con checkboxes (R17).
+>
+> **Correcciones de contenido** (no eran erratas de formato):
+> - **01:** el ejemplo interior tenía un integrando sin dominio real; se sustituye por la
+>   convergente $\int_{-2}^{2} x^{-2/3}\,dx = 6\sqrt[3]{2}$.
+> - **02:** era un documento doble (series + impropias) con dos H1; pasa a **una sola nota**
+>   que cubre los criterios de ambos escenarios.
+> - **04:** el ejemplo $\int_1^{\infty}(\sqrt{x^2+x}-x)\,dx$ decía "converge" y **diverge**
+>   (el integrando tiende a $1/2 \neq 0$); y $\frac{x+\sin x}{x^2}$ dejó de llamarse asíntota
+>   oblicua ($f \to 0$: es la horizontal $y = 0$).
+>
+> **Verificado**
+> - `qa_formato_calculo1` por carpeta: **4 notas, 0 hallazgos**.
+> - Round-trip `.mmd` ↔ `.svg` de los **9** diagramas embebidos: **9 OK, 0 problemas**.
+> - `qa_mojibake --check` en la carpeta: **0**; escáner de alfabetos: 0 CJK (solo griego
+>   legítimo).
+>
+> **Estado: 51 de 65.** Pendientes (14): U6-V `V - Técnicas de Integración` (5) ·
+> `VI - Otras Técnicas` (2) · U7 (7; las notas 5 y 6 reutilizan diagramas existentes).
+>
+> El `master` del clon de OneDrive se actualizó de nuevo por ref
+> (`git fetch origin master:master`), con **0 cambios en su working tree**.
+
