@@ -2880,7 +2880,7 @@ el commit de esta línea de PUSHEADO.
 > - **No se tocó:** Cálculo Vectorial, el `D` de Inglés III de `opencode-onedrive`, `site/**`, cambios sin commitear ajenos.
 > - **Siguiente fase (contrato + validador por materia):** pendiente de confirmación del dueño sobre la materia piloto.
 >
-> **PUSHEO EN CURSO** — `857388ae`
+> **PUSHEADO `f241e19a`** — `857388ae`
 
 
 > [!success] PUSHEADO `f8b4b2ac` · 16/11/2026 — `origin/master` = `master` = `f8b4b2ac`
