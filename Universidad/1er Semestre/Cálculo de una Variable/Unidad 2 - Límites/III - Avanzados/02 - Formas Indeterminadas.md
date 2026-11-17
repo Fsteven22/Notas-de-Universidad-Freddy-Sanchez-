@@ -64,6 +64,16 @@ tags: [MATG1045, unidad2, formas-indeterminadas, matemáticas, cálculo, límite
 >
 > **Ejemplo:** Para $\lim_{x \to 0} x^2 \sin(1/x)$ acotas la función entre $-x^2$ y $x^2$, que comparten el límite $0$, y concluyes que el límite buscado es $0$.
 
+> [!tip] 🧭 Cómo ejecutar el emparedado paso a paso
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Formas_Indeterminadas_05.svg]]
+>
+> **Se lee así:** una caja inicial con el límite difícil pasa a un rombo que pregunta si la función está acotada: si la respuesta es no, toca buscar otra técnica; si es sí, se buscan cotas $f(x) \le g(x) \le h(x)$ y un segundo rombo pregunta si las cotas comparten límite; si no, se buscan mejores cotas y se vuelve atrás; si sí, se aplica el teorema y el límite de $g$ vale $L$.
+>
+> **Por qué importa:** el bucle "cotas que no coinciden → mejores cotas" es el corazón del método: sin cotas con límite común el emparedado no dice nada. Y cuando el acotado falla, ahí termina tu camino.
+>
+> **Ejemplo:** para $\lim_{x\to0} x^2 \sin(1/x)$ la función acotada es $\sin(1/x)$ con $-1 \le \sin(1/x) \le 1$; las cotas $\pm x^2$ comparten límite $0$ y el bucle no hace falta darlo.
+
 > [!info] 📚 Definición de la regla de L'Hôpital
 >
 > Si $\lim_{x \to a} \frac{f(x)}{g(x)}$ es una forma indeterminada $\frac{0}{0}$ o $\frac{\infty}{\infty}$, y se cumplen las condiciones de la regla, entonces $$\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}$$
@@ -77,6 +87,16 @@ tags: [MATG1045, unidad2, formas-indeterminadas, matemáticas, cálculo, límite
 > **Por qué importa:** El error típico es derivar sin verificar la forma, así que el rombo de condiciones es lo que te protege. Además te muestra que se puede repetir la regla mientras siga saliendo una indeterminación.
 >
 > **Ejemplo:** En $\lim_{x \to 0} \frac{1 - \cos x - x^2/2}{x^4}$ aplicas L'Hôpital cuatro veces seguidas, porque en cada paso sigue apareciendo $\frac{0}{0}$, y llegas a $-\frac{1}{24}$.
+
+> [!tip] 🗺️ El árbol de ataque a cualquier forma indeterminada
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Formas_Indeterminadas_07.svg]]
+>
+> **Se lee así:** un rombo con "Forma indeterminada" pregunta el tipo y abre cuatro ramas: $0/0$ o $\infty/\infty$ mandan a aplicar L'Hôpital directamente; $0 \cdot \infty$ manda a transformar la expresión a cociente; $\infty - \infty$ manda a buscar denominador común; $0^0$, $1^\infty$ e $\infty^0$ mandan a usar logaritmos. Las ramas confluyen: denominador común y logaritmos llevan a un cociente $0/0$ o $\infty/\infty$, desde el que se aplica L'Hôpital y se evalúa el límite.
+>
+> **Por qué importa:** te dice que ninguna forma es terminal: todas se reducen a un cociente, y de ahí al teorema o a una técnica algebraica. Tener el árbol en la cabeza evita memorizar recetas sueltas.
+>
+> **Ejemplo:** $\lim_{x \to 0^+} x \ln x$ es del tipo $0 \cdot \infty$: lo pasas a $\frac{\ln x}{1/x}$ ($\infty/\infty$) y aplicas L'Hôpital, llegando a $0$.
 
 ---
 
