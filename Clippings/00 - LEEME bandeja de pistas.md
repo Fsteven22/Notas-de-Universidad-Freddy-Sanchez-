@@ -3190,7 +3190,19 @@ el commit de esta línea de PUSHEADO.
 
 ### `opencode-onedrive` — MatDisc: nota Factorial + SOLUCIÓN_LEC_2 (SOLUCION_LEC_2.pdf) — 18/11/2026
 
-> [!warning] PUSHEO EN CURSO · `26122652` · ~2 min
+> [!success] PUSHEADO `d85df3b9` · 18/11/2026 — rama `sesion/opencode-onedrive` + `master` (ff) + clon OneDrive al día
+>
+> > **Push:** `a2cee684..d85df3b9` (rama) y `268daf0e..d85df3b9` (`master`), sin `--force`.
+> > `d85df3b9` = merge de `origin/master` (9 commits de `opencode`: U1 Historia de la Computación,
+> > CYSOC y `site/`), sin conflicto en este LEEME; ambos bloques conviven.
+> > Contenido: `26122652` (MatDisc) · anuncio: `9d056db6`.
+> >
+> > **Clon OneDrive:** `master` local actualizado a `d85df3b9` por ff. Antes hubo que
+> > **reemplazar el `SOLUCIÓN_LEC_2.pdf` sin trackear** por el blob del repo (sha256 idéntico
+> > `b7731710…`, copia de seguridad en `Temp/opencode/SOLUCIÓN_LEC_2.backup.pdf`): git aborta
+> > el merge si un untracked choca con el archivo entrante. **No se tocó** el trabajo sin
+> > commitear ajeno (POO: 27 notas modificadas + 1 borrado en Inglés III; 18 PNG
+> > `tabla-verdad-*.png` + `manifiesto_tablas_verdad.json` sin trackear).
 >
 > - **Hecho (autorizado por el dueño):**
 >   - **`SOLUCIÓN_LEC_2.pdf` copiado** de OneDrive al repo (mismo sha256, 146 KB), porque las
