@@ -3155,5 +3155,27 @@ el commit de esta línea de PUSHEADO.
 >   `01_-_Derivada_y_Definición_Formal_04` · `01_-_Reglas_Fundamentales_de_Derivación_03` ·
 >   `02_-_Interpretación_Geométrica_de_la_Derivada_05` · `02_-_Propiedades_de_la_Integral_16`.
 >   Quieren decisión del dueño.
+>
+> **Los 4 mindmaps restantes ya se convirtieron** (`7e1d4ecb`) y el inventario final da
+> **0 mindmaps en Cálculo 1** (todos flowcharts de rectángulos):
+> `01_-_Derivada_y_Definición_Formal_04` (U4) · `01_-_Reglas_Fundamentales_de_Derivación_03`
+> (U4) · `02_-_Interpretación_Geométrica_de_la_Derivada_05` (U4) ·
+> `02_-_Propiedades_de_la_Integral_16` (U6-I). Round-trip **4/4** OK; el "Se lee así" de
+> las 4 notas embebidas actualizado; 65/65 notas a 0 hallazgos; mojibake 0.
+>
+> ---
+
+### `opencode-onedrive` — Cálculo 1: 0 mindmaps, todos los mapas en rectángulos — 17/11/2026
+
+> [!warning] PUSHEO EN CURSO · `7e1d4ecb` · ~2 min
+>
+> - **Hecho:** los 4 mindmaps restantes de la materia pasan a `flowchart TB` con subgrafos
+>   de rectángulos: `01_-_Derivada_y_Definición_Formal_04` (U4) ·
+>   `01_-_Reglas_Fundamentales_de_Derivación_03` (U4) ·
+>   `02_-_Interpretación_Geométrica_de_la_Derivada_05` (U4) ·
+>   `02_-_Propiedades_de_la_Integral_16` (U6-I).
+> - **QA:** 65/65 notas a 0 hallazgos; mojibake 0; 1 H1 + H2 canónicos por nota.
+> - **Inventario:** 0 mindmaps en `Diagramas/` de Cálculo 1.
+> - **Sync/Vercel:** llegará con este push al sitio.
 > - **Sync/Vercel:** el último build del sitio se hizo ANTES de este commit (18 nov 2026);
 >   estos 4 diagramas llegarán al sitio con este push.
