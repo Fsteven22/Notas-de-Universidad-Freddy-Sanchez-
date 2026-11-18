@@ -1,0 +1,15 @@
+flowchart TD
+    A["Un servicio dejó de<br/>responder o va muy lento"]
+    B{"¿El tráfico anómalo<br/>viene de un solo origen<br/>identificable?"}
+    C["DoS"]
+    D["DDoS"]
+    E{"¿Se sospecha que esas IPs<br/>son equipos comprometidos<br/>controlados remotamente?"}
+    F["Ataque vía Botnet"]
+    G["Se detectó tráfico<br/>interceptado/leído<br/>en la red"]
+    H["Sniffer"]
+    A --> B
+    B -->|"Sí"| C
+    B -->|"No, viene de<br/>miles de IPs distintas"| D
+    D --> E
+    E -->|"Sí"| F
+    G --> H

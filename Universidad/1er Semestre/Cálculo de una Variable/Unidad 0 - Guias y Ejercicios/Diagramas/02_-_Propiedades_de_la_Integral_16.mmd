@@ -1,16 +1,25 @@
-mindmap
-  root((Integración))
-    Indefinida
-      Función mas C
-      Linealidad
-      Primitivas
-      Inversa de la derivada
-    Definida
-      Número
-      Área neta
-      Límites
-      Aditividad
-    TFC
-      Une ambas
-      Evaluación práctica
-      Regla de Barrow
+flowchart TB
+    R["Integración"]
+    subgraph I["Indefinida"]
+        direction TB
+        I1["Función mas C"]
+        I2["Linealidad"]
+        I3["Primitivas"]
+        I4["Inversa de la derivada"]
+    end
+    subgraph D["Definida"]
+        direction TB
+        D1["Número"]
+        D2["Área neta"]
+        D3["Límites"]
+        D4["Aditividad"]
+    end
+    subgraph T["TFC"]
+        direction TB
+        T1["Une ambas"]
+        T2["Evaluación práctica"]
+        T3["Regla de Barrow"]
+    end
+    R --> I
+    R --> D
+    R --> T

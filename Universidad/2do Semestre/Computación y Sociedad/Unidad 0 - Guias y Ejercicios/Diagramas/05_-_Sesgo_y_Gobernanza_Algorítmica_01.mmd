@@ -1,0 +1,26 @@
+flowchart TD
+    A["Algoritmo"]
+    B["¿De dónde viene el sesgo?"]
+    C["Datos de entrenamiento"]
+    D["Diseño del código"]
+    E["Definición del problema"]
+    C1["Datos históricos discriminatorios"]
+    C2["Subrepresentación de grupos"]
+    D1["Variables proxy discriminatorias"]
+    D2["Métricas de éxito mal definidas"]
+    E1["Quién define qué es un 'buen' resultado"]
+    A --> B
+    B --> C
+    B --> D
+    B --> E
+    C --> C1
+    C --> C2
+    D --> D1
+    D --> D2
+    E --> E1
+
+    style A fill:#e1f5ff
+    style B fill:#ffe1e1
+    style C fill:#fff4e1
+    style D fill:#e1ffe1
+    style E fill:#f5e1ff

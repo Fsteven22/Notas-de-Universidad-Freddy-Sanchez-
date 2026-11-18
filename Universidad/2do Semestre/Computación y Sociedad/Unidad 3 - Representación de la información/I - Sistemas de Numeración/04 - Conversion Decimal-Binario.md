@@ -65,7 +65,7 @@ dg-publish: true
 >
 > $$\boxed{1101011001010100_2 = 54\,868_{10}}$$
 
-![[ChatGPT Image 21 jun 2026, 13_33_05.png]]
+![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-04-conversion-dec-bin-01.png]]
 
 ---
 

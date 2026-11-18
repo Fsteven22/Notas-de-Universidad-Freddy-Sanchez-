@@ -1,0 +1,18 @@
+flowchart TD
+    A["¿Qué quieres proteger?"]
+    B{"¿Datos viajando<br/>por Internet?"}
+    C["Encriptación / HTTPS"]
+    D{"¿El perímetro de tu<br/>red o equipo?"}
+    E["Firewall"]
+    F{"¿Verificar que quien<br/>accede es realmente<br/>el dueño?"}
+    G{"¿Tienes forma de<br/>capturar rasgos físicos<br/>del usuario?"}
+    H["Biometría"]
+    I["Contraseña + verificación<br/>en dos pasos"]
+    A --> B
+    B -->|"Sí"| C
+    A --> D
+    D -->|"Sí"| E
+    A --> F
+    F -->|"Sí"| G
+    G -->|"Sí"| H
+    G -->|"No"| I

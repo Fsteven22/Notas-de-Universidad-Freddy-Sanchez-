@@ -1,0 +1,21 @@
+flowchart TD
+    A["Diseño sostenible"]
+    B["Fabricación<br/>responsable"]
+    C["Uso prolongado"]
+    D["Reparación<br/>y reutilización"]
+    E["Reciclaje<br/>de materiales"]
+    F["🗑️ Vertedero"]
+    A --> B
+    B --> C
+    C --> D
+    D --> C
+    C --> E
+    E --> A
+    C -->|"modelo lineal"| F
+
+    style A fill:#e1ffe1
+    style B fill:#e1ffe1
+    style C fill:#e1f5ff
+    style D fill:#e1ffe1
+    style E fill:#e1ffe1
+    style F fill:#ffe1e1

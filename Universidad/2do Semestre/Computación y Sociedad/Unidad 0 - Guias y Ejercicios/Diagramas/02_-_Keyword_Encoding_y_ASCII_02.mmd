@@ -1,0 +1,17 @@
+flowchart TD
+    A["¿El texto tiene palabras que se repiten frecuentemente?"]
+    B{"¿El texto es lo suficientemente largo?"}
+    C["Calcular tamaño del diccionario + texto codificado"]
+    D["Probablemente no vale la pena: el diccionario pesará más que el ahorro"]
+    E{"¿Tamaño comprimido + diccionario < tamaño original?"}
+    F["Aplicar Keyword Encoding"]
+    A --> B
+    B -->|"Sí"| C
+    B -->|"No, es muy corto"| D
+    C --> E
+    E -->|"Sí"| F
+    E -->|"No"| D
+
+    style A fill:#e1f5ff
+    style D fill:#f5e1ff
+    style F fill:#1e3a5f,color:#fff

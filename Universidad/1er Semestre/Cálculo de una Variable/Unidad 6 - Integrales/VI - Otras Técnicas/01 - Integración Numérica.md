@@ -1,453 +1,374 @@
 ---
 dg-publish: true
-tags: [MATG1045, unidad6, integracion-numerica, matematicas/calculo/numerico, integracion/aproximacion, metodos/computacionales, trapecio/simpson, analisis/errores, aplicaciones/practicas, programacion/algoritmos]
+tags: [MATG1045, unidad6, integracion-numerica, integrales, metodos-numericos, trapecio, simpson, error-numerico]
 ---
 
 # 💻 Integración Numérica
 
->[!info] 💡 **Concepto Central**
->
->La integración numérica proporciona métodos para aproximar el valor de integrales definidas cuando no es posible o práctico encontrar una antiderivada analítica. Estos métodos se basan en aproximar la función por funciones más simples (constantes, rectas, parábolas) y calcular el área exacta de estas aproximaciones.
+## 🎯 Introducción
 
-## 🎯 ¿Cuándo Usar Integración Numérica?
+> [!info] 💡 Qué es y por qué importa
+>
+> La **integración numérica** aproxima el valor de integrales definidas $\int_a^b f(x)\,dx$ cuando no es posible —o práctico— encontrar una antiderivada analítica. Todos los métodos se basan en la misma idea: aproximar $f(x)$ por funciones más simples (constantes, rectas, parábolas) cuyas integrales sí se calculan exactas.
+>
+> **Por qué importa:** muchas funciones sin antiderivada elemental ($e^{-x^2}$, $\frac{\sin x}{x}$) solo se manejan con métodos numéricos; también es la vía cuando los datos son tabulados (mediciones, sensores) o cuando se quiere verificar un resultado analítico.
+>
+> **Ejemplo:** $\int_0^2 x^2\,dx = \frac{8}{3}$; con $n = 4$ subintervalos, Simpson la reproduce **exactamente**, y el punto medio la aproxima a $2.625$.
 
->[!warning] 🤔 **Situaciones que Requieren Métodos Numéricos**
->
->1. **Funciones sin antiderivada elemental**: $\int e^{-x^2} dx$, $\int \frac{\sin(x)}{x} dx$
->2. **Datos experimentales**: Solo se conocen valores de $f(x)$ en puntos discretos
->3. **Funciones muy complejas**: Donde la antiderivada existe pero es extremadamente complicada
->4. **Verificación de resultados**: Confirmar cálculos analíticos
->5. **Aplicaciones en ingeniería**: Cuando se requiere rapidez sobre precisión exacta
->
->[!tip] 💡 **Ventajas de la Integración Numérica**
->
->- **Universalidad**: Funciona con cualquier función continua
->- **Flexibilidad**: Se adapta a datos tabulados
->- **Control de precisión**: Se puede ajustar según necesidades
->- **Implementación computacional**: Ideal para programación
-
-## 📏 Principio Fundamental: Suma de Riemann
-
->[!info] 🧮 **Base Teórica**
->
->Todos los métodos de integración numérica se basan en la definición de integral como límite de sumas de Riemann:
->
->$$\int_a^b f(x) dx = \lim_{n \to \infty} \sum_{i=1}^n f(x_i^*) \Delta x$$
->
->Los métodos numéricos aproximan esta suma con un número finito de términos, eligiendo diferentes formas de seleccionar $x_i^*$ y aproximar $f(x)$.
-
-> [!info] 🖼️ Principio Fundamental: Suma de Riemann
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Integración_Numérica_01.svg]]
->
-> **Se lee así:** El diagrama avanza en línea recta hasta llegar a un rombo, la única decisión del recorrido: *¿con qué aproximo $f(x)$?*. De ese rombo salen tres ramas rotuladas *constante*, *lineal* y *cuadrática*, que llevan a la regla del rectángulo, la del trapecio y la de Simpson, y cada una desemboca en una caja final que resume el tipo de área que se está sumando.
->
-> **Por qué importa:** Este es el **mapa de los métodos numéricos**: todos nacen de la suma de Riemann y solo cambian en cómo se elige el punto de muestra y qué polinomio se usa en cada tramo. Con el mapa entiendes por qué Simpson da menos error que el trapecio con el mismo $n$.
->
-> **Ejemplo:** Para aproximar $\int_0^2 x^2 dx$ con $n = 4$ en la nota, tomas la rama cuadrática, o sea Simpson, y obtienes $\frac{8}{3}$ exacto.
-
-## 📊 Regla del Rectángulo (Riemann)
-
-### 🔲 Definición y Variantes
-
->[!tip] 📐 **Regla del Rectángulo**
->
->Aproxima $f(x)$ por una constante en cada subintervalo. Para $n$ subintervalos de ancho $h = \frac{b-a}{n}$:
->
-> #### **Regla del Punto Izquierdo**
-> $$L_n = h \sum_{i=0}^{n-1} f(a + ih) = h[f(x_0) + f(x_1) + \cdots + f(x_{n-1})]$$
->
-> #### **Regla del Punto Derecho**
-> $$R_n = h \sum_{i=1}^{n} f(a + ih) = h[f(x_1) + f(x_2) + \cdots + f(x_n)]$$
->
-> #### **Regla del Punto Medio**
-> $$M_n = h \sum_{i=1}^{n} f\left(a + \left(i-\frac{1}{2}\right)h\right)$$
->
-### 🧪 Ejemplo: Regla del Rectángulo
-
->[!example] 📈 **Aproximar $\int_0^2 x^2 dx$ con $n=4$**
->
->**Datos**: $a=0$, $b=2$, $n=4$, $h=\frac{2-0}{4}=0.5$
->**Puntos**: $x_0=0$, $x_1=0.5$, $x_2=1$, $x_3=1.5$, $x_4=2$
->
->**Punto Izquierdo**:
->$$L_4 = 0.5[f(0) + f(0.5) + f(1) + f(1.5)]$$
->$$= 0.5[0 + 0.25 + 1 + 2.25] = 0.5 \times 3.5 = 1.75$$
->
->**Punto Derecho**:
->$$R_4 = 0.5[f(0.5) + f(1) + f(1.5) + f(2)]$$
->$$= 0.5[0.25 + 1 + 2.25 + 4] = 0.5 \times 7.5 = 3.75$$
->
->**Punto Medio**:
->$$M_4 = 0.5[f(0.25) + f(0.75) + f(1.25) + f(1.75)]$$
->$$= 0.5[0.0625 + 0.5625 + 1.5625 + 3.0625] = 0.5 \times 5.25 = 2.625$$
->
->**Valor exacto**: $\int_0^2 x^2 dx = \frac{8}{3} \approx 2.667$
->**Errores**: $|L_4| = 0.917$, $|R_4| = 1.083$, $|M_4| = 0.042$ ✅
-
-### 📊 Análisis de Error
-
->[!warning] ⚠️ **Error de la Regla del Rectángulo**
->
->Si $f''$ es continua en $[a,b]$, entonces:
->
->**Error del Punto Medio**: $|E_M| \leq \frac{(b-a)^3}{24n^2} \max_{[a,b]} |f''(x)|$
->
->**Error de Puntos Extremos**: $|E_{L,R}| \leq \frac{(b-a)^2}{2n} \max_{[a,b]} |f'(x)|$
->
->**Observación**: El punto medio es más preciso que los extremos.
-
-## 🔺 Regla del Trapecio
-
-### 📐 Definición y Fórmula
-
->[!tip] 🏆 **Regla del Trapecio**
->
->Aproxima $f(x)$ por segmentos lineales, creando trapecios en lugar de rectángulos.
->
->$$T_n = \frac{h}{2}\left[f(x_0) + 2f(x_1) + 2f(x_2) + \cdots + 2f(x_{n-1}) + f(x_n)\right]$$
->
->donde $h = \frac{b-a}{n}$ y $x_i = a + ih$.
->
->**Forma compacta**: $T_n = \frac{h}{2}\left[f(a) + f(b) + 2\sum_{i=1}^{n-1} f(x_i)\right]$
-
-### 🎨 Interpretación Geométrica
-
->[!info] 🎨 **Visualización del Método**
->
->- Conecta puntos consecutivos $(x_i, f(x_i))$ con líneas rectas
->- Cada trapecio tiene bases $f(x_i)$ y $f(x_{i+1})$, altura $h$
->- Área de cada trapecio: $\frac{h}{2}[f(x_i) + f(x_{i+1})]$
-
-### 🧪 Ejemplo: Regla del Trapecio
-
->[!example] 📈 **Aproximar $\int_0^2 x^2 dx$ con $n=4$**
->
->**Aplicación directa**:
->$$T_4 = \frac{0.5}{2}[f(0) + 2f(0.5) + 2f(1) + 2f(1.5) + f(2)]$$
->$$= 0.25[0 + 2(0.25) + 2(1) + 2(2.25) + 4]$$
->$$= 0.25[0 + 0.5 + 2 + 4.5 + 4] = 0.25 \times 11 = 2.75$$
->
->**Error**: $|2.75 - 2.667| = 0.083$ (mejor que rectángulos extremos, peor que punto medio)
-
-### 📊 Error del Trapecio
-
->[!warning] 📏 **Análisis de Error**
->
->Si $f''$ es continua en $[a,b]$:
->
->$$|E_T| \leq \frac{(b-a)^3}{12n^2} \max_{[a,b]} |f''(x)|$$
->
->**Características**:
->- Error proporcional a $\frac{1}{n^2}$ (orden cuadrático)
->- Exacto para funciones lineales
->- Generalmente mejor que regla del rectángulo con puntos extremos
-
-## 🌊 Regla de Simpson
-
-### 🎯 Definición y Fórmula
-
->[!tip] 🏆 **Regla de Simpson (1/3)**
->
->Aproxima $f(x)$ por parábolas en cada par de subintervalos. Requiere $n$ par.
->
->$$S_n = \frac{h}{3}\left[f(x_0) + 4f(x_1) + 2f(x_2) + 4f(x_3) + \cdots + 2f(x_{n-2}) + 4f(x_{n-1}) + f(x_n)\right]$$
->
->**Patrón de coeficientes**: $1, 4, 2, 4, 2, \ldots, 2, 4, 1$
->
->[!info] 🧮 **Deducción del Método**
->
->Se basa en aproximar $f(x)$ por polinomios de grado 2 en cada par de intervalos:
->- Toma tres puntos consecutivos: $(x_i, f(x_i))$, $(x_{i+1}, f(x_{i+1}))$, $(x_{i+2}, f(x_{i+2}))$
->- Encuentra la parábola que pasa por estos tres puntos
->- Integra la parábola exactamente
-
-### 🧪 Ejemplo: Regla de Simpson
-
->[!example] 📈 **Aproximar $\int_0^2 x^2 dx$ con $n=4$**
->
->**Aplicación**:
->$$S_4 = \frac{0.5}{3}[f(0) + 4f(0.5) + 2f(1) + 4f(1.5) + f(2)]$$
->$$= \frac{0.5}{3}[0 + 4(0.25) + 2(1) + 4(2.25) + 4]$$
->$$= \frac{0.5}{3}[0 + 1 + 2 + 9 + 4] = \frac{0.5 \times 16}{3} = \frac{8}{3} \approx 2.667$$
->
->**¡Resultado exacto!** 🎉 Simpson es exacto para polinomios de grado ≤ 3
-
-### 📊 Error de Simpson
-
->[!warning] 🎯 **Análisis de Error Superior**
->
->Si $f^{(4)}$ es continua en $[a,b]$:
->
->$$|E_S| \leq \frac{(b-a)^5}{180n^4} \max_{[a,b]} |f^{(4)}(x)|$$
->
->**Características extraordinarias**:
->- Error proporcional a $\frac{1}{n^4}$ (orden cuártico)
->- Exacto para polinomios de grado ≤ 3
->- Precisión mucho mayor que trapecio para el mismo $n$
-
-## 📊 Tabla Comparativa de Métodos
-
->[!info] 📋 **Comparación de Métodos Numéricos**
->
-> | **Método** | **Aproximación** | **Orden de Error** | **Exacto para** | **Coeficientes** |
-> |------------|------------------|-------------------|-----------------|------------------|
-> | **Rectángulo (extremos)** | Constante | $O(h)$ | Constantes | $1, 1, 1, \ldots$ |
-> | **Rectángulo (punto medio)** | Constante | $O(h^2)$ | Constantes | $1, 1, 1, \ldots$ |
-> | **Trapecio** | Lineal | $O(h^2)$ | Lineales | $\frac{1}{2}, 1, 1, \ldots, 1, \frac{1}{2}$ |
-> | **Simpson 1/3** | Cuadrática | $O(h^4)$ | Cúbicas | $1, 4, 2, 4, \ldots, 4, 1$ |
->
-## 🔢 Métodos Avanzados
-
-### 🎯 Regla de Simpson 3/8
-
->[!tip] 🔬 **Simpson 3/8 (para n múltiplo de 3)**
->
->$$S_{3/8} = \frac{3h}{8}[f(x_0) + 3f(x_1) + 3f(x_2) + 2f(x_3) + \cdots + f(x_n)]$$
->
->**Patrón**: $1, 3, 3, 2, 3, 3, 2, \ldots, 3, 3, 1$
->**Error**: Mismo orden que Simpson 1/3, diferente constante
-
-### 🌟 Cuadratura de Gauss
-
->[!warning] 🚀 **Método de Gauss-Legendre**
->
->Selecciona puntos de evaluación y pesos óptimos para maximizar precisión:
->
->$$\int_{-1}^1 f(x) dx \approx \sum_{i=1}^n w_i f(x_i)$$
->
->donde $x_i$ son las raíces de polinomios de Legendre y $w_i$ son pesos específicos.
->
->**Ventaja**: $n$ puntos dan precisión exacta para polinomios de grado $2n-1$
-
-### 📊 Cuadratura Adaptativa
-
->[!info] 🎯 **Métodos Adaptativos**
->
->Ajustan automáticamente el tamaño del paso según:
->- Error estimado localmente
->- Comportamiento de la función
->- Tolerancia especificada
->
->**Algoritmo básico**:
->1. Calcular aproximación con $n$ y $2n$ puntos
->2. Estimar error por diferencia
->3. Si error > tolerancia, subdividir intervalo
->4. Repetir hasta alcanzar precisión deseada
-
-## 🧠 Técnica de Estudio: Método TRAPEZ
-
->[!tip] 🎓 **Mnemotecnia TRAPEZ para Integración Numérica**
->
->**T**ipo de método (rectángulo, trapecio, Simpson)
->**R**esolver intervalos y calcular $h = \frac{b-a}{n}$
->**A**plicar fórmula correspondiente con coeficientes correctos
->**P**recisión: estimar error según el método usado
->**E**rror: comparar con valor exacto si está disponible
->**Z**ona de validez: verificar condiciones del método
->
-
-> [!abstract] ### 📋 Desarrollo Detallado del Método TRAPEZ
->
->
-> #### **T - Tipo de Método** 🎯
-> - **Analizar la función**: ¿Es suave? ¿Tiene oscilaciones?
-> - **Requerimientos de precisión**: ¿Cuánta exactitud se necesita?
-> - **Recursos computacionales**: ¿Cuántas evaluaciones son factibles?
-> - **Datos disponibles**: ¿Se conoce $f(x)$ analíticamente o son datos tabulados?
->
-> #### **R - Resolver Intervalos** 📏
-> - Calcular $h = \frac{b-a}{n}$
-> - Generar puntos: $x_i = a + ih$ para $i = 0, 1, 2, \ldots, n$
-> - Evaluar $f(x_i)$ en todos los puntos necesarios
-> - Verificar que $n$ satisfaga restricciones del método (par para Simpson)
->
-> #### **A - Aplicar Fórmula** ⚡
-> - **Rectángulo**: $h \sum f(x_i^*)$
-> - **Trapecio**: $\frac{h}{2}[f(a) + f(b) + 2\sum_{i=1}^{n-1} f(x_i)]$
-> - **Simpson**: $\frac{h}{3}[f(x_0) + 4f(x_1) + 2f(x_2) + \cdots + f(x_n)]$
->
-> #### **P - Precisión y Error** 📊
-> - Usar fórmulas de error teóricas
-> - Para mayor precisión: duplicar $n$ y comparar resultados
-> - Métodos adaptativos: continuar hasta alcanzar tolerancia
->
-> #### **E - Error Experimental** 🔍
-> - Si se conoce el valor exacto: calcular error absoluto y relativo
-> - Verificar que el error decrece según el orden teórico
-> - Analizar convergencia al aumentar $n$
->
-> #### **Z - Zona de Validez** ✅
-> - Verificar continuidad de $f$ y sus derivadas según el método
-> - Comprobar que no hay singularidades en $[a,b]$
-> - Validar que las estimaciones de error son aplicables
->
-
-### 🎯 Ejemplo Completo con TRAPEZ
-
->[!example] 📈 **Problema**: Aproximar $\int_1^2 \frac{1}{x} dx$ con diferentes métodos
->
-> **T** - Tipo: Probaremos trapecio y Simpson, función suave
-> **R** - Resolver: $n=4$, $h=0.25$, puntos: $1, 1.25, 1.5, 1.75, 2$
-> **A** - Aplicar:
-> - Trapecio: $T_4 = \frac{0.25}{2}[1 + 2(0.8 + 0.667 + 0.571) + 0.5] = 0.697$
-> - Simpson: $S_4 = \frac{0.25}{3}[1 + 4(0.8) + 2(0.667) + 4(0.571) + 0.5] = 0.693$
->
-> **P** - Precisión: Valor exacto = $\ln(2) \approx 0.693147$
-> **E** - Error: Trapecio: $0.004$, Simpson: $0.000147$ (Simpson mucho mejor)
-> **Z** - Zona: $f(x) = \frac{1}{x}$ continua en $[1,2]$, métodos válidos ✅
->
-## 🧪 Ejemplos Avanzados
-
-### 🔬 Ejemplo 1: Función sin Antiderivada Elemental
-
->[!example] 🌟 **Aproximar $\int_0^1 e^{-x^2} dx$ (función de error de Gauss)**
->
->**Problema**: No existe antiderivada elemental
->**Solución numérica** con $n=8$:
->
->| Método | Aproximación | Error Estimado |
->|--------|--------------|----------------|
->
-> | Trapecio | 0.7468 | $O(h^2)$ |
-> | Simpson | 0.7468 | $O(h^4)$ |
-> | Valor "exacto" | 0.7468241 | - |
->
->**Observación**: Simpson alcanza la precisión con menos evaluaciones
-
-### 🔬 Ejemplo 2: Datos Experimentales
-
->[!example] 📊 **Calcular trabajo a partir de datos de fuerza**
->
->**Datos de fuerza** $F(x)$ cada 0.5 metros:
->
->| $x$ (m) | 0 | 0.5 | 1.0 | 1.5 | 2.0 |
->|---------|---|-----|-----|-----|-----|
->| $F(x)$ (N) | 10 | 15 | 25 | 30 | 20 |
->
->**Trabajo** $W = \int_0^2 F(x) dx$:
->- **Trapecio**: $W = \frac{0.5}{2}[10 + 2(15 + 25 + 30) + 20] = 40$ J
->- **Simpson**: $W = \frac{0.5}{3}[10 + 4(15) + 2(25) + 4(30) + 20] = 41.67$ J
-
-### 🔬 Ejemplo 3: Función Oscilante
-
->[!warning] ⚡ **Integrar $\int_0^{2\pi} x \sin(10x) dx$**
->
->**Desafío**: Función muy oscilante requiere $n$ grande
->**Recomendación**: $n \geq 100$ para capturar todas las oscilaciones
->**Resultado** con Simpson $n=100$: Aproximadamente $-0.4$ (valor exacto)
->
->**Lección**: Para funciones oscilantes, aumentar significativamente $n$
-
-## ⚠️ Errores Comunes y Limitaciones
-
->[!warning] 🚨 **Errores Frecuentes**
->
->1. **Número de intervalos incorrecto**:
->   - ❌ Usar $n$ impar con Simpson
->   - ✅ Verificar que $n$ es par para Simpson 1/3
->
->2. **Coeficientes mal aplicados**:
->   - ❌ Usar coeficientes del trapecio en Simpson
->   - ✅ Memorizar patrones: Trapecio (1,2,2,...,2,1), Simpson (1,4,2,4,...,4,1)
->
->3. **Estimación de error inadecuada**:
->   - ❌ Usar fórmulas de error sin verificar condiciones
->   - ✅ Comprobar continuidad de derivadas requeridas
->
->4. **Elección incorrecta de método**:
->   - ❌ Usar rectángulo cuando se necesita precisión alta
->   - ✅ Elegir método según balance precisión/costo computacional
->
->5. **Funciones problemáticas**:
->   - ❌ Aplicar métodos estándar a funciones con singularidades
->   - ✅ Usar métodos especiales o transformar el intervalo
-
-### 🔍 Limitaciones Importantes
-
->[!info] ⚠️ **Cuándo los Métodos Estándar Fallan**
->
->**Singularidades**: $\int_0^1 \frac{1}{\sqrt{x}} dx$ requiere técnicas especiales
->**Oscilaciones rápidas**: Necesitan $n$ muy grande o métodos adaptativos
->**Intervalos infinitos**: Requieren transformación de variable o métodos especiales
->**Discontinuidades**: Deben tratarse separadamente en cada intervalo de continuidad
-
-## 🌟 Aplicaciones Especializadas
-
-### 🔬 Integración Monte Carlo
-
->[!tip] 🎲 **Método Monte Carlo para Altas Dimensiones**
->
->Para integrales múltiples complejas:
->$$\int_a^b f(x) dx \approx \frac{b-a}{N} \sum_{i=1}^N f(x_i)$$
->donde $x_i$ son puntos aleatorios en $[a,b]$.
->
->**Ventaja**: Se extiende fácilmente a múltiples dimensiones
->**Desventaja**: Convergencia lenta ($O(1/\sqrt{N})$)
-
-### 🌊 Integración con Transformaciones
-
->[!info] 🔄 **Manejo de Singularidades**
->
->Para $\int_0^1 \frac{f(x)}{\sqrt{x}} dx$, usar transformación $x = t^2$:
->$$\int_0^1 \frac{f(x)}{\sqrt{x}} dx = \int_0^1 \frac{f(t^2)}{\sqrt{t^2}} \cdot 2t \, dt = 2\int_0^1 f(t^2) dt$$
-
-### 💻 Integración Adaptativa Automática
-
->[!warning] 🤖 **Algoritmos Inteligentes**
->
->Los métodos adaptativos modernos:
->1. Estiman error local automáticamente
->2. Refinan la malla donde sea necesario
->3. Balancean precisión vs costo computacional
->4. Manejan automáticamente irregularidades
+> [!tip] 🗺️ El mapa de la nota
+>
+> - **Definiciones Formales** — la suma de Riemann como base común.
+> - **Procedimiento Paso a Paso** — rectángulos, trapecio, Simpson y sus fórmulas de error.
+> - **Comparación de Métodos** — orden de precisión, costos y los casos donde difieren.
+> - **Ejemplos Resueltos** — diez casos, del rectángulo al trabajo con datos tabulados.
+> - **Ejercicios Propuestos** — seis plantillas, incluida la aproximación a $\frac{1}{x}$ y a $e^{-x^2}$.
+>
+> **Por qué importa:** la tabla de decisión del final (TRAPEZ) dice cuándo usar cada método; el mapa empieza por la suma de Riemann, de la que todo lo demás se deriva cambiando solo el polinomio por tramo.
 
 ---
 
-> [!quote] ## 📚 Referencias y Conexiones
->
->
-> ### 🔗 Notas Relacionadas
-> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/01 - Integral de Riemann.md|01 - Integral de Riemann.md]] - Base teórica de todos los métodos numéricos
-> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo.md|04 - Teorema Fundamental del Cálculo.md]] - Comparación con métodos exactos
-> - [[Unidad 6 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida.md|01 - Métodos de Integración Definida.md]] - Cuando usar métodos analíticos vs numéricos
-> - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/03 - Teoremas de Comparación y Desigualdades.md|03 - Teoremas de Comparación y Desigualdades.md]] - Estimación de errores y validación
->
-> ### 📖 Para Profundizar
-> - Análisis de Errores Numéricos - Teoría completa de errores de truncamiento
-> - Polinomios de Interpolación - Base teórica de Simpson y métodos avanzados
-> - Cuadratura de Gauss - Métodos óptimos de integración numérica
-> - Métodos Adaptativos - Algoritmos inteligentes de integración
->
-> ### 🎯 Notas Recomendadas
-> - Programación de Métodos Numéricos - Implementación práctica en código
-> - Aplicaciones en Ingeniería - Casos reales de uso de integración numérica
-> - [[Validación de entradas de usuario]] - Técnicas para verificar aproximaciones
+## 📋 Definiciones Formales
 
-> [!quote] ❝ Integración Adaptativa Automática
+> [!note] 📋 Definición — Suma de Riemann como base común
 >
-> - Validación de Resultados Numéricos - Técnicas para verificar aproximaciones
-> - [[01 – Transformaciones lineales|Transformaciones de Integrales]] - Manejo de casos difíciles
+> Todos los métodos numéricos son casos particulares de la definición de la integral como límite de sumas de Riemann:
+> $$\int_a^b f(x)\,dx = \lim_{n \to \infty} \sum_{i=1}^n f(x_i^*)\,\Delta x$$
 >
-> ### 🧮 Aplicaciones Especializadas
-> - Análisis de Señales Digitales - Integración de funciones muestreadas
-> - [[Unidad 6 - Integrales/VI - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]] - Integración en ecuaciones diferenciales
-> - Procesamiento de Datos Experimentales - Análisis de mediciones discretas
-> - [[Unidad 6 - Integrales/VI - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]] - Integración en algoritmos de optimización
+> Los métodos se diferencian en **cómo se elige el punto de muestra** $x_i^*$ y **qué polinomio se usa en cada tramo**. Todos tienen la misma estructura: $h = \frac{b-a}{n}$ y $x_i = a + ih$.
 >
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Integración_Numérica_01.svg]]
+>
+> **Se lee así:** el diagrama avanza en línea recta hasta un rombo, la única decisión del recorrido: *¿con qué aproximo $f(x)$?*. De ese rombo salen tres ramas —constante, lineal y cuadrática— que llevan a la regla del rectángulo, la del trapecio y la de Simpson, y cada una desemboca en una caja final que resume el tipo de área que se está sumando.
+>
+> **Por qué importa:** este es el mapa de los métodos numéricos: todos nacen de la suma de Riemann y solo cambian en cómo se elige el punto de muestra y qué polinomio se usa en cada tramo; por eso Simpson da menos error que el trapecio con el mismo $n$.
+>
+> **Ejemplo:** para aproximar $\int_0^2 x^2\,dx$ con $n = 4$ en la nota, tomas la rama cuadrática —Simpson— y obtienes $\frac{8}{3}$ exacto.
+
+> [!warning] ⚠️ ¿Cuándo usar integración numérica?
+>
+> 1. **Funciones sin antiderivada elemental:** $\int_0^1 e^{-x^2}\,dx$, $\int_0^\pi \frac{\sin x}{x}\,dx$.
+> 2. **Datos experimentales:** valores de $f(x)$ en puntos discretos (tabla).
+> 3. **Funciones muy complejas:** antiderivada existe pero es inmanejable.
+> 4. **Verificación:** confirmar cálculos analíticos.
+> 5. **Ingeniería:** rapidez sobre precisión exacta, o validación antes de publicar.
+>
+> **Por qué importa:** la lista de situaciones es un filtro: si un método analítico es viable (integración directa, tablas), usarlo; la numérica es para cuando la otra no puede.
+
+---
+
+## 🔧 Procedimiento Paso a Paso
+
+> [!tip] 🔲 Regla del Rectángulo
+>
+> Aproxima $f(x)$ por una **constante** en cada subintervalo:
+>
+> - **Punto izquierdo:** $L_n = h\left[f(x_0) + f(x_1) + \cdots + f(x_{n-1})\right]$
+> - **Punto derecho:** $R_n = h\left[f(x_1) + f(x_2) + \cdots + f(x_n)\right]$
+> - **Punto medio:** $M_n = h\left[f\big(a + \tfrac{h}{2}\big) + f\big(a + \tfrac{3h}{2}\big) + \cdots + f\big(a + \tfrac{(2n-1)h}{2}\big)\right]$
+>
+> **Error (si $f''$ es continua):** $|E_M| \leq \frac{(b-a)^3}{24n^2}\max|f''(x)|$; $|E_{L,R}| \leq \frac{(b-a)^2}{2n}\max|f'(x)|$.
+>
+> **Por qué importa:** el punto medio es de orden $O(h^2)$ —el doble de preciso que los extremos— con el mismo número de evaluaciones.
+
+> [!tip] 🔺 Regla del Trapecio
+>
+> Aproxima $f(x)$ por **segmentos lineales** (trapecios) entre puntos consecutivos:
+> $$T_n = \frac{h}{2}\left[f(x_0) + 2f(x_1) + 2f(x_2) + \cdots + 2f(x_{n-1}) + f(x_n)\right]$$
+> o en compacta: $T_n = \frac{h}{2}\left[f(a) + f(b) + 2\sum_{i=1}^{n-1} f(x_i)\right]$
+>
+> **Error (si $f''$ es continua):** $|E_T| \leq \frac{(b-a)^3}{12n^2}\max|f''(x)|$.
+>
+> **Por qué importa:** orden $O(h^2)$; exacto para funciones lineales; históricamente el primer método implementado con calculadora.
+
+> [!tip] 🌊 Regla de Simpson (1/3)
+>
+> Aproxima $f(x)$ por **parábolas** en cada par de subintervalos; requiere $n$ par:
+> $$S_n = \frac{h}{3}\left[f(x_0) + 4f(x_1) + 2f(x_2) + 4f(x_3) + \cdots + 2f(x_{n-2}) + 4f(x_{n-1}) + f(x_n)\right]$$
+>
+> Patrón de coeficientes: $1, 4, 2, 4, 2, \ldots, 2, 4, 1$.
+>
+> **Error (si $f^{(4)}$ es continua):** $|E_S| \leq \frac{(b-a)^5}{180n^4}\max|f^{(4)}(x)|$.
+>
+> **Por qué importa:** orden $O(h^4)$ —exactísimo para muchas funciones con $n$ pequeño—; exacto para polinomios de grado $\leq 3$; el método estrella de la asignatura.
+
+> [!tip] 🎓 Mnemotecnia TRAPEZ
+>
+> - **T** — Tipo de método (rectángulo → trapecio → Simpson).
+> - **R** — Resolver intervalos: $h = \frac{b-a}{n}$, puntos $x_i = a + ih$; verificar $n$ par para Simpson.
+> - **A** — Aplicar la fórmula con los coeficientes correctos ($1,2,\ldots,2,1$ trapecio; $1,4,2,\ldots,4,1$ Simpson).
+> - **P** — Precisión: estimar el error con las fórmulas teóricas; duplicar $n$ como control.
+> - **E** — Error experimental: comparar con valor exacto si se conoce.
+> - **Z** — Zona de validez: comprobar continuidad de las derivadas requeridas e intervalos sin singularidades.
+>
+> **Por qué importa:** las seis letras son el procedimiento completo de cualquier aproximación; saltarse la **Z** produce estimaciones que parecen converger.
+
+---
+
+## 📊 Comparación de Métodos
+
+> [!tip] 📋 Tabla comparativa
+>
+> | Método | Aproximación | Orden de error | Exacto para | Coeficientes |
+> |---|---|---|---|---|
+> | Rectángulo (extremos) | constante | $O(h)$ | constantes | $1, 1, 1, \ldots$ |
+> | Rectángulo (punto medio) | constante | $O(h^2)$ | constantes | $1, 1, 1, \ldots$ |
+> | Trapecio | lineal | $O(h^2)$ | lineales | $\frac{1}{2}, 1, 1, \ldots, 1, \frac{1}{2}$ |
+> | Simpson 1/3 | cuadrática | $O(h^4)$ | cúbicas | $1, 4, 2, 4, \ldots, 4, 1$ |
+>
+> **Por qué importa:** es la regla para decidir: si basta con $O(h^2)$ y los datos son tabulados, trapecio; si hay fórmula exacta o $n$ par, Simpson; si solo se tienen tres puntos, Simpson 3/8.
+
+> [!info] 🧮 Métodos avanzados
+>
+> - **Simpson 3/8** (para $n$ múltiplo de 3): $S_{3/8} = \frac{3h}{8}\left[f(x_0) + 3f(x_1) + 3f(x_2) + 2f(x_3) + \cdots + f(x_n)\right]$, con el mismo orden que Simpson 1/3.
+> - **Cuadratura de Gauss–Legendre:** puntos y pesos óptimos; $n$ puntos integran exacto polinomios de grado $2n-1$.
+> - **Cuadratura adaptativa:** calcula con $n$ y $2n$ puntos y estima el error por la diferencia; repite hasta bajar de la tolerancia.
+>
+> **Por qué importa:** son la puerta a los sistemas profesionales; la 1/3 y el trapecio son las que se usan en el curso y en el examen.
+
+---
+
+## 🧮 Ejemplos Resueltos
+
+> [!example] 🔢 Ejemplo 1 — Rectángulo para $\int_0^2 x^2\,dx$, $n = 4$
+>
+> **Datos:** $h = 0.5$; puntos $0, 0.5, 1, 1.5, 2$.
+>
+> **Punto izquierdo:** $L_4 = 0.5\left[0 + 0.25 + 1 + 2.25\right] = 1.75$
+>
+> **Punto derecho:** $R_4 = 0.5\left[0.25 + 1 + 2.25 + 4\right] = 3.75$
+>
+> **Punto medio:** $M_4 = 0.5\left[0.0625 + 0.5625 + 1.5625 + 3.0625\right] = 2.625$
+>
+> **Exacto:** $\frac{8}{3} \approx 2.667$. Errores: $|E_{L_4}| \approx 0.92$, $|E_{R_4}| \approx 1.08$, $|E_{M_4}| \approx 0.042$.
+>
+> **Por qué importa:** el punto medio gana a los extremos por un orden de magnitud; esta comparación es el porqué de las fórmulas de error.
+
+> [!example] 🔢 Ejemplo 2 — Trapecio para $\int_0^2 x^2\,dx$, $n = 4$
+>
+> $$T_4 = \frac{0.5}{2}\left[0 + 2(0.25) + 2(1) + 2(2.25) + 4\right] = 0.25 \times 11 = 2.75$$
+>
+> **Error:** $|2.75 - 2.667| = 0.083$. Exacto para funciones lineales; mejor que extremos, peor que punto medio y Simpson.
+>
+> **Por qué importa:** el trapecio es el puente natural: necesita los mismos puntos que el rectángulo pero con los coeficientes $\frac{1}{2}$.
+
+> [!example] 🔢 Ejemplo 3 — Simpson 1/3 para $\int_0^2 x^2\,dx$, $n = 4$
+>
+> $$S_4 = \frac{0.5}{3}\left[0 + 4(0.25) + 2(1) + 4(2.25) + 4\right] = \frac{0.5 \times 16}{3} = \frac{8}{3}$$
+>
+> **¡Resultado exacto!** — Simpson es exacto para polinomios de grado $\leq 3$.
+>
+> **Por qué importa:** el único método de la tabla que no acumula error en polinomios bajos; el resto se equivoca aunque sea por poco.
+
+> [!example] 🔢 Ejemplo 4 — $\int_1^2 \frac{1}{x}\,dx$ con $n = 4$ vs. Simpson
+>
+> **Trapecio:** $T_4 = \frac{0.25}{2}\left[1 + 2\left(\frac45 + \frac23 + \frac47\right) + \frac12\right] = 0.6970$
+>
+> **Simpson:** $S_4 = \frac{0.25}{3}\left[1 + 4(0.8) + 2(0.6667) + 4(0.5714) + 0.5\right] = 0.6933$
+>
+> **Exacto:** $\ln 2 \approx 0.6931$. Errores: trapecio $\approx 0.0039$, Simpson $\approx 0.0001$.
+>
+> **Por qué importa:** con la misma información ($5$ puntos), Simpson quintuplica la precisión; es la regla para elegir método con tabla.
+
+> [!example] 🔢 Ejemplo 5 — Datos tabulados: trabajo $W = \int_0^2 F(x)\,dx$
+>
+> **Datos:** $F(0) = 10$, $F(0.5) = 15$, $F(1) = 25$, $F(1.5) = 30$, $F(2) = 20$ N.
+>
+> - **Trapecio:** $W = \frac{0.5}{2}\left[10 + 2(15 + 25 + 30) + 20\right] = 0.25 \times 170 = 42.5$ J
+> - **Simpson:** $W = \frac{0.5}{3}\left[10 + 4(15) + 2(25) + 4(30) + 20\right] = \frac{0.5 \times 260}{3} \approx 43.33$ J
+>
+> **Por qué importa:** con datos tabulados no hay fórmula que valga: los trapecios (o Simpson) **son** el método.
+
+> [!example] 🔢 Ejemplo 6 — Sin antiderivada elemental: $\int_0^1 e^{-x^2}\,dx$
+>
+> **Problema:** no existe antiderivada elemental (función error de Gauss).
+>
+> **Con $n = 8$:** $\displaystyle\int_0^1 e^{-x^2}\,dx \approx 0.7468241$ (valor con diez decimales).
+>
+> **Por qué importa:** los coeficientes $1,4,2,4,\ldots,4,1$ están diseñados para acumular precisión justo cuando la fórmula no existe.
+
+---
+
+## ⚠️ Errores Comunes y Limitaciones
+
+> [!warning] 🚨 Errores frecuentes
+>
+> 1. **Número de intervalos incorrecto:**
+>    - ❌ usar $n$ impar con Simpson
+>    - ✅ verificar que $n$ es par para Simpson 1/3
+> 2. **Coeficientes mal aplicados:**
+>    - ❌ usar coeficientes del trapecio en Simpson
+>    - ✅ memorizar patrones: trapecio $(1, 2, \ldots, 2, 1)$, Simpson $(1, 4, 2, 4, \ldots, 4, 1)$
+> 3. **Estimación de error inadecuada:**
+>    - ❌ usar las fórmulas de error sin verificar condiciones
+>    - ✅ comprobar continuidad de las derivadas ($f''$, $f^{(4)}$) requeridas
+> 4. **Elección incorrecta de método:**
+>    - ❌ usar rectángulo cuando se necesita precisión alta
+>    - ✅ elegir según balance precisión/costo
+> 5. **Singularidades:**
+>    - ❌ aplicar métodos estándar a $\int_0^1 \frac{dx}{\sqrt{x}}$ (la derivada explota en $x = 0$)
+>    - ✅ transformar la variable o usar técnicas especiales
+>
+> **Por qué importa:** los cinco son errores de planteamiento, no de aritmética; la tabla comparativa del apartado anterior es su antídoto.
+
+> [!warning] ⚠️ Cuándo fallan los métodos estándar
+>
+> - **Singularidades:** $\int_0^1 \frac{dx}{\sqrt{x}}$ (transformar $x = t^2$).
+> - **Oscilaciones rápidas:** necesitan $n$ grande o métodos adaptativos.
+> - **Intervalos infinitos:** transformar la variable o truncar.
+> - **Discontinuidades:** tratar cada tramo por separado.
+
+> [!info] 🌀 Ejemplo oscilante: $\int_0^{2\pi} x\sin(10x)\,dx$
+>
+> **Desafío:** la función oscila 10 veces en el intervalo; se requiere $n \geq 100$ con Simpson.
+>
+> **Resultado:** $-\frac{\pi}{5} \approx -0.628$ (valor exacto por partes).
+>
+> **Lección:** en funciones oscilantes, aumentar $n$ hasta que el control de convergencia se estabilice.
+
+---
+
+## 📝 Ejercicios Propuestos
+
+> [!example] 📋 Planteamiento
+>
+> Aproxima $\int_0^1 \frac{1}{x+1}\,dx$ con $n = 4$ usando trapecio y Simpson.
+>
+> > [!success]- ✅ Solución
+> > $h = 0.25$; $f = 1, \tfrac45, \tfrac23, \tfrac47, \tfrac12$.
+> > $$T_4 = 0.125\left(1 + 2\left(0.8 + 0.6667 + 0.5714\right) + 0.5\right) = 0.6970$$
+> > $$S_4 = \frac{0.25}{3}\left(1 + 4(0.8) + 2(0.6667) + 4(0.5714) + 0.5\right) = 0.6933$$
+> > Exacto: $\ln 2 \approx 0.6931$.
+> > **Lección:** con $5$ puntos, Simpson duplica la precisión del trapecio ✓
+
+> [!example] 📋 Planteamiento
+>
+> Aproxima $\int_0^2 e^{x^2}\,dx$ con Simpson y $n = 4$, y estima el error.
+>
+> > [!success]- ✅ Solución
+> > $h = 0.5$:
+> > $$S_4 = \frac{0.5}{3}\left[f(0) + 4f(0.5) + 2f(1) + 4f(1.5) + f(2)\right] \approx 23.37$$
+> > Control con $n = 8$ (misma tabla, el doble de puntos) y comparar; $|S_8 - S_4|$ estima el error.
+> > **Lección:** ante duda, duplicar $n$ vale más que cualquier fórmula de error con $\max|f^{(4)}|$ difícil de acotar ✓
+
+> [!example] 📋 Planteamiento
+>
+> Aproxima con Simpson el área bajo $f(x) = \sqrt{x}$ en $[0, 4]$ con $n = 4$; compara con $\frac{16}{3}$.
+>
+> > [!success]- ✅ Solución
+> > $h = 1$; $f(0) = 0$, $f(1) = 1$, $f(2) = \sqrt2$, $f(3) = \sqrt3$, $f(4) = 2$:
+> > $$S_4 = \frac{1}{3}\left(0 + 4(1) + 2\sqrt2 + 4\sqrt3 + 2\right) = \frac{6 + 2\sqrt2 + 4\sqrt3}{3} \approx 5.259$$
+> > Exacto: $\int_0^4 \sqrt{x}\,dx = \frac{2}{3} \cdot 8 = \frac{16}{3} \approx 5.333$. Error $\approx 0.074$.
+> > **Lección:** Simpson no es exacto aquí ($f^{(4)}$ diverge en $x = 0$), pero con $n$ mayor el error baja rápido ✓
+
+> [!example] 📋 Planteamiento
+>
+> Una fuerza medida cada $0.5$ m toma valores $10, 15, 25, 30, 20$ N. Calcula el trabajo con trapecio y con Simpson.
+>
+> > [!success]- ✅ Solución
+> > Trapecio: $W = 0.25\left[10 + 2(15 + 25 + 30) + 20\right] = 42.5$ J.
+> > Simpson: $W = \frac{0.5}{3}\left[10 + 4(15) + 2(25) + 4(30) + 20\right] = \frac{260}{6} \approx 43.33$ J.
+> > **Lección:** dos métodos "razonables" difieren en $1.9\%$; el dato de precisión manda la elección ✓
+
+> [!example] 📋 Planteamiento
+>
+> Decide qué método usar para $\int_0^1 e^{-x^2}\,dx$ y calcula con Simpson $n = 2$.
+>
+> > [!success]- ✅ Solución
+> > No existe antiderivada: numérica. $h = 0.5$:
+> > $$S_2 = \frac{0.5}{3}\left[f(0) + 4f(0.5) + f(1)\right] = \frac{0.5}{3}\left(1 + 4e^{-0.25} + e^{-1}\right) \approx 0.7472$$
+> > Exacto: $0.7468$.
+> > **Lección:** con 3 puntos, Simpson ya da 3 cifras; el método estratificado siempre gana a los extremos ✓
+
+> [!example] 📋 Planteamiento
+>
+> ¿Por qué Simpson fue exacto en el ejemplo del $x^2$ y no en el de $\sqrt{x}$?
+>
+> > [!success]- ✅ Solución
+> > Simpson es exacto para polinomios de grado $\leq 3$. $x^2$ es un polinomio de grado 2 → exacto. $\sqrt{x}$ no es un polinomio (tampoco un $C^4$ en $[0, 4]$: $f^{(4)}$ diverge en $0$) → el error teórico con $f^{(4)}$ continua no aplica en $[0, 4]$ y la aproximación solo se mejora duplicando $n$ (o integrando directamente).
+> > **Lección:** la fórmula de error tiene condiciones; si no se cumplen, la duplicación de $n$ es el control ✓
+
+---
+
+## 🎯 Metas de Aprendizaje
+
+> [!note] 📋 Nivel Básico
+>
+> - [ ] Planteo la suma de Riemann y reconozco los métodos como casos particulares según el polinomio por tramo.
+> - [ ] Calculo aproximaciones con rectángulo (izquierdo, derecho y punto medio) para $n$ dado.
+> - [ ] Reconozco las situaciones donde la integración numérica es la única vía (sin antiderivada elemental, datos tabulados).
+
+> [!note] 📋 Nivel Intermedio
+>
+> - [ ] Aplico trapecio y Simpson 1/3 con los coeficientes correctos y verifico $n$ par para Simpson.
+> - [ ] Estimo el error con las fórmulas $|E_T| \leq \frac{(b-a)^3}{12n^2}M$ y $|E_S| \leq \frac{(b-a)^5}{180n^4}M$, comprobando la continuidad de $f''$ o $f^{(4)}$.
+> - [ ] Comparo métodos con la tabla de decisión ($O(h)$ vs $O(h^2)$ vs $O(h^4)$) según la precisión requerida.
+
+> [!note] 📋 Nivel Avanzado
+>
+> - [ ] Uso control de convergencia duplicando $n$ cuando no puedo acotar $\max|f^{(4)}|$.
+> - [ ] Manejo casos especiales: oscilación rápida (aumentar $n$), singularidades (transformar variable) y datos tabulados.
+> - [ ] Reconozco Simpson 3/8, cuadratura de Gauss y cuadratura adaptativa como extensiones naturales.
 
 ---
 
 ## 📚 Referencias
 
-> [!quote] 🔗 Notas relacionadas
+> [!quote] 📖 Fuentes y material de la casa
 >
-> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/01 - Integral de Riemann.md]]
-> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo.md]]
-> - [[Unidad 6 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida.md]]
-> - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/03 - Teoremas de Comparación y Desigualdades.md]]
-> - [[Validación de entradas de usuario]]
-> - [[01 – Transformaciones lineales]]
-> - [[Unidad 6 - Integrales/VI - Otras Técnicas/01 - Integración Numérica.md]]
+> - J. Stewart, *Cálculo* (Cengage), cap. 7.7: estrategias para la integración y métodos numéricos.
+> - G. Strang, *Calculus* (Wellesley-Cambridge): sumas de Riemann y trapecios compuestos.
+> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/01 - Integral de Riemann|01 - Integral de Riemann]] — la definición que origina todos los métodos.
+> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo|04 - Teorema Fundamental del Cálculo]] — la comparación con los métodos exactos.
+> - [[Unidad 6 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida|01 - Métodos de Integración Definida]] — cuándo optar por lo analítico antes que lo numérico.
+> - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/03 - Teoremas de Comparación y Desigualdades|03 - Teoremas de Comparación y Desigualdades]] — estimación de errores e ideas afines.
+> - [[Unidad 6 - Integrales/VI - Otras Técnicas/02 - Integrales en Coordenadas Polares|02 - Integrales en Coordenadas Polares]] — la otra técnica avanzada de la unidad.
+> - [[Unidad 7 - Aplicaciones de la Integral/I - Áreas/02 - Área entre Curvas|02 - Área entre Curvas]] — las integrales tabuladas aparecen como áreas entre curvas y se integran con estos métodos.
+>
+> **Conexiones interdisciplinarias:** programación (implementación de algoritmos), estadística (datos experimentales), ingeniería (integración de perfiles de fuerza y presión) y análisis de señales (muestreo).
 
-**Tags:** #MATG1045 #unidad6 #integracion-numerica #matematicas/calculo/numerico #integracion/aproximacion #metodos/computacionales #trapecio/simpson #analisis/errores #aplicaciones/practicas #programacion/algoritmos
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/cal1-u6
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Cuál es la base común de todo método numérico?::La suma de Riemann: $\int_a^b f\,dx = \lim_{n\to\infty} \sum f(x_i^*)\Delta x$; los métodos difieren en cómo eligen $x_i^*$ y el polinomio por tramo.
+> - ¿Cómo es la regla del trapecio?::$T_n = \frac{h}{2}\left[f(a) + f(b) + 2\sum_{i=1}^{n-1} f(x_i)\right]$; orden $O(h^2)$.
+> - ¿Cómo es la regla de Simpson 1/3?::$S_n = \frac{h}{3}[f(x_0) + 4f(x_1) + 2f(x_2) + \cdots + 4f(x_{n-1}) + f(x_n)]$; requiere $n$ par; orden $O(h^4)$.
+> - ¿Para qué polinomios es exacto Simpson?::Para polinomios de grado $\leq 3$.
+> - ¿Qué diferencia hay entre punto medio y extremos?::El punto medio es $O(h^2)$ con el mismo costo; los extremos son solo $O(h)$.
+> - ¿Cuándo usar integración numérica?::Sin antiderivada elemental ($e^{-x^2}$), con datos tabulados, o para verificar un resultado analítico.
+> - ¿Cómo se verifica que la aproximación convergiendo?::Duplicar $n$ y comparar ambas aproximaciones; la diferencia acota el error.
+> - ¿Qué pasa en funciones oscilantes?::Exigen $n$ mucho mayor; mejor el punto medio y Simpson adaptativo.
+
+---
+
+## 🔗 Conexiones
+
+> [!info] 🔗 Notas relacionadas
+>
+> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/01 - Integral de Riemann|01 - Integral de Riemann]] — base teórica de todos los métodos numéricos.
+> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo|04 - Teorema Fundamental del Cálculo]] — la comparación con los métodos exactos.
+> - [[Unidad 6 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida|01 - Métodos de Integración Definida]] — cuándo usar analítico vs. numérico.
+> - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/03 - Teoremas de Comparación y Desigualdades|03 - Teoremas de Comparación y Desigualdades]] — estimación de errores y validación.
+> - [[Unidad 6 - Integrales/VI - Otras Técnicas/02 - Integrales en Coordenadas Polares|02 - Integrales en Coordenadas Polares]] — la otra técnica avanzada de la unidad.
+> - [[Unidad 7 - Aplicaciones de la Integral/III - Longitud de Arco/01 - Longitud de Curva|01 - Longitud de Curva]] — donde estas técnicas numéricas resuelven integrales sin forma cerrada.
+>
+> **Conexiones interdisciplinarias:** programación (implementación de algoritmos de integración), estadística y análisis de datos (mediciones discretas), ingeniería (integración de fuerzas y presión en perfiles) y análisis de señales (muestreo y cuadratura).
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Practica primero los ejercicios 1 y 4: trapecio y Simpson contra el valor exacto con $\ln 2$.
+> - Después el 3 y el 5: $\sqrt{x}$ y $e^{-x^2}$, los dos casos sin forma cerrada ni $C^4$.
+> - Cierra con 2 y 6: control de convergencia y elección razonada del método.
+> - Cuando lo tengas, sigue con [[Unidad 6 - Integrales/VI - Otras Técnicas/02 - Integrales en Coordenadas Polares|02 - Integrales en Coordenadas Polares]], la otra técnica avanzada, y repasa [[Unidad 6 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida|01 - Métodos de Integración Definida]].
+
+---
+
+**Tags:** #MATG1045 #unidad6 #integracion-numerica #integrales #metodos-numericos #trapecio #simpson #error-numerico

@@ -1,0 +1,18 @@
+flowchart TD
+    A["¿Tengo la tabla de frecuencias de cada símbolo?"]
+    B["Ordenar todos los nodos de menor a mayor frecuencia"]
+    C{"¿Queda más de un nodo en la lista?"}
+    D["Combinar los dos nodos de menor frecuencia en uno nuevo"]
+    E["Reinsertar el nodo combinado y reordenar"]
+    F["Ese nodo es la raíz del árbol"]
+    G["Asignar 0/1 a cada rama y leer los códigos de raíz a hoja"]
+    A --> B
+    B --> C
+    C -->|"Sí"| D
+    D --> E
+    E --> C
+    C -->|"No, solo queda 1 nodo"| F
+    F --> G
+
+    style A fill:#e1f5ff
+    style G fill:#1e3a5f,color:#fff

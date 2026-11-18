@@ -1,16 +1,25 @@
-mindmap
-  root((Integrales Impropias))
-    Tipos
-      Tipo I: Límites infinitos
-      Tipo II: Discontinuidades
-      Tipo Mixto: Ambos casos
-    Evaluación
-      Límites
-      Convergencia
-      Divergencia
-      Criterios de comparación
-    Aplicaciones
-      Probabilidad
-      Transformadas
-      Física matemática
-      Series infinitas
+flowchart TB
+    R["Integrales Impropias"]
+    subgraph T["Tipos"]
+        direction TB
+        T1["Tipo I: Límites infinitos"]
+        T2["Tipo II: Discontinuidades"]
+        T3["Tipo Mixto: Ambos casos"]
+    end
+    subgraph E["Evaluación"]
+        direction TB
+        E1["Límites"]
+        E2["Convergencia"]
+        E3["Divergencia"]
+        E4["Criterios de comparación"]
+    end
+    subgraph A["Aplicaciones"]
+        direction TB
+        A1["Probabilidad"]
+        A2["Transformadas"]
+        A3["Física matemática"]
+        A4["Series infinitas"]
+    end
+    R --> T
+    R --> E
+    R --> A

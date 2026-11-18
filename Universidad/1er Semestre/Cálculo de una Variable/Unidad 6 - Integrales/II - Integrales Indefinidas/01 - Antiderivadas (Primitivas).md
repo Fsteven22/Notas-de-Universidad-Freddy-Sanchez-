@@ -19,7 +19,7 @@ tags: [MATG1045, unidad6, antiderivadas, primitivas, integral-indefinida, deriva
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Antiderivadas_(Primitivas)_01.svg]]
 >
-> **Se lee así:** un mapa con el tema central "Antiderivadas" en el centro y cuatro ramas hacia los bloques de la nota: **Fundamentos** (definición, existencia y unicidad, notación, verificación), **Técnicas** (fórmulas básicas, propiedades lineales, casos especiales), **Aplicaciones** (problemas de valor inicial, modelado físico, reconstrucción de funciones) y **Conexiones** (derivadas, integrales definidas, ecuaciones diferenciales).
+> **Se lee así:** un cuadro raíz "Antiderivadas" despliega cuatro subgrafos de rectángulos, uno por cada bloque de la nota: **Fundamentos** (definición, existencia y unicidad, notación, verificación), **Técnicas** (fórmulas básicas, propiedades lineales, casos especiales), **Aplicaciones** (problemas de valor inicial, modelado físico, reconstrucción de funciones) y **Conexiones** (derivadas, integrales definidas, ecuaciones diferenciales).
 >
 > **Por qué importa:** sirve de índice visual: si recuerdas las cuatro ramas, recuerdas el orden completo de la nota y dónde buscar cada herramienta.
 >

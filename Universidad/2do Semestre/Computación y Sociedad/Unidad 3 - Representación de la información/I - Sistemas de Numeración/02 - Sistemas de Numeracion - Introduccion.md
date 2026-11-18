@@ -25,7 +25,7 @@ dg-publish: true
 >
 > > 📌 Curiosamente, el sistema que llamamos "arábigo" en Occidente (0-9) ya tiene una grafía distinta a los símbolos del sistema arábigo tradicional — ambos comparten el mismo principio posicional en base 10, pero no los mismos símbolos.
 
-![[ChatGPT Image 21 jun 2026, 13_08_49.png]]
+![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-02-intro-sistemas-numeracion-01.png]]
 
 ---
 

@@ -1,0 +1,18 @@
+flowchart TD
+    A["Conversión Decimal/Binario"]
+    B["Decimal a Binario"]
+    C["Binario a Decimal"]
+    B1["Enteros:<br/>divisiones sucesivas ÷2"]
+    B2["Fracciones:<br/>multiplicaciones sucesivas ×2"]
+    C1["Enteros:<br/>suma de potencias de 2"]
+    C2["Fracciones:<br/>potencias negativas de 2"]
+    A --> B
+    A --> C
+    B --> B1
+    B --> B2
+    C --> C1
+    C --> C2
+
+    style A fill:#e1f5ff
+    style B fill:#e1ffe1
+    style C fill:#fff4e1

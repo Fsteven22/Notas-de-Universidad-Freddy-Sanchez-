@@ -117,7 +117,7 @@ dg-publish: true
 >
 > $$\boxed{A7.5D_{16} = 10100111.01011101_2}$$
 
-![[ChatGPT Image 21 jun 2026, 13_45_30.png]]
+![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-06-sistema-hexadecimal-01.png]]
 
 ---
 

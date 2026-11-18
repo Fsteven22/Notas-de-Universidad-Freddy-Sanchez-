@@ -371,7 +371,7 @@ tags: [MATG1045, unidad4, interpretacion-geometrica, tangente, secante, normal, 
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Interpretación_Geométrica_de_la_Derivada_05.svg]]
 >
-> **Se lee así:** es un mapa mental cuyo nodo central abre cuatro ramas: los conceptos base de donde partes, los elementos clave con los que trabajas (tangente, secante, normal), las áreas donde se aplica y los temas de cálculo que se conectan con él. Cada rama tiene después sus propias hojas.
+> **Se lee así:** un cuadro raíz "Interpretación Geométrica" despliega cuatro subgrafos de rectángulos: los conceptos base de donde partes, los elementos clave con los que trabajas (tangente, secante, normal), las áreas donde se aplica y los temas de cálculo que se conectan con él. Cada subgrafo tiene después sus propias hojas.
 >
 > **Por qué importa:** te sirve como mapa de la unidad: lo que aprendiste de geometría se reutiliza en optimización, integrales y ecuaciones diferenciales. Con esta vista sabes qué repasar cuando un tema se te resiste.
 >

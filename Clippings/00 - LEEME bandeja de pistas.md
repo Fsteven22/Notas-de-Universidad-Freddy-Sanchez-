@@ -2954,7 +2954,6 @@ el commit de esta línea de PUSHEADO.
 >   pendientes ajenos), así que git rechaza el `fetch origin master:master` directo. Se hizo
 >   `git fetch origin` (seguro): su `origin/master` ya apunta a `ccd98813`; el `pull` local
 >   queda para el dueño cuando le convenga.
-
 ---
 
 ### `opencode-site` — rediseño con la paleta de mar (dos temas) — 16/11/2026
@@ -3024,3 +3023,176 @@ el commit de esta línea de PUSHEADO.
 >   `Universidad/**`, ni `site/scripts/**`. Sin `npm run sync` y sin compilar en OneDrive.
 
 > [!success] PUSHEADO `64041715` · 17/11/2026 — `714ff60b` (código) + `64041715` (PUSHEO EN CURSO) + este bloque → merge `--ff-only` a `master` → un solo push, sin `--force`.
+
+### `opencode` — Computación y Sociedad: contrato + validador + baseline — 17/11/2026
+
+> [!success] Contrato FORMATO-CYSOC.md + validador qa_formato_cysoc.py · baseline medido: 325 hallazgos
+>
+> **Paso 1-3 del manual** (auditar → contrato → validador), sin tocar notas todavía.
+>
+> **Baseline (antes):** `qa_formato_cysoc.py --solo "2do Semestre/Computación y Sociedad"` → **43 notas, 325 hallazgos**
+> (2 H · 323 W). Cada hallazgo lleva ruta y línea. Desglose:
+>
+> | Regla | Hallazgos | Severidad | Qué es |
+> |---|---|---|---|
+> | R12-svg-sin-mmd | 103 | W | cada SVG embebido debe tener su `.mmd` al lado (primera ronda de diagramas) |
+> | R14-embed-sin-explicacion | 83 | W | embed visual (`.png`/`.svg`) sin lectura propia |
+> | R1-tags | 39 | W | frontmatter sin `tags:` (ninguna nota de clase lo lleva) |
+> | R4-embed-top | 37 | W | embeds sueltos fuera de callouts |
+> | R6-sin-blanco-header | 23 | W | `>` en blanco tras el header del callout |
+> | R3-h2-emoji | 20 | W | H2 sin emoji |
+> | R3-cierre-falta | 11 | W | notas clase sin cierre (recomendado, no exigido) |
+> | R14-deck-sin-explicacion | 3 | W | callout 📖/deck sin etiqueta de lectura |
+> | R12-clase-embebida | 2 | W | el syllabus PDF está embebido 2 veces |
+> | R13-tags-final | 1 | W | `Recursos Visuales.md` sin `**Tags:**` |
+> | R2-h1-emoji | 1 | W | un H1 sin emoji |
+> | R4-lista-top / R4-prosa-top | 2 | **H** | una lista y una prosa fuera de callouts |
+>
+> **Hallazgos estructurales confirmados:**
+> - **39 notas de clase** comparten `## 🎯 Introducción` (100%) — esa es la única H2 obligatoria que exige el contrato. El resto del esqueleto (Metas 19, Ejercicios 19, Referencias 17(+9 combinadas), Conexiones 10(+9)) es de cobertura desigual → contrato exige solo Introducción + emoji en todo H2; cierre recomendado (W).
+> - **0 embeds rotos** (los 618 de la Fase 0 ya resuelven) — el validador comprueba local → materia → **basename en todo `Universidad/`** antes de marcar rota.
+> - **103 SVG sin `.mmd` fuente** (naming `01_-_..._NN.svg` no canónico → pasa por reconstrucción/round-trip), **7 PNG "ChatGPT Image …"** de U3 sin naming, **2 notas `NOTE` mayúscula vs `note`** (1 detectado como `NOTE`), **0 mojibake** (qa_mojibake), **0 huérfanos de infraestructura**.
+> - El **código de cátedra** aún no figura en las notas → pendiente de definir (contrato pide `CYSOC` de placeholder, pendiente dueño; syllabus oficial en `U0/Guías/`).
+>
+> **Herramientas escritas (nuevas, de esta ronda):**
+> `Universidad/Herramientas/Mantenimiento/FORMATO-CYSOC.md` (16 reglas, perfiles clase/material/índice, R12-svg-sin-mmd, R15 cita PNG por página, R16 `.mmd` con round-trip) y `qa_formato_cysoc.py` (copia adaptada de `qa_formato_diseno.py`; `--solo`/`--calibrar`/`--estricto`/`--fix-rutas`; resolución de assets local → materia → basename vault; salida en TEMP).
+>
+> **Pendiente del dueño (bloquea la transformación):**
+> 1. PDFs de deck/syllabus: ¿capturar como PNG (patrón FESD, ya aprobado allí) o dejar enlace 📎 con alias? CYSOC tiene el syllabus embebido 2 veces (`Bienvenida y Syllabus…md`, `Índice de Contenido.md`).
+> 2. 7 PNG "ChatGPT Image …" de `Unidad 3 - Representación de la información/I - Sistemas de Numeración/`: ¿renombrar a `cysoc-u3-…-NN.png` en `U0/Archivos/<Tema>/` o dejar como están?
+> 3. ¿Código de cátedra real para el frontmatter (o `dg-publish` como hoy, sin código)?
+>
+> **No se tocaron** cambios sin commitear ajenos (POO nota raíz + `Recursos Visuales.md` + `Unidad 1 - Fundamentos/04 - Encapsulamiento`, Inglés III de onedrive).
+>
+> **Avanza:** contrato y validador commiteados (`35fca819`). La transformación mecánica arranca en cuanto el dueño decida los 3 puntos.
+>
+> **PUSHEADO `cb4f4342`** — `35fca819` (+ merge `49f769da`)
+
+>
+> **Push adicional:** el doc de cierre `23175889` (bloque PUSHEADO) también se pusheó a
+> `sesion/opencode-onedrive` y a `master` (`ccd98813..23175889`), con el merge de
+> `origin/master` incluido.
+
+---
+
+### `opencode-onedrive` — Cálculo 1: U7 completa + VI (**65 de 65**) — 17/11/2026
+
+> [!success] PUSHEADO `6317d9e4` · 17/11/2026 — `origin/master` = `master` = `6317d9e4`
+>
+> Push **fast-forward, sin `--force`** (autorizado por el dueño del vault):
+> `23175889..6317d9e4` (`sesion/opencode-onedrive`) y `b8912930..6317d9e4` (`master`).
+> Incluye el merge de `origin/master` (el rediseño de mar de `opencode-site` y el contrato
+> de `CYSOC` de `opencode`): el conflicto del LEEME se resolvió conservando **ambos bloques**
+> ajenos primero y mío después.
+>
+> - **Hecho:** U7 completa (Áreas 01-04, Volúmenes 01-02, Longitud de Curva) al formato de
+>   la casa con 3 diagramas nuevos conectados (pasan round-trip) y conservando los 3 bloques
+>   de figura ajenos incrustados en Área 04 y Volúmenes 01/02; **0 hallazgos** por nota.
+>   Correcciones de contenido verificadas con sympy: área de $x^4-5x^2+4$ en $[-3,3]$ =
+>   $\frac{556}{15}$; bucle $x = y^3 - 3y$ = $\frac{9}{2}$; $L$ en $x = y^3/3 + \frac{1}{4y}$
+>   en $[1,3]$ = $\frac{53}{6}$ (la nota vieja decía $\frac{32}{3}$); $\int_0^{2\pi}
+>   x\sin(10x)\,dx = -\frac{\pi}{5}$ (VI/01 decía $-0.4$); área de pétalo completo
+>   $= \frac{\pi a^2}{4n}$ (U7/04 decía $\frac{\pi a^2}{8n}$, medio pétalo); trabajo $W$ de
+>   los datos tabulados $= 42.5$ J (trapecio) y $\approx 43.33$ J (Simpson) — la nota vieja
+>   decía 40 y 41.67; comprobación con cilindro-cono en el ejercicio del volumen.
+> - **VI completa:** 01 Integración Numérica y 02 Integrales en Coordenadas Polares al
+>   formato de la casa, **0 hallazgos** por nota; round-trip 2/2; mojibake 0.
+> - **Cierre total:** `qa_formato_calculo1 --solo "1er Semestre/Cálculo de una Variable"` →
+>   **65 notas, 0 hallazgos**. `npm run sync` ✓ (14 ZIPs) y `npm run build` ✓ (818 páginas,
+>   786 notas / 17.115 apartados en el índice de búsqueda).
+> - **Doc de cierre:** `39b05abc` (bloque PUSHEO EN CURSO) y este bloque PUSHEADO.
+> - **Pendiente:** nada en Cálculo de una Variable. Queda el aviso ajeno al dueño: las
+>   18 PNG huérfanas `tabla-verdad-*.png` de MatDisc + `manifiesto_tablas_verdad.json`,
+>   y verificar en `neonotes-espol.vercel.app` que la reconstrucción desplegó.
+
+### `opencode` — CYSOC: PDFs sin embebido + PNG renombrados y centralizados — 17/11/2026
+
+> [!success] R12-clase-embebida 2 → **0** · 7 PNG `ChatGPT Image …` → `cysoc-u3-…` en `U0/Archivos/Sistemas de Numeración/` · 322 hallazgos
+>
+> Decisiones del dueño (17/11) ejecutadas:
+>
+> **1. El syllabus PDF deja de embeberse.** `Bienvenida y Syllabus` e `Índice de Contenido` pasan el syllabus (CCPG1004) a **wikilink con alias `📎`** (el sitio sube igual el asset; no es embed inline). La nota de uso del Índice se corrigió; el link relativa markdown del Bienvenida (roto, apuntaba a la raíz) también pasa a wikilink. Además mi primera versión dejó una línea suelta fuera de callout (R4-prosa-top H); quedó envuelta en `[!info] 📎`.
+>
+> **2. Los 7 PNG "ChatGPT Image …" de U3 Sistemas de Numeración** pasan con **`git mv`** (historial preservado) a
+> `Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/` con naming `cysoc-u3-NN-tema-01.png`
+> (`01-analogia-digital`, `02-intro-sistemas-numeracion`, `03-sistema-binario`, `04-conversion-dec-bin`, `05-sistema-octal` x2, `06-sistema-hexadecimal`). Los 7 embeds de las notas U3 se reescriben a la ruta canónica `../../Unidad 0 - …/Archivos/Sistemas de Numeración/` (notas a profundidad 2).
+>
+> **3. Código de cátedra encontrado en el syllabus:** **CCPG1004** — 3 créditos, coordinadora Otilia M. Alejandro Molina (previamente solo figuraba en el PDF, no en las notas).
+>
+> **QA:** `qa_formato_cysoc --solo …/Computación y Sociedad` → **325 → 322 hallazgos** (0 H nuevas; las 2 H restantes son preexistentes: 1 lista + 1 prosa sueltas). `R12-clase-embebida=0`, `R4-embed-top` 37→36.
+>
+> **No se tocaron** cambios sin commitear ajenos (POO nota raíz, `Recursos Visuales`, Inglés III de onedrive).
+>
+> **PUSHEADO `7c8f739a`** — `aaeb6288` (+ merge de `origin/master` `867f61cd`)
+
+---
+
+### `opencode-onedrive` — Rango Antiderivadas→Longitud de Curva: revisión y mejora — 17/11/2026
+
+> [!success] PUSHEADO `ce5ff979` · 17/11/2026 — `origin/master` = `master` = `ce5ff979`
+>
+> Push **fast-forward, sin `--force`** (autorizado por el dueño del vault):
+> `867f61cd..ce5ff979` (`sesion/opencode-onedrive`) y `db2a1f86..ce5ff979` (`master`).
+> Incluye el merge de `origin/master` (la decisión del dueño del 17/11 sobre CYSOC:
+> PDFs sin embebido + PNG renombrados y centralizados); el conflicto del LEEME se resolvió
+> conservando **ambos bloques**, ajeno primero y mío después.
+>
+> - **Commits de esta ronda:** `dee07807` (contenido: mindmaps → rectángulos) ·
+>   `117c62ac` (bloque PUSHEO EN CURSO) · `ce5ff979` (merge de `origin/master`) ·
+>   este bloque PUSHEADO.
+>
+> - **Hecho:** los **4** diagramas del rango que aún eran `mindmap` (burbujas) pasan a
+>   `flowchart TB` con subgrafos de rectángulos conservando intacto todo el texto:
+>   `01_-_Antiderivadas_(Primitivas)_01` · `01_-_Integrales_Impropias_01` ·
+>   `01_-_Métodos_de_Integración_Definida_04` · `02_-_Integral_de_Funciones_por_Tramos_01`.
+>   Round-trip **4/4** OK. Actualizado el "Se lee así" de las 4 notas embebidas (y renombrado
+>   "Mapa mental de los métodos" → "Mapa de los métodos").
+> - **Encabezados del rango (verificados, sin cambios):** 1 H1 por nota, H2 canónicos,
+>   **0 H3** fuera de callouts, sin H1/H2 duplicados ni hashes dentro de callouts.
+>   La página de nota en producción ya renderiza 1 H1 + N H2 limpias (verificado con el HTML).
+> - **QA:** 65/65 notas a 0 hallazgos; mojibake 0.
+> - **Fuera del rango pedido quedan 4 mindmaps más (2 en U2/U4 + 1 en U6-I):**
+>   `01_-_Derivada_y_Definición_Formal_04` · `01_-_Reglas_Fundamentales_de_Derivación_03` ·
+>   `02_-_Interpretación_Geométrica_de_la_Derivada_05` · `02_-_Propiedades_de_la_Integral_16`.
+>   Quieren decisión del dueño.
+>
+> **Los 4 mindmaps restantes ya se convirtieron** (`7e1d4ecb`) y el inventario final da
+> **0 mindmaps en Cálculo 1** (todos flowcharts de rectángulos):
+> `01_-_Derivada_y_Definición_Formal_04` (U4) · `01_-_Reglas_Fundamentales_de_Derivación_03`
+> (U4) · `02_-_Interpretación_Geométrica_de_la_Derivada_05` (U4) ·
+> `02_-_Propiedades_de_la_Integral_16` (U6-I). Round-trip **4/4** OK; el "Se lee así" de
+> las 4 notas embebidas actualizado; 65/65 notas a 0 hallazgos; mojibake 0.
+>
+> ---
+
+### `opencode-onedrive` — Cálculo 1: 0 mindmaps, todos los mapas en rectángulos — 17/11/2026
+
+> [!success] PUSHEADO `baaebd36` · 17/11/2026 — `origin/master` = `master` = `baaebd36`
+>
+> Push **fast-forward, sin `--force`** (autorizado por el dueño del vault):
+> `f728f08d..baaebd36` (`sesion/opencode-onedrive`) y `fda8d25f..baaebd36` (`master`).
+> Incluye el merge de `origin/master` (la reconstrucción de 84 `.mmd` de CYSOC de `opencode`,
+> sin conflictos). Doc de cierre: este bloque.
+>
+> - **Hecho:** los 4 mindmaps restantes de la materia pasan a `flowchart TB` con subgrafos
+>   de rectángulos: `01_-_Derivada_y_Definición_Formal_04` (U4) ·
+>   `01_-_Reglas_Fundamentales_de_Derivación_03` (U4) ·
+>   `02_-_Interpretación_Geométrica_de_la_Derivada_05` (U4) ·
+>   `02_-_Propiedades_de_la_Integral_16` (U6-I).
+> - **QA:** 65/65 notas a 0 hallazgos; mojibake 0; 1 H1 + H2 canónicos por nota.
+> - **Inventario:** 0 mindmaps en `Diagramas/` de Cálculo 1.
+> - **Sync/Vercel:** estas figuras llegarán al sitio con este push; el último build local
+>   se hizo antes de este commit (18 nov 2026).
+> - **Estado de la materia:** Cálculo de una Variable cerrada por este bloque: 65/65 notas
+>   a 0 hallazgos y todos los diagramas en flowcharts de rectángulos.
+
+### `opencode` — CYSOC: 84 `.mmd` reconstruidos (round-trip OK) — 17/11/2026
+
+> [!success] 84 SVG flowchart recuperaron su fuente `.mmd` · verifica_mmd 84/84 OK · 18 pendientes (timeline/mindmap/sequence)
+>
+> - **Hecho:** `svg_a_mmd.py --lote` reconstruyó las **84** fuentes flowchart-v2 de `U0/Diagramas/` a partir de sus SVG (ids `my-svg-flowchart-*` y `my-svg-L_*_*_n`). Round-trip verificado con `verifica_mmd.py`: **84/84 OK** (texto visible + viewBox coinciden con el SVG original). Nunca se sobrescribió un `.mmd` existente.
+> - **Pendientes (reconstrucción manual):** **18 SVG** que no son flowchart-v2: **9 timeline**, **8 mindmap**, **1 sequence** (listados en la salida de `verifica_mmd`; U1 toca 4 timelines).
+> - **QA:** queda pendiente tras los manuales — `qa_formato_cysoc` hoy marca `R12-svg-sin-mmd = 103 – 84 = 19` (los 18 manuales + 1 de la edición; el valor exacto se vuelve a medir al cerrar los manuales).
+> - **Nota de proceso:** los 84 `.mmd` se generaron antes del reinicio del servidor y se re-verificaron y commitieron después (no hubo pérdida de archivos; staged/código de las 84 fuentes solo tras verificar que ninguna era ajena).
+>
+> **PUSHEADO `92a77684`** — `cf5a2d05` (+ merges de `origin/master`)

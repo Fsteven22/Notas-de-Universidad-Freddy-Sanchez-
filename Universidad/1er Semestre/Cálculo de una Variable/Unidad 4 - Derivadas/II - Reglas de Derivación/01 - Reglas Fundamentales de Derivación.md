@@ -446,7 +446,7 @@ tags: [MATG1045, unidad4, reglas-fundamentales-de-derivacion, potencia, regla-pr
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Reglas_Fundamentales_de_Derivación_03.svg]]
 >
-> **Se lee así:** es un mapa mental con un nodo central, "Reglas de Derivación", del que salen cuatro ramas: reglas básicas (constante, potencia, múltiplo constante, suma y diferencia), reglas avanzadas (producto, cociente, cadena, implícita), funciones elementales (algebraicas, trigonométricas, exponenciales, logarítmicas, hiperbólicas) y aplicaciones (física, economía, ingeniería, optimización).
+> **Se lee así:** un cuadro raíz "Reglas de Derivación" despliega cuatro subgrafos de rectángulos: reglas básicas (constante, potencia, múltiplo constante, suma y diferencia), reglas avanzadas (producto, cociente, cadena, implícita), funciones elementales (algebraicas, trigonométricas, exponenciales, logarítmicas, hiperbólicas) y aplicaciones (física, economía, ingeniería, optimización).
 >
 > **Por qué importa:** te sirve como índice mental del temario: en un parcial solo puedes estar en una de esas ramas, y saber en cuál te dice qué fórmula abrir.
 >

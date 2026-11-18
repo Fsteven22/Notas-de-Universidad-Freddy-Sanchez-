@@ -5,12 +5,12 @@ tags: [CCPG1004, unidad0, recursos]
 
 # 📂 Índice de Contenido — Computación y Sociedad
 > [!info] ℹ️ Portal de material de la materia
-> Esta nota es el índice de la carpeta `Unidad 0 - Guias y Ejercicios`, que agrupa el material oficial (syllabus, guías de taller, PDFs del aula) y sirve de hub hacia las unidades. Los PDFs se embeben con `!` inicial para que el sitio los suba; sin el `!` el link quedaría roto.
+> Esta nota es el índice de la carpeta `Unidad 0 - Guias y Ejercicios`, que agrupa el material oficial (syllabus, guías de taller, PDFs del aula) y sirve de hub hacia las unidades. Los PDFs se enlazan como wikilink con alias `📎` (sin `!` no son embed inline); el sitio los sube igualmente.
 
 ## 📎 Syllabus y políticas
 
 > [!note] 📄 Syllabus oficial
-> ![[Unidad 0 - Guias y Ejercicios/Guías/SPA-Syllabus-COMPUTACIÓN_Y_SOCIEDAD.pdf]]
+> [[Unidad 0 - Guias y Ejercicios/Guías/SPA-Syllabus-COMPUTACIÓN_Y_SOCIEDAD.pdf|📎 Syllabus oficial (PDF, 2 páginas)]]
 > PDF oficial del aula virtual.
 
 > [!note] 💛 El syllabus completo está como nota
