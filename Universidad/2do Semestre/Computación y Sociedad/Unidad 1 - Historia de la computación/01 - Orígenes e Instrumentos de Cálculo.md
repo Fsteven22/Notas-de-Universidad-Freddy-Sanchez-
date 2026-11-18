@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1004, cysoc, unidad1, origenes-calculo]
 ---
 
 # 🏛️ Orígenes e Instrumentos de Cálculo
@@ -11,6 +12,10 @@ dg-publish: true
 > Mucho antes de las computadoras electrónicas, los humanos ya necesitaban calcular: medir el tiempo, contar cosechas, registrar datos. Cada instrumento creado fue un paso hacia lo que hoy conocemos como computación.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Orígenes_e_Instrumentos_de_Cálculo_01.svg]]
+>
+> **Se lee así:** la cadena de evolución desde la necesidad de calcular hasta la computación moderna: necesidad de calcular → instrumentos físicos (ábaco, Stonehenge) → máquinas mecánicas (Pascalina, engranajes) → máquinas programables (Telar de Jacquard, Motor de Babbage) → computación moderna. Cada etapa amplía cuánto y cómo puede calcularse.
+> **Por qué importa:** es el hilo conductor de toda la unidad: muestra que la computación no nació de un genio aislado sino de 4500 años de inventos acumulados; entender esta secuencia permite ver cada hito como la respuesta a una necesidad real.
+> **Ejemplo:** contar cosechas a resolver problemas de ingeniería fue un salto largo; cada eslabón aquí fue la preparación del aparato con el que lees esta nota.
 
 ---
 
@@ -129,7 +134,18 @@ dg-publish: true
 > [!summary] 📅 Del ábaco a Babbage
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Orígenes_e_Instrumentos_de_Cálculo_02.svg]]
+>
+> **Se lee así:** línea de tiempo desde 2600 a.C. (Stonehenge, calendario astronómico), 2400 a.C. (ábaco en Mesopotamia y China), 1642 (Pascalina), 1694 (Rueda de Leibniz), 1800s (Telar de Jacquard), 1837 (Motor Analítico de Babbage) hasta 1843 (Ada Lovelace escribe el primer algoritmo).
+> **Por qué importa:** pone fechas a la idea de que la computación es ingeniería acumulada de siglos: 3000 años separan a Stonehenge de la Pascalina, y 200 a Babbage del computador moderno.
+> **Ejemplo:** Ada Lovelace y Babbage no tenían máquina terminada; el código de Lovelace fue la primera prueba de que un algoritmo puede existir por escrito.
 
 ---
 
+## 📚 Referencias
+
+> [!info] 📚 Referencias
+>
+> - Dale, Nell & Lewis, John. *Computer Science Illuminated* (6th ed.). Jones & Bartlett Learning.
+> - Quinn, Michael J. *Ethics for the Information Age* (7th ed.). Pearson.
+> - Syllabus oficial de Computación y Sociedad (CCPG1004), ESPOL, coordinadora Otilia M. Alejandro Molina.
 **Tags:** #historia #computación #ábaco #pascal #leibniz #jacquard #babbage #ada #orígenes #EYAG1037 #unidad1

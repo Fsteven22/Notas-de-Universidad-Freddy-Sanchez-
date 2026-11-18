@@ -3223,3 +3223,62 @@ el commit de esta línea de PUSHEADO.
 > - **Nota de proceso:** los 84 `.mmd` se generaron antes del reinicio del servidor y se re-verificaron y commitieron después (no hubo pérdida de archivos; staged/código de las 84 fuentes solo tras verificar que ninguna era ajena).
 >
 > **PUSHEADO `92a77684`** — `cf5a2d05` (+ merges de `origin/master`)
+
+---
+
+### `opencode-site` — estados reales + mapa imprimible + limpieza de clase inerte — 17/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-rediseno` → `master` (merge `--ff-only`) → `origin/master`
+>
+> - **Hecho (código, `9bb5adb9` `1c654535` `dfbef1e5`):**
+>   - **Los estados dicen lo real** (pedido del dueño): Preuniversitario `Completado`,
+>     1er Semestre `Reconstrucción` (se rehace con todas las materias), 2do y 3er
+>     `En curso` (incompletos por Comunicación y por los demás). Portada y mapa 3D
+>     heredan `estadosSem` + `claseEstado`.
+>   - **El mapa se imprime como la Lista** (`/mapa/` → Imprimir o Guardar como PDF):
+>     el canvas WebGL y su interfaz se ocultan en `@media print`; la Lista sale a dos
+>     columnas negro sobre blanco, sin partir semestres entre hojas, y **muestra el
+>     rótulo del estado** (preuniversitario `Completado`, 1er `Reconstrucción`,
+>     2do y 3er `En curso`).
+>   - **Limpieza**: eliminadas 13 apariciones inertes de `text-white`/`text-black`
+>     (9 archivos). Verificado que nunca ganaban la cascada (todos calculaban a
+>     `var(--nx-text)` en ambos temas); SearchModal pasa a `text-[var(--nx-text)]`.
+>
+> - **Verificado sobre el build de producción** (818 páginas, `astro preview`):
+>   - Portada: contraste AA en 18/18 combinaciones página×tema (todo el texto visible).
+>   - Mapa con estados: portada consistente con `estadosSem` y 3D re-pintando
+>     hubs/nodos con los mismos tokens (QA contra la web viva).
+>   - Impresión del mapa: emulando `@media print`, canvas y botones desaparecen, la
+>     Lista se ve a 2 columnas negro sobre blanco y los semestres no se parten.
+>   - Modo lectura (602→671 px), buscador (abre/filtra/Esc), flashcards, marcar leída,
+>     barra de progreso, tema persistente, mapa 3D⇄Lista, 10/10 funcional.
+>   - Contraste mínimo AA en ambos temas; 0 errores de consola; 0 desbordes; 1 solo
+>     degradado (2 px), 0 sombras, 0 blur, radios 100 % 4 px.
+>
+> - **Sync local**: `npm run sync` con `VAULT_DIR=../Universidad` para que el build
+>   local vuelva a coincidir con la producción (787 notas, 4 semestres).
+>
+> - **No se tocó** la zona `opencode`, ni `Universidad/**`, ni `site/scripts/**`.
+>   Sin `npm run sync` en OneDrive; la copia del repo es la fuente del build.
+
+> [!success] PUSHEADO `a65569bf` · 18/11/2026 — `9bb5adb9` `1c654535` `dfbef1e5` (código) + `a65569bf`
+> (PUSHEO EN CURSO) + este bloque → merge `--ff-only` a `master` → un solo push, sin `--force`.
+
+### `opencode` — CYSOC: U1 completa a 0 hallazgos — 18/11/2026
+
+> [!success] U1 · 6 notas · **0 hallazgos** · 18 `.mmd` manuales (round-trip OK) · 23/23 SVG con fuente
+>
+> **Unidad 1 – Historia de la computación** cerrada al contrato `FORMATO-CYSOC`:
+>
+> - **R1:** frontmatter `tags: [CCPG1004, cysoc, unidad1, <tema>]` en las 6 notas (tema por archivo: `origenes-calculo`, `computadoras-tempranas`, `generaciones-software`, `modelos-software`, `redes-internet`, `pioneros-computacion`).
+> - **R14 (lectura propia):** 14 lecturas agregadas, una por embed (visible en pantalla: cada embed lleva `**Se lee así:**` (2-4 frases) + `**Por qué importa:**` (1-3) + `**Ejemplo:**` (caso concreto)), fundamentadas en el texto visible parseado de cada SVG (los 14 diagramas de U1).
+> - **R3-cierre:** 6 secciones `## 📚 Referencias` agregadas al final de cada nota (bibliografía real del syllabus: Dale&Lewis *Computer Science Illuminated* y Quinn *Ethics for the Information Age*, con el syllabus CCPG1004 como fuente).
+> - **R3-h2-emoji:** bug del validador (keycaps `1️⃣`-`5️⃣` de U1 03) corregido en el **validador** (`RE_EMOJI` ahora acepta `U+20E3`); contenido del dueño intacto.
+> - **18 `.mmd` manuales** (4 timelines U1 + 4 en otras unidades, 9 mindmaps, 1 sequence). Round-trip `verifica_mmd` con 6 vistas perfectas para U1. Los 2 timelines/mindmaps en DIFIERE aceptado y documentado: DIFIERE viewBox ≠ (layout mermaid distinto), texto visible equivalente; el validator solo exige las fuentes `.mmd` presentes.
+> - **QA:** `qa_formato_cysoc --solo U1` → **0 hallazgos**. `qa_links` sin cambios; `qa_mojibake` 0.
+>
+> **Fuera de U1:** los otros 72 hallazgos de la materia (R14 de U2-U6 + cierre de U2-U6) se trabajan unidad a unidad en la misma secuencia.
+>
+> **Nota de proceso:** el bloque recompuso la sección `## 📚 Referencias` antes del `---` final, dejando las notas terminadas en `**Tags:**`, como siempre.
+>
+> **PUSHEADO `8a36ab2a`** — `38fee96d` (+ merge de `origin/master`)

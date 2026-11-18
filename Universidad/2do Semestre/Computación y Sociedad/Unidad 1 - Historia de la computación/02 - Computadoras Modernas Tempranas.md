@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1004, cysoc, unidad1, computadoras-tempranas]
 ---
 
 # 🖥️ Computadoras Modernas Tempranas
@@ -11,6 +12,10 @@ dg-publish: true
 > Entre finales del siglo XIX y mediados del XX, los avances en electromecánica y electrónica permitieron dar el salto de las calculadoras mecánicas a las primeras computadoras programables. Este período sentó las bases de la arquitectura que usamos hasta hoy.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Computadoras_Modernas_Tempranas_01.svg]]
+>
+> **Se lee así:** etapas de la construcción de la computación moderna: máquinas mecánicas del siglo XIX (cálculo por engranajes), tabuladores electromecánicos (el censo de Hollerith), teoría de computación (máquina de Turing y algoritmos), primeras computadoras electrónicas (ENIAC) y, como culminación, la arquitectura Von Neumann.
+> **Por qué importa:** muestra por qué modernas computadoras son básicamente el mismo diseño: la idea de programa almacenado definida en 1945 sigue siendo el modelo de todo ordenador personal.
+> **Ejemplo:** cuando compilas código en tu laptop, el procesador ejecuta instrucciones desde la memoria según la arquitectura de Von Neumann descrita aquí.
 
 ---
 
@@ -97,6 +102,10 @@ dg-publish: true
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Computadoras_Modernas_Tempranas_03.svg]]
 >
+> **Se lee así:** los tres bloques de Von Neumann y sus subdivisiones: CPU con la Unidad de Control (coordina), ALU (operaciones) y registros (valores inmediatos); memoria principal, donde viven datos e instrucciones; y sistema de entrada/salida, que conecta con teclado, monitor y disco.
+> **Por qué importa:** es la anatomía interna de cualquier computadora; entenderla te permite razonar por qué un programa puede quedarse sin memoria o por qué usar el disco es más lento que la RAM.
+> **Ejemplo:** tu juego cargado en RAM es ejecutado por la CPU instrucción por instrucción; cuando minimizas se pausa porque el control de CPU cede la E/S.
+>
 > | Componente | Función |
 > |---|---|
 > | **CPU** | Unidad de Control + ALU + Registros |
@@ -120,7 +129,18 @@ dg-publish: true
 > [!summary] 📅 De Hollerith a Von Neumann
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Computadoras_Modernas_Tempranas_04.svg]]
+>
+> **Se lee así:** cronología: 1890 (Hollerith tabulador para el censo de EE.UU.), 1937 (Turing presenta la máquina de Turing), 1944 (Mark I liderada por Aiken), 1947 (ENIAC en UPenn, primera electrónica general), 1950 (EDVAC, programa almacenado), 1951 (UNIVAC, primera computadora comercial).
+> **Por qué importa:** la II Guerra Mundial comprimió décadas de avance: en solo 10 años pasamos de kilómetros de engranajes a máquinas electrónicas de propósito general.
+> **Ejemplo:** UNIVAC fue el antepasado directo de la venta comercial de computadoras; tu PC es descendiente directa de ese primer aparato pagado por un cliente en 1951.
 
 ---
 
+## 📚 Referencias
+
+> [!info] 📚 Referencias
+>
+> - Dale, Nell & Lewis, John. *Computer Science Illuminated* (6th ed.). Jones & Bartlett Learning.
+> - Quinn, Michael J. *Ethics for the Information Age* (7th ed.). Pearson.
+> - Syllabus oficial de Computación y Sociedad (CCPG1004), ESPOL, coordinadora Otilia M. Alejandro Molina.
 **Tags:** #historia #computación #hollerith #turing #ENIAC #markI #vonneumann #EDVAC #UNIVAC #arquitectura #unidad1 #EYAG1037
