@@ -10,8 +10,8 @@
  * y la esfera del mapa siempre hablan el mismo idioma.
  */
 export const estadosSem = {
-  preuniversitario: "Reconstrucción",
-  "1er-semestre": "Completado",
+  preuniversitario: "Completado",
+  "1er-semestre": "Reconstrucción",
   "2do-semestre": "En curso",
   "3er-semestre": "En curso",
 };
