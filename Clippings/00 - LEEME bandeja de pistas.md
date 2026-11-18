@@ -3310,4 +3310,4 @@ el commit de esta línea de PUSHEADO.
 >
 > **QA:** 43 notas · 188 hallazgos (2 H preexistentes en la nota raíz) · **R8 y R13 en 0**, sin regresiones. Backup de los 43 `.md` en `%TEMP%\opencode\backup_cysoc_fixgt_20261118_0131`.
 >
-> **PUSHEO EN CURSO** — `0ece2a2b`
+> **PUSHEADO `93bc1cb7`** — `0ece2a2b` (+ `93bc1cb7` con el bloque)
