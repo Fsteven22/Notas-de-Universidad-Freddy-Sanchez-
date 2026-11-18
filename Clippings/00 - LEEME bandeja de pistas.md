@@ -3316,7 +3316,19 @@ el commit de esta línea de PUSHEADO.
 
 ### `opencode-onedrive` — MatDisc: enlaces reales a los PDF de lección + corrección de citas — 18/11/2026
 
-> [!warning] PUSHEO EN CURSO · `cc9e1ceb` · ~2 min
+> [!success] PUSHEADO `7c087f6b` · 18/11/2026 — rama `sesion/opencode-onedrive` + `master` (ff) + clon OneDrive al día
+>
+> > **Push:** `1162fd42..7c087f6b` (rama) y `0d49b364..7c087f6b` (`master`), sin `--force`.
+> > `7c087f6b` = merge de `origin/master` (bloque de `opencode`: fixes de render de CYSOC).
+> > **Conflicto del LEEME resuelto conservando ambos bloques** (ajeno primero, cronológico):
+> > el de `opencode` (CYSOC, `93bc1cb7`) y este. 0 marcadores de conflicto restantes.
+> > Contenido: `cc9e1ceb` (enlaces a PDF) · anuncio: `5fe479e9`.
+> >
+> > **Clon OneDrive:** `master` local actualizado a `7c087f6b` por ff, sin tocar el trabajo
+> > ajeno sin commitear (POO, CYSOC e Inglés III del otro agente; 18 PNG `tabla-verdad-*.png`,
+> > `manifiesto_tablas_verdad.json` y los `.mmd` sin trackear siguen intactos).
+> > El `SOLUCIÓN_LEC_2.pdf` ya no está sin trackear: quedó trackeado con sha256 idéntico
+> > (`b7731710…`).
 >
 > - **Hecho (cierre del bloque de MatDisc):**
 >   - **Enlaces reales a los PDF de lección** en las Referencias de `U2/03`, `U1/III/03`
@@ -3337,4 +3349,4 @@ el commit de esta línea de PUSHEADO.
 >   mojibake 0; `npm run sync` ✓ (ZIP MatDisc con 35 PDFs) y `npm run build` ✓ (819 páginas,
 >   `search-content.json` 787 notas).
 >
-> **PUSHEADO en curso:** rama `sesion/opencode-onedrive` → `master` (ff) → clon OneDrive.
+> **PUSHEADO `7c087f6b`** — rama + `master` (ff) + clon OneDrive al día (ver cabecera del bloque).
