@@ -13,7 +13,7 @@ tags: [matematicas-discretas, guia-problemas, logica, conjuntos, induccion, demo
 > |---|---|---|
 > |1.1|Proposiciones, tablas de verdad y circuitos|1–6|
 > |1.2|Condicionales y equivalencia lógica|7–12|
-> |1.3|Demostraciones e [[12 - Inducción matemática\|inducción matemática]]|15–22|
+> |1.3|Demostraciones e [[03 - Inducción Matemática\|inducción matemática]]|15–22|
 > |1.4|Conjuntos, operaciones y demostraciones|23–28|
 
 ---

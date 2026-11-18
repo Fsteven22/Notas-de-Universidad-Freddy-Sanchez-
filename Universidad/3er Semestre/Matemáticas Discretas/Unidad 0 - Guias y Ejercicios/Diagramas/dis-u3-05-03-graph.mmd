@@ -1,0 +1,28 @@
+flowchart TB
+    R["n! — Factorial"]
+    subgraph D["Definición"]
+        direction TB
+        D1["n = 0 → 1"]
+        D2["n ≥ 1 → n · (n-1)!"]
+        D3["n! = 1 · 2 · 3 · … · n"]
+    end
+    subgraph T["Telescopio"]
+        direction TB
+        T1["n! / k! = (k+1)(k+2) ⋯ n"]
+        T2["k! divide n! para k ≤ n"]
+    end
+    subgraph P["Permutaciones"]
+        direction TB
+        P1["n objetos distintos → n! órdenes"]
+        P2["Mesa circular → (n-1)! arreglos"]
+    end
+    subgraph C["Combinatorios"]
+        direction TB
+        C1["C(n,k) = n! / (k!(n-k)!)"]
+        C2["Simetría: C(n,k) = C(n,n-k)"]
+        C3["Ceros finales: Σ⌊n/5^j⌋"]
+    end
+    R --> D
+    R --> T
+    R --> P
+    R --> C

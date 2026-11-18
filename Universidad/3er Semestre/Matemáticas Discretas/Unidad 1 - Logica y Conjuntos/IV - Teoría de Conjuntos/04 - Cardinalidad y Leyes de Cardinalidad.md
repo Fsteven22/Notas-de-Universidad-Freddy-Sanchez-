@@ -448,7 +448,7 @@ tags: [matematicas-discretas, conjuntos, cardinalidad, inclusion-exclusion, venn
 > 
 > - Previo: [[03 - Leyes de Conjuntos]] — leyes
 > - Relacionado: [[04 - Principios de Multiplicación y Suma]] — principios de conteo
-> - Relacionado: [[05 - Permutaciones y Combinaciones]] — conteo avanzado
+> - Relacionado: [[06 - Permutaciones y Combinaciones]] — conteo avanzado
 
 ---
 

@@ -200,6 +200,32 @@ tags: [matematicas-discretas, relaciones, equivalencia, orden-parcial, particion
 > 
 > que es una partición de X = {1, 3, 4}. ✓
 
+> [!example] 📝 Ejemplo 18 — SOLUCIÓN_LEC_2 · Lección 2 (04/11/2026): relación R sobre un conjunto de funciones
+> 
+> Sea $X = \{f: \mathbb{R} \to \mathbb{R}\}$ y define $f \, R \, g \iff f(0) = g(0)$.
+> 
+> **(a) Demuestra que R es de equivalencia:**
+> 
+> - **Reflexiva:** $f(0) = f(0)$ para toda $f \in X$ ⟹ $f \, R \, f$ (propiedad reflexiva de la igualdad de reales).
+> - **Simétrica:** si $f \, R \, g$, entonces $f(0) = g(0)$; como la igualdad es simétrica, $g(0) = f(0)$ ⟹ $g \, R \, f$.
+> - **Transitiva:** si $f \, R \, g$ y $g \, R \, h$, entonces $f(0) = g(0)$ y $g(0) = h(0)$; por transitividad de la igualdad, $f(0) = h(0)$ ⟹ $f \, R \, h$.
+> 
+> Como $R$ es reflexiva, simétrica y transitiva, **$R$ es una relación de equivalencia** sobre $X$. ✓
+> 
+> **(b) Determina $[f]$ si $f(x) = x$:**
+> 
+> Por definición, $[f] = \{g \in X : g \, R \, f\} = \{g \in X : g(0) = f(0)\}$. Como $f(x) = x$, $f(0) = 0$:
+> 
+> $$[f] = \{g: \mathbb{R} \to \mathbb{R} \mid g(0) = 0\}$$
+> 
+> Es decir, **las funciones cuyo gráfico pasa por el origen**: toda $g$ con $g(0) = 0$ (p. ej. $x^2$, $\sin x$, $x - 3$, $e^x - 1$) está en la misma clase que $f(x) = x$.
+> 
+> **Se lee así:** dos funciones forman pareja si coinciden en el origen; la clase de $f(x) = x$ reúne entonces a todas las que anulan en $0$.
+> 
+> **Ejemplo:** $g(x) = x^2$ y $h(x) = x + 5$: $g \, R \, f$ ($g(0) = 0 = f(0)$) pero $h \, \not R \, f$ ($h(0) = 5 \neq 0$).
+> 
+> *Fuente: `SOLUCIÓN_LEC_2.pdf` (Lección 2 de 04/11/2026), punto 2 (50 puntos), en `Unidad 0 - Guias y Ejercicios/Lecciones/`.*
+
 ---
 
 ## 📊 Resumen Visual
@@ -258,6 +284,10 @@ tags: [matematicas-discretas, relaciones, equivalencia, orden-parcial, particion
 > [1] K. H. Rosen, _Discrete Mathematics and Its Applications_, 8th ed. New York, USA: McGraw-Hill, 2019, sec. 9.5 «Equivalence Relations», p. 638; sec. 9.6 «Partial Orderings», p. 650.
 > 
 > [2] R. Johnsonbaugh, _Discrete Mathematics_, 8th ed. Hoboken, NJ, USA: Pearson, 2018, sec. 3.4 «Equivalence Relations», p. 151.
+> 
+> [3] _SOLUCIÓN_LEC_2.pdf_, Lección 2 (04/11/2026), Escuela Superior Politécnica del Litoral, Facultad de Ciencias Naturales y Matemáticas — Matemáticas Discretas · Profesor Cristhian Hernández · Capítulo: Conjuntos, Funciones, Sucesiones, Relaciones: inducción $\prod_{i=2}^n(1-\frac{1}{i^2}) = \frac{n+1}{2n}$ (punto 1) y $f \, R \, g \iff f(0)=g(0)$ con su clase $[f] = \{g : g(0) = 0\}$ (punto 2). En `Unidad 0 - Guias y Ejercicios/Lecciones/`.
+>
+> [4] _SOLUCIÓN_LEC_1.pdf_, Lección 1 (04/11/2026): lógica del primer orden, demostraciones y fundamentos de conjunto para la Lección 2.
 
 ---
 
@@ -285,6 +315,7 @@ tags: [matematicas-discretas, relaciones, equivalencia, orden-parcial, particion
 > - ¿Antisimétrica en 1 línea?::$xRy \land yRx \Rightarrow x=y$ (¡no es simetría!).
 > - ¿Partición (2)?::Disjuntos dos a dos + unión $= X$; equivale a clases de equivalencia.
 > - ¿Parcial vs total?::Total = todo par comparable; parcial admite incomparables (2,3 en $\mid$).
+> - ¿Ejemplo de SOLUCIÓN_LEC_2 — relación sobre funciones?::$f \, R \, g \iff f(0) = g(0)$: reflexiva, simétrica y transitiva por la igualdad; $[f] = \{g : g(0) = f(0)\}$, y para $f(x) = x$, $[f] = \{g : g(0) = 0\}$.
 
 ---
 

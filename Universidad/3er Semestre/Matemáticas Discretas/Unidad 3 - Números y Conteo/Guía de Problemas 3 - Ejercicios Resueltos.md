@@ -444,7 +444,7 @@ tags: [discretas, unidad3, guia-problemas]
 >
 > **Enunciado:** De 3 mujeres y 3 hombres, formar un comité de 3: (a) exactamente 2 mujeres; (b) al menos 1 hombre.
 >
-> Ver [[05 - Permutaciones y Combinaciones]] para combinaciones $C(n,k)$.
+> Ver [[06 - Permutaciones y Combinaciones]] para combinaciones $C(n,k)$.
 >
 > **(a) Exactamente 2 mujeres:**
 >
@@ -558,7 +558,7 @@ tags: [discretas, unidad3, guia-problemas]
 >
 > $$C(18,4) - C(7,4) = 3060 - 35 = 3025$$
 >
-> **(d) Principio del palomar** (ver [[06 - Teorema del Binomio y Principio del Palomar]]):
+> **(d) Principio del palomar** (ver [[07 - Teorema del Binomio y Principio del Palomar]]):
 >
 > Con 4 personas y 3 carreras, alguna carrera contiene al menos $\lceil 4/3 \rceil = 2$ miembros. $\blacksquare$
 >
@@ -604,7 +604,7 @@ tags: [discretas, unidad3, guia-problemas]
 >
 > **Enunciado:** Demostrar que $C(n,k) = C(n-1,k) + C(n-1,k-1)$.
 >
-> Ver [[06 - Teorema del Binomio y Principio del Palomar]] para el teorema del binomio.
+> Ver [[07 - Teorema del Binomio y Principio del Palomar]] para el teorema del binomio.
 >
 > **Paso 1 — Expandir el lado derecho:**
 >
@@ -764,8 +764,8 @@ tags: [discretas, unidad3, guia-problemas]
 > - [[02 - MCD, MCM y Algoritmo de Euclides]] — base de 3.2 (Ej. 7–8, 11–13).
 > - [[03 - Criterios de Divisibilidad y Sistemas de Numeración]] — Ej. 4, 9–10.
 > - [[04 - Principios de Multiplicación y Suma]] — base de 3.3 (Ej. 14–18).
-> - [[05 - Permutaciones y Combinaciones]] — base de 3.4 (Ej. 19–23).
-> - [[06 - Teorema del Binomio y Principio del Palomar]] — base de 3.5 (Ej. 24–27, 30–32).
+> - [[06 - Permutaciones y Combinaciones]] — base de 3.4 (Ej. 19–23).
+> - [[07 - Teorema del Binomio y Principio del Palomar]] — base de 3.5 (Ej. 24–27, 30–32).
 > - [[../Matemáticas Discretas|Matemáticas Discretas]] — volver al índice de la unidad.
 
 **Tags:** #discretas #unidad3 #guia-problemas

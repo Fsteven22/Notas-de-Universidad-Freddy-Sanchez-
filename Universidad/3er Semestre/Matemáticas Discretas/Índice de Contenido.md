@@ -88,6 +88,8 @@ tags: [unidad0, indice, recursos]
 >
 > - ![[Unidad 0 - Guias y Ejercicios/Lecciones/2026_1PAO_Lección_1_(Solución)_MATG1051.pdf|2026_1PAO_Lección_1_(Solución)_MATG1051.pdf]]
 >
+> - ![[Unidad 0 - Guias y Ejercicios/Lecciones/SOLUCIÓN_LEC_2.pdf|SOLUCIÓN_LEC_2.pdf]]
+>
 > - ![[Unidad 0 - Guias y Ejercicios/Lecciones/notas_maquinas_automatas.pdf|notas_maquinas_automatas.pdf]]
 >
 > - ![[Unidad 0 - Guias y Ejercicios/Exámenes/2024 I PAO - EXAMEN 1P - MATDIS.pdf|2024 I PAO - EXAMEN 1P - MATDIS.pdf]]

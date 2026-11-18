@@ -86,7 +86,7 @@ tags: [matematicas, discretas, ESPOL, MATG1051, logica, grafos, algoritmos, seme
 > |---|---|
 > | 1.1 | Proposiciones, conectivos lógicos, tablas de verdad, propiedades y circuitos combinatorios |
 > | 1.2 | Proposiciones condicionales y equivalencia lógica |
-> | 1.3 | Demostraciones por métodos directo, indirecto, resolución e [[12 - Inducción matemática\|inducción matemática]] |
+> | 1.3 | Demostraciones por métodos directo, indirecto, resolución e [[03 - Inducción Matemática\|inducción matemática]] |
 > | 1.4 | Conjunto, subconjunto, [[01 - Conjuntos, Cardinalidad y Subconjuntos\|producto cartesiano]], conjunto potencia, cardinalidad y operaciones |
 
 > [!example] 🟢 Unidad II — Funciones, Sucesiones y Relaciones *(5h)*
@@ -106,7 +106,7 @@ tags: [matematicas, discretas, ESPOL, MATG1051, logica, grafos, algoritmos, seme
 > | 3.2 | [[02 - MCD, MCM y Algoritmo de Euclides\|Máximo común divisor]] (mcd) y mínimo común múltiplo (mcm), sistemas de numeración |
 > | 3.3 | Principios de la multiplicación y de la suma |
 > | 3.4 | Principio de las casillas, permutaciones y combinaciones |
-> | 3.5 | Combinaciones generalizadas y [[06 - Teorema del Binomio y Principio del Palomar\|teorema del binomio]] |
+> | 3.5 | Combinaciones generalizadas y [[07 - Teorema del Binomio y Principio del Palomar\|teorema del binomio]] |
 
 > [!example] 🔴 Unidad IV — Relaciones de Recurrencia y Algoritmos *(7h)*
 >
@@ -169,43 +169,74 @@ tags: [matematicas, discretas, ESPOL, MATG1051, logica, grafos, algoritmos, seme
 >
 > ```
 > 📁 Matemáticas Discretas/
-> ├── 📄 00 - Welcome & Syllabus.md              ← estás aquí
+> ├── 📄 Bienvenida y Syllabus Matemáticas Discretas.md   ← estás aquí
+> ├── 📄 Matemáticas Discretas.md                        (mapa de la materia)
+> ├── 📄 Índice de Contenido.md                          (índice de PDFs y recursos)
+> ├── 📄 Recursos Visuales.md
 > ├── 📎 Syllabus_MATG1051.pdf
 > │
-> ├── 📁 Unidad 1 - Lógica y Conjuntos/
-> │   └── 📄 01 - 01 - Proposiciones, conectivos lógicos, tablas de verdad , propiedades y circuitos combinatorio.md
-> │   └── 📄 02 - Proposiciones Condicionales.md
-> │   └── 📄 03 - Métodos de Demostración.md
-> │   └── 📄 04 - Conjuntos y Operaciones.md
+> ├── 📁 Unidad 0 - Guias y Ejercicios/
+> │   ├── 📄 00 - Leeme Unidad 0.md
+> │   ├── 📁 Talleres/  (2026_1PAO_Taller_1_(Solución).pdf · Solución taller I P4 · Solución taller I P5 · Taller I P4 · Taller I PAO I 2026 P5)
+> │   ├── 📁 Lecciones/ (Lección 1 P4 · Solución lección I P4 · SOLUCIÓN_LEC_1.pdf · SOLUCIÓN_LEC_2.pdf)
+> │   └── 📁 Exámenes/  (2024 y 2025 I/II PAO · 2026 I PAO · MEJORAMIENTO)
+> │
+> ├── 📁 Unidad 1 - Logica y Conjuntos/
+> │   ├── 📄 Guía de Problemas 1 - Ejercicios Resueltos.md
+> │   ├── 📁 I - Lógica Proporcional/
+> │   │   ├── 📄 01 - Proposiciones y conectivos.md
+> │   │   └── 📄 02 - Proposiciones Condicionales y Equivalencia Lógica.md
+> │   ├── 📁 II - Álgebra Proposicional/
+> │   │   ├── 📄 01 - Algebra de Proposiciones.md
+> │   │   ├── 📄 02 - Cuantificadores.md
+> │   │   └── 📄 03 - Demostraciones.md
+> │   ├── 📁 III - Razonamiento Inductivo/
+> │   │   ├── 📄 01 - Reglas de Inferencia.md
+> │   │   ├── 📄 02 - Reglas de Inferencia para Afirmaciones Cuantificadas.md
+> │   │   └── 📄 03 - Inducción Matemática.md
+> │   └── 📁 IV - Teoría de Conjuntos/
+> │       ├── 📄 01 - Conjuntos, Cardinalidad y Subconjuntos.md
+> │       ├── 📄 02 - Operaciones y Diagramas de Venn.md
+> │       ├── 📄 03 - Leyes de Conjuntos.md
+> │       └── 📄 04 - Cardinalidad y Leyes de Cardinalidad.md
 > │
 > ├── 📁 Unidad 2 - Funciones y Relaciones/
 > │   ├── 📄 01 - Funciones.md
 > │   ├── 📄 02 - Relaciones.md
 > │   ├── 📄 03 - Propiedades y Equivalencia.md
-> │   └── 📄 04 - Sucesiones y Cadenas.md
+> │   ├── 📄 04 - Sucesiones y Cadenas.md
+> │   └── 📄 Guía de Problemas 2 - Ejercicios Resueltos.md
 > │
 > ├── 📁 Unidad 3 - Números y Conteo/
 > │   ├── 📄 01 - Divisibilidad y Números Primos.md
-> │   ├── 📄 02 - MCD MCM y Sistemas de Numeración.md
-> │   ├── 📄 03 - Principios de Multiplicación y Suma.md
-> │   ├── 📄 04 - Permutaciones y Combinaciones.md
-> │   └── 📄 05 - Teorema del Binomio.md
+> │   ├── 📄 02 - MCD, MCM y Algoritmo de Euclides.md
+> │   ├── 📄 03 - Criterios de Divisibilidad y Sistemas de Numeración.md
+> │   ├── 📄 04 - Principios de Multiplicación y Suma.md
+> │   ├── 📄 05 - El Factorial y Sus Propiedades.md   ← NUEVA
+> │   ├── 📄 06 - Permutaciones y Combinaciones.md
+> │   ├── 📄 07 - Teorema del Binomio y Principio del Palomar.md
+> │   └── 📄 Guía de Problemas 3 - Ejercicios Resueltos.md
 > │
 > ├── 📁 Unidad 4 - Recurrencia y Algoritmos/
-> │   ├── 📄 01 - Pseudocódigo y Algoritmos.md
-> │   ├── 📄 02 - Análisis de Algoritmos.md
-> │   ├── 📄 03 - Relaciones de Recurrencia.md
-> │   └── 📄 04 - Recurrencia Homogénea.md
+> │   ├── 📄 01 - Relaciones de Recurrencia.md
+> │   ├── 📄 02 - Recurrencia Homogénea.md
+> │   ├── 📄 03 - Pseudocódigo y Algoritmos.md
+> │   ├── 📄 04 - Análisis de Algoritmos I - Fundamentos y Funciones Matemáticas.md
+> │   ├── 📄 05 - Análisis de Algoritmos II - Pseudocódigo y Tiempo Real.md
+> │   └── 📄 Guía de Problemas 4 - Ejercicios Resueltos.md
 > │
 > ├── 📁 Unidad 5 - Grafos y Árboles/
-> │   ├── 📄 01 - Grafos y Subgrafos.md
-> │   ├── 📄 02 - Árboles y Expansión Mínima.md
-> │   └── 📄 03 - Algoritmos de Ruta.md
+> │   ├── 📄 01 - Grafos I - Conceptos Básicos y Recorridos.md
+> │   ├── 📄 02 - Grafos II - Subgrafos, Matrices y Algoritmos.md
+> │   ├── 📄 03 - Grafos III - Isomorfismo.md
+> │   ├── 📄 04 - Árboles I - Conceptos Básicos y Árboles de Expansión.md
+> │   ├── 📄 05 - Árboles II - Árboles Binarios, Recorridos y Códigos Huffman.md
+> │   └── 📄 Guía de Problemas 5 - Ejercicios Resueltos.md
 > │
 > └── 📁 Unidad 6 - Lenguajes y Autómatas/
->     ├── 📄 01 - Circuitos Secuenciales.md
->     ├── 📄 02 - Autómata de Estado Finito.md
->     └── 📄 03 - Lenguajes y Gramáticas.md
+>     ├── 📄 01 - Máquinas de Estado Finito - Definición y Estructura.md
+>     ├── 📄 02 - Autómatas de Estado Finito - Diseño y Aceptación de Cadenas.md
+>     └── 📄 Guía de Problemas 6 - Ejercicios Resueltos.md
 > ```
 
 ---

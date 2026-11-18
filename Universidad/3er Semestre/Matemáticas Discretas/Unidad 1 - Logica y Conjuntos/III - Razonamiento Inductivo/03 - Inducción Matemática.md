@@ -321,6 +321,8 @@ tags: [matematicas-discretas, induccion-matematica, induccion-fuerte, demostraci
 > [!quote] 📖 Fuentes
 >
 > - Material de clase MATG1051: principio simple, casos y ejercicios 1–4 (los de inducción fuerte viven en el historial git de esta nota).
+> - _SOLUCIÓN_LEC_2.pdf_, Lección 2 (04/11/2026), Escuela Superior Politécnica del Litoral, Facultad de Ciencias Naturales y Matemáticas — Matemáticas Discretas · Profesor Cristhian Hernández · Capítulo: Conjuntos, Funciones, Sucesiones, Relaciones: el **producto telescópico** $\prod_{i=2}^{n}(1-\frac{1}{i^2}) = \frac{n+1}{2n}$ resuelto con el mismo esqueleto del ejemplo "Taller 1 (2026)" de esta nota (separar el último factor + hipótesis de inducción + $(p+1)^2-1 = p(p+2)$). El PDF vive en `Unidad 0 - Guias y Ejercicios/Lecciones/`.
+> - _SOLUCIÓN_LEC_1.pdf_, Lección 1 (04/11/2026): fundamentos de lógica y demostraciones relevantes para los pasos base e inductivo.
 
 ---
 

@@ -368,8 +368,8 @@ tags: [MATG1051, unidad3, permutaciones, combinaciones]
 
 > [!quote] 🔗 Conexiones
 > 
-> - Previo: [[04 - Principios de Multiplicación y Suma]] — fundamentos
-> - Siguiente: [[06 - Teorema del Binomio y Principio del Palomar]]
+> - Previo: [[05 - El Factorial y Sus Propiedades]] — el factorial como herramienta previa a las fórmulas de conteo
+> - Siguiente: [[07 - Teorema del Binomio y Principio del Palomar]]
 > - Relacionado: [[04 - Cardinalidad y Leyes de Cardinalidad]]
 
 **Tags:** #matematicas-discretas #conteo #permutaciones #combinaciones #combinatoria #MATG1051

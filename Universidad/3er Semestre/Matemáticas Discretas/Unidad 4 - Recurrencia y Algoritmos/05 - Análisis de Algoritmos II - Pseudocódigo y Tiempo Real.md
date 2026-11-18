@@ -456,7 +456,7 @@ tags: [analisisdealgoritmos, notacionasintotica, recursion, tiemporeal, MATG1051
 > 
 > **Conclusión:** $T(n)$ queda atrapado entre dos exponenciales, $(\sqrt2)^n$ y $2^n$ — genuinamente exponencial, no lineal ni logarítmico (el valor exacto es $\Theta(\varphi^n)$ con $\varphi\approx1{,}618$, la razón áurea, resolviendo la recurrencia formalmente). Esta es la razón concreta detrás de la tabla de "Por qué importa" más abajo: cada llamada extra que se ramifica duplica aproximadamente el trabajo, y eso se vuelve impracticable mucho antes que cualquier $\Theta(n^k)$.
 
-> [!success] ✅ (d) Divide y vencerás con [[05 - Permutaciones y Combinaciones|combinación]] lineal — estilo _merge sort_: $T(n)=2T(n/2)+n,\ T(1)=c \implies \Theta(n\log n)$
+> [!success] ✅ (d) Divide y vencerás con [[06 - Permutaciones y Combinaciones|combinación]] lineal — estilo _merge sort_: $T(n)=2T(n/2)+n,\ T(1)=c \implies \Theta(n\log n)$
 > 
 > ```
 > combinar(n){

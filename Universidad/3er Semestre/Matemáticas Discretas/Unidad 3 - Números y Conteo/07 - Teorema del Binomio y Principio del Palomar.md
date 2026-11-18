@@ -313,7 +313,7 @@ tags: [matematicas-discretas, conteo, teorema-binomial, identidades, pascal, pal
 
 > [!quote] 🔗 Conexiones
 > 
-> - Previo: [[05 - Permutaciones y Combinaciones]] — combinaciones
+> - Previo: [[06 - Permutaciones y Combinaciones]] — combinaciones
 > - Relacionado: 04 - Recurrencia y Algoritmos — relación con recurrencias
 > - Aplicación: [[01 - Grafos I - Conceptos Básicos y Recorridos]]
 

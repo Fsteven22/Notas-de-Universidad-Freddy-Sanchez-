@@ -245,6 +245,6 @@ tags: [divisibilidad, primos, TFA, factorizacion, teoria-de-numeros, MATG1051, u
 > 
 > - Siguiente: [[02 - MCD, MCM y Algoritmo de Euclides]] — divisores comunes
 > - Relacionado: [[03 - Criterios de Divisibilidad y Sistemas de Numeración]]
-> - Aplicación: [[06 - Teorema del Binomio y Principio del Palomar]]
+> - Aplicación: [[07 - Teorema del Binomio y Principio del Palomar]]
 
 **Tags:** #divisibilidad #primos #TFA #factorizacion #teoria-de-numeros #MATG1051 #unidad3
