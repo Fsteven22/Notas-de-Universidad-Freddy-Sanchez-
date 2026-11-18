@@ -102,46 +102,45 @@ const opciones = [
     align-items: center;
     gap: 0.25rem;
     padding: 0.2rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 0.6rem;
-    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--nx-line);
+    border-radius: var(--nx-radius);
+    background: var(--nx-bg-soft);
   }
   .nx-motion-opt {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
     padding: 0.3rem 0.55rem;
-    border-radius: 0.4rem;
     border: 1px solid transparent;
+    border-radius: var(--nx-radius);
     background: transparent;
-    color: #94a3b8;
-    font-family: var(--font-mono);
-    font-size: 10px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    color: var(--nx-muted);
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
     cursor: pointer;
     transition: color 0.15s, background 0.15s, border-color 0.15s;
   }
   .nx-motion-opt:hover {
-    color: #e5e7eb;
-    background: rgba(255, 255, 255, 0.05);
+    color: var(--nx-dim);
+    background: var(--nx-surface-hover);
   }
   .nx-motion-opt.is-active {
-    color: #fff;
-    background: rgba(170, 102, 255, 0.16);
-    border-color: rgba(170, 102, 255, 0.45);
+    color: var(--nx-text);
+    background: var(--nx-accent-soft);
+    border-color: var(--nx-accent-line);
   }
+  /* La tecla sí es mono: es un atajo. */
   .nx-motion-opt-kbd {
     font-family: var(--font-mono);
-    font-size: 9px;
+    font-size: 0.68rem;
     padding: 0 4px;
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    border-radius: 4px;
-    color: #64748b;
+    border: 1px solid var(--nx-line-strong);
+    border-radius: var(--nx-radius);
+    color: var(--nx-muted);
   }
   .nx-motion-opt.is-active .nx-motion-opt-kbd {
-    border-color: rgba(170, 102, 255, 0.5);
-    color: #d8b4fe;
+    border-color: var(--nx-accent-line);
+    color: var(--nx-accent);
   }
   /* Versión compacta: solo la inicial, para el pie del buscador */
   .nx-motion-toggle--compact .nx-motion-opt {
@@ -153,7 +152,7 @@ const opciones = [
   .nx-motion-toggle--compact .nx-motion-opt-kbd {
     border: none;
     padding: 0;
-    font-size: 10px;
+    font-size: 0.72rem;
   }
   @media (prefers-reduced-motion: reduce) {
     :root:not([data-nx-motion="on"]) .nx-motion-opt {

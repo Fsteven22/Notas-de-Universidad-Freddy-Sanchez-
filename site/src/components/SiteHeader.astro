@@ -1,4 +1,7 @@
 ---
+import BrandMark from "./BrandMark.astro";
+import ThemeToggle from "./ThemeToggle.astro";
+
 /**
  * SiteHeader.astro — el header ÚNICO del sitio.
  *
@@ -49,42 +52,50 @@ const {
 ---
 
 <header class:list={["nx-header", sticky && "nx-header--sticky"]}>
-  <div class:list={["nx-header-inner", container, "px-6"]}>
+  <div class:list={["nx-header-inner", container, "px-5 sm:px-6"]}>
     <a href="/" class="nx-header-brand" aria-label="Neonotes — ir al inicio">
-      <img src="/logo.svg" alt="" width="32" height="32" class="nx-header-logo" />
+      <BrandMark size={32} class="nx-header-logo" />
       <span class:list={["nx-header-name nx-brand-text", variant === "portada" ? "text-xl" : "text-base"]}>
         Neonotes
       </span>
     </a>
 
     {/* La barra de búsqueda va a la IZQUIERDA, junto a la marca: era un
-        botón pequeño perdido en el centro-derecha del header. */}
-    <div class="nx-header-search">
-      <button
-        type="button"
-        class="nx-searchbar nx-search-open"
-        aria-label="Buscar en el sitio"
-        title="Buscar en el sitio ( / )"
-      >
-        <svg
-          class="nx-searchbar-icon size-4"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2.5"
-          stroke-linecap="round"
-          aria-hidden="true"
-        >
-          <circle cx="11" cy="11" r="7" />
-          <path d="m20 20-3.5-3.5" />
-        </svg>
-        <span class="nx-searchbar-text">
-          <span class="nx-searchbar-text-full">Buscar en el sitio…</span>
-          <span class="nx-searchbar-text-short">Buscar</span>
-        </span>
-        <kbd class="nx-searchbar-kbd">/</kbd>
-      </button>
-    </div>
+        botón pequeño perdido en el centro-derecha del header.
+
+        En la portada NO se pinta: ahí el hero trae una barra mucho más
+        grande, a todo el ancho. Dos barras de búsqueda en la misma pantalla
+        sería redundante (y el usuario pidió una sola búsqueda). */}
+    {
+      variant !== "portada" && (
+        <div class="nx-header-search">
+          <button
+            type="button"
+            class="nx-searchbar nx-search-open"
+            aria-label="Buscar en el sitio"
+            title="Buscar en el sitio ( / )"
+          >
+            <svg
+              class="nx-searchbar-icon size-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-3.5-3.5" />
+            </svg>
+            <span class="nx-searchbar-text">
+              <span class="nx-searchbar-text-full">Buscar en el sitio…</span>
+              <span class="nx-searchbar-text-short">Buscar</span>
+            </span>
+            <kbd class="nx-searchbar-kbd">/</kbd>
+          </button>
+        </div>
+      )
+    }
 
     {
       variant === "portada" && (
@@ -137,7 +148,7 @@ const {
         href="/favoritos/"
         class="nx-hbtn nx-hbtn--fav"
         aria-label="Tus notas guardadas"
-        title="Tus notas guardadas"
+        title="Guardadas"
       >
         <span aria-hidden="true">★</span>
         <span class="nx-hbtn__count" data-nx-fav-count>0</span>
@@ -146,7 +157,7 @@ const {
         href="/progreso/"
         class="nx-hbtn nx-hbtn--fav"
         aria-label="Tu avance por la carrera"
-        title="Tu avance por la carrera"
+        title="Leídas"
       >
         <span aria-hidden="true">✓</span>
         <span class="nx-hbtn__count" data-nx-leidas-count>0</span>
@@ -175,6 +186,8 @@ const {
           </button>
         )
       }
+      {/* Tema claro/oscuro: al lado de las otras acciones de la cabecera. */}
+      <ThemeToggle />
     </div>
   </div>
 </header>

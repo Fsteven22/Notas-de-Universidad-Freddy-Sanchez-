@@ -2954,6 +2954,120 @@ el commit de esta línea de PUSHEADO.
 >   pendientes ajenos), así que git rechaza el `fetch origin master:master` directo. Se hizo
 >   `git fetch origin` (seguro): su `origin/master` ya apunta a `ccd98813`; el `pull` local
 >   queda para el dueño cuando le convenga.
+---
+
+### `opencode-site` — rediseño con la paleta de mar (dos temas) — 16/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-rediseno` → `master` (merge `--ff-only`) → `origin/master`
+>
+> - **Hecho (código, `714ff60b`):** ronda completa de rediseño visual de `site/`, sin tocar rutas, funciones ni copy.
+>   - **Paleta "mar" con dos temas** en tokens CSS (`site/src/styles/tokens.css`): claro
+>     (`#f4f8fa` / `#e8f0f4` / `#0b6a8f`) y oscuro (`#0b1318` / `#121c23` / `#5cc8e8`), con
+>     `--nx-neon` y `--nx-coral` de uso mínimo. Cero colores sueltos en componentes.
+>   - **El neón solo en sus 3 sitios** acordados: anillo de foco, barra de progreso y marca del
+>     apartado activo del índice. El coral solo en "En curso", favoritos y el elemento actual.
+>   - **Barra de progreso**: degradado de 2 px con marea de 6 s `ease-in-out` (la única excepción
+>     a "sin gradientes"), quieta con `prefers-reduced-motion` y con el interruptor en "Nunca".
+>   - **Sin glow, sin blur, sin sombras decorativas**, un solo radio (4 px), serif para leer y sans
+>     para la interfaz, mono solo en código, atajos y cifras.
+>   - **Marca en SVG en línea** (`BrandMark.astro`) para heredar los tokens; favicon, iconos y OG
+>     regenerados como estáticos. **Newsreader** empaquetada en el sitio (`site/public/fonts/`),
+>     sin CDNs.
+>   - **Vista de nota**: callouts con título sans 600 y cuerpo 400 aparte, tablas y figuras
+>     extraídas fuera del bloque, flashcards intactas, TOC sin línea guía, explorador en 600 y
+>     "Marcar leída" también al final de la nota.
+>   - **Portada**: badge sin "ESPOL", subtítulo neutro en cursiva, tabla ordenable con `aria-sort`,
+>     "—" en vez de 0 PDFs, columna Semestre oculta al filtrar, "Materia › Nota" con la fecha a la
+>     derecha y atajos en una línea. Se retira la sección redundante "Cómo empezar".
+>   - **Estados con color propio** (rótulo de la portada y esferas del mapa, misma señal):
+>     **En curso** → coral · **Completado** → verde de mar (`--nx-done`, 6,0/10,6:1) ·
+>     **Reconstrucción** → ámbar (`--nx-warn`). Tokens `--nx-done`/`--nx-done-soft`/`--nx-done-line`,
+>     `tokenEstado` y `claseEstado` compartidos en `site/src/lib/estados-sem.mjs`.
+>   - **Mapa**: la escena 3D lee los mismos tokens de estado y se repinta al cambiar de tema
+>     (antes: acento para "En curso" y un acento apagado para el resto).
+>   - **Modo lectura arreglado**: al ocultar el explorador y el índice, el grid de la nota queda
+>     en una sola pista (antes los tracks vacíos estrechaban el texto de 602 px a 255 px). Ahora
+>     el contenido usa todo el ancho librado (671 px de medida de lectura).
+>   - **Dos separadores que daban 1,6:1** (el `›` de "Materia › Nota" y el `·`
+>     de los metadatos) usaban el token de bordes (`--nx-line-strong`); ahora van
+>     en `--nx-muted` y pasan 4,5:1 en los dos temas. Los tokens de borde siguen
+>     solo para bordes (3:1).
+>   - **Interruptor de tema** en `<head>` (antes de pintar, sin parpadeo), con `localStorage` y
+>     `prefers-color-scheme` por defecto.
+>
+> - **Verificado sobre el build de producción** (853 páginas, `astro preview`):
+>   - Contraste OK en los 2 temas: texto 15,0/16,0 · acento 5,7/9,7 · coral 5,1/8,1 · aviso 5,0/9,5 ·
+>     borde de control 3,1/3,5 · neón (foco) 4,1/11,9 · "Completado" 6,0/10,6.
+>   - 0 sombras, 0 blur, 1 solo degradado (la barra de 2 px), radios 100% 4 px, serif 0 en interfaz.
+>   - Matiz del acento 197°/194° y del neón 195°/190° (dentro de 190°-210°), violeta ≈ 0,03 % (ruido
+>     de antialiasing).
+>   - Evidencia de píxeles: fondo 87-91 % del viewport, tinta 9-13 %, 0 negro/blanco puro salvo el
+>     papel horneado de los SVG del vault.
+>   - 0 desbordes horizontales, 0 errores de consola, 0 peticiones externas del sitio.
+>   - Callouts y flashcards: 0 tablas o figuras dentro de un callout en 5 notas (14 tarjetas),
+>     cuerpo 400 y título 600, foco de teclado con anillo neón de 2 px.
+>   - Funciones probadas con clics y teclas reales (10/10): buscador abre/filtra/Esc, flashcard se
+>     despliega, "Marcar leída" guarda y sube el contador, barra de progreso crece con el scroll,
+>     mapa 3D → Lista, el tema persiste al navegar, modo lectura abre y amplía.
+>   - Contraste de TODO el texto visible en 9 páginas x 2 temas: 18/18 sin pares bajo el mínimo.
+>   - Modo lectura: explorador e índice ocultos, grid en una pista, texto más grande (1,12 rem) y
+>     con interlineado 1,85, y el estado se restaura al salir.
+>
+> - **Limitación conocida y aceptada:** los diagramas SVG del vault llevan su fondo claro horneado
+>   (`background-color: white` dentro del archivo), así que en el tema oscuro se ven como una figura
+>   sobre papel claro. Es intencional: el SVG es un documento aparte, su interior no se puede
+>   re-tematizar desde el CSS y el vault es zona protegida. Invertirlo con un filtro falsearía
+>   también los colores de las cajas y las flechas.
+>
+> - **No se tocó** la zona `opencode` (DSW U1/U2/U4/U5, Matemáticas Discretas, SBD, Inglés), ni
+>   `Universidad/**`, ni `site/scripts/**`. Sin `npm run sync` y sin compilar en OneDrive.
+
+> [!success] PUSHEADO `64041715` · 17/11/2026 — `714ff60b` (código) + `64041715` (PUSHEO EN CURSO) + este bloque → merge `--ff-only` a `master` → un solo push, sin `--force`.
+
+### `opencode` — Computación y Sociedad: contrato + validador + baseline — 17/11/2026
+
+> [!success] Contrato FORMATO-CYSOC.md + validador qa_formato_cysoc.py · baseline medido: 325 hallazgos
+>
+> **Paso 1-3 del manual** (auditar → contrato → validador), sin tocar notas todavía.
+>
+> **Baseline (antes):** `qa_formato_cysoc.py --solo "2do Semestre/Computación y Sociedad"` → **43 notas, 325 hallazgos**
+> (2 H · 323 W). Cada hallazgo lleva ruta y línea. Desglose:
+>
+> | Regla | Hallazgos | Severidad | Qué es |
+> |---|---|---|---|
+> | R12-svg-sin-mmd | 103 | W | cada SVG embebido debe tener su `.mmd` al lado (primera ronda de diagramas) |
+> | R14-embed-sin-explicacion | 83 | W | embed visual (`.png`/`.svg`) sin lectura propia |
+> | R1-tags | 39 | W | frontmatter sin `tags:` (ninguna nota de clase lo lleva) |
+> | R4-embed-top | 37 | W | embeds sueltos fuera de callouts |
+> | R6-sin-blanco-header | 23 | W | `>` en blanco tras el header del callout |
+> | R3-h2-emoji | 20 | W | H2 sin emoji |
+> | R3-cierre-falta | 11 | W | notas clase sin cierre (recomendado, no exigido) |
+> | R14-deck-sin-explicacion | 3 | W | callout 📖/deck sin etiqueta de lectura |
+> | R12-clase-embebida | 2 | W | el syllabus PDF está embebido 2 veces |
+> | R13-tags-final | 1 | W | `Recursos Visuales.md` sin `**Tags:**` |
+> | R2-h1-emoji | 1 | W | un H1 sin emoji |
+> | R4-lista-top / R4-prosa-top | 2 | **H** | una lista y una prosa fuera de callouts |
+>
+> **Hallazgos estructurales confirmados:**
+> - **39 notas de clase** comparten `## 🎯 Introducción` (100%) — esa es la única H2 obligatoria que exige el contrato. El resto del esqueleto (Metas 19, Ejercicios 19, Referencias 17(+9 combinadas), Conexiones 10(+9)) es de cobertura desigual → contrato exige solo Introducción + emoji en todo H2; cierre recomendado (W).
+> - **0 embeds rotos** (los 618 de la Fase 0 ya resuelven) — el validador comprueba local → materia → **basename en todo `Universidad/`** antes de marcar rota.
+> - **103 SVG sin `.mmd` fuente** (naming `01_-_..._NN.svg` no canónico → pasa por reconstrucción/round-trip), **7 PNG "ChatGPT Image …"** de U3 sin naming, **2 notas `NOTE` mayúscula vs `note`** (1 detectado como `NOTE`), **0 mojibake** (qa_mojibake), **0 huérfanos de infraestructura**.
+> - El **código de cátedra** aún no figura en las notas → pendiente de definir (contrato pide `CYSOC` de placeholder, pendiente dueño; syllabus oficial en `U0/Guías/`).
+>
+> **Herramientas escritas (nuevas, de esta ronda):**
+> `Universidad/Herramientas/Mantenimiento/FORMATO-CYSOC.md` (16 reglas, perfiles clase/material/índice, R12-svg-sin-mmd, R15 cita PNG por página, R16 `.mmd` con round-trip) y `qa_formato_cysoc.py` (copia adaptada de `qa_formato_diseno.py`; `--solo`/`--calibrar`/`--estricto`/`--fix-rutas`; resolución de assets local → materia → basename vault; salida en TEMP).
+>
+> **Pendiente del dueño (bloquea la transformación):**
+> 1. PDFs de deck/syllabus: ¿capturar como PNG (patrón FESD, ya aprobado allí) o dejar enlace 📎 con alias? CYSOC tiene el syllabus embebido 2 veces (`Bienvenida y Syllabus…md`, `Índice de Contenido.md`).
+> 2. 7 PNG "ChatGPT Image …" de `Unidad 3 - Representación de la información/I - Sistemas de Numeración/`: ¿renombrar a `cysoc-u3-…-NN.png` en `U0/Archivos/<Tema>/` o dejar como están?
+> 3. ¿Código de cátedra real para el frontmatter (o `dg-publish` como hoy, sin código)?
+>
+> **No se tocaron** cambios sin commitear ajenos (POO nota raíz + `Recursos Visuales.md` + `Unidad 1 - Fundamentos/04 - Encapsulamiento`, Inglés III de onedrive).
+>
+> **Avanza:** contrato y validador commiteados (`35fca819`). La transformación mecánica arranca en cuanto el dueño decida los 3 puntos.
+>
+> **PUSHEADO `cb4f4342`** — `35fca819` (+ merge `49f769da`)
+
 >
 > **Push adicional:** el doc de cierre `23175889` (bloque PUSHEADO) también se pusheó a
 > `sesion/opencode-onedrive` y a `master` (`ccd98813..23175889`), con el merge de

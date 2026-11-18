@@ -35,14 +35,46 @@ const mod = mods[key];
 if (!mod) return Astro.redirect(`/${sem}/${mat}/`);
 const { Content } = await mod();
 
+/* Tiempo de lectura: se cuenta el texto del markdown de origen (no el HTML
+   compilado, que duplica el texto por el MathML de KaTeX). Se quitan el
+   frontmatter, los bloques de código y las fórmulas. */
+const raws = import.meta.glob("/notes-md/**/*.md", { query: "?raw", import: "default" });
+const raw = (await raws[key]?.()) ?? "";
+const palabras = raw
+  .replace(/^---[\s\S]*?---/m, "")
+  .replace(/```[\s\S]*?```/g, " ")
+  .replace(/`[^`]*`/g, " ")
+  .replace(/\$\$[\s\S]*?\$\$/g, " ")
+  .replace(/\$[^$\n]*\$/g, " ")
+  .replace(/!\[[^\]]*\]\([^)]*\)/g, " ")
+  .replace(/\[\[([^\]|]*\|)?([^\]]*)\]\]/g, " ")
+  .replace(/https?:\/\/\S+/g, " ")
+  .replace(/[#>*_|~-]/g, " ")
+  .split(/\s+/)
+  .filter(Boolean).length;
+const minutos = Math.max(1, Math.round(palabras / 200));
+
 function fecha(ms) {
   return new Date(ms).toLocaleDateString("es-EC", { day: "numeric", month: "short", year: "numeric" }).toLowerCase();
 }
 
-const pretty = (s: string) =>
-  s
-    .replace(/-/g, " ")
-    .replace(/\b\w/g, (c) => c.toUpperCase());
+/* Convierte un slug de unidad en texto legible:
+   "unidad-2-limites" → "Unidad 2 Límites" (los números romanos en
+   mayúsculas y las palabras cortas en minúscula, como el resto del sitio). */
+const MENORES = new Set([
+  "de", "del", "la", "las", "los", "y", "en", "para", "por", "a", "e", "al",
+]);
+const ROMANOS = /^[ivxlcdm]{1,5}$/i;
+const pretty = (slug: string) =>
+  slug
+    .split("-")
+    .map((w, i) => {
+      if (!w) return w;
+      if (ROMANOS.test(w)) return w.toUpperCase();
+      if (i > 0 && MENORES.has(w.toLowerCase())) return w.toLowerCase();
+      return w.charAt(0).toUpperCase() + w.slice(1);
+    })
+    .join(" ");
 
 // secuencia de notas de la materia (para Anterior/Siguiente)
 const notasOrdenadas = matData.notas
@@ -59,8 +91,6 @@ const matUrl = `/${sem}/${mat}/`;
 ---
 
 <Base title={`${note.title} · ${matData.title} · Neonotes`} description={`Apuntes de ${note.title} · ${matData.title} · ${semData.title}`}>
-  <div class="nx-aura" style="width:320px;height:320px;top:-90px;right:12%;opacity:.55"></div>
-
   <SiteHeader
     variant="nota"
     container="max-w-[1320px]"
@@ -76,20 +106,33 @@ const matUrl = `/${sem}/${mat}/`;
   <main class="nx-with-explorer nx-note-layout mx-auto max-w-[1320px] gap-10 px-6 pt-8 pb-20">
     <Explorer semId={sem} matId={mat} currentUrl={`/${file}/`} />
     <article>
-      {unitPath ? (
-        <p class="nx-section-title">{unitPath}</p>
-      ) : (
-        <p class="nx-section-title">{semData.title} › {matData.title}</p>
-      )}
-      <h1 class="mt-2 text-3xl font-black tracking-tight text-white sm:text-4xl">{note.title}</h1>
-      <p class="mt-2 font-mono text-[11px] tracking-wider text-[var(--color-nexus-muted)]">ÚLTIMA EDICIÓN · {fecha(note.mtime)}</p>
-      <div class="nx-bar mt-4 max-w-xs"></div>
+      <h1 class="mt-1 text-3xl font-bold text-white sm:text-4xl">{note.title}</h1>
+
+      {/* Una sola línea de metadatos, en gris: dónde estás, cuánto tarda
+          y cuándo se editó por última vez. */}
+      <p class="nx-note-meta">
+        <span>{unitPath ? unitPath : `${semData.title} › ${matData.title}`}</span>
+        <span class="nx-note-meta__sep" aria-hidden="true">·</span>
+        <span>{minutos} min de lectura</span>
+        <span class="nx-note-meta__sep" aria-hidden="true">·</span>
+        <span>editada el {fecha(note.mtime)}</span>
+      </p>
+
+      {/* Las acciones son iconos (el rótulo va en el tooltip). */}
       <div class="nx-note-tools">
-        <button type="button" id="nx-lectura" class="nx-note-tools__btn" aria-pressed="false">
-          <span class="nx-note-tools__ico" aria-hidden="true">◐</span> Modo lectura
+        <button
+          type="button"
+          id="nx-lectura"
+          class="nx-note-tools__btn"
+          aria-pressed="false"
+          title="Modo lectura"
+        >
+          <span class="nx-note-tools__ico" data-nx-lectura-ico aria-hidden="true">◐</span>
+          <span class="nx-sr-only" data-nx-lectura-txt>Modo lectura</span>
         </button>
-        <button type="button" id="nx-imprimir" class="nx-note-tools__btn">
-          <span class="nx-note-tools__ico" aria-hidden="true">⎙</span> Imprimir / PDF
+        <button type="button" id="nx-imprimir" class="nx-note-tools__btn" title="Imprimir / PDF">
+          <span class="nx-note-tools__ico" aria-hidden="true">⎙</span>
+          <span class="nx-sr-only">Imprimir / PDF</span>
         </button>
         <button
           type="button"
@@ -104,7 +147,7 @@ const matUrl = `/${sem}/${mat}/`;
           title="Guardar esta nota en tus favoritos"
         >
           <span class="nx-note-tools__ico" data-nx-fav-ico aria-hidden="true">☆</span>
-          <span data-nx-fav-txt>Guardar</span>
+          <span class="nx-sr-only" data-nx-fav-txt>Guardar</span>
         </button>
         <button
           type="button"
@@ -119,39 +162,69 @@ const matUrl = `/${sem}/${mat}/`;
           title="Marcar esta nota como leída (para llevar tu avance)"
         >
           <span class="nx-note-tools__ico" data-nx-hecha-ico aria-hidden="true">○</span>
-          <span data-nx-hecha-txt>Marcar leída</span>
+          <span class="nx-sr-only" data-nx-hecha-txt>Marcar leída</span>
+        </button>
+        {/* Emojis: el vault los usa en los títulos y en los callouts.
+            Este interruptor los quita (o los deja) sin tocar el vault. */}
+        <button
+          type="button"
+          id="nx-emojis"
+          class="nx-note-tools__btn"
+          aria-pressed="true"
+          title="Emojis: sí/no"
+        >
+          <span class="nx-note-tools__ico" aria-hidden="true">☺</span>
+          <span class="nx-sr-only">Emojis: sí/no</span>
         </button>
       </div>
+
       <div class="note-prose mt-8">
         <Content />
       </div>
 
-      <div class="mt-12 border-t border-[rgba(255,255,255,0.06)] pt-6">
-        <div class="grid items-stretch gap-3 sm:grid-cols-3">
-          {prev ? (
-            <a
-              href={noteUrl(prev)}
-              class="nx-card group flex flex-col justify-center !py-4 px-4"
-            >
-              <span class="font-mono text-[10px] tracking-[0.2em] text-[var(--color-nexus-muted)]">← ANTERIOR</span>
-              <span class="mt-1 text-sm font-semibold leading-snug text-white transition-colors group-hover:text-[var(--color-nexus-green)] line-clamp-2">{prev.title}</span>
-            </a>
-          ) : <span />}
-          <a href={matUrl} class="nx-card group flex flex-col items-center justify-center !py-4 px-4 text-center">
-            <span class="font-mono text-[10px] tracking-[0.2em] text-[var(--color-nexus-muted)]">MATERIA</span>
-            <span class="mt-1 text-sm font-semibold text-white transition-colors group-hover:text-[var(--color-nexus-green)]">{matData.title}</span>
-          </a>
-          {next ? (
-            <a
-              href={noteUrl(next)}
-              class="nx-card group flex flex-col justify-center items-end !py-4 px-4 text-right"
-            >
-              <span class="font-mono text-[10px] tracking-[0.2em] text-[var(--color-nexus-muted)]">SIGUIENTE →</span>
-              <span class="mt-1 text-sm font-semibold leading-snug text-white transition-colors group-hover:text-[var(--color-nexus-green)] line-clamp-2">{next.title}</span>
-            </a>
-          ) : <span />}
-        </div>
+      {/* Al final de la nota: terminar y pasar a la siguiente. */}
+      <div class="nx-note-fin">
+        <span>¿Terminaste esta nota?</span>
+        <button
+          type="button"
+          class="nx-note-fin__btn nx-hecha-btn"
+          data-nx-hecha
+          aria-pressed="false"
+          data-url={`/${file}/`}
+          data-t={note.title}
+          data-m={mat}
+          data-mt={matData.title}
+          data-s={sem}
+          title="Marcar esta nota como leída (para llevar tu avance)"
+        >
+          <span class="nx-note-tools__ico" data-nx-hecha-ico aria-hidden="true">○</span>
+          <span data-nx-hecha-txt>Marcar leída</span>
+        </button>
       </div>
+
+      {/* Navegación entre notas: filas con línea de 1 px. */}
+      <nav class="nx-note-nav" aria-label="Notas anterior y siguiente">
+        {
+          prev ? (
+            <a href={noteUrl(prev)} class="nx-note-nav__item">
+              <span class="nx-note-nav__label">← Anterior</span>
+              <span class="nx-note-nav__title">{prev.title}</span>
+            </a>
+          ) : <span />
+        }
+        <a href={matUrl} class="nx-note-nav__item">
+          <span class="nx-note-nav__label">Materia</span>
+          <span class="nx-note-nav__title">{matData.title}</span>
+        </a>
+        {
+          next ? (
+            <a href={noteUrl(next)} class="nx-note-nav__item nx-note-nav__item--next">
+              <span class="nx-note-nav__label">Siguiente →</span>
+              <span class="nx-note-nav__title">{next.title}</span>
+            </a>
+          ) : <span />
+        }
+      </nav>
     </article>
 
     <NoteToc
@@ -289,7 +362,7 @@ const matUrl = `/${sem}/${mat}/`;
 
   <script>
     /**
-     * Modo lectura + impresión.
+     * Modo lectura + impresión + emojis.
      *
      * · "Modo lectura": quita header, pie, explorador, índice y fondo, y deja
      *   la nota sola, con más cuerpo. La preferencia se guarda (localStorage)
@@ -298,6 +371,9 @@ const matUrl = `/${sem}/${mat}/`;
      *   estilos de impresión saca la nota en blanco y negro, lista para
      *   guardarse como PDF. Es la respuesta al "¿tuviste el PDF?": ahora la
      *   nota también se puede llevar en PDF.
+     * · "Emojis: sí/no": quita (o deja) los emojis de los títulos y de los
+     *   iconos de los callouts. La preferencia vive en el <head> (Base.astro);
+     *   aquí solo se cambia el icono del botón.
      */
     (function () {
       var KEY = "nx-lectura";
@@ -316,10 +392,23 @@ const matUrl = `/${sem}/${mat}/`;
         var btn = document.getElementById("nx-lectura");
         if (btn) {
           btn.setAttribute("aria-pressed", activo ? "true" : "false");
-          var ico = btn.querySelector(".nx-note-tools__ico");
-          var txt = btn.childNodes[btn.childNodes.length - 1];
-          if (txt && txt.nodeType === 3) txt.textContent = activo ? " Salir del modo lectura" : " Modo lectura";
+          btn.setAttribute("title", activo ? "Salir del modo lectura" : "Modo lectura");
+          var ico = btn.querySelector("[data-nx-lectura-ico]");
+          if (ico) ico.textContent = activo ? "◑" : "◐";
+          var txt = btn.querySelector("[data-nx-lectura-txt]");
+          if (txt) txt.textContent = activo ? "Salir del modo lectura" : "Modo lectura";
         }
+      }
+
+      /* ── Emojis: sí/no ─────────────────────────────────────────── */
+      function aplicarEmojis() {
+        var btn = document.getElementById("nx-emojis");
+        if (!btn) return;
+        var on = html.getAttribute("data-nx-emojis") !== "off";
+        btn.setAttribute("aria-pressed", on ? "true" : "false");
+        btn.setAttribute("title", on ? "Emojis: sí (clic para quitarlos)" : "Emojis: no (clic para ponerlos)");
+        var ico = btn.querySelector(".nx-note-tools__ico");
+        if (ico) ico.textContent = on ? "☺" : "☻";
       }
 
       document.addEventListener("click", function (ev) {
@@ -333,11 +422,63 @@ const matUrl = `/${sem}/${mat}/`;
         }
         if (t.closest("#nx-imprimir")) {
           window.print();
+          return;
+        }
+        if (t.closest("#nx-emojis")) {
+          var on = html.getAttribute("data-nx-emojis") !== "off";
+          var nuevo = on ? "off" : "on";
+          html.setAttribute("data-nx-emojis", nuevo);
+          try { localStorage.setItem("nx-emojis", nuevo); } catch (e) {}
+          aplicarEmojis();
         }
       });
 
-      document.addEventListener("astro:page-load", aplicar);
+      document.addEventListener("astro:page-load", function () {
+        aplicar();
+        aplicarEmojis();
+      });
       aplicar();
+      aplicarEmojis();
+    })();
+  </script>
+
+  <script>
+    /**
+     * El markdown de cada nota empieza con un h1 que casi siempre repite el
+     * título de la nota (538 de 823 notas: "🧩 Diseño de Software" sobre la
+     * nota "Diseño de Software"). El plugin rehype-h1-demote lo baja a h2 y
+     * lo marca para que no salga en el índice, pero el texto se seguía viendo
+     * duplicado bajo el título de la página.
+     *
+     * Aquí se oculta SOLO cuando coincide con el título (sin tildes, sin
+     * mayúsculas y sin el emoji inicial). Si el h1 del markdown dice otra
+     * cosa, se conserva: ahí es un apartado más de la nota.
+     */
+    (function () {
+      function normalizar(s) {
+        return (s || "")
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .replace(/[^\p{L}\p{N}]/gu, "")
+          .trim();
+      }
+
+      function revisar() {
+        var h1 = document.querySelector("article > h1");
+        var md = document.querySelector(".note-prose .nx-h1-md");
+        if (!h1 || !md) return;
+        if (normalizar(md.textContent) === normalizar(h1.textContent)) {
+          md.hidden = true;
+        } else {
+          md.hidden = false;
+        }
+      }
+
+      document.addEventListener("astro:page-load", function () {
+        setTimeout(revisar, 0);
+      });
+      revisar();
     })();
   </script>
 

@@ -1,26 +1,65 @@
 /**
- * rehype-callouts.mjs — Callouts de Obsidian `> [!tipo] Título` → cards neón.
+ * rehype-callouts.mjs — Callouts de Obsidian `> [!tipo] Título` → bloques.
  * Soporta blockquotes multiparte: un quote largo puede contener varios
  * callouts seguidos (los españa en divs independientes).
+ *
+ * El icono: si el título del callout empieza por un emoji, ese emoji pasa
+ * a ser el icono (y se quita del texto, para no repetirlo). Si no, se usa
+ * el icono propio del tipo. Un solo icono, nunca dos.
+ *
+ * El cuerpo va en su propio elemento (.nx-callout-body) con peso normal:
+ * el título es lo único en negrita.
+ *
+ * Lo que no cabe en un callout (una tabla, un diagrama) sale fuera, detrás
+ * del bloque: un callout es una nota breve, no un contenedor.
+ *
+ * Los colores: solo hay tres (info, aviso, peligro) y van únicamente en la
+ * barra de la izquierda. El fondo es transparente.
  */
 
 const TYPES = {
-  info: ["blue", "ℹ️"],
-  note: ["purple", "📝"],
-  tip: ["green", "💡"],
-  success: ["green", "✅"],
-  example: ["cyan", "🧪"],
-  warning: ["gold", "⚠️"],
-  caution: ["gold", "⚠️"],
-  danger: ["red", "🚫"],
-  error: ["red", "🚫"],
-  bug: ["red", "🐞"],
-  quote: ["muted", "❝"],
-  brain: ["purple", "🧠"],
-  todo: ["blue", "📅"],
-  question: ["gold", "❓"],
-  abstract: ["cyan", "📄"],
+  info: ["info", "ℹ️"],
+  note: ["info", "📝"],
+  tip: ["info", "💡"],
+  success: ["info", "✅"],
+  example: ["info", "🧪"],
+  warning: ["warn", "⚠️"],
+  caution: ["warn", "⚠️"],
+  danger: ["danger", "🚫"],
+  error: ["danger", "🚫"],
+  bug: ["danger", "🐞"],
+  quote: ["neutral", "❝"],
+  brain: ["info", "🧠"],
+  todo: ["info", "📅"],
+  question: ["warn", "❓"],
+  abstract: ["info", "📄"],
 };
+
+/* Tipos que no están en TYPES: se tratan como "note" (info). */
+const COLOR_POR_TIPO = {
+  info: "info",
+  note: "info",
+  tip: "info",
+  success: "info",
+  example: "info",
+  abstract: "info",
+  brain: "info",
+  todo: "info",
+  study: "info",
+  experiment: "info",
+  important: "info",
+  summary: "info",
+  check: "info",
+  notes: "info",
+  warning: "warn",
+  caution: "warn",
+  question: "warn",
+  danger: "danger",
+  error: "danger",
+  bug: "danger",
+  quote: "neutral",
+};
+
 
 const DEFAULT_TITLES = {
   info: "Nota",
@@ -50,8 +89,60 @@ function titleFor(type) {
   return DEFAULT_TITLES[type] ?? "Nota";
 }
 
-function calloutDiv(type, title, isRich, children) {
-  const [color, icon] = TYPES[type] ?? ["blue", "ℹ️"];
+/* Emoji al principio de un texto (con sus variantes y el ZWJ). */
+const EMOJI_INICIAL = new RegExp(
+  "^(?:\\p{Regional_Indicator}{2}" +
+    "|(?:\\p{Extended_Pictographic}" +
+    "(?:[\\uFE0E\\uFE0F]|[\\u{1F3FB}-\\u{1F3FF}]|\\u200D\\p{Extended_Pictographic})*))",
+  "u"
+);
+
+/**
+ * Si el título empieza por un emoji, lo devuelve aparte y quita del texto.
+ * El texto puede ser una cadena (título simple) o una lista de nodos
+ * (título con formato: Neón, enlaces, emphasis…).
+ */
+function sacarEmojiInicial(title) {
+  if (typeof title === "string") {
+    const m = title.match(EMOJI_INICIAL);
+    if (!m) return { icono: "", titulo: title };
+    return { icono: m[0], titulo: title.slice(m[0].length).trim() };
+  }
+  const nodos = [...title];
+  const primero = nodos[0];
+  if (!primero || primero.type !== "text") return { icono: "", titulo: nodos };
+  const m = (primero.value ?? "").match(EMOJI_INICIAL);
+  if (!m) return { icono: "", titulo: nodos };
+  const resto = (primero.value ?? "").slice(m[0].length).replace(/^\s+/, "");
+  nodos[0] = { ...primero, value: resto };
+  if (!resto) nodos.shift();
+  return { icono: m[0], titulo: nodos };
+}
+
+/** ¿Este nodo es una tabla o un diagrama (cosa que no va en un callout)? */
+function esPesado(node) {
+  if (!node || node.type !== "element") return false;
+  if (node.tagName === "table" || node.tagName === "img" || node.tagName === "figure") return true;
+  if (node.tagName === "p") {
+    // un párrafo que solo contiene una imagen es una imagen
+    const kids = node.children ?? [];
+    const utiles = kids.filter((k) => !(k.type === "text" && !(k.value ?? "").trim()));
+    if (utiles.length === 1 && utiles[0].type === "element" && utiles[0].tagName === "img") return true;
+  }
+  return false;
+}
+
+function calloutDiv(type, title, isRich, children, iconoPropio) {
+  const [color, iconoTipo] = TYPES[type] ?? ["info", "ℹ️"];
+  const { icono, titulo } = sacarEmojiInicial(isRich ? title : String(title));
+  const ic = iconoPropio ?? icono ?? iconoTipo;
+  let contenido;
+  if (isRich) {
+    contenido = titulo;
+  } else {
+    const limpio = String(titulo).trim();
+    contenido = [{ type: "text", value: limpio || titleFor(type) }];
+  }
   return {
     type: "element",
     tagName: "div",
@@ -64,9 +155,23 @@ function calloutDiv(type, title, isRich, children) {
         type: "element",
         tagName: "p",
         properties: { className: ["nx-callout-title"] },
-        children: isRich ? [{ type: "text", value: `${icon} ` }, ...title] : [{ type: "text", value: `${icon} ${title}` }],
+        children: [
+          {
+            type: "element",
+            tagName: "span",
+            properties: { className: ["nx-callout-ico"], ariaHidden: "true" },
+            children: [{ type: "text", value: ic }],
+          },
+          ...(contenido.length ? [{ type: "text", value: " " }] : []),
+          ...contenido,
+        ],
       },
-      ...children,
+      {
+        type: "element",
+        tagName: "div",
+        properties: { className: ["nx-callout-body"] },
+        children,
+      },
     ],
   };
 }
@@ -130,7 +235,10 @@ export function rehypeCallouts() {
     if (node.type === "element" || node.type === "root") {
       const out = [];
       for (const child of node.children ?? []) {
-        out.push(visit(child) ?? child);
+        const v = visit(child) ?? child;
+        // un hijo puede convertirse en varios (callout + lo que sale fuera)
+        if (Array.isArray(v)) out.push(...v);
+        else out.push(v);
       }
       node.children = out;
     }
@@ -180,8 +288,13 @@ export function rehypeCallouts() {
       } else {
         const header = seg.header;
         void header;
-        const siblings = seg.children;
-        result.push(calloutDiv(seg.type, seg.title, seg.isRich, [...seg.body, ...siblings]));
+        // Una tabla o un diagrama dentro de un callout no cabe: sale
+        // detrás del bloque, en su sitio, sin romper el texto.
+        const todos = [...seg.body, ...seg.children];
+        const pesados = todos.filter(esPesado);
+        const cuerpo = todos.filter((n) => !esPesado(n));
+        result.push(calloutDiv(seg.type, seg.title, seg.isRich, cuerpo));
+        for (const p of pesados) result.push(p);
       }
     }
     return result.length === 1 ? result[0] : result;

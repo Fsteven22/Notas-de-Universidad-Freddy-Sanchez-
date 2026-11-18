@@ -11,10 +11,18 @@ import { rehypeAnclas } from "./src/lib/rehype-anclas.mjs";
 import { rehypeAssetOmitido } from "./src/lib/rehype-asset-omitido.mjs";
 import { rehypeH1Demote } from "./src/lib/rehype-h1-demote.mjs";
 import { rehypeImgLazy } from "./src/lib/rehype-img-lazy.mjs";
+import { rehypeEmoji } from "./src/lib/rehype-emoji.mjs";
+import { rehypeTableScroll } from "./src/lib/rehype-table-scroll.mjs";
 
 export default defineConfig({
   site: "https://neonotes-espol.vercel.app",
   integrations: [react()],
+  devToolbar: {
+    // La barra de desarrollo de Astro sale pegada abajo, en el centro, y
+    // parece un elemento del sitio (salta en las capturas y confunde al
+    // revisar el diseño). En producción no existe.
+    enabled: false,
+  },
   prefetch: {
     prefetchAll: true,
   },
@@ -36,7 +44,7 @@ export default defineConfig({
   },
   markdown: {
     remarkPlugins: [remarkMath],
-      rehypePlugins: [rehypeSlug, rehypeAnclas, rehypeCallouts, rehypeFlashcards, rehypeAssetOmitido, [rehypeKatex, { throwOnError: false }], rehypeH1Demote, rehypeImgLazy],
+      rehypePlugins: [rehypeSlug, rehypeAnclas, rehypeCallouts, rehypeFlashcards, rehypeAssetOmitido, [rehypeKatex, { throwOnError: false }], rehypeH1Demote, rehypeImgLazy, rehypeEmoji, rehypeTableScroll],
   },
   build: {
     assets: "assets",
