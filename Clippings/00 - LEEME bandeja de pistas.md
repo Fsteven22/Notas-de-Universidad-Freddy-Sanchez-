@@ -3123,4 +3123,4 @@ el commit de esta línea de PUSHEADO.
 >
 > **No se tocaron** cambios sin commitear ajenos (POO nota raíz, `Recursos Visuales`, Inglés III de onedrive).
 >
-> **PUSHEO EN CURSO** — `aaeb6288`
+> **PUSHEADO `7c8f739a`** — `aaeb6288` (+ merge de `origin/master` `867f61cd`)
