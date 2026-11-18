@@ -42,7 +42,7 @@ tags: [MATG1045, unidad6, integral-de-funciones-por-tramos, funciones-a-trozos, 
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Integral_de_Funciones_por_Tramos_01.svg]]
 >
-> **Se lee así:** un mapa mental con el nodo central "Funciones Por Tramos" y cuatro ramas. La primera es la **definición**, con sus hijos múltiples expresiones, intervalos diferentes, puntos de ruptura y continuidad. La segunda es la **integración**, con división del intervalo, integral por tramos, suma de resultados y evaluación de límites. La tercera agrupa los **tipos especiales** (escalón, valor absoluto, signo, trigonométricas modificadas) y la cuarta las **aplicaciones** (modelos físicos, economía, procesamiento de señales, probabilidad).
+> **Se lee así:** un cuadro raíz "Funciones Por Tramos" despliega cuatro subgrafos de rectángulos. El primero es la **definición**, con sus hijos múltiples expresiones, intervalos diferentes, puntos de ruptura y continuidad. El segundo es la **integración**, con división del intervalo, integral por tramos, suma de resultados y evaluación de límites. El tercero agrupa los **tipos especiales** (escalón, valor absoluto, signo, trigonométricas modificadas) y el cuarto las **aplicaciones** (modelos físicos, economía, procesamiento de señales, probabilidad).
 >
 > **Por qué importa:** el mapa ordena el tema entero de un vistazo: qué es, cómo se integra y para qué sirve. Te evita integrar la expresión equivocada en un subintervalo, que es el error más caro de esta técnica.
 >

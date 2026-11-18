@@ -288,13 +288,13 @@ tags: [MATG1045, unidad6, metodos-integracion-definida, integracion-definida, ca
 
 ---
 
-## 🗺️ Mapa mental de los métodos
+## 🗺️ Mapa de los métodos
 
 > [!info] 🖼️ El arsenal completo en un vistazo
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Métodos_de_Integración_Definida_04.svg]]
 >
-> **Se lee así:** un mapa mental con un nodo central, "Métodos Integración", y cinco ramas: la sustitución (con cambio de variable, límites nuevos y verificación), las partes (con LIATE, recursión y evaluación de límites), las fracciones parciales (descomposición, factorización e integración término a término), las trigonométricas (identidades, sustituciones estándar y geometría) y las aplicaciones (áreas, volúmenes y física).
+> **Se lee así:** un cuadro raíz "Métodos Integración" despliega cinco subgrafos de rectángulos: la sustitución (con cambio de variable, límites nuevos y verificación), las partes (con LIATE, recursión y evaluación de límites), las fracciones parciales (descomposición, factorización e integración término a término), las trigonométricas (identidades, sustituciones estándar y geometría) y las aplicaciones (áreas, volúmenes y física).
 >
 > **Por qué importa:** el mapa es el **índice de la unidad** de un vistazo: para cada tipo de problema ves qué técnica existe y qué pasos tiene. Te sirve para repasar sin releer la nota entera.
 >

@@ -3125,6 +3125,29 @@ el commit de esta línea de PUSHEADO.
 >
 > **PUSHEADO `7c8f739a`** — `aaeb6288` (+ merge de `origin/master` `867f61cd`)
 
+---
+
+### `opencode-onedrive` — Rango Antiderivadas→Longitud de Curva: revisión y mejora — 17/11/2026
+
+> [!warning] PUSHEO EN CURSO · `dee07807` · ~2 min
+>
+> - **Hecho:** los **4** diagramas del rango que aún eran `mindmap` (burbujas) pasan a
+>   `flowchart TB` con subgrafos de rectángulos conservando intacto todo el texto:
+>   `01_-_Antiderivadas_(Primitivas)_01` · `01_-_Integrales_Impropias_01` ·
+>   `01_-_Métodos_de_Integración_Definida_04` · `02_-_Integral_de_Funciones_por_Tramos_01`.
+>   Round-trip **4/4** OK. Actualizado el "Se lee así" de las 4 notas embebidas (y renombrado
+>   "Mapa mental de los métodos" → "Mapa de los métodos").
+> - **Encabezados del rango (verificados, sin cambios):** 1 H1 por nota, H2 canónicos,
+>   **0 H3** fuera de callouts, sin H1/H2 duplicados ni hashes dentro de callouts.
+>   La página de nota en producción ya renderiza 1 H1 + N H2 limpias (verificado con el HTML).
+> - **QA:** 65/65 notas a 0 hallazgos; mojibake 0.
+> - **Fuera del rango pedido quedan 4 mindmaps más (2 en U2/U4 + 1 en U6-I):**
+>   `01_-_Derivada_y_Definición_Formal_04` · `01_-_Reglas_Fundamentales_de_Derivación_03` ·
+>   `02_-_Interpretación_Geométrica_de_la_Derivada_05` · `02_-_Propiedades_de_la_Integral_16`.
+>   Quieren decisión del dueño.
+> - **Sync/Vercel:** el último build del sitio se hizo ANTES de este commit (18 nov 2026);
+>   estos 4 diagramas llegarán al sitio con este push.
+
 ### `opencode` — CYSOC: 84 `.mmd` reconstruidos (round-trip OK) — 17/11/2026
 
 > [!success] 84 SVG flowchart recuperaron su fuente `.mmd` · verifica_mmd 84/84 OK · 18 pendientes (timeline/mindmap/sequence)

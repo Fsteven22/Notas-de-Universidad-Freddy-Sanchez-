@@ -45,7 +45,7 @@ tags: [MATG1045, unidad6, integrales-impropias, tipo-i, tipo-ii, integrales-mixt
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Integrales_Impropias_01.svg]]
 >
-> **Se lee así:** un mapa mental con el nodo central "Integrales Impropias" y tres ramas. La primera clasifica los **tipos** (I con límites infinitos, II con discontinuidades y mixto). La segunda describe la **evaluación**: límites, los dos desenlaces posibles (convergencia y divergencia) y los criterios de comparación. La tercera agrupa las **aplicaciones**: probabilidad, transformadas, física matemática y series infinitas.
+> **Se lee así:** un cuadro raíz "Integrales Impropias" despliega tres subgrafos de rectángulos. El primero clasifica los **tipos** (I con límites infinitos, II con discontinuidades y mixto). El segundo describe la **evaluación**: límites, los dos desenlaces posibles (convergencia y divergencia) y los criterios de comparación. El tercero agrupa las **aplicaciones**: probabilidad, transformadas, física matemática y series infinitas.
 >
 > **Por qué importa:** el mapa te da el algoritmo completo en un vistazo: primero el **tipo** (qué rama), después la **evaluación** (límite o criterio) y al final la **aplicación**. Si un ejercicio se te resiste, casi siempre es porque estás evaluando por la rama equivocada.
 >
