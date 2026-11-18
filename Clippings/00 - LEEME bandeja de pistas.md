@@ -3254,4 +3254,4 @@ el commit de esta línea de PUSHEADO.
 >
 > **Nota de proceso:** el bloque recompuso la sección `## 📚 Referencias` antes del `---` final, dejando las notas terminadas en `**Tags:**`, como siempre.
 >
-> **PUSHEO EN CURSO** — `38fee96d`
+> **PUSHEADO `8a36ab2a`** — `38fee96d` (+ merge de `origin/master`)
