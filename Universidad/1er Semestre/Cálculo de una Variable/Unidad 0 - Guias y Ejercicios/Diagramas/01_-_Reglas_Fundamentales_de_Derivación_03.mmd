@@ -1,23 +1,35 @@
-mindmap
-  root((Reglas de Derivación))
-    Reglas Básicas
-      Constante
-      Potencia
-      Múltiplo constante
-      Suma y diferencia
-    Reglas Avanzadas
-      Producto
-      Cociente
-      Cadena
-      Implícita
-    Funciones Elementales
-      Algebraicas
-      Trigonométricas
-      Exponenciales
-      Logarítmicas
-      Hiperbólicas
-    Aplicaciones
-      Física
-      Economía
-      Ingeniería
-      Optimización
+flowchart TB
+    R["Reglas de Derivación"]
+    subgraph B["Reglas Básicas"]
+        direction TB
+        B1["Constante"]
+        B2["Potencia"]
+        B3["Múltiplo constante"]
+        B4["Suma y diferencia"]
+    end
+    subgraph A["Reglas Avanzadas"]
+        direction TB
+        A1["Producto"]
+        A2["Cociente"]
+        A3["Cadena"]
+        A4["Implícita"]
+    end
+    subgraph F["Funciones Elementales"]
+        direction TB
+        F1["Algebraicas"]
+        F2["Trigonométricas"]
+        F3["Exponenciales"]
+        F4["Logarítmicas"]
+        F5["Hiperbólicas"]
+    end
+    subgraph P["Aplicaciones"]
+        direction TB
+        P1["Física"]
+        P2["Economía"]
+        P3["Ingeniería"]
+        P4["Optimización"]
+    end
+    R --> B
+    R --> A
+    R --> F
+    R --> P

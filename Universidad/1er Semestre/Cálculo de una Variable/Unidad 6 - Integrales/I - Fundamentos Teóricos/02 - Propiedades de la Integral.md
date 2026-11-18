@@ -23,7 +23,7 @@ tags: [MATG1045, unidad6, propiedades-integral, integral-indefinida, integral-de
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_16.svg]]
 >
-> **Se lee así:** un mapa mental con raíz "Integración" que abre tres ramas: **Indefinida** (función + C, linealidad, primitivas, inversa de la derivada), **Definida** (número, área neta, límites, aditividad) y **TFC** (une ambas, evaluación práctica, regla de Barrow). Sin rombos ni flechas cruzadas: es una fotografía de la estructura de toda la unidad.
+> **Se lee así:** un cuadro raíz "Integración" que abre tres subgrafos de rectángulos: **Indefinida** (función + C, linealidad, primitivas, inversa de la derivada), **Definida** (número, área neta, límites, aditividad) y **TFC** (une ambas, evaluación práctica, regla de Barrow). Sin rombos ni flechas cruzadas: es una fotografía de la estructura de toda la unidad.
 >
 > **Por qué importa:** fíjate en que la rama central es el TFC: es la que conecta las otras dos y el hilo conductor de la unidad. Úsalo como índice mental cuando una propiedad no te cuadre.
 >
