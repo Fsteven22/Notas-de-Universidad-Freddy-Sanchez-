@@ -2151,8 +2151,15 @@ html.nx-lectura .nx-note-nav {
   padding: 0.8rem 0.9rem;
   background: transparent;
 }
+.nx-mapa2d__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 .nx-mapa2d__tit {
-  margin: 0 0 0.5rem;
+  margin: 0;
   font-family: var(--font-sans);
   font-size: 0.92rem;
   font-weight: 600;
@@ -2506,4 +2513,52 @@ html.nx-lectura .nx-note-nav {
 .nx-aviso-ancla__acc button:hover {
   color: var(--nx-text);
   border-color: rgba(var(--nx-text-rgb), 0.3);
+}
+
+/* ── Impresión: el mapa se imprime como la Lista de la carrera ──────────────
+   El canvas WebGL no cabe bien en papel y pierde información al imprimir.
+   Se oculta y la Lista (grid 2D) sale a dos columnas, negro sobre blanco. */
+@page {
+  margin: 16mm 14mm;
+}
+@media print {
+  /* El papel es siempre claro: el fondo del tema no se imprime. */
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  /* El mapa se imprime como la Lista; nunca con el canvas ni su interfaz. */
+  .nx-mapa__stage,
+  .nx-mapa__vista,
+  .nx-mapa__hint {
+    display: none !important;
+  }
+  .nx-mapa__2d {
+    display: grid !important;
+    gap: 0.4rem !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    padding: 0 !important;
+  }
+  .nx-header,
+  .nx-footer,
+  .nx-section-title,
+  h1,
+  .nx-sem-state,
+  .nx-mapa,
+  .nx-mapa2d__sem,
+  .nx-mapa2d__lista,
+  .nx-mapa2d__lista a,
+  .nx-mapa2d__tit a,
+  .nx-mapa2d__n {
+    background: #fff !important;
+    color: #000 !important;
+    border-color: #cccccc !important;
+  }
+  .nx-mapa2d__sem {
+    break-inside: avoid;
+  }
+  .nx-mapa2d__lista a {
+    text-decoration: underline !important;
+  }
 }

@@ -669,9 +669,6 @@ details.nx-fc p {
     max-width: 100% !important;
     break-inside: avoid;
   }
-  @page {
-    margin: 16mm 14mm;
-  }
 }
 
 /* ── Alias de ancla ─────────────────────────────────────────────────
