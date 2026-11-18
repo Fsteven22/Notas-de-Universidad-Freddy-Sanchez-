@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1004, cysoc, unidad1, generaciones-software]
 ---
 
 # 💾 Historia del Software — Las 5 Generaciones
@@ -11,6 +12,10 @@ dg-publish: true
 > A medida que el hardware se volvió más potente, la forma de comunicarse con las máquinas también tuvo que evolucionar. Lo que comenzó como secuencias de ceros y unos se transformó progresivamente en lenguajes cada vez más cercanos al lenguaje humano.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Historia_del_Software_(5_Generaciones)_01.svg]]
+>
+> **Se lee así:** las cinco generaciones del software como una escalera: lenguaje máquina (1951-1959, velocidad para pocos), lenguajes de alto nivel (1959-1965, claridad para más), sistemas operativos (1965-1971, automatización), programación estructurada (1971-1989, orden y reutilización), POO y WWW (1990-presente).
+> **Por qué importa:** cada generación sacrificó un poco de eficiencia a cambio de más abstracción — el software moderno existe porque antes se pudo decir menos con el mismo hardware.
+> **Ejemplo:** La POO que usas en Java o C# es la 5ª generación; los bloques SOLID salieron ahí, no en los 60.
 
 ---
 
@@ -170,6 +175,10 @@ dg-publish: true
 > [!summary] 📅 Evolución de los lenguajes de programación
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Historia_del_Software_(5_Generaciones)_05.svg]]
+>
+> **Se lee así:** los lenguajes con su año: FORTRAN 1954 (cálculo científico), LISP 1958 (inteligencia artificial), COBOL 1959 (negocios), BASIC 1964 (principiantes), Pascal 1970 (enseñanza estructurada), C 1972 (sistemas), C++ 1983 (POO + bajo nivel), Java 1991 y Visual Basic/.NET 1991 (plataformas).
+> **Por qué importa:** ningún lenguaje nace como hoy: cada uno nació como respuesta a una necesidad (ciencia, negocio, aprender, sistemas); leerlos en orden es leer la historia del software.
+> **Ejemplo:** C++ sigue vigente porque todavía es el único con alcance de bajo nivel y objetos; eso enseña que un lenguaje sobrevive si resuelve un problema real.
 
 ---
 
@@ -187,4 +196,11 @@ dg-publish: true
 
 ---
 
+## 📚 Referencias
+
+> [!info] 📚 Referencias
+>
+> - Dale, Nell & Lewis, John. *Computer Science Illuminated* (6th ed.). Jones & Bartlett Learning.
+> - Quinn, Michael J. *Ethics for the Information Age* (7th ed.). Pearson.
+> - Syllabus oficial de Computación y Sociedad (CCPG1004), ESPOL, coordinadora Otilia M. Alejandro Molina.
 **Tags:** #historia #software #generaciones #lenguajes #fortran #cobol #pascal #java #python #POO #WWW #unidad1 #EYAG1037

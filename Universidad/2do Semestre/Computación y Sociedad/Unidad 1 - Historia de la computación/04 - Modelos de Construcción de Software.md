@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1004, cysoc, unidad1, modelos-software]
 ---
 
 # 🏗️ Modelos de Construcción de Software
@@ -11,6 +12,10 @@ dg-publish: true
 > Desarrollar software no es simplemente escribir código. Requiere planificación, análisis, diseño, pruebas y mantenimiento. Los **modelos de construcción de software** son marcos de trabajo que definen cómo organizar estas etapas para producir software de calidad de forma predecible.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Modelos_de_Construcción_de_Software_01.svg]]
+>
+> **Se lee así:** la decisión del modelo partiendo de Necesidad del cliente: ¿Qué modelo usar? como pregunta central, con las respuestas etiquetadas: Cascada, Espiral, Incremental y Ágil/SCRUM, cada una con su perfil de riesgo y flexibilidad.
+> **Por qué importa:** no hay modelo perfecto: la elección depende de cuánto sabes de los requisitos, cuánto riesgo asumes y qué tan rápido debes entregar valor.
+> **Ejemplo:** un sistema médico regulado va por Espiral (riesgos medibles); una app experimental va por SCRUM, donde el feedback real decide qué construir después.
 
 ---
 
@@ -175,4 +180,11 @@ dg-publish: true
 
 ---
 
+## 📚 Referencias
+
+> [!info] 📚 Referencias
+>
+> - Dale, Nell & Lewis, John. *Computer Science Illuminated* (6th ed.). Jones & Bartlett Learning.
+> - Quinn, Michael J. *Ethics for the Information Age* (7th ed.). Pearson.
+> - Syllabus oficial de Computación y Sociedad (CCPG1004), ESPOL, coordinadora Otilia M. Alejandro Molina.
 **Tags:** #software #modelos #cascada #espiral #incremental #scrum #ágil #desarrollo #unidad1 #EYAG1037
