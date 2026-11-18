@@ -1,22 +1,37 @@
-mindmap
-  root((Métodos Integración))
-    Sustitución
-      Cambio variable
-      Límites nuevos
-      Verificación
-    Por Partes
-      LIATE
-      Recursión
-      Evaluación límites
-    Fracciones Parciales
-      Descomposición
-      Factorización
-      Integración término a término
-    Trigonométricas
-      Identidades
-      Sustituciones estándar
-      Geometría
-    Aplicaciones
-      Áreas
-      Volúmenes
-      Física
+flowchart TB
+    R["Métodos Integración"]
+    subgraph S["Sustitución"]
+        direction TB
+        S1["Cambio variable"]
+        S2["Límites nuevos"]
+        S3["Verificación"]
+    end
+    subgraph P["Por Partes"]
+        direction TB
+        P1["LIATE"]
+        P2["Recursión"]
+        P3["Evaluación límites"]
+    end
+    subgraph F["Fracciones Parciales"]
+        direction TB
+        F1["Descomposición"]
+        F2["Factorización"]
+        F3["Integración término a término"]
+    end
+    subgraph T["Trigonométricas"]
+        direction TB
+        T1["Identidades"]
+        T2["Sustituciones estándar"]
+        T3["Geometría"]
+    end
+    subgraph A["Aplicaciones"]
+        direction TB
+        A1["Áreas"]
+        A2["Volúmenes"]
+        A3["Física"]
+    end
+    R --> S
+    R --> P
+    R --> F
+    R --> T
+    R --> A
