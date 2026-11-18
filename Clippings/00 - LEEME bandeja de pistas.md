@@ -2928,3 +2928,45 @@ el commit de esta línea de PUSHEADO.
 > el `D` de Vocabulario de Inglés III y su versión en `Recursos adicionales/`). **FESD en 0
 > pendientes.** El pase de rutas de 2do Semestre del otro agente ya está en `origin/master`
 > (`857388ae`, 618 rutas) y no se tocó.
+
+### `opencode` — Computación y Sociedad: contrato + validador + baseline — 17/11/2026
+
+> [!success] Contrato FORMATO-CYSOC.md + validador qa_formato_cysoc.py · baseline medido: 325 hallazgos
+>
+> **Paso 1-3 del manual** (auditar → contrato → validador), sin tocar notas todavía.
+>
+> **Baseline (antes):** `qa_formato_cysoc.py --solo "2do Semestre/Computación y Sociedad"` → **43 notas, 325 hallazgos**
+> (2 H · 323 W). Cada hallazgo lleva ruta y línea. Desglose:
+>
+> | Regla | Hallazgos | Severidad | Qué es |
+> |---|---|---|---|
+> | R12-svg-sin-mmd | 103 | W | cada SVG embebido debe tener su `.mmd` al lado (primera ronda de diagramas) |
+> | R14-embed-sin-explicacion | 83 | W | embed visual (`.png`/`.svg`) sin lectura propia |
+> | R1-tags | 39 | W | frontmatter sin `tags:` (ninguna nota de clase lo lleva) |
+> | R4-embed-top | 37 | W | embeds sueltos fuera de callouts |
+> | R6-sin-blanco-header | 23 | W | `>` en blanco tras el header del callout |
+> | R3-h2-emoji | 20 | W | H2 sin emoji |
+> | R3-cierre-falta | 11 | W | notas clase sin cierre (recomendado, no exigido) |
+> | R14-deck-sin-explicacion | 3 | W | callout 📖/deck sin etiqueta de lectura |
+> | R12-clase-embebida | 2 | W | el syllabus PDF está embebido 2 veces |
+> | R13-tags-final | 1 | W | `Recursos Visuales.md` sin `**Tags:**` |
+> | R2-h1-emoji | 1 | W | un H1 sin emoji |
+> | R4-lista-top / R4-prosa-top | 2 | **H** | una lista y una prosa fuera de callouts |
+>
+> **Hallazgos estructurales confirmados:**
+> - **39 notas de clase** comparten `## 🎯 Introducción` (100%) — esa es la única H2 obligatoria que exige el contrato. El resto del esqueleto (Metas 19, Ejercicios 19, Referencias 17(+9 combinadas), Conexiones 10(+9)) es de cobertura desigual → contrato exige solo Introducción + emoji en todo H2; cierre recomendado (W).
+> - **0 embeds rotos** (los 618 de la Fase 0 ya resuelven) — el validador comprueba local → materia → **basename en todo `Universidad/`** antes de marcar rota.
+> - **103 SVG sin `.mmd` fuente** (naming `01_-_..._NN.svg` no canónico → pasa por reconstrucción/round-trip), **7 PNG "ChatGPT Image …"** de U3 sin naming, **2 notas `NOTE` mayúscula vs `note`** (1 detectado como `NOTE`), **0 mojibake** (qa_mojibake), **0 huérfanos de infraestructura**.
+> - El **código de cátedra** aún no figura en las notas → pendiente de definir (contrato pide `CYSOC` de placeholder, pendiente dueño; syllabus oficial en `U0/Guías/`).
+>
+> **Herramientas escritas (nuevas, de esta ronda):**
+> `Universidad/Herramientas/Mantenimiento/FORMATO-CYSOC.md` (16 reglas, perfiles clase/material/índice, R12-svg-sin-mmd, R15 cita PNG por página, R16 `.mmd` con round-trip) y `qa_formato_cysoc.py` (copia adaptada de `qa_formato_diseno.py`; `--solo`/`--calibrar`/`--estricto`/`--fix-rutas`; resolución de assets local → materia → basename vault; salida en TEMP).
+>
+> **Pendiente del dueño (bloquea la transformación):**
+> 1. PDFs de deck/syllabus: ¿capturar como PNG (patrón FESD, ya aprobado allí) o dejar enlace 📎 con alias? CYSOC tiene el syllabus embebido 2 veces (`Bienvenida y Syllabus…md`, `Índice de Contenido.md`).
+> 2. 7 PNG "ChatGPT Image …" de `Unidad 3 - Representación de la información/I - Sistemas de Numeración/`: ¿renombrar a `cysoc-u3-…-NN.png` en `U0/Archivos/<Tema>/` o dejar como están?
+> 3. ¿Código de cátedra real para el frontmatter (o `dg-publish` como hoy, sin código)?
+>
+> **No se tocaron** cambios sin commitear ajenos (POO nota raíz + `Recursos Visuales.md` + `Unidad 1 - Fundamentos/04 - Encapsulamiento`, Inglés III de onedrive).
+>
+> **Avanza:** contrato y validador commiteados (este bloque). La transformación mecánica arranca en cuanto el dueño decida los 3 puntos.
