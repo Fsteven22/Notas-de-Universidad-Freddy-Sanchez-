@@ -3186,6 +3186,33 @@ el commit de esta línea de PUSHEADO.
 > - **Estado de la materia:** Cálculo de una Variable cerrada por este bloque: 65/65 notas
 >   a 0 hallazgos y todos los diagramas en flowcharts de rectángulos.
 
+---
+
+### `opencode-onedrive` — MatDisc: nota Factorial + SOLUCIÓN_LEC_2 (SOLUCION_LEC_2.pdf) — 18/11/2026
+
+> [!warning] PUSHEO EN CURSO · `26122652` · ~2 min
+>
+> - **Hecho (autorizado por el dueño):**
+>   - **`SOLUCIÓN_LEC_2.pdf` copiado** de OneDrive al repo (mismo sha256, 146 KB), porque las
+>     notas lo citan; vivir en `Unidad 0 - Guias y Ejercicios/Lecciones/` junto a LEC_1.
+>   - **Nueva nota `Unidad 3/05 - El Factorial y Sus Propiedades.md`** (inserted antes de
+>     Permutaciones): definición ($0! = 1$, $n! = n(n-1)!$), telescopio $\frac{n!}{k!}$,
+>     divisibilidad $k! \mid n!$, ceros finales ($z(n) = \lfloor n/5 \rfloor + \lfloor n/25 \rfloor + \dots$), conexión con permutaciones y binomio, 4 ejercicios con solución
+>     plegada. `qa_formato_matdisc` → **8/8 notas a 0 hallazgos**.
+>   - **`06 - Permutaciones y Combinaciones`** (antes 05) y **`07 - Teorema del Binomio y Palomar`** (antes 06) renumerados; **22 wikilinks reescritos** en 12 notas; navegación
+>     encadenada 03 → 04 → 05 → 06 → 07.
+>   - **`U2/03 - Propiedades y Equivalencia`**: **Ejemplo 18** (LEC_2 Q2, 50 puntos): relación
+>     $R$ sobre $X=\{f: \mathbb{R}\to\mathbb{R}\}$ con $f \,R\, g \iff f(0)=g(0)$; demostración
+>     de reflexiva/simétrica/transitiva; $[f]$ para $f(x) = x$ → $[f]=\{g : g(0) = 0\}$
+>     ("las que pasan por el origen"). Tarjeta SR + referencia al PDF + espejo en U1/III/03 (Inducción, producto telescópico).
+>   - **Bienvenida**: árbol de estructura reemplazado por el estado real (incluye la nueva nota y los PDFs de lección); el enlace roto `12 - Inducción matemática` (2 apariciones,
+>     preexistentes) redirigido a `03 - Inducción Matemática` → **qa_links = bad 0**.
+> - **QA:** `qa_formato_matdisc` **45 notas, 0 hallazgos**; `qa_links` bad=0; mojibake 0;
+>   round-trip del nuevo diagrama `dis-u3-05-03` OK.
+> - **Aislamiento:** la materia es zona de `opencode` (según el vault); se toca por pedido
+>   explícito del dueño y solo de forma aditiva: nada eliminado, salvo la corrección del
+>   enlace roto preexistente.
+
 ### `opencode` — CYSOC: 84 `.mmd` reconstruidos (round-trip OK) — 17/11/2026
 
 > [!success] 84 SVG flowchart recuperaron su fuente `.mmd` · verifica_mmd 84/84 OK · 18 pendientes (timeline/mindmap/sequence)
