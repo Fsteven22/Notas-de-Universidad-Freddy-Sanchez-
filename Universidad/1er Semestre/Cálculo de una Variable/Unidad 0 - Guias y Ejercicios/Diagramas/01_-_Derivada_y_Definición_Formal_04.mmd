@@ -1,23 +1,38 @@
-mindmap
-  root((Definición Derivada))
-    Interpretación Geométrica
-      Pendiente tangente
-      Recta secante → tangente
-      Ecuación de tangente
-    Interpretación Física
-      Velocidad instantánea
-      Razón de cambio
-      Aceleración
-    Métodos de Cálculo
-      Expansión algebraica
-      Factorización
-      Racionalización
-      Cancelación de h
-    Existencia
-      Continuidad necesaria
-      Límites laterales
-      Casos especiales
-    Aplicaciones
-      Reglas de derivación
-      Optimización
-      Análisis de funciones
+flowchart TB
+    R["Definición Derivada"]
+    subgraph G["Interpretación Geométrica"]
+        direction TB
+        G1["Pendiente tangente"]
+        G2["Recta secante → tangente"]
+        G3["Ecuación de tangente"]
+    end
+    subgraph F["Interpretación Física"]
+        direction TB
+        F1["Velocidad instantánea"]
+        F2["Razón de cambio"]
+        F3["Aceleración"]
+    end
+    subgraph M["Métodos de Cálculo"]
+        direction TB
+        M1["Expansión algebraica"]
+        M2["Factorización"]
+        M3["Racionalización"]
+        M4["Cancelación de h"]
+    end
+    subgraph E["Existencia"]
+        direction TB
+        E1["Continuidad necesaria"]
+        E2["Límites laterales"]
+        E3["Casos especiales"]
+    end
+    subgraph A["Aplicaciones"]
+        direction TB
+        A1["Reglas de derivación"]
+        A2["Optimización"]
+        A3["Análisis de funciones"]
+    end
+    R --> G
+    R --> F
+    R --> M
+    R --> E
+    R --> A

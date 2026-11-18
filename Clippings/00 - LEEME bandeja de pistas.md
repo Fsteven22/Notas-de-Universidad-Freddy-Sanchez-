@@ -3155,8 +3155,36 @@ el commit de esta línea de PUSHEADO.
 >   `01_-_Derivada_y_Definición_Formal_04` · `01_-_Reglas_Fundamentales_de_Derivación_03` ·
 >   `02_-_Interpretación_Geométrica_de_la_Derivada_05` · `02_-_Propiedades_de_la_Integral_16`.
 >   Quieren decisión del dueño.
-> - **Sync/Vercel:** el último build del sitio se hizo ANTES de este commit (18 nov 2026);
->   estos 4 diagramas llegarán al sitio con este push.
+>
+> **Los 4 mindmaps restantes ya se convirtieron** (`7e1d4ecb`) y el inventario final da
+> **0 mindmaps en Cálculo 1** (todos flowcharts de rectángulos):
+> `01_-_Derivada_y_Definición_Formal_04` (U4) · `01_-_Reglas_Fundamentales_de_Derivación_03`
+> (U4) · `02_-_Interpretación_Geométrica_de_la_Derivada_05` (U4) ·
+> `02_-_Propiedades_de_la_Integral_16` (U6-I). Round-trip **4/4** OK; el "Se lee así" de
+> las 4 notas embebidas actualizado; 65/65 notas a 0 hallazgos; mojibake 0.
+>
+> ---
+
+### `opencode-onedrive` — Cálculo 1: 0 mindmaps, todos los mapas en rectángulos — 17/11/2026
+
+> [!success] PUSHEADO `baaebd36` · 17/11/2026 — `origin/master` = `master` = `baaebd36`
+>
+> Push **fast-forward, sin `--force`** (autorizado por el dueño del vault):
+> `f728f08d..baaebd36` (`sesion/opencode-onedrive`) y `fda8d25f..baaebd36` (`master`).
+> Incluye el merge de `origin/master` (la reconstrucción de 84 `.mmd` de CYSOC de `opencode`,
+> sin conflictos). Doc de cierre: este bloque.
+>
+> - **Hecho:** los 4 mindmaps restantes de la materia pasan a `flowchart TB` con subgrafos
+>   de rectángulos: `01_-_Derivada_y_Definición_Formal_04` (U4) ·
+>   `01_-_Reglas_Fundamentales_de_Derivación_03` (U4) ·
+>   `02_-_Interpretación_Geométrica_de_la_Derivada_05` (U4) ·
+>   `02_-_Propiedades_de_la_Integral_16` (U6-I).
+> - **QA:** 65/65 notas a 0 hallazgos; mojibake 0; 1 H1 + H2 canónicos por nota.
+> - **Inventario:** 0 mindmaps en `Diagramas/` de Cálculo 1.
+> - **Sync/Vercel:** estas figuras llegarán al sitio con este push; el último build local
+>   se hizo antes de este commit (18 nov 2026).
+> - **Estado de la materia:** Cálculo de una Variable cerrada por este bloque: 65/65 notas
+>   a 0 hallazgos y todos los diagramas en flowcharts de rectángulos.
 
 ### `opencode` — CYSOC: 84 `.mmd` reconstruidos (round-trip OK) — 17/11/2026
 
@@ -3168,6 +3196,46 @@ el commit de esta línea de PUSHEADO.
 > - **Nota de proceso:** los 84 `.mmd` se generaron antes del reinicio del servidor y se re-verificaron y commitieron después (no hubo pérdida de archivos; staged/código de las 84 fuentes solo tras verificar que ninguna era ajena).
 >
 > **PUSHEADO `92a77684`** — `cf5a2d05` (+ merges de `origin/master`)
+
+---
+
+### `opencode-site` — estados reales + mapa imprimible + limpieza de clase inerte — 17/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-rediseno` → `master` (merge `--ff-only`) → `origin/master`
+>
+> - **Hecho (código, `9bb5adb9` `1c654535` `dfbef1e5`):**
+>   - **Los estados dicen lo real** (pedido del dueño): Preuniversitario `Completado`,
+>     1er Semestre `Reconstrucción` (se rehace con todas las materias), 2do y 3er
+>     `En curso` (incompletos por Comunicación y por los demás). Portada y mapa 3D
+>     heredan `estadosSem` + `claseEstado`.
+>   - **El mapa se imprime como la Lista** (`/mapa/` → Imprimir o Guardar como PDF):
+>     el canvas WebGL y su interfaz se ocultan en `@media print`; la Lista sale a dos
+>     columnas negro sobre blanco, sin partir semestres entre hojas, y **muestra el
+>     rótulo del estado** (preuniversitario `Completado`, 1er `Reconstrucción`,
+>     2do y 3er `En curso`).
+>   - **Limpieza**: eliminadas 13 apariciones inertes de `text-white`/`text-black`
+>     (9 archivos). Verificado que nunca ganaban la cascada (todos calculaban a
+>     `var(--nx-text)` en ambos temas); SearchModal pasa a `text-[var(--nx-text)]`.
+>
+> - **Verificado sobre el build de producción** (818 páginas, `astro preview`):
+>   - Portada: contraste AA en 18/18 combinaciones página×tema (todo el texto visible).
+>   - Mapa con estados: portada consistente con `estadosSem` y 3D re-pintando
+>     hubs/nodos con los mismos tokens (QA contra la web viva).
+>   - Impresión del mapa: emulando `@media print`, canvas y botones desaparecen, la
+>     Lista se ve a 2 columnas negro sobre blanco y los semestres no se parten.
+>   - Modo lectura (602→671 px), buscador (abre/filtra/Esc), flashcards, marcar leída,
+>     barra de progreso, tema persistente, mapa 3D⇄Lista, 10/10 funcional.
+>   - Contraste mínimo AA en ambos temas; 0 errores de consola; 0 desbordes; 1 solo
+>     degradado (2 px), 0 sombras, 0 blur, radios 100 % 4 px.
+>
+> - **Sync local**: `npm run sync` con `VAULT_DIR=../Universidad` para que el build
+>   local vuelva a coincidir con la producción (787 notas, 4 semestres).
+>
+> - **No se tocó** la zona `opencode`, ni `Universidad/**`, ni `site/scripts/**`.
+>   Sin `npm run sync` en OneDrive; la copia del repo es la fuente del build.
+
+> [!success] PUSHEADO `a65569bf` · 18/11/2026 — `9bb5adb9` `1c654535` `dfbef1e5` (código) + `a65569bf`
+> (PUSHEO EN CURSO) + este bloque → merge `--ff-only` a `master` → un solo push, sin `--force`.
 
 ### `opencode` — CYSOC: U1 completa a 0 hallazgos — 18/11/2026
 

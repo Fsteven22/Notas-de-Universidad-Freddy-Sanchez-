@@ -430,7 +430,7 @@ tags: [MATG1045, unidad4, derivada, definicion-formal, limite-incremental, recta
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Derivada_y_Definición_Formal_04.svg]]
 >
-> **Se lee así:** es un mapa mental con un nodo central del que salen cinco ramas: la interpretación geométrica, la física, los métodos de cálculo, la existencia de la derivada y las aplicaciones. Cada rama abre en hojas que detallan lo que se apoya en la definición, como la pendiente tangente, la cancelación de $h$ o la continuidad necesaria.
+> **Se lee así:** un cuadro raíz "Definición Derivada" despliega cinco subgrafos de rectángulos: la interpretación geométrica, la física, los métodos de cálculo, la existencia de la derivada y las aplicaciones. Cada subgrafo agrupa las hojas que se apoyan en la definición, como la pendiente tangente, la cancelación de $h$ o la continuidad necesaria.
 >
 > **Por qué importa:** te sirve como panorama: la definición no es un trámite, es la base de todo lo que viene después, incluidas las derivadas de orden superior y las parciales. También te muestra qué rama conviene repasar antes de un parcial.
 >
