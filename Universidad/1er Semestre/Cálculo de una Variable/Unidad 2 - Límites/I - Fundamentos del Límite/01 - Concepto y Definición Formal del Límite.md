@@ -268,6 +268,18 @@ tags: [MATG1045, unidad2, limite, epsilon-delta, limites-laterales, limites-infi
 >
 > **Ejemplo:** en el ejemplo 2 de los ejercicios, $\lim_{x \to 2} x^2 = 4$, la restricción preliminar $|x - 2| < 1$ es lo que permite acotar $|x + 2| < 5$ y fijar $\delta = \min\{1, \varepsilon/5\}$.
 
+> [!warning] 🧭 El argumento ε₀ para refutar un candidato
+>
+> Para demostrar que un candidato $L$ **no** es el límite, la estrategia es la inversa a la de construir $\delta$: se exhibe un único $\varepsilon_0 > 0$ que tumba cualquier radio propuesto.
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_11.svg]]
+>
+> **Se lee así:** una cadena de siete rectángulos en una sola dirección, sin rombos: se supone un candidato $L$, se fija un $\varepsilon_0 > 0$ testigo, se recorre cada $\delta > 0$ y se encuentra una $x$ a distancia positiva de $a$ y menor que $\delta$; la caja roja marca el hallazgo —esa $f(x)$ queda a distancia al menos $\varepsilon_0$ de $L$— y las dos últimas concluyen que la definición falla para ese candidato y que no existe un límite finito en $a$.
+>
+> **Por qué importa:** refutar un candidato también es una demostración constructiva: basta un $\varepsilon_0$ que funcione para todo $\delta$. Es el método con el que se descartan límites y se prueba la discontinuidad de $\frac{|x|}{x}$ en $0$.
+>
+> **Ejemplo:** para mostrar que $\lim_{x \to 0} \frac{|x|}{x}$ no existe se toma como candidato $L = 1$ y $\varepsilon_0 = \frac{1}{2}$; cualquier $\delta > 0$ permite escoger $x = -\delta/2$ con $\frac{|x|}{x} = -1$, a distancia $2 \geq \varepsilon_0$ de $1$.
+
 > [!warning] ⚠️ Condiciones que no se pueden saltar
 >
 > - **$0 < |x - a|$:** excluimos $x = a$, porque no nos importa $f(a)$.

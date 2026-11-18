@@ -18,6 +18,7 @@
  *   · el interruptor de movimiento (Auto / Siempre / Nunca)
  */
 import MotionToggle from "./MotionToggle.astro";
+import BrandMark from "./BrandMark.astro";
 
 const actualizado = new Date().toLocaleDateString("es-EC", {
   day: "numeric",
@@ -29,7 +30,7 @@ const actualizado = new Date().toLocaleDateString("es-EC", {
 <footer class="nx-footer">
   <div class="nx-footer-inner">
     <div class="nx-footer-brand">
-      <img src="/logo.svg" alt="" width="20" height="20" class="nx-footer-logo" />
+      <BrandMark size={20} class="nx-footer-logo" />
       <p class="nx-footer-name">NEONOTES</p>
       <p class="nx-footer-sub">Steven Sánchez · Ingeniería Computacional · ESPOL</p>
     </div>
@@ -83,8 +84,7 @@ const actualizado = new Date().toLocaleDateString("es-EC", {
 <style is:global>
   .nx-footer {
     margin-top: 3rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.07);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.012), transparent);
+    border-top: 1px solid var(--nx-line);
   }
   .nx-footer-inner {
     display: flex;
@@ -106,16 +106,15 @@ const actualizado = new Date().toLocaleDateString("es-EC", {
     opacity: 0.85;
   }
   .nx-footer-name {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    letter-spacing: 0.22em;
-    color: #e5e7eb;
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--nx-text);
   }
   .nx-footer-sub {
-    font-family: var(--font-mono);
-    font-size: 10px;
-    letter-spacing: 0.08em;
-    color: #64748b;
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: var(--nx-muted);
   }
   .nx-footer-tools {
     display: flex;
@@ -138,10 +137,9 @@ const actualizado = new Date().toLocaleDateString("es-EC", {
     max-width: 72rem;
     margin: 0 auto;
     padding: 0 1.5rem 1.5rem;
-    font-family: var(--font-mono);
-    font-size: 10px;
-    letter-spacing: 0.06em;
-    color: #475569;
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: var(--nx-muted);
   }
   /* El botón de atajos vive en el pie: aquí ya no se oculta en móvil. */
   .nx-footer .nx-hbtn--shortcuts {

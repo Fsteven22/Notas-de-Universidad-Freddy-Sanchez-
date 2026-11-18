@@ -13,8 +13,6 @@ if (!data) return Astro.redirect("/");
 ---
 
 <Base title={`${data.title} · Neonotes`}>
-  <div class="nx-aura" style="width:360px;height:360px;top:-100px;left:20%;opacity:.7"></div>
-
   <SiteHeader variant="nivel" showHome crumbs={[{ label: data.title }]} />
 
   <section class="mx-auto max-w-6xl px-6 pt-8 pb-16">
@@ -34,8 +32,8 @@ if (!data) return Astro.redirect("/");
             <div class="flex items-start justify-between gap-3">
               <h2 class="text-lg font-bold text-white leading-snug">{m.title}</h2>
               <span
-                class="shrink-0 font-mono text-xs opacity-0 transition-all group-hover:translate-x-0.5 group-hover:opacity-100"
-                style="color: var(--color-nexus-green);"
+                class="shrink-0 text-xs opacity-0 transition-all group-hover:translate-x-0.5 group-hover:opacity-100"
+                style="color: var(--nx-dim);"
               >
                 →
               </span>

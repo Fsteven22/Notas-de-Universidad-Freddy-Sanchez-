@@ -19,29 +19,15 @@ const canonical = new URL(Astro.url.pathname, SITE).href;
 const parts = Astro.url.pathname.split("/").filter(Boolean);
 const scope = parts.slice(0, 2).join("/");
 
-// Nota = ruta con 3+ segmentos (sem/mat/slug...). En notas se apagan las
-// texturas (retícula/halo) porque restan legibilidad en texto largo.
+// Nota = ruta con 3+ segmentos (sem/mat/slug...). Se usa para el modo
+// lectura y para ocultar la barra de tiempo restante.
 const isNote = parts.length >= 3;
 
-// Acento por semestre: pinta la barra de progreso, el anillo
-// del botón arriba y el ETA de lectura. Va en <html> para que el router de
-// Astro lo actualice solo en cada navegación.
-const ACCENTS: Record<string, [string, string]> = {
-  preuniversitario: ["#aa66ff", "170, 102, 255"],
-  "1er-semestre": ["#00aaff", "0, 170, 255"],
-  "2do-semestre": ["#00ff88", "0, 255, 136"],
-  "3er-semestre": ["#00ddbb", "0, 221, 187"],
-  raiz: ["#f59f00", "245, 159, 0"],
-};
-const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
+// El acento es único y lo define tokens.css: ya no hay color por semestre.
 ---
 
 <!doctype html>
-<html
-  lang="es"
-  class={isNote ? "nx-note-page" : undefined}
-  style={`--nx-accent:${accent};--nx-accent-rgb:${accentRgb}`}
->
+<html lang="es" class={isNote ? "nx-note-page" : undefined}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -62,12 +48,36 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={`${SITE}/og-neonotes.png`} />
     <meta name="twitter:image:alt" content="Neonotes · apuntes de Ingeniería Computacional ESPOL" />
-    <meta name="theme-color" content="#05070d" />
+    <meta name="color-scheme" content="light dark" />
+    <meta id="nx-theme-color" name="theme-color" content="#f4f8fa" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <title>{title}</title>
     <ClientRouter />
+    <!-- ── Tema claro/oscuro, antes de pintar ────────────────────────────
+         El atributo data-theme tiene que estar en <html> ANTES del primer
+         pintado: si se pusiera después, la página aparecería un instante en
+         el tema contrario y luego saltaría (el "flash" que nadie perdona).
+
+         Por defecto se sigue al sistema (prefers-color-scheme). Si el lector
+         elige, se guarda en localStorage ("theme") y manda su elección.
+         El script se re-ejecuta en cada navegación porque el router de
+         Astro reemplaza los atributos de <html>. -->
+    <script is:inline data-astro-rerun>
+      (function () {
+        var KEY = "theme";
+        var root = document.documentElement;
+        var t = null;
+        try { t = localStorage.getItem(KEY); } catch (e) {}
+        if (t !== "light" && t !== "dark") {
+          t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        root.setAttribute("data-theme", t);
+        var meta = document.getElementById("nx-theme-color");
+        if (meta) meta.setAttribute("content", t === "dark" ? "#0b1318" : "#f4f8fa");
+      })();
+    </script>
     <!-- Marca de "hay JS": el revelado al hacer scroll solo oculta contenido
          si esta marca existe. Sin JS (o con JS roto) el contenido se ve. -->
     <script is:inline data-astro-rerun>
@@ -161,13 +171,48 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
         } catch(e){}
       })();
     </script>
+    <!-- ── Preferencia de emojis ──────────────────────────────────
+         El vault usa emojis en los títulos y en los callouts. Aquí se
+         decide si se ven: por defecto sí, y el interruptor "Emojis: sí/no"
+         de la nota lo cambia (se guarda en localStorage).
+
+         El atributo data-nx-emojis en <html> es lo que lee el CSS; el
+         router de Astro borra los atributos de <html> en cada swap, por eso
+         este script se re-ejecuta en cada navegación (data-astro-rerun). -->
+    <script is:inline data-astro-rerun>
+      (function(){
+        var KEY = "nx-emojis";
+        var root = document.documentElement;
+        function readStored(){
+          try { return localStorage.getItem(KEY); } catch(e){ return null; }
+        }
+        function writeStored(v){
+          try { localStorage.setItem(KEY, v); } catch(e){}
+        }
+        function resolve(){
+          var p = readStored();
+          return p === "off" ? "off" : "on";
+        }
+        root.setAttribute("data-nx-emojis", resolve());
+        if (!window.__nxEmojis) {
+          window.__nxEmojis = {
+            /** ¿se ven los emojis? */
+            on: function(){ return resolve() === "on"; },
+            /** cambia la preferencia y lo aplica sin recargar */
+            set: function(v){
+              writeStored(v === "off" ? "off" : "on");
+              root.setAttribute("data-nx-emojis", v === "off" ? "off" : "on");
+            }
+          };
+        }
+      })();
+    </script>
     <!-- Librerías de animación (servidas localmente, sin CDN externo) -->
     <script src="/gsap.min.js" is:inline></script>
     <script src="/ScrollTrigger.min.js" is:inline></script>
-    <script src="/SplitText.min.js" is:inline></script>
-    <script src="/ScrambleTextPlugin.min.js" is:inline></script>
+
     <script is:inline>
-      window.gsap.registerPlugin(window.ScrollTrigger, window.SplitText, window.ScrambleTextPlugin);
+      window.gsap.registerPlugin(window.ScrollTrigger);
     </script>
     <script src="/lenis.min.js" is:inline></script>
     <style is:global>
@@ -204,59 +249,6 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
       <span aria-hidden="true">↑</span>
     </button>
 
-    <!-- Minutos restantes de lectura (solo visible en notas; lo actualiza el scroll) -->
-    <div id="nx-read-eta" aria-live="polite" data-astro-transition-persist="nx-read-eta">—</div>
-
-    <script>
-      /**
-       * Revelado al hacer scroll: las tarjetas de la portada y de la materia
-       * aparecen conforme llegan, no todas de golpe al cargar. Se apoya en
-       * `nx-js` (puesta en el head) para que sin JS nada quede invisible.
-       *
-       * Un solo observador para toda la vida de la pagina: con el router de
-       * cliente el arranque se ejecuta dos veces (carga inicial y
-       * `astro:page-load`) y con un observador por arranque cada elemento
-       * estaba vigilado dos veces.
-       */
-      let nxObserver: IntersectionObserver | null = null;
-
-      function nxReveal() {
-        // Si GSAP está activo, se encarga él del revelado: no interferir.
-        if (window.gsap) return;
-
-        const els = Array.from(
-          document.querySelectorAll<HTMLElement>(
-            "[data-nx-reveal]:not(.is-visible):not([data-nx-reveal-bound])"
-          )
-        );
-        if (!els.length) return;
-        if (!nxObserver) {
-          if (!("IntersectionObserver" in window)) {
-            for (const el of els) el.classList.add("is-visible");
-            return;
-          }
-          nxObserver = new IntersectionObserver(
-            (entries) => {
-              for (const entry of entries) {
-                if (!entry.isIntersecting) continue;
-                entry.target.classList.add("is-visible");
-                nxObserver?.unobserve(entry.target);
-              }
-            },
-            { rootMargin: "0px 0px -6% 0px", threshold: 0.04 }
-          );
-        }
-        for (const el of els) {
-          el.dataset.nxRevealBound = "1";
-          nxObserver.observe(el);
-        }
-      }
-
-      // Esperar 3s a que GSAP cargue antes del reveal nativo (respaldo)
-      setTimeout(nxReveal, 3000);
-      document.addEventListener("astro:page-load", function(){ setTimeout(nxReveal, 3000); });
-    </script>
-
     <script>
       (function(){
         var booted = false;
@@ -277,31 +269,6 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
           return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
         }
 
-        // ── Tiempo restante de lectura (solo notas) ──
-        // Cuenta palabras del .note-prose (sin el MathML de KaTeX, que duplica
-        // el texto) y estima minutos a 200 palabras/min.
-        function nxEtaUpdate(){
-          var eta = document.getElementById("nx-read-eta");
-          if (!eta) return;
-          if (!document.documentElement.classList.contains("nx-note-page")) return;
-          var prose = document.querySelector(".note-prose");
-          if (!prose) return;
-          if (!prose.dataset.nxEtaTotal) {
-            var clone = prose.cloneNode(true);
-            var math = clone.querySelectorAll(".katex-mathml, annotation");
-            for (var m = 0; m < math.length; m++) math[m].remove();
-            var words = (clone.textContent || "").trim().split(/\s+/).length;
-            prose.dataset.nxEtaTotal = String(Math.max(1, Math.round(words / 200)));
-          }
-          var total = parseInt(prose.dataset.nxEtaTotal, 10);
-          var doc = document.documentElement;
-          var max = Math.max(1, doc.scrollHeight - doc.clientHeight);
-          var p = Math.min(1, Math.max(0, window.scrollY / max));
-          var rest = Math.ceil(total * (1 - p));
-          eta.textContent = rest > 0 ? rest + " min restantes" : "terminado";
-          eta.classList.toggle("is-done", rest <= 0);
-        }
-
         // ── Botón "copiar" en cada bloque de código de las notas ──
         function nxCopyBind(){
           var pres = document.querySelectorAll(".note-prose pre");
@@ -309,10 +276,32 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
             (function(pre){
               if (pre.dataset.nxCopyBound) return;
               pre.dataset.nxCopyBound = "1";
+
+              // Nombre del bloque: el lenguaje del valla (python, sql, ...).
+              var code = pre.querySelector("code");
+              var lang = "";
+              if (code) {
+                var m = (code.className || "").match(/language-([\w-]+)/);
+                if (m) lang = m[1];
+              }
+              if (lang) pre.setAttribute("data-lang", lang);
+
+              // Indicador de línea cortada: solo si el bloque se desplaza.
+              var marcar = function(){
+                if (pre.scrollWidth > pre.clientWidth + 2) pre.classList.add("is-scrollable");
+                else pre.classList.remove("is-scrollable");
+              };
+              marcar();
+              if (typeof ResizeObserver !== "undefined") {
+                new ResizeObserver(marcar).observe(pre);
+              }
+              pre.addEventListener("scroll", marcar, { passive: true });
+
               var btn = document.createElement("button");
               btn.type = "button";
               btn.className = "nx-copy";
               btn.textContent = "copiar";
+              btn.setAttribute("aria-label", "Copiar el código");
               btn.addEventListener("click", function(){
                 var code = pre.querySelector("code");
                 var text = (code || pre).textContent || "";
@@ -452,7 +441,7 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
 
         function initAnimations(){
           if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
-          gsap.registerPlugin(ScrollTrigger, window.SplitText, window.ScrambleTextPlugin);
+          gsap.registerPlugin(ScrollTrigger);
 
           // ── Arranque único: Lenis, barra de progreso, cursor, botón arriba ──
           if (!booted) {
@@ -460,9 +449,6 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
 
             nxDirBind();
             nxShortcuts();
-
-            // ETA de lectura: se actualiza con el scroll (solo actúa en notas)
-            window.addEventListener("scroll", nxEtaUpdate, { passive: true });
 
             // Con "reducir movimiento": scroll nativo, sin cursor, sin Lenis.
             if (!nxReduced()) {
@@ -512,176 +498,10 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
             }
           }
 
-          // ── Revelado al scroll (por página) ──
-          // Sin GSAP o con movimiento reducido el CSS ya muestra el contenido.
-          if (!nxReduced()) gsap.utils.toArray("[data-nx-reveal]").forEach(function(el){
-            track(gsap.fromTo(el,
-              { opacity: 0, y: 24 },
-              { opacity: 1, y: 0, duration: 0.7, ease: "power3.out",
-                scrollTrigger: { trigger: el, start: "top 85%", toggleActions: "play none none reverse" }
-              }
-            ));
-          });
-
-          // Hero home (el h1 lo anima SplitText en index.astro)
-          if (!nxReduced() && window.location.pathname === "/"){
-            var tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-            tl.from(".nx-badge", { y: 20, opacity: 0, duration: 0.6 })
-              .from("p.mt-4.max-w-xl", { y: 20, opacity: 0, duration: 0.6 }, "-=0.3")
-              .from(".mt-6.flex", { y: 20, opacity: 0, duration: 0.6 }, "-=0.4")
-              .from(".nx-bar", { scaleX: 0, transformOrigin: "left center", duration: 0.8 }, "-=0.6");
-            track(tl);
-
-            // Brillo que viaja en loop por la barra de marca
-            track(gsap.to(".nx-bar", {
-              backgroundPosition: "200% 0", duration: 3.5, repeat: -1, ease: "none"
-            }));
-          }
-
-          // Stats home
-          if (!nxReduced() && window.location.pathname === "/"){
-            gsap.utils.toArray("section.mx-auto.max-w-6xl.px-6.pb-4 .nx-card").forEach(function(card){
-              var numberEl = card.querySelector("p.font-mono.text-3xl");
-              if (!numberEl) return;
-              var target = parseInt(numberEl.textContent, 10);
-              if (isNaN(target)) return;
-              track(gsap.fromTo(numberEl,
-                { innerText: 0 },
-                { innerText: target, duration: 1.2, ease: "power2.out", snap: { innerText: 1 },
-                  scrollTrigger: { trigger: card, start: "top 85%", toggleActions: "play none none reverse" }
-                }
-              ));
-            });
-          }
-
-          // Materia reveals
-          if (!nxReduced() && /^\/\w+\/\w+\/$/.test(window.location.pathname)){
-            gsap.utils.toArray(".nx-unit-head").forEach(function(el){
-              track(gsap.fromTo(el, { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.6, ease: "power2.out",
-                scrollTrigger: { trigger: el, start: "top 85%", toggleActions: "play none none reverse" } }));
-            });
-            gsap.utils.toArray(".nx-note-row").forEach(function(el, i){
-              track(gsap.fromTo(el, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.5, delay: i * 0.04, ease: "power2.out",
-                scrollTrigger: { trigger: el, start: "top 90%", toggleActions: "play none none reverse" } }));
-            });
-          }
-
-          // ── Scramble en títulos de sección al entrar en pantalla ──
-          if (!nxReduced() && window.ScrambleTextPlugin) {
-            gsap.utils.toArray(".nx-section-title").forEach(function(el){
-              var full = (el.textContent || "").replace(/\s+/g, " ").trim();
-              if (!full) return;
-              var st = ScrollTrigger.create({
-                trigger: el, start: "top 90%", once: true,
-                onEnter: function(){
-                  gsap.to(el, { duration: 1.1,
-                    scrambleText: { text: full, chars: "upperCase", speed: 0.4, revealDelay: 0.2 } });
-                }
-              });
-              track({ scrollTrigger: st, kill: function(){ st.kill(); } });
-            });
-
-            // Scramble al hover de enlaces marcados con .nx-scramble
-            gsap.utils.toArray(".nx-scramble").forEach(function(el){
-              if (el.dataset.nxScrambleBound) return;
-              el.dataset.nxScrambleBound = "1";
-              var original = el.textContent;
-              if (!original || !original.trim()) return;
-              el.addEventListener("mouseenter", function(){
-                gsap.to(el, { duration: 0.55, ease: "none",
-                  scrambleText: { text: original, chars: "lowerCase", speed: 0.55, revealDelay: 0.05 } });
-              });
-            });
-          }
-
-          // ── Inclinación 3D en botones (sin desplazamiento) ──
-          // Antes el botón se desplazaba hacia el puntero (hover magnético)
-          // y volvía con rebote elástico: se le escapaba de debajo del
-          // cursor y temblaba al regresar. Ahora solo rota en profundidad:
-          // el botón no se mueve de su sitio y el retorno es suave, sin
-          // rebote.
-          if (!nxReduced()) gsap.utils.toArray(".nx-btn").forEach(function(btn){
-            if (btn.dataset.nxTiltBound) return;
-            btn.dataset.nxTiltBound = "1";
-            btn.addEventListener("mousemove", function(e){
-              var r = btn.getBoundingClientRect();
-              var px = (e.clientX - r.left) / r.width - 0.5;
-              var py = (e.clientY - r.top) / r.height - 0.5;
-              gsap.to(btn, {
-                rotationY: px * 5, rotationX: -py * 5,
-                transformPerspective: 700, duration: 0.35, ease: "power2.out"
-              });
-            });
-            btn.addEventListener("mouseleave", function(){
-              gsap.to(btn, { rotationY: 0, rotationX: 0, duration: 0.45, ease: "power3.out" });
-            });
-          });
-
-          // ── Tilt 3D en tarjetas ──
-          // Mismo criterio que los botones: inclinación sin rebote al
-          // volver (el rebote elástico mareaba un poco).
-          if (!nxReduced()) gsap.utils.toArray(".nx-card").forEach(function(card){
-            if (card.dataset.nxTiltBound) return;
-            card.dataset.nxTiltBound = "1";
-            card.addEventListener("mousemove", function(e){
-              var r = card.getBoundingClientRect();
-              var px = (e.clientX - r.left) / r.width - 0.5;
-              var py = (e.clientY - r.top) / r.height - 0.5;
-              gsap.to(card, { rotationY: px * 7, rotationX: -py * 7,
-                transformPerspective: 900, duration: 0.4, ease: "power2.out" });
-            });
-            card.addEventListener("mouseleave", function(){
-              gsap.to(card, { rotationY: 0, rotationX: 0, duration: 0.5, ease: "power3.out" });
-            });
-          });
-
-          // ── Parallax de auras al hacer scroll ──
-          if (!nxReduced()) gsap.utils.toArray(".nx-aura").forEach(function(a, i){
-            track(gsap.to(a, { top: (i % 2 ? "-=140" : "+=140"), ease: "none",
-              scrollTrigger: { start: 0, end: "max", scrub: 1.2 } }));
-          });
-
-          // ── Nota: SplitText en el título, reveal en figuras/tablas, ETA y copiar ──
+          // ── Nota: copiador de código ──
+          // Sin animaciones de entrada: el contenido se ve siempre.
           if (document.documentElement.classList.contains("nx-note-page")) {
             nxCopyBind();
-            nxEtaUpdate();
-
-            if (!nxReduced()) {
-              // Título de la nota: letras que suben al entrar
-              var noteH1 = document.querySelector<HTMLElement>("article > h1");
-              if (noteH1 && window.SplitText && !noteH1.dataset.nxSplit) {
-                noteH1.dataset.nxSplit = "1";
-                try {
-                  // `ignore`: si el título tuviera un span con degradado
-                  // (background-clip: text), partirlo en letras haría que el
-                  // fondo dejara de pintarse y el texto se vería invisible.
-                  var nh = new window.SplitText(noteH1, {
-                    type: "chars,words", charsClass: "nx-char", ignore: ".nx-brand-text"
-                  });
-                  // Integridad: si el título se quedó sin texto, se deshace la
-                  // partición y se deja el título tal cual.
-                  if (!(noteH1.textContent || "").trim()) {
-                    nh.revert();
-                    return;
-                  }
-                  track(gsap.from(nh.chars, {
-                    yPercent: 110, opacity: 0, duration: 0.6,
-                    stagger: 0.016, ease: "power4.out", delay: 0.1
-                  }));
-                } catch(e){}
-              }
-
-              // Figuras, tablas y citas aparecen al llegar
-              gsap.utils.toArray(".note-prose figure, .note-prose table, .note-prose blockquote, .note-prose img")
-                .forEach(function(el){
-                  track(gsap.fromTo(el,
-                    { opacity: 0, y: 22 },
-                    { opacity: 1, y: 0, duration: 0.65, ease: "power3.out",
-                      scrollTrigger: { trigger: el, start: "top 88%", toggleActions: "play none none reverse" }
-                    }
-                  ));
-                });
-            }
           }
         }
 
@@ -700,7 +520,6 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
           // posiciones viejas. Se recalculan con el DOM ya montado.
           if (window.ScrollTrigger) {
             requestAnimationFrame(function(){ ScrollTrigger.refresh(); });
-            nxEtaUpdate();
           }
         }
 

@@ -80,46 +80,18 @@ for (const s of vault.semestres) {
 ---
 
 <aside class="nx-explorer-wrap hidden xl:block">
-  <div class="nx-explorer-filter">
-    <input
-      id="nx-explorer-filter"
-      type="text"
-      placeholder="Buscar notas…"
-      autocomplete="off"
-      spellcheck="false"
-    />
-  </div>
   <div class="nx-explorer" set:html={html} />
 </aside>
 
 <script>
-  /** Buscador rápido del explorador: filtra notas y unidades al escribir. */
-  const input = document.getElementById("nx-explorer-filter");
-  const explorer = document.querySelector(".nx-explorer");
-  if (input && explorer) {
-    const cards = Array.from(explorer.querySelectorAll("li a, details summary"));
-    input.addEventListener("input", () => {
-      const term = input.value.toLowerCase().trim();
-      for (const card of cards) {
-        const text = card.textContent.toLowerCase();
-        const li = card.closest("li");
-        if (term === "") {
-          li?.classList.remove("nx-ex-hidden");
-          card.closest("details")?.open;
-          continue;
-        }
-        const match = text.includes(term);
-        li?.classList.toggle("nx-ex-hidden", !match);
-        // si hay coincidencia dentro de un details cerrado, lo abrimos
-        if (match) {
-          const details = card.closest("details");
-          if (details && !details.open) details.open = true;
-        }
-      }
-    });
-  }
-
-  /** Recordar estado abierto/cerrado de cada <details> entre cambios de página. */
+  /**
+   * El explorador NO lleva su propio buscador: el sitio tiene una sola
+   * búsqueda (la del header, que ya busca en todas las notas y salta al
+   * apartado exacto). Con dos cajas de búsqueda en la misma pantalla
+   * (la del header y la del explorador) no se sabe cuál usar.
+   *
+   * Recordar estado abierto/cerrado de cada <details> entre cambios de página.
+   */
   document.querySelectorAll("details").forEach((details) => {
     const saved = localStorage.getItem(details.id);
     if (saved === "open") details.open = true;
@@ -131,23 +103,6 @@ for (const s of vault.semestres) {
 </script>
 
 <style>
-  .nx-explorer-filter {
-    margin-bottom: 0.6rem;
-  }
-  .nx-explorer-filter input {
-    width: 100%;
-    padding: 0.4rem 0.6rem;
-    border-radius: 0.5rem;
-    border: 1px solid var(--glass-border);
-    background: var(--glass-bg);
-    color: #e5e7eb;
-    font-family: var(--font-mono);
-    font-size: 11px;
-    box-sizing: border-box;
-  }
-  .nx-explorer-filter input::placeholder {
-    color: var(--color-nexus-muted);
-  }
   .nx-ex-hidden {
     display: none !important;
   }

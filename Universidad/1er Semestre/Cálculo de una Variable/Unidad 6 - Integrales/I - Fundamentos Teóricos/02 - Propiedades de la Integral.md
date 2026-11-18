@@ -19,6 +19,16 @@ tags: [MATG1045, unidad6, propiedades-integral, integral-indefinida, integral-de
 >
 > **Ejemplo:** si $f(x) = 2x$, su derivada es $f'(x) = 2$, mientras que su integral indefinida es $\int 2x\,dx = x^2 + C$, la familia de funciones cuya derivada es exactamente $2x$.
 
+> [!info] 🗺️ El mapa general: indefinida, definida y el TFC
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_16.svg]]
+>
+> **Se lee así:** un mapa mental con raíz "Integración" que abre tres ramas: **Indefinida** (función + C, linealidad, primitivas, inversa de la derivada), **Definida** (número, área neta, límites, aditividad) y **TFC** (une ambas, evaluación práctica, regla de Barrow). Sin rombos ni flechas cruzadas: es una fotografía de la estructura de toda la unidad.
+>
+> **Por qué importa:** fíjate en que la rama central es el TFC: es la que conecta las otras dos y el hilo conductor de la unidad. Úsalo como índice mental cuando una propiedad no te cuadre.
+>
+> **Ejemplo:** si te piden evaluar $\int_0^2 3x^2\,dx$, la rama Definida te dice que el resultado es un número, la rama TFC da el camino (hallar $x^3$ y restar $8-0$) y la rama Indefinida aporta la primitiva.
+
 > [!warning] ⚠️ Las tres confusiones que más cuestan puntos
 >
 > 1. **NO** trates la integral indefinida como un número: es una familia de funciones con $+C$.

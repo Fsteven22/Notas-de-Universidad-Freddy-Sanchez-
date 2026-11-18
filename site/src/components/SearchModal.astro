@@ -27,15 +27,14 @@ const { scope = "" } = Astro.props;
 
 <div
   id="nx-search"
-  class="fixed inset-0 z-50 hidden items-start justify-center bg-[rgba(2,4,10,0.7)] px-4 pt-[11vh] backdrop-blur-[6px]"
+  class="nx-overlay fixed inset-0 z-50 hidden items-start justify-center px-4 pt-[11vh]"
   data-nx-scope={scope}
 >
   <div id="nx-search-panel" class="w-full max-w-xl">
-    <div class="relative overflow-hidden rounded-2xl border border-[rgba(255,255,255,0.12)] bg-[#0a0e1a] shadow-[0_24px_80px_rgba(0,0,0,0.6),0_0_40px_rgba(120,140,255,0.12)]">
-      <div class="absolute inset-x-0 top-0 h-px" style="background: linear-gradient(90deg, transparent, #aa66ff 25%, #00aaff 75%, transparent);"></div>
+    <div class="relative overflow-hidden rounded border border-[var(--nx-line)] bg-[var(--nx-surface)]">
 
-      <div class="flex items-center gap-3 border-b border-[rgba(255,255,255,0.07)] px-4 py-3.5">
-        <svg class="size-4 shrink-0 text-[var(--color-nexus-blue)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+      <div class="flex items-center gap-3 border-b border-[var(--nx-line)] px-4 py-3.5">
+        <svg class="size-4 shrink-0 text-[var(--nx-accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
           <circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" />
         </svg>
         <input
@@ -44,13 +43,13 @@ const { scope = "" } = Astro.props;
           placeholder="Buscar en títulos y dentro de las notas…"
           autocomplete="off"
           spellcheck="false"
-          class="w-full bg-transparent text-sm text-white placeholder:text-[var(--color-nexus-muted)] focus:outline-none"
+          class="w-full bg-transparent text-sm text-white placeholder:text-[var(--nx-muted)] focus:outline-none"
         />
         <button
           id="nx-search-close"
           type="button"
           aria-label="Cerrar búsqueda"
-          class="flex size-7 shrink-0 items-center justify-center rounded-lg border border-[rgba(255,255,255,0.12)] text-[var(--color-nexus-muted)] transition hover:border-[rgba(255,255,255,0.3)] hover:text-white"
+          class="flex size-7 shrink-0 items-center justify-center rounded border border-[var(--nx-line)] text-[var(--nx-muted)] transition hover:border-[var(--nx-line-strong)] hover:text-[var(--nx-text)]"
         >
           <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
             <path d="M6 6l12 12M18 6L6 18" />
@@ -63,18 +62,22 @@ const { scope = "" } = Astro.props;
           forma de quedarse solo con un semestre o con una materia. */}
       <div
         id="nx-search-filters"
-        class="hidden items-center gap-2 border-b border-[rgba(255,255,255,0.06)] px-4 py-2"
+        class="hidden items-center gap-2 border-b border-[var(--nx-line)] px-4 py-2"
       >
-        <select id="nx-search-sem" class="nx-search-sel" aria-label="Filtrar por semestre">
-          <option value="">Todos los semestres</option>
-        </select>
-        <select id="nx-search-mat" class="nx-search-sel" aria-label="Filtrar por materia">
-          <option value="">Todas las materias</option>
-        </select>
+        <span class="nx-search-sel-wrap">
+          <select id="nx-search-sem" class="nx-search-sel" aria-label="Filtrar por semestre">
+            <option value="">Todos los semestres</option>
+          </select>
+        </span>
+        <span class="nx-search-sel-wrap">
+          <select id="nx-search-mat" class="nx-search-sel" aria-label="Filtrar por materia">
+            <option value="">Todas las materias</option>
+          </select>
+        </span>
         <button
           id="nx-search-clear"
           type="button"
-          class="ml-auto shrink-0 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)] transition hover:text-white"
+          class="ml-auto shrink-0 text-[var(--nx-muted)] transition hover:text-[var(--nx-text)]"
         >
           Quitar filtros
         </button>
@@ -82,7 +85,7 @@ const { scope = "" } = Astro.props;
 
       <div id="nx-search-list" class="max-h-[52vh] min-h-[180px] overflow-y-auto p-2 nx-scroll"></div>
 
-      <div id="nx-search-foot" class="flex items-center justify-between gap-3 border-t border-[rgba(255,255,255,0.06)] px-4 py-2 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)]">
+      <div id="nx-search-foot" class="flex items-center justify-between gap-3 border-t border-[var(--nx-line)] px-4 py-2 text-[var(--nx-muted)]">
         <span id="nx-search-count"></span>
         <span class="flex items-center gap-3">
           <span class="hidden sm:inline"><span class="nx-search-key">↑↓</span> elegir</span>
@@ -95,40 +98,46 @@ const { scope = "" } = Astro.props;
 </div>
 
 <style>
-  .nx-search-key {
-    font-family: var(--font-mono);
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    border-radius: 4px;
-    padding: 1px 5px;
-    color: #cbd5e1;
+  /* La flecha del desplegable se dibuja con CSS (un triángulo con bordes)
+     en vez de un SVG incrustado: así toma el color del tema y no lleva
+     un verde horneado dentro de un data URI. */
+  .nx-search-sel-wrap {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
   }
-  .nx-scroll::-webkit-scrollbar { width: 6px; }
-  .nx-scroll::-webkit-scrollbar-thumb { background: rgba(0, 170, 255, 0.18); border-radius: 6px; }
+  .nx-search-sel-wrap::after {
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    margin-top: -2px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid var(--nx-muted);
+    pointer-events: none;
+  }
   .nx-search-sel {
     appearance: none;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 0.45rem;
-    color: #d1d5db;
-    font-family: var(--font-mono);
-    font-size: 10px;
-    letter-spacing: 0.06em;
+    background: var(--nx-bg-soft);
+    border: 1px solid var(--nx-line);
+    border-radius: var(--nx-radius);
+    color: var(--nx-dim);
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
     padding: 0.3rem 1.6rem 0.3rem 0.55rem;
     max-width: 11rem;
     cursor: pointer;
-    background-image: linear-gradient(45deg, transparent 50%, #64748b 50%),
-      linear-gradient(135deg, #64748b 50%, transparent 50%);
-    background-position: calc(100% - 11px) 55%, calc(100% - 7px) 55%;
-    background-size: 4px 4px, 4px 4px;
-    background-repeat: no-repeat;
   }
   .nx-search-sel:focus-visible {
-    outline: 2px solid var(--color-nexus-purple);
+    outline: 2px solid var(--nx-neon);
     outline-offset: 1px;
   }
   .nx-search-sel option {
-    background: #0a0e1a;
-    color: #e5e7eb;
+    background: var(--nx-surface);
+    color: var(--nx-text);
   }
   /* Búsquedas recientes */
   #nx-search-list .nx-hist {
@@ -138,19 +147,19 @@ const { scope = "" } = Astro.props;
     width: 100%;
     text-align: left;
     padding: 0.45rem 0.6rem;
-    border-radius: 0.55rem;
-    color: #cbd5e1;
+    border-radius: var(--nx-radius);
+    color: var(--nx-dim);
     font-size: 13px;
     transition: background 0.14s ease, color 0.14s ease;
   }
   #nx-search-list .nx-hist:hover {
-    background: rgba(255, 255, 255, 0.05);
-    color: #fff;
+    background: var(--nx-surface-hover);
+    color: var(--nx-text);
   }
   #nx-search-list .nx-hist span {
-    color: var(--color-nexus-muted);
+    color: var(--nx-muted);
     font-family: var(--font-mono);
-    font-size: 10px;
+    font-size: 0.72rem;
   }
 </style>
 
@@ -351,20 +360,20 @@ const { scope = "" } = Astro.props;
             <p class="text-sm font-semibold leading-snug text-white">${recent ? esc(n.t) : highlight(n.t, terms)}</p>
             ${
               n.sec
-                ? `<p class="mt-1 text-[12.5px] leading-snug text-[var(--color-nexus-cyan)]">↳ ${highlight(n.sec, terms)}</p>`
+                ? `<p class="mt-1 text-[12.5px] leading-snug text-[var(--nx-dim)]">↳ ${highlight(n.sec, terms)}</p>`
                 : ""
             }
             ${
               n.snip
-                ? `<p class="mt-1 text-[12px] leading-snug text-[#9ca3af]">${highlight(n.snip, terms)}</p>`
+                ? `<p class="mt-1 text-[12px] leading-snug text-[var(--nx-muted)]">${highlight(n.snip, terms)}</p>`
                 : ""
             }
-            <p class="mt-1.5 flex items-center gap-1.5 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)] truncate">
-              <span class="mt-1.5 size-1.5 shrink-0 rounded-full ${recent ? "bg-[var(--color-nexus-blue)] opacity-60" : "bg-[var(--color-nexus-purple)] opacity-40"}"></span>
+            <p class="mt-1.5 flex items-center gap-1.5 text-[var(--nx-muted)] truncate">
+              <span class="mt-1.5 size-1.5 shrink-0 rounded-full ${recent ? "bg-[var(--nx-accent)] opacity-70" : "bg-[var(--nx-muted)] opacity-50"}"></span>
               ${esc(n.s)} · ${esc(n.m)}
             </p>
           </div>
-          <span class="nx-hit-arrow mt-0.5 shrink-0 font-mono text-xs text-[var(--color-nexus-blue)]">→</span>
+          <span class="nx-hit-arrow mt-0.5 shrink-0 text-xs text-[var(--nx-accent)]">→</span>
         </div>
       </button>`;
   }
@@ -383,7 +392,7 @@ const { scope = "" } = Astro.props;
         .slice(0, 6);
       hits = recent;
       const histHtml = historial.length
-        ? `<p class="px-2 pb-1.5 pt-1 font-mono text-[10px] tracking-[0.2em] text-[var(--color-nexus-muted)]">TUS BÚSQUEDAS</p>` +
+        ? `<p class="px-2 pb-1.5 pt-1 text-[var(--nx-muted)]">TUS BÚSQUEDAS</p>` +
           historial
             .map(
               (q) =>
@@ -393,7 +402,7 @@ const { scope = "" } = Astro.props;
         : "";
       ctx.listEl.innerHTML =
         histHtml +
-        `<p class="px-2 pb-1.5 pt-1 font-mono text-[10px] tracking-[0.2em] text-[var(--color-nexus-muted)]">RECIENTES</p>` +
+        `<p class="px-2 pb-1.5 pt-1 text-[var(--nx-muted)]">RECIENTES</p>` +
         recent.map((n, i) => hitHtml(n, [], i, true)).join("");
       ctx.countEl.textContent = idx.length ? `${idx.length} NOTAS INDEXADAS` : "";
       selected = 0;
@@ -435,10 +444,10 @@ const { scope = "" } = Astro.props;
       const porFiltro = habiaResultados && (filtroSem || filtroMat);
       ctx.listEl.innerHTML = `
         <div class="flex flex-col items-center justify-center px-4 py-10 text-center">
-          <svg class="size-8 text-[rgba(255,255,255,0.15)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <svg class="size-8 text-[var(--nx-line-strong)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
             <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>
           </svg>
-          <p class="mt-3 text-sm text-[#e5e7eb]">${
+          <p class="mt-3 text-sm text-[var(--nx-dim)]">${
             porFiltro
               ? "Sin resultados con ese filtro"
               : `Sin resultados para <span class="text-white">"${esc(query.trim())}"</span>`
@@ -446,7 +455,7 @@ const { scope = "" } = Astro.props;
           ${
             porFiltro
               ? `<button type="button" class="nx-hist mt-2" data-clear-filters>Quitar los filtros y ver todo</button>`
-              : `<p class="mt-1 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)]">PRUEBA CON MENOS PALABRAS</p>`
+              : `<p class="mt-1 text-[var(--nx-muted)]">PRUEBA CON MENOS PALABRAS</p>`
           }
         </div>`;
       ctx.countEl.textContent = porFiltro
@@ -457,7 +466,7 @@ const { scope = "" } = Astro.props;
 
     const cargando =
       terms.length && !contentLoaded
-        ? `<p class="px-2 py-2 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)]">BUSCANDO TAMBIÉN DENTRO DE LAS NOTAS…</p>`
+        ? `<p class="px-2 py-2 text-[var(--nx-muted)]">BUSCANDO TAMBIÉN DENTRO DE LAS NOTAS…</p>`
         : "";
 
     ctx.listEl.innerHTML = hits.map((n, i) => hitHtml(n, terms, i)).join("") + cargando;
@@ -717,16 +726,15 @@ const { scope = "" } = Astro.props;
     display: block;
     width: 100%;
     text-align: left;
-    border-radius: 0.7rem;
+    border-radius: var(--nx-radius);
     padding: 0.6rem 0.8rem;
     border: 1px solid transparent;
     transition: background 0.12s, border-color 0.12s;
-    animation: nx-hit-in 0.25s cubic-bezier(0.22, 1, 0.36, 1) both;
   }
   #nx-search-list .nx-hit:hover,
   #nx-search-list .nx-hit.is-selected {
-    background: rgba(170, 102, 255, 0.08);
-    border-color: rgba(170, 102, 255, 0.22);
+    background: var(--nx-accent-soft);
+    border-color: var(--nx-accent-line);
   }
   #nx-search-list .nx-hit .nx-hit-arrow {
     opacity: 0;
@@ -738,15 +746,12 @@ const { scope = "" } = Astro.props;
     opacity: 1;
     transform: translateX(0);
   }
-  @keyframes nx-hit-in {
-    from { opacity: 0; transform: translateY(6px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+  /* Lo que coincide con la búsqueda: el acento, nunca un color nuevo. */
   .nx-search-mark {
-    background: rgba(0, 221, 187, 0.16);
-    color: var(--color-nexus-cyan);
+    background: var(--nx-accent-soft);
+    color: var(--nx-accent);
     font-weight: 700;
-    border-radius: 3px;
+    border-radius: var(--nx-radius);
     padding: 0 2px;
   }
 </style>
