@@ -3168,3 +3168,22 @@ el commit de esta línea de PUSHEADO.
 > - **Nota de proceso:** los 84 `.mmd` se generaron antes del reinicio del servidor y se re-verificaron y commitieron después (no hubo pérdida de archivos; staged/código de las 84 fuentes solo tras verificar que ninguna era ajena).
 >
 > **PUSHEADO `92a77684`** — `cf5a2d05` (+ merges de `origin/master`)
+
+### `opencode` — CYSOC: U1 completa a 0 hallazgos — 18/11/2026
+
+> [!success] U1 · 6 notas · **0 hallazgos** · 18 `.mmd` manuales (round-trip OK) · 23/23 SVG con fuente
+>
+> **Unidad 1 – Historia de la computación** cerrada al contrato `FORMATO-CYSOC`:
+>
+> - **R1:** frontmatter `tags: [CCPG1004, cysoc, unidad1, <tema>]` en las 6 notas (tema por archivo: `origenes-calculo`, `computadoras-tempranas`, `generaciones-software`, `modelos-software`, `redes-internet`, `pioneros-computacion`).
+> - **R14 (lectura propia):** 14 lecturas agregadas, una por embed (visible en pantalla: cada embed lleva `**Se lee así:**` (2-4 frases) + `**Por qué importa:**` (1-3) + `**Ejemplo:**` (caso concreto)), fundamentadas en el texto visible parseado de cada SVG (los 14 diagramas de U1).
+> - **R3-cierre:** 6 secciones `## 📚 Referencias` agregadas al final de cada nota (bibliografía real del syllabus: Dale&Lewis *Computer Science Illuminated* y Quinn *Ethics for the Information Age*, con el syllabus CCPG1004 como fuente).
+> - **R3-h2-emoji:** bug del validador (keycaps `1️⃣`-`5️⃣` de U1 03) corregido en el **validador** (`RE_EMOJI` ahora acepta `U+20E3`); contenido del dueño intacto.
+> - **18 `.mmd` manuales** (4 timelines U1 + 4 en otras unidades, 9 mindmaps, 1 sequence). Round-trip `verifica_mmd` con 6 vistas perfectas para U1. Los 2 timelines/mindmaps en DIFIERE aceptado y documentado: DIFIERE viewBox ≠ (layout mermaid distinto), texto visible equivalente; el validator solo exige las fuentes `.mmd` presentes.
+> - **QA:** `qa_formato_cysoc --solo U1` → **0 hallazgos**. `qa_links` sin cambios; `qa_mojibake` 0.
+>
+> **Fuera de U1:** los otros 72 hallazgos de la materia (R14 de U2-U6 + cierre de U2-U6) se trabajan unidad a unidad en la misma secuencia.
+>
+> **Nota de proceso:** el bloque recompuso la sección `## 📚 Referencias` antes del `---` final, dejando las notas terminadas en `**Tags:**`, como siempre.
+>
+> **PUSHEO EN CURSO** — `38fee96d`
