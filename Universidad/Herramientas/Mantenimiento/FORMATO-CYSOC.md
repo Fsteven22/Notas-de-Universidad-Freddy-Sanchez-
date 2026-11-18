@@ -70,7 +70,7 @@ El callout arranca con una línea `>` sola, salvo los callouts 📖 de deck/syll
 - Entre dos párrafos de prosa: una línea `>` vacía entre medio.
 - Los items del mismo punto/lista van pegados.
 
-### R8 · Callout anidado plegado en los ejercicios
+### R8 · Callout anidado: el prefijo `> >` solo cuelga de un callout propio
 ```
 > [!example] 📋 Planteamiento
 >
@@ -80,7 +80,13 @@ El callout arranca con una línea `>` sola, salvo los callouts 📖 de deck/syll
 > >
 > > Respuesta...
 ```
-Prefijo `> >` en dos niveles.
+Prefijo `> >` en dos niveles. **Regla dura (H):** una línea `> >` que **no** cuelgue de un
+callout anidado con su propio `[!tipo]` es un descuido: se renderiza como texto indentado
+sin estilo (barra vertical duplicada, sin caja). No lo uses para un "dato extra" dentro de
+un callout: ese dato va **en el callout padre**, con su emoji (`> 💡 …`, `> 📌 …`, `> ⚠️ …`),
+o en un callout anidado con su propio tipo. Es el mismo criterio que siguen Diseno y SBD
+(los ~1200 `> >` de esas materias cuelgan todos de un `[!tipo]`).
+El validador reporta `R8-doble-gt-sin-callout` (H).
 
 ### R9 · Ejemplos con etiqueta en negrita
 Dentro del callout: `> **Ejemplo:**`, `> **Se lee así:**`, `> **Por qué importa:**`.
@@ -99,7 +105,16 @@ las líneas `- Q::A` van dentro del `> [!note] 🧠…`.
 - Material de clase **no se embebe** (PDF/PPTX/DOC): se capturan sus páginas como PNG en `Archivos/<Tema>/` y se citan con su número de página (R15).
 
 ### R13 · Tags al pie
-`**Tags:** #CYSOC #...` al final de la nota.
+`**Tags:** #CYSOC #...` al final de la nota, **en la raíz**: el bloque de tags nunca va pegado
+al último callout (se renderiza dentro de él). Patrón que usan las notas de la casa:
+```
+> - última fuente consultada
+<línea en blanco>
+---
+<línea en blanco>
+**Tags:** #CYSOC #...
+```
+El validador reporta `R13-tags-final` (falta la línea) y `R13-tags-pegado` (W: quedó pegada).
 
 ### R14 · Todo lo visual se explica (no se transcribe)
 **La regla que separa "leer la nota" de "leer el deck".** Cada embed visual (.png de deck/syllabus o

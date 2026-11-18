@@ -31,7 +31,7 @@ dg-publish: true
 > 
 > El Instituto Nacional de Estándares y Tecnología de EE.UU. (NIST) lo describe así:
 > 
-> > _"El sesgo es un efecto que priva a un resultado estadístico de representatividad al distorsionarlo, a diferencia de un error aleatorio, que puede distorsionarlo en cualquier ocasión, pero se equilibra en promedio."_
+> _"El sesgo es un efecto que priva a un resultado estadístico de representatividad al distorsionarlo, a diferencia de un error aleatorio, que puede distorsionarlo en cualquier ocasión, pero se equilibra en promedio."_
 > 
 > En resumen: **si hay predeterminación o parcialidad y el resultado está distorsionado de forma consistente → hay sesgo.**
 
@@ -111,7 +111,7 @@ dg-publish: true
 > 
 > Una **alucinación en IA** es un fenómeno en el que un modelo genera una respuesta que parece completamente coherente y segura, pero que es **falsa, inexacta o inventada**, sin base en la realidad verificable.
 > 
-> > _"Una alucinación es una afirmación generada por la IA que parece plausible, pero no está respaldada por la realidad."_ — BBVA Innovation
+> _"Una alucinación es una afirmación generada por la IA que parece plausible, pero no está respaldada por la realidad."_ — BBVA Innovation
 > 
 > **Diferencia clave con el error humano:**
 > 

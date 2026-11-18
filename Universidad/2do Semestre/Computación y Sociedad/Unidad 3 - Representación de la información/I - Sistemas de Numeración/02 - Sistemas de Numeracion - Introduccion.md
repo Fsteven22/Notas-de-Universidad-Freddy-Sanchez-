@@ -23,7 +23,7 @@ dg-publish: true
 > |**Arábigo tradicional**|٠ ١ ٢ ٣ ٤ ٥ ٦ ٧ ٨ ٩|Sistema posicional con símbolos propios (sifr, waahid, eeth-nayn...)|
 > |**Decimal moderno (arábigo adoptado)**|0,1,2,3,4,5,6,7,8,9|El que usamos cotidianamente; heredado y adaptado del sistema árabe|
 >
-> > 📌 Curiosamente, el sistema que llamamos "arábigo" en Occidente (0-9) ya tiene una grafía distinta a los símbolos del sistema arábigo tradicional — ambos comparten el mismo principio posicional en base 10, pero no los mismos símbolos.
+> 📌 Curiosamente, el sistema que llamamos "arábigo" en Occidente (0-9) ya tiene una grafía distinta a los símbolos del sistema arábigo tradicional — ambos comparten el mismo principio posicional en base 10, pero no los mismos símbolos.
 
 ![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-02-intro-sistemas-numeracion-01.png]]
 

@@ -20,7 +20,7 @@ dg-publish: true
 > |Países líderes|Países nórdicos: Suecia, Dinamarca, Finlandia|
 > |Países más rezagados|Yemen, Sudán del Sur, Haití, Myanmar|
 > 
-> > _"Los ODS siguen estando a nuestro alcance, pero solo si actuamos con decisión y actuamos ahora."_ — António Guterres, Secretario General de la ONU, 2025
+> _"Los ODS siguen estando a nuestro alcance, pero solo si actuamos con decisión y actuamos ahora."_ — António Guterres, Secretario General de la ONU, 2025
 > 
 > **Este documento responde 3 preguntas por cada ODS:**
 > 

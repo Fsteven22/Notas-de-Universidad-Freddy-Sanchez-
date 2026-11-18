@@ -26,7 +26,7 @@ dg-publish: true
 >
 > No existen "saltos" — en cualquier instante de tiempo la señal puede tomar **cualquier valor** dentro de un rango continuo, lo que la hace capaz de representar matices muy finos (como el volumen exacto de un sonido), pero también la hace **frágil**.
 >
-> > 📌 Toda señal eléctrica se degrada al recorrer un medio de transmisión (cable, aire, etc.). En el caso analógico, esa degradación es **irrecuperable**: una vez que el ruido se mezcla con la señal continua, no hay forma de distinguir cuál era la información original y cuál es el ruido.
+> 📌 Toda señal eléctrica se degrada al recorrer un medio de transmisión (cable, aire, etc.). En el caso analógico, esa degradación es **irrecuperable**: una vez que el ruido se mezcla con la señal continua, no hay forma de distinguir cuál era la información original y cuál es el ruido.
 
 ---
 
@@ -38,7 +38,7 @@ dg-publish: true
 >
 > Estos dos estados se representan con los **dígitos binarios**: `1` (estado alto) y `0` (estado bajo).
 >
-> > 💡 **Ventaja clave:** si la señal digital se degrada un poco en el camino, el receptor solo necesita decidir "¿esto está más cerca de alto o de bajo?" — una decisión binaria mucho más robusta al ruido que intentar reconstruir una curva continua exacta.
+> 💡 **Ventaja clave:** si la señal digital se degrada un poco en el camino, el receptor solo necesita decidir "¿esto está más cerca de alto o de bajo?" — una decisión binaria mucho más robusta al ruido que intentar reconstruir una curva continua exacta.
 >
 
 > [!tip] ⚙️ Por qué la electrónica prefiere lo digital
@@ -69,7 +69,7 @@ dg-publish: true
 > |$+0.8\text{ V}$ a $+2\text{ V}$|**Undefined**|—|
 > |$0\text{ V}$ a $+0.8\text{ V}$|Logic **LOW**|Binary **0**|
 >
-> > 📌 La "zona indefinida" entre 0.8V y 2V existe porque el sistema no puede garantizar una lectura confiable de 0 o 1 en ese rango — los circuitos digitales están diseñados para operar firmemente fuera de esa franja, evitando ambigüedad en la lectura.
+> 📌 La "zona indefinida" entre 0.8V y 2V existe porque el sistema no puede garantizar una lectura confiable de 0 o 1 en ese rango — los circuitos digitales están diseñados para operar firmemente fuera de esa franja, evitando ambigüedad en la lectura.
 >
 
 > [!example] ✏️ Leyendo una secuencia de pulsos

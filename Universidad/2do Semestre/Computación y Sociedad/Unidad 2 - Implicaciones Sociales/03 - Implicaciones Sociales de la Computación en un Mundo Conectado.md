@@ -41,7 +41,7 @@ dg-publish: true
 > |**Tensión ocular**|Exposición continua a pantallas causa fatiga visual, sequedad ocular y dolores de cabeza|
 > |**Síndrome del túnel carpiano**|El uso repetitivo del pulgar para escribir en pantallas táctiles genera inflamación en tendones de muñeca y mano|
 > 
-> > ⚠️ La OMS reconoce la postura derivada del uso de móviles como un problema de salud pública emergente, especialmente en adolescentes con esqueletos en desarrollo.
+> ⚠️ La OMS reconoce la postura derivada del uso de móviles como un problema de salud pública emergente, especialmente en adolescentes con esqueletos en desarrollo.
 >
 
 > [!note] 🎓 En la educación
@@ -119,7 +119,7 @@ dg-publish: true
 > - La agregación de datos aparentemente inocuos puede revelar información muy sensible — rutinas, relaciones, estado de salud
 >     
 > 
-> > 💡 El "Yo cuantificado" es una extensión directa de la **mano invisible digital**: cada medición individual alimenta bases de datos colectivas que tienen usos que el usuario no controla ni anticipa.
+> 💡 El "Yo cuantificado" es una extensión directa de la **mano invisible digital**: cada medición individual alimenta bases de datos colectivas que tienen usos que el usuario no controla ni anticipa.
 
 ---
 

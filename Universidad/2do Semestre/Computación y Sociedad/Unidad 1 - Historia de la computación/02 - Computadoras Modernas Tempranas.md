@@ -113,7 +113,7 @@ tags: [CCPG1004, cysoc, unidad1, computadoras-tempranas]
 > | **Sistema E/S** | Comunicación con el exterior |
 > | **Bus** | Interconexión entre componentes |
 >
-> > 💡 Esta arquitectura es la base de prácticamente todas las computadoras actuales, casi 75 años después.
+> 💡 Esta arquitectura es la base de prácticamente todas las computadoras actuales, casi 75 años después.
 >
 > ### Legado adicional
 >
@@ -143,4 +143,7 @@ tags: [CCPG1004, cysoc, unidad1, computadoras-tempranas]
 > - Dale, Nell & Lewis, John. *Computer Science Illuminated* (6th ed.). Jones & Bartlett Learning.
 > - Quinn, Michael J. *Ethics for the Information Age* (7th ed.). Pearson.
 > - Syllabus oficial de Computación y Sociedad (CCPG1004), ESPOL, coordinadora Otilia M. Alejandro Molina.
+
+---
+
 **Tags:** #historia #computación #hollerith #turing #ENIAC #markI #vonneumann #EDVAC #UNIVAC #arquitectura #unidad1 #EYAG1037

@@ -91,7 +91,7 @@ tags: [CCPG1004, cysoc, unidad1, origenes-calculo]
 > | **Innovación** | Control por tarjetas perforadas |
 > | **Legado** | Inspiró directamente a Babbage y a las primeras computadoras |
 >
-> > 💡 Las tarjetas perforadas se usarían en computadoras hasta bien entrado el siglo XX.
+> 💡 Las tarjetas perforadas se usarían en computadoras hasta bien entrado el siglo XX.
 
 ---
 
@@ -148,4 +148,7 @@ tags: [CCPG1004, cysoc, unidad1, origenes-calculo]
 > - Dale, Nell & Lewis, John. *Computer Science Illuminated* (6th ed.). Jones & Bartlett Learning.
 > - Quinn, Michael J. *Ethics for the Information Age* (7th ed.). Pearson.
 > - Syllabus oficial de Computación y Sociedad (CCPG1004), ESPOL, coordinadora Otilia M. Alejandro Molina.
+
+---
+
 **Tags:** #historia #computación #ábaco #pascal #leibniz #jacquard #babbage #ada #orígenes #EYAG1037 #unidad1

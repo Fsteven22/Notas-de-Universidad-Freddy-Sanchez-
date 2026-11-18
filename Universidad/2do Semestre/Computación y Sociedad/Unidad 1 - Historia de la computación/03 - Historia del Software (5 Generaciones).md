@@ -43,7 +43,7 @@ tags: [CCPG1004, cysoc, unidad1, generaciones-software]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Historia_del_Software_(5_Generaciones)_02.svg]]
 >
-> > ⚠️ La programación en lenguaje máquina **demandaba mucho tiempo y era propensa a errores**, lo que impulsó la búsqueda de mejores herramientas.
+> ⚠️ La programación en lenguaje máquina **demandaba mucho tiempo y era propensa a errores**, lo que impulsó la búsqueda de mejores herramientas.
 
 ---
 
@@ -61,7 +61,7 @@ tags: [CCPG1004, cysoc, unidad1, generaciones-software]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Historia_del_Software_(5_Generaciones)_03.svg]]
 >
-> > 💡 Un compilador traduce el código de alto nivel a lenguaje máquina, permitiendo que el programador se enfoque en resolver el problema y no en los detalles del hardware.
+> 💡 Un compilador traduce el código de alto nivel a lenguaje máquina, permitiendo que el programador se enfoque en resolver el problema y no en los detalles del hardware.
 
 ---
 
@@ -81,7 +81,7 @@ tags: [CCPG1004, cysoc, unidad1, generaciones-software]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Historia_del_Software_(5_Generaciones)_04.svg]]
 >
-> > 💡 Los programadores de sistemas comenzaron a crear **herramientas de software para que otros las usaran**, naciendo así la distinción entre desarrolladores y usuarios finales.
+> 💡 Los programadores de sistemas comenzaron a crear **herramientas de software para que otros las usaran**, naciendo así la distinción entre desarrolladores y usuarios finales.
 
 ---
 
@@ -147,8 +147,8 @@ tags: [CCPG1004, cysoc, unidad1, generaciones-software]
 > | **Visual C++ .NET** | Microsoft | C++ para la plataforma .NET |
 > | **Python** | Guido van Rossum | Simplicidad y versatilidad, ampliamente usado hoy |
 >
-> > 💡 Los programas se agruparon en **suites** (conjuntos de aplicaciones relacionadas), como Microsoft Office, que reunía procesador de texto, hoja de cálculo y presentaciones en un solo paquete.
-> >
+> 💡 Los programas se agruparon en **suites** (conjuntos de aplicaciones relacionadas), como Microsoft Office, que reunía procesador de texto, hoja de cálculo y presentaciones en un solo paquete.
+>
 > ### 🐍 Caso especial — Python
 >
 > **Python**, creado por **Guido van Rossum** en 1991, es uno de los lenguajes
@@ -163,9 +163,9 @@ tags: [CCPG1004, cysoc, unidad1, generaciones-software]
 > | **Característica** | Sintaxis simple, multiplataforma, de propósito general |
 > | **Uso actual** | IA, ciencia de datos, web, automatización |
 >
-> > 💡 Python ha tenido múltiples versiones mayores — la rama **2.x** y la
-> > rama **3.x** coexistieron durante años hasta que Python 2 fue
-> > oficialmente descontinuado en 2020.
+> 💡 Python ha tenido múltiples versiones mayores — la rama **2.x** y la
+> rama **3.x** coexistieron durante años hasta que Python 2 fue
+> oficialmente descontinuado en 2020.
 > 
 
 ---
@@ -203,4 +203,7 @@ tags: [CCPG1004, cysoc, unidad1, generaciones-software]
 > - Dale, Nell & Lewis, John. *Computer Science Illuminated* (6th ed.). Jones & Bartlett Learning.
 > - Quinn, Michael J. *Ethics for the Information Age* (7th ed.). Pearson.
 > - Syllabus oficial de Computación y Sociedad (CCPG1004), ESPOL, coordinadora Otilia M. Alejandro Molina.
+
+---
+
 **Tags:** #historia #software #generaciones #lenguajes #fortran #cobol #pascal #java #python #POO #WWW #unidad1 #EYAG1037

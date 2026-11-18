@@ -34,7 +34,7 @@ dg-publish: true
 > |||110|
 > |||111|
 >
-> > 📌 Con 1 bit hay 2 combinaciones (2¹), con 2 bits hay 4 (2²), con 3 bits hay 8 (2³). El patrón se duplica con cada bit adicional.
+> 📌 Con 1 bit hay 2 combinaciones (2¹), con 2 bits hay 4 (2²), con 3 bits hay 8 (2³). El patrón se duplica con cada bit adicional.
 
 ---
 
@@ -49,7 +49,7 @@ dg-publish: true
 > |3|8|7|128|11|2048|
 > |4|16|8|256|12|4096|
 >
-> > 💡 **Aplicación práctica:** un **byte** (8 bits) puede representar exactamente **256 valores distintos** (de 0 a 255). Esta tabla es la base para entender capacidad de memoria, rangos de direcciones, y tipos de datos en programación.
+> 💡 **Aplicación práctica:** un **byte** (8 bits) puede representar exactamente **256 valores distintos** (de 0 a 255). Esta tabla es la base para entender capacidad de memoria, rangos de direcciones, y tipos de datos en programación.
 
 ---
 
@@ -78,7 +78,7 @@ dg-publish: true
 > | 65535 | log₂(65536) = 16 | 16 bits (2 bytes) |
 > | 7 | log₂(8) = 3 | 3 bits |
 >
-> > 📌 **Interpretación:** si quieres representar el número 255, necesitas exactamente 8 bits. Si quieres ir hasta 256, necesitas 9 bits. Cada bit adicional *duplica* la capacidad máxima.
+> 📌 **Interpretación:** si quieres representar el número 255, necesitas exactamente 8 bits. Si quieres ir hasta 256, necesitas 9 bits. Cada bit adicional *duplica* la capacidad máxima.
 >
 > #### Relación inversa:
 >
@@ -129,9 +129,9 @@ dg-publish: true
 > - **Octal:** $27 = 3×8^1 + 3×8^0 = 24 + 3 = 33_8$
 > - **Hexadecimal:** $27 = 1×16^1 + 11×16^0 = 16 + 11 = 1B_{16}$ (donde B = 11)
 >
-> > 📌 **Idea clave:** el binario, octal y hexadecimal no son "otros tipos" de números — son el **mismo concepto posicional** del decimal, solo que con bases distintas (2, 8, 16). La fórmula general es:
-> > $$\text{valor}_{base\,10} = \sum_{i=0}^{n-1} d_i \times \text{base}^i$$
-> > donde cada dígito $d_i$ multiplica una potencia de la base. Dominar esta equivalencia es la llave para todas las conversiones entre sistemas que se ven en [[04 - Conversion Decimal-Binario]].
+> 📌 **Idea clave:** el binario, octal y hexadecimal no son "otros tipos" de números — son el **mismo concepto posicional** del decimal, solo que con bases distintas (2, 8, 16). La fórmula general es:
+> $$\text{valor}_{base\,10} = \sum_{i=0}^{n-1} d_i \times \text{base}^i$$
+> donde cada dígito $d_i$ multiplica una potencia de la base. Dominar esta equivalencia es la llave para todas las conversiones entre sistemas que se ven en [[04 - Conversion Decimal-Binario]].
 
 ---
 
