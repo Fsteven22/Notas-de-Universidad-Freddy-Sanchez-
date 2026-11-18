@@ -3167,7 +3167,12 @@ el commit de esta línea de PUSHEADO.
 
 ### `opencode-onedrive` — Cálculo 1: 0 mindmaps, todos los mapas en rectángulos — 17/11/2026
 
-> [!warning] PUSHEO EN CURSO · `7e1d4ecb` · ~2 min
+> [!success] PUSHEADO `baaebd36` · 17/11/2026 — `origin/master` = `master` = `baaebd36`
+>
+> Push **fast-forward, sin `--force`** (autorizado por el dueño del vault):
+> `f728f08d..baaebd36` (`sesion/opencode-onedrive`) y `fda8d25f..baaebd36` (`master`).
+> Incluye el merge de `origin/master` (la reconstrucción de 84 `.mmd` de CYSOC de `opencode`,
+> sin conflictos). Doc de cierre: este bloque.
 >
 > - **Hecho:** los 4 mindmaps restantes de la materia pasan a `flowchart TB` con subgrafos
 >   de rectángulos: `01_-_Derivada_y_Definición_Formal_04` (U4) ·
@@ -3176,9 +3181,10 @@ el commit de esta línea de PUSHEADO.
 >   `02_-_Propiedades_de_la_Integral_16` (U6-I).
 > - **QA:** 65/65 notas a 0 hallazgos; mojibake 0; 1 H1 + H2 canónicos por nota.
 > - **Inventario:** 0 mindmaps en `Diagramas/` de Cálculo 1.
-> - **Sync/Vercel:** llegará con este push al sitio.
-> - **Sync/Vercel:** el último build del sitio se hizo ANTES de este commit (18 nov 2026);
->   estos 4 diagramas llegarán al sitio con este push.
+> - **Sync/Vercel:** estas figuras llegarán al sitio con este push; el último build local
+>   se hizo antes de este commit (18 nov 2026).
+> - **Estado de la materia:** Cálculo de una Variable cerrada por este bloque: 65/65 notas
+>   a 0 hallazgos y todos los diagramas en flowcharts de rectángulos.
 
 ### `opencode` — CYSOC: 84 `.mmd` reconstruidos (round-trip OK) — 17/11/2026
 
