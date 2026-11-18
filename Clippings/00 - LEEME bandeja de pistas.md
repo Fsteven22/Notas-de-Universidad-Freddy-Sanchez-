@@ -3233,3 +3233,6 @@ el commit de esta línea de PUSHEADO.
 >
 > - **No se tocó** la zona `opencode`, ni `Universidad/**`, ni `site/scripts/**`.
 >   Sin `npm run sync` en OneDrive; la copia del repo es la fuente del build.
+
+> [!success] PUSHEADO `a65569bf` · 18/11/2026 — `9bb5adb9` `1c654535` `dfbef1e5` (código) + `a65569bf`
+> (PUSHEO EN CURSO) + este bloque → merge `--ff-only` a `master` → un solo push, sin `--force`.
