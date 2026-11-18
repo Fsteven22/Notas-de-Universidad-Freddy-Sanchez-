@@ -49,7 +49,7 @@ dg-publish: true
 > |**Causa**|Sin filtros ni moderación en los datos de aprendizaje en tiempo real|
 > |**Resultado**|Microsoft retiró Tay y lo desconectó|
 > 
-> > ⚠️ **Lección**: Un sistema de IA sin control sobre la calidad de sus datos de entrada puede ser manipulado activamente. El sesgo no siempre es accidental — puede ser inducido.
+> ⚠️ **Lección**: Un sistema de IA sin control sobre la calidad de sus datos de entrada puede ser manipulado activamente. El sesgo no siempre es accidental — puede ser inducido.
 >
 
 > [!example] 🏥 St. George's Hospital — Sesgo en admisiones médicas (1970s–1988)
@@ -69,7 +69,7 @@ dg-publish: true
 > |**Causa**|Algoritmo entrenado con decisiones humanas históricamente sesgadas|
 > |**Impacto**|Cientos de candidatos rechazados injustamente durante años|
 > 
-> > 💡 Este es uno de los primeros casos documentados de **discriminación algorítmica institucionalizada** — el sistema automatizó y escondió el sesgo humano, dándole apariencia de objetividad.
+> 💡 Este es uno de los primeros casos documentados de **discriminación algorítmica institucionalizada** — el sistema automatizó y escondió el sesgo humano, dándole apariencia de objetividad.
 >
 
 > [!example] 📷 Reconocimiento facial — Google y Facebook (2015–2019)
@@ -100,7 +100,7 @@ dg-publish: true
 > |**Traductores automáticos**|Al traducir desde idiomas sin género gramatical (turco, húngaro), asignaban género masculino a profesiones de alto estatus y femenino a roles de cuidado|
 > |**Sistemas de contratación (Amazon, 2018)**|Un sistema de selección de CVs desarrollado internamente penalizaba CVs que contenían la palabra "mujeres" (ej. "capitana del equipo femenino de debate")|
 > 
-> > 💡 Amazon descartó su sistema de contratación con IA en 2018 al descubrir estos sesgos — otro ejemplo de cómo el problema puede estar oculto hasta una auditoría explícita.
+> 💡 Amazon descartó su sistema de contratación con IA en 2018 al descubrir estos sesgos — otro ejemplo de cómo el problema puede estar oculto hasta una auditoría explícita.
 
 ---
 
@@ -136,7 +136,7 @@ dg-publish: true
 > |**Executive Order on AI (2023)**|EE.UU.|Mandato federal para evaluación de seguridad y sesgo en IA usada por agencias gubernamentales|
 > |**Ley Orgánica de Protección de Datos**|Ecuador|Marco base de protección de datos personales, base para futura regulación de IA|
 > 
-> > 💡 Ecuador aún no tiene legislación específica sobre gobernanza algorítmica — es un campo en construcción en América Latina.
+> 💡 Ecuador aún no tiene legislación específica sobre gobernanza algorítmica — es un campo en construcción en América Latina.
 
 ---
 

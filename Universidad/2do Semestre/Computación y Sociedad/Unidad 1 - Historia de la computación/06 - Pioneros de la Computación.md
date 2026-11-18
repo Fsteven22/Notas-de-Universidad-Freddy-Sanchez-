@@ -109,7 +109,7 @@ tags: [CCPG1004, cysoc, unidad1, pioneros-computacion]
 > | **Título** | Primera programadora del mundo |
 > | **Legado** | El lenguaje Ada (DoD, 1980) lleva su nombre |
 >
-> > 💡 Fue la primera en comprender que el Motor Analítico podía ir más allá del cálculo numérico y procesar cualquier tipo de información representable mediante símbolos.
+> 💡 Fue la primera en comprender que el Motor Analítico podía ir más allá del cálculo numérico y procesar cualquier tipo de información representable mediante símbolos.
 >
 > ---
 >
@@ -123,7 +123,7 @@ tags: [CCPG1004, cysoc, unidad1, pioneros-computacion]
 > | **Otros aportes** | Descifró Enigma en la Segunda Guerra Mundial |
 > | **Legado** | El Premio Turing es el equivalente al Nobel en computación |
 >
-> > 💡 Demostró que mediante dispositivos formales y simples era posible resolver **cualquier problema matemático representable mediante un algoritmo**.
+> 💡 Demostró que mediante dispositivos formales y simples era posible resolver **cualquier problema matemático representable mediante un algoritmo**.
 >
 > ---
 >
@@ -259,8 +259,8 @@ tags: [CCPG1004, cysoc, unidad1, pioneros-computacion]
 > | **9** | ¿Cuál fue la idea fundamental que introdujo John von Neumann? |
 > | **10** | ¿Las computadoras de 1era Generación estaban compuestas por? |
 >
-> > 💡 Intenta responder sin consultar las notas primero, luego verifica
-> > con los archivos `01` al `05` de esta unidad.
+> 💡 Intenta responder sin consultar las notas primero, luego verifica
+> con los archivos `01` al `05` de esta unidad.
 
 ---
 
@@ -271,4 +271,7 @@ tags: [CCPG1004, cysoc, unidad1, pioneros-computacion]
 > - Dale, Nell & Lewis, John. *Computer Science Illuminated* (6th ed.). Jones & Bartlett Learning.
 > - Quinn, Michael J. *Ethics for the Information Age* (7th ed.). Pearson.
 > - Syllabus oficial de Computación y Sociedad (CCPG1004), ESPOL, coordinadora Otilia M. Alejandro Molina.
+
+---
+
 **Tags:** #pioneros #historia #computación #turing #vonneumann #babbage #lovelace #ethernet #WWW #unidad1 #EYAG1037

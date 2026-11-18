@@ -27,7 +27,7 @@ dg-publish: true
 > |**Porcentaje reciclado formalmente**|Solo ~17% se gestiona de forma documentada|
 > |**Valor económico de los materiales**|Estimado en $57 mil millones USD anuales desperdiciados|
 > 
-> > ⚠️ El resto — más del 80% — termina en vertederos, incineradoras o es exportado informalmente hacia países en desarrollo.
+> ⚠️ El resto — más del 80% — termina en vertederos, incineradoras o es exportado informalmente hacia países en desarrollo.
 >
 
 > [!note] 📱 Composición de un teléfono móvil descartado
@@ -42,7 +42,7 @@ dg-publish: true
 > |**Metales preciosos** (oro, plata, paladio)|~5%|Muy alto valor — 1 tonelada de teléfonos tiene más oro que 1 tonelada de mineral aurífero|
 > |**No especificado / compuestos**|~10%|Mezcla de adhesivos, soldaduras y materiales difíciles de separar|
 > 
-> > 💡 El 10% no especificado refleja la complejidad real de la composición — los fabricantes no divulgan todos los materiales, lo que dificulta el reciclaje eficiente.
+> 💡 El 10% no especificado refleja la complejidad real de la composición — los fabricantes no divulgan todos los materiales, lo que dificulta el reciclaje eficiente.
 >
 
 > [!danger] ☠️ Componentes peligrosos
@@ -64,7 +64,7 @@ dg-publish: true
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Impacto_Ambiental,_Desechos_Electrónicos_y_Desarrollo_Sostenible_02.svg]]
 > 
-> > ⚠️ El Convenio de Basilea (1989) prohíbe la exportación de residuos peligrosos a países en desarrollo, pero su cumplimiento es limitado.
+> ⚠️ El Convenio de Basilea (1989) prohíbe la exportación de residuos peligrosos a países en desarrollo, pero su cumplimiento es limitado.
 
 ---
 
@@ -109,7 +109,7 @@ dg-publish: true
 > |**"Ponte Pilas — RecoPila"**|Programa del Ministerio del Ambiente para recolección de pilas y baterías usadas en escuelas, municipios y puntos fijos|
 > |**REEE Ecuador**|Marco regulatorio del Ministerio del Ambiente para la gestión de Residuos de Equipos Eléctricos y Electrónicos|
 > 
-> > 💡 La participación ciudadana es clave — llevar dispositivos a estos puntos en vez de botarlos a la basura común marca una diferencia real.
+> 💡 La participación ciudadana es clave — llevar dispositivos a estos puntos en vez de botarlos a la basura común marca una diferencia real.
 
 ---
 
@@ -119,7 +119,7 @@ dg-publish: true
 > 
 > El **Desarrollo Sostenible** fue definido por la Comisión Brundtland de la ONU en 1987 como:
 > 
-> > _"El desarrollo que satisface las necesidades del presente sin comprometer la capacidad de las generaciones futuras para satisfacer sus propias necesidades."_
+> _"El desarrollo que satisface las necesidades del presente sin comprometer la capacidad de las generaciones futuras para satisfacer sus propias necesidades."_
 > 
 > Se apoya en tres pilares interdependientes:
 > 
@@ -145,7 +145,7 @@ dg-publish: true
 > |**13**|Acción por el clima|Reducir huella de carbono del sector TIC|
 > |**17**|Alianzas para los objetivos|Cooperación internacional en estándares de reciclaje y gobernanza digital|
 > 
-> > 💡 Los ODS más directamente relacionados con el impacto de la tecnología son el **12** (producción responsable) y el **13** (acción climática) — pero prácticamente todos tienen una dimensión digital.
+> 💡 Los ODS más directamente relacionados con el impacto de la tecnología son el **12** (producción responsable) y el **13** (acción climática) — pero prácticamente todos tienen una dimensión digital.
 
 ---
 

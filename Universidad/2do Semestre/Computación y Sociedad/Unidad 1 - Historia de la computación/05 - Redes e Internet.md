@@ -61,7 +61,7 @@ tags: [CCPG1004, cysoc, unidad1, redes-internet]
 > | **Estandarización** | 1979 — DEC, Intel y Xerox lo adoptan como estándar |
 > | **Masificación** | 1985 — chip Intel avanzado lo hace práctico para PCs |
 >
-> > 💡 En **1979**, DEC (*Digital Equipment Corporation*), Intel y Xerox se unieron para establecer Ethernet como estándar de facto para redes locales.
+> 💡 En **1979**, DEC (*Digital Equipment Corporation*), Intel y Xerox se unieron para establecer Ethernet como estándar de facto para redes locales.
 
 ---
 
@@ -101,7 +101,7 @@ tags: [CCPG1004, cysoc, unidad1, redes-internet]
 > | **Switch (conmutador)** | Conecta varios dispositivos dentro de una misma red |
 > | **Conmutación de paquetes** | Los datos se dividen en paquetes que viajan por rutas distintas |
 >
-> > 💡 La **conmutación de paquetes** fue clave para la robustez de Internet: si una ruta falla, los paquetes simplemente toman otra ruta para llegar a su destino.
+> 💡 La **conmutación de paquetes** fue clave para la robustez de Internet: si una ruta falla, los paquetes simplemente toman otra ruta para llegar a su destino.
 
 ---
 
@@ -127,7 +127,7 @@ tags: [CCPG1004, cysoc, unidad1, redes-internet]
 > | **URL** | Dirección única de cada recurso en la web |
 > | **Navegador** | Programa que interpreta HTML y muestra páginas web |
 >
-> > ⚠️ **Internet ≠ WWW** — Internet es la infraestructura de red; la WWW es uno de los servicios que usa esa infraestructura.
+> ⚠️ **Internet ≠ WWW** — Internet es la infraestructura de red; la WWW es uno de los servicios que usa esa infraestructura.
 
 ---
 
@@ -164,4 +164,7 @@ tags: [CCPG1004, cysoc, unidad1, redes-internet]
 > - Dale, Nell & Lewis, John. *Computer Science Illuminated* (6th ed.). Jones & Bartlett Learning.
 > - Quinn, Michael J. *Ethics for the Information Age* (7th ed.). Pearson.
 > - Syllabus oficial de Computación y Sociedad (CCPG1004), ESPOL, coordinadora Otilia M. Alejandro Molina.
+
+---
+
 **Tags:** #redes #internet #ARPANET #ethernet #LAN #WAN #TCPIP #WWW #bernerlee #unidad1 #EYAG1037

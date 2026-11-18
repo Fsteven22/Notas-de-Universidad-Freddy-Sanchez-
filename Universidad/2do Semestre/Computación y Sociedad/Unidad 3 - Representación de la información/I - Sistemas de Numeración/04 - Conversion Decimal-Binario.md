@@ -39,7 +39,7 @@ dg-publish: true
 >
 > Leyendo los restos de abajo hacia arriba: $\boxed{28_{10} = 11100_2}$
 >
-> > 💡 **Truco mental:** el primer resto obtenido es el bit **menos significativo** (más a la derecha), y el último es el bit **más significativo** (más a la izquierda). Por eso se lee de abajo hacia arriba.
+> 💡 **Truco mental:** el primer resto obtenido es el bit **menos significativo** (más a la derecha), y el último es el bit **más significativo** (más a la izquierda). Por eso se lee de abajo hacia arriba.
 
 ---
 

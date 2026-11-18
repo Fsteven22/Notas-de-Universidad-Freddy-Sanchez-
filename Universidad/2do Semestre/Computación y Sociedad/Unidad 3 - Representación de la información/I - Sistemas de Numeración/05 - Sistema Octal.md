@@ -30,7 +30,7 @@ dg-publish: true
 > |6|1|1|0|110|
 > |7|1|1|1|111|
 >
-> > 💡 Memorizar (o poder reconstruir rápido) esta tabla es la clave para convertir en ambas direcciones entre binario y octal sin pasar por decimal.
+> 💡 Memorizar (o poder reconstruir rápido) esta tabla es la clave para convertir en ambas direcciones entre binario y octal sin pasar por decimal.
 
 
 ---
@@ -54,7 +54,7 @@ dg-publish: true
 > |V/F \| V/F \| V/F|1/0 \| 1/0 \| 1/0|
 > |**Estructura:** todas las combinaciones exhaustivas|**Estructura:** todas las combinaciones exhaustivas|
 >
-> > 📌 **Idea transversal:** el principio **2ⁿ** no es exclusivo del sistema octal o binario — es un principio fundamental de **combinatoria** que aparece en lógica proposicional, teoría de conjuntos, y sistemas de numeración. Cuando ves una tabla con potencias de 2, reconoce el patrón subyacente.
+> 📌 **Idea transversal:** el principio **2ⁿ** no es exclusivo del sistema octal o binario — es un principio fundamental de **combinatoria** que aparece en lógica proposicional, teoría de conjuntos, y sistemas de numeración. Cuando ves una tabla con potencias de 2, reconoce el patrón subyacente.
 
 ---
 
@@ -197,7 +197,7 @@ dg-publish: true
 >
 > $$\boxed{1011.10101_2 = 13.52_8}$$
 >
-> > 📌 **Regla clave:** en la parte entera agrupas desde la derecha (hacia la izquierda); en la fraccionaria agrupas desde el punto (hacia la derecha). Rellena con ceros donde sea necesario para completar grupos de 3.
+> 📌 **Regla clave:** en la parte entera agrupas desde la derecha (hacia la izquierda); en la fraccionaria agrupas desde el punto (hacia la derecha). Rellena con ceros donde sea necesario para completar grupos de 3.
 
 ![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-05-sistema-octal-01.png]]
 

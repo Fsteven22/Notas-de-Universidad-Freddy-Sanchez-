@@ -41,7 +41,7 @@ dg-publish: true
 >
 > Con 4 bits se pueden representar $2^4 = 16$ valores distintos — exactamente el rango de un dígito hexadecimal. Esto hace que un **byte** (8 bits) se represente con exactamente **2 dígitos hex**, mucho más compacto y legible que escribir 8 ceros y unos.
 >
-> > 📌 Por eso colores web (`#FF5733`), direcciones de memoria y códigos de error suelen mostrarse en hexadecimal.
+> 📌 Por eso colores web (`#FF5733`), direcciones de memoria y códigos de error suelen mostrarse en hexadecimal.
 
 ---
 
@@ -64,7 +64,7 @@ dg-publish: true
 >
 > Leyendo los restos de abajo hacia arriba: $\boxed{1957_{10} = 7A5_{16}}$
 >
-> > ⚠️ **Cuidado con los restos ≥ 10:** cuando el resto de la división es 10, 11, 12, 13, 14 o 15, debe escribirse como **A, B, C, D, E o F** respectivamente — nunca como el número de dos dígitos.
+> ⚠️ **Cuidado con los restos ≥ 10:** cuando el resto de la división es 10, 11, 12, 13, 14 o 15, debe escribirse como **A, B, C, D, E o F** respectivamente — nunca como el número de dos dígitos.
 
 ---
 
@@ -85,7 +85,7 @@ dg-publish: true
 >
 > $$\boxed{2B6_{16} = 694_{10}}$$
 >
-> > 📌 Recordar que **B = 11** en decimal, según la tabla de equivalencias de arriba.
+> 📌 Recordar que **B = 11** en decimal, según la tabla de equivalencias de arriba.
 
 ---
 
@@ -148,7 +148,7 @@ dg-publish: true
 > 
 > $$\boxed{250.025_{10} \approx FA.0\overline{66}_{16}}$$
 > 
-> > 📌 Cuando multiplicas una fracción por la base, la **parte entera** del resultado es el dígito. En este caso, la parte fraccionaria 0.40 genera un ciclo infinito de 6's. Por eso se escribe con la barra de períodico: $\overline{66}$.
+> 📌 Cuando multiplicas una fracción por la base, la **parte entera** del resultado es el dígito. En este caso, la parte fraccionaria 0.40 genera un ciclo infinito de 6's. Por eso se escribe con la barra de períodico: $\overline{66}$.
 
 ---
 

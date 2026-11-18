@@ -149,9 +149,9 @@ tags: [CCPG1004, cysoc, unidad1, modelos-software]
 > Según el **IEEE** (*Institute of Electrical and Electronics Engineers*),
 > el software se denomina como:
 >
-> > *"La suma total de los programas de cómputo, procedimientos, reglas,
-> > la documentación asociada y los datos que pertenecen a un sistema
-> > de cómputo."*
+> *"La suma total de los programas de cómputo, procedimientos, reglas,
+> la documentación asociada y los datos que pertenecen a un sistema
+> de cómputo."*
 >
 > Esta definición es importante porque deja claro que el software no es
 > solo el código ejecutable, sino también toda la documentación, los datos
@@ -187,4 +187,7 @@ tags: [CCPG1004, cysoc, unidad1, modelos-software]
 > - Dale, Nell & Lewis, John. *Computer Science Illuminated* (6th ed.). Jones & Bartlett Learning.
 > - Quinn, Michael J. *Ethics for the Information Age* (7th ed.). Pearson.
 > - Syllabus oficial de Computación y Sociedad (CCPG1004), ESPOL, coordinadora Otilia M. Alejandro Molina.
+
+---
+
 **Tags:** #software #modelos #cascada #espiral #incremental #scrum #ágil #desarrollo #unidad1 #EYAG1037
