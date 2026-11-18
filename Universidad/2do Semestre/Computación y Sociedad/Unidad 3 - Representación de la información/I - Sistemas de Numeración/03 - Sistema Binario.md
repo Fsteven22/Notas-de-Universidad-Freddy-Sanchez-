@@ -11,7 +11,7 @@ dg-publish: true
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Sistema_Binario_01.svg]]
 
-![[ChatGPT Image 21 jun 2026, 13_15_18.png]]
+![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-03-sistema-binario-01.png]]
 
 ---
 

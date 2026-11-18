@@ -19,13 +19,15 @@ tags: [CCPG1004, computacion-sociedad, syllabus]
 > | **Créditos** | 3 créditos — 3 horas de docencia |
 > | **Tipo** | Obligatorio |
 > | **Coordinadora** | Otilia María Alejandro Molina |
-> | **Syllabus oficial** | 📎 [Ver PDF completo](SPA-Syllabus-COMPUTACIÓN_Y_SOCIEDAD.pdf) |
+> | **Syllabus oficial** | 📎 [[Unidad 0 - Guias y Ejercicios/Guías/SPA-Syllabus-COMPUTACIÓN_Y_SOCIEDAD.pdf|Ver PDF completo]] |
 
 ---
 
-## 📎 Documento oficial (sitio web)
+## 📎 Documento oficial
 
-![[SPA-Syllabus-COMPUTACIÓN_Y_SOCIEDAD.pdf]]
+> [!info] 📎 Syllabus oficial
+>
+> Ver [[Unidad 0 - Guias y Ejercicios/Guías/SPA-Syllabus-COMPUTACIÓN_Y_SOCIEDAD.pdf|Syllabus oficial (PDF, 2 páginas)]].
 
 ---
 

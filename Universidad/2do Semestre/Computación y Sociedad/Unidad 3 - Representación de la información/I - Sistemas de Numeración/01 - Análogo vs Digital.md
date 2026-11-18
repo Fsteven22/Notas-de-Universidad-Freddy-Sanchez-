@@ -51,7 +51,7 @@ dg-publish: true
 > | **Ruido** | Se mezcla con la señal útil | Tolerable hasta cierto umbral |
 > | **Procesamiento** | Requiere circuitos lineales complejos | Compatible con lógica binaria simple |
 
-![[ChatGPT Image 21 jun 2026, 13_02_55.png]]
+![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-01-analogia-digital-01.png]]
 
 ---
 

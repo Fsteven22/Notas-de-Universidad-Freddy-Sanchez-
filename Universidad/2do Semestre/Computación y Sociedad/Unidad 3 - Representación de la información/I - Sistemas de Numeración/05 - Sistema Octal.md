@@ -11,7 +11,7 @@ dg-publish: true
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Sistema_Octal_01.svg]]
 
-![[ChatGPT Image 14 jul 2026, 21_17_54.png]]
+![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-05-sistema-octal-02.png]]
 
 ---
 
@@ -199,7 +199,7 @@ dg-publish: true
 >
 > > 📌 **Regla clave:** en la parte entera agrupas desde la derecha (hacia la izquierda); en la fraccionaria agrupas desde el punto (hacia la derecha). Rellena con ceros donde sea necesario para completar grupos de 3.
 
-![[ChatGPT Image 21 jun 2026, 13_40_30.png]]
+![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-05-sistema-octal-01.png]]
 
 
 ---
