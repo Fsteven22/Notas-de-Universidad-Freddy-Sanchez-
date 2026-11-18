@@ -3068,3 +3068,23 @@ el commit de esta línea de PUSHEADO.
 > **Avanza:** contrato y validador commiteados (`35fca819`). La transformación mecánica arranca en cuanto el dueño decida los 3 puntos.
 >
 > **PUSHEADO `cb4f4342`** — `35fca819` (+ merge `49f769da`)
+
+### `opencode` — CYSOC: PDFs sin embebido + PNG renombrados y centralizados — 17/11/2026
+
+> [!success] R12-clase-embebida 2 → **0** · 7 PNG `ChatGPT Image …` → `cysoc-u3-…` en `U0/Archivos/Sistemas de Numeración/` · 322 hallazgos
+>
+> Decisiones del dueño (17/11) ejecutadas:
+>
+> **1. El syllabus PDF deja de embeberse.** `Bienvenida y Syllabus` e `Índice de Contenido` pasan el syllabus (CCPG1004) a **wikilink con alias `📎`** (el sitio sube igual el asset; no es embed inline). La nota de uso del Índice se corrigió; el link relativa markdown del Bienvenida (roto, apuntaba a la raíz) también pasa a wikilink. Además mi primera versión dejó una línea suelta fuera de callout (R4-prosa-top H); quedó envuelta en `[!info] 📎`.
+>
+> **2. Los 7 PNG "ChatGPT Image …" de U3 Sistemas de Numeración** pasan con **`git mv`** (historial preservado) a
+> `Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/` con naming `cysoc-u3-NN-tema-01.png`
+> (`01-analogia-digital`, `02-intro-sistemas-numeracion`, `03-sistema-binario`, `04-conversion-dec-bin`, `05-sistema-octal` x2, `06-sistema-hexadecimal`). Los 7 embeds de las notas U3 se reescriben a la ruta canónica `../../Unidad 0 - …/Archivos/Sistemas de Numeración/` (notas a profundidad 2).
+>
+> **3. Código de cátedra encontrado en el syllabus:** **CCPG1004** — 3 créditos, coordinadora Otilia M. Alejandro Molina (previamente solo figuraba en el PDF, no en las notas).
+>
+> **QA:** `qa_formato_cysoc --solo …/Computación y Sociedad` → **325 → 322 hallazgos** (0 H nuevas; las 2 H restantes son preexistentes: 1 lista + 1 prosa sueltas). `R12-clase-embebida=0`, `R4-embed-top` 37→36.
+>
+> **No se tocaron** cambios sin commitear ajenos (POO nota raíz, `Recursos Visuales`, Inglés III de onedrive).
+>
+> **PUSHEO EN CURSO** — `aaeb6288`
