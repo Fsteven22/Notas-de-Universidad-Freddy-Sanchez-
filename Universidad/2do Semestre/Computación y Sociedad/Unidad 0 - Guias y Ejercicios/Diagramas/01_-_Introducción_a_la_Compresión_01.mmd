@@ -1,0 +1,16 @@
+flowchart TD
+    A["Datos originales"]
+    B["Algoritmo de compresión"]
+    C["Con pérdida"]
+    D["Sin pérdida"]
+    E["Menor tamaño, se descarta info"]
+    F["Se puede reconstruir 100% del original"]
+    A --> B
+    B --> C
+    B --> D
+    C --> E
+    D --> F
+
+    style A fill:#e1f5ff
+    style C fill:#f5e1ff
+    style D fill:#1e3a5f,color:#fff

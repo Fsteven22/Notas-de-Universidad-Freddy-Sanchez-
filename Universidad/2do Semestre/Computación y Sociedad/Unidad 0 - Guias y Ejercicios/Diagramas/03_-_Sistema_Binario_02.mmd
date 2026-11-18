@@ -1,0 +1,13 @@
+flowchart LR
+    A["¿Cuántos bits<br/>para N?"]
+    B["Número de bits<br/>n"]
+    C["Máximo<br/>representable"]
+    D["Siguiente potencia<br/>de 2"]
+    A -->|"log₂ N"| B
+    B -->|"2ⁿ - 1"| C
+    C -->|"+1"| D
+
+    style A fill:#e1f5ff
+    style B fill:#e1ffe1
+    style C fill:#fff4e1
+    style D fill:#f0e1ff

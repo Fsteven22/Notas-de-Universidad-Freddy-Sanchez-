@@ -1,0 +1,21 @@
+flowchart TD
+    A["Red LAN — Universidad"]
+    R1["Router"]
+    B["Red LAN — Empresa"]
+    R2["Router"]
+    C["Red WAN — ISP"]
+    R3["Router"]
+    D["Red LAN — Hogar"]
+    E["Red LAN — Gobierno"]
+    A --> R1
+    B --> R1
+    R1 --> R2
+    R2 --> C
+    C --> R3
+    R3 --> D
+    R3 --> E
+
+    style R1 fill:#fff4e1
+    style R2 fill:#fff4e1
+    style C fill:#e1f5ff
+    style R3 fill:#fff4e1
