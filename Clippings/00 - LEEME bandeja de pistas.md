@@ -3294,3 +3294,30 @@ el commit de esta línea de PUSHEADO.
 > **Nota de proceso:** el bloque recompuso la sección `## 📚 Referencias` antes del `---` final, dejando las notas terminadas en `**Tags:**`, como siempre.
 >
 > **PUSHEADO `8a36ab2a`** — `38fee96d` (+ merge de `origin/master`)
+
+---
+
+### `opencode-onedrive` — MatDisc: enlaces reales a los PDF de lección + corrección de citas — 18/11/2026
+
+> [!warning] PUSHEO EN CURSO · `cc9e1ceb` · ~2 min
+>
+> - **Hecho (cierre del bloque de MatDisc):**
+>   - **Enlaces reales a los PDF de lección** en las Referencias de `U2/03`, `U1/III/03`
+>     (Inducción) y `U3/05` (Factorial): de mención en texto plano a wikilink con alias
+>     `📎` (patrón ya usado en Computación y Sociedad; el sitio sube los PDF igual que
+>     los embeds).
+>   - **Corrección factual propia:** `SOLUCIÓN_LEC_1.pdf` es de la **14/10/2026** (paralelo 1,
+>     cap. 1 «Conjunto, lógica, demostraciones y circuitos combinatorios», con un punto de
+>     cuantificadores múltiples resuelto con testigo) — **no** del 04/11/2026 ni de
+>     «fundamentos de conjunto», como lo había citado. El 04/11/2026 es `SOLUCIÓN_LEC_2.pdf`.
+>     Verificado con PyMuPDF sobre los 7 PDF de `Unidad 0/Lecciones/`.
+>   - **`Índice de Contenido`: nueva sección `## 📝 Lecciones`** con los 7 PDF enlazados con
+>     `📎` y su descripción real. `SOLUCIÓN_LEC_1.pdf` y `RÚBRICA_LEC_1.pdf` ya estaban en el
+>     repo pero **no** listados en el portal: quedan ahora a la vista.
+>   - `U1/III/03`: se enlaza también la **Lección I** (PAO I 2026, Prof. Ebner Pineda), cuyo
+>     ejercicio 1 es una inducción sobre $\sum_{k=1}^{n} k^2 2^k$ con solución completa.
+> - **QA:** `qa_formato_matdisc` 45 notas a **0 hallazgos**; `qa_links` 571 targets **bad=0**;
+>   mojibake 0; `npm run sync` ✓ (ZIP MatDisc con 35 PDFs) y `npm run build` ✓ (819 páginas,
+>   `search-content.json` 787 notas).
+>
+> **PUSHEADO en curso:** rama `sesion/opencode-onedrive` → `master` (ff) → clon OneDrive.
