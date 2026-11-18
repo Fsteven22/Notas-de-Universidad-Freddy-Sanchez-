@@ -3167,4 +3167,4 @@ el commit de esta línea de PUSHEADO.
 > - **QA:** queda pendiente tras los manuales — `qa_formato_cysoc` hoy marca `R12-svg-sin-mmd = 103 – 84 = 19` (los 18 manuales + 1 de la edición; el valor exacto se vuelve a medir al cerrar los manuales).
 > - **Nota de proceso:** los 84 `.mmd` se generaron antes del reinicio del servidor y se re-verificaron y commitieron después (no hubo pérdida de archivos; staged/código de las 84 fuentes solo tras verificar que ninguna era ajena).
 >
-> **PUSHEO EN CURSO** — `cf5a2d05`
+> **PUSHEADO `92a77684`** — `cf5a2d05` (+ merges de `origin/master`)
