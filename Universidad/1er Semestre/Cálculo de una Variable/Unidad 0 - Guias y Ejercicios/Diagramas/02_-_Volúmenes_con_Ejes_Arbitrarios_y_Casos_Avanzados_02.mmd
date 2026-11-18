@@ -1,0 +1,9 @@
+flowchart TD
+    A["Región y eje de revolución"] --> B["Identificar cortes perpendiculares y paralelos al eje"]
+    B --> C{"¿Qué corte resulta más simple?"}
+    C -->|Perpendicular| D["Discos o arandelas: radio y espesor"]
+    C -->|Paralelo| E["Capas cilíndricas: radio y longitud"]
+    D --> F["Eje oblicuo: usar coordenadas alineadas y distancia perpendicular"]
+    E --> F
+    F --> G["Integrar para obtener el volumen"]
+    G --> H["Verificar signo, límites y solapamiento"]

@@ -1,0 +1,9 @@
+flowchart LR
+    A["Región plana: R"] --> B["Eje de revolución: L"]
+    B --> C["Rotar R alrededor de L"]
+    C --> D["Sólido tridimensional"]
+    D --> E["Cortes perpendiculares: discos o arandelas"]
+    D --> F["Cortes paralelos: capas cilíndricas"]
+    E --> G["Integrar las áreas de corte"]
+    F --> G
+    G --> H["Volumen total"]

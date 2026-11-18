@@ -2954,7 +2954,6 @@ el commit de esta línea de PUSHEADO.
 >   pendientes ajenos), así que git rechaza el `fetch origin master:master` directo. Se hizo
 >   `git fetch origin` (seguro): su `origin/master` ya apunta a `ccd98813`; el `pull` local
 >   queda para el dueño cuando le convenga.
-
 ---
 
 ### `opencode-site` — rediseño con la paleta de mar (dos temas) — 16/11/2026
@@ -3068,6 +3067,43 @@ el commit de esta línea de PUSHEADO.
 > **Avanza:** contrato y validador commiteados (`35fca819`). La transformación mecánica arranca en cuanto el dueño decida los 3 puntos.
 >
 > **PUSHEADO `cb4f4342`** — `35fca819` (+ merge `49f769da`)
+
+>
+> **Push adicional:** el doc de cierre `23175889` (bloque PUSHEADO) también se pusheó a
+> `sesion/opencode-onedrive` y a `master` (`ccd98813..23175889`), con el merge de
+> `origin/master` incluido.
+
+---
+
+### `opencode-onedrive` — Cálculo 1: U7 completa + VI (**65 de 65**) — 17/11/2026
+
+> [!success] PUSHEADO `6317d9e4` · 17/11/2026 — `origin/master` = `master` = `6317d9e4`
+>
+> Push **fast-forward, sin `--force`** (autorizado por el dueño del vault):
+> `23175889..6317d9e4` (`sesion/opencode-onedrive`) y `b8912930..6317d9e4` (`master`).
+> Incluye el merge de `origin/master` (el rediseño de mar de `opencode-site` y el contrato
+> de `CYSOC` de `opencode`): el conflicto del LEEME se resolvió conservando **ambos bloques**
+> ajenos primero y mío después.
+>
+> - **Hecho:** U7 completa (Áreas 01-04, Volúmenes 01-02, Longitud de Curva) al formato de
+>   la casa con 3 diagramas nuevos conectados (pasan round-trip) y conservando los 3 bloques
+>   de figura ajenos incrustados en Área 04 y Volúmenes 01/02; **0 hallazgos** por nota.
+>   Correcciones de contenido verificadas con sympy: área de $x^4-5x^2+4$ en $[-3,3]$ =
+>   $\frac{556}{15}$; bucle $x = y^3 - 3y$ = $\frac{9}{2}$; $L$ en $x = y^3/3 + \frac{1}{4y}$
+>   en $[1,3]$ = $\frac{53}{6}$ (la nota vieja decía $\frac{32}{3}$); $\int_0^{2\pi}
+>   x\sin(10x)\,dx = -\frac{\pi}{5}$ (VI/01 decía $-0.4$); área de pétalo completo
+>   $= \frac{\pi a^2}{4n}$ (U7/04 decía $\frac{\pi a^2}{8n}$, medio pétalo); trabajo $W$ de
+>   los datos tabulados $= 42.5$ J (trapecio) y $\approx 43.33$ J (Simpson) — la nota vieja
+>   decía 40 y 41.67; comprobación con cilindro-cono en el ejercicio del volumen.
+> - **VI completa:** 01 Integración Numérica y 02 Integrales en Coordenadas Polares al
+>   formato de la casa, **0 hallazgos** por nota; round-trip 2/2; mojibake 0.
+> - **Cierre total:** `qa_formato_calculo1 --solo "1er Semestre/Cálculo de una Variable"` →
+>   **65 notas, 0 hallazgos**. `npm run sync` ✓ (14 ZIPs) y `npm run build` ✓ (818 páginas,
+>   786 notas / 17.115 apartados en el índice de búsqueda).
+> - **Doc de cierre:** `39b05abc` (bloque PUSHEO EN CURSO) y este bloque PUSHEADO.
+> - **Pendiente:** nada en Cálculo de una Variable. Queda el aviso ajeno al dueño: las
+>   18 PNG huérfanas `tabla-verdad-*.png` de MatDisc + `manifiesto_tablas_verdad.json`,
+>   y verificar en `neonotes-espol.vercel.app` que la reconstrucción desplegó.
 
 ### `opencode` — CYSOC: PDFs sin embebido + PNG renombrados y centralizados — 17/11/2026
 

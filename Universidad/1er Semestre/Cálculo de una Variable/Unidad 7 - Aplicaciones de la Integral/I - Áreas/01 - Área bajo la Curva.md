@@ -1,171 +1,178 @@
 ---
 dg-publish: true
-tags: [MATG1045, unidad7, area-bajo-la-curva, matematicas/calculo/geometria, integrales/aplicaciones, areas/calculo, geometria/analitica, interpretacion/visual, fisica/aplicaciones, fundamentos/geometricos]
+tags: [MATG1045, unidad7, area-bajo-la-curva, integrales, aplicaciones, areas, geometria-analitica, interpretacion-geometrica]
 ---
 
-# 📐️ Área bajo la Curva
+# 📐 Área bajo la Curva
 
-> [!info] 💡 **La Interpretación Geométrica Fundamental**
+## 🎯 Introducción
+
+> [!info] 💡 Qué son y por qué importan
 >
-> El cálculo del área bajo una curva es la aplicación geométrica más importante de la integral definida, conectando el concepto abstracto de integración con la intuición visual del área.
-
-## 🎯 Definición y Conceptos Básicos
-
-### 📏 Área como Integral Definida
-
-> [!tip] 🏆 **Definición Fundamental** Si $f(x) \geq 0$ es continua en $[a,b]$, entonces el **área bajo la curva** $y = f(x)$ desde $x = a$ hasta $x = b$ es:
+> El **área bajo una curva** es la aplicación geométrica original de la integral definida: si $f(x) \geq 0$ es continua en $[a,b]$, la región entre la gráfica de $f$, el eje $x$ y las rectas $x=a$, $x=b$ mide exactamente $\int_a^b f(x)\,dx$.
 >
-> $$\text{Área} = \int_a^b f(x) dx$$
+> **Por qué importa:** convierte una pregunta geométrica ("¿cuánto mide esta región?") en un cálculo mecánico. Volúmenes de revolución, trabajo, probabilidad y longitud de arco se construyen todos sobre esta misma idea de sumar infinitos rectángulos.
+>
+> **Ejemplo:** el área bajo $f(x) = x^2$ de $x = 0$ a $x = 2$ es $\int_0^2 x^2\,dx = \frac{8}{3}$, que coincide con el límite de las sumas de Riemann cuando $n \to \infty$.
 
-### 🎨 Interpretación Geométrica
+> [!tip] 🗺️ El mapa de la nota
+>
+> - **Definiciones Formales** — el área como integral definida y el área total cuando la función cambia de signo.
+> - **Procedimiento Paso a Paso** — método directo, división por raíces y simetría.
+> - **Casos Fundamentales** — función positiva, negativa y mixta.
+> - **Ejemplos Resueltos** — del caso base $x^2$ al físico $v(t) = 2t$.
+> - **Ejercicios Propuestos** — seis plantillas, una por cada variante.
+>
+> **Por qué importa:** la única decisión real es "¿la función cambia de signo en el intervalo?": si no, integrar directo; si sí, partir en las raíces y sumar valores absolutos. Todo lo demás es ese criterio aplicado.
 
-> [!info] 🖼️ Interpretación Geométrica
+---
+
+## 📋 Definiciones Formales
+
+> [!note] 📋 Definición — Área bajo la curva cuando $f \geq 0$
+>
+> Si $f(x) \geq 0$ es continua en $[a,b]$, el **área** de la región bajo la curva $y = f(x)$ entre $x = a$ y $x = b$ es:
+> $$\text{Área} = \int_a^b f(x)\,dx$$
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Área_bajo_la_Curva_01.svg]]
 >
-> **Se lee así:** El diagrama tiene dos cadenas de rectángulos. La primera avanza en línea recta: **función no negativa** en $[a,b]$, región bajo la curva, aproximación con rectángulos, suma de Riemann, límite cuando $n \to \infty$ y, al final, la **integral definida** como área exacta. La segunda cadena parte de la interpretación visual y se bifurca en dos cajas, la base $[a,b]$ y la altura variable $f(x)$, que desembocan juntas en el área.
+> **Se lee así:** dos cadenas de rectángulos. La primera avanza en línea recta: función no negativa en $[a,b]$, región bajo la curva, aproximación con rectángulos, suma de Riemann, límite cuando $n \to \infty$ y, al final, la integral definida como área exacta. La segunda parte de la interpretación visual y se bifurca en dos cajas —la base $[a,b]$ y la altura variable $f(x)$— que desembocan juntas en el área.
 >
-> **Por qué importa:** Te muestra que la integral definida no es un truco algebraico sino el **límite de una suma de áreas**. Con esta idea justificas el paso de rectángulos a área exacta y evitas el error más común: reportar un resultado negativo como si fuera un área.
+> **Por qué importa:** el diagrama muestra que la integral definida no es un truco algebraico sino el límite de una suma de áreas. Con esa idea justificas el paso de rectángulos a área exacta y evitas el error más común: reportar un resultado negativo como si fuera un área.
 >
-> **Ejemplo:** En el ejercicio de la nota, el área bajo $f(x) = x^2$ de $x = 0$ a $x = 2$ se obtiene como $\int_0^2 x^2 dx = \frac{8}{3}$, que coincide con la suma de Riemann al límite.
+> **Ejemplo:** el área bajo $f(x) = x^2$ de $x = 0$ a $x = 2$ se obtiene como $\int_0^2 x^2\,dx = \frac{8}{3}$, que coincide con la suma de Riemann al límite.
 
-### 📋 Condiciones y Limitaciones
-
-> [!warning] ⚠️ **Condiciones Importantes**
+> [!warning] ⚠️ Condiciones y limitaciones
 >
-> - **Función no negativa**: $f(x) \geq 0$ en todo $[a,b]$
-> - **Continuidad**: $f$ debe ser continua (o Riemann integrable)
-> - **Límites finitos**: $a$ y $b$ son números reales finitos
+> - **Función no negativa:** $f(x) \geq 0$ en todo $[a,b]$ para que la integral sea el área.
+> - **Continuidad:** $f$ debe ser continua (o al menos integrable) en el intervalo.
+> - **Límites finitos:** $a$ y $b$ son números reales finitos.
+>
+> **Por qué importa:** si falla la positividad, la integral da **área con signo** (neta), no área geométrica; si falla la continuidad, hay que partir la integral donde se rompa la función.
+
+> [!note] 📋 Definición — Área total cuando $f$ cambia de signo
+>
+> Si $f$ cambia de signo en $[a,b]$, con raíces $x_1 < x_2 < \dots < x_k$ que parten el intervalo en trozos de signo constante, el **área geométrica total** es la suma de los valores absolutos:
+> $$\text{Área Total} = \sum_i \left|\int_{x_{i-1}}^{x_i} f(x)\,dx\right| \quad \text{con } x_0 = a,\ x_{k+1} = b$$
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Área_bajo_la_Curva_02.svg]]
+>
+> **Se lee así:** una caja lleva a un rombo que decide *si la función es no negativa en todo el intervalo*. Del **sí** sale directo a la integral del área; del **no** se encadena una serie de rectángulos: buscar raíces, dividir en subintervalos, tomar el valor absoluto en cada parte y sumar. Aparte, otro rombo sobre simetría se abre en dos cajas: función par, que duplica la integral de la mitad, y función impar, que pide cuidado.
+>
+> **Por qué importa:** la mayoría de los errores en área bajo la curva viene de ignorar el signo o de empezar la integral en el orden equivocado. Con este mapa de decisiones sabes de antemano qué revisar antes de integrar: positividad, raíces y simetría.
+>
+> **Ejemplo:** para $f(x) = x^3 - x$ en $[-2, 2]$ la nota divide en $[-2,-1]$, $[-1,0]$, $[0,1]$ y $[1,2]$, y suma los cuatro valores absolutos hasta obtener un área de $5$.
+
+---
+
+## 🔧 Procedimiento Paso a Paso
+
+> [!tip] 🔎 Método directo — función simple y no negativa
+>
+> 1. Verificar que $f(x) \geq 0$ en $[a,b]$.
+> 2. Encontrar la antiderivada $F(x)$ con $F'(x) = f(x)$.
+> 3. Aplicar: $\text{Área} = F(b) - F(a)$.
+>
+> **Por qué importa:** es el camino más corto y solo exige comprobar el signo antes de evaluar; sin esa comprobación, el resultado puede salir negativo y ser el opuesto del área.
+
+> [!tip] 🔎 Método por partes — función que cambia de signo
+>
+> 1. Encontrar las raíces de $f(x) = 0$ dentro de $[a,b]$.
+> 2. Dividir $[a,b]$ en subintervalos donde $f$ mantiene signo.
+> 3. Calcular $\left|\int\right|$ en cada subintervalo.
+> 4. Sumar todos los resultados.
+>
+> **Por qué importa:** el valor absoluto está **fuera** de cada integral, no dentro del integrando: primero se integra en cada trozo y después se voltea el signo si el trozo salió negativo.
+
+> [!tip] 🔎 Aprovechar la simetría — funciones pares e impares
+>
+> - **Función par** $f(-x) = f(x)$: si $f \geq 0$ en $[-a,a]$, entonces $\text{Área} = 2\int_0^a f(x)\,dx$.
+> - **Función impar** $f(-x) = -f(x)$: la integral neta en $[-a,a]$ sale $0$ por cancelación; el área total es $2 \times$ (área del lado donde $f \geq 0$).
+>
+> **Por qué importa:** la paridad convierte un intervalo doble en uno solo. Reconocerla antes de integrar ahorra la mitad del cálculo y elimina un cambio de signo típico.
+
+> [!tip] 🧠 Mnemotecnia GRAFO para área bajo la curva
+>
+> - **G** — Graficar la función y la región, marcando los límites $a$ y $b$ y sombreando el área.
+> - **R** — Reconocer el tipo de área: positiva, negativa o mixta (y buscar las raíces si es mixta).
+> - **A** — Aplicar el Teorema Fundamental del Cálculo; decidir área neta ($\int f$) o área total ($\int |f|$).
+> - **F** — Formular la integral definida con los límites correctos, partiéndola si hay cambio de signo.
+> - **O** — Obtener el resultado $F(b) - F(a)$ y verificar: el área geométrica debe ser positiva.
+>
+> **Por qué importa:** las cinco letras son el orden de trabajo completo: quien salta la **R** (reconocer el signo) es quien reporta $0$ como área en funciones impares.
+
+---
 
 ## 📊 Casos Fundamentales
 
-### 🟢 Caso 1: Función Siempre Positiva
+> [!info] 📈 Caso estándar: función siempre positiva
+>
+> Cuando $f(x) \geq 0$ en $[a,b]$, no hay truco: $\text{Área} = \int_a^b f(x)\,dx$. El ejemplo canónico es $f(x) = x^2$ en $[0,2]$: $\left[\frac{x^3}{3}\right]_0^2 = \frac{8}{3}$.
 
-> [!info] 📈 **Caso Estándar**
+> [!warning] 📉 Caso negativo: la integral sale negativa
 >
-> Cuando $f(x) \geq 0$ en $[a,b]$: $\text{Área} = \int_a^b f(x) dx$
+> Cuando $f(x) \leq 0$ en $[a,b]$, la integral da el **negativo** del área. Para el área geométrica:
+> $$\text{Área} = -\int_a^b f(x)\,dx = \int_a^b |f(x)|\,dx$$
 
-#### 🧪 Ejemplo Básico
+> [!tip] 🔄 Caso mixto: la función cruza el eje
+>
+> 1. Encontrar las raíces: resolver $f(x) = 0$.
+> 2. Dividir el intervalo en subintervalos donde $f$ mantiene signo.
+> 3. Calcular por separado y sumar valores absolutos de cada integral.
+>
+> **Por qué importa:** es el caso de examen: quien olvida partir en las raíces reporta el área neta (a veces $0$) en lugar del área total.
 
-> [!tip] 🔬 **Ejemplo**: Área bajo $f(x) = x^2$ de $x = 0$ a $x = 2$
->
-> **Verificación de positividad**: $x^2 \geq 0$ para todo $x$ ✓
->
-> **Cálculo**: $\text{Área} = \int_0^2 x^2 dx = \left[\frac{x^3}{3}\right]_0^2 = \frac{8}{3} - 0 = \frac{8}{3}$
->
-> **Interpretación**: La región entre la parábola $y = x^2$, el eje $x$, y las rectas $x = 0$, $x = 2$ tiene área $\frac{8}{3}$ unidades cuadradas.
+---
 
-### 🔴 Caso 2: Función Siempre Negativa
+## 🧮 Ejemplos Resueltos
 
-> [!warning] 📉 **Área con Signo Negativo** Cuando $f(x) \leq 0$ en $[a,b]$:
+> [!example] 🔢 Ejemplo 1 — Caso estándar: $f(x) = x^2$ en $[0, 2]$
 >
-> - **Integral**: $\int_a^b f(x) dx < 0$ (área con signo)
-> - **Área geométrica**: $\text{Área} = -\int_a^b f(x) dx = \int_a^b |f(x)| dx$
+> **Positividad:** $x^2 \geq 0$ para todo $x$ ✓
+>
+> **Cálculo:** $\text{Área} = \int_0^2 x^2\,dx = \left[\frac{x^3}{3}\right]_0^2 = \frac{8}{3} - 0 = \frac{8}{3}$
+>
+> **Interpretación:** la región entre la parábola $y = x^2$, el eje $x$ y las rectas $x = 0$, $x = 2$ mide $\frac{8}{3}$ unidades cuadradas.
+>
+> **Por qué importa:** es el patrón base: positividad verificada, antiderivada y evaluar en los extremos.
 
-#### 🧪 Ejemplo con Función Negativa
-
-> [!tip] 🔬 **Ejemplo**: Área bajo $f(x) = x^2 - 4$ de $x = 1$ a $x = 3$
+> [!example] 🔢 Ejemplo 2 — Cambio de signo: $f(x) = x^3 - x$ en $[-2, 2]$
 >
-> **Análisis**: $f(x) = x^2 - 4 < 0$ cuando $x^2 < 4$, es decir, cuando $|x| < 2$ En $[1,3]$: $f(1) = -3 < 0$ y $f(3) = 5 > 0$
+> **Paso 1 — Raíces:** $x^3 - x = 0 \Rightarrow x(x^2 - 1) = 0 \Rightarrow x = 0, \pm 1$.
 >
-> **Encontrar donde $f(x) = 0$**: $x^2 - 4 = 0 \Rightarrow x = 2$
->
-> Este caso requiere dividir el intervalo (ver Caso 3).
-
-### 🔄 Caso 3: Función que Cambia de Signo
-
-> [!tip] 🎯 **Método General** Cuando $f(x)$ cambia de signo en $[a,b]$:
->
-> 1. **Encontrar las raíces**: Resolver $f(x) = 0$
-> 2. **Dividir el intervalo**: En subintervalos donde $f$ mantiene signo
-> 3. **Calcular por separado**: Área = suma de valores absolutos de cada integral
->
-> $\text{Área Total} = \sum_{i} \left|\int_{x_{i-1}}^{x_i} f(x) dx\right|$
-
-#### 🧪 Ejemplo Completo con Cambio de Signo
-
-> [!tip] 🔬 **Ejemplo**: Área bajo $f(x) = x^3 - x$ de $x = -2$ a $x = 2$
->
-> **Paso 1**: Encontrar raíces $x^3 - x = 0 \Rightarrow x(x^2 - 1) = 0 \Rightarrow x = 0, \pm 1$
->
-> **Paso 2**: Analizar signos en cada intervalo
+> **Paso 2 — Signos en cada intervalo:**
 >
 > - $[-2, -1]$: $f(-1.5) = -1.875 < 0$
 > - $[-1, 0]$: $f(-0.5) = 0.375 > 0$
 > - $[0, 1]$: $f(0.5) = -0.375 < 0$
 > - $[1, 2]$: $f(1.5) = 1.875 > 0$
 >
-> **Paso 3**: Calcular cada área $\text{Área} = \left|\int_{-2}^{-1} (x^3-x) dx\right| + \left|\int_{-1}^0 (x^3-x) dx\right| + \left|\int_0^1 (x^3-x) dx\right| + \left|\int_1^2 (x^3-x) dx\right|$
+> **Paso 3 — Integral por partes**, con $\int (x^3 - x)\,dx = \frac{x^4}{4} - \frac{x^2}{2}$:
 >
-> **Evaluando cada integral**: $\int (x^3 - x) dx = \frac{x^4}{4} - \frac{x^2}{2}$
+> - $\int_{-2}^{-1} (x^3 - x)\,dx = \left[\frac{x^4}{4} - \frac{x^2}{2}\right]_{-2}^{-1} = \left(\frac{1}{4} - \frac{1}{2}\right) - (4 - 2) = -\frac{9}{4}$
+> - $\int_{-1}^{0} (x^3 - x)\,dx = 0 - \left(-\frac{1}{4} + \frac{1}{2}\right) = \frac{1}{4}$
+> - $\int_{0}^{1} (x^3 - x)\,dx = \frac{1}{4} - \frac{1}{2} - 0 = -\frac{1}{4}$
+> - $\int_{1}^{2} (x^3 - x)\,dx = 4 - 2 - \left(\frac{1}{4} - \frac{1}{2}\right) = \frac{9}{4}$
 >
-> - $\int_{-2}^{-1} (x^3-x) dx = \left[\frac{x^4}{4} - \frac{x^2}{2}\right]_{-2}^{-1} = \frac{1}{4} - \frac{1}{2} - (4 - 2) = -\frac{9}{4}$
-> - $\int_{-1}^0 (x^3-x) dx = 0 - (-\frac{1}{4} + \frac{1}{2}) = \frac{1}{4}$
-> - $\int_0^1 (x^3-x) dx = \frac{1}{4} - \frac{1}{2} - 0 = -\frac{1}{4}$
-> - $\int_1^2 (x^3-x) dx = 4 - 2 - (\frac{1}{4} - \frac{1}{2}) = \frac{9}{4}$
+> **Área total:** $\frac{9}{4} + \frac{1}{4} + \frac{1}{4} + \frac{9}{4} = 5$
 >
-> **Área total**: $\frac{9}{4} + \frac{1}{4} + \frac{1}{4} + \frac{9}{4} = 5$
+> **Por qué importa:** los cuatro trozos se suman en valor absoluto: la integral neta habría dado $0$ (función impar en intervalo simétrico) y el área real es $5$.
 
-## 🎨 Técnicas de Cálculo
-
-### ⚡ Método Directo
-
-> [!info] 🔧 **Para Funciones Simples**
+> [!example] 🔢 Ejemplo 3 — Simetría par: $f(x) = 4 - x^2$ en $[-2, 2]$
 >
-> 1. Verificar que $f(x) \geq 0$ en $[a,b]$
-> 2. Encontrar antiderivada $F(x)$
-> 3. Aplicar: $\text{Área} = F(b) - F(a)$
+> **Paridad:** $f(-x) = 4 - (-x)^2 = 4 - x^2 = f(x)$ (función par).
+>
+> **Positividad:** $4 - x^2 \geq 0 \Leftrightarrow x^2 \leq 4 \Leftrightarrow |x| \leq 2$, así que $f \geq 0$ en $[-2, 2]$ ✓.
+>
+> **Cálculo:** $\text{Área} = 2\int_0^2 (4 - x^2)\,dx = 2\left[4x - \frac{x^3}{3}\right]_0^2 = 2\left(8 - \frac{8}{3}\right) = 2 \cdot \frac{16}{3} = \frac{32}{3}$
+>
+> **Por qué importa:** la paridad corta el intervalo a la mitad; sin ella habría que partir en $[-2, 0]$ y $[0, 2]$ y sumar dos integrales iguales.
 
-### 🔄 Método por Partes
-
-> [!tip] 🎯 **Para Funciones que Cambian de Signo**
+> [!example] 🔢 Ejemplo 4 — Polinomio con muchas raíces: $f(x) = x^4 - 5x^2 + 4$ en $[-3, 3]$
 >
-> 1. Encontrar raíces de $f(x) = 0$
-> 2. Dividir $[a,b]$ en subintervalos
-> 3. Calcular $|\int|$ en cada subintervalo
-> 4. Sumar todos los resultados
-
-### 🌊 Aprovechando Simetría
-
-> [!info] ⚡ **Funciones Pares e Impares**
+> **Factorización:** $x^4 - 5x^2 + 4 = (x^2 - 1)(x^2 - 4) = (x-1)(x+1)(x-2)(x+2)$; raíces $x = \pm 1, \pm 2$.
 >
-> **Función par**: $f(-x) = f(x)$
->
-> - Si $f(x) \geq 0$ en $[-a,a]$: $\text{Área} = 2\int_0^a f(x) dx$
->
-> **Función impar**: $f(-x) = -f(x)$
->
-> - Área total en $[-a,a]$ = 2 × (área donde $f(x) \geq 0$)
-
-#### 🧪 Ejemplo con Simetría
-
-> [!tip] 🔬 **Ejemplo**: Área bajo $f(x) = 4 - x^2$ de $x = -2$ a $x = 2$
->
-> **Verificación**: $f(-x) = 4 - (-x)^2 = 4 - x^2 = f(x)$ (función par)
->
-> **Verificar positividad**: $f(x) = 4 - x^2 \geq 0 \Leftrightarrow x^2 \leq 4 \Leftrightarrow |x| \leq 2$ En $[-2,2]$: $f(x) \geq 0$ ✓
->
-> **Aplicar simetría**: $\text{Área} = 2\int_0^2 (4 - x^2) dx = 2\left[4x - \frac{x^3}{3}\right]_0^2 = 2\left(8 - \frac{8}{3}\right) = 2 \cdot \frac{16}{3} = \frac{32}{3}$
-
-## 🧮 Aplicaciones con Diferentes Tipos de Funciones
-
-### 📈 Funciones Polinómicas
-
-> [!tip] 📊 **Características**
->
-> - Fáciles de integrar
-> - Pueden cambiar de signo múltiples veces
-> - Útiles para encontrar patrones
-
-#### 🧪 Ejemplo Polinómico
-
-> [!info] 🔬 **Área bajo** $f(x) = x^4 - 5x^2 + 4$ **en** $[-3, 3]$
->
-> **Factorización**: $x^4 - 5x^2 + 4 = (x^2 - 1)(x^2 - 4) = (x-1)(x+1)(x-2)(x+2)$
->
-> **Raíces**: $x = \pm 1, \pm 2$
->
-> **Análisis de signos**:
+> **Análisis de signos:**
 >
 > - $(-3, -2)$: $f(-2.5) > 0$
 > - $(-2, -1)$: $f(-1.5) < 0$
@@ -173,252 +180,187 @@ tags: [MATG1045, unidad7, area-bajo-la-curva, matematicas/calculo/geometria, int
 > - $(1, 2)$: $f(1.5) < 0$
 > - $(2, 3)$: $f(2.5) > 0$
 >
-> Por simetría (función par), el área total es: $\text{Área} = 2\left[\int_0^1 4 dx + \left|\int_1^2 (x^4-5x^2+4) dx\right| + \int_2^3 (x^4-5x^2+4) dx\right]$
+> **Cálculo por simetría** (función par), con $\int f = \frac{x^5}{5} - \frac{5x^3}{3} + 4x$:
+>
+> - $\int_0^1 f = \frac{1}{5} - \frac{5}{3} + 4 = \frac{38}{15}$
+> - $\left|\int_1^2 f\right| = \left|\frac{32}{5} - \frac{40}{3} + 8 - \frac{38}{15}\right| = \frac{22}{15}$
+> - $\int_2^3 f = \frac{243}{5} - 45 + 12 - \left(\frac{32}{5} - \frac{40}{3} + 8\right) = \frac{218}{15}$
+>
+> **Área total:** $2\left(\frac{38}{15} + \frac{22}{15} + \frac{218}{15}\right) = 2 \cdot \frac{278}{15} = \frac{556}{15}$
+>
+> **Por qué importa:** cuatro raíces y paridad: se integra la mitad y se duplica; sin factorizar antes, los cambios de signo se esconden y el resultado sale mal.
 
-### 🌊 Funciones Trigonométricas
+> [!example] 🔢 Ejemplo 5 — Trigonométrica: $f(x) = \sin x$ en $[0, 2\pi]$
+>
+> **Análisis:** $\sin x \geq 0$ en $[0, \pi]$ y $\sin x \leq 0$ en $[\pi, 2\pi]$.
+>
+> **Cálculo por partes:**
+> $$\text{Área} = \int_0^{\pi} \sin x\,dx + \left|\int_{\pi}^{2\pi} \sin x\,dx\right| = [-\cos x]_0^{\pi} + \left|[-\cos x]_{\pi}^{2\pi}\right|$$
+> $$= (-\cos \pi + \cos 0) + |(-\cos 2\pi + \cos \pi)| = (1 + 1) + |-1 - 1| = 2 + 2 = 4$$
+>
+> **Por qué importa:** el período partido por la mitad cambia de signo: el área total es $4$, mientras que la integral neta $\int_0^{2\pi} \sin x\,dx$ es $0$.
 
-> [!warning] 🔍 **Consideraciones Especiales**
+> [!example] 🔢 Ejemplo 6 — Sin forma cerrada: $f(x) = e^{-x^2}$ en $[-1, 1]$
 >
-> - Oscilan entre valores positivos y negativos
-> - Útil conocer período y fase
-> - Aprovechar simetrías
+> **Positividad:** $e^{-x^2} > 0$ para todo $x$ ✓.
+>
+> **Problema:** esta integral no tiene antiderivada elemental.
+>
+> **Solución:** se expresa con la función error $\text{erf}$: $\int_{-1}^{1} e^{-x^2}\,dx = \sqrt{\pi}\,\text{erf}(1) \approx 1.4936$, y se deja en valor numérico (para aproximarla, ver [[Unidad 6 - Integrales/VI - Otras Técnicas/01 - Integración Numérica|01 - Integración Numérica]]).
+>
+> **Por qué importa:** no toda área se cierra en fórmulas; reconocerlo a tiempo evita forzar sustituciones que no funcionan.
 
-#### 🧪 Ejemplo Trigonométrico
-
-> [!tip] 🔬 **Área bajo** $f(x) = \sin(x)$ **de** $x = 0$ **a** $x = 2\pi$
+> [!example] 🚗 Ejemplo 7 — Aplicación física: desplazamiento
 >
-> **Análisis**: $\sin(x) \geq 0$ en $[0, \pi]$ y $\sin(x) \leq 0$ en $[\pi, 2\pi]$
+> **Problema:** un auto lleva velocidad $v(t) = 2t$ m/s durante los primeros $5$ segundos. ¿Qué distancia recorre?
 >
-> **Cálculo por partes**: $\text{Área} = \int_0^{\pi} \sin(x) dx + \left|\int_{\pi}^{2\pi} \sin(x) dx\right|$
+> **Solución:** el desplazamiento es el área bajo la curva de velocidad:
+> $$\text{Desplazamiento} = \int_0^5 2t\,dt = \left[t^2\right]_0^5 = 25 \text{ metros}$$
 >
-> $= [-\cos(x)]_0^{\pi} + \left|[-\cos(x)]_{\pi}^{2\pi}\right|$
->
-> $= (-\cos(\pi) + \cos(0)) + |(-\cos(2\pi) + \cos(\pi))|$
->
-> $= (1 + 1) + |-1 - 1| = 2 + 2 = 4$
-
-### 📊 Funciones Exponenciales y Logarítmicas
-
-#### 🧪 Ejemplo Exponencial
-
-> [!tip] 🔬 **Área bajo** $f(x) = e^{-x^2}$ **de** $x = -1$ **a** $x = 1$
->
-> **Análisis**: $e^{-x^2} > 0$ para todo $x$ ✓
->
-> **Problema**: Esta integral no tiene forma cerrada elemental
->
-> **Solución**: Se relaciona con la distribución normal $\int_{-1}^1 e^{-x^2} dx \approx 1.493$ (valor numérico)
-
-## 🎯 Interpretaciones y Aplicaciones
-
-### 🗛️ Aplicaciones Geométricas
-
-> [!info] 🎨 **Usos Geométricos**
->
-> - **Áreas de regiones irregulares**
-> - **Diseño arquitectónico**
-> - **Cálculo de superficies**
-
-### ⚡ Aplicaciones Físicas
-
-> [!tip] 🔬 **Interpretaciones Físicas**
->
-> - **Desplazamiento**: Área bajo curva de velocidad
-> - **Trabajo**: Área bajo curva de fuerza
-> - **Carga eléctrica**: Área bajo curva de corriente
-
-#### 🧪 Ejemplo Físico
-
-> [!info] 🚗 **Problema**: Un auto tiene velocidad $v(t) = 2t$ m/s durante los primeros 5 segundos. ¿Qué distancia recorre?
->
-> **Solución**: El desplazamiento es el área bajo la curva de velocidad $\text{Desplazamiento} = \int_0^5 2t , dt = [t^2]_0^5 = 25 \text{ metros}$
-
-### 📊 Aplicaciones Probabilísticas
-
-> [!warning] 🎲 **Funciones de Densidad**
->
-> En probabilidad, el área bajo una función de densidad $f(x)$ representa la probabilidad: $P(a \leq X \leq b) = \int_a^b f(x) dx$)$ representa la probabilidad: $$P(a \leq X \leq b) = \int_a^b f(x) dx$$
-
-## ⚠️ Errores Comunes y Precauciones
-
-### 🔴 Errores Típicos
-
-> [!warning] 🚨 **Errores Frecuentes**
->
->
-> #### Error 1: Ignorar Cambios de Signo
->
-> **Problema**: Calcular $\int_a^b f(x) dx$ sin verificar si $f(x)$ cambia de signo
->
-> **Ejemplo**: $\int_{-1}^1 x dx = 0$ ≠ área bajo la curva (que sería $1$)
->
-> #### Error 2: Confundir Área con Integral
->
-> **Problema**: El área siempre es no negativa, la integral puede ser negativa
->
-> **Regla**: Área = $\int |f(x)| dx$, no necesariamente $\int f(x) dx$
->
-> #### Error 3: Límites de Integración Incorrectos
->
-> **Problema**: No identificar correctamente la región de interés
->
-> **Solución**: Siempre dibujar la región antes de calcular
-
-### ✅ Lista de Verificación
-
-> [!info] 📋 **Antes de Calcular**
->
-> 1. ¿La función es continua en el intervalo?
-> 2. ¿La función cambia de signo?
-> 3. ¿Los límites de integración son correctos?
-> 4. ¿Se puede aprovechar alguna simetría?
-> 5. ¿El resultado tiene sentido geométricamente?
-
-## 🔧 Herramientas y Estrategias
-
-### 🎯 Estrategia General
-
-> [!info] 🖼️ Estrategia General
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Área_bajo_la_Curva_02.svg]]
->
-> **Se lee así:** Una caja lleva a un rombo que decide *si la función es no negativa en todo el intervalo*. Del **sí** sale directo a la integral del área; del **no** se encadena una serie de rectángulos: buscar raíces, dividir en subintervalos, tomar el valor absoluto en cada parte y sumar. Aparte, otro rombo sobre simetría se abre en dos cajas: función par, que duplica la integral de la mitad, y función impar, que pide cuidado.
->
-> **Por qué importa:** La mayoría de errores en área bajo la curva viene de ignorar el signo o de empezar la integral en el orden equivocado. Con este mapa de decisiones sabes de antemano qué revisar antes de integrar: **positividad, raíces y simetría**.
->
-> **Ejemplo:** Para $f(x) = x^3 - x$ en $[-2, 2]$ la nota divide en $[-2,-1]$, $[-1,0]$, $[0,1]$ y $[1,2]$, y suma los cuatro valores absolutos hasta obtener un área de $5$.
-
-### 🧠 Técnicas de Visualización
-
-> [!tip] 💡 **Ayudas Visuales**
->
-> 1. **Graficar la función**: Usar herramientas gráficas
-> 2. **Identificar regiones**: Marcar donde $f(x) \geq 0$ y $f(x) < 0$
-> 3. **Verificar resultados**: El área debe ser positiva
-> 4. **Aproximaciones**: Usar reglas numéricas para verificar
-
-## 🧠 Técnica de Estudio: Método GRAFO
-
-> [!tip] 🎓 **Mnemotecnia GRAFO para Área bajo la Curva**
->
-> **G**raficar la función y la región **R**econocer si el área es positiva, negativa o mixta **A**plicar el Teorema Fundamental del Cálculo **F**ormular la integral definida $\int_a^b f(x)dx$ **O**btener el resultado y verificar
->
-
-> [!success] 📋 Desarrollo Detallado del Método GRAFO
->
-> ### 
->
-> #### 📊 **G - Graficar**
->
-> - Hacer un **bosquejo** de $y = f(x)$ (no necesita ser perfecto, solo funcional)
-> - Marcar claramente los **límites de integración** $x = a$ y $x = b$
-> - **Sombrear la región** de interés bajo la curva
-> - Identificar visualmente si hay **partes sobre y bajo el eje x**
->
-> #### 🔍 **R - Reconocer el Tipo de Área**
->
-> - **Área completamente positiva**: Si $f(x) \geq 0$ para todo $x \in [a,b]$
-> - **Área completamente negativa**: Si $f(x) \leq 0$ para todo $x \in [a,b]$
-> - **Área mixta**: Si $f(x)$ cambia de signo → necesitas dividir en subintervalos
-> - **Puntos críticos**: Encontrar dónde $f(x) = 0$ si hay cambios de signo
->
-> #### ⚡ **A - Aplicar Teoremas Apropiados**
->
-> - **Caso estándar**: Usar Teorema Fundamental del Cálculo
-> - **Área neta vs área total**:
->     - Área neta: $\int_a^b f(x)dx = F(b) - F(a)$
->     - Área total: $\int_a^b |f(x)|dx$ (siempre positiva)
-> - **Si hay área mixta**: $\text{Área} = \sum \int |f(x)|dx$ en cada subintervalo
->
-> #### 📝 **F - Formular la Integral**
->
-> - Escribir la **integral definida** con límites correctos
-> - Encontrar la **antiderivada** $F(x)$ tal que $F'(x) = f(x)$
-> - Para área mixta: configurar **múltiples integrales** según los intervalos
-> - Preparar la **evaluación** usando notación $[F(x)]_a^b$
->
-> #### ✅ **O - Obtener y Verificar**
->
-> - Calcular $F(b) - F(a)$ paso a paso
-> - **Interpretación del resultado**:
->     - Si es positivo: área neta hacia arriba
->     - Si es negativo: área neta hacia abajo
->     - Para área geométrica: tomar valor absoluto si es necesario
-> - **Verificación dimensional**: el resultado debe tener unidades de área
->
-
-### 🧪 Ejemplo Completo con GRAFO
-
-> [!example] 📈 **Problema**: Encontrar el área bajo $f(x) = x^2 - 4$ desde $x = 0$ hasta $x = 3$
->
-> **🎯 Aplicando GRAFO paso a paso:**
->
-> #### **G - Graficar**
->
-> ```
-> Parábola y = x² - 4 que:
-> - Abre hacia arriba (coeficiente positivo de x²)
-> - Vértice en (0, -4)
-> - Corta eje x en x = ±2
-> - En [0,3]: negativa en [0,2], positiva en [2,3]
-> ```
->
-> #### **R - Reconocer**
->
-> - **Área mixta** detectada ✓
-> - Cambio de signo en $x = 2$ (donde $f(2) = 4 - 4 = 0$)
-> - Subintervalos: $[0,2]$ (negativa) y $[2,3]$ (positiva)
->
-> #### **A - Aplicar**
->
-> - Necesitamos área total (geométrica), no área neta
-> - Fórmula: $\text{Área} = \int_0^2 |x^2-4|dx + \int_2^3 |x^2-4|dx$
-> - Como $x^2-4 < 0$ en $[0,2]$: $|x^2-4| = 4-x^2$
-> - Como $x^2-4 > 0$ en $[2,3]$: $|x^2-4| = x^2-4$
->
-> #### **F - Formular**
->
-> $$\text{Área} = \int_0^2 (4-x^2)dx + \int_2^3 (x^2-4)dx$$
->
-> Antiderivadas:
->
-> - Para $(4-x^2)$: $4x - \frac{x^3}{3}$
-> - Para $(x^2-4)$: $\frac{x^3}{3} - 4x$
->
-> #### **O - Obtener**
->
-> $$\text{Área} = \left[4x - \frac{x^3}{3}\right]_0^2 + \left[\frac{x^3}{3} - 4x\right]_2^3$$
->
-> $$= \left(8 - \frac{8}{3}\right) - (0) + \left(9 - 12\right) - \left(\frac{8}{3} - 8\right)$$
->
-> $$= \frac{16}{3} + (-3) - \left(-\frac{16}{3}\right) = \frac{16}{3} - 3 + \frac{16}{3} = \frac{32-9}{3} = \frac{23}{3}$$
->
-> **Verificación**: ✅ Resultado positivo y geométricamente sensato
+> **Por qué importa:** física y cálculo hablan el mismo idioma aquí: área bajo la curva de una tasa = acumulación de la cantidad.
 
 ---
 
-## 📚 Referencias y Conexiones
+## 📝 Ejercicios Propuestos
 
-> [!quote] 🔗 Notas Relacionadas
+> [!example] 📋 Planteamiento
 >
-> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/01 - Integral de Riemann.md|01 - Integral de Riemann.md]] - Definición formal subyacente
-> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo.md|04 - Teorema Fundamental del Cálculo.md]] - Herramienta principal de evaluación
-> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/02 - Propiedades de la Integral.md|02 - Propiedades de la Integral.md]] - Herramientas para simplificar cálculos
-> - [[Unidad 6 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida.md|01 - Métodos de Integración Definida.md]] - Técnicas para evaluación
+> Halla el área bajo $f(x) = x^2$ de $x = 0$ a $x = 3$.
 >
-> [!note] 📖 Para Profundizar
->
->
-> - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/01 - Integrales Impropias.md|01 - Integrales Impropias.md]] - Áreas con límites infinitos
-> - [[Unidad 6 - Integrales/VI - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]] - Métodos aproximados para casos complejos
-> - [[Cálculo de una Variable.md|Cálculo de una Variable.md]] - Optimización de áreas
-> - Geometría Diferencial - Generalización a superficies
->
-> ### 🎯 Aplicaciones Especializadas
->
-> - Trabajo y Energía con Integrales - Interpretación física
-> - Probabilidad y Estadística - Funciones de densidad
-> - [[Unidad 7 - Aplicaciones de la Integral/II - Volúmenes/01 - Volúmenes de Sólidos de Revolución.md|01 - Volúmenes de Sólidos de Revolución.md]] - Extensión tridimensional
-> - [[Unidad 4 - Derivadas/IV - Técnicas Avanzadas/03 - Derivadas Paramétricas.md#Longitud de Arco|Longitud de Arco]] - Otra aplicación geométrica
+> > [!success]- ✅ Solución
+> >
+> > $f \geq 0$ en $[0, 3]$ ✓, así que $\text{Área} = \int_0^3 x^2\,dx = \left[\frac{x^3}{3}\right]_0^3 = \frac{27}{3} = 9$.
+> > **Lección:** positividad verificada, integral directa y ya.
 
-**Tags:** #MATG1045 #unidad7 #area-bajo-la-curva #matematicas/calculo/geometria #integrales/aplicaciones #areas/calculo #geometria/analitica #interpretacion/visual #fisica/aplicaciones #fundamentos/geometricos
+> [!example] 📋 Planteamiento
+>
+> Halla el área total entre $f(x) = x^2 - 1$ y el eje $x$ en $[-1, 2]$.
+>
+> > [!success]- ✅ Solución
+> > Raíz en $x = 1$ (dentro del intervalo): $f \leq 0$ en $[-1, 1]$ y $f \geq 0$ en $[1, 2]$.
+> > $$\text{Área} = \int_{-1}^{1} (1 - x^2)\,dx + \int_{1}^{2} (x^2 - 1)\,dx = \left[x - \frac{x^3}{3}\right]_{-1}^{1} + \left[\frac{x^3}{3} - x\right]_{1}^{2} = \frac{4}{3} + \frac{4}{3} = \frac{8}{3}$$
+> > **Lección:** partir en la raíz y sumar valores absolutos; la integral neta habría dado $0$ y el área real es $\frac{8}{3}$.
+
+> [!example] 📋 Planteamiento
+>
+> Evalúa $\int_0^{\ln 3} e^x\,dx$ e interpútalo como área.
+>
+> > [!success]- ✅ Solución
+> > $e^x > 0$ siempre, así que el valor de la integral es el área: $\int_0^{\ln 3} e^x\,dx = \left[e^x\right]_0^{\ln 3} = 3 - 1 = 2$.
+> > **Lección:** la exponencial es su propia antiderivada; el área bajo $e^x$ entre $0$ y $\ln 3$ vale exactamente $2$.
+
+> [!example] 📋 Planteamiento
+>
+> Usa simetría para calcular el área bajo $f(x) = x^2 + 1$ en $[-2, 2]$.
+>
+> > [!success]- ✅ Solución
+> > $f(-x) = (-x)^2 + 1 = x^2 + 1 = f(x)$: función par y positiva.
+> > $$\text{Área} = 2\int_0^2 (x^2 + 1)\,dx = 2\left[\frac{x^3}{3} + x\right]_0^2 = 2\left(\frac{8}{3} + 2\right) = \frac{28}{3}$$
+> > **Lección:** la paridad duplica la mitad positiva; sin ella integrarías cuatro extremos en vez de dos.
+
+> [!example] 📋 Planteamiento
+>
+> Calcula el área total bajo $f(x) = |\sin x|$ en $[0, 2\pi]$ sin operar con valores absolutos dentro de la integral.
+>
+> > [!success]- ✅ Solución
+> > Se parte donde $\sin x$ cambia de signo ($x = \pi$):
+> > $$\int_0^{\pi} \sin x\,dx + \left|\int_{\pi}^{2\pi} \sin x\,dx\right| = [-\cos x]_0^{\pi} + \left|[-\cos x]_{\pi}^{2\pi}\right| = 2 + |-2| = 4$$
+> > **Lección:** $|\sin x|$ se quita partiendo el intervalo, no integrando el valor absoluto.
+
+> [!example] 📋 Planteamiento
+>
+> Un móvil lleva velocidad $v(t) = 3t^2$ m/s durante $4$ s. ¿Qué distancia recorre?
+>
+> > [!success]- ✅ Solución
+> > $v \geq 0$ en $[0, 4]$, así que la distancia es el área bajo la curva:
+> > $$\int_0^4 3t^2\,dt = \left[t^3\right]_0^4 = 64 \text{ metros}$$
+> > **Lección:** área bajo la tasa = acumulación; aquí, metros recorridos.
+
+---
+
+## 🎯 Metas de Aprendizaje
+
+> [!note] 📋 Nivel Básico
+>
+> - [ ] Planteo el área bajo $f \geq 0$ como $\int_a^b f(x)\,dx$ y verifico positividad antes de integrar.
+> - [ ] Identifico las raíces de $f$ para partir el intervalo cuando la función cambia de signo.
+> - [ ] Reconozco funciones pares para duplicar la integral de la mitad positiva del intervalo.
+
+> [!note] 📋 Nivel Intermedio
+>
+> - [ ] Calculo el área total como suma de valores absolutos de las integrales por subintervalos.
+> - [ ] Distingo área neta (con signo) de área geométrica (siempre positiva) y elijo la que pide el enunciado.
+> - [ ] Aprovecho la simetría par/impar para reducir el intervalo de integración sin perder área.
+
+> [!note] 📋 Nivel Avanzado
+>
+> - [ ] Resuelvo áreas de polinomios con cuatro raíces factorizando y tabulando signos antes de integrar.
+> - [ ] Reconozco integrandos sin antiderivada elemental (como $e^{-x^2}$) y los dejo en forma de $\text{erf}$ o numérica.
+> - [ ] Traduzco problemas de acumulación (velocidad → distancia, densidad → probabilidad) a un área bajo la curva.
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes y material de la casa
+>
+> - J. Stewart, *Cálculo* (Cengage): aplicaciones del integral definido — área bajo una curva y área entre curvas.
+> - G. Strang, *Calculus* (Wellesley-Cambridge): el área como límite de sumas de Riemann.
+> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/01 - Integral de Riemann|01 - Integral de Riemann]] — la definición formal que justifica el área como límite de sumas.
+> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo|04 - Teorema Fundamental del Cálculo]] — la herramienta principal de evaluación.
+> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/02 - Propiedades de la Integral|02 - Propiedades de la Integral]] — linealidad y aditividad para partir intervalos.
+> - [[Unidad 6 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida|01 - Métodos de Integración Definida]] — técnicas de evaluación con límites.
+> - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/01 - Integrales Impropias|01 - Integrales Impropias]] — áreas con límites infinitos.
+> - [[Unidad 6 - Integrales/VI - Otras Técnicas/01 - Integración Numérica|01 - Integración Numérica]] — aproximaciones cuando no hay forma cerrada.
+> - [[Unidad 7 - Aplicaciones de la Integral/II - Volúmenes/01 - Volúmenes de Sólidos de Revolución|01 - Volúmenes de Sólidos de Revolución]] — la misma área girada a tres dimensiones.
+>
+> **Conexiones interdisciplinarias:** en física, el área bajo la curva de velocidad es desplazamiento y bajo la de fuerza es trabajo; en probabilidad, el área bajo una función de densidad $f(x)$ es la probabilidad $P(a \leq X \leq b) = \int_a^b f(x)\,dx$; en diseño y arquitectura, esta misma idea mide superficies irregulares.
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/cal1-u7
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Cuándo es la integral definida exactamente el área bajo la curva?::Cuando $f \geq 0$ y es continua en $[a,b]$: $\text{Área} = \int_a^b f(x)\,dx$.
+> - ¿Qué pasa si $f$ es negativa en todo el intervalo?::La integral sale negativa; el área geométrica es $-\int_a^b f(x)\,dx = \int_a^b |f(x)|\,dx$.
+> - ¿Cómo se calcula el área total si $f$ cambia de signo?::Se hallan las raíces, se parte el intervalo, se integra por trozos y se suman los valores absolutos: $\sum_i \left|\int_{x_{i-1}}^{x_i} f\right|$.
+> - ¿Qué ahorra reconocer una función par?::Integrar solo la mitad positiva y duplicar: $\text{Área} = 2\int_0^a f(x)\,dx$ en $[-a, a]$.
+> - ¿Área neta o área total?::Neta = $\int_a^b f$ (puede ser $0$ o negativa); total = $\int_a^b |f|$ (siempre $\geq 0$). El enunciado decide cuál.
+> - ¿Qué hacer si el integrando no tiene antiderivada elemental (ej. $e^{-x^2}$)?::Expresar con $\text{erf}$ o dejar valor numérico; la definición como límite de sumas sigue vigente.
+> - ¿Cómo se traduce "distancia recorrida" a área?::Es el área bajo la curva de velocidad: $\int_{t_0}^{t_1} v(t)\,dt$ cuando $v \geq 0$.
+> - ¿Cuál es el primer paso antes de cualquier integral de área?::Dibujar la región, verificar positividad y buscar raíces y simetrías.
+
+---
+
+## 🔗 Conexiones
+
+> [!info] 🔗 Notas relacionadas
+>
+> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/01 - Integral de Riemann|01 - Integral de Riemann]] — la definición formal que justifica el área como límite de sumas.
+> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo|04 - Teorema Fundamental del Cálculo]] — la herramienta principal de evaluación.
+> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/02 - Propiedades de la Integral|02 - Propiedades de la Integral]] — linealidad y aditividad para partir intervalos.
+> - [[Unidad 6 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida|01 - Métodos de Integración Definida]] — técnicas de evaluación con límites.
+> - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/01 - Integrales Impropias|01 - Integrales Impropias]] — áreas con límites infinitos.
+> - [[Unidad 6 - Integrales/VI - Otras Técnicas/01 - Integración Numérica|01 - Integración Numérica]] — aproximaciones cuando no hay forma cerrada.
+> - [[Unidad 7 - Aplicaciones de la Integral/II - Volúmenes/01 - Volúmenes de Sólidos de Revolución|01 - Volúmenes de Sólidos de Revolución]] — la misma área girada a tres dimensiones.
+> - [[Unidad 7 - Aplicaciones de la Integral/III - Longitud de Arco/01 - Longitud de Curva|01 - Longitud de Curva]] — otra aplicación geométrica del integral definido.
+>
+> **Conexiones interdisciplinarias:** física (velocidad → distancia, fuerza → trabajo), probabilidad (densidad → $P(a \leq X \leq b) = \int_a^b f(x)\,dx$) y diseño (superficies irregulares).
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Practica primero los ejercicios 1 y 3: positividad directa, el caso más limpio.
+> - Después el 2 y el 5: cambio de signo con raíces, el caso de examen.
+> - Cierra con 4 y 6: simetría par y acumulación física.
+> - Cuando lo tengas, continúa con [[Unidad 7 - Aplicaciones de la Integral/I - Áreas/02 - Área entre Curvas|02 - Área entre Curvas]] y luego los volúmenes de revolución de la misma unidad.
+
+---
+
+**Tags:** #MATG1045 #unidad7 #area-bajo-la-curva #integrales #aplicaciones #areas #geometria-analitica #interpretacion-geometrica

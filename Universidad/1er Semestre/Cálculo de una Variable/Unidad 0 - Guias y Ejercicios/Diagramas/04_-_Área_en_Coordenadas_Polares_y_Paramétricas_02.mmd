@@ -1,0 +1,7 @@
+flowchart LR
+    A["Curva paramétrica: x = x(t), y = y(t)"] --> B["Ancho infinitesimal: dx = x'(t) dt"]
+    A --> C["Altura de la franja: y(t)"]
+    B --> D["Área elemental: y(t) x'(t) dt"]
+    C --> D
+    D --> E["Área acumulada: A = ∫ y(t) x'(t) dt"]
+    E --> F["Revisar orientación y tomar valor absoluto si corresponde"]
