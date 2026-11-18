@@ -3077,7 +3077,13 @@ el commit de esta línea de PUSHEADO.
 
 ### `opencode-onedrive` — Cálculo 1: U7 completa + VI (**65 de 65**) — 17/11/2026
 
-> [!warning] PUSHEO EN CURSO · `667cff45` (U7) + `3d472d8d` (VI) · ~2 min
+> [!success] PUSHEADO `6317d9e4` · 17/11/2026 — `origin/master` = `master` = `6317d9e4`
+>
+> Push **fast-forward, sin `--force`** (autorizado por el dueño del vault):
+> `23175889..6317d9e4` (`sesion/opencode-onedrive`) y `b8912930..6317d9e4` (`master`).
+> Incluye el merge de `origin/master` (el rediseño de mar de `opencode-site` y el contrato
+> de `CYSOC` de `opencode`): el conflicto del LEEME se resolvió conservando **ambos bloques**
+> ajenos primero y mío después.
 >
 > - **Hecho:** U7 completa (Áreas 01-04, Volúmenes 01-02, Longitud de Curva) al formato de
 >   la casa con 3 diagramas nuevos conectados (pasan round-trip) y conservando los 3 bloques
@@ -3094,6 +3100,7 @@ el commit de esta línea de PUSHEADO.
 > - **Cierre total:** `qa_formato_calculo1 --solo "1er Semestre/Cálculo de una Variable"` →
 >   **65 notas, 0 hallazgos**. `npm run sync` ✓ (14 ZIPs) y `npm run build` ✓ (818 páginas,
 >   786 notas / 17.115 apartados en el índice de búsqueda).
+> - **Doc de cierre:** `39b05abc` (bloque PUSHEO EN CURSO) y este bloque PUSHEADO.
 > - **Pendiente:** nada en Cálculo de una Variable. Queda el aviso ajeno al dueño: las
 >   18 PNG huérfanas `tabla-verdad-*.png` de MatDisc + `manifiesto_tablas_verdad.json`,
 >   y verificar en `neonotes-espol.vercel.app` que la reconstrucción desplegó.
