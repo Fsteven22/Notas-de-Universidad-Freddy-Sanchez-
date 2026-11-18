@@ -3294,3 +3294,20 @@ el commit de esta línea de PUSHEADO.
 > **Nota de proceso:** el bloque recompuso la sección `## 📚 Referencias` antes del `---` final, dejando las notas terminadas en `**Tags:**`, como siempre.
 >
 > **PUSHEADO `8a36ab2a`** — `38fee96d` (+ merge de `origin/master`)
+
+### `opencode` — CYSOC: fixes de render (`> >` suelto y Tags pegados) — 18/11/2026
+
+> [!success] 19 notas corregidas · **61 líneas** `> >` sueltas bajadas de nivel · **6 pies** de Tags despegados · validador con R8 + R13 nuevas
+>
+> Dos defectos de render reportados por el dueño:
+>
+> - **`> >` sin callout** (53 bloques / 61 líneas en 19 notas de U1, U2 y U3/I): el prefijo `> >` solo es legítimo como contenido de un callout anidado con su propio `[!tipo]` (contrato R8; patrón de Diseño y SBD, donde los ~1200 `> >` cuelgan todos de un header). Un `> >` suelto se renderiza como texto indentado sin estilo (doble barra, sin caja). El dato extra pasó al callout padre conservando su emoji (`💡 📌 ⚠️`): **el texto no se tocó**.
+> - **`**Tags:**` pegado al último callout** (6 notas de U1): separado con línea en blanco + `---` + línea en blanco, el patrón de las 36 notas del dueño en la materia y de las notas de Diseño/SBD. El bloque de tags queda en la raíz.
+>
+> **Validador y contrato:**
+> - `qa_formato_cysoc.py`: nueva `R8-doble-gt-sin-callout` (H) y `R13-tags-pegado` (W).
+> - `FORMATO-CYSOC.md`: R8 ampliado (el `> >` exige callout anidado) y R13 con el patrón de separación antes de los tags.
+>
+> **QA:** 43 notas · 188 hallazgos (2 H preexistentes en la nota raíz) · **R8 y R13 en 0**, sin regresiones. Backup de los 43 `.md` en `%TEMP%\opencode\backup_cysoc_fixgt_20261118_0131`.
+>
+> **PUSHEO EN CURSO** — `0ece2a2b`
