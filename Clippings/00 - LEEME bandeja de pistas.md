@@ -3196,3 +3196,40 @@ el commit de esta línea de PUSHEADO.
 > - **Nota de proceso:** los 84 `.mmd` se generaron antes del reinicio del servidor y se re-verificaron y commitieron después (no hubo pérdida de archivos; staged/código de las 84 fuentes solo tras verificar que ninguna era ajena).
 >
 > **PUSHEADO `92a77684`** — `cf5a2d05` (+ merges de `origin/master`)
+
+---
+
+### `opencode-site` — estados reales + mapa imprimible + limpieza de clase inerte — 17/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-rediseno` → `master` (merge `--ff-only`) → `origin/master`
+>
+> - **Hecho (código, `9bb5adb9` `1c654535` `dfbef1e5`):**
+>   - **Los estados dicen lo real** (pedido del dueño): Preuniversitario `Completado`,
+>     1er Semestre `Reconstrucción` (se rehace con todas las materias), 2do y 3er
+>     `En curso` (incompletos por Comunicación y por los demás). Portada y mapa 3D
+>     heredan `estadosSem` + `claseEstado`.
+>   - **El mapa se imprime como la Lista** (`/mapa/` → Imprimir o Guardar como PDF):
+>     el canvas WebGL y su interfaz se ocultan en `@media print`; la Lista sale a dos
+>     columnas negro sobre blanco, sin partir semestres entre hojas, y **muestra el
+>     rótulo del estado** (preuniversitario `Completado`, 1er `Reconstrucción`,
+>     2do y 3er `En curso`).
+>   - **Limpieza**: eliminadas 13 apariciones inertes de `text-white`/`text-black`
+>     (9 archivos). Verificado que nunca ganaban la cascada (todos calculaban a
+>     `var(--nx-text)` en ambos temas); SearchModal pasa a `text-[var(--nx-text)]`.
+>
+> - **Verificado sobre el build de producción** (818 páginas, `astro preview`):
+>   - Portada: contraste AA en 18/18 combinaciones página×tema (todo el texto visible).
+>   - Mapa con estados: portada consistente con `estadosSem` y 3D re-pintando
+>     hubs/nodos con los mismos tokens (QA contra la web viva).
+>   - Impresión del mapa: emulando `@media print`, canvas y botones desaparecen, la
+>     Lista se ve a 2 columnas negro sobre blanco y los semestres no se parten.
+>   - Modo lectura (602→671 px), buscador (abre/filtra/Esc), flashcards, marcar leída,
+>     barra de progreso, tema persistente, mapa 3D⇄Lista, 10/10 funcional.
+>   - Contraste mínimo AA en ambos temas; 0 errores de consola; 0 desbordes; 1 solo
+>     degradado (2 px), 0 sombras, 0 blur, radios 100 % 4 px.
+>
+> - **Sync local**: `npm run sync` con `VAULT_DIR=../Universidad` para que el build
+>   local vuelva a coincidir con la producción (787 notas, 4 semestres).
+>
+> - **No se tocó** la zona `opencode`, ni `Universidad/**`, ni `site/scripts/**`.
+>   Sin `npm run sync` en OneDrive; la copia del repo es la fuente del build.
