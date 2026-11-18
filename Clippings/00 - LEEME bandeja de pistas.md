@@ -3067,4 +3067,4 @@ el commit de esta línea de PUSHEADO.
 >
 > **Avanza:** contrato y validador commiteados (`35fca819`). La transformación mecánica arranca en cuanto el dueño decida los 3 puntos.
 >
-> **PUSHEO EN CURSO** — `35fca819`
+> **PUSHEADO `cb4f4342`** — `35fca819` (+ merge `49f769da`)
