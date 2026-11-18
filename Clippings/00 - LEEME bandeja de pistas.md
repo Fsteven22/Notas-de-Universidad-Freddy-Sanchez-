@@ -3065,4 +3065,6 @@ el commit de esta línea de PUSHEADO.
 >
 > **No se tocaron** cambios sin commitear ajenos (POO nota raíz + `Recursos Visuales.md` + `Unidad 1 - Fundamentos/04 - Encapsulamiento`, Inglés III de onedrive).
 >
-> **Avanza:** contrato y validador commiteados (este bloque). La transformación mecánica arranca en cuanto el dueño decida los 3 puntos.
+> **Avanza:** contrato y validador commiteados (`35fca819`). La transformación mecánica arranca en cuanto el dueño decida los 3 puntos.
+>
+> **PUSHEO EN CURSO** — `35fca819`
