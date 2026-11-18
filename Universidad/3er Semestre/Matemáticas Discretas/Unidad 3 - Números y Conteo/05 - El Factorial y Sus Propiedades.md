@@ -234,8 +234,10 @@ tags: [MATG1051, unidad3, factorial, permutaciones, combinaciones, binomial]
 > - [[Unidad 3 - Números y Conteo/04 - Principios de Multiplicación y Suma|04 - Principios de Multiplicación y Suma]] — el principio multiplicativo detrás de $n!$.
 > - [[Unidad 2 - Funciones y Relaciones/04 - Sucesiones y Cadenas|04 - Sucesiones y Cadenas]] — el factorial como producto de sucesión telescópica.
 > - [[Unidad 1 - Logica y Conjuntos/III - Razonamiento Inductivo/03 - Inducción Matemática|03 - Inducción Matemática]] — la inducción que prueba $n! = n \cdot (n-1)!$ y $n! \geq 2^{n-1}$.
-> - Unidad 0 - Guias y Ejercicios/Lecciones/SOLUCIÓN_LEC_2.pdf — Lección 2 (04/11/2026): el producto telescópico $\prod_{i=2}^n(1-\frac{1}{i^2}) = \frac{n+1}{2n}$ resuelto con inducción, y la relación $f \,R\, g \iff f(0)=g(0)$ sobre funciones con su clase $[f] = \{g : g(0) = 0\}$.
-> - Unidad 0 - Guias y Ejercicios/Lecciones/SOLUCIÓN_LEC_1.pdf — Lección 1 (04/11/2026): fundamentos de lógica y demostraciones.
+> - Unidad 0 - Guias y Ejercicios/Lecciones/SOLUCIÓN_LEC_2.pdf — Lección 2 (04/11/2026, paralelo 1): el producto telescópico $\prod_{i=2}^n(1-\frac{1}{i^2}) = \frac{n+1}{2n}$ resuelto con inducción, y la relación $f \,R\, g \iff f(0)=g(0)$ sobre funciones con su clase $[f] = \{g : g(0) = 0\}$.
+> 📎 [[../Unidad 0 - Guias y Ejercicios/Lecciones/SOLUCIÓN_LEC_2.pdf|SOLUCIÓN_LEC_2.pdf]]
+> - Unidad 0 - Guias y Ejercicios/Lecciones/SOLUCIÓN_LEC_1.pdf — Lección 1 (14/10/2026, paralelo 1), capítulo 1 «Conjunto, lógica, demostraciones y circuitos combinatorios»: proposición con cuantificadores múltiples resuelta con testigo.
+> 📎 [[../Unidad 0 - Guias y Ejercicios/Lecciones/SOLUCIÓN_LEC_1.pdf|SOLUCIÓN_LEC_1.pdf]]
 
 ---
 

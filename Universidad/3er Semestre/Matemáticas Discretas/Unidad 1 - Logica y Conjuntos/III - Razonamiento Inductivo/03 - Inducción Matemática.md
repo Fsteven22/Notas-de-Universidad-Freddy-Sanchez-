@@ -321,8 +321,12 @@ tags: [matematicas-discretas, induccion-matematica, induccion-fuerte, demostraci
 > [!quote] 📖 Fuentes
 >
 > - Material de clase MATG1051: principio simple, casos y ejercicios 1–4 (los de inducción fuerte viven en el historial git de esta nota).
-> - _SOLUCIÓN_LEC_2.pdf_, Lección 2 (04/11/2026), Escuela Superior Politécnica del Litoral, Facultad de Ciencias Naturales y Matemáticas — Matemáticas Discretas · Profesor Cristhian Hernández · Capítulo: Conjuntos, Funciones, Sucesiones, Relaciones: el **producto telescópico** $\prod_{i=2}^{n}(1-\frac{1}{i^2}) = \frac{n+1}{2n}$ resuelto con el mismo esqueleto del ejemplo "Taller 1 (2026)" de esta nota (separar el último factor + hipótesis de inducción + $(p+1)^2-1 = p(p+2)$). El PDF vive en `Unidad 0 - Guias y Ejercicios/Lecciones/`.
-> - _SOLUCIÓN_LEC_1.pdf_, Lección 1 (04/11/2026): fundamentos de lógica y demostraciones relevantes para los pasos base e inductivo.
+> - _SOLUCIÓN_LEC_2.pdf_, Lección 2 (04/11/2026, paralelo 1), Escuela Superior Politécnica del Litoral, Facultad de Ciencias Naturales y Matemáticas — Matemáticas Discretas · Profesor Cristhian Hernández · Capítulo: Conjuntos, Funciones, Sucesiones, Relaciones: el **producto telescópico** $\prod_{i=2}^{n}(1-\frac{1}{i^2}) = \frac{n+1}{2n}$ resuelto con el mismo esqueleto del ejemplo "Taller 1 (2026)" de esta nota (separar el último factor + hipótesis de inducción + $(p+1)^2-1 = p(p+2)$).
+> 📎 [[../../Unidad 0 - Guias y Ejercicios/Lecciones/SOLUCIÓN_LEC_2.pdf|SOLUCIÓN_LEC_2.pdf]]
+> - _SOLUCIÓN_LEC_1.pdf_, Lección 1 (14/10/2026, paralelo 1), capítulo 1 «Conjunto, lógica, demostraciones y circuitos combinatorios»: el punto 1 es una proposición con cuantificadores múltiples resuelta con testigo, no una inducción; sirve de contraste con el método de esta nota.
+> 📎 [[../../Unidad 0 - Guias y Ejercicios/Lecciones/SOLUCIÓN_LEC_1.pdf|SOLUCIÓN_LEC_1.pdf]]
+> - _lección I P4.pdf_ y _Solución lección I P4.pdf_ (PAO I 2026, Prof. Ebner Pineda, 04/06/2026): el ejercicio 1 es exactamente una inducción sobre $\sum_{k=1}^{n} k^2 2^k$, con su solución completa — material de apoyo para el esqueleto base/paso inductivo.
+> 📎 [[../../Unidad 0 - Guias y Ejercicios/Lecciones/lección I P4.pdf|lección I P4.pdf]] · 📎 [[../../Unidad 0 - Guias y Ejercicios/Lecciones/Solución lección I P4.pdf|Solución lección I P4.pdf]]
 
 ---
 

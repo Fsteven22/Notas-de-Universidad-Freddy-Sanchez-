@@ -36,6 +36,22 @@ tags: [unidad0, indice, recursos]
 
 ---
 
+## 📝 Lecciones
+
+> [!note] 📝 Lecciones del aula y sus soluciones
+>
+> Las lecciones con su solución y, cuando existe, su rúbrica. Se enlazan con `📎`; el sitio los sube igual que los embeds del inventario de la Unidad 0.
+>
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Lecciones/SOLUCIÓN_LEC_1.pdf|SOLUCIÓN_LEC_1.pdf]] — Lección 1 (14/10/2026, paralelo 1, cap. 1 «Conjunto, lógica, demostraciones y circuitos combinatorios»): punto 1 con cuantificadores múltiples, resuelto con testigo.
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Lecciones/RÚBRICA_LEC_1.pdf|RÚBRICA_LEC_1.pdf]] — rúbrica de evaluación de la Lección 1 (14/10/2026, paralelo 1).
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Lecciones/SOLUCIÓN_LEC_2.pdf|SOLUCIÓN_LEC_2.pdf]] — Lección 2 (04/11/2026, paralelo 1, cap. «Conjuntos, Funciones, Sucesiones, Relaciones»): inducción del producto telescópico y relación de equivalencia sobre funciones con su clase $[f]$.
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Lecciones/2026_1PAO_Lección_1_(Solución)_MATG1051.pdf|2026_1PAO_Lección_1_(Solución)_MATG1051.pdf]] — Lección 1 de la 1PAO (03/06/2026, paralelo 2): inducción de $2^n > n^2$ para $n \geq 6$.
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Lecciones/lección I P4.pdf|lección I P4.pdf]] — Lección I (20 %) de la PAO I 2026 (Prof. Ebner Pineda, 04/06/2026): inducción, validez de un argumento y circuito.
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Lecciones/Solución lección I P4.pdf|Solución lección I P4.pdf]] — solución completa de la Lección I.
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Lecciones/notas_maquinas_automatas.pdf|notas_maquinas_automatas.pdf]] — apuntes de «Máquinas y autómatas de estado» (Ebner Pineda, 38 págs.), material de la Unidad 6.
+
+---
+
 ## 📥 Pendiente de cargar
 
 > [!warning] 📬 Material que falta

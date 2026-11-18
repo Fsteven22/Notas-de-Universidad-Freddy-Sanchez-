@@ -285,9 +285,11 @@ tags: [matematicas-discretas, relaciones, equivalencia, orden-parcial, particion
 > 
 > [2] R. Johnsonbaugh, _Discrete Mathematics_, 8th ed. Hoboken, NJ, USA: Pearson, 2018, sec. 3.4 «Equivalence Relations», p. 151.
 > 
-> [3] _SOLUCIÓN_LEC_2.pdf_, Lección 2 (04/11/2026), Escuela Superior Politécnica del Litoral, Facultad de Ciencias Naturales y Matemáticas — Matemáticas Discretas · Profesor Cristhian Hernández · Capítulo: Conjuntos, Funciones, Sucesiones, Relaciones: inducción $\prod_{i=2}^n(1-\frac{1}{i^2}) = \frac{n+1}{2n}$ (punto 1) y $f \, R \, g \iff f(0)=g(0)$ con su clase $[f] = \{g : g(0) = 0\}$ (punto 2). En `Unidad 0 - Guias y Ejercicios/Lecciones/`.
+> [3] _SOLUCIÓN_LEC_2.pdf_, Lección 2 (04/11/2026, paralelo 1), Escuela Superior Politécnica del Litoral, Facultad de Ciencias Naturales y Matemáticas — Matemáticas Discretas · Profesor Cristhian Hernández · Capítulo: Conjuntos, Funciones, Sucesiones, Relaciones: inducción $\prod_{i=2}^n(1-\frac{1}{i^2}) = \frac{n+1}{2n}$ (punto 1) y $f \, R \, g \iff f(0)=g(0)$ con su clase $[f] = \{g : g(0) = 0\}$ (punto 2).
+> 📎 [[../Unidad 0 - Guias y Ejercicios/Lecciones/SOLUCIÓN_LEC_2.pdf|SOLUCIÓN_LEC_2.pdf]]
 >
-> [4] _SOLUCIÓN_LEC_1.pdf_, Lección 1 (04/11/2026): lógica del primer orden, demostraciones y fundamentos de conjunto para la Lección 2.
+> [4] _SOLUCIÓN_LEC_1.pdf_, Lección 1 (14/10/2026, paralelo 1), capítulo 1 «Conjunto, lógica, demostraciones y circuitos combinatorios»: proposición con cuantificadores múltiples $\forall x>0, \exists y \in \mathbb{R}$ resuelta con testigo, y la escala de evaluación en _RÚBRICA_LEC_1.pdf_.
+> 📎 [[../Unidad 0 - Guias y Ejercicios/Lecciones/SOLUCIÓN_LEC_1.pdf|SOLUCIÓN_LEC_1.pdf]] · 📎 [[../Unidad 0 - Guias y Ejercicios/Lecciones/RÚBRICA_LEC_1.pdf|RÚBRICA_LEC_1.pdf]]
 
 ---
 
