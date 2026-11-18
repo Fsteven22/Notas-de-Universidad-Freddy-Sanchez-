@@ -1,0 +1,18 @@
+flowchart TD
+    A["+5 V"]
+    B["Logic HIGH<br/>(Binary 1)"]
+    C["+2 V"]
+    D["Zona Indefinida<br/>(no garantizada)"]
+    E["+0.8 V"]
+    F["Logic LOW<br/>(Binary 0)"]
+    G["0 V"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+
+    style B fill:#e1ffe1
+    style D fill:#fff4e1
+    style F fill:#ffe1e1

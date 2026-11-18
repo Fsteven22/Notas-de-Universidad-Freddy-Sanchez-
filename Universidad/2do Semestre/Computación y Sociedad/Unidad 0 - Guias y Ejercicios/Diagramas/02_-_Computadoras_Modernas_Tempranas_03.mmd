@@ -1,0 +1,10 @@
+flowchart TD
+    CPU["CPU<br/>    ├── Unidad de Control<br/>    ├── ALU (Unidad Aritmético-Lógica)<br/>    └── Registros"]
+    MEM["Memoria Principal<br/>Datos + Instrucciones"]
+    IO["Sistema de<br/>Entrada / Salida"]
+    CPU --> MEM
+    CPU --> IO
+
+    style CPU fill:#e1f5ff
+    style MEM fill:#e1ffe1
+    style IO fill:#fff4e1

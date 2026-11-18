@@ -1,0 +1,15 @@
+flowchart TD
+    A["Tabla de frecuencias"]
+    B["Construir árbol de Huffman"]
+    C["Asignar 0/1 según rama izquierda/derecha"]
+    D["Código prefijo por símbolo"]
+    E["Símbolos frecuentes = código corto"]
+    F["Símbolos raros = código largo"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    D --> F
+
+    style A fill:#e1f5ff
+    style D fill:#1e3a5f,color:#fff

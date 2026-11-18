@@ -3179,3 +3179,14 @@ el commit de esta línea de PUSHEADO.
 > - **Sync/Vercel:** llegará con este push al sitio.
 > - **Sync/Vercel:** el último build del sitio se hizo ANTES de este commit (18 nov 2026);
 >   estos 4 diagramas llegarán al sitio con este push.
+
+### `opencode` — CYSOC: 84 `.mmd` reconstruidos (round-trip OK) — 17/11/2026
+
+> [!success] 84 SVG flowchart recuperaron su fuente `.mmd` · verifica_mmd 84/84 OK · 18 pendientes (timeline/mindmap/sequence)
+>
+> - **Hecho:** `svg_a_mmd.py --lote` reconstruyó las **84** fuentes flowchart-v2 de `U0/Diagramas/` a partir de sus SVG (ids `my-svg-flowchart-*` y `my-svg-L_*_*_n`). Round-trip verificado con `verifica_mmd.py`: **84/84 OK** (texto visible + viewBox coinciden con el SVG original). Nunca se sobrescribió un `.mmd` existente.
+> - **Pendientes (reconstrucción manual):** **18 SVG** que no son flowchart-v2: **9 timeline**, **8 mindmap**, **1 sequence** (listados en la salida de `verifica_mmd`; U1 toca 4 timelines).
+> - **QA:** queda pendiente tras los manuales — `qa_formato_cysoc` hoy marca `R12-svg-sin-mmd = 103 – 84 = 19` (los 18 manuales + 1 de la edición; el valor exacto se vuelve a medir al cerrar los manuales).
+> - **Nota de proceso:** los 84 `.mmd` se generaron antes del reinicio del servidor y se re-verificaron y commitieron después (no hubo pérdida de archivos; staged/código de las 84 fuentes solo tras verificar que ninguna era ajena).
+>
+> **PUSHEADO `92a77684`** — `cf5a2d05` (+ merges de `origin/master`)

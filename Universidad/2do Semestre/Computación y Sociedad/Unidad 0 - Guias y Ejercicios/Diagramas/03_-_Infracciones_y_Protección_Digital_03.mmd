@@ -1,0 +1,18 @@
+flowchart TD
+    A["Situación de infracción digital"]
+    B{"¿Alguien registró un dominio<br/>parecido a tu marca?"}
+    C["Typosquatting"]
+    D["Cybersquatting"]
+    E{"¿Una plataforma aloja<br/>contenido infractor<br/>subido por usuarios?"}
+    F["Pierden protección Safe Harbor"]
+    G["Mantienen protección Safe Harbor"]
+    H{"¿Quieres prevenir el uso no<br/>autorizado desde el diseño<br/>técnico del archivo?"}
+    I["DRM"]
+    A --> B
+    B -->|"Sí, con errores de tipeo"| C
+    B -->|"Sí, similar/relacionado<br/>a tu marca"| D
+    A --> E
+    E -->|"Notificaste y no actuaron"| F
+    E -->|"Notificaste y sí actuaron"| G
+    A --> H
+    H -->|"Sí"| I

@@ -1,0 +1,24 @@
+flowchart TD
+    R["Raíz (100)"]
+    N1["F (45)"]
+    N2["CDABE (55)"]
+    N3["CD (25)"]
+    N4["ABE (30)"]
+    C["C (12)"]
+    D["D (13)"]
+    N5["AB (14)"]
+    E["E (16)"]
+    A["A (5)"]
+    B["B (9)"]
+    R --> N1
+    R --> N2
+    N2 --> N3
+    N2 --> N4
+    N3 --> C
+    N3 --> D
+    N4 --> N5
+    N4 --> E
+    N5 --> A
+    N5 --> B
+
+    style R fill:#1e3a5f,color:#fff

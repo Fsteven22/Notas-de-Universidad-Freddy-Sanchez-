@@ -1,0 +1,17 @@
+flowchart TD
+    A["No puedo cargar un sitio web"]
+    B{"¿Otras apps que usan internet funcionan? (WhatsApp, email, etc.)"}
+    C["Problema de conexión a Internet (red/router/ISP)"]
+    D{"¿Otros sitios web cargan bien?"}
+    E["Problema del navegador o DNS"]
+    F["Problema del servidor de ese sitio específico"]
+    A --> B
+    B -->|"No, nada funciona"| C
+    B -->|"Sí, solo ese sitio falla"| D
+    D -->|"No, ningún sitio carga"| E
+    D -->|"Sí, solo ese sitio"| F
+
+    style A fill:#e1f5ff
+    style C fill:#1e3a5f,color:#fff
+    style E fill:#1e3a5f,color:#fff
+    style F fill:#1e3a5f,color:#fff

@@ -1,0 +1,22 @@
+flowchart TD
+    DS["Desarrollo Sostenible"]
+    EC["🌱 Ambiental"]
+    SO["🤝 Social"]
+    EC2["💰 Económico"]
+    EC1["Proteger ecosistemas<br/>Reducir emisiones<br/>Gestionar residuos"]
+    SO1["Equidad<br/>Salud<br/>Educación"]
+    EC3["Crecimiento<br/>Empleo<br/>Innovación"]
+    DS --> EC
+    DS --> SO
+    DS --> EC2
+    EC --> SO
+    SO --> EC2
+    EC2 --> EC
+    EC --> EC1
+    SO --> SO1
+    EC2 --> EC3
+
+    style DS fill:#e1f5ff
+    style EC fill:#e1ffe1
+    style SO fill:#fff4e1
+    style EC2 fill:#f5e1ff

@@ -1,0 +1,16 @@
+flowchart TD
+    A["Fallo de IA"]
+    B["¿Sigue un patrón sistemático?"]
+    C["🔴 SESGO: Discrimina de forma consistente"]
+    D["¿Genera información factualmente incorrecta?"]
+    E["🟡 ALUCINACIÓN: Inventa con confianza"]
+    F["Otro tipo de error"]
+    A --> B
+    B -->|"Sí"| C
+    B -->|"No"| D
+    D -->|"Sí"| E
+    D -->|"No"| F
+
+    style C fill:#ffe1e1
+    style E fill:#fff4e1
+    style F fill:#e1f5ff

@@ -1,0 +1,24 @@
+flowchart TD
+    A["Justificación de una acción<br/>con una computadora"]
+    B{"¿Se basa en que<br/>'el sistema lo permitió'?"}
+    C["Falacia del juego de computadora"]
+    D{"¿Se basa en que<br/>'era fácil copiarlo'?"}
+    E["Falacia de la información gratuita"]
+    F["Candy-from-a-Baby Fallacy"]
+    G{"¿Se basa en que<br/>'solo quería aprender'?"}
+    H["Hacker's Fallacy"]
+    I{"¿Se basa en que<br/>'no es ilegal'?"}
+    J["Falacia del ciudadano que respeta la ley"]
+    K{"¿Se basa en que<br/>'no hice daño real'?"}
+    L["Falacia a prueba de impactos"]
+    A --> B
+    B -->|"Sí"| C
+    A --> D
+    D -->|"Sí, sobre datos/información"| E
+    D -->|"Sí, sobre software/trabajo ajeno"| F
+    A --> G
+    G -->|"Sí"| H
+    A --> I
+    I -->|"Sí"| J
+    A --> K
+    K -->|"Sí"| L
