@@ -3129,7 +3129,17 @@ el commit de esta línea de PUSHEADO.
 
 ### `opencode-onedrive` — Rango Antiderivadas→Longitud de Curva: revisión y mejora — 17/11/2026
 
-> [!warning] PUSHEO EN CURSO · `dee07807` · ~2 min
+> [!success] PUSHEADO `ce5ff979` · 17/11/2026 — `origin/master` = `master` = `ce5ff979`
+>
+> Push **fast-forward, sin `--force`** (autorizado por el dueño del vault):
+> `867f61cd..ce5ff979` (`sesion/opencode-onedrive`) y `db2a1f86..ce5ff979` (`master`).
+> Incluye el merge de `origin/master` (la decisión del dueño del 17/11 sobre CYSOC:
+> PDFs sin embebido + PNG renombrados y centralizados); el conflicto del LEEME se resolvió
+> conservando **ambos bloques**, ajeno primero y mío después.
+>
+> - **Commits de esta ronda:** `dee07807` (contenido: mindmaps → rectángulos) ·
+>   `117c62ac` (bloque PUSHEO EN CURSO) · `ce5ff979` (merge de `origin/master`) ·
+>   este bloque PUSHEADO.
 >
 > - **Hecho:** los **4** diagramas del rango que aún eran `mindmap` (burbujas) pasan a
 >   `flowchart TB` con subgrafos de rectángulos conservando intacto todo el texto:
