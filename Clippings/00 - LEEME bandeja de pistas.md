@@ -3428,3 +3428,23 @@ el commit de esta línea de PUSHEADO.
 > - `Universidad/2do Semestre/Computación y Sociedad/Unidad 3 - Representación de la información/I - Sistemas de Numeración/*.md` (8)
 > - `Universidad/2do Semestre/Computación y Sociedad/Unidad 3 - Representación de la información/II - Compresión de Datos/*.md` (4)
 > - `Clippings/00 - LEEME bandeja de pistas.md`
+
+---
+
+### `opencode` — CYSOC: U4 (Historia de Internet) a 0 hallazgos — 18/11/2026
+
+> [!warning] **PUSHEO EN CURSO**
+>
+> Anuncio previo al push — se cierra con el bloque `PUSHEADO <hash>`.
+>
+> **U4 = 7 notas** (`Unidad 4 - Historia de Internet`): **26 → 0 hallazgos**.
+> - **Paso 1** (R1-tags, 7): `tags: [CCPG1004, cysoc, unidad4, …]` (ej. `historia-internet`, `ingenieria-social`, `privacidad-proteccion-datos`).
+> - **Paso 2a** (R14, 7 embeds dentro de callouts): lectura propia fundamentada en el texto de cada SVG (`**Se lee así:**`) — separación Internet/WWW, Web 1.0→4.0, timeline de HTML 1991→2014, mapa de crimen informático/malware, catálogo de ingeniería social, sabotaje de servicios vs interceptación, mapa de privacidad.
+> - **Paso 2b** (R4 + R14, 7 embeds top-level): envueltos en callout con lectura — diagnóstico de "no carga la página", orígenes de amenazas, flowcharts ¿qué malware es? / ¿qué fraude es? / DoS vs DDoS vs sniffer, anatomía de un DDoS y selector de protección para datos/red/identidad.
+> - QA de la materia: **34 W · 0 H** (resto en U5 y U6; U1–U4 a **0**).
+>
+> Backup de las 7 notas en `%LOCALAPPDATA%\Temp\opencode\backup_cysoc_u4_20261118_2103`.
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Computación y Sociedad/Unidad 4 - Historia de Internet/*.md` (7)
+> - `Clippings/00 - LEEME bandeja de pistas.md`

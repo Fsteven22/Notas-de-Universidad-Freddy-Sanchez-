@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1004, cysoc, unidad4, privacidad-proteccion-datos]
 ---
 
 # 🔐 Privacidad y Protección de Datos
@@ -11,6 +12,8 @@ dg-publish: true
 > Barack Obama lo resumió así: *"It's now clear this cyber threat is one of the most serious economic and national security challenges we face as a nation."* Esta nota cierra el bloque de ciberseguridad conectando dos ideas: **el derecho a la privacidad** que toda persona tiene, y los **métodos concretos** con los que se protege (o se vulnera) ese derecho en la práctica.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Privacidad_y_Protección_de_Datos_01.svg]]
+>
+> **Se lee así:** el diagrama abre el mapa de la privacidad: el **derecho a la privacidad** como bien, los **métodos de protección** (biometría, encriptación, firewalls, control de acceso) y las **otras consecuencias** del descontrol: **cyberbullying** y **cyberstalking**.
 
 ---
 
@@ -115,7 +118,13 @@ dg-publish: true
 
 ## 🧭 Flujograma de Decisión — ¿Qué método de protección aplicar?
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Privacidad_y_Protección_de_Datos_02.svg]]
+> [!info] 📋 Diagrama de flujo — ¿Qué protección usar?
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Privacidad_y_Protección_de_Datos_02.svg]]
+>
+> **Se lee así:** el flowchart elige la medida según el activo: ¿datos viajando por Internet → **encriptación / HTTPS**; ¿el perímetro de tu red o equipo → **firewall**; ¿quién accede es realmente el dueño → contraseña + verificación en dos pasos; ¿rasgos físicos del usuario → **biometría**.
+>
+> **Por qué importa:** no hay una única medida correcta: cada capa protege un activo distinto y hacen falta todas.
 
 ---
 
