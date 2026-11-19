@@ -12,6 +12,10 @@ tags: [MATG1051, unidad3, factorial, permutaciones, combinaciones, binomial]
 > El **factorial** de un entero no negativo $n$, denotado $n!$, cuenta cuántos ordenamientos de $n$ objetos distintos existen. Es la herramienta fundamental de la combinatoria: todas las fórmulas de permutaciones y combinaciones nacen de ella.
 >
 > **Por qué importa:** sin el factorial no existen las fórmulas de conteo ordenado ($P(n,r) = \frac{n!}{(n-r)!}$), las permutaciones circulares ($(n-1)!$) ni los coeficientes binomiales. Toda la Unidad 3 se apoya en esta sola noción.
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-05-04-graph.svg]]
+> **Se lee así:** un camino en fila de izquierda a derecha: la primera posición se puede llenar con cualquiera de los $n$ objetos, la segunda con los $n-1$ restantes, … y la última con 1; el principio multiplicativo hace el resto: $n \cdot (n-1) \cdots 2 \cdot 1 = n!$.
+> **Por qué importa:** es la demostración "a mano" de por qué $n!$ cuenta órdenes — el factorial no es una definición caprichosa, es el resultado del conteo secuencial.
 
 ---
 
@@ -39,6 +43,9 @@ tags: [MATG1051, unidad3, factorial, permutaciones, combinaciones, binomial]
 >
 > **Se lee así:** dividir $n!$ entre $k!$ cancela los $k$ factores más pequeños y deja la cadena desde $k+1$ hasta $n$.
 >
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-05-05-graph.svg]]
+> **Se lee así:** $n!$ se parte en dos: el bloque de los factores $1 \ldots k$ (que es exactamente $k!$ y se cancela) y la cola $k+1 \ldots n$ (que es lo que sobrevive). El diagrama de la flecha punteada es la cancelación: nada se multiplica, solo se elimina el prefijo común.
+>
 > **Ejemplo:** $\dfrac{7!}{3!} = 4 \cdot 5 \cdot 6 \cdot 7 = 840$.
 
 > [!note] 📋 Definición 18 — Ceros finales de $n!$ en base 10
@@ -48,6 +55,9 @@ tags: [MATG1051, unidad3, factorial, permutaciones, combinaciones, binomial]
 > $$z(n) = \left\lfloor \frac{n}{5} \right\rfloor + \left\lfloor \frac{n}{25} \right\rfloor + \left\lfloor \frac{n}{125} \right\rfloor + \cdots$$
 >
 > **Se lee así:** cada múltiplo de $5$ aporta un cero al factorial; los múltiplos de $25$ aportan un segundo cero (y los $125$ un tercero).
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-05-06-graph.svg]]
+> **Se lee así:** primero hay que encontrar todos los factores $5$ que aparecen en $n!$: los $\lfloor n/5 \rfloor$ múltiplos de $5$ aportan uno cada uno, los $\lfloor n/25 \rfloor$ múltiplos de $25$ aportan uno adicional (ya tienen dos 5), los $\lfloor n/125 \rfloor$ uno más, y así sucesivamente; la suma de todos los cocientes es $z(n)$.
 >
 > **Ejemplo:** $50!$ termina en $z(50) = 10 + 2 = 12$ ceros.
 
