@@ -1,8 +1,9 @@
 ---
 dg-publish: true
+tags: [CCPG1004, cysoc, unidad2, sesgos-alucinaciones]
 ---
 
-# Sesgos y Alucinaciones en la Inteligencia Artificial
+# 🤖 Sesgos y Alucinaciones en la Inteligencia Artificial
 
 ## 🎯 Introducción
 
@@ -34,6 +35,8 @@ dg-publish: true
 > _"El sesgo es un efecto que priva a un resultado estadístico de representatividad al distorsionarlo, a diferencia de un error aleatorio, que puede distorsionarlo en cualquier ocasión, pero se equilibra en promedio."_
 > 
 > En resumen: **si hay predeterminación o parcialidad y el resultado está distorsionado de forma consistente → hay sesgo.**
+>
+> **Nota:** las dos definiciones (ISO/IEC 22989 y NIST) coinciden en un punto: el sesgo es **sistemático**. Por eso un error puntual no es sesgo, y por eso se mide buscando patrones repetidos, no por factores aislados.
 
 ### ¿Cómo se originan los sesgos?
 
@@ -124,6 +127,8 @@ dg-publish: true
 > ```
 > 
 > El término es **metafórico** — la IA no "alucina" como un ser humano. Lo que ocurre es que el modelo predice palabras estadísticamente probables, sin verificar si corresponden a hechos reales.
+>
+> **Nota:** el recuadro humano/IA resume la diferencia operativa: el error humano viene con una señal de incertidumbre («déjame verificar»), la alucinación no trae ninguna señal — por eso exige verificación externa, no confianza.
 
 ### ¿Por qué ocurren?
 
@@ -212,6 +217,10 @@ dg-publish: true
 > |**Ejemplo**|Algoritmo que favorece CVs masculinos|IA que inventa una sentencia judicial|
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Sesgos_y_Alucinaciones_en_la_Inteligencia_Artificial_03.svg]]
+> 
+>  **Se lee así:** el diagrama clasifica un **fallo de IA** con dos preguntas. Primero: «¿Sigue un patrón sistemático?» — si **sí**, es 🔴 **sesgo** (discrimina de forma consistente). Segundo: «¿Genera información factualmente incorrecta?» — si **sí**, es 🟡 **alucinación** (inventa con confianza). Si ninguna se cumple, es otro tipo de error.
+>  **Por qué importa:** es el criterio de diagnóstico que separa las dos familias de fallo: el sesgo es un patrón (se repite y tiene dirección), la alucinación es un contenido falso puntual. Confundirlos lleva a la respuesta equivocada: auditar datos no arregla una cita inventada, y verificar fuentes no corrige una discriminación sistemática.
+>  **Ejemplo:** un modelo que siempre favorece currículos masculinos es sesgo aunque acierte el resto de los datos; un modelo que inventa el título de un artículo es alucinación aunque todo lo demás sea exacto.
 
 ---
 
@@ -243,12 +252,18 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Sesgos_y_Alucinaciones_en_la_Inteligencia_Artificial_04.svg]]
+> [!info] 📊 Resumen visual — Sesgos y alucinaciones
+>
+> 
+>  **Se lee así:** el mapa final separa **Sesgos** y **Alucinaciones** y, en cada rama, los mismos tres bloques: **origen** (datos históricos / predicción estadística sin verificación), **tipos** (género, racial, geográfico, algorítmico / confabulación, dominio abierto, dominio cerrado), **casos reales** (Amazon RR.HH., Google News, reconocimiento facial / abogados de EE.UU. 2023, Google Bard, Carlos III) y **mitigación** (datos diversos, auditorías, regulación / RAG y grounding, feedback humano, verificación externa).
+>  **Por qué importa:** cierra la unidad mostrando que el problema tiene dos naturalezas y que ninguna se arregla sola: contra el sesgo ayuda la diversidad de datos y la auditoría; contra la alucinación ayuda el anclaje en fuentes y la verificación. Mezclar las dos lleva en la práctica a gastar presupuesto en la herramienta equivocada.
+>  **Ejemplo:** auditar los datos de entrenamiento de Amazon no habría evitado que Bard inventara una cita; y conectar el modelo a una base de citas no habría evitado que el motor de CV favoreciera a un género.
 
 ---
 
 ## 🗂️ Tabla Resumen General
 > [!info] Todo lo que necesitas saber
+>
 > | Aspecto                    | 🔴 Sesgo                                               | 🟡 Alucinación                                               |
 > | -------------------------- | ------------------------------------------------------ | ------------------------------------------------------------ |
 > | **Definición**             | Discriminación sistemática en los resultados de la IA  | Generación de información falsa pero coherente y convincente |

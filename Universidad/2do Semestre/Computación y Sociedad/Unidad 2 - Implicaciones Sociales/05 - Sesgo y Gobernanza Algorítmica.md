@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1004, cysoc, unidad2, sesgo-algoritmico]
 ---
 
 # 🤖 Sesgo y Gobernanza Algorítmica
@@ -13,6 +14,10 @@ dg-publish: true
 > Los algoritmos son diseñados por personas, entrenados con datos generados por personas, y desplegados en contextos sociales con historia. Todo eso introduce **sesgo**.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Sesgo_y_Gobernanza_Algorítmica_01.svg]]
+> 
+>  **Se lee así:** el diagrama entra por el **Algoritmo** y pregunta **«¿De dónde viene el sesgo?»**. Las tres respuestas son: **datos de entrenamiento**, **diseño del código** y **definición del problema**. Cada una se desglosa: datos históricos discriminatorios, subrepresentación de grupos, variables proxy discriminatorias, métricas de éxito mal definidas — y la pregunta final, **quién define qué es un «buen» resultado**.
+>  **Por qué importa:** el sesgo no es un defecto que aparezca al final: entra por una de tres puertas, y cada puerta se cierra con una acción distinta (mejorar los datos, auditar el código, redefinir la métrica). Es el mapa que permite pasar del lamento («la IA es injusta») a la auditoría concreta.
+>  **Ejemplo:** un modelo de selección de currículos entrenado con diez años de contrataciones solo masculinas arrastra el sesgo histórico por la puerta de los datos, aunque el código sea impecable.
 
 ---
 
@@ -113,6 +118,10 @@ dg-publish: true
 > El objetivo es que la automatización no elimine la rendición de cuentas: si un sistema toma una decisión que perjudica a alguien, debe haber un responsable humano identificable.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Sesgo_y_Gobernanza_Algorítmica_02.svg]]
+> 
+>  **Se lee así:** el diagrama despliega la **gobernanza algorítmica** en cinco frentes: **transparencia** (explicabilidad de las decisiones, acceso al código y a los datos), **auditoría** (revisión independiente, detección de sesgos), **rendición de cuentas** (responsable identificable, derecho a recurrir), **factor humano** (humano en el bucle, revisión de casos límite) y **marco legal** (GDPR en Europa, leyes de IA emergentes).
+>  **Por qué importa:** la gobernanza no es un único mecanismo sino un paquete: el mismo sistema puede ser transparente y aun así intocable si no hay responsable identificable. Los cinco frentes son las condiciones mínimas para que una decisión automatizada sea recurrible.
+>  **Ejemplo:** explicar con detalle el modelo no sirve si la persona afectada no sabe a quién reclamar; por eso «transparencia» y «rendición de cuentas» aparecen como columnas separadas.
 >
 
 > [!note] 🔧 Principios de la Gobernanza Algorítmica
@@ -151,6 +160,15 @@ dg-publish: true
 > |Los afectados no tienen recurso|Existe derecho a impugnar decisiones automatizadas|
 > |El algoritmo opera como caja negra|Transparencia permite revisión y mejora continua|
 > |La IA reemplaza el juicio humano|La IA asiste al juicio humano sin eliminarlo|
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes consultadas
+>
+> Instituto Nacional de Estándares y Tecnología (NIST). *Towards a Standard for Identifying and Managing Bias in Artificial Intelligence*. Gaithersburg, MD: NIST, 2022.
+> ISO/IEC. *ISO/IEC 22989:2022 — Artificial Intelligence Concepts and Terminology*. Geneva: International Organization for Standardization, 2022.
+> Barocas, S., Hardt, M. y Narayanan, A. *Fairness and Machine Learning: Limitations and Opportunities*. MIT Press, 2022.
+> Presentación del curso *Computación y Sociedad*, Unidad 2, ESPOL — FESD, EYAG1037.
 
 ---
 

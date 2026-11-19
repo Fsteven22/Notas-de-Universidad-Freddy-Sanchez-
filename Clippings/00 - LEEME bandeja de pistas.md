@@ -3353,6 +3353,33 @@ el commit de esta línea de PUSHEADO.
 
 ---
 
+### `opencode` — CYSOC: U2 completa a 0 hallazgos + las 2 notas raíz sin H — 18/11/2026
+
+> [!success] **PUSHEADO `a2439347`** · 18/11/2026 — `master` = `origin/master` = `a2439347` (sin `--force`).
+>
+> Lo que sigue es el detalle del contenido del push.
+>
+> **Cierra los 2 hallazgos H de las notas raíz** (arreglados ayer, en disco sin commitear):
+> - `Computación y Sociedad.md` (R4-prosa-top, nota raíz): la prosa suelta pasó a callout de datos de la materia.
+> - `Recursos Visuales.md` (R4-lista-top): la lista pasó a callout "Índice de guías"; H2 con emoji y pie `**Tags:**` separado con `---`.
+>
+> **U2 — Implicaciones Sociales (8 notas): 32 → 0 hallazgos.**
+> - **Paso 1** (R1/R2/R6): tags frontmatter en las 8 notas, H1 de `08` con emoji (`# 🤖 Sesgos y Alucinaciones en la Inteligencia Artificial`), blanco tras el header del callout de la tabla en `08`.
+> - **Paso 2** (R14/R4): 11 embeds visuales con su **lectura propia** fundamentada en el texto real de cada SVG (`**Se lee así:**` / `**Por qué importa:**` / `**Ejemplo:**`); los embeds top-level envueltos en callout con su lectura (`02` accesibilidad WCAG, `07` ODS, `08` sesgos); 3 callouts 📖 de deck con su nota de cierre (06, 08 `L28`, 08 `L110`).
+> - **Paso 3** (R3-cierre): sección `## 📚 Referencias` en las 5 notas que no tenían (01, 03, 04, 05, 06), con fuentes reales: 01 → Serrano & Martínez 2003, UIT *Facts and Figures*, UNESCO; 03 → OMS, Common Sense Media *Family Media Plan*, UNESCO; 04 → Hofstede *Cultures and Organizations*, UNESCO; 05 → NIST *Towards a Standard for Identifying and Managing Bias in AI* (2022), ISO/IEC 22989:2022, Barocas–Hardt–Narayanan *Fairness and Machine Learning* (2022); 06 → Brundtland 1987, Convención de Basilea 1989, PNUMA *Global E-waste Monitor*.
+> - `02`: último embed top-level (`02_-_Accesibilidad_y_WCAG_03.svg`, mapa POUR/WCAG/RTE INEN 288) envuelto en callout con su lectura.
+>
+> **QA (materia completa):** 43 notas · 125 hallazgos **W** · **0 H**.
+> Distribución restante: R14-embed 58 · R4-embed-top 33 · R1-tags 25 · R6 6 · R3-h2-emoji 3 — todas en U3–U6; U1 y U2 van a **0**.
+>
+> Backup de los 11 archivos en `%LOCALAPPDATA%\Temp\opencode\backup_cysoc_u2_20261118_2052`.
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Computación y Sociedad/Computación y Sociedad.md`
+> - `Universidad/2do Semestre/Computación y Sociedad/Recursos Visuales.md`
+> - `Universidad/2do Semestre/Computación y Sociedad/Unidad 2 - Implicaciones Sociales/01 … 08` (8 notas)
+> - `Clippings/00 - LEEME bandeja de pistas.md`
+
 ### `opencode-onedrive` — MatDisc: la nota del Factorial sus figuras; diagrama general de U3 corregido — 18/11/2026
 
 > [!warning] PUSHEO EN CURSO · `e4bcc69b` · ~2 min
