@@ -3355,9 +3355,9 @@ el commit de esta línea de PUSHEADO.
 
 ### `opencode` — CYSOC: U2 completa a 0 hallazgos + las 2 notas raíz sin H — 18/11/2026
 
-> [!warning] **PUSHEO EN CURSO**
+> [!success] **PUSHEADO `a2439347`** · 18/11/2026 — `master` = `origin/master` = `a2439347` (sin `--force`).
 >
-> Anuncio previo al push — se cierra con el bloque `PUSHEADO <hash>`.
+> Lo que sigue es el detalle del contenido del push.
 >
 > **Cierra los 2 hallazgos H de las notas raíz** (arreglados ayer, en disco sin commitear):
 > - `Computación y Sociedad.md` (R4-prosa-top, nota raíz): la prosa suelta pasó a callout de datos de la materia.
