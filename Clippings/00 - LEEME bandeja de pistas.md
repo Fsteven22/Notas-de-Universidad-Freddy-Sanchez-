@@ -3410,6 +3410,116 @@ el commit de esta línea de PUSHEADO.
 
 ---
 
+### `opencode` — CYSOC: U3 (Representación de la información) a 0 hallazgos — 18/11/2026
+
+> [!success] **PUSHEADO `7c994db4`** · 18/11/2026 — `master` = `origin/master` = `7c994db4` (sin `--force`).
+>
+> Lo que sigue es el detalle del contenido del push.
+>
+> **U3 = 12 notas** (`I - Sistemas de Numeración`: 8 · `II - Compresión de Datos`: 4): **65 → 0 hallazgos**. Sin cierres faltantes (ninguna nota nueva necesitaba `## 📚 Referencias` ni `Metas`); el trabajo fue etiquetar y explicar.
+> - **Paso 1** (R1-tags, 12 notas): `tags: [CCPG1004, cysoc, unidad3, …]` en el frontmatter (ej. `sistema-binario`, `ieee-754`, `huffman-encoding`).
+> - **Paso 2a** (R14, 15 embeds dentro de callouts): cada `> ![[…]]` lleva ahora su **lectura propia** fundamentada en el texto real del SVG (`**Se lee así:**`), con la regla R14 a la mano: etiqueta en 7 líneas dentro del callout o prosa ≥ 60 chars.
+> - **Paso 2b** (R4-embed-top + R14, 19 embeds en la raíz): envueltos en callout con su lectura — 12 **SVG** (resúmenes/mapas y diagramas de flujo) y 7 **PNG de diapositivas** del deck (`Archivos/Sistemas de Numeración/`, p. ej. `cysoc-u3-04-conversion-dec-bin-01.png`, el método de escalera), leídos uno a uno para describirlos fielmente.
+> - Nota: el QA de la materia queda en **60 W · 0 H** (restante en U4–U6: R14 24 · R4 14 · R1 13 · R6 6 · R3-h2-emoji 3).
+>
+> Backup de las 12 notas en `%LOCALAPPDATA%\Temp\opencode\backup_cysoc_u3_20261118_2058`.
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Computación y Sociedad/Unidad 3 - Representación de la información/I - Sistemas de Numeración/*.md` (8)
+> - `Universidad/2do Semestre/Computación y Sociedad/Unidad 3 - Representación de la información/II - Compresión de Datos/*.md` (4)
+> - `Clippings/00 - LEEME bandeja de pistas.md`
+
+---
+
+### `opencode` — CYSOC: U4 (Historia de Internet) a 0 hallazgos — 18/11/2026
+
+> [!success] **PUSHEADO `404b901c`** · 18/11/2026 — `master` = `origin/master` = `404b901c` (sin `--force`).
+>
+> Lo que sigue es el detalle del contenido del push.
+>
+> **U4 = 7 notas** (`Unidad 4 - Historia de Internet`): **26 → 0 hallazgos**.
+> - **Paso 1** (R1-tags, 7): `tags: [CCPG1004, cysoc, unidad4, …]` (ej. `historia-internet`, `ingenieria-social`, `privacidad-proteccion-datos`).
+> - **Paso 2a** (R14, 7 embeds dentro de callouts): lectura propia fundamentada en el texto de cada SVG (`**Se lee así:**`) — separación Internet/WWW, Web 1.0→4.0, timeline de HTML 1991→2014, mapa de crimen informático/malware, catálogo de ingeniería social, sabotaje de servicios vs interceptación, mapa de privacidad.
+> - **Paso 2b** (R4 + R14, 7 embeds top-level): envueltos en callout con lectura — diagnóstico de "no carga la página", orígenes de amenazas, flowcharts ¿qué malware es? / ¿qué fraude es? / DoS vs DDoS vs sniffer, anatomía de un DDoS y selector de protección para datos/red/identidad.
+> - QA de la materia: **34 W · 0 H** (resto en U5 y U6; U1–U4 a **0**).
+>
+> Backup de las 7 notas en `%LOCALAPPDATA%\Temp\opencode\backup_cysoc_u4_20261118_2103`.
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Computación y Sociedad/Unidad 4 - Historia de Internet/*.md` (7)
+> - `Clippings/00 - LEEME bandeja de pistas.md`
+
+---
+
+### `opencode` — CYSOC: U5 (Privacidad y Propiedad Intelectual) a 0 hallazgos — 18/11/2026
+
+> [!success] **PUSHEADO `d04297c4`** · 18/11/2026 — `master` = `origin/master` = `d04297c4` (sin `--force`).
+>
+> Lo que sigue es el detalle del contenido del push.
+>
+> **U5 = 3 notas** (`Unidad 5 - Privacidad y Propiedad Intelectual`): **16 → 0 hallazgos**.
+> - **Paso 1** (R1-tags, 3): `tags: [CCPG1004, cysoc, unidad5, …]` (`fundamentos-propiedad-intelectual`, `tipos-propiedad-intelectual`, `infracciones-proteccion-digital`).
+> - **Paso 2a** (R14, 3 embeds dentro de callouts): lectura propia fundamentada en el SVG (mapa PI → copyrights/patentes/trademarks/trade secrets + OMPI/SENADI; mapa de infracciones: ingeniería inversa, Napster, cybersquatting, Safe Harbor, DRM).
+> - **Paso 2b** (R4 + R14, 4 embeds top-level): envueltos en callout con lectura — flujos OMPI/SENADI + patrimonial/moral, figura legal (patente/trade secret/copyright/trademark), pipeline de ingeniería inversa, y typosquatting/cybersquatting/Safe Harbor/DRM.
+> - **Validador** (`qa_formato_cysoc.py`): `RE_EMOJI` acepta **©️ (U+00A9)**, **®️ (U+00AE)** y **™️ (U+2122)** con o sin VS16 — los 3 H2 del dueño que usaban ©️/™️ dejaron de marcarse (misma política que los keycaps: se corrige la QA, no el contenido del dueño).
+> - QA de la materia: **18 W · 0 H** (todo U6; U1–U5 a **0**).
+>
+> Backup en `%LOCALAPPDATA%\Temp\opencode\backup_cysoc_u5_20261118_2108` (incluye copia de `qa_formato_cysoc.py` previo al cambio).
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Computación y Sociedad/Unidad 5 - Privacidad y Propiedad Intelectual/*.md` (3)
+> - `Universidad/Herramientas/Mantenimiento/qa_formato_cysoc.py` (RE_EMOJI)
+> - `Clippings/00 - LEEME bandeja de pistas.md`
+
+---
+
+### `opencode` — CYSOC: U6 (Ética Profesional) a 0 hallazgos — cierre de la materia — 18/11/2026
+
+> [!success] **PUSHEADO `127448d4`** · 18/11/2026 — `master` = `origin/master` = `127448d4` (sin `--force`).
+>
+> Lo que sigue es el detalle del contenido del push.
+>
+> **U6 = 3 notas** (`Unidad 6 - Etica Profesional`): **12 → 0 hallazgos**.
+> - **Paso 1** (R1-tags, 3): `tags: [CCPG1004, cysoc, unidad6, …]` (`fundamentos-etica-moral`, `falacias-etica-informatica`, `codigos-etica-casos-reales`).
+> - **Paso 2a** (R14, 3 embeds dentro de callouts): lectura propia fundamentada en el SVG (ética vs moral vs dilema; las seis falacias; CEI 10 Mandamientos / ACM / IEEE-ACM + caso Samsung).
+> - **Paso 2b** (R4 + R14, 3 embeds top-level): envueltos en callout con lectura — flowchart de dilema ético, falacia por justificación, código aplicable por rol.
+> - **Cierre de materia:** `Índice de Contenido.md` (nota raíz de la materia) — insertados los 6 blancos `>` tras los headers de callout (**R6**), que eran los últimos hallazgos que quedaban.
+> - **QA de la materia: 43 notas → 0 hallazgos, 0 H.** Las 7 unidades (U0–U6) y las notas raíz, limpias.
+> - Pendiente heredado: el punto 3 del dueño (densidad de definiciones vs SVG; habría que dibujar ~19 diagramas nuevos para U4/U5/U6) — sin tocar, decisión pendiente.
+>
+> Backup en `%LOCALAPPDATA%\Temp\opencode\backup_cysoc_u6_20261118_2112`.
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Computación y Sociedad/Unidad 6 - Etica Profesional/*.md` (3)
+> - `Universidad/2do Semestre/Computación y Sociedad/Índice de Contenido.md` (R6)
+> - `Clippings/00 - LEEME bandeja de pistas.md`
+
+---
+
+### `opencode` — POO: tags CCPG1005 + embeds en callouts + fix de redundancia en la nota 01 — 18/11/2026
+
+> [!success] **PUSHEADO `21b01a7b`** · 18/11/2026 — `master` = `origin/master` = `21b01a7b` (sin `--force`).
+>
+> Lo que sigue es el detalle del contenido del push.
+>
+> **Reformulación de las 27 notas de POO (trabajo del dueño, 17/11)** incluida en este push:
+> tags frontmatter `CCPG1005/unidadN/poo/<tema>`, embeds sueltos envueltos en callout (`> [!note] 🖼️ …`), y `## 📊 Resumen Comparativo` → `## 📊 Resumen Visual` (esqueleto R3).
+>
+> **Fix de redundancia en la nota 01 de U1 (a pedido del dueño):**
+> - `## 🎯 Introducción — ¿Qué es la Programación Orientada a Objetos?` → **`## 🎯 ¿Qué es la Programación Orientada a Objetos?`** — único caso en POO de «el H2 parafrasea el H1»; las otras 22 notas usan `## 🎯 Introducción` pelado y no se tocan.
+> - El callout que repetía exactamente el mismo título (`🖼️ Introducción — ¿Qué es…?`) → `🖼️ ¿Qué es la Programación Orientada a Objetos?`.
+> - `qa_formato_poo.py` + `FORMATO-POO.md` R3: **«Introducción» ya no es H2 exigida** en el perfil `clase` (queda `Resumen Visual` como obligatoria). QA re-corrida: **168 hallazgos, 0 errores** (44 W R12-svg-sin-mmd + 124 P R14).
+>
+> **Excluido de este push:** los **121 `.mmd` sin trackear** de `Unidad 0 - Guias y Ejercicios/Diagramas/` (los genera otra sesión; intactos). Tampoco entra nada ajeno (Inglés III, etc.).
+>
+> Nota: `qa_formato_poo.py` y `FORMATO-POO.md` **nunca estuvieron trackeados** (todos sus hermanos de `Mantenimiento` sí lo están; solo estos dos se quedaron fuera del piloto POO). Se incluyen aquí porque es donde vive el fix y porque el QA de POO los necesita.
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Programación orientada a objetos/**` (27 notas modificadas)
+> - `Universidad/Herramientas/Mantenimiento/qa_formato_poo.py` (requeridas)
+> - `Universidad/Herramientas/Mantenimiento/FORMATO-POO.md` (R3)
+> - `Clippings/00 - LEEME bandeja de pistas.md`
+
 ### `opencode-onedrive` — Cálculo Vectorial: contrato + barrido mecánico + fuentes mermaid (3.791 → 2.329) — 18/11/2026
 
 > [!warning] PUSHEO EN CURSO · `8b614afb` · ~2 min

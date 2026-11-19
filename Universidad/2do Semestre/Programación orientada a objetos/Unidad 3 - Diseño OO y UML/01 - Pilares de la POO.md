@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1005, unidad3, poo, pilares]
 ---
 
 # 🏛️ Pilares de la Programación Orientada a Objetos
@@ -19,7 +20,9 @@ dg-publish: true
 > |**Polimorfismo**|Código rígido que no se adapta a nuevos tipos|✅ Flexibilidad y extensibilidad|
 > |**Abstracción**|Complejidad expuesta innecesariamente|✅ Interfaces simples y claras|
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_01.svg]]
+> [!note] 🖼️ Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_01.svg]]
 
 ---
 
@@ -133,7 +136,9 @@ dg-publish: true
 > |**extends**|Palabra clave para heredar|
 > |**super**|Referencia a la superclase|
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_02.svg]]
+> [!note] 🖼️ Concepto
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_02.svg]]
 
 ### 🛠️ Implementación
 
@@ -247,7 +252,9 @@ dg-publish: true
 > 
 > **Analogía:** Un control remoto (interfaz) funciona con diferentes dispositivos (TV, reproductor, aire) - mismo botón "encender", diferente comportamiento.
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_03.svg]]
+> [!note] 🖼️ Concepto
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_03.svg]]
 
 ### 🛠️ Implementación
 
@@ -364,7 +371,9 @@ dg-publish: true
 > |**Clases Abstractas**|Herencia con métodos parcialmente implementados|Medio|
 > |**Interfaces**|Contratos puros - solo definiciones|Alto|
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_04.svg]]
+> [!note] 🖼️ Concepto
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_04.svg]]
 
 ### 🛠️ Clases Abstractas
 
@@ -527,7 +536,9 @@ dg-publish: true
 
 ## 🔗 Relación entre los Pilares
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_05.svg]]
+> [!note] 🖼️ Relación entre los Pilares
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_05.svg]]
 
 > [!example] 🚗 Ejemplo Integrador
 > 
@@ -585,7 +596,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_06.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_06.svg]]
 
 > [!success] ✅ Checklist de Aplicación
 > 

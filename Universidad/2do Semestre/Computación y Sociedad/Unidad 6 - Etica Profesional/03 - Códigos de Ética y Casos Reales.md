@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1004, cysoc, unidad6, codigos-etica-casos-reales]
 ---
 
 # 📜 Códigos de Ética y Casos Reales
@@ -11,6 +12,8 @@ dg-publish: true
 > Las dos notas anteriores cubrieron la teoría: la diferencia entre ética y moral, qué es un dilema ético, y las falacias que distorsionan el juicio ético en computación. Esta nota cierra el bloque con la parte **institucional y práctica**: los códigos formales que la industria de la computación ha adoptado para guiar la conducta profesional, y un caso real donde la ética profesional se puso a prueba.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Códigos_de_Ética_y_Casos_Reales_01.svg]]
+>
+> **Se lee así:** el diagrama presenta los tres códigos que estructuran la unidad: **CEI, 10 Mandamientos** (principios generales para cualquier usuario), **ACM Code of Ethics** (responsabilidad profesional del informático) e **IEEE/ACM Software Engineering Code** (específico para ingeniería de software), con el **caso Samsung** como aplicación real.
 
 ---
 
@@ -90,7 +93,13 @@ dg-publish: true
 
 ## 🧭 Flujograma de Decisión — ¿Qué código consultar?
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Códigos_de_Ética_y_Casos_Reales_02.svg]]
+> [!info] 📋 Diagrama de flujo — ¿Qué código consultar?
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Códigos_de_Ética_y_Casos_Reales_02.svg]]
+>
+> **Se lee así:** el flowchart elige el código según a quién aplica: ¿necesitas **principios generales accesibles para cualquier usuario** → **CEI, 10 Mandamientos**; ¿eres **profesional de computación** buscando responsabilidad personal → **ACM Code of Ethics**; ¿trabajas específicamente en **ingeniería de software** → **IEEE/ACM Software Engineering Code**.
+>
+> **Por qué importa:** cada código responde a un rol distinto — usar el equivocado es aplicar ingeniería de puentes con el reglamento de navegación.
 
 ---
 

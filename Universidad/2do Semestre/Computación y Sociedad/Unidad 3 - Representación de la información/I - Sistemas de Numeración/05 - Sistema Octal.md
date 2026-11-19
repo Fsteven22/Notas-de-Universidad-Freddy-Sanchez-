@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1004, cysoc, unidad3, sistema-octal]
 ---
 # 🔷 Sistema Octal
 
@@ -10,8 +11,16 @@ dg-publish: true
 > El sistema octal usa base **8**, con dígitos del 0 al 7. Su razón de ser (más allá del decimal) es que $8 = 2^3$, así que **cada dígito octal corresponde exactamente a 3 dígitos binarios**. Esto lo convierte en un "atajo" legible para representar grupos de bits sin pasar por decimal.
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Sistema_Octal_01.svg]]
+>
+> **Se lee así:** el diagrama da la definición operativa: **base 8**, dígitos **0 a 7** y la relación que da sentido al sistema, $8 = 2^3$ — **1 dígito octal = 3 bits**.
 
-![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-05-sistema-octal-02.png]]
+> [!info] 🎞️ Del deck — Octal: conversión y agrupación
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-05-sistema-octal-02.png]]
+>
+> **Se lee así:** la diapositiva convierte `110101011001₂` agrupando de 3 en 3 desde la derecha: `110 101 011 001` → `6 5 3 1` → $6531_8$, con la tabla 3 bits ↔ dígito octal y la circular 0-7 que vuelve a 0 tras el 7.
+>
+> **Por qué importa:** demuestra visualmente que el octal es solo una re-agrupación del binario, no un sistema independiente.
 
 ---
 
@@ -199,14 +208,26 @@ dg-publish: true
 >
 > 📌 **Regla clave:** en la parte entera agrupas desde la derecha (hacia la izquierda); en la fraccionaria agrupas desde el punto (hacia la derecha). Rellena con ceros donde sea necesario para completar grupos de 3.
 
-![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-05-sistema-octal-01.png]]
+> [!info] 🎞️ Del deck — Octal: equivalencias y agrupamiento
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-05-sistema-octal-01.png]]
+>
+> **Se lee así:** la diapositiva muestra la tabla de equivalencias (octal, 3 bits, decimal) y dos conversiones completas: `1011011001₂ → 2671₈` (rellenando el grupo izquierdo con ceros) y `3457₈ → 011100101111₂`; el recuadro de usos reales cita los **permisos de archivos en Unix/Linux** (chmod).
+>
+> **Por qué importa:** el octal sigue vigente en la práctica diaria: `chmod 755` es exactamente esta lectura.
 
 
 ---
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Sistema_Octal_02.svg]]
+> [!info] 📊 Resumen visual — Sistema octal
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Sistema_Octal_02.svg]]
+>
+> **Se lee así:** el mapa completo del octal: base 8, dígitos 0-7, $8 = 2^3$, conversión decimal (divisiones sucesivas entre 8; fracciones por multiplicación por 8), notación posicional con potencias de 8 y la regla de oro binario ↔ octal: **agrupar de 3 en 3 desde la derecha** (completar con ceros a la izquierda si falta).
+>
+> **Por qué importa:** cierra la tríada octal-hex como atajos de lectura del binario.
 
 ---
 

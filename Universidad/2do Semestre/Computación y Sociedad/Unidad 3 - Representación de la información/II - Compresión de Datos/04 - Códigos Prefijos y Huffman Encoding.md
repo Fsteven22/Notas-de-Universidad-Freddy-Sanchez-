@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1004, cysoc, unidad3, huffman-encoding]
 ---
 # 🌳 Códigos Prefijos y Huffman Encoding
 
@@ -14,6 +15,8 @@ dg-publish: true
 > - Para que Huffman funcione sin ambigüedad al decodificar, los códigos que genera son siempre **códigos prefijos** — el concepto que vemos primero antes de construir el árbol de Huffman.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Códigos_Prefijos_y_Huffman_Encoding_01.svg]]
+>
+> **Se lee así:** el diagrama presenta el pipeline completo: **tabla de frecuencias → árbol** (combinando los dos nodos de menor frecuencia) → **0/1** según la rama (izquierda=0, derecha=1) → **código prefijo**, donde los símbolos frecuentes reciben los códigos cortos.
 
 ---
 
@@ -134,7 +137,13 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — Construir un Código de Huffman
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Códigos_Prefijos_y_Huffman_Encoding_03.svg]]
+> [!info] 📊 Diagrama de flujo — Algoritmo de Huffman
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Códigos_Prefijos_y_Huffman_Encoding_03.svg]]
+>
+> **Se lee así:** el flowchart ejecuta el algoritmo: con la **tabla de frecuencias**, ordena los nodos de menor a mayor frecuencia y, mientras quede más de uno, **combina los dos menores**, reinserta el nodo y reordena; al final el único nodo es la **raíz** y los códigos se leen de raíz a hoja asignando 0/1 según la rama.
+>
+> **Por qué importa:** es la verificación operativa de los Pasos 1 al 6 del ejemplo de la nota.
 
 ---
 

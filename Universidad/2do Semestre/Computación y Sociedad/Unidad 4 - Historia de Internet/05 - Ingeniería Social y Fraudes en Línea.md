@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1004, cysoc, unidad4, ingenieria-social]
 ---
 
 # 🎭 Ingeniería Social y Fraudes en Línea
@@ -11,6 +12,8 @@ dg-publish: true
 > No todas las amenazas informáticas atacan directamente al software. Muchas atacan **a la persona**: la manera más eficiente de vulnerar un sistema no siempre es romper el cifrado, sino simplemente **convencer al usuario de que entregue la llave**. Esa es la lógica detrás de toda esta nota.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Ingeniería_Social_y_Fraudes_en_Línea_01.svg]]
+>
+> **Se lee así:** el diagrama lista el catálogo de ataques contra la persona: **phishing** (genérico y masivo), **spear-phishing** (personalizado), **pharming** (redireccionamiento a sitios falsos), **spam**, **scam** (estafas directas), **typosquatting** (dominios con errores tipográficos) y fraude en subastas en línea.
 
 ---
 
@@ -110,7 +113,13 @@ dg-publish: true
 
 ## 🧭 Flujograma de Decisión — ¿Qué tipo de fraude es?
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Ingeniería_Social_y_Fraudes_en_Línea_02.svg]]
+> [!info] 📋 Diagrama de flujo — ¿Qué fraude es?
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Ingeniería_Social_y_Fraudes_en_Línea_02.svg]]
+>
+> **Se lee así:** el flowchart diagnostica el fraude: ¿escribiste bien la URL y aun así llegaste a un sitio falso → **pharming**; ¿el mensaje parecía genérico y masivo → **phishing**; ¿muy personalizado y dirigido a ti → **spear-phishing**; ¿pagaste por algo que no existía → **scam / fraude en subastas**; ¿solo recibiste correo no deseado → **spam**; ¿la URL se parecía a una marca con una letra distinta → **typosquatting**.
+>
+> **Por qué importa:** cada fraude deja la misma firma clínica: revisar URL, personalización y canal antes de actuar.
 
 ---
 

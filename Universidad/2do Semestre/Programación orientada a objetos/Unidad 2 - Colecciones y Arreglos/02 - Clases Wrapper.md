@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1005, unidad2, poo, wrapper]
 ---
 
 # 🎁 Clases Wrapper
@@ -701,4 +702,8 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Clases_Wrapper_07.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Clases_Wrapper_07.svg]]
+
+**Tags:** #CCPG1005 #poo #wrapper #unidad2

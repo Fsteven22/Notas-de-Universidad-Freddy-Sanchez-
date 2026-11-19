@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1005, unidad6, poo, gui]
 ---
 
 # 🖼️ Principios de las GUI
@@ -657,7 +658,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Principios_de_las_GUI_07.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Principios_de_las_GUI_07.svg]]
 
 ---
 

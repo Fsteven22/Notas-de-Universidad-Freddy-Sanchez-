@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1004, cysoc, unidad6, fundamentos-etica-moral]
 ---
 
 # ⚖️ Fundamentos de Ética y Moral
@@ -11,6 +12,8 @@ dg-publish: true
 > En el lenguaje cotidiano usamos "ética" y "moral" casi como sinónimos. Pero en el contexto profesional — y especialmente en computación, donde las decisiones técnicas tienen consecuencias sociales reales — vale la pena distinguirlos con precisión, porque **no responden a la misma pregunta**.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Fundamentos_de_Ética_y_Moral_01.svg]]
+>
+> **Se lee así:** el diagrama abre el mapa del tema: **ética** (principio individual que depende del contexto) frente a **moral** (costumbre colectiva que no depende de la situación), y cierra con el **dilema ético** — el conflicto entre dos imperativos éticos válidos.
 
 ---
 
@@ -85,7 +88,13 @@ dg-publish: true
 
 ## 🧭 Flujograma de Decisión — ¿Es esto un dilema ético?
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Fundamentos_de_Ética_y_Moral_02.svg]]
+> [!info] 📋 Diagrama de flujo — ¿Es un dilema ético?
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Fundamentos_de_Ética_y_Moral_02.svg]]
+>
+> **Se lee así:** el flowchart decide: ¿hay dos principios éticos válidos en conflicto? — si no, es una decisión simple y se resuelve de una vez; si sí, ¿cumplir uno implica necesariamente transgredir el otro? — si existe una tercera opción que concilia ambos, tampoco es un dilema; si no la hay, **es un dilema ético**.
+>
+> **Por qué importa:** saber nombrar el dilema es el primer paso: la mayoría de las malas decisiones empiezan por no verlo.
 
 ---
 

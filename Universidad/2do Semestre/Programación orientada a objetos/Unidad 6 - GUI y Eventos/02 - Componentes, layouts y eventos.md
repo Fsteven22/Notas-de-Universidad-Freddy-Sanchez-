@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1005, unidad6, poo, gui]
 ---
 
 # 🎨 Componentes, Layouts y Eventos
@@ -1146,7 +1147,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Componentes,_layouts_y_eventos_03.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Componentes,_layouts_y_eventos_03.svg]]
 
 ---
 
