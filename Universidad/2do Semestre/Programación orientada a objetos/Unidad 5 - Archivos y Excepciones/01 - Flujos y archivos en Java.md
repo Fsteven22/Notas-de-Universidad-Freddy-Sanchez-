@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1005, unidad5, poo, flujos]
 ---
 
 # 🌊 Flujos y Archivos en Java
@@ -36,7 +37,9 @@ dg-publish: true
 > |**Ejemplos**|Imágenes, audio, video|.txt, .csv, .log|
 > |**Codificación**|No maneja|✅ Maneja UTF-8, etc.|
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Flujos_y_archivos_en_Java_02.svg]]
+> [!note] 🖼️ Flujos de Bytes vs Caracteres
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Flujos_y_archivos_en_Java_02.svg]]
 
 ### 📊 Jerarquía Completa
 
@@ -190,7 +193,7 @@ dg-publish: true
 
 ---
 
-## 📊 Resumen Comparativo
+## 📊 Resumen Visual
 
 > [!summary] 🎯 Guía Rápida de Decisión
 > 

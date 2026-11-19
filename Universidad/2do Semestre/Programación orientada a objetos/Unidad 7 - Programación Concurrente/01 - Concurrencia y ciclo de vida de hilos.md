@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1005, unidad7, poo, concurrencia]
 ---
 
 # 🧵 Concurrencia y Ciclo de Vida de Hilos 
@@ -27,7 +28,9 @@ dg-publish: true
 > |**Escalabilidad**|Manejar múltiples usuarios simultáneamente|APIs REST, sistemas distribuidos|
 > |**Operaciones I/O**|No bloquear mientras se espera datos|Descargas, conexiones de red|
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_01.svg]]
+> [!note] 🖼️ Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_01.svg]]
 
 ---
 
@@ -1216,7 +1219,9 @@ dg-publish: true
 
 ### 🗺️ Mapa Mental Completo
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_10.svg]]
+> [!note] 🖼️ ️ Mapa Mental Completo
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_10.svg]]
 
 ### 📋 Tabla Comparativa Final
 

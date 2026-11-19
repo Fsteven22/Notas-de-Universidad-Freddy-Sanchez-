@@ -3493,3 +3493,27 @@ el commit de esta línea de PUSHEADO.
 > - `Universidad/2do Semestre/Computación y Sociedad/Unidad 6 - Etica Profesional/*.md` (3)
 > - `Universidad/2do Semestre/Computación y Sociedad/Índice de Contenido.md` (R6)
 > - `Clippings/00 - LEEME bandeja de pistas.md`
+
+---
+
+### `opencode` — POO: tags CCPG1005 + embeds en callouts + fix de redundancia en la nota 01 — 18/11/2026
+
+> [!warning] **PUSHEO EN CURSO**
+>
+> Anuncio previo al push — se cierra con el bloque `PUSHEADO <hash>`.
+>
+> **Reformulación de las 27 notas de POO (trabajo del dueño, 17/11)** incluida en este push:
+> tags frontmatter `CCPG1005/unidadN/poo/<tema>`, embeds sueltos envueltos en callout (`> [!note] 🖼️ …`), y `## 📊 Resumen Comparativo` → `## 📊 Resumen Visual` (esqueleto R3).
+>
+> **Fix de redundancia en la nota 01 de U1 (a pedido del dueño):**
+> - `## 🎯 Introducción — ¿Qué es la Programación Orientada a Objetos?` → **`## 🎯 ¿Qué es la Programación Orientada a Objetos?`** — único caso en POO de «el H2 parafrasea el H1»; las otras 22 notas usan `## 🎯 Introducción` pelado y no se tocan.
+> - El callout que repetía exactamente el mismo título (`🖼️ Introducción — ¿Qué es…?`) → `🖼️ ¿Qué es la Programación Orientada a Objetos?`.
+> - `qa_formato_poo.py` + `FORMATO-POO.md` R3: **«Introducción» ya no es H2 exigida** en el perfil `clase` (queda `Resumen Visual` como obligatoria). QA re-corrida: **168 hallazgos, 0 errores** (44 W R12-svg-sin-mmd + 124 P R14).
+>
+> **Excluido de este push:** los **121 `.mmd` sin trackear** de `Unidad 0 - Guias y Ejercicios/Diagramas/` (los genera otra sesión; intactos). Tampoco entra nada ajeno (Inglés III, etc.).
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Programación orientada a objetos/**` (27 notas modificadas)
+> - `Universidad/Herramientas/Mantenimiento/qa_formato_poo.py` (requeridas)
+> - `Universidad/Herramientas/Mantenimiento/FORMATO-POO.md` (R3)
+> - `Clippings/00 - LEEME bandeja de pistas.md`

@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1005, unidad4, poo, polimorfismo]
 ---
 
 # 🎭 Polimorfismo, Enlace Dinámico y Casting
@@ -25,7 +26,9 @@ dg-publish: true
 > |**Mantenibilidad**|Cambios localizados|Menos errores|
 > |**Abstracción**|Trabajar con conceptos generales|Código más limpio|
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_01.svg]]
+> [!note] 🖼️ Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_01.svg]]
 
 ---
 
@@ -1128,7 +1131,9 @@ dg-publish: true
 
 ### 🗺️ Mapa Mental Completo
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_05.svg]]
+> [!note] 🖼️ ️ Mapa Mental Completo
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_05.svg]]
 
 ### 📋 Tabla Resumen Final
 
