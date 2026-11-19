@@ -3407,3 +3407,41 @@ el commit de esta línea de PUSHEADO.
 >   mojibake 0.
 >
 > **PUSHEADO `5c9d6a78`** — rama + `master` (ff) + clon OneDrive al día (ver cabecera del bloque).
+
+---
+
+### `opencode-onedrive` — Cálculo Vectorial: contrato + barrido mecánico + fuentes mermaid (3.791 → 2.329) — 18/11/2026
+
+> [!warning] PUSHEO EN CURSO · `8b614afb` · ~2 min
+>
+> - **Hecho (encargo del dueño 18/11/2026: auditar y cerrar Cálculo Vectorial como las demás;
+>   arranca por copiar el contrato de Cálculo 1/SBD):**
+>   - **Nuevo contrato `FORMATO-CALCULOVECTORIAL.md`** (`Universidad/Herramientas\Mantenimiento`):
+>     adopta SBD R1-R14 sin rebajarlos + perfil `clase` para unidades anidadas de la materia
+>     (incluso `Unidad 5 - …/II - …/`) + reglas propias R15 (figura DENTRO de cada definición),
+>     R16 (`#flashcards/calcvec-uN`, mínimo 3 tarjetas en el callout 🧠) y R17 (metas con
+>     checkboxes). El validador `qa_formato_calcvectorial.py` **importa** `qa_formato_sbd.py`,
+>     igual que `qa_formato_calculo1.py`; no reimplementa una sola regla.
+>   - **Barrido mecánico de las 92 notas** (`93461d56`): reparadas **562 rutas de embed rotas** →
+>     `Unidad 0 - …/Diagramas/…` con el prefijo `../` de la profundidad de cada nota
+>     (`R12-embed-rota` **562→0**); los 2 embeds de PDF del aula virtual pasan a wikilink 📎;
+>     frontmatter con `tags: [MATG1046, unidadN]`; `Tags:` al pie; `>` en blanco tras el header
+>     de callout; `>` antes de tablas y embeds (¡las tablas quedan intactas!); `---` antes de
+>     cada H2; emoji en H2 que no tenían ninguno. R3/R6/R7/R1/R2-clase → **0**.
+>   - **Fuentes mermaid de los 563 SVG** (`2696733c`, `8b614afb`): 550 SVG flowchart-v2
+>     reconstruidos con `svg_a_mmd --lote`; los **13 mindmaps restantes** se reescribieron a
+>     `flowchart TB` con subgrafos de rectángulos (texto visible intacto) y se regeneraron los
+>     SVG; round-trip 13/13 OK; `R12-svg-sin-mmd` **→ 0**.
+> - **QA: `qa_formato_calcvectorial` 3.791 → 2.329 hallazgos (−61 %); los restantes están en trabajo manual de contenido.**
+>   Restantes (por orden de volumen):
+>   - `R4-prosa-top` 1011 H → prosa fuera de callouts (reescritura manual por nota),
+>     `R4-embed-top` 213 W y `R4-lista-top` 12 H (embeds/listas sueltos) — mismo patrón;
+>   - `R3-seccion-falta` 417 W → la mayoría de las notas de clase no traen las 8 secciones de la casa;
+>   - `R14-embed-sin-explicacion` 385 W + `R14-deck` 15 W → cada embed lleva su lectura propia;
+>   - `R15-definicion-sin-figura` 95 H, `R8-ejercicio-sin-solucion` 59 H, `R16-flashcards-faltante` 65 W,
+>     `R10-metas-checkbox` 56 W, `R2-h1-emoji` 1 W.
+>   - mojibake 0; `qa_links` sin cambios (la materia no tiene wikilinks rotos resueltos por este barrido: R11 no aparece).
+> - **Zona:** `Universidad/2do Semestre/Cálculo Vectorial/**` según la zona autorizada de este
+>   agente; ningun archivo ajeno tocado.
+>
+> **PUSHEADO en curso:** rama `sesion/opencode-onedrive` → `master` (ff) → clon OneDrive.
