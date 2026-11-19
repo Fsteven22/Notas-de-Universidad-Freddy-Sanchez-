@@ -3522,7 +3522,21 @@ el commit de esta línea de PUSHEADO.
 
 ### `opencode-onedrive` — Cálculo Vectorial: contrato + barrido mecánico + fuentes mermaid (3.791 → 2.329) — 18/11/2026
 
-> [!warning] PUSHEO EN CURSO · `8b614afb` · ~2 min
+> [!success] PUSHEADO `624a566b` · 18/11/2026 — rama `sesion/opencode-onedrive` + `master` (ff) + clon OneDrive al día
+>
+> > **Push:** `7593370d..624a566b` (rama) y `22c77712..624a566b` (`master`), sin `--force`.
+> > `624a566b` = merge de `origin/master` (el otro agente añadió CYSOC U3 y U4 a 0 hallazgos); conflicto del LEEME resuelto conservando ambos bloques.
+> > Contenido: `a05b04f3` (contrato + validador) · `93461d56` (barrido mecánico) ·
+> > `2696733c` (550 `.mmd` reconstruidos) · `8b614afb` (13 mindmaps → flowchart) ·
+> > anuncio: `cb8c88ea`.
+> >
+> > **Clon OneDrive:** los 563 `.mmd` llegaron por ff. Antes hubo que respaldar en
+> > `Temp/opencode/clon_calcvectorial_mmd_backup_20261118/` los **13 mindmap originales**
+> > (`01-Caminos_*_11.mmd`, `02-Parametrizaciones…10.mmd`, etc.) porque eran untracked y
+> > chocaban con las versiones flowchart que entran por ff: se conserva copia en ese backup;
+> > el repo queda con **una sola versión** (flowchart con el texto intacto), como se hizo
+> > en Cálculo 1. Los otros 550 eran byte-idénticos y se reemplazaron por ff. Trabajo ajeno
+> > (POO, CYSOC e Inglés III) intacto.
 >
 > - **Hecho (encargo del dueño 18/11/2026: auditar y cerrar Cálculo Vectorial como las demás;
 >   arranca por copiar el contrato de Cálculo 1/SBD):**
@@ -3554,4 +3568,4 @@ el commit de esta línea de PUSHEADO.
 > - **Zona:** `Universidad/2do Semestre/Cálculo Vectorial/**` según la zona autorizada de este
 >   agente; ningun archivo ajeno tocado.
 >
-> **PUSHEADO en curso:** rama `sesion/opencode-onedrive` → `master` (ff) → clon OneDrive.
+> **PUSHEADO `624a566b`** — rama + `master` (ff) + clon OneDrive al día (ver cabecera del bloque).
