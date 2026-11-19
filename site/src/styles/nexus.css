@@ -117,12 +117,18 @@ body {
   border-radius: var(--nx-radius);
   font-family: var(--font-sans);
   font-size: 0.78rem;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--nx-dim);
   list-style: none;
   display: flex;
   align-items: center;
   gap: 0.3rem;
+}
+/* Las unidades (segundo nivel del explorador) van en peso normal;
+   la negrita se reserva a la nota activa (.nx-ex-active). */
+.nx-ex-units summary {
+  font-weight: 400;
+  color: var(--nx-dim);
 }
 .nx-explorer summary::before {
   content: "▸";
@@ -1856,23 +1862,31 @@ html[data-nx-emojis="off"] .nx-callout-ico {
   align-items: center;
   margin-top: 1.1rem;
 }
-/* Las acciones son iconos: el rótulo va en el tooltip (title) y en el
-   texto para lectores de pantalla. */
+/* Las acciones llevan rótulo visible junto al icono: así se leen de
+   un vistazo y no hay cinco glifos sueltos sobre el contenido. El
+   tooltip se conserva solo para "Modo lectura" (toggle), "Guardar"
+   y "Marcar leída" (acciones que cambian de estado). */
 .nx-note-tools__btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 34px;
+  gap: 0.35rem;
   height: 34px;
-  padding: 0;
+  padding: 0 0.65rem;
   border: 1px solid var(--nx-line);
   border-radius: var(--nx-radius);
   background: transparent;
   color: var(--nx-dim);
   font-family: var(--font-sans);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   cursor: pointer;
   transition: border-color 0.18s ease, background 0.18s ease, color 0.18s ease;
+}
+.nx-note-tools__label {
+  font-size: 0.8rem;
+  line-height: 1;
+  white-space: nowrap;
+  color: inherit;
 }
 .nx-note-tools__btn:hover,
 .nx-note-tools__btn[aria-pressed="true"] {
@@ -2092,6 +2106,9 @@ html.nx-lectura .nx-note-nav {
   line-height: 1.5;
   text-decoration: none;
   white-space: nowrap;
+  max-width: 165px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   pointer-events: auto;
   transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
 }
@@ -2108,6 +2125,7 @@ html.nx-lectura .nx-note-nav {
   color: var(--nx-text);
   font-size: 0.8rem;
   font-weight: 600;
+  max-width: none; /* los semestres nunca se cortan */
 }
 .nx-mapa__tip {
   position: absolute;

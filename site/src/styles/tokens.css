@@ -106,7 +106,11 @@
 
   --nx-line: #cfdce3;        /* separadores */
   --nx-line-strong: #b3c7d2;
-  --nx-control: #708a98;     /* borde de controles (3,1:1 contra la superficie) */
+  --nx-control: #6f8391;     /* borde de controles (>= 3:1 contra surface y hover) */
+
+  /* Acento «En curso» para esferas del mapa: el coral de texto pasa AA pero
+     como esfera grande se ve ladrillo oscuro; esta variante es más clara. */
+  --nx-coral-esfera: #d0653b;
 
   --nx-text: #14232c;        /* nunca negro puro */
   --nx-dim: #2b4250;         /* texto atenuado */
@@ -178,6 +182,7 @@
   --nx-line: #22323d;
   --nx-line-strong: #31434f;
   --nx-control: #5d7482;     /* borde de controles (3,5:1 contra la superficie) */
+  --nx-coral-esfera: #ff8a6b; /* en oscuro el coral de texto ya pinta bien */
 
   --nx-text: #e6eef2;        /* nunca blanco puro */
   --nx-dim: #c2d2da;
