@@ -3382,7 +3382,12 @@ el commit de esta línea de PUSHEADO.
 
 ### `opencode-onedrive` — MatDisc: la nota del Factorial sus figuras; diagrama general de U3 corregido — 18/11/2026
 
-> [!warning] PUSHEO EN CURSO · `e4bcc69b` · ~2 min
+> [!success] PUSHEADO `5c9d6a78` · 18/11/2026 — rama `sesion/opencode-onedrive` + `master` (ff) + clon OneDrive al día
+>
+> > **Push:** `aaf66c1a..5c9d6a78` (rama) y `4a3578d7..5c9d6a78` (`master`), sin `--force`.
+> > `5c9d6a78` = merge de `origin/master` (bloque de `opencode`: CYSOC U2 completa a 0 hallazgos).
+> > **Conflicto del LEEME resuelto conservando ambos bloques** (ajeno primero, cronológico).
+> > Contenido: `e4bcc69b` (figuras + diagrama) · anuncio: `9a5c3f94`.
 >
 > - **Hecho:**
 >   - **La nota "05 - El Factorial y Sus Propiedades" ya tiene sus SVG:** 3 figuras nuevas
@@ -3401,4 +3406,4 @@ el commit de esta línea de PUSHEADO.
 > - **QA:** `qa_formato_matdisc` 45 notas, **0 hallazgos**; `qa_links` 574 targets **bad=0**;
 >   mojibake 0.
 >
-> **PUSHEADO en curso:** rama `sesion/opencode-onedrive` → `master` (ff) → clon OneDrive.
+> **PUSHEADO `5c9d6a78`** — rama + `master` (ff) + clon OneDrive al día (ver cabecera del bloque).
