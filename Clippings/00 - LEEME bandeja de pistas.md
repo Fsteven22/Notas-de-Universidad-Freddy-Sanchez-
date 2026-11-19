@@ -3448,3 +3448,25 @@ el commit de esta línea de PUSHEADO.
 > Archivos en este push:
 > - `Universidad/2do Semestre/Computación y Sociedad/Unidad 4 - Historia de Internet/*.md` (7)
 > - `Clippings/00 - LEEME bandeja de pistas.md`
+
+---
+
+### `opencode` — CYSOC: U5 (Privacidad y Propiedad Intelectual) a 0 hallazgos — 18/11/2026
+
+> [!warning] **PUSHEO EN CURSO**
+>
+> Anuncio previo al push — se cierra con el bloque `PUSHEADO <hash>`.
+>
+> **U5 = 3 notas** (`Unidad 5 - Privacidad y Propiedad Intelectual`): **16 → 0 hallazgos**.
+> - **Paso 1** (R1-tags, 3): `tags: [CCPG1004, cysoc, unidad5, …]` (`fundamentos-propiedad-intelectual`, `tipos-propiedad-intelectual`, `infracciones-proteccion-digital`).
+> - **Paso 2a** (R14, 3 embeds dentro de callouts): lectura propia fundamentada en el SVG (mapa PI → copyrights/patentes/trademarks/trade secrets + OMPI/SENADI; mapa de infracciones: ingeniería inversa, Napster, cybersquatting, Safe Harbor, DRM).
+> - **Paso 2b** (R4 + R14, 4 embeds top-level): envueltos en callout con lectura — flujos OMPI/SENADI + patrimonial/moral, figura legal (patente/trade secret/copyright/trademark), pipeline de ingeniería inversa, y typosquatting/cybersquatting/Safe Harbor/DRM.
+> - **Validador** (`qa_formato_cysoc.py`): `RE_EMOJI` acepta **©️ (U+00A9)**, **®️ (U+00AE)** y **™️ (U+2122)** con o sin VS16 — los 3 H2 del dueño que usaban ©️/™️ dejaron de marcarse (misma política que los keycaps: se corrige la QA, no el contenido del dueño).
+> - QA de la materia: **18 W · 0 H** (todo U6; U1–U5 a **0**).
+>
+> Backup en `%LOCALAPPDATA%\Temp\opencode\backup_cysoc_u5_20261118_2108` (incluye copia de `qa_formato_cysoc.py` previo al cambio).
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Computación y Sociedad/Unidad 5 - Privacidad y Propiedad Intelectual/*.md` (3)
+> - `Universidad/Herramientas/Mantenimiento/qa_formato_cysoc.py` (RE_EMOJI)
+> - `Clippings/00 - LEEME bandeja de pistas.md`

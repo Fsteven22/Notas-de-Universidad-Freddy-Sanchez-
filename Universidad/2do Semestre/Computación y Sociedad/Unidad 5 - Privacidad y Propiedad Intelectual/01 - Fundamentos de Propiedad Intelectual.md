@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1004, cysoc, unidad5, fundamentos-propiedad-intelectual]
 ---
 
 # 📜 Fundamentos de Propiedad Intelectual
@@ -11,6 +12,8 @@ dg-publish: true
 > Hasta ahora hemos visto amenazas contra la información y la privacidad de las personas. Esta nota cambia de eje: no se trata de proteger datos personales, sino de proteger **creaciones de la mente** — ideas, obras, invenciones — que también tienen valor y también pueden ser robadas o usadas sin autorización.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Fundamentos_de_Propiedad_Intelectual_01.svg]]
+>
+> **Se lee así:** el diagrama abre el mapa del derecho: la **propiedad intelectual** se ramifica en **derecho de autor**, **patentes**, **trademarks/marcas** y **trade secrets**, cada una con dos caras (**derechos patrimoniales** y **derechos morales**); por debajo, el marco institucional: **OMPI/WIPO** en el mundo y **SENADI** en Ecuador.
 
 ---
 
@@ -88,7 +91,13 @@ dg-publish: true
 
 ## 🧭 Flujograma de Decisión — ¿A qué organismo o derecho corresponde?
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Fundamentos_de_Propiedad_Intelectual_02.svg]]
+> [!info] 📋 Diagrama de flujo — ¿Qué organismo y qué derecho?
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Fundamentos_de_Propiedad_Intelectual_02.svg]]
+>
+> **Se lee así:** el flowchart clasifica la situación: ¿es un **tratado o marco internacional** → **OMPI/WIPO**; ¿es un caso **dentro de Ecuador** → **SENADI**; ¿busca **compensación económica** por el uso de la obra → **derecho patrimonial**; ¿proteger el **reconocimiento o integridad** de la obra → **derecho moral**.
+>
+> **Por qué importa:** decidir organismo y tipo de derecho es la primera mitad del trabajo jurídico.
 
 ---
 
