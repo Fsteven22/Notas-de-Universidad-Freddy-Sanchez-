@@ -3350,3 +3350,28 @@ el commit de esta línea de PUSHEADO.
 >   `search-content.json` 787 notas).
 >
 > **PUSHEADO `7c087f6b`** — rama + `master` (ff) + clon OneDrive al día (ver cabecera del bloque).
+
+---
+
+### `opencode-onedrive` — MatDisc: la nota del Factorial sus figuras; diagrama general de U3 corregido — 18/11/2026
+
+> [!warning] PUSHEO EN CURSO · `e4bcc69b` · ~2 min
+>
+> - **Hecho:**
+>   - **La nota "05 - El Factorial y Sus Propiedades" ya tiene sus SVG:** 3 figuras nuevas
+>     (fuente `.mmd` + `.svg`) con «Se lee así» estilo casa:
+>     `dis-u3-05-04-graph` (en la Introducción — del conteo secuencial a $n!$: $n$, $n-1$, …, 1
+>     posiciones y el principio multiplicativo), `dis-u3-05-05-graph` (en Definición 17 ·
+>     Telescopio — la cancelación del prefijo $k!$ sobre la cola $(k+1)\cdots n$) y
+>     `dis-u3-05-06-graph` (en Definición 18 · Ceros finales — múltiplos de 5/25/125 sumando
+>     $z(n)$).
+>   - **Corregido el único defecto real que introduje** en 18/11: el diagrama general de la
+>     Unidad 3 (`dis-u3-01-01-graph.svg`) seguía mostrando «05 Permutaciones → 06 Binomio» y
+>     no tenía el nodo del Factorial; quedó la cadena real
+>     **04 Principios → 05 Factorial → 06 Permutaciones → 07 Binomio/Palomar** (el «Se lee
+>     así» del mapa en `Matemáticas Discretas.md` ya decía esa cadena).
+> - **Round-trip `verifica_mmd`: 4/4 OK.**
+> - **QA:** `qa_formato_matdisc` 45 notas, **0 hallazgos**; `qa_links` 574 targets **bad=0**;
+>   mojibake 0.
+>
+> **PUSHEADO en curso:** rama `sesion/opencode-onedrive` → `master` (ff) → clon OneDrive.
