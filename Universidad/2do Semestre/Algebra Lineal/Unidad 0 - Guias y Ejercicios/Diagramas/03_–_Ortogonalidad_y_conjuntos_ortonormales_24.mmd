@@ -1,0 +1,21 @@
+flowchart TD
+    A["Vector v"]
+    B["Base ortonormal<br/>u₁, u₂, ..., uₙ"]
+    C1["c₁ = ⟨v, u₁⟩"]
+    C2["c₂ = ⟨v, u₂⟩"]
+    C3["cₙ = ⟨v, uₙ⟩"]
+    D["v = Σcᵢuᵢ"]
+    E["||v||² = Σcᵢ²<br/>(Parseval)"]
+    A --> B
+    B --> C1
+    B --> C2
+    B --> C3
+    C1 --> D
+    C2 --> D
+    C3 --> D
+    D --> E
+
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style D fill:#e1ffe1
+    style E fill:#e1ffe1

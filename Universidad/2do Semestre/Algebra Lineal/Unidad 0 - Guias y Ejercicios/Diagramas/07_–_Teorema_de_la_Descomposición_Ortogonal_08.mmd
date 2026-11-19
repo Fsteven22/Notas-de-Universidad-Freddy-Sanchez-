@@ -1,0 +1,25 @@
+flowchart TD
+    A["Base arbitraria<br/> v₁, v₂, ..., vₖ"]
+    B["Tomar v₁"]
+    C["Normalizar: q₁ = v₁/‖v₁‖"]
+    D["Tomar v₂"]
+    E["Restar proyección<br/>sobre q₁"]
+    F["Normalizar: q₂"]
+    G["Tomar v₃"]
+    H["Restar proyecciones<br/>sobre q₁, q₂"]
+    I["Normalizar: q₃"]
+    J["Continuar..."]
+    K["Base ortonormal<br/> q₁, q₂, ..., qₖ"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+    J --> K
+
+    style A fill:#ffe1e1
+    style K fill:#e1ffe1

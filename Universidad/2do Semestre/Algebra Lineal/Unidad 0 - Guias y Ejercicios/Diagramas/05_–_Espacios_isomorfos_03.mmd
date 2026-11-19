@@ -1,0 +1,22 @@
+flowchart TD
+    A["¿V ≅ W?"]
+    B{"¿dim V = dim W?"}
+    C["❌ NO son isomorfos<br/>GARANTIZADO"]
+    D{"¿Mismo campo?"}
+    E["✅ SÍ son isomorfos<br/>existe isomorfismo"]
+    F["Construir T explícitamente"]
+    G["Elegir bases"]
+    H["Definir T en base"]
+    I["Extender linealmente"]
+    A --> B
+    B -->|"No"| C
+    B -->|"Sí"| D
+    D -->|"No"| C
+    D -->|"Sí"| E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+
+    style C fill:#ffe1e1
+    style E fill:#e1ffe1

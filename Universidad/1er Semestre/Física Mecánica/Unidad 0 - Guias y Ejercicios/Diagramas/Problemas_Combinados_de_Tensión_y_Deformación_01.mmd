@@ -1,0 +1,28 @@
+flowchart TD
+    A["Estado de Esfuerzo"]
+    B["Esfuerzos Principales σ₁,σ₂,σ₃"]
+    C["Deformaciones Principales ε₁,ε₂,ε₃"]
+    D["Deformación Volumétrica εv = ε₁+ε₂+ε₃"]
+    E["Deformación Distorsional εd"]
+    F["Módulos Elásticos"]
+    G["E - Módulo Young"]
+    H["ν - Coeficiente Poisson"]
+    I["G - Módulo Cortante"]
+    J["K - Módulo Volumétrico"]
+    A --> B
+    B --> C
+    C --> D
+    C --> E
+    F --> G
+    F --> H
+    F --> I
+    F --> J
+    G --> C
+    H --> C
+    I --> E
+    J --> D
+
+    style A fill:#e1f5fe
+    style D fill:#f3e5f5
+    style E fill:#fff3e0
+    style F fill:#e8f5e8

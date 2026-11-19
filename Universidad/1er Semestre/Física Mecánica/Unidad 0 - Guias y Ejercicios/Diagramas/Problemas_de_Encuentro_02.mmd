@@ -1,0 +1,25 @@
+---
+title: "Problemas de Encuentro 02"
+---
+flowchart TD
+    A["Alcance · persecución<br/>mismo sentido"]
+    B["Objetivo con ventaja:<br/>x_obj = d₀ + v_obj t"]
+    C["Perseguidor más rápido: v_per mayor que v_obj"]
+    D["Velocidad relativa de cierre:<br/>v_per − v_obj"]
+    E["Exige v_per mayor que v_obj<br/>si no, nunca alcanza"]
+    F["Condición: x_per(t) = x_obj(t)"]
+    G["Ejemplos: policía y ladrón ·<br/>depredador y presa · auto y auto lento"]
+    B --> A
+    C --> A
+    A --> D
+    D --> E
+    E --> F
+    F --> G
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style D fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style E fill:#ffebee,stroke:#e53935,color:#4a1010
+    style F fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style G fill:#fff8e1,stroke:#fbc02d,color:#4a3b00

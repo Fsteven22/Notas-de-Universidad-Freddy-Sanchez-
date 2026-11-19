@@ -1,0 +1,18 @@
+flowchart TD
+    A["Datos originales<br/>X correlacionados"]
+    B["Aplicar PCA<br/>Calcular Q ortogonal"]
+    C["Datos transformados<br/>Y = X Q"]
+    D["Propiedades de Q"]
+    E["✅ Vectores ortogonales"]
+    F["✅ Preserva distancias"]
+    G["✅ Maximiza varianza"]
+    H["Componentes<br/>independientes"]
+    A --> B
+    B --> C
+    D --> E
+    D --> F
+    D --> G
+    C --> H
+
+    style B fill:#e1ffe1
+    style C fill:#fff4e1

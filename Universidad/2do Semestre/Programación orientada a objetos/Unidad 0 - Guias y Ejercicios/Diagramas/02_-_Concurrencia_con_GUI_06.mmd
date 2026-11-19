@@ -1,0 +1,11 @@
+flowchart LR
+    WT["Worker Thread"]
+    Q["Cola EDT"]
+    EDT["Event Dispatch Thread"]
+    UI["Actualizar UI"]
+    WT -->|"invokeLater"| Q
+    Q --> EDT
+    EDT --> UI
+
+    style WT fill:#fff4e1
+    style EDT fill:#e1f5ff

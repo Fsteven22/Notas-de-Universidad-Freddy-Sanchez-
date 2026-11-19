@@ -1,0 +1,20 @@
+flowchart TD
+    A["Sistema Ax = b"]
+    B{"¿Tiene solución exacta?"}
+    C["Resolver normalmente"]
+    D["b no está en ColA"]
+    E["Buscar \hat{x} que minimize<br/>||b - Ax||"]
+    F["Proyectar b sobre ColA"]
+    G["A\hat{x} = proj_ColA b"]
+    H["Solución de<br/>mínimos cuadrados"]
+    A --> B
+    B -->|"Sí"| C
+    B -->|"No"| D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+
+    style D fill:#ffe1e1
+    style G fill:#e1ffe1
+    style H fill:#fff4e1

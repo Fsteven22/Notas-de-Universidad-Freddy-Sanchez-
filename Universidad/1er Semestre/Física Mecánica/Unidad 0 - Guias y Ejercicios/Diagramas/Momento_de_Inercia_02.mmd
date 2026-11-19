@@ -1,0 +1,23 @@
+flowchart TD
+    A["Identificar el Sistema"]
+    B{"¿Partícula o Cuerpo Rígido?"}
+    C["Usar I = mr²"]
+    D["Usar I = Σm_i r_i²"]
+    E["Identificar Geometría"]
+    F["Aplicar Fórmula Específica"]
+    G{"¿Eje por Centro de Masa?"}
+    H["Resultado Final"]
+    I["Aplicar Teorema Ejes Paralelos"]
+    J["I = I_CM + Md²"]
+    A --> B
+    B -->|"Partícula"| C
+    B -->|"Sistema de Partículas"| D
+    B -->|"Cuerpo Rígido"| E
+    E --> F
+    F --> G
+    G -->|"Sí"| H
+    G -->|"No"| I
+    I --> J
+    J --> H
+    C --> H
+    D --> H

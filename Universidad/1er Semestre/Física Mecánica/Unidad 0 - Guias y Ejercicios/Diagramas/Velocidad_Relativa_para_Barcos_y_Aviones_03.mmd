@@ -1,0 +1,28 @@
+---
+title: "Velocidad Relativa para Barcos y Aviones 03"
+---
+flowchart TD
+    A["Rumbo de compensación"]
+    B["Meta en costa en frente<br/>corriente lateral"]
+    C["Apuntar levemente<br/>aguas arriba"]
+    C1["deriva natural: cancela<br/>el arrastre de la corriente"]
+    C2["v deseada = v vehículo/medio<br/>+ v compensación"]
+    D["Componente perpendicular<br/>al destino: debe ser 0"]
+    E["Tiempo t = d / v completo<br/>solo cuenta la componente útil"]
+    F["Avión: cruce con viento de cola<br/>lateral · compensar hacia lados"]
+    A --> B
+    A --> C
+    C --> C1
+    C --> C2
+    C2 --> D
+    D --> E
+    A --> F
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C1 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C2 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style D fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style E fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style F fill:#fff8e1,stroke:#fbc02d,color:#4a3b00

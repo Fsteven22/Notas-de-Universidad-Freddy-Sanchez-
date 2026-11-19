@@ -1,0 +1,15 @@
+flowchart LR
+    A["this"]
+    B{"Contexto"}
+    C["this.atributo<br/>Referencia a campo"]
+    D["this args<br/>Llamada a constructor"]
+    E["método this<br/>Pasar objeto actual"]
+    A --> B
+    B --> C
+    B --> D
+    B --> E
+
+    style A fill:#fff4e1
+    style C fill:#e1ffe1
+    style D fill:#e1f5ff
+    style E fill:#f0e1ff

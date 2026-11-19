@@ -1,0 +1,24 @@
+flowchart TD
+    A["Matriz A"]
+    B["Calcular valores propios"]
+    C["Calcular espacios propios"]
+    D{"Σ dim(E_λᵢ) = n?"}
+    E["A es diagonalizable"]
+    F["A NO es diagonalizable"]
+    G["Formar P con vectores propios"]
+    H["Formar D con valores propios"]
+    I["A = PDP⁻¹"]
+    A --> B
+    B --> C
+    C --> D
+    D -->|"Sí"| E
+    D -->|"No"| F
+    E --> G
+    E --> H
+    G --> I
+    H --> I
+
+    style A fill:#e1f5ff
+    style E fill:#e1ffe1
+    style F fill:#ffe1e1
+    style I fill:#fff4e1

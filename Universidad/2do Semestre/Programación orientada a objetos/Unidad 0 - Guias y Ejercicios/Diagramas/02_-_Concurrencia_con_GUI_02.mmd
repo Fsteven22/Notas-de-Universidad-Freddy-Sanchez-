@@ -1,0 +1,23 @@
+flowchart LR
+    U["Usuario"]
+    E["Eventos"]
+    EDT["Event Dispatch<br/>Thread"]
+    R["Renderizado"]
+    L["Listeners"]
+    A["Actualizaciones UI"]
+    W1["Worker 1"]
+    W2["Worker 2"]
+    W3["Worker 3"]
+    U --> E
+    E --> EDT
+    EDT --> R
+    EDT --> L
+    EDT --> A
+    W1 -->|"No puede<br/>tocar UI"| EDT
+    W2 -->|"No puede<br/>tocar UI"| EDT
+    W3 -->|"No puede<br/>tocar UI"| EDT
+
+    style EDT fill:#e1f5ff
+    style W1 fill:#fff4e1
+    style W2 fill:#fff4e1
+    style W3 fill:#fff4e1

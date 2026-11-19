@@ -1,0 +1,30 @@
+flowchart TD
+    A["Número Original"]
+    B{"¿Mayor que 10?"}
+    C["Mover coma a la izquierda"]
+    D{"¿Menor que 1?"}
+    E["Mover coma a la derecha"]
+    F["Exponente = 0"]
+    G["Contar posiciones"]
+    H["Contar posiciones"]
+    I["Exponente positivo"]
+    J["Exponente negativo"]
+    K["Verificar mantisa 1≤|a|<10"]
+    L["Notación Científica Final"]
+    A --> B
+    B -->|"Sí"| C
+    B -->|"No"| D
+    D -->|"Sí"| E
+    D -->|"No"| F
+    C --> G
+    E --> H
+    G --> I
+    H --> J
+    I --> K
+    J --> K
+    F --> K
+    K --> L
+
+    style A fill:#e1f5fe
+    style K fill:#e8f5e8
+    style L fill:#fce4ec

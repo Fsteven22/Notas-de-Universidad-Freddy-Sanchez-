@@ -1,0 +1,15 @@
+flowchart TD
+    A["Aconsejas"]
+    B{"¿Qué tono?"}
+    C["Is there any way, Have you tried"]
+    D["If I were you, You could"]
+    E["I wouldn't, I'd avoid"]
+    F["Cierra: It can't hurt"]
+    A --> B
+    B -->|"Explorar opciones"| C
+    B -->|"Sugerir"| D
+    B -->|"Advertir"| E
+    C --> F
+
+    style E fill:#ffe1e1
+    style F fill:#e1ffe1

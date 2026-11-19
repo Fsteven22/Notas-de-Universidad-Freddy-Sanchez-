@@ -1,0 +1,17 @@
+flowchart TD
+    A["Sistema en Reposo"]
+    B{"¿Cumple Condiciones?"}
+    C["Equilibrio Traslacional ✓"]
+    D["Equilibrio Rotacional ✓"]
+    E["Equilibrio Estático"]
+    F["Analizar Estabilidad"]
+    A --> B
+    B -->|"∑F = 0"| C
+    B -->|"∑τ = 0"| D
+    C --> E
+    D --> E
+    E --> F
+
+    style A fill:#ff9999
+    style E fill:#99ccff
+    style F fill:#99ff99

@@ -1,0 +1,29 @@
+---
+title: "Rodadura 02"
+---
+flowchart TD
+    A["Método energético"]
+    B["Energía inicial: M g h<br/>partiendo del reposo"]
+    C["Energía final:<br/>½ M v² + ½ I ω²"]
+    D["Rodar sin deslizar:<br/>ω = v / R"]
+    E["M g h = ½ M v² (1 + β)"]
+    F["v = √(2 g h / (1 + β))"]
+    G["Ejemplo cilindro β = 1/2:<br/>v = 2/3 · √(g h)"]
+    H["Útil cuando no hay<br/>fuerzas no conservativas<br/>y solo quieres velocidad"]
+    A --> B
+    B --> C
+    B --> D
+    C --> E
+    D --> E
+    E --> F
+    F --> G
+    A --> H
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style E fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style F fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style G fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style H fill:#fff8e1,stroke:#fbc02d,color:#4a3b00

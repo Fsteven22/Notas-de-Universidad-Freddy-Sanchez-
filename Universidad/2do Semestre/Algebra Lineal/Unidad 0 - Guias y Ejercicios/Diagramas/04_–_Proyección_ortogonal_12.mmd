@@ -1,0 +1,32 @@
+flowchart TD
+    A["Problema de Proyección"]
+    B{"¿Sobre qué proyectar?"}
+    C["Proyección 1D"]
+    D["Proyección nD"]
+    E{"¿u es unitario?"}
+    F["proj = ⟨v,u⟩u"]
+    G["proj = ⟨v,u⟩/||u||² · u"]
+    H{"¿Base de W?"}
+    I["proj = Σ⟨v,uᵢ⟩uᵢ"]
+    J["proj = Σ⟨v,uᵢ⟩/||uᵢ||² · uᵢ"]
+    K{"¿Ortonormalizar?"}
+    L["Gram-Schmidt<br/>luego usar I o J"]
+    M["Usar P = AA^TA^{-1}A^T"]
+    A --> B
+    B -->|"Vector u"| C
+    B -->|"Subespacio W"| D
+    C --> E
+    E -->|"Sí"| F
+    E -->|"No"| G
+    D --> H
+    H -->|"Ortonormal"| I
+    H -->|"Ortogonal"| J
+    H -->|"Arbitraria"| K
+    K -->|"Sí"| L
+    K -->|"No"| M
+
+    style F fill:#e1ffe1
+    style I fill:#e1ffe1
+    style J fill:#fff4e1
+    style L fill:#e1f5ff
+    style M fill:#ffe1e1

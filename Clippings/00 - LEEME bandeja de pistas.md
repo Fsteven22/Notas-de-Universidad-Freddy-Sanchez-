@@ -3569,3 +3569,23 @@ el commit de esta línea de PUSHEADO.
 >   agente; ningun archivo ajeno tocado.
 >
 > **PUSHEADO `624a566b`** — rama + `master` (ff) + clon OneDrive al día (ver cabecera del bloque).
+---
+
+## 🧩 18/11/2026 · Ronda `.mmd` vault-wide — sesión `opencode` (orden del dueño)
+
+> [!info] Orden del dueño 18/11/2026
+> **«A + C, así no tocamos los .py»**: reconstruir en todo el vault los `.mmd` que sean
+> reconstruibles con las herramientas de la casa, dejarlos **al lado** de cada `.svg` (como en
+> Diseño/FESD/SBD) y anotar acá la regla para las próximas sesiones. Ningún contrato `FORMATO-*.md`
+> ni validador `qa_*.py` se tocó.
+
+- **Hecho — fuentes `.mmd` de TODOS los flowchart-v2 del vault**: cada `Unidad 0 - Guias y Ejercicios/Diagramas/` quedó con su `.mmd` (`svg_a_mmd.py --lote`, con `-X utf8`). Los que ya existían quedaron como estaban (en Cálculo Vectorial los absorbió el ff de `2696733c`).
+- **Mindmaps (156/156)**: reconstructor propio (verificado): árbol desde aristas `edge_A_B` y clases `section-N`; raíz como `root((...))` y hoja con etiqueta especial como `id("texto")` (`(){}[]`). Verificación render→viewBox/comparar texto: casi todos OK o con solo viewBox distinto por métricas de fuente (texto y aristas idénticos). Los 2 DIFIERE-texto están en **Computación y Sociedad** y son `.mmd` manuales del **otro agente** (`38fee96d`): no se tocaron.
+- **ERROR-RENDER 10 archivos con `&`/`+` en el nombre** (Inglés III): bug del pipeline (`mmdc` no escapa la ruta en cmd); verificados desde temporal con nombre seguro: **10/10 OK**. No se editó `mmdc_ligero.py` ni `verifica_mmd.py`.
+- **Regla de la casa (esta es la parte C)** — *todo `.svg` que Neonotes publica lleva su `.mmd` fuente **al lado** (misma carpeta).*
+  - El sitio (Astro/Neonotes) solo publica `.md`: el `.mmd` no sale a la web ni es accesible desde ella, y no hay que moverlo a ninguna carpeta aparte (rompería `R12-svg-sin-mmd` en las materias cerradas).
+  - **Nunca se borra ni se desecha un `.mmd`.** Si falta, se reconstruye: flowcharts `py -X utf8 SVG-Pipeline\svg_a_mmd.py --lote <carpeta>`; mindmaps, con el reconstructor de esta sesión (vive fuera del repo). Si falta otro tipo (class/sequence/gantt/pie/state/timeline), documentarlo como excepción del contrato, no inventar ni borrar el SVG.
+  - `.mmd` NO es Markdown: no escribir textos sueltos ahí; es código fuente mermaid, igual que en Diseño/FESD/SBD.
+- **Pendiente conocido (excepción documentada, no se hace en esta ronda)**: 52 diagramas sin fuente — `classDiagram` 24 (POO), `sequenceDiagram` 22, y `gantt`/`pie`/`stateDiagram`/`timeline`/`(no-rol)` 6. classDiagram no tiene reconstructor mecánico seguro; se hace manualmente o se excluye de R12 en el contrato cuando la materia cierre.
+- **Zona:** todo el vault (orden explícito del dueño). **Trabajo ajeno intacto** (18 PNG MatDisc + manifiesto, `genera_tablas_verdad.py`, PDF de Diseño, copia suelta de Speaking Practice; zona Cálculo Vectorial ya integrada en esta ronda).
+- **Estado git al cierre:** ~998 `.mmd` nuevos + el bloque de esta ronda, commiteados localmente (sin push). `FORMATO-POO.md` / `qa_formato_poo.py` quedaron integrados en `21b01a7b`. trabajo ajeno intacto (18 PNG + manifiesto MatDisc, PDFs de Diseño, copia suelta de Speaking Practice).

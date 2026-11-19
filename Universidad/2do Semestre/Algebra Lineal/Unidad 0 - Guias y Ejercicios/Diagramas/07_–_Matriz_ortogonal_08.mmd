@@ -1,0 +1,16 @@
+flowchart TD
+    A["Matriz Ortogonal Q"]
+    B["Preserva normas<br/>Qv = v"]
+    C["Preserva productos<br/>Qu · Qv = u · v"]
+    D["Preserva distancias<br/>d Qu,Qv = d u,v"]
+    E["Preserva ángulos<br/>∠ Qu,Qv = ∠ u,v"]
+    F["🎯 Isometría"]
+    A --> B
+    A --> C
+    B --> D
+    C --> E
+    D --> F
+    E --> F
+
+    style A fill:#e1f5ff
+    style F fill:#e1ffe1

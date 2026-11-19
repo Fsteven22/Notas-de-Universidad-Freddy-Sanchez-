@@ -1,0 +1,30 @@
+flowchart TD
+    A["Inicio Demostración"]
+    B["Existencia"]
+    C["Unicidad"]
+    D["Definir \hat{y} usando<br/>base ortogonal"]
+    E["Definir z = y - \hat{y}"]
+    F["Probar \hat{y} ∈ W"]
+    G["Probar z ∈ W⊥"]
+    H["Existencia probada ✅"]
+    I["Suponer dos<br/>descomposiciones"]
+    J["Restar ecuaciones"]
+    K["Mostrar diferencia<br/>en W ∩ W⊥"]
+    L["W ∩ W⊥ = 0"]
+    M["Unicidad probada ✅"]
+    A --> B
+    A --> C
+    B --> D
+    D --> E
+    E --> F
+    E --> G
+    F --> H
+    G --> H
+    C --> I
+    I --> J
+    J --> K
+    K --> L
+    L --> M
+
+    style H fill:#e1ffe1
+    style M fill:#e1ffe1

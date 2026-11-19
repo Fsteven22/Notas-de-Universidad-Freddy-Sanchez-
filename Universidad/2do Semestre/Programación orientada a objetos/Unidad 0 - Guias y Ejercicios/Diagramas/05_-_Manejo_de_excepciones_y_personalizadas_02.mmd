@@ -1,0 +1,13 @@
+flowchart LR
+    A["IOException<br/>Técnica"]
+    B["ErrorAlmacenamientoException<br/>De negocio"]
+    C["❌ Usuario no entiende<br/>'FileNotFoundException'"]
+    D["✅ Usuario entiende<br/>'Error al guardar estudiante'"]
+    A -->|"Wrapping"| B
+    A --> C
+    B --> D
+
+    style A fill:#ffe1e1
+    style B fill:#e1ffe1
+    style C fill:#fff4e1
+    style D fill:#e1f5ff

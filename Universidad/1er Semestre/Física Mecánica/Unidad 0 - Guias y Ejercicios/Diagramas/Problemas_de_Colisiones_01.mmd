@@ -1,0 +1,20 @@
+flowchart TD
+    A["Colisión"]
+    B{"Coeficiente e"}
+    C["Elástica"]
+    D["Inelástica"]
+    E["Completamente Inelástica"]
+    F["Conserva KE y p"]
+    G["Conserva p, pierde KE"]
+    H["Conserva p, máxima pérdida KE"]
+    A --> B
+    B -->|"e = 1"| C
+    B -->|"0 < e < 1"| D
+    B -->|"e = 0"| E
+    C --> F
+    D --> G
+    E --> H
+
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style E fill:#ffebee

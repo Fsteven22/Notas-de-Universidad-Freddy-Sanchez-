@@ -1,0 +1,17 @@
+flowchart TD
+    A["Semilla Inicial"]
+    B["Algoritmo PRNG"]
+    C["Número Pseudoaleatorio"]
+    D{"¿Uso Seguro?"}
+    E["Módulo secrets"]
+    F["Módulo random"]
+    A --> B
+    B --> C
+    C --> D
+    D -->|"Sí"| E
+    D -->|"No"| F
+
+    style A fill:#e1f5fe
+    style B fill:#f3e5f5
+    style E fill:#ffebee
+    style F fill:#e8f5e8

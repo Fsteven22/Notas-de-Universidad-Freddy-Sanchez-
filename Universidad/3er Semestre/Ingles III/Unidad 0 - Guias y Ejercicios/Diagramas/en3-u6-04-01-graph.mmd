@@ -1,0 +1,14 @@
+flowchart TD
+    A["Recuerdas algo"]
+    B{"¿Solo o compartido?"}
+    C["Do you remember that, Remember"]
+    D["I don't quite recall, That rings a bell"]
+    E["That reminds me, Has that ever happened"]
+    F["Cierra: Come on, Hawaii"]
+    A --> B
+    B -->|"Pides memoria"| C
+    B -->|"Recuerdas"| D
+    B -->|"Compartes"| E
+    D --> F
+
+    style F fill:#e1ffe1

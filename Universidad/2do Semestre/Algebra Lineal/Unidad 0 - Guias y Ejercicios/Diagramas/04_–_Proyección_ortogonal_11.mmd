@@ -1,0 +1,72 @@
+flowchart TD
+    A["Proyección Ortogonal"]
+    B["Proyección sobre Vector"]
+    B1["Fórmula:  / ||u||^2 · u"]
+    B2["Propiedades"]
+    B21["Linealidad"]
+    B22["Idempotencia"]
+    B3["Descomposición"]
+    B31["Paralela"]
+    B32["Perpendicular"]
+    C["Proyección sobre Subespacio"]
+    C1["Base ortogonal"]
+    C11["Σ  / ||u_i||^2 · u_i"]
+    C2["Base ortonormal"]
+    C21["Σ  · u_i"]
+    C3["Base arbitraria"]
+    C31["A (A^T A)^-1 A^T"]
+    D["Matrices de Proyección"]
+    D1["Construcción"]
+    D11["P = U U^T"]
+    D2["Propiedades"]
+    D21["P^2 = P"]
+    D22["P^T = P"]
+    D23["Autovalores {0,1}"]
+    E["Aplicaciones"]
+    E1["Mínimos cuadrados"]
+    E11["A^T A \hat{x} = A^T b"]
+    E2["Distancias"]
+    E21["||v - proj_W(v)||"]
+    E3["Regresión lineal"]
+    E4["Filtrado de señales"]
+    F["Complemento Ortogonal"]
+    F1["Definición"]
+    F11["= 0"]
+    F2["Propiedades"]
+    F21["V = W ⊕ W_perp"]
+    F22["dim(W) + dim(W_perp) = dim(V)"]
+    A --> B
+    B --> B1
+    B --> B2
+    B2 --> B21
+    B2 --> B22
+    B --> B3
+    B3 --> B31
+    B3 --> B32
+    A --> C
+    C --> C1
+    C1 --> C11
+    C --> C2
+    C2 --> C21
+    C --> C3
+    C3 --> C31
+    A --> D
+    D --> D1
+    D1 --> D11
+    D --> D2
+    D2 --> D21
+    D2 --> D22
+    D2 --> D23
+    A --> E
+    E --> E1
+    E1 --> E11
+    E --> E2
+    E2 --> E21
+    E --> E3
+    E --> E4
+    A --> F
+    F --> F1
+    F1 --> F11
+    F --> F2
+    F2 --> F21
+    F2 --> F22

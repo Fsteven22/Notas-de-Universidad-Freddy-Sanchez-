@@ -1,0 +1,17 @@
+flowchart TD
+    A["Problema: min ||Ax - b||"]
+    B["Factorizar A = QR"]
+    C["Sustituir: min ||QRx - b||"]
+    D["Multiplicar por Qᵀ"]
+    E["min ||Rx - Qᵀb||"]
+    F["Resolver Rx = Qᵀb<br/>sistema triangular"]
+    G["Solución x*"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+
+    style F fill:#fff4e1
+    style G fill:#e1ffe1

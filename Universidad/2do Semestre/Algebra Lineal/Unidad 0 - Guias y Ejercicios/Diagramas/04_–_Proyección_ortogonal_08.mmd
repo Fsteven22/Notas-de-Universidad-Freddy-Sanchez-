@@ -1,0 +1,22 @@
+flowchart LR
+    A["Base de W"]
+    B{"¿Es ortonormal?"}
+    C["P = UU^T<br/>Directo"]
+    D{"¿Ortonormalizar?"}
+    E["Gram-Schmidt<br/>luego P = UU^T"]
+    F["P = AA^TA^{-1}A^T<br/>Requiere inversa"]
+    G["✅ Más simple<br/>✅ Más estable"]
+    H["✅ Interpretación clara<br/>⚠️ Más pasos"]
+    I["✅ Directo<br/>❌ Puede ser inestable"]
+    A --> B
+    B -->|"Sí"| C
+    B -->|"No"| D
+    D -->|"Sí"| E
+    D -->|"No"| F
+    C --> G
+    E --> H
+    F --> I
+
+    style C fill:#e1ffe1
+    style E fill:#fff4e1
+    style F fill:#ffe1e1

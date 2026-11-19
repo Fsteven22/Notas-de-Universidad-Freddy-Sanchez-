@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant JVM
+    participant HU
+    participant HD
+    JVM->>HU: start()
+    JVM->>HD: start()
+    HU->>HU: Trabajando...
+    HD->>HD: Servicio background...
+    HU->>JVM: Termina
+    note over JVM,HU,HD: Todos los hilos de usuario terminaron
+    JVM->>HD: ⚠️ Detención forzada
+    JVM->>JVM: Apagar JVM

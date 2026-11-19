@@ -1,0 +1,18 @@
+flowchart TD
+    A["Energía Total del Fluido"]
+    B["Energía de Presión<br/>P"]
+    C["Energía Cinética<br/>½ρv²"]
+    D["Energía Potencial<br/>ρgh"]
+    E["Intercambio<br/>Energético"]
+    F["Conservación:<br/>E₁ = E₂"]
+    A --> B
+    A --> C
+    A --> D
+    B --> E
+    C --> E
+    D --> E
+    E --> F
+
+    style A fill:#4ecdc4,stroke:#20c997,color:#fff
+    style E fill:#ffd93d,stroke:#fd7e14,color:#000
+    style F fill:#96ceb4,stroke:#198754,color:#fff

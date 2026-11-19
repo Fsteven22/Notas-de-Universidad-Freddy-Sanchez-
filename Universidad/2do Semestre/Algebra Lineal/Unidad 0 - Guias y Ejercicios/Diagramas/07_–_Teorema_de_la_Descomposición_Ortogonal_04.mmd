@@ -1,0 +1,21 @@
+flowchart TD
+    A["Vector y"]
+    B{"¿Base de W?"}
+    C["Usar fórmula directa"]
+    D["Ortonormalizar<br/>Gram-Schmidt"]
+    E["\hat{y} = Σ y·uᵢ/uᵢ·uᵢ uᵢ"]
+    F["Obtener base ortonormal"]
+    G["Calcular z = y - \hat{y}"]
+    H["Verificar: \hat{y} · z = 0"]
+    A --> B
+    B -->|"Ortogonal"| C
+    B -->|"No ortogonal"| D
+    C --> E
+    D --> F
+    F --> E
+    E --> G
+    G --> H
+
+    style A fill:#e1f5ff
+    style E fill:#e1ffe1
+    style H fill:#fff4e1

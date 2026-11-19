@@ -1,0 +1,18 @@
+flowchart LR
+    A1["0: Ana"]
+    A2["1: Luis"]
+    A3["2: María"]
+    A4["Array continuo en memoria"]
+    L1["Ana"]
+    L2["Luis"]
+    L3["María"]
+    L4["Nodos enlazados"]
+    A1 --> A2
+    A2 --> A3
+    L1 -->|"next"| L2
+    L2 -->|"next"| L3
+    L2 -->|"prev"| L1
+    L3 -->|"prev"| L2
+
+    style A1 fill:#e1f5ff
+    style L1 fill:#fff4e1

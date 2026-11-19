@@ -1,0 +1,38 @@
+---
+title: "Problemas de Cálculo de Momento de Inercia 01"
+---
+flowchart TD
+    A["Momento de inercia<br/>I = Σ mᵢ rᵢ² = ∫ r² dm"]
+    B["Tipos de problemas"]
+    B1["Eje fijo: la distancia<br/>al eje no cambia"]
+    B2["Múltiples componentes:<br/>sumar I de cada pieza"]
+    B3["Geometría compleja:<br/>partir en formas básicas"]
+    B4["Ejes inclinados:<br/>descomposición tensorial"]
+    C["Ejemplo: placa en L"]
+    C1["Horizontal 0.6 × 0.2 m, 2 kg<br/>CM en (0.3, 0)"]
+    C2["Vertical 0.2 × 0.4 m, 1 kg<br/>CM en (0.1, 0.2)"]
+    C3["I = Σ (I_CM + M d²)"]
+    C4["Sumar aportes y comparar<br/>con el eje de la esquina"]
+    A --> B
+    B --> B1
+    B --> B2
+    B --> B3
+    B --> B4
+    A --> C
+    C --> C1
+    C --> C2
+    C1 --> C3
+    C2 --> C3
+    C3 --> C4
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B2 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B3 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B4 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C1 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C2 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C3 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C4 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b

@@ -1,0 +1,21 @@
+flowchart TD
+    A["frutas (length = 5)"]
+    B["[0] Manzana"]
+    C["[1] Banana → Fresa"]
+    D["[2] Naranja"]
+    E["[3] Uva"]
+    F["[4] Pera"]
+    G["Índices válidos: 0 a 4"]
+    H["❌ frutas[5] → ERROR"]
+    I["❌ frutas[-1] → ERROR"]
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    A --> F
+    G --> H
+    G --> I
+
+    style A fill:#e1f5ff
+    style H fill:#ffe1e1
+    style I fill:#ffe1e1

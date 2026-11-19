@@ -1,0 +1,28 @@
+---
+title: "Problemas de Persecución 02"
+---
+flowchart TD
+    A["Persecución con aceleración<br/>partir del reposo"]
+    B["Objetivo: velocidad constante<br/>x_obj = d₀ + v t"]
+    C["Perseguidor: acelera desde reposo<br/>x_per = ½ a t²"]
+    D["Alcanzar: ½ a t² = d₀ + v t"]
+    E["½ a t² − v t − d₀ = 0"]
+    F["Solución cuadrática:<br/>t = (v + √(v² + 2 a d₀)) / a"]
+    G["Descartar la raíz negativa<br/>elegimos el tiempo positivo"]
+    H["Posición de alcance<br/>x = d₀ + v t"]
+    B --> A
+    C --> A
+    A --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style D fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style E fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style F fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style G fill:#ffebee,stroke:#e53935,color:#4a1010
+    style H fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b

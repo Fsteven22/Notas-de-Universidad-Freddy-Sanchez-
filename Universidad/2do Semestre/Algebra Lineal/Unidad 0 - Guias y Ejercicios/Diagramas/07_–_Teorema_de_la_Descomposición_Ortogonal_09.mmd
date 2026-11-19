@@ -1,0 +1,16 @@
+flowchart TD
+    A["Vector b<br/>fuera de Col A"]
+    B["Proyectar sobre Col A"]
+    C["b̂ = proj_Col A  b"]
+    D["Resolver A\hat{x} = b̂"]
+    E["\hat{x} solución de<br/>mínimos cuadrados"]
+    F["‖Ax - b‖"]
+    G["Minimizado cuando<br/>Ax = b̂"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    F --> G
+
+    style C fill:#e1ffe1
+    style E fill:#fff4e1

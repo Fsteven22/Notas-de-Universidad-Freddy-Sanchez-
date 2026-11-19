@@ -1,0 +1,37 @@
+---
+title: "Problemas de Ecuación de Continuidad 02"
+---
+flowchart TD
+    A["Tubo de Venturi"]
+    B["Sección 1: ancha · v₁ lenta · P₁ alta"]
+    C["Garganta: estrecha · v₂ = 1/β² · P₂ baja"]
+    C1["β = A₂/A₁"]
+    D["Sobremedida · bocal · placa orificio"]
+    D1["Venturi: baja pérdida · alta precisión"]
+    D2["Tobera: solo converge · más pérdida"]
+    D3["Placa: restricción abrupta · económica"]
+    E["ΔP = P₁ − P₂ = (ρ v₁²/2)(β⁻⁴ − 1)"]
+    F["Pérdida permanente:<br/>(1 − Cd²)(P₁ − P₂)"]
+    G["Límites: β 0.2 a 0.75 ·<br/>Re mayor que 2×10⁴ · P₂ encima de P vapor"]
+    A --> B
+    A --> C
+    C --> C1
+    A --> D
+    D --> D1
+    D --> D2
+    D --> D3
+    A --> E
+    E --> F
+    A --> G
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C1 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style D fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D1 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style D2 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D3 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style E fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style F fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style G fill:#fff8e1,stroke:#fbc02d,color:#4a3b00

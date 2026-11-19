@@ -1,0 +1,17 @@
+flowchart TD
+    A["📋 Identificar sistema"]
+    B["🔍 Clasificar fuerzas"]
+    C{"🤔 ¿Solo conservativas?"}
+    D["⚖️ Usar conservación<br/>K₁ + U₁ = K₂ + U₂"]
+    E["⚡ Usar principio general<br/>W_ext = ΔE_total"]
+    F["📝 Definir estados inicial/final"]
+    G["🧮 Aplicar ecuaciones"]
+    H["✅ Verificar resultado"]
+    A --> B
+    B --> C
+    C -->|"SÍ"| D
+    C -->|"NO"| E
+    D --> F
+    E --> F
+    F --> G
+    G --> H

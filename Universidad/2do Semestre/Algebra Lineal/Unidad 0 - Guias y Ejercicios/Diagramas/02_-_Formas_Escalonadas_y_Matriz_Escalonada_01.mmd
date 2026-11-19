@@ -1,0 +1,51 @@
+flowchart TD
+    A["Matriz Original"]
+    B["Algoritmo de Gauss"]
+    C["Forma Escalonada FE"]
+    D{"¿Necesitas más?"}
+    E["Contar pivotes"]
+    F["Gauss-Jordan"]
+    G["Forma Escalonada Reducida FER"]
+    H["Características de FE"]
+    H1["Filas nulas al final"]
+    H2["Pivotes desplazados derecha"]
+    H3["Ceros debajo de pivotes"]
+    I["Características de FER"]
+    I1["Todo de FE"]
+    I2["Pivotes = 1"]
+    I3["Ceros arriba de pivotes"]
+    I4["Columnas pivote puras"]
+    J["Aplicaciones"]
+    J1["Calcular rango"]
+    J2["Clasificar sistemas"]
+    J3["Resolver sistemas"]
+    J4["Bases de espacios"]
+    J5["Dependencia lineal"]
+    A --> B
+    B --> C
+    C --> D
+    D -->|"Solo rango"| E
+    D -->|"Soluciones explícitas"| F
+    F --> G
+    C --> H
+    H --> H1
+    H --> H2
+    H --> H3
+    G --> I
+    I --> I1
+    I --> I2
+    I --> I3
+    I --> I4
+    E --> J
+    G --> J
+    J --> J1
+    J --> J2
+    J --> J3
+    J --> J4
+    J --> J5
+
+    style A fill:#e3f2fd
+    style C fill:#fff9c4
+    style E fill:#f3e5f5
+    style G fill:#c8e6c9
+    style J fill:#ffebee

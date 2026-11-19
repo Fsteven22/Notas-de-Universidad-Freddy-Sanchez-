@@ -1,0 +1,17 @@
+flowchart TD
+    A["Medicion Bruta"]
+    B{"Aplicar Reglas de CS"}
+    B1["Contar CS"]
+    B2["Operaciones: Suma/Resta"]
+    B3["Operaciones: Multiplicacion/Division"]
+    C["Redondeo a decimales correctos"]
+    D["Redondeo a CS correctas"]
+    E["Resultado reportado con precision adecuada"]
+    A --> B
+    B --> B1
+    B --> B2
+    B --> B3
+    B2 --> C
+    B3 --> D
+    C --> E
+    D --> E

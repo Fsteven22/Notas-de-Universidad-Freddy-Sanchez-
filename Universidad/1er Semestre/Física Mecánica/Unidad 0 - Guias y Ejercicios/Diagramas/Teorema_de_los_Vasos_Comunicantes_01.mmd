@@ -1,0 +1,31 @@
+---
+title: "Teorema de los Vasos Comunicantes 01"
+---
+flowchart TD
+    A["Vasos comunicantes"]
+    B["El líquido sube<br/>al mismo nivel en todos"]
+    C["Fundamento"]
+    C1["P es la misma en el mismo nivel"]
+    C2["P = P_atm + ρ g h<br/>igual de presiones en la base"]
+    D["Forma no importa: nivel<br/>depende solo de la altura"]
+    E["Líquidos inmiscibles"]
+    E1["ρ₁ h₁ = ρ₂ h₂ en la separación"]
+    E2["Denser abajo: alturas<br/>inversas a las densidades"]
+    A --> B
+    A --> C
+    C --> C1
+    C --> C2
+    C1 --> D
+    A --> E
+    E --> E1
+    E --> E2
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C2 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style E fill:#ffebee,stroke:#e53935,color:#4a1010
+    style E1 fill:#ffebee,stroke:#e53935,color:#4a1010
+    style E2 fill:#ffebee,stroke:#e53935,color:#4a1010

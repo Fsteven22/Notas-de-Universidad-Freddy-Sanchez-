@@ -1,0 +1,38 @@
+---
+title: "Problemas de Cuerpos Rígidos en Sistemas con Poleas 01"
+---
+flowchart TD
+    A["Polea con masa colgante<br/>y masa en plano inclinado"]
+    B["Traslacional · ΣF = ma"]
+    B1["Masa colgante: mg − T = ma"]
+    B2["Plano inclinado: mg sinθ − T − f = ma"]
+    C["Rotacional · Στ = I α"]
+    C1["T₁ R − T₂ R = I α"]
+    C2["Restricción: a = α R<br/>la cuerda no se estira"]
+    D["Tipo de cuerda"]
+    D1["Ideal: masa nula → T₁ = T₂"]
+    D2["Masiva: participa del sistema<br/>→ T₁ ≠ T₂"]
+    E["Alternativa: conservación<br/>mgh + ½mv² + ½Iω² = constante"]
+    A --> B
+    B --> B1
+    B --> B2
+    A --> C
+    C --> C1
+    B2 --> C1
+    C1 --> C2
+    A --> D
+    D --> D1
+    D --> D2
+    C2 --> E
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B2 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C1 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C2 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style D fill:#ffebee,stroke:#e53935,color:#4a1010
+    style D1 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style D2 fill:#ffebee,stroke:#e53935,color:#4a1010
+    style E fill:#fff8e1,stroke:#fbc02d,color:#4a3b00

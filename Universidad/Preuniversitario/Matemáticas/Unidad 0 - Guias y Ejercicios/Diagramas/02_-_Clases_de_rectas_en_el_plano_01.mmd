@@ -1,0 +1,15 @@
+flowchart LR
+    A["L1, L2"]
+    B{"m1 = m2?"}
+    C["Secantes<br/>un corte"]
+    D{"b1 = b2?"}
+    E["Coincidentes"]
+    F["Paralelas"]
+    A --> B
+    B -->|"No"| C
+    B -->|"Sí"| D
+    D -->|"Sí"| E
+    D -->|"No"| F
+
+    style C fill:#e1ffe1
+    style F fill:#e1f5ff

@@ -1,0 +1,16 @@
+flowchart LR
+    A["V<br/>dim = n"]
+    B["Ker T<br/>dim = k"]
+    C["complemento<br/>dim = n-k"]
+    D["Im T<br/>dim = n-k"]
+    E["0"]
+    A --> B
+    A --> C
+    C -->|"isomorfism"| D
+    B -->|"mapea a"| E
+    C -->|"isomorfism"| D
+
+    style A fill:#e1f5ff
+    style B fill:#ffccbc
+    style C fill:#c8e6c9
+    style D fill:#c8e6c9

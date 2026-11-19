@@ -1,0 +1,20 @@
+flowchart TD
+    A["Directorio raíz"]
+    B["listFiles"]
+    C{"Para cada File"}
+    D{"¿Es directorio?"}
+    E["Recursión:<br/>explorar subdirectorio"]
+    F["Procesar archivo"]
+    G["Fin"]
+    A --> B
+    B --> C
+    C --> D
+    D -->|"Sí"| E
+    D -->|"No"| F
+    E --> C
+    F --> C
+    C --> G
+
+    style A fill:#e1f5ff
+    style E fill:#fff4e1
+    style F fill:#e1ffe1

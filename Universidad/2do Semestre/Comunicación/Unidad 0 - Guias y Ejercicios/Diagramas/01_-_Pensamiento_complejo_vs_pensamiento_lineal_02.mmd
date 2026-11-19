@@ -1,0 +1,13 @@
+flowchart LR
+    U["Partes"]
+    E["Interacciones"]
+    S["Sistema"]
+    EM["Emergencia"]
+    R["Retroalimenta a partes"]
+    U --> E
+    E --> S
+    S --> EM
+    EM --> R
+
+    style S fill:#e1f5ff
+    style EM fill:#e1ffe1

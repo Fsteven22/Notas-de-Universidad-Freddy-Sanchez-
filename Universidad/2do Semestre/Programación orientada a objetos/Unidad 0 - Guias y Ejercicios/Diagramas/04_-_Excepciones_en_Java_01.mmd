@@ -1,0 +1,19 @@
+flowchart LR
+    A["Programa<br/>ejecutándose"]
+    B{"¿Ocurre<br/>error?"}
+    C["Continuar<br/>normal"]
+    D["Lanzar<br/>Excepción"]
+    E{"¿Manejada?"}
+    F["Ejecutar catch<br/>Recuperarse"]
+    G["💥 Programa<br/>termina"]
+    A --> B
+    B -->|"No"| C
+    B -->|"Sí"| D
+    D --> E
+    E -->|"Sí"| F
+    E -->|"No"| G
+    F --> C
+
+    style C fill:#e1ffe1
+    style F fill:#fff4e1
+    style G fill:#ffe1e1

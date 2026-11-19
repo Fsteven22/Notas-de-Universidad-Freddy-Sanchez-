@@ -1,0 +1,31 @@
+flowchart TD
+    A["Recopilar Datos Experimentales"]
+    B["Calcular Media Aritmética"]
+    C["Calcular Desviación Estándar"]
+    D["Verificar Normalidad"]
+    E{"¿Distribución Normal?"}
+    F["Aplicar Regla 68-95-99.7"]
+    G["Usar Estadísticas No Paramétricas"]
+    H["Establecer Intervalos de Confianza"]
+    I["Detectar Outliers"]
+    J["Reportar Resultados"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E -->|"Sí"| F
+    E -->|"No"| G
+    F --> H
+    G --> H
+    H --> I
+    I --> J
+
+    style A fill:#e1f5fe
+    style B fill:#f3e5f5
+    style C fill:#fff3e0
+    style D fill:#e8f5e8
+    style F fill:#f1f8e9
+    style G fill:#ffebee
+    style H fill:#e0f2f1
+    style I fill:#f3e5f5
+    style J fill:#e1f5fe

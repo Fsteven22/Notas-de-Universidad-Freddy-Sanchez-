@@ -1,0 +1,12 @@
+flowchart TD
+    A1["e₁ = 1,0"]
+    A2["e₂ = 0,1"]
+    B["Aplicar Rotación"]
+    C1["T(e₁) = cos(θ), sin(θ)"]
+    C2["T(e₂) = -sin(θ), cos(θ)"]
+    A1 --> B
+    A2 --> B
+    B --> C1
+    B --> C2
+
+    style B fill:#fff4e1

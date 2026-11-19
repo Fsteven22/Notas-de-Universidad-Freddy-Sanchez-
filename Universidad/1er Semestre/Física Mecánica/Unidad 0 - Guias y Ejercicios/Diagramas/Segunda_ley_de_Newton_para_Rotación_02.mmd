@@ -1,0 +1,34 @@
+---
+title: "Segunda ley de Newton para Rotación 02"
+---
+flowchart TD
+    A["Procedimiento rotacional"]
+    S1["1. Elegir eje de rotación"]
+    S2["2. DCL con todas<br/>las fuerzas"]
+    S3["3. Torques de cada fuerza:<br/>τ = r F sinθ"]
+    S4["4. Sumar torques<br/>con signo y aplicar τ = I α"]
+    R["Resolver para α<br/>o para la fuerza desconocida"]
+    U["Casos clásicos"]
+    U1["Volante: I grande frena cambios de ω"]
+    U2["Yo-yo: el peso da torque<br/>por la cuerda"]
+    U3["Rueda acelerando: torque motor<br/>menos fricción"]
+    A --> S1
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> R
+    A --> U
+    U --> U1
+    U --> U2
+    U --> U3
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style S1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style S2 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style S3 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style S4 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style R fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style U fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style U1 fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style U2 fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style U3 fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
