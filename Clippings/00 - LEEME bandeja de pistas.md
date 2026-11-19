@@ -3475,9 +3475,9 @@ el commit de esta línea de PUSHEADO.
 
 ### `opencode` — CYSOC: U6 (Ética Profesional) a 0 hallazgos — cierre de la materia — 18/11/2026
 
-> [!warning] **PUSHEO EN CURSO**
+> [!success] **PUSHEADO `127448d4`** · 18/11/2026 — `master` = `origin/master` = `127448d4` (sin `--force`).
 >
-> Anuncio previo al push — se cierra con el bloque `PUSHEADO <hash>`.
+> Lo que sigue es el detalle del contenido del push.
 >
 > **U6 = 3 notas** (`Unidad 6 - Etica Profesional`): **12 → 0 hallazgos**.
 > - **Paso 1** (R1-tags, 3): `tags: [CCPG1004, cysoc, unidad6, …]` (`fundamentos-etica-moral`, `falacias-etica-informatica`, `codigos-etica-casos-reales`).
