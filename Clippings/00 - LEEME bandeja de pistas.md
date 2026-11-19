@@ -3412,9 +3412,9 @@ el commit de esta línea de PUSHEADO.
 
 ### `opencode` — CYSOC: U3 (Representación de la información) a 0 hallazgos — 18/11/2026
 
-> [!warning] **PUSHEO EN CURSO**
+> [!success] **PUSHEADO `7c994db4`** · 18/11/2026 — `master` = `origin/master` = `7c994db4` (sin `--force`).
 >
-> Anuncio previo al push — se cierra con el bloque `PUSHEADO <hash>`.
+> Lo que sigue es el detalle del contenido del push.
 >
 > **U3 = 12 notas** (`I - Sistemas de Numeración`: 8 · `II - Compresión de Datos`: 4): **65 → 0 hallazgos**. Sin cierres faltantes (ninguna nota nueva necesitaba `## 📚 Referencias` ni `Metas`); el trabajo fue etiquetar y explicar.
 > - **Paso 1** (R1-tags, 12 notas): `tags: [CCPG1004, cysoc, unidad3, …]` en el frontmatter (ej. `sistema-binario`, `ieee-754`, `huffman-encoding`).
