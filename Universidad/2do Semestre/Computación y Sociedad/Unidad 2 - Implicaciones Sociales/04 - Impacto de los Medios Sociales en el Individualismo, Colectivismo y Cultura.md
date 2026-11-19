@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1004, cysoc, unidad2, medios-sociales]
 ---
 
 # 👥 Impacto de los Medios Sociales en el Individualismo, Colectivismo y Cultura
@@ -11,6 +12,10 @@ dg-publish: true
 > Los medios sociales pueden verse desde dos perspectivas contrapuestas sobre su efecto en la sociedad:
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Impacto_de_los_Medios_Sociales_en_el_Individualismo,_Colectivismo_y_Cultura_01.svg]]
+> 
+>  **Se lee así:** el diagrama parte de **Medios Sociales** y se bifurca en dos efectos opuestos. En la rama **individualista**: cada persona construye su identidad digital, aparecen las burbujas de filtro y la desconexión presencial. En la rama **colectivista**: los medios impulsan movimientos sociales, flash mobs y comunidades en línea.
+>  **Por qué importa:** muestra que la misma tecnología no empuja en una sola dirección: la infraestructura es neutra y el efecto depende de qué uso social se organice sobre ella. Por eso las notas no deben afirmar que las redes «aíslan» o «movilizan», sino que hacen ambas cosas a la vez.
+>  **Ejemplo:** un hashtag puede servir para desconectar a alguien dentro de su burbuja de filtro y, en otra ciudad, para coordinar una protesta en cuestión de horas.
 
 ---
 
@@ -91,6 +96,14 @@ dg-publish: true
 > - ¿Las redes sociales fomentan comunidad o aislamiento?
 > - ¿Quién decide qué contenido vemos? ¿Cómo afecta eso nuestra cultura?
 > - ¿Debería el Estado regular el contenido en redes sociales?
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes consultadas
+>
+> Geert Hofstede. *Cultures and Organizations: Understanding Ourselves and Others*. McGraw-Hill.
+> UNESCO. *Digital citizenship and social media in education*. Recuperado de https://www.unesco.org/en/digital-education
+> Presentación del curso *Computación y Sociedad*, Unidad 2, ESPOL — FESD, EYAG1037.
 
 ---
 

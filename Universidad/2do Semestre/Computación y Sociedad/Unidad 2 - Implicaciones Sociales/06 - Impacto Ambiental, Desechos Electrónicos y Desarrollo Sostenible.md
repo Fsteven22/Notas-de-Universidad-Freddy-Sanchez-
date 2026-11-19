@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1004, cysoc, unidad2, impacto-ambiental]
 ---
 
 # 🌱 Impacto Ambiental, Desechos Electrónicos y Desarrollo Sostenible
@@ -11,6 +12,10 @@ dg-publish: true
 > Cada dispositivo electrónico que usamos tiene un ciclo de vida con impacto ambiental en todas sus etapas: fabricación, uso y descarte. La tecnología que conecta al mundo también genera una de las corrientes de residuos de más rápido crecimiento en la historia.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Impacto_Ambiental,_Desechos_Electrónicos_y_Desarrollo_Sostenible_01.svg]]
+> 
+>  **Se lee así:** el diagrama recorre el **ciclo de vida de un dispositivo** en tres etapas: **fabricación** (extracción de minerales, emisiones de CO₂, agua utilizada), **uso** (consumo eléctrico, calor generado, actualizaciones forzadas) y **descarte** (e-waste, metales tóxicos, exportación de residuos).
+>  **Por qué importa:** fija dónde está el impacto: la fabricación concentra la mayor parte de la huella ambiental, aunque el usuario solo perciba el consumo eléctrico. Por eso «apagar el dispositivo» no es lo mismo que reducir el impacto: la mayor parte se decidió antes de comprarlo.
+>  **Ejemplo:** cambiar de un móvil de 200 gramos a uno de 400 gramos duplica el impacto de la etapa que el usuario nunca ve — la fábrica.
 
 ---
 
@@ -125,6 +130,8 @@ dg-publish: true
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Impacto_Ambiental,_Desechos_Electrónicos_y_Desarrollo_Sostenible_04.svg]]
 >
+>
+> **Nota:** esta definición de 1987 es la que la ONU usa como base de la Agenda 2030: de ahí sale la idea de que una mejora de hoy no puede comprometer las opciones de las generaciones futuras — y de ahí sale también el sentido de los 17 ODS.
 
 > [!note] 🎯 Los 17 Objetivos de Desarrollo Sostenible (ODS) — ONU 2030
 > 
@@ -168,6 +175,15 @@ dg-publish: true
 > - Tipo de sesgo identificado y su origen (datos, diseño, proxy)
 > - Impacto documentado en los afectados
 > - Medidas correctivas tomadas o propuestas de gobernanza
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes consultadas
+>
+> Comisión Mundial sobre el Medio Ambiente y el Desarrollo. *Nuestro futuro común (Informe Brundtland)*. Naciones Unidas, 1987.
+> Convención de Basilea sobre el control de los movimientos transfronterizos de residuos peligrosos y su eliminación. Naciones Unidas, 1989.
+> Programa de las Naciones Unidas para el Medio Ambiente (PNUMA). *Global E-waste Monitor*. Recuperado de https://www.unep.org/resources/global-e-waste-monitor
+> Presentación del curso *Computación y Sociedad*, Unidad 2, ESPOL — FESD, EYAG1037.
 
 ---
 

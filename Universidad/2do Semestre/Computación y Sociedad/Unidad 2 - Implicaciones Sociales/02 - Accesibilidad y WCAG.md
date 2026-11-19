@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1004, cysoc, unidad2, accesibilidad]
 ---
 
 # ♿ Accesibilidad y WCAG
@@ -11,6 +12,10 @@ dg-publish: true
 > La **accesibilidad** es la posibilidad que tengan todas las personas _sin_ que medien **exclusiones de ningún tipo**, como ser culturales, físicas o técnicas, para acceder a un servicio o llegar a visitar un lugar o utilizar un objeto.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Accesibilidad_y_WCAG_01.svg]]
+> 
+>  **Se lee así:** el mapa separa la **accesibilidad física** (rampas para sillas de ruedas, baños adaptados) de la **digital o TIC**. En la rama digital aparecen dos caminos: las **WCAG** (las guías de diseño web) y las **tecnologías de apoyo** — teclados Braille, magnificadores de pantalla, convertidores de texto a voz y de voz a texto, y pantallas adaptadas.
+>  **Por qué importa:** deja visible que accesibilidad no es solo «no discriminar a quien usa silla de ruedas»: son dos capas (espacio y tecnología) y, dentro de la digital, dos ayudas distintas — cumplir las WCAG afecta al producto; las tecnologías de apoyo afectan a la persona que lo usa.
+>  **Ejemplo:** un formulario de la ESPOL con etiqueta correcta en cada campo cumple WCAG; un estudiante con dislexia lo termina gracias al convertidor texto-voz. Son dos capas distintas del mismo derecho.
 
 ---
 
@@ -214,7 +219,13 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Accesibilidad_y_WCAG_03.svg]]
+> [!info] 📊 Resumen visual — Accesibilidad y WCAG
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Accesibilidad_y_WCAG_03.svg]]
+>
+> **Se lee así:** el mapa organiza la accesibilidad en dos ramas —la **física** (espacios, transporte) y la **digital/TIC**— y, dentro de la digital, fija su norma: **WCAG 2.0** (W3C/WAI) con **4 principios POUR**, **12 pautas** y **61 criterios** acumulados por niveles (A = 25, AA = 38, AAA = 61). En Ecuador la referencia es **RTE INEN 288**: vigente desde 2016, nivel A desde 2018 y nivel AA desde 2020.
+>
+> **Por qué importa:** el diagrama muestra que "accesible" no es una cuestión de gusto sino una jerarquía medible: del nivel A al AA los criterios se acumulan, y en Ecuador el RTE INEN 288 los convierte en obligación para servicios digitales públicos.
 
 ---
 

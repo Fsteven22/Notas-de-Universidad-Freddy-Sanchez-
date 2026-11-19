@@ -5,16 +5,20 @@ tags: [CCPG1004, computacion-sociedad, mapa-de-contenido]
 
 # 🟦 Computación y Sociedad
 
-**Código:** CCPG1004 · **Semestre:** 2do · [[Bienvenida y Syllabus Computación y Sociedad|Ver Syllabus completo]]
+> [!note] 📋 Datos de la materia
+>
+> **Código:** CCPG1004 · **Semestre:** 2do · [[Bienvenida y Syllabus Computación y Sociedad|Ver Syllabus completo]]
 
 > [!info] ℹ️ Mapa de contenido de la materia
+>
 > Acceso directo a las 6 unidades; la Unidad 3 se divide en los subtemas del syllabus (carpetas I-II). Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ---
 
-## Unidad 1 — Historia de la Computación
+## 🕰️ Unidad 1 — Historia de la Computación
 
 > [!note] Notas de la unidad
+>
 > - [[01 - Orígenes e Instrumentos de Cálculo]]
 > - [[02 - Computadoras Modernas Tempranas]]
 > - [[03 - Historia del Software (5 Generaciones)]]
@@ -24,9 +28,10 @@ tags: [CCPG1004, computacion-sociedad, mapa-de-contenido]
 
 ---
 
-## Unidad 2 — Implicaciones Sociales
+## 🌍 Unidad 2 — Implicaciones Sociales
 
 > [!note] Notas de la unidad
+>
 > - [[01 - Brecha Digital]]
 > - [[02 - Accesibilidad y WCAG]]
 > - [[03 - Implicaciones Sociales de la Computación en un Mundo Conectado]]
@@ -38,9 +43,10 @@ tags: [CCPG1004, computacion-sociedad, mapa-de-contenido]
 
 ---
 
-## Unidad 3 — Representación de la Información
+## 🔢 Unidad 3 — Representación de la Información
 
 > [!note] I — Sistemas de Numeración
+>
 > - [[01 - Análogo vs Digital]]
 > - [[02 - Sistemas de Numeracion - Introduccion]]
 > - [[03 - Sistema Binario]]
@@ -51,6 +57,7 @@ tags: [CCPG1004, computacion-sociedad, mapa-de-contenido]
 > - [[08 - IEEE 754]]
 
 > [!note] II — Compresión de Datos
+>
 > - [[01 - Introducción a la Compresión]]
 > - [[02 - Keyword Encoding y ASCII]]
 > - [[03 - Run Length Encoding]]
@@ -58,9 +65,10 @@ tags: [CCPG1004, computacion-sociedad, mapa-de-contenido]
 
 ---
 
-## Unidad 4 — Historia de Internet
+## 🌐 Unidad 4 — Historia de Internet
 
 > [!note] Notas de la unidad
+>
 > - [[01 - Historia de Internet y Cómo Funciona]]
 > - [[02 - Evolución de la Web]]
 > - [[03 - Evolución del HTML]]
@@ -71,18 +79,20 @@ tags: [CCPG1004, computacion-sociedad, mapa-de-contenido]
 
 ---
 
-## Unidad 5 — Privacidad y Propiedad Intelectual
+## 🔒 Unidad 5 — Privacidad y Propiedad Intelectual
 
 > [!note] Notas de la unidad
+>
 > - [[01 - Fundamentos de Propiedad Intelectual]]
 > - [[02 - Tipos de Propiedad Intelectual - Patentes, Trademarks y Trade Secrets]]
 > - [[03 - Infracciones y Protección Digital]]
 
 ---
 
-## Unidad 6 — Ética Profesional
+## ⚖️ Unidad 6 — Ética Profesional
 
 > [!note] Notas de la unidad
+>
 > - [[01 - Fundamentos de Ética y Moral]]
 > - [[02 - Falacias de la Ética Informática]]
 > - [[03 - Códigos de Ética y Casos Reales]]
@@ -90,6 +100,7 @@ tags: [CCPG1004, computacion-sociedad, mapa-de-contenido]
 ---
 
 > [!quote] 🔗 Conexiones
+>
 > - Syllabus completo + árbol de notas: [[Bienvenida y Syllabus Computación y Sociedad]]
 
 **Tags:** #computacion #sociedad #ESPOL #CCPG1004
