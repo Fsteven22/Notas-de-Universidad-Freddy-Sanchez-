@@ -205,12 +205,22 @@ body {
 }
 
 
-/* Título de sección: texto normal, sin mono ni mayúsculas. */
+/* Título de sección: texto normal en sans, con fila y filete de coda
+   a la derecha (1 px), como en las hojas de datos y en la carta. */
 .nx-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
   font-family: var(--font-sans);
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--nx-dim);
+}
+.nx-section-title::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid var(--nx-line-strong);
 }
 
 /* Card plana: fondo de superficie, borde de 1 px, sin sombra ni glow. */
@@ -599,21 +609,18 @@ html[data-nx-dir="back"]::view-transition-new(root) {
   white-space: nowrap;
   font-weight: 600;
 }
-/* Cada estado con su color, y solo con su color: el rótulo dice en qué punto
-   está el semestre sin necesidad de un color propio por semestre.
-     · En curso       → coral (el punto de calidez del arrecife)
-     · Completado     → verde de mar
-     · Reconstrucción → ámbar (está a medias)
-   Los tres tokens pasan el contraste mínimo contra el fondo y la
-   superficie, y no se usan en ningún otro sitio. */
+/* Los estados hablan con un matiz solo: neutro para lo que no es
+   "En curso" (gris), coral para "En curso" (y favoritos).
+      · En curso                   → coral
+      · Completado / Reconstrucción → gris apagado */
 .nx-sem-state--en-curso {
   color: var(--nx-coral);
 }
 .nx-sem-state--completado {
-  color: var(--nx-done);
+  color: var(--nx-muted);
 }
 .nx-sem-state--reconstruccion {
-  color: var(--nx-warn);
+  color: var(--nx-muted);
 }
 .nx-sem-list {
   margin: 0.6rem 0 0;
@@ -888,12 +895,16 @@ html[data-nx-dir="back"]::view-transition-new(root) {
   border-bottom-color: var(--nx-accent-line);
 }
 
-/* Distintivo del hero: texto gris pequeño, sin pill ni borde. */
+/* Distintivo del hero: texto gris pequeño con barra vertical de 2 px
+   en acento a la izquierda (como la barra de revisión de la hoja de
+   datos). Sin pill, sin mayúsculas, sin tracking. */
 .nx-badge {
   display: block;
   font-family: var(--font-sans);
   font-size: 0.78rem;
   color: var(--nx-muted);
+  border-left: 2px solid var(--nx-accent);
+  padding-left: 0.6rem;
 }
 
 /* ─── Header del sitio ──────────────────────────────────── */
@@ -2560,5 +2571,9 @@ html.nx-lectura .nx-note-nav {
   }
   .nx-mapa2d__lista a {
     text-decoration: underline !important;
+  }
+  /* El filete de coda de los títulos de sección se imprime en gris. */
+  .nx-section-title::after {
+    border-top-color: #cccccc !important;
   }
 }
