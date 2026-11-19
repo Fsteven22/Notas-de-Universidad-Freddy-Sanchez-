@@ -3433,9 +3433,9 @@ el commit de esta línea de PUSHEADO.
 
 ### `opencode` — CYSOC: U4 (Historia de Internet) a 0 hallazgos — 18/11/2026
 
-> [!warning] **PUSHEO EN CURSO**
+> [!success] **PUSHEADO `404b901c`** · 18/11/2026 — `master` = `origin/master` = `404b901c` (sin `--force`).
 >
-> Anuncio previo al push — se cierra con el bloque `PUSHEADO <hash>`.
+> Lo que sigue es el detalle del contenido del push.
 >
 > **U4 = 7 notas** (`Unidad 4 - Historia de Internet`): **26 → 0 hallazgos**.
 > - **Paso 1** (R1-tags, 7): `tags: [CCPG1004, cysoc, unidad4, …]` (ej. `historia-internet`, `ingenieria-social`, `privacidad-proteccion-datos`).
