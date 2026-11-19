@@ -3498,9 +3498,9 @@ el commit de esta línea de PUSHEADO.
 
 ### `opencode` — POO: tags CCPG1005 + embeds en callouts + fix de redundancia en la nota 01 — 18/11/2026
 
-> [!warning] **PUSHEO EN CURSO**
+> [!success] **PUSHEADO `21b01a7b`** · 18/11/2026 — `master` = `origin/master` = `21b01a7b` (sin `--force`).
 >
-> Anuncio previo al push — se cierra con el bloque `PUSHEADO <hash>`.
+> Lo que sigue es el detalle del contenido del push.
 >
 > **Reformulación de las 27 notas de POO (trabajo del dueño, 17/11)** incluida en este push:
 > tags frontmatter `CCPG1005/unidadN/poo/<tema>`, embeds sueltos envueltos en callout (`> [!note] 🖼️ …`), y `## 📊 Resumen Comparativo` → `## 📊 Resumen Visual` (esqueleto R3).
@@ -3511,6 +3511,8 @@ el commit de esta línea de PUSHEADO.
 > - `qa_formato_poo.py` + `FORMATO-POO.md` R3: **«Introducción» ya no es H2 exigida** en el perfil `clase` (queda `Resumen Visual` como obligatoria). QA re-corrida: **168 hallazgos, 0 errores** (44 W R12-svg-sin-mmd + 124 P R14).
 >
 > **Excluido de este push:** los **121 `.mmd` sin trackear** de `Unidad 0 - Guias y Ejercicios/Diagramas/` (los genera otra sesión; intactos). Tampoco entra nada ajeno (Inglés III, etc.).
+>
+> Nota: `qa_formato_poo.py` y `FORMATO-POO.md` **nunca estuvieron trackeados** (todos sus hermanos de `Mantenimiento` sí lo están; solo estos dos se quedaron fuera del piloto POO). Se incluyen aquí porque es donde vive el fix y porque el QA de POO los necesita.
 >
 > Archivos en este push:
 > - `Universidad/2do Semestre/Programación orientada a objetos/**` (27 notas modificadas)
