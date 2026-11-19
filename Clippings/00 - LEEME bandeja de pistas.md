@@ -3453,9 +3453,9 @@ el commit de esta línea de PUSHEADO.
 
 ### `opencode` — CYSOC: U5 (Privacidad y Propiedad Intelectual) a 0 hallazgos — 18/11/2026
 
-> [!warning] **PUSHEO EN CURSO**
+> [!success] **PUSHEADO `d04297c4`** · 18/11/2026 — `master` = `origin/master` = `d04297c4` (sin `--force`).
 >
-> Anuncio previo al push — se cierra con el bloque `PUSHEADO <hash>`.
+> Lo que sigue es el detalle del contenido del push.
 >
 > **U5 = 3 notas** (`Unidad 5 - Privacidad y Propiedad Intelectual`): **16 → 0 hallazgos**.
 > - **Paso 1** (R1-tags, 3): `tags: [CCPG1004, cysoc, unidad5, …]` (`fundamentos-propiedad-intelectual`, `tipos-propiedad-intelectual`, `infracciones-proteccion-digital`).
