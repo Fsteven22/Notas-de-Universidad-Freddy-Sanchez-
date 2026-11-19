@@ -3470,3 +3470,26 @@ el commit de esta línea de PUSHEADO.
 > - `Universidad/2do Semestre/Computación y Sociedad/Unidad 5 - Privacidad y Propiedad Intelectual/*.md` (3)
 > - `Universidad/Herramientas/Mantenimiento/qa_formato_cysoc.py` (RE_EMOJI)
 > - `Clippings/00 - LEEME bandeja de pistas.md`
+
+---
+
+### `opencode` — CYSOC: U6 (Ética Profesional) a 0 hallazgos — cierre de la materia — 18/11/2026
+
+> [!warning] **PUSHEO EN CURSO**
+>
+> Anuncio previo al push — se cierra con el bloque `PUSHEADO <hash>`.
+>
+> **U6 = 3 notas** (`Unidad 6 - Etica Profesional`): **12 → 0 hallazgos**.
+> - **Paso 1** (R1-tags, 3): `tags: [CCPG1004, cysoc, unidad6, …]` (`fundamentos-etica-moral`, `falacias-etica-informatica`, `codigos-etica-casos-reales`).
+> - **Paso 2a** (R14, 3 embeds dentro de callouts): lectura propia fundamentada en el SVG (ética vs moral vs dilema; las seis falacias; CEI 10 Mandamientos / ACM / IEEE-ACM + caso Samsung).
+> - **Paso 2b** (R4 + R14, 3 embeds top-level): envueltos en callout con lectura — flowchart de dilema ético, falacia por justificación, código aplicable por rol.
+> - **Cierre de materia:** `Índice de Contenido.md` (nota raíz de la materia) — insertados los 6 blancos `>` tras los headers de callout (**R6**), que eran los últimos hallazgos que quedaban.
+> - **QA de la materia: 43 notas → 0 hallazgos, 0 H.** Las 7 unidades (U0–U6) y las notas raíz, limpias.
+> - Pendiente heredado: el punto 3 del dueño (densidad de definiciones vs SVG; habría que dibujar ~19 diagramas nuevos para U4/U5/U6) — sin tocar, decisión pendiente.
+>
+> Backup en `%LOCALAPPDATA%\Temp\opencode\backup_cysoc_u6_20261118_2112`.
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Computación y Sociedad/Unidad 6 - Etica Profesional/*.md` (3)
+> - `Universidad/2do Semestre/Computación y Sociedad/Índice de Contenido.md` (R6)
+> - `Clippings/00 - LEEME bandeja de pistas.md`

@@ -5,21 +5,25 @@ tags: [CCPG1004, unidad0, recursos]
 
 # 📂 Índice de Contenido — Computación y Sociedad
 > [!info] ℹ️ Portal de material de la materia
+>
 > Esta nota es el índice de la carpeta `Unidad 0 - Guias y Ejercicios`, que agrupa el material oficial (syllabus, guías de taller, PDFs del aula) y sirve de hub hacia las unidades. Los PDFs se enlazan como wikilink con alias `📎` (sin `!` no son embed inline); el sitio los sube igualmente.
 
 ## 📎 Syllabus y políticas
 
 > [!note] 📄 Syllabus oficial
+>
 > [[Unidad 0 - Guias y Ejercicios/Guías/SPA-Syllabus-COMPUTACIÓN_Y_SOCIEDAD.pdf|📎 Syllabus oficial (PDF, 2 páginas)]]
 > PDF oficial del aula virtual.
 
 > [!note] 💛 El syllabus completo está como nota
+>
 > ![[Unidad 0 - Guias y Ejercicios/Diagramas/Bienvenida_y_Syllabus_Computacion_y_Sociedad_01.svg]]
 > Ver [[Bienvenida y Syllabus Computación y Sociedad|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
 
 ## 📚 Guías y material de clase
 
 > [!tip] 🚪 Entradas por unidad/módulo
+>
 > Primera nota de cada bloque: el punto de partida.
 > - [[01 - Orígenes e Instrumentos de Cálculo]] — *Unidad 1 - Historia de la computación*
 > - [[01 - Brecha Digital]] — *Unidad 2 - Implicaciones Sociales*
@@ -31,6 +35,7 @@ tags: [CCPG1004, unidad0, recursos]
 ## 📥 Pendiente de cargar
 
 > [!warning] 📬 Material que falta
+>
 > Guías de taller, listas de ejercicios y prácticas del aula virtual. Al llegarlos, soltar el PDF en `Unidad 0 - Guias y Ejercicios/Guías/` con nombre con contexto:
 > - `CCPG1004-Guia-XX.pdf`
 > - `CCPG1004-Ejercicios-Tema.pdf`
@@ -41,6 +46,7 @@ tags: [CCPG1004, unidad0, recursos]
 ## 🔗 Navegación
 
 > [!tip] Enlaces rápidos
+>
 > - [[Computación y Sociedad|🗺️ Mapa de contenido de la materia]]
 > - [[Bienvenida y Syllabus Computación y Sociedad|👋 Bienvenida y Syllabus]]
 

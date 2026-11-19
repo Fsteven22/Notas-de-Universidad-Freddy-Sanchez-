@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1004, cysoc, unidad6, falacias-etica-informatica]
 ---
 
 # 🧠 Falacias de la Ética Informática
@@ -11,6 +12,8 @@ dg-publish: true
 > Una **falacia de ética informática** no es un argumento que alguien use conscientemente para justificar algo incorrecto — muchas veces es una **creencia genuina y difundida** que distorsiona el juicio ético de personas por lo demás razonables. Esta nota recopila seis de las más comunes, todas relacionadas con el uso de computadoras.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Falacias_de_la_Ética_Informática_01.svg]]
+>
+> **Se lee así:** el diagrama lista las seis falacias clásicas de la ética informática: la del **juego de computadora**, la de la **información gratuita**, **Candy-from-a-Baby**, **Hacker's Fallacy** (solo quería aprender), la del **ciudadano que respeta la ley** (no es ilegal) y la **a prueba de impactos** (no hice daño real).
 
 ---
 
@@ -117,7 +120,13 @@ dg-publish: true
 
 ## 🧭 Flujograma de Decisión — ¿Qué falacia está en juego?
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Falacias_de_la_Ética_Informática_02.svg]]
+> [!info] 📋 Diagrama de flujo — ¿Qué falacia es?
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Falacias_de_la_Ética_Informática_02.svg]]
+>
+> **Se lee así:** el flowchart identifica la falacia por su justificación: 'el sistema lo permitió' (con la variante **Candy-from-a-Baby** para datos/información) → **falacia del juego de computadora**; 'era fácil copiarlo' → **de la información gratuita**; 'solo quería aprender' → **Hacker's Fallacy**; 'no es ilegal' → **del ciudadano que respeta la ley**; 'no hice daño real' → **a prueba de impactos**.
+>
+> **Por qué importa:** son las seis excusas que aparecen en cualquier caso de plagio, fuga o sabotaje — reconocerlas las neutraliza.
 
 ---
 
