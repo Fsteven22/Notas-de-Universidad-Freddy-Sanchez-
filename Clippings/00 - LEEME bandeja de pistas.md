@@ -3407,3 +3407,24 @@ el commit de esta línea de PUSHEADO.
 >   mojibake 0.
 >
 > **PUSHEADO `5c9d6a78`** — rama + `master` (ff) + clon OneDrive al día (ver cabecera del bloque).
+
+---
+
+### `opencode` — CYSOC: U3 (Representación de la información) a 0 hallazgos — 18/11/2026
+
+> [!warning] **PUSHEO EN CURSO**
+>
+> Anuncio previo al push — se cierra con el bloque `PUSHEADO <hash>`.
+>
+> **U3 = 12 notas** (`I - Sistemas de Numeración`: 8 · `II - Compresión de Datos`: 4): **65 → 0 hallazgos**. Sin cierres faltantes (ninguna nota nueva necesitaba `## 📚 Referencias` ni `Metas`); el trabajo fue etiquetar y explicar.
+> - **Paso 1** (R1-tags, 12 notas): `tags: [CCPG1004, cysoc, unidad3, …]` en el frontmatter (ej. `sistema-binario`, `ieee-754`, `huffman-encoding`).
+> - **Paso 2a** (R14, 15 embeds dentro de callouts): cada `> ![[…]]` lleva ahora su **lectura propia** fundamentada en el texto real del SVG (`**Se lee así:**`), con la regla R14 a la mano: etiqueta en 7 líneas dentro del callout o prosa ≥ 60 chars.
+> - **Paso 2b** (R4-embed-top + R14, 19 embeds en la raíz): envueltos en callout con su lectura — 12 **SVG** (resúmenes/mapas y diagramas de flujo) y 7 **PNG de diapositivas** del deck (`Archivos/Sistemas de Numeración/`, p. ej. `cysoc-u3-04-conversion-dec-bin-01.png`, el método de escalera), leídos uno a uno para describirlos fielmente.
+> - Nota: el QA de la materia queda en **60 W · 0 H** (restante en U4–U6: R14 24 · R4 14 · R1 13 · R6 6 · R3-h2-emoji 3).
+>
+> Backup de las 12 notas en `%LOCALAPPDATA%\Temp\opencode\backup_cysoc_u3_20261118_2058`.
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Computación y Sociedad/Unidad 3 - Representación de la información/I - Sistemas de Numeración/*.md` (8)
+> - `Universidad/2do Semestre/Computación y Sociedad/Unidad 3 - Representación de la información/II - Compresión de Datos/*.md` (4)
+> - `Clippings/00 - LEEME bandeja de pistas.md`

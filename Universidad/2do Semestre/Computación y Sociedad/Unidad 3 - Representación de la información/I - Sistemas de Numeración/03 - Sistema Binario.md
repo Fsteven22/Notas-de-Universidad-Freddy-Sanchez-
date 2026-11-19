@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1004, cysoc, unidad3, sistema-binario]
 ---
 # 💾 Sistema Binario
 
@@ -10,8 +11,16 @@ dg-publish: true
 > El sistema binario usa únicamente dos símbolos: **0** y **1**. Es la base de toda la computación moderna porque coincide exactamente con los dos estados físicos que puede distinguir un circuito eléctrico (ver [[01 - Análogo vs Digital]]): voltaje alto y voltaje bajo.
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Sistema_Binario_01.svg]]
+>
+> **Se lee así:** el diagrama da la definición operativa: **base 2**, dos símbolos (**0** y **1**) y **notación posicional con potencias de 2** — la única representación que el hardware entiende.
 
-![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-03-sistema-binario-01.png]]
+> [!info] 🎞️ Del deck — El bit en el hardware
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-03-sistema-binario-01.png]]
+>
+> **Se lee así:** la diapositiva muestra el bit como fenómeno físico: los switches (0 = 0 V apagado, 1 = Vcc de 5 V encendido), la compuerta NOT ($Y = \neg A$) con su tabla de verdad, y un **byte** `10110100` (5 V, 0 V, 5 V, 5 V, 0 V, 5 V, 0 V, 0 V) = **180**.
+>
+> **Por qué importa:** confirma que el binario no es una convención matemática sino una propiedad eléctrica del hardware.
 
 ---
 
@@ -92,6 +101,8 @@ dg-publish: true
 > - 32 bits: máximo = 2³² − 1 = **4294967295**
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Sistema_Binario_02.svg]]
+>
+> **Se lee así:** responde a la pregunta de diseño clásica (¿cuántos bits para $N$?): se toma la **siguiente potencia de 2**; con $n$ bits el **máximo representable** es $2^n - 1$ y hay que sumar 1 para cubrir el siguiente valor — el criterio detrás de los límites de tipos como `byte` (255) o `word` (65 535).
 
 ---
 
@@ -137,7 +148,13 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Sistema_Binario_03.svg]]
+> [!info] 📊 Resumen visual — Sistema binario
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Sistema_Binario_03.svg]]
+>
+> **Se lee así:** el mapa completo: símbolos (0 y 1), capacidad ($2^n$ combinaciones con $n$ bits; **8 bits = 256 valores = 1 byte**), notación posicional con potencias de 2 y su papel como fundamento del hardware digital y base de las conversiones a otros sistemas.
+>
+> **Por qué importa:** es el resumen definitivo del tema y el cimiento de todo lo que sigue en la unidad.
 
 ---
 

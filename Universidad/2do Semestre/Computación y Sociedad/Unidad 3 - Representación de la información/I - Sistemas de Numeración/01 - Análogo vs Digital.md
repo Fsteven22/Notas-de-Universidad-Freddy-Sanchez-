@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1004, cysoc, unidad3, analogico-digital]
 ---
 # 📡 Análogo vs Digital — La Información como Señal
 
@@ -10,6 +11,8 @@ dg-publish: true
 > Antes de hablar de sistemas numéricos hay que resolver una pregunta previa: las computadoras manejan texto, números, imágenes, audio y video, pero **¿cómo representan físicamente** toda esa información? La respuesta es que **toda información viaja como una señal eléctrica**, y existen dos formas fundamentalmente distintas de codificar esa señal: **analógica** y **digital**.
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Análogo_vs_Digital_01.svg]]
+>
+> **Se lee así:** el diagrama abre el camino completo: toda **información** se convierte en una **señal eléctrica** y ahí se bifurca en dos naturalezas —**analógica** (continua; el voltaje fluctúa suavemente) y **digital** (discreta; solo dos estados HIGH/LOW).
 >
 > |Tipo de señal|Naturaleza|Ejemplo físico|
 > |---|---|---|
@@ -51,7 +54,13 @@ dg-publish: true
 > | **Ruido** | Se mezcla con la señal útil | Tolerable hasta cierto umbral |
 > | **Procesamiento** | Requiere circuitos lineales complejos | Compatible con lógica binaria simple |
 
-![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-01-analogia-digital-01.png]]
+> [!info] 🎞️ Del deck — Análogo vs Digital
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-01-analogia-digital-01.png]]
+>
+> **Se lee así:** la diapositiva enfrenta las dos señales en sendos osciloscopios: la **analógica** (onda continua, variación suave, infinitos niveles posibles) frente a la **digital** (pulsos de 0 y 1, niveles discretos con información codificada).
+>
+> **Por qué importa:** es la imagen icónica de la lección: la digitalización convierte información continua en solo 2 estados que un circuito distingue sin ambigüedad.
 
 ---
 
@@ -62,6 +71,8 @@ dg-publish: true
 > Una computadora no almacena literalmente un "1" o un "0" — almacena un **nivel de voltaje**, y ese voltaje se interpreta como bit según el rango en el que caiga:
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Análogo_vs_Digital_02.svg]]
+>
+> **Se lee así:** el eje en voltios traduce un bit a física real: por encima de +2 V el estado es **HIGH (1)**, por debajo de +0.8 V es **LOW (0)**, y entre ambas zonas hay una **zona indefinida** (+0.8 a +2 V) que no garantiza ningún estado — es el margen que la lógica necesita para tolerar el ruido.
 >
 > |Rango de voltaje|Estado lógico|Bit|
 > |---|---|---|
@@ -101,7 +112,13 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Análogo_vs_Digital_03.svg]]
+> [!info] 📊 Resumen visual — Análogo vs Digital
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Análogo_vs_Digital_03.svg]]
+>
+> **Se lee así:** el mapa contrasta las dos señales: la **analógica** (continua, irrecuperable al degradarse, medida por amplitud y frecuencia) y la **digital** (discreta, dos estados HIGH/LOW, **PCM**, más fácil de mantener), con los voltajes de referencia (HIGH = 2-5 V → 1; LOW = 0-0.8 V → 0; indefinida = 0.8-2 V).
+>
+> **Por qué importa:** cierra el tema con la conclusión de toda la unidad: las computadoras usan sistemas de numeración para representar **toda** la información.
 
 ---
 

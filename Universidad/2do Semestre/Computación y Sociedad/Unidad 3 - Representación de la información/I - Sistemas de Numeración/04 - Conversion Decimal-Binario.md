@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1004, cysoc, unidad3, conversion-decimal-binario]
 ---
 # 🔄 Conversión Decimal ↔ Binario
 
@@ -10,6 +11,8 @@ dg-publish: true
 > Convertir entre decimal y binario tiene **dos direcciones** (decimal→binario y binario→decimal), y cada una se complica un poco cuando el número tiene **parte fraccionaria**. Esta nota cubre los cuatro casos con ejemplos resueltos paso a paso.
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Conversion_Decimal-Binario_01.svg]]
+>
+> **Se lee así:** el diagrama divide el tema en sus cuatro casos: decimal→binario entero (divisiones sucesivas entre 2), decimal→binario fraccionario (multiplicaciones sucesivas por 2), binario→decimal entero (suma de potencias de 2 donde hay 1) y binario→decimal fraccionario (potencias negativas de 2).
 
 ---
 
@@ -65,7 +68,13 @@ dg-publish: true
 >
 > $$\boxed{1101011001010100_2 = 54\,868_{10}}$$
 
-![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-04-conversion-dec-bin-01.png]]
+> [!info] 🎞️ Del deck — El método de escalera
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-04-conversion-dec-bin-01.png]]
+>
+> **Se lee así:** la diapositiva resume el método de escalera en sus dos mitades: **A) 180 → 10110100** (dividir entre 2 y leer los residuos de abajo arriba) y **B) 10110100 → 180** (asignar potencias $2^7$ … $2^0$ y sumar donde hay 1); el patrón visual es uno solo: **bajar** = dividir/asignar, **subir** = leer/sumar.
+>
+> **Por qué importa:** es el método mental que hace las conversiones sin papel: un mismo patrón invertido para ambas direcciones.
 
 ---
 
@@ -154,7 +163,13 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Conversion_Decimal-Binario_02.svg]]
+> [!info] 📊 Resumen visual — Conversión decimal ↔ binario
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Conversion_Decimal-Binario_02.svg]]
+>
+> **Se lee así:** el mapa de los algoritmos en detalle: **decimal→binario entero** por divisiones sucesivas entre 2 (leer residuos de abajo arriba), **fracciones** por multiplicaciones por 2 tomando la parte entera como bit (precisión limitada a los dígitos pedidos) y el camino inverso con **potencias negativas** ($2^{-1}=0.5$, $2^{-2}=0.25$, $2^{-3}=0.125$).
+>
+> **Por qué importa:** cubre los casos límite que el método entero deja fuera — las fracciones finitas e infinitas en binario.
 
 ---
 
