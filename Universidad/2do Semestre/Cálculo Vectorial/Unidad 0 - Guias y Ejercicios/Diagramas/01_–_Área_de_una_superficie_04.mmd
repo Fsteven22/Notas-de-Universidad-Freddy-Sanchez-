@@ -1,0 +1,19 @@
+flowchart TD
+    A["Región D"]
+    B{"¿Tiene simetría circular?"}
+    C["Usar polares"]
+    D{"¿Límites constantes?"}
+    E["Usar cartesianas"]
+    F["Evaluar caso por caso"]
+    G["x = r cos θ<br/>y = r sen θ<br/>dA = r dr dθ"]
+    H["dA = dx dy"]
+    A --> B
+    B -->|"Sí"| C
+    B -->|"No"| D
+    D -->|"Sí"| E
+    D -->|"No"| F
+    C --> G
+    E --> H
+
+    style C fill:#e1ffe1
+    style E fill:#e1f5ff

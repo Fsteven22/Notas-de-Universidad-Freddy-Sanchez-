@@ -1,0 +1,38 @@
+flowchart TD
+    A["Integral Múltiple"]
+    B{"¿Dimensión?"}
+    C["Integral Doble<br/>∬_R f x,y dA"]
+    D["Integral Triple<br/>∭_E f x,y,z dV"]
+    E{"¿Región R?"}
+    F["Límites constantes"]
+    G["Identificar límites"]
+    H["Usar polares"]
+    I{"¿Sólido E?"}
+    J["6 órdenes posibles"]
+    K["Identificar superficies"]
+    L["Cambio de coordenadas"]
+    M["Integrar"]
+    N["Resultado"]
+    A --> B
+    B -->|"2D"| C
+    B -->|"3D"| D
+    C --> E
+    E -->|"Rectangular"| F
+    E -->|"Tipo I/II"| G
+    E -->|"Circular"| H
+    D --> I
+    I -->|"Caja"| J
+    I -->|"Tipo 1/2/3"| K
+    I -->|"Cilíndrico/Esférico"| L
+    F --> M
+    G --> M
+    H --> M
+    J --> M
+    K --> M
+    L --> M
+    M --> N
+
+    style A fill:#e1f5ff
+    style C fill:#e1ffe1
+    style D fill:#fff4e1
+    style N fill:#e1f5ff

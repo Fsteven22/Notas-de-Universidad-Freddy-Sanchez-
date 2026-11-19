@@ -1,0 +1,31 @@
+---
+title: "12 - Integral triple esfericas 01"
+---
+flowchart TD
+    A["Coordenadas esféricas (ρ, θ, φ)"]
+    B["x = ρ sinφ cosθ"]
+    C["y = ρ sinφ sinθ"]
+    D["z = ρ cosφ"]
+    E["dV = ρ² sinφ dρ dφ dθ"]
+    F["∬∭_E f dV = ∫∫∫ f ρ² sinφ dρ dφ dθ"]
+    G["ρ: distancia al origen"]
+    G1["θ: azimutal (xy-plano)"]
+    G2["φ: polar (desde eje z)"]
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    E --> F
+    A --> G
+    G --> G1
+    G --> G2
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style E fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style F fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style G fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style G1 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style G2 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b

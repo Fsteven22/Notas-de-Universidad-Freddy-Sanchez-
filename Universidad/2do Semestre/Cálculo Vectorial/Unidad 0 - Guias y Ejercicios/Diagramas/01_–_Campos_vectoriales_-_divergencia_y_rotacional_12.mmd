@@ -1,0 +1,23 @@
+flowchart TD
+    A["Campo conservativo F"]
+    B["Integrar f_x = M<br/>respecto a x"]
+    C["Obtener f x,y,z<br/>+ función g y,z"]
+    D["Derivar f<br/>respecto a y"]
+    E["Igualar a N<br/>despejar g_y"]
+    F["Integrar g_y<br/>obtener g + h z"]
+    G["Derivar f<br/>respecto a z"]
+    H["Igualar a P<br/>despejar h'"]
+    I["Integrar h'<br/>obtener h z"]
+    J["Función potencial<br/>f x,y,z + C"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+
+    style A fill:#e1f5ff
+    style J fill:#e1ffe1

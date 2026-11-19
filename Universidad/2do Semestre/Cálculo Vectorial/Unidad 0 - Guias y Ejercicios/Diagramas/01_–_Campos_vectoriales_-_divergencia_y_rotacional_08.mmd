@@ -1,0 +1,30 @@
+---
+title: "Cálculo del rotacional"
+---
+flowchart TD
+    A["F(x,y,z) = Mî + Nĵ + Pk̂"]
+    B["Procedimiento de cálculo"]
+    C["Determinante de derivadas parciales"]
+    D["Desarrollar por la primera fila"]
+    E["∂P/∂y − ∂N/∂z"]
+    F["∂M/∂z − ∂P/∂x"]
+    G["∂N/∂x − ∂M/∂y"]
+    H["Componentes del rotacional"]
+    A --> B
+    A --> C
+    A --> D
+    B --> E
+    C --> F
+    D --> G
+    E --> H
+    F --> H
+    G --> H
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style E fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style F fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style G fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style H fill:#ffebee,stroke:#e53935,color:#4a1010

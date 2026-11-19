@@ -1,0 +1,19 @@
+flowchart TD
+    A["Sólido E en R³"]
+    B["Dividir en<br/>pequeñas cajas"]
+    C["Evaluar f en<br/>cada caja"]
+    D["Multiplicar por<br/>volumen ΔV_i"]
+    E["Sumar todas<br/>las contribuciones"]
+    F{"Refinar<br/>partición"}
+    G["Valor exacto<br/>de la integral"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F -->|"n → ∞"| G
+    F -->|"Más divisiones"| B
+
+    style A fill:#e1f5ff
+    style D fill:#fff4e1
+    style G fill:#e1ffe1

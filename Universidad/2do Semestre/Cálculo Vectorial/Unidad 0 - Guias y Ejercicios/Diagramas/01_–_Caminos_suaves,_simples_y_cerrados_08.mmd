@@ -1,0 +1,24 @@
+flowchart TD
+    A["Caminos"]
+    B{"¿Cerrado?"}
+    C["Camino Cerrado"]
+    D["Camino Abierto"]
+    E{"¿Simple?"}
+    F["✅ Cerrado Simple<br/>Círculo, elipse"]
+    G["⚠️ Cerrado NO Simple<br/>Lemniscata, nudo"]
+    H{"¿Simple?"}
+    I["Segmento, arco"]
+    J["Curva autointersecada"]
+    A --> B
+    B -->|"Sí"| C
+    B -->|"No"| D
+    C --> E
+    E -->|"Sí"| F
+    E -->|"No"| G
+    D --> H
+    H -->|"Sí"| I
+    H -->|"No"| J
+
+    style F fill:#e1ffe1
+    style G fill:#fff4e1
+    style I fill:#e1f5ff

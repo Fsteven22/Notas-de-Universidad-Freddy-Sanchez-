@@ -1,0 +1,16 @@
+---
+title: "02 - Operador nabla y sus propiedades 10"
+---
+flowchart TD
+    A["∇ en coordenadas esféricas (r, θ, φ)"]
+    B["∇ = e_r ∂/∂r + e_θ (1/r)∂/∂θ + e_φ (1/(r sin θ))∂/∂φ"]
+    C["∇²f = (1/r²) ∂/∂r(r² ∂f/∂r) + ..."]
+    C1["Términos angulares"]
+    A --> B
+    A --> C
+    C --> C1
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C1 fill:#fff3e0,stroke:#ff9800,color:#4a2c00

@@ -1,0 +1,16 @@
+flowchart TD
+    A["Camino γ(t)"]
+    B{"¿Hay cruces<br/>visibles?"}
+    C["Probablemente simple"]
+    D["❌ NO es simple"]
+    E{"Verificar<br/>algebraicamente"}
+    F["✅ Simple"]
+    A --> B
+    B -->|"No"| C
+    B -->|"Sí"| D
+    C --> E
+    E -->|"γ(t₁)=γ(t₂)⟹t₁=t₂"| F
+    E -->|"Contraejemplo"| D
+
+    style D fill:#ffe1e1
+    style F fill:#e1ffe1

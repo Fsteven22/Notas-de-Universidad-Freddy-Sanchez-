@@ -1,0 +1,23 @@
+flowchart TD
+    A["Todos los Caminos"]
+    B["Continuos"]
+    C["Suaves"]
+    D["Simples"]
+    E["Cerrados"]
+    F["Suaves y Simples"]
+    G["Suaves y Cerrados"]
+    H["Simples y Cerrados"]
+    I["Suaves, Simples<br/>y Cerrados<br/>Ej: Círculo"]
+    A --> B
+    B --> C
+    B --> D
+    B --> E
+    C --> F
+    C --> G
+    D --> H
+    F --> I
+
+    style C fill:#e1f5ff
+    style D fill:#fff4e1
+    style E fill:#ffe1e1
+    style I fill:#e1ffe1

@@ -1,0 +1,21 @@
+flowchart TD
+    A["Problema de Optimización<br/>con Restricción"]
+    B["Función Objetivo<br/>f(x,y) - Optimizar"]
+    C["Restricción<br/>g(x,y) = c"]
+    D["Método de Lagrange<br/>∇f = λ∇g"]
+    E["Sistema de Ecuaciones"]
+    F["Puntos Candidatos"]
+    G["Evaluar f en candidatos"]
+    H["Extremo Óptimo"]
+    A --> B
+    A --> C
+    B --> D
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+
+    style A fill:#e1f5ff
+    style D fill:#fff5e1
+    style H fill:#e1ffe1

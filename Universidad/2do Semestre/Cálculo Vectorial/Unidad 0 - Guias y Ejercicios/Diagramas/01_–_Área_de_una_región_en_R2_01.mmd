@@ -1,0 +1,20 @@
+flowchart TD
+    A["Región R en ℝ²"]
+    B{"Tipo de Región"}
+    C["Región Tipo I<br/>entre dos funciones de x"]
+    D["Región Tipo II<br/>entre dos funciones de y"]
+    E["Integrar primero en y<br/>luego en x"]
+    F["Integrar primero en x<br/>luego en y"]
+    G["Área = ∬R dA"]
+    A --> B
+    B --> C
+    B --> D
+    C --> E
+    D --> F
+    E --> G
+    F --> G
+
+    style A fill:#e1f5ff
+    style C fill:#e1ffe1
+    style D fill:#ffe1e1
+    style G fill:#f0e1ff

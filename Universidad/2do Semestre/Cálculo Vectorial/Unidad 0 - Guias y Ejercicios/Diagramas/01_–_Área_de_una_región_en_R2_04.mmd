@@ -1,0 +1,34 @@
+flowchart TD
+    A["Inicio"]
+    B["Graficar región R"]
+    C["Encontrar intersecciones"]
+    D{"¿Tipo I o II?"}
+    E["Límites: x constante<br/>y función de x"]
+    F["Límites: y constante<br/>x función de y"]
+    G["Dividir región"]
+    H["Plantear ∫∫ dy dx"]
+    I["Plantear ∫∫ dx dy"]
+    J["Suma de integrales"]
+    K["Resolver"]
+    L{"¿Resultado positivo?"}
+    M["✅ Área correcta"]
+    N["❌ Revisar límites"]
+    A --> B
+    B --> C
+    C --> D
+    D -->|"Tipo I"| E
+    D -->|"Tipo II"| F
+    D -->|"Ambos"| G
+    E --> H
+    F --> I
+    G --> J
+    H --> K
+    I --> K
+    J --> K
+    K --> L
+    L -->|"Sí"| M
+    L -->|"No"| N
+
+    style A fill:#e1f5ff
+    style M fill:#e1ffe1
+    style N fill:#ffe1e1

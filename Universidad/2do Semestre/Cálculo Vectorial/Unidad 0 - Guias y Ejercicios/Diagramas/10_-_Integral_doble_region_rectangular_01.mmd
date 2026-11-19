@@ -1,0 +1,22 @@
+---
+title: "10 - Integral doble region rectangular 01"
+---
+flowchart TD
+    A["Integral doble rectangular"]
+    B["R = [a,b] × [c,d]"]
+    C["∬_R f(x,y) dA"]
+    D["= ∫_a^b ∫_c^d f(x,y) dy dx"]
+    E["= ∫_c^d ∫_a^b f(x,y) dx dy"]
+    F["Interpretación: volumen bajo la superficie"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    A --> F
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style E fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style F fill:#fff8e1,stroke:#fbc02d,color:#4a3b00

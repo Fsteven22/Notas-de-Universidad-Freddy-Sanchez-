@@ -1,0 +1,32 @@
+flowchart TD
+    A["Problema de volumen"]
+    B{"¿Tipo de región?"}
+    C{"¿Hay rotación?"}
+    D["Fórmulas directas"]
+    E{"¿Alrededor de<br/>qué eje?"}
+    F{"¿Secciones<br/>conocidas?"}
+    G["Disco/Arandela"]
+    H["Cascarón"]
+    I["Secciones<br/>transversales"]
+    J{"¿Simetría?"}
+    K["Cilíndricas"]
+    L["Esféricas"]
+    M["Cartesianas"]
+    A --> B
+    B -->|"Delimitada por<br/>funciones"| C
+    B -->|"Forma geométrica<br/>estándar"| D
+    C -->|"Sí"| E
+    C -->|"No"| F
+    E -->|"Eje coordenado"| G
+    E -->|"Eje paralelo"| H
+    F -->|"Sí"| I
+    F -->|"No"| J
+    J -->|"Circular xy"| K
+    J -->|"Radial origen"| L
+    J -->|"Ninguna"| M
+
+    style G fill:#e1ffe1
+    style I fill:#fff4e1
+    style K fill:#e1f5ff
+    style L fill:#f0e1ff
+    style M fill:#ffe1e1

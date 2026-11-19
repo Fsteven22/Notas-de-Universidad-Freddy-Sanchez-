@@ -1,0 +1,25 @@
+---
+title: "08 - Extremo local segunda derivada 01"
+---
+flowchart TD
+    A["Extremo local de f(x,y)"]
+    B["Punto crítico: ∇f = 0"]
+    C["D = f_xx·f_yy - (f_xy)²"]
+    D["D > 0, f_xx > 0: mínimo local"]
+    E["D > 0, f_xx < 0: máximo local"]
+    F["D < 0: punto de silla"]
+    G["D = 0: prueba inconclusa"]
+    A --> B
+    B --> C
+    C --> D
+    C --> E
+    C --> F
+    C --> G
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style D fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style E fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style F fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style G fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b

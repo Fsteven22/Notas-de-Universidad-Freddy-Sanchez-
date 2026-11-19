@@ -1,0 +1,18 @@
+flowchart TD
+    A["Regiones de<br/>Integración"]
+    B["Tipo I<br/>Verticalmente Simple"]
+    C["Tipo II<br/>Horizontalmente Simple"]
+    D["Tipo General<br/>Dividir en subregiones"]
+    E["x fijo:<br/>a ≤ x ≤ b<br/>y varía: g₁ x ≤y≤ g₂ x"]
+    F["y fijo:<br/>c ≤ y ≤ d<br/>x varía: h₁ y ≤x≤ h₂ y"]
+    G["Combinar<br/>regiones Tipo I y II"]
+    A --> B
+    A --> C
+    A --> D
+    B --> E
+    C --> F
+    D --> G
+
+    style B fill:#e1ffe1
+    style C fill:#fff4e1
+    style D fill:#ffe1e1

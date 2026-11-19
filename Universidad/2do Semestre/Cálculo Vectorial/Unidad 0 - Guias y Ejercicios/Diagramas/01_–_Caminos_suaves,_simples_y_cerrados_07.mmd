@@ -1,0 +1,15 @@
+flowchart TD
+    A["Camino Cerrado"]
+    B{"¿Simple?"}
+    C["Cerrado Simple<br/>Ej: círculo"]
+    D["Cerrado NO Simple<br/>Ej: lemniscata"]
+    E["Divide plano en<br/>interior y exterior"]
+    F["Puede autointersectarse"]
+    A --> B
+    B -->|"Sí"| C
+    B -->|"No"| D
+    C --> E
+    D --> F
+
+    style C fill:#e1ffe1
+    style D fill:#fff4e1

@@ -1,0 +1,18 @@
+flowchart LR
+    A["Región 3D"]
+    B{"¿Tiene simetría<br/>cilíndrica?"}
+    C["Usar Cilíndricas"]
+    D["Considerar otro sistema"]
+    E["Simplificar integral"]
+    F["Cálculo más fácil"]
+    G["Cartesianas o Esféricas"]
+    A --> B
+    B -->|"Sí"| C
+    B -->|"No"| D
+    C --> E
+    E --> F
+    D --> G
+
+    style A fill:#e1f5ff
+    style C fill:#e1ffe1
+    style F fill:#e1ffe1

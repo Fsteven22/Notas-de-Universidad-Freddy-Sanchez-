@@ -1,0 +1,23 @@
+---
+title: "Área de una superficie parametrizada"
+---
+flowchart TD
+    A["Superficie r(u,v) = ⟨x(u,v), y(u,v), z(u,v)⟩"]
+    B["Vectores tangentes"]
+    C["Región D en el plano uv"]
+    D["∂r/∂u y ∂r/∂v"]
+    E["Producto cruz: normal a la superficie"]
+    F["A = ∬_D |∂r/∂u × ∂r/∂v| du dv"]
+    A --> B
+    A --> C
+    B --> D
+    C --> D
+    D --> E
+    E --> F
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style E fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style F fill:#ffebee,stroke:#e53935,color:#4a1010

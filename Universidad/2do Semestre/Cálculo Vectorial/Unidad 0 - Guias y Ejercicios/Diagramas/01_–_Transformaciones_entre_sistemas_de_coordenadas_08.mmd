@@ -1,0 +1,8 @@
+flowchart LR
+    A["Esféricas ρ,θ,φ"]
+    B["Cartesianas x,y,z"]
+    A -->|"x = ρ sin φ cos θ<br/>y = ρ sin φ sin θ<br/>z = ρ cos φ"| B
+    B -->|"ρ = √ x²+y²+z²<br/>θ = atan2 y,x<br/>φ = arccos z/ρ"| A
+
+    style A fill:#fff4e1
+    style B fill:#e1ffe1

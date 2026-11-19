@@ -1,0 +1,25 @@
+flowchart TD
+    A["Problema de integral"]
+    B{"¿Tipo de integral?"}
+    C{"¿F = ∇f?"}
+    D["Teorema del Gradiente"]
+    E["Parametrizar"]
+    F{"¿En plano?"}
+    G["Green"]
+    H["Stokes"]
+    I["Divergencia"]
+    J["Stokes si conoces frontera"]
+    A --> B
+    B -->|"Línea sobre curva abierta"| C
+    C -->|"Sí"| D
+    C -->|"No"| E
+    B -->|"Línea sobre curva cerrada"| F
+    F -->|"Sí"| G
+    F -->|"No"| H
+    B -->|"Superficie cerrada"| I
+    B -->|"Superficie abierta"| J
+
+    style D fill:#e1ffe1
+    style G fill:#fff4e1
+    style H fill:#ffe1e1
+    style I fill:#f0e1ff

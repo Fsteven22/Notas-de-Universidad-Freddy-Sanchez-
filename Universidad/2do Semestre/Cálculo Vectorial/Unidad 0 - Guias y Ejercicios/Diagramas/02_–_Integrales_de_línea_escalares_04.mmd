@@ -1,0 +1,28 @@
+---
+title: "Integral de línea escalar: método de evaluación"
+---
+flowchart TD
+    A["∫_C f(x,y)ds"]
+    B["1. Parametrizar la curva: r(t) = ⟨x(t), y(t)⟩"]
+    C["2. Calcular |r'(t)| = √(x'² + y'²)"]
+    D["3. Sustituir en el integrando: f(r(t))"]
+    E["4. Integrar respecto a t en el intervalo dado"]
+    F["5. Resultado: valor numérico"]
+    G["Longitud de arco: L = ∫|r'(t)|dt"]
+    H["ds = |r'(t)|dt"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style E fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style F fill:#ffebee,stroke:#e53935,color:#4a1010
+    style G fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style H fill:#fff3e0,stroke:#ff9800,color:#4a2c00

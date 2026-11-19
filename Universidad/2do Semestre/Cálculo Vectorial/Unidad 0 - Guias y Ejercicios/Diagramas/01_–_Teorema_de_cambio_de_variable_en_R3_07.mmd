@@ -1,0 +1,25 @@
+flowchart TD
+    A["Punto P en espacio"]
+    B["ρ: radio"]
+    C["φ: ángulo polar"]
+    D["θ: ángulo azimutal"]
+    E["Distancia al origen<br/>0 ≤ ρ < ∞"]
+    F["Desde eje z<br/>0 ≤ φ ≤ π"]
+    G["En plano xy<br/>0 ≤ θ < 2π"]
+    H["ρ = 0: origen"]
+    I["φ = 0: eje z+<br/>φ = π: eje z-"]
+    J["θ = 0: eje x+"]
+    A --> B
+    A --> C
+    A --> D
+    B --> E
+    C --> F
+    D --> G
+    E --> H
+    F --> I
+    G --> J
+
+    style A fill:#e1f5ff
+    style B fill:#e1ffe1
+    style C fill:#fff4e1
+    style D fill:#ffe1f5

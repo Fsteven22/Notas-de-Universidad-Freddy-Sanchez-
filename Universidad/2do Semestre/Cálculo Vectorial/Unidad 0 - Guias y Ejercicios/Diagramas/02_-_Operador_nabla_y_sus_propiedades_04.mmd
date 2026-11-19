@@ -1,0 +1,22 @@
+---
+title: "02 - Operador nabla y sus propiedades 04"
+---
+flowchart TD
+    A["Rotacional ∇×F"]
+    B["Tendencia a rotar del campo"]
+    B1["Dirección = eje de rotación<br/>por regla de la mano derecha"]
+    C["Campo irrotacional si ∇×F = 0"]
+    C1["Campo conservativo"]
+    D["∇×F = ( ∂F₃/∂y − ∂F₂/∂z, ∂F₁/∂z − ∂F₃/∂x, ∂F₂/∂x − ∂F₁/∂y )"]
+    A --> B
+    B --> B1
+    A --> C
+    C --> C1
+    A --> D
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C1 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style D fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b

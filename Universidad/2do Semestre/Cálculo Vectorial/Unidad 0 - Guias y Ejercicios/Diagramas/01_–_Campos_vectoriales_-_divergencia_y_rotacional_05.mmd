@@ -1,0 +1,20 @@
+flowchart TD
+    A["Campo Vectorial"]
+    B{"Divergencia"}
+    C["Fuente"]
+    D["Sumidero"]
+    E["Sin fuente/sumidero"]
+    F["Vectores salen<br/>del punto"]
+    G["Vectores entran<br/>al punto"]
+    H["Flujo equilibrado<br/>entra = sale"]
+    A --> B
+    B -->|"div > 0"| C
+    B -->|"div < 0"| D
+    B -->|"div = 0"| E
+    C --> F
+    D --> G
+    E --> H
+
+    style C fill:#ffe1e1
+    style D fill:#e1e1ff
+    style E fill:#e1ffe1

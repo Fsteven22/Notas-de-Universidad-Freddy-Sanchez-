@@ -1,0 +1,19 @@
+flowchart TD
+    A["Región R en plano xy"]
+    B["Dividir en<br/>pequeños rectángulos"]
+    C["Calcular altura<br/>f x_i, y_i en cada uno"]
+    D["Volumen de cada<br/>prisma rectangular"]
+    E["Sumar todos<br/>los prismas"]
+    F{"Refinar<br/>partición"}
+    G["Volumen exacto<br/>bajo la superficie"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F -->|"n → ∞"| G
+    F -->|"Más divisiones"| B
+
+    style A fill:#e1f5ff
+    style D fill:#fff4e1
+    style G fill:#e1ffe1

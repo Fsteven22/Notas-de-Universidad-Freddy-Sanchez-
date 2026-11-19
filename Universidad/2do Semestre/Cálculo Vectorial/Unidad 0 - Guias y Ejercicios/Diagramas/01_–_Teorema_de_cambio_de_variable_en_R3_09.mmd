@@ -1,0 +1,17 @@
+flowchart TD
+    A["Cartesianas<br/>x, y, z"]
+    B["Cilíndricas<br/>r, θ, z"]
+    C["Esféricas<br/>ρ, φ, θ"]
+    D["r² = x² + y²<br/>z = z"]
+    E["ρ² = x² + y² + z²"]
+    F["ρ² = r² + z²<br/>tan φ = r/z"]
+    A --> B
+    A --> C
+    B --> C
+    B --> D
+    C --> E
+    B --> F
+
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style C fill:#f5e1ff

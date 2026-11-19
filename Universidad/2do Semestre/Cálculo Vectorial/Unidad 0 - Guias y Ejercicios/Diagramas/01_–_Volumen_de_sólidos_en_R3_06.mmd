@@ -1,0 +1,20 @@
+flowchart TD
+    A["¿Qué coordenadas usar?"]
+    B{"Simetría"}
+    C["Cartesianas<br/>dV = dx dy dz"]
+    D["Cilíndricas<br/>dV = r dr dθ dz"]
+    E["Esféricas<br/>dV = ρ²sinφ dρ dθ dφ"]
+    F["Cajas, prismas"]
+    G["Cilindros, conos<br/>eje z"]
+    H["Esferas, conos<br/>origen"]
+    A --> B
+    B -->|"Rectangular"| C
+    B -->|"Circular en xy"| D
+    B -->|"Radial desde origen"| E
+    C --> F
+    D --> G
+    E --> H
+
+    style C fill:#ffe1e1
+    style D fill:#fff4e1
+    style E fill:#e1ffe1
