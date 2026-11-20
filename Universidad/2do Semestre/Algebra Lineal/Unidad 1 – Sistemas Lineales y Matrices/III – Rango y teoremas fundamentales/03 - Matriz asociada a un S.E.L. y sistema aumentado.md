@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad1, 03-matriz-asociada-a-un-s-e-l-y-sistema-aumentado]
 ---
 
 # 🔢 Matriz Asociada a un S.E.L. y Sistema Aumentado

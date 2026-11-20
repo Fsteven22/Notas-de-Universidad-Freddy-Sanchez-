@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 07-teorema-de-la-descomposicion-ortogonal]
 ---
 
 # 📐 Teorema de la Descomposición Ortogonal

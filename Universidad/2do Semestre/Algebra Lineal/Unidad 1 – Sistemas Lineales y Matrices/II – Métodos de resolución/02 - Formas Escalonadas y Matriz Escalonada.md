@@ -1,8 +1,9 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad1, 02-formas-escalonadas-y-matriz-escalonada]
 ---
 
-# Formas Escalonadas y Matriz Escalonada
+# 🪜 Formas Escalonadas y Matriz Escalonada
 
 ## 🎯 Fundamentos de las Formas Escalonadas
 

@@ -3589,3 +3589,28 @@ el commit de esta línea de PUSHEADO.
 - **Pendiente conocido (excepción documentada, no se hace en esta ronda)**: 52 diagramas sin fuente — `classDiagram` 24 (POO), `sequenceDiagram` 22, y `gantt`/`pie`/`stateDiagram`/`timeline`/`(no-rol)` 6. classDiagram no tiene reconstructor mecánico seguro; se hace manualmente o se excluye de R12 en el contrato cuando la materia cierre.
 - **Zona:** todo el vault (orden explícito del dueño). **Trabajo ajeno intacto** (18 PNG MatDisc + manifiesto, `genera_tablas_verdad.py`, PDF de Diseño, copia suelta de Speaking Practice; zona Cálculo Vectorial ya integrada en esta ronda).
 - **Estado git al cierre:** ~998 `.mmd` nuevos + el bloque de esta ronda, commiteados localmente (sin push). `FORMATO-POO.md` / `qa_formato_poo.py` quedaron integrados en `21b01a7b`. trabajo ajeno intacto (18 PNG + manifiesto MatDisc, PDFs de Diseño, copia suelta de Speaking Practice).
+
+---
+
+### `opencode` — Álgebra Lineal: piloto MATG1049, contrato + primer pase (0 H) — 19/11/2026
+
+> [!warning] **PUSHEO EN CURSO**
+>
+> Anuncio previo al push — se cierra con el bloque `PUSHEADO <hash>`.
+>
+> **Álgebra Lineal (MATG1049), 51 notas — baseline medido y primer lote de fixes, sin romper nada (51 notas pasan, 0 hallazgos de clase H):**
+> - Nuevo `Universidad/Herramientas/Mantenimiento/FORMATO-ALGEBRA.md` (contrato de la materia, adaptado del patrón CYSOC pero con esqueleto libre y exigencia de emoji en todo H2) y `qa_formato_algebra.py` (mismo motor que el validador CYSOC).
+> - **R4-prosa-top pasa a W** (informativa): las notas de esta materia son prosa densa por diseño; envolver ~775 párrafos en callouts sería una reescritura editorial masiva, no un arreglo de formato. `R8-doble-gt` y `R6-callout-vacío` siguen siendo H.
+> - Tags: 47 notas sin frontmatter ganaron `tags: [MATG1049, algebra-lineal, unidadN, slug]`.
+> - H1 sin emoji corregidos (2), líneas de código `> >` sueltas bajadas de nivel (4), 2 callouts `quote` vacíos rellenados con su contenido envuelto (antes flotaban fuera del callout).
+> - **Estado: 51 notas, 1345 hallazgos, 0 H** (todo W; quedan R14/R4-embed/R6/R7/R3-h2-emoji/R13 para fases siguientes, una unidad a la vez).
+> - Backup de los 51 archivos modificados en `%TEMP%\opencode\backup_algebra_piloto_20261119_2116.zip`.
+>
+> **Queda POR HACER (fase 2):** lecturas R14 de los 174 embeds sin explicación, envolver los 57 embeds top-level, y luego **enlazar los 42 exámenes reales de DSpace** (14 Parcial I / 14 Parcial II / 14 Mejoramiento) desde las notas — el punto central de "nutrir con material real". Nada de esto se incluye en este push.
+>
+> **Excluidos del push:** `FORMATO-FISICA.md` y `qa_formato_fisica.py` (otra sesión, sin tocar), Inglés III y todo el trabajo ajeno. Los exámenes de Álgebra ya estaban pusheados (`6eef68e0`); este push no los repite.
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Algebra Lineal/**` (51 notas: tags/emoji/fixes)
+> - `Universidad/Herramientas/Mantenimiento/FORMATO-ALGEBRA.md` (nuevo), `qa_formato_algebra.py` (nuevo)
+> - `Clippings/00 - LEEME bandeja de pistas.md`

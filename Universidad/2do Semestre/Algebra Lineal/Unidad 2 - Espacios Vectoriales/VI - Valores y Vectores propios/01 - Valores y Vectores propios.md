@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 01-valores-y-vectores-propios]
 ---
 
 # 🎯 Valores y Vectores Propios en Álgebra Lineal
@@ -940,10 +941,14 @@ dg-publish: true
 ## 🔗 Conexión con Próximos Temas
 
 > [!quote] 🌟 Continuando el Aprendizaje
-
-**Has dominado:**
-
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_14.svg]]
+>
+> **Has dominado:**
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_14.svg]]
+>
+> **Se lee así:** el mapa resume todo el tema — definición ($Av = \lambda v$, ecuación característica), técnicas (cálculo de $\lambda$ y $v$, diagonalización, métodos numéricos), propiedades (matrices especiales, multiplicidad) y aplicaciones (sistemas dinámicos, PCA, PageRank, vibraciones).
+>
+> **Por qué importa:** es el puente entre la teoría de valores y vectores propios y lo que viene: el polinomio característico y la diagonalización.
 
 
 ---

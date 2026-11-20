@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 02-polinomio-caracteristico]
 ---
 
 # 🎯 Polinomio Característico
@@ -1136,10 +1137,14 @@ dg-publish: true
 ## 🔗 Conexión con Próximos Temas
 
 > [!quote] 🌟 Hacia Conceptos Avanzados
-
-**Has dominado:**
-
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_11.svg]]
+>
+> **Has dominado:** dando forma al polinomio característico y sus invariantes.
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_11.svg]]
+>
+> **Se lee así:** el mapa ubica el polinomio característico entre su base teórica y su cálculo práctico, con sus dos caras (valores propios y determinación de $\lambda$) y sus invariantes ($\text{tr}(A)$, $\det(A)$).
+>
+> **Por qué importa:** es el resumen que conviene tener fresco antes de entrar a la diagonalización y al polinomio minimal.
 
 **Próximos pasos:**
 

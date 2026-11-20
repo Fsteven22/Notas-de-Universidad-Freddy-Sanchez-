@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 ---
 
 # 📏 Norma Inducida y Distancia
@@ -476,7 +477,7 @@ dg-publish: true
 > ### Desigualdad Triangular Inversa
 > 
 > $$\big| |\mathbf{u}| - |\mathbf{v}| \big| \leq d(\mathbf{u}, \mathbf{v})$$
-> > **Demostración:**
+> **Demostración:**
 > 
 > ```
 > Por desigualdad triangular:

@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 05-espacio-columna]
 ---
 
 # 📐 Espacio Columna

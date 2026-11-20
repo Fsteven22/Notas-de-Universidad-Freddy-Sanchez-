@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonormales]
 ---
 
 # 📐 Ortogonalidad y Ortonormalidad

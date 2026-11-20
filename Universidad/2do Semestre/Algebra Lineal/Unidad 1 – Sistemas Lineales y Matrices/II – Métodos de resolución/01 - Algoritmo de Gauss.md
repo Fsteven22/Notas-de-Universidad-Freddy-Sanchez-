@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad1, 01-algoritmo-de-gauss]
 ---
 
 # 🔢 Algoritmo de Gauss

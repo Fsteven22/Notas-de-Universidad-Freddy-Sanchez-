@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 06-matriz-diagonalizable]
 ---
 
 # 💎 Matriz Diagonalizable

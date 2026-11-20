@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 09-proyeccion-ortogonal-sobre-un-subespacio]
 ---
 
 # 📐 Proyección Ortogonal sobre un Subespacio (Forma Matricial)

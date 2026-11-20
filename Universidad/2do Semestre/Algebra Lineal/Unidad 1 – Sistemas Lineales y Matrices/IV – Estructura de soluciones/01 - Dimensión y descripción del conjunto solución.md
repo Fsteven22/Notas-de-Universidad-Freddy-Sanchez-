@@ -1,8 +1,9 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad1, 01-dimension-y-descripcion-del-conjunto-solucion]
 ---
 
-# Dimensión y Descripción del Conjunto Solución
+# 📐 Dimensión y Descripción del Conjunto Solución
 
 ## 🎯 Fundamentos del Conjunto Solución
 
