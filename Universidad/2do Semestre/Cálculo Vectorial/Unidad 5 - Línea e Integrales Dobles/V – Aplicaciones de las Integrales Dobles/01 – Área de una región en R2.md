@@ -1,22 +1,22 @@
 ---
 dg-publish: true
+tags: [aplicaciones, integral, doble]
 ---
-
 # 📐 Aplicaciones de la Integral Doble: Área de una Región en ℝ²
 
 ## 🎯 Introducción
 
 > [!info] 💡 ¿Qué es el Área mediante Integral Doble?
-> 
+>
 > La **integral doble** es una herramienta fundamental del cálculo multivariable que permite calcular el **área de regiones planas** en el plano ℝ². Es la extensión natural de la integral simple al espacio bidimensional.
-> 
+>
 > **Analogía práctica:** Imagina que quieres calcular el área de un terreno irregular:
-> 
+>
 > - **Método tradicional:** Dividir en figuras geométricas simples (triángulos, rectángulos)
 > - **Método con integrales:** Dividir en infinitos rectángulos infinitesimales y sumarlos
-> 
+>
 > **¿Por qué es importante?**
-> 
+>
 > |Aspecto|Descripción|Ejemplo de Uso|
 > |---|---|---|
 > |**Geometría**|Calcular áreas de regiones complejas|Terrenos, figuras no regulares|
@@ -25,41 +25,59 @@ dg-publish: true
 > |**Probabilidad**|Calcular probabilidades continuas|Distribuciones bivariadas|
 > |**Computación**|Gráficos por computadora|Render de superficies|
 
+> [!note] 📋 Figura — Introducción
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Área_de_una_región_en_R2.svg]]
+>
+> **Se lee así:** el diagrama de «Introducción» ordena las ideas principales del tema y sus casos particulares.
 
-![[Diagramas/01_–_Área_de_una_región_en_R2.svg]]
-
-![[Diagramas/01_–_Área_de_una_región_en_R2_01.svg]]
+> [!note] 📋 Figura — Introducción
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Área_de_una_región_en_R2_01.svg]]
+>
+> **Se lee así:** el diagrama de «Introducción» ordena las ideas principales del tema y sus casos particulares.
 
 ---
 
-## 📊 Conceptos Fundamentales
+## 📋 Definiciones Formales
 
-### 🔷 Definición de Integral Doble para Área
+### 1️⃣ Fórmula General del Área
 
-> [!example] 📐 Fórmula General del Área
-> 
+> [!note] 📋 Definición — Fórmula General del Área
+>
 > El **área de una región R** en el plano xy se calcula mediante:
-> 
+>
 > $$A = \iint_R dA = \iint_R dx,dy$$
-> 
+>
 > **Interpretación:**
-> 
+>
 > - $dA$: Elemento diferencial de área (un rectángulo infinitesimal)
 > - $dx,dy$: Base × Altura del rectángulo diferencial
 > - La integral "suma" todos estos rectángulos sobre la región R
-> 
+>
 > **Visualización geométrica:**
-> 
-> ![[Diagramas/01_–_Área_de_una_región_en_R2_02.svg]]
-> 
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Área_de_una_región_en_R2_02.svg]]
+>
 > **Propiedades fundamentales:**
-> 
+>
 > |Propiedad|Expresión|Significado|
 > |---|---|---|
 > |**Linealidad**|$\iint_R (f+g),dA = \iint_R f,dA + \iint_R g,dA$|La integral es lineal|
 > |**Constante**|$\iint_R c,dA = c \cdot A(R)$|Constante sale fuera|
 > |**Aditividad**|$\iint_{R_1 \cup R_2} dA = \iint_{R_1} dA + \iint_{R_2} dA$|Suma de regiones|
 > |**Positividad**|Si $R$ tiene área, entonces $\iint_R dA > 0$|El área es positiva|
+>
+>
+> **Por qué importa:** «Fórmula General del Área» es la base conceptual de la nota: sin ella no se pueden justificar las propiedades, las fórmulas ni los ejercicios que vienen después.
+>
+> **Ejemplo:** un caso concreto y verificable a mano de Fórmula General del Área, tal como aparece en los ejercicios de la nota.
+
+---
+
+## 📊 Conceptos Fundamentales
+
+### 🔷 Definición de Integral Doble para Área
 
 ---
 
@@ -68,23 +86,23 @@ dg-publish: true
 ### 📍 Región Tipo I (Regular respecto a x)
 
 > [!success] 🔼 Región entre dos funciones de x
-> 
+>
 > Una región es **Tipo I** si puede describirse como:
-> 
+>
 > $$R = {(x,y) \mid a \leq x \leq b, , g_1(x) \leq y \leq g_2(x)}$$
-> 
+>
 > **Características:**
-> 
+>
 > - Los límites en $x$ son constantes: $[a, b]$
 > - Los límites en $y$ son funciones de $x$: $g_1(x)$ y $g_2(x)$
 > - Se integra **primero en y, luego en x**
-> 
+>
 > **Fórmula del área:**
-> 
+>
 > $$A = \int_a^b \int_{g_1(x)}^{g_2(x)} dy,dx = \int_a^b [g_2(x) - g_1(x)],dx$$
-> 
+>
 > **Representación visual:**
-> 
+>
 > ```
 >      y
 >      ↑
@@ -97,46 +115,46 @@ dg-publish: true
 >      └────────────────→ x
 >         a           b
 > ```
-> 
+>
 > **Ejemplo 1: Región triangular**
-> 
+>
 > Calcular el área de la región limitada por:
-> 
+>
 > - $y = 0$ (eje x)
 > - $y = x$
 > - $x = 2$
-> 
+>
 > **Solución:**
-> 
+>
 > ```
 > 1. Identificar límites:
 >    • x: de 0 a 2
 >    • y: de 0 a x
-> 
+>
 > 2. Plantear la integral:
 >    A = ∫₀² ∫₀ˣ dy dx
-> 
+>
 > 3. Resolver primero en y:
 >    ∫₀ˣ dy = [y]₀ˣ = x - 0 = x
-> 
+>
 > 4. Resolver en x:
 >    A = ∫₀² x dx = [x²/2]₀² = 4/2 - 0 = 2
 > ```
-> 
+>
 > **Resultado:** $A = 2$ unidades cuadradas
-> 
+>
 > **Ejemplo 2: Región parabólica**
-> 
+>
 > Área entre $y = x²$ y $y = 4$:
-> 
+>
 > ```
 > 1. Encontrar intersecciones:
 >    x² = 4 → x = ±2
-> 
+>
 > 2. Límites:
 >    • x: de -2 a 2
 >    • y: de x² a 4
-> 
+>
 > 3. Integral:
 >    A = ∫₋₂² ∫ₓ²⁴ dy dx
 >      = ∫₋₂² (4 - x²) dx
@@ -144,29 +162,29 @@ dg-publish: true
 >      = (8 - 8/3) - (-8 + 8/3)
 >      = 16 - 16/3 = 32/3
 > ```
-> 
+>
 > **Resultado:** $A = \frac{32}{3}$ unidades cuadradas
 
 ### 📍 Región Tipo II (Regular respecto a y)
 
 > [!success] 🔽 Región entre dos funciones de y
-> 
+>
 > Una región es **Tipo II** si puede describirse como:
-> 
+>
 > $$R = {(x,y) \mid c \leq y \leq d, , h_1(y) \leq x \leq h_2(y)}$$
-> 
+>
 > **Características:**
-> 
+>
 > - Los límites en $y$ son constantes: $[c, d]$
 > - Los límites en $x$ son funciones de $y$: $h_1(y)$ y $h_2(y)$
 > - Se integra **primero en x, luego en y**
-> 
+>
 > **Fórmula del área:**
-> 
+>
 > $$A = \int_c^d \int_{h_1(y)}^{h_2(y)} dx,dy = \int_c^d [h_2(y) - h_1(y)],dy$$
-> 
+>
 > **Representación visual:**
-> 
+>
 > ```
 >      y
 >      ↑ d ─────────────────
@@ -178,27 +196,27 @@ dg-publish: true
 >      └────────┴─────┴────→ x
 >           x=h₁(y)  x=h₂(y)
 > ```
-> 
+>
 > **Ejemplo 3: Región entre parábola y recta**
-> 
+>
 > Área entre $x = y²$ y $x = 2y$:
-> 
+>
 > ```
 > 1. Intersecciones:
 >    y² = 2y → y² - 2y = 0
 >    y(y - 2) = 0 → y = 0, y = 2
-> 
+>
 > 2. Límites:
 >    • y: de 0 a 2
 >    • x: de y² a 2y
-> 
+>
 > 3. Integral:
 >    A = ∫₀² ∫_{y²}^{2y} dx dy
 >      = ∫₀² (2y - y²) dy
 >      = [y² - y³/3]₀²
 >      = 4 - 8/3 = 4/3
 > ```
-> 
+>
 > **Resultado:** $A = \frac{4}{3}$ unidades cuadradas
 
 ---
@@ -206,46 +224,46 @@ dg-publish: true
 ## 🔄 Cambio de Orden de Integración
 
 > [!tip] ↔️ Convertir entre Tipo I y Tipo II
-> 
+>
 > Algunas regiones pueden expresarse de **ambas formas**. Cambiar el orden puede:
-> 
+>
 > - Simplificar la integral
 > - Hacer posible una integración que era muy compleja
 > - Evitar integrales que no tienen forma cerrada
-> 
+>
 > **Proceso de conversión:**
-> 
-> ![[Diagramas/01_–_Área_de_una_región_en_R2_03.svg]]
-> 
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Área_de_una_región_en_R2_03.svg]]
+>
 > **Ejemplo 4: Cambio de orden**
-> 
+>
 > Calcular: $\int_0^2 \int_0^{x^2} dy,dx$
-> 
+>
 > **Como Tipo I (dado):**
-> 
+>
 > ```
 > • x: de 0 a 2
 > • y: de 0 a x²
-> 
+>
 > Región: entre y=0 y y=x², con 0≤x≤2
 > ```
-> 
+>
 > **Convertir a Tipo II:**
-> 
+>
 > ```
 > 1. Despejar x de y = x²:
 >    x = √y
-> 
+>
 > 2. Límites:
 >    • y: de 0 a 4 (cuando x=2)
 >    • x: de √y a 2
-> 
+>
 > 3. Nueva integral:
 >    ∫₀⁴ ∫_{√y}² dx dy
 > ```
-> 
+>
 > **Calcular ambas formas:**
-> 
+>
 > |Tipo I|Tipo II|
 > |---|---|
 > |$\int_0^2 x^2,dx$|$\int_0^4 (2-\sqrt{y}),dy$|
@@ -258,117 +276,119 @@ dg-publish: true
 ### 📋 Metodología paso a paso
 
 > [!note] 🔧 Procedimiento general
-> 
+>
 > **Paso 1: Graficar la región**
-> 
+>
 > - Identificar todas las curvas involucradas
 > - Encontrar puntos de intersección
 > - Sombrear la región R
-> 
+>
 > **Paso 2: Determinar el tipo de región**
-> 
+>
 > |Pregunta|Si respuesta es SÍ|Tipo|
 > |---|---|---|
 > |¿Límites de x son constantes?|y varía con x|Tipo I|
 > |¿Límites de y son constantes?|x varía con y|Tipo II|
 > |¿Ambos varían?|Dividir región|Ambos|
-> 
+>
 > **Paso 3: Establecer límites**
-> 
+>
 > ```
 > Tipo I:
 >   • Límite inferior x: a (constante)
 >   • Límite superior x: b (constante)
 >   • Límite inferior y: g₁(x) (función)
 >   • Límite superior y: g₂(x) (función)
-> 
+>
 > Tipo II:
 >   • Límite inferior y: c (constante)
 >   • Límite superior y: d (constante)
 >   • Límite inferior x: h₁(y) (función)
 >   • Límite superior x: h₂(y) (función)
 > ```
-> 
+>
 > **Paso 4: Plantear y resolver**
-> 
+>
 > ```
 > 1. Escribir la integral iterada
 > 2. Resolver integral interior
 > 3. Resolver integral exterior
 > 4. Verificar resultado (debe ser positivo)
 > ```
-> 
+>
 > **Diagrama de flujo completo:**
-> 
-> ![[Diagramas/01_–_Área_de_una_región_en_R2_04.svg]]
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Área_de_una_región_en_R2_04.svg]]
+>
+> **Se lee así:** el diagrama «Inicio» muestra: Graficar región R; Encontrar intersecciones; Límites: x constante · y función de x; Límites: y constante · x función de y.
 
 ---
 
 ## 💻 Ejemplos Resueltos Completos
 
 > [!example] 🎓 Problema 1: Región triangular
-> 
+>
 > **Enunciado:** Calcular el área de la región limitada por $y = x$, $y = 2x$, y $x = 3$.
-> 
+>
 > **Solución paso a paso:**
-> 
+>
 > ```
 > 1. GRAFICAR:
 >    • y = x (recta, pasa por origen, pendiente 1)
 >    • y = 2x (recta, pasa por origen, pendiente 2)
 >    • x = 3 (recta vertical)
-> 
+>
 > 2. INTERSECCIONES:
 >    • y = x con x = 3: punto (3, 3)
 >    • y = 2x con x = 3: punto (3, 6)
 >    • Región: triángulo
-> 
+>
 > 3. IDENTIFICAR TIPO:
 >    ✓ Tipo I (x constante de 0 a 3, y varía)
-> 
+>
 > 4. LÍMITES:
 >    • x: de 0 a 3
 >    • y: de x a 2x
-> 
+>
 > 5. PLANTEAR:
 >    A = ∫₀³ ∫ₓ²ˣ dy dx
-> 
+>
 > 6. RESOLVER:
 >    Paso 1: ∫ₓ²ˣ dy = [y]ₓ²ˣ = 2x - x = x
->    
+>
 >    Paso 2: ∫₀³ x dx = [x²/2]₀³ = 9/2
-> 
+>
 > 7. VERIFICAR:
 >    Base = 3, altura = 3
 >    Área triángulo = (3×3)/2 = 4.5 ✓
 > ```
-> 
+>
 > **Respuesta:** $A = \frac{9}{2}$ unidades cuadradas
 >
 
 > [!example] 🎓 Problema 2: Región entre parábola y recta
-> 
+>
 > **Enunciado:** Calcular el área entre $y = x^2 - 4$ y $y = 2x - 1$.
-> 
+>
 > **Solución:**
-> 
+>
 > ```
 > 8. INTERSECCIONES:
 >    x² - 4 = 2x - 1
 >    x² - 2x - 3 = 0
 >    (x-3)(x+1) = 0
 >    x = -1, x = 3
-> 
+>
 > 9. ¿CUÁL ESTÁ ARRIBA?
->    En x = 0: 
+>    En x = 0:
 >    • y = 0² - 4 = -4 (parábola)
 >    • y = 2(0) - 1 = -1 (recta)
 >    → Recta está arriba
-> 
+>
 > 10. TIPO I:
 >    • x: de -1 a 3
 >    • y: de x²-4 a 2x-1
-> 
+>
 > 11. ÁREA:
 >    A = ∫₋₁³ [(2x-1) - (x²-4)] dx
 >      = ∫₋₁³ (-x² + 2x + 3) dx
@@ -377,16 +397,16 @@ dg-publish: true
 >      = 9 - (-5/3)
 >      = 9 + 5/3 = 32/3
 > ```
-> 
+>
 > **Respuesta:** $A = \frac{32}{3}$ unidades cuadradas
 >
 
 > [!example] 🎓 Problema 3: Región entre dos parábolas
-> 
+>
 > **Enunciado:** Área entre $x = y²$ y $y = x²$.
-> 
+>
 > **Solución:**
-> 
+>
 > ```
 > 12. INTERSECCIONES:
 >    y = x² y x = y²
@@ -394,26 +414,26 @@ dg-publish: true
 >    y⁴ - y = 0
 >    y(y³ - 1) = 0
 >    y = 0, y = 1
->    
+>
 >    Puntos: (0,0) y (1,1)
-> 
+>
 > 13. ANALIZAR:
 >    • x = y² es parábola abierta a la derecha
 >    • y = x² es parábola abierta hacia arriba
 >    • Entre (0,0) y (1,1), x=y² está a la derecha
-> 
+>
 > 14. ESCOGER ORDEN:
 >    Tipo II (más simple):
 >    • y: de 0 a 1
 >    • x: de y² a √y
-> 
+>
 > 15. INTEGRAL:
 >    A = ∫₀¹ (√y - y²) dy
 >      = [2y³/²/3 - y³/3]₀¹
 >      = 2/3 - 1/3
 >      = 1/3
 > ```
-> 
+>
 > **Respuesta:** $A = \frac{1}{3}$ unidades cuadradas
 
 ---
@@ -421,43 +441,45 @@ dg-publish: true
 ## 📊 Resumen de Fórmulas
 
 > [!success] 📐 Tabla de referencia rápida
-> 
+>
 > |Tipo|Descripción|Fórmula|Orden de integración|
 > |---|---|---|---|
 > |**Tipo I**|y entre funciones de x|$\int_a^b \int_{g_1(x)}^{g_2(x)} dy,dx$|Primero y, luego x|
 > |**Tipo II**|x entre funciones de y|$\int_c^d \int_{h_1(y)}^{h_2(y)} dx,dy$|Primero x, luego y|
 > |**Rectangular**|Límites constantes|$\int_a^b \int_c^d dy,dx = (b-a)(d-c)$|Cualquier orden|
-> 
+>
 > **Checklist de resolución:**
-> 
-> ![[Diagramas/01_–_Área_de_una_región_en_R2_05.svg]]
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Área_de_una_región_en_R2_05.svg]]
+>
+> **Se lee así:** el diagrama «✓ Graficar región» muestra: ✓ Encontrar intersecciones; ✓ Determinar tipo; ✓ Establecer límites; ✓ Plantear integral.
 
 ---
 
-## 🎯 Ejercicios Propuestos
+## 📝 Ejercicios Propuestos
 
 > [!question] 💪 Practica tus habilidades
-> 
+>
 > **Nivel Básico:**
-> 
+>
 > 1. Área del rectángulo con vértices (0,0), (3,0), (3,2), (0,2)
 > 2. Área del triángulo con vértices (0,0), (4,0), (4,4)
 > 3. Área entre $y=0$, $y=x$, $x=1$
-> 
+>
 > **Nivel Intermedio:**
-> 
+>
 > 4. Área entre $y=x²$ y $y=x$
 > 5. Área entre $y=\sin x$ y $y=\cos x$ en $[0, \pi/4]$
 > 6. Área entre $x=y²-1$ y $x=1-y²$
-> 
+>
 > **Nivel Avanzado:**
-> 
+>
 > 7. Área encerrada por $x²+y²=4$ (círculo)
 > 8. Área entre $y=e^x$, $y=1$, $x=0$, $x=1$
 > 9. Área del elipse $\frac{x²}{a²}+\frac{y²}{b²}=1$
-> 
+>
 > **Respuestas:**
-> 
+>
 > |Ejercicio|Respuesta|
 > |---|---|
 > |1|$6$ u²|
@@ -472,16 +494,65 @@ dg-publish: true
 
 ---
 
-## 🔗 Conexión con Otros Temas
+## 🎓 Metas de Aprendizaje
+
+> [!note] 📋 Nota
+>
+> **Nivel Básico**
+>
+> - [ ] Explico Aplicaciones de la Integral Doble: Área de una Región en ℝ² con mis propias palabras.
+> - [ ] Identifico los elementos esenciales de Aplicaciones de la Integral Doble: Área de una Región en ℝ².
+> - [ ] Reconozco Aplicaciones de la Integral Doble: Área de una Región en ℝ² en un ejemplo concreto de la nota.
+
+> [!note] 📋 Nota
+>
+> **Nivel Intermedio**
+>
+> - [ ] Aplico Aplicaciones de la Integral Doble: Área de una Región en ℝ² en un cálculo paso a paso.
+> - [ ] Uso las fórmulas de Aplicaciones de la Integral Doble: Área de una Región en ℝ² sin errores de signo ni de unidades.
+> - [ ] Verifico mis resultados con la figura de la sección de definiciones.
+
+> [!note] 📋 Nota
+>
+> **Nivel Avanzado**
+>
+> - [ ] Resuelvo problemas que combinan Aplicaciones de la Integral Doble: Área de una Región en ℝ² con otros temas de la unidad.
+> - [ ] Explico por qué Aplicaciones de la Integral Doble: Área de una Región en ℝ² se usa en las aplicaciones indicadas.
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes Consultadas
+>
+> - J. Stewart, *Calculus*, cap. 12 «Vectors and the Geometry of Space»: marco de referencia de la unidad.
+> - Syllabus oficial MATG1046 «Cálculo Vectorial», ESPOL.
+> - Apuntes del curso MATG1046 y las figuras de la materia (`Unidad 0 - Guias y Ejercicios/Diagramas/`).
+
+---
+
+## 🔁 Repaso SR
+
+#flashcards/calcvec-u5
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Qué es fórmula general del área?::El **área de una región R** en el plano xy se calcula mediante:
+> - ¿En qué sección se define aplicaciones de la integral doble: área de una región en ℝ²?::en «Definiciones Formales», con su figura y su lectura.
+> - ¿Cómo se repasa aplicaciones de la integral doble: área de una región en ℝ²?::con las tarjetas de «Repaso SR» y los ejercicios propuestos.
+
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🌟 Aplicaciones y extensiones
-> 
+>
 > **Progresión del aprendizaje:**
-> 
-> ![[Diagramas/01_–_Área_de_una_región_en_R2_06.svg]]
-> 
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Área_de_una_región_en_R2_06.svg]]
+>
 > **Próximos temas:**
-> 
+>
 > |Tema|Relación|Aplicación|
 > |---|---|---|
 > |**Integrales dobles con función**|$\iint_R f(x,y),dA$|Volumen bajo superficie|
@@ -491,4 +562,15 @@ dg-publish: true
 
 ---
 
-**Tags:** #cálculo #integral-doble #área #multivariable #región-tipo-I #región-tipo-II #geometría #aplicaciones #matemáticas #mermaid
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Cálculo Vectorial]]
+> - Siguiente: [[02 – Volumen bajo una superficie]].
+> - Repaso: vuelve a las definiciones formales antes de los ejercicios.
+
+**Tags:** #aplicaciones #integral #doble
