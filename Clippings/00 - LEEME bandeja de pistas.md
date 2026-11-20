@@ -3730,3 +3730,42 @@ las 10 copias a `%TEMP%\opencode`.
 > - `Universidad/1er Semestre/Fundamentos de Programación/Unidad 0 - Guias y Ejercicios/Exámenes/**` (41)
 > - `Clippings/00 - LEEME bandeja de pistas.md`
 
+---
+
+### `opencode` — 1er Semestre: limpieza de PDFs de Cálculo + Inglés III (3er Semestre) — 20/11/2026
+
+> [!warning] **PUSHEO EN CURSO**
+>
+> Anuncio previo al push — se cierra con el bloque `PUSHEADO <hash>`.
+
+**Limpieza de los PDFs preexistentes de Cálculo (con OK del dueño):**
+- Los 16 PDFs que ya estaban en el vault venían de la API con *wrapper MIME/multipart*: abren en
+  visor pero **no parsean** (fallan en `pypdf`). Se reescribieron como PDFs limpios (mismo
+  nombre): **7 archivos modificados**.
+- **9 copias redundantes** movidas a backup (eran el mismo PDF con nombres distintos:
+  `2021-2S-15/17/7-1Par` → un solo archivo; `2022-1S-1/2/4/6/9/18/21-1Par` → un solo archivo).
+- **Nada se borró**: los 16 originales están copiados en
+  `%TEMP%\opencode\backup_examenes_20261120_0040` con manifiesto.
+- Estado final Cálculo: **49 PDFs, 49 hashes únicos, 0 rotos, 0 duplicados**.
+
+**Inglés III (3er Semestre) — 4 PDFs nuevos:**
+- `EXA-2018-2S-INGLÉS III-16-1Par.pdf` + `…-16-1Par (2).pdf` (dos versiones distintas del mismo
+  examen: 459 KB y 183 KB) · `EXA-2019-1S-INGLÉS III-1-1Par.pdf` · `…-1-2Par.pdf`.
+- De los 7 ítems de DSpace, 3 eran duplicados exactos y se descartaron por hash.
+- Destino: `Universidad/3er Semestre/Ingles III/Unidad 0 - Guias y Ejercicios/Exámenes/`.
+
+**Balance de exámenes del vault tras este push:**
+
+| Materia | PDFs | Únicos | Rotos |
+|---|---|---|---|
+| 1er Semestre · Cálculo de una Variable | 49 | 49 | 0 |
+| 1er Semestre · Física Mecánica | 42 | 42 | 0 |
+| 1er Semestre · Fundamentos de Programación | 41 | 41 | 0 |
+| 1er Semestre · Inglés I | 0 | — | no existe en DSpace |
+| 3er Semestre · Inglés III | 4 | 4 | 0 |
+
+> Archivos en este push:
+> - `Universidad/1er Semestre/Cálculo de una Variable/Unidad 0 - Guias y Ejercicios/Exámenes/` (7 modificados, 9 eliminados = movidos a backup)
+> - `Universidad/3er Semestre/Ingles III/Unidad 0 - Guias y Ejercicios/Exámenes/` (4 nuevos)
+> - `Clippings/00 - LEEME bandeja de pistas.md`
+
