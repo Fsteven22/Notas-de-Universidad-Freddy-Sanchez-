@@ -3236,3 +3236,31 @@ el commit de esta línea de PUSHEADO.
 
 > [!success] PUSHEADO `a65569bf` · 18/11/2026 — `9bb5adb9` `1c654535` `dfbef1e5` (código) + `a65569bf`
 > (PUSHEO EN CURSO) + este bloque → merge `--ff-only` a `master` → un solo push, sin `--force`.
+
+---
+
+### `opencode-site` — combinado A+C+D: mapa en cian, acciones con rótulo, contraste arreglado — 19/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-combinado` → `master` (merge `--ff-only`) → `origin/master`
+>
+> - **Hecho (código, `ca83456e`):**
+>   - **Mapa con esferas "En curso" en cian** (token `--nx-coral-esfera`): claro `#2fa9c8`, oscuro `#5cc8e8`. Ya no leen como barro arcilla frente al gris de completado/reconstrucción.
+>   - **Filete de coda en títulos de sección** (`.nx-section-title`): sans 500, línea de 1 px a la derecha, sin mayúsculas ni tracking.
+>   - **Kicker con barra vertical de 2 px** en `.nx-badge`: acento, sin pill ni mayúsculas.
+>   - **Estados sin verde ni ámbar**: Completado y Reconstrucción en gris (`--nx-muted`), solo En curso en coral (`--nx-coral`), también en el mapa 3D.
+>   - **Contraste de hover arreglado**: `--nx-control` claro `#708a98` → `#6f8391` (control/hover pasa de 2,94:1 a 3,18:1).
+>   - **Acciones de nota con rótulo visible**: Modo lectura, Imprimir / PDF, Guardar, Marcar leída, Emojis. La estrella de Guardar sigue siendo coral (coherente con reservar el coral para favoritos).
+>
+> - **Verificado sobre el build de producción** (818 páginas, `astro preview`):
+>   - Contraste total 18/18 en ambos temas.
+>   - Auditoría de paleta: todos los contrastes OK, 1 solo degradado (barra 2px), 0 sombras, 0 blur, radios 100 % 4 px, animación se detiene con `prefers-reduced-motion`, 0 errores de consola.
+>   - Funcional 10/10: buscador, flashcards, marcar leída, contador, barra de progreso, mapa 3D⇄Lista, tema persistente, modo lectura.
+>   - Modo lectura 602→671 px, foco neón visible, 0 errores de consola.
+>   - Mapa: esferas cian confirmadas por análisis de píxeles, etiquetas sin solaparse, diagrama SVG de Cálculo 1 en oscuro sin fondo blanco.
+>   - Impresión del mapa: canvas oculto, Lista en 2 columnas negro sobre blanco, 4 semestres.
+>
+> - **No se tocó** la zona `opencode`, ni `Universidad/`, ni `site/scripts/`. Sin `npm run sync` en OneDrive.
+>
+> - **Sync local**: `npm run sync` con `VAULT_DIR=../Universidad` para que el build local coincida con la producción (787 notas, 4 semestres).
+
+---
