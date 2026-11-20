@@ -3688,9 +3688,9 @@ el commit de esta línea de PUSHEADO.
 
 ### `opencode` — 1er Semestre: exámenes de DSpace (125 PDFs nuevos) — 20/11/2026
 
-> [!warning] **PUSHEO EN CURSO**
+> [!success] **PUSHEADO `5d0e2bc4`** · 20/11/2026 — `master` = `origin/master` = `5d0e2bc4` al momento del push (sin `--force`).
 >
-> Anuncio previo al push — se cierra con el bloque `PUSHEADO <hash>`.
+> Lo que sigue es el detalle del contenido del push.
 
 **Qué se descargó** (fuente: API pública de DSpace ESPOL, colección `Exámenes`):
 
