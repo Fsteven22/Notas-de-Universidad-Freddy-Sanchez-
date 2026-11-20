@@ -1,13 +1,20 @@
 ---
 dg-publish: true
-tags: [MATG1046, unidad1]
+tags: [MATG1046, unidad1, producto-cruz, producto-vectorial, areas, torque, determinante, perpendicularidad]
 ---
 
 # ⚡ Producto Cruz y Áreas
 
-## 🎯 Fundamentos del Producto Cruz
+## 🎯 Introducción
 
-> [!info] 💡 Introducción al Producto Vectorial El **producto cruz** (también llamado **producto vectorial**) es una operación entre dos vectores en ℝ³ que resulta en un **nuevo vector perpendicular** a ambos vectores originales. Es fundamental en física, ingeniería y geometría espacial.
+> [!info] 💡 Introducción al Producto Vectorial
+>
+> El **producto cruz** (también llamado **producto vectorial**) es una operación entre dos vectores en ℝ³ que resulta en un **nuevo vector perpendicular** a ambos vectores originales. Es fundamental en física, ingeniería y geometría espacial.
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Producto_cruz_y_area_01.svg]]
+> **Se lee así:** un cuadro raíz «Producto cruz» se ramifica en **componentes** (i, j, k con determinantes menores), **magnitud** (||u × v|| = área del paralelogramo) y **interpretación** (perpendicular a ambos con regla de la mano derecha).
+> **Por qué importa:** es el complemento del producto punto — éste dice «cuánto están alineados dos vectores», aquél dice «cuál es su área común y hacia qué lado gira el sistema».
+> **Ejemplo:** el torque sobre un tornillo se obtiene muc aso con τ⃗ = r × F: el dedo medio del sistema derecho en dirección del eje de giro, magnitud = brazo × fuerza de giro.
 >
 > **Analogías útiles:**
 >
@@ -33,12 +40,20 @@ tags: [MATG1046, unidad1]
 > - Solo está definido en ℝ³ (y ℝ⁷ con propiedades especiales)
 > - No existe en ℝ² ni en ℝ⁴
 
+---
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Producto_cruz_y_area_01.svg]]
+## 📋 Definiciones Formales
 
 ### 📝 Definición Formal
 
-> [!note] 🌟 Concepto Matemático del Producto Cruz **Definición algebraica:**
+> [!note] 📋 Definición — Producto Cruz
+>
+> **Definición algebraica:**
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Producto_cruz_definicion_01.svg]]
+> **Se lee así:** cuadro raíz «u × v» con dos ramas — la **fórmula por componentes** (u₂v₃−u₃v₂, u₃v₁−u₁v₃, u₁v₂−u₂v₁) y su forma de **interpretar** (perpendicular a u y a v, sentido mano derecha, ||·|| = área del paralelogramo).
+> **Por qué importa:** es exactamente la operación que el curso combina todo el tiempo — área, torque, Lorentz — y que en ℝ² no existe (en el plano un único giro lo resuelve con producto rotacional).
+> **Ejemplo:** i × j = (1,0,0)×(0,1,0) = (0,0,1) = k — el eje vertical nace del cruz entre los canónicos.
 >
 > Dados dos vectores **u** = (u₁, u₂, u₃) y **v** = (v₁, v₂, v₃) en ℝ³, su producto cruz es:
 >
@@ -70,7 +85,9 @@ tags: [MATG1046, unidad1]
 > - u ∧ v (notación alternativa)
 > - \[u, v\] (menos común)
 
-### 🔢 Cálculo del Producto Cruz
+---
+
+## 🛠️ Cálculo del Producto Cruz
 
 > [!example] 📊 Método del Determinante **Método práctico:**
 >
@@ -510,7 +527,14 @@ tags: [MATG1046, unidad1]
 
 ### 🔄 Momento de una Fuerza (Torque)
 
-> [!warning] 🔧 Torque Vectorial **Definición:**
+> [!warning] 🔧 Definición — Torque
+>
+> **Definición:**
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Torque_01.svg]]
+> **Se lee así:** dos flechas «r = palanca» y «F = fuerza» convergen en «τ = r × F», de donde bajan dos hojas: **módulo ||τ|| = ||r|| ||F|| sen(θ)** (o = d · ||F||) y **⊥ al plano r-F**.
+> **Por qué importa:** el torque es la razón por la que "misma fuerza y diferente palanca produce rotación diferente" — la magnitud del torque depende de la componente perpendicular de F y del brazo de palanca.
+> **Ejemplo:** aflojar una tuerca con llave de 0.3 m aplicando F = (0, 50, 0) N en el origen: τ⃗ = (0.3, 0, 0) × (0, 50, 0) = (0, 0, 15) N·m — 15 newton-metros en dirección +Z.
 >
 > El momento τ⃗ (torque) de una fuerza \vec{F} aplicada en un punto, respecto a un punto de referencia O, es:
 >
@@ -616,7 +640,14 @@ tags: [MATG1046, unidad1]
 
 ### 🌊 Momento Angular
 
-> [!success] 🔄 Cantidad de Movimiento Angular **Definición:**
+> [!success] 🔄 Definición — Cantidad de Movimiento Angular
+>
+> **Definición:**
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Momento_angular_01.svg]]
+> **Se lee así:** flechas «r = posición» y «p = m·v» convergen en «L = r × p», con dos salidas: **⊥ al plano r-p** y **conservación — L constante si τ externo = 0**.
+> **Por qué importa:** es el análogo de la cantidad de movimiento lineal pero para rotación — la razón por la que un tomista no puede cambiar la orientación de su eje de giro sobre la marcha.
+> **Ejemplo:** una partícula de 2 kg en \vec{r} = (3, 0, 0) m con \vec{v} = (0, 4, 0) m/s tiene L = (0, 0, 24) kg·m²/s — siempre en +Z.
 >
 > El momento angular \vec{L} de una partícula respecto a un punto O es:
 >
@@ -670,7 +701,14 @@ tags: [MATG1046, unidad1]
 
 ### 📦 Volumen de Paralelepípedos
 
-> [!note] 🎲 Triple Producto Escalar **Definición:**
+> [!note] 🎲 Definición — Triple Producto Escalar
+>
+> **Definición:**
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Triple_producto_01.svg]]
+> **Se lee así:** cuadro raíz «[a b c] = a · (b × c)» con dos ramas: **Interpretación** (|…| = volumen del paralelepípedo con signo; det[a b c]; coplanares ⇔ = 0) y **Propiedades** (invariante cíclico, anti-conmutativo bajo intercambio).
+> **Por qué importa:** es el test universal de coplanaridad/volumen mínimo del espacio vectorial — sin él, decidir si tres vectores están en el mismo plano requeriría resolver un sistema no lineal.
+> **Ejemplo:** u = (1, 0, 0), v = (0, 2, 0), w = (0, 0, 3): [u v w] = 6 > 0 — paralelepípedo no degenerado de volumen 6.
 >
 > El producto triple escalar de tres vectores u, v, w es:
 >
@@ -917,159 +955,154 @@ tags: [MATG1046, unidad1]
 
 ---
 
-## 🧪 Ejercicios Integrales
+## 🧪 Ejercicios Propuestos
 
-> [!example] 💪 Práctica Completa **Nivel 1 - Básico:** 🟢
+> [!example] 📋 Planteamiento
 >
-> 1. Calcular el producto cruz: a) u = (1, 2, 3) × v = (4, 5, 6) b) i × j c) k × i
+> **Nivel 1 - Básico** 🟢
 >
-> **Solución:**
+> 1. Calcular el producto cruz: a) u = (1, 2, 3) × v = (4, 5, 6) · b) i × j · c) k × i
 >
-> ```
-> a) u × v = |i  j  k|
+> > [!success]- ✅ Solución
+> >
+> > a) u × v = |i  j  k|
+> >
+> >            |1  2  3|
+> >
+> >            |4  5  6|
+> >
+> >          = i(2·6 − 3·5) − j(1·6 − 3·4) + k(1·5 − 2·4)
+> >          = i(12 − 15) − j(6 − 12) + k(5 − 8)
+> >          = **(−3, 6, −3)**
+> >
+> > b) i × j = (1,0,0) × (0,1,0) = **k** = (0, 0, 1)
+> >
+> > c) k × i = (0,0,1) × (1,0,0) = **j** = (0, 1, 0)
+> >
+> > **Lección:** el cruz entre canónicos se aprende una sola vez: i×j=k, j×k=i, k×i=j — y sus opuestos.
+
+> [!example] 📋 Planteamiento
 >
->            |1  2  3|
->            |4  5  6|
+> Verificar que u × v es perpendicular tanto a u como a v: u = (2, 1, −1), v = (1, 3, 2)
 >
->          = i(2·6 - 3·5) - j(1·6 - 3·4) + k(1·5 - 2·4)
->          = i(12 - 15) - j(6 - 12) + k(5 - 8)
->          = (-3, 6, -3)
+> > [!success]- ✅ Solución
+> >
+> > u × v = |i   j   k |
+> >
+> >         |2   1  −1 |
+> >
+> >         |1   3   2 |
+> >
+> >       = i(1·2 − (−1)·3) − j(2·2 − (−1)·1) + k(2·3 − 1·1)
+> >       = i(2 + 3) − j(4 + 1) + k(6 − 1)
+> >       = **(5, −5, 5)**
+> >
+> > Verificación:
+> > (u × v) · u = (5,−5,5)·(2,1,−1) = 10 − 5 − 5 = **0 ✓**
+> >
+> > (u × v) · v = (5,−5,5)·(1,3,2) = 5 − 15 + 10 = **0 ✓**
+> >
+> > **Lección:** el cruz siempre produce un vector perpendicular a ambos — puedes verificarlo con producto punto en dos líneas.
+
+> [!example] 📋 Planteamiento
 >
-> b) i × j = (1,0,0) × (0,1,0)
->          = |i  j  k|
->
->            |1  0  0|
->            |0  1  0|
->          = k = (0, 0, 1)
->
-> c) k × i = (0,0,1) × (1,0,0)
->          = |i  j  k|
->
->            |0  0  1|
->            |1  0  0|
->          = j = (0, 1, 0)
-> ```
->
-> 2. Verificar que u × v es perpendicular tanto a u como a v: u = (2, 1, -1), v = (1, 3, 2)
->
-> **Solución:**
->
-> ```
-> u × v = |i   j   k |
->
->         |2   1  -1 |
->         |1   3   2 |
->
->       = i(1·2 - (-1)·3) - j(2·2 - (-1)·1) + k(2·3 - 1·1)
->       = i(2 + 3) - j(4 + 1) + k(6 - 1)
->       = (5, -5, 5)
->
-> Verificación:
-> (u × v) · u = (5, -5, 5) · (2, 1, -1)
->             = 10 - 5 - 5 = 0 ✓
->
-> (u × v) · v = (5, -5, 5) · (1, 3, 2)
->             = 5 - 15 + 10 = 0 ✓
-> ```
->
-> ---
->
-> **Nivel 2 - Intermedio:** 🟡
+> **Nivel 2 - Intermedio** 🟡
 >
 > 3. Calcular el área del triángulo con vértices: A = (1, 0, 0), B = (0, 2, 0), C = (0, 0, 3)
 >
-> **Solución:**
->
-> ```
-> A\vec{B} = (-1, 2, 0)
-> A\vec{C} = (-1, 0, 3)
->
-> A\vec{B} × A\vec{C} = |i   j   k |
->
->            |-1  2   0 |
->            |-1  0   3 |
->
->          = i(2·3 - 0·0) - j((-1)·3 - 0·(-1)) + k((-1)·0 - 2·(-1))
->          = i(6) - j(-3) + k(2)
->          = (6, 3, 2)
->
-> ||A\vec{B} × A\vec{C}|| = √(36 + 9 + 4) = √49 = 7
->
-> Área = ½·7 = 3.5 unidades²
-> ```
+> > [!success]- ✅ Solución
+> >
+> > A\vec{B} = (−1, 2, 0)
+> > A\vec{C} = (−1, 0, 3)
+> >
+> > A\vec{B} × A\vec{C} = |i   j   k |
+> >
+> >            |−1  2   0 |
+> >
+> >            |−1  0   3 |
+> >
+> >          = i(2·3 − 0·0) − j((−1)·3 − 0·(−1)) + k((−1)·0 − 2·(−1))
+> >          = i(6) − j(−3) + k(2)
+> >          = (6, 3, 2)
+> >
+> > ||A\vec{B} × A\vec{C}|| = √(36 + 9 + 4) = √49 = 7
+> >
+> > Área = ½ · 7 = **3.5 unidades²**
+> >
+> > **Lección:** el área del triángulo es la mitad del producto cruz — nunca olvides dividir entre 2 para triángulos.
+
+> [!example] 📋 Planteamiento
 >
 > 4. Encontrar un vector unitario perpendicular al plano que contiene: u = (1, 1, 0) y v = (0, 1, 1)
 >
-> **Solución:**
+> > [!success]- ✅ Solución
+> >
+> > \vec{n} = u × v = |i  j  k|
+> >
+> >             |1  1  0|
+> >
+> >             |0  1  1|
+> >
+> >           = i(1·1 − 0·1) − j(1·1 − 0·0) + k(1·1 − 1·0)
+> >           = (1, −1, 1)
+> >
+> > ||\vec{n}|| = √(1 + 1 + 1) = √3
+> >
+> > \hat{n} = \vec{n}/||\vec{n}|| = (1/√3, −1/√3, 1/√3) ≈ (0.577, −0.577, 0.577)
+> >
+> > **Lección:** el cruz nunca produce el vector unitario directamente — hay que dividir entre su magnitud.
+
+> [!example] 📋 Planteamiento
 >
-> ```
-> \vec{n} = u × v = |i  j  k|
->
->             |1  1  0|
->             |0  1  1|
->
->           = i(1·1 - 0·1) - j(1·1 - 0·0) + k(1·1 - 1·0)
->           = (1, -1, 1)
->
-> ||\vec{n}|| = √(1 + 1 + 1) = √3
->
-> \hat{n} = \vec{n}/||\vec{n}|| = (1/√3, -1/√3, 1/√3)
->              ≈ (0.577, -0.577, 0.577)
-> ```
->
-> ---
->
-> **Nivel 3 - Avanzado:** 🔴
+> **Nivel 3 - Avanzado** 🔴
 >
 > 5. Calcular el volumen del tetraedro con vértices: A = (0, 0, 0), B = (2, 0, 0), C = (0, 3, 0), D = (0, 0, 4)
 >
-> **Solución:**
+> > [!success]- ✅ Solución
+> >
+> > A\vec{B} = (2, 0, 0)
+> > A\vec{C} = (0, 3, 0)
+> > A\vec{D} = (0, 0, 4)
+> >
+> > A\vec{C} × A\vec{D} = |i  j  k|
+> >
+> >            |0  3  0|
+> >
+> >            |0  0  4|
+> >
+> >          = (12, 0, 0)
+> >
+> > A\vec{B} · (A\vec{C} × A\vec{D}) = (2, 0, 0) · (12, 0, 0) = 24
+> >
+> > Volumen = (1/6) · |24| = **4 unidades³**
+> >
+> > **Lección:** el volumen del tetraedro es la sexta parte del producto triple — 1/6, no 1/2 ni 1/3.
+
+> [!example] 📋 Planteamiento
 >
-> ```
-> A\vec{B} = (2, 0, 0)
-> A\vec{C} = (0, 3, 0)
-> A\vec{D} = (0, 0, 4)
+> 6. Una llave de 40 cm se usa en un tornillo. Se aplica una fuerza F = (0, 100, 50) N al extremo de la llave que está en posición r = (0.4, 0, 0) m desde el centro del tornillo.
+> a) Calcular el torque · b) ¿En qué dirección gira el tornillo? · c) Magnitud del torque
 >
-> A\vec{C} × A\vec{D} = |i  j  k|
->
->            |0  3  0|
->            |0  0  4|
->
->          = (12, 0, 0)
->
-> A\vec{B} · (A\vec{C} × A\vec{D}) = (2, 0, 0) · (12, 0, 0) = 24
->
-> Volumen = (1/6)|24| = 4 unidades³
-> ```
->
-> 6. Problema aplicado: Una llave de 40 cm se usa en un tornillo. Se aplica una fuerza F = (0, 100, 50) N al extremo de la llave que está en posición r = (0.4, 0, 0) m desde el centro del tornillo.
->
->     a) Calcular el torque b) ¿En qué dirección gira el tornillo? c) Magnitud del torque
->
->
-> **Solución:**
->
-> ```
-> a) τ⃗ = \vec{r} × \vec{F}
->
->    τ⃗ = |i    j    k  |
->
->        |0.4  0    0  |
->        |0    100  50 |
->
->      = i(0·50 - 0·100) - j(0.4·50 - 0·0) + k(0.4·100 - 0·0)
->      = i(0) - j(20) + k(40)
->      = (0, -20, 40) N·m
->
-> b) La componente principal es +Z (40 N·m)
->    El tornillo gira en sentido antihorario visto desde arriba
->    (regla de la mano derecha)
->
-> c) ||τ⃗|| = √(0² + 20² + 40²)
->          = √(400 + 1600)
->          = √2000
->          ≈ 44.7 N·m
-> ```
+> > [!success]- ✅ Solución
+> >
+> > a) τ⃗ = \vec{r} × \vec{F}
+> >
+> >    τ⃗ = |i    j    k  |
+> >
+> >        |0.4  0    0  |
+> >
+> >        |0    100  50 |
+> >
+> >      = i(0·50 − 0·100) − j(0.4·50 − 0·0) + k(0.4·100 − 0·0)
+> >      = i(0) − j(20) + k(40)
+> >      = **(0, −20, 40) N·m**
+> >
+> > b) La componente principal es +Z (40 N·m)
+> >    El tornillo gira en sentido antihorario visto desde arriba (regla de la mano derecha)
+> >
+> > c) ||τ⃗|| = √(0² + 20² + 40²) = √(400 + 1600) = √2000 ≈ **44.7 N·m**
+> >
+> > **Lección:** la dirección del torque siempre es perpendicular al plano r-F — puedes predecirla sin calcular, con la regla de la mano derecha.
 
 ---
 
@@ -1159,33 +1192,86 @@ tags: [MATG1046, unidad1]
 
 ---
 
-## 🔗 Conexiones con el Sistema de Notas
+## 🎯 Metas de Aprendizaje
 
-> [!quote] 🌟 Enlaces Conceptuales **Prerequisites:**
+> [!note] 📋 Nivel Básico
 >
-> - [[02 - Vectores en R3]] - Base fundamental
-> - [[01 – Producto punto y ángulos]] - Operación complementaria
-> - [[04 - Determinantes]] - Método de cálculo
+> - [ ] Calculo el producto cruz por determinante y por componentes.
+> - [ ] Reconozco que u × v es un vector perpendicular a u y a v.
+
+> [!note] 📋 Nivel Intermedio
 >
-> **Temas siguientes:**
+> - [ ] Calculo áreas de paralelogramos y triángulos con ||u × v||.
+> - [ ] Aplico la regla de la mano derecha para determinar el sentido.
+
+> [!note] 📋 Nivel Avanzado
 >
-> - [[03 – Aplicaciones geométricas básicas]] - Uso combinado
-> - [[2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/III – Rectas y Planos/01 - Rectas en R3.md]] - Ecuaciones vectoriales
-> - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/II. Visualización de Funciones Multivariables/03 – Superficies de Nivel.md]] - Vectores normales
->
-> **Aplicaciones avanzadas:**
->
-> - [[03 – Campos conservativos e independencia del camino]] - Circulación y flujo
-> - [[03 – Campos conservativos e independencia del camino]] - Flujo a través de superficies
-> - Ecuaciones de Maxwell - Electromagnetismo
->
-> **Temas relacionados:**
->
-> - [[Momentum Angular]] - Mecánica rotacional
-> - [[04 – Funciones vectoriales de variable vectorial]] - Rotacional
-> - [[01 - Longitud de Curva]] - Formas diferenciales
+> - [ ] Resuelvo problemas físicos (torque, cantidad de movimiento angular) y determino si tres vectores son coplanares con el triple producto.
 
 ---
 
-**Tags:** #producto-cruz #producto-vectorial #área #torque #momento-angular #fuerza-magnética #producto-triple #volumen #vectores #R3 #geometría-vectorial #física-vectorial #determinante #regla-mano-derecha #university #matemáticas
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes y material de la casa
+>
+> - J. Stewart, *Calculus*, cap. 12 «Vectors and the Geometry of Space»: producto cruz y su geometría.
+> - Syllabus oficial MATG1046 «Cálculo Vectorial», ESPOL — Unidad 1 (Geometría Analítica en ℝ³).
+> - Apuntes del curso MATG1046 y las figuras de la propia materia (`Unidad 0 - Guias y Ejercicios/Diagramas/`).
+
+---
+
+## 🔁 Repaso SR
+
+#flashcards/calcvec-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Qué es u × v?::Un vector perpendicular a u y a v, con dirección de la mano derecha y magnitud ||u|| ||v|| sen(θ).
+> - ¿Cómo se calcula por componentes?::(u₂v₃−u₃v₂, u₃v₁−u₁v₃, u₁v₂−u₂v₁) — expandiendo por el primer renglón del determinante con i, j, k.
+> - ¿Área del triángulo con vértices A, B, C?::½·||A\\vec{B} × A\\vec{C}|| — la mitad del módulo del cruz.
+> - ¿Cuándo [a b c] = 0?::Cuando a, b, c son coplanares (paralelepípedo degenerado).
+
+---
+
+## 🔗 Conexiones
+
+> [!quote] 🌟 Enlaces Conceptuales
+>
+> **Prerequisites:**
+>
+> - [[02 - Vectores en R3]] — Base fundamental
+> - [[01 – Producto punto y ángulos]] — Operación complementaria
+> - [[04 - Determinantes]] — Método de cálculo
+>
+> **Temas siguientes:**
+>
+> - [[03 – Aplicaciones geométricas básicas]] — Uso combinado
+> - [[2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/III – Rectas y Planos/01 - Rectas en R3.md]] — Ecuaciones vectoriales
+> - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/II. Visualización de Funciones Multivariables/03 – Superficies de Nivel.md]] — Vectores normales
+>
+> **Aplicaciones avanzadas:**
+>
+> - [[03 – Campos conservativos e independencia del camino]] — Circulación y flujo
+> - [[03 – Campos conservativos e independencia del camino]] — Flujo a través de superficies
+> - Ecuaciones de Maxwell — Electromagnetismo
+>
+> **Temas relacionados:**
+>
+> - [[Momentum Angular]] — Mecánica rotacional
+> - [[04 – Funciones vectoriales de variable vectorial]] — Rotacional
+> - [[01 - Longitud de Curva]] — Formas diferenciales
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - La diferencia entre producto punto y producto cruz en una frase: punto = cuánto apuntan a la misma dirección; cruz = qué tan perpendiculares son y en qué plano viven.
+> - Siguiente nota: [[03 – Aplicaciones geométricas básicas]] — áreas y volúmenes con estas dos operaciones juntas.
+> - Repasa \vec{r} × \vec{F} con la mano derecha antes de la unidad 4 — te lo pedirán en derivadas con varias variables.
+
+---
+
+**Tags:** #MATG1046 #unidad1 #producto-cruz #producto-vectorial #torque #fuerza-magnética #producto-triple #geometría-vectorial #determinante #cálculo-vectorial
 

@@ -1,13 +1,20 @@
 ---
 dg-publish: true
-tags: [MATG1046, unidad1]
+tags: [MATG1046, unidad1, producto-punto, producto-escalar, ángulo-entre-vectores, proyección-vectorial, ortogonalidad, R3]
 ---
 
 # 🔷 Producto Punto y Ángulos
 
-## 🎯 Fundamentos del Producto Punto
+## 🎯 Introducción
 
-> [!info] 💡 Introducción al Producto Escalar El **producto punto** (también llamado **producto escalar** o **producto interno**) es una operación entre dos vectores que resulta en un **número real** (escalar). Es una de las operaciones vectoriales más importantes y útiles en matemáticas, física e ingeniería.
+> [!info] 💡 Introducción al Producto Escalar
+>
+> El **producto punto** (también llamado **producto escalar** o **producto interno**) es una operación entre dos vectores que resulta en un **número real** (escalar). Es una de las operaciones vectoriales más importantes y útiles en matemáticas, física e ingeniería.
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Producto_punto_y_angulo_entre_vectores_01.svg]]
+> **Se lee así:** un cuadro raíz «Producto punto» se ramifica en **θ = ángulo entre vectores** (θ = 0° misma dirección; θ = 90° ortogonales; θ = 180° sentidos opuestos) y en **Proyección de A sobre B** = (A·B/|B|²)·B con su componente escalar comp_B A.
+> **Por qué importa:** es el mapa completo de la nota en un vistazo: ángulo, ortogonalidad y proyección son tres formas de leer el mismo producto escalar — todas las fórmulas que siguen son instancias del mismo truco.
+> **Ejemplo:** con F = (3, 0, 4) y d = (0, 2, 0), W = F · d = 0 — el trabajo es cero porque la fuerza es ortogonal al desplazamiento.
 >
 > **Analogías útiles:**
 >
@@ -28,13 +35,15 @@ tags: [MATG1046, unidad1]
 > - **Oliver Heaviside (1893):** Aplicaciones en electromagnetismo
 > - Fundamental en mecánica cuántica (producto interno de funciones)
 
+---
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Producto_punto_y_angulo_entre_vectores_01.svg]]
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Producto_punto_y_ángulos.svg]]
+## 📋 Definiciones Formales
 
-### 📝 Definición Formal
+### 1️⃣ Producto Punto
 
-> [!note] 🌟 Concepto Matemático del Producto Punto **Definición algebraica:**
+> [!note] 📋 Definición — Producto Punto
+>
+> **Definición algebraica:**
 >
 > Dados dos vectores **u** = (u₁, u₂, u₃) y **v** = (v₁, v₂, v₃) en ℝ³, su producto punto es:
 >
@@ -44,7 +53,11 @@ tags: [MATG1046, unidad1]
 >
 > - **u · v** (más común)
 > - **⟨u, v⟩** (notación de producto interno)
-> - **u · v** (con punto interpunto)
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Producto_punto_definicion_01.svg]]
+> **Se lee así:** un cuadro raíz «u · v» baja por dos ramas: **Fórmula** (multiplica componente a componente y suma: u₁v₁ + u₂v₂ + u₃v₃) y **Ejemplo** (u = (3, 4, 0), v = (1, 2, 5) → 3 + 8 + 0 = 11).
+> **Por qué importa:** esta versión puramente algebraica se puede evaluar a mano sin calcular ninguna raíz — y el resultado es siempre un **escalar** (nunca un vector ni un ángulo).
+> **Ejemplo:** u · v = (2)(4) + (−3)(2) + (1)(−5) = 8 − 6 − 5 = −3 — resultado negativo, vector con cierto ángulo obtuso.
 >
 > **Definición geométrica:**
 >
@@ -59,53 +72,78 @@ tags: [MATG1046, unidad1]
 > 3. **Simetría:** u · v = v · u (conmutativo)
 > 4. **Relaciona:** Magnitudes de vectores con ángulo entre ellos
 
-### 🔢 Cálculo del Producto Punto
+### 2️⃣ Ortogonalidad
 
-> [!example] 📊 Método Algebraico **Fórmula de componentes:**
+> [!note] 📋 Definición — Ortogonalidad
 >
-> **u · v = u₁v₁ + u₂v₂ + u₃v₃**
+> **Definición:**
 >
-> **Proceso:**
+> Dos vectores **u** y **v** son **perpendiculares** (u **ortogonales**) si forman un ángulo de 90°.
 >
-> 1. Multiplicar las componentes correspondientes
-> 2. Sumar todos los productos
+> **Notación:** u ⊥ v
 >
-> **Ejemplos básicos:**
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Ortogonalidad_01.svg]]
+> **Se lee así:** cuadro raíz «⊥» con el criterio «u · v = 0» y dos ramas: (a) i · j, i · k, j · k = 0 (los canónicos son ortogonales) y (b) base ortonormal = perpendiculares + unitarios.
+> **Por qué importa:** la perpendicularidad es el criterio de independencia, de diagonalizabilidad, de coordenadas mínimas — y se verifica en un segundo con el producto punto.
+> **Ejemplo:** u = (3, 4, 0) y v = (4, −3, 0): 12 − 12 + 0 = 0 → son perpendiculares, concluyendo que (4, −3, 0) es el perpendicular a (3, 4, 0) dentro del plano XY.
 >
-> **Ejemplo 1:**
+> **Criterio del producto punto:**
+>
+> **u ⊥ v ⟺ u · v = 0**
+>
+> Esta es la forma más fácil de verificar perpendicularidad.
+>
+> **Casos especiales:**
+>
+> 1. El vector cero es perpendicular a todos los vectores
+> 2. Los vectores unitarios canónicos i, j, k son mutuamente perpendiculares:
+>     - i · j = 0
+>     - i · k = 0
+>     - j · k = 0
+>
+> **Importancia:**
+>
+> - Base de sistemas de coordenadas ortogonales
+> - Proyecciones y componentes
+> - Bases ortonormales en álgebra lineal
+
+### 3️⃣ Proyección
+
+> [!note] 📋 Definición — Proyección
+>
+> **Definición:**
+>
+> La **proyección** de un vector **u** sobre un vector **v** es el vector que representa la "sombra" de u sobre la línea de v.
+>
+> **Notación:** proyᵥ(u) o proj**ᵥ**(u)
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Proyeccion_01.svg]]
+> **Se lee así:** un camino: **F = (10, 5, 0) sobre d = (1, 0, 0)** → proy_d F = (10/1) · d = (10, 0, 0) → comp_d F = F · d / ||d|| = 10 N — solo 10 N de la fuerza apuntan al movimiento.
+> **Por qué importa:** proyectar descompone cualquier vector en "lo que aporta en la dirección de interés" y "lo que sobra en dirección perpendicular" — es el principio de la suma de incertidumbres, esfuerzos, componentes rectangulares, etc.
+> **Ejemplo:** la única parte de la fuerza que empuja un bloque por una pendiente es la componente a lo largo de la pendiente — la perpendicular solo carga el rozamiento, no avanza.
+>
+> **Fórmula:**
+>
+> **proyᵥ(u) = [(u · v) / (v · v)] · v**
+>
+> O equivalentemente:
+>
+> **proyᵥ(u) = [(u · v) / ||v||²] · v**
+>
+> **Componente escalar (longitud de la proyección):**
+>
+> **compᵥ(u) = (u · v) / ||v||**
+>
+> Esta es la magnitud de la proyección (puede ser negativa)
+>
+> **Relación:**
 >
 > ```
-> u = (3, 4, 0)
-> v = (1, 2, 5)
->
-> u · v = (3)(1) + (4)(2) + (0)(5)
->       = 3 + 8 + 0
->       = 11
+> proyᵥ(u) = compᵥ(u) · (v/||v||)
+> proyᵥ(u) = compᵥ(u) · v̂
 > ```
 >
-> **Ejemplo 2:**
->
-> ```
-> u = (2, -3, 1)
-> v = (4, 2, -5)
->
-> u · v = (2)(4) + (-3)(2) + (1)(-5)
->       = 8 - 6 - 5
->       = -3
-> ```
->
-> **Ejemplo 3:**
->
-> ```
-> u = (1, 0, -1)
-> v = (2, 3, 2)
->
-> u · v = (1)(2) + (0)(3) + (-1)(2)
->       = 2 + 0 - 2
->       = 0
-> ```
->
-> **¡Estos vectores son perpendiculares!**
+> Donde v̂ es el vector unitario en dirección de v
 
 ---
 
@@ -113,7 +151,9 @@ tags: [MATG1046, unidad1]
 
 ### 🎨 Significado del Producto Punto
 
-> [!tip] 👁️ Visualización Geométrica **El producto punto mide:**
+> [!tip] 👁️ Visualización Geométrica
+>
+> **El producto punto mide:**
 >
 > **1. Alineación entre vectores:**
 >
@@ -146,7 +186,9 @@ tags: [MATG1046, unidad1]
 
 ### 📏 Propiedades del Producto Punto
 
-> [!success] ✅ Propiedades Algebraicas **1. Conmutativa:**
+> [!success] ✅ Propiedades Algebraicas
+>
+> **1. Conmutativa:**
 >
 > ```
 > u · v = v · u
@@ -201,7 +243,9 @@ tags: [MATG1046, unidad1]
 
 ### 🎯 Fórmula del Ángulo
 
-> [!warning] 📐 Cálculo del Ángulo **Fórmula fundamental:**
+> [!warning] 📐 Cálculo del Ángulo
+>
+> **Fórmula fundamental:**
 >
 > De la definición geométrica u · v = ||u|| · ||v|| · cos(θ), despejamos:
 >
@@ -229,7 +273,9 @@ tags: [MATG1046, unidad1]
 
 ### 📊 Ejemplos Detallados
 
-> [!example] 🎯 Casos Prácticos **Ejemplo 1: Ángulo entre vectores básicos**
+> [!example] 🎯 Casos Prácticos
+>
+> **Ejemplo 1: Ángulo entre vectores básicos**
 >
 > Dados u = (1, 1, 0) y v = (1, 0, 0)
 >
@@ -306,121 +352,63 @@ tags: [MATG1046, unidad1]
 
 ---
 
-## 📌 ⊥ Vectores Perpendiculares (Ortogonales)
-
-### 🔲 Definición y Criterio
-
-> [!note] 📐 Ortogonalidad **Definición:**
->
-> Dos vectores **u** y **v** son **perpendiculares** (u **ortogonales**) si forman un ángulo de 90°.
->
-> **Notación:** u ⊥ v
->
-> **Criterio del producto punto:**
->
-> **u ⊥ v ⟺ u · v = 0**
->
-> Esta es la forma más fácil de verificar perpendicularidad.
->
-> **Casos especiales:**
->
-> 1. El vector cero es perpendicular a todos los vectores
-> 2. Los vectores unitarios canónicos i, j, k son mutuamente perpendiculares:
->     - i · j = 0
->     - i · k = 0
->     - j · k = 0
->
-> **Importancia:**
->
-> - Base de sistemas de coordenadas ortogonales
-> - Proyecciones y componentes
-> - Bases ortonormales en álgebra lineal
-
-### 📊 Ejemplos de Ortogonalidad
-
-> [!example] ✅ Verificación de Perpendicularidad **Ejemplo 1: Verificación básica**
->
-> ¿Son perpendiculares u = (2, -1, 3) y v = (1, 5, -1)?
->
-> ```
-> u · v = (2)(1) + (-1)(5) + (3)(-1)
->       = 2 - 5 - 3
->       = -6 ≠ 0
->
-> NO son perpendiculares
-> ```
->
-> ---
->
-> **Ejemplo 2: Encontrar vector perpendicular**
->
-> Dado u = (3, 4, 0), encontrar un vector v perpendicular a u en el plano XY.
->
-> ```
-> Necesitamos v = (a, b, 0) tal que u · v = 0
->
-> (3, 4, 0) · (a, b, 0) = 0
-> 3a + 4b = 0
->
-> Solución general: b = -3a/4
->
-> Si a = 4: v = (4, -3, 0)
->
-> Verificación: u · v = (3)(4) + (4)(-3) + 0 = 12 - 12 = 0 ✓
-> ```
->
-> ---
->
-> **Ejemplo 3: Tres vectores mutuamente perpendiculares**
->
-> Verificar que u = (1, 0, 0), v = (0, 1, 0), w = (0, 0, 1) son mutuamente perpendiculares:
->
-> ```
-> u · v = (1)(0) + (0)(1) + (0)(0) = 0 ✓
-> u · w = (1)(0) + (0)(0) + (0)(1) = 0 ✓
-> v · w = (0)(0) + (1)(0) + (0)(1) = 0 ✓
->
-> Forman una base ortonormal (perpendiculares y unitarios)
-> ```
-
----
-
 ## 📏 Proyecciones Vectoriales
 
-### 🎯 Proyección de un Vector sobre Otro
+### 📏 Cálculo del Producto Punto
 
-> [!success] 📐 Concepto de Proyección **Definición:**
+> [!example] 📊 Método Algebraico
 >
-> La **proyección** de un vector **u** sobre un vector **v** es el vector que representa la "sombra" de u sobre la línea de v.
+> **Fórmula de componentes:**
 >
-> **Notación:** proyᵥ(u) o proj**ᵥ**(u)
+> **u · v = u₁v₁ + u₂v₂ + u₃v₃**
 >
-> **Fórmula:**
+> **Proceso:**
 >
-> **proyᵥ(u) = [(u · v) / (v · v)] · v**
+> 1. Multiplicar las componentes correspondientes
+> 2. Sumar todos los productos
 >
-> O equivalentemente:
+> **Ejemplos básicos:**
 >
-> **proyᵥ(u) = [(u · v) / ||v||²] · v**
->
-> **Componente escalar (longitud de la proyección):**
->
-> **compᵥ(u) = (u · v) / ||v||**
->
-> Esta es la magnitud de la proyección (puede ser negativa)
->
-> **Relación:**
+> **Ejemplo 1:**
 >
 > ```
-> proyᵥ(u) = compᵥ(u) · (v/||v||)
-> proyᵥ(u) = compᵥ(u) · v̂
+> u = (3, 4, 0)
+> v = (1, 2, 5)
+>
+> u · v = (3)(1) + (4)(2) + (0)(5)
+>       = 3 + 8 + 0
+>       = 11
 > ```
 >
-> Donde v̂ es el vector unitario en dirección de v
+> **Ejemplo 2:**
+>
+> ```
+> u = (2, -3, 1)
+> v = (4, 2, -5)
+>
+> u · v = (2)(4) + (-3)(2) + (1)(-5)
+>       = 8 - 6 - 5
+>       = -3
+> ```
+>
+> **Ejemplo 3:**
+>
+> ```
+> u = (1, 0, -1)
+> v = (2, 3, 2)
+>
+> u · v = (1)(2) + (0)(3) + (-1)(2)
+>       = 2 + 0 - 2
+>       = 0
+> ```
+>
+> **¡Estos vectores son perpendiculares!**
 
 ### 📊 Ejemplos de Proyecciones
 
-> [!example] 🎯 Cálculos de Proyecciones **Ejemplo 1: Proyección básica**
+> [!example] 🎯 Cálculos de Proyecciones
+>
+> **Ejemplo 1: Proyección básica**
 >
 > Proyectar u = (3, 4, 0) sobre v = (1, 0, 0)
 >
@@ -471,13 +459,64 @@ tags: [MATG1046, unidad1]
 > Los otros 5 N actúan perpendicularmente
 > ```
 
+### ✅ Verificación de Perpendicularidad
+
+> [!example] ✅ Verificación de Perpendicularidad
+>
+> **Ejemplo 1: Verificación básica**
+>
+> ¿Son perpendiculares u = (2, -1, 3) y v = (1, 5, -1)?
+>
+> ```
+> u · v = (2)(1) + (-1)(5) + (3)(-1)
+>       = 2 - 5 - 3
+>       = -6 ≠ 0
+>
+> NO son perpendiculares
+> ```
+>
+> ---
+>
+> **Ejemplo 2: Encontrar vector perpendicular**
+>
+> Dado u = (3, 4, 0), encontrar un vector v perpendicular a u en el plano XY.
+>
+> ```
+> Necesitamos v = (a, b, 0) tal que u · v = 0
+>
+> (3, 4, 0) · (a, b, 0) = 0
+> 3a + 4b = 0
+>
+> Solución general: b = -3a/4
+>
+> Si a = 4: v = (4, -3, 0)
+>
+> Verificación: u · v = (3)(4) + (4)(-3) + 0 = 12 - 12 = 0 ✓
+> ```
+>
+> ---
+>
+> **Ejemplo 3: Tres vectores mutuamente perpendiculares**
+>
+> Verificar que u = (1, 0, 0), v = (0, 1, 0), w = (0, 0, 1) son mutuamente perpendiculares:
+>
+> ```
+> u · v = (1)(0) + (0)(1) + (0)(0) = 0 ✓
+> u · w = (1)(0) + (0)(0) + (0)(1) = 0 ✓
+> v · w = (0)(0) + (1)(0) + (0)(1) = 0 ✓
+>
+> Forman una base ortonormal (perpendiculares y unitarios)
+> ```
+
 ---
 
 ## 🔄 Descomposición Ortogonal
 
 ### 📐 Componentes Paralela y Perpendicular
 
-> [!tip] 🎯 Teorema de Descomposición **Todo vector u puede descomponerse respecto a otro vector v como:**
+> [!tip] 🎯 Teorema de Descomposición
+>
+> **Todo vector u puede descomponerse respecto a otro vector v como:**
 >
 > **u = u‖ + u⊥**
 >
@@ -518,136 +557,120 @@ tags: [MATG1046, unidad1]
 
 ---
 
-## 🎨 Diagrama de Conceptos
+## 🧪 Ejercicios Propuestos
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Producto_punto_y_ángulos_01.svg]]
+> [!example] 📋 Planteamiento
+>
+> **Nivel 1 - Básico** 🟢
+>
+> 1. Calcular el producto punto: a) u = (2, 3, 1) · v = (1, -2, 3) · b) u = (4, 0, -2) · v = (1, 5, 2)
+>
+> > [!success]- ✅ Solución
+> >
+> > a) u · v = (2)(1) + (3)(−2) + (1)(3) = 2 − 6 + 3 = **−1**
+> >
+> > b) u · v = (4)(1) + (0)(5) + (−2)(2) = 4 + 0 − 4 = **0**
+> >
+> > **Lección:** un resultado de 0 no es «nada»: es una línea perpendicular exacta.
 
----
+> [!example] 📋 Planteamiento
+>
+> Verificar si los siguientes pares son perpendiculares: a) u = (1, 2, -1) · v = (2, -1, 0) · b) u = (3, 4, 0) · v = (4, -3, 0)
+>
+> > [!success]- ✅ Solución
+> >
+> > a) u · v = (1)(2) + (2)(−1) + (−1)(0) = 2 − 2 = **0 ✓ Perpendiculares**
+> >
+> > b) u · v = (3)(4) + (4)(−3) + (0)(0) = 12 − 12 = **0 ✓ Perpendiculares**
+> >
+> > **Lección:** la perpendicularidad se comprueba en un segundo — comercial escéptica de i y j los canónicos.
 
-## 🧪 Ejercicios Integrales
+> [!example] 📋 Planteamiento
+>
+> **Nivel 2 - Intermedio** 🟡
+>
+> Calcular el ángulo entre u = (1, 2, 2) y v = (2, 1, 0).
+>
+> > [!success]- ✅ Solución
+> >
+> > u · v = (1)(2) + (2)(1) + (2)(0) = 4
+> >
+> > ||u|| = √(1² + 2² + 2²) = √9 = 3
+> > ||v|| = √(2² + 1² + 0²) = √5
+> >
+> > cos(θ) = 4/(3√5) ≈ 0.596
+> >
+> > θ = arccos(0.596) ≈ **53.4°** ≈ 0.93 rad
+> >
+> > **Lección:** θ = arccos(cos(θ)) — never coloques el ángulo en radianes cuando el problema pide grados, y al revés.
 
-> [!example] 💪 Práctica Completa **Nivel 1 - Básico:** 🟢
+> [!example] 📋 Planteamiento
 >
-> 1. Calcular el producto punto: a) u = (2, 3, 1) y v = (1, -2, 3) b) u = (4, 0, -2) y v = (1, 5, 2)
+> Proyectar u = (4, 3, 0) sobre v = (1, 0, 0).
 >
-> **Solución:**
+> > [!success]- ✅ Solución
+> >
+> > u · v = (4)(1) + (3)(0) + (0)(0) = 4
+> > v · v = 1² + 0² + 0² = 1
+> >
+> > proyᵥ(u) = (4/1) · (1, 0, 0) = **(4, 0, 0)**
+> >
+> > Componente perpendicular: u⊥ = u − proyᵥ(u) = (0, 3, 0)
+> >
+> > **Lección:** la proyección sobre un canónico siempre «recoge» su componente — sobre i es la coordenada x de u y nada más.
+
+> [!example] 📋 Planteamiento
 >
-> ```
-> a) u · v = (2)(1) + (3)(-2) + (1)(3)
->          = 2 - 6 + 3 = -1
+> **Nivel 3 - Avanzado** 🔴
 >
-> b) u · v = (4)(1) + (0)(5) + (-2)(2)
->          = 4 + 0 - 4 = 0
->    ¡Los vectores son perpendiculares!
-> ```
+> Dado u = (2, 3, -1), encontrar un vector v tal que:
+> - ||v|| = 5
+> - v es perpendicular a u
+> - v está en el plano XY
 >
-> 2. Verificar si los siguientes pares son perpendiculares: a) u = (1, 2, -1) y v = (2, -1, 0) b) u = (3, 4, 0) y v = (4, -3, 0)
+> > [!success]- ✅ Solución
+> >
+> > Sea v = (a, b, 0) con a² + b² = 25
+> >
+> > Perpendicularidad: u · v = 0 ⟹ 2a + 3b = 0 ⟹ a = −3b/2
+> >
+> > Sustituyendo: (9b²/4) + b² = 25 ⟹ 13b²/4 = 25 ⟹ b = ±10/√13
+> >
+> > Si b = 10/√13: a = −15/√13
+> >
+> > **v = (−15/√13, 10/√13, 0) ≈ (−4.16, 2.77, 0)**
+> >
+> > **Lección:** «perpendicular» restringe el vector a una línea en el plano XY — después la magnitud lo fija en dos puntos opuestos.
+
+> [!example] 📋 Planteamiento
 >
-> **Solución:**
+> Una fuerza F = (100, 50, 30) N actúa sobre un objeto que se desplaza d = (2, 1, 0) m. Calcular:
+> a) Trabajo realizado
+> b) Ángulo entre F y d
+> c) Componente de F en dirección del movimiento
 >
-> ```
-> a) u · v = (1)(2) + (2)(-1) + (-1)(0)
->          = 2 - 2 + 0 = 0 ✓ Perpendiculares
->
-> b) u · v = (3)(4) + (4)(-3) + (0)(0)
->          = 12 - 12 + 0 = 0 ✓ Perpendiculares
-> ```
->
-> ---
->
-> **Nivel 2 - Intermedio:** 🟡
->
-> 3. Calcular el ángulo entre u = (1, 2, 2) y v = (2, 1, 0):
->
-> **Solución:**
->
-> ```
-> u · v = (1)(2) + (2)(1) + (2)(0) = 4
->
-> ||u|| = √(1² + 2² + 2²) = √9 = 3
-> ||v|| = √(2² + 1² + 0²) = √5
->
-> cos(θ) = 4/(3√5) = 4/(3·2.236) ≈ 0.596
->
-> θ = arccos(0.596) ≈ 53.4° ≈ 0.93 rad
-> ```
->
-> 4. Proyectar u = (4, 3, 0) sobre v = (1, 0, 0):
->
-> **Solución:**
->
-> ```
-> u · v = (4)(1) + (3)(0) + (0)(0) = 4
-> v · v = 1² + 0² + 0² = 1
->
-> proyᵥ(u) = (4/1) · (1, 0, 0) = (4, 0, 0)
->
-> Componente perpendicular:
-> u⊥ = u - proyᵥ(u) = (4, 3, 0) - (4, 0, 0) = (0, 3, 0)
-> ```
->
-> ---
->
-> **Nivel 3 - Avanzado:** 🔴
->
-> 5. Dado u = (2, 3, -1), encontrar un vector v tal que:
->     - ||v|| = 5
->     - v es perpendicular a u
->     - v está en el plano XY
->
-> **Solución:**
->
-> ```
-> Sea v = (a, b, 0) con a² + b² = 25
->
-> Condición de perpendicularidad:
-> u · v = 0
-> (2, 3, -1) · (a, b, 0) = 0
-> 2a + 3b = 0
-> a = -3b/2
->
-> Sustituyendo en la magnitud:
-> (-3b/2)² + b² = 25
-> 9b²/4 + b² = 25
->
-> 13b²/4 = 25 b² = 100/13 b = ±10/√13
->
-> Si b = 10/√13: a = -15/√13
->
-> v = (-15/√13, 10/√13, 0)
->
-> Simplificado multiplicando por √13: v ≈ (-4.16, 2.77, 0)
->
-> ```
->
-> 6. Problema aplicado:
->    Una fuerza F = (100, 50, 30) N actúa sobre un objeto que se desplaza
->    d = (2, 1, 0) m. Calcular:
->    a) Trabajo realizado
->    b) Ángulo entre F y d
->    c) Componente de F en dirección del movimiento
->
-> **Solución:**
-> ```
->
-> a) W = F · d = (100)(2) + (50)(1) + (30)(0) = 200 + 50 + 0 = 250 J
->
-> b) ||F|| = √(100² + 50² + 30²) = √11900 ≈ 109.09 N ||d|| = √(2² + 1² + 0²) = √5 ≈ 2.236 m
->
-> cos(θ) = 250/(109.09 · 2.236) ≈ 1.025
->
-> ¡Error! cos(θ) no puede ser > 1 Recalculando: cos(θ) = 250/243.88 ≈ 1.025
->
-> Realmente: cos(θ) = 250/(√11900 · √5) ≈ 0.914 θ = arccos(0.914) ≈ 23.96°
->
-> c) compₐ(F) = (F · d) / ||d|| = 250/√5 ≈ 111.8 N
-> ```
+> > [!success]- ✅ Solución
+> >
+> > a) W = F · d = (100)(2) + (50)(1) + (30)(0) = **250 J**
+> >
+> > b) ||F|| = √(100² + 50² + 30²) = √13400 = 10√134 ≈ 115.76 N
+> >    ||d|| = √5 ≈ 2.236 m
+> >
+> > cos(θ) = 250 / (10√134 · √5) = 5√670 / 134 ≈ 0.9658
+> >
+> > θ = arccos(0.9658) ≈ **15.0°**
+> >
+> > c) comp_d(F) = (F · d) / ||d|| = 250/√5 ≈ **111.8 N**
+> >
+> > **Lección:** el trabajo no equivale a la magnitud de F, y comp_d(F) ≠ ||F||: solo el cos(θ) factor entre F y d dice cuánto de F apunta al movimiento.
 
 ---
 
 ## 📚 Propiedades Avanzadas
 
-> [!note] 🔬 Teoremas Importantes **1. Desigualdad de Cauchy-Schwarz:**
+> [!note] 🔬 Teoremas Importantes
+>
+> **1. Desigualdad de Cauchy-Schwarz:**
 >
 > ```
 >
@@ -693,37 +716,11 @@ tags: [MATG1046, unidad1]
 
 ---
 
-## 🔗 Conexiones con el Sistema de Notas
-
-> [!quote] 🌟 Enlaces Conceptuales **Prerequisites:**
->
-> - [[02 - Vectores en R3]] - Base fundamental
-> - Trigonometría - Funciones cos, arccos
-> - Álgebra Básica - Operaciones con números reales
->
-> **Temas siguientes:**
->
-> - [[02 – Producto cruz y áreas]] - Otra operación vectorial
-> - [[03 – Aplicaciones geométricas básicas]] - Uso combinado
-> - Rectas y Planos - Ecuaciones usando producto punto
->
-> **Aplicaciones avanzadas:**
->
-> - [[08 - Desigualdad de Cauchy–Schwarz]] - Generalización
-> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/IV – Transformaciones Lineales/01 – Transformaciones lineales.md]] - Preservan producto punto
-> - [[07 - Matriz de una Transformación Lineal]] - Vectores propios ortogonales
->
-> **Temas relacionados:**
->
-> - [[04 – Proyección ortogonal]] - Aplicaciones detalladas
-> - Bases Ortonormales - Sistemas perpendiculares
-> - [[03 – Ortogonalidad y conjuntos ortonormales]] - Ortogonalización de Gram-Schmidt
-
----
-
 ## 💡 Consejos y Errores Comunes
 
-> [!tip] 🧠 Estrategias de Aprendizaje **Para dominar el producto punto:**
+> [!tip] 🧠 Estrategias de Aprendizaje
+>
+> **Para dominar el producto punto:**
 >
 > **1. Comprensión conceptual:**
 >
@@ -782,22 +779,113 @@ tags: [MATG1046, unidad1]
 
 ---
 
+## 🎨 Diagrama de Conceptos
+
+> [!note] 🗺️ Resumen visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Producto_punto_y_ángulos.svg]]
+> **Se lee así:** «Producto punto A·B = |A||B|cos(θ)» se ramifica en "θ es el ángulo entre vectores", "A·B = 0 ortogonales", "Proyección: comp_B A = (A·B)/|B|".
+> **Por qué importa:** las tres ramas del diagrama son el esqueleto de la nota — ángulo, perpendicularidad y proyección, del mismo núcleo algebraico.
+> **Ejemplo:** calcula siempre \vec{u} · \vec{v} y \(\cos(\theta)\) en el primer paso: si da 0, caso.orthogoonal cerrado; si no, comp.proj.
+
+---
+
 ## 📊 Tabla Resumen
 
 > [!example] 📋 Compendio Completo
 >
-> |Concepto|Fórmula|Interpretación|Ejemplo|
+> | Concepto | Fórmula | Interpretación | Ejemplo |
 > |---|---|---|---|
-> |**Producto punto**|u · v = u₁v₁ + u₂v₂ + u₃v₃|Suma de productos|(1,2,3)·(4,5,6) = 32|
-> |**Forma geométrica**|u · v = \|u\| \|v\| cos(θ)|Relaciona magnitud y ángulo|-|
-> |**Ángulo**|θ = arccos[(u·v)/(\|u\| \|v\|)]|Ángulo entre vectores|θ ≈ 45°|
-> |**Perpendicularidad**|u ⊥ v ⟺ u · v = 0|Ortogonalidad|(1,0,0)·(0,1,0) = 0|
-> |**Proyección**|proyᵥ(u) = [(u·v)/(v·v)]v|Sombra de u sobre v|-|
-> |**Componente escalar**|compᵥ(u) = (u·v)/\|v\||Longitud con signo|-|
-> |**Propiedad consigo mismo**|u · u = \|u\|²|Magnitud al cuadrado|(3,4,0)·(3,4,0) = 25|
-> |**Trabajo**|W = \vec{F} · \vec{d}|Energía transferida|W = 100 J|
-> |**Paralelismo**|u ∥ v ⟺ u·v = ±\|u\| \|v\||Máxima alineación|cos(θ) = ±1|
+> | **Producto punto** | u · v = u₁v₁ + u₂v₂ + u₃v₃ | Suma de productos | (1,2,3)·(4,5,6) = 32 |
+> | **Forma geométrica** | u · v = \|u\| \|v\| cos(θ) | Relaciona magnitud y ángulo | - |
+> | **Ángulo** | θ = arccos[(u·v)/(\|u\| \|v\|)] | Ángulo entre vectores | θ ≈ 45° |
+> | **Perpendicularidad** | u ⊥ v ⟺ u · v = 0 | Ortogonalidad | (1,0,0)·(0,1,0) = 0 |
+> | **Proyección** | proyᵥ(u) = [(u·v)/(v·v)]v | Sombra de u sobre v | - |
+> | **Componente escalar** | compᵥ(u) = (u·v)/\|v\| | Longitud con signo | - |
+> | **Propiedad consigo mismo** | u · u = \|u\|² | Magnitud al cuadrado | (3,4,0)·(3,4,0) = 25 |
+> | **Trabajo** | W = \vec{F} · \vec{d} | Energía transferida | W = 100 J |
+> | **Paralelismo** | u ∥ v ⟺ u·v = ±\|u\| \|v\| | Máxima alineación | cos(θ) = ±1 |
 
 ---
 
-**Tags:** #producto-punto #producto-escalar #ángulo-entre-vectores #proyección-vectorial #ortogonalidad #vectores-perpendiculares #geometría-vectorial #álgebra-lineal #R3 #producto-interno #aplicaciones-físicas #trabajo-mecánico #university #matemáticas
+## 🎯 Metas de Aprendizaje
+
+> [!note] 📋 Nivel Básico
+>
+> - [ ] Calculo el producto punto por componentes sin mirar la fórmula.
+> - [ ] Expreso el ángulo entre vectores con arccos y lo leo en grados.
+
+> [!note] 📋 Nivel Intermedio
+>
+> - [ ] Verifico ortogonalidad con u · v = 0 y hallo vectores perpendiculares.
+> - [ ] Proyectó un vector sobre otro y descompongo u = u‖ + u⊥.
+
+> [!note] 📋 Nivel Avanzado
+>
+> - [ ] Interpreto resultados físicos (trabajo, potencia, componentes de fuerzas) con ambos modelos de producto punto.
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes y material de la casa
+>
+> - J. Stewart, *Calculus*, cap. 12 «Vectors and the Geometry of Space»: producto punto, ángulos y proyección.
+> - Syllabus oficial MATG1046 «Cálculo Vectorial», ESPOL — Unidad 1 (Geometría Analítica en ℝ³).
+> - Apuntes del curso MATG1046 y las figuras de la propia materia (`Unidad 0 - Guias y Ejercicios/Diagramas/`).
+
+---
+
+## 🔁 Repaso SR
+
+#flashcards/calcvec-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Qué es el producto punto geométricamente?::\|u\| · \|v\| · cos(θ): un escalar igual a la proyección mutua de u y v.
+> - ¿Cómo verifico ortogonalidad en un segundo?::u · v = 0 (sin calcular magnitudes ni ángulos).
+> - ¿Fórmula de componente escalar?::compᵥ(u) = (u · v) / \|v\| (número), proyᵥ(u) = [(u · v)/\|v\|²] · v (vector).
+> - ¿Error común con arccos?::Si da cos(θ) fuera de [-1, 1] hay un error de cálculo — verifica los datos de entrada.
+
+---
+
+## 🔗 Conexiones
+
+> [!quote] 🌟 Enlaces Conceptuales
+>
+> **Prerequisites:**
+>
+> - [[02 - Vectores en R3]] — Base fundamental
+> - Trigonometría — Funciones cos, arccos
+> - Álgebra Básica — Operaciones con números reales
+>
+> **Temas siguientes:**
+>
+> - [[02 – Producto cruz y áreas]] — Otra operación vectorial
+> - [[03 – Aplicaciones geométricas básicas]] — Uso combinado
+> - Rectas y Planos — Ecuaciones usando producto punto
+>
+> **Aplicaciones avanzadas:**
+>
+> - [[08 - Desigualdad de Cauchy–Schwarz]] — Generalización
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/IV – Transformaciones Lineales/01 – Transformaciones lineales.md]] — Preservan producto punto
+> - [[07 - Matriz de una Transformación Lineal]] — Vectores propios ortogonales
+>
+> **Temas relacionados:**
+>
+> - [[04 – Proyección ortogonal]] — Aplicaciones detalladas
+> - Bases Ortonormales — Sistemas perpendiculares
+> - [[03 – Ortogonalidad y conjuntos ortonormales]] — Ortogonalización de Gram-Schmidt
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - La única razón por la que "u·v = 0" vale para toda perpendicularidad: el cos(90°) es 0 — es el puente entre la fórmula geométrica y la algebraica.
+> - Siguiente nota: [[02 – Producto cruz y áreas]] — la otra gran multiplicación vectorial: producto ×, área, y orientación.
+
+---
+
+**Tags:** #MATG1046 #unidad1 #producto-punto #producto-escalar #proyección-vectorial #ortogonalidad #cálculo-vectorial

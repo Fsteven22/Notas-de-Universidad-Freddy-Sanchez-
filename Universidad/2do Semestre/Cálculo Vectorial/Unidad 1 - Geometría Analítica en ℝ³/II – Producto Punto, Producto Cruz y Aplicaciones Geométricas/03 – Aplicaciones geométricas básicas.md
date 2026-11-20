@@ -1,13 +1,15 @@
 ---
 dg-publish: true
-tags: [MATG1046, unidad1]
+tags: [MATG1046, unidad1, aplicaciones-geometricas, proyeccion-escalar, proyeccion-vectorial, producto-triple, volumen, areas]
 ---
 
 # 📐 Aplicaciones Geométricas Básicas
 
-## 🎯 Introducción a las Aplicaciones Geométricas
+## 🎯 Introducción
 
-> [!info] 💡 Puente entre Álgebra y Geometría Las **aplicaciones geométricas** de vectores nos permiten resolver problemas del espacio tridimensional usando herramientas algebraicas. Combinando las operaciones vectoriales básicas con el producto punto y producto cruz, podemos:
+> [!info] 💡 Puente entre Álgebra y Geometría
+>
+> Las **aplicaciones geométricas** de vectores nos permiten resolver problemas del espacio tridimensional usando herramientas algebraicas. Combinando las operaciones vectoriales básicas con el producto punto y producto cruz, podemos:
 >
 > **Problemas que podemos resolver:**
 >
@@ -31,6 +33,122 @@ tags: [MATG1046, unidad1]
 > - **Computación gráfica:** Iluminación, colisiones, normales
 > - **Arquitectura:** Áreas de superficies, volúmenes de construcciones
 > - **Navegación:** Distancias mínimas, rutas óptimas
+
+---
+
+## 📋 Definiciones Formales
+
+### 1️⃣ Componente de un Vector sobre Otro
+
+> [!note] 📋 Definición — Componente de un Vector sobre Otro
+>
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Proyeccion_escalar_01.svg]]
+> **Se lee así:** cuadro raíz «comp_u v» con dos ramas: **Fórmulas** (comp_u v = (v · u)/||u|| = ||v|| · cos(θ)) y **Según el signo** (>0 misma dirección; =0 perpendicular; <0 dirección opuesta).
+> **Por qué importa:** es la longitud con signo que da la proyección sin calcular un vector — dirección sin la magnitud de v.
+> **Ejemplo:** proyectar v = (3, 4, 0) sobre u = (1, 0, 0) da comp_u v = (v · u)/1 = 3 — solo la componente x sobrevive.
+> 
+> La **proyección escalar** de **v** sobre **u** es la "longitud" de **v** en la dirección de **u** (puede ser negativa):
+>
+> **proj_u(v) = (v · u)/||u||**
+>
+> También escrito como: **comp_u(v)**
+>
+> **Interpretación geométrica:**
+>
+> - Si > 0: **v** apunta en la misma dirección general que **u**
+> - Si = 0: **v** es perpendicular a **u**
+> - Si < 0: **v** apunta en dirección opuesta a **u**
+>
+> **Fórmula alternativa usando ángulo:**
+>
+> **proj_u(v) = ||v|| · cos(θ)**
+>
+> Donde θ es el ángulo entre **u** y **v**
+>
+> **Aplicaciones:**
+>
+> - Cálculo de trabajo mecánico: W = F · d
+> - Componente de velocidad en una dirección
+> - Descomposición de fuerzas
+
+### 2️⃣ Vector Proyectado
+
+> [!note] 📋 Definición — Vector Proyectado
+>
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Proyeccion_vectorial_01.svg]]
+> **Se lee así:** cuadro raíz «proy_u v = [(v·u)/(u·u)]·u» con dos ramas: **Formas alternativas** (con û y con ||u||²) y **Propiedades** (paralelo a u; v = proy + proy⊥).
+> **Por qué importa:** es el vector de sombra — la mitad perpendicular se descarta y queda solo lo que va a lo largo de u.
+> **Ejemplo:** v = (2, 3, 0) sobre u = (1, 0, 0): proy = (2, 0, 0), y v = (2,0,0)+(0,3,0) con los componentes ortogonales.
+> 
+> La **proyección vectorial** de **v** sobre **u** es un vector en la dirección de **u**:
+>
+> **proy_u(v) = [(v · u)/(u · u)] · u**
+>
+> **Fórmula simplificada:**
+>
+> **proy_u(v) = [(v · u)/||u||²] · u**
+>
+> **O usando vector unitario û = u/||u||:**
+>
+> **proy_u(v) = (v · û) · û**
+>
+> **Propiedades:**
+>
+> 1. **proy_u(v)** es paralelo a **u**
+> 2. ||**proy_u(v)**|| = |proj_u(v)| (magnitud = valor absoluto de proyección escalar)
+> 3. Si **v** ⟂ **u**, entonces **proy_u(v) = 0**
+> 4. **proy_u(v) + proy_u⊥(v) = v** (descomposición ortogonal)
+>
+> **Componente perpendicular:**
+>
+> **proy_u⊥(v) = v - proy_u(v)**
+>
+> Este es el vector perpendicular a **u** que sumado a la proyección da **v**
+
+### 3️⃣ Volumen mediante Producto Triple
+
+> [!note] 📋 Definición — Volumen mediante Producto Triple
+>
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Volumen_parallelepipedo_01.svg]]
+> **Se lee así:** cuadro raíz «V = |u · (v × w)|» con dos ramas: **Deteminante** (V = |det|) y **Degeneración** (= 0 ⇒ coplanares; V_tetraedro = V/6).
+> **Por qué importa:** es el test universal de volumen/coplanaridad — decide si tres vectores abarcan nuevo espacio o viven en el mismo plano.
+> **Ejemplo:** u = (2, 0, 0), v = (0, 3, 0), w = (0, 0, 4): V = 2·3·4 = 24; el tetraedro correspondiente ocupa 24/6 = 4 unidades³.
+> 
+> El **producto triple escalar** de tres vectores **u**, **v**, **w** es:
+>
+> **u · (v × w)**
+>
+> **Interpretación geométrica:**
+>
+> El **volumen** del paralelepípedo formado por **u**, **v**, **w** es:
+>
+> **V = |u · (v × w)|**
+>
+> (Valor absoluto porque el volumen siempre es positivo)
+>
+> **Cálculo mediante determinante:**
+>
+> ```
+> V = |u · (v × w)| = |det| u₁  u₂  u₃ ||
+>
+>                         | v₁  v₂  v₃ ||
+>                         | w₁  w₂  w₃ ||
+> ```
+>
+> **Propiedades importantes:**
+>
+> 1. **Permutación cíclica:** u · (v × w) = v · (w × u) = w · (u × v)
+> 2. **Anticonmutatividad:** u · (v × w) = -u · (w × v)
+> 3. **Si resultado = 0:** Los vectores son coplanares
+> 4. **Volumen de tetraedro:** V_tetraedro = (1/6)|u · (v × w)|
+>
+> **Interpretación física:**
+>
+> - Si |u · (v × w)| = 0, los tres vectores están en el mismo plano
+> - El signo indica orientación (regla de la mano derecha)
 
 ---
 
@@ -248,60 +366,9 @@ tags: [MATG1046, unidad1]
 
 ### 📍 Proyección Escalar
 
-> [!note] 📏 Componente de un Vector sobre Otro **Definición:**
->
-> La **proyección escalar** de **v** sobre **u** es la "longitud" de **v** en la dirección de **u** (puede ser negativa):
->
-> **proj_u(v) = (v · u)/||u||**
->
-> También escrito como: **comp_u(v)**
->
-> **Interpretación geométrica:**
->
-> - Si > 0: **v** apunta en la misma dirección general que **u**
-> - Si = 0: **v** es perpendicular a **u**
-> - Si < 0: **v** apunta en dirección opuesta a **u**
->
-> **Fórmula alternativa usando ángulo:**
->
-> **proj_u(v) = ||v|| · cos(θ)**
->
-> Donde θ es el ángulo entre **u** y **v**
->
-> **Aplicaciones:**
->
-> - Cálculo de trabajo mecánico: W = F · d
-> - Componente de velocidad en una dirección
-> - Descomposición de fuerzas
 
 ### 🎯 Proyección Vectorial
 
-> [!warning] ➡️ Vector Proyectado **Definición:**
->
-> La **proyección vectorial** de **v** sobre **u** es un vector en la dirección de **u**:
->
-> **proy_u(v) = [(v · u)/(u · u)] · u**
->
-> **Fórmula simplificada:**
->
-> **proy_u(v) = [(v · u)/||u||²] · u**
->
-> **O usando vector unitario û = u/||u||:**
->
-> **proy_u(v) = (v · û) · û**
->
-> **Propiedades:**
->
-> 1. **proy_u(v)** es paralelo a **u**
-> 2. ||**proy_u(v)**|| = |proj_u(v)| (magnitud = valor absoluto de proyección escalar)
-> 3. Si **v** ⟂ **u**, entonces **proy_u(v) = 0**
-> 4. **proy_u(v) + proy_u⊥(v) = v** (descomposición ortogonal)
->
-> **Componente perpendicular:**
->
-> **proy_u⊥(v) = v - proy_u(v)**
->
-> Este es el vector perpendicular a **u** que sumado a la proyección da **v**
 
 ### 📊 Ejemplos de Proyecciones
 
@@ -552,40 +619,6 @@ tags: [MATG1046, unidad1]
 
 ### 🎲 Triple Producto Escalar
 
-> [!warning] 📦 Volumen mediante Producto Triple **Definición:**
->
-> El **producto triple escalar** de tres vectores **u**, **v**, **w** es:
->
-> **u · (v × w)**
->
-> **Interpretación geométrica:**
->
-> El **volumen** del paralelepípedo formado por **u**, **v**, **w** es:
->
-> **V = |u · (v × w)|**
->
-> (Valor absoluto porque el volumen siempre es positivo)
->
-> **Cálculo mediante determinante:**
->
-> ```
-> V = |u · (v × w)| = |det| u₁  u₂  u₃ ||
->
->                         | v₁  v₂  v₃ ||
->                         | w₁  w₂  w₃ ||
-> ```
->
-> **Propiedades importantes:**
->
-> 1. **Permutación cíclica:** u · (v × w) = v · (w × u) = w · (u × v)
-> 2. **Anticonmutatividad:** u · (v × w) = -u · (w × v)
-> 3. **Si resultado = 0:** Los vectores son coplanares
-> 4. **Volumen de tetraedro:** V_tetraedro = (1/6)|u · (v × w)|
->
-> **Interpretación física:**
->
-> - Si |u · (v × w)| = 0, los tres vectores están en el mismo plano
-> - El signo indica orientación (regla de la mano derecha)
 
 ### 📊 Ejemplos de Volúmenes
 
@@ -836,7 +869,12 @@ tags: [MATG1046, unidad1]
 
 ## 🎨 Diagrama de Aplicaciones Geométricas
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Aplicaciones_geométricas_básicas_01.svg]]
+> [!note] 🗺️ Mapa de la nota
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Aplicaciones_geométricas_básicas_01.svg]]
+> **Se lee así:** «Aplicaciones geométricas» se ramifica en **distancia**, **ángulo**, **proyección**, **área** y **volumen** — cada rama con su fórmula y su método de cálculo muestral.
+> **Por qué importa:** es la imagen de la materia completo — toda la pareja producto punto/cruz se aplica a cinco preguntas geométricas, y nada más.
+> **Ejemplo:** un solo cálculo con fórmulas distintas cambia el resultado del paralelogramo de tu iPad: área con cruz, ángulo con punto, y a veces ambas lo resuelven.
 
 ---
 
@@ -861,161 +899,149 @@ tags: [MATG1046, unidad1]
 
 ---
 
-## 🧪 Ejercicios Integrales
+## 🧪 Ejercicios Propuestos
 
-> [!example] 💪 Práctica Completa
+> [!example] 📋 Planteamiento
 >
-> **Nivel 1 - Básico:** 🟢
+> **Nivel 1 - Básico** 🟢
 >
 > **1. Distancias básicas**
 >
 > a) Calcular la distancia entre A = (1, 2, 3) y B = (4, 6, 8)
 >
-> ```
-> Solución:
-> d(A, B) = √[(4-1)² + (6-2)² + (8-3)²]
->         = √[9 + 16 + 25]
->         = √50 = 5√2 ≈ 7.07 unidades
-> ```
+> > [!success]- ✅ Solución
+> >
+> > d(A, B) = √[(4−1)² + (6−2)² + (8−3)²] = √[9 + 16 + 25] = √50 = **5√2 ≈ 7.07 unidades**
+> >
+> > **Lección:** la distancia es la magnitud del vector entre puntos — nunca un producto cruz ni una fracción.
+
+> [!example] 📋 Planteamiento
 >
 > b) Distancia del origen a P = (3, 4, 12)
 >
-> ```
-> Solución:
-> d(O, P) = √(3² + 4² + 12²)
->         = √(9 + 16 + 144)
->         = √169 = 13 unidades
-> ```
+> > [!success]- ✅ Solución
+> >
+> > d(O, P) = √(3² + 4² + 12²) = √(9 + 16 + 144) = **√169 = 13 unidades**
+> >
+> > **Lección:** la raíz de 169 = 13 es uno de los triples pitagóricos espacialmente (3,4,12)²=169 — recordarlo es memoria útil.
+
+> [!example] 📋 Planteamiento
 >
 > **2. Ángulos básicos**
 >
 > Calcular el ángulo entre **u** = (1, 0, 0) y **v** = (1, 1, 0)
 >
-> ```
-> Solución:
-> u · v = (1)(1) + (0)(1) + (0)(0) = 1
+> > [!success]- ✅ Solución
+> >
+> > u · v = (1)(1) + (0)(1) + (0)(0) = 1
+> >
+> > ||u|| = 1
+> > ||v|| = √2
+> >
+> > cos(θ) = 1/(1·√2) = 1/√2
+> >
+> > θ = **45°**
+> >
+> > **Lección:** el coseno entre un vector canónico y un diagonal es siempre la razón proyección/magnitud — aquí 1/√2 = cos 45°.
+
+> [!example] 📋 Planteamiento
 >
-> ||u|| = 1
-> ||v|| = √2
->
-> cos(θ) = 1/(1·√2) = 1/√2
-> θ = 45°
-> ```
->
-> ---
->
-> **Nivel 2 - Intermedio:** 🟡
+> **Nivel 2 - Intermedio** 🟡
 >
 > **3. Proyección**
 >
 > Proyectar **v** = (4, 3, 0) sobre **u** = (1, 0, 0)
 >
-> ```
-> Solución:
-> v · u = 4
->
-> ||u||² = 1
->
-> proy_u(v) = (4/1)(1, 0, 0) = (4, 0, 0)
->
-> Componente perpendicular:
-> proy_u⊥(v) = (4, 3, 0) - (4, 0, 0) = (0, 3, 0)
-> ```
+> > [!success]- ✅ Solución
+> >
+> > v · u = 4 · ||u||² = 1
+> >
+> > proy_u(v) = (4/1)(1, 0, 0) = **(4, 0, 0)**
+> >
+> > Componente perpendicular: proy_u⊥(v) = (4, 3, 0) − (4, 0, 0) = **(0, 3, 0)**
+> >
+> > **Lección:** la proyección sobre un canónico «recoge» esa coordenada y deja cero a las demás.
+
+> [!example] 📋 Planteamiento
 >
 > **4. Área de triángulo**
 >
 > Calcular el área del triángulo con vértices: A = (0, 0, 0), B = (3, 0, 0), C = (0, 4, 0)
 >
-> ```
-> Solución:
-> A\vec{B} = (3, 0, 0)
-> A\vec{C} = (0, 4, 0)
+> > [!success]- ✅ Solución
+> >
+> > A\vec{B} = (3, 0, 0) · A\vec{C} = (0, 4, 0)
+> >
+> > A\vec{B} × A\vec{C} = | i  j  k |
+> >
+> >             | 3  0  0 |
+> >             | 0  4  0 |
+> >           = (0, 0, 12)
+> >
+> > ||A\vec{B} × A\vec{C}|| = 12
+> >
+> > Área = 12/2 = **6 unidades²**
+> >
+> > Verificación: A = ½(base × altura) = ½(3 × 4) = 6 ✓
+> >
+> > **Lección:** el cruz da el paralelogramo entero — para triángulos siempre la mitad.
+
+> [!example] 📋 Planteamiento
 >
-> A\vec{B} × A\vec{C} = | i  j  k |
->
->             | 3  0  0 |
->             | 0  4  0 |
->           = (0, 0, 12)
->
-> ||A\vec{B} × A\vec{C}|| = 12
->
-> Área = 12/2 = 6 unidades²
->
-> Verificación: A = ½(base × altura) = ½(3 × 4) = 6 ✓
-> ```
->
-> ---
->
-> **Nivel 3 - Avanzado:** 🔴
+> **Nivel 3 - Avanzado** 🔴
 >
 > **5. Problema integrado**
 >
 > Dados los puntos A = (1, 0, 0), B = (0, 2, 0), C = (0, 0, 3):
 >
-> a) Calcular el área del triángulo ABC b) Calcular el volumen del tetraedro OABC (con O en el origen) c) Encontrar la altura del tetraedro desde O hasta el plano ABC
+> a) Calcular el área del triángulo ABC · b) Calcular el volumen del tetraedro OABC (con O en el origen) · c) Encontrar la altura del tetraedro desde O hasta el plano ABC
 >
-> ```
-> Solución:
->
-> a) Área del triángulo:
-> A\vec{B} = (-1, 2, 0)
-> A\vec{C} = (-1, 0, 3)
->
-> A\vec{B} × A\vec{C} = | i   j   k  |
->
->             | -1  2   0  |
->             | -1  0   3  |
->           = (6, 3, 2)
->
-> ||A\vec{B} × A\vec{C}|| = √(36 + 9 + 4) = √49 = 7
-> Área = 7/2 = 3.5 unidades²
->
-> b) Volumen del tetraedro:
-> O\vec{A} = (1, 0, 0)
-> O\vec{B} = (0, 2, 0)
-> O\vec{C} = (0, 0, 3)
->
-> V = (1/6)|det| 1  0  0 ||
->
->              | 0  2  0 ||
->              | 0  0  3 ||
->   = (1/6)|6| = 1 unidad³
->
-> c) Altura del tetraedro:
-> V = (1/3) × Área_base × altura
-> 1 = (1/3) × 3.5 × h
-> h = 3/3.5 = 6/7 ≈ 0.857 unidades
-> ```
+> > [!success]- ✅ Solución
+> >
+> > a) A\vec{B} = (−1, 2, 0) · A\vec{C} = (−1, 0, 3)
+> >
+> > A\vec{B} × A\vec{C} = | i   j   k  |
+> >
+> >             | −1  2   0  |
+> >             | −1  0   3  |
+> >           = (6, 3, 2)
+> >
+> > ||A\vec{B} × A\vec{C}|| = √(36 + 9 + 4) = √49 = 7
+> > Área = 7/2 = **3.5 unidades²**
+> >
+> > b) O\vec{A} = (1, 0, 0) · O\vec{B} = (0, 2, 0) · O\vec{C} = (0, 0, 3)
+> >
+> > V = (1/6)|det| 1  0  0 |
+> >              | 0  2  0 |
+> >              | 0  0  3 |
+> >   = (1/6)|6| = **1 unidad³**
+> >
+> > c) V = (1/3) × Área_base × altura
+> > 1 = (1/3) × 3.5 × h ⟹ h = 3/3.5 = **6/7 ≈ 0.857 unidades**
+> >
+> > **Lección:** volumen de tetraedro = ⅙|triple producto|: divide siempre entre 6, no entre 2 ni entre 3.
+
+> [!example] 📋 Planteamiento
 >
 > **6. Problema aplicado**
 >
-> Un cable se extiende desde el punto A = (0, 0, 10) m hasta B = (6, 8, 0) m. Una fuerza de **F** = (100, 0, -50) N actúa en A.
+> Un cable se extiende desde el punto A = (0, 0, 10) m hasta B = (6, 8, 0) m. Una fuerza de **F** = (100, 0, −50) N actúa en A.
 >
-> a) Calcular la componente de la fuerza en la dirección del cable b) Calcular el trabajo realizado si el cable se mueve 2 metros en su dirección
+> a) Calcular la componente de la fuerza en la dirección del cable · b) Calcular el trabajo realizado si el cable se mueve 2 metros en su dirección
 >
-> ```
-> Solución:
->
-> a) Dirección del cable:
-> A\vec{B} = (6, 8, -10)
->
-> ||A\vec{B}|| = √(36 + 64 + 100) = √200 = 10√2
->
-> Vector unitario:
-> û = A\vec{B}/||A\vec{B}|| = (6, 8, -10)/(10√2)
->   = (3/(5√2), 4/(5√2), -1/√2)
->
-> Componente de F en dirección del cable:
-> F_cable = F · û
->         = (100, 0, -50) · (3/(5√2), 4/(5√2), -1/√2)
->         = 300/(5√2) + 0 + 50/√2
->         = 60/√2 + 50/√2
->         = 110/√2 ≈ 77.78 N
->
-> b) Trabajo:
-> W = F_cable × distancia
->   = 77.78 × 2 ≈ 155.56 J
-> ```
+> > [!success]- ✅ Solución
+> >
+> > a) A\vec{B} = (6, 8, −10) · ||A\vec{B}|| = √(36 + 64 + 100) = √200 = **10√2**
+> >
+> > Vector unitario: û = A\vec{B}/||A\vec{B}|| = (6, 8, −10)/(10√2) = (3/(5√2), 4/(5√2), −1/√2)
+> >
+> > F_cable = **F** · û = (100, 0, −50) · (3/(5√2), 4/(5√2), −1/√2)
+> >         = 300/(5√2) + 0 + 50/√2
+> >         = 60/√2 + 50/√2 = 110/√2 ≈ **77.78 N**
+> >
+> > b) Trabajo: W = F_cable × distancia = 77.78 × 2 ≈ **155.56 J**
+> >
+> > **Lección:** el trabajo no equivale a la magnitud total de F, y sólo la componente sobre la dirección del desplazamiento contribuye.
 
 ---
 
@@ -1082,41 +1108,81 @@ tags: [MATG1046, unidad1]
 
 ---
 
-## 🔗 Conexiones con el Sistema de Notas
+## 🎯 Metas de Aprendizaje
+
+> [!note] 📋 Nivel Básico
+>
+> - [ ] Calculo distancias entre puntos, ángulos y proyecciones con las operaciones de la materia.
+> - [ ] Distingo cuándo un problema pide producto punto o cruz.
+
+> [!note] 📋 Nivel Intermedio
+>
+> - [ ] Calculo áreas y volúmenes (paralelogramo, triángulo, paralelepípedo, tetraedro) con producto cruz y triple.
+> - [ ] Descompongo un vector en parte paralela y perpendicular a una dirección.
+
+> [!note] 📋 Nivel Avanzado
+>
+> - [ ] Resuelvo problemas integrados que combinan cálculo y geometría 3D.
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes y material de la casa
+>
+> - J. Stewart, *Calculus*, cap. 12 «Vectors and the Geometry of Space»: distancias, ángulos, áreas y volúmenes.
+> - Syllabus oficial MATG1046 «Cálculo Vectorial», ESPOL — Unidad 1 (Geometría Analítica en ℝ³).
+> - Apuntes del curso MATG1046 y las figuras de la propia materia (`Unidad 0 - Guias y Ejercicios/Diagramas/`).
+
+---
+
+## 🔁 Repaso SR
+
+#flashcards/calcvec-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Fórmula de proyección escalar?::comp_u v = (v · u)/||u|| = ||v|| cos(θ) (puede ser negativa).
+> - ¿Fórmula de proyección vectorial?::proy_u v = [(v · u)/||u||²]·u (vector paralelo a u).
+> - ¿Área del triángulo?::½·||A\\vec{B} × A\\vec{C}||.
+> - ¿Volumen del tetraedro?::⅙·||A\\vec{B} · (A\\vec{C} × A\\vec{D})||.
+
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🌟 Enlaces Conceptuales
 >
 > **Prerequisites (Prerrequisitos):**
 >
-> - [[02 - Vectores en R3]] - Operaciones básicas con vectores
-> - [[01 – Producto punto y ángulos]] - Ángulos y proyecciones
-> - [[02 – Producto cruz y áreas]] - Áreas y perpendicularidad
-
-> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/V – Espacios con Producto Interno/01 – Producto interno.md]] - Ángulos y proyecciones
-> - [[2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/II – Producto Punto, Producto Cruz y Aplicaciones Geométricas/02 – Producto cruz y áreas.md]] - Áreas y perpendicularidad
-> - [[03 – Aplicaciones geométricas básicas]] - Volúmenes
->
-> **Temas relacionados:**
->
-> - 01.3 Distancia en el Espacio - Métrica en ℝ³
-> - [[01 - Rectas en R3]] - Ecuaciones y propiedades
-> - [[02 - Planos en R3]] - Ecuaciones de planos
-> - [[01 - Rectas en R3]] - Representación de curvas
+> - [[02 - Vectores en R3]] — Operaciones básicas con vectores
+> - [[01 – Producto punto y ángulos]] — Ángulos y proyecciones
+> - [[02 – Producto cruz y áreas]] — Áreas y perpendicularidad
 >
 > **Aplicaciones avanzadas:**
 >
-> - Geometría Analítica 3D - Estudio completo
-> - Cinemática Vectorial - Movimiento en el espacio
-> - [[../../Cálculo Vectorial]] - Derivadas e integrales
-> - Análisis Tensorial - Generalización
+> - Geometría Analítica 3D — Estudio completo
+> - Cinemática Vectorial — Movimiento en el espacio
+> - [[../../Cálculo Vectorial]] — Derivadas e integrales
+> - Análisis Tensorial — Generalización
 >
 > **Temas siguientes:**
 >
-> - [[03 – Curvas como intersección de superficies]] - Estudio de superficies
-> - [[01 – Funciones vectoriales de variable escalar]] - Geometría diferencial
-> - [[01 – Transformaciones lineales]] - Cambios de base
-> - [[01 - Coordenadas cilíndricas y esféricas]] - Sistemas alternativos
+> - [[03 – Curvas como intersección de superficies]] — Estudio de superficies
+> - [[01 – Funciones vectoriales de variable escalar]] — Geometría diferencial
+> - [[01 – Transformaciones lineales]] — Cambios de base
+> - [[01 - Coordenadas cilíndricas y esféricas]] — Sistemas alternativos
 
 ---
 
-**Tags:** #geometría-vectorial #aplicaciones-geométricas #distancias #ángulos #áreas #volúmenes #proyecciones #producto-punto #producto-cruz #triple-producto #R3 #geometría-analítica #matemáticas #university #cálculo-vectorial
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Saber leer signo del producto punto: > 0 agudo, = 0 recto, < 0 obtuso.
+> - Siguiente: [[01 - Rectas en R3]] — donde todas estas herramientas se ponen en acción para hallar ecuaciones de rectas.
+> - Repasa el triple producto antes de pasar a volumen con determinant.
+
+---
+
+**Tags:** #MATG1046 #unidad1 #aplicaciones-geométricas #distancias #área #volumen #triple-producto #proyección #geometría-analítica #cálculo-vectorial
