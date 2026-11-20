@@ -2595,3 +2595,33 @@ html.nx-lectura .nx-note-nav {
     border-top-color: #cccccc !important;
   }
 }
+
+/* ── Transiciones sutiles ────────────────────────────────────────
+   Solo para cambios de estado (hover, foco, active). Nunca son
+   animaciones continuas ni decorativas. Respetan
+   prefers-reduced-motion. */
+.nx-card,
+.nx-sem-state,
+.nx-section-title,
+.nx-section-title::after,
+.nx-badge,
+a,
+button,
+.nx-note-tools__btn,
+.nx-map label,
+.nx-explorer summary,
+.nx-explorer a {
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+/* Sin movimiento cuando el usuario lo pide. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
