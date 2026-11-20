@@ -3817,3 +3817,34 @@ junto al bloque de estado (0/0/0, 2026-11-20). La regla sigue viva para capturas
 **Trabajo ajeno intacto:** staging de Cálculo Vectorial (90 archivos) sin tocar; no se hizo
 push. Archivos de este cierre: `FORMATO-FISICA.md`, `qa_formato_fisica.py`, este bloque.
 
+---
+
+### `opencode` — Hallazgo: 100 exámenes perdidos en una resolución de merge — 20/11/2026
+
+> [!success] **PUSHEADO `05545a9e`** · 20/11/2026 — `master` = `origin/master` = `05545a9e` (sin `--force`).
+> Restaurados 39 PDFs (Álgebra 19 + POO 20). Lo que sigue es el diagnóstico y lo pendiente.
+
+> [!danger] **Datos del vault que estaban en el historial pero NO en `master`**
+>
+> El commit `6eef68e0` (`docs(examenes): exámenes reales de DSpace para POO, Comunicación y
+> Cálculo Vectorial`, 100 archivos) es ancestro de `master`, pero **ninguno de sus 100 archivos
+> existía en `HEAD`**: otra sesión los eliminó al resolver un merge. Los encontré haciendo
+> inventario de exámenes por materia.
+>
+> | Materia | Archivos en `6eef68e0` | Estado en `master` al hallarlo |
+> |---|---|---|
+> | Álgebra Lineal | 42 PDFs | **0** |
+> | Comunicación | 25 (`.doc/.docx`) | **0** |
+> | Programación Orientada a Objetos | 21 PDFs | **0** |
+> | Cálculo Vectorial | 12 PDFs | 0 (reemplazados por otros) |
+>
+> **Restaurado en `05545a9e`:** Álgebra **19 PDFs únicos** (de 42, tras descartar 13 duplicados
+> exactos por sha256) y POO **20 PDFs únicos** (de 21), con el wrapper MIME de la API limpiado y
+> nombres sin el prefijo `123456789-<n>__`. Álgebra: 149 páginas · POO: 62 páginas.
+>
+> **Pendiente de decisión:**
+> - Los 10 archivos `…sicm…` de Álgebra (2008-2010, Instituto de Ciencias Matemáticos, anteriores
+>   a la unificación de códigos) son exámenes legítimos de Álgebra; si entran, Álgebra queda en 29.
+> - Comunicación son **25 archivos `.doc/.docx`**, no PDFs. El criterio vigente es "solo PDFs".
+> - Cálculo Vectorial tiene 12 PDFs **con wrapper MIME** aún en disco (12 archivos → 5 hashes
+>   únicos, o sea 7 son duplicados exactos).
