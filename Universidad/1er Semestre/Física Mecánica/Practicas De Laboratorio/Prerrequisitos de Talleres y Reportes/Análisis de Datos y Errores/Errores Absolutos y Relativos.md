@@ -98,6 +98,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, errores-absolutos-y-rela
 >
 > ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Errores_Absolutos_y_Relativos_01.svg]]
 >
+> **Se lee así:** El flujo de trabajo con errores: **realizar mediciones** → **calcular el promedio** → **determinar el error absoluto** → **calcular el error relativo** → **evaluar la aceptabilidad** → **decidir repetir o aceptar** → **expresar el resultado final**.
+>
+> **Por qué importa:** La pregunta de aceptabilidad antes de reportar es el paso que separa un dato válido de uno inútil: si el error relativo supera el que permite la magnitud, la medición se repite aunque el promedio exista. Y el error relativo —no el absoluto— es el que permite comparar instrumentos distintos.
+>
 
 > [!note] **Métodos de Cálculo** 📝
 >

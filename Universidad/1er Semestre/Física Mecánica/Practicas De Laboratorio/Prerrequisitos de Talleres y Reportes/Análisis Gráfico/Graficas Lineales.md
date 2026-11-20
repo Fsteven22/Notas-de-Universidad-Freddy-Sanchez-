@@ -133,6 +133,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, graficas-lineales]
 >
 > ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Graficas_Lineales_01.svg]]
 >
+> **Se lee así:** La receta de la gráfica lineal en nueve pasos: **identificar variables**, **determinar escalas**, **etiquetar ejes completamente**, **graficar los puntos experimentales**, **añadir barras de error**, **trazar la línea de mejor ajuste**, **incluir título descriptivo**, **verificar legibilidad** y **analizar e interpretar**.
+>
+> **Por qué importa:** El orden importa: los puntos y sus barras van antes que la recta, porque la recta debe trazarse a ojo por todos los puntos, no a través de ellos. Y «etiquetar completamente» incluye unidades — una gráfica sin unidades no permite interpretar la pendiente.
+>
 
 > [!warning] **Selección de Escalas** 📏
 >

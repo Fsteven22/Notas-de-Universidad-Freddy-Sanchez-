@@ -194,6 +194,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, otros-instrumentos-de-me
 > [!success] 🔗 Selección del Cronómetro Apropiado
 >
 > ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Otros_Instrumentos_de_Medición_01.svg]]
+>
+> **Se lee así:** La tabla de decisión para medir tiempo según el intervalo: **¿qué tiempo mides?** — con **menos de 1 segundo**, **fotocélula o sistema automático**; entre **1 y 10 segundos**, **cronómetro digital con múltiples mediciones**; con **más de 10 segundos**, **cronómetro manual aceptable**.
+>
+> **Por qué importa:** El criterio es el tiempo de reacción humano (~0,2 s): por debajo de 1 s domina el error del operador, así que se automatiza; por encima de 10 s ese error es despreciable y el manual basta. Es la misma lógica que elige el instrumento en función de la incertidumbre relativa que se tolera.
 
 ## 🌡️ Instrumentos de Temperatura
 

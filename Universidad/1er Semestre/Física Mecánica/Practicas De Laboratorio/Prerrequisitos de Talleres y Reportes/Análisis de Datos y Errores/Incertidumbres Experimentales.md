@@ -110,6 +110,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, incertidumbres-experimen
 >
 > ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Incertidumbres_Experimentales_01.svg]]
 >
+> **Se lee así:** La propagación de incertidumbres en siete pasos: **identificar las variables**, **determinar las incertidumbres individuales**, **escribir la función matemática**, **aplicar las reglas de propagación**, **calcular la incertidumbre combinada**, **expresar el resultado final** y **verificar la coherencia**.
+>
+> **Por qué importa:** Es el protocolo para magnitudes indirectas: nunca se propaga «a ojo», primero va la función. La verificación final (coherencia) busca detectar errores de orden de magnitud — una incertidumbre mayor que el valor medido indica que el experimento no resuelve la magnitud.
+>
 
 > [!note] **Método de Derivadas Parciales** 📝
 >
