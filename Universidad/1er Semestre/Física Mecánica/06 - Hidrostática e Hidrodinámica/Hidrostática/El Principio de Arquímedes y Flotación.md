@@ -56,6 +56,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, el-principio-de-arquimedes-y
 > [!note] 🖼️ Estados de Flotación
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/El_Principio_de_Arquímedes_y_Flotación_01.svg]]
+>
+> **Se lee así:** La decisión de flotación al comparar **peso y empuje**: con **peso > empuje** (`W > E`) hay **hundimiento** (**densidad del cuerpo > densidad del fluido**), con **peso = empuje** **flotación neutra** (densidades iguales, equilibrio estático con `a = 0`) y con **peso < empuje** **flotación** (**densidad del cuerpo < densidad del fluido**), con **aceleración hacia abajo** `a = g(d_c − d_f)/d_c` en el primer caso y **flotación parcialmente sumergida** en el tercero.
+>
+> **Por qué importa:** Reduce todo el principio a una sola comparación de densidades. Y la fórmula de la aceleración al hundirse muestra que el hundimiento no es instantáneo: depende del cociente entre ambas densidades.
 
 
 
@@ -109,6 +113,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, el-principio-de-arquimedes-y
 > ### ⚓ Tipos de Equilibrio
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/El_Principio_de_Arquímedes_y_Flotación_02.svg]]
+>
+> **Se lee así:** Los tres estados de **equilibrio de flotación** según la posición del **centro de carena** respecto al **centro de gravedad**: **estable** cuando el centro de carena está **por encima** del CG, **inestable** cuando está **por debajo** y **indiferente** cuando **coinciden**.
+>
+> **Por qué importa:** Es el criterio de estabilidad de los buques, y es el contrario al de los sólidos: en un barco el centro de flotación (que sube al escorarse) debe quedar por encima del CG para que la boya devuelva el casco a su posición. Un casco alto con la carga en la cubierta pone el CG arriba y hace el barco inestable.
 
 ## 🧮 Problemas Cuantitativos
 

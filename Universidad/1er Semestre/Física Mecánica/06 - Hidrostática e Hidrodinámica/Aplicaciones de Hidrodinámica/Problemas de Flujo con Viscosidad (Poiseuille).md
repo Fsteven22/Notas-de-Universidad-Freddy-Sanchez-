@@ -89,6 +89,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, problemas-de-flujo-con-visco
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Flujo_con_Viscosidad_(Poiseuille)_01.svg]]
 >
+> **Se lee así:** La **ley de Poiseuille** `Q = πR⁴ΔP/(8μL)` con todo su marco: el **número de Reynolds** `Re = ρvD/μ` decide si vale (**`Re < 2100`: laminar y válido**; **2100–4000: transición**; **`Re > 4000`: turbulento y NO vale Poiseuille**). La **resistencia hidráulica** `R_h = 8μL/(πR⁴)` permite usar la **ley de Ohm fluida** `ΔP = R_hQ` con reglas de **serie y paralelo**. El método es **VAPOR** (viscosidad, área, presión, Ohm, Reynolds) y las **pérdidas** escalan con `v` en laminar y con `v²` en turbulento.
+>
+> **Por qué importa:** El `R⁴` en el radio es la razón de todo: duplicar el radio multiplica por 16 el caudal. Y el chequeo de Reynolds es obligatorio antes de usar la fórmula — un error ahí invalida el resultado completo sin que se note en las unidades.
+>
 
 > [!note] **Analogía con Circuitos Eléctricos** ⚡
 >

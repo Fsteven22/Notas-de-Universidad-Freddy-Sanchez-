@@ -83,6 +83,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, problemas-de-flotabilidad-y-
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Flotabilidad_y_Empuje_en_Fluidos_en_Movimiento_01.svg]]
 >
+> **Se lee así:** Un **cuerpo en fluido en movimiento** se resuelve con tres fuerzas: el **empuje** `b = ρ_fluido·V_sumergido·g` (hacia arriba), la **resistencia** `F_d = ½ρv²C_dA` (opuesta a la velocidad relativa) y el **equilibrio de fuerzas** — en **vertical**, empuje más corriente menos peso; en **horizontal**, propulsión menos resistencia. El diagrama da valores de `C_d` (esfera ≈ 0,47, cilindro 1,2, placa 1,3, cuerpo hidrodinámico 0,04 a 0,1) y la **ley de Stokes** para `Re < 1` (`C_d = 24/Re`), la **velocidad terminal** `v_t = √(2mg/(ρAC_d))` y el **método MAREA** (masas, Arquímedes, resistencia, equilibrio, análisis).
+>
+> **Por qué importa:** Añade a Arquímedes la resistencia dinámica, que es la que fija la velocidad final. El salto entre un cuerpo hidrodinámico y una placa (0,04 frente a 1,3) explica por qué la forma importa tanto: misma masa, 30 veces menos resistencia.
+>
 
 > [!note] **Ecuaciones de Equilibrio** 📐
 >

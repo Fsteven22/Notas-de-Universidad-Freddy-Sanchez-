@@ -83,6 +83,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, problemas-de-presion-en-un-f
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Presión_en_un_Fluido_01.svg]]
 >
+> **Se lee así:** La **presión hidrostática** `P = P₀ + ρgh` con su **gradiente** `dP/dh = ρg` (**cada 100 m de agua ≈ +1 MPa**), la corrección para **fluido estratificado** `P = P₀ + ∫ρ(z)g dz`, las **equivalencias** (`h = P/(ρg)`; la atmósfera son 101325 Pa = 10,33 m de agua) y las **densidades de referencia**: agua 1000, mar 1025, **mercurio 13600** y aceite 900 kg/m³, es decir, el mercurio **13,6 veces más denso** que el agua.
+>
+> **Por qué importa:** Es la tabla de consulta de toda la unidad hidrostática. La equivalencia de 10,33 m de agua explica por qué con una bomba no se puede aspirar desde más de diez metros, y el factor 13,6 del mercurio explica por qué los manómetros de mercurio son tan compactos.
+>
 
 > [!note] **Relaciones Matemáticas** 📐
 >

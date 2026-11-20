@@ -78,6 +78,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, problemas-de-ecuacion-de-con
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Ecuación_de_Continuidad_01.svg]]
 >
+> **Se lee así:** La **ecuación de continuidad** `Q = A₁v₁ = A₂v₂` con sus formas prácticas: para tubos **circulares** `Q = (π/4)D²v`, la **relación de velocidades** `v₂/v₁ = A₁/A₂ = (D₁/D₂)²` y el **caudal másico** `ṁ = ρAv` en kg/s. Las **aplicaciones típicas** son **boquillas que aceleran y difusores que frenan**, **venturímetros que miden** y **ramas que reparten**, con las dos advertencias de diseño: **cavitación** por presión baja en secciones estrechas y **turbulencia** en cambios bruscos. El método es **CAVE**: caudal, área, velocidad, evaluar con los datos del punto.
+>
+> **Por qué importa:** La relación con el cuadrado del diámetro es la que más se olvida: reducir a la mitad el diámetro cuadruplica la velocidad. Y la cavitación marca el límite real de uso: si la presión cae por debajo de la de vapor, el fluido se rompe y el dispositivo deja de funcionar.
+>
 
 > [!note] **Fórmulas Clave** 📐
 >
@@ -422,6 +426,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, problemas-de-ecuacion-de-con
 > [!success] 🔗 Funcionamiento del Tubo de Venturi
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Ecuación_de_Continuidad_02.svg]]
+>
+> **Se lee así:** El **tubo de Venturi**: la **sección 1** es ancha con `v₁` lenta y `P₁` alta; en la **garganta**, estrecha, `v₂ = v₁/β²` con `β = A₂/A₁` y `P₂` baja. El dispositivo mide caudal por `ΔP = P₁ − P₂ = (ρv₁²/2)(β⁻⁴ − 1)`, con una **pérdida permanente** `(1 − Cd²)(P₁ − P₂)`. Los **límites de uso** son `β` entre 0,2 y 0,75, `Re > 2×10⁴` y `P₂` por encima de la presión de vapor. Compara tres alternativas: **venturi** (baja pérdida, alta precisión), **tobera** (solo converge, más pérdida) y **placa de orificio** (restricción abrupta, económica).
+>
+> **Por qué importa:** Explica por qué el venturímetro es el instrumento de referencia: convierte una medida de presión en una de velocidad con la mínima pérdida de energía. Y los tres límites de la rama derecha son las condiciones reales que hay que comprobar antes de usar la fórmula.
 >
 
 > [!note] **Relaciones Fundamentales** 📊

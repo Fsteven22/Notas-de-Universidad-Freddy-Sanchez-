@@ -73,6 +73,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, problemas-de-presion-y-fuerz
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Presión_y_Fuerza_sobre_Superficies_01.svg]]
 >
+> **Se lee así:** La **fuerza sobre una superficie** según su orientación: en **horizontal** la presión es **uniforme** (`F = ρgh·A`) con punto de aplicación en el **centro geométrico**; en **vertical** la presión **varía** con `P(y) = ρg(h₀ + y)`, de donde al integrar sale `F = ρg h_c A` con `h_c` la **profundidad del centroide**, y el **centro de presión** queda en `h_cp = h_c + I_c/(h_cA)`, **siempre por debajo del centroide**; en **inclinada** se usa la **componente normal** `F_n = ρg h̄ A` con el mismo `h_cp` usando `I_c` inclinada.
+>
+> **Por qué importa:** La distinción entre centro geométrico y centro de presión es lo que hace trampa: la fuerza no se aplica donde está el centro del panel, sino más abajo, porque la presión crece con la profundidad. Eso cambia el punto de torque en compuertas y presas.
+>
 
 > [!note] **Fórmulas Clave** 📐
 >

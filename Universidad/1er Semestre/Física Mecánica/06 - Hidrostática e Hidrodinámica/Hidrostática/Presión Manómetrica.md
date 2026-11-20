@@ -28,6 +28,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, presion-manometrica]
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Presión_Manómetrica_01.svg]]
 >
+> **Se lee así:** Las tres presiones y sus relaciones: la **absoluta** `P_abs = P_atm + P_man`, la **atmosférica** `P_atm ≈ 101,325 kPa` y la **manométrica** `P_man = P_abs − P_atm`. Los **casos especiales** son **sobrepresión** (`P_man > 0`), **presión atmosférica** (`P_man = 0`) y **vacío parcial** (`P_man < 0`). Las **referencias** son el **vacío absoluto** (`P = 0 Pa`, referencia teórica) y el **nivel del mar** (`P_atm = 1 atm`, referencia práctica).
+>
+> **Por qué importa:** Es la distinción que confunde al principio de cualquier problema: un manómetro nunca lee la presión absoluta, lee la diferencia con la atmosférica. Por eso un neumático a «30 psi» mide 30 psi por encima de la atmósfera, no 30 psi absolutos.
+>
 > ### Relaciones Fundamentales
 > - **P_abs = P_atm + P_man** (cuando P_man > 0)
 > - **P_abs = P_atm - |P_man|** (cuando P_man < 0, vacío)
@@ -48,6 +52,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, presion-manometrica]
 > ### Manómetro en U - Principio
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Presión_Manómetrica_02.svg]]
+>
+> **Se lee así:** La lectura de un **tubo en U con mercurio**: el **recipiente con gas** tiene `P_gas`, la **rama abierta** está a la **presión atmosférica** y la **diferencia de altura h** entre las dos ramas se fija por el **equilibrio de presiones**, de donde `P_gas = P_atm + ρ_Hg·g·h` y la **presión manométrica** es `ρ_Hg·g·h`.
+>
+> **Por qué importa:** Es el montaje experimental que mide la presión de un gas sin tocarlo. Y muestra por qué se usa mercurio: al ser 13,6 veces más denso que el agua, la altura que hay que leer es 13,6 veces menor.
 >
 
 > [!example] Cálculos y Ejemplos Prácticos 🧮
@@ -103,6 +111,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, presion-manometrica]
 > ### En Procesos Industriales
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Presión_Manómetrica_03.svg]]
+>
+> **Se lee así:** El mapa de aplicaciones de la presión manométrica: en **petroquímica** (reactores a presión, destilación, transporte por ductos), en **manufactura** (prensas hidráulicas, moldeado por inyección, control de calidad), en **medicina** (respiradores artificiales, cámaras hiperbáricas, equipos de diálisis) y en **alimentaria** (esterilización, envasado al vacío, procesamiento HPP).
+>
+> **Por qué importa:** Muestra que casi toda la ingeniería de procesos mide diferencias de presión, no presiones absolutas: el manómetro es el instrumento porque lo que importa es cuánto hay por encima o por debajo de la atmósfera.
 >
 > ### Ventajas de la Medición Manométrica
 > - **📏 Referencia práctica**: Elimina variaciones atmosféricas normales

@@ -34,6 +34,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, modulo-volumetrico]
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Módulo_Volumétrico_01.svg]]
 >
+> **Se lee así:** El **módulo de compresibilidad K** relaciona la **presión ΔP** con la **deformación volumétrica `ΔV/V₀`**, y de él se derivan la **compresibilidad `β = 1/K`** y la **velocidad del sonido `v = √(K/ρ)`**, esta última con la **densidad del material ρ**.
+>
+> **Por qué importa:** El módulo K es el equivalente volumétrico del módulo de Young: mide cuánta presión hace falta para comprimir un material un porcentaje dado. Y la fórmula de la velocidad del sonido explica por qué el sonido va más rápido en el agua que en el aire: el agua es mucho menos comprimible.
+>
 
 > [!tip] Tipos de Módulo de Compresibilidad 🔬
 >
@@ -74,6 +78,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, modulo-volumetrico]
 > ### Aplicaciones Prácticas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Módulo_Volumétrico_02.svg]]
+>
+> **Se lee así:** El mapa de aplicaciones del módulo volumétrico: en **ingeniería civil** (cimentaciones profundas, estructuras submarinas, presas y embalses), en la **industria petrolífera** (exploración marina, cálculo de reservorios, transporte por tuberías), en **sistemas hidráulicos** (frenos, prensas y elevadores) y en **geofísica** (propagación de ondas sísmicas, estudios de la corteza, exploración sísmica).
+>
+> **Por qué importa:** Conecta el módulo con la sismología: las ondas sísmicas viajan a velocidad `√(K/ρ)`, así que medir su velocidad permite inferir qué material hay en el interior de la Tierra sin excavar.
 >
 > [!abstract] Cálculos y Ejemplos Prácticos 🧮
 >

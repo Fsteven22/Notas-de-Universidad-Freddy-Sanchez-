@@ -81,6 +81,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, problemas-de-ecuacion-de-ber
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Ecuación_de_Bernoulli_01.svg]]
 >
+> **Se lee así:** La ecuación `P + ½ρv² + ρgh = constante` acompañada de su advertencia: **cuándo NO aplicarla** (**viscosidad significativa**, **fluidos compresibles con M > 0,3**, **flujo no estacionario** y presencia de **bombas, turbinas o fricción grande**), sus **correcciones** cuando sí hay que forzarla (**+H de pérdidas por fricción**, **±H de bomba o turbina**, `Cd` en orificios y el factor `α` que corrige la energía cinética), el **método PEACE** (puntos, energía, asumir, calcular, evaluar) y los **instrumentos** derivados: **Torricelli `v = √(2gh)`**, **venturímetro** y **tubo de Pitot**.
+>
+> **Por qué importa:** Es la hoja de advertencias que conviene leer antes de escribir la ecuación: Bernoulli es una conservación de energía para fluidos ideales, y aplicarla donde hay viscosidad o una bomba da resultados sin sentido físico. El método PEACE obliga a elegir los dos puntos de aplicación antes de calcular.
+>
 
 > [!note] **Fórmulas Específicas** 📐
 >
@@ -468,6 +472,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, problemas-de-ecuacion-de-ber
 > [!success] 🔗 Aplicaciones del Teorema de Torricelli
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Ecuación_de_Bernoulli_02.svg]]
+>
+> **Se lee así:** El teorema de **Torricelli** `v = √(2gh)` con sus tres **variaciones** (**presión extra** en un tanque presurizado `v = √(2gh + 2ΔP/ρ)`, **orificio sumergido** `v = √(2g(h₁ − h₂))` y **pared inclinada** `v = √(2g h cos²α)`), y las tres **derivadas útiles**: **tiempo de vaciado** `t = (2A_t/A_o)√(h₀/2g)`, **alcance horizontal** `x = 2√(h_orificio · h_líquido)` y **caudal instantáneo** `Q(t) = Cd·A·√(2g h(t))`. Cierra con **verificar unidades y altura de referencia**.
+>
+> **Por qué importa:** Es la biblioteca completa de un problema de tanque: casi siempre se pide la velocidad de salida, el tiempo de vaciado o dónde cae el chorro, y las tres fórmulas ya están derivadas. La advertencia final recuerda que `h` es la altura **hasta el orificio**, no la del recipiente entero.
 >
 
 > [!note] **Ecuaciones Derivadas Importantes** 📊

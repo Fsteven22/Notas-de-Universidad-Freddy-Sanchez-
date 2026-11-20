@@ -63,6 +63,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, el-principio-de-pascal]
 > [!note] 🖼️ Diagrama del Principio
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/El_Principio_de_Pascal_01.svg]]
+>
+> **Se lee así:** La transmisión de presión: una **fuerza aplicada `F₁`** sobre el **pistón pequeño** (área `A₁`) pasa por un **fluido incompresible** que **transmite la presión** `P = F₁/A₁` hasta el **pistón grande** (área `A₂`), donde se obtiene la **fuerza resultante `F₂ = P × A₂`**.
+>
+> **Por qué importa:** Es el enunciado de Pascal convertido en esquema: la presión no se pierde al viajar por el fluido. De ahí sale la multiplicación de fuerza `F₂ = F₁(A₂/A₁)`, que es lo que aprovechan los frenos hidráulicos y las prensas.
 
 ## 🔍 Análisis Físico Profundo
 
