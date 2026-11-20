@@ -143,6 +143,12 @@ El archivo referenciado debe existir. Además:
    o de prosa propia de **≥ 60 caracteres** que no sea la ruta del embed.
 2. **Cada SVG (mermaid)** va seguido de la misma lectura.
 3. La ruta del propio embed **no cuenta** como explicación.
+4. **Callouts 📖**: la regla (b) del validador solo aplica a los que traen **un embed dentro**
+   (captura de deck o imagen). Un callout 📖 de **prosa pura** (Contexto, Explicación Teórica,
+   Material de Referencia…) **no es un deck** y no lleva etiqueta de lectura — R14 es «todo lo
+   **visual** se explica», y aquí no hay nada visual. (Regla afinada el 2026-11-20: la versión
+   heredada de FESD marcaba cualquier callout 📖 y producía falsos positivos en esta materia,
+   que no usa capturas PNG.)
 
 **En esta materia R14 es severidad `P`:** las lecturas quedan para una segunda ronda.
 
@@ -214,12 +220,14 @@ Este contrato **no** vive en `1er Semestre/Física Mecánica/`: es una herramien
 publica la carpeta de la materia. Vive en `Universidad/Herramientas/Mantenimiento/`, junto al
 validador que lo aplica (`qa_formato_fisica.py`) y sus hermanos.
 
-> [!success] ✅ Estado actual (2026-11-19)
-> `qa_formato_fisica.py` registra **230** hallazgos en las **108** notas: **0 H**, **1 W**
-> (`R2-h1` en la única nota vacía) y **229 P** (lecturas R14). Línea base al empezar la ronda:
-> 1 530 hallazgos con 851 H.
+> [!success] ✅ Estado actual (2026-11-20) — ronda R14 cerrada
+> `qa_formato_fisica.py` registra **0** hallazgos en las **108** notas: **0 H**, **0 W**,
+> **0 P**. Línea base al empezar la ronda: 1 530 hallazgos con 851 H.
 >
-> Pendientes:
-> - **R14 (229)**: la ronda de lecturas, nota por nota.
-> - `03 - Trabajo y Energía/Aplicaciones de Trabajo y Energía/Problemas de Potencia y Gradiente de
->   Potencial.md` estaba **vacía**; debe llevar contenido propio.
+> Ronda R14 (lecturas de diagramas), cerrada en 9 commits locales:
+> 229 P iniciales → 218 (nota de referencia) → 166 (bloque A) → 137 (B1+B2) → 119 (C+D) →
+> 99 (E) → 74 (F) → 67 (G) → 51 (H, embeds a 0) → **0** (regla (b) afinada: solo callouts 📖
+> con embed, ver R14.4).
+>
+> Pendientes: ninguno. Nota `Problemas de Potencia y Gradiente de Potencial.md` redactada
+> durante la ronda (ya no está vacía).
