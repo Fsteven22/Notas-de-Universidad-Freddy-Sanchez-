@@ -3593,7 +3593,6 @@ el commit de esta línea de PUSHEADO.
 ---
 
 ---
-
 ### `opencode-site` — combinado A+C+D: mapa en cian, acciones con rótulo, contraste arreglado — 19/11/2026
 
 > [!success] PUSHEO EN CURSO · `sesion/opencode-combinado` → `master` (merge `--ff-only`) → `origin/master`
@@ -3609,7 +3608,7 @@ el commit de esta línea de PUSHEADO.
 > - **Verificado sobre el build de producción** (818 páginas, `astro preview`):
 >   - Contraste total 18/18 en ambos temas.
 >   - Auditoría de paleta: todos los contrastes OK, 1 solo degradado (barra 2px), 0 sombras, 0 blur, radios 100 % 4 px, animación se detiene con `prefers-reduced-motion`, 0 errores de consola.
->   - Funcional 10/10: buscador, flashcards, marcar leída, contador, barra de progreso, mapa 3D⇄Lista, tema persistente, modo lectura.
+>   - Funcional 10/10: buscador, flashcards, marcar leída, contador, barra de progreso, mapa 3D⇄Lista, tema persistente.
 >   - Modo lectura 602→671 px, foco neón visible, 0 errores de consola.
 >   - Mapa: esferas cian confirmadas por análisis de píxeles, etiquetas sin solaparse, diagrama SVG de Cálculo 1 en oscuro sin fondo blanco.
 >   - Impresión del mapa: canvas oculto, Lista en 2 columnas negro sobre blanco, 4 semestres.
@@ -3617,43 +3616,75 @@ el commit de esta línea de PUSHEADO.
 > - **No se tocó** la zona `opencode`, ni `Universidad/`, ni `site/scripts/`. Sin `npm run sync` en OneDrive.
 >
 > - **Sync local**: `npm run sync` con `VAULT_DIR=../Universidad` para que el build local coincida con la producción (787 notas, 4 semestres).
+>
 
----
 
 > [!success] PUSHEADO `32e1bfc9` · 19/11/2026 — `ca83456e` (código) + `32e1bfc9`
 > (PUSHEO EN CURSO) + este bloque → merge `--ff-only` a `master` → un solo push, sin `--force`.
 
+---
 
-### opencode-site — estados + mapa imprimible + limpieza + masa de superficie + contraste de hover + estados verde/ámbar/coral + ícono leída verde + SVG en tema oscuro — 18/11/2026
+### `opencode` — Álgebra Lineal: piloto MATG1049, contrato + primer pase (0 H) — 19/11/2026
 
-> [!success] PUSHEO EN CURSO · sesion/opencode-masa-animaciones → master (merge --ff-only) → origin/master
+> [!success] **PUSHEADO `dc5f40fc`** · 19/11/2026 — `master` = `origin/master` = `dc5f40fc` (sin `--force`).
+>
+> Lo que sigue es el detalle del contenido del push.
+>
+> **Álgebra Lineal (MATG1049), 51 notas — baseline medido y primer lote de fixes, sin romper nada (51 notas pasan, 0 hallazgos de clase H):**
+> - Nuevo `Universidad/Herramientas/Mantenimiento/FORMATO-ALGEBRA.md` (contrato de la materia, adaptado del patrón CYSOC pero con esqueleto libre y exigencia de emoji en todo H2) y `qa_formato_algebra.py` (mismo motor que el validador CYSOC).
+> - **R4-prosa-top pasa a W** (informativa): las notas de esta materia son prosa densa por diseño; envolver ~775 párrafos en callouts sería una reescritura editorial masiva, no un arreglo de formato. `R8-doble-gt` y `R6-callout-vacío` siguen siendo H.
+> - Tags: 47 notas sin frontmatter ganaron `tags: [MATG1049, algebra-lineal, unidadN, slug]`.
+> - H1 sin emoji corregidos (2), líneas de código `> >` sueltas bajadas de nivel (4), 2 callouts `quote` vacíos rellenados con su contenido envuelto (antes flotaban fuera del callout).
+> - **Estado: 51 notas, 1345 hallazgos, 0 H** (todo W; quedan R14/R4-embed/R6/R7/R3-h2-emoji/R13 para fases siguientes, una unidad a la vez).
+> - Backup de los 51 archivos modificados en `%TEMP%\opencodeackup_algebra_piloto_20261119_2116.zip`.
+>
+> **Queda POR HACER (fase 2):** lecturas R14 de los 174 embeds sin explicación, envolver los 57 embeds top-level, y luego **enlazar los 42 exámenes reales de DSpace** (14 Parcial I / 14 Parcial II / 14 Mejoramiento) desde las notas — el punto central de "nutrir con material real". Nada de esto se incluye en este push.
+>
+> **Excluidos del push:** `FORMATO-FISICA.md` y `qa_formato_fisica.py` (otra sesión, sin tocar), Inglés III y todo el trabajo ajeno. Los exámenes de Álgebra ya estaban pusheados (`6eef68e0`); este push no los repite.
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Algebra Lineal/**` (51 notas: tags/emoji/fixes)
+> - `Universidad/Herramientas/Mantenimiento/FORMATO-ALGEBRA.md` (nuevo), `qa_formato_algebra.py` (nuevo)
+> - `Clippings/00 - LEEME bandeja de pistas.md`
 
-- **Hecho (código, d81f4aef):** ronda completa de mejoras de diseño sobre sesion/opencode-masa-animaciones, basada en master fdd14bcd:
-  - **Los estados dicen lo real:** Preuniversitario Completado (verde), 1er Semestre Reconstrucción (ámbar), 2do y 3er En curso (coral). Portada y mapa 3D heredan estadosSem + claseEstado.
-  - **El mapa se imprime como la Lista** (/mapa/ → Imprimir o Guardar como PDF): el canvas WebGL y su interfaz se ocultan en @media print; la Lista sale a dos columnas negro sobre blanco, sin partir semestres entre hojas, y muestra el rótulo del estado.
-  - **Limpieza de text-white/text-black inertes:** eliminadas 13 apariciones en 9 archivos. Verificado que nunca ganaban la cascada (todos calculaban a var(--nx-text) en ambos temas); SearchModal pasa a text-[var(--nx-text)].
-  - **Masa de superficie:** surface pasa de #e8f0f4 a #dde9ef (claro) y de #121c23 a #18242c (oscuro); bg/surface ahora 1,16:1 y 1,18:1 respectivamente.
-  - **Contraste de hover arreglado:** --nx-control claro #708a98 → #6f8391 (control/hover pasa de 2,94:1 a 3,18:1).
-  - **Transiciones sutiles** en controles, tarjetas, títulos de sección, buscador y explorador; respetan prefers-reduced-motion (quedan quietas).
-  - **Buscador del hero:** borde de --nx-control y texto --nx-dim (más visible que el line y muted anteriores).
-  - **Estados en gris/coral:** Completado y Reconstrucción en gris apagado (--nx-muted), solo En curso en coral, también en el mapa 3D.
-  - **El ícono "Marcar leída" es verde** (--nx-done) cuando la nota está leída, incluso con aria-pressed="true".
-  - **SVG en notas respeta el fondo del tema oscuro:** background-color: var(--nx-bg) + filtro de brillo para evitar bloques blancos en @media dark.
-- **Verificado sobre el build de producción** (818 páginas, astro preview):
-  - Contraste total 18/18 en ambos temas.
-  - Auditoría de paleta: 1 solo degradado (2 px), 0 sombras, 0 blur, radios 100 % 4 px, animación se detiene con prefers-reduced-motion, 0 errores de consola.
-  - Funcional 10/10: buscador, flashcards, marcar leída, contador, barra de progreso, mapa 3D⇄Lista, tema persistente, modo lectura.
-  - Modo lectura 602→671 px, foco neón visible, 0 errores de consola.
-  - Mapa: esferas en verde/coral/ámbar, etiquetas sin solaparse, diagrama SVG de Cálculo 1 en oscuro sin fondo blanco.
-  - Impresión del mapa: canvas oculto, Lista en 2 columnas negro sobre blanco, 4 semestres.
-  - Pixeles: fondo 74-91 %, tinta 9-25 %, violeta <0,1 %, 0 negro/blanco puro salvo SVG horneado.
-- **No se tocó** la zona opencode, ni Universidad/**, ni site/scripts/**. Sin npm run sync en OneDrive.
-- **Sync local:** npm run sync con VAULT_DIR=../Universidad para que el build local vuelva a coincidir con la producción (787 notas, 4 semestres).
+---
 
+### `opencode` — Álgebra Lineal: contrato reescrito sobre la nota de referencia + fase 2 (lecturas R14) — 19/11/2026
 
+> [!success] **PUSHEADO `07a29948`** · 19/11/2026 — `master` = `origin/master` = `07a29948` al momento del push (sin `--force`).
+>
+> Lo que sigue es el detalle del contenido del push.
+>
+> **Contrato reescrito (a petición del dueño, "usar la nota de refereencia de SBD como todos los contratos"):**
+> - `FORMATO-ALGEBRA.md` ahora cita literalmente la **nota de referencia** `U1/I/01 - Sistema de
+>   ecuaciones lineales en R2 y R3.md` (26 H2 con emoji, 57 callouts de 9 tipos, 3 embeds con
+>   lectura, tags al pie; 0 prosa fuera de callouts). Cada regla lleva sus líneas como ejemplo.
+> - Documentadas las anomalías de la materia (material del dueño, no defectos): **6 notas con dos
+>   H1** (documentos fusionados) y **4 con dos `**Tags:**`** al pie; el validador no las reporta.
+> - Reglas que **no aplican** a Álgebra se marcaron como tales (R10 metas, R11 flashcards, R15
+>   capturas PNG): 0 ocurrencias en la materia.
+> - `qa_formato_algebra.py`: `--calibrar` apuntaba a `None` (roto); ahora apunta a la nota de
+>   refereencia. Verificado: la referencia da **5 W, 0 H**.
+>
+> **Fase 2 (mecánica, 246 cambios):**
+> - 190 embeds dentro de callout ganaron su lectura R14 (`**Se lee así:**` + `**Por qué importa:**`),
+>   fundamentada en el texto visible de cada SVG.
+> - 56 embeds top-level envueltos en `> [!info] 📊 …` con su lectura.
+> - Cerrados los 2 últimos R14/R4 de la materia (embed del syllabus en Bienvenida + Índice; lista
+>   suelta en Recursos Visuales).
+>
+> **QA:** 51 notas · **1367 W · 0 H**. Restante, todo W: R4-prosa-top 781 (estilo de la materia,
+> documentado en el contrato) · R12-svg-sin-mmd 248 (déficit real de `.mmd`, pendiente de generar) ·
+> R7 220 · R6 99 · R14-deck 7 · R3-h2-emoji 6 · R13 4 · R12-clase 2.
+>
+> Backup de las 27 notas transformadas en `%TEMP%\opencode\backup_algebra_fase2_20261119_2133`.
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Algebra Lineal/**` (30 notas)
+> - `Universidad/Herramientas/Mantenimiento/FORMATO-ALGEBRA.md`, `qa_formato_algebra.py`
+> - `Clippings/00 - LEEME bandeja de pistas.md`
 
-> [!success] PUSHEADO 3b9317d5 · 19/11/2026 — d81f4aef (código) + 3b9317d5
-> (PUSHEO EN CURSO) + este bloque → merge --ff-only a master → un solo push, sin --force.
+---
 
 ### `opencode` — 1er Semestre: exámenes de DSpace (125 PDFs nuevos) — 20/11/2026
 
@@ -3850,3 +3881,55 @@ checkout local y no deben reintroducirse. No borrar las copias con espacios.
 
 **Estado git de esta sesión:** HEAD = `8a454a5f` (incluye los 5 commits remotos hasta
 `05545a9e`); el único local sin pushear era `14349ff5` (cierre R14 Física). Sin push nuevo.
+
+---
+
+### `opencode` — Exámenes: ronda completa del vault (Álgebra, Comunicación, Cálculo Vectorial, limpieza) — 20/11/2026
+
+> [!success] **PUSHEADO `6512dd6b`** · 20/11/2026 — `master` = `origin/master` = `6512dd6b` (sin `--force`).
+> Cuatro commits: `52b27fec` (Álgebra + Cálculo Vectorial) · `d8b25a4c` (Comunicación) ·
+> `6512dd6b` (wrappers y duplicados) · merge `6276a38a`.
+
+**Álgebra Lineal: 19 → 29 exámenes.** Los 10 que faltaban son del **Instituto de Ciencias
+Matemáticos** (2008-2015), anteriores a la unificación de códigos, por eso no llevan el patrón
+`EXA-…-ÁLGEBRA LINEAL-`. Renombrados como `ÁLGEBRA LINEAL <año>-<sem> (ICM) <N>ª evaluación -
+<paralelo>.pdf`. Cuatro traen su **rúbrica de solución**. 202 páginas.
+
+**Comunicación: 0 → 19 exámenes.** Los 25 archivos originales eran `.doc/.docx`, y al
+convertirlos aparecieron dos cosas: **19 tenían contenido real** (51.489 palabras de examen,
+1.738-3.350 cada uno) y **6 eran solo metadatos** — un ZIP de 4 entradas
+(`[Content_Types].xml`, `_rels/.rels`, `drs/shapexml.xml`, `drs/downrev.xml`) sin
+`word/document.xml`. Los 19 se convirtieron con Word (COM, `SaveAs2` formato 17).
+**Nota técnica:** `ExportAsFixedFormat` cuelga Word en este equipo porque **no hay ninguna
+impresora instalada**; `SaveAs2` funciona. Conviene recordarlo para futuras conversiones.
+
+**Cálculo Vectorial: 12 → 30 exámenes.** Los 12 que había eran 5 contenidos únicos con
+wrapper MIME (7 duplicados exactos, todos variantes de `-Mejora`). Limpiados y completados
+desde DSpace: 11 × 1Par + 10 × 2Par + 9 × Mejora. 284 páginas.
+
+**Limpieza final del vault:** 0 archivos con wrapper MIME y 0 duplicados exactos en las 15
+materias. Los originales de todo lo movido están en `%TEMP%\opencode\backup_*`.
+
+| Semestre | Materia | Exámenes |
+|---|---|---|
+| 1º | Cálculo de una Variable | 49 |
+| 1º | Fundamentos de Programación | 41 |
+| 1º | Física Mecánica | 42 |
+| 1º | Inglés I | **0** — no existe en DSpace |
+| 2º | Álgebra Lineal | 29 |
+| 2º | Cálculo Vectorial | 30 |
+| 2º | Comunicación | 19 |
+| 2º | Programación Orientada a Objetos | 20 |
+| 2º | Inglés II | **0** — no existe en DSpace |
+| 2º | Computación y Sociedad | **0** — no existe en DSpace |
+| 3º | FESD | 24 |
+| 3º | Matemáticas Discretas | 17 |
+| 3º | Sistema de Bases de Datos | 11 |
+| 3º | Diseño de Software | 8 |
+| 3º | Inglés III | 4 |
+
+**Techo real por materia** (pool de DSpace agotado, no recorte nuestro): Fundamentos de
+Programación 13 de 1Par (solo 13 contenidos distintos en 39 ítems) · Diseño de Software 8.
+
+**Pendiente:** enlazar estos exámenes desde las secciones de ejercicios de cada nota con
+wikilinks `📎` y el tema anotado; y los W mecánicos de Álgebra (R7 220, R6 99, R3 6, R13 4).
