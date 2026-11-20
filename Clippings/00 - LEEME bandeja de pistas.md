@@ -3651,9 +3651,9 @@ el commit de esta línea de PUSHEADO.
 
 ### `opencode` — Álgebra Lineal: contrato reescrito sobre la nota de referencia + fase 2 (lecturas R14) — 19/11/2026
 
-> [!warning] **PUSHEO EN CURSO**
+> [!success] **PUSHEADO `07a29948`** · 19/11/2026 — `master` = `origin/master` = `07a29948` al momento del push (sin `--force`).
 >
-> Anuncio previo al push — se cierra con el bloque `PUSHEADO <hash>`.
+> Lo que sigue es el detalle del contenido del push.
 >
 > **Contrato reescrito (a petición del dueño, "usar la nota de refereencia de SBD como todos los contratos"):**
 > - `FORMATO-ALGEBRA.md` ahora cita literalmente la **nota de referencia** `U1/I/01 - Sistema de
