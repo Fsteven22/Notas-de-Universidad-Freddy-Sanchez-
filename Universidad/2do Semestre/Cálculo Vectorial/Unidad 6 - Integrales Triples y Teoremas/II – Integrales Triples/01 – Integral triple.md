@@ -39,7 +39,7 @@ tags: [integral, triple, integral-triple]
 
 ---
 
-## 🎯 Introducción
+## 🎯 De la Integral Doble a la Triple
 
 > [!info] 💡 ¿Qué es una Integral Triple? La **integral triple** extiende el concepto de integración a funciones de tres variables, permitiéndonos calcular volúmenes, masas, centros de masa y otras cantidades físicas en regiones tridimensionales.
 >
@@ -70,7 +70,7 @@ tags: [integral, triple, integral-triple]
 
 ---
 
-## 🎯 Introducción
+## 🎯 La Integral Triple como Medida de Masa
 
 > [!info] 💡 ¿Qué es una Integral Triple? La **integral triple** extiende el concepto de integral a funciones de tres variables, permitiéndonos calcular volúmenes, masas, centros de masa y otras propiedades de sólidos tridimensionales.
 >

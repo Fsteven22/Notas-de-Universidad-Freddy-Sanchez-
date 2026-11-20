@@ -787,7 +787,7 @@ tags: [centro, masa, momentos]
 
 ---
 
-## 🎓 Ejercicios Propuestos
+## 💪 Práctica Progresiva
 
 > [!question] 💪 Práctica Progresiva
 >

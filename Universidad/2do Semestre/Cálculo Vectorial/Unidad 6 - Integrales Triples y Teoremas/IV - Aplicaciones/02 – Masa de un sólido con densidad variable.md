@@ -740,7 +740,7 @@ tags: [masa, solido, densidad]
 
 ---
 
-## 🎓 Ejercicios Propuestos
+## 💪 Práctica Progresiva
 
 > [!question] 💪 Práctica Progresiva
 >

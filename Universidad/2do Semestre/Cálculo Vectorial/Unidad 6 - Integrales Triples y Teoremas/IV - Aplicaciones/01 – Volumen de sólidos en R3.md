@@ -546,7 +546,7 @@ tags: [volumen, solidos, volumen-solidos]
 
 ---
 
-## 🎓 Ejercicios Propuestos
+## 💪 Práctica Progresiva
 
 > [!question] 💪 Práctica Progresiva
 >
