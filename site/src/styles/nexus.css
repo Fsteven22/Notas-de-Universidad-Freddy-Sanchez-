@@ -2286,6 +2286,9 @@ html.nx-lectura .nx-note-nav {
   background: rgba(var(--nx-accent-rgb), 0.1);
   color: var(--nx-text);
 }
+.nx-hecha-btn.es-hecha .nx-note-tools__ico {
+  color: var(--nx-done);
+}
 /* Estrella dentro de la lista de notas de la materia.
    No compite con el texto: solo aparece al pasar el ratón por encima
    de la fila, al tener el foco o si la nota ya está en favoritos. */
