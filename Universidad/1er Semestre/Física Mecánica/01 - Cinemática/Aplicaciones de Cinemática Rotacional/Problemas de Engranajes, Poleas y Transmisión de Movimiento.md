@@ -69,6 +69,10 @@ tags: [FISG1001, unidad1, fisica-mecanica, cinematica, problemas-de-engranajes-p
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Engranajes,_Poleas_y_Transmisión_de_Movimiento_01.svg]]
 >
+> **Se lee así:** El esquema muestra la cadena piñón motor → cadena → piñón conducido, con la condición de no deslizamiento en el contacto (v₁ = v₂), de la que nace la relación de transmisión i = ω₁/ω₂ = N₂/N₁ = D₂/D₁. En la rama de poleas con correa aparecen D₁ω₁ = D₂ω₂, la ventaja mecánica y la eficiencia.
+>
+> **Por qué importa:** Es la clave para problemas de engranajes: la velocidad lineal se conserva en el contacto y por eso el piñón pequeño gira más rápido. También recuerda que el torque se multiplica en la misma proporción en que se reduce la velocidad, conservando la potencia (P₁ = P₂ si no hay pérdidas).
+>
 
 > [!note] **Relaciones Matemáticas Fundamentales** 📐
 >

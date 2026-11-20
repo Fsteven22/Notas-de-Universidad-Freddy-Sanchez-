@@ -25,6 +25,10 @@ tags: [FISG1001, unidad1, fisica-mecanica, cinematica, velocidad-relativa-para-b
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Velocidad_Relativa_para_Barcos_y_Aviones_01.svg]]
 >
+> **Se lee así:** El esquema parte de v_AB = v_A − v_B (velocidad de A vista desde B) y añade el papel del medio en movimiento: con viento en la misma dirección la velocidad respecto al suelo se suma o resta (cola suma, frente resta), con viento cruzado se combina por Pitágoras v_tierra = √(v_a² + v_w²) y el ángulo de deriva es arctan(v_w/v_a).
+>
+> **Por qué importa:** Fija la idea central: hay que distinguir siempre el sistema de referencia. La velocidad del avión respecto al aire no es la que ve alguien en tierra, y olvidar esa diferencia es el error típico.
+>
 > **Casos típicos:**
 >
 > - ✈️ Vuelos comerciales con viento de cola/frente
@@ -35,6 +39,10 @@ tags: [FISG1001, unidad1, fisica-mecanica, cinematica, velocidad-relativa-para-b
 > [!warning] 🚢 **Barcos en Corrientes** **Situación:** Embarcación navegando en agua que fluye respecto a la costa
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Velocidad_Relativa_para_Barcos_y_Aviones_02.svg]]
+>
+> **Se lee así:** Traslada el mismo razonamiento al agua: v_tierra = v_barco + v_corriente como suma vectorial. A favor de la corriente el río arrastra al barco; en un cruce perpendicular la corriente lo desplaza aguas abajo mientras cruza, y la rapidez resultante sale por Pitágoras. Cierra con la regla VIMAR (vectorizar, identificar referencias, marcar ecuación, aplicar componentes, resolver).
+>
+> **Por qué importa:** Es el procedimiento general para cualquier problema de medio móvil: dibujar los vectores antes de calcular. La regla VIMAR es el orden de pasos que evita mezclar componentes.
 >
 > **Casos típicos:**
 >
@@ -129,6 +137,10 @@ tags: [FISG1001, unidad1, fisica-mecanica, cinematica, velocidad-relativa-para-b
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Velocidad_Relativa_para_Barcos_y_Aviones_03.svg]]
 >
+> **Se lee así:** Explica el rumbo de compensación: para llegar a un punto de la orilla opuesta con corriente lateral hay que apuntar ligeramente aguas arriba, de modo que la componente de deriva cancele el arrastre de la corriente. La condición es que la componente perpendicular al destino sea cero, y el tiempo se calcula con la componente útil.
+>
+> **Por qué importa:** Corrige la intuición equivocada de «apuntar directo al destino»: si hay corriente lateral, apuntar recto hace que el barco o el avión deriven. Compensar es lo que hace que el movimiento resultante vaya donde quieres.
+>
 > **Método:**
 >
 > 1. Calcular el vector de deriva: $\vec{v}_{deriva} = \vec{v}_{medio}$
@@ -199,6 +211,10 @@ tags: [FISG1001, unidad1, fisica-mecanica, cinematica, velocidad-relativa-para-b
 > [!note] 📈 **Diagrama de Vectores de Velocidad**
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Velocidad_Relativa_para_Barcos_y_Aviones_04.svg]]
+>
+> **Se lee así:** Cierra con un ejemplo numérico resuelto: río de 200 m, corriente de 3 m/s y barco de 5 m/s respecto al agua. La velocidad del barco respecto al agua se escribe como [−3, 4] m/s: la componente X compensa la corriente y la Y = 4 m/s cruza. El rumbo es θ = arctan(3/4) = 36,87° contra la corriente y el cruce tarda t = 200/4 = 50 s.
+>
+> **Por qué importa:** Convierte toda la teoría anterior en números: la componente perpendicular debe anular la corriente y solo la componente útil cruza. Es el patrón que se repite en casi todos los ejercicios de este tipo.
 >
 > **🎯 Interpretación del diagrama:**
 >

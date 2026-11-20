@@ -88,6 +88,10 @@ tags: [FISG1001, unidad1, fisica-mecanica, cinematica, cinematica-rotacional]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Cinemática_Rotacional_01.svg]]
 >
+> **Se lee así:** El diagrama pone en paralelo las tres variables angulares con su equivalente lineal: θ (posición angular) se traduce en s = rθ, ω (velocidad angular) en v = rω, y α (aceleración angular) en a_t = rα. La flecha «Variables Angulares → Variables Lineales» es la clave: cada magnitud angular se convierte en lineal multiplicando por el radio.
+>
+> **Por qué importa:** Es la tabla de conversión que resuelve la mitad de los problemas de rotación: si te dan ω y r, ya tienes v; si te dan α y r, ya tienes la aceleración tangencial. Confundir qué se multiplica por r es el error más habitual.
+>
 > **Importante:** También existe aceleración centrípeta: $a_c = \frac{v^2}{r} = \omega^2 r$
 
 ## 🧠 Técnica de Estudio: Método de Analogías

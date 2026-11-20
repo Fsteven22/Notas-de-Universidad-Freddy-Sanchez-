@@ -79,6 +79,10 @@ tags: [FISG1001, unidad1, fisica-mecanica, cinematica, problemas-con-aceleracion
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_con_aceleraciones_(tangencial_y_centrípeta)_01.svg]]
 >
+> **Se lee así:** El diagrama descompone la aceleración total a en sus dos componentes: la centrípeta a_c = v²/r (que cambia la dirección y apunta al centro) y la tangencial a_t = d|v|/dt (que cambia el módulo). Ambas se componen como vectores y su magnitud sale por Pitágoras: |a| = √(a_t² + a_c²).
+>
+> **Por qué importa:** Es la trampa clásica del movimiento circular: en un MCU la aceleración **no** es cero aunque la rapidez sea constante, porque la dirección cambia. Si el movimiento es uniforme, a_t = 0 y toda la aceleración es centrípeta.
+>
 
 > [!note] **Relaciones Matemáticas** 📐
 >

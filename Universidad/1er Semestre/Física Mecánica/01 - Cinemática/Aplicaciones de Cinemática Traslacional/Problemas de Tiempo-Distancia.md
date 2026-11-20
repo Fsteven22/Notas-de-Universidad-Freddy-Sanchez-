@@ -28,6 +28,10 @@ tags: [FISG1001, unidad1, fisica-mecanica, cinematica, problemas-de-tiempo-dista
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Tiempo-Distancia_01.svg]]
 >
+> **Se lee así:** El diagrama propone tabular el viaje por tramos con columnas dᵢ, vᵢ y tᵢ, completando el dato que falte con d = vt. Después se suman distancias y tiempos, y la velocidad media sale como v̄ = d_total/t_total. Cierra con una advertencia en rojo: no promediar velocidades a mano.
+>
+> **Por qué importa:** Enseña el método que evita el error más común de estos problemas: la velocidad media depende de los tiempos, no del número de tramos. Promediar velocidades solo funciona si todos los tramos duran lo mismo.
+>
 > **Ejemplos típicos:**
 >
 > - 🚗 Viaje por carretera con diferentes límites de velocidad
@@ -202,6 +206,10 @@ tags: [FISG1001, unidad1, fisica-mecanica, cinematica, problemas-de-tiempo-dista
 > [!note] 📈 **Gráficos y Diagramas Útiles**
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Tiempo-Distancia_02.svg]]
+>
+> **Se lee así:** La versión gráfica: cada barra del gráfico v-t tiene por altura la velocidad del tramo y por ancho su duración, así que su área es la distancia recorrida. Con tramos de igual distancia, la velocidad media es la media armónica v̄ = 2v₁v₂/(v₁ + v₂), que en el ejemplo da 72 km/h y no el promedio simple de 75.
+>
+> **Por qué importa:** Es la demostración de la advertencia anterior: cuando las distancias son iguales pero los tiempos no, la media armónica es la correcta. El gráfico lo hace evidente porque las barras tienen anchos distintos.
 >
 > ### Interpretación del Gráfico v-t
 >

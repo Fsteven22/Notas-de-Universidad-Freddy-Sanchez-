@@ -27,6 +27,10 @@ tags: [FISG1001, unidad1, fisica-mecanica, cinematica, problemas-de-persecucion]
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Persecución_01.svg]]
 >
+> **Se lee así:** El caso clásico con velocidades constantes: el objetivo arranca con ventaja d₀ (x_obj = d₀ + v_obj t) y el perseguidor sale del origen (x_per = v_per t). Igualando posiciones queda (v_per − v_obj)t = d₀, de donde t = d₀/(v_per − v_obj).
+>
+> **Por qué importa:** Es la misma idea que en encuentro pero con signo distinto: aquí las velocidades se **restan** porque van en el mismo sentido. La ventaja inicial es lo único que hay que perseguir.
+>
 > **Ejemplos típicos:**
 >
 > - 👮‍♂️ Policía persiguiendo criminal
@@ -38,6 +42,10 @@ tags: [FISG1001, unidad1, fisica-mecanica, cinematica, problemas-de-persecucion]
 > [!warning] 🚀 **Persecución con Aceleración** **Situación:** El perseguidor acelera desde reposo o velocidad inicial menor
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Persecución_02.svg]]
+>
+> **Se lee así:** Ahora el perseguidor acelera desde el reposo (x_per = ½at²) mientras el objetivo mantiene velocidad constante (x_obj = d₀ + vt). Igualando sale una ecuación cuadrática ½at² − vt − d₀ = 0 cuya raíz positiva es t = (v + √(v² + 2ad₀))/a.
+>
+> **Por qué importa:** Introduce el descarte de la raíz negativa: la cuadrática devuelve dos tiempos matemáticos, pero solo uno es físico. Es el primer caso de la unidad en que el álgebra exige interpretar el resultado.
 >
 > **Ejemplos típicos:**
 >
@@ -69,6 +77,10 @@ tags: [FISG1001, unidad1, fisica-mecanica, cinematica, problemas-de-persecucion]
 > [!note] 🚌 **Problemas de Alcance (Caso Especial)** **Situación:** Similar a persecución, pero el móvil más rápido **sale después** que el más lento desde el **mismo punto**
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Persecución_03.svg]]
+>
+> **Se lee así:** El alcance con retardo: ambos salen del mismo punto, pero el rápido arranca un tiempo τ después, así que x_auto = v₂(t − τ) mientras el lento lleva x_bus = v₁t. Igualando queda t = v₂τ/(v₂ − v₁), y el ejemplo numérico (bus a 60, auto a 90, τ = 1/6 h) da t = 0,5 h y x = 30 km.
+>
+> **Por qué importa:** Muestra por qué la ventaja temporal funciona igual que una ventaja de distancia: el retardo se traduce en distancia recorrida por el lento. Es el modelo de dos líneas de bus o de corredores con salida escalonada.
 >
 > **Diferencia clave con persecución:**
 >
@@ -246,6 +258,10 @@ tags: [FISG1001, unidad1, fisica-mecanica, cinematica, problemas-de-persecucion]
 > [!note] 📈 **Gráficos Posición vs Tiempo**
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Persecución_04.svg]]
+>
+> **Se lee así:** La versión gráfica del problema anterior: la recta del bus tiene pendiente 60 km/h y la del auto 90 km/h, pero empieza desplazada porque sale τ después. El cruce se lee directamente en t = 0,5 h y x = 30 km, y la pendiente mayor identifica al vehículo más rápido.
+>
+> **Por qué importa:** Confirma visualmente lo que dio el álgebra y añade la lectura de la parábola en x-t como aceleración constante. Sirve para comprobar soluciones sin repetir el cálculo.
 >
 > **🎯 Puntos clave en el gráfico:**
 >

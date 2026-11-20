@@ -69,6 +69,10 @@ tags: [FISG1001, unidad1, fisica-mecanica, cinematica, problemas-de-revoluciones
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Revoluciones,_Ángulos_y_Tiempo_01.svg]]
 >
+> **Se lee así:** El diagrama reúne las tres herramientas que resuelven estos problemas: las ecuaciones con α constante (ω = ω₀ + αt, θ = θ₀ + ω₀t + ½αt², ω² = ω₀² + 2αΔθ), la conversión de revoluciones (1 rev = 2π rad y rad/s = RPM·2π/60) y las relaciones con el arco (s = rθ, v = rω, a_t = rα, a_c = rω²), cerrando con el periodo y la frecuencia.
+>
+> **Por qué importa:** Evita el error de unidades más frecuente del tema: los problemas casi siempre vienen en RPM y hay que pasar a rad/s antes de usar cualquier ecuación. La conversión está en el propio diagrama.
+>
 
 > [!note] **Relaciones Temporales y Periódicas** 📐
 >

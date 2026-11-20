@@ -23,6 +23,10 @@ tags: [FISG1001, unidad1, fisica-mecanica, cinematica, problemas-de-encuentro]
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Encuentro_01.svg]]
 >
+> **Se lee así:** El esquema plantea el encuentro frontal: el móvil 1 parte del origen con x₁ = x₀₁ + v₁t y el móvil 2 viene de frente con x₂ = d₀ − v₂t. Al imponer x₁ = x₂ sale t = d₀/(v₁ + v₂), y la posición del cruce se obtiene sustituyendo ese tiempo.
+>
+> **Por qué importa:** Enseña el concepto de **velocidad relativa de cierre**: cuando dos cuerpos se acercan, la distancia se reduce a la suma de sus rapideces. Por eso el tiempo de encuentro es menor cuanto más rápidos son ambos.
+>
 > **Ejemplos típicos:**
 >
 > - 🚗 Dos autos que viajan en sentidos opuestos
@@ -33,6 +37,10 @@ tags: [FISG1001, unidad1, fisica-mecanica, cinematica, problemas-de-encuentro]
 > [!warning] 🏃‍♂️ **Persecución y Alcance** **Situación:** Un móvil **persigue** a otro que tiene ventaja inicial
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Encuentro_02.svg]]
+>
+> **Se lee así:** Esta lámina cubre el caso opuesto, el alcance en el mismo sentido: el objetivo lleva ventaja d₀ y el perseguidor debe ser más rápido (v_per > v_obj) para que la distancia relativa de cierre (v_per − v_obj) acabe a cero. Si no se cumple esa desigualdad, el alcance nunca ocurre.
+>
+> **Por qué importa:** Marca la condición de existencia de la solución: antes de calcular el tiempo, comprueba que el perseguidor es más rápido. Un tiempo negativo es la señal de que el problema no tiene solución física.
 >
 > **Ejemplos típicos:**
 >
@@ -144,6 +152,10 @@ tags: [FISG1001, unidad1, fisica-mecanica, cinematica, problemas-de-encuentro]
 > [!note] 📈 **Gráficos Posición vs Tiempo**
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Encuentro_03.svg]]
+>
+> **Se lee así:** La gráfica x-t del encuentro muestra dos rectas cuya pendiente es la velocidad de cada móvil; el punto donde se cruzan es exactamente el instante y el lugar del encuentro. La pendiente más inclinada identifica al más rápido, y el área bajo la curva v-t da el desplazamiento de cada uno.
+>
+> **Por qué importa:** Traduce el álgebra a imagen: buscar el encuentro es buscar la intersección de dos rectas. Ese hábito permite detectar de un vistazo si hay solución, si es única o si los móviles nunca se cruzan.
 >
 > **🎯 Interpretación visual:**
 >

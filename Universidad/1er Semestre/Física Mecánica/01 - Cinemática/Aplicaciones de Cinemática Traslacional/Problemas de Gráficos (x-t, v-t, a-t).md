@@ -69,6 +69,10 @@ tags: [FISG1001, unidad1, fisica-mecanica, cinematica, problemas-de-graficos-x-t
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Gráficos_(x-t,_v-t,_a-t)_01.svg]]
 >
+> **Se lee así:** El diagrama ordena las relaciones entre las tres gráficas: hacia abajo, derivando (v = dx/dt es la pendiente de x-t, a = dv/dt la de v-t); hacia arriba, integrando (Δx = ∫v dt es el área de v-t, Δv = ∫a dt el área de a-t). Cierra con tres lecturas rápidas: curva cuadrática en x-t implica aceleración constante, v-t horizontal es MRU y a-t por tramos indica aceleración variable.
+>
+> **Por qué importa:** Es la guía de traducción entre representaciones: un mismo movimiento descrito con números, con pendientes o con áreas. Dominar las tres evita tener que memorizar cada caso por separado.
+>
 >
 
 > [!note] **Relaciones Matemáticas** 📐

@@ -68,6 +68,10 @@ tags: [FISG1001, unidad1, fisica-mecanica, cinematica, problemas-con-graficas-an
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_con_Gráficas_Angulares_(θ-t,_ω-t,_α-t)_01.svg]]
 >
+> **Se lee así:** El esquema muestra el ciclo derivada-integral entre las tres gráficas angulares: bajando, la derivada de θ-t da ω-t y la de ω-t da α-t; subiendo, la integral de α-t devuelve ω-t y la de ω-t devuelve θ-t. Es el mismo triángulo que ya conocías con x, v y a, solo que en versión angular.
+>
+> **Por qué importa:** Fija la regla de lectura: pendiente de la curva = magnitud de la gráfica siguiente, y área bajo la curva = magnitud de la gráfica anterior. Con eso puedes reconstruir cualquier gráfica que falte sin memorizar fórmulas.
+>
 
 > [!note] **Relaciones Matemáticas** 📐
 >
