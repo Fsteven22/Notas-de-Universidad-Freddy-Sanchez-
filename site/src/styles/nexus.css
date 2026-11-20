@@ -2281,6 +2281,13 @@ html.nx-lectura .nx-note-nav {
 .nx-hecha-btn .nx-note-tools__ico {
   color: var(--nx-dim);
 }
+/* Cuando la nota está leída (es-hecha), el ícono es verde (success) aunque
+   el botón tenga aria-pressed="true" (clic justo hecho). Esto evita que el
+   acento celeste del estado presionado pise el verde de "completado". */
+.nx-hecha-btn.es-hecha .nx-note-tools__ico,
+.nx-hecha-btn.es-hecha[aria-pressed="true"] .nx-note-tools__ico {
+  color: var(--nx-done);
+}
 .nx-hecha-btn.es-hecha {
   border-color: rgba(var(--nx-accent-rgb), 0.55);
   background: rgba(var(--nx-accent-rgb), 0.1);
