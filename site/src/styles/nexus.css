@@ -547,10 +547,10 @@ html[data-nx-dir="back"]::view-transition-new(root) {
   width: 100%;
   margin-top: 1.75rem;
   padding: 0.85rem 1rem;
-  border: 1px solid var(--nx-line);
+  border: 1px solid var(--nx-control);
   border-radius: var(--nx-radius);
   background: var(--nx-surface);
-  color: var(--nx-muted);
+  color: var(--nx-dim);
   font-family: var(--font-sans);
   font-size: 1rem;
   text-align: left;
@@ -560,7 +560,7 @@ html[data-nx-dir="back"]::view-transition-new(root) {
 .nx-hero-search:hover {
   border-color: var(--nx-accent-line);
   background: var(--nx-surface-hover);
-  color: var(--nx-dim);
+  color: var(--nx-text);
 }
 .nx-hero-search:focus-visible {
   outline: 2px solid var(--nx-neon);
@@ -572,6 +572,7 @@ html[data-nx-dir="back"]::view-transition-new(root) {
 }
 .nx-hero-search-text {
   flex: 1;
+  color: var(--nx-dim);
 }
 
 /* ── Semestres: dos columnas de texto (sin cards) ───────────────────── */
