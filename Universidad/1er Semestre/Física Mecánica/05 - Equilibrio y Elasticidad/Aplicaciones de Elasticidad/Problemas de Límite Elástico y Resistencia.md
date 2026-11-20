@@ -94,6 +94,10 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, problemas-de-limite-elast
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Límite_Elástico_y_Resistencia_01.svg]]
 >
+> **Se lee así:** La **curva esfuerzo-deformación** con sus cuatro **zonas**: **elástica** (`σ = Eε`, lineal y recuperable), **fluencia** (en `σe`, el esfuerzo crece sin mucha deformación extra), **endurecimiento** (hasta `σu`, la máxima resistencia) y **ruptura** (falla del material). Al lado, el **factor de seguridad** `FS = σ_material / σ_trabajo` con sus rangos — **estructuras críticas 3 a 5**, **normales 2 a 3**, **temporales 1,5 a 2** —, la advertencia de que **FS < 1 implica falla inmediata** y el **método SERF** (seguridad, esfuerzo, resistencia, factor).
+>
+> **Por qué importa:** Es el mapa completo del diseño por resistencia: la curva dice qué puede dar el material y el FS dice cuánto de eso se puede usar. Los rangos numéricos son los que conviene recordar, porque un FS de 1,5 en una estructura crítica es una decisión peligrosa.
+>
 
 > [!note] **Relaciones Matemáticas** 📐
 >

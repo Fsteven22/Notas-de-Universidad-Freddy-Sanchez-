@@ -37,6 +37,10 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, centro-de-gravedad-cg]
 > [!note] 🖼️ Marco Teórico
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Centro_de_Gravedad_(CG)_01.svg]]
+>
+> **Se lee así:** La cadena de simplificación: un **objeto complejo** se ve como **múltiples partículas con pesos Wᵢ**, se reemplaza por **una sola fuerza W aplicada en el CG**, lo que permite un **análisis de torque simplificado** y, de ahí, la **determinación del equilibrio y la estabilidad**.
+>
+> **Por qué importa:** Es la razón de existir del centro de gravedad: convierte un objeto con infinitos puntos de aplicación de peso en un solo vector. Sin esa simplificación, el análisis de torque de una viga o de un camión sería impracticable.
 
 ### Métodos de Localización 🔍
 
@@ -58,6 +62,10 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, centro-de-gravedad-cg]
 > [!note] 🖼️ Métodos de Localización
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Centro_de_Gravedad_(CG)_02.svg]]
+>
+> **Se lee así:** La construcción gráfica del CG: se traza la **línea vertical 1** desde el **punto A** y la **línea vertical 2** desde el **punto B**, y su **intersección** es el **centro de gravedad**.
+>
+> **Por qué importa:** Es el método experimental (plomada) que funciona para cualquier forma, por irregular que sea: no hace falta integrar, basta con colgar el objeto de dos puntos distintos. Si las dos líneas no se cortan dentro del objeto, el CG está fuera y el objeto no puede equilibrarse sobre esa base.
 
 ### Relación con Estabilidad 🏗️
 
@@ -123,6 +131,10 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, centro-de-gravedad-cg]
 > [!note] 🖼️ Análisis de Casos
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Centro_de_Gravedad_(CG)_03.svg]]
+>
+> **Se lee así:** Los tres estados de estabilidad según la posición del CG: **CG centrado** → **máxima estabilidad**; **CG en el borde** → **límite de estabilidad**; **CG exterior** → **vuelco**.
+>
+> **Por qué importa:** Resume el criterio operativo en una sola frase: el objeto es estable mientras la vertical del CG caiga dentro de la base. Todo lo demás (ancho de la base, altura del CG) solo mueve esa vertical.
 
 ### Conexiones Conceptuales 🔗
 

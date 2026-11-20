@@ -83,6 +83,10 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, problemas-con-poleas-y-si
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_con_Poleas_y_Sistemas_de_Cuerdas_01.svg]]
 >
+> **Se lee así:** La clasificación de los sistemas de poleas: **poleas fijas** (una polea o múltiples poleas), **poleas móviles** (una polea móvil o **polipastos**) y **sistemas combinados** (fijas + móviles, planos inclinados, masas múltiples).
+>
+> **Por qué importa:** El criterio es dónde gira la polea: una fija solo cambia la dirección de la fuerza, una móvil también la reduce a la mitad. Y los polipastos son la combinación que permite levantar cargas con una fracción de la fuerza, al precio de tirar más cuerda.
+>
 
 > [!note] **Restricciones Geométricas** 📐
 >

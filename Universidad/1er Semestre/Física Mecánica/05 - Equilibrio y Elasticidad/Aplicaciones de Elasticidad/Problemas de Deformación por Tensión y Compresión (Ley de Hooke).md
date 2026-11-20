@@ -85,6 +85,10 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, problemas-de-deformacion-
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Deformación_por_Tensión_y_Compresión_(Ley_de_Hooke)_01.svg]]
 >
+> **Se lee así:** La ley de Hooke `σ = E·ε` con todo su contexto: las **regiones de comportamiento** (**elástica**, `σ ≤ σe`, recupera la forma; **plástica**, `σ > σe`, cambio permanente); los **tipos de carga** (**tracción** con σ positiva, **compresión** con σ negativa, **flexión** que combina ambas y **torsión** que necesita el módulo G); los **datos típicos** (acero E ≈ 200 GPa, aluminio 70, concreto 20–40, madera 10–15); y el **método DEMAT**: datos → `σ = F/A` → `ε = σ/E` → `ΔL = εL₀`.
+>
+> **Por qué importa:** El método DEMAT es la secuencia que conviene no saltarse: siempre se pasa por el esfuerzo antes que por la deformación. Y la advertencia de la torsión es clave: ahí la ley de Hooke con E no sirve, hace falta G.
+>
 
 > [!note] **Propiedades Mecánicas Importantes** 📊
 >
