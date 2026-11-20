@@ -37,6 +37,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, impulso-lineal]
 > [!note] 🖼️ Relaciones Conceptuales
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Impulso_Lineal_01.svg]]
+>
+> **Se lee así:** El mapa de la idea de impulso: la **fuerza F** y el **tiempo Δt** producen el **impulso J**, que es igual al **cambio de momentum Δp** y se traduce en un **cambio de velocidad Δv**. En paralelo, la **gráfica F vs t** da el impulso por su **área bajo la curva**.
+>
+> **Por qué importa:** Conecta las tres formas de calcular el mismo cambio: `J = FΔt` si la fuerza es constante, `J = ∫F dt` si varía, y `J = Δp` si lo que se conocen son las velocidades. Son tres caminos hacia la misma incógnita.
 
 ---
 
@@ -69,6 +73,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, impulso-lineal]
 > [!note] 🖼️ Análisis de Gráfica Fuerza vs Tiempo
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Impulso_Lineal_02.svg]]
+>
+> **Se lee así:** La lectura de la **gráfica F vs t**: el eje **Y** es la fuerza, el **X** el tiempo, el **área** es el impulso `J`, la **altura promedio** es la fuerza media `F_prom` y la **base** es `Δt`. Si la fuerza es **variable** hay que **integrar**; si es **constante**, basta **multiplicar**.
+>
+> **Por qué importa:** El área como impulso permite resolver fuerzas que no se pueden describir con una fórmula —el golpe de un bate, la colisión— simplemente midiendo el área de la curva. Es el mismo recurso que con `F vs x` para el trabajo.
 
 > [!example] 🔍 Casos Prácticos
 >
@@ -96,6 +104,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, impulso-lineal]
 > [!note] 🖼️ Teorema Impulso-Momentum Explicado
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Impulso_Lineal_03.svg]]
+>
+> **Se lee así:** La derivación formal: una **fuerza aplicada F** durante un **tiempo Δt** genera el **impulso `J = FΔt`**, que **cambia el momentum** (`Δp = J`) y **modifica la velocidad** (`Δv = Δp/m`). La cadena de la derecha lo demuestra desde la **segunda ley de Newton** `F = ma = m Δv/Δt`, multiplicando ambos lados por `Δt` para obtener `F·Δt = m·Δv`.
+>
+> **Por qué importa:** Muestra que el impulso no es un concepto nuevo: es la segunda ley integrada en el tiempo. La utilidad práctica es que permite saltar directo al cambio de velocidad sin calcular la aceleración en cada instante.
 
 > [!info] 🔗 Conexión con Newton El teorema de impulso es una **reformulación integral** de la Segunda Ley:
 >
@@ -120,6 +132,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, impulso-lineal]
 > [!note] 🖼️ Sistemas de Seguridad Vehicular
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Impulso_Lineal_04.svg]]
+>
+> **Se lee así:** La aplicación cotidiana del impulso: con `Δt` **muy pequeño** la fuerza `F` es **muy grande** y el **daño es severo**; si `Δt` se **aumenta**, la fuerza se **reduce** y el **daño es mínimo**. El bloque final apunta a los **airbags** y las **zonas de deformación**.
+>
+> **Por qué importa:** Es la razón física de todo lo que hace seguro un automóvil: el airbag no reduce la velocidad del choque, alarga el tiempo en la que se produce. Como `J = FΔt` es fijado por la colisión, más tiempo significa menos fuerza sobre el cuerpo.
 
 ### ⚾ Aplicaciones Deportivas
 

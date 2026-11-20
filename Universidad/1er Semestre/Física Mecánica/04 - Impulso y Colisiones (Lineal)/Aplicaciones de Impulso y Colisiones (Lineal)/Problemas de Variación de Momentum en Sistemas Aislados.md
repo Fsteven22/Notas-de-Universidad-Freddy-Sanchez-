@@ -75,6 +75,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, problemas-de-variacion-de-mo
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Variación_de_Momentum_en_Sistemas_Aislados_01.svg]]
 >
+> **Se lee así:** El esquema de un **sistema aislado** donde `p` se conserva (`p antes = p después`) con sus dos casos: la **explosión**, donde una parte se separa por **fuerzas internas**, con el **mismo p total** pero **mayor energía cinética**; y la **coalescencia**, donde los objetos **se pegan** con el **mismo p total** y **menor energía cinética**. Añade la fórmula de **restitución** `e = −(v₂f − v₁f)/(v₂i − v₁i)` con sus tres casos, y el **método SICE**: sistema, inicial, conservación, ecuaciones.
+>
+> **Por qué importa:** La explosión y la coalescencia son el mismo problema con signo opuesto de la energía: una la crea a partir del potencial del explosivo, la otra la disipa en calor. Ambas comparten el mismo momentum, y esa es la ecuación que resuelve el ejercicio.
+>
 
 > [!note] **Coeficiente de Restitución** 🔄
 >

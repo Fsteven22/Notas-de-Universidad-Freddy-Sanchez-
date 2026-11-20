@@ -58,6 +58,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, centro-de-masa-cm]
 > [!abstract] 📊 Mapa de Relaciones
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Centro_de_masa_(CM)_01.svg]]
+>
+> **Se lee así:** El mapa del centro de masa: de un **sistema de partículas** se calculan la **posición** (`r_CM = Σmᵢrᵢ / M_total`), la **velocidad** (`v_CM = P_total / M_total`) y la **aceleración** (`a_CM = ΣF_ext / M_total`). Las **fuerzas internas** **no afectan al CM**, y esa simplificación permite tratar el conjunto como una **partícula única**.
+>
+> **Por qué importa:** Es la razón de existir del CM: basta conocer las fuerzas externas para describir su trayectoria, sin importar qué pasa dentro del sistema. Por eso el centro de masa de un cohete sigue una parábola aunque el cohete se mueva de forma complicada.
 
 ---
 
@@ -83,6 +87,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, centro-de-masa-cm]
 > [!info] 🛠️ Metodología de Solución
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Centro_de_masa_(CM)_02.svg]]
+>
+> **Se lee así:** El procedimiento de cálculo en cadena: **identificar las partículas**, **determinar las masas mᵢ**, **localizar las posiciones rᵢ**, **calcular la masa total M**, **aplicar la fórmula del CM** para obtener `r_CM` y, **si se requiere**, derivar `v_CM` y después `a_CM`.
+>
+> **Por qué importa:** Fija el orden: primero la posición (que es un dato geométrico), luego la velocidad y por último la aceleración, que es la que depende de las fuerzas. Saltar directamente a `a_CM` sin pasar por `r_CM` es el error típico cuando el problema da un diagrama de posiciones.
 
 ---
 

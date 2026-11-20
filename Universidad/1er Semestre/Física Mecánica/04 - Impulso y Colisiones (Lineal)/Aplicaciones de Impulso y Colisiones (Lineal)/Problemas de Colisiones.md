@@ -115,6 +115,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, problemas-de-colisiones]
 > [!info] 🔄 Relaciones Entre Tipos de Colisiones
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Colisiones_01.svg]]
+>
+> **Se lee así:** El clasificador de choques por el **coeficiente e**: con `e = 1` es **elástica** y **conserva KE y p**; con `0 < e < 1` es **inelástica** y **conserva p pero pierde KE**; con `e = 0` es **completamente inelástica** y **conserva p con pérdida máxima de KE**.
+>
+> **Por qué importa:** Da el puente directo entre el número `e` y las ecuaciones disponibles: cada rama dice qué se puede igualar antes y después. Es la primera pregunta que hay que responder en cualquier problema de choques.
 
 ## 🎯 Estrategias de Resolución
 
