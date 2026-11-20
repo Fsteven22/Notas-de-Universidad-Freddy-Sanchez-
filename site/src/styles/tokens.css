@@ -106,7 +106,12 @@
 
   --nx-line: #cfdce3;        /* separadores */
   --nx-line-strong: #b3c7d2;
-  --nx-control: #708a98;     /* borde de controles (3,1:1 contra la superficie) */
+  --nx-control: #6f8391;     /* borde de controles (>= 3:1 contra surface y hover) */
+
+  /* Acento «En curso» para esferas del mapa: más luminoso que el acento de
+     texto para que brille frente al gris de completado, sin salirse del matiz
+     mar (190°-210°). No es el neón del foco: solo es el relleno de la esfera. */
+  --nx-coral-esfera: #2fa9c8;
 
   --nx-text: #14232c;        /* nunca negro puro */
   --nx-dim: #2b4250;         /* texto atenuado */
@@ -178,6 +183,7 @@
   --nx-line: #22323d;
   --nx-line-strong: #31434f;
   --nx-control: #5d7482;     /* borde de controles (3,5:1 contra la superficie) */
+  --nx-coral-esfera: #5cc8e8; /* en oscuro el acento ya pinta bien como esfera */
 
   --nx-text: #e6eef2;        /* nunca blanco puro */
   --nx-dim: #c2d2da;

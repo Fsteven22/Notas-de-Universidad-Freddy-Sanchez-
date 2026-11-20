@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad3, keyword-encoding-ascii]
 ---
 # 🔤 Keyword Encoding y ASCII
 
@@ -15,8 +14,6 @@ tags: [CCPG1004, cysoc, unidad3, keyword-encoding-ascii]
 > - Hoy en día, ASCII sigue siendo la base de Unicode (el estándar moderno que soporta miles de idiomas y emojis), ya que los primeros 128 caracteres de Unicode son idénticos a ASCII.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Keyword_Encoding_y_ASCII_01.svg]]
->
-> **Se lee así:** el diagrama compara dos formas de codificar texto: **ASCII** (cada carácter = 8 bits) y **Keyword Encoding** (palabras frecuentes reciben un código corto), medidas contra el texto original como **% de ahorro de bits**.
 
 ---
 
@@ -97,13 +94,7 @@ tags: [CCPG1004, cysoc, unidad3, keyword-encoding-ascii]
 
 ## 🧭 Diagrama de Decisión — ¿Vale la pena aplicar Keyword Encoding?
 
-> [!info] 📊 Diagrama de flujo — ¿Conviene Keyword Encoding?
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Keyword_Encoding_y_ASCII_02.svg]]
->
-> **Se lee así:** el flowchart decide cuándo vale la pena: hace falta un texto **lo suficientemente largo** con palabras que se **repiten frecuentemente**, y aun así hay que verificar que (texto comprimido + diccionario) < texto original — si no, el diccionario pesa más que el ahorro.
->
-> **Por qué importa:** comprimir también se paga en infraestructura: el diccionario viaja con el mensaje.
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Keyword_Encoding_y_ASCII_02.svg]]
 
 ---
 

@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad1, pioneros-computacion]
 ---
 
 # 🧑‍💻 Pioneros de la Computación
@@ -12,10 +11,6 @@ tags: [CCPG1004, cysoc, unidad1, pioneros-computacion]
 > La historia de la computación no es solo la historia de las máquinas — es la historia de las personas que las imaginaron, diseñaron y construyeron. Cada pionero aportó una pieza fundamental al gran rompecabezas que hoy llamamos computación moderna.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Pioneros_de_la_Computación_01.svg]]
->
-> **Se lee así:** los pioneros agrupados en tres familias: matemáticos y teóricos (Babbage, Turing, Ada Lovelace), ingenieros y constructores (Zuse, Aiken, Eckert y Mauchly), y programadores y visionarios (Berners-Lee, Metcalfe).
-> **Por qué importa:** derriba el mito del inventor solitario: la computación nació donde la teoría (Turing), la ingeniería (Zuse) y la programación (Lovelace) se cruzaron.
-> **Ejemplo:** sin Ada Lovelace escribiendo el programa del Motor Analítico ni Turing formalizando lo computable, los ingenieros no habrían tenido qué construir.
 
 ---
 
@@ -109,7 +104,7 @@ tags: [CCPG1004, cysoc, unidad1, pioneros-computacion]
 > | **Título** | Primera programadora del mundo |
 > | **Legado** | El lenguaje Ada (DoD, 1980) lleva su nombre |
 >
-> 💡 Fue la primera en comprender que el Motor Analítico podía ir más allá del cálculo numérico y procesar cualquier tipo de información representable mediante símbolos.
+> > 💡 Fue la primera en comprender que el Motor Analítico podía ir más allá del cálculo numérico y procesar cualquier tipo de información representable mediante símbolos.
 >
 > ---
 >
@@ -123,7 +118,7 @@ tags: [CCPG1004, cysoc, unidad1, pioneros-computacion]
 > | **Otros aportes** | Descifró Enigma en la Segunda Guerra Mundial |
 > | **Legado** | El Premio Turing es el equivalente al Nobel en computación |
 >
-> 💡 Demostró que mediante dispositivos formales y simples era posible resolver **cualquier problema matemático representable mediante un algoritmo**.
+> > 💡 Demostró que mediante dispositivos formales y simples era posible resolver **cualquier problema matemático representable mediante un algoritmo**.
 >
 > ---
 >
@@ -151,10 +146,6 @@ tags: [CCPG1004, cysoc, unidad1, pioneros-computacion]
 > | **Legado** | Base de prácticamente todas las computadoras actuales |
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Pioneros_de_la_Computación_02.svg]]
->
-> **Se lee así:** la misma arquitectura Von Neumann núcleo: CPU con Unidad de Control, ALU y registros; memoria principal común para datos e instrucciones; sistema de entrada/salida para el mundo exterior.
-> **Por qué importa:** la repetición de esta estructura en todas las máquinas es lo que permite escribir software portable de una generación a otra hasta hoy.
-> **Ejemplo:** cuando compilas Java, tu programa se convierte en instrucciones que la CPU con memoria ejecuta aquí y ahora, exactamente esta arquitectura.
 >
 > ---
 >
@@ -211,10 +202,6 @@ tags: [CCPG1004, cysoc, unidad1, pioneros-computacion]
 > [!summary] 📅 Todos los pioneros en perspectiva
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Pioneros_de_la_Computación_03.svg]]
->
-> **Se lee así:** línea de 1623 a 1991: Pascalina (1623), Rueda de Leibniz (1646), Telar de Jacquard (1752), Motor Analítico (1791), Ada Lovelace (1815), Tabulador Hollerith (1860), Cibernética de Wiener (1894), Mark I (1900), Von Neumann (1903), Zuse Z3 (1910), Turing (1912), Ethernet de Metcalfe (1946), WWW (1955).
-> **Por qué importa:** comprime 350 años de invención en una sola curva: la computación es acumulación colectiva, no un único momento de genialidad.
-> **Ejemplo:** cada vez que tu PC arranca, algo de Zuse (programable), de Babbage (propósito general), de Ada (programa escrito), de Turing (teoría de cómputo) y de Berners-Lee (WWW) está ahí adentro.
 
 ---
 
@@ -259,18 +246,8 @@ tags: [CCPG1004, cysoc, unidad1, pioneros-computacion]
 > | **9** | ¿Cuál fue la idea fundamental que introdujo John von Neumann? |
 > | **10** | ¿Las computadoras de 1era Generación estaban compuestas por? |
 >
-> 💡 Intenta responder sin consultar las notas primero, luego verifica
-> con los archivos `01` al `05` de esta unidad.
-
----
-
-## 📚 Referencias
-
-> [!info] 📚 Referencias
->
-> - Dale, Nell & Lewis, John. *Computer Science Illuminated* (6th ed.). Jones & Bartlett Learning.
-> - Quinn, Michael J. *Ethics for the Information Age* (7th ed.). Pearson.
-> - Syllabus oficial de Computación y Sociedad (CCPG1004), ESPOL, coordinadora Otilia M. Alejandro Molina.
+> > 💡 Intenta responder sin consultar las notas primero, luego verifica
+> > con los archivos `01` al `05` de esta unidad.
 
 ---
 

@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad2, medios-sociales]
 ---
 
 # 👥 Impacto de los Medios Sociales en el Individualismo, Colectivismo y Cultura
@@ -12,10 +11,6 @@ tags: [CCPG1004, cysoc, unidad2, medios-sociales]
 > Los medios sociales pueden verse desde dos perspectivas contrapuestas sobre su efecto en la sociedad:
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Impacto_de_los_Medios_Sociales_en_el_Individualismo,_Colectivismo_y_Cultura_01.svg]]
-> 
->  **Se lee así:** el diagrama parte de **Medios Sociales** y se bifurca en dos efectos opuestos. En la rama **individualista**: cada persona construye su identidad digital, aparecen las burbujas de filtro y la desconexión presencial. En la rama **colectivista**: los medios impulsan movimientos sociales, flash mobs y comunidades en línea.
->  **Por qué importa:** muestra que la misma tecnología no empuja en una sola dirección: la infraestructura es neutra y el efecto depende de qué uso social se organice sobre ella. Por eso las notas no deben afirmar que las redes «aíslan» o «movilizan», sino que hacen ambas cosas a la vez.
->  **Ejemplo:** un hashtag puede servir para desconectar a alguien dentro de su burbuja de filtro y, en otra ciudad, para coordinar una protesta en cuestión de horas.
 
 ---
 
@@ -54,7 +49,7 @@ tags: [CCPG1004, cysoc, unidad2, medios-sociales]
 > |**5 — Orientación a Largo Plazo (LTO)**|Si la sociedad valora más la tradición y el presente, o la planificación y el futuro|**Corto plazo**: respeto por la tradición, resultados rápidos, cumplimiento de obligaciones sociales|**Largo plazo**: ahorro, perseverancia, adaptación pragmática al contexto — típico en Asia Oriental|
 > |**6 — Indulgencia vs Restricción (IVR)**|Grado en que las personas controlan sus impulsos y deseos|**Restricción**: supresión de gratificaciones, normas sociales estrictas|**Indulgencia**: libre expresión de emociones, disfrute de la vida, tiempo libre valorado|
 > 
-> 💡 **Aplicación a medios sociales**: Una cultura con alto **individualismo** tiende a usar redes para construir marca personal (LinkedIn, Instagram). Una cultura **colectivista** las usa para coordinar grupos y movimientos (WhatsApp familiar, protestas organizadas). Una sociedad con alta **evasión de incertidumbre** puede resistir más las redes sociales por miedo a la exposición de datos personales.
+> > 💡 **Aplicación a medios sociales**: Una cultura con alto **individualismo** tiende a usar redes para construir marca personal (LinkedIn, Instagram). Una cultura **colectivista** las usa para coordinar grupos y movimientos (WhatsApp familiar, protestas organizadas). Una sociedad con alta **evasión de incertidumbre** puede resistir más las redes sociales por miedo a la exposición de datos personales.
 >
 
 > [!note] 🌐 Colectivismo en acción — Medios sociales como herramienta colectiva
@@ -96,14 +91,6 @@ tags: [CCPG1004, cysoc, unidad2, medios-sociales]
 > - ¿Las redes sociales fomentan comunidad o aislamiento?
 > - ¿Quién decide qué contenido vemos? ¿Cómo afecta eso nuestra cultura?
 > - ¿Debería el Estado regular el contenido en redes sociales?
-
-## 📚 Referencias
-
-> [!quote] 📖 Fuentes consultadas
->
-> Geert Hofstede. *Cultures and Organizations: Understanding Ourselves and Others*. McGraw-Hill.
-> UNESCO. *Digital citizenship and social media in education*. Recuperado de https://www.unesco.org/en/digital-education
-> Presentación del curso *Computación y Sociedad*, Unidad 2, ESPOL — FESD, EYAG1037.
 
 ---
 

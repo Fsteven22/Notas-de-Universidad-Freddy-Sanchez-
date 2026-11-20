@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad2, brecha-digital]
 ---
 
 # 🌐 Brecha Digital
@@ -14,10 +13,6 @@ tags: [CCPG1004, cysoc, unidad2, brecha-digital]
 > _Arturo Serrano, Evelio Martínez — "La Brecha Digital: Mitos y Realidades", México, 2003_
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Brecha_Digital_01.svg]]
-> 
->  **Se lee así:** el diagrama abre la **Brecha Digital** en dos ramas. Arriba, las **causas**: geográficas, económicas, culturales, de género, políticas, étnicas y generacionales. Abajo, los **efectos**: pobreza, desaceleración económica, desinformación, inaccesibilidad a servicios y aumento de la desigualdad.
->  **Por qué importa:** el esquema muestra que la brecha no es solo «falta de internet»: cada causa es un mecanismo distinto y cada efecto se multiplica cuando se acumulan. Por eso una política de conectividad que no toque lo cultural ni lo político mueve el indicador sin cerrar la brecha real.
->  **Ejemplo:** en una zona rural de la Amazonía, la falta de fibra (causa geográfica) se combina con la ausencia de escuelas y con la falta de decisores que prioricen la región: la solución no es solo conectividad, es también quién decide a dónde llega el conocimiento.
 
 ---
 
@@ -91,15 +86,6 @@ tags: [CCPG1004, cysoc, unidad2, brecha-digital]
 > - ¿A quién se debe ayudar primero?
 > - ¿Dónde se encuentran esas personas?
 > - Lo que se haga, ¿servirá a los que vienen y a los que ya están?
-
-## 📚 Referencias
-
-> [!quote] 📖 Fuentes consultadas
->
-> Arturo Serrano y Evelio Martínez. *La Brecha Digital: Mitos y Realidades*. México, 2003.
-> Unión Internacional de Telecomunicaciones (UIT). *Measuring digital development: Facts and figures*. Recuperado de https://www.itu.int/itu-d/reports/statistics/
-> UNESCO. *Digital education* (tema institucional). Recuperado de https://www.unesco.org/en/digital-education
-> Presentación del curso *Computación y Sociedad*, Unidad 2, ESPOL — FESD, EYAG1037.
 
 ---
 

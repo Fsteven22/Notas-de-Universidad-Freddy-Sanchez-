@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad2, sesgo-algoritmico]
 ---
 
 # 🤖 Sesgo y Gobernanza Algorítmica
@@ -14,10 +13,6 @@ tags: [CCPG1004, cysoc, unidad2, sesgo-algoritmico]
 > Los algoritmos son diseñados por personas, entrenados con datos generados por personas, y desplegados en contextos sociales con historia. Todo eso introduce **sesgo**.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Sesgo_y_Gobernanza_Algorítmica_01.svg]]
-> 
->  **Se lee así:** el diagrama entra por el **Algoritmo** y pregunta **«¿De dónde viene el sesgo?»**. Las tres respuestas son: **datos de entrenamiento**, **diseño del código** y **definición del problema**. Cada una se desglosa: datos históricos discriminatorios, subrepresentación de grupos, variables proxy discriminatorias, métricas de éxito mal definidas — y la pregunta final, **quién define qué es un «buen» resultado**.
->  **Por qué importa:** el sesgo no es un defecto que aparezca al final: entra por una de tres puertas, y cada puerta se cierra con una acción distinta (mejorar los datos, auditar el código, redefinir la métrica). Es el mapa que permite pasar del lamento («la IA es injusta») a la auditoría concreta.
->  **Ejemplo:** un modelo de selección de currículos entrenado con diez años de contrataciones solo masculinas arrastra el sesgo histórico por la puerta de los datos, aunque el código sea impecable.
 
 ---
 
@@ -54,7 +49,7 @@ tags: [CCPG1004, cysoc, unidad2, sesgo-algoritmico]
 > |**Causa**|Sin filtros ni moderación en los datos de aprendizaje en tiempo real|
 > |**Resultado**|Microsoft retiró Tay y lo desconectó|
 > 
-> ⚠️ **Lección**: Un sistema de IA sin control sobre la calidad de sus datos de entrada puede ser manipulado activamente. El sesgo no siempre es accidental — puede ser inducido.
+> > ⚠️ **Lección**: Un sistema de IA sin control sobre la calidad de sus datos de entrada puede ser manipulado activamente. El sesgo no siempre es accidental — puede ser inducido.
 >
 
 > [!example] 🏥 St. George's Hospital — Sesgo en admisiones médicas (1970s–1988)
@@ -74,7 +69,7 @@ tags: [CCPG1004, cysoc, unidad2, sesgo-algoritmico]
 > |**Causa**|Algoritmo entrenado con decisiones humanas históricamente sesgadas|
 > |**Impacto**|Cientos de candidatos rechazados injustamente durante años|
 > 
-> 💡 Este es uno de los primeros casos documentados de **discriminación algorítmica institucionalizada** — el sistema automatizó y escondió el sesgo humano, dándole apariencia de objetividad.
+> > 💡 Este es uno de los primeros casos documentados de **discriminación algorítmica institucionalizada** — el sistema automatizó y escondió el sesgo humano, dándole apariencia de objetividad.
 >
 
 > [!example] 📷 Reconocimiento facial — Google y Facebook (2015–2019)
@@ -105,7 +100,7 @@ tags: [CCPG1004, cysoc, unidad2, sesgo-algoritmico]
 > |**Traductores automáticos**|Al traducir desde idiomas sin género gramatical (turco, húngaro), asignaban género masculino a profesiones de alto estatus y femenino a roles de cuidado|
 > |**Sistemas de contratación (Amazon, 2018)**|Un sistema de selección de CVs desarrollado internamente penalizaba CVs que contenían la palabra "mujeres" (ej. "capitana del equipo femenino de debate")|
 > 
-> 💡 Amazon descartó su sistema de contratación con IA en 2018 al descubrir estos sesgos — otro ejemplo de cómo el problema puede estar oculto hasta una auditoría explícita.
+> > 💡 Amazon descartó su sistema de contratación con IA en 2018 al descubrir estos sesgos — otro ejemplo de cómo el problema puede estar oculto hasta una auditoría explícita.
 
 ---
 
@@ -118,10 +113,6 @@ tags: [CCPG1004, cysoc, unidad2, sesgo-algoritmico]
 > El objetivo es que la automatización no elimine la rendición de cuentas: si un sistema toma una decisión que perjudica a alguien, debe haber un responsable humano identificable.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Sesgo_y_Gobernanza_Algorítmica_02.svg]]
-> 
->  **Se lee así:** el diagrama despliega la **gobernanza algorítmica** en cinco frentes: **transparencia** (explicabilidad de las decisiones, acceso al código y a los datos), **auditoría** (revisión independiente, detección de sesgos), **rendición de cuentas** (responsable identificable, derecho a recurrir), **factor humano** (humano en el bucle, revisión de casos límite) y **marco legal** (GDPR en Europa, leyes de IA emergentes).
->  **Por qué importa:** la gobernanza no es un único mecanismo sino un paquete: el mismo sistema puede ser transparente y aun así intocable si no hay responsable identificable. Los cinco frentes son las condiciones mínimas para que una decisión automatizada sea recurrible.
->  **Ejemplo:** explicar con detalle el modelo no sirve si la persona afectada no sabe a quién reclamar; por eso «transparencia» y «rendición de cuentas» aparecen como columnas separadas.
 >
 
 > [!note] 🔧 Principios de la Gobernanza Algorítmica
@@ -145,7 +136,7 @@ tags: [CCPG1004, cysoc, unidad2, sesgo-algoritmico]
 > |**Executive Order on AI (2023)**|EE.UU.|Mandato federal para evaluación de seguridad y sesgo en IA usada por agencias gubernamentales|
 > |**Ley Orgánica de Protección de Datos**|Ecuador|Marco base de protección de datos personales, base para futura regulación de IA|
 > 
-> 💡 Ecuador aún no tiene legislación específica sobre gobernanza algorítmica — es un campo en construcción en América Latina.
+> > 💡 Ecuador aún no tiene legislación específica sobre gobernanza algorítmica — es un campo en construcción en América Latina.
 
 ---
 
@@ -160,15 +151,6 @@ tags: [CCPG1004, cysoc, unidad2, sesgo-algoritmico]
 > |Los afectados no tienen recurso|Existe derecho a impugnar decisiones automatizadas|
 > |El algoritmo opera como caja negra|Transparencia permite revisión y mejora continua|
 > |La IA reemplaza el juicio humano|La IA asiste al juicio humano sin eliminarlo|
-
-## 📚 Referencias
-
-> [!quote] 📖 Fuentes consultadas
->
-> Instituto Nacional de Estándares y Tecnología (NIST). *Towards a Standard for Identifying and Managing Bias in Artificial Intelligence*. Gaithersburg, MD: NIST, 2022.
-> ISO/IEC. *ISO/IEC 22989:2022 — Artificial Intelligence Concepts and Terminology*. Geneva: International Organization for Standardization, 2022.
-> Barocas, S., Hardt, M. y Narayanan, A. *Fairness and Machine Learning: Limitations and Opportunities*. MIT Press, 2022.
-> Presentación del curso *Computación y Sociedad*, Unidad 2, ESPOL — FESD, EYAG1037.
 
 ---
 

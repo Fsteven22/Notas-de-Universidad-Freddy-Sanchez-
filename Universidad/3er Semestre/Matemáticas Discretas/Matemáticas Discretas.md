@@ -80,15 +80,14 @@ tags: [matematicas, discretas, ESPOL, MATG1051]
 > [!note] III — Principios y Enumeración
 > 
 > - [[04 - Principios de Multiplicación y Suma|04 — Principios de suma y multiplicación]]
-> - [[05 - El Factorial y Sus Propiedades|05 — El Factorial]]
-> - [[06 - Permutaciones y Combinaciones|06 — Permutaciones y combinaciones]]
-> - [[07 - Teorema del Binomio y Principio del Palomar|07 — Binomio y Palomar]]
+> - [[05 - Permutaciones y Combinaciones|05 — Permutaciones y combinaciones]]
+> - [[06 - Teorema del Binomio y Principio del Palomar|06 — Binomio y Palomar]]
 
 > [!note] 🗺️ Diagrama — Unidad III — Números y Conteo *(8h)*
 >
 > ![[Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-01-01-graph.svg]]
-> **Se lee así:** dos cadenas — 01 Divisibilidad → 02 MCD/MCM → 03 Criterios, y 04 Principios Suma/Mult → 05 El Factorial → 06 Permutaciones → 07 Binomio/Palomar — enlazadas por 01 Divisibilidad → 04 Principios.
-> **Por qué importa:** la primera cadena prepara el terreno aritmético (dividir antes de contar) y la segunda es el conteo propiamente dicho; el palomar (07) es el único método que no cuenta, solo garantiza.
+> **Se lee así:** dos cadenas — 01 Divisibilidad → 02 MCD/MCM → 03 Criterios, y 04 Principios Suma/Mult → 05 Permutaciones → 06 Binomio/Palomar — enlazadas por 01 Divisibilidad → 04 Principios.
+> **Por qué importa:** la primera cadena prepara el terreno aritmético (dividir antes de contar) y la segunda es el conteo propiamente dicho; el palomar (06) es el único método que no cuenta, solo garantiza.
 ---
 
 ## 📚 Unidad IV — Recurrencia y Algoritmos *(7h)*

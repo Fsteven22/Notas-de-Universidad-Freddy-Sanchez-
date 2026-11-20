@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad2, ods]
 ---
 
 # 🟩 ODS — Objetivos de Desarrollo Sostenible y Tecnología
@@ -21,7 +20,7 @@ tags: [CCPG1004, cysoc, unidad2, ods]
 > |Países líderes|Países nórdicos: Suecia, Dinamarca, Finlandia|
 > |Países más rezagados|Yemen, Sudán del Sur, Haití, Myanmar|
 > 
-> _"Los ODS siguen estando a nuestro alcance, pero solo si actuamos con decisión y actuamos ahora."_ — António Guterres, Secretario General de la ONU, 2025
+> > _"Los ODS siguen estando a nuestro alcance, pero solo si actuamos con decisión y actuamos ahora."_ — António Guterres, Secretario General de la ONU, 2025
 > 
 > **Este documento responde 3 preguntas por cada ODS:**
 > 
@@ -33,12 +32,7 @@ tags: [CCPG1004, cysoc, unidad2, ods]
 
 ## 📋 Los 17 Objetivos — Resumen General
 
-> [!info] 📋 Los 17 ODS — Resumen general
->
-> 
->  **Se lee así:** el diagrama organiza los **17 ODS de la Agenda 2030** en cuatro grupos: **Personas** (ODS 1 a 5: Fin de la Pobreza, Hambre Cero, Salud y Bienestar, Educación de Calidad, Igualdad de Género), **Planeta** (ODS 6, 13, 14 y 15: Agua Limpia, Acción por el Clima, Vida Submarina, Vida de Ecosistemas Terrestres), **Prosperidad** (ODS 7 a 12: Energía Asequible, Trabajo Decente, Industria e Innovación, Reducción de Desigualdades, Ciudades Sostenibles, Consumo Responsable) y **Paz y Alianzas** (ODS 16 y 17).
->  **Por qué importa:** la agrupación muestra que la tecnología no toca un solo eje: cada objetivo tiene su dimensión digital (ODS 4 es educación digital, ODS 7 es eficiencia energética de la infraestructura, ODS 11 es ciudad dato). Es el mapa que permite asignar a la tecnología su parte de responsabilidad.
->  **Ejemplo:** el ODS 13 (Acción por el Clima) se conecta con los modelos de IA a través de la optimización de la red eléctrica; el ODS 3 (Salud y Bienestar) se conecta con la telemedicina y también con el uso compulsivo del smartphone.
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_ODS_y_Tecnologia_01.svg]]
 
 ---
 
@@ -370,10 +364,6 @@ tags: [CCPG1004, cysoc, unidad2, ods]
 > [!tip] 📊 ¿Cómo están los países?
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_ODS_y_Tecnologia_02.svg]]
-> 
->  **Se lee así:** el diagrama reparte los países en tres grupos: 🟢 **líderes** (los nórdicos — Suecia, Dinamarca, Finlandia — que lideran casi todos los ODS), 🟡 **en progreso** (Europa Occidental, Japón, Australia, Canadá; China, Brasil, India, América Latina; Asia Oriental) y 🔴 **más rezagados** (África Subsahariana, Yemen, Haití, Myanmar, con conflictos, pobreza y falta de infraestructura).
->  **Por qué importa:** muestra que el avance en los 17 ODS no es parejo ni depende de un solo factor: los rezagados se asocian a conflicto y a falta de infraestructura, no a falta de tecnología, mientras que los líderes llegan por un catálogo de políticas. La tecnología es condición habilitante, no garantía.
->  **Ejemplo:** un país con fibra y centros de datos puede seguir rezagado en ODS 3 o ODS 16 si lo que falta es estabilidad institucional y cobertura sanitaria universal.
 > 
 > **Dato clave 2025:** Solo el **17–18% de las metas** están en vías de cumplirse para 2030.
 

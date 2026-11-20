@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1005, unidad2, poo, colecciones]
 ---
 
 # 📦 Colecciones Dinámicas (ArrayList, etc.)
@@ -730,9 +729,7 @@ tags: [CCPG1005, unidad2, poo, colecciones]
 
 ## 📊 Resumen Visual
 
-> [!note] 🖼️ Resumen Visual
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_08.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_08.svg]]
 
 > [!quote] 🎓 Puntos Clave para Recordar
 > 

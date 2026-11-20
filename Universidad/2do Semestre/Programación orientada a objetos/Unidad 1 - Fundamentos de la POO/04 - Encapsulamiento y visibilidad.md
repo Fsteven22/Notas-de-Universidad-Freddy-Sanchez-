@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1005, unidad1, poo, encapsulamiento]
 ---
 
 # 🔒 Encapsulamiento y Visibilidad
@@ -27,9 +26,7 @@ tags: [CCPG1005, unidad1, poo, encapsulamiento]
 > |**Mantenibilidad**|Cambios internos no afectan código externo|Cambiar implementación sin romper el código|
 > |**Abstracción**|Oculta complejidad innecesaria|Usar `depositar()` en vez de `saldo += monto`|
 
-> [!note] 🖼️ Introducción
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Encapsulamiento_y_visibilidad_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Encapsulamiento_y_visibilidad_01.svg]]
 
 ---
 
@@ -672,7 +669,8 @@ tags: [CCPG1005, unidad1, poo, encapsulamiento]
 >         emp1.darDeBaja();
 >         emp1.mostrarInfo();
 >         
->         System.out.println("Total de empleados: " + Empleado.getTotalEmpleados());
+>         System.out.println("
+Total de empleados: " + Empleado.getTotalEmpleados());
 >     }
 > }
 > ```
@@ -768,9 +766,8 @@ tags: [CCPG1005, unidad1, poo, encapsulamiento]
 ---
 ## 📊 Resumen Visual
 
-> [!note] 🖼️ Resumen Visual
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Encapsulamiento_y_visibilidad_03.svg]]
 >
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Encapsulamiento_y_visibilidad_03.svg]]
 
 > [!example] 🎯 Práctica 2: Clase Temperatura
 > 

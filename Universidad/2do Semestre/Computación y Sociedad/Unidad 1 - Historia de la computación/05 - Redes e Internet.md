@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad1, redes-internet]
 ---
 
 # 🌐 Redes e Internet
@@ -12,10 +11,6 @@ tags: [CCPG1004, cysoc, unidad1, redes-internet]
 > Durante décadas, las computadoras trabajaron de forma aislada. La necesidad de compartir información y recursos impulsó el desarrollo de las redes, que eventualmente evolucionaron hasta formar la Internet que conocemos hoy.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Redes_e_Internet_01.svg]]
->
-> **Se lee así:** la evolución de las redes: computadoras aisladas (los 50), redes locales LAN (60-70), ARPANET (red militar de conmutación de paquetes), Internet (TCP/IP como estándar), World Wide Web (publicación sobre Internet).
-> **Por qué importa:** Internet no es la WWW: la Web es una aplicación sobre Internet (la capa de aplicación del stack TCP/IP); confundirlas impide entender por qué tu correo y tu navegador usan el mismo cable.
-> **Ejemplo:** al hacer clic en un enlace, tu navegador abre HTTP sobre TCP/IP: la web viaja por Internet, no es Internet.
 
 ---
 
@@ -38,10 +33,6 @@ tags: [CCPG1004, cysoc, unidad1, redes-internet]
 > ### Expansión de ARPANET
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Redes_e_Internet_02.svg]]
->
-> **Se lee así:** la cronología de ARPANET: 1967 (RAND la crea con presupuesto militar), 1970 (expande a universidades), 1972 (idea de protocolos comunes), 1983 (ARPANET se divide, nace MILNET exclusivo militar), 1979 (DEC+Intel+Xerox estandarizan Ethernet), 1985 (Ethernet en PCs), 1989 (Novell masifica las LAN), 1990 (TCP/IP estándar de Internet), 1991 (Tim Berners-Lee crea la WWW).
-> **Por qué importa:** la Internet nació como proyecto militar distribuido; su arquitectura tolerante a fallos es lo que hoy permite que una caída en una ruta no detenga tu conexión.
-> **Ejemplo:** cuando un paquete sale de tu casa viaja por varias rutas distintas decididas por cada enrutador; eso es herencia directa de la arquitectura ARPANET.
 
 ---
 
@@ -61,7 +52,7 @@ tags: [CCPG1004, cysoc, unidad1, redes-internet]
 > | **Estandarización** | 1979 — DEC, Intel y Xerox lo adoptan como estándar |
 > | **Masificación** | 1985 — chip Intel avanzado lo hace práctico para PCs |
 >
-> 💡 En **1979**, DEC (*Digital Equipment Corporation*), Intel y Xerox se unieron para establecer Ethernet como estándar de facto para redes locales.
+> > 💡 En **1979**, DEC (*Digital Equipment Corporation*), Intel y Xerox se unieron para establecer Ethernet como estándar de facto para redes locales.
 
 ---
 
@@ -101,7 +92,7 @@ tags: [CCPG1004, cysoc, unidad1, redes-internet]
 > | **Switch (conmutador)** | Conecta varios dispositivos dentro de una misma red |
 > | **Conmutación de paquetes** | Los datos se dividen en paquetes que viajan por rutas distintas |
 >
-> 💡 La **conmutación de paquetes** fue clave para la robustez de Internet: si una ruta falla, los paquetes simplemente toman otra ruta para llegar a su destino.
+> > 💡 La **conmutación de paquetes** fue clave para la robustez de Internet: si una ruta falla, los paquetes simplemente toman otra ruta para llegar a su destino.
 
 ---
 
@@ -127,7 +118,7 @@ tags: [CCPG1004, cysoc, unidad1, redes-internet]
 > | **URL** | Dirección única de cada recurso en la web |
 > | **Navegador** | Programa que interpreta HTML y muestra páginas web |
 >
-> ⚠️ **Internet ≠ WWW** — Internet es la infraestructura de red; la WWW es uno de los servicios que usa esa infraestructura.
+> > ⚠️ **Internet ≠ WWW** — Internet es la infraestructura de red; la WWW es uno de los servicios que usa esa infraestructura.
 
 ---
 
@@ -136,10 +127,6 @@ tags: [CCPG1004, cysoc, unidad1, redes-internet]
 > [!summary] 📅 De ARPANET a la WWW
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Redes_e_Internet_05.svg]]
->
-> **Se lee así:** historia completa de las redes trimestre a trimestre: 1967 ARPANET, 1972 protocolos, 1973 Ethernet (Metcalfe y Boggs en Xerox PARC), 1979 estandarización DEC+Intel+Xerox, 1983 MILNET y DIX, 1989 Novell domina LAN, 1990 TCP/IP, 1991 WWW.
-> **Por qué importa:** internet es la suma de redes privadas (Ethernet/LAN) unificadas por el mismo protocolo TCP/IP; no fue un diseño central sino la interconexión de miles de sistemas.
-> **Ejemplo:** tu red doméstica funciona con Ethernet (o WiFi) sobre IP gracias al trabajo previo de Metcalfe; por eso tu casa habla con un servidor en el otro lado del planeta.
 
 ---
 
@@ -154,16 +141,6 @@ tags: [CCPG1004, cysoc, unidad1, redes-internet]
 > | **Propietario** | Empresa u organización | Proveedor de servicios | Nadie / Todos |
 > | **Protocolo típico** | Ethernet | MPLS, Frame Relay | TCP/IP |
 > | **Ejemplo** | Red de una oficina | Red bancaria nacional | La Internet global |
-
----
-
-## 📚 Referencias
-
-> [!info] 📚 Referencias
->
-> - Dale, Nell & Lewis, John. *Computer Science Illuminated* (6th ed.). Jones & Bartlett Learning.
-> - Quinn, Michael J. *Ethics for the Information Age* (7th ed.). Pearson.
-> - Syllabus oficial de Computación y Sociedad (CCPG1004), ESPOL, coordinadora Otilia M. Alejandro Molina.
 
 ---
 

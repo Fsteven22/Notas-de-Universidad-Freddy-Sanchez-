@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad3, sistema-binario]
 ---
 # 💾 Sistema Binario
 
@@ -11,16 +10,8 @@ tags: [CCPG1004, cysoc, unidad3, sistema-binario]
 > El sistema binario usa únicamente dos símbolos: **0** y **1**. Es la base de toda la computación moderna porque coincide exactamente con los dos estados físicos que puede distinguir un circuito eléctrico (ver [[01 - Análogo vs Digital]]): voltaje alto y voltaje bajo.
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Sistema_Binario_01.svg]]
->
-> **Se lee así:** el diagrama da la definición operativa: **base 2**, dos símbolos (**0** y **1**) y **notación posicional con potencias de 2** — la única representación que el hardware entiende.
 
-> [!info] 🎞️ Del deck — El bit en el hardware
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-03-sistema-binario-01.png]]
->
-> **Se lee así:** la diapositiva muestra el bit como fenómeno físico: los switches (0 = 0 V apagado, 1 = Vcc de 5 V encendido), la compuerta NOT ($Y = \neg A$) con su tabla de verdad, y un **byte** `10110100` (5 V, 0 V, 5 V, 5 V, 0 V, 5 V, 0 V, 0 V) = **180**.
->
-> **Por qué importa:** confirma que el binario no es una convención matemática sino una propiedad eléctrica del hardware.
+![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-03-sistema-binario-01.png]]
 
 ---
 
@@ -43,7 +34,7 @@ tags: [CCPG1004, cysoc, unidad3, sistema-binario]
 > |||110|
 > |||111|
 >
-> 📌 Con 1 bit hay 2 combinaciones (2¹), con 2 bits hay 4 (2²), con 3 bits hay 8 (2³). El patrón se duplica con cada bit adicional.
+> > 📌 Con 1 bit hay 2 combinaciones (2¹), con 2 bits hay 4 (2²), con 3 bits hay 8 (2³). El patrón se duplica con cada bit adicional.
 
 ---
 
@@ -58,7 +49,7 @@ tags: [CCPG1004, cysoc, unidad3, sistema-binario]
 > |3|8|7|128|11|2048|
 > |4|16|8|256|12|4096|
 >
-> 💡 **Aplicación práctica:** un **byte** (8 bits) puede representar exactamente **256 valores distintos** (de 0 a 255). Esta tabla es la base para entender capacidad de memoria, rangos de direcciones, y tipos de datos en programación.
+> > 💡 **Aplicación práctica:** un **byte** (8 bits) puede representar exactamente **256 valores distintos** (de 0 a 255). Esta tabla es la base para entender capacidad de memoria, rangos de direcciones, y tipos de datos en programación.
 
 ---
 
@@ -87,7 +78,7 @@ tags: [CCPG1004, cysoc, unidad3, sistema-binario]
 > | 65535 | log₂(65536) = 16 | 16 bits (2 bytes) |
 > | 7 | log₂(8) = 3 | 3 bits |
 >
-> 📌 **Interpretación:** si quieres representar el número 255, necesitas exactamente 8 bits. Si quieres ir hasta 256, necesitas 9 bits. Cada bit adicional *duplica* la capacidad máxima.
+> > 📌 **Interpretación:** si quieres representar el número 255, necesitas exactamente 8 bits. Si quieres ir hasta 256, necesitas 9 bits. Cada bit adicional *duplica* la capacidad máxima.
 >
 > #### Relación inversa:
 >
@@ -101,8 +92,6 @@ tags: [CCPG1004, cysoc, unidad3, sistema-binario]
 > - 32 bits: máximo = 2³² − 1 = **4294967295**
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Sistema_Binario_02.svg]]
->
-> **Se lee así:** responde a la pregunta de diseño clásica (¿cuántos bits para $N$?): se toma la **siguiente potencia de 2**; con $n$ bits el **máximo representable** es $2^n - 1$ y hay que sumar 1 para cubrir el siguiente valor — el criterio detrás de los límites de tipos como `byte` (255) o `word` (65 535).
 
 ---
 
@@ -140,21 +129,15 @@ tags: [CCPG1004, cysoc, unidad3, sistema-binario]
 > - **Octal:** $27 = 3×8^1 + 3×8^0 = 24 + 3 = 33_8$
 > - **Hexadecimal:** $27 = 1×16^1 + 11×16^0 = 16 + 11 = 1B_{16}$ (donde B = 11)
 >
-> 📌 **Idea clave:** el binario, octal y hexadecimal no son "otros tipos" de números — son el **mismo concepto posicional** del decimal, solo que con bases distintas (2, 8, 16). La fórmula general es:
-> $$\text{valor}_{base\,10} = \sum_{i=0}^{n-1} d_i \times \text{base}^i$$
-> donde cada dígito $d_i$ multiplica una potencia de la base. Dominar esta equivalencia es la llave para todas las conversiones entre sistemas que se ven en [[04 - Conversion Decimal-Binario]].
+> > 📌 **Idea clave:** el binario, octal y hexadecimal no son "otros tipos" de números — son el **mismo concepto posicional** del decimal, solo que con bases distintas (2, 8, 16). La fórmula general es:
+> > $$\text{valor}_{base\,10} = \sum_{i=0}^{n-1} d_i \times \text{base}^i$$
+> > donde cada dígito $d_i$ multiplica una potencia de la base. Dominar esta equivalencia es la llave para todas las conversiones entre sistemas que se ven en [[04 - Conversion Decimal-Binario]].
 
 ---
 
 ## 📊 Resumen Visual
 
-> [!info] 📊 Resumen visual — Sistema binario
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Sistema_Binario_03.svg]]
->
-> **Se lee así:** el mapa completo: símbolos (0 y 1), capacidad ($2^n$ combinaciones con $n$ bits; **8 bits = 256 valores = 1 byte**), notación posicional con potencias de 2 y su papel como fundamento del hardware digital y base de las conversiones a otros sistemas.
->
-> **Por qué importa:** es el resumen definitivo del tema y el cimiento de todo lo que sigue en la unidad.
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Sistema_Binario_03.svg]]
 
 ---
 

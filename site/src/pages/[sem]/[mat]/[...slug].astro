@@ -118,7 +118,8 @@ const matUrl = `/${sem}/${mat}/`;
         <span>editada el {fecha(note.mtime)}</span>
       </p>
 
-      {/* Las acciones son iconos (el rótulo va en el tooltip). */}
+      {/* Las acciones llevan rótulo visible: cinco iconos sueltos no se
+          leen; con texto se entienden de un vistazo y el tooltip sobra. */}
       <div class="nx-note-tools">
         <button
           type="button"
@@ -128,11 +129,11 @@ const matUrl = `/${sem}/${mat}/`;
           title="Modo lectura"
         >
           <span class="nx-note-tools__ico" data-nx-lectura-ico aria-hidden="true">◐</span>
-          <span class="nx-sr-only" data-nx-lectura-txt>Modo lectura</span>
+          <span class="nx-note-tools__label" data-nx-lectura-txt>Modo lectura</span>
         </button>
         <button type="button" id="nx-imprimir" class="nx-note-tools__btn" title="Imprimir / PDF">
           <span class="nx-note-tools__ico" aria-hidden="true">⎙</span>
-          <span class="nx-sr-only">Imprimir / PDF</span>
+          <span class="nx-note-tools__label">Imprimir / PDF</span>
         </button>
         <button
           type="button"
@@ -147,7 +148,7 @@ const matUrl = `/${sem}/${mat}/`;
           title="Guardar esta nota en tus favoritos"
         >
           <span class="nx-note-tools__ico" data-nx-fav-ico aria-hidden="true">☆</span>
-          <span class="nx-sr-only" data-nx-fav-txt>Guardar</span>
+          <span class="nx-note-tools__label" data-nx-fav-txt>Guardar</span>
         </button>
         <button
           type="button"
@@ -162,7 +163,7 @@ const matUrl = `/${sem}/${mat}/`;
           title="Marcar esta nota como leída (para llevar tu avance)"
         >
           <span class="nx-note-tools__ico" data-nx-hecha-ico aria-hidden="true">○</span>
-          <span class="nx-sr-only" data-nx-hecha-txt>Marcar leída</span>
+          <span class="nx-note-tools__label" data-nx-hecha-txt>Marcar leída</span>
         </button>
         {/* Emojis: el vault los usa en los títulos y en los callouts.
             Este interruptor los quita (o los deja) sin tocar el vault. */}
@@ -174,7 +175,7 @@ const matUrl = `/${sem}/${mat}/`;
           title="Emojis: sí/no"
         >
           <span class="nx-note-tools__ico" aria-hidden="true">☺</span>
-          <span class="nx-sr-only">Emojis: sí/no</span>
+          <span class="nx-note-tools__label">Emojis</span>
         </button>
       </div>
 

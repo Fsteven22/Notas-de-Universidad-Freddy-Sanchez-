@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad2, accesibilidad]
 ---
 
 # ♿ Accesibilidad y WCAG
@@ -12,10 +11,6 @@ tags: [CCPG1004, cysoc, unidad2, accesibilidad]
 > La **accesibilidad** es la posibilidad que tengan todas las personas _sin_ que medien **exclusiones de ningún tipo**, como ser culturales, físicas o técnicas, para acceder a un servicio o llegar a visitar un lugar o utilizar un objeto.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Accesibilidad_y_WCAG_01.svg]]
-> 
->  **Se lee así:** el mapa separa la **accesibilidad física** (rampas para sillas de ruedas, baños adaptados) de la **digital o TIC**. En la rama digital aparecen dos caminos: las **WCAG** (las guías de diseño web) y las **tecnologías de apoyo** — teclados Braille, magnificadores de pantalla, convertidores de texto a voz y de voz a texto, y pantallas adaptadas.
->  **Por qué importa:** deja visible que accesibilidad no es solo «no discriminar a quien usa silla de ruedas»: son dos capas (espacio y tecnología) y, dentro de la digital, dos ayudas distintas — cumplir las WCAG afecta al producto; las tecnologías de apoyo afectan a la persona que lo usa.
->  **Ejemplo:** un formulario de la ESPOL con etiqueta correcta en cada campo cumple WCAG; un estudiante con dislexia lo termina gracias al convertidor texto-voz. Son dos capas distintas del mismo derecho.
 
 ---
 
@@ -57,7 +52,7 @@ tags: [CCPG1004, cysoc, unidad2, accesibilidad]
 > |**WCAG 2.1**|5 jun. 2018|13 (+1)|78 (+17)|Móviles, baja visión, discapacidad cognitiva|
 > |**WCAG 2.2**|5 oct. 2023|13|87 (+9, -1 obsoleto)|Foco visible, tamaño de objetivos táctiles|
 > 
-> 📌 Las versiones son **retrocompatibles**: cumplir WCAG 2.2 implica cumplir automáticamente 2.1 y 2.0. Por eso, aunque existan versiones más nuevas, el contenido de esta nota se centra en **WCAG 2.0**, que es el estándar exigido legalmente en Ecuador.
+> > 📌 Las versiones son **retrocompatibles**: cumplir WCAG 2.2 implica cumplir automáticamente 2.1 y 2.0. Por eso, aunque existan versiones más nuevas, el contenido de esta nota se centra en **WCAG 2.0**, que es el estándar exigido legalmente en Ecuador.
 >
 > [!important] 🌐 El acrónimo POUR
 > 
@@ -81,7 +76,7 @@ tags: [CCPG1004, cysoc, unidad2, accesibilidad]
 > |**AA**|Intermedio|25 + **13** = **38** criterios|Elimina las barreras de acceso más significativas — es el nivel exigido por la mayoría de legislaciones, incluyendo Ecuador|
 > |**AAA**|Óptimo|38 + **23** = **61** criterios|El mayor nivel de accesibilidad posible; el propio W3C reconoce que no siempre es alcanzable para todo tipo de contenido|
 > 
-> 💡 Un sitio que cumple nivel **AA** también cumple automáticamente el nivel **A**. Cada nivel es acumulativo, no alternativo.
+> > 💡 Un sitio que cumple nivel **AA** también cumple automáticamente el nivel **A**. Cada nivel es acumulativo, no alternativo.
 
 ---
 
@@ -93,7 +88,7 @@ tags: [CCPG1004, cysoc, unidad2, accesibilidad]
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Accesibilidad_y_WCAG_02.svg]]
 >
-> 📌 **25 criterios de Nivel A** se distribuyen así entre los 4 principios: Perceptible (9), Operable (9), Comprensible (5), Robusto (2).
+> > 📌 **25 criterios de Nivel A** se distribuyen así entre los 4 principios: Perceptible (9), Operable (9), Comprensible (5), Robusto (2).
 
 ---
 
@@ -110,7 +105,7 @@ tags: [CCPG1004, cysoc, unidad2, accesibilidad]
 > |**1.3 Adaptable**|El contenido debe poder presentarse de distintas formas (por ejemplo, con un lector de pantalla, o en una disposición más simple) sin perder información, estructura ni relaciones lógicas entre elementos|
 > |**1.4 Distinguible**|Debe ser fácil ver y escuchar el contenido — contraste suficiente (mínimo **4.5:1** para texto normal), texto redimensionable hasta el 200%, audio controlable, y el color no debe ser el único medio para transmitir información|
 > 
-> 💡 **Detalle clave de 1.4:** el criterio de contraste mínimo (4.5:1) es uno de los más auditados en la práctica — herramientas como WebAIM Contrast Checker lo verifican automáticamente.
+> > 💡 **Detalle clave de 1.4:** el criterio de contraste mínimo (4.5:1) es uno de los más auditados en la práctica — herramientas como WebAIM Contrast Checker lo verifican automáticamente.
 
 ---
 
@@ -127,7 +122,7 @@ tags: [CCPG1004, cysoc, unidad2, accesibilidad]
 > |**2.3 Sin convulsiones**|El contenido no debe destellar más de **3 veces por segundo**, para evitar ataques en personas con epilepsia fotosensible|
 > |**2.4 Navegable**|El sitio debe proporcionar formas de ayudar a los usuarios a navegar, encontrar contenido y saber dónde se encuentran: títulos de página descriptivos, encabezados y etiquetas claras, orden de foco lógico, propósito de los enlaces identificable por su texto, y foco visible al navegar con teclado|
 > 
-> 📌 **Dato del PDF original:** 2.3 en WCAG 2.0 solo cubre "sin convulsiones"; WCAG 2.1 amplía esta pauta agregando también "ni reacciones físicas" (mareo por movimiento en animaciones).
+> > 📌 **Dato del PDF original:** 2.3 en WCAG 2.0 solo cubre "sin convulsiones"; WCAG 2.1 amplía esta pauta agregando también "ni reacciones físicas" (mareo por movimiento en animaciones).
 
 ---
 
@@ -156,7 +151,7 @@ tags: [CCPG1004, cysoc, unidad2, accesibilidad]
 > |**4.1 Compatible**|**4.1.1 Procesamiento**|El código HTML debe ser válido y bien estructurado: etiquetas completas, anidamiento correcto, sin IDs duplicados — para que los lectores de pantalla puedan interpretarlo correctamente|
 > |**4.1 Compatible**|**4.1.2 Nombre, función, valor**|Para todo componente de interfaz (formularios, enlaces, elementos generados por scripts), el **nombre** y la **función** deben poder determinarse por software, y los cambios de estado deben notificarse a las tecnologías de apoyo|
 > 
-> ⚠️ **Nota de actualización:** el criterio 4.1.1 (Procesamiento) fue declarado **obsoleto en WCAG 2.2** (2023), ya que los navegadores y lectores de pantalla modernos ya no dependen de un análisis estricto del HTML para funcionar correctamente. Sigue vigente en WCAG 2.0, que es la versión normada en Ecuador.
+> > ⚠️ **Nota de actualización:** el criterio 4.1.1 (Procesamiento) fue declarado **obsoleto en WCAG 2.2** (2023), ya que los navegadores y lectores de pantalla modernos ya no dependen de un análisis estricto del HTML para funcionar correctamente. Sigue vigente en WCAG 2.0, que es la versión normada en Ecuador.
 
 ---
 
@@ -199,7 +194,7 @@ tags: [CCPG1004, cysoc, unidad2, accesibilidad]
 > - **No aplica a:** el software utilizado para *acceder* al contenido web (aplicaciones de usuario, como navegadores), ni al software usado para *generar* dicho contenido (herramientas de autor, como editores web).
 > - **Demostración de cumplimiento:** mediante un **certificado de conformidad de primera parte**, que debe colocarse visiblemente en el propio sitio web.
 > 
-> 📌 Hasta la fecha, Ecuador **no ha actualizado** su normativa a WCAG 2.1 o 2.2 — el estándar legal vigente sigue siendo **WCAG 2.0 nivel AA**, a diferencia de la Unión Europea, que ya exige WCAG 2.1 mediante la norma EN 301 549.
+> > 📌 Hasta la fecha, Ecuador **no ha actualizado** su normativa a WCAG 2.1 o 2.2 — el estándar legal vigente sigue siendo **WCAG 2.0 nivel AA**, a diferencia de la Unión Europea, que ya exige WCAG 2.1 mediante la norma EN 301 549.
 
 ---
 
@@ -219,13 +214,7 @@ tags: [CCPG1004, cysoc, unidad2, accesibilidad]
 
 ## 📊 Resumen Visual
 
-> [!info] 📊 Resumen visual — Accesibilidad y WCAG
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Accesibilidad_y_WCAG_03.svg]]
->
-> **Se lee así:** el mapa organiza la accesibilidad en dos ramas —la **física** (espacios, transporte) y la **digital/TIC**— y, dentro de la digital, fija su norma: **WCAG 2.0** (W3C/WAI) con **4 principios POUR**, **12 pautas** y **61 criterios** acumulados por niveles (A = 25, AA = 38, AAA = 61). En Ecuador la referencia es **RTE INEN 288**: vigente desde 2016, nivel A desde 2018 y nivel AA desde 2020.
->
-> **Por qué importa:** el diagrama muestra que "accesible" no es una cuestión de gusto sino una jerarquía medible: del nivel A al AA los criterios se acumulan, y en Ecuador el RTE INEN 288 los convierte en obligación para servicios digitales públicos.
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Accesibilidad_y_WCAG_03.svg]]
 
 ---
 

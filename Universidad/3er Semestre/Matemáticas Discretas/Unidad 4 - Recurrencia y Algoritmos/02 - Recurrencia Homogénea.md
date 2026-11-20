@@ -65,7 +65,7 @@ tags: [recurrencia, recurrenciahomogenea, ecuacioncaracteristica, raicesdistinta
 > 
 > > [!warning] 📌 Por qué funciona
 > > 
-> > Si $t^n$ es solución de la recurrencia, cualquier [[06 - Permutaciones y Combinaciones|combinación]] lineal $b\cdot r_1^n + c\cdot r_2^n$ de dos soluciones también lo es (la recurrencia es lineal). Por eso las raíces de la ecuación característica generan toda la familia de soluciones.
+> > Si $t^n$ es solución de la recurrencia, cualquier [[05 - Permutaciones y Combinaciones|combinación]] lineal $b\cdot r_1^n + c\cdot r_2^n$ de dos soluciones también lo es (la recurrencia es lineal). Por eso las raíces de la ecuación característica generan toda la familia de soluciones.
 
 ---
 

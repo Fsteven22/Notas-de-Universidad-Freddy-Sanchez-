@@ -3592,6 +3592,38 @@ el commit de esta línea de PUSHEADO.
 
 ---
 
+---
+### `opencode-site` — combinado A+C+D: mapa en cian, acciones con rótulo, contraste arreglado — 19/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-combinado` → `master` (merge `--ff-only`) → `origin/master`
+>
+> - **Hecho (código, `ca83456e`):**
+>   - **Mapa con esferas "En curso" en cian** (token `--nx-coral-esfera`): claro `#2fa9c8`, oscuro `#5cc8e8`. Ya no leen como barro arcilla frente al gris de completado/reconstrucción.
+>   - **Filete de coda en títulos de sección** (`.nx-section-title`): sans 500, línea de 1 px a la derecha, sin mayúsculas ni tracking.
+>   - **Kicker con barra vertical de 2 px** en `.nx-badge`: acento, sin pill ni mayúsculas.
+>   - **Estados sin verde ni ámbar**: Completado y Reconstrucción en gris (`--nx-muted`), solo En curso en coral (`--nx-coral`), también en el mapa 3D.
+>   - **Contraste de hover arreglado**: `--nx-control` claro `#708a98` → `#6f8391` (control/hover pasa de 2,94:1 a 3,18:1).
+>   - **Acciones de nota con rótulo visible**: Modo lectura, Imprimir / PDF, Guardar, Marcar leída, Emojis. La estrella de Guardar sigue siendo coral (coherente con reservar el coral para favoritos).
+>
+> - **Verificado sobre el build de producción** (818 páginas, `astro preview`):
+>   - Contraste total 18/18 en ambos temas.
+>   - Auditoría de paleta: todos los contrastes OK, 1 solo degradado (barra 2px), 0 sombras, 0 blur, radios 100 % 4 px, animación se detiene con `prefers-reduced-motion`, 0 errores de consola.
+>   - Funcional 10/10: buscador, flashcards, marcar leída, contador, barra de progreso, mapa 3D⇄Lista, tema persistente.
+>   - Modo lectura 602→671 px, foco neón visible, 0 errores de consola.
+>   - Mapa: esferas cian confirmadas por análisis de píxeles, etiquetas sin solaparse, diagrama SVG de Cálculo 1 en oscuro sin fondo blanco.
+>   - Impresión del mapa: canvas oculto, Lista en 2 columnas negro sobre blanco, 4 semestres.
+>
+> - **No se tocó** la zona `opencode`, ni `Universidad/`, ni `site/scripts/`. Sin `npm run sync` en OneDrive.
+>
+> - **Sync local**: `npm run sync` con `VAULT_DIR=../Universidad` para que el build local coincida con la producción (787 notas, 4 semestres).
+>
+
+
+> [!success] PUSHEADO `32e1bfc9` · 19/11/2026 — `ca83456e` (código) + `32e1bfc9`
+> (PUSHEO EN CURSO) + este bloque → merge `--ff-only` a `master` → un solo push, sin `--force`.
+
+---
+
 ### `opencode` — Álgebra Lineal: piloto MATG1049, contrato + primer pase (0 H) — 19/11/2026
 
 > [!warning] **PUSHEO EN CURSO**
@@ -3604,7 +3636,7 @@ el commit de esta línea de PUSHEADO.
 > - Tags: 47 notas sin frontmatter ganaron `tags: [MATG1049, algebra-lineal, unidadN, slug]`.
 > - H1 sin emoji corregidos (2), líneas de código `> >` sueltas bajadas de nivel (4), 2 callouts `quote` vacíos rellenados con su contenido envuelto (antes flotaban fuera del callout).
 > - **Estado: 51 notas, 1345 hallazgos, 0 H** (todo W; quedan R14/R4-embed/R6/R7/R3-h2-emoji/R13 para fases siguientes, una unidad a la vez).
-> - Backup de los 51 archivos modificados en `%TEMP%\opencode\backup_algebra_piloto_20261119_2116.zip`.
+> - Backup de los 51 archivos modificados en `%TEMP%\opencodeackup_algebra_piloto_20261119_2116.zip`.
 >
 > **Queda POR HACER (fase 2):** lecturas R14 de los 174 embeds sin explicación, envolver los 57 embeds top-level, y luego **enlazar los 42 exámenes reales de DSpace** (14 Parcial I / 14 Parcial II / 14 Mejoramiento) desde las notas — el punto central de "nutrir con material real". Nada de esto se incluye en este push.
 >
@@ -3614,3 +3646,4 @@ el commit de esta línea de PUSHEADO.
 > - `Universidad/2do Semestre/Algebra Lineal/**` (51 notas: tags/emoji/fixes)
 > - `Universidad/Herramientas/Mantenimiento/FORMATO-ALGEBRA.md` (nuevo), `qa_formato_algebra.py` (nuevo)
 > - `Clippings/00 - LEEME bandeja de pistas.md`
+

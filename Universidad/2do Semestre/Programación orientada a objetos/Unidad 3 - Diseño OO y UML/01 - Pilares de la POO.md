@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1005, unidad3, poo, pilares]
 ---
 
 # 🏛️ Pilares de la Programación Orientada a Objetos
@@ -20,9 +19,7 @@ tags: [CCPG1005, unidad3, poo, pilares]
 > |**Polimorfismo**|Código rígido que no se adapta a nuevos tipos|✅ Flexibilidad y extensibilidad|
 > |**Abstracción**|Complejidad expuesta innecesariamente|✅ Interfaces simples y claras|
 
-> [!note] 🖼️ Introducción
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_01.svg]]
 
 ---
 
@@ -136,9 +133,7 @@ tags: [CCPG1005, unidad3, poo, pilares]
 > |**extends**|Palabra clave para heredar|
 > |**super**|Referencia a la superclase|
 
-> [!note] 🖼️ Concepto
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_02.svg]]
 
 ### 🛠️ Implementación
 
@@ -252,9 +247,7 @@ tags: [CCPG1005, unidad3, poo, pilares]
 > 
 > **Analogía:** Un control remoto (interfaz) funciona con diferentes dispositivos (TV, reproductor, aire) - mismo botón "encender", diferente comportamiento.
 
-> [!note] 🖼️ Concepto
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_03.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_03.svg]]
 
 ### 🛠️ Implementación
 
@@ -371,9 +364,7 @@ tags: [CCPG1005, unidad3, poo, pilares]
 > |**Clases Abstractas**|Herencia con métodos parcialmente implementados|Medio|
 > |**Interfaces**|Contratos puros - solo definiciones|Alto|
 
-> [!note] 🖼️ Concepto
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_04.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_04.svg]]
 
 ### 🛠️ Clases Abstractas
 
@@ -536,9 +527,7 @@ tags: [CCPG1005, unidad3, poo, pilares]
 
 ## 🔗 Relación entre los Pilares
 
-> [!note] 🖼️ Relación entre los Pilares
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_05.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_05.svg]]
 
 > [!example] 🚗 Ejemplo Integrador
 > 
@@ -596,9 +585,7 @@ tags: [CCPG1005, unidad3, poo, pilares]
 
 ## 📊 Resumen Visual
 
-> [!note] 🖼️ Resumen Visual
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_06.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_06.svg]]
 
 > [!success] ✅ Checklist de Aplicación
 > 

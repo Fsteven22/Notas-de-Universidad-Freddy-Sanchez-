@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1005, unidad5, poo, excepciones]
 ---
 
 # 🎯 Manejo de Excepciones y Personalizadas
@@ -882,9 +881,7 @@ tags: [CCPG1005, unidad5, poo, excepciones]
 
 ## 📊 Resumen Visual
 
-> [!note] 🖼️ Resumen Visual
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_05.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_05.svg]]
 
 ---
 

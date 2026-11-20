@@ -235,7 +235,7 @@ tags: [MATG1051, unidad3, conteo, multiplicacion, suma]
 > [!quote] 🔗 Conexiones
 > 
 > - Previo: [[03 - Criterios de Divisibilidad y Sistemas de Numeración]]
-> - Siguiente: [[05 - El Factorial y Sus Propiedades]] — el factorial como herramienta básica de conteo
+> - Siguiente: [[05 - Permutaciones y Combinaciones]] — conteo avanzado
 > - Relacionado: [[04 - Cardinalidad y Leyes de Cardinalidad]] — inclusión-exclusión
 
 **Tags:** #matematicas-discretas #conteo #combinatoria #principio-multiplicacion #principio-suma #MATG1051

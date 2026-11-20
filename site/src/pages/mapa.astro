@@ -253,9 +253,9 @@ const secuencia = datos.semestres.map((s) => s.titulo).join(" · ");
             acento: acento,
             // El mismo mapeo estado → token que la portada.
             estados: {
-              "En curso": tono("--nx-coral", 0xff8a6b),
-              "Completado": tono("--nx-done", 0x6fd6a8),
-              "Reconstrucción": tono("--nx-warn", 0xd6b46b),
+              "En curso": tono("--nx-coral-esfera", 0x2fa9c8),
+              "Completado": tono("--nx-muted", 0x9fb2bd),
+              "Reconstrucción": tono("--nx-muted", 0x9fb2bd),
             },
             // Un semestre sin estado conocido se pinta con el acento.
             porDefecto: { hub: acento, nodo: mezclar(acento, fondo, 0.3) },
@@ -463,7 +463,7 @@ const secuencia = datos.semestres.map((s) => s.titulo).join(" · ");
           var distH = anchoTotal() / 2 / Math.tan(fovH / 2);
           // Un margen pequeño: si se aleja más, las esferas quedan
           // irreconocibles y las etiquetas no caben.
-          return Math.max(distV, distH) * 1.02;
+          return Math.max(distV, distH) * 1.14;
         }
 
         function redimensionar() {
@@ -564,11 +564,12 @@ const secuencia = datos.semestres.map((s) => s.titulo).join(" · ");
            semestres (que son los que ordenan el mapa) y después las
            materias, de la más cercana a la cámara a la más lejana. */
         function solapan(a, b) {
+          var M = 10; // margen mínimo entre etiquetas: que no se pisen ni se roce
           return !(
-            a.derecha <= b.izquierda ||
-            a.izquierda >= b.derecha ||
-            a.abajo <= b.arriba ||
-            a.arriba >= b.abajo
+            a.derecha + M <= b.izquierda ||
+            a.izquierda - M >= b.derecha ||
+            a.abajo + M <= b.arriba ||
+            a.arriba - M >= b.abajo
           );
         }
 

@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad3, introduccion-sistemas-numeracion]
 ---
 # 🔢 Sistemas de Numeración — Introducción
 
@@ -11,8 +10,6 @@ tags: [CCPG1004, cysoc, unidad3, introduccion-sistemas-numeracion]
 > Un **sistema de numeración** define un conjunto de **signos** (símbolos) y **reglas** para expresar números. No es la única forma posible de representar cantidades — a lo largo de la historia han existido sistemas muy distintos entre sí, cada uno con sus propios símbolos y convenciones de combinación.
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Sistemas_de_Numeracion_-_Introduccion_01.svg]]
->
-> **Se lee así:** el diagrama define el concepto en una línea: un sistema de numeración es un **conjunto de signos** (0-9, I V X, A-F…) más unas **reglas de combinación**; el ejemplo dominante es la **notación posicional**, donde el valor de un signo depende de su posición.
 
 ---
 
@@ -26,15 +23,9 @@ tags: [CCPG1004, cysoc, unidad3, introduccion-sistemas-numeracion]
 > |**Arábigo tradicional**|٠ ١ ٢ ٣ ٤ ٥ ٦ ٧ ٨ ٩|Sistema posicional con símbolos propios (sifr, waahid, eeth-nayn...)|
 > |**Decimal moderno (arábigo adoptado)**|0,1,2,3,4,5,6,7,8,9|El que usamos cotidianamente; heredado y adaptado del sistema árabe|
 >
-> 📌 Curiosamente, el sistema que llamamos "arábigo" en Occidente (0-9) ya tiene una grafía distinta a los símbolos del sistema arábigo tradicional — ambos comparten el mismo principio posicional en base 10, pero no los mismos símbolos.
+> > 📌 Curiosamente, el sistema que llamamos "arábigo" en Occidente (0-9) ya tiene una grafía distinta a los símbolos del sistema arábigo tradicional — ambos comparten el mismo principio posicional en base 10, pero no los mismos símbolos.
 
-> [!info] 🎞️ Del deck — Numerales romanos, arábigos y cuneiformes
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-02-intro-sistemas-numeracion-01.png]]
->
-> **Se lee así:** la diapositiva compara dos familias históricas: los **numerales romanos** (I V X L C D M, se combinan letras, sin cero) con los **arábigos** (0-9, base 10 posicional con cero) y los **cuneiformes** sumerios (base 60 aditiva, sin cero — de ahí los 60 minutos y 360 grados).
->
-> **Por qué importa:** evidencia que la notación posicional con cero —la que heredó la computación— no fue un invento aislado sino la cima de una evolución larga.
+![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-02-intro-sistemas-numeracion-01.png]]
 
 ---
 
@@ -45,8 +36,6 @@ tags: [CCPG1004, cysoc, unidad3, introduccion-sistemas-numeracion]
 > En el mundo de la computación, prácticamente todo el trabajo de representación numérica gira en torno a **cuatro sistemas**:
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Sistemas_de_Numeracion_-_Introduccion_02.svg]]
->
-> **Se lee así:** el esquema lista los cuatro sistemas que realmente importan en computación: **binario** (base 2), **octal** (base 8), **decimal** (base 10) y **hexadecimal** (base 16) — todo el resto de la unidad cuelga de esta cuarteta.
 >
 > |Sistema|Base|Dígitos disponibles|
 > |---|---|---|
@@ -92,13 +81,7 @@ tags: [CCPG1004, cysoc, unidad3, introduccion-sistemas-numeracion]
 
 ## 📊 Resumen Visual
 
-> [!info] 📊 Resumen visual — Sistemas de numeración
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Sistemas_de_Numeracion_-_Introduccion_03.svg]]
->
-> **Se lee así:** el mapa organiza la unidad completa: definición (signos + reglas), ejemplos históricos (romano, arábigo tradicional, decimal moderno), la **relación clave** (2, 8 y 16 son potencias de 2 → conversión directa por agrupación de bits) y los roles (binario = hardware, octal/hex = legibilidad humana, decimal = uso cotidiano).
->
-> **Por qué importa:** explica por qué los humanos pensamos en decimal y las máquinas hablan binario: el hex y el octal son el puente de legibilidad.
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Sistemas_de_Numeracion_-_Introduccion_03.svg]]
 
 ---
 

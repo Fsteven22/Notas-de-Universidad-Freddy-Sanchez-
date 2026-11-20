@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad3, analogico-digital]
 ---
 # 📡 Análogo vs Digital — La Información como Señal
 
@@ -11,8 +10,6 @@ tags: [CCPG1004, cysoc, unidad3, analogico-digital]
 > Antes de hablar de sistemas numéricos hay que resolver una pregunta previa: las computadoras manejan texto, números, imágenes, audio y video, pero **¿cómo representan físicamente** toda esa información? La respuesta es que **toda información viaja como una señal eléctrica**, y existen dos formas fundamentalmente distintas de codificar esa señal: **analógica** y **digital**.
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Análogo_vs_Digital_01.svg]]
->
-> **Se lee así:** el diagrama abre el camino completo: toda **información** se convierte en una **señal eléctrica** y ahí se bifurca en dos naturalezas —**analógica** (continua; el voltaje fluctúa suavemente) y **digital** (discreta; solo dos estados HIGH/LOW).
 >
 > |Tipo de señal|Naturaleza|Ejemplo físico|
 > |---|---|---|
@@ -29,7 +26,7 @@ tags: [CCPG1004, cysoc, unidad3, analogico-digital]
 >
 > No existen "saltos" — en cualquier instante de tiempo la señal puede tomar **cualquier valor** dentro de un rango continuo, lo que la hace capaz de representar matices muy finos (como el volumen exacto de un sonido), pero también la hace **frágil**.
 >
-> 📌 Toda señal eléctrica se degrada al recorrer un medio de transmisión (cable, aire, etc.). En el caso analógico, esa degradación es **irrecuperable**: una vez que el ruido se mezcla con la señal continua, no hay forma de distinguir cuál era la información original y cuál es el ruido.
+> > 📌 Toda señal eléctrica se degrada al recorrer un medio de transmisión (cable, aire, etc.). En el caso analógico, esa degradación es **irrecuperable**: una vez que el ruido se mezcla con la señal continua, no hay forma de distinguir cuál era la información original y cuál es el ruido.
 
 ---
 
@@ -41,7 +38,7 @@ tags: [CCPG1004, cysoc, unidad3, analogico-digital]
 >
 > Estos dos estados se representan con los **dígitos binarios**: `1` (estado alto) y `0` (estado bajo).
 >
-> 💡 **Ventaja clave:** si la señal digital se degrada un poco en el camino, el receptor solo necesita decidir "¿esto está más cerca de alto o de bajo?" — una decisión binaria mucho más robusta al ruido que intentar reconstruir una curva continua exacta.
+> > 💡 **Ventaja clave:** si la señal digital se degrada un poco en el camino, el receptor solo necesita decidir "¿esto está más cerca de alto o de bajo?" — una decisión binaria mucho más robusta al ruido que intentar reconstruir una curva continua exacta.
 >
 
 > [!tip] ⚙️ Por qué la electrónica prefiere lo digital
@@ -54,13 +51,7 @@ tags: [CCPG1004, cysoc, unidad3, analogico-digital]
 > | **Ruido** | Se mezcla con la señal útil | Tolerable hasta cierto umbral |
 > | **Procesamiento** | Requiere circuitos lineales complejos | Compatible con lógica binaria simple |
 
-> [!info] 🎞️ Del deck — Análogo vs Digital
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-01-analogia-digital-01.png]]
->
-> **Se lee así:** la diapositiva enfrenta las dos señales en sendos osciloscopios: la **analógica** (onda continua, variación suave, infinitos niveles posibles) frente a la **digital** (pulsos de 0 y 1, niveles discretos con información codificada).
->
-> **Por qué importa:** es la imagen icónica de la lección: la digitalización convierte información continua en solo 2 estados que un circuito distingue sin ambigüedad.
+![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-01-analogia-digital-01.png]]
 
 ---
 
@@ -72,15 +63,13 @@ tags: [CCPG1004, cysoc, unidad3, analogico-digital]
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Análogo_vs_Digital_02.svg]]
 >
-> **Se lee así:** el eje en voltios traduce un bit a física real: por encima de +2 V el estado es **HIGH (1)**, por debajo de +0.8 V es **LOW (0)**, y entre ambas zonas hay una **zona indefinida** (+0.8 a +2 V) que no garantiza ningún estado — es el margen que la lógica necesita para tolerar el ruido.
->
 > |Rango de voltaje|Estado lógico|Bit|
 > |---|---|---|
 > |$+2\text{ V}$ a $+5\text{ V}$|Logic **HIGH**|Binary **1**|
 > |$+0.8\text{ V}$ a $+2\text{ V}$|**Undefined**|—|
 > |$0\text{ V}$ a $+0.8\text{ V}$|Logic **LOW**|Binary **0**|
 >
-> 📌 La "zona indefinida" entre 0.8V y 2V existe porque el sistema no puede garantizar una lectura confiable de 0 o 1 en ese rango — los circuitos digitales están diseñados para operar firmemente fuera de esa franja, evitando ambigüedad en la lectura.
+> > 📌 La "zona indefinida" entre 0.8V y 2V existe porque el sistema no puede garantizar una lectura confiable de 0 o 1 en ese rango — los circuitos digitales están diseñados para operar firmemente fuera de esa franja, evitando ambigüedad en la lectura.
 >
 
 > [!example] ✏️ Leyendo una secuencia de pulsos
@@ -112,13 +101,7 @@ tags: [CCPG1004, cysoc, unidad3, analogico-digital]
 
 ## 📊 Resumen Visual
 
-> [!info] 📊 Resumen visual — Análogo vs Digital
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Análogo_vs_Digital_03.svg]]
->
-> **Se lee así:** el mapa contrasta las dos señales: la **analógica** (continua, irrecuperable al degradarse, medida por amplitud y frecuencia) y la **digital** (discreta, dos estados HIGH/LOW, **PCM**, más fácil de mantener), con los voltajes de referencia (HIGH = 2-5 V → 1; LOW = 0-0.8 V → 0; indefinida = 0.8-2 V).
->
-> **Por qué importa:** cierra el tema con la conclusión de toda la unidad: las computadoras usan sistemas de numeración para representar **toda** la información.
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Análogo_vs_Digital_03.svg]]
 
 ---
 
