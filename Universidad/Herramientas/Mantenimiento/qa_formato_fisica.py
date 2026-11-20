@@ -88,7 +88,7 @@ def raiz_por_defecto():
 
 
 def perfil_nota(nota_path, rel):
-    """Perfil de la nota de POO: 'clase' o 'indice'.
+    """Perfil de la nota de Fisica Mecanica: 'clase', 'practica' o 'indice'.
 
     · clase  — teoria: 01 - Cinematica/, 02 - Dinamica/, 03 - Trabajo y Energia/,
                04 - Impulso y Colisiones (Lineal)/, 05 - Equilibrio y Elasticidad/,
@@ -305,7 +305,7 @@ def auditar(nota_path, raiz, hallazgos, es_referencia=False):
 
     # ---------- R10/R11 metas y flashcards
     # R10 solo aplica dentro de la seccion 'Metas de Aprendizaje' cuando
-    # la nota la trae; POO no la exige, pero si existe se audita.
+    # la nota la trae; Fisica no la exige, pero si existe se audita.
     # las metas son una seccion H2 con sus callouts, y los callouts de
     # 'Nivel' que aparecen en otras secciones son agrupacion de ejemplos.
     rango_metas = None
@@ -383,7 +383,7 @@ def auditar(nota_path, raiz, hallazgos, es_referencia=False):
         hallazgos.append((rel, len(lineas), "R13-tags-final", "falta '**Tags:** ...'"))
 
     # ---------- R15 el enlace a material de clase lleva alias legible
-    # En POO el material de clase (syllabus, guias)
+    # En Fisica el material de clase (syllabus, guias)
     # se ENLAZA, no se embebe: '[[ruta.pdf|alias.pdf]]'. El alias es lo que
     # se ve en el sitio, asi que tiene que decir que es el archivo.
     for i, ln in enumerate(lineas):
