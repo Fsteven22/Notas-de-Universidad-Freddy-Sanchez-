@@ -942,7 +942,7 @@ tags: [teorema, fundamental, integrales]
 
 ---
 
-## 📚 Ejercicios Propuestos
+## 💪 Problemas para Practicar
 
 > [!note] 💪 Problemas para Practicar
 >

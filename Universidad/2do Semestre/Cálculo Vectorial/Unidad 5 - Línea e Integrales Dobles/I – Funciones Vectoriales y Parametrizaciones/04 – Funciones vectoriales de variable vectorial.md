@@ -1060,7 +1060,7 @@ tags: [funciones, vectoriales, variable]
 
 ---
 
-## 🎓 Ejercicios Propuestos
+## 💪 Problemas para Practicar
 
 > [!note] 💪 Problemas para Practicar
 >

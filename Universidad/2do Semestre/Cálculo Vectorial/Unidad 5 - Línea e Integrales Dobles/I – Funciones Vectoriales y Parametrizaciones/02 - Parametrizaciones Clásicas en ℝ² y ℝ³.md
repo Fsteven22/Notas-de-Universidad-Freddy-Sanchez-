@@ -1211,7 +1211,7 @@ tags: [parametrizaciones, clasicas, parametrizaciones-clasicas]
 
 ---
 
-## 📚 Ejercicios Propuestos
+## 💪 Problemas para Practicar
 
 > [!note] 💪 Problemas para Practicar
 >

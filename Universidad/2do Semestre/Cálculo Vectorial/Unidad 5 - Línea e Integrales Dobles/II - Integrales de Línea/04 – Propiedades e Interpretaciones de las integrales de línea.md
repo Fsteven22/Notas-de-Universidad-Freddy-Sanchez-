@@ -639,7 +639,7 @@ tags: [propiedades, integrales, linea]
 
 ---
 
-## 🎯 Introducción
+## 🌐 Conectando Matemáticas con la Realidad
 
 > [!info] 💡 Conectando Matemáticas con la Realidad Las integrales de línea no son solo objetos matemáticos abstractos: tienen **significados geométricos y físicos profundos** que nos ayudan a entender fenómenos del mundo real.
 >

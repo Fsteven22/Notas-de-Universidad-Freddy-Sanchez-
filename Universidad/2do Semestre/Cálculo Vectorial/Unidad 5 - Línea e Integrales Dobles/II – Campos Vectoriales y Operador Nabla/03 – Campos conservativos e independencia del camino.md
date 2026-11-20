@@ -1053,7 +1053,7 @@ tags: [campos, conservativos, campos-conservativos]
 
 ---
 
-## 🎯 Introducción
+## 🛣️ La Independencia del Camino
 
 > [!info] 💡 ¿Qué es la Independencia del Camino? La **independencia del camino** es una propiedad fundamental de ciertas integrales de línea donde el valor de la integral depende únicamente de los puntos inicial y final, no de la trayectoria específica seguida entre ellos.
 >
@@ -1931,7 +1931,7 @@ tags: [campos, conservativos, campos-conservativos]
 
 ---
 
-## 🎯 Introducción
+## 🎁 Campos Potenciales
 
 > [!info] 💡 ¿Qué es un Campo Potencial? En **Cálculo Vectorial**, un **campo potencial** (o función potencial) es una función escalar φ cuyo gradiente genera un campo vectorial **F**. Esta relación establece una conexión fundamental entre campos escalares y vectoriales.
 >
@@ -2757,7 +2757,7 @@ tags: [campos, conservativos, campos-conservativos]
 
 ---
 
-## 🎯 Ejercicios Propuestos
+## 💪 Práctica Guiada
 
 > [!question] 💪 Práctica Guiada
 >
@@ -2787,7 +2787,7 @@ tags: [campos, conservativos, campos-conservativos]
 
 ---
 
-## 🔗 Conexiones y Extensiones
+## 🔗 Relación con Otros Temas
 
 > [!quote] 🌟 Relación con Otros Temas
 >

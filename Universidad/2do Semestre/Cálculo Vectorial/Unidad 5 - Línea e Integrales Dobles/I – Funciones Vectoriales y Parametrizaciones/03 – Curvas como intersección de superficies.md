@@ -643,7 +643,7 @@ tags: [curvas, interseccion, superficies]
 
 ---
 
-## 🎓 Ejercicios Propuestos
+## 💪 Problemas para Practicar
 
 > [!note] 💪 Problemas para Practicar
 >
