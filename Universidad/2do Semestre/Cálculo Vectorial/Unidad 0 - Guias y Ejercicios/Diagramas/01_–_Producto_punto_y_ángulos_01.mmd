@@ -1,0 +1,40 @@
+---
+title: "Producto punto y ángulos"
+---
+flowchart LR
+    A["Producto punto: A · B = |A||B|cos θ"]
+    B["Ángulo"]
+    C["Propiedades"]
+    D["Descomposición"]
+    B1["θ entre los vectores: 0 ≤ θ ≤ π"]
+    B2["cos θ = (A·B)/(|A||B|)"]
+    C1["A·B = 0 ⟺ A y B son ortogonales"]
+    C2["Conmutativo: A·B = B·A"]
+    C3["Distributivo respecto a la suma"]
+    D1["Paralelo: A‖ = comp_B A = (A·B)/|B|"]
+    D2["Perpendicular: A⊥ = A − A‖"]
+    D3["|A|² = |A‖|² + |A⊥|²"]
+    A --> B
+    A --> C
+    A --> D
+    B --> B1
+    B --> B2
+    C --> C1
+    C --> C2
+    C --> C3
+    D --> D1
+    D --> D2
+    D --> D3
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style D fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B2 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C1 fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style C2 fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style C3 fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style D1 fill:#ffebee,stroke:#e53935,color:#4a1010
+    style D2 fill:#ffebee,stroke:#e53935,color:#4a1010
+    style D3 fill:#ffebee,stroke:#e53935,color:#4a1010

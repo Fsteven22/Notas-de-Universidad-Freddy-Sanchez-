@@ -1,0 +1,20 @@
+flowchart TD
+    A["¿Qué sistema usar?"]
+    B{"¿Ecuación tiene<br/>x² + y² + z²?"}
+    C["Esféricas"]
+    D{"¿Ecuación tiene<br/>x² + y²?"}
+    E["Cilíndricas"]
+    F{"¿Simetría<br/>especial?"}
+    G["Cartesianas"]
+    A --> B
+    B -->|"Sí"| C
+    B -->|"No"| D
+    D -->|"Sí"| E
+    D -->|"No"| F
+    F -->|"Eje z"| E
+    F -->|"Radial"| C
+    F -->|"No"| G
+
+    style C fill:#f5e1ff
+    style E fill:#fff4e1
+    style G fill:#e1f5ff

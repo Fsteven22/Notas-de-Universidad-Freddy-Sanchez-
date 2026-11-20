@@ -1,0 +1,21 @@
+flowchart TD
+    A["Ecuación Implícita<br/>F x,y = 0 o F x,y,z = 0"]
+    B{"Tipo de curva"}
+    C["Despejar y = f x<br/>Usar x = t"]
+    D["Usar coordenadas<br/>apropiadas"]
+    E["Buscar simetría<br/>o patrón"]
+    F["r t = t, f t"]
+    G["Círculo: x=R cos t<br/>Elipse: x=a cos t"]
+    H["Parametrización<br/>específica"]
+    A --> B
+    B -->|"Función"| C
+    B -->|"Cónica"| D
+    B -->|"Otro"| E
+    C --> F
+    D --> G
+    E --> H
+
+    style A fill:#e1f5ff
+    style F fill:#e1ffe1
+    style G fill:#e1ffe1
+    style H fill:#e1ffe1

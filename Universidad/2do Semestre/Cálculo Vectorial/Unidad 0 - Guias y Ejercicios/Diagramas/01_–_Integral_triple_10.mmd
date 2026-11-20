@@ -1,0 +1,23 @@
+flowchart LR
+    A["Problema"]
+    B["Examinar región V"]
+    C["Examinar función f"]
+    D{"¿Qué simplifica más?"}
+    E["Región"]
+    F["Función"]
+    G["Ambos"]
+    H["Elegir coordenadas<br/>según región"]
+    I["Elegir coordenadas<br/>según función"]
+    J["Mejor sistema:<br/>simplifica ambos"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    D --> F
+    D --> G
+    E --> H
+    F --> I
+    G --> J
+
+    style A fill:#e1f5ff
+    style J fill:#e1ffe1

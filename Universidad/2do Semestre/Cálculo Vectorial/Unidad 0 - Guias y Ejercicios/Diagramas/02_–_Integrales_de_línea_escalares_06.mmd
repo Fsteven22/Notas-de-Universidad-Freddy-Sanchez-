@@ -1,0 +1,34 @@
+flowchart TD
+    A["Integral de Línea ∫_C f ds"]
+    B{"Tipo de curva"}
+    C["Usar parametrización dada"]
+    D["Parametrizar: r x = ⟨x,g x ⟩"]
+    E["Convertir a paramétrica"]
+    F["Encontrar parametrización"]
+    G["Dividir en segmentos"]
+    H["Calcular r' t"]
+    I["Calcular ||r' t ||"]
+    J["Expresar f en términos de t"]
+    K["Integral: ∫ₐᵇ f r t ||r' t || dt"]
+    L["Suma de integrales"]
+    M["Evaluar"]
+    A --> B
+    B -->|"Parametrizada r t"| C
+    B -->|"y = g x"| D
+    B -->|"Polar r = r θ"| E
+    B -->|"Implícita F x,y = 0"| F
+    B -->|"Por tramos"| G
+    C --> H
+    D --> H
+    E --> H
+    F --> H
+    H --> I
+    I --> J
+    J --> K
+    G --> L
+    L --> K
+    K --> M
+
+    style A fill:#e1f5ff
+    style K fill:#e1ffe1
+    style M fill:#fff4e1

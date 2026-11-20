@@ -1,0 +1,21 @@
+flowchart TD
+    A["Coordenadas<br/>Cilíndricas"]
+    B["r: distancia al eje z"]
+    C["θ: ángulo en plano xy"]
+    D["z: altura"]
+    E["0 ≤ r ≤ R"]
+    F["0 ≤ θ ≤ 2π"]
+    G["z₁ ≤ z ≤ z₂"]
+    H["dV = r dr dθ dz"]
+    A --> B
+    A --> C
+    A --> D
+    B --> E
+    C --> F
+    D --> G
+    E --> H
+    F --> H
+    G --> H
+
+    style A fill:#e1f5ff
+    style H fill:#e1ffe1

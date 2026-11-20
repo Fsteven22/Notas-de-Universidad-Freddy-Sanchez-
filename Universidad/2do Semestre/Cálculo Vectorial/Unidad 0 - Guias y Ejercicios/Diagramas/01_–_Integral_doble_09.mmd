@@ -1,0 +1,31 @@
+flowchart TB
+    R["Integrales Dobles"]
+    subgraph Conceptos["Conceptos"]
+        direction TB
+        C1["Definición"]
+        C2["Teorema de Fubini"]
+        C3["Elemento de área"]
+    end
+    subgraph Regiones["Regiones"]
+        direction TB
+        RG1["Tipo I"]
+        RG2["Tipo II"]
+        RG3["Cambio de orden"]
+    end
+    subgraph Coordenadas["Coordenadas"]
+        direction TB
+        CO1["Rectangulares"]
+        CO2["Polares"]
+        CO3["Factor r"]
+    end
+    subgraph Aplicaciones["Aplicaciones"]
+        direction TB
+        A1["Volúmenes"]
+        A2["Masa"]
+        A3["Centro de masa"]
+        A4["Área"]
+    end
+    R --> Conceptos
+    R --> Regiones
+    R --> Coordenadas
+    R --> Aplicaciones

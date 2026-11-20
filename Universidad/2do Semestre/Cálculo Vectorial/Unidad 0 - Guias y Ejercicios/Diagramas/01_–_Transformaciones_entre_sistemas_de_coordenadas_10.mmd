@@ -1,0 +1,26 @@
+flowchart TD
+    A["¿Qué geometría tiene el problema?"]
+    B{"Tipo"}
+    C["Cartesianas"]
+    D["Polares"]
+    E["Cilíndricas"]
+    F["Esféricas"]
+    G["Cajas, grillas"]
+    H["Discos, espirales"]
+    I["Tubos, rotación"]
+    J["Esferas, campos centrales"]
+    A --> B
+    B -->|"Rectangular"| C
+    B -->|"Circular 2D"| D
+    B -->|"Cilíndrica"| E
+    B -->|"Esférica"| F
+    C --> G
+    D --> H
+    E --> I
+    F --> J
+
+    style A fill:#e1f5ff
+    style C fill:#e1ffe1
+    style D fill:#fff4e1
+    style E fill:#ffe1e1
+    style F fill:#f0e1ff

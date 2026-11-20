@@ -1,0 +1,30 @@
+flowchart TD
+    A["Dos Rectas en ℝ³"]
+    B{"¿Vectores<br/>directores<br/>paralelos?"}
+    C{"¿Comparten<br/>algún punto?"}
+    D{"¿Se<br/>intersectan?"}
+    E["COINCIDENTES<br/>Misma recta"]
+    F["PARALELAS<br/>Distintas"]
+    G["SECANTES<br/>Se cruzan en<br/>un punto"]
+    H["ALABEADAS<br/>No se cruzan<br/>ni son paralelas"]
+    I{"¿Ángulo = 90°?"}
+    J["Secantes<br/>PERPENDICULARES"]
+    K["Secantes<br/>OBLICUAS"]
+    A --> B
+    B -->|"SÍ"| C
+    B -->|"NO"| D
+    C -->|"SÍ"| E
+    C -->|"NO"| F
+    D -->|"SÍ"| G
+    D -->|"NO"| H
+    G --> I
+    I -->|"SÍ"| J
+    I -->|"NO"| K
+
+    style A fill:#e3f2fd
+    style E fill:#c8e6c9
+    style F fill:#fff9c4
+    style G fill:#bbdefb
+    style H fill:#ffccbc
+    style J fill:#ce93d8
+    style K fill:#b2dfdb

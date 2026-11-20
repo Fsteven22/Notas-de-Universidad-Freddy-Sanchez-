@@ -1,0 +1,30 @@
+flowchart TB
+    R["Integrales Múltiples"]
+    subgraph Dobles["Dobles"]
+        direction TB
+        D1["Regiones Tipo I/II"]
+        D2["Órdenes"]
+        D3["Aplicaciones"]
+    end
+    subgraph Triples["Triples"]
+        direction TB
+        T1["Sólidos 3D"]
+        T2["Cambio de orden"]
+        T3["Volúmenes"]
+    end
+    subgraph Aplicaciones["Aplicaciones"]
+        direction TB
+        A1["Masa"]
+        A2["Centro de masa"]
+        A3["Momentos"]
+    end
+    subgraph Tecnicas["Técnicas"]
+        direction TB
+        TE1["Límites"]
+        TE2["Cambio de variables"]
+        TE3["Coordenadas"]
+    end
+    R --> Dobles
+    R --> Triples
+    R --> Aplicaciones
+    R --> Tecnicas

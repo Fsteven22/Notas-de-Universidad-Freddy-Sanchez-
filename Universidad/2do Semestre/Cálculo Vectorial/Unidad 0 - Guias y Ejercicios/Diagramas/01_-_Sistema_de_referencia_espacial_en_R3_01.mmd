@@ -1,0 +1,31 @@
+flowchart TD
+    A["Sistema de Referencia ℝ³"]
+    B["Elementos Básicos"]
+    C["Octantes"]
+    B1["Origen O=0,0,0<br/>Punto de referencia"]
+    B2["Ejes Coordenados<br/>X, Y, Z"]
+    B3["Planos Coordenados<br/>XY, XZ, YZ"]
+    B2a["Eje X: Horizontal"]
+    B2b["Eje Y: Profundidad"]
+    B2c["Eje Z: Vertical"]
+    C1["Octante I<br/>+++<br/>Más usado"]
+    C2["Octantes II-IV<br/>Hemisferio superior<br/>z > 0"]
+    C3["Octantes V-VIII<br/>Hemisferio inferior<br/>z < 0"]
+    A --> B
+    A --> C
+    B --> B1
+    B --> B2
+    B --> B3
+    B2 --> B2a
+    B2 --> B2b
+    B2 --> B2c
+    C --> C1
+    C --> C2
+    C --> C3
+
+    style A fill:#e3f2fd
+    style B fill:#e8f5e9
+    style C fill:#fff3e0
+    style B1 fill:#c8e6c9
+    style B2 fill:#b2dfdb
+    style C1 fill:#ffccbc

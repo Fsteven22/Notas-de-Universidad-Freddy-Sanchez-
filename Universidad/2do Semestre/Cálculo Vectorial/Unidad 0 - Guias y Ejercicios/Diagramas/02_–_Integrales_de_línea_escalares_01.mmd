@@ -1,0 +1,20 @@
+flowchart TD
+    A["Integral Simple ∫"]
+    B["Integral de Línea ∫_C"]
+    C["Integral de Superficie ∬_S"]
+    D["Sobre intervalo<br/>1 variable"]
+    E["Sobre curva<br/>2 o 3 variables"]
+    F["Sobre superficie<br/>3 variables"]
+    G["Campo Escalar<br/>∫_C f ds"]
+    H["Campo Vectorial<br/>∫_C F·dr"]
+    A --> B
+    B --> C
+    A --> D
+    B --> E
+    C --> F
+    B --> G
+    B --> H
+
+    style A fill:#e1f5ff
+    style B fill:#e1ffe1
+    style C fill:#fff4e1

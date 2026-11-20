@@ -1,0 +1,42 @@
+flowchart TD
+    A["Problema: Calcular área de superficie"]
+    B{"¿Cómo está dada?"}
+    C["Usar fórmula con derivadas parciales"]
+    D["Usar parametrización"]
+    E["Usar gradiente"]
+    F["Calcular ∂f/∂x y ∂f/∂y"]
+    G["Calcular ∂r/∂u y ∂r/∂v"]
+    H["Calcular ∇F"]
+    I["Identificar región D"]
+    J["Determinar dominio"]
+    K["Proyectar sobre plano"]
+    L{"¿Coordenadas?"}
+    M["Transformar a r, θ"]
+    N["Mantener x, y"]
+    O["Plantear integral doble"]
+    P["Integrar"]
+    Q["Evaluar límites"]
+    R["✅ Resultado"]
+    A --> B
+    B -->|"z = f(x,y)"| C
+    B -->|"r(u,v)"| D
+    B -->|"F(x,y,z) = 0"| E
+    C --> F
+    D --> G
+    E --> H
+    F --> I
+    G --> J
+    H --> K
+    I --> L
+    J --> L
+    K --> L
+    L -->|"Polares"| M
+    L -->|"Cartesianas"| N
+    M --> O
+    N --> O
+    O --> P
+    P --> Q
+    Q --> R
+
+    style A fill:#e1f5ff
+    style R fill:#e1ffe1

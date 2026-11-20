@@ -1,0 +1,15 @@
+flowchart TD
+    A["¿Qué sistema usar?"]
+    B{"¿Región circular<br/>o función con x²+y²?"}
+    C["Coordenadas Polares"]
+    D["Coordenadas Rectangulares"]
+    E["dA = r dr dθ"]
+    F["dA = dx dy"]
+    A --> B
+    B -->|"Sí"| C
+    B -->|"No"| D
+    C --> E
+    D --> F
+
+    style C fill:#e1ffe1
+    style D fill:#fff4e1

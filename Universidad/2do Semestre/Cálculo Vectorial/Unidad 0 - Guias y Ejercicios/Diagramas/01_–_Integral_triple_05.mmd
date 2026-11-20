@@ -1,0 +1,26 @@
+flowchart TD
+    A["∭ f dV"]
+    B["6 órdenes de integración"]
+    C1["dz dy dx"]
+    C2["dz dx dy"]
+    C3["dy dz dx"]
+    C4["dy dx dz"]
+    C5["dx dy dz"]
+    C6["dx dz dy"]
+    D["Todos equivalentes<br/>por Fubini"]
+    A --> B
+    B --> C1
+    B --> C2
+    B --> C3
+    B --> C4
+    B --> C5
+    B --> C6
+    C1 --> D
+    C2 --> D
+    C3 --> D
+    C4 --> D
+    C5 --> D
+    C6 --> D
+
+    style A fill:#e1f5ff
+    style D fill:#e1ffe1

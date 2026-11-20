@@ -1,0 +1,13 @@
+flowchart TD
+    A["Curva C por tramos"]
+    B["Identificar segmentos<br/>C₁, C₂, ..., Cₙ"]
+    C["Parametrizar cada<br/>segmento"]
+    D["Calcular ∫_Cᵢ f ds<br/>para cada i"]
+    E["Sumar todos<br/>los resultados"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+
+    style A fill:#e1f5ff
+    style E fill:#e1ffe1

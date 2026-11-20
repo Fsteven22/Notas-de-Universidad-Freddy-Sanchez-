@@ -1,0 +1,26 @@
+flowchart TD
+    A["Coordenadas Esféricas"]
+    B["Tres componentes"]
+    C["ρ: distancia al origen"]
+    D["φ: ángulo polar"]
+    E["θ: ángulo azimutal"]
+    F["0 ≤ ρ < ∞"]
+    G["0 ≤ φ ≤ π"]
+    H["0 ≤ θ < 2π"]
+    I["dV = ρ²sinφ dρ dφ dθ"]
+    J["⚠️ NO olvidar ρ²sinφ"]
+    A --> B
+    B --> C
+    B --> D
+    B --> E
+    C --> F
+    D --> G
+    E --> H
+    F --> I
+    G --> I
+    H --> I
+    I --> J
+
+    style A fill:#e1f5ff
+    style I fill:#fff4e1
+    style J fill:#ffe1e1

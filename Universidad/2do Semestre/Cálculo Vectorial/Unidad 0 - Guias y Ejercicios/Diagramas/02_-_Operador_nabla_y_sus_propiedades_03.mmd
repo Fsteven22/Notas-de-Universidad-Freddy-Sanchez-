@@ -1,0 +1,22 @@
+---
+title: "02 - Operador nabla y sus propiedades 03"
+---
+flowchart TD
+    A["Divergencia ∇·F"]
+    B["Fluxo neto salida por unidad de volumen"]
+    B1["Positivo: fuente"]
+    B2["Negativo: sumidero"]
+    B3["Cero: campo solenoidal"]
+    C["∇·F = ∂F₁/∂x + ∂F₂/∂y + ∂F₃/∂z"]
+    A --> B
+    B --> B1
+    B --> B2
+    B --> B3
+    A --> C
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B2 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B3 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#fff3e0,stroke:#ff9800,color:#4a2c00

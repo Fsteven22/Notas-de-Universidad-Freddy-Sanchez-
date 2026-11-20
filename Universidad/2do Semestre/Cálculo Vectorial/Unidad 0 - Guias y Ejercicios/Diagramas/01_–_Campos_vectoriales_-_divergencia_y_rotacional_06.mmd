@@ -1,0 +1,24 @@
+flowchart LR
+    A["Campo F = M,N,P"]
+    B["Derivar M<br/>respecto a x"]
+    C["Derivar N<br/>respecto a y"]
+    D["Derivar P<br/>respecto a z"]
+    E["∂M/∂x"]
+    F["∂N/∂y"]
+    G["∂P/∂z"]
+    H["Sumar todo"]
+    I["div F"]
+    A --> B
+    A --> C
+    A --> D
+    B --> E
+    C --> F
+    D --> G
+    E --> H
+    F --> H
+    G --> H
+    H --> I
+
+    style A fill:#e1f5ff
+    style H fill:#fff4e1
+    style I fill:#e1ffe1

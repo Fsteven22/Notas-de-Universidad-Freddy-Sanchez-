@@ -1,0 +1,19 @@
+---
+title: "02 - Jacobiano de la transformación 01"
+---
+flowchart TD
+    A["Jacobiano de la transformación"]
+    B["x = x(u,v), y = y(u,v)"]
+    C["J = ∂(x,y)/∂(u,v)"]
+    D["|J| = factor de escala del área"]
+    E["∬_R f dA = ∬_S f |J| du dv"]
+    A --> B
+    B --> C
+    C --> D
+    A --> E
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style E fill:#fff3e0,stroke:#ff9800,color:#4a2c00

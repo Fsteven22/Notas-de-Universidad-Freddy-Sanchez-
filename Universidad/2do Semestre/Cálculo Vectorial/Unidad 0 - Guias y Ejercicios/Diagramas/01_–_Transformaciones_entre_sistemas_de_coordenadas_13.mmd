@@ -1,0 +1,27 @@
+flowchart TD
+    A["Problema"]
+    B{"¿Dimensión?"}
+    C{"¿Geometría?"}
+    D{"¿Geometría?"}
+    E["Cartesianas x,y"]
+    F["Polares r,θ"]
+    G["Cartesianas x,y,z"]
+    H["Cilíndricas r,θ,z"]
+    I["Esféricas ρ,θ,φ"]
+    J["Resolver"]
+    A --> B
+    B -->|"2D"| C
+    B -->|"3D"| D
+    C -->|"Rectangular"| E
+    C -->|"Circular"| F
+    D -->|"Caja"| G
+    D -->|"Cilindro"| H
+    D -->|"Esfera"| I
+    E --> J
+    F --> J
+    G --> J
+    H --> J
+    I --> J
+
+    style A fill:#e1f5ff
+    style J fill:#e1ffe1

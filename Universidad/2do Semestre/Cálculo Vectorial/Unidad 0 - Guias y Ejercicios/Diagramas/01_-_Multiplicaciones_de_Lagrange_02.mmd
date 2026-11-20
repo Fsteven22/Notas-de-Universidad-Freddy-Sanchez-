@@ -1,0 +1,38 @@
+flowchart TB
+    R["Multiplicadores de Lagrange"]
+    subgraph Concepto["Concepto"]
+        direction TB
+        C1["Optimización con restricciones"]
+        C2["Gradientes paralelos"]
+        C3["∇f = λ∇g"]
+    end
+    subgraph Metodo["Método"]
+        direction TB
+        M1["Sistema de ecuaciones"]
+        M2["2D"]
+        M3["Resolver y evaluar"]
+    end
+    subgraph Lambda["Lambda λ"]
+        direction TB
+        L1["Multiplicador"]
+        L2["Sensibilidad"]
+        L3["df/dc aproximado"]
+    end
+    subgraph Aplicaciones["Aplicaciones"]
+        direction TB
+        A1["Economía"]
+        A2["Diseño óptimo"]
+        A3["Geometría"]
+        A4["Física"]
+    end
+    subgraph Extensiones["Extensiones"]
+        direction TB
+        E1["3+ variables"]
+        E2["Múltiples restricciones"]
+        E3["Varios λᵢ"]
+    end
+    R --> Concepto
+    R --> Metodo
+    R --> Lambda
+    R --> Aplicaciones
+    R --> Extensiones

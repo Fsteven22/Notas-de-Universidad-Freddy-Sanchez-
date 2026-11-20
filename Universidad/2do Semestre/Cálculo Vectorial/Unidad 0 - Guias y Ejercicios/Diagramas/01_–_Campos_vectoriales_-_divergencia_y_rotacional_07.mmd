@@ -1,0 +1,18 @@
+flowchart TD
+    A["Campo Vectorial"]
+    B{"Rotacional"}
+    C["Campo rotacional"]
+    D["Campo irrotacional"]
+    E["Hay circulación<br/>local"]
+    F["Sin circulación<br/>local"]
+    G["Puede ser<br/>conservativo"]
+    A --> B
+    B -->|"≠ 0"| C
+    B -->|"= 0"| D
+    C --> E
+    D --> F
+    D --> G
+
+    style C fill:#ffe1e1
+    style D fill:#e1ffe1
+    style G fill:#e1f5ff
