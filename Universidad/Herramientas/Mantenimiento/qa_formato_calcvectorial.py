@@ -64,9 +64,9 @@ SECCIONES = ("Introducción", "Definiciones Formales", "Ejercicios Propuestos",
 
 # nota de referencia de la materia (se usa con --calibrar)
 NOTA_REFERENCIA = os.path.join(
-    "Unidad 3 – Funciones de Varias Variables",
-    "III – Límites, Continuidad y Primeras Derivadas",
-    "01 – Límite de Funciones de Varias Variables.md")
+    "Unidad 1 - Geometría Analítica en ℝ³",
+    "III – Rectas y Planos",
+    "01 - Rectas en R3.md")
 
 
 # --- perfil de nota (Cálculo Vectorial) -------------------------------------------------
@@ -296,6 +296,51 @@ def auditar_cv(nota_path, raiz, raiz_mat, hallazgos, idx_vault):
                 hallazgos.append((rel, sec_meta["ini"] + 1, "R17-metas-pocas",
                                   "solo %d metas con checkbox (minimo 3)" % n))
 
+    # ---------- R19: frontmatter con >=3 tags tematicos
+    fm_tags = None
+    if lineas and lineas[0].strip() == "---":
+        for k in range(1, len(lineas)):
+            if lineas[k].strip() == "---":
+                fm_txt = "\n".join(lineas[1:k])
+                mt = re.search(r"^tags:\s*\[([^\]]*)\]", fm_txt, re.M)
+                if mt:
+                    fm_tags = [t.strip() for t in mt.group(1).split(",") if t.strip()]
+                break
+    if perfil == "clase":
+        if not fm_tags:
+            hallazgos.append((rel, 1, "R19-tags-tematicos", "sin tags en frontmatter"))
+        else:
+            tem = [t for t in fm_tags
+                   if not re.match(r"^MATG1046$", t, re.I) and not re.match(r"^unidad\d+$", t, re.I)]
+            if len(tem) < 3:
+                hallazgos.append((rel, 1, "R19-tags-tematicos",
+                                  "solo %d tags tematicos (min 3): %s" % (len(tem), fm_tags)))
+
+    # ---------- R18: cada definicion en su propio H3 + callout propio
+    if perfil == "clase":
+        sec_def = next((s for s in secs if "Definiciones Formales" in s["titulo"]), None)
+        if sec_def is not None:
+            h3s = []
+            for i in range(sec_def["ini"] + 1, sec_def["fin"]):
+                mh3 = re.match(r"^###\s+(.*)$", lineas[i])
+                if mh3:
+                    h3s.append((i, mh3.group(1)))
+            if not h3s:
+                hallazgos.append((rel, sec_def["ini"] + 1, "R18-definiciones-sin-h3",
+                                  "no hay H3 en Definiciones Formales"))
+            else:
+                for idx, (hi, ht) in enumerate(h3s):
+                    fin = h3s[idx + 1][0] if idx + 1 < len(h3s) else sec_def["fin"]
+                    tiene = False
+                    for b in bloques:
+                        if hi < b["inicio"] < fin and b["tipo"].lower() == "note" \
+                                and RE_DEF.search(b["titulo"] or ""):
+                            tiene = True
+                            break
+                    if not tiene:
+                        hallazgos.append((rel, hi + 1, "R18-definicion-sin-callout",
+                                          "'%s' sin callout 'Definicion'" % ht[:40]))
+
     # ---------- R12: prefijo relativo segun profundidad
     pref = prefijo_profundo(dir_nota, raiz_mat)
     if pref is not None:
@@ -363,6 +408,9 @@ CODIGOS_H = set(SBD.CODIGOS_H) | {
     "R15-definicion-sin-figura",
     "R16-flashcards-unidad",
     "R17-metas-pocas",
+    "R18-definiciones-sin-h3",
+    "R18-definicion-sin-callout",
+    "R19-tags-tematicos",
 }
 
 
