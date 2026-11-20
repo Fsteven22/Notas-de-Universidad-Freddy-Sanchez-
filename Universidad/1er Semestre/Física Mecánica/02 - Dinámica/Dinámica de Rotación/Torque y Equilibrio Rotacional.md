@@ -71,6 +71,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, torque-y-equilibrio-rotacio
 > [!abstract] 📊 Mapa de Relaciones
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Torque_y_Equilibrio_Rotacional_01.svg]]
+>
+> **Se lee así:** El torque `τ = rF sinθ` se descompone en tres factores: la **fuerza F** (mayor fuerza, mayor torque), el **brazo r** (mayor distancia del eje, mayor torque) y el **ángulo θ** (máximo a 90°, nulo a 0° o 180°, y la componente radial no contribuye). El bloque de ejemplos reales: una **llave larga** da más torque, una **puerta** se empuja lejos de las bisagras y en una **balanza** `τ₁ = τ₂`, es decir `r₁F₁ = r₂F₂`.
+>
+> **Por qué importa:** Convierte una fórmula en decisiones de la vida diaria: por qué una llave se agarra por el extremo, por qué se empuja una puerta por el borde y por qué en la balanza la pesa mayor necesita estar más cerca del fulcro.
 
 ---
 
@@ -103,6 +107,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, torque-y-equilibrio-rotacio
 > [!info] 🛠️ Flujo de Resolución
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Torque_y_Equilibrio_Rotacional_02.svg]]
+>
+> **Se lee así:** El flujo de resolución de la estática rotacional: **1)** elegir el eje en la **fuerza desconocida** (su τ = 0 y desaparece de la ecuación), **2)** hacer el DCL con los **puntos de aplicación**, **3)** calcular los torques con signo (`τ = rF sinθ`), **4)** imponer `Στ = 0`, **5)** cerrar con `ΣF = 0` y resolver el sistema de reacciones. Se fija la convención de signos: **antihorario +, horario −**, y se debe ser consistente.
+>
+> **Por qué importa:** El paso 1 es el atajo que más ahorra trabajo: elegir el eje donde va la incógnita elimina una variable de la ecuación de torque. Y el paso 5 es imprescindible: `Στ = 0` solo no basta, hace falta también el equilibrio de fuerzas.
 
 ---
 
@@ -290,6 +298,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, torque-y-equilibrio-rotacio
 > [!note] 🖼️ Metodología de Resolución
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Torque_y_Equilibrio_Rotacional_03.svg]]
+>
+> **Se lee así:** Dos ejemplos resueltos: la **llave** con `F = 50 N`, `r = 0,5 m` y `θ = 90°` da `τ = 0,5 · 50 · 1 = 25 N·m`; la **puerta** con `F = 10 N` y `r = 0,8 m` da un torque máximo de `8 N·m`, pero si `θ = 30°` el torque cae a `4 N·m`: **se pierde la mitad**. El diagrama concluye que la **elección del eje simplifica el cálculo**.
+>
+> **Por qué importa:** El ejemplo de la puerta es el que más se olvida: el ángulo no es un detalle, puede reducir el torque a la mitad sin cambiar la fuerza. Y el mensaje de fondo —elegir bien el eje— es la técnica que convierte un problema en tres ecuaciones en una.
 
 ### Convención de Signos 🔄
 
@@ -347,6 +359,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, torque-y-equilibrio-rotacio
 > [!note] 🖼️ Ejemplo Resuelto
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Torque_y_Equilibrio_Rotacional_04.svg]]
+>
+> **Se lee así:** El problema completo de la **viga de 20 kg de 4 m con un objeto de 50 kg a 1 m del soporte izquierdo**: tomando el eje en el soporte izquierdo, F₁ no aporta torque (`r = 0`), el objeto aporta `+50·9,8·1 = +490 N·m` y la viga `+20·9,8·2 = +490 N·m`, mientras el soporte derecho aporta `−F₂(4)`. Con `Στ = 0` sale **F₂ = 245 N**, y con `ΣF = 0` **F₁ = 441 N**. El diagrama insiste en **verificar ambas condiciones**, rotacional y traslacional.
+>
+> **Por qué importa:** Es el ejemplo que une las dos ecuaciones: el torque determines F₂ y la fuerza determines F₁, y cada una se necesita para la otra. Sin verificar `ΣF = 0` el resultado puede ser numéricamente plausible y físicamente falso.
 
 ### Conexiones Conceptuales 🔗
 

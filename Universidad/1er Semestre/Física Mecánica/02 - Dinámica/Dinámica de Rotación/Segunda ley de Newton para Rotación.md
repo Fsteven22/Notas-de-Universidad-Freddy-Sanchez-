@@ -71,6 +71,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, segunda-ley-de-newton-para-
 > [!abstract] 📊 Mapa de Relaciones
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Segunda_ley_de_Newton_para_Rotación_01.svg]]
+>
+> **Se lee así:** La ecuación `τ neto = Iα` leída por roles: el **torque neto** es la causa, la **aceleración angular** es el efecto y el **momento de inercia I** es la resistencia. De ahí se deduce que **mayor τ → mayor α** (proporcionalidad directa) y que **mayor I → menor α**, porque I es la masa rotacional: dificulta cambiar la rotación. El diagrama cierra con la analogía `F · m · a` ↔ `τ · I · α`.
+>
+> **Por qué importa:** Establece la analogía lineal-rotacional como equivalencia exacta, no como semejanza: todo lo que se resolvió con `F = ma` se resuelve con `τ = Iα` cambiando las tres piezas. Es el marco mental de toda la unidad.
 
 ---
 
@@ -79,6 +83,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, segunda-ley-de-newton-para-
 > [!info] 🔄 Procedimiento Sistemático
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Segunda_ley_de_Newton_para_Rotación_02.svg]]
+>
+> **Se lee así:** El **procedimiento rotacional** en cuatro pasos: elegir el **eje de rotación**, hacer el **DCL con todas las fuerzas**, calcular el **torque de cada una** (`τ = rF sinθ`) y **sumar los torques con signo** para aplicar `τ = Iα` y resolver. El diagrama añade tres **casos clásicos**: el volante (I grande frena los cambios de ω), el yo-yo (el peso da torque por la cuerda) y la rueda acelerando (torque motor menos fricción).
+>
+> **Por qué importa:** La única diferencia real con el método lineal es el paso 3: no se suman fuerzas, se suman **torques**, y cada uno con su signo según el sentido de giro. Todo lo demás (eje, DCL, verificar) es idéntico.
 
 ---
 

@@ -64,6 +64,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, rodadura]
 > [!info] 🔄 Proceso de Resolución (Método Dinámico)
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Rodadura_01.svg]]
+>
+> **Se lee así:** El **método dinámico** combina tres piezas: Newton lineal (`ΣF = M a_CM`), Newton rotacional (`τ total = Iα`) y la condición de **rodar sin deslizar** (`a_CM = αR`). En el ejemplo del disco, `F − f_s = M a` y `f_s R = ½MR²α`, de donde `a_CM = 2F/3M` y `f_s = F/3`. El método es el indicado **cuando se necesitan fuerzas o aceleraciones**.
+>
+> **Por qué importa:** Las tres ecuaciones son necesarias y son tres incógnitas (a, f_s y α): sin la condición de rodadura sin deslizar el sistema no cierra. Y el resultado `f_s = F/3` muestra que la fricción estática es imprescindible: es la que hace girar al disco.
 
 ## 🎲 Ejemplos Método Dinámico
 
@@ -125,6 +129,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, rodadura]
 > [!info] 🔄 Proceso de Resolución (Método Energético)
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Rodadura_02.svg]]
+>
+> **Se lee así:** El **método energético**: la energía inicial es `Mgh` (partiendo del reposo) y la final `½Mv² + ½Iω²`; con la condición de rodadura sin deslizar `ω = v/R` se obtiene `Mgh = ½Mv²(1 + β)` y por tanto `v = √(2gh/(1+β))`. Para un cilindro con β = ½, `v = (2/3)√(gh)`. Es el método indicado **cuando no hay fuerzas no conservativas y solo se quiere la velocidad**.
+>
+> **Por qué importa:** Una sola ecuación donde el método dinámico necesitaba tres. El factor `1 + β` mide cuánta energía se va en rotación: cuanto mayor es β (más lejos el centro de masas del eje), menos velocidad final.
 
 ## 🎲 Ejemplos Método Energético
 
@@ -163,6 +171,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, rodadura]
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Rodadura_03.svg]]
 >
+> **Se lee así:** La carrera de la rodadura: con la misma masa y el mismo radio, el **disco** (β = ½) llega con `v = √(4gh/3)` y el **aro** (β = 1) con `v = √(gh)`. El disco **llega primero** porque una fracción mayor de su energía está en la traslación, y el **orden de llegada** es esfera → cilindro → aro.
+>
+> **Por qué importa:** Permite explicar por qué en una carrera los cuerpos llegan en ese orden sin necesidad de conocer las fuerzas: la energía se reparte entre traslación y rotación, y el reparto depende solo de la geometría. La regla es «menos β, más rápido».
+>
 
 > [!note] 📊 Comparación de Velocidades Finales
 >
@@ -192,6 +204,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, rodadura]
 > [!info] 🔗 Conexiones Conceptuales
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Rodadura_04.svg]]
+>
+> **Se lee así:** El cuadro comparativo final: el método **dinámico** persigue **fuerzas y aceleraciones**, necesita **3 ecuaciones simultáneas** y da un **análisis completo del movimiento**; el **energético** persigue **velocidades y alturas**, necesita **1 ecuación de conservación** y da un **resultado final rápido**. La regla de elección es explícita: fuerzas → dinámico, solo velocidades → energético.
+>
+> **Por qué importa:** Es la decisión de método que ahorra más tiempo en un examen. Intentar un método energético cuando piden la fuerza de fricción es el error más común: la energía no dice nada sobre las fuerzas internas.
 
 ---
 

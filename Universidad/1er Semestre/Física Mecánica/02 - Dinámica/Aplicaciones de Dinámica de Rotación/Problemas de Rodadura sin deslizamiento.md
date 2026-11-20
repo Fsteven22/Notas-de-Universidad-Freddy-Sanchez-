@@ -100,6 +100,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, problemas-de-rodadura-sin-d
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Rodadura_sin_deslizamiento_01.svg]]
 >
+> **Se lee así:** El esquema define la **rodadura pura** con las dos condiciones de contacto (`v_CM = ωR` y `a_CM = αR`), introduce el **factor β = I/MR²** con sus valores (cilindro sólido ½, esfera sólida ⅖, cilindro hueco 1, esfera hueca ⅔), da la **energía total** `E_k = ½Mv²(1 + β)` y la **aceleración en plano inclinado** `a_CM = g sinθ/(1 + β)`, y cierra con dos advertencias: **separar traslacional de rotacional** e **incluir el torque de la fricción** en `Στ = Iα` respecto al centro de masas.
+>
+> **Por qué importa:** β es la variable que unifica todos los problemas de rodadura: la aceleración y la energía dependen de la forma solo a través de β, así que un único cálculo con β cubre disco, aro y esfera. La segunda advertencia evita el error clásico: en el DCL rotacional del CM hay que incluir el torque de la fricción, no solo el de la gravedad.
+>
 
 > [!note] **Momentos de Inercia Comunes** 📐
 >
