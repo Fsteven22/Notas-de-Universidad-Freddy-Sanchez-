@@ -28,6 +28,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, fundamentos, unidades-y-magnitudes-fi
 > - **Magnitudes Derivadas** → Se obtienen a partir de las fundamentales por medio de fórmulas (ej. velocidad, fuerza, energía).  
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Unidades_y_Magnitudes_Físicas_01.svg]]
+>
+> **Se lee así:** El árbol de las magnitudes físicas: las **fundamentales del SI** son **7 clases** (**longitud m, masa kg, tiempo s**; **corriente A, temperatura K, cantidad de sustancia mol, luminosidad cd**) y de ellas se construyen las **derivadas** (**velocidad m/s**, **aceleración m/s²**, **fuerza N = kg·m/s²**, **trabajo J = N·m**, **potencia W = J/s**). Cierra con el **SI desde 1960** (base métrica decimal) y el principio de que **sin estándar no hay medición comparable**.
+>
+> **Por qué importa:** La idea de que toda magnitud derivada se reduce a las siete fundamentales es lo que garantiza la consistencia dimensional: si `N = kg·m/s²` y `J = N·m`, entonces `W = J/s` encaja sin contradicción. Y el bloque final recuerda por qué existen los patrones: sin una unidad común, los laboratorios no podrían comparar resultados.
 
 ---
 

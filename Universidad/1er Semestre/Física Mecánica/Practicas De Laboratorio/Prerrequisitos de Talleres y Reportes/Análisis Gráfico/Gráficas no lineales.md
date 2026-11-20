@@ -211,6 +211,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, graficas-no-lineales]
 >
 > ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Gráficas_no_lineales_01.svg]]
 >
+> **Se lee así:** El catálogo de **fenómenos exponenciales** con sus leyes: **decaimiento radiactivo** `N(t) = N₀e^(−λt)`, **descarga de capacitor** `V(t) = V₀e^(−t/RC)`, **enfriamiento de Newton** `T(t) = T∞ + (T₀−T∞)e^(−kt)`, **absorción de luz** `I = I₀e^(−μx)`, **crecimiento poblacional** `P(t) = P₀e^(rt)` y **circuitos RC** `q(t) = q₀e^(−t/τ)`.
+>
+> **Por qué importa:** Todas son de la forma `e^(−const·t)` o `e^(+const·t)`, así que todas se linealizan igual: `ln(y)` contra `t` da una recta cuya pendiente es la constante. Reconocer el patrón exponencial en los datos es lo que ahorra probar transformaciones a ciegas.
+>
 
 > [!example] **Análisis de Gráficas Exponenciales** 📊
 >
@@ -682,6 +686,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, graficas-no-lineales]
 >
 > ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Gráficas_no_lineales_03.svg]]
 >
+> **Se lee así:** El catálogo de **fenómenos hiperbólicos** con sus leyes: **gravitación** `F = Gm₁m₂/r²`, **Coulomb** `F = kq₁q₂/r²`, **Boyle** `PV = constante → P = k/V`, **intensidad de radiación** `I = I₀/r²`, **ley de Ohm generalizada** `V = IR + r/I` y **dispersión de partículas** `σ ∝ 1/E²`.
+>
+> **Por qué importa:** Comparten la forma `y ∝ 1/xⁿ`, así que la transformación `1/y vs x` (o `ln y vs ln x`) las linealiza. Es el segundo gran grupo que conviene memorizar después del exponencial: entre los dos cubren la mayoría de datos de laboratorio.
+>
 
 > [!tip] **Técnicas de Análisis Hiperbólico** 🔬
 >
@@ -954,6 +962,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, graficas-no-lineales]
 > [!success] 🔧 Proceso Sistemático de Análisis
 >
 > ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Gráficas_no_lineales_04.svg]]
+>
+> **Se lee así:** El árbol de decisión completo para ajustar datos: se parte de la **inspección visual** y la pregunta **¿patrón evidente?**, con ramas **lineal** (regresión directa), **exponencial** (`ln y` vs `x`), **potencial** (`ln y` vs `ln x`), **parabólico** (regresión o `y` vs `x²`), **hiperbólico** (`1/x`) e **incierto** (pruebas múltiples); todas pasan por el **análisis de residuos** y la pregunta **¿ajuste satisfactorio?** — si **sí**, **interpretación física**; si **no**, se prueba un **modelo más complejo**, **funciones híbridas**, **análisis no lineal** o **revisión de datos**.
+>
+> **Por qué importa:** Es el flujo que evita el ajuste a ciegas: la rama «incierto» admite que a veces hay que probar varias transformaciones, pero siempre se juzga por los residuos, no por el aspecto de la curva. Y la salida por «revisión de datos» recuerda que un mal ajuste también puede ser un dato mal medido.
 
 ## 🎯 Ejemplos Integrales Multi-Tipo
 

@@ -89,6 +89,10 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, problemas-de-deformacion-
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Deformación_por_Cortante_(Esfuerzo_Cortante)_01.svg]]
 >
+> **Se lee así:** El esfuerzo cortante `τ = V/A` con sus tres **orígenes**: el **empernado y la soldadura** (`τ = V/A` en planos de corte), la **torsión** (`τ = Tr/J`, máximo en el perímetro) y la **flexión** (`τ = VQ/(Ib)`, distribución parabólica). Los **estados de cortante** son **puro** (solo τ), **combinado** (τ + σ normales) y **máximo** (`τ = (σ₁ − σ₃)/2`). Cierra con la **rigidez G típica**: acero 80–85 GPa, aluminio 26–28, concreto 8–15 y caucho ~0,003.
+>
+> **Por qué importa:** La tercera rama —la distribución parabólica en flexión— explica por qué las vigas se cortan cerca de los apoyos. Y los valores de G muestran el orden de magnitud: el caucho es casi tres órdenes de magnitud menos rígido que el acero.
+>
 
 > [!note] **Propiedades de Materiales en Cortante** 📊
 >

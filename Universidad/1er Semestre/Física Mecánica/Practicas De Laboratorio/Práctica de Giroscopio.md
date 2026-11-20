@@ -52,6 +52,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-de-giroscopio]
 > [!note] 🖼️ Ecuaciones Principales
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Práctica_de_Giroscopio_01.svg]]
+>
+> **Se lee así:** La física de la **precesión del giroscopio**: el **torque del peso** `τ = w·r = m·g·r` y el **momentum angular** `L = I_G·ω_G` del disco se combinan en `τ = dL/dt`, de donde sale la **velocidad de precesión** `Ω = τ/L = w·r/(I_G·ω_G)`; el resultado es que **el eje traza un semicírculo rotando uniforme**. El montaje usa un **giroscopio de 3 ejes con contrapeso y masa de 10 g**, **barrera de luz ±0,001 s** y **cronómetro ±0,01 s**.
+>
+> **Por qué importa:** Es el experimento clásico que demuestra que un torque no acelera el eje hacia abajo sino que lo hace girar: `dL/dt` es perpendicular a `L`, así que cambia la dirección de `L` pero no su magnitud. La fórmula de `Ω` también predice que el giroscopio lento precesa más rápido, que es lo contrario a la intuición.
 
 ## 🛠️ Materiales y Equipos
 
@@ -130,6 +134,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-de-giroscopio]
 > [!note] 🖼️ Cálculos Requeridos
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Práctica_de_Giroscopio_02.svg]]
+>
+> **Se lee así:** Las **fórmulas del reporte**: `ω_G = 2π/T_giro` para la velocidad del disco (media vuelta), `Ω = π/T_precesión` para el eje, la **inercia experimental** `I_G^esp = m·g·r/(Ω·ω_G)` y el **promedio** `ω_G = (ω_final + ω_inicial)/2`. Las **incertidumbres** provienen de la **barrera de luz ±0,001 s** y el **cronómetro ±0,01 s**, la **distancia ±0,05 cm** y la **masa ±0,01 g**. Cierra con la **fricción del disco**: `T_giro` crece al final.
+>
+> **Por qué importa:** El detalle de la fricción es el que hay que interpretar en el informe: la precesión se mantiene porque `Ω` depende del torque, pero el disco frena y `ω_G` baja, así que `Ω` debería subir ligeramente. Comparar `I_G^esp` con el teórico sin comentar esa deriva deja el análisis incompleto.
 
 ## 🔍 Fenómenos Observados
 

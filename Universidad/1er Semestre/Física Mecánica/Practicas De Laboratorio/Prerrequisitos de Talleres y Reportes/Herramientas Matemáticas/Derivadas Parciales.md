@@ -113,6 +113,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, derivadas-parciales]
 > [!success] 🔗 Algoritmo de Cálculo
 >
 > ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Derivadas_Parciales_01.svg]]
+>
+> **Se lee así:** El procedimiento de derivación parcial en siete pasos: **identificar la función `f(x,y,z,…)`**, **seleccionar la variable de derivación**, **tratar las demás como constantes**, **aplicar las reglas de derivación ordinaria**, **simplificar**, **verificar dimensiones físicas** y **evaluar en un punto si es necesario**.
+>
+> **Por qué importa:** La regla clave está en el paso 3: la derivada parcial es una derivada ordinaria disfrazada. La verificación dimensional posterior captura el error típico de olvidar que `∂f/∂x` y `∂f/∂y` pueden tener unidades distintas entre sí.
 
 ## 🎯 Derivadas Parciales en Física
 

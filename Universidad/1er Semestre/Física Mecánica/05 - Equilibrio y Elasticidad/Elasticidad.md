@@ -98,6 +98,10 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, elasticidad]
 > [!note] 🖼️ Fundamentos Microscópicos
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Elasticidad_01.svg]]
+>
+> **Se lee así:** El ciclo microscópico de la elasticidad: el material parte de su **posición de equilibrio sin fuerza externa**, al aplicar fuerza aparece un **desplazamiento atómico**, y al retirarla se produce la **restitución** que devuelve al punto inicial. El diagrama es un ciclo que vuelve al inicio.
+>
+> **Por qué importa:** Define lo que significa «elástico» a nivel de la estructura de la materia: los átomos se desplazan de sus posiciones pero no cambian de sitio. Ese retorno completo es lo que separa la región elástica de la plástica.
 
 ### 📊 Interpretación del Módulo de Young
 
@@ -122,6 +126,10 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, elasticidad]
 > [!note] 🖼️ Regiones Características
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Elasticidad_02.svg]]
+>
+> **Se lee así:** La curva de comportamiento en cuatro tramos sucesivos: la **región elástica lineal**, el **límite elástico** como **punto crítico**, la **región plástica** con **deformación permanente** y, al final, el **punto de fractura** con la **rotura del material**.
+>
+> **Por qué importa:** Es el mapa del diseño estructural: todo cálculo debe mantenerse en la primera región. Pasar el límite elástico no rompe el material, pero lo deja deformado para siempre, que es una falla igual de grave en una pieza de máquina.
 
 > [!success] ✅ Región Elástica (Lineal) **Características:**
 >
@@ -243,6 +251,10 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, elasticidad]
 > [!note] 🖼️ Almacenamiento de Energía
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Elasticidad_03.svg]]
+>
+> **Se lee así:** El flujo de energía en un resorte: el **trabajo mecánico** `W = F·Δx` se convierte en **energía potencial** `U = ½kx²`, que al **liberarse** se transforma en **energía cinética**; las **aplicaciones** típicas son **catapultas y resortes**.
+>
+> **Por qué importa:** Conecta la elasticidad con la unidad anterior: deformar un resorte es almacenar energía, y el trabajo hecho para deformarlo es exactamente `½kx²`. Es la misma conservación de la energía, con otra forma de potencial.
 
 ---
 
@@ -251,6 +263,10 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, elasticidad]
 > [!note] 🖼️ Conexiones Conceptuales
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Elasticidad_04.svg]]
+>
+> **Se lee así:** El mapa mental de la unidad en cuatro bloques: el **equilibrio estático** (análisis de estructuras, distribución de fuerzas, condiciones de estabilidad), el **trabajo y la energía** (energía potencial elástica, conservación energética, transformaciones), las **leyes de Newton** (fuerzas de restitución, equilibrio dinámico, análisis de fuerzas) y las **oscilaciones** (movimiento armónico simple, sistemas masa-resorte, vibraciones).
+>
+> **Por qué importa:** Muestra la continuidad del curso: el equilibrio es el caso de aceleración cero, y cuando se saca al sistema de esa posición aparece el movimiento armónico simple. La misma ley de Hooke que fija el equilibrio también fija el período de oscilación.
 
 ### 🎯 Interrelaciones Fundamentales
 

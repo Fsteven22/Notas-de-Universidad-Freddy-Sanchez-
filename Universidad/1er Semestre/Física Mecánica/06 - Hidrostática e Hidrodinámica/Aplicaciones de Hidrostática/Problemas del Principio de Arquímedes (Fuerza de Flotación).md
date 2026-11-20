@@ -89,6 +89,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, problemas-del-principio-de-a
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_del_Principio_de_Arquímedes_(Fuerza_de_Flotación)_01.svg]]
 >
+> **Se lee así:** El problema completo de un **objeto flotando**: el **peso** `W = ρo·g·Vo` actúa hacia abajo en el **centro de gravedad** y el **empuje** `E = ρf·g·Vd` hacia arriba en el **centro de flotación**; el **equilibrio** `E = W` da `ρoVo = ρfVd` y de ahí la **fracción sumergida** `Vd/Vo = ρo/ρf`. Los **casos**: `ρo < ρf` **flota**, `ρo = ρf` **suspendido** y `ρo > ρf` **se hunde**.
+>
+> **Por qué importa:** La fórmula de la fracción sumergida es la más útil de la hidrostática: basta conocer las dos densidades para saber qué porcentaje del cuerpo queda bajo el agua, sin calcular el empuje. Y explica por qué un barco de acero flota: no importa su densidad global, importa la del volumen que desplaza.
+>
 
 > [!note] **Relaciones Matemáticas Avanzadas** 📐
 >

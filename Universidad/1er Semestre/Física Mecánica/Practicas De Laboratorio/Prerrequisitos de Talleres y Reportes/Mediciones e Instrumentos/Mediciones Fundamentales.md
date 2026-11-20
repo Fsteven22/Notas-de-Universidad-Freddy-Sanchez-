@@ -97,6 +97,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, mediciones-fundamentales
 >
 > ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Mediciones_Fundamentales_01.svg]]
 >
+> **Se lee así:** La secuencia estándar de cualquier medición: **identificar la magnitud**, **seleccionar el instrumento**, **establecer las condiciones**, **realizar la medición**, **leer el resultado**, **estimar la incertidumbre** y **expresar el resultado final**.
+>
+> **Por qué importa:** Es el mismo esquema que rige todos los experimentos de la materia. El detalle que no se salta es la estimación de incertidumbre antes de reportar: un número sin su `±` no es un resultado de laboratorio, es solo una lectura.
+>
 
 > [!note] **Conversión de Unidades** 📝
 >

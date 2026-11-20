@@ -101,6 +101,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, problemas-del-principio-de-p
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_del_Principio_de_Pascal_01.svg]]
 >
+> **Se lee así:** La **prensa hidráulica** completa: el **cilindro maestro** de área `A₁` recibe la fuerza `F₁` y transmite la **presión P** a través del **fluido hidráulico** hacia el **cilindro esclavo** de área `A₂`, donde se obtiene `F₂ = F₁ × A₂/A₁`. El **desplazamiento** se invierte, `d₂ = d₁ × A₁/A₂`, y el **volumen** se conserva (`V₁ = V₂`).
+>
+> **Por qué importa:** Es la aplicación directa de Pascal: se gana fuerza en la proporción de las áreas, pero se paga con distancia en la misma proporción. La conservación del volumen es la comprobación de que no se ha creado energía, solo transformado.
+>
 
 > [!note] **Relaciones Matemáticas** 📐
 >

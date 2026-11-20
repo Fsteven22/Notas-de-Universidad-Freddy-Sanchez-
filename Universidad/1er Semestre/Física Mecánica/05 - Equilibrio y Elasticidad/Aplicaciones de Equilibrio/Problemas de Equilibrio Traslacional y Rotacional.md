@@ -79,6 +79,10 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, problemas-de-equilibrio-t
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Equilibrio_Traslacional_y_Rotacional_01.svg]]
 >
+> **Se lee así:** El equilibrio **simultáneo** con sus dos ecuaciones (`ΣF = 0` traslacional y `Στ = 0` rotacional), sus tres **tipos** —**estable** (regresa al punto, CG bajo), **inestable** (se aleja, CG sobre el borde) y **neutro** (U no cambia, rodillo o esfera)—, el atajo de **elegir el eje en una fuerza desconocida** para que su torque sea cero, y los tres **tipos de apoyo**: **rodillo** (1 reacción perpendicular), **pasador** (2 reacciones, H y V) y **empotramiento** (2 fuerzas más momento).
+>
+> **Por qué importa:** La tabla de apoyos es la que más se necesita en práctica: saber cuántas incógnitas aporta cada soporte es lo que decide si el problema tiene solución. Un pasador no puede dar momento, y eso es una ecuación menos.
+>
 
 > [!note] **Tipos de Apoyos y Reacciones** 🔧
 >

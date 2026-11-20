@@ -50,6 +50,10 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, problemas-con-friccion-en
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_con_Fricción_en_Equilibrio_01.svg]]
 >
+> **Se lee así:** La evolución de la fricción al aumentar la fuerza aplicada: se parte en **reposo**, la **fricción estática `f_s` aumenta** para oponerse, se llega al **punto crítico** donde `f_s = μ_sN`, comienza el **deslizamiento** y la fricción pasa a ser **cinética constante** `f_k = μ_kN`.
+>
+> **Por qué importa:** Es el gráfico que explica por qué un objeto puede empujarse un poco sin moverse: la fricción estática se ajusta sola hasta su máximo. Y marca la discontinuidad `f_s(max) > f_k`, que es por lo que un objeto «se libera» de golpe.
+>
 
 > [!warning] **Coeficientes de Fricción** 📊
 >
@@ -79,6 +83,10 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, problemas-con-friccion-en
 > [!success] 🔗 Tipos de Problemas con Fricción
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_con_Fricción_en_Equilibrio_02.svg]]
+>
+> **Se lee así:** El catálogo de problemas con fricción en equilibrio, en cuatro familias: **objetos en superficie horizontal** (fuerza horizontal aplicada, múltiples objetos), **objetos en plano inclinado** (ángulo crítico, fuerza adicional), **escaleras y estructuras** (escaleras contra pared, vigas con fricción) y **sistemas con múltiples contactos** (cajas apiladas, sistemas articulados).
+>
+> **Por qué importa:** Sirve para reconocer el tipo de problema antes de plantearlo: cada rama trae su propia complicación — la inclinación cambia la normal, la escalera añade dos fricciones simultáneas, y los sistemas apilados requieren un equilibrio por cuerpo.
 >
 
 > [!note] **Análisis de Impendencia** ⚠️

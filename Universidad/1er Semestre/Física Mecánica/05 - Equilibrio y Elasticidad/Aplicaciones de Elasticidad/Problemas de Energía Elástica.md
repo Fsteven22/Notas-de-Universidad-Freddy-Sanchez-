@@ -92,6 +92,10 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, problemas-de-energia-elas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Energía_Elástica_01.svg]]
 >
+> **Se lee así:** La energía elástica en sus cuatro formas: la **energía potencial elástica** `U = ½kx²`; en **elementos estructurales**, la **barra en tracción** `U = F²L/(2EA)`, la **viga en flexión** `U = M²L/(2EI)` y el **eje en torsión** `U = T²L/(2GJ)`; en **resortes**, la **lineal** `½kx²` y la **torsional** `½kθ²`; y la **densidad de energía** `u = U/V`, con `u = σ²/(2E) = ½σε` en J/m³, **máxima en el límite elástico**. El método es **integrar el campo de esfuerzos**: `U = ∫u dV`.
+>
+> **Por qué importa:** Muestra que la fórmula `½kx²` es un caso particular: cada elemento estructural tiene su propia «rigidez» armada con E, G y la geometría. Y la densidad de energía permite comparar materiales sin importar el tamaño de la pieza.
+>
 
 > [!note] **Relaciones Energéticas Fundamentales** 📐
 >

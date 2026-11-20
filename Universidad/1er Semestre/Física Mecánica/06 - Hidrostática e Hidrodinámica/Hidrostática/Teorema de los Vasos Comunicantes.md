@@ -25,6 +25,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, teorema-de-los-vasos-comunic
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Teorema_de_los_Vasos_Comunicantes_01.svg]]
 >
+> **Se lee así:** El teorema: en **vasos comunicantes** el **líquido sube al mismo nivel en todos**, con **fundamento** en que **la presión es la misma en el mismo nivel** (`P = P_atm + ρgh` igual en la base). De ahí que la **forma no importe**: el nivel depende **solo de la altura**. Para **líquidos inmiscibles** se cumple `ρ₁h₁ = ρ₂h₂` en la separación, con el **más denso abajo** y **alturas inversas a las densidades**.
+>
+> **Por qué importa:** El argumento es un reductio: si los niveles fueran distintos, la presión en la base sería distinta y el líquido se movería hasta igualarla. La rama de los inmiscibles es la que se usa en manómetros de dos fluidos, donde la altura de cada columna compensa su densidad.
+>
 
 > [!tip] Características Principales 🔬
 >
@@ -55,6 +59,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, teorema-de-los-vasos-comunic
 > ### En Ingeniería y Tecnología
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Teorema_de_los_Vasos_Comunicantes_02.svg]]
+>
+> **Se lee así:** Las **aplicaciones** del teorema: en lo **cotidiano** (riego uniforme, tanques nivelados, cafetera, acueductos romanos), en **ingeniería** (nivelaciones de construcción y cerraje hidráulico) y el **experimento** típico con **tubos de distintos diámetros unidos con manguera**, donde al **verter agua** todos quedan al **mismo nivel**. La **condición** es la **comunicación libre sin atrancos**.
+>
+> **Por qué importa:** La advertencia final es la que evita los falsos contraejemplos: si hay una burbuja o un tapón, los vasos dejan de comunicarse y los niveles se separan. El experimento con tubos de distinto diámetro es la demostración visual de que el ancho no influye.
 >
 > [!abstract] Experimento Clásico 🧪
 >

@@ -60,6 +60,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, linealizacion-de-ecuacio
 >
 > ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Linealización_de_ecuaciones_01.svg]]
 >
+> **Se lee así:** Los cinco **métodos de linealización** con sus transformaciones: **logarítmica** (`ln y` vs `x` → exponencial, `ln y` vs `ln x` → potencial, `y` vs `ln x` → logarítmica), **de potencias** (`y` vs `x²`, `√y` vs `x`, `y²` vs `x`), **recíproca** (`1/y` vs `x` → hiperbólica, `y` vs `1/x`, `1/y` vs `1/x` → racional), **trigonométrica** (`sin y` vs `x` → periódica, `arcsin y` vs `x`) y **múltiple** (`ln(y−c)` y `1/(y−c)` para funciones con desplazamiento).
+>
+> **Por qué importa:** Es la tabla de consulta del análisis gráfico: cada forma funcional tiene su transformación que la vuelve recta. La rama de las transformaciones múltiples es la que resuelve los casos con desplazamiento — sin restar `c`, ni `ln` ni el recíproco linealizan.
+>
 
 > [!tip] **Selección del Método Apropiado** 🎯
 >
@@ -683,6 +687,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, linealizacion-de-ecuacio
 > [!success] 🔍 Proceso de Análisis Sistemático
 >
 > ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Linealización_de_ecuaciones_03.svg]]
+>
+> **Se lee así:** El ciclo completo de linealización: **datos** → **selección de transformación** → **aplicación** → **regresión lineal** → **evaluación de calidad** (coeficiente `r`, análisis de residuos, significado físico, comparación teórica) → la pregunta **¿linealización exitosa?** — si **sí**, **interpretar parámetros**, **transformación inversa**, **validación con datos originales** y **reporte**; si **no**, **probar nueva transformación** y volver a la selección.
+>
+> **Por qué importa:** La validación con datos originales es el paso que casi siempre se omite: una recta en el espacio transformado debe devolver una curva que pase por los puntos originales, no solo un `r` alto. El bucle «no → probar otra» formaliza que la primera transformación no siempre es la correcta.
 >
 
 > [!tip] **Interpretación de Parámetros Linealizados** 🎯

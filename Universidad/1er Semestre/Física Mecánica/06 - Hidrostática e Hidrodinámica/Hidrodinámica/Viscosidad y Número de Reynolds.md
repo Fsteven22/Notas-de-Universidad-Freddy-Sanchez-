@@ -52,6 +52,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, viscosidad-y-numero-de-reyno
 > ### 🌊 Clasificación por Viscosidad
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Viscosidad_y_Número_de_Reynolds_01.svg]]
+>
+> **Se lee así:** La **viscosidad dinámica μ** mide la **resistencia al corte** y se relaciona con la **cinemática** `η = μ/ρ` (en m²/s). Los **tipos de fluidos** son **newtoniano** (`τ` proporcional al gradiente de velocidad: agua, aire), **no newtoniano** (cambia con el corte) y **plástico ideal** (necesita un esfuerzo mínimo). El **número de Reynolds** `Re = ρvD/μ` compara los dos regímenes: con **Re bajo dominan la viscosidad** (flujo laminar) y con **Re alto dominan la inercia** (turbulencia). Los valores a 20 °C: agua 0,001 Pa·s, aceite 0,1 a 0,2, glicerina 1,5.
+>
+> **Por qué importa:** El número de Reynolds es la razón adimensional que decide todo el régimen: por qué la sangre es laminar y el aire en un avión es turbulento, con la misma ecuación. Y los valores de μ muestran que la glicerina es mil veces más viscosa que el agua.
 
 ## 📊 Tabla de Viscosidades
 

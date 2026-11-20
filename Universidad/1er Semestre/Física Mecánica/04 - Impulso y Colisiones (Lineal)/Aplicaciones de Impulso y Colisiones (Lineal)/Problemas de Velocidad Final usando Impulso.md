@@ -80,6 +80,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, problemas-de-velocidad-final
 > [!success] 🔗 Estrategia General
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Velocidad_Final_usando_Impulso_01.svg]]
+>
+> **Se lee así:** El flujo completo del teorema del impulso: `J = ∫F dt = Δp`; el impulso se calcula si **F es constante** (`J = FΔt`), si **F(t) es conocida** (integrando) o si los **datos vienen de una gráfica o tabla** (área o suma de bloques); luego la **velocidad final** es `v_final = v_inicial + J/m`. Para **sistemas interactivos** (colisiones, propulsión, explosiones) se usa `Σp_inicial = Σp_final`, siempre que el **impulso externo sea pequeño** en el intervalo. Cierra con la **verificación de unidades** `N·s = kg·m/s`.
+>
+> **Por qué importa:** Es el mapa de decisión que más se usa en la unidad: primero se clasifica la fuerza (constante, función o gráfico) para elegir cómo obtener J. Y la advertencia del impulso externo pequeño es la condición que justifica tratar una colisión como sistema aislado.
 
 ## 🧮 Cálculo de Impulso
 

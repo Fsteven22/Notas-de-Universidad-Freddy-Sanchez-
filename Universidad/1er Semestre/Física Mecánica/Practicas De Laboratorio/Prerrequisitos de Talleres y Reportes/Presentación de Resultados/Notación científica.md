@@ -112,6 +112,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, notacion-cientifica]
 > [!success] 🔗 Algoritmo de Conversión
 >
 > ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Notación_científica_01.svg]]
+>
+> **Se lee así:** El algoritmo de conversión a notación científica: si el número es **mayor que 10**, se **mueve la coma a la izquierda**; si es **menor que 1**, se **mueve a la derecha**; si está entre 1 y 10, el **exponente es 0**. En ambos casos se **cuenta las posiciones** para fijar el **exponente positivo o negativo**, se **verifica la mantisa `1 ≤ |a| < 10`** y se obtiene la **notación final**.
+>
+> **Por qué importa:** La comprobación de la mantisa al final es la que evita el error clásico de escribir `0,34 × 10²` en vez de `3,4 × 10¹`. Y la regla de contar posiciones explica por qué mover la coma a la izquierda da exponente positivo y a la derecha negativo.
 
 ## 🔢 Operaciones Aritméticas
 

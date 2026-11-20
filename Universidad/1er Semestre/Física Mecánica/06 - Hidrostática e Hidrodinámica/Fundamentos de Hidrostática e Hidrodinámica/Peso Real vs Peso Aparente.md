@@ -37,6 +37,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, peso-real-vs-peso-aparente]
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Peso_Real_vs_Peso_Aparente_01.svg]]
 >
+> **Se lee así:** El desglose del **peso aparente**: un **objeto sumergido** tiene el **peso real** `W = m×g` hacia abajo y la **fuerza de flotación** `F = ρ_fluido×V×g` hacia arriba; el **resultado neto** es el **peso aparente** `W_aparente = W_real − F_flotación`. Los tres contextos: **en el aire** `W_aparente ≈ W_real` (flotación despreciable), **en el agua** `W_aparente < W_real` (flotación significativa) y **flotando** `W_aparente = 0` (flotación igual al peso real).
+>
+> **Por qué importa:** Es la explicación de por qué una piedra pesa menos en agua y de por qué un objeto que flota «pesa cero»: la balanza mide la fuerza de reacción, que ya tiene el empuje restado. Y el caso límite `W_aparente = 0` es exactamente la condición de flotación.
+>
 
 > [!tip] Casos y Situaciones 🔬
 >
@@ -53,6 +57,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, peso-real-vs-peso-aparente]
 > ### Grados de Inmersión
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Peso_Real_vs_Peso_Aparente_02.svg]]
+>
+> **Se lee así:** Las tres situaciones en una línea: **totalmente sumergido** `W_ap = W_real − ρf·V_total·g`, **parcialmente sumergido** `W_ap = W_real − ρf·V_sumergido·g` y **en equilibrio flotando** `W_ap = 0`, con `W_real = F_flotación`.
+>
+> **Por qué importa:** Muestra la continuidad entre las tres: a medida que se sumerge menos, el empuje baja y el peso aparente sube, hasta que coinciden en la superficie. Ese punto intermedio es el que fija cuánto flota un cuerpo.
 >
 
 > [!example] Ejemplos Prácticos y Cálculos 🧮
@@ -114,6 +122,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, peso-real-vs-peso-aparente]
 > ### En Ciencias e Investigación
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Peso_Real_vs_Peso_Aparente_03.svg]]
+>
+> **Se lee así:** El mapa mental de aplicaciones del peso aparente: en **geología** (clasificación de minerales, análisis de sedimientos, estudios de suelos), en **biología marina** (adaptaciones de organismos, flotabilidad de peces, migración vertical), en **ingeniería** (sistemas de flotación, separadores industriales, control de procesos) y en **medicina** (densitometría ósea, análisis de tejidos, implantes biomédicos).
+>
+> **Por qué importa:** Muestra que el mismo principio —pesar un cuerpo en un fluido— es el método de medición de densidad: desde saber si un mineral es oro hasta medir la densidad ósea de un paciente.
 >
 
 > [!warning] Factores que Afectan la Medición ⚠️

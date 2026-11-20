@@ -14,6 +14,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, momentum-lineal-y-su-conserv
 > [!note] 🖼️ Contexto Fundamental
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Momentum_Lineal_y_Su_Conservación_01.svg]]
+>
+> **Se lee así:** El diagrama arranca del **momentum individual** `p = mv`, lo suma en el **momentum total** del sistema `P = Σpᵢ` y pregunta **¿`F_ext = 0`?**: si se cumple, el **momentum se conserva** (`P_inicial = P_final`); si no, **cambia** (`ΔP = J_ext`). Los ejemplos de aplicación son **colisiones**, **propulsión** y **deportes**.
+>
+> **Por qué importa:** Es la condición de uso de toda la unidad. Nótese que la pregunta es sobre las fuerzas **externas** al sistema: si el sistema se elige mal (por ejemplo, incluyendo la pared que empuja), la conservación no parece cumplirse.
 
 ---
 
@@ -51,6 +55,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, momentum-lineal-y-su-conserv
 > [!note] 🖼️ Análisis Vectorial
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Momentum_Lineal_y_Su_Conservación_02.svg]]
+>
+> **Se lee así:** El momentum en una sola lámina: su **magnitud** es `p = mv`, su **dirección** es la de la velocidad y su **sentido** el del movimiento, con **componentes** `px, py, pz`. De él se deriva el **impulso** `J = Δp`, la **energía cinética** `K = p²/2m` y la **fuerza** `F = dp/dt`.
+>
+> **Por qué importa:** La identidad `K = p²/2m` es la que más se olvida y la más útil: en un choque donde el momentum está fijado, la energía cinética depende solo de la masa. Y `F = dp/dt` es la forma general de la segunda ley de Newton, que cubre masas variables como en los cohetes.
 
 > [!example] 🔍 Análisis en 2D **Para un objeto moviéndose en el plano:**
 >
@@ -88,6 +96,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, momentum-lineal-y-su-conserv
 > [!note] 🖼️ Análisis de Fuerzas
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Momentum_Lineal_y_Su_Conservación_03.svg]]
+>
+> **Se lee así:** El argumento completo de la conservación: en un **sistema de n partículas** el **momentum total** es `P = Σpᵢ`; las **fuerzas internas** **se cancelan en pares** por la **tercera ley de Newton** y **no afectan** `P_total`; solo las **fuerzas externas** deciden, con la pregunta **¿`ΣF_ext = 0`?** —si sí, **P se conserva**; si no, `P` cambia según `dP/dt = ΣF_ext`.
+>
+> **Por qué importa:** Es la demostración del porqué: la conservación no es una regla empírica, es una consecuencia directa de la tercera ley. Eso explica por qué vale en colisiones, donde las fuerzas de contacto son enormes pero internas al sistema.
 
 > [!info] 📖 Fuerzas Internas vs Externas
 >
@@ -145,6 +157,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, momentum-lineal-y-su-conserv
 > [!note] 🖼️ Colisión Perfectamente Inelástica
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Momentum_Lineal_y_Su_Conservación_04.svg]]
+>
+> **Se lee así:** La colisión perfectamente inelástica en tres pasos: **antes** `m₁v₁ + m₂v₂`, la colisión donde **se unen**, y **después** `(m₁+m₂)v_f`. El resultado: **se conserva el momentum** y **se pierde energía cinética**.
+>
+> **Por qué importa:** Es la plantilla más corta de la unidad: una sola ecuación, `m₁v₁ + m₂v₂ = (m₁+m₂)v_f`, que da directamente la velocidad final. Y marca la asimetría central — el momentum nunca se pierde, la energía sí.
 
 > [!example] 🔍 Fórmula para Choque Inelástico **Objetos que se unen tras la colisión:** $$m_1\vec{v}_{1i} + m_2\vec{v}_{2i} = (m_1 + m_2)\vec{v}_f$$
 >
@@ -173,6 +189,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, momentum-lineal-y-su-conserv
 > [!note] 🖼️ Explosiones y Retroceso
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Momentum_Lineal_y_Su_Conservación_05.svg]]
+>
+> **Se lee así:** El balance de un cohete: el **estado inicial** es cohete + combustible con `P_inicial = 0`; después, la **expulsión de gases** (`m_gas × v_gas`) y el **cohete acelerado** (`m_cohete × v_cohete`) deben cumplir `p_gas + p_cohete = 0`.
+>
+> **Por qué importa:** Explica por qué un cohete puede acelerar en el vacío: no empuja contra el aire, empuja contra sus propios gases. Como el momentum total arranca en cero, la velocidad del gas expulsado en un sentido obliga al cohete a ir en el opuesto.
 
 ---
 
@@ -282,6 +302,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, momentum-lineal-y-su-conserv
 > [!note] 🖼️ Momentum en Diferentes Escalas
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Momentum_Lineal_y_Su_Conservación_06.svg]]
+>
+> **Se lee así:** El mapa mental de aplicaciones en tres escalas: la **microscópica** (colisiones moleculares, teoría cinética de los gases, dispersión de partículas, física cuántica), la **cotidiana** (deportes con pelotas, colisiones de vehículos, armas de fuego, maquinaria) y la **astronómica** (órbitas planetarias, choques de asteroides, formación de sistemas, galaxias interactuando).
+>
+> **Por qué importa:** Muestra que la misma ley `P = constante` gobierna desde el choque de dos moléculas hasta la colisión de galaxias: cambian las masas y las velocidades, no el principio.
 
 ---
 
@@ -323,6 +347,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, momentum-lineal-y-su-conserv
 > [!note] 🖼️ Conexiones Conceptuales
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Momentum_Lineal_y_Su_Conservación_07.svg]]
+>
+> **Se lee así:** El mapa de la unidad con su alcance: el **impulso** con el teorema `J = Δp`, las **fuerzas de contacto** y el **análisis temporal** con gráficas F vs t; las **leyes de Newton** (2ª como `F = dp/dt`, 3ª en las fuerzas internas, 1ª como caso especial); las **conservaciones** (energía, momento angular, simetrías de Noether, invariancias); y la **mecánica avanzada** (momentum relativista, Lagrangiana, Hamiltoniana, teoría de campos).
+>
+> **Por qué importa:** Sitúa el momentum dentro de la física completa: las conservaciones no son trucos aislados, se derivan de simetrías. Esa es la conexión que se estudia en cursos posteriores y la que explica por qué el momentum es tan central.
 
 ---
 

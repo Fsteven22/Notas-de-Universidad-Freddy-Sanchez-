@@ -19,6 +19,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, choques-uni-bidimensionales]
 > [!note] 🖼️ Contexto Fundamental
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Choques_Uni-Bidimensionales_01.svg]]
+>
+> **Se lee así:** La taxonomía de los choques en dos ejes: por **dimensión** (unidimensionales, bidimensionales, tridimensionales) y por **tipo de energía**, donde los unidimensionales se dividen en **perfectamente elásticos** (conservan `p` y `K`), **inelásticos generales** (conservan `p`, pierden `K`) y **completamente inelásticos** (conservan `p`, pérdida máxima de `K`); los bidimensionales quedan en **elásticos 2D** e **inelásticos 2D**.
+>
+> **Por qué importa:** La rama de la derecha es la regla de oro: el **momentum se conserva en todos los choques**, mientras que la energía cinética solo se conserva en los elásticos. Clasificar primero el tipo de choque dice qué ecuaciones están disponibles.
 
 ---
 
@@ -85,6 +89,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, choques-uni-bidimensionales]
 > [!note] 🖼️ Clasificación de Choques 1D
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Choques_Uni-Bidimensionales_02.svg]]
+>
+> **Se lee así:** El árbol de decisión con el **coeficiente de restitución e**: si la energía cinética se conserva, el choque es **elástico** (`e = 1`) con **rebote perfecto**; si no, es **inelástico** (`e < 1`), y ahí la segunda pregunta es si los objetos **se pegan**: si se pegan, **completamente inelástico** (`e = 0`), con **máxima pérdida de energía**; si se separan, **inelástico general** (`0 < e < 1`) con pérdida parcial.
+>
+> **Por qué importa:** El valor de `e` resume en un número todo el comportamiento del choque: `e = 1` es conservación total, `e = 0` es pérdida total. Y la consecuencia de `e = 0` —que los cuerpos queden unidos— es la que permite resolver el problema con una sola velocidad final.
 
 ### ✅ Choque Perfectamente Elástico
 
@@ -204,6 +212,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, choques-uni-bidimensionales]
 > [!note] 🖼️ ️ Metodología de Resolución 2D
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Choques_Uni-Bidimensionales_03.svg]]
+>
+> **Se lee así:** El método de siete pasos para un choque 2D: **1)** diagrama con estados inicial y final, **2)** descomposición vectorial (`vx`, `vy` de cada objeto), **3)** conservación del momentum en **X**, **4)** conservación en **Y**, **5)** sistema de ecuaciones simultáneas; luego la pregunta **¿elástico?** —si lo es, la **conservación de la energía** aporta una **ecuación adicional**— y **7)** solución final con verificación.
+>
+> **Por qué importa:** El paso 5 es el que falla: en 2D hacen falta tantas ecuaciones como incógnitas, y el momentum en un solo eje no alcanza. Y la ecuación de energía no es «extra», es la que cierra el sistema cuando el choque es elástico.
 
 > [!tip] 💡 Estrategia de Resolución
 >
@@ -279,6 +291,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, choques-uni-bidimensionales]
 > [!note] 🖼️ Accidentes Automovilísticos
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Choques_Uni-Bidimensionales_04.svg]]
+>
+> **Se lee así:** La cadena de la **evidencia física** en un accidente: las **marcas de frenado**, los **daños en los vehículos** y las **posiciones finales** alimentan un **análisis de momentum**, del que salen los **cálculos de velocidades** y de ahí las **conclusiones legales**.
+>
+> **Por qué importa:** Muestra una aplicación real del momentum lineal: no se puede medir la velocidad justo antes del impacto, pero el momentum conservado la reconstruye a partir de los datos posteriores. Es el motivo por el que la física de choques se usa en peritaje.
 
 ### ⚽ Aplicaciones Deportivas
 
@@ -313,6 +329,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, choques-uni-bidimensionales]
 > [!note] 🖼️ Comparación de Tipos de Choques
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Choques_Uni-Bidimensionales_05.svg]]
+>
+> **Se lee así:** El resumen de qué se conserva en qué: el **momentum se conserva SIEMPRE**, en **todos los choques**; la **energía cinética** solo en los **elásticos**; y la condición de **objetos unidos** corresponde **solo a los completamente inelásticos**, que son los de **máxima pérdida de energía**.
+>
+> **Por qué importa:** Es la diapositiva que conviene recordar antes de un examen: una sola regla para el momentum y una excepción por tipo de choque para la energía. Si un ejercicio dice «choque elástico», ya tienes dos ecuaciones; si dice «se unen», tienes una velocidad final.
 
 ---
 

@@ -472,6 +472,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, estadistica-basica]
 > [!success] 🔗 Proceso de Análisis Estadístico
 >
 > ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Estadística_Básica_01.svg]]
+>
+> **Se lee así:** El flujo estadístico del laboratorio: **recopilar datos** → **media aritmética** → **desviación estándar** → **verificar normalidad** con la pregunta **¿distribución normal?** — si **sí**, **regla 68-95-99,7**; si **no**, **estadísticas no paramétricas**; luego **intervalos de confianza**, **detección de outliers** y **reporte**.
+>
+> **Por qué importa:** La bifurcación de normalidad es lo que decide cómo se interpreta la desviación estándar: la regla 68-95-99,7 solo vale para distribuciones normales, y aplicarla a datos sesgados sobreestima la confianza. Los outliers se detectan después de tener el intervalo, no a simple vista.
 
 ## 🧮 Pruebas de Normalidad
 

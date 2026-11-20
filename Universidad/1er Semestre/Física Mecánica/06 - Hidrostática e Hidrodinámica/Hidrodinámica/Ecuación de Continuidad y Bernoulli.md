@@ -47,6 +47,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, ecuacion-de-continuidad-y-be
 > [!note] 🖼️ Diagrama de Continuidad
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Ecuación_de_Continuidad_y_Bernoulli_01.svg]]
+>
+> **Se lee así:** Un ejemplo numérico de **tubería variable**: la **entrada** (`A₁ = 10 cm²`, `v₁ = 2 m/s`) pasa por un **estrangulamiento** (`A₂ = 5 cm²`, `v₂ = 4 m/s`) hasta la **salida** (`A₃ = 8 cm²`, `v₃ = 2,5 m/s`), con un **caudal `Q = 20 cm³/s`** que permanece **constante en todo el sistema**.
+>
+> **Por qué importa:** Ilustra la continuidad con números: al reducir el área a la mitad, la velocidad se duplica; al volver a 8 cm², cae a 2,5 m/s. Y muestra que el caudal es el invariante — con él se controla que el cálculo no se haya desviado.
 
 ## 🧮 Ecuación de Bernoulli
 
@@ -105,6 +109,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, ecuacion-de-continuidad-y-be
 > ### 🔄 Balance Energético
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Ecuación_de_Continuidad_y_Bernoulli_02.svg]]
+>
+> **Se lee así:** La **energía total del fluido** descompuesta en tres términos: **energía de presión `P`**, **energía cinética `½ρv²`** y **energía potencial `ρgh`**, que se **intercambian** entre sí para cumplir la **conservación `E₁ = E₂`**.
+>
+> **Por qué importa:** Es la interpretación física de la ecuación de Bernoulli: cada término es una forma de energía por unidad de volumen. Por eso al estrecharse un tubo sube la velocidad a costa de la presión, y por eso una manguera sube el agua a costa de la altura.
 >
 
 > [!tip]+ Formas Alternativas de Bernoulli

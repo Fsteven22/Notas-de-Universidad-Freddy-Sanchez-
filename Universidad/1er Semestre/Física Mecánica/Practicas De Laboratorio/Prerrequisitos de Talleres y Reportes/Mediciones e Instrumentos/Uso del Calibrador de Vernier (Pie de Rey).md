@@ -96,6 +96,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, uso-del-calibrador-de-ve
 >
 > ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Uso_del_Calibrador_de_Vernier_(Pie_de_Rey)_01.svg]]
 >
+> **Se lee así:** La lectura del calibrador en tres pasos: **1)** leer la **escala principal** (el mm completo pasado el cero del vernier), **2)** buscar en el **vernier** la **línea que coincide** y **3)** **sumar** `lectura + n × precisión`. Las **precisiones típicas**: **10 divisiones → 0,1 mm**, **20 divisiones → 0,05 mm** (vernier de 19 mm en 20 partes) y **50 divisiones → 0,02 mm** (49 mm en 50). Ejemplo: cero entre 34 y 35, coincide la 7ª → **34,7 mm**.
+>
+> **Por qué importa:** El truco del vernier es que ninguna escala principal tiene divisiones tan finas: la línea que coincide traduce esa precisión en una lectura entera. El error habitual es sumar mal — la línea coincidente se multiplica por la precisión de esa regleta, no se cuenta como milímetros.
+>
 
 > [!note] **Procedimiento de Lectura Paso a Paso** 📝
 >

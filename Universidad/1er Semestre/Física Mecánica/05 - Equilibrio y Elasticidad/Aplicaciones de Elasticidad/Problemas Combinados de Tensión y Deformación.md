@@ -108,6 +108,10 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, problemas-combinados-de-t
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_Combinados_de_Tensión_y_Deformación_01.svg]]
 >
+> **Se lee así:** El mapa del estado de esfuerzo tridimensional: el **estado de esfuerzo** se describe con los **esfuerzos principales σ₁, σ₂, σ₃**, que producen las **deformaciones principales ε₁, ε₂, ε₃**; de ellas salen la **deformación volumétrica** `εv = ε₁+ε₂+ε₃` y la **distorsional εd**. En paralelo, los **módulos elásticos** son el **módulo Young E**, el **coeficiente de Poisson ν**, el **módulo cortante G** y el **módulo volumétrico K**.
+>
+> **Por qué importa:** Las flechas de la derecha indican qué módulo gobierna qué deformación: `E` y `ν` fijan las deformaciones principales, `G` la distorsional y `K` la volumétrica. Es el esquema que evita aplicar la ley de Hooke en un caso donde hace falta un módulo distinto.
+>
 
 > [!note] **Teorías de Falla** ⚖️
 >

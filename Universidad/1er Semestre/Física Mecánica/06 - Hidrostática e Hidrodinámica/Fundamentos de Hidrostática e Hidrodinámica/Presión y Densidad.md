@@ -133,6 +133,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, presion-y-densidad]
 > [!note] 🖼️ Presión Hidrostática
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Presión_y_Densidad_01.svg]]
+>
+> **Se lee así:** La variación de presión con la profundidad en tres puntos: desde la **superficie** con la **presión atmosférica** `P₀`, el **punto 1** a `h₁` da `P₁ = P₀ + ρgh₁` (**presión menor**), el **punto 2** a `h₂` da `P₂ = P₀ + ρgh₂` (**presión media**) y el **punto 3** a `h₃` da `P₃ = P₀ + ρgh₃` (**presión mayor**).
+>
+> **Por qué importa:** Es la gráfica de la ecuación `P = P₀ + ρgh`: cada metro de profundidad añade la misma presión, así que la relación es lineal. La comparación de los tres puntos muestra que lo único que cambia es `h` — misma densidad, misma atmósfera.
 
 ## Principios Fundamentales 🏗️
 
@@ -152,6 +156,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, presion-y-densidad]
 > [!note] 🖼️ Relación entre Presión y Densidad
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Presión_y_Densidad_02.svg]]
+>
+> **Se lee así:** La cadena de causas y efectos: una **mayor densidad ρ** o una **mayor profundidad h** son las dos **causas** de una **mayor presión P**, y esa presión es la que **resulta en** una **mayor fuerza F**.
+>
+> **Por qué importa:** Ordena la relación causal que se usa en todo el curso: primero se calcula la presión con `P = P₀ + ρgh` y recién después la fuerza con `F = PA`. Invertir el orden (calcular la fuerza directamente desde la profundidad) es el error más común en problemas de compuertas.
 
 > [!example] 🧮 **Ejemplo Práctico** **Problema**: Calcular la presión en el fondo de una piscina de 3 m de profundidad.
 >

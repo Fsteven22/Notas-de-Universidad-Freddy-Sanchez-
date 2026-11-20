@@ -31,6 +31,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, flujo-laminar-y-ecuacion-de-
 > ### 📊 Distribución de Velocidades
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Flujo_Laminar_y_Ecuación_de_Poiseuille_01.svg]]
+>
+> **Se lee así:** El **perfil parabólico** del flujo laminar: en la **pared del tubo** `v = 0`, en el **centro** `v` es **máxima**, y la **velocidad promedio** es `v̄ = v_máx/2`. Las **características** son **sin mezclado entre capas**, **pérdidas mínimas por fricción** y un **flujo predecible y estable**.
+>
+> **Por qué importa:** El factor 1/2 entre la velocidad máxima y la promedio es el que se usa al aplicar Bernoulli: en un tubo real hay que decidir si la velocidad de la ecuación es la del centro o la promedio, y esa decisión cambia el resultado. Y el perfil explica por qué la fricción actúa solo en la pared.
 
 ## 🧮 Ecuación de Poiseuille
 

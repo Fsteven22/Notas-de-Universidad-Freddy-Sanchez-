@@ -53,6 +53,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, la-paradoja-hidrostatica]
 > ### 🔍 Recipientes de Diferentes Formas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/La_Paradoja_Hidrostática_01.svg]]
+>
+> **Se lee así:** La paradoja resuelta: tres recipientes de **volumenes distintos** (cilíndrico `πr²h`, cónico `⅓πr²h` y con estrechamiento de volumen variable) tienen la **misma presión en el fondo** (`ρgh`) y por lo tanto **la misma fuerza total** (`πr²ρgh`).
+>
+> **Por qué importa:** Rompe la intuición de que un recipiente con más agua empuja más fuerte: la presión en el fondo depende solo de la profundidad, no de la cantidad de líquido encima. Es la razón por la que un sólido de base ancha no se hunde más fácil.
 
 ## 💡 Explicación Física
 
@@ -102,6 +106,10 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, la-paradoja-hidrostatica]
 > ### 🧪 Materiales y Procedimiento
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/La_Paradoja_Hidrostática_02.svg]]
+>
+> **Se lee así:** La demostración experimental: un **tubo en U** con un **recipiente ancho** y un **recipiente estrecho** mantiene el **mismo nivel** en ambos, lo que confirma la paradoja.
+>
+> **Por qué importa:** Los vasos comunicantes convierten el argumento teórico en algo visible: si el líquido se quedara más alto en el lado ancho, la presión en la base sería mayor y el líquido se movería hasta igualarla. Ese es el mecanismo real detrás del teorema.
 >
 > **Observación**: A pesar de contener volúmenes muy diferentes, el agua alcanza el mismo nivel en ambos brazos.
 >

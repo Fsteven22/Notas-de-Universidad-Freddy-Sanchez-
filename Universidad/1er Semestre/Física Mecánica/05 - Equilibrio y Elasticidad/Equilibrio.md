@@ -45,6 +45,10 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, equilibrio]
 > [!note] 🖼️ Metodología de Análisis
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Equilibrio_01.svg]]
+>
+> **Se lee así:** El criterio de equilibrio en dos condiciones: un **sistema en reposo** debe cumplir **`ΣF = 0`** (equilibrio traslacional) y **`Στ = 0`** (equilibrio rotacional); solo cuando ambas se verifican se tiene **equilibrio estático**, y a partir de ahí se pasa a **analizar la estabilidad**.
+>
+> **Por qué importa:** Las dos condiciones son independientes: un objeto puede tener fuerzas que se anulan y aun así voltearse por un torque neto. Ese es exactamente el caso de la balanza y de la viga con dos soportes.
 
 ## Tipos de Estabilidad 🎢
 
@@ -78,6 +82,10 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, equilibrio]
 > [!note] 🖼️ Equilibrio Neutro ️
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Equilibrio_02.svg]]
+>
+> **Se lee así:** Los tres tipos de estabilidad según el movimiento del centro de gravedad al perturbar: en el **estable** el **CG sube** y el sistema **regresa al origen**; en el **inestable** el **CG baja** y el sistema **se aleja**; en el **neutro** el **CG se mantiene a altura constante** y el sistema queda en una **nueva posición**.
+>
+> **Por qué importa:** El criterio de energía reescrito en una regla visual: estable significa que hay que invertir energía para desplazarlo, inestable significa que gana energía al caer. El neutro es el caso del rodillo o la esfera sobre una superficie plana.
 
 ### Análisis Energético 🔋
 
@@ -126,6 +134,10 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, equilibrio]
 > [!note] 🖼️ Ejemplo Resuelto
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Equilibrio_03.svg]]
+>
+> **Se lee así:** El planteamiento numérico del problema de la viga: un **puente L de 100 kg** con un **auto de 1000 kg a L/4**, apoyado en un **pilar izquierdo `F₁`** y un **pilar derecho `F₂`**; el peso del auto es **9800 N** y el del puente **980 N aplicado a L/2**.
+>
+> **Por qué importa:** Es el esquema previo al cálculo: todos los datos necesarios para imponer `Στ = 0` e `ΣF = 0` ya están declarados. El detalle importante es que el peso del puente se aplica en el centro de la viga, no en su extremo.
 
 ### Conexiones Conceptuales 🔗
 

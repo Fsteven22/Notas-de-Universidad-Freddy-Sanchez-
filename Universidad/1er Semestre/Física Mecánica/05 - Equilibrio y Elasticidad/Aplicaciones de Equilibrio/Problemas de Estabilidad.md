@@ -85,6 +85,10 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, problemas-de-estabilidad]
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Estabilidad_01.svg]]
 >
+> **Se lee así:** El mapa de la estabilidad en cuatro bloques: las **claves del CG** (**proyección dentro de la base → estable**, **proyección fuera del borde → vuelco**, **CG a altura constante → neutro**); el **vuelco inminente**, donde la **línea de acción del peso pasa por el borde de la base** y `M_vuelco = M_estabilizador`, resoluble por el **método del punto de vuelco** (igualar momentos respecto del borde); la advertencia de que **también afecta el deslizamiento** (**fricción insuficiente → la masa desliza antes de volcar**); y los **factores de mejora**: base más ancha, CG más bajo y carga segura.
+>
+> **Por qué importa:** El último bloque es el más práctico: en una cama de carga alta o un camión con la bandeja elevada, el vuelco no siempre es el primer modo de falla — a veces el vehículo se desliza antes de volcar, y hay que comparar ambos umbrales.
+>
 
 > [!note] **Condiciones de Vuelco** 🔄
 >
