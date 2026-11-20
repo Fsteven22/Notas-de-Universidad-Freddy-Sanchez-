@@ -63,6 +63,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, fundamentos, conocimientos-previos-a-
 > [!note] 🖼️ 1.7 Gráficas
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Conocimientos_Previos_a_las_Prácticas_01.svg]]
+>
+> **Se lee así:** El flujo completo de una medición experimental: la **medición** produce **fuentes de error** que se clasifican en **sistemáticos** y **aleatorios**; de los segundos se deriva la **cuantificación de incertidumbre** (**absoluta** `ΔX` y **relativa** `ΔX/X`), que permite **reportar `X ± ΔX`**, **comparar precisión** y, tras la **propagación de errores**, obtener las **magnitudes indirectas con incertidumbre**.
+>
+> **Por qué importa:** Es el esqueleto de todo informe de laboratorio: sin clasificar el error primero no se puede decidir si se corrige (sistemático) o se promedia (aleatorio). Y la propagación es el paso que la mayoría olvida al reportar un área o una densidad calculadas.
 ### 1.8 Ejemplo de aplicación: Medición del Tiempo de Caída de un Objeto
 
 #### Contexto
@@ -156,6 +160,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, fundamentos, conocimientos-previos-a-
 > Este ejemplo, al ser una única medición de un valor promedio, no se presta a una gráfica de datos $(x,y)$ como la anterior. Sin embargo, podríamos visualizar el proceso de medición:
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Conocimientos_Previos_a_las_Prácticas_02.svg]]
+>
+> **Se lee así:** El procedimiento para medir un intervalo de tiempo: **identificar el evento**, tomar **múltiples mediciones `tᵢ`**, calcular el **promedio `t_prom`**, **estimar la incertidumbre `Δt`**, aplicar **cifras significativas y redondeo** y **reportar `(t_prom ± Δt)` con unidades**.
+>
+> **Por qué importa:** Muestra por qué se repite la medida: una sola toma no tiene incertidumbre estimable. El promedio reduce el error aleatorio y la desviación entre tomas es la que da el `Δt` que se reporta.
 
 ## 🔢 Tema General 2: Cifras Significativas y Redondeo
 
@@ -216,6 +224,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, fundamentos, conocimientos-previos-a-
 > [!note] 🖼️ 2.7 Gráficas
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Conocimientos_Previos_a_las_Prácticas_03.svg]]
+>
+> **Se lee así:** Las reglas de cifras significativas aplicadas a la medición bruta: se **cuentan las CS**, se distingue entre **suma/resta** (se redondea a **decimales correctos**) y **multiplicación/división** (se redondea a **CS correctas**), hasta obtener el **resultado con la precisión adecuada**.
+>
+> **Por qué importa:** Resume la distinción que más se confunde: en sumas manda la posición del último decimal, en productos el número total de cifras. Aplicar la regla equivocada infla o reduce la precisión reportada sin que se note en el valor.
 ### 2.8 Ejemplo de aplicación: Cálculo Sencillo de un Área de un Rectángulo (Cifras Significativas)
 
 #### Contexto
@@ -291,6 +303,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, fundamentos, conocimientos-previos-a-
 > Para este ejemplo específico de cálculo de área, no se genera una gráfica de datos como tal. Es una aplicación directa de las reglas de cálculo.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Conocimientos_Previos_a_las_Prácticas_04.svg]]
+>
+> **Se lee así:** El caso concreto de las cifras significativas en un producto: **medir el largo `L`** y el **ancho `A`** con sus CS, **multiplicar `L × A`**, identificar el **número con menos CS** entre los dos factores, **redondear el área a esa cantidad** y **reportarla** (en notación científica si conviene).
+>
+> **Por qué importa:** Da la regla operativa paso a paso: el resultado nunca puede ser más preciso que el dato menos preciso de partida. Por eso medir el ancho con más cifras que el largo no mejora el área final.
 ## 📘 Tema General 3: Graficación de Datos
 
 ### 3.1 Contexto
@@ -348,6 +364,10 @@ tags: [FISG1001, unidad0, fisica-mecanica, fundamentos, conocimientos-previos-a-
 > [!note] 🖼️ 3.7 Gráficas
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Conocimientos_Previos_a_las_Prácticas_05.svg]]
+>
+> **Se lee así:** El flujo para graficar una relación entre datos: se parte de la **tabla `x, y`** y se pregunta **qué tipo de relación es** — **directa/lineal** se grafica en **papel milimetrado**, **curva no lineal** (potencia, exponencial) se **transforma** (por ejemplo con logaritmos) y se usa **papel logarítmico**; en ambos casos se **plotea con barras de error**, se traza la **línea de mejor ajuste**, se calculan **pendiente e intersección** y se **interpretan físicamente**.
+>
+> **Por qué importa:** Es la decisión metodológica de todo el laboratorio: si la gráfica sale curva, la solución no es trazar una curva a mano, sino transformar los datos hasta que se linealic. La pendiente de esa recta transformada es la constante que se busca.
 ### 3.8 Ejemplo de aplicación: Medición de la Distancia recorrida por un Carrito a Velocidad Constante
 
 #### Contexto
@@ -454,5 +474,9 @@ tags: [FISG1001, unidad0, fisica-mecanica, fundamentos, conocimientos-previos-a-
 > [!note] 🖼️ Gráfica de Flujo del Procedimiento
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Conocimientos_Previos_a_las_Prácticas_06.svg]]
+>
+> **Se lee así:** El flujo específico de **tiempo vs distancia**: **preparar ejes y escala**, **plotear los puntos**, **trazar la recta de mejor ajuste**, **calcular la pendiente**, **interpretarla como velocidad** y así **confirmar el movimiento constante**.
+>
+> **Por qué importa:** Es la aplicación de la regla anterior a un caso: pendiente de distancia contra tiempo = velocidad. Si los puntos caen sobre la recta, el movimiento es uniforme; si se desvían sistemáticamente, la aceleración es cero es una hipótesis mala.
 
 **Tags:** #FISG1001 #fisica-mecanica #fundamentos #conocimientos-previos-a-las-practicas
