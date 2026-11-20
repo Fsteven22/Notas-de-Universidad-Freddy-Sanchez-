@@ -887,7 +887,7 @@ tags: [planos, fundamentos, ecuacion]
 
 ---
 
-## 🧪 Ejercicios Propuestos
+## 🧪 Práctica Progresiva
 
 > [!question] 💪 Práctica Progresiva
 >
