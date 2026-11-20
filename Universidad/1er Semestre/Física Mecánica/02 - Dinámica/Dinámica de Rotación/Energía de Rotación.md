@@ -74,6 +74,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, energia-de-rotacion]
 > $$E_{inicial} = E_{final}$$ $$K_{total,i} + U_{g,i} = K_{total,f} + U_{g,f}$$
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Energía_de_Rotación_01.svg]]
+>
+> **Se lee así:** El diagrama muestra que la **energía cinética total** de un cuerpo que se mueve y gira es la suma de dos partes: la **traslacional** `½Mv²` y la **rotacional** `½Iω²`. La energía potencial `Mgh` es la que puede convertirse en esa cinética.
+>
+> **Por qué importa:** Obliga a no olvidar la segunda mitad de la energía: un cuerpo que rueda lleva energía en las dos componentes, y esa es la razón de que un cilindro y una esfera no bajen la misma pendiente a la misma velocidad.
 
 ---
 
@@ -91,6 +95,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, energia-de-rotacion]
 > [!info] 📊 Visualización de Distribución Energética
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Energía_de_Rotación_02.svg]]
+>
+> **Se lee así:** El gráfico de torta reparte la energía cinética de un **cilindro que rueda**: un **67 %** en la parte traslacional y un **33 %** en la rotacional.
+>
+> **Por qué importa:** Da la proporción numérica del caso clásico: con β = ½, la energía rotacional es la mitad de la traslacional, es decir, un tercio del total. Es el reparto que explica por qué el factor `1 + β` aparece en todas las fórmulas de rodadura.
 >
 
 > [!tip] 🎯 Implicación Práctica **Los objetos con menor momento de inercia llegan más rápido** al final de una rampa porque dedican más energía a la traslación que a la rotación.
@@ -197,6 +205,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, energia-de-rotacion]
 > [!info] 🌐 Red de Conceptos
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Energía_de_Rotación_03.svg]]
+>
+> **Se lee así:** El mapa mental organiza la energía de rotación en cinco frentes: los **fundamentos** (momento de inercia, velocidad angular, energía cinética), la **conservación** (energía mecánica, conversión potencial-cinética, método energético), las **aplicaciones** (rodadura, volantes de inercia, discos duros, motores), el **trabajo y la potencia** rotacionales con el teorema trabajo-energía, y el **análisis** (distribución energética, comparación de objetos, eficiencia).
+>
+> **Por qué importa:** Cierra la unidad conectando la rotación con las dos unidades siguientes: la energía se conserva cuando no hay fuerzas no conservativas, y el teorema trabajo-energía (`W_rot = ΔK_rot`) permite resolver problemas donde la energía no se conserva pero el trabajo de las fuerzas es conocido.
 >
 
 > [!tip] 🎯 Estrategias de Resolución

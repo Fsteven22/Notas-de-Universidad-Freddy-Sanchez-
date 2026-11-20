@@ -37,6 +37,10 @@ tags: [FISG1001, unidad3, fisica-mecanica, trabajo-energia, diagramas-de-energia
 > [!note] 🖼️ Relaciones Energéticas
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Diagramas_de_Energía_01.svg]]
+>
+> **Se lee así:** El diagrama monta la aritmética de la energía total: **E = K + U**, y de ahí salen dos lecturas — la energía cinética es lo que queda al restar (`K = E − U`) y la fuerza asociada es el **gradiente negativo** del potencial (`F_x = −dU/dx`).
+>
+> **Por qué importa:** Son las dos operaciones opuestas que se usan todo el tiempo: para pasar de U a K se resta, y para pasar de U a la fuerza se deriva con signo cambiado. Si la fuerza sale negativa, la energía potencial está creciendo en esa dirección.
 
 ---
 
@@ -61,6 +65,10 @@ tags: [FISG1001, unidad3, fisica-mecanica, trabajo-energia, diagramas-de-energia
 > [!note] 🖼️ Elementos Visuales
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Diagramas_de_Energía_02.svg]]
+>
+> **Se lee así:** La lectura gráfica del problema: en el eje **Y** va la energía (E, U, K) y en el **X** la posición; la **curva U(x)** es la energía potencial, la **línea E** es la energía total y **horizontal** (se conserva), y la **distancia vertical** entre ellas en cada punto es la energía cinética `K = E − U`.
+>
+> **Por qué importa:** Es la herramienta visual más útil de la unidad: donde la curva U toca la línea E, K llega a cero y el objeto se detiene; donde la curva está lejos por abajo, el objeto va rápido. Y como E es horizontal, se ve de un vistazo si el movimiento es posible o no en cada región.
 
 ### 🔍 Regiones de Movimiento
 
@@ -85,12 +93,20 @@ tags: [FISG1001, unidad3, fisica-mecanica, trabajo-energia, diagramas-de-energia
 > [!note] 🖼️ Puntos de Retorno
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Diagramas_de_Energía_03.svg]]
+>
+> **Se lee así:** El ciclo de un cuerpo en un pozo de potencial: **se acerca**, llega al **punto de retorno** donde `v = 0` y `K = 0` (toda la energía es potencial), y después **se aleja** en la dirección opuesta.
+>
+> **Por qué importa:** Fija el concepto de punto de retorno: el objeto nunca pasa de ahí porque no le alcanza energía cinética. Es la misma idea que la altura máxima de un tiro vertical, solo que dibujada sobre la curva U(x).
 
 ### ⚖️ Puntos de Equilibrio
 
 > [!note] 🖼️ ️ Puntos de Equilibrio
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Diagramas_de_Energía_04.svg]]
+>
+> **Se lee así:** Los tres tipos de **puntos de equilibrio** (donde `F_x = 0`): el **estable**, correspondiente a los **mínimos locales** (`d²U/dx² > 0`, «valles»); el **inestable**, a los **máximos locales** (`d²U/dx² < 0`, «picos»); y el **neutro**, a las **regiones planas** (`d²U/dx² = 0`, «mesetas»).
+>
+> **Por qué importa:** Convierte la segunda derivada en una intuición: si empujas un objeto en un valle, la fuerza lo devuelve; en un pico, la fuerza lo aleja más. Es el criterio que aparece en oscilaciones, en la estabilidad de las órbitas y en cualquier problema con un potencial dado.
 
 #### 🏔️ Equilibrio Estable
 
@@ -126,6 +142,10 @@ tags: [FISG1001, unidad3, fisica-mecanica, trabajo-energia, diagramas-de-energia
 > [!note] 🖼️ Conexiones Conceptuales
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Diagramas_de_Energía_05.svg]]
+>
+> **Se lee así:** El mapa mental conecta los cuatro bloques: el **trabajo de las fuerzas conservativas** (define la energía potencial y su trabajo no depende del camino), la **conservación de la energía** (línea horizontal E y el principio fundamental), el **movimiento oscilatorio** (análisis de oscilaciones, período y amplitud) y la **dinámica de partículas** (predicción de trayectorias y análisis de fuerzas).
+>
+> **Por qué importa:** Ubica la gráfica U(x) dentro del curso: el trabajo conservativo es lo que permite dibujar la curva, la curva permite leer K, y de ahí sale el análisis de oscilaciones de la unidad de elasticidad.
 
 ---
 

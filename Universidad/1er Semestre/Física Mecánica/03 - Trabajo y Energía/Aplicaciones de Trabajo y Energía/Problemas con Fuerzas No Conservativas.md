@@ -79,6 +79,10 @@ tags: [FISG1001, unidad3, fisica-mecanica, trabajo-energia, problemas-con-fuerza
 > [!success] 🔗 Estrategias de Resolución
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_con_Fuerzas_No_Conservativas_01.svg]]
+>
+> **Se lee así:** El flujo para un problema con fuerzas no conservativas: **identificar las fuerzas** y separarlas en **conservativas** y **no conservativas**; calcular el **ΔE_potencial** y el **W_no_conservativo**; combinarlos con la ecuación `E_inicial + W_no_cons = E_final`; y **resolver para la incógnita**.
+>
+> **Por qué importa:** Es la ecuación general que reemplaza a la conservación pura: el trabajo de la fricción se suma como un término que resta energía al sistema. El orden importa — clasificar antes de calcular — porque mezclar ambos tipos de fuerza en un solo término es el error clásico.
 
 ## 🔧 Estrategias de Resolución
 

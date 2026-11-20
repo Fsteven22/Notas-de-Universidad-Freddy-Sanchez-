@@ -97,6 +97,10 @@ tags: [FISG1001, unidad3, fisica-mecanica, trabajo-energia, potencia-y-gradiente
 > [!note] 🖼️ Conexiones con Otros Temas
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Potencia_y_Gradiente_de_Potencial_01.svg]]
+>
+> **Se lee así:** El diagrama separa las dos ideas de la nota: la **potencia** se construye con el **trabajo** y el **tiempo**, y es la tasa a la que se entrega **energía**; el **gradiente de potencial** es la operación que lleva de las **fuerzas conservativas** a la **energía potencial**, y de ahí a los dos casos clásicos, la **gravedad** y la **fuerza elástica**.
+>
+> **Por qué importa:** Evita la confusión de fondo: potencia y gradiente no son dos «fuerzas» nuevas, son dos operaciones distintas sobre magnitudes que ya conoces. Potencia mide qué tan rápido se consume energía; el gradiente dice en qué dirección la energía potencial crece más rápido.
 
 > [!tip] Relaciones Clave
 >
@@ -119,6 +123,10 @@ tags: [FISG1001, unidad3, fisica-mecanica, trabajo-energia, potencia-y-gradiente
 > [!note] 🖼️ Gráfica Potencia vs. Tiempo
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Potencia_y_Gradiente_de_Potencial_02.svg]]
+>
+> **Se lee así:** La lectura de la gráfica **P vs t**: el **área bajo la curva** de potencia contra el tiempo es el **trabajo total** entregado en ese intervalo.
+>
+> **Por qué importa:** Es el teorema fundamental de la potencia, escrito gráficamente: como `P = dW/dt`, integrar devuelve el trabajo. Si la potencia es constante, el área es un rectángulo (`P·Δt`); si varía, hay que medir el área de la curva.
 
 ### 📉 Gráfica Energía Potencial vs. Posición
 
@@ -166,6 +174,10 @@ tags: [FISG1001, unidad3, fisica-mecanica, trabajo-energia, potencia-y-gradiente
 > [!note] 🖼️ Síntesis Final
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Potencia_y_Gradiente_de_Potencial_03.svg]]
+>
+> **Se lee así:** El árbol de dependencias: la **energía** se convierte en **trabajo**, y el trabajo se mide con la **potencia**; en paralelo, la **energía potencial** se deriva en **gradiente**, cuya lectura da la **rapidez del cambio** (potencia) y la **dirección del cambio** (fuerza).
+>
+> **Por qué importa:** Deja ver que el gradiente contiene dos piezas de información a la vez: su magnitud dice qué tan rápido cambia la energía por unidad de longitud (que es la fuerza) y su dirección apunta hacia el lugar donde la energía potencial disminuye, que es justo hacia donde irá el cuerpo.
 ## 🔗 Referencias y Enlaces
 
 > [!quote]  Notas Relacionadas

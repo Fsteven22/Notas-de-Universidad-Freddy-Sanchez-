@@ -97,6 +97,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, problemas-de-torque]
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Torque_01.svg]]
 >
+> **Se lee así:** El diagrama ofrece dos formas idénticas de calcular el torque: el **método 1**, por **componente útil** (`F⊥ = F sinθ`, luego `τ = F⊥r`), y el **método 2**, por **brazo efectivo** (`d = r sinθ`, luego `τ = Fd`). En ambos casos la fuerza tangencial contribuye y la radial no aporta torque. Los **casos límite** son `θ = 90°` (torque máximo `Fr`) y `θ = 0° o 180°` (torque nulo), y el **error típico** señalado es multiplicar la fuerza completa en vez del componente útil.
+>
+> **Por qué importa:** Los dos métodos son la misma cuenta escrita de dos formas;eligir el segundo (brazo efectivo) es más rápido cuando se pide el torque de una fuerza cuya línea de acción no pasa por el eje, porque evita el producto vectorial.
+>
 
 > [!example] **Uso de τ = F · r · sin θ** 🔄
 >

@@ -66,6 +66,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, giroscopios-y-precesion]
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Giroscopios_y_Precesión_01.svg]]
 >
+> **Se lee así:** El diagrama sigue la cadena: un **giroscopio girando** recibe un **torque externo**, y la pregunta clave es la dirección del cambio. La respuesta es un **cambio perpendicular** al torque: el vector **L cambia de dirección**, no de módulo, lo que produce la **precesión del eje** y un equilibrio dinámico.
+>
+> **Por qué importa:** Es la idea más contraintuitiva del tema: un torque no acelera el giro, lo desvía. Por eso un giroscopio no cae mientras gira y por eso la precesión se estudia con `τ = Ω × L`.
+>
 
 > [!note] 📐 Diagrama Vectorial En un giroscopio típico:
 >
@@ -213,6 +217,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, giroscopios-y-precesion]
 > [!info] 🌐 Red de Conceptos
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Giroscopios_y_Precesión_02.svg]]
+>
+> **Se lee así:** El mapa mental reparte el tema en cinco áreas: los **fundamentos vectoriales** (momento angular, torque como vector, producto vectorial, regla de la mano derecha), la **conservación** (momento angular, estabilidad direccional, resistencia al cambio), las **aplicaciones** (navegación, estabilización, control de vehículos, instrumentos de precisión), los **ejemplos naturales** (precesión terrestre, estabilidad de la bicicleta, efectos en helicópteros) y la **tecnología** (MEMS, fibra óptica, smartphones, drones).
+>
+> **Por qué importa:** Muestra la transferencia entre escalas: una ley de tres líneas explica por qué un avión no se invierte, por qué un drone se estabiliza solo y por qué el giróscopo de un smartwatch mantiene la orientación de la pantalla.
 >
 
 > [!tip] 🎯 Estrategias de Comprensión

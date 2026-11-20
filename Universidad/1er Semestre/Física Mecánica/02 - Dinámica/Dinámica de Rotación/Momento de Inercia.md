@@ -66,6 +66,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, momento-de-inercia]
 > [!abstract] 📊 Mapa de Relaciones
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Momento_de_Inercia_01.svg]]
+>
+> **Se lee así:** El mapa del **momento de inercia I**: depende de la **masa m** y de la **distribución de la masa** medida como **r²**; cada **geometría** tiene su fórmula específica (anillo MR², disco ½MR², esfera ⅖MR², varilla 1/12 ML²), y el **teorema de ejes paralelos** `I = I_CM + Md²` permite desplazar el eje. Con él aparecen las dos ecuaciones de la dinámica rotacional: `τ = Iα` y `K_rot = ½Iω²`.
+>
+> **Por qué importa:** Es el resumen conceptual del tema: I es la «masa rotacional», o sea la resistencia de un cuerpo a cambiar su rotación. Todo lo demás (torque, energía rotacional, conservación del momento) se expresa en función de I.
 
 ---
 
@@ -97,6 +101,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, momento-de-inercia]
 > [!info] 🛠️ Flujo de Resolución
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Momento_de_Inercia_02.svg]]
+>
+> **Se lee así:** El procedimiento de cálculo en pasos: **identificar el sistema**, decidir si es **partícula** (`I = mr²`), **sistema de partículas** (`I = Σmᵢrᵢ²`) o **cuerpo rígido** (buscar la geometría), aplicar la **fórmula específica** y preguntarse si el **eje pasa por el centro de masa**: si no, usar el teorema de ejes paralelos `I = I_CM + Md²` antes de dar el resultado final.
+>
+> **Por qué importa:** Es la hoja de ruta para no calcular mal un momento de inercia: el error más común es usar la fórmula del disco sobre un anillo, o aplicar la del centro de masas a un eje que no pasa por el CM.
 
 ---
 

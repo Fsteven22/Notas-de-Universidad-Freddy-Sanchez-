@@ -89,6 +89,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, problemas-de-cuerpos-rigido
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Cuerpos_Rígidos_en_Sistemas_con_Poleas_01.svg]]
 >
+> **Se lee así:** El esquema de una polea con **masa colgante** y **masa en plano inclinado** separa las dos familias de ecuaciones: en lo **traslacional** (`ΣF = ma`) la masa colgante da `mg − T = ma` y la del plano `mg sinθ − T − f = ma`; en lo **rotacional** (`Στ = Iα`) la polea da `T₁R − T₂R = Iα`, con la **restricción cinemática `a = αR`** (la cuerda no se estira). El diagrama distingue la cuerda **ideal** (masa nula → `T₁ = T₂`) de la **masiva** (participa del sistema → `T₁ ≠ T₂`) y cierra con la **alternativa energética** `mgh + ½mv² + ½Iω² = constante`.
+>
+> **Por qué importa:** El diagrama contiene la estructura completa del problema y, sobre todo, el punto donde fallan los intentos mal planteados: la polea con masa no puede ir «en el DCL de los dos cuerpos», necesita su propia ecuación de rotación, y su masa deja de ser despreciable. La alternativa energética solo sirve si no hay fricción.
+>
 
 > [!note] **Ecuaciones de Conservación** 📐
 >

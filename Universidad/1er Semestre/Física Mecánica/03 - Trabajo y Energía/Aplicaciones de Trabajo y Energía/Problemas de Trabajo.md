@@ -51,6 +51,10 @@ tags: [FISG1001, unidad3, fisica-mecanica, trabajo-energia, problemas-de-trabajo
 > [!success] 🔗 Clasificación de Problemas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Trabajo_01.svg]]
+>
+> **Se lee así:** El mapa completo del trabajo con ángulo: `W = F d cosθ` da `W = +Fd` a `0°` (mismo sentido), **positivo** como motor entre 0° y 90°, **cero a 90°** (perpendicular no trabaja), **negativo** como resistivo entre 90° y 180° y `W = −Fd` a 180°. Al lado, el **teorema trabajo-energía** `W total = ΔE cinética`: si la suma es menor que cero el cuerpo **frena**, si es cero la **velocidad es constante**, y `W neto` es la suma de los trabajos de cada fuerza.
+>
+> **Por qué importa:** Une la regla del signo con su consecuencia dinámica: un trabajo neto negativo no es un dato menor, es la señal de que el objeto pierde velocidad. El caso `W = 0` es el equilibrio, que conecta con la primera ley de Newton.
 
 ## 🔧 Trabajo con Fuerzas Constantes
 

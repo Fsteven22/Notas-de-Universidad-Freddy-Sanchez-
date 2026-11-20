@@ -60,6 +60,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, momentum-angular]
 > [!info] 🎯 Proceso de Conservación
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Momentum_Angular_01.svg]]
+>
+> **Se lee así:** El diagrama es una decisión: ¿el **torque externo neto es cero**? Si es así, el **momento angular se conserva** (`L_inicial = L_final`, que para un cuerpo rígido se escribe `I₁ω₁ = I₂ω₂`); si no, el momento angular cambia y se aplica la **segunda ley de Newton rotacional** `τ = dL/dt`.
+>
+> **Por qué importa:** Encierra la ley de conservación en la misma pregunta que se hace en todo el curso: ¿hay fuerza externa neta? En translación se pregunta por la fuerza; en rotación, por el torque.
 
 ---
 
@@ -111,6 +115,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, momentum-angular]
 > [!info] 📊 Gráfica: Momento Angular vs Tiempo
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Momentum_Angular_02.svg]]
+>
+> **Se lee así:** La lectura de la gráfica **L vs t**: una **línea horizontal** significa torque cero y momento angular conservado; una **pendiente constante** significa torque constante; una **curva** significa torque variable.
+>
+> **Por qué importa:** Convierte el teorema `τ = dL/dt` en una lectura de gráfica: el torque es la pendiente de la curva L-t. Es la misma idea que `F = dp/dt` en la unidad de impulso, aplicada al giro.
 >
 > **Interpretación:** La pendiente de $L$ vs $t$ representa el torque neto externo.
 
@@ -209,6 +217,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, momentum-angular]
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Momentum_Angular_03.svg]]
 >
+> **Se lee así:** El mapa mental conecta la conservación del momento angular con cuatro bloques: la **dinámica rotacional** (momento de inercia, velocidad angular, torque, segunda ley de Newton), la **dinámica lineal** (momentum lineal, conservación del momentum, impulso, analogías), la **energía** (energía cinética rotacional, que **no** se conserva en el mismo sentido, y el trabajo realizado) y las **aplicaciones** (patinaje artístico, clavados, astronomía, giroscopios).
+>
+> **Por qué importa:** Fija el paralelismo con la unidad de impulso: la analogía es exacta (momentum ↔ momento angular, fuerza ↔ torque, masa ↔ momento de inercia), y a la vez marca su límite: la energía cinética rotacional no se conserva cuando hay torque externo.
+>
 
 > [!tip] 🎯 Estrategias de Resolución
 >
@@ -296,6 +308,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, momentum-angular]
 > [!note] 🖼️ Marco Teórico
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Momentum_Angular_04.svg]]
+>
+> **Se lee así:** La cadena causal: un **torque neto τ** aplicado durante un intervalo Δt produce un **impulso angular Jτ**, que a su vez produce el **cambio en momento angular ΔL**, que determina la **nueva velocidad angular ωf**.
+>
+> **Por qué importa:** Es el teorema del impulso angular, que es al momentum angular lo que el teorema del impulso al momentum lineal. Permite resolver el «¿cuánto cambia ω si el torque actúa X segundos?» sin integrar la ecuación del movimiento.
 
 ### Aplicaciones Prácticas 🔧
 
@@ -324,6 +340,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, momentum-angular]
 > [!note] 🖼️ Análisis Gráfico
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Momentum_Angular_05.svg]]
+>
+> **Se lee así:** La misma cadena expresada como área: el **área bajo la curva τ-t** es el **impulso angular Jτ**, que da el **cambio en L** y de ahí la **velocidad final ωf**.
+>
+> **Por qué importa:** Da la lectura gráfica que funciona en cualquier caso: si el torque es constante, el área es un rectángulo (τ·Δt); si es variable, el área es el área bajo la curva. Es la versión rotacional del teorema del impulso.
 
 ### Ejemplos Resueltos 📝
 

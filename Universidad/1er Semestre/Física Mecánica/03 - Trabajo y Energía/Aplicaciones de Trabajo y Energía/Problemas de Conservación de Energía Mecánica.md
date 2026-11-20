@@ -68,6 +68,10 @@ tags: [FISG1001, unidad3, fisica-mecanica, trabajo-energia, problemas-de-conserv
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Conservación_de_Energía_Mecánica_01.svg]]
 >
+> **Se lee así:** El procedimiento de siete pasos para un problema de conservación: **identificar el sistema**, **definir los estados inicial y final**, **establecer el nivel de referencia** para la energía potencial, **calcular las energías en cada estado**, **aplicar la conservación `E₁ = E₂`**, **resolver para la incógnita** y **verificar el resultado físicamente**.
+>
+> **Por qué importa:** El paso del **nivel de referencia** es el que se salta todo el mundo: sin elegir dónde `U = 0`, las dos energías potenciales no son comparables. Y el paso final de verificación es de sentido físico: un objeto no puede llegar más rápido de lo que permite su caída.
+>
 
 > [!note] **Ecuaciones Fundamentales** 📐
 >

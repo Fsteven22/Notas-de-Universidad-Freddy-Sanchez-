@@ -310,6 +310,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, problemas-de-calculo-de-mom
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Cálculo_de_Momento_de_Inercia_01.svg]]
 >
+> **Se lee así:** El diagrama abre con la definición `I = Σmᵢrᵢ² = ∫r² dm` y clasifica los problemas en cuatro tipos: **eje fijo** (la distancia al eje no cambia), **múltiples componentes** (sumar el I de cada pieza), **geometría compleja** (partir en formas básicas) y **ejes inclinados** (descomposición tensorial). El ejemplo resuelto es una **placa en L**: una barra horizontal de 0,6 × 0,2 m y 2 kg con CM en (0,3, 0) y una vertical de 0,2 × 0,4 m y 1 kg con CM en (0,1, 0,2), aplicando `I = Σ(I_CM + Md²)` y comparando con el eje de la esquina.
+>
+> **Por qué importa:** El ejemplo de la placa en L muestra el método real: partir en rectángulos, calcular el I de cada uno sobre su CM, trasladar al eje común con el teorema de ejes paralelos y sumar. Es exactamente el orden de operaciones que se debe seguir en cualquier cuerpo compuesto.
+>
 
 > [!example] **Problema Complejo: Placa en L** 📐
 >
