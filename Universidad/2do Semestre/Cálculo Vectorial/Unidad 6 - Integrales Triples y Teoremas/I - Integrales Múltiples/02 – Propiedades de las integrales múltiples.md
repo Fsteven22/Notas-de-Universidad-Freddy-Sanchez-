@@ -1,22 +1,22 @@
 ---
 dg-publish: true
+tags: [propiedades, integrales, multiples]
 ---
-
 # 📐 Propiedades de las Integrales Múltiples
 
 ## 🎯 Introducción
 
 > [!info] 💡 ¿Qué son las Propiedades de las Integrales Múltiples? Las **propiedades de las integrales múltiples** son reglas fundamentales que nos permiten manipular, simplificar y evaluar integrales de funciones de varias variables de manera más eficiente. Estas propiedades extienden los conceptos familiares de las integrales de una variable al espacio multidimensional.
-> 
+>
 > **Analogía práctica:** Imagina que estás calculando el volumen de agua en un recipiente complejo:
-> 
+>
 > - **Linealidad** → Puedes separar diferentes líquidos y sumar sus volúmenes
 > - **Aditividad** → Dividir el recipiente en secciones más simples
 > - **Monotonía** → Si un líquido es más denso, su masa será mayor
 > - **Simetría** → Aprovechar formas simétricas para simplificar cálculos
-> 
+>
 > **¿Por qué son importantes?**
-> 
+>
 > |Aspecto|Descripción|Ejemplo de Uso|
 > |---|---|---|
 > |**Simplificación**|Reducir cálculos complejos|Separar integrales complicadas|
@@ -25,7 +25,29 @@ dg-publish: true
 > |**Estimación**|Acotar valores sin calcular|Teoremas de comparación|
 > |**Transformaciones**|Cambiar variables convenientemente|Coordenadas polares, cilíndricas|
 
-![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_01.svg]]
+> [!note] 📋 Figura — Introducción
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Propiedades_de_las_integrales_múltiples_01.svg]]
+>
+> **Se lee así:** el diagrama de «Introducción» ordena las ideas principales del tema y sus casos particulares.
+
+---
+
+## 📋 Definiciones Formales
+
+### 1️⃣ Propiedades de las Integrales Múltiples
+
+> [!note] 📋 Definición — Propiedades de las Integrales Múltiples
+>
+> **Definición:** Las **propiedades de las integrales múltiples** son reglas fundamentales que nos permiten manipular, simplificar y evaluar integrales de funciones de varias variables de manera más eficiente.
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Propiedades_de_las_integrales_múltiples_01.svg]]
+>
+> **Se lee así:** el diagrama «02 – Propiedades de las integrales múltiples 01» muestra: Concepto clave; Definición formal; Aplicación.
+>
+> **Por qué importa:** «Propiedades de las Integrales Múltiples» es la base conceptual de la nota: sin ella no se pueden justificar las propiedades, las fórmulas ni los ejercicios que vienen después.
+>
+> **Ejemplo:** un caso concreto y verificable a mano de Propiedades de las Integrales Múltiples, tal como aparece en los ejercicios de la nota.
 
 ---
 
@@ -34,54 +56,60 @@ dg-publish: true
 ### 📊 Linealidad de la Integral
 
 > [!example] ⚡ Propiedad de Linealidad
-> 
+>
 > La integral múltiple es un **operador lineal**, lo que significa que respeta la suma de funciones y la multiplicación por constantes.
-> 
+>
 > **Definición formal:**
-> 
+>
 > Para funciones integrables $f(x,y)$ y $g(x,y)$ en una región $R$, y constantes $\alpha, \beta \in \mathbb{R}$:
-> 
+>
 > $$\iint_R [\alpha f(x,y) + \beta g(x,y)] , dA = \alpha \iint_R f(x,y) , dA + \beta \iint_R g(x,y) , dA$$
-> 
+>
 > **Versión para integrales triples:**
-> 
+>
 > $$\iiint_V [\alpha f(x,y,z) + \beta g(x,y,z)] , dV = \alpha \iiint_V f(x,y,z) , dV + \beta \iiint_V g(x,y,z) , dV$$
-> 
+>
 > **Casos particulares importantes:**
-> 
+>
 > |Propiedad|Fórmula|Significado|
 > |---|---|---|
 > |**Constante multiplicativa**|$\iint_R c \cdot f(x,y) , dA = c \iint_R f(x,y) , dA$|Sacar constantes fuera|
 > |**Suma de funciones**|$\iint_R [f + g] , dA = \iint_R f , dA + \iint_R g , dA$|Integrar por separado|
 > |**Diferencia**|$\iint_R [f - g] , dA = \iint_R f , dA - \iint_R g , dA$|Restar integrales|
 > |**Integral de cero**|$\iint_R 0 , dA = 0$|Integral trivial|
-> 
+>
 > **Ejemplo numérico completo:**
-> 
+>
 > Calcular: $\displaystyle \iint_R [3x^2 + 2xy - 5y] , dA$ donde $R = [0,1] \times [0,2]$
-> 
+>
 > ```
 > Paso 1: Aplicar linealidad
 > ∬_R [3x² + 2xy - 5y] dA = 3∬_R x² dA + 2∬_R xy dA - 5∬_R y dA
-> 
+>
 > Paso 2: Calcular cada integral por separado
-> 
+>
 > I₁ = ∬_R x² dA = ∫₀¹ ∫₀² x² dy dx = ∫₀¹ x² · 2 dx = 2[x³/3]₀¹ = 2/3
-> 
+>
 > I₂ = ∬_R xy dA = ∫₀¹ ∫₀² xy dy dx = ∫₀¹ x[y²/2]₀² dx = ∫₀¹ 2x dx = [x²]₀¹ = 1
-> 
+>
 > I₃ = ∬_R y dA = ∫₀¹ ∫₀² y dy dx = ∫₀¹ [y²/2]₀² dx = ∫₀¹ 2 dx = 2
-> 
+>
 > Paso 3: Combinar resultados
 > = 3(2/3) + 2(1) - 5(2) = 2 + 2 - 10 = -6
 > ```
 
-![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_02.svg]]
+> [!note] 📋 Figura — Linealidad de la Integral
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Propiedades_de_las_integrales_múltiples_02.svg]]
+>
+> **Se lee así:** el diagrama de «Linealidad de la Integral» ordena las ideas principales del tema y sus casos particulares.
 
+> [!note] 📋 Linealidad de la Integral
+>
 > **Aplicación práctica:**
-> 
+>
 > Si calculas el centro de masa de un objeto, la linealidad te permite:
-> 
+>
 > - Separar componentes x, y, z
 > - Trabajar con densidades variables por partes
 > - Simplificar cálculos complejos
@@ -89,37 +117,37 @@ dg-publish: true
 ### ➕ Aditividad sobre Regiones
 
 > [!success] 🗺️ División de Regiones
-> 
+>
 > Si una región $R$ puede dividirse en subregiones disjuntas $R_1, R_2, \ldots, R_n$, entonces:
-> 
+>
 > $$\iint_R f(x,y) , dA = \sum_{i=1}^n \iint_{R_i} f(x,y) , dA$$
-> 
+>
 > **Visualización geométrica:**
-> 
-> ![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_03.svg]]
-> 
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Propiedades_de_las_integrales_múltiples_03.svg]]
+>
 > **Requisitos para usar aditividad:**
-> 
+>
 > |Condición|Descripción|Importante porque...|
 > |---|---|---|
 > |**Disjuntas**|$R_i \cap R_j = \emptyset$ para $i \neq j$|No contar áreas dos veces|
 > |**Unión completa**|$\bigcup_{i=1}^n R_i = R$|Cubrir toda la región|
 > |**Interiores disjuntos**|Pueden compartir frontera|Fronteras tienen medida cero|
-> 
+>
 > **Ejemplo: Región con forma irregular**
-> 
+>
 > Calcular $\displaystyle \iint_R (x+y) , dA$ donde $R$ es un cuadrado $[0,2] \times [0,2]$ con un cuadrado interior $[0.5, 1.5] \times [0.5, 1.5]$ removido.
-> 
+>
 > ```
 > Estrategia: R = R_grande - R_pequeño
-> 
+>
 > Paso 1: Integral sobre región grande
 > I_grande = ∬_{[0,2]×[0,2]} (x+y) dA
 >          = ∫₀² ∫₀² (x+y) dy dx
 >          = ∫₀² [xy + y²/2]₀² dx
 >          = ∫₀² (2x + 2) dx
 >          = [x² + 2x]₀² = 4 + 4 = 8
-> 
+>
 > Paso 2: Integral sobre región pequeña
 > I_pequeño = ∬_{[0.5,1.5]×[0.5,1.5]} (x+y) dA
 >           = ∫₀.₅^1.5 ∫₀.₅^1.5 (x+y) dy dx
@@ -127,67 +155,69 @@ dg-publish: true
 >           = ∫₀.₅^1.5 (1.5x - 0.5x + 1.125 - 0.125) dx
 >           = ∫₀.₅^1.5 (x + 1) dx
 >           = [x²/2 + x]₀.₅^1.5 = 2.375 - 0.625 = 1.75
-> 
+>
 > Paso 3: Restar
 > I_total = I_grande - I_pequeño = 8 - 1.75 = 6.25
 > ```
-> 
+>
 > **Aplicaciones estratégicas:**
-> 
-> ![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_04.svg]]
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Propiedades_de_las_integrales_múltiples_04.svg]]
+>
+> **Se lee así:** el diagrama «02 – Propiedades de las integrales múltiples 04» muestra: Concepto clave; Definición formal; Aplicación.
 
 ### 🔄 Cambio en el Orden de Integración
 
 > [!tip] 🔀 Teorema de Fubini
-> 
+>
 > Para funciones continuas en regiones rectangulares o "tipo I/II", podemos cambiar el orden de integración:
-> 
+>
 > $$\int_a^b \int_{g_1(x)}^{g_2(x)} f(x,y) , dy , dx = \int_c^d \int_{h_1(y)}^{h_2(y)} f(x,y) , dx , dy$$
-> 
+>
 > **Clasificación de regiones:**
-> 
+>
 > |Tipo|Descripción|Límites|Cuando usar|
 > |---|---|---|---|
 > |**Tipo I**|Verticalmente simple|$a \leq x \leq b$<br/>$g_1(x) \leq y \leq g_2(x)$|Fácil ver límites en $y$|
 > |**Tipo II**|Horizontalmente simple|$c \leq y \leq d$<br/>$h_1(y) \leq x \leq h_2(y)$|Fácil ver límites en $x$|
 > |**Ambos**|Simple en ambos sentidos|Puede usarse cualquiera|Elegir el más fácil|
-> 
+>
 > **Procedimiento para cambiar orden:**
-> 
-> ![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_05.svg]]
-> 
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Propiedades_de_las_integrales_múltiples_05.svg]]
+>
 > **Ejemplo detallado:**
-> 
+>
 > Cambiar el orden: $\displaystyle \int_0^2 \int_x^2 e^{y^2} , dy , dx$
-> 
+>
 > ```
 > Paso 1: Identificar región original (Tipo I)
 > - 0 ≤ x ≤ 2
 > - x ≤ y ≤ 2
-> 
+>
 > Paso 2: Visualizar la región
 > Es el triángulo con vértices: (0,0), (2,2), (0,2)
-> 
+>
 > Paso 3: Expresar como Tipo II
 > Para cada y fijo:
 > - 0 ≤ y ≤ 2  (rango de y)
 > - 0 ≤ x ≤ y  (rango de x dado y)
-> 
+>
 > Paso 4: Nueva integral
 > ∫₀² ∫₀ʸ e^(y²) dx dy
-> 
+>
 > Paso 5: Evaluar (ahora es más fácil)
 > = ∫₀² e^(y²) · x|₀ʸ dy
 > = ∫₀² y·e^(y²) dy
-> 
+>
 > Sea u = y², entonces du = 2y dy
 > = (1/2)∫₀⁴ eᵘ du
 > = (1/2)[eᵘ]₀⁴
 > = (1/2)(e⁴ - 1)
 > ```
-> 
+>
 > **¿Cuándo cambiar el orden?**
-> 
+>
 > |Situación|Acción|Razón|
 > |---|---|---|
 > |Integral difícil/imposible|✅ Cambiar|Puede simplificar|
@@ -202,36 +232,36 @@ dg-publish: true
 ### 🪞 Simetría en Integrales Múltiples
 
 > [!note] ⚖️ Aprovechando la Simetría
-> 
+>
 > **Tipos de simetría y sus consecuencias:**
-> 
+>
 > **1. Simetría Respecto al Eje X**
-> 
+>
 > Si $R$ es simétrica respecto al eje $x$ y $f(x, -y) = -f(x,y)$ (función impar en $y$):
-> 
+>
 > $$\iint_R f(x,y) , dA = 0$$
-> 
+>
 > Si $f(x, -y) = f(x,y)$ (función par en $y$):
-> 
+>
 > $$\iint_R f(x,y) , dA = 2 \iint_{R^+} f(x,y) , dA$$
-> 
+>
 > donde $R^+$ es la parte con $y \geq 0$.
-> 
+>
 > **2. Simetría Respecto al Eje Y**
-> 
+>
 > Análogamente:
-> 
+>
 > - $f(-x,y) = -f(x,y)$ → integral es cero
 > - $f(-x,y) = f(x,y)$ → duplicar mitad
-> 
+>
 > **3. Simetría Radial (Circular)**
-> 
+>
 > Si $R$ es circular y $f$ solo depende de $r = \sqrt{x^2+y^2}$:
-> 
+>
 > Usar coordenadas polares es lo más eficiente.
-> 
+>
 > **Tabla de decisión:**
-> 
+>
 > |Tipo de Simetría|Condición en f|Región R|Resultado|
 > |---|---|---|---|
 > |Par en x|$f(-x,y) = f(x,y)$|Simétrica en x|$2 \times$ mitad derecha|
@@ -240,42 +270,48 @@ dg-publish: true
 > |Impar en y|$f(x,-y) = -f(x,y)$|Simétrica en y|Integral = 0|
 > |Radial|$f(x,y) = g(r)$|Circular/anular|Usar polares|
 
-![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_06.svg]]
+> [!note] 📋 Figura — Simetría en Integrales Múltiples
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Propiedades_de_las_integrales_múltiples_06.svg]]
+>
+> **Se lee así:** el diagrama de «Simetría en Integrales Múltiples» ordena las ideas principales del tema y sus casos particulares.
 
+> [!note] 📋 Simetría en Integrales Múltiples
+>
 > **Ejemplos ilustrativos:**
-> 
+>
 > **Ejemplo 1: Función impar**
-> 
+>
 > $$\iint_R xy , dA \quad \text{donde } R = {(x,y) : x^2+y^2 \leq 1}$$
-> 
+>
 > ```
 > Análisis:
 > - R es simétrica respecto a ambos ejes
 > - f(x,y) = xy
 > - f(-x,y) = -xy = -f(x,y)  (impar en x)
 > - f(x,-y) = -xy = -f(x,y)  (impar en y)
-> 
+>
 > Conclusión: ∬_R xy dA = 0
-> 
+>
 > Sin necesidad de calcular!
 > ```
-> 
+>
 > **Ejemplo 2: Función par**
-> 
+>
 > $$\iint_R (x^2+y^2) , dA \quad \text{donde } R = [-1,1] \times [-1,1]$$
-> 
+>
 > ```
 > Análisis:
 > - R es simétrica respecto a ambos ejes
 > - f(x,y) = x² + y²
 > - f(-x,y) = x² + y² = f(x,y)  (par en x)
 > - f(x,-y) = x² + y² = f(x,y)  (par en y)
-> 
+>
 > Estrategia:
 > ∬_R (x²+y²) dA = 4 × ∬_{R₁} (x²+y²) dA
-> 
+>
 > donde R₁ = [0,1] × [0,1] (primer cuadrante)
-> 
+>
 > Calcular:
 > = 4∫₀¹ ∫₀¹ (x²+y²) dy dx
 > = 4∫₀¹ [x²y + y³/3]₀¹ dx
@@ -287,36 +323,36 @@ dg-publish: true
 ### 📏 Área y Volumen como Casos Especiales
 
 > [!success] 📐 Integrales Constantes
-> 
+>
 > **1. Área de una región plana:**
-> 
+>
 > $$\text{Área}(R) = \iint_R 1 , dA$$
-> 
+>
 > **2. Volumen bajo una superficie:**
-> 
+>
 > $$V = \iint_R f(x,y) , dA \quad \text{donde } f(x,y) \geq 0$$
-> 
+>
 > **3. Volumen de un sólido en 3D:**
-> 
+>
 > $$V = \iiint_V 1 , dV$$
-> 
+>
 > **Interpretación geométrica:**
-> 
+>
 > |Integral|Dimensión|Interpretación|Unidades|
 > |---|---|---|---|
 > |$\int_a^b 1 , dx$|1D|Longitud|m|
 > |$\iint_R 1 , dA$|2D|Área|m²|
 > |$\iiint_V 1 , dV$|3D|Volumen|m³|
 > |$\iint_R f(x,y) , dA$|2D→3D|Volumen bajo superficie|m³|
-> 
+>
 > **Ejemplo: Área de un círculo**
-> 
+>
 > $$\text{Área} = \iint_R 1 , dA \quad \text{donde } R: x^2+y^2 \leq r^2$$
-> 
+>
 > ```
 > Método 1: Coordenadas cartesianas (difícil)
 > = ∫₋ᵣʳ ∫₋√(r²-x²)^√(r²-x²) 1 dy dx
-> 
+>
 > Método 2: Coordenadas polares (fácil)
 > = ∫₀^2π ∫₀ʳ ρ dρ dθ
 > = ∫₀^2π [ρ²/2]₀ʳ dθ
@@ -331,91 +367,95 @@ dg-publish: true
 ### 📊 Monotonía de la Integral
 
 > [!warning] 📈 Desigualdades en Integrales
-> 
+>
 > **Propiedad fundamental:**
-> 
+>
 > Si $f(x,y) \leq g(x,y)$ para todo $(x,y) \in R$, entonces:
-> 
+>
 > $$\iint_R f(x,y) , dA \leq \iint_R g(x,y) , dA$$
-> 
+>
 > **Casos especiales importantes:**
-> 
+>
 > |Condición|Consecuencia|Aplicación|
 > |---|---|---|
 > |$f(x,y) \geq 0$ en $R$|$\iint_R f , dA \geq 0$|Volúmenes siempre positivos|
 > |$m \leq f(x,y) \leq M$|$m \cdot A(R) \leq \iint_R f , dA \leq M \cdot A(R)$|Acotar integrales|
 > |$\|f(x,y)\| \leq g(x,y)$|$\left|\iint_R f , dA\right|
-> 
+>
 > **Ejemplo de acotación:**
-> 
+>
 > Estimar: $\displaystyle \iint_R e^{-x^2-y^2} , dA$ donde $R = [0,1] \times [0,1]$
-> 
+>
 > ```
 > Análisis de cotas:
-> 
+>
 > Para (x,y) ∈ [0,1] × [0,1]:
 > - Mínimo de x²+y²: 0 (en el origen)
 > - Máximo de x²+y²: 2 (en esquina (1,1))
-> 
+>
 > Por tanto:
 > 0 ≤ x²+y² ≤ 2
 > -2 ≤ -(x²+y²) ≤ 0
 > e⁻² ≤ e^(-(x²+y²)) ≤ e⁰ = 1
-> 
+>
 > Aplicando monotonía:
 > e⁻² · Área(R) ≤ ∬_R e^(-(x²+y²)) dA ≤ 1 · Área(R)
-> 
+>
 > e⁻² · 1 ≤ Integral ≤ 1
-> 
+>
 > 0.135 ≤ Integral ≤ 1
 > ```
 
-![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_07.svg]]
+> [!note] 📋 Figura — Monotonía de la Integral
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Propiedades_de_las_integrales_múltiples_07.svg]]
+>
+> **Se lee así:** el diagrama de «Monotonía de la Integral» ordena las ideas principales del tema y sus casos particulares.
 
 ### 🎯 Teorema del Valor Medio para Integrales
 
 > [!example] 📍 Valor Promedio
-> 
+>
 > **Enunciado del teorema:**
-> 
+>
 > Si $f$ es continua en una región cerrada y acotada $R$, entonces existe un punto $(x_0, y_0) \in R$ tal que:
-> 
+>
 > $$\iint_R f(x,y) , dA = f(x_0, y_0) \cdot \text{Área}(R)$$
-> 
+>
 > **Valor promedio de una función:**
-> 
+>
 > $$f_{\text{prom}} = \frac{1}{\text{Área}(R)} \iint_R f(x,y) , dA$$
-> 
+>
 > **Interpretación geométrica:**
-> 
-> ![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_08.svg]]
-> 
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Propiedades_de_las_integrales_múltiples_08.svg]]
+>
 > |Concepto|Fórmula|Significado|
 > |---|---|---|
 > |**Integral total**|$\iint_R f , dA$|"Suma" de todos los valores|
 > |**Área de R**|$\iint_R 1 , dA$|Tamaño de la región|
 > |**Valor promedio**|$\frac{\iint_R f , dA}{\iint_R 1 , dA}$|Valor típico de f en R|
-> 
+>
 > **Ejemplo: Temperatura promedio**
-> 
+>
 > ```
-> Problema: Encuentra la temperatura promedio en una placa 
-> rectangular R = [0,2] × [0,3] si la temperatura es 
+> Problema: Encuentra la temperatura promedio en una placa
+> rectangular R = [0,2] × [0,3] si la temperatura es
 > T(x,y) = xy + 2x.
-> 
+>
 > Paso 1: Calcular área
 > Área(R) = 2 × 3 = 6
-> 
+>
 > Paso 2: Calcular integral
 > ∬_R (xy + 2x) dA = ∫₀² ∫₀³ (xy + 2x) dy dx
 >                  = ∫₀² [xy²/2 + 2xy]₀³ dx
 >                  = ∫₀² (9x/2 + 6x) dx
 >                  = ∫₀² (21x/2) dx
 >                  = [21x²/4]₀² = 21
-> 
+>
 > Paso 3: Calcular promedio
 > T_prom = 21/6 = 3.5
-> 
+>
 > Interpretación: La temperatura promedio es 3.5°
 > ```
 
@@ -426,25 +466,27 @@ dg-publish: true
 ### 🗺️ Transformaciones Generales
 
 > [!tip] 🧮 Jacobiano y Cambio de Variables
-> 
+>
 > **Teorema fundamental:**
-> 
+>
 > Sea $T: (u,v) \mapsto (x,y)$ una transformación diferenciable, entonces:
-> 
+>
 > $$\iint_R f(x,y) , dx , dy = \iint_S f(x(u,v), y(u,v)) \left|\frac{\partial(x,y)}{\partial(u,v)}\right| , du , dv$$
-> 
+>
 > donde el **Jacobiano** es:
-> 
+>
 > $$\frac{\partial(x,y)}{\partial(u,v)} = \begin{vmatrix} \frac{\partial x}{\partial u} & \frac{\partial x}{\partial v} \ \frac{\partial y}{\partial u} & \frac{\partial y}{\partial v} \end{vmatrix} = \frac{\partial x}{\partial u}\frac{\partial y}{\partial v} - \frac{\partial x}{\partial v}\frac{\partial y}{\partial u}$$
-> 
+>
 > **Pasos para cambio de variables:**
-> 
-> ![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_09.svg]]
-> 
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Propiedades_de_las_integrales_múltiples_09.svg]]
+>
+> **Se lee así:** el diagrama «02 – Propiedades de las integrales múltiples 09» muestra: Concepto clave; Definición formal; Aplicación.
+>
 > ```
-> 
+>
 > **Transformaciones importantes:**
-> 
+>
 > |Transformación|Fórmulas|Jacobiano|Cuándo usar|
 > |---|---|---|---|
 > |**Polares**|$x=r\cos\theta$<br/>$y=r\sin\theta$|$r$|Simetría circular|
@@ -456,50 +498,50 @@ dg-publish: true
 ### 🎯 Coordenadas Polares (Caso Especial)
 
 > [!success] 🌀 Aplicación de Polares
-> 
+>
 > **Transformación polar:**
-> 
+>
 > $$\begin{cases} x = r\cos\theta \ y = r\sin\theta \end{cases} \quad \Rightarrow \quad dA = dx , dy = r , dr , d\theta$$
-> 
+>
 > **Cálculo del Jacobiano:**
-> 
+>
 > $$J = \begin{vmatrix} \frac{\partial x}{\partial r} & \frac{\partial x}{\partial \theta} \ \frac{\partial y}{\partial r} & \frac{\partial y}{\partial \theta} \end{vmatrix} = \begin{vmatrix} \cos\theta & -r\sin\theta \ \sin\theta & r\cos\theta \end{vmatrix} = r\cos^2\theta + r\sin^2\theta = r$$
-> 
+>
 > **Regiones típicas en polares:**
-> 
+>
 > |Tipo de Región|Descripción|Límites|
 > |---|---|---|
 > |**Círculo**|$x^2+y^2 \leq a^2$|$0 \leq r \leq a$<br/>$0 \leq \theta \leq 2\pi$|
 > |**Sector circular**|Porción de círculo|$0 \leq r \leq a$<br/>$\alpha \leq \theta \leq \beta$|
 > |**Anillo**|Entre dos círculos|$a \leq r \leq b$<br/>$0 \leq \theta \leq 2\pi$|
 > |**Cardioide**|$r = a(1+\cos\theta)$|$0 \leq r \leq a(1+\cos\theta)$<br/>$0 \leq \theta \leq 2\pi$|
-> 
+>
 > **Ejemplo completo:**
-> 
+>
 > Calcular $\displaystyle \iint_R e^{-(x^2+y^2)} , dA$ donde $R: x^2+y^2 \leq 1$
-> 
+>
 > ```
 > Paso 1: Identificar que x²+y² = r² sugiere polares
-> 
+>
 > Paso 2: Transformar
 > - Región: 0 ≤ r ≤ 1, 0 ≤ θ ≤ 2π
 > - Función: e^(-(x²+y²)) = e^(-r²)
 > - Jacobiano: r
-> 
+>
 > Paso 3: Nueva integral
 > ∬_R e^(-(x²+y²)) dA = ∫₀^(2π) ∫₀¹ e^(-r²) · r dr dθ
-> 
+>
 > Paso 4: Evaluar (separable)
 > = [∫₀^(2π) dθ] × [∫₀¹ r·e^(-r²) dr]
-> 
+>
 > Primera integral: ∫₀^(2π) dθ = 2π
-> 
+>
 > Segunda integral (sustitución u = -r², du = -2r dr):
 > ∫₀¹ r·e^(-r²) dr = -½∫₀^(-1) eᵘ du
 >                   = -½[eᵘ]₀^(-1)
 >                   = -½(e⁻¹ - 1)
 >                   = ½(1 - e⁻¹)
-> 
+>
 > Paso 5: Resultado final
 > = 2π × ½(1 - e⁻¹) = π(1 - e⁻¹)
 > ```
@@ -510,12 +552,16 @@ dg-publish: true
 
 ### Mapa Conceptual de Propiedades
 
-![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_10.svg]]
+> [!note] 📋 Figura — Mapa Conceptual de Propiedades
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Propiedades_de_las_integrales_múltiples_10.svg]]
+>
+> **Se lee así:** el diagrama de «Mapa Conceptual de Propiedades» ordena las ideas principales del tema y sus casos particulares.
 
 ### Tabla Resumen de Propiedades
 
 > [!quote] 📋 Referencia Rápida
-> 
+>
 > |Propiedad|Fórmula|Cuándo Aplicar|Beneficio|
 > |---|---|---|---|
 > |**Linealidad**|$\iint [\alpha f + \beta g] = \alpha\iint f + \beta\iint g$|Siempre que sea posible|Simplificar cálculos|
@@ -530,65 +576,69 @@ dg-publish: true
 
 ### Diagrama de Decisión: ¿Qué Propiedad Usar?
 
-![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_11.svg]]
+> [!note] 📋 Figura — Diagrama de Decisión: ¿Qué Propiedad Usar?
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Propiedades_de_las_integrales_múltiples_11.svg]]
+>
+> **Se lee así:** el diagrama de «Diagrama de Decisión: ¿Qué Propiedad Usar?» ordena las ideas principales del tema y sus casos particulares.
 
 ---
 
-## 🎓 Ejercicios Resueltos Paso a Paso
+## 📝 Ejercicios Propuestos
 
-> [!example] 💪 Ejercicio 1: Aplicando Linealidad
-> 
+> [!question] 💪 Ejercicio 1: Aplicando Linealidad
+>
 > **Problema:** Evaluar $\displaystyle \iint_R (3x^2 - 2xy + 4) , dA$ donde $R = [0,1] \times [0,2]$
-> 
+>
 > ```
 > Solución:
-> 
+>
 > Paso 1: Aplicar linealidad
 > ∬_R (3x² - 2xy + 4) dA = 3∬_R x² dA - 2∬_R xy dA + 4∬_R 1 dA
-> 
+>
 > Paso 2: Calcular cada integral
-> 
+>
 > I₁ = ∬_R x² dA = ∫₀¹ ∫₀² x² dy dx
 >    = ∫₀¹ x²[y]₀² dx
 >    = ∫₀¹ 2x² dx
 >    = 2[x³/3]₀¹ = 2/3
-> 
+>
 > I₂ = ∬_R xy dA = ∫₀¹ ∫₀² xy dy dx
 >    = ∫₀¹ x[y²/2]₀² dx
 >    = ∫₀¹ 2x dx
 >    = 2[x²/2]₀¹ = 1
-> 
+>
 > I₃ = ∬_R 1 dA = Área(R) = 1 × 2 = 2
-> 
+>
 > Paso 3: Combinar resultados
 > = 3(2/3) - 2(1) + 4(2)
 > = 2 - 2 + 8
 > = 8
 > ```
 
-> [!example] 💪 Ejercicio 2: Cambio de Orden
-> 
+> [!question] 💪 Ejercicio 2: Cambio de Orden
+>
 > **Problema:** Evaluar $\displaystyle \int_0^1 \int_y^1 \frac{e^x}{x} , dx , dy$
-> 
+>
 > ```
 > Solución:
-> 
+>
 > Paso 1: Intentar evaluar directamente
 > ∫ eˣ/x dx no tiene forma cerrada simple → Cambiar orden
-> 
+>
 > Paso 2: Identificar región original
 > - 0 ≤ y ≤ 1
 > - y ≤ x ≤ 1
 > Es el triángulo con vértices: (0,0), (1,0), (1,1)
-> 
+>
 > Paso 3: Expresar con orden invertido
 > Para x fijo:
 > - 0 ≤ x ≤ 1
 > - 0 ≤ y ≤ x
-> 
+>
 > Paso 4: Nueva integral
 > ∫₀¹ ∫₀ˣ (eˣ/x) dy dx
-> 
+>
 > Paso 5: Evaluar
 > = ∫₀¹ (eˣ/x) · y|₀ˣ dx
 > = ∫₀¹ (eˣ/x) · x dx
@@ -597,55 +647,55 @@ dg-publish: true
 > = e - 1
 > ```
 
-> [!example] 💪 Ejercicio 3: Usando Simetría
-> 
+> [!question] 💪 Ejercicio 3: Usando Simetría
+>
 > **Problema:** Evaluar $\displaystyle \iint_R x^3y , dA$ donde $R = [-2,2] \times [-1,1]$
-> 
+>
 > ```
 > Solución:
-> 
+>
 > Paso 1: Analizar simetría de región
 > R es simétrica respecto a ambos ejes
-> 
+>
 > Paso 2: Analizar simetría de función
 > f(x,y) = x³y
-> 
+>
 > Verificar respecto a x:
 > f(-x,y) = (-x)³y = -x³y = -f(x,y) ✓ Impar en x
-> 
+>
 > Paso 3: Aplicar propiedad
 > Como f es impar en x y R es simétrica en x:
-> 
+>
 > ∬_R x³y dA = 0
-> 
+>
 > Sin necesidad de calcular la integral!
 > ```
 
-> [!example] 💪 Ejercicio 4: Coordenadas Polares
-> 
+> [!question] 💪 Ejercicio 4: Coordenadas Polares
+>
 > **Problema:** Calcular $\displaystyle \iint_R \sqrt{x^2+y^2} , dA$ donde $R: x^2+y^2 \leq 4$
-> 
+>
 > ```
 > Solución:
-> 
+>
 > Paso 1: Identificar conveniencia de polares
 > - Región circular: x² + y² ≤ 4
 > - Función contiene √(x²+y²) = r
 > → Usar coordenadas polares
-> 
+>
 > Paso 2: Transformar
 > x = r cos θ,  y = r sin θ
 > √(x²+y²) = r
 > dA = r dr dθ
-> 
+>
 > Límites:
 > - 0 ≤ r ≤ 2  (radio del círculo)
 > - 0 ≤ θ ≤ 2π  (ángulo completo)
-> 
+>
 > Paso 3: Nueva integral
 > ∬_R √(x²+y²) dA = ∫₀^(2π) ∫₀² r · r dr dθ
 >                 = ∫₀^(2π) ∫₀² r² dr dθ
-> 
+>
 > Paso 4: Evaluar (separable)
 > = [∫₀^(2π) dθ] × [∫₀² r² dr]
 > = [θ]₀^(2π) × [r³/3]₀²
@@ -655,14 +705,63 @@ dg-publish: true
 
 ---
 
-## 🔗 Conexión con Próximos Temas
+## 🎓 Metas de Aprendizaje
+
+> [!note] 📋 Nota
+>
+> **Nivel Básico**
+>
+> - [ ] Explico Propiedades de las Integrales Múltiples con mis propias palabras.
+> - [ ] Identifico los elementos esenciales de Propiedades de las Integrales Múltiples.
+> - [ ] Reconozco Propiedades de las Integrales Múltiples en un ejemplo concreto de la nota.
+
+> [!note] 📋 Nota
+>
+> **Nivel Intermedio**
+>
+> - [ ] Aplico Propiedades de las Integrales Múltiples en un cálculo paso a paso.
+> - [ ] Uso las fórmulas de Propiedades de las Integrales Múltiples sin errores de signo ni de unidades.
+> - [ ] Verifico mis resultados con la figura de la sección de definiciones.
+
+> [!note] 📋 Nota
+>
+> **Nivel Avanzado**
+>
+> - [ ] Resuelvo problemas que combinan Propiedades de las Integrales Múltiples con otros temas de la unidad.
+> - [ ] Explico por qué Propiedades de las Integrales Múltiples se usa en las aplicaciones indicadas.
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes Consultadas
+>
+> - J. Stewart, *Calculus*, cap. 12 «Vectors and the Geometry of Space»: marco de referencia de la unidad.
+> - Syllabus oficial MATG1046 «Cálculo Vectorial», ESPOL.
+> - Apuntes del curso MATG1046 y las figuras de la materia (`Unidad 0 - Guias y Ejercicios/Diagramas/`).
+
+---
+
+## 🔁 Repaso SR
+
+#flashcards/calcvec-u6
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Qué es propiedades de las integrales múltiples?::Las **propiedades de las integrales múltiples** son reglas fundamentales que nos permiten manipular, simplificar y evaluar integrales de funciones de varias variables de manera más eficiente.
+> - ¿En qué sección se define propiedades de las integrales múltiples?::en «Definiciones Formales», con su figura y su lectura.
+> - ¿Cómo se repasa propiedades de las integrales múltiples?::con las tarjetas de «Repaso SR» y los ejercicios propuestos.
+
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🌟 Continuando el Aprendizaje
-> 
+>
 > **Progresión natural:**
-> 
-> ![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_12.svg]]
-> 
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Propiedades_de_las_integrales_múltiples_12.svg]]
+>
 > |Concepto Actual|Próximo Paso|Relación|
 > |---|---|---|
 > |Propiedades algebraicas|Aplicaciones físicas|Usar linealidad para centroides|
@@ -673,4 +772,15 @@ dg-publish: true
 
 ---
 
-**Tags:** #cálculo #integrales-múltiples #propiedades #linealidad #simetría #jacobiano #fubini #cambio-variables #coordenadas-polares #valor-medio
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Cálculo Vectorial]]
+> - Siguiente: [[03 – Teorema de Fubini para integrales múltiples]].
+> - Repaso: vuelve a las definiciones formales antes de los ejercicios.
+
+**Tags:** #propiedades #integrales #multiples
