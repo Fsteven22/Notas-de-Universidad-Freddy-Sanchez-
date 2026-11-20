@@ -3650,3 +3650,8 @@ el commit de esta línea de PUSHEADO.
 - **No se tocó** la zona opencode, ni Universidad/**, ni site/scripts/**. Sin npm run sync en OneDrive.
 - **Sync local:** npm run sync con VAULT_DIR=../Universidad para que el build local vuelva a coincidir con la producción (787 notas, 4 semestres).
 
+
+
+> [!success] PUSHEADO 3b9317d5 · 19/11/2026 — d81f4aef (código) + 3b9317d5
+> (PUSHEO EN CURSO) + este bloque → merge --ff-only a master → un solo push, sin --force.
+
