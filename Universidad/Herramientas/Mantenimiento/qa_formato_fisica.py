@@ -546,7 +546,7 @@ def main():
         for f in sorted(fs):
             if not f.endswith(".md") or f == "FORMATO-FISICA.md":
                 continue
-            if specific and f != specific:
+            if specific and os.path.basename(specific) != f:
                 continue
             p = os.path.join(dp, f)
             notas += 1

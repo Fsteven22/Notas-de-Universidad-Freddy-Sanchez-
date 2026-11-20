@@ -85,6 +85,10 @@ tags: [FISG1001, unidad1, fisica-mecanica, cinematica, cinematica-traslacional]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Cinemática_Traslacional_01.svg]]
 >
+> **Se lee así:** El diagrama arranca en «Movimiento Traslacional» y lo divide en dos ramas: **rectilíneo** (MRU, MRUA y MRV) y **curvilíneo** (parabólico, circular y elíptico). Cada rama cierra con la condición que la define: `v = constante` con `a = 0` para el MRU, `a = constante ≠ 0` para el MRUA y `a = f(x)` variable para el MRV.
+>
+> **Por qué importa:** Es el mapa de decisiones de la unidad: ante un movimiento primero se pregunta si la trayectoria es recta o curva, y después si la aceleración es cero, constante o variable. De ahí sale qué ecuación usar (las 5 del MRUA solo aplican cuando `a` es constante).
+>
 
 > [!tip] 🎯 **Movimiento Rectilíneo Uniforme (MRU)** **Características:**
 >
@@ -314,6 +318,10 @@ tags: [FISG1001, unidad1, fisica-mecanica, cinematica, cinematica-traslacional]
 > [!info] 🔄 **Clasificación del Movimiento**
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Cinemática_Traslacional_02.svg]]
+>
+> **Se lee así:** Es el mismo árbol de clasificación colocado junto a las ecuaciones: rectilíneo se divide en MRU, MRUA y MRV según cómo se comporta la aceleración, y curvilíneo en parabólico, circular y elíptico según la forma de la trayectoria.
+>
+> **Por qué importa:** Refuerza el criterio de selección de ecuaciones: si el diagrama lleva a MRU, `a = 0` y basta `x = x₀ + vt`; si lleva a MRUA, `a` es constante y entran las 5 ecuaciones; si lleva a MRV, la aceleración varía y hace falta integrar.
 >
 
 > [!tip] 🎯 **Movimiento Rectilíneo Uniforme (MRU)** **Características:**
