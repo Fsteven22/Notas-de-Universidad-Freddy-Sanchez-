@@ -20,15 +20,13 @@ tags: [CCPG1005, poo, java]
 > | **Tipo** | Obligatorio |
 > | **Prerequisito** | Fundamentos de Programación (CCPG1001) |
 > | **Coordinadora** | Rocío Elizabeth Mera Suárez |
-> | **Syllabus oficial** | 📎 [[Unidad 0 - Guias y Ejercicios/Guías/SPA-Syllabus-PROGRAMACIÓN_ORIENTADA_A_OBJETOS.pdf|Ver PDF completo]] |
+> | **Syllabus oficial** | 📎 [Ver PDF completo](SPA-Syllabus-PROGRAMACIÓN_ORIENTADA_A_OBJETOS.pdf) |
 
 ---
 
 ## 📎 Documento oficial (sitio web)
 
-> [!info] 📎 Syllabus oficial
->
-> Ver [[Unidad 0 - Guias y Ejercicios/Guías/SPA-Syllabus-PROGRAMACIÓN_ORIENTADA_A_OBJETOS.pdf|Syllabus CCPG1005 (PDF)]] — syllabus y políticas del curso.
+![[SPA-Syllabus-PROGRAMACIÓN_ORIENTADA_A_OBJETOS.pdf]]
 
 ---
 

@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad3, sistema-hexadecimal]
 ---
 # 🔶 Sistema Hexadecimal
 
@@ -11,8 +10,6 @@ tags: [CCPG1004, cysoc, unidad3, sistema-hexadecimal]
 > El sistema hexadecimal usa base **16**, con 16 símbolos: 0-9 y luego A, B, C, D, E, F para representar los valores 10 a 15. Como $16 = 2^4$, **cada dígito hexadecimal corresponde exactamente a 4 dígitos binarios** — un grupo conocido como **nibble**.
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Sistema_Hexadecimal_01.svg]]
->
-> **Se lee así:** el diagrama da la definición operativa: **base 16**, dígitos **0-9 y A-F**, $16 = 2^4$ y la pieza clave: **1 dígito hex = 4 bits = 1 nibble** — la razón por la que el hex es el atajo natural del binario.
 
 ---
 
@@ -44,7 +41,7 @@ tags: [CCPG1004, cysoc, unidad3, sistema-hexadecimal]
 >
 > Con 4 bits se pueden representar $2^4 = 16$ valores distintos — exactamente el rango de un dígito hexadecimal. Esto hace que un **byte** (8 bits) se represente con exactamente **2 dígitos hex**, mucho más compacto y legible que escribir 8 ceros y unos.
 >
-> 📌 Por eso colores web (`#FF5733`), direcciones de memoria y códigos de error suelen mostrarse en hexadecimal.
+> > 📌 Por eso colores web (`#FF5733`), direcciones de memoria y códigos de error suelen mostrarse en hexadecimal.
 
 ---
 
@@ -67,7 +64,7 @@ tags: [CCPG1004, cysoc, unidad3, sistema-hexadecimal]
 >
 > Leyendo los restos de abajo hacia arriba: $\boxed{1957_{10} = 7A5_{16}}$
 >
-> ⚠️ **Cuidado con los restos ≥ 10:** cuando el resto de la división es 10, 11, 12, 13, 14 o 15, debe escribirse como **A, B, C, D, E o F** respectivamente — nunca como el número de dos dígitos.
+> > ⚠️ **Cuidado con los restos ≥ 10:** cuando el resto de la división es 10, 11, 12, 13, 14 o 15, debe escribirse como **A, B, C, D, E o F** respectivamente — nunca como el número de dos dígitos.
 
 ---
 
@@ -88,7 +85,7 @@ tags: [CCPG1004, cysoc, unidad3, sistema-hexadecimal]
 >
 > $$\boxed{2B6_{16} = 694_{10}}$$
 >
-> 📌 Recordar que **B = 11** en decimal, según la tabla de equivalencias de arriba.
+> > 📌 Recordar que **B = 11** en decimal, según la tabla de equivalencias de arriba.
 
 ---
 
@@ -120,13 +117,7 @@ tags: [CCPG1004, cysoc, unidad3, sistema-hexadecimal]
 >
 > $$\boxed{A7.5D_{16} = 10100111.01011101_2}$$
 
-> [!info] 🎞️ Del deck — Hexadecimal: compacto y ampliamente usado
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-06-sistema-hexadecimal-01.png]]
->
-> **Se lee así:** la diapositiva muestra el hex por dentro: la tabla de equivalencias 0-F ↔ 4 bits, el color `#3F7AC9` (R=3F=63, G=7A=122, B=C9=201) y la dirección de memoria `0x7FA2`, con las cuatro conversiones cruzadas ($2AF_{16}$ ↔ binario/decimal y $687_{10} = 2AF_{16}$).
->
-> **Por qué importa:** conecta la teoría con tres usos reales e inmediatos: colores web, memoria y depuración.
+![[../../Unidad 0 - Guias y Ejercicios/Archivos/Sistemas de Numeración/cysoc-u3-06-sistema-hexadecimal-01.png]]
 
 ---
 
@@ -157,7 +148,7 @@ tags: [CCPG1004, cysoc, unidad3, sistema-hexadecimal]
 > 
 > $$\boxed{250.025_{10} \approx FA.0\overline{66}_{16}}$$
 > 
-> 📌 Cuando multiplicas una fracción por la base, la **parte entera** del resultado es el dígito. En este caso, la parte fraccionaria 0.40 genera un ciclo infinito de 6's. Por eso se escribe con la barra de períodico: $\overline{66}$.
+> > 📌 Cuando multiplicas una fracción por la base, la **parte entera** del resultado es el dígito. En este caso, la parte fraccionaria 0.40 genera un ciclo infinito de 6's. Por eso se escribe con la barra de períodico: $\overline{66}$.
 
 ---
 
@@ -176,13 +167,7 @@ tags: [CCPG1004, cysoc, unidad3, sistema-hexadecimal]
 
 ## 📊 Resumen Visual
 
-> [!info] 📊 Resumen visual — Sistema hexadecimal
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Sistema_Hexadecimal_02.svg]]
->
-> **Se lee así:** el mapa completo: base 16, dígitos 0-9 y A-F, $16 = 2^4$, conversión decimal (restos 10-15 se escriben A-F), notación posicional con potencias de 16 y la equivalencia **1 hex = 4 bits (nibble); 1 byte = 2 hex**, con sus usos (colores web, direcciones de memoria, códigos de error).
->
-> **Por qué importa:** es la forma en que los programadores leen memoria y colores cada día.
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Sistema_Hexadecimal_02.svg]]
 
 ---
 

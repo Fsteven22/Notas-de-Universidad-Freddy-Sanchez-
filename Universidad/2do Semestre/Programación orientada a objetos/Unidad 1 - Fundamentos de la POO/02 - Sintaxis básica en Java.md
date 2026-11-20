@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1005, unidad1, poo, sintaxis]
 ---
 
 # ☕ Sintaxis Básica en Java
@@ -26,9 +25,7 @@ tags: [CCPG1005, unidad1, poo, sintaxis]
 > |**Mantenimiento**|😫 Difícil de modificar|✅ Fácil de actualizar|
 > |**Colaboración**|❌ Difícil de compartir|✅ Estándar reconocible|
 
-> [!note] 🖼️ Introducción
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Sintaxis_básica_en_Java_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Sintaxis_básica_en_Java_01.svg]]
 
 ---
 
@@ -523,12 +520,9 @@ tags: [CCPG1005, unidad1, poo, sintaxis]
 
 ## 📊 Resumen Visual
 
-> [!note] 🖼️ Resumen Visual
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Sintaxis_básica_en_Java_04.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Sintaxis_básica_en_Java_04.svg]]
 
 > [!success]  🎯 Tabla de Referencia Rápida
->
 > |Concepto|Sintaxis|Ejemplo|
 > |---|---|---|
 > |**Declarar variable**|`tipo nombre = valor;`|`int edad = 25;`|

@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 07-matriz-de-una-transformacion-lineal]
 ---
 
 # 🔄 Matriz de una Transformación Lineal
@@ -25,7 +26,14 @@ dg-publish: true
 > |**Análisis**|Estudiar propiedades (eigenvalores, determinante)|Estabilidad de sistemas|
 > |**Inversión**|Deshacer transformaciones|Criptografía, compresión|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_01.svg]]
+> [!info] 📊 07 - Matriz De Una Transformación Lineal 01
+>
+> ![[07_-_Matriz_de_una_Transformación_Lineal_01.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta transformación lineal t y ¿cómo representarla? y matriz a y columnas = imágenes de la base.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
+
 
 ---
 
@@ -40,6 +48,9 @@ dg-publish: true
 > **Proceso paso a paso:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_02.svg]]
+>
+> **Se lee así:** el diagrama presenta base estándar e₁, e₂, ..., eₙ y aplicar t y t(e₁), t(e₂), ..., t(eₙ) y escribir como columnas.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > **Ejemplo en ℝ²:**
 > 
@@ -83,6 +94,9 @@ dg-publish: true
 > **1. Rotación por ángulo θ (sentido antihorario)**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_03.svg]]
+>
+> **Se lee así:** el diagrama presenta vectores rotados y rotación θ y vector original y e₁ = 1,0.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > **Matriz de rotación:**
 > 
@@ -114,6 +128,9 @@ dg-publish: true
 > **2. Reflexión sobre el eje x**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_04.svg]]
+>
+> **Se lee así:** el diagrama presenta [x, y] y reflexión eje x y [x, -y].
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > ```
 > Ref_x = [1   0]
@@ -181,6 +198,9 @@ dg-publish: true
 > **1. Rotación alrededor del eje z**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_05.svg]]
+>
+> **Se lee así:** el diagrama presenta plano xy rota y eje z fijo y rz(θ).
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > ```
 > Rz(θ) = [cos(θ)  -sin(θ)  0]
@@ -246,6 +266,9 @@ dg-publish: true
 > **Algoritmo paso a paso:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_06.svg]]
+>
+> **Se lee así:** el diagrama presenta vector v y multiplicar fila 1 por v y resultado = componente 1 y multiplicar fila 2 por v.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > **Ejemplo completo:**
 > 
@@ -296,6 +319,9 @@ dg-publish: true
 > La composición S∘T tiene matriz [S][T]
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_07.svg]]
+>
+> **Se lee así:** el diagrama presenta t y s∘t = s·t.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > **⚠️ IMPORTANTE: El orden importa**
 > 
@@ -352,6 +378,9 @@ dg-publish: true
 > **Casos especiales:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_08.svg]]
+>
+> **Se lee así:** el diagrama presenta sí y composición y ¿conmutan? y rotaciones alrededor del mismo eje.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 
 ### 🔄 Transformación Inversa
 
@@ -371,6 +400,9 @@ dg-publish: true
 > T es invertible ⟺ det([T]) ≠ 0
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_09.svg]]
+>
+> **Se lee así:** el diagrama presenta sí y transformación t y det[t] ≠ 0? y ✅ invertible.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > **Cálculo de la inversa en ℝ²:**
 > 
@@ -450,6 +482,9 @@ dg-publish: true
 > - **Misma ubicación, diferente descripción**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_10.svg]]
+>
+> **Se lee así:** el diagrama presenta transformación t única e invariante y base estándar e y base b y base c.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > **Notación:**
 > 
@@ -471,6 +506,9 @@ dg-publish: true
 > **Diagrama del proceso:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_11.svg]]
+>
+> **Se lee así:** el diagrama presenta p y [t]_e y [t]_b y vector en base b.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 
 ### 🛠️ Ejemplo Completo de Cambio de Base
 
@@ -521,6 +559,9 @@ dg-publish: true
 > **Interpretación:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_12.svg]]
+>
+> **Se lee así:** el diagrama presenta complicada y simple y base e y [3 1] [1 3].
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > En la base B:
 > 
@@ -552,6 +593,9 @@ dg-publish: true
 > A es diagonalizable ⟺ Tiene n eigenvectores linealmente independientes
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_13.svg]]
+>
+> **Se lee así:** el diagrama presenta sí y matriz a y ¿diagonalizable? y encontrar eigenvectores.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > **Fórmula de diagonalización:**
 > 
@@ -594,6 +638,9 @@ dg-publish: true
 > **Criterios de diagonalización:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_14.svg]]
+>
+> **Se lee así:** el diagrama presenta sí y matriz n×n y ¿simétrica? y ✅ siempre diagonalizable.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 
 ---
 
@@ -619,6 +666,9 @@ dg-publish: true
 > **Visualización en ℝ²:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_15.svg]]
+>
+> **Se lee así:** el diagrama presenta t y det = 2 y det = 0.5 y det = 0.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > **Ejemplos:**
 > 
@@ -648,6 +698,9 @@ dg-publish: true
 > **Signo del determinante:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_16.svg]]
+>
+> **Se lee así:** el diagrama presenta + y det t y signo? y preserva orientación.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > **Ejemplo de orientación:**
 > 
@@ -736,6 +789,9 @@ dg-publish: true
 > **Interpretación geométrica:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_17.svg]]
+>
+> **Se lee así:** el diagrama presenta t y im t ⊂ ℝᵐ y dim im t y rango a.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > **Casos en ℝ³ → ℝ³:**
 > 
@@ -772,6 +828,9 @@ dg-publish: true
 > **Métodos para calcular rango:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_18.svg]]
+>
+> **Se lee así:** el diagrama presenta calcular rango y reducción por filas y determinantes de submatrices y contar pivotes.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > **Propiedades:**
 > 
@@ -788,7 +847,14 @@ dg-publish: true
 
 ### Mapa Conceptual General
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_19.svg]]
+> [!info] 📊 07 - Matriz De Una Transformación Lineal 19
+>
+> ![[07_-_Matriz_de_una_Transformación_Lineal_19.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta matriz de transformación y construcción y columnas = t de base y ejemplos 2d.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
+
 
 >[!success] ### Tabla Resumen de Transformaciones Clásicas
 > 
@@ -802,7 +868,14 @@ dg-publish: true
 > 
 ### Diagrama de Flujo: Trabajar con Matrices
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_20.svg]]
+> [!info] 📊 07 - Matriz De Una Transformación Lineal 20
+>
+> ![[07_-_Matriz_de_una_Transformación_Lineal_20.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta representar y aplicar y componer y invertir.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
+
 
 ---
 
@@ -919,6 +992,9 @@ dg-publish: true
 > **Has dominado:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_21.svg]]
+>
+> **Se lee así:** el diagrama presenta matrices de transformación y construcción y columnas de base y ejemplos clásicos.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > **Progresión natural del aprendizaje:**
 > 
@@ -934,6 +1010,9 @@ dg-publish: true
 > **Roadmap de evolución:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_22.svg]]
+>
+> **Se lee así:** el diagrama presenta matrices de transformación y eigenvalores y diagonalización y forma de jordan.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > **Conceptos clave que siguen:**
 > 

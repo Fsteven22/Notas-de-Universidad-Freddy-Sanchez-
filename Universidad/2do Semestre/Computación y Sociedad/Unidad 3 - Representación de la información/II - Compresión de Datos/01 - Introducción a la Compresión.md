@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad3, introduccion-compresion]
 ---
 # 🗜️ Introducción a la Compresión de Datos
 
@@ -15,8 +14,6 @@ tags: [CCPG1004, cysoc, unidad3, introduccion-compresion]
 > - Sin compresión, plataformas como Netflix o Spotify serían imposibles de operar al costo de ancho de banda que usarías sin comprimir.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Compresión_01.svg]]
->
-> **Se lee así:** el diagrama presenta el árbol completo: ante un dato se decide entre compresión **sin pérdida** (el original se reconstruye al 100 %) y **con pérdida** (menor tamaño a cambio de descartar información).
 
 ---
 
@@ -88,13 +85,7 @@ tags: [CCPG1004, cysoc, unidad3, introduccion-compresion]
 
 ## 🧭 Diagrama de Decisión — ¿Qué tipo de compresión usar?
 
-> [!info] 📊 Diagrama de flujo — ¿Sin pérdida o con pérdida?
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Compresión_02.svg]]
->
-> **Se lee así:** el flowchart decide por contexto: si el dato debe reconstruirse **exactamente** (texto, código o datos críticos) → compresión **sin pérdida**; si una pequeña pérdida de calidad es aceptable (audio, imagen, video) → compresión **con pérdida**.
->
-> **Por qué importa:** es la regla de decisión que los ejemplos de la unidad aplican uno a uno.
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Compresión_02.svg]]
 
 ---
 

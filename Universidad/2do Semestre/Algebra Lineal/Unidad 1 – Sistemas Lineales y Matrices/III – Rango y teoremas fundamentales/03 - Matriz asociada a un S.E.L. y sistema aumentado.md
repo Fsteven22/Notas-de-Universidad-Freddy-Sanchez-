@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad1, 03-matriz-asociada-a-un-s-e-l-y-sistema-aumentado]
 ---
 
 # 🔢 Matriz Asociada a un S.E.L. y Sistema Aumentado
@@ -31,7 +32,14 @@ dg-publish: true
 > |**Generalización**|Estructura uniforme|Múltiples contextos|
 > |**Visualización**|Interpretación geométrica|Comprensión intuitiva|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Matriz_asociada_a_un_S.E.L._y_sistema_aumentado_01.svg]]
+> [!info] 📊 03 - Matriz Asociada A Un S.E.L. Y Sistema Aumentado 01
+>
+> ![[03_-_Matriz_asociada_a_un_S.E.L._y_sistema_aumentado_01.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta sistema de ecuaciones lineales y forma escalar y forma matricial y forma vectorial.
+> **Por qué importa:** el rango es el número clave que clasifica cualquier sistema sin necesidad de resolverlo completamente.
+
 
 ---
 
@@ -249,6 +257,9 @@ dg-publish: true
 > **¿Por qué usar matriz aumentada?**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Matriz_asociada_a_un_S.E.L._y_sistema_aumentado_02.svg]]
+>
+> **Se lee así:** el diagrama presenta matriz aumentada a y operaciones elementales y eliminación gaussiana y gauss-jordan.
+> **Por qué importa:** el rango es el número clave que clasifica cualquier sistema sin necesidad de resolverlo completamente.
 > 
 > **Ventajas:**
 > 
@@ -568,6 +579,9 @@ dg-publish: true
 > **Diagrama de decisión:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Matriz_asociada_a_un_S.E.L._y_sistema_aumentado_03.svg]]
+>
+> **Se lee así:** el diagrama presenta m = n y m &lt; n y m &gt; n y sistema ax = b.
+> **Por qué importa:** el rango es el número clave que clasifica cualquier sistema sin necesidad de resolverlo completamente.
 
 ### 🔍 Sistemas Homogéneos vs No Homogéneos
 
@@ -1173,6 +1187,9 @@ dg-publish: true
 > **Diagrama de casos:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Matriz_asociada_a_un_S.E.L._y_sistema_aumentado_04.svg]]
+>
+> **Se lee así:** el diagrama presenta sí y infinitos y recta y plano.
+> **Por qué importa:** el rango es el número clave que clasifica cualquier sistema sin necesidad de resolverlo completamente.
 
 ---
 
@@ -1218,6 +1235,9 @@ dg-publish: true
 > **Clasificación de sistemas:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Matriz_asociada_a_un_S.E.L._y_sistema_aumentado_05.svg]]
+>
+> **Se lee así:** el diagrama presenta sistema ax = b y por dimensión y cuadrado m=n y subdeterminado m.
+> **Por qué importa:** el rango es el número clave que clasifica cualquier sistema sin necesidad de resolverlo completamente.
 > 
 > **Interpretación geométrica:**
 > 

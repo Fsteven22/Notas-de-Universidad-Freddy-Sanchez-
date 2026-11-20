@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad4, evolucion-html]
 ---
 # 📄 Evolución del HTML: de lo Estático a lo Dinámico
 
@@ -16,8 +15,6 @@ tags: [CCPG1004, cysoc, unidad4, evolucion-html]
 > HTML (HyperText Markup Language) es el lenguaje que estructura el contenido de cualquier página web. Su evolución —de un lenguaje simple para enlazar documentos de texto, a una plataforma capaz de soportar aplicaciones completas— explica en buena parte cómo fue posible el salto de la [[02 - Evolución de la Web|Web 1.0 estática a la Web 2.0+ dinámica]].
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Evolución_del_HTML_01.svg]]
->
-> **Se lee así:** el diagrama es la línea temporal del lenguaje: **1991 HTML 1.0** (Tim Berners-Lee, CERN) → **1997 HTML 4.0** (soporte oficial de CSS y JavaScript) → **2000 XHTML** (reglas más estrictas basadas en XML) → **2014 HTML5** (multimedia nativa, APIs y diseño responsivo).
 
 ---
 

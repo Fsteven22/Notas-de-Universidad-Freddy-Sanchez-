@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad2, implicaciones-sociales]
 ---
 
 # 🌍 Implicaciones Sociales de la Computación en un Mundo Conectado
@@ -14,10 +13,6 @@ tags: [CCPG1004, cysoc, unidad2, implicaciones-sociales]
 > Cada acción individual en plataformas tecnológicas tiene consecuencias colectivas, tanto positivas como negativas.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Implicaciones_Sociales_de_la_Computación_en_un_Mundo_Conectado_01.svg]]
-> 
->  **Se lee así:** el diagrama parte de **Tecnología en Sociedad** y despliega las **áreas de impacto**: familia y adicción, educación, transacciones, comercio electrónico, comunicación y política.
->  **Por qué importa:** funciona como mapa de cobertura de la unidad: cada área es un tipo distinto de efecto social (individual, familiar, económico, institucional) y cada uno pide herramientas de análisis distintas — unas se miden con datos, otras con derecho.
->  **Ejemplo:** el impacto en educación no se mide igual que el impacto en comercio electrónico: el primero se evalúa con resultados de aprendizaje y el segundo con volumen y concentración de ventas.
 
 ---
 
@@ -46,7 +41,7 @@ tags: [CCPG1004, cysoc, unidad2, implicaciones-sociales]
 > |**Tensión ocular**|Exposición continua a pantallas causa fatiga visual, sequedad ocular y dolores de cabeza|
 > |**Síndrome del túnel carpiano**|El uso repetitivo del pulgar para escribir en pantallas táctiles genera inflamación en tendones de muñeca y mano|
 > 
-> ⚠️ La OMS reconoce la postura derivada del uso de móviles como un problema de salud pública emergente, especialmente en adolescentes con esqueletos en desarrollo.
+> > ⚠️ La OMS reconoce la postura derivada del uso de móviles como un problema de salud pública emergente, especialmente en adolescentes con esqueletos en desarrollo.
 >
 
 > [!note] 🎓 En la educación
@@ -124,7 +119,7 @@ tags: [CCPG1004, cysoc, unidad2, implicaciones-sociales]
 > - La agregación de datos aparentemente inocuos puede revelar información muy sensible — rutinas, relaciones, estado de salud
 >     
 > 
-> 💡 El "Yo cuantificado" es una extensión directa de la **mano invisible digital**: cada medición individual alimenta bases de datos colectivas que tienen usos que el usuario no controla ni anticipa.
+> > 💡 El "Yo cuantificado" es una extensión directa de la **mano invisible digital**: cada medición individual alimenta bases de datos colectivas que tienen usos que el usuario no controla ni anticipa.
 
 ---
 
@@ -147,15 +142,6 @@ tags: [CCPG1004, cysoc, unidad2, implicaciones-sociales]
 > _"El Gobierno debe aumentar su presencia en el campo de la tecnología para solucionar esta crisis. Las compañías deben hacer más por realizar mejores diseños y apps, que incentiven un buen uso pero no enganchen."_
 > 
 > Iniciativas como **Common Sense Media** buscan ayudar a familias y docentes a navegar el mundo digital de forma segura.
-
-## 📚 Referencias
-
-> [!quote] 📖 Fuentes consultadas
->
-> Organización Mundial de la Salud (OMS). *Health risks of mobile phone use and children*. Recuperado de https://www.who.int/
-> Common Sense Media. *Family Media Plan* (guía para familias). Recuperado de https://www.commonsensemedia.org/family-resources
-> UNESCO. *Technology in education: A tool on whose terms?*. Recuperado de https://www.unesco.org/en/education
-> Presentación del curso *Computación y Sociedad*, Unidad 2, ESPOL — FESD, EYAG1037.
 
 ---
 

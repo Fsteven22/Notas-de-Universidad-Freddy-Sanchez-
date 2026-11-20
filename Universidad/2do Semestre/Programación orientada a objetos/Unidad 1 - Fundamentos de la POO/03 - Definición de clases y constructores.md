@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1005, unidad1, poo, clases]
 ---
 
 # 🏗️ Definición de Clases y Constructores
@@ -27,9 +26,7 @@ tags: [CCPG1005, unidad1, poo, clases]
 > |**Organización**|Código estructurado y mantenible|Separar `Producto`, `Cliente`, `Pedido`|
 > |**Abstracción**|Modelar conceptos del mundo real|`Auto` representa un vehículo real|
 
-> [!note] 🖼️ Introducción
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Definición_de_clases_y_constructores_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Definición_de_clases_y_constructores_01.svg]]
 
 ---
 
@@ -630,9 +627,7 @@ tags: [CCPG1005, unidad1, poo, clases]
 
 ## 📊 Resumen Visual
 
-> [!note] 🖼️ Resumen Visual
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Definición_de_clases_y_constructores_05.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Definición_de_clases_y_constructores_05.svg]]
 
 > [!success]  🎯 Tabla de Referencia Rápida
 > 

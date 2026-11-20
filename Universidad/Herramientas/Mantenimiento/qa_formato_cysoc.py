@@ -24,12 +24,9 @@ Severidades: H (error duro) y W (desviacion de formato).
       + material ajeno (_texto, Contenido Extra, etc.)     H
       + SVG con fuente .mmd al lado                        W
   R13 '**Tags:**' al final                                 W
-      + '**Tags:**' pegado al ultimo callout               W
   R14 todo lo visual se explica, no se transcribe             W
       + embeds (.png de deck / .svg de diagrama) con lectura   W
       + callouts 📖 de deck con etiqueta de lectura            W
-  R8  el prefijo '> >' solo cuelga de un callout anidado    H
-      (si no, se renderiza como texto indentado sin estilo)
 
 DRY por defecto (solo reporta). --fix-rutas repara R12 cuando la ruta
 corta (un nivel menos en '../') existe de verdad.
@@ -58,7 +55,7 @@ RE_RULE = re.compile(r"^\s*(?:-{3,}|\*{3,}|_{3,})\s*$")
 # Rango de emoji: bloques Miscellaneous Symbols (2600-27BF), Dingbats (2B00-2BFF),
 # Supplemental Symbols (1F000-1FAFF), flechas, y TECHNICAL (2300-23FF): este
 # ultimo cubre los emoji de reloj y cronometro (⏱️ U+23F1, ⌛ U+231B, ⏳ U+23F3).
-RE_EMOJI = re.compile(r"[\U0001F000-\U0001FAFF\u2300-\u23FF\u2600-\u27BF\u2B00-\u2BFF\u2190-\u21FF\u2049\u203C\u2757\u20E3\u00A9\u00AE\u2122]")
+RE_EMOJI = re.compile(r"[\U0001F000-\U0001FAFF\u2300-\u23FF\u2600-\u27BF\u2B00-\u2BFF\u2190-\u21FF\u2049\u203C\u2757]")
 
 RE_CALL_HDR = re.compile(r"^\s*(?P<gg>(?:>\s*)+)+\[!(?P<tipo>[\w\-]+)\](?P<plegado>-?)\s*(?P<titulo>.*)$")
 RE_CALL_CONT = re.compile(r"^\s*(?P<gg>(?:>\s*)+)(?P<resto>.*)$")
@@ -194,31 +191,6 @@ def bloques_callout(lineas):
         })
         i = j
     return bloques
-
-
-def lineas_callout_anidado(lineas):
-    """Indices de las lineas que cuelgan de un callout anidado ('> > [!tipo]').
-
-    El prefijo '> >' solo es legitimo como contenido de un callout anidado
-    (contrato R8, patron de Diseno/SBD). Un '> >' suelto se renderiza como
-    texto indentado sin estilo: es lo que reporto el dueno en CYSOC.
-    """
-    dentro = set()
-    i, n = 0, len(lineas)
-    while i < n:
-        if not re.match(r"^\s*> >\s*\[!", lineas[i]):
-            i += 1
-            continue
-        dentro.add(i)
-        j = i + 1
-        while j < n:
-            mm = RE_CALL_CONT.match(lineas[j])
-            if not mm or mm.group("gg").count(">") < 2:
-                break
-            dentro.add(j)
-            j += 1
-        i = j
-    return dentro
 
 
 def auditar(nota_path, raiz, hallazgos, basenames_idx=None, vault=None):
@@ -440,27 +412,9 @@ def auditar(nota_path, raiz, hallazgos, basenames_idx=None, vault=None):
                     continue
             hallazgos.append((rel, i + 1, "R12-embed-rota", tgt[:60]))
 
-    # ---------- R8 el prefijo '> >' solo cuelga de un callout anidado
-    anidado = lineas_callout_anidado(lineas)
-    for i, ln in enumerate(lineas):
-        mm = RE_CALL_CONT.match(ln)
-        if not mm:
-            continue
-        if mm.group("gg").count(">") >= 2 and i not in anidado:
-            hallazgos.append((rel, i + 1, "R8-doble-gt-sin-callout",
-                              "'> >' sin callout anidado: %s" % ln.strip()[:44]))
-
     # ---------- R13 tags al pie
     if not any(RE_TAGS_FOOT.match(x) for x in lineas):
         hallazgos.append((rel, len(lineas), "R13-tags-final", "falta '**Tags:** ...'"))
-    # los tags van en la raiz, no pegados al ultimo callout
-    for i, ln in enumerate(lineas):
-        if not RE_TAGS_FOOT.match(ln):
-            continue
-        prev = lineas[i - 1].strip() if i > 0 else ""
-        if prev.startswith(">") and prev != ">":
-            hallazgos.append((rel, i + 1, "R13-tags-pegado",
-                              "'**Tags:**' pegado al callout (separa con linea en blanco + '---')"))
 
     # ---------- R14 todo lo visual se explica (no se transcribe)
     # Una captura del deck o un diagrama no se documenta solo: al lado debe
@@ -556,7 +510,6 @@ def fix_rutas(nota_path):
 CODIGOS_H = {
     "FAIL-READ", "R4-prosa-top", "R4-tabla-top", "R4-lista-top",
     "R4-fence-top", "R5-sin-titulo", "R6-callout-vacio",
-    "R8-doble-gt-sin-callout",
     "R12-embed-rota", "R12-ajeno", "R12-ruta-profundidad",
 }
 

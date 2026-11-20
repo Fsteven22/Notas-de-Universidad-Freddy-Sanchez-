@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1005, unidad1, poo, static]
 ---
 
 # 🔷 Miembros Estáticos (static)
@@ -500,9 +499,7 @@ tags: [CCPG1005, unidad1, poo, static]
 
 ## 📚 Resumen Visual
 
-> [!note] 🖼️ Resumen Visual
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Miembros_estáticos_(static)_08.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Miembros_estáticos_(static)_08.svg]]
 
 > [!quote] 🎓 Puntos Clave para Recordar
 > 

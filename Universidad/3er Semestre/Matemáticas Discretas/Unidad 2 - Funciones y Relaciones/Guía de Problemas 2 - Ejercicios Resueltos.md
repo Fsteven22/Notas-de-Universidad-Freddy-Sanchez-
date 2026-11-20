@@ -287,7 +287,7 @@ tags: [matematicas-discretas, guia-problemas, funciones, relaciones, sucesiones,
 > 
 > **Enunciado:** $X = \{4,5,7,8\}$, $xRy \iff (3y \bmod x) > 1$.
 > 
-> **(a) Cálculo de todos los pares:** Evaluamos $3y \bmod x$ para cada [[06 - Permutaciones y Combinaciones|combinación]]:
+> **(a) Cálculo de todos los pares:** Evaluamos $3y \bmod x$ para cada [[05 - Permutaciones y Combinaciones|combinación]]:
 > 
 > | $(x,y)$ | $3y$ | $3y \bmod x$ | $> 1$? |
 > |---|---|---|---|
@@ -816,7 +816,7 @@ tags: [matematicas-discretas, guia-problemas, funciones, relaciones, sucesiones,
 > - Relaciones: [[02 - Relaciones]] — base de los Ej. 9–14.
 > - Equivalencia y orden: [[03 - Propiedades y Equivalencia]] — base de los Ej. 15–21.
 > - Sucesiones: [[04 - Sucesiones y Cadenas]] — base de los Ej. 22–28.
-> - Conteo: [[06 - Permutaciones y Combinaciones]] — técnica afín al conteo de pares en Ej. 11.
+> - Conteo: [[05 - Permutaciones y Combinaciones]] — técnica afín al conteo de pares en Ej. 11.
 > - Divisibilidad: [[01 - Divisibilidad y Números Primos]] — base del criterio del Ej. 28.
 > - Anterior: [[Guía de Problemas 1 - Ejercicios Resueltos]] — lógica, conjuntos e inducción.
 

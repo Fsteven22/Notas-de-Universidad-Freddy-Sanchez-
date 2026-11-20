@@ -3589,3 +3589,144 @@ el commit de esta línea de PUSHEADO.
 - **Pendiente conocido (excepción documentada, no se hace en esta ronda)**: 52 diagramas sin fuente — `classDiagram` 24 (POO), `sequenceDiagram` 22, y `gantt`/`pie`/`stateDiagram`/`timeline`/`(no-rol)` 6. classDiagram no tiene reconstructor mecánico seguro; se hace manualmente o se excluye de R12 en el contrato cuando la materia cierre.
 - **Zona:** todo el vault (orden explícito del dueño). **Trabajo ajeno intacto** (18 PNG MatDisc + manifiesto, `genera_tablas_verdad.py`, PDF de Diseño, copia suelta de Speaking Practice; zona Cálculo Vectorial ya integrada en esta ronda).
 - **Estado git al cierre:** ~998 `.mmd` nuevos + el bloque de esta ronda, commiteados localmente (sin push). `FORMATO-POO.md` / `qa_formato_poo.py` quedaron integrados en `21b01a7b`. trabajo ajeno intacto (18 PNG + manifiesto MatDisc, PDFs de Diseño, copia suelta de Speaking Practice).
+
+---
+
+---
+### `opencode-site` — combinado A+C+D: mapa en cian, acciones con rótulo, contraste arreglado — 19/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-combinado` → `master` (merge `--ff-only`) → `origin/master`
+>
+> - **Hecho (código, `ca83456e`):**
+>   - **Mapa con esferas "En curso" en cian** (token `--nx-coral-esfera`): claro `#2fa9c8`, oscuro `#5cc8e8`. Ya no leen como barro arcilla frente al gris de completado/reconstrucción.
+>   - **Filete de coda en títulos de sección** (`.nx-section-title`): sans 500, línea de 1 px a la derecha, sin mayúsculas ni tracking.
+>   - **Kicker con barra vertical de 2 px** en `.nx-badge`: acento, sin pill ni mayúsculas.
+>   - **Estados sin verde ni ámbar**: Completado y Reconstrucción en gris (`--nx-muted`), solo En curso en coral (`--nx-coral`), también en el mapa 3D.
+>   - **Contraste de hover arreglado**: `--nx-control` claro `#708a98` → `#6f8391` (control/hover pasa de 2,94:1 a 3,18:1).
+>   - **Acciones de nota con rótulo visible**: Modo lectura, Imprimir / PDF, Guardar, Marcar leída, Emojis. La estrella de Guardar sigue siendo coral (coherente con reservar el coral para favoritos).
+>
+> - **Verificado sobre el build de producción** (818 páginas, `astro preview`):
+>   - Contraste total 18/18 en ambos temas.
+>   - Auditoría de paleta: todos los contrastes OK, 1 solo degradado (barra 2px), 0 sombras, 0 blur, radios 100 % 4 px, animación se detiene con `prefers-reduced-motion`, 0 errores de consola.
+>   - Funcional 10/10: buscador, flashcards, marcar leída, contador, barra de progreso, mapa 3D⇄Lista, tema persistente.
+>   - Modo lectura 602→671 px, foco neón visible, 0 errores de consola.
+>   - Mapa: esferas cian confirmadas por análisis de píxeles, etiquetas sin solaparse, diagrama SVG de Cálculo 1 en oscuro sin fondo blanco.
+>   - Impresión del mapa: canvas oculto, Lista en 2 columnas negro sobre blanco, 4 semestres.
+>
+> - **No se tocó** la zona `opencode`, ni `Universidad/`, ni `site/scripts/`. Sin `npm run sync` en OneDrive.
+>
+> - **Sync local**: `npm run sync` con `VAULT_DIR=../Universidad` para que el build local coincida con la producción (787 notas, 4 semestres).
+>
+
+
+> [!success] PUSHEADO `32e1bfc9` · 19/11/2026 — `ca83456e` (código) + `32e1bfc9`
+> (PUSHEO EN CURSO) + este bloque → merge `--ff-only` a `master` → un solo push, sin `--force`.
+
+---
+
+### `opencode` — Álgebra Lineal: piloto MATG1049, contrato + primer pase (0 H) — 19/11/2026
+
+> [!success] **PUSHEADO `dc5f40fc`** · 19/11/2026 — `master` = `origin/master` = `dc5f40fc` (sin `--force`).
+>
+> Lo que sigue es el detalle del contenido del push.
+>
+> **Álgebra Lineal (MATG1049), 51 notas — baseline medido y primer lote de fixes, sin romper nada (51 notas pasan, 0 hallazgos de clase H):**
+> - Nuevo `Universidad/Herramientas/Mantenimiento/FORMATO-ALGEBRA.md` (contrato de la materia, adaptado del patrón CYSOC pero con esqueleto libre y exigencia de emoji en todo H2) y `qa_formato_algebra.py` (mismo motor que el validador CYSOC).
+> - **R4-prosa-top pasa a W** (informativa): las notas de esta materia son prosa densa por diseño; envolver ~775 párrafos en callouts sería una reescritura editorial masiva, no un arreglo de formato. `R8-doble-gt` y `R6-callout-vacío` siguen siendo H.
+> - Tags: 47 notas sin frontmatter ganaron `tags: [MATG1049, algebra-lineal, unidadN, slug]`.
+> - H1 sin emoji corregidos (2), líneas de código `> >` sueltas bajadas de nivel (4), 2 callouts `quote` vacíos rellenados con su contenido envuelto (antes flotaban fuera del callout).
+> - **Estado: 51 notas, 1345 hallazgos, 0 H** (todo W; quedan R14/R4-embed/R6/R7/R3-h2-emoji/R13 para fases siguientes, una unidad a la vez).
+> - Backup de los 51 archivos modificados en `%TEMP%\opencodeackup_algebra_piloto_20261119_2116.zip`.
+>
+> **Queda POR HACER (fase 2):** lecturas R14 de los 174 embeds sin explicación, envolver los 57 embeds top-level, y luego **enlazar los 42 exámenes reales de DSpace** (14 Parcial I / 14 Parcial II / 14 Mejoramiento) desde las notas — el punto central de "nutrir con material real". Nada de esto se incluye en este push.
+>
+> **Excluidos del push:** `FORMATO-FISICA.md` y `qa_formato_fisica.py` (otra sesión, sin tocar), Inglés III y todo el trabajo ajeno. Los exámenes de Álgebra ya estaban pusheados (`6eef68e0`); este push no los repite.
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Algebra Lineal/**` (51 notas: tags/emoji/fixes)
+> - `Universidad/Herramientas/Mantenimiento/FORMATO-ALGEBRA.md` (nuevo), `qa_formato_algebra.py` (nuevo)
+> - `Clippings/00 - LEEME bandeja de pistas.md`
+
+---
+
+### `opencode` — Álgebra Lineal: contrato reescrito sobre la nota de referencia + fase 2 (lecturas R14) — 19/11/2026
+
+> [!success] **PUSHEADO `07a29948`** · 19/11/2026 — `master` = `origin/master` = `07a29948` al momento del push (sin `--force`).
+>
+> Lo que sigue es el detalle del contenido del push.
+>
+> **Contrato reescrito (a petición del dueño, "usar la nota de refereencia de SBD como todos los contratos"):**
+> - `FORMATO-ALGEBRA.md` ahora cita literalmente la **nota de referencia** `U1/I/01 - Sistema de
+>   ecuaciones lineales en R2 y R3.md` (26 H2 con emoji, 57 callouts de 9 tipos, 3 embeds con
+>   lectura, tags al pie; 0 prosa fuera de callouts). Cada regla lleva sus líneas como ejemplo.
+> - Documentadas las anomalías de la materia (material del dueño, no defectos): **6 notas con dos
+>   H1** (documentos fusionados) y **4 con dos `**Tags:**`** al pie; el validador no las reporta.
+> - Reglas que **no aplican** a Álgebra se marcaron como tales (R10 metas, R11 flashcards, R15
+>   capturas PNG): 0 ocurrencias en la materia.
+> - `qa_formato_algebra.py`: `--calibrar` apuntaba a `None` (roto); ahora apunta a la nota de
+>   refereencia. Verificado: la referencia da **5 W, 0 H**.
+>
+> **Fase 2 (mecánica, 246 cambios):**
+> - 190 embeds dentro de callout ganaron su lectura R14 (`**Se lee así:**` + `**Por qué importa:**`),
+>   fundamentada en el texto visible de cada SVG.
+> - 56 embeds top-level envueltos en `> [!info] 📊 …` con su lectura.
+> - Cerrados los 2 últimos R14/R4 de la materia (embed del syllabus en Bienvenida + Índice; lista
+>   suelta en Recursos Visuales).
+>
+> **QA:** 51 notas · **1367 W · 0 H**. Restante, todo W: R4-prosa-top 781 (estilo de la materia,
+> documentado en el contrato) · R12-svg-sin-mmd 248 (déficit real de `.mmd`, pendiente de generar) ·
+> R7 220 · R6 99 · R14-deck 7 · R3-h2-emoji 6 · R13 4 · R12-clase 2.
+>
+> Backup de las 27 notas transformadas en `%TEMP%\opencode\backup_algebra_fase2_20261119_2133`.
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Algebra Lineal/**` (30 notas)
+> - `Universidad/Herramientas/Mantenimiento/FORMATO-ALGEBRA.md`, `qa_formato_algebra.py`
+> - `Clippings/00 - LEEME bandeja de pistas.md`
+
+---
+
+### `opencode` — 1er Semestre: exámenes de DSpace (125 PDFs nuevos) — 20/11/2026
+
+> [!success] **PUSHEADO `5d0e2bc4`** · 20/11/2026 — `master` = `origin/master` = `5d0e2bc4` al momento del push (sin `--force`).
+>
+> Lo que sigue es el detalle del contenido del push.
+
+**Qué se descargó** (fuente: API pública de DSpace ESPOL, colección `Exámenes`):
+
+| Materia | 1Par | 2Par | Mejora | Total nuevos | Rango |
+|---|---|---|---|---|---|
+| Cálculo de una Variable (MATG1045) | 14 | 14 | 14 | **42** | 2018-2S → 2026-1S |
+| Física Mecánica (FISG1001, exams `FÍSICA I`) | 14 | 14 | 14 | **42** | 2016-2S → 2020-0S |
+| Fundamentos de Programación (CCPG1001) | 13 | 14 | 14 | **41** | 2016-1S → 2026-0S |
+| Inglés I (B1-B2) | — | — | — | **0** | no existe en DSpace |
+
+- **Solo PDFs** (se descartaron `.docx`, `.xlsx` y `.zip`: 2 de Fundamentos, 2 de Física, 21 de
+  Cálculo). Verificado leyendo el PDF descargado, no solo por extensión.
+- **Dedupe por sha256** del contenido limpio: se saltaron 40+ ítems con el mismo PDF publicado
+  bajo varios nombres (p. ej. `EXA-2022-0S-…-2Par` es el mismo archivo que `…-Mejora`).
+- **Selección por diversidad**: orden round-robin por término (año-semestre), no los primeros 42
+  del listado.
+- Validación: los **125** archivos pasan parseo con `pypdf`/`pymupdf`; **0** no parseables.
+- `Fundamentos de Programación` quedó en 13 de 1Par porque el pool de DSpace (39 ítems) contiene
+  solo **13 contenidos distintos** — es el techo real, no un recorte.
+
+**Corrección de un dato anterior:** la sesión pasada concluded "Inglés III = 0 en DSpace". Es
+incorrecto: **Inglés III sí tiene 5 exámenes** (`EXA-2018-2S-INGLÉS III-16-1Par`,
+`…-18-1Par`, `EXA-2019-1S-INGLÉS III-1-1Par`, `…-1-2Par`). Inglés I = 0 e Inglés II = 0
+confirmado con búsqueda amplia. Queda pendiente bajar esos 5 al vault de 3er Semestre.
+
+**Hallazgo sobre material ya presente (pendiente de OK):** los 16 PDFs de Cálculo que ya estaban
+en el vault arrived con un *wrapper MIME/multipart* de la API (no son PDFs limpios; se abren en
+visores pero fallan al parsear) y **10 de ellos son duplicados exactos** entre sí (3 copias del
+`2021-2S-1Par` + 8 copias del `2022-1S-1Par`). No se tocó ninguno: se propone limpiarlos y mover
+las 10 copias a `%TEMP%\opencode`.
+
+**Manifiesto** con UUID, hash y tamaño: `%TEMP%\opencode\manifiesto_1er.json`.
+
+> Archivos en este push:
+> - `Universidad/1er Semestre/Cálculo de una Variable/Unidad 0 - Guias y Ejercicios/Exámenes/**` (42)
+> - `Universidad/1er Semestre/Física Mecánica/Unidad 0 - Guias y Ejercicios/Exámenes/**` (42)
+> - `Universidad/1er Semestre/Fundamentos de Programación/Unidad 0 - Guias y Ejercicios/Exámenes/**` (41)
+> - `Clippings/00 - LEEME bandeja de pistas.md`
+

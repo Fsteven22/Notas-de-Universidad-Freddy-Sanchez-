@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [FISG1001, unidad0, bienvenida-y-syllabus-fisica-mecanica]
 ---
 
 # ⚡ Física Mecánica — Bienvenida y Syllabus

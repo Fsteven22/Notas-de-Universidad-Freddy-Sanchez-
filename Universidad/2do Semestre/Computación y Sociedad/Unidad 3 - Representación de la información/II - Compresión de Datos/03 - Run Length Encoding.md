@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad3, run-length-encoding]
 ---
 # 🏃 Run Length Encoding (RLE)
 
@@ -15,8 +14,6 @@ tags: [CCPG1004, cysoc, unidad3, run-length-encoding]
 > - Es especialmente efectivo en datos con **muchas repeticiones consecutivas**: imágenes con áreas de color sólido, faxes, iconos simples, o ciertos tipos de datos de sensores.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Run_Length_Encoding_01.svg]]
->
-> **Se lee así:** el diagrama resume el algoritmo en una línea: detecta **repeticiones consecutivas**, cuenta las **corridas (runs)** y sustituye cada corrida por el par **(valor, cantidad)** — la compresión más simple que existe.
 
 ---
 
@@ -115,13 +112,7 @@ tags: [CCPG1004, cysoc, unidad3, run-length-encoding]
 
 ## 🧭 Diagrama de Decisión — ¿Conviene usar RLE?
 
-> [!info] 📊 Diagrama de flujo — ¿Conviene RLE?
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Run_Length_Encoding_02.svg]]
->
-> **Se lee así:** el flowchart decide según la forma de los datos: solo conviene con **muchas repeticiones consecutivas** y **corridas largas**; con corridas cortas o dispersas, RLE puede **agrandar** el archivo y conviene Huffman o Keyword Encoding.
->
-> **Por qué importa:** evita la paradoja de que comprimir un archivo lo haga más pesado.
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Run_Length_Encoding_02.svg]]
 
 ---
 

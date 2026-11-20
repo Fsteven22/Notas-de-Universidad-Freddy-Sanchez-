@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1005, unidad7, poo, concurrencia]
 ---
 
 # 🖥️ Concurrencia con GUI 
@@ -28,9 +27,7 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > |**Cálculos pesados**|UI no responde durante procesamiento|Procesamiento paralelo sin afectar UI|
 > |**Profesionalismo**|Aplicación amateur|Aplicación profesional y pulida|
 
-> [!note] 🖼️ Introducción
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_01.svg]]
 
 ---
 
@@ -1391,9 +1388,7 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 
 ### 🗺️ Mapa Mental Completo
 
-> [!note] 🖼️ ️ Mapa Mental Completo
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_10.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_10.svg]]
 
 ### 📋 Tabla Comparativa Final
 

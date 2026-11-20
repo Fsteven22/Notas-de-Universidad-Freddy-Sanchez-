@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1005, unidad5, poo, archivos]
 ---
 
 # 📁 Lectura y Escritura de Archivos (Vista General)
@@ -28,9 +27,7 @@ tags: [CCPG1005, unidad5, poo, archivos]
 > |**Respaldo**|Crear copias de seguridad|Backups automáticos, historial de cambios|
 > |**Procesamiento por lotes**|Procesar múltiples archivos automáticamente|Conversión de formatos, análisis de datos|
 
-> [!note] 🖼️ Introducción
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_01.svg]]
 
 ---
 
@@ -700,9 +697,7 @@ tags: [CCPG1005, unidad5, poo, archivos]
 
 ### 🗺️ Mapa Mental Completo
 
-> [!note] 🖼️ ️ Mapa Mental Completo
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_14.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_14.svg]]
 
 >[!success] ### 📋 Tabla Comparativa Final
 > 

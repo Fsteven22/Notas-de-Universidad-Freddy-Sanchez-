@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad5, tipos-propiedad-intelectual]
 ---
 
 # 🧩 Tipos de Propiedad Intelectual: Patentes, Trademarks y Trade Secrets
@@ -12,8 +11,6 @@ tags: [CCPG1004, cysoc, unidad5, tipos-propiedad-intelectual]
 > Ya vimos que el **derecho de autor** protege obras literarias y artísticas (incluyendo software). Pero no todo lo que una empresa o persona quiere proteger es una "obra" — a veces es una invención, un nombre comercial, o una fórmula secreta. Cada uno de estos casos tiene **su propia figura legal**, con reglas y duración distintas.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Tipos_de_Propiedad_Intelectual_-_Patentes,_Trademarks_y_Trade_Secrets_01.svg]]
->
-> **Se lee así:** el diagrama descompone la propiedad intelectual en sus cuatro figuras con su activo típico: **copyrights** (libros, música, software, fotos), **patentes** (invenciones, procesos, tecnologías), **trademarks** (nombres, logotipos, eslóganes) y **trade secrets** (información confidencial con ventaja competitiva).
 
 ---
 
@@ -102,13 +99,7 @@ tags: [CCPG1004, cysoc, unidad5, tipos-propiedad-intelectual]
 
 ## 🧭 Flujograma de Decisión — ¿Qué figura legal aplica?
 
-> [!info] 📋 Diagrama de flujo — ¿Qué figura legal aplica?
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Tipos_de_Propiedad_Intelectual_-_Patentes,_Trademarks_y_Trade_Secrets_02.svg]]
->
-> **Se lee así:** el flowchart elige la figura: ¿invención técnica nueva y no obvia, y estás dispuesto a revelarla → **patente**; ¿no, y quieres mantenerla secreta → **trade secret**; ¿obra creativa (libro, música, software) → **copyright**; ¿nombre, logo o eslogan comercial → **trademark**.
->
-> **Por qué importa:** la elección correcta define la estrategia de protección antes de cualquier trámite.
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Tipos_de_Propiedad_Intelectual_-_Patentes,_Trademarks_y_Trade_Secrets_02.svg]]
 
 ---
 

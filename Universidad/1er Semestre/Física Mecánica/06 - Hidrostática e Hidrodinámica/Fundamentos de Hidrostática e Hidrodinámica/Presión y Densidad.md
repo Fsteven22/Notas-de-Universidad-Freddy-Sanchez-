@@ -1,28 +1,29 @@
 ---
 dg-publish: true
+tags: [FISG1001, unidad6, fisica-mecanica, fluidos, presion-y-densidad]
 ---
 
 # Presión y Densidad 🌊
 
 > [!info] 📚 **Conceptos Fundamentales** La **presión** y **densidad** son conceptos fundamentales en hidrostática que nos permiten comprender el comportamiento de los fluidos en reposo. Estos conceptos son la base para entender fenómenos como la flotación, la presión atmosférica y el funcionamiento de sistemas hidráulicos.
 
-## Densidad (ρ)
+## 📏 Densidad (ρ)
 
 > [!tip] 🎯 **Definición** La **densidad** es la cantidad de masa contenida en una unidad de volumen de una sustancia.
-> 
+>
 > ### Fórmula:
-> 
+>
 > $$\rho = \frac{m}{V}$$
-> 
+>
 > Donde:
-> 
+>
 > - ρ (rho) = densidad (kg/m³)
 > - m = masa (kg)
 > - V = volumen (m³)
 >
 
 > [!example] 📊 **Densidades Comunes**
-> 
+>
 > |Sustancia|Densidad (kg/m³)|Densidad (g/cm³)|
 > |---|---|---|
 > |Aire|1.2|0.0012|
@@ -32,24 +33,24 @@ dg-publish: true
 > |Hierro|7874|7.874|
 > |Mercurio|13534|13.534|
 
-# Relación Fundamental: Masa-Densidad-Volumen
+# 📏 Relación Fundamental: Masa-Densidad-Volumen
 
 > [!important]+ Ecuación Fundamental de la Densidad 📐
-> 
+>
 > ### Definición Básica
-> 
+>
 > La **masa de un objeto** está directamente relacionada con su densidad y volumen mediante la ecuación fundamental:
-> 
+>
 > **m = ρ × V**
-> 
+>
 > Donde:
-> 
+>
 > - **m** = masa del objeto (kg)
 > - **ρ** = densidad del material (kg/m³)
 > - **V** = volumen ocupado por el objeto (m³)
-> 
+>
 > ### Formas Derivadas
-> 
+>
 > ```
 > Densidad:    ρ = m/V
 > Volumen:     V = m/ρ
@@ -58,21 +59,21 @@ dg-publish: true
 >
 
 > [!example] Aplicación Práctica 🧮
-> 
+>
 > ### Ejemplo Rápido
-> 
+>
 > **Un bloque de aluminio (ρ = 2700 kg/m³) tiene un volumen de 0.5 m³**
-> 
+>
 > **Cálculo de masa:**
-> 
+>
 > ```
 > m = ρ × V = 2700 kg/m³ × 0.5 m³ = 1350 kg
 > ```
-> 
+>
 > ### Utilidad en Hidrostática
-> 
+>
 > Esta relación es **fundamental** para:
-> 
+>
 > - 🌊 Calcular fuerzas de flotación
 > - ⚖️ Determinar peso aparente vs peso real
 > - 🚢 Analizar condiciones de flotación
@@ -80,33 +81,33 @@ dg-publish: true
 >
 
 > [!tip] Conexión con Otros Conceptos 🔗
-> 
+>
 > ### En Problemas de Flotación
-> 
+>
 > - **Peso real**: W = mg = (ρ_objeto × V) × g
 > - **Fuerza de flotación**: F_f = ρ_fluido × V_sumergido × g
 > - **Condición de flotación**: ρ_objeto × V_objeto = ρ_fluido × V_sumergido
-> 
+>
 > ### Recordatorio Clave
-> 
+>
 > > **La masa NO cambia** con el entorno, pero el **peso aparente sí** debido a la flotación.
-## Presión (P)
+## 💧 Presión (P)
 
 > [!tip] 🎯 **Definición** La **presión** es la fuerza normal ejercida por unidad de área sobre una superficie.
-> 
+>
 > ### Fórmula:
-> 
+>
 > $$P = \frac{F}{A}$$
-> 
+>
 > Donde:
-> 
+>
 > - P = presión (Pa = N/m²)
 > - F = fuerza (N)
 > - A = área (m²)
 >
 
 > [!info] 📏 **Unidades de Presión**
-> 
+>
 > - **Pascal (Pa)**: Unidad del SI
 > - **Atmósfera (atm)**: 1 atm = 101,325 Pa
 > - **Torr**: 1 Torr = 133.322 Pa
@@ -116,68 +117,72 @@ dg-publish: true
 ## Presión Hidrostática 💧
 
 > [!warning] ⚠️ **Concepto Clave** La **presión hidrostática** es la presión ejercida por un fluido en reposo debido a su peso.
-> 
+>
 > ### Fórmula de la Presión Hidrostática:
-> 
+>
 > $$P = P_0 + \rho g h$$
-> 
+>
 > Donde:
-> 
+>
 > - P = presión total a profundidad h
 > - P₀ = presión en la superficie
 > - ρ = densidad del fluido
 > - g = aceleración gravitacional (9.8 m/s²)
 > - h = profundidad
 
-![[Diagramas/Presión_y_Densidad_01.svg]]
+> [!note] 🖼️ Presión Hidrostática
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Presión_y_Densidad_01.svg]]
 
 ## Principios Fundamentales 🏗️
 
 > [!note] 📐 **Principio de Pascal** La presión aplicada a un fluido confinado se transmite uniformemente en todas las direcciones.
-> 
+>
 > **Aplicación**: Sistemas hidráulicos, frenos de automóviles, prensas hidráulicas.
 >
 
 > [!note] 🌍 **Presión Atmosférica**
-> 
+>
 > - **Valor estándar**: 101,325 Pa = 1 atm
 > - **Variación con altura**: Disminuye exponencialmente
 > - **Medición**: Barómetro de mercurio o aneroide
 
 ## Relación entre Presión y Densidad 🔗
 
-![[Diagramas/Presión_y_Densidad_02.svg]]
+> [!note] 🖼️ Relación entre Presión y Densidad
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Presión_y_Densidad_02.svg]]
 
 > [!example] 🧮 **Ejemplo Práctico** **Problema**: Calcular la presión en el fondo de una piscina de 3 m de profundidad.
-> 
+>
 > **Datos**:
-> 
+>
 > - h = 3 m
 > - ρ(agua) = 1000 kg/m³
 > - g = 9.8 m/s²
 > - P₀ = 101,325 Pa
-> 
+>
 > **Solución**: P = P₀ + ρgh = 101,325 + (1000)(9.8)(3) = 101,325 + 29,400 = **130,725 Pa**
 
 ## Técnica de Estudio: Mnemotecnia 🧠
 
 > [!success] 💡 **Reglas Mnemotécnicas**
-> 
+>
 > ### Para recordar las fórmulas:
-> 
+>
 > - **"Densidad = Masa/Volumen"** → **"DeMa/Vo"** (De-Ma-Vo)
 > - **"Presión = Fuerza/Área"** → **"PreFuA"** (Pre-Fu-A)
 > - **"A mayor profundidad, mayor presión"** → **"ProFundo = PreSión"**
-> 
+>
 > ### Para unidades:
-> 
+>
 > - **Pascal**: **"Pa"**scal para **Pa**presión
 > - **kg/m³**: **K**ilo**G**ramos por **M**etro **C**úbico (KG-MC)
 
 ## Método de Estudio: Mapas Conceptuales 📝
 
 > [!tip] 📊 **Estrategia de Aprendizaje**
-> 
+>
 > 1. **Crear analogías**: Presión como "peso del agua encima"
 > 2. **Usar ejemplos cotidianos**: Buceo, montañismo, jeringas
 > 3. **Práctica progresiva**: Comenzar con problemas simples
@@ -186,7 +191,7 @@ dg-publish: true
 ## Referencias 📚
 
 > [!quote] 🔗 **Enlaces a Otras Notas**
-> 
+>
 > - [[1er Semestre/Física Mecánica/06 - Hidrostática e Hidrodinámica/Hidrostática/El Principio de Arquímedes y Flotación.md]] - Flotación y empuje
 > - [[Ecuación de Continuidad y Bernoulli#Ecuación de Continuidad|Ecuación de Continuidad]] - Conservación de masa en fluidos
 > - Principio de Bernoulli - Energía en fluidos en movimiento
@@ -196,19 +201,23 @@ dg-publish: true
 ## Notas Recomendadas 📖
 
 > [!info] 🎓 **Prerrequisitos y Complementos**
-> 
+>
 > ### Prerrequisitos:
-> 
+>
 > - Vectores y Escalares - Base matemática
 > - [[Leyes de Newton]] - Conceptos de fuerza
 > - Sistema Internacional de Unidades - Unidades y conversiones
-> 
+>
 > ### Temas Complementarios:
-> 
+>
 > - Manómetros y Barómetros - Instrumentos de medición
 > - [[Teorema de los Vasos Comunicantes]] - Aplicaciones de presión hidrostática
 > - Prensa Hidráulica - Aplicaciones del principio de Pascal
 
 ---
 
-**Tags**: #física #hidrostática #presión #densidad #fluidos #mecánica #pascal #arquímedes #hidrodinámica #estudio
+> [!info] 📌 Notas Recomendadas
+>
+> **Tags**: #física #hidrostática #presión #densidad #fluidos #mecánica #pascal #arquímedes #hidrodinámica #estudio
+
+**Tags:** #FISG1001 #fisica-mecanica #unidad6 #presion-y-densidad

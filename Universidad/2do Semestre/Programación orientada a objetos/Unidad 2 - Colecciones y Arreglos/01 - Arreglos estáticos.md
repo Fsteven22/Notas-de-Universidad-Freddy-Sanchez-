@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1005, unidad2, poo, arreglos]
 ---
 
 # 📊 Arreglos Estáticos
@@ -699,9 +698,7 @@ tags: [CCPG1005, unidad2, poo, arreglos]
 
 ## 📊 Resumen Visual
 
-> [!note] 🖼️ Resumen Visual
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Arreglos_estáticos_07.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Arreglos_estáticos_07.svg]]
 
 > [!quote] 🎓 Puntos Clave para Recordar
 > 

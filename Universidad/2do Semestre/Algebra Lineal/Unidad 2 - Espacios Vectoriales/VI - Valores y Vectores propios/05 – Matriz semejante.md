@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 05-matriz-semejante]
 ---
 
 # 🔄 Matrices Semejantes
@@ -26,7 +27,14 @@ dg-publish: true
 > |**Aplicaciones**|Resolver sistemas, ecuaciones diferenciales|Diagonalización|
 > |**Comprensión**|Ver transformación desde mejor ángulo|Intuición geométrica|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Matriz_semejante_01.svg]]
+> [!info] 📊 05 – Matriz Semejante 01
+>
+> ![[05_–_Matriz_semejante_01.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta matrices semejantes y misma transformación y diferentes bases y propiedades compartidas.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
+
 
 ---
 
@@ -56,6 +64,9 @@ dg-publish: true
 > **Interpretación geométrica:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Matriz_semejante_02.svg]]
+>
+> **Se lee así:** el diagrama presenta a y vector v en base estándar y av transformado base estándar y vector v' en nueva base.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 
 ### 🔄 Transformación de Semejanza
 
@@ -87,6 +98,9 @@ dg-publish: true
 > **Secuencia de operaciones:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Matriz_semejante_03.svg]]
+>
+> **Se lee así:** el diagrama presenta p⁻¹ y aplicar a como b y directamente aplicar a y base original.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 
 ---
 
@@ -148,6 +162,9 @@ dg-publish: true
 > **Resumen visual:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Matriz_semejante_04.svg]]
+>
+> **Se lee así:** el diagrama presenta relación de equivalencia y reflexiva a ~ a y simétrica a ~ b ⟹ b ~ a y transitiva a ~ b, b ~ c ⟹ a ~ c.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 
 ### 🔢 Invariantes de Semejanza
 
@@ -218,7 +235,14 @@ dg-publish: true
 > |**Vectores propios**|$\mathbf{v}_i$|❌ NO (cambian)|
 > |**Entradas de matriz**|$a_{ij}$|❌ NO (cambian)|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Matriz_semejante_05.svg]]
+> [!info] 📊 05 – Matriz Semejante 05
+>
+> ![[05_–_Matriz_semejante_05.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta matrices semejantes a ~ b y invariantes y variables y det a = det b.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
+
 
 ---
 
@@ -368,6 +392,9 @@ dg-publish: true
 > **Proceso de diagonalización:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Matriz_semejante_06.svg]]
+>
+> **Se lee así:** el diagrama presenta sí y matriz a y calcular valores propios y encontrar vectores propios.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 
 ### 📐 Ejemplo Completo de Diagonalización
 
@@ -522,7 +549,14 @@ dg-publish: true
 
 ### Mapa Conceptual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Matriz_semejante_07.svg]]
+> [!info] 📊 05 – Matriz Semejante 07
+>
+> ![[05_–_Matriz_semejante_07.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta matrices semejantes y definición y b = p⁻¹ap y p invertible.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
+
 
 ### Tabla de Referencia Rápida
 
@@ -638,6 +672,9 @@ dg-publish: true
 > **Progresión natural:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Matriz_semejante_08.svg]]
+>
+> **Se lee así:** el diagrama presenta matrices semejantes y forma de jordan y diagonalización y teorema espectral.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > |Concepto Actual|Próximo Tema|Relación|
 > |---|---|---|

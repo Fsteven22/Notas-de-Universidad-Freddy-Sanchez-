@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad4, evolucion-web]
 ---
 # 🌊 Evolución de la Web: de 1.0 a 4.0
 
@@ -13,8 +12,6 @@ tags: [CCPG1004, cysoc, unidad4, evolucion-web]
 > Es común dividir esta evolución en generaciones o "versiones" de la Web para estudiar esos cambios.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Evolución_de_la_Web_01.svg]]
->
-> **Se lee así:** el diagrama fija las cuatro etapas de la Web: **1.0 solo lectura** (páginas estáticas), **2.0 lectura y escritura** (redes sociales, wikis y contenido generado por el usuario), **3.0 datos inteligentes** (web semántica) y **4.0 web simbiótica / IA** — la sucesión que estructura toda la nota.
 
 ---
 

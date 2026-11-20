@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1005, unidad5, poo, serializacion]
 ---
 
 # 🔄 Serialización de Objetos
@@ -500,9 +499,7 @@ tags: [CCPG1005, unidad5, poo, serializacion]
 
 ## 📊 Resumen Visual
 
-> [!note] 🖼️ Resumen Visual
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Serialización_de_objetos_05.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Serialización_de_objetos_05.svg]]
 
 ---
 

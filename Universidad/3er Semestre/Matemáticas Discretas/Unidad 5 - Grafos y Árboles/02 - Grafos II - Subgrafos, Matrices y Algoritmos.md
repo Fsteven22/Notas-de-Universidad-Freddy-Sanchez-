@@ -150,7 +150,7 @@ tags: [matematicas-discretas, grafos, matrices, dijkstra, agente-viajero, algori
 > 
 > Los pesos mínimos disponibles en todo el grafo son: $3, 4, 4, 5, 5$.
 > 
-> En el vértice $d$ inciden aristas de peso $3, 4, 5$ — no se puede usar menos que eso en $d$. Las opciones mínimas posibles para todo el ciclo, revisando también qué incide en $a$ y $b$ (pesos $4,5,6$), llevan a que la [[06 - Permutaciones y Combinaciones|combinación]] mínima alcanzable es $3,4,4,5,7$.
+> En el vértice $d$ inciden aristas de peso $3, 4, 5$ — no se puede usar menos que eso en $d$. Las opciones mínimas posibles para todo el ciclo, revisando también qué incide en $a$ y $b$ (pesos $4,5,6$), llevan a que la [[05 - Permutaciones y Combinaciones|combinación]] mínima alcanzable es $3,4,4,5,7$.
 > 
 > Estos son precisamente los pesos de las aristas del ciclo $(e,c,d,b,a,e)$, con **longitud total 23**.
 > 

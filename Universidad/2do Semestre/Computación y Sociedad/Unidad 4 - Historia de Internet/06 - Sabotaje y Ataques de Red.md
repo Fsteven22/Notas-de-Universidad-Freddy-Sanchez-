@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad4, sabotaje-ataques-red]
 ---
 
 # 💥 Sabotaje y Ataques de Red
@@ -12,8 +11,6 @@ tags: [CCPG1004, cysoc, unidad4, sabotaje-ataques-red]
 > No todo ataque informático busca robar información. Algunos tienen un objetivo distinto: **interrumpir un servicio**, dejarlo inaccesible, o simplemente **observar el tráfico** que circula por una red para recolectar información sin que nadie lo note. Esta nota cubre esas dos familias de ataque: el **sabotaje de servicios** (DoS/DDoS) y la **interceptación de tráfico** (sniffers, botnets como infraestructura).
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Sabotaje_y_Ataques_de_Red_01.svg]]
->
-> **Se lee así:** el diagrama divide el sabotaje en dos ramas: **sabotaje de servicios** (**DoS**, **DDoS** y las **botnets** que lo amplifican) e **interceptación de tráfico** (**sniffer**) — la dicotomía entre inhabilitar el servicio y espiarlo.
 
 ---
 
@@ -43,13 +40,7 @@ tags: [CCPG1004, cysoc, unidad4, sabotaje-ataques-red]
 > 
 > La forma más común de realizar un DDoS es a través de una **red de bots (botnet)**, siendo esta técnica el ciberataque más usual y eficaz por su **sencillez tecnológica**.
 
-> [!info] 🌐 Diagrama de flujo — Anatomía de un DDoS
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Sabotaje_y_Ataques_de_Red_02.svg]]
->
-> **Se lee así:** el diagrama muestra la mecánica del DDoS: el atacante no ataca directamente — usa un ejército de **equipos comprometidos** (1, 2, 3 … N) que inundan el **servidor víctima** con peticiones aparentemente legítimas hasta que se **sobrecarga** y el servicio cae.
->
-> **Por qué importa:** la asimetría hace inútil defenderse desde el servidor: el tráfico viene de miles de máquinas inocentes.
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Sabotaje_y_Ataques_de_Red_02.svg]]
 
 > [!warning] ⚠️ DoS vs. DDoS — no confundir
 > 
@@ -87,13 +78,7 @@ tags: [CCPG1004, cysoc, unidad4, sabotaje-ataques-red]
 
 ## 🧭 Flujograma de Decisión — ¿Qué tipo de ataque de red es?
 
-> [!info] 📋 Diagrama de flujo — ¿DoS, DDoS o sniffer?
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Sabotaje_y_Ataques_de_Red_03.svg]]
->
-> **Se lee así:** el flowchart distingue tres casos: tráfico anómalo de **un solo origen** → **DoS**; de **miles de IPs** con equipos comprometidos controlados remotamente → **DDoS** (vía botnet); tráfico interceptado o leído en la red → **sniffer**.
->
-> **Por qué importa:** el número de orígenes es el diagnóstico diferencial esencial entre DoS y DDoS.
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Sabotaje_y_Ataques_de_Red_03.svg]]
 
 ---
 

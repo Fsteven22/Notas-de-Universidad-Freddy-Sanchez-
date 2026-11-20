@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad3, numeros-negativos]
 ---
 # 🔢 Números Negativos en Sistemas Binarios
 
@@ -15,8 +14,6 @@ tags: [CCPG1004, cysoc, unidad3, numeros-negativos]
 > - Hoy en día, **complemento a 2** es el estándar universal: lo usan procesadores x86, ARM, RISC-V, y prácticamente cualquier lenguaje de programación cuando trabajas con tipos `int` con signo.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Números_Negativos_01.svg]]
->
-> **Se lee así:** el diagrama compara las dos tradiciones: **signo-magnitud** (bit de signo separado de la magnitud; didáctico e histórico, con dos ceros) y **complemento a 2** (codificación unificada, un único cero; estándar en el hardware moderno).
 
 ---
 
@@ -115,13 +112,7 @@ tags: [CCPG1004, cysoc, unidad3, numeros-negativos]
 
 ## 🧭 Diagrama de Decisión — Convertir un número a Complemento a 2
 
-> [!info] 📊 Diagrama de flujo — Complemento a 2
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Números_Negativos_02.svg]]
->
-> **Se lee así:** el flowchart es el algoritmo de bolsillo para representar $-x$: si el número es positivo o cero, $x$ es su propia representación; si es negativo, se escribe $|x|$ en binario con $n$ bits, se **invierten todos los bits** y se **suma 1** — ese es $-x$ en complemento a 2.
->
-> **Por qué importa:** es el algoritmo exacto que la ALU ejecuta para negar un entero sin instrucciones especiales.
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Números_Negativos_02.svg]]
 
 ---
 

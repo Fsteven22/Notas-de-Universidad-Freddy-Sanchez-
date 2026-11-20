@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad2, impacto-ambiental]
 ---
 
 # 🌱 Impacto Ambiental, Desechos Electrónicos y Desarrollo Sostenible
@@ -12,10 +11,6 @@ tags: [CCPG1004, cysoc, unidad2, impacto-ambiental]
 > Cada dispositivo electrónico que usamos tiene un ciclo de vida con impacto ambiental en todas sus etapas: fabricación, uso y descarte. La tecnología que conecta al mundo también genera una de las corrientes de residuos de más rápido crecimiento en la historia.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Impacto_Ambiental,_Desechos_Electrónicos_y_Desarrollo_Sostenible_01.svg]]
-> 
->  **Se lee así:** el diagrama recorre el **ciclo de vida de un dispositivo** en tres etapas: **fabricación** (extracción de minerales, emisiones de CO₂, agua utilizada), **uso** (consumo eléctrico, calor generado, actualizaciones forzadas) y **descarte** (e-waste, metales tóxicos, exportación de residuos).
->  **Por qué importa:** fija dónde está el impacto: la fabricación concentra la mayor parte de la huella ambiental, aunque el usuario solo perciba el consumo eléctrico. Por eso «apagar el dispositivo» no es lo mismo que reducir el impacto: la mayor parte se decidió antes de comprarlo.
->  **Ejemplo:** cambiar de un móvil de 200 gramos a uno de 400 gramos duplica el impacto de la etapa que el usuario nunca ve — la fábrica.
 
 ---
 
@@ -32,7 +27,7 @@ tags: [CCPG1004, cysoc, unidad2, impacto-ambiental]
 > |**Porcentaje reciclado formalmente**|Solo ~17% se gestiona de forma documentada|
 > |**Valor económico de los materiales**|Estimado en $57 mil millones USD anuales desperdiciados|
 > 
-> ⚠️ El resto — más del 80% — termina en vertederos, incineradoras o es exportado informalmente hacia países en desarrollo.
+> > ⚠️ El resto — más del 80% — termina en vertederos, incineradoras o es exportado informalmente hacia países en desarrollo.
 >
 
 > [!note] 📱 Composición de un teléfono móvil descartado
@@ -47,7 +42,7 @@ tags: [CCPG1004, cysoc, unidad2, impacto-ambiental]
 > |**Metales preciosos** (oro, plata, paladio)|~5%|Muy alto valor — 1 tonelada de teléfonos tiene más oro que 1 tonelada de mineral aurífero|
 > |**No especificado / compuestos**|~10%|Mezcla de adhesivos, soldaduras y materiales difíciles de separar|
 > 
-> 💡 El 10% no especificado refleja la complejidad real de la composición — los fabricantes no divulgan todos los materiales, lo que dificulta el reciclaje eficiente.
+> > 💡 El 10% no especificado refleja la complejidad real de la composición — los fabricantes no divulgan todos los materiales, lo que dificulta el reciclaje eficiente.
 >
 
 > [!danger] ☠️ Componentes peligrosos
@@ -69,7 +64,7 @@ tags: [CCPG1004, cysoc, unidad2, impacto-ambiental]
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Impacto_Ambiental,_Desechos_Electrónicos_y_Desarrollo_Sostenible_02.svg]]
 > 
-> ⚠️ El Convenio de Basilea (1989) prohíbe la exportación de residuos peligrosos a países en desarrollo, pero su cumplimiento es limitado.
+> > ⚠️ El Convenio de Basilea (1989) prohíbe la exportación de residuos peligrosos a países en desarrollo, pero su cumplimiento es limitado.
 
 ---
 
@@ -114,7 +109,7 @@ tags: [CCPG1004, cysoc, unidad2, impacto-ambiental]
 > |**"Ponte Pilas — RecoPila"**|Programa del Ministerio del Ambiente para recolección de pilas y baterías usadas en escuelas, municipios y puntos fijos|
 > |**REEE Ecuador**|Marco regulatorio del Ministerio del Ambiente para la gestión de Residuos de Equipos Eléctricos y Electrónicos|
 > 
-> 💡 La participación ciudadana es clave — llevar dispositivos a estos puntos en vez de botarlos a la basura común marca una diferencia real.
+> > 💡 La participación ciudadana es clave — llevar dispositivos a estos puntos en vez de botarlos a la basura común marca una diferencia real.
 
 ---
 
@@ -124,14 +119,12 @@ tags: [CCPG1004, cysoc, unidad2, impacto-ambiental]
 > 
 > El **Desarrollo Sostenible** fue definido por la Comisión Brundtland de la ONU en 1987 como:
 > 
-> _"El desarrollo que satisface las necesidades del presente sin comprometer la capacidad de las generaciones futuras para satisfacer sus propias necesidades."_
+> > _"El desarrollo que satisface las necesidades del presente sin comprometer la capacidad de las generaciones futuras para satisfacer sus propias necesidades."_
 > 
 > Se apoya en tres pilares interdependientes:
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Impacto_Ambiental,_Desechos_Electrónicos_y_Desarrollo_Sostenible_04.svg]]
 >
->
-> **Nota:** esta definición de 1987 es la que la ONU usa como base de la Agenda 2030: de ahí sale la idea de que una mejora de hoy no puede comprometer las opciones de las generaciones futuras — y de ahí sale también el sentido de los 17 ODS.
 
 > [!note] 🎯 Los 17 Objetivos de Desarrollo Sostenible (ODS) — ONU 2030
 > 
@@ -152,7 +145,7 @@ tags: [CCPG1004, cysoc, unidad2, impacto-ambiental]
 > |**13**|Acción por el clima|Reducir huella de carbono del sector TIC|
 > |**17**|Alianzas para los objetivos|Cooperación internacional en estándares de reciclaje y gobernanza digital|
 > 
-> 💡 Los ODS más directamente relacionados con el impacto de la tecnología son el **12** (producción responsable) y el **13** (acción climática) — pero prácticamente todos tienen una dimensión digital.
+> > 💡 Los ODS más directamente relacionados con el impacto de la tecnología son el **12** (producción responsable) y el **13** (acción climática) — pero prácticamente todos tienen una dimensión digital.
 
 ---
 
@@ -175,15 +168,6 @@ tags: [CCPG1004, cysoc, unidad2, impacto-ambiental]
 > - Tipo de sesgo identificado y su origen (datos, diseño, proxy)
 > - Impacto documentado en los afectados
 > - Medidas correctivas tomadas o propuestas de gobernanza
-
-## 📚 Referencias
-
-> [!quote] 📖 Fuentes consultadas
->
-> Comisión Mundial sobre el Medio Ambiente y el Desarrollo. *Nuestro futuro común (Informe Brundtland)*. Naciones Unidas, 1987.
-> Convención de Basilea sobre el control de los movimientos transfronterizos de residuos peligrosos y su eliminación. Naciones Unidas, 1989.
-> Programa de las Naciones Unidas para el Medio Ambiente (PNUMA). *Global E-waste Monitor*. Recuperado de https://www.unep.org/resources/global-e-waste-monitor
-> Presentación del curso *Computación y Sociedad*, Unidad 2, ESPOL — FESD, EYAG1037.
 
 ---
 

@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad1, modelos-software]
 ---
 
 # 🏗️ Modelos de Construcción de Software
@@ -12,10 +11,6 @@ tags: [CCPG1004, cysoc, unidad1, modelos-software]
 > Desarrollar software no es simplemente escribir código. Requiere planificación, análisis, diseño, pruebas y mantenimiento. Los **modelos de construcción de software** son marcos de trabajo que definen cómo organizar estas etapas para producir software de calidad de forma predecible.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Modelos_de_Construcción_de_Software_01.svg]]
->
-> **Se lee así:** la decisión del modelo partiendo de Necesidad del cliente: ¿Qué modelo usar? como pregunta central, con las respuestas etiquetadas: Cascada, Espiral, Incremental y Ágil/SCRUM, cada una con su perfil de riesgo y flexibilidad.
-> **Por qué importa:** no hay modelo perfecto: la elección depende de cuánto sabes de los requisitos, cuánto riesgo asumes y qué tan rápido debes entregar valor.
-> **Ejemplo:** un sistema médico regulado va por Espiral (riesgos medibles); una app experimental va por SCRUM, donde el feedback real decide qué construir después.
 
 ---
 
@@ -149,9 +144,9 @@ tags: [CCPG1004, cysoc, unidad1, modelos-software]
 > Según el **IEEE** (*Institute of Electrical and Electronics Engineers*),
 > el software se denomina como:
 >
-> *"La suma total de los programas de cómputo, procedimientos, reglas,
-> la documentación asociada y los datos que pertenecen a un sistema
-> de cómputo."*
+> > *"La suma total de los programas de cómputo, procedimientos, reglas,
+> > la documentación asociada y los datos que pertenecen a un sistema
+> > de cómputo."*
 >
 > Esta definición es importante porque deja claro que el software no es
 > solo el código ejecutable, sino también toda la documentación, los datos
@@ -177,16 +172,6 @@ tags: [CCPG1004, cysoc, unidad1, modelos-software]
 > | **Espiral** | Cambiantes o inciertos | Alto | En cada iteración | Proyectos grandes y complejos |
 > | **Incremental** | Parcialmente definidos | Medio | En cada entrega | Proyectos con entregas parciales |
 > | **SCRUM** | Evolutivos y cambiantes | Variable | Continua | Proyectos de software modernos |
-
----
-
-## 📚 Referencias
-
-> [!info] 📚 Referencias
->
-> - Dale, Nell & Lewis, John. *Computer Science Illuminated* (6th ed.). Jones & Bartlett Learning.
-> - Quinn, Michael J. *Ethics for the Information Age* (7th ed.). Pearson.
-> - Syllabus oficial de Computación y Sociedad (CCPG1004), ESPOL, coordinadora Otilia M. Alejandro Molina.
 
 ---
 

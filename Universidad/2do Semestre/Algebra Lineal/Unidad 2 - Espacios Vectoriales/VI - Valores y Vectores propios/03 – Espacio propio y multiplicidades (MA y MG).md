@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 03-espacio-propio-y-multiplicidades]
 ---
 
 # 🎯 Espacios Propios (Eigenspaces)
@@ -22,7 +23,14 @@ dg-publish: true
 > |**Gráficos**|Análisis de componentes principales|Reducción de dimensionalidad|
 > |**Mecánica cuántica**|Estados estacionarios|Niveles de energía|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_01.svg]]
+> [!info] 📊 03 – Espacio Propio Y Multiplicidades (Ma Y Mg) 01
+>
+> ![[03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_01.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta matriz a y valores propios λ y vector propio v y espacio propio e_λ.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
+
 
 ---
 ## 🏗️ Definición de Espacio Propio
@@ -56,6 +64,9 @@ dg-publish: true
 > **Verificación de subespacio:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_02.svg]]
+>
+> **Se lee así:** el diagrama presenta sí: a0 = λ0 y v₁,v₂ ∈ e_λ y v ∈ e_λ, c ∈ ℝ y e_λ = nul(a - λi).
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 
 ### 🔧 Cálculo de Espacios Propios
 
@@ -122,6 +133,9 @@ dg-publish: true
 > **Interpretación geométrica (2D):**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_03.svg]]
+>
+> **Se lee así:** el diagrama presenta plano ℝ² y e₄: recta y = x y e₂: recta y = -x y vectores se estiran 4×.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 
 ---
 ## 🎓 Propiedades de los Espacios Propios
@@ -190,6 +204,9 @@ dg-publish: true
 > - **Diagonal de D:** valores propios correspondientes
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_04.svg]]
+>
+> **Se lee así:** el diagrama presenta sí y matriz a y calcular valores propios y calcular espacios propios.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Ejemplo completo:**
 > 
@@ -278,6 +295,9 @@ dg-publish: true
 > [!note] 📐 Mapa Conceptual
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_05.svg]]
+>
+> **Se lee así:** el diagrama presenta root((espacios propios)) y valores propios λ y ecuación característica y det(a - λi) = 0.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Tabla de fórmulas clave:**
 > 
@@ -373,7 +393,14 @@ dg-publish: true
 > |**Sistemas dinámicos**|Comportamiento a largo plazo|Estabilidad de soluciones|
 > |**Dimensión**|Contar vectores propios independientes|Bases de espacios propios|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_06.svg]]
+> [!info] 📊 03 – Espacio Propio Y Multiplicidades (Ma Y Mg) 06
+>
+> ![[03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_06.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta para todos λ y existe λ con mg &lt; ma y valor propio λ y multiplicidad algebraica ma.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
+
 
 ---
 
@@ -408,6 +435,9 @@ dg-publish: true
 > **Propiedades fundamentales:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_07.svg]]
+>
+> **Se lee así:** el diagrama presenta matriz a n×n y polinomio p_a de grado n y n raíces contadas con multiplicidad y σ ma(λᵢ) = n.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Tabla de propiedades:**
 > 
@@ -504,6 +534,9 @@ dg-publish: true
 > **Proceso de cálculo:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_08.svg]]
+>
+> **Se lee así:** el diagrama presenta valor propio λ y formar a - λi y resolver a - λi v = 0 y encontrar espacio solución.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Relación con el rango:**
 > 
@@ -632,6 +665,9 @@ dg-publish: true
 > **Interpretación:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_09.svg]]
+>
+> **Se lee así:** el diagrama presenta mg = 1 y mínimo: un vector propio y mg &lt; ma y deficiente: matriz no diagonalizable.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Casos posibles:**
 > 
@@ -660,6 +696,9 @@ dg-publish: true
 > **Análisis de casos:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_10.svg]]
+>
+> **Se lee así:** el diagrama presenta para todos λᵢ y existe λᵢ con mg &lt; ma y matriz a n×n y calcular todos los valores propios.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Checklist de verificación:**
 > 
@@ -912,5 +951,8 @@ dg-publish: true
 
 > [!tip] 🗺️ Guía Paso a Paso
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_11.svg]]
+>
+> **Se lee así:** el diagrama presenta sí, todos y matriz a y calcular polinomio característico y factorizar p_a(λ).
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 
 **Tags:** #algebra-lineal #multiplicidad #algebraica #geometrica #diagonalizacion #valores-propios #espacios-propios #vectores-propios

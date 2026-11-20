@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 04-matriz-de-cambio-de-base]
 ---
 
 # 📘 Matriz de Cambio de Base

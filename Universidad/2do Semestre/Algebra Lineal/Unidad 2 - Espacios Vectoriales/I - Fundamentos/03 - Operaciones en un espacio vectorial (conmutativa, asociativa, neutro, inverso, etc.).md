@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 03-operaciones-en-un-espacio-vectorial]
 ---
 
 # 🔄 Operaciones en un Espacio Vectorial

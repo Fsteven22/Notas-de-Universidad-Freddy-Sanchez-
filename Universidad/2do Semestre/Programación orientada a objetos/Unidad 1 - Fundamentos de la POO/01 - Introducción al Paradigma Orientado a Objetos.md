@@ -1,11 +1,10 @@
 ---
 dg-publish: true
-tags: [CCPG1005, unidad1, poo, introduccion]
 ---
 
 # 🎯 Introducción al Paradigma Orientado a Objetos
 
-## 🎯 ¿Qué es la Programación Orientada a Objetos?
+## 🌟 ¿Qué es la Programación Orientada a Objetos?
 
 > [!info] 💡 Del Mundo Real al Código
 > 
@@ -26,9 +25,7 @@ tags: [CCPG1005, unidad1, poo, introduccion]
 > |**Abstracción**|Ocultar complejidad innecesaria|✅ Código más simple|
 > |**Mantenibilidad**|Cambios localizados, no globales|✅ Menos errores|
 
-> [!note] 🖼️ ¿Qué es la Programación Orientada a Objetos?
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_01.svg]]
 
 ---
 
@@ -477,12 +474,9 @@ tags: [CCPG1005, unidad1, poo, introduccion]
 
 ## 📊 Resumen Visual
 
-> [!note] 🖼️ Resumen Visual
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_05.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_05.svg]]
 
 > [!success]  🎯 Tabla Comparativa
->
 > |Concepto|Qué es|Cuándo usar|Ejemplo|
 > |---|---|---|---|
 > |**Clase**|Plantilla/Molde|Definir estructura común|`class Estudiante`|

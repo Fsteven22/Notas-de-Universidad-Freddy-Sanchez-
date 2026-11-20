@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 04-biyectividad-e-isomorfismo]
 ---
 
 # 🔄 Biyectividad e Isomorfismo

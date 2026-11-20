@@ -1,16 +1,19 @@
 ---
 dg-publish: true
+tags: [FISG1001, unidad0, fisica-mecanica, fundamentos, unidades-y-magnitudes-fisicas]
 ---
 
 # Unidades y Magnitudes Físicas 📏⚖️
 
-> [!quote]
+> [!quote] 💬 Cita
+>
 > *"Medir es comparar, y la física empieza cuando sabemos cómo y con qué hacerlo." — Anónimo*
 
 ---
 
 ## 📚 Introducción
 > [!info] **La base de toda medición**
+>
 > En física, **medir** significa comparar una cantidad física con un patrón preestablecido.  
 > Este patrón, universalmente aceptado, es lo que conocemos como **unidad de medida**.  
 > Las magnitudes físicas permiten describir fenómenos naturales y cuantificar propiedades como la distancia, el tiempo o la masa.  
@@ -20,18 +23,20 @@ dg-publish: true
 
 ## 🧩 Clasificación General
 > [!example] **Tipos de Magnitudes**
+>
 > - **Magnitudes Fundamentales** → Definidas de forma independiente, no dependen de otras magnitudes (ej. longitud, tiempo, masa).  
 > - **Magnitudes Derivadas** → Se obtienen a partir de las fundamentales por medio de fórmulas (ej. velocidad, fuerza, energía).  
-> 
-> ![[Diagramas/Unidades_y_Magnitudes_Físicas_01.svg]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Unidades_y_Magnitudes_Físicas_01.svg]]
 
 ---
 
 ## 📏 Magnitudes Fundamentales y sus Unidades SI
 > [!tip] **Sistema Internacional de Unidades**
+>
 > El **Sistema Internacional (SI)** fue adoptado oficialmente en 1960, basado en el sistema métrico decimal.  
 > Asegura uniformidad y precisión en las mediciones, vital en ciencia e ingeniería.
-> 
+>
 > | Magnitud      | Símbolo | Unidad SI | Símbolo Unidad | Ejemplo práctico |
 > |--------------|---------|-----------|----------------|------------------|
 > | Longitud     | l       | metro     | m              | Altura de una puerta ≈ 2 m |
@@ -46,7 +51,9 @@ dg-publish: true
 
 ## 🔄 Magnitudes Derivadas Comunes
 > [!note] **Ejemplos en la vida real**
+>
 > Las magnitudes derivadas permiten describir **fenómenos complejos**:
+>
 > | Magnitud        | Unidad SI | Expresión en unidades fundamentales | Ejemplo |
 > |----------------|-----------|--------------------------------------|---------|
 > | Velocidad      | m/s       | m·s⁻¹                                | Un auto urbano ≈ 15 m/s (54 km/h) |
@@ -59,11 +66,13 @@ dg-publish: true
 
 ## 📐 Notación Científica y Prefijos del SI
 > [!tip] **Escala y precisión**
+>
 > La notación científica es esencial para expresar valores muy grandes o muy pequeños:
 > - 300000000 m/s → 3 × 10⁸ m/s (velocidad de la luz)
 > - 0.000001 m → 1 × 10⁻⁶ m (micrómetro)
 >
 > **Prefijos más usados**:
+>
 > | Prefijo | Símbolo | Factor   |
 > |---------|---------|----------|
 > | kilo    | k       | 10³      |
@@ -77,18 +86,20 @@ dg-publish: true
 
 ## 🛠 Aplicación en Cinemática y Dinámica
 > [!example] **Caso aplicado**
+>
 > Para calcular la energía cinética rotacional de un disco:
 > 1. Se mide el **radio (m)** y la **masa (kg)**.
 > 2. Se calcula el **momento de inercia (kg·m²)**.
 > 3. Se mide la **velocidad angular (rad/s)**.
 > 4. Se aplica la fórmula: *E = ½ I ω²*.
->  
+>
 > Aquí, cada magnitud está expresada en unidades SI, asegurando coherencia.
 
 ---
 
 ## 🎯 Técnica de Estudio Recomendada
 > [!tip] **Método de Asociación Visual + Mapas Mentales**
+>
 > - Crea un **mapa mental** con cada magnitud fundamental como nodo principal.
 > - Añade imágenes mentales absurdas: un **metro** con ruedas, un **reloj** con alas, una **vela** gigante encendida, etc.
 > - Usa colores para diferenciar magnitudes fundamentales (verde) y derivadas (azul).
@@ -97,14 +108,16 @@ dg-publish: true
 ---
 
 ## 🔗 Referencias
-> [!quote]
+> [!quote] 💬 Cita
+>
 > - !Sistema Internacional de Unidades (SI)
 > - !Errores y Aproximaciones en Medición
 
 ---
 
 ## 📌 Notas Recomendadas (Prerrequisitos)
-> [!important]
+> [!important] 📌 Notas Recomendadas
+>
 > - Sistema Internacional de Unidades (SI)
 > - Errores y Aproximaciones en Medición
 
@@ -112,3 +125,5 @@ dg-publish: true
 
 ## 🏷️ Tags
 #Física #Magnitudes #Unidades #Medición #Obsidian
+
+**Tags:** #FISG1001 #fisica-mecanica #fundamentos #unidades-y-magnitudes-fisicas

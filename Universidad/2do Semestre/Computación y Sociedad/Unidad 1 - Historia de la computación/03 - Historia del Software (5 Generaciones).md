@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [CCPG1004, cysoc, unidad1, generaciones-software]
 ---
 
 # 💾 Historia del Software — Las 5 Generaciones
@@ -12,10 +11,6 @@ tags: [CCPG1004, cysoc, unidad1, generaciones-software]
 > A medida que el hardware se volvió más potente, la forma de comunicarse con las máquinas también tuvo que evolucionar. Lo que comenzó como secuencias de ceros y unos se transformó progresivamente en lenguajes cada vez más cercanos al lenguaje humano.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Historia_del_Software_(5_Generaciones)_01.svg]]
->
-> **Se lee así:** las cinco generaciones del software como una escalera: lenguaje máquina (1951-1959, velocidad para pocos), lenguajes de alto nivel (1959-1965, claridad para más), sistemas operativos (1965-1971, automatización), programación estructurada (1971-1989, orden y reutilización), POO y WWW (1990-presente).
-> **Por qué importa:** cada generación sacrificó un poco de eficiencia a cambio de más abstracción — el software moderno existe porque antes se pudo decir menos con el mismo hardware.
-> **Ejemplo:** La POO que usas en Java o C# es la 5ª generación; los bloques SOLID salieron ahí, no en los 60.
 
 ---
 
@@ -43,7 +38,7 @@ tags: [CCPG1004, cysoc, unidad1, generaciones-software]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Historia_del_Software_(5_Generaciones)_02.svg]]
 >
-> ⚠️ La programación en lenguaje máquina **demandaba mucho tiempo y era propensa a errores**, lo que impulsó la búsqueda de mejores herramientas.
+> > ⚠️ La programación en lenguaje máquina **demandaba mucho tiempo y era propensa a errores**, lo que impulsó la búsqueda de mejores herramientas.
 
 ---
 
@@ -61,7 +56,7 @@ tags: [CCPG1004, cysoc, unidad1, generaciones-software]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Historia_del_Software_(5_Generaciones)_03.svg]]
 >
-> 💡 Un compilador traduce el código de alto nivel a lenguaje máquina, permitiendo que el programador se enfoque en resolver el problema y no en los detalles del hardware.
+> > 💡 Un compilador traduce el código de alto nivel a lenguaje máquina, permitiendo que el programador se enfoque en resolver el problema y no en los detalles del hardware.
 
 ---
 
@@ -81,7 +76,7 @@ tags: [CCPG1004, cysoc, unidad1, generaciones-software]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Historia_del_Software_(5_Generaciones)_04.svg]]
 >
-> 💡 Los programadores de sistemas comenzaron a crear **herramientas de software para que otros las usaran**, naciendo así la distinción entre desarrolladores y usuarios finales.
+> > 💡 Los programadores de sistemas comenzaron a crear **herramientas de software para que otros las usaran**, naciendo así la distinción entre desarrolladores y usuarios finales.
 
 ---
 
@@ -147,8 +142,8 @@ tags: [CCPG1004, cysoc, unidad1, generaciones-software]
 > | **Visual C++ .NET** | Microsoft | C++ para la plataforma .NET |
 > | **Python** | Guido van Rossum | Simplicidad y versatilidad, ampliamente usado hoy |
 >
-> 💡 Los programas se agruparon en **suites** (conjuntos de aplicaciones relacionadas), como Microsoft Office, que reunía procesador de texto, hoja de cálculo y presentaciones en un solo paquete.
->
+> > 💡 Los programas se agruparon en **suites** (conjuntos de aplicaciones relacionadas), como Microsoft Office, que reunía procesador de texto, hoja de cálculo y presentaciones en un solo paquete.
+> >
 > ### 🐍 Caso especial — Python
 >
 > **Python**, creado por **Guido van Rossum** en 1991, es uno de los lenguajes
@@ -163,9 +158,9 @@ tags: [CCPG1004, cysoc, unidad1, generaciones-software]
 > | **Característica** | Sintaxis simple, multiplataforma, de propósito general |
 > | **Uso actual** | IA, ciencia de datos, web, automatización |
 >
-> 💡 Python ha tenido múltiples versiones mayores — la rama **2.x** y la
-> rama **3.x** coexistieron durante años hasta que Python 2 fue
-> oficialmente descontinuado en 2020.
+> > 💡 Python ha tenido múltiples versiones mayores — la rama **2.x** y la
+> > rama **3.x** coexistieron durante años hasta que Python 2 fue
+> > oficialmente descontinuado en 2020.
 > 
 
 ---
@@ -175,10 +170,6 @@ tags: [CCPG1004, cysoc, unidad1, generaciones-software]
 > [!summary] 📅 Evolución de los lenguajes de programación
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Historia_del_Software_(5_Generaciones)_05.svg]]
->
-> **Se lee así:** los lenguajes con su año: FORTRAN 1954 (cálculo científico), LISP 1958 (inteligencia artificial), COBOL 1959 (negocios), BASIC 1964 (principiantes), Pascal 1970 (enseñanza estructurada), C 1972 (sistemas), C++ 1983 (POO + bajo nivel), Java 1991 y Visual Basic/.NET 1991 (plataformas).
-> **Por qué importa:** ningún lenguaje nace como hoy: cada uno nació como respuesta a una necesidad (ciencia, negocio, aprender, sistemas); leerlos en orden es leer la historia del software.
-> **Ejemplo:** C++ sigue vigente porque todavía es el único con alcance de bajo nivel y objetos; eso enseña que un lenguaje sobrevive si resuelve un problema real.
 
 ---
 
@@ -193,16 +184,6 @@ tags: [CCPG1004, cysoc, unidad1, generaciones-software]
 > | **3ª** | 1965–1971 | Sistemas operativos | FORTRAN, software de sistemas |
 > | **4ª** | 1971–1989 | Programación estructurada | Pascal, C, C++, BASIC |
 > | **5ª** | 1990–hoy | POO y WWW | Java, Python, .NET |
-
----
-
-## 📚 Referencias
-
-> [!info] 📚 Referencias
->
-> - Dale, Nell & Lewis, John. *Computer Science Illuminated* (6th ed.). Jones & Bartlett Learning.
-> - Quinn, Michael J. *Ethics for the Information Age* (7th ed.). Pearson.
-> - Syllabus oficial de Computación y Sociedad (CCPG1004), ESPOL, coordinadora Otilia M. Alejandro Molina.
 
 ---
 

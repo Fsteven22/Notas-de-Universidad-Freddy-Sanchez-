@@ -1,7 +1,8 @@
 ---
 dg-publish: true
+tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, salida-de-campo-1]
 ---
-## 🧪Salida de Campo 1
+# 🧪Salida de Campo 1
 
 ### 📌 Contexto
 
@@ -13,12 +14,14 @@ dg-publish: true
 
 ### 📊 Variables Comunes
 
-- **P**: Peso de la persona (N)
-- **P_{S1}, P_{S2}, P_{S3}**: Pesos de las sillas 1, 2 y 3 (N)
-- **F**: Fuerza aplicada en la cuerda azul (N)
-- **T**: Tensión en las cuerdas (N)
-- **a**: Aceleración constante ($m/s^2$)
-- **Velocidad constante**: $a = 0$
+> [!info] 📌 Variables Comunes
+>
+> - **P**: Peso de la persona (N)
+> - **P_{S1}, P_{S2}, P_{S3}**: Pesos de las sillas 1, 2 y 3 (N)
+> - **F**: Fuerza aplicada en la cuerda azul (N)
+> - **T**: Tensión en las cuerdas (N)
+> - **a**: Aceleración constante ($m/s^2$)
+> - **Velocidad constante**: $a = 0$
 
 ---
 
@@ -57,38 +60,46 @@ dg-publish: true
 
 ### 📖 Explicación Teórica
 
-- **Equilibrio mecánico**: Aceleración cero → Fuerza neta cero (Primera Ley).
-- **Movimiento con aceleración**: Fuerza neta ≠ 0 (Segunda Ley).
-- **Poleas ideales**: Cambian la dirección de la tensión, no su magnitud.
+> [!info] 📌 Explicación Teórica
+>
+> - **Equilibrio mecánico**: Aceleración cero → Fuerza neta cero (Primera Ley).
+> - **Movimiento con aceleración**: Fuerza neta ≠ 0 (Segunda Ley).
+> - **Poleas ideales**: Cambian la dirección de la tensión, no su magnitud.
 
 ---
 
 ### 🔧 Explicación Práctica
 
-- Simulan sistemas reales como juegos o izaje.
-- Se analiza cómo las fuerzas y movimientos afectan las tensiones.
-- Se sugiere modelar la silla + persona como sistema.
-- Si se aplica fuerza desde la cuerda azul, la cuerda verde no tiene tensión.
+> [!info] 📌 Explicación Práctica
+>
+> - Simulan sistemas reales como juegos o izaje.
+> - Se analiza cómo las fuerzas y movimientos afectan las tensiones.
+> - Se sugiere modelar la silla + persona como sistema.
+> - Si se aplica fuerza desde la cuerda azul, la cuerda verde no tiene tensión.
 
 ---
 
 ### 🔁 Relación con otros temas
 
-- Diagramas de Cuerpo Libre (DCL)
-- Leyes de Newton
-- Trabajo y Energía
-- Sistemas de Poleas
+> [!info] 📌 Relación con otros temas
+>
+> - Diagramas de Cuerpo Libre (DCL)
+> - Leyes de Newton
+> - Trabajo y Energía
+> - Sistemas de Poleas
 
 ---
 
 ### 📈 Gráficas
 
-- **DCLs**:
-    - Peso persona: Amarilla, 40cm
-    - Peso silla: Verde, 40cm
-    - Tensiones: Rojas, 20cm
-    - Aceleración: Naranja, 20cm
-- **Esquemas de poleas**: Ilustraciones 1, 2 y 3
+> [!info] 📌 Gráficas
+>
+> - **DCLs**:
+>     - Peso persona: Amarilla, 40cm
+>     - Peso silla: Verde, 40cm
+>     - Tensiones: Rojas, 20cm
+>     - Aceleración: Naranja, 20cm
+> - **Esquemas de poleas**: Ilustraciones 1, 2 y 3
 
 ---
 
@@ -142,4 +153,8 @@ dg-publish: true
 
 ### 📚 Fuente
 
-- [S8 Salida de Campo 1.pdf]
+> [!info] 📌 Fuente
+>
+> - [S8 Salida de Campo 1.pdf]
+
+**Tags:** #FISG1001 #fisica-mecanica #laboratorio #salida-de-campo-1
