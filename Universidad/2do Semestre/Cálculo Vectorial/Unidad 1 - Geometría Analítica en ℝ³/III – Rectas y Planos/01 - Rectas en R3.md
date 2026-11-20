@@ -5,7 +5,7 @@ tags: [MATG1046, unidad1]
 
 # 📐 Rectas en ℝ³
 
-## 🎯 Fundamentos de Rectas en el Espacio
+## 🎯 Introducción
 
 > [!info] 💡 Introducción a las Rectas Tridimensionales Una **recta en ℝ³** es un conjunto infinito de puntos que se extienden indefinidamente en ambas direcciones siguiendo una trayectoria rectilínea. A diferencia del plano (ℝ²), donde dos rectas pueden ser paralelas o secantes, en el espacio existe una tercera posibilidad: **rectas alabeadas** (que no se intersectan ni son paralelas).
 >
@@ -26,14 +26,29 @@ tags: [MATG1046, unidad1]
 > - **Descartes (1637):** Ecuaciones algebraicas de rectas
 > - **Grassmann (1844):** Representación vectorial
 > - **Plücker (1846):** Coordenadas de rectas en el espacio
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Rectas_en_R3.svg]]
+> **Se lee así:** un cuadro raíz «Recta en ℝ³» con ramas «punto P₀», «vector director v», «L = {P₀ + tv : t ∈ ℝ}» y «vector director ≠ 0».
+> **Por qué importa:** se ve de un vistazo qué datos definen una recta (un punto P₀ y una dirección v ≠ 0) — sin ellos, cada ecuación de recta pierde el sentido geométrico.
+> **Ejemplo:** la recta que pasa por (1, 2, 3) con dirección (2, 1, 0) es L = {(1+2t, 2+t, 3): t ∈ ℝ} — un único círculo de puntos colineales a (1,2,3).
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Ecuacion_de_recta_en_R3_01.svg]]
+> **Se lee así:** el paso de la forma vectorial a las tres formas equivalentes: **vectorial** r(t) = P₀ + tv · **Paramétrica** x = x₀+at, y = y₀+bt, z = z₀+ct · **Simétrica** (x−x₀)/a = (y−y₀)/b = (z−z₀)/c.
+> **Por qué importa:** mismo objeto, tres descripciones — la que elige el problema manda (cálculos, geometría, algoritmos).
+> **Ejemplo:** r(t) = (1,0,2) + t(3,1,4) es LI éc todo al mismo tiempo: paramétrica (x=1+3t, y=t, z=2+4t) y simétrica (x−1)/3 = y = (z−2)/4.
 
+---
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Rectas_en_R3.svg]]
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Ecuacion_de_recta_en_R3_01.svg]]
+## 📋 Definiciones Formales
 
-### 📊 Definición Formal
-
-> [!note] 🌟 Concepto de Recta en ℝ³ **Definición:**
+> [!note] 📋 Definición — Recta en ℝ³
+>
+> **Definición:**
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Rectas_en_R3_01.svg]]
+> **Se lee así:** la recta como conjunto infinito de puntos r(t) = P₀ + tv: (x,y,z)(t) = (x₀+at, y₀+bt, z₀+ct) — ningún elemento visible se repite en forma explícita sino que cualquier punto P = r(t) para algún t cumple la ecuación paramétrica.
+> **Por qué importa:** ésta es la fórmula puente: de la ecuación vectorial se obtienen todas las demás formas de una recta, y el parámetro t desplaza el punto arbitraria de la recta.
+> **Ejemplo:** en Gráficos 3D, la línea de un rayo de luz desde (0,0,0) con dirección (1,2,4) es r(t) = t(1,2,4) — comprobar intersección con una superficie es solo resolver la ecuación.
 >
 > Una **recta L** en ℝ³ queda determinada por:
 >
@@ -127,7 +142,12 @@ tags: [MATG1046, unidad1]
 
 ### 🔢 Forma Paramétrica
 
-> [!warning] 🔷 Ecuaciones con Parámetro **Definición:**
+> [!warning] 🔷 Definición — Ecuaciones Paramétricas
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Ecuacion_parametrica_01.svg]]
+> **Se lee así:** cuadro raíz «Ecuaciones paramétricas» con dos ramas: **Fórmula** (x = x₀ + at, y = y₀ + bt, z = z₀ + ct) y **Ejemplo** (P₀=(1,2,3), v=(2,1,0) → x = 1+2t, y = 2+t, z = 3).
+> **Por qué importa:** es la conversión directa de la forma vectorial — cada componente queda como ecuación 1-a-1 en t, útil para cálculos.
+> **Ejemplo:** la recta por (1, 2, 3) con dirección (2, 1, 0) se escribe literalmente x = 1+2t, y = 2+t, z = 3.
 >
 > Las **ecuaciones paramétricas** expresan cada coordenada en función de un parámetro t:
 >
@@ -238,7 +258,12 @@ tags: [MATG1046, unidad1]
 
 ### ⚖️ Forma Simétrica
 
-> [!info] 🔶 Eliminación del Parámetro **Definición:**
+> [!info] 🔶 Definición — Ecuación Simétrica
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Ecuacion_simetrica_01.svg]]
+> **Se lee así:** cuadro raíz «Ecuación simétrica» con dos ramas: **Fórmula** ((x−x₀)/a = (y−y₀)/b = (z−z₀)/c) y **Notas** (sin parámetro t; v = (a, b, c) ≠ 0).
+> **Por qué importa:** es la forma más directa para leer P₀ y la dirección sin despejar t — perfecta para problemas de intersección.
+> **Ejemplo:** r(t) = (1, 0, 2) + t(3, 1, 4) en forma simétrica: (x−1)/3 = y = (z−2)/4.
 >
 > Las **ecuaciones simétricas** se obtienen despejando el parámetro t de las ecuaciones paramétricas:
 >
@@ -383,7 +408,12 @@ tags: [MATG1046, unidad1]
 
 ### ↕️ Rectas Paralelas
 
-> [!note] ∥ Paralelismo en el Espacio **Definición:**
+> [!note] ∥ Definición — Paralelismo en el espacio
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Paralelismo_01.svg]]
+> **Se lee así:** cuadro raíz «Paralelismo en el espacio» con rama **Regla**: L₁ ∥ L₂ ⟺ v₁ = k·v₂, con el signo de k separando mismo sentido de sentidos opuestos.
+> **Por qué importa:** paralelismo es una propiedad pura de los vectores directores — dimensión de la recta excluida del debate.
+> **Ejemplo:** v₁ = (2, 3, 1) y v₂ = (4, 6, 2): v₂ = 2v₁ → paralelas; si P₁ ∈ L₂, entonces coinciden.
 >
 > Dos rectas L₁ y L₂ son **paralelas** si sus vectores directores son paralelos.
 >
@@ -417,7 +447,12 @@ tags: [MATG1046, unidad1]
 
 ### ⊥ Rectas Perpendiculares
 
-> [!tip] ⊥ Perpendicularidad **Definición:**
+> [!tip] ⊥ Definición — Perpendicularidad
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Perpendicularidad_01.svg]]
+> **Se lee así:** cuadro raíz «Perpendicularidad» con rama **Regla**: L₁ ⊥ L₂ ⟺ v₁ · v₂ = 0 (el producto punto es nulo).
+> **Por qué importa:** otro atajo de producto punto — una línea en ℝ³ se verifica en un segundo sin calcular ningún ángulo.
+> **Ejemplo:** v₁ = (1, 0, 0) · v₂ = (0, 1, 0) = 0 → rectas perpendiculares.
 >
 > Dos rectas L₁ y L₂ son **perpendiculares** si sus vectores directores son ortogonales.
 >
@@ -446,7 +481,12 @@ tags: [MATG1046, unidad1]
 
 ### ✕ Rectas Secantes
 
-> [!success] ⚡ Intersección de Rectas **Definición:**
+> [!success] ⚡ Definición — Intersección de Rectas
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Interseccion_01.svg]]
+> **Se lee así:** cuadro raíz «Intersección de rectas» con rama **Procedimiento** (igualar t y s → resolver sistema → verificar mismo punto) y rama **Resultado** (solución única = secantes; sin solución = paralelas o alabeadas).
+> **Por qué importa:** el procedimiento revela la naturaleza de las rectas sin conocerlas de antemano — secantes, paralelas o alabeadas.
+> **Ejemplo:** r₁(t) = (1+2t, 2−t, 3+t) y r₂(s) = (3+4s, 5+6s, 2s) → solución t = 1, s = −1/2 → se cortan en P = (3, 1, 4).
 >
 > Dos rectas son **secantes** si se intersectan en exactamente un punto.
 >
@@ -503,7 +543,12 @@ tags: [MATG1046, unidad1]
 
 ### 🔀 Rectas Alabeadas
 
-> [!warning] 🌀 Caso Exclusivo del Espacio 3D **Definición:**
+> [!warning] 🌀 Definición — Rectas Alabeadas
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Alabeadas_01.svg]]
+> **Se lee así:** cuadro raíz «Rectas alabeadas» con rama **Condiciones** (NO paralelas Y NO se intersectan) y rama **Nota** (solo ocurren en ℝ³).
+> **Por qué importa:** es el fenómeno más común del espacio y el más olvidado: una carretera a ras de suelo y un puente elevado no se tocan y no son paralelos.
+> **Ejemplo:** L₁: x = t, y = 1, z = 1 + t; L₂: x = 1, y = 1 + s, z = s → v₁·v₂ no es 0 paralelamente y el sistema   1 + t = s, 1 = 1+s, t = 1 → contradicción → alabeadas.
 >
 > Dos rectas son **alabeadas** (o cruzadas) si:
 >
@@ -547,7 +592,10 @@ tags: [MATG1046, unidad1]
 > CONTRADICCIÓN → Son alabeadas
 > ```
 >
-**Visualización:** Imagina una carretera que pasa a nivel del suelo y un puente elevado que cruza perpendicularmente arriba: son rectas alabeadas.
+
+> [!tip] 💡 Visualización
+>
+> Imagina una carretera que pasa a nivel del suelo y un puente elevado que cruza perpendicularmente arriba: son rectas alabeadas.
 
 ---
 
@@ -555,7 +603,12 @@ tags: [MATG1046, unidad1]
 
 ### 🔺 Definición de Ángulo
 
-> [!info] 📐 Medida de Inclinación **Definición:**
+> [!info] 📐 Definición — Ángulo entre rectas
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Angulo_rectas_01.svg]]
+> **Se lee así:** cuadro raíz «Ángulo entre rectas» con dos ramas: **Fórmula** (cos(θ) = |v₁ · v₂|/(||v₁||·||v₂||), θ ∈ [0°, 90°]) y **Casos** (θ = 0° paralelas; θ = 90° perpendiculares).
+> **Por qué importa:** el absoluto de u·v fuerza θ ∈ [0°, 90°] porque el ángulo entre rectas se toma siempre agudo — nunca obtuso como entre vectores.
+> **Ejemplo:** v₁ = (1, 0, 0) · v₂ = (1, 1, 0) → θ = arccos(1/√2) = 45°.
 >
 > El **ángulo entre dos rectas** L₁ y L₂ es el ángulo θ entre sus vectores directores.
 >
@@ -792,7 +845,12 @@ tags: [MATG1046, unidad1]
 
 ## 🎨 Diagrama de Clasificación de Rectas
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Rectas_en_R3_01.svg]]
+> [!note] 🗺️ Mapa de la nota
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Rectas_en_R3_01.svg]]
+> **Se lee así:** «Recta en ℝ³» despliega formas equivalentes: **paramétrica → simétrica → vectorial**, y **tipos** (paralelas / secantes / perpendiculares / alabeadas).
+> **Por qué importa:** un mapa visual de los tres caminos entre una misma recta — el vectorial es el más elegante, el paramétrico el operativo, el simétrico el de cálculos.
+> **Ejemplo:** el orden de las definiciones a lo largo de la nota se refleja en el diagrama — definir→ecuación vectorial→paramétrica→simétrica.
 
 ---
 
@@ -981,168 +1039,212 @@ tags: [MATG1046, unidad1]
 
 ---
 
-## 🧪 Ejercicios Progresivos
+## 🧪 Ejercicios Propuestos
 
-> [!example] 💪 Práctica Completa **Nivel 1 - Básico:** 🟢
+> [!example] 📋 Planteamiento
 >
-> 1. Escribir las ecuaciones de la recta que pasa por A = (1, 0, 2) con vector director **v** = (2, -1, 3) en las tres formas.
+> **Nivel 1 - Básico** 🟢
 >
-> **Solución:**
+> 1. Escribir las ecuaciones de la recta que pasa por A = (1, 0, 2) con vector director **v** = (2, −1, 3) en las tres formas.
 >
-> ```
-> Vectorial: r(t) = (1, 0, 2) + t(2, -1, 3)
+> > [!success]- ✅ Solución
+> >
+> > Vectorial: r(t) = (1, 0, 2) + t(2, −1, 3)
+> >
+> > Paramétrica:
+> > x = 1 + 2t
+> > y = −t
+> > z = 2 + 3t
+> >
+> > Simétrica:
+> > (x − 1)/2 = y/(−1) = (z − 2)/3
+> > o
+> > (x − 1)/2 = −y = (z − 2)/3
+> >
+> > **Lección:** las tres formas son el mismo objeto — empezando por la vectorial, derivar las otras dos es automático.
+
+> [!example] 📋 Planteamiento
 >
-> Paramétrica:
-> x = 1 + 2t
-> y = -t
-> z = 2 + 3t
+> 2. Encontrar dos puntos en la recta: x = 3 + t, y = 2 − 2t, z = 1 + 4t
 >
-> Simétrica:
-> (x - 1)/2 = y/(-1) = (z - 2)/3
-> o
-> (x - 1)/2 = -y = (z - 2)/3
-> ```
+> > [!success]- ✅ Solución
+> >
+> > Para t = 0: P₁ = (3, 2, 1)
+> > Para t = 1: P₂ = (4, 0, 5)
+> >
+> > **Lección:** cualquier t da un punto válido — los más obvios (0 y 1) son los que hay que escribir primero como verificación.
+
+> [!example] 📋 Planteamiento
 >
-> 2. Encontrar dos puntos en la recta: x = 3 + t, y = 2 - 2t, z = 1 + 4t
->
-> **Solución:**
->
-> ```
-> Para t = 0: P₁ = (3, 2, 1)
-> Para t = 1: P₂ = (4, 0, 5)
-> ```
->
-> ---
->
-> **Nivel 2 - Intermedio:** 🟡
+> **Nivel 2 - Intermedio** 🟡
 >
 > 3. Determinar si las rectas son paralelas, perpendiculares o ninguna:
 >
-> ```
-> L₁: (x-1)/3 = (y+2)/2 = (z-4)/1
-> L₂: x = 2 + 6t, y = 1 + 4t, z = -1 + 2t
-> ```
+> L₁: (x−1)/3 = (y+2)/2 = (z−4)/1
+> L₂: x = 2 + 6t, y = 1 + 4t, z = −1 + 2t
 >
-> **Solución:**
->
-> ```
-> Vectores: v₁ = (3, 2, 1)
->          v₂ = (6, 4, 2) = 2(3, 2, 1) = 2v₁
->
-> Son PARALELAS ✓
->
-> Producto punto: v₁ · v₂ = 3(6) + 2(4) + 1(2) = 18 + 8 + 2 = 28 ≠ 0
-> NO son perpendiculares
-> ```
+> > [!success]- ✅ Solución
+> >
+> > Vectores: v₁ = (3, 2, 1) · v₂ = (6, 4, 2) = 2(3, 2, 1) = 2v₁
+> >
+> > **Son PARALELAS ✓**
+> >
+> > Producto punto: v₁ · v₂ = 3(6) + 2(4) + 1(2) = 18 + 8 + 2 = 28 ≠ 0
+> >
+> > NO son perpendiculares
+> >
+> > **Lección:** paralelismo se detecta escalando los vectores directores — no hace falta calcular ángulos ni normas.
+
+> [!example] 📋 Planteamiento
 >
 > 4. Encontrar el ángulo entre:
 >
-> ```
 > L₁: v₁ = (1, 1, 0)
 > L₂: v₂ = (0, 1, 1)
-> ```
 >
-> **Solución:**
+> > [!success]- ✅ Solución
+> >
+> > v₁ · v₂ = 0 + 1 + 0 = 1
+> >
+> > ||v₁|| = √2 · ||v₂|| = √2
+> >
+> > cos(θ) = |1| / (√2 · √2) = 1/2
+> >
+> > θ = arccos(1/2) = **60°**
+> >
+> > **Lección:** el coseno entre vectores directores decide el ángulo solo cuando las rectas se cruzan; si son paralelos o alabeados, el mismo coseno igual vale (ángulo espurio entre direcciones).
+
+> [!example] 📋 Planteamiento
 >
-> ```
-> v₁ · v₂ = 0 + 1 + 0 = 1
->
-> ||v₁|| = √2
-> ||v₂|| = √2
->
-> cos(θ) = |1| / (√2 · √2) = 1/2
-> θ = arccos(1/2) = 60°
-> ```
->
-> ---
->
-> **Nivel 3 - Avanzado:** 🔴
+> **Nivel 3 - Avanzado** 🔴
 >
 > 5. Encontrar la ecuación de la recta que:
->     - Pasa por P = (2, 1, -1)
+>     - Pasa por P = (2, 1, −1)
 >     - Es perpendicular a L₁: **v₁** = (1, 0, 2)
 >     - Es perpendicular a L₂: **v₂** = (0, 1, 1)
 >
-> **Solución:**
->
-> ```
-> Necesitamos **v** tal que:
-> v · v₁ = 0  →  a + 2c = 0
-> v · v₂ = 0  →  b + c = 0
->
-> De la segunda: c = -b
-> Sustituyendo: a + 2(-b) = 0  →  a = 2b
->
-> Tomando b = 1: a = 2, c = -1
-> Vector: v = (2, 1, -1)
->
-> Ecuación: r(t) = (2, 1, -1) + t(2, 1, -1)
-> ```
+> > [!success]- ✅ Solución
+> >
+> > Necesitamos **v** tal que:
+> > v · v₁ = 0  →  a + 2c = 0
+> > v · v₂ = 0  →  b + c = 0
+> >
+> > De la segunda: c = −b
+> > Sustituyendo: a + 2(−b) = 0  →  a = 2b
+> >
+> > Tomando b = 1: a = 2, c = −1
+> > Vector: v = (2, 1, −1)
+> >
+> > Ecuación: **r(t) = (2, 1, −1) + t(2, 1, −1)**
+> >
+> > **Lección:** el cruz de los dos vectores de dirección es el candidato directo: v = v₁ × v₂ = (0·1 − 2·1, 2·0 − 1·1, 1·1 − 0·0) = (−2, −1, 1) — equivalente a (2, 1, −1) por signo.
+
+> [!example] 📋 Planteamiento
 >
 > 6. Clasificar completamente la relación entre:
 >
-> ```
-> L₁: x = 1 + 2t, y = 3 - t, z = 2 + t
-> L₂: x = 2 + s, y = 1 + 2s, z = 4 - s
-> ```
+> L₁: x = 1 + 2t, y = 3 − t, z = 2 + t
+> L₂: x = 2 + s, y = 1 + 2s, z = 4 − s
 >
-> **Solución:**
->
-> ```
-> Vectores: v₁ = (2, -1, 1)
->          v₂ = (1, 2, -1)
->
-> ¿Paralelos? v₁ ≠ k·v₂ → NO
->
-> ¿Se intersectan?
-> 1 + 2t = 2 + s    →  2t - s = 1  ... (1)
-> 3 - t = 1 + 2s    →  -t - 2s = -2  ... (2)
-> 2 + t = 4 - s     →  t + s = 2  ... (3)
->
-> De (3): s = 2 - t
-> En (1): 2t - (2-t) = 1  →  3t = 3  →  t = 1
-> Entonces: s = 1
->
-> Verificar en (2): -1 - 2(1) = -3 ≠ -2
->
-> CONTRADICCIÓN → Son ALABEADAS
->
-> Ángulo: v₁ · v₂ = 2 - 2 - 1 = -1
-> cos(θ) = |-1| / (√6 · √6) = 1/6
-> θ = arccos(1/6) ≈ 80.4°
-> ```
+> > [!success]- ✅ Solución
+> >
+> > Vectores: v₁ = (2, −1, 1) · v₂ = (1, 2, −1)
+> >
+> > ¿Paralelos? v₁ ≠ k·v₂ → NO
+> >
+> > ¿Se intersectan?
+> > 1 + 2t = 2 + s    →  2t − s = 1  ... (1)
+> > 3 − t = 1 + 2s    →  −t − 2s = −2  ... (2)
+> > 2 + t = 4 − s     →  t + s = 2  ... (3)
+> >
+> > De (3): s = 2 − t
+> > En (1): 2t − (2−t) = 1  →  3t = 3  →  t = 1
+> > Entonces: s = 1
+> >
+> > Verificar en (2): −1 − 2(1) = −3 ≠ −2
+> >
+> > CONTRADICCIÓN → Son **ALABEADAS**
+> >
+> > Ángulo: v₁ · v₂ = 2 − 2 − 1 = −1
+> > cos(θ) = |−1| / (√6 · √6) = 1/6
+> > θ = arccos(1/6) ≈ **80.4°**
+> >
+> > **Lección:** el sistema de intersección decidir — si es contradictorio y no son paralelas, son alabeadas (sólo en ℝ³).
 
 ---
 
-## 🔗 Conexiones con el Sistema de Notas
+## 🎯 Metas de Aprendizaje
 
-> [!quote] 🌟 Enlaces Conceptuales **Prerequisites (Prerrequisitos):**
+> [!note] 📋 Nivel Básico
 >
-> - [[01 - Sistema de referencia espacial en R3]] - Puntos en ℝ³
-> - [[02 - Vectores en R3]] - Vector director
-> - 01.3 Distancia en el Espacio - Cálculos de distancia
+> - [ ] Escribo las ecuaciones de una recta en sus tres formas (vectorial, paramétrica, simétrica).
+> - [ ] Ubico puntos en la recta sustituyendo t.
+
+> [!note] 📋 Nivel Intermedio
+>
+> - [ ] Decido si dos rectas son paralelas, secantes, perpendiculares o alabeadas.
+> - [ ] Calculo el ángulo entre rectas y detecto intersecciones.
+
+> [!note] 📋 Nivel Avanzado
+>
+> - [ ] Resuelvo sistemas 3 × 3 para intersectar rectas y clasificalas completamente.
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes y material de la casa
+>
+> - J. Stewart, *Calculus*, cap. 12 «Vectors and the Geometry of Space»: ecuaciones vectoriales de rectas.
+> - Syllabus oficial MATG1046 «Cálculo Vectorial», ESPOL — Unidad 1 (Geometría Analítica en ℝ³).
+> - Apuntes del curso MATG1046 y las figuras de la propia materia (`Unidad 0 - Guias y Ejercicios/Diagramas/`).
+
+---
+
+## 🔁 Repaso SR
+
+#flashcards/calcvec-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Fórmula vectorial de una recta?::r(t) = P₀ + t·v, con P₀ = punto, v = vector director ≠ 0.
+> - ¿Ecuaciones simétricas?::(x−x₀)/a = (y−y₀)/b = (z−z₀)/c (sin el parámetro t).
+> - ¿Clasificación de dos rectas por sus vectores directores?::Paralelas si v₁ ∥ v₂, perpendiculares si v₁·v₂ = 0, intersectan o alabeadas según el sistema.
+> - ¿Dos rectas que no son paralelas ni se intersectan?::Alabeadas — sólo ocurren en ℝ³.
+
+---
+
+## 🔗 Conexiones
+
+> [!quote] 🌟 Enlaces Conceptuales
+>
+> **Prerequisites (Prerrequisitos):**
+>
+> - [[01 - Sistema de referencia espacial en R3]] — Puntos en ℝ³
+> - [[02 - Vectores en R3]] — Vector director
+> - [[01 - Rectas en R3]] — Ecuaciones de rectas
 >
 > **Temas siguientes:**
 >
-> - [[02 - Planos en R3]] - Intersección recta-plano
-> - [[02 - Relación recta–plano]] - Posiciones relativas
-> - [[01 - Distancias en ℝ³]] - Distancia punto-recta, recta-recta
+> - [[02 - Planos en R3]] — Intersección recta-plano
+> - [[02 - Relación recta–plano]] — Posiciones relativas
+> - [[01 - Distancias en ℝ³]] — Distancia punto-recta, recta-recta
 >
 > **Conceptos relacionados:**
 >
-> - [[01 – Producto punto y ángulos]] - Ángulos y perpendicularidad
-> - [[02 – Producto cruz y áreas]] - Vector perpendicular a dos rectas
-> - [[01 - Sistema de ecuaciones lineales en R2 y R3]] - Intersecciones
+> - [[01 – Producto punto y ángulos]] — Ángulos y perpendicularidad
+> - [[02 – Producto cruz y áreas]] — Vector perpendicular a dos rectas
+> - [[01 - Sistema de ecuaciones lineales en R2 y R3]] — Intersecciones
 
-> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/V – Espacios con Producto Interno/01 – Producto interno.md]] - Ángulos y perpendicularidad
-> - [[2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/II – Producto Punto, Producto Cruz y Aplicaciones Geométricas/02 – Producto cruz y áreas.md]] - Vector perpendicular a dos rectas
-> - Sistemas de Ecuaciones - Intersecciones
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
 >
-> **Aplicaciones:**
->
-> - [[03 - Constante de integración]] - Trayectorias rectilíneas
-> - Óptica Geométrica - Rayos de luz
-> - [[01 - Superficies cuadráticas]] - Ray tracing
+> - Tres formas, una recta — domina la vectorial, la paramétrica es consecuencia y la simétrica evita confundir variable con parámetro.
+> - Siguiente nota: [[02 - Planos en R3]] — la recta se convierte en plano agregando una dimensión.
+> — Bonus: las alabeadas son la idea estrella — dos rectas que nunca se tocan y jamás serán paralelas: solo en ℝ³.
 
 ---
 
@@ -1226,546 +1328,6 @@ tags: [MATG1046, unidad1]
 
 ---
 
-**Tags:** #rectas-3d #geometría-analítica #R3 #ecuaciones-paramétricas #ecuaciones-simétricas #ecuación-vectorial #vector-director #rectas-paralelas #rectas-perpendiculares #rectas-secantes #rectas-alabeadas #ángulo-entre-rectas #producto-punto #university #matemáticas #geometría-espacial# 📐 Rectas en ℝ³
+**Tags:** #MATG1046 #unidad1 #geometría-analítica #R3 #ecuaciones-paramétricas #ecuaciones-simétricas #ecuación-vectorial #vector-director #rectas-paralelas #rectas-perpendiculares #rectas-secantes #rectas-alabeadas #ángulo-entre-rectas #producto-punto #geometría-espacial #cálculo-vectorial
 
 ---
-
-## 🎯 Fundamentos de Rectas en el Espacio
-
-> [!info] 💡 Introducción a las Rectas Tridimensionales Una **recta en ℝ³** es un conjunto infinito de puntos que se extienden indefinidamente en ambas direcciones siguiendo una trayectoria rectilínea. A diferencia del plano (ℝ²), donde dos rectas pueden ser paralelas o secantes, en el espacio existe una tercera posibilidad: **rectas alabeadas** (que no se intersectan ni son paralelas).
->
-> **Analogías útiles:**
->
-> - **Física:** Trayectoria de un rayo de luz en línea recta
-> - **Ingeniería:** Eje de una viga o columna
-> - **Transporte:** Vía de tren que atraviesa el espacio
->
-> **Elementos que definen una recta:**
->
-> 1. **Un punto** sobre la recta (punto de paso)
-> 2. **Un vector director** (indica la dirección)
->
-> **Importancia histórica:**
->
-> - **Euclides (300 a.C.):** Geometría de líneas rectas
-> - **Descartes (1637):** Ecuaciones algebraicas de rectas
-> - **Grassmann (1844):** Representación vectorial
-> - **Plücker (1846):** Coordenadas de rectas en el espacio
-
-### 📊 Definición Formal
-
-> [!note] 🌟 Concepto de Recta en ℝ³ **Definición:**
->
-> Una **recta L** en ℝ³ queda determinada por:
->
-> - Un **punto fijo** P₀ = (x₀, y₀, z₀) que pertenece a la recta
-> - Un **vector director** **v** = (a, b, c) ≠ **0** paralelo a la recta
->
-> **Propiedades fundamentales:**
->
-> 1. Por dos puntos distintos pasa una única recta
-> 2. Una recta tiene infinitos vectores directores (todos paralelos entre sí)
-> 3. Una recta es un subespacio afín de dimensión 1
-> 4. Cualquier punto de la recta puede servir como punto base
->
-> **Notación:**
->
-> - L: nombre de la recta
-> - P₀: punto de paso o punto base
-> - **v**: vector director o vector de dirección
-
----
-
-## 📝 Ecuación Vectorial de la Recta
-
-### ➡️ Forma Vectorial
-
-> [!success] 🟢 Representación Fundamental **Ecuación vectorial:**
->
-> Dado un punto P₀ = (x₀, y₀, z₀) y un vector director **v** = (a, b, c):
->
-> **r(t) = P₀ + t·v**
->
-> O en forma de componentes:
->
-> **r(t) = (x₀, y₀, z₀) + t(a, b, c)**
->
-> Donde **t ∈ ℝ** es un parámetro.
->
-> **Interpretación geométrica:**
->
-> - Cuando t = 0: obtenemos el punto P₀
-> - Cuando t = 1: obtenemos el punto P₀ + **v**
-> - Cuando t = -1: obtenemos el punto P₀ - **v**
-> - Para cada valor de t obtenemos un punto diferente de la recta
->
-> **Ejemplo:**
->
-> ```
-> Recta que pasa por P₀ = (2, 1, 3) con vector director v = (1, -2, 4)
->
-> Ecuación vectorial: r(t) = (2, 1, 3) + t(1, -2, 4)
->
-> Algunos puntos:
-> t = 0:  r(0) = (2, 1, 3)
-> t = 1:  r(1) = (2+1, 1-2, 3+4) = (3, -1, 7)
-> t = 2:  r(2) = (4, -3, 11)
-> t = -1: r(-1) = (1, 3, -1)
-> ```
-
-### 🔗 Recta por Dos Puntos
-
-> [!tip] 📍 Determinación por Dos Puntos **Dados dos puntos distintos P₁ = (x₁, y₁, z₁) y P₂ = (x₂, y₂, z₂):**
->
-> **Paso 1:** Calcular el vector director **v** = P₁P₂⃗ = P₂ - P₁ = (x₂ - x₁, y₂ - y₁, z₂ - z₁)
->
-> **Paso 2:** Usar cualquiera de los dos puntos como punto base **r(t) = P₁ + t·v** o **r(t) = P₂ + t·v**
->
-> (Nota: ambas representan la misma recta)
->
-> **Ejemplo:**
->
-> ```
-> Encontrar la ecuación de la recta que pasa por A = (1, 2, -1) y B = (3, 0, 5)
->
-> Vector director: v = B - A = (3-1, 0-2, 5-(-1))
->                            = (2, -2, 6)
->
-> Ecuación vectorial: r(t) = (1, 2, -1) + t(2, -2, 6)
->
-> Simplificando v: v = 2(1, -1, 3), podemos usar (1, -1, 3)
-> r(t) = (1, 2, -1) + t(1, -1, 3)
-> ```
->
-> **Verificación:**
->
-> - t = 0: r(0) = (1, 2, -1) = A ✓
-> - t = 2: r(2) = (1, 2, -1) + 2(1, -1, 3) = (3, 0, 5) = B ✓
-
----
-
-## 📊 Ecuaciones Paramétricas
-
-### 🔢 Forma Paramétrica
-
-> [!warning] 🔷 Ecuaciones con Parámetro **Definición:**
->
-> Las **ecuaciones paramétricas** expresan cada coordenada en función de un parámetro t:
->
-> Dada la ecuación vectorial **r(t) = (x₀, y₀, z₀) + t(a, b, c)**:
->
-> **x = x₀ + at** **y = y₀ + bt** **z = z₀ + ct**
->
-> Donde t ∈ ℝ es el parámetro.
->
-> **Componentes:**
->
-> - **(x₀, y₀, z₀)**: punto de paso
-> - **(a, b, c)**: vector director
-> - **t**: parámetro (puede tomar cualquier valor real)
->
-> **Características:**
->
-> - Sistema de tres ecuaciones con una variable (t)
-> - Para cada t obtenemos un punto único (x, y, z)
-> - Es la forma más útil para cálculos computacionales
-
-### 📐 Ejemplos de Ecuaciones Paramétricas
-
-> [!example] 🎯 Casos Resueltos **Ejemplo 1: De vectorial a paramétrica**
->
-> Dada: **r(t) = (2, -1, 3) + t(4, 2, -5)**
->
-> Ecuaciones paramétricas:
->
-> ```
-> x = 2 + 4t
-> y = -1 + 2t
-> z = 3 - 5t
-> ```
->
-> ---
->
-> **Ejemplo 2: Por dos puntos**
->
-> Recta que pasa por A = (1, 0, 2) y B = (3, 4, -1)
->
-> ```
-> Vector director: v = (3-1, 4-0, -1-2) = (2, 4, -3)
-> Punto base: A = (1, 0, 2)
->
-> Ecuaciones paramétricas:
-> x = 1 + 2t
-> y = 0 + 4t = 4t
-> z = 2 - 3t
-> ```
->
-> ---
->
-> **Ejemplo 3: Puntos específicos**
->
-> Dadas las ecuaciones:
->
-> ```
-> x = 3 + 2t
-> y = 1 - t
-> z = -2 + 4t
-> ```
->
-> Encontrar el punto cuando t = 2:
->
-> ```
-> x = 3 + 2(2) = 7
-> y = 1 - 2 = -1
-> z = -2 + 4(2) = 6
->
-> Punto: P = (7, -1, 6)
-> ```
-
-### 🔄 Conversión de Formas
-
-> [!note] 🔀 De Paramétrica a Vectorial y Viceversa **De paramétrica a vectorial:**
->
-> Dadas:
->
-> ```
-> x = x₀ + at
-> y = y₀ + bt
-> z = z₀ + ct
-> ```
->
-> La forma vectorial es: **r(t) = (x₀, y₀, z₀) + t(a, b, c)**
->
-> **De vectorial a paramétrica:**
->
-> Dada: **r(t) = P₀ + t·v**
->
-> Expandir componente por componente para obtener las tres ecuaciones.
->
-> **Ejemplo completo:**
->
-> ```
-> Vectorial: r(t) = (1, -2, 5) + t(3, 1, -4)
->
-> Paramétrica:
-> x = 1 + 3t
-> y = -2 + t
-> z = 5 - 4t
-> ```
-
----
-
-## 📏 Ecuaciones Simétricas
-
-### ⚖️ Forma Simétrica
-
-> [!info] 🔶 Eliminación del Parámetro **Definición:**
->
-> Las **ecuaciones simétricas** se obtienen despejando el parámetro t de las ecuaciones paramétricas:
->
-> De:
->
-> ```
-> x = x₀ + at  →  t = (x - x₀)/a
-> y = y₀ + bt  →  t = (y - y₀)/b
-> z = z₀ + ct  →  t = (z - z₀)/c
-> ```
->
-> Igualando:
->
-> **(x - x₀)/a = (y - y₀)/b = (z - z₀)/c**
->
-> **Condición importante:** a, b, c ≠ 0
->
-> **Ventajas:**
->
-> - No depende del parámetro
-> - Forma más compacta
-> - Fácil de verificar si un punto está en la recta
->
-> **Desventaja:**
->
-> - No funciona cuando alguna componente del vector director es cero
-
-### 🔍 Casos Especiales
-
-> [!warning] ⚠️ Cuando Hay Componentes Nulas **Si alguna componente del vector director es cero:**
->
-> **Caso 1: a = 0 (recta paralela al plano YZ)**
->
-> ```
-> x = x₀ (constante)
-> (y - y₀)/b = (z - z₀)/c
-> ```
->
-> **Caso 2: b = 0 (recta paralela al plano XZ)**
->
-> ```
-> y = y₀ (constante)
-> (x - x₀)/a = (z - z₀)/c
-> ```
->
-> **Caso 3: c = 0 (recta paralela al plano XY)**
->
-> ```
-> z = z₀ (constante)
-> (x - x₀)/a = (y - y₀)/b
-> ```
->
-> **Ejemplo:**
->
-> ```
-> Vector director: v = (2, 0, 3)
-> Punto: P₀ = (1, 5, -2)
->
-> Ecuaciones simétricas:
-> y = 5
-> (x - 1)/2 = (z + 2)/3
-> ```
-
-### 📋 Ejemplos de Ecuaciones Simétricas
-
-> [!example] 🎯 Conversiones Completas **Ejemplo 1: De paramétrica a simétrica**
->
-> Dadas:
->
-> ```
-> x = 2 + 3t
-> y = -1 + 2t
-> z = 4 - t
-> ```
->
-> Despejando t:
->
-> ```
-> t = (x - 2)/3
-> t = (y + 1)/2
-> t = (z - 4)/(-1)
-> ```
->
-> Ecuaciones simétricas: **(x - 2)/3 = (y + 1)/2 = (z - 4)/(-1)**
->
-> O simplificando el último término: **(x - 2)/3 = (y + 1)/2 = -(z - 4) = (4 - z)/1**
->
-> ---
->
-> **Ejemplo 2: Verificar si un punto está en la recta**
->
-> Recta: (x - 1)/2 = (y + 2)/3 = (z - 5)/1
->
-> ¿El punto P = (5, 4, 7) está en la recta?
->
-> ```
-> Sustituir:
-> (5 - 1)/2 = 4/2 = 2
-> (4 + 2)/3 = 6/3 = 2
-> (7 - 5)/1 = 2/1 = 2
->
-> Como todos dan 2, P SÍ está en la recta ✓
-> ```
->
-> ---
->
-> **Ejemplo 3: De simétrica a paramétrica**
->
-> Dada: (x - 3)/4 = (y - 1)/(-2) = (z + 5)/3
->
-> Llamando a este cociente t:
->
-> ```
-> (x - 3)/4 = t  →  x = 3 + 4t
-> (y - 1)/(-2) = t  →  y = 1 - 2t
-> (z + 5)/3 = t  →  z = -5 + 3t
-> ```
-
----
-
-## 🎨 Tabla Resumen de Formas de Ecuaciones
-
-> [!example] 📊 Comparación de Representaciones
->
-> |Forma|Ecuación|Ventajas|Desventajas|
-> |---|---|---|---|
-> |**Vectorial**|**r**(t) = **P₀** + t**v**|Compacta, geométrica|Requiere notación vectorial|
-> |**Paramétrica**|x = x₀+at<br>y = y₀+bt<br>z = z₀+ct|Fácil para computación<br>Genera puntos directamente|Tres ecuaciones|
-> |**Simétrica**|(x-x₀)/a = (y-y₀)/b = (z-z₀)/c|Sin parámetro<br>Compacta|No funciona si a, b o c = 0|
->
-> **Para convertir de una forma a otra:**
->
-> ```
-> Vectorial ←→ Paramétrica (directa)
-> Paramétrica → Simétrica (despejar t e igualar)
-> Simétrica → Paramétrica (igualar a t)
-> ```
-
----
-
-## 🔀 Tipos de Rectas en ℝ³
-
-### ↕️ Rectas Paralelas
-
-> [!note] ∥ Paralelismo en el Espacio **Definición:**
->
-> Dos rectas L₁ y L₂ son **paralelas** si sus vectores directores son paralelos.
->
-> **Condición matemática:**
->
-> L₁: vector director **v₁** = (a₁, b₁, c₁) L₂: vector director **v₂** = (a₂, b₂, c₂)
->
-> **L₁ ∥ L₂ ⟺ ∃k ∈ ℝ tal que v₁ = k·v₂**
->
-> Equivalentemente: **a₁/a₂ = b₁/b₂ = c₁/c₂ = k**
->
-> **Casos:**
->
-> 1. **Paralelas distintas:** No se intersectan, mantienen distancia constante
-> 2. **Coincidentes:** Son la misma recta (caso especial de paralelismo)
->
-> **Ejemplo:**
->
-> ```
-> L₁: r₁(t) = (1, 2, 3) + t(2, -1, 4)
-> L₂: r₂(s) = (0, 5, 1) + s(4, -2, 8)
->
-> Vectores: v₁ = (2, -1, 4)
->          v₂ = (4, -2, 8) = 2(2, -1, 4) = 2v₁
->
-> Por lo tanto: L₁ ∥ L₂ ✓
->
-> Para verificar si son distintas, verificar si algún punto
-> de una está en la otra (si no lo está, son paralelas distintas)
-> ```
-
-### ⊥ Rectas Perpendiculares
-
-> [!tip] ⊥ Perpendicularidad **Definición:**
->
-> Dos rectas L₁ y L₂ son **perpendiculares** si sus vectores directores son ortogonales.
->
-> **Condición matemática:**
->
-> **L₁ ⊥ L₂ ⟺ v₁ · v₂ = 0**
->
-> Donde · denota el producto punto (escalar).
->
-> **Fórmula del producto punto:** **v₁ · v₂ = a₁a₂ + b₁b₂ + c₁c₂**
->
-> **Nota importante:** Dos rectas perpendiculares en ℝ³ NO necesariamente se intersectan (pueden ser alabeadas).
->
-> **Ejemplo:**
->
-> ```
-> L₁: vector director v₁ = (1, 2, -1)
-> L₂: vector director v₂ = (2, 0, 2)
->
-> Producto punto: v₁ · v₂ = 1(2) + 2(0) + (-1)(2)
->                         = 2 + 0 - 2
->                         = 0
->
-> Por lo tanto: L₁ ⊥ L₂ ✓
-> ```
-
-### ✕ Rectas Secantes
-
-> [!success] ⚡ Intersección de Rectas **Definición:**
->
-> Dos rectas son **secantes** si se intersectan en exactamente un punto.
->
-> **Método para encontrar intersección:**
->
-> Dadas:
->
-> ```
-> L₁: x = x₁ + a₁t,  y = y₁ + b₁t,  z = z₁ + c₁t
-> L₂: x = x₂ + a₂s,  y = y₂ + b₂s,  z = z₂ + c₂s
-> ```
->
-> **Paso 1:** Igualar las ecuaciones paramétricas
->
-> ```
-> x₁ + a₁t = x₂ + a₂s
-> y₁ + b₁t = y₂ + b₂s
-> z₁ + c₁t = z₂ + c₂s
-> ```
->
-> **Paso 2:** Resolver el sistema para t y s
->
-> **Paso 3:** Verificar consistencia
->
-> - Si hay solución única (t, s): son secantes
-> - Si no hay solución: son alabeadas o paralelas
-> - Si infinitas soluciones: son coincidentes
->
-> **Ejemplo completo:**
->
-> ```
-> L₁: x = 1 + 2t,  y = 2 - t,  z = 3 + t
-> L₂: x = 3 + s,   y = 1 + 2s, z = 4 - s
->
-> Sistema:
-> 1 + 2t = 3 + s   →   2t - s = 2    ... (1)
-> 2 - t = 1 + 2s   →   -t - 2s = -1  ... (2)
-> 3 + t = 4 - s    →   t + s = 1     ... (3)
->
-> De (3): s = 1 - t
-> Sustituyendo en (1): 2t - (1-t) = 2
->                      3t = 3
->                      t = 1
->
-> Entonces: s = 0
->
-> Verificar en (2): -1 - 2(0) = -1 ✓
->
-> Punto de intersección (con t=1 en L₁):
-> P = (1 + 2(1), 2 - 1, 3 + 1) = (3, 1, 4)
->
-> Son secantes en P = (3, 1, 4) ✓
-> ```
-
-### 🔀 Rectas Alabeadas
-
-> [!warning] 🌀 Caso Exclusivo del Espacio 3D **Definición:**
->
-> Dos rectas son **alabeadas** (o cruzadas) si:
->
-> 1. NO son paralelas
-> 2. NO se intersectan
->
-> Este fenómeno SOLO ocurre en ℝ³ (o dimensiones superiores).
->
-> **Características:**
->
-> - No están en el mismo plano
-> - Mantienen una distancia mínima constante
-> - Sus vectores directores NO son paralelos
->
-> **Método de verificación:**
->
-> Dos rectas L₁ y L₂ son alabeadas si:
->
-> 1. Sus vectores directores NO son paralelos
-> 2. El sistema de ecuaciones al igualarlas NO tiene solución
->
-> **Ejemplo:**
->
-> ```
-> L₁: x = t,    y = 1,     z = 1 + t
-> L₂: x = 1,    y = 1 + s, z = s
->
-> Vectores: v₁ = (1, 0, 1)
->          v₂ = (0, 1, 1)
->
-> No son paralelos (v₁ ≠ k·v₂) ✓
->
-> Intentar intersección:
-> t = 1           ... (1)
-> 1 = 1 + s       →  s = 0  ... (2)
-> 1 + t = s       ... (3)
->
-> De (1) y (2): t = 1, s = 0
-> Verificar en (3): 1 + 1 = 0  →  2 = 0  ✗
->
-> CONTRADICCIÓN → Son alabeadas
-> ```
->
-> **Visualización:** Imagina una carretera que pasa a nivel del suelo y un puente elevado que cruza perpend
