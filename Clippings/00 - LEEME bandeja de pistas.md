@@ -3264,3 +3264,6 @@ el commit de esta línea de PUSHEADO.
 > - **Sync local**: `npm run sync` con `VAULT_DIR=../Universidad` para que el build local coincida con la producción (787 notas, 4 semestres).
 
 ---
+
+> [!success] PUSHEADO `32e1bfc9` · 19/11/2026 — `ca83456e` (código) + `32e1bfc9`
+> (PUSHEO EN CURSO) + este bloque → merge `--ff-only` a `master` → un solo push, sin `--force`.
