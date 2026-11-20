@@ -3622,3 +3622,31 @@ el commit de esta línea de PUSHEADO.
 
 > [!success] PUSHEADO `32e1bfc9` · 19/11/2026 — `ca83456e` (código) + `32e1bfc9`
 > (PUSHEO EN CURSO) + este bloque → merge `--ff-only` a `master` → un solo push, sin `--force`.
+
+
+### opencode-site — estados + mapa imprimible + limpieza + masa de superficie + contraste de hover + estados verde/ámbar/coral + ícono leída verde + SVG en tema oscuro — 18/11/2026
+
+> [!success] PUSHEO EN CURSO · sesion/opencode-masa-animaciones → master (merge --ff-only) → origin/master
+
+- **Hecho (código, d81f4aef):** ronda completa de mejoras de diseño sobre sesion/opencode-masa-animaciones, basada en master fdd14bcd:
+  - **Los estados dicen lo real:** Preuniversitario Completado (verde), 1er Semestre Reconstrucción (ámbar), 2do y 3er En curso (coral). Portada y mapa 3D heredan estadosSem + claseEstado.
+  - **El mapa se imprime como la Lista** (/mapa/ → Imprimir o Guardar como PDF): el canvas WebGL y su interfaz se ocultan en @media print; la Lista sale a dos columnas negro sobre blanco, sin partir semestres entre hojas, y muestra el rótulo del estado.
+  - **Limpieza de text-white/text-black inertes:** eliminadas 13 apariciones en 9 archivos. Verificado que nunca ganaban la cascada (todos calculaban a var(--nx-text) en ambos temas); SearchModal pasa a text-[var(--nx-text)].
+  - **Masa de superficie:** surface pasa de #e8f0f4 a #dde9ef (claro) y de #121c23 a #18242c (oscuro); bg/surface ahora 1,16:1 y 1,18:1 respectivamente.
+  - **Contraste de hover arreglado:** --nx-control claro #708a98 → #6f8391 (control/hover pasa de 2,94:1 a 3,18:1).
+  - **Transiciones sutiles** en controles, tarjetas, títulos de sección, buscador y explorador; respetan prefers-reduced-motion (quedan quietas).
+  - **Buscador del hero:** borde de --nx-control y texto --nx-dim (más visible que el line y muted anteriores).
+  - **Estados en gris/coral:** Completado y Reconstrucción en gris apagado (--nx-muted), solo En curso en coral, también en el mapa 3D.
+  - **El ícono "Marcar leída" es verde** (--nx-done) cuando la nota está leída, incluso con aria-pressed="true".
+  - **SVG en notas respeta el fondo del tema oscuro:** background-color: var(--nx-bg) + filtro de brillo para evitar bloques blancos en @media dark.
+- **Verificado sobre el build de producción** (818 páginas, astro preview):
+  - Contraste total 18/18 en ambos temas.
+  - Auditoría de paleta: 1 solo degradado (2 px), 0 sombras, 0 blur, radios 100 % 4 px, animación se detiene con prefers-reduced-motion, 0 errores de consola.
+  - Funcional 10/10: buscador, flashcards, marcar leída, contador, barra de progreso, mapa 3D⇄Lista, tema persistente, modo lectura.
+  - Modo lectura 602→671 px, foco neón visible, 0 errores de consola.
+  - Mapa: esferas en verde/coral/ámbar, etiquetas sin solaparse, diagrama SVG de Cálculo 1 en oscuro sin fondo blanco.
+  - Impresión del mapa: canvas oculto, Lista en 2 columnas negro sobre blanco, 4 semestres.
+  - Pixeles: fondo 74-91 %, tinta 9-25 %, violeta <0,1 %, 0 negro/blanco puro salvo SVG horneado.
+- **No se tocó** la zona opencode, ni Universidad/**, ni site/scripts/**. Sin npm run sync en OneDrive.
+- **Sync local:** npm run sync con VAULT_DIR=../Universidad para que el build local vuelva a coincidir con la producción (787 notas, 4 semestres).
+
