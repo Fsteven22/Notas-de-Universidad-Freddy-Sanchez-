@@ -3769,3 +3769,51 @@ las 10 copias a `%TEMP%\opencode`.
 > - `Universidad/3er Semestre/Ingles III/Unidad 0 - Guias y Ejercicios/Exámenes/` (4 nuevos)
 > - `Clippings/00 - LEEME bandeja de pistas.md`
 
+---
+
+### `opencode` — Física Mecánica: ronda R14 cerrada (0 H · 0 W · 0 P) — 20/11/2026
+
+> [!success] Ronda R14 CERRADA · commits locales en `master`, **sin push** (esperando orden)
+>
+> **Resultado:** `qa_formato_fisica.py --solo "1er Semestre/Física Mecánica"` → **108 notas,
+> 0 H · 0 W · 0 P** (línea base de la ronda: 229 P; línea base de la materia: 1 530 hallazgos
+> con 851 H).
+
+**Commits de la ronda** (todos con pathspec `git commit -F <msg> -- <ruta>` y verificación
+post-commit de que el commit no arrastró trabajo ajeno):
+
+| Commit | Bloque | Lecturas |
+|---|---|---|
+| `b25e89ff` | nota de referencia `01 - Cinemática/Cinemática Traslacional.md` | 2 |
+| `3e1eb9e3` | A · 01 Cinemática | 19 |
+| `4cfa1af9` | B1 · Dinámica de Traslación | 39 |
+| `5001b7fe` | B2 · Dinámica de Rotación | 26 |
+| `ac498549` | C · Trabajo y Energía + Bienvenida | 46 |
+| `ced83ffe` | D · Impulso y Colisiones | 21 |
+| `c3b8e415` | E · Equilibrio y Elasticidad | 20 |
+| `74546f55` | F · Hidrostática e Hidrodinámica | 32 |
+| `8d53e6e6` | G · Fundamentos de Física Mecánica | 7 |
+| `6aa9075b` | H · Prácticas de Laboratorio | 16 |
+
+- **228 lecturas** redactadas desde el contenido real de cada `.mmd` (`**Se lee así:**` +
+  `**Por qué importa:**`), en el estilo FESD (dentro del callout que contiene el embed).
+  Verificación por bloque: `lista_pend_r14.py` (0 pendientes) + `busca_dup_lect.py` (0 duplicados).
+
+**Corrección de un incidente (regla C):** el commit del bloque F (`e944f7dd`) arrastró **90
+archivos ajenos** de Cálculo Vectorial que la otra sesión tenía staged — el `verifica_staged.py`
+los detectó pero el commit corrió igual en la misma cadena de PowerShell. Se deshizo con
+`git reset --soft HEAD~1` (sin tocar el árbol de trabajo) y se recompruebó solo el bloque F como
+`74546f55` (20 archivos, 0 ajenos); el staging ajeno quedó intacto. **Lección aplicada:** todo
+commit de esta sesión va con **pathspec** (`-- <ruta>`), que ignora el índice compartido; además
+la verificación de ajenos va en una llamada separada, antes de decidir commitear.
+
+**Hallazgo y fix del validador (con OK del dueño):** los últimos **51** pendientes
+(`R14-deck-sin-explicacion`) **no eran decks**: la materia tiene **0 embeds PNG**, y eran callouts
+📖 de prosa pura (Contexto, Explicación Teórica, Material de Referencia…) que la regla (b)
+heredada de FESD marcaba por el emoji. Afinada la regla en `qa_formato_fisica.py`: ahora solo
+dispara si el callout trae **un embed dentro**. Documentado como **R14.4** en `FORMATO-FISICA.md`
+junto al bloque de estado (0/0/0, 2026-11-20). La regla sigue viva para capturas PNG futuras.
+
+**Trabajo ajeno intacto:** staging de Cálculo Vectorial (90 archivos) sin tocar; no se hizo
+push. Archivos de este cierre: `FORMATO-FISICA.md`, `qa_formato_fisica.py`, este bloque.
+
