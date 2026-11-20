@@ -617,17 +617,15 @@ html[data-nx-dir="back"]::view-transition-new(root) {
   font-weight: 600;
 }
 /* Los estados hablan con un matiz solo: neutro para lo que no es
-   "En curso" (gris), coral para "En curso" (y favoritos).
-      · En curso                   → coral
-      · Completado / Reconstrucción → gris apagado */
+   "En curso" (coral), "Completado" (verde) y "Reconstrucción" (ámbar). */
 .nx-sem-state--en-curso {
   color: var(--nx-coral);
 }
 .nx-sem-state--completado {
-  color: var(--nx-muted);
+  color: var(--nx-done);
 }
 .nx-sem-state--reconstruccion {
-  color: var(--nx-muted);
+  color: var(--nx-warn);
 }
 .nx-sem-list {
   margin: 0.6rem 0 0;

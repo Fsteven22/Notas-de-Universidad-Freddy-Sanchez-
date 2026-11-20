@@ -254,8 +254,8 @@ const secuencia = datos.semestres.map((s) => s.titulo).join(" · ");
             // El mismo mapeo estado → token que la portada.
             estados: {
               "En curso": tono("--nx-coral-esfera", 0x2fa9c8),
-              "Completado": tono("--nx-muted", 0x9fb2bd),
-              "Reconstrucción": tono("--nx-muted", 0x9fb2bd),
+              "Completado": tono("--nx-done", 0x6fd6a8),
+              "Reconstrucción": tono("--nx-warn", 0xd6b46b),
             },
             // Un semestre sin estado conocido se pinta con el acento.
             porDefecto: { hub: acento, nodo: mezclar(acento, fondo, 0.3) },
