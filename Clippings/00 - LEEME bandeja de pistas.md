@@ -3684,3 +3684,49 @@ el commit de esta línea de PUSHEADO.
 > - `Universidad/Herramientas/Mantenimiento/FORMATO-ALGEBRA.md`, `qa_formato_algebra.py`
 > - `Clippings/00 - LEEME bandeja de pistas.md`
 
+---
+
+### `opencode` — 1er Semestre: exámenes de DSpace (125 PDFs nuevos) — 20/11/2026
+
+> [!warning] **PUSHEO EN CURSO**
+>
+> Anuncio previo al push — se cierra con el bloque `PUSHEADO <hash>`.
+
+**Qué se descargó** (fuente: API pública de DSpace ESPOL, colección `Exámenes`):
+
+| Materia | 1Par | 2Par | Mejora | Total nuevos | Rango |
+|---|---|---|---|---|---|
+| Cálculo de una Variable (MATG1045) | 14 | 14 | 14 | **42** | 2018-2S → 2026-1S |
+| Física Mecánica (FISG1001, exams `FÍSICA I`) | 14 | 14 | 14 | **42** | 2016-2S → 2020-0S |
+| Fundamentos de Programación (CCPG1001) | 13 | 14 | 14 | **41** | 2016-1S → 2026-0S |
+| Inglés I (B1-B2) | — | — | — | **0** | no existe en DSpace |
+
+- **Solo PDFs** (se descartaron `.docx`, `.xlsx` y `.zip`: 2 de Fundamentos, 2 de Física, 21 de
+  Cálculo). Verificado leyendo el PDF descargado, no solo por extensión.
+- **Dedupe por sha256** del contenido limpio: se saltaron 40+ ítems con el mismo PDF publicado
+  bajo varios nombres (p. ej. `EXA-2022-0S-…-2Par` es el mismo archivo que `…-Mejora`).
+- **Selección por diversidad**: orden round-robin por término (año-semestre), no los primeros 42
+  del listado.
+- Validación: los **125** archivos pasan parseo con `pypdf`/`pymupdf`; **0** no parseables.
+- `Fundamentos de Programación` quedó en 13 de 1Par porque el pool de DSpace (39 ítems) contiene
+  solo **13 contenidos distintos** — es el techo real, no un recorte.
+
+**Corrección de un dato anterior:** la sesión pasada concluded "Inglés III = 0 en DSpace". Es
+incorrecto: **Inglés III sí tiene 5 exámenes** (`EXA-2018-2S-INGLÉS III-16-1Par`,
+`…-18-1Par`, `EXA-2019-1S-INGLÉS III-1-1Par`, `…-1-2Par`). Inglés I = 0 e Inglés II = 0
+confirmado con búsqueda amplia. Queda pendiente bajar esos 5 al vault de 3er Semestre.
+
+**Hallazgo sobre material ya presente (pendiente de OK):** los 16 PDFs de Cálculo que ya estaban
+en el vault arrived con un *wrapper MIME/multipart* de la API (no son PDFs limpios; se abren en
+visores pero fallan al parsear) y **10 de ellos son duplicados exactos** entre sí (3 copias del
+`2021-2S-1Par` + 8 copias del `2022-1S-1Par`). No se tocó ninguno: se propone limpiarlos y mover
+las 10 copias a `%TEMP%\opencode`.
+
+**Manifiesto** con UUID, hash y tamaño: `%TEMP%\opencode\manifiesto_1er.json`.
+
+> Archivos en este push:
+> - `Universidad/1er Semestre/Cálculo de una Variable/Unidad 0 - Guias y Ejercicios/Exámenes/**` (42)
+> - `Universidad/1er Semestre/Física Mecánica/Unidad 0 - Guias y Ejercicios/Exámenes/**` (42)
+> - `Universidad/1er Semestre/Fundamentos de Programación/Unidad 0 - Guias y Ejercicios/Exámenes/**` (41)
+> - `Clippings/00 - LEEME bandeja de pistas.md`
+
