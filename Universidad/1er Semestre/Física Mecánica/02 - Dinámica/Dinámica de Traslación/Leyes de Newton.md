@@ -1,11 +1,13 @@
 ---
 dg-publish: true
+tags: [FISG1001, unidad2, fisica-mecanica, dinamica, leyes-de-newton]
 ---
 
 # ⚖️ Tutorial S10: Leyes de Newton
 
 ## 🧠 Contexto
->[!info] Empecemos con un: 
+> [!info] Empecemos con un: 
+>
 > **Enfoque Principal**: Aplicación de las tres leyes de Newton para analizar el movimiento de sistemas complejos.
 
 > [!info] 📖 Contexto
@@ -14,7 +16,9 @@ dg-publish: true
 
 ### 🎯 Sistemas de Estudio
 
-![[Diagramas/Leyes_de_Newton_01.svg]]
+> [!note] 🖼️ Sistemas de Estudio
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Leyes_de_Newton_01.svg]]
 
 ---
 
@@ -39,21 +43,29 @@ dg-publish: true
 
 ### ⚖️ Segunda Ley de Newton - Forma Vectorial
 
-$$\sum \vec{F} = m \vec{a}$$
+> [!info] 📌 ️ Segunda Ley de Newton - Forma Vectorial
+>
+> $$\sum \vec{F} = m \vec{a}$$
 
 ### 🧮 Descomposición por Ejes
 
 #### 📏 Eje X (Horizontal)
 
-$$\sum F_x = m a_x$$
+> [!info] 📌 Eje X (Horizontal)
+>
+> $$\sum F_x = m a_x$$
 
 #### 📏 Eje Y (Vertical)
 
-$$\sum F_y = m a_y$$
+> [!info] 📌 Eje Y (Vertical)
+>
+> $$\sum F_y = m a_y$$
 
 ### 🔥 Fuerza de Fricción
 
-$$f = \mu N$$
+> [!info] 📌 Fuerza de Fricción
+>
+> $$f = \mu N$$
 
 > [!info] 💡 Fuerza de Fricción
 >
@@ -64,7 +76,9 @@ $$f = \mu N$$
 
 ### 🎯 Las Tres Leyes Fundamentales
 
-![[Diagramas/Leyes_de_Newton_02.svg]]
+> [!note] 🖼️ Las Tres Leyes Fundamentales
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Leyes_de_Newton_02.svg]]
 
 ---
 
@@ -72,7 +86,9 @@ $$f = \mu N$$
 
 ### 🎯 Tipos de Problemas Característicos
 
-![[Diagramas/Leyes_de_Newton_03.svg]]
+> [!note] 🖼️ Tipos de Problemas Característicos
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Leyes_de_Newton_03.svg]]
 
 ---
 
@@ -80,28 +96,38 @@ $$f = \mu N$$
 
 ### 📐 Ejemplo: Bloque en Plano Inclinado
 
-![[Diagramas/Leyes_de_Newton_04.svg]]
+> [!note] 🖼️ Ejemplo: Bloque en Plano Inclinado
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Leyes_de_Newton_04.svg]]
 
 ### 🧮 Ecuaciones Asociadas
 
 #### 📏 Componentes del Peso
 
-- **Perpendicular al plano**: $W_{\perp} = mg \cos(\theta)$
-- **Paralela al plano**: $W_{\parallel} = mg \sin(\theta)$
+> [!info] 📌 Componentes del Peso
+>
+> - **Perpendicular al plano**: $W_{\perp} = mg \cos(\theta)$
+> - **Paralela al plano**: $W_{\parallel} = mg \sin(\theta)$
 
 #### ⚖️ Equilibrio Perpendicular
 
-$$N = mg \cos(\theta)$$
+> [!info] 📌 ️ Equilibrio Perpendicular
+>
+> $$N = mg \cos(\theta)$$
 
 #### 🚀 Ecuación de Movimiento (Paralela)
 
-$$ma = mg \sin(\theta) - f - T$$
+> [!info] 📌 Ecuación de Movimiento (Paralela)
+>
+> $$ma = mg \sin(\theta) - f - T$$
 
 ---
 
 ## 📌 Estrategia de Resolución
 
-![[Diagramas/Leyes_de_Newton_05.svg]]
+> [!note] 🖼️ Estrategia de Resolución
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Leyes_de_Newton_05.svg]]
 
 ---
 
@@ -113,7 +139,7 @@ $$ma = mg \sin(\theta) - f - T$$
 >
 > **🎯 Problema**: Bloque de 5 kg empujado con 30 N en superficie sin fricción.
 >
-> ![[Diagramas/Leyes_de_Newton_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Leyes_de_Newton_06.svg]]
 >
 > **🔧 Solución**: $$F = ma \Rightarrow a = \frac{F}{m} = \frac{30}{5} = 6 \text{ m/s}^2$$
 >
@@ -127,7 +153,7 @@ $$ma = mg \sin(\theta) - f - T$$
 >
 > **🎯 Problema**: Bloque 10 kg en plano inclinado 30°, sin fricción.
 >
-> ![[Diagramas/Leyes_de_Newton_07.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Leyes_de_Newton_07.svg]]
 >
 > **🔧 Solución**:
 >
@@ -144,17 +170,21 @@ $$ma = mg \sin(\theta) - f - T$$
 >
 > **🎯 Problema**: Dos bloques conectados por cuerda y polea. $m_1 = 4$ kg (horizontal), $m_2 = 2$ kg (colgante).
 >
-> ![[Diagramas/Leyes_de_Newton_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Leyes_de_Newton_08.svg]]
 >
 > **🔧 Análisis por DCL**:
 
 #### 📦 Para $m_1$ (horizontal):
 
-$$T = m_1 a \quad \text{...(1)}$$
+> [!info] 📌 Para $m_1$ (horizontal):
+>
+> $$T = m_1 a \quad \text{...(1)}$$
 
 #### 📦 Para $m_2$ (vertical):
 
-$$m_2 g - T = m_2 a \quad \text{...(2)}$$
+> [!info] 📌 Para $m_2$ (vertical):
+>
+> $$m_2 g - T = m_2 a \quad \text{...(2)}$$
 
 > [!info] 💡 Para $m_2$ (vertical)
 >
@@ -170,17 +200,23 @@ $$m_2 g - T = m_2 a \quad \text{...(2)}$$
 
 ### ✅ Buenas Prácticas
 
-![[Diagramas/Leyes_de_Newton_09.svg]]
+> [!note] 🖼️ Buenas Prácticas
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Leyes_de_Newton_09.svg]]
 
-- **📐 DCL primero**: Nunca apliques fórmulas sin dibujar el diagrama
-- **📏 Ejes coherentes**: Define x, y de manera consistente para todo el problema
-- **🧮 Descomposición**: En planos inclinados, descompón peso correctamente
-- **🔍 Signos**: Revisa dirección de aceleración antes de asignar signos
-- **📝 Consistencia**: Usa los mismos símbolos en todo el desarrollo
+> [!info] 📌 Buenas Prácticas
+>
+> - **📐 DCL primero**: Nunca apliques fórmulas sin dibujar el diagrama
+> - **📏 Ejes coherentes**: Define x, y de manera consistente para todo el problema
+> - **🧮 Descomposición**: En planos inclinados, descompón peso correctamente
+> - **🔍 Signos**: Revisa dirección de aceleración antes de asignar signos
+> - **📝 Consistencia**: Usa los mismos símbolos en todo el desarrollo
 
 ### ❌ Errores Comunes a Evitar
 
-![[Diagramas/Leyes_de_Newton_10.svg]]
+> [!note] 🖼️ Errores Comunes a Evitar
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Leyes_de_Newton_10.svg]]
 
 ---
 
@@ -188,33 +224,42 @@ $$m_2 g - T = m_2 a \quad \text{...(2)}$$
 
 ### 🎯 Principios Clave
 
-> **🔑 Regla de Oro**: Las Leyes de Newton se aplican a cada objeto por separado.
+> [!tip] 🔑 Regla de Oro
+>
+> Las Leyes de Newton se aplican a cada objeto por separado.
 
 #### 📋 Puntos Esenciales:
 
-- **🎯 Análisis independiente**: Cada objeto tiene su propio DCL y ecuaciones
-- **↔️ Tercera ley**: No se aplica dentro del mismo DCL, sino entre objetos
-- **🔗 Sistemas múltiples**: Analiza cada cuerpo por separado, luego relaciona
-- **⚖️ Equilibrio**: $\sum F = 0$ para objetos en reposo o velocidad constante
-- **🚀 Aceleración**: Siempre en dirección de la fuerza neta
+> [!info] 📌 Puntos Esenciales:
+>
+> - **🎯 Análisis independiente**: Cada objeto tiene su propio DCL y ecuaciones
+> - **↔️ Tercera ley**: No se aplica dentro del mismo DCL, sino entre objetos
+> - **🔗 Sistemas múltiples**: Analiza cada cuerpo por separado, luego relaciona
+> - **⚖️ Equilibrio**: $\sum F = 0$ para objetos en reposo o velocidad constante
+> - **🚀 Aceleración**: Siempre en dirección de la fuerza neta
 
 ### 🌟 Jerarquía de Análisis
 
-![[Diagramas/Leyes_de_Newton_11.svg]]
+> [!note] 🖼️ Jerarquía de Análisis
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Leyes_de_Newton_11.svg]]
 
 ---
 
 ## 🔗 Conexiones con Otros Temas
 
-- [[Trabajo y Energía]]
-- [[Principios de Conservación de la Energía]]
-- [[Fuerzas y Diagramas de Cuerpo Libre]]
-- [[Cinemática Traslacional]]
+> [!info] 📌 Conexiones con Otros Temas
+>
+> - [[Trabajo y Energía]]
+> - [[Principios de Conservación de la Energía]]
+> - [[Fuerzas y Diagramas de Cuerpo Libre]]
+> - [[Cinemática Traslacional]]
 
 ---
 
 ## 📌 Resumen Ejecutivo
 > [!success] ✅ Resumen: las leyes de Newton
+>
 > Las **Leyes de Newton** proporcionan el framework fundamental para el análisis dinámico:
 >
 >- **1️⃣ Primera Ley**: Inercia → $\sum F = 0$ para equilibrio
@@ -224,3 +269,5 @@ $$m_2 g - T = m_2 a \quad \text{...(2)}$$
 >**🎯 Metodología clave**: DCL → Descomponer → Aplicar → Relacionar → Resolver
 >
 >¿Listo para aplicar lo aprendido? 💪✨
+
+**Tags:** #FISG1001 #fisica-mecanica #unidad2 #leyes-de-newton

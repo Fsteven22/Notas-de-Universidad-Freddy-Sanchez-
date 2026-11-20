@@ -1,0 +1,31 @@
+---
+title: "Problemas de Ecuación de Continuidad 01"
+---
+flowchart TD
+    A["Continuidad<br/>Q = A₁ v₁ = A₂ v₂"]
+    B["Circulares: Q = π/4 · D² v"]
+    C["Relación de velocidades:<br/>v₂/v₁ = A₁/A₂ = (D₁/D₂)²"]
+    D["Caudal másico:<br/>ṁ = ρ A v · kg/s"]
+    E["Aplicaciones típicas"]
+    E1["Boquillas aceleran · difusores frenan<br/>venturímetros miden · ramas reparten"]
+    E2["Cavitación: presión baja en secciones estrechas<br/>turbulencia en cambios bruscos"]
+    F["Método CAVE"]
+    F1["Caudal - Área - Velocidad -<br/>Evaluar con los datos del punto"]
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    E --> E1
+    E --> E2
+    E --> F
+    F --> F1
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style E fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style E1 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style E2 fill:#ffebee,stroke:#e53935,color:#4a1010
+    style F fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style F1 fill:#fff8e1,stroke:#fbc02d,color:#4a3b00

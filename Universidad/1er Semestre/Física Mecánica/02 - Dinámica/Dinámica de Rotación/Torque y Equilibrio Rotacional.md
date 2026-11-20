@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [FISG1001, unidad2, fisica-mecanica, dinamica, torque-y-equilibrio-rotacional]
 ---
 
 # 🔧 Momento de Torsión (Torque)
@@ -11,7 +12,7 @@ dg-publish: true
 ## 🔧 Variables y Magnitudes
 
 > [!tip] 📏 Magnitudes Principales
-> 
+>
 > - **Momento de Torsión** ($\vec{\tau}$): Magnitud vectorial en N⋅m
 > - **Fuerza aplicada** ($\vec{F}$): Vector fuerza en Newtons [N]
 > - **Brazo de palanca** ($\vec{r}$): Distancia vectorial desde el eje al punto de aplicación [m]
@@ -24,25 +25,25 @@ dg-publish: true
 ## 🧮 Fórmulas Fundamentales
 
 > [!note] 📐 Ecuaciones Clave
-> 
+>
 > ### Definición Vectorial
-> 
+>
 > $$\vec{\tau} = \vec{r} \times \vec{F}$$
-> 
+>
 > ### Magnitud del Torque
-> 
+>
 > $$\tau = rF\sin\theta$$ donde:
-> 
+>
 > - $r$ = distancia del eje al punto de aplicación
 > - $F$ = magnitud de la fuerza
 > - $\theta$ = ángulo entre $\vec{r}$ y $\vec{F}$
-> 
+>
 > ### Segunda Ley de Newton Rotacional
-> 
+>
 > $$\sum \tau = I\alpha$$
-> 
+>
 > ### Casos Especiales
-> 
+>
 > - **Fuerza perpendicular** ($\theta = 90°$): $\tau = rF$
 > - **Fuerza paralela** ($\theta = 0°$ o $180°$): $\tau = 0$
 
@@ -51,16 +52,16 @@ dg-publish: true
 ## 🎓 Marco Teórico
 
 > [!abstract] 🧠 Factores Determinantes del Torque
-> 
+>
 > **1. Magnitud de la Fuerza ($F$)**: Mayor fuerza → mayor torque (relación directa)
-> 
+>
 > **2. Brazo de Palanca ($r$)**: Mayor distancia del eje → mayor torque (relación directa)
-> 
+>
 > **3. Dirección de la Fuerza ($\sin\theta$)**:
-> 
+>
 > - **Máximo torque**: $\theta = 90°$ (fuerza perpendicular)
 > - **Torque nulo**: $\theta = 0°$ o $180°$ (fuerza radial)
-> 
+>
 > **Principio Clave**: El torque es máximo cuando la fuerza se aplica perpendicularmente al brazo de palanca y a la mayor distancia posible del eje de rotación.
 
 ---
@@ -68,29 +69,29 @@ dg-publish: true
 ## 🔗 Diagrama Conceptual
 
 > [!abstract] 📊 Mapa de Relaciones
-> 
-> ![[Diagramas/Torque_y_Equilibrio_Rotacional_01.svg]]
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Torque_y_Equilibrio_Rotacional_01.svg]]
 
 ---
 
 ## 🌍 Aplicaciones Prácticas
 
 > [!example] 🎯 Casos de Estudio
-> 
+>
 > ### 🔧 Llave de Tuercas
-> 
+>
 > - **Principio**: Llave más larga → mayor brazo de palanca → mayor torque
 > - **Aplicación**: Misma fuerza produce más torque con herramienta más larga
 > - **Ventaja mecánica**: Facilita aflojar tuercas apretadas
-> 
+>
 > ### 🚪 Apertura de Puertas
-> 
+>
 > - **Zona efectiva**: Empujar en el extremo opuesto a las bisagras
 > - **Zona inefectiva**: Empujar cerca de las bisagras requiere mucha más fuerza
 > - **Razón**: Mayor brazo de palanca en el extremo de la puerta
-> 
+>
 > ### ⚖️ Balanza de Brazos
-> 
+>
 > - **Equilibrio**: $\tau_1 = \tau_2$ → $r_1F_1 = r_2F_2$
 > - **Aplicación**: Determinar masas desconocidas
 > - **Principio**: Momentos opuestos se cancelan en equilibrio
@@ -100,15 +101,15 @@ dg-publish: true
 ## 🔄 Metodología de Análisis
 
 > [!info] 🛠️ Flujo de Resolución
-> 
-> ![[Diagramas/Torque_y_Equilibrio_Rotacional_02.svg]]
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Torque_y_Equilibrio_Rotacional_02.svg]]
 
 ---
 
 ## 📊 Ejercicios Resueltos
 
 > [!warning] 🧮 Problema 1: Torque con Llave **Enunciado**: Una persona aplica una fuerza de 50 N a 0.5 m de la tuerca, perpendicularmente al brazo de la llave. ¿Cuál es el torque?
-> 
+>
 > > [!success] ✅ Solución **Datos**: $F = 50\text{ N}$, $r = 0.5\text{ m}$, $\theta = 90°$
 > > 
 > > **Fórmula**: $\tau = rF\sin\theta$
@@ -117,7 +118,7 @@ dg-publish: true
 >
 
 > [!warning] 🧮 Problema 2: Torque Máximo y Mínimo en Puerta **Enunciado**: Una fuerza de 10 N se aplica a una puerta a 0.8 m de las bisagras. Determinar el torque máximo y mínimo posible.
-> 
+>
 > > [!success] ✅ Solución **Datos**: $F = 10\text{ N}$, $r = 0.8\text{ m}$
 > > 
 > > **Torque Máximo** ($\theta = 90°$): $$\tau_{máx} = rF\sin(90°) = (0.8)(10)(1) = 8\text{ N⋅m}$$
@@ -129,15 +130,15 @@ dg-publish: true
 ## 📈 Análisis de Dirección
 
 > [!tip] 🧭 Regla de la Mano Derecha
-> 
+>
 > **Para determinar la dirección del vector torque:**
-> 
+>
 > 1. **Apuntar dedos**: En dirección del vector $\vec{r}$
 > 2. **Doblar dedos**: Hacia la dirección del vector $\vec{F}$
 > 3. **Pulgar apunta**: En dirección del torque $\vec{\tau}$
-> 
+>
 > **Convención de Signos:**
-> 
+>
 > - **Positivo (+)**: Rotación antihoraria
 > - **Negativo (-)**: Rotación horaria
 
@@ -146,29 +147,29 @@ dg-publish: true
 ## 🔗 Conexiones Temáticas
 
 > [!note] 🌐 Relaciones Conceptuales
-> 
+>
 > ### [[Cinemática Rotacional]]
-> 
+>
 > - **Segunda Ley**: $\sum \tau = I\alpha$ (ecuación fundamental)
 > - El torque es la **causa** de la aceleración angular
-> 
+>
 > ### [[Momento de Inercia]]
-> 
+>
 > - **Resistencia rotacional**: Relaciona torque con aceleración angular
 > - **Ecuación conjunta**: Mayor $I$ requiere mayor $\tau$ para misma $\alpha$
-> 
+>
 > ### [[1er Semestre/Física Mecánica/03 - Trabajo y Energía/Trabajo y Energía.md]]
-> 
+>
 > - **Trabajo rotacional**: $W = \tau \Delta\theta$
 > - **Potencia rotacional**: $P = \tau \omega$
-> 
+>
 > ### [[Torque y Equilibrio Rotacional#Equilibrio Rotacional|Equilibrio Rotacional]]
-> 
+>
 > - **Condición**: $\sum \tau = 0$ (torques se cancelan)
 > - **Aplicación**: Balanzas, palancas, estructuras
-> 
+>
 > ### [[Momentum Angular]]
-> 
+>
 > - **Relación temporal**: $\tau = \frac{dL}{dt}$ (torque cambia momento angular)
 > - **Conservación**: Sin torque externo → $L$ constante
 
@@ -177,19 +178,19 @@ dg-publish: true
 ## ⚖️ Condiciones de Equilibrio
 
 > [!abstract] 🎯 Equilibrio Rotacional
-> 
+>
 > **Para que un objeto esté en equilibrio rotacional:**
-> 
+>
 > $\sum \tau = 0$
-> 
+>
 > **Implicaciones:**
-> 
+>
 > - Suma de torques horarios = Suma de torques antihorarios
 > - No hay aceleración angular (alpha = 0)
 > - Velocidad angular constante (puede ser cero)
-> 
+>
 > **Aplicaciones:**
-> 
+>
 > - Diseño de balanzas
 > - Análisis de estructuras
 > - Sistemas de palancas
@@ -199,7 +200,7 @@ dg-publish: true
 ## 📝 Síntesis Clave
 
 > [!summary] 🎯 Puntos Esenciales
-> 
+>
 > - **Definición**: Equivalente rotacional de la fuerza
 > - **Fórmula base**: $\tau = rF\sin\theta$
 > - **Factores**: Magnitud de fuerza, brazo de palanca y ángulo
@@ -211,25 +212,25 @@ dg-publish: true
 ## 📚 Referencias y Enlaces
 
 > [!quote]  🏷️ Sistema de Organización
-> 
-> 
-> 
+>
+>
+>
 > ### 🔗 Notas Relacionadas
-> 
+>
 > - [[Momento de Inercia]]
 > - [[Momentum Angular]]
 > - [[Torque y Equilibrio Rotacional#Equilibrio Rotacional|Equilibrio Rotacional]]
 > - [[1er Semestre/Física Mecánica/03 - Trabajo y Energía/Trabajo y Energía.md]]
 > - Palancas y Máquinas Simples
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/I - Fundamentos/02 - Espacio Vectorial.md]]
-> 
+>
 > ### 📖 Temas Avanzados
-> 
+>
 > - [[Giroscopios y Precesión]]
 > - Torque en Sistemas de Múltiples Cuerpos
 > - Análisis de Estructuras
 > - Máquinas Rotativast
-## Tags
+## 🏷️ Tags
 
 #fisica #mecanica #torque #momento-torsion #dinamica-roacional #equilibrio
 
@@ -240,7 +241,7 @@ dg-publish: true
 ### Variables Clave 📊
 
 > [!tip] 🔢 Magnitudes Principales
-> 
+>
 > - **Momento de torsión neto** ($\sum \vec{\tau}$): Suma de todos los torques - $\text{N} \cdot \text{m}$
 > - **Fuerza externa** ($\vec{F}$): Cualquier fuerza que actúe sobre el objeto
 > - **Brazo de palanca** ($\vec{r}$): Distancia perpendicular desde el eje hasta la línea de acción de la fuerza
@@ -248,124 +249,128 @@ dg-publish: true
 ### Condición de Equilibrio 🎯
 
 > [!warning] ⚖️ Ecuación Fundamental $$\sum \vec{\tau}_{ext} = 0$$
-> 
+>
 > **Interpretación:** La suma de todos los torques externos debe ser cero para mantener equilibrio rotacional.
 
 ### Marco Teórico 🧠
 
 > [!info] 💡 Fundamento Físico La condición surge directamente de la **Segunda Ley de Newton para rotación**: $$\sum \tau = I\alpha$$
-> 
+>
 > Si $\alpha = 0$ (sin aceleración angular) → $\sum \tau = 0$
-> 
+>
 > **Importante:** No significa ausencia de torques individuales, sino que se **cancelan mutuamente**.
 
 ### Metodología de Resolución 🔧
 
 > [!tip] 📋 Procedimiento Sistemático
-> 
+>
 > **1. Establecer punto de referencia** 🎯
-> 
+>
 > - Elegir eje de rotación estratégicamente
 > - Sugerencia: ubicar donde actúe una fuerza desconocida
-> 
+>
 > **2. Diagrama de cuerpo libre** 📐
-> 
+>
 > - Identificar todas las fuerzas externas
 > - Marcar puntos de aplicación
-> 
+>
 > **3. Calcular torques individuales** ⚙️
-> 
+>
 > - Para cada fuerza: $\tau = rF\sin\theta$
 > - Aplicar convención de signos
-> 
+>
 > **4. Aplicar condición de equilibrio** ⚖️
-> 
+>
 > - $\sum \tau = 0$
-> 
+>
 > **5. Equilibrio completo** (si necesario) 🔄
-> 
+>
 > - Agregar: $\sum \vec{F}_{ext} = 0$
 
-![[Diagramas/Torque_y_Equilibrio_Rotacional_03.svg]]
+> [!note] 🖼️ Metodología de Resolución
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Torque_y_Equilibrio_Rotacional_03.svg]]
 
 ### Convención de Signos 🔄
 
 > [!warning] ➕➖ Regla de Signos
-> 
+>
 > - **Antihorario (⟲):** Torque **POSITIVO** (+)
 > - **Horario (⟳):** Torque **NEGATIVO** (-)
-> 
+>
 > **Consistencia es clave:** Mantener la misma convención durante todo el problema.
 
 ### Aplicaciones Prácticas 🏗️
 
 > [!tip] 🌍 Ejemplos del Mundo Real
-> 
+>
 > **⚖️ Balanza de Brazos:**
-> 
+>
 > - Objetos diferentes pueden equilibrarse
 > - Principio: $m_1 g r_1 = m_2 g r_2$
-> 
+>
 > **🌉 Puente Levadizo:**
-> 
+>
 > - Cables equilibran peso del puente
 > - Control preciso de posición
-> 
+>
 > **🏗️ Estructuras:**
-> 
+>
 > - Vigas, grúas, torres
 > - Base del diseño estructural
 
 ### Ejemplo Resuelto 📝
 
 > [!warning] 💪 Viga en Equilibrio **Problema:** Viga de 5m, 20kg, apoyada en extremo izquierdo y a 1m del extremo derecho. Objeto de 50kg a 1m del extremo izquierdo.
-> 
+>
 > **Datos:**
-> 
+>
 > - Longitud viga: L = 5m
 > - Masa viga: m₁ = 20kg
 > - Masa objeto: m₂ = 50kg
 > - Posición objeto: 1m del extremo izquierdo
 > - Soporte derecho: 1m del extremo derecho (4m del izquierdo)
-> 
+>
 > **Solución (eje en soporte izquierdo):**
-> 
+>
 > **Torques:**
-> 
+>
 > - Soporte izquierdo: $\tau_1 = 0$ (r = 0)
 > - Peso objeto: $\tau_2 = +(50)(9.8)(1) = +490 \text{ N⋅m}$
 > - Peso viga: $\tau_3 = +(20)(9.8)(2.5) = +490 \text{ N⋅m}$
 > - Soporte derecho: $\tau_4 = -F_2(4)$
-> 
+>
 > **Equilibrio rotacional:** $$490 + 490 - 4F_2 = 0$$ $$F_2 = 245 \text{ N}$$
-> 
+>
 > **Equilibrio traslacional:** $$F_1 + 245 - 490 - 196 = 0$$ $$F_1 = 441 \text{ N}$$
 
-![[Diagramas/Torque_y_Equilibrio_Rotacional_04.svg]]
+> [!note] 🖼️ Ejemplo Resuelto
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Torque_y_Equilibrio_Rotacional_04.svg]]
 
 ### Conexiones Conceptuales 🔗
 
 > [!info] 🌐 Relaciones Interdisciplinarias
-> 
+>
 > **Con Momento de Torsión:**
-> 
+>
 > - Aplicación práctica del concepto de torque
 > - Caso especial donde torques se anulan
-> 
+>
 > **Con Dinámica Rotacional:**
-> 
+>
 > - Caso particular donde α = 0
 > - Base para problemas más complejos
-> 
+>
 > **Con Estática:**
-> 
+>
 > - Fundamento junto con equilibrio traslacional
 > - Base del análisis estructural
 
 ### Puntos Clave de Diseño 🎯
 
 > [!tip] ⭐ Consideraciones Prácticas
-> 
+>
 > - **Elección de eje:** Punto estratégico simplifica cálculos
 > - **Diagrama claro:** Visualización correcta es fundamental
 > - **Signos consistentes:** Evita errores en cálculos
@@ -375,7 +380,7 @@ dg-publish: true
 ### Síntesis Esencial 🎯
 
 > [!warning] 📌 Conceptos Fundamentales
-> 
+>
 > - **Condición:** $\sum \tau_{ext} = 0$
 > - **Significado:** Sin rotación o rotación uniforme
 > - **Aplicación:** Estática y diseño estructural
@@ -387,13 +392,12 @@ dg-publish: true
 ## Referencias 📚
 
 > [!quote] 🔗 Enlaces a Otras Notas
-> 
+>
 > - [[1er Semestre/Física Mecánica/02 - Dinámica/Dinámica de Rotación/Torque y Equilibrio Rotacional.md]]
 > - [[Cinemática Rotacional]]
 > - Estática
 > - Fuerzas y Equilibrio
 > - [[Fuerzas y Diagramas de Cuerpo Libre]]
-
 > - Estática
 > - Fuerzas y Equilibrio
 > - [[1er Semestre/Física Mecánica/02 - Dinámica/Dinámica de Traslación/Fuerzas y Diagramas de Cuerpo Libre.md]]

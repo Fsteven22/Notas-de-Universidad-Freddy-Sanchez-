@@ -1,0 +1,31 @@
+---
+title: "Uso del Calibrador de Vernier (Pie de Rey) 01"
+---
+flowchart TD
+    A["Lectura del calibrador"]
+    B["1. Escala principal:<br/>leer el mm completo<br/>pasado el cero del vernier"]
+    C["2. Vernier: buscar la línea<br/>que coincide"]
+    D["3. Sumar:<br/>lectura + n × precisión"]
+    E["Precisiones típicas"]
+    E1["10 divisiones: 0.1 mm"]
+    E2["20 divisiones: 0.05 mm<br/>19 mm = 20 divisiones"]
+    E3["50 divisiones: 0.02 mm<br/>49 mm = 50 divisiones"]
+    F["Ejemplo: cero entre 34 y 35 ·<br/>coincide la 7 con 0.1 mm<br/>→ 34.7 mm"]
+    A --> B
+    A --> C
+    B --> D
+    D --> E
+    E --> E1
+    E --> E2
+    E --> E3
+    D --> F
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style E fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style E1 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style E2 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style E3 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style F fill:#fff3e0,stroke:#ff9800,color:#4a2c00

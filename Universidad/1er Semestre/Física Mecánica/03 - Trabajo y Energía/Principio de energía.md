@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [FISG1001, unidad3, fisica-mecanica, trabajo-energia, principio-de-energia]
 ---
 
 # ⚡ Principio de Energía
@@ -7,7 +8,7 @@ dg-publish: true
 ## 📋 Contexto
 
 > [!abstract] Principio Fundamental La energía total de un sistema aislado se mantiene constante.
-> 
+>
 > Este principio establece que en presencia de fuerzas externas (no conservativas) o interacciones con el entorno, el **trabajo neto externo** realizado sobre un sistema es igual al cambio en su **energía total**.
 >
 
@@ -18,7 +19,7 @@ dg-publish: true
 ## 🔢 Variables Comunes
 
 > [!tip] Variables Principales
-> 
+>
 > |Variable|Símbolo|Unidad|Descripción|
 > |---|---|---|---|
 > |Trabajo Externo|$W_{ext}$|J (Julios)|Energía transferida al sistema|
@@ -44,17 +45,17 @@ dg-publish: true
 >
 
 > [!tip] Tipos de Energía Potencial
-> 
-> ![[Diagramas/Principio_de_energía_01.svg]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Principio_de_energía_01.svg]]
 
 ---
 
 ## 🎯 Explicación Teórica
 
 > [!quote] Concepto Fundamental El principio de energía funciona como una **contabilidad energética**:
-> 
-> ![[Diagramas/Principio_de_energía_02.svg]]
-> 
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Principio_de_energía_02.svg]]
+>
 > Un sistema puede tener múltiples formas de energía que se transforman entre sí. El **trabajo externo** es el mecanismo de transferencia de energía hacia o desde el sistema.
 
 ---
@@ -62,11 +63,11 @@ dg-publish: true
 ## 🛠️ Aplicación Práctica
 
 > [!example] Carro en Plano Inclinado 🚗
-> 
-> ![[Diagramas/Principio_de_energía_03.svg]]
-> 
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Principio_de_energía_03.svg]]
+>
 > **🔍 Análisis:**
-> 
+>
 > - **Sin fricción**: Toda la energía potencial → energía cinética
 > - **Con fricción**: Parte de la energía potencial → energía térmica (Q)
 
@@ -75,53 +76,53 @@ dg-publish: true
 ## 🔗 Relaciones con Otros Temas
 
 > [!info] Conexiones Conceptuales
-> 
-> ![[Diagramas/Principio_de_energía_04.svg]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Principio_de_energía_04.svg]]
 
 ---
 
 ## 📈 Interpretación Gráfica
 
 > [!note] Gráfica Fuerza vs. Desplazamiento
-> 
-> ![[Diagramas/Principio_de_energía_05.svg]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Principio_de_energía_05.svg]]
 
 ---
 
 ## 🎯 Ejemplos de Aplicación
 
 > [!example] Ejercicio 1: Bloque en Plataforma
-> 
+>
 > **🎯 Problema**: Bloque de 5.0 kg, velocidad inicial 10 m/s, se detiene a los 5.0 m.
-> 
-> ![[Diagramas/Principio_de_energía_06.svg]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Principio_de_energía_06.svg]]
 >
 
 > [!success] Ejercicio 2: Caja con Resorte
-> 
+>
 > **🎯 Problema**: Caja 2.0 kg a 3.0 m/s comprime un resorte.
-> 
+>
 > **🔧 Solución**: Conservación de energía mecánica $\frac{1}{2}mv^2 = \frac{1}{2}kx^2$
 >
 
 > [!warning] Ejercicio 3: Masa en Curva Sin Fricción
-> 
+>
 > **🎯 Problema**: Masa desde altura h, velocidad al final.
-> 
-> ![[Diagramas/Principio_de_energía_07.svg]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Principio_de_energía_07.svg]]
 >
 
 > [!quote] Ejercicio 4: Superficie Rugosa
-> 
+>
 > **🎯 Problema**: Masa con fricción, distancia hasta detenerse.
-> 
+>
 > **🔧 Análisis**: $\Delta U = W_{fricción} = \Delta E_{term}$
 >
 
 > [!info] Ejercicio 5: Resorte en Plano Inclinado
-> 
+>
 > **🎯 Problema**: Objeto comprime resorte, velocidad en equilibrio.
-> 
+>
 > **🔧 Solución**: $\frac{1}{2}kx^2 = \frac{1}{2}mv^2$
 
 ---
@@ -129,8 +130,8 @@ dg-publish: true
 ## 🎯 Estrategia de Resolución
 
 > [!tip] Metodología de Resolución
-> 
-> ![[Diagramas/Principio_de_energía_08.svg]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Principio_de_energía_08.svg]]
 
 ---
 
@@ -140,7 +141,7 @@ dg-publish: true
 >
 
 > [!warning] Mejores Prácticas
-> 
+>
 > - **✅ Do**: Dibuja diagramas de energía para visualizar las transformaciones
 > - **❌ Don't**: Olvides considerar la fricción cuando esté presente
 > - **🔍 Recuerda**: El trabajo de fuerzas conservativas es independiente del camino
@@ -150,7 +151,7 @@ dg-publish: true
 ## 🔗 Enlaces y Referencias
 
 > [!quote] Notas relacionadas
-> 
+>
 > - [[Trabajo y Energía]]
 > - [[Principios de Conservación de la Energía]]
 > - [[Leyes de Newton]]
@@ -160,10 +161,12 @@ dg-publish: true
 ## 📌 Resumen Ejecutivo
 
 > [!summary] Puntos Clave El **Principio de Energía** es una herramienta fundamental que permite:
-> 
+>
 > - 🔄 Analizar transformaciones energéticas
 > - 📊 Resolver problemas sin usar F=ma directamente
 > - 🎯 Entender el comportamiento de sistemas complejos
 > - ⚖️ Aplicar conservación cuando sea apropiado
-> 
+>
 > **🌟 Ecuación clave**: $W_{ext} = \Delta K + \Delta U + \Delta E_{term}$
+
+**Tags:** #FISG1001 #fisica-mecanica #unidad3 #principio-de-energia

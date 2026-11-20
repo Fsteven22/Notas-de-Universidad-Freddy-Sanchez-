@@ -1,0 +1,28 @@
+---
+title: "Velocidad Relativa para Barcos y Aviones 02"
+---
+flowchart TD
+    A["Barcos en corriente"]
+    B["v tierra = v barco + v corriente<br/>suma vectorial"]
+    C["a favor del río:<br/>el río arrastra al barco"]
+    D["cruce perpendicular:<br/>derivación"]
+    D1["La corriente mueve al barco<br/>aguas abajo mientras cruza"]
+    D2["magnitud por Pitágoras<br/>v_tierra = √(v_ba² + v_c²)"]
+    E["Canales y mares:<br/>anchuras y travesías"]
+    F["Regla VIMAR:<br/>vectorizar · identificar referencias<br/>marcar ecuación · aplicar componentes ·<br/>resolver"]
+    A --> B
+    B --> C
+    B --> D
+    D --> D1
+    D --> D2
+    A --> E
+    A --> F
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style D fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style D1 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style D2 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style E fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style F fill:#ffebee,stroke:#e53935,color:#4a1010

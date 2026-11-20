@@ -1,0 +1,28 @@
+---
+title: "Problemas de Tiempo-Distancia 02"
+---
+flowchart TD
+    A["Gráfico v - t por tramos"]
+    B["Cada barra: velocidad del tramo<br/>ancho = tiempo del tramo"]
+    C["Área de cada barra<br/>= distancia dᵢ = vᵢ tᵢ"]
+    D["Área total<br/>= distancia del viaje"]
+    E["Ejemplo 90 y 60 km/h<br/>mismas distancias"]
+    F["Media armónica:<br/>v̄ = 2 v₁ v₂ / (v₁ + v₂) = 72 km/h"]
+    G["NO es el promedio simple<br/>(90 + 60)/2 = 75: tiempos distintos"]
+    H["Barra ancha con v bajo<br/>puede pesar más en el total"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    E --> H
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style D fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style E fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style F fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style G fill:#ffebee,stroke:#e53935,color:#4a1010
+    style H fill:#fff8e1,stroke:#fbc02d,color:#4a3b00

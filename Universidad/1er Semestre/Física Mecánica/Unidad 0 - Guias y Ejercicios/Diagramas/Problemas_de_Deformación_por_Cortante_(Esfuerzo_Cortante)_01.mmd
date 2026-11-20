@@ -1,0 +1,37 @@
+---
+title: "Problemas de Deformación por Cortante (Esfuerzo Cortante) 01"
+---
+flowchart TD
+    A["Esfuerzo cortante<br/>τ = V / A"]
+    B["Orígenes del cortante"]
+    B1["Empernado y soldaduras:<br/>τ = V/A en planos de corte"]
+    B2["Torsión: τ = T r / J<br/>máximo en el perímetro"]
+    B3["Flexión: τ = V Q / (I b)<br/>distribución parabólica"]
+    C["Estados de cortante"]
+    C1["Puro: solo τ"]
+    C2["Combinado: τ + σ normales"]
+    C3["Máximo: τ = (σ1 − σ3)/2"]
+    D["Rigidez G típica"]
+    D1["Acero 80–85 GPa · Aluminio 26–28<br/>Concreto 8–15 · Caucho ~0.003"]
+    A --> B
+    B --> B1
+    B --> B2
+    B --> B3
+    A --> C
+    C --> C1
+    C --> C2
+    C --> C3
+    A --> D
+    D --> D1
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B2 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style B3 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C1 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C2 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C3 fill:#ffebee,stroke:#e53935,color:#4a1010
+    style D fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style D1 fill:#fff8e1,stroke:#fbc02d,color:#4a3b00

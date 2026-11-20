@@ -1,0 +1,34 @@
+---
+title: "Problemas de Presión en un Fluido 01"
+---
+flowchart TD
+    A["Presión hidrostática<br/>P = P₀ + ρ g h"]
+    B["Gradiente dP/dh = ρ g"]
+    B1["Cada 100 m de agua<br/>+1 MPa aprox"]
+    C["Fluido estratificado:<br/>P = P₀ + ∫ ρ(z) g dz"]
+    D["Equivalencias"]
+    D1["Altura columna: h = P / (ρ g)"]
+    D2["Atmósfera: 101325 Pa<br/>= 10.33 m de agua"]
+    E["Densidades de referencia"]
+    E1["Agua 1000 · mar 1025<br/>mercurio 13600 · aceite 900 kg/m³"]
+    E2["Mercurio 13.6 veces más denso<br/>que el agua"]
+    A --> B
+    B --> B1
+    A --> C
+    A --> D
+    D --> D1
+    D --> D2
+    A --> E
+    E --> E1
+    E --> E2
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style D fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style D1 fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style D2 fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style E fill:#e0f2f1,stroke:#009688,color:#00332e
+    style E1 fill:#e0f2f1,stroke:#009688,color:#00332e
+    style E2 fill:#e0f2f1,stroke:#009688,color:#00332e

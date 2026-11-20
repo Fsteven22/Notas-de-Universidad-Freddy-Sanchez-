@@ -1,8 +1,9 @@
 ---
 dg-publish: true
+tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-de-velocidad-instantanea]
 ---
 
-## 🚀 Práctica: Velocidad Instantánea
+# 🚀 Práctica: Velocidad Instantánea
 
 ### 📘 Contexto
 > [!info] 📖 Contexto
@@ -12,32 +13,38 @@ dg-publish: true
 ---
 
 ### 📌 Variables Comunes
-- **Posición** ($X_i$, $X_e$, $X_o$): Ubicaciones del carrito en la pista.
-- **Desplazamiento** (\(\Delta x\)): Cambio en la posición.  
-- **Tiempo** (\(t\)): Duración de un evento o movimiento.  
-- **Velocidad instantánea** (\(v\)): La velocidad en un punto y momento exacto.  
-- **Incertidumbre** (\(\delta x\), \(\delta t\), \(\delta \Delta x\)): Margen de error en las mediciones.
+> [!info] 📌 Variables Comunes
+>
+> - **Posición** ($X_i$, $X_e$, $X_o$): Ubicaciones del carrito en la pista.
+> - **Desplazamiento** (\(\Delta x\)): Cambio en la posición.  
+> - **Tiempo** (\(t\)): Duración de un evento o movimiento.  
+> - **Velocidad instantánea** (\(v\)): La velocidad en un punto y momento exacto.  
+> - **Incertidumbre** (\(\delta x\), \(\delta t\), \(\delta \Delta x\)): Margen de error en las mediciones.
 
 ---
 
 ### ⚙️ Partes del Equipo (según diagrama y tabla de mediciones)
-1. **Control / Interfaz digital** (identificado como '1'): unidad que interactúa con los sensores y el contador.  
-2. **Sensores ópticos** ('2' y '3' en diagrama): detectan el paso de un objeto interrumpiendo un haz láser.  
-3. **Contador digital** ('3' en imagen): cronometra los tiempos detectados por los sensores.  
-4. **Pista y carrito** ('4' en diagrama, '1' en imagen): base de la trayectoria, inclinable para generar aceleración.  
-5. **Placa obturadora** ('4' en imagen): se fija al carrito y activa los sensores.  
-6. **Nivel digital** ('5'): mide el ángulo de inclinación de la pista.  
-7. **Fin de carrera** ('6'): tope que evita que el carrito se caiga.  
-8. **Cuña / Soporte** ('7'): inclinación de la pista.
+> [!info] 📌 ️ Partes del Equipo (según diagrama y tabla d…
+>
+> 1. **Control / Interfaz digital** (identificado como '1'): unidad que interactúa con los sensores y el contador.  
+> 2. **Sensores ópticos** ('2' y '3' en diagrama): detectan el paso de un objeto interrumpiendo un haz láser.  
+> 3. **Contador digital** ('3' en imagen): cronometra los tiempos detectados por los sensores.  
+> 4. **Pista y carrito** ('4' en diagrama, '1' en imagen): base de la trayectoria, inclinable para generar aceleración.  
+> 5. **Placa obturadora** ('4' en imagen): se fija al carrito y activa los sensores.  
+> 6. **Nivel digital** ('5'): mide el ángulo de inclinación de la pista.  
+> 7. **Fin de carrera** ('6'): tope que evita que el carrito se caiga.  
+> 8. **Cuña / Soporte** ('7'): inclinación de la pista.
 
 ---
 
 ### 🧾 Uso de Instrumentos y Mediciones
-- Mediciones directas: ancho y altura del carrito, ángulo de inclinación.  
-- **Tabla 3**: registra posiciones ($(X_i$), $(X_o$)), desplazamiento ($(\Delta x$)) y tiempo ($(t$)).  
-- **Tabla 4**: clasifica variables  
-  - *Directas*: ángulo, longitud, tiempo.  
-  - *Indirectas*: aceleración, velocidad media, velocidad instantánea.
+> [!info] 📌 Uso de Instrumentos y Mediciones
+>
+> - Mediciones directas: ancho y altura del carrito, ángulo de inclinación.  
+> - **Tabla 3**: registra posiciones ($(X_i$), $(X_o$)), desplazamiento ($(\Delta x$)) y tiempo ($(t$)).  
+> - **Tabla 4**: clasifica variables  
+>   - *Directas*: ángulo, longitud, tiempo.  
+>   - *Indirectas*: aceleración, velocidad media, velocidad instantánea.
 
 ---
 
@@ -68,15 +75,19 @@ dg-publish: true
 ---
 
 ### 🔗 Relación con Otros Temas
-- **Cinemática**: desplazamiento, tiempo y velocidad media.  
-- **Cálculo**: concepto experimental de derivada.  
-- **Aceleración**: relacionada con la variación de la velocidad instantánea a lo largo del tiempo.
+> [!info] 📌 Relación con Otros Temas
+>
+> - **Cinemática**: desplazamiento, tiempo y velocidad media.  
+> - **Cálculo**: concepto experimental de derivada.  
+> - **Aceleración**: relacionada con la variación de la velocidad instantánea a lo largo del tiempo.
 
 ---
 
 ### 📊 Gráficas
-1. **Posición vs. Tiempo**: curva para movimiento con aceleración constante (MRUV). La pendiente de la **tangente** en un punto = velocidad instantánea.  
-2. **Velocidad vs. Tiempo**: recta si la aceleración es constante; su pendiente = aceleración.
+> [!info] 📌 Gráficas
+>
+> 1. **Posición vs. Tiempo**: curva para movimiento con aceleración constante (MRUV). La pendiente de la **tangente** en un punto = velocidad instantánea.  
+> 2. **Velocidad vs. Tiempo**: recta si la aceleración es constante; su pendiente = aceleración.
 
 ---
 ## 🧪 Taller Previo – Velocidad Instantánea
@@ -183,7 +194,11 @@ dg-publish: true
 ---
 
 ### 12. ¿Qué conclusiones se obtienen de este modelo?
-- Se puede estimar la velocidad instantánea con intervalos pequeños.
-- La forma de la curva $x$ vs. $t$ permite analizar el movimiento.
-- La aceleración se obtiene de la pendiente de la gráfica $v$ vs. $t$.
+> [!info] 📌 12. ¿Qué conclusiones se obtienen de este mod…
+>
+> - Se puede estimar la velocidad instantánea con intervalos pequeños.
+> - La forma de la curva $x$ vs. $t$ permite analizar el movimiento.
+> - La aceleración se obtiene de la pendiente de la gráfica $v$ vs. $t$.
 
+
+**Tags:** #FISG1001 #fisica-mecanica #laboratorio #practica-de-velocidad-instantanea

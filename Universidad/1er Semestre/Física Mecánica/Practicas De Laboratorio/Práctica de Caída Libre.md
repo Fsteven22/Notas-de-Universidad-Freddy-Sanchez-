@@ -1,8 +1,9 @@
 ---
 dg-publish: true
+tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-de-caida-libre]
 ---
 
-## 🔧 Práctica: Caída Libre
+# 🔧 Práctica: Caída Libre
 
 ### 🌍 Contexto
 
@@ -16,61 +17,103 @@ dg-publish: true
 
 ### 📊 Variables Comunes
 
-- **Altura ($h$ o $X_f$)**: Distancia desde donde se suelta el objeto hasta el impacto. Variable independiente.
+> [!info] 📌 Variables Comunes
+>
+> - **Altura ($h$ o $X_f$)**: Distancia desde donde se suelta el objeto hasta el impacto. Variable independiente.
     
-- **Tiempo ($t$)**: Tiempo que tarda en caer. Variable dependiente.
+> [!info] 📌 Variables Comunes
+>
+> - **Tiempo ($t$)**: Tiempo que tarda en caer. Variable dependiente.
     
-- **Posición inicial ($X_0$)**: Se toma comúnmente como 0.
+> [!info] 📌 Variables Comunes
+>
+> - **Posición inicial ($X_0$)**: Se toma comúnmente como 0.
     
-- **Velocidad inicial ($V_0$)**: Para caída libre, $V_0 = 0$.
+> [!info] 📌 Variables Comunes
+>
+> - **Velocidad inicial ($V_0$)**: Para caída libre, $V_0 = 0$.
     
-- **Aceleración ($a$)**: Se busca que sea la gravedad ($g$).
+> [!info] 📌 Variables Comunes
+>
+> - **Aceleración ($a$)**: Se busca que sea la gravedad ($g$).
     
-- **Incertidumbres ($\Delta h$, $\delta t$)**: Errores asociados a las mediciones.
+> [!info] 📌 Variables Comunes
+>
+> - **Incertidumbres ($\Delta h$, $\delta t$)**: Errores asociados a las mediciones.
     
 
 ### ⚖️ Procedimiento y Formulación
 
 #### a. 🛏️ Partes del Equipo
 
-1. **Soporte universal**: Sostiene disparador y sensor.
+> [!info] 📌 a. ️ Partes del Equipo
+>
+> 1. **Soporte universal**: Sostiene disparador y sensor.
     
-2. **Nueces / Abrazaderas**: Ajustan componentes al soporte.
+> [!info] 📌 a. ️ Partes del Equipo
+>
+> 2. **Nueces / Abrazaderas**: Ajustan componentes al soporte.
     
-3. **Contador digital**: Registra el tiempo entre señales.
+> [!info] 📌 a. ️ Partes del Equipo
+>
+> 3. **Contador digital**: Registra el tiempo entre señales.
     
-4. **Esfera y disparador**: Permiten iniciar la caída y medir el tiempo.
+> [!info] 📌 a. ️ Partes del Equipo
+>
+> 4. **Esfera y disparador**: Permiten iniciar la caída y medir el tiempo.
     
-5. **Sensor de recepción**: Detecta el impacto final.
+> [!info] 📌 a. ️ Partes del Equipo
+>
+> 5. **Sensor de recepción**: Detecta el impacto final.
     
-6. **Flexómetro / Cinta**: Mide la altura de caída.
+> [!info] 📌 a. ️ Partes del Equipo
+>
+> 6. **Flexómetro / Cinta**: Mide la altura de caída.
     
-7. **Base del soporte**: Da estabilidad.
+> [!info] 📌 a. ️ Partes del Equipo
+>
+> 7. **Base del soporte**: Da estabilidad.
     
-8. **Fuente de poder / Interfaz**: Alimenta componentes electrónicos.
+> [!info] 📌 a. ️ Partes del Equipo
+>
+> 8. **Fuente de poder / Interfaz**: Alimenta componentes electrónicos.
     
 
 #### b. 🔢 Mediciones Directas (Tabla 2)
 
-- **Diámetro de la esfera**: Medido con calibrador.
+> [!info] 📌 b. Mediciones Directas (Tabla 2)
+>
+> - **Diámetro de la esfera**: Medido con calibrador.
     
-- **Masa de la esfera**: Con balanza.
+> [!info] 📌 b. Mediciones Directas (Tabla 2)
+>
+> - **Masa de la esfera**: Con balanza.
     
-- **Radio del cilindro (si aplica)**: Instrumento adecuado.
+> [!info] 📌 b. Mediciones Directas (Tabla 2)
+>
+> - **Radio del cilindro (si aplica)**: Instrumento adecuado.
     
 
 #### c. ⌚ Mediciones de la Práctica (Tabla 3)
 
-- **Altura ($h \pm \Delta h$)**: Desde donde se suelta la esfera.
+> [!info] 📌 c. Mediciones de la Práctica (Tabla 3)
+>
+> - **Altura ($h \pm \Delta h$)**: Desde donde se suelta la esfera.
     
-- **Tiempo ($t \pm \delta t$)**: Duración de la caída.
+> [!info] 📌 c. Mediciones de la Práctica (Tabla 3)
+>
+> - **Tiempo ($t \pm \delta t$)**: Duración de la caída.
     
 
 #### d. 📊 Tipo de Mediciones (Tabla 4)
 
-- **Directas**: Diámetro, masa, tiempo, altura.
+> [!info] 📌 d. Tipo de Mediciones (Tabla 4)
+>
+> - **Directas**: Diámetro, masa, tiempo, altura.
     
-- **Indirectas**: Pendiente (gráfica), gravedad (a partir de $h$ y $t$).
+> [!info] 📌 d. Tipo de Mediciones (Tabla 4)
+>
+> - **Indirectas**: Pendiente (gráfica), gravedad (a partir de $h$ y $t$).
     
 
 #### e. 📌 Notas Importantes
@@ -101,20 +144,32 @@ dg-publish: true
 
 ### 🍒 Relación con Otros Temas
 
-- **Cinemática**: MRUV.
+> [!info] 📌 Relación con Otros Temas
+>
+> - **Cinemática**: MRUV.
     
-- **Gravedad**: Se determina su valor.
+> [!info] 📌 Relación con Otros Temas
+>
+> - **Gravedad**: Se determina su valor.
     
-- **Energía**: Potencial gravitatoria se convierte en cinética.
+> [!info] 📌 Relación con Otros Temas
+>
+> - **Energía**: Potencial gravitatoria se convierte en cinética.
     
-- **Linealización de datos**: Relación cuadrática convertida a lineal ($h$ vs. $t^2$).
+> [!info] 📌 Relación con Otros Temas
+>
+> - **Linealización de datos**: Relación cuadrática convertida a lineal ($h$ vs. $t^2$).
     
 
 ### 📈 Gráficas
 
-- **$h$ vs. $t$**: Curva (parabólica).
+> [!info] 📌 Gráficas
+>
+> - **$h$ vs. $t$**: Curva (parabólica).
     
-- **$h$ vs. $t^2$**: Línea recta, pendiente $= \frac{1}{2} g$.
+> [!info] 📌 Gráficas
+>
+> - **$h$ vs. $t^2$**: Línea recta, pendiente $= \frac{1}{2} g$.
     
 
 ---
@@ -133,7 +188,9 @@ dg-publish: true
 
 #### Datos:
 
-- Masa: $0.50 \pm 0.01,kg$
+> [!info] 📌 Datos:
+>
+> - Masa: $0.50 \pm 0.01,kg$
     
 
 > [!info] 📊 Datos
@@ -166,9 +223,13 @@ dg-publish: true
 
 #### 2. Graficar $T$ vs $L$
 
-- Usar software
+> [!info] 📌 2. Graficar $T$ vs $L$
+>
+> - Usar software
     
-- Se espera curva
+> [!info] 📌 2. Graficar $T$ vs $L$
+>
+> - Se espera curva
     
 
 #### 3. ¿Relación lineal?
@@ -179,11 +240,17 @@ dg-publish: true
 
 #### a. Linealización: $T^2$ vs $L$
 
-- Nueva variable dependiente: $Y = T^2$
+> [!info] 📌 a. Linealización: $T^2$ vs $L$
+>
+> - Nueva variable dependiente: $Y = T^2$
     
-- Nueva variable independiente: $X = L$
+> [!info] 📌 a. Linealización: $T^2$ vs $L$
+>
+> - Nueva variable independiente: $X = L$
     
-- Relación lineal: $T^2 = m L + b$ donde $m = \frac{4\pi^2 m}{F - mg}$ y $b = 0$
+> [!info] 📌 a. Linealización: $T^2$ vs $L$
+>
+> - Relación lineal: $T^2 = m L + b$ donde $m = \frac{4\pi^2 m}{F - mg}$ y $b = 0$
     
 
 #### 4. Relación entre nuevas variables
@@ -194,9 +261,13 @@ dg-publish: true
 
 #### 5. Comparación con $y = mx + b$
 
-- **Pendiente**: $m = \frac{4\pi^2 m}{F - mg}$
+> [!info] 📌 5. Comparación con $y = mx + b$
+>
+> - **Pendiente**: $m = \frac{4\pi^2 m}{F - mg}$
     
-- **Intercepto**: $b = 0$
+> [!info] 📌 5. Comparación con $y = mx + b$
+>
+> - **Intercepto**: $b = 0$
     
 
 #### 6. Tabla linealizada
@@ -213,20 +284,32 @@ dg-publish: true
 
 #### 7. Gráfica en hoja milimetrada
 
-- Ejes: $T^2$ (Y), $L$ (X)
+> [!info] 📌 7. Gráfica en hoja milimetrada
+>
+> - Ejes: $T^2$ (Y), $L$ (X)
     
-- Escala adecuada
+> [!info] 📌 7. Gráfica en hoja milimetrada
+>
+> - Escala adecuada
     
-- Trazar puntos, ejes y tendencia
+> [!info] 📌 7. Gráfica en hoja milimetrada
+>
+> - Trazar puntos, ejes y tendencia
     
 
 #### 8. Otro método de linealización
 
-- **Logarímico**:
+> [!info] 📌 8. Otro método de linealización
+>
+> - **Logarímico**:
     
-    - Si $y = Ax^n$, usar: $\log(y)$ vs $\log(x)$
+> [!info] 📌 8. Otro método de linealización
+>
+>     - Si $y = Ax^n$, usar: $\log(y)$ vs $\log(x)$
         
-    - Si $y = Ae^{Bx}$, usar: $\ln(y)$ vs $x$
+> [!info] 📌 8. Otro método de linealización
+>
+>     - Si $y = Ae^{Bx}$, usar: $\ln(y)$ vs $x$
         
 
 ### 🧮 Explicación Teórica
@@ -243,20 +326,34 @@ dg-publish: true
 
 ### 📊 Relación con Otros Temas
 
-- **Dinámica circular**
+> [!info] 📌 Relación con Otros Temas
+>
+> - **Dinámica circular**
     
-- **Leyes de Newton**
+> [!info] 📌 Relación con Otros Temas
+>
+> - **Leyes de Newton**
     
-- **Linealización** (clave del taller)
+> [!info] 📌 Relación con Otros Temas
+>
+> - **Linealización** (clave del taller)
     
-- **Propagación de errores y cifras significativas**
+> [!info] 📌 Relación con Otros Temas
+>
+> - **Propagación de errores y cifras significativas**
     
 
 ### 📈 Gráficas del Taller
 
-- **Original ($T$ vs $L$)**: Curva
+> [!info] 📌 Gráficas del Taller
+>
+> - **Original ($T$ vs $L$)**: Curva
     
-- **Linealizada ($T^2$ vs $L$)**: Línea recta, pendiente relacionada con $F$
+> [!info] 📌 Gráficas del Taller
+>
+> - **Linealizada ($T^2$ vs $L$)**: Línea recta, pendiente relacionada con $F$
     
 
 ---
+
+**Tags:** #FISG1001 #fisica-mecanica #laboratorio #practica-de-caida-libre

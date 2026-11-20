@@ -1,0 +1,16 @@
+flowchart TD
+    M["👋 Mano"]
+    B["📦 Bloque"]
+    P["📐 Plano Inclinado"]
+    T["🌍 Tierra"]
+    M -->|"F_m/b"| B
+    B -->|"N_b/p"| P
+    B -->|"W_b"| T
+    M -->|"F_m/b"| B
+    B -->|"F_b/m"| M
+    B -->|"N_b/p"| P
+    P -->|"N_p/b"| B
+    B -->|"N_b/p"| P
+    P -->|"N_p/b"| B
+    B -->|"W_b"| T
+    T -->|"R_t/b"| B

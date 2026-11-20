@@ -1,0 +1,40 @@
+---
+title: "Problemas de Equilibrio Traslacional y Rotacional 01"
+---
+flowchart TD
+    A["Equilibrio simultáneo"]
+    B["ΣF = 0 traslacional"]
+    C["Στ = 0 rotacional"]
+    D["Tipos de equilibrio"]
+    D1["Estable: regresa al punto<br/>CG bajo"]
+    D2["Inestable: se aleja<br/>CG sobre el borde"]
+    D3["Neutro: U no cambia<br/>rodillo o esfera"]
+    E["Elegir eje en fuerza<br/>desconocida: su τ = 0"]
+    F["Apoyos"]
+    F1["Rodillo: 1 reacción perpendicular"]
+    F2["Pasador: 2 reacciones H y V"]
+    F3["Empotramiento: 2 fuerzas + momento"]
+    A --> B
+    A --> C
+    B --> D
+    D --> D1
+    D --> D2
+    D --> D3
+    C --> E
+    A --> F
+    F --> F1
+    F --> F2
+    F --> F3
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style D fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D1 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style D2 fill:#ffebee,stroke:#e53935,color:#4a1010
+    style D3 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style E fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style F fill:#e0f2f1,stroke:#009688,color:#00332e
+    style F1 fill:#e0f2f1,stroke:#009688,color:#00332e
+    style F2 fill:#e0f2f1,stroke:#009688,color:#00332e
+    style F3 fill:#e0f2f1,stroke:#009688,color:#00332e

@@ -1,0 +1,37 @@
+---
+title: "Problemas de Gráficos (x-t, v-t, a-t) 01"
+---
+flowchart TD
+    A["Relación entre gráficos<br/>x-t · v-t · a-t"]
+    B["Hacia abajo: derivadas"]
+    B1["v = dx/dt<br/>pendiente del gráfico x-t"]
+    B2["a = dv/dt<br/>pendiente del gráfico v-t"]
+    C["Hacia arriba: integrales"]
+    C1["Δx = ∫ v dt<br/>área del gráfico v-t"]
+    C2["Δv = ∫ a dt<br/>área del gráfico a-t"]
+    D["Lectura rápida"]
+    D1["x-t con curva cuadrática:<br/>a constante"]
+    D2["v-t horizontal: MRU"]
+    D3["a-t con tramos:<br/>cambia la aceleración"]
+    A --> B
+    B --> B1
+    B --> B2
+    A --> C
+    C --> C1
+    C --> C2
+    A --> D
+    D --> D1
+    D --> D2
+    D --> D3
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B1 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style B2 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C2 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style D1 fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style D2 fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style D3 fill:#fff8e1,stroke:#fbc02d,color:#4a3b00

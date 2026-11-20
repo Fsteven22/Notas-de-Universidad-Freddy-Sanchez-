@@ -1,0 +1,18 @@
+flowchart TD
+    A["🌀 Giroscopio Girando"]
+    B["⚖️ Se Aplica Torque Externo"]
+    C{"🎯 Dirección del Cambio"}
+    D["🔄 Cambio Perpendicular"]
+    E["📐 Vector L cambia dirección"]
+    F["🌀 Precesión del Eje"]
+    G["✅ Equilibrio Dinámico"]
+    A --> B
+    B --> C
+    C -->|"❌ NO en dirección del torque"| D
+    D --> E
+    E --> F
+    F --> G
+
+    style A fill:#e1f5fe
+    style D fill:#fff3e0
+    style G fill:#c8e6c9

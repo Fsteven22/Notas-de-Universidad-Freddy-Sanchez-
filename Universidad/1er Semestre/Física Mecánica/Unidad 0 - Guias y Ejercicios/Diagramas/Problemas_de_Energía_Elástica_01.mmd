@@ -1,0 +1,40 @@
+---
+title: "Problemas de Energía Elástica 01"
+---
+flowchart TD
+    A["Energía potencial elástica<br/>U = ½ k x²"]
+    B["Elementos estructurales"]
+    B1["Barra en tracción:<br/>U = F² L / (2 E A)"]
+    B2["Viga en flexión:<br/>U = M² L / (2 E I)"]
+    B3["Eje en torsión:<br/>U = T² L / (2 G J)"]
+    C["Resortes"]
+    C1["Lineal: U = ½ k x²"]
+    C2["Torsional: U = ½ k θ²"]
+    D["Densidad de energía<br/>u = U/V"]
+    D1["u = σ²/(2E) = ½ σ ε"]
+    D2["Unidades J/m³<br/>máximo en el límite elástico"]
+    E["Método: derivar el campo de<br/>esfuerzos U = ∫ u dV"]
+    A --> B
+    B --> B1
+    B --> B2
+    B --> B3
+    A --> C
+    C --> C1
+    C --> C2
+    A --> D
+    D --> D1
+    D --> D2
+    B --> E
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B1 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style B2 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style B3 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C1 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C2 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style D fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style D1 fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style D2 fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style E fill:#ffebee,stroke:#e53935,color:#4a1010

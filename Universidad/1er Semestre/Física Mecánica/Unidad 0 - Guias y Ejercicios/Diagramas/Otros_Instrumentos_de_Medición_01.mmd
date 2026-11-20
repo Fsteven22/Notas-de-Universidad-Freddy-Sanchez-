@@ -1,0 +1,19 @@
+flowchart TD
+    A["¿Qué tiempo mides?"]
+    B{"< 1 segundo"}
+    C{"1-10 segundos"}
+    D{"> 10 segundos"}
+    E["Fotocélula o<br/>Sistema automático"]
+    F["Cronómetro digital<br/>Múltiples mediciones"]
+    G["Cronómetro manual<br/>Aceptable"]
+    A --> B
+    A --> C
+    A --> D
+    B --> E
+    C --> F
+    D --> G
+
+    style A fill:#e1f5fe
+    style E fill:#e8f5e8
+    style F fill:#fce4ec
+    style G fill:#f1f8e9

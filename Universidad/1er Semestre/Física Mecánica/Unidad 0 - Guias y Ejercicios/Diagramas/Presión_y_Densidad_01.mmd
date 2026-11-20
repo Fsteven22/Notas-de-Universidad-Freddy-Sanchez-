@@ -1,0 +1,21 @@
+flowchart TD
+    A["🌊 Superficie del Fluido"]
+    B["Presión Atmosférica"]
+    C["🔵 Punto 1"]
+    D["🔵 Punto 2"]
+    E["🔵 Punto 3"]
+    F["Presión menor"]
+    G["Presión media"]
+    H["Presión mayor"]
+    A -->|"P₀"| B
+    A -->|"h₁"| C
+    A -->|"h₂"| D
+    A -->|"h₃"| E
+    C -->|"P₁ = P₀ + ρgh₁"| F
+    D -->|"P₂ = P₀ + ρgh₂"| G
+    E -->|"P₃ = P₀ + ρgh₃"| H
+
+    style A fill:#87CEEB
+    style C fill:#4169E1
+    style D fill:#0000FF
+    style E fill:#000080

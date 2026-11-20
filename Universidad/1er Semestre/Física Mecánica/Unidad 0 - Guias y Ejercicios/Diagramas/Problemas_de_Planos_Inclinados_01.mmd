@@ -1,0 +1,38 @@
+---
+title: "Problemas de Planos Inclinados 01"
+---
+flowchart TD
+    A["Objeto en plano inclinado<br/>ángulo θ"]
+    B["Descomposición del peso"]
+    B1["W sinθ a lo largo del plano<br/>fuerza que desliza"]
+    B2["W cosθ perpendicular ·<br/>la normal N = W cosθ"]
+    C["Fricción"]
+    C1["f = μ N = μ W cosθ"]
+    C2["Subida a g (sinθ + μ cosθ)<br/>baja a g (sinθ − μ cosθ)"]
+    D["Ángulo crítico:<br/>θc = arctan(μs)"]
+    D1["θ menor que θc: reposo<br/>θ mayor que θc: desliza"]
+    E["Geometría: h = L sinθ<br/>d = L cosθ"]
+    F["Sistemas conectados:<br/>DCL por objeto · tensión común ·<br/>misma aceleración"]
+    A --> B
+    B --> B1
+    B --> B2
+    B --> A
+    A --> C
+    C --> C1
+    C --> C2
+    A --> D
+    D --> D1
+    A --> E
+    E --> F
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B1 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style B2 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C1 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C2 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style D fill:#ffebee,stroke:#e53935,color:#4a1010
+    style D1 fill:#ffebee,stroke:#e53935,color:#4a1010
+    style E fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style F fill:#fff8e1,stroke:#fbc02d,color:#4a3b00

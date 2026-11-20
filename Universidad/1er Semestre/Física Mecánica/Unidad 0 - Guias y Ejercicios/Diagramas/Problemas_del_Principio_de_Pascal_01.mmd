@@ -1,0 +1,23 @@
+flowchart TD
+    A["Cilindro Maestro A₁"]
+    B["Fluido Hidráulico"]
+    C["Cilindro Esclavo A₂"]
+    D["Fuerza F₁"]
+    E["Volumen V₁"]
+    F["Fuerza F₂ = F₁ × A₂/A₁"]
+    G["Desplazamiento d₂ = d₁ × A₁/A₂"]
+    H["Volumen V₂"]
+    A -->|"Presión P"| B
+    B -->|"Misma Presión P"| C
+    D --> A
+    A -->|"Desplazamiento d₁"| E
+    C --> F
+    G --> C
+    E -->|"V₁ = V₂"| H
+    H --> G
+
+    style A fill:#e3f2fd
+    style B fill:#e8f5e8
+    style C fill:#fff3e0
+    style D fill:#fce4ec
+    style F fill:#f3e5f5

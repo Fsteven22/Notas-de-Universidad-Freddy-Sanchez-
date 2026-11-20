@@ -1,0 +1,12 @@
+flowchart TD
+    A["Medir Largo (L) → Determinar CS de L"]
+    B["Medir Ancho (A) → Determinar CS de A"]
+    C{"Multiplicar L × A"}
+    D["Identificar el número con MENOS CS"]
+    E["Redondear el Área al número de CS identificado"]
+    F["Reportar Área con CS correctas (Ej. Notación Científica)"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F

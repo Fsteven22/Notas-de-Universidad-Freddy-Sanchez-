@@ -1,0 +1,35 @@
+flowchart TD
+    A["Datos Experimentales"]
+    B["Selección de Transformación"]
+    C["Aplicación de Transformación"]
+    D["Regresión Lineal"]
+    E["Evaluación de Calidad"]
+    F{"¿Linealización Exitosa?"}
+    G["Interpretación de Parámetros"]
+    H["Prueba Nueva Transformación"]
+    I["Transformación Inversa"]
+    J["Validación con Datos Originales"]
+    K["Reporte de Resultados"]
+    E1["Coeficiente r"]
+    E2["Análisis de Residuos"]
+    E3["Significado Físico"]
+    E4["Comparación Teórica"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F -->|"Sí"| G
+    F -->|"No"| H
+    G --> I
+    I --> J
+    J --> K
+    H --> B
+    E --> E1
+    E --> E2
+    E --> E3
+    E --> E4
+
+    style A fill:#e1f5fe
+    style H fill:#ffebee
+    style K fill:#e8f5e8

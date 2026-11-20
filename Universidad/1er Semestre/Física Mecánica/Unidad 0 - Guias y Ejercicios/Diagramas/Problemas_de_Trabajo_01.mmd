@@ -1,0 +1,31 @@
+---
+title: "Problemas de Trabajo 01"
+---
+flowchart TD
+    A["Trabajo y ángulo<br/>W = F d cosθ"]
+    B["θ = 0°: W = + F d<br/>mismo sentido del movimiento"]
+    C["0° menor que θ menor que 90°: W positivo · motor"]
+    D["θ = 90°: W = 0<br/>perpendicular no trabaja"]
+    E["90° menor que θ menor que 180°: W negativo · resistivo"]
+    F["θ = 180°: W = − F d"]
+    G["Teorema trabajo - energía<br/>W total = ΔE cinética"]
+    G1["W sumado menor que 0: frena<br/>0: velocidad constante"]
+    G2["W neto = Σ trabajos de<br/>cada fuerza"]
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    A --> F
+    A --> G
+    G --> G1
+    G --> G2
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style D fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style E fill:#ffebee,stroke:#e53935,color:#4a1010
+    style F fill:#ffebee,stroke:#e53935,color:#4a1010
+    style G fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style G1 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style G2 fill:#fff3e0,stroke:#ff9800,color:#4a2c00

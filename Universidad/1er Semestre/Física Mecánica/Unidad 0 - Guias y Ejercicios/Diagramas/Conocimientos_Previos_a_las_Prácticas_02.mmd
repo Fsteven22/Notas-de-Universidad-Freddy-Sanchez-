@@ -1,0 +1,15 @@
+flowchart TD
+    A["Objeto y Cronometro"]
+    B["Identificar evento a medir"]
+    C["Realizar multiples mediciones del tiempo t_i"]
+    D["Calcular promedio: t_prom"]
+    E["Estimar incertidumbre: Delta_t"]
+    F["Aplicar cifras significativas y redondeo"]
+    G["Reportar resultado: (t_prom +/- Delta_t) unidades"]
+    A --> B
+    B --> C
+    C --> D
+    C --> E
+    D --> F
+    E --> F
+    F --> G

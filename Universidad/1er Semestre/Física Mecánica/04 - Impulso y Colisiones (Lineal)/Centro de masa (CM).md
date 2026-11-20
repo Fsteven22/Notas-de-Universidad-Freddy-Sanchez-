@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [FISG1001, unidad4, fisica-mecanica, impulso, centro-de-masa-cm]
 ---
 
 # 🎯 Centro de Masa
@@ -11,7 +12,7 @@ dg-publish: true
 ## 🔧 Variables y Magnitudes
 
 > [!tip] 📏 Magnitudes Principales
-> 
+>
 > - **Posición del centro de masa** ($\vec{r}_{CM}$): Vector posición en metros [m]
 > - **Masa de partícula** ($m_i$): Masa individual en kilogramos [kg]
 > - **Masa total** ($M_{total}$): Suma de todas las masas [kg]
@@ -23,21 +24,21 @@ dg-publish: true
 ## 🧮 Fórmulas Fundamentales
 
 > [!note] 📐 Ecuaciones Clave
-> 
+>
 > ### Posición del Centro de Masa
-> 
+>
 > $\vec{r}_{CM} = \frac{\sum m_i \vec{r}_i}{M_{total}} = \frac{m_1\vec{r}_1 + m_2\vec{r}_2 + ...}{m_1 + m_2 + ...}$
-> 
+>
 > ### Componentes Cartesianas
-> 
+>
 > $x_{CM} = \frac{\sum m_i x_i}{M_{total}} \qquad y_{CM} = \frac{\sum m_i y_i}{M_{total}}$
-> 
+>
 > ### Velocidad del Centro de Masa
-> 
+>
 > $\vec{v}_{CM} = \frac{d\vec{r}_{CM}}{dt} = \frac{\sum m_i \vec{v}_i}{M_{total}} = \frac{\vec{P}_{total}}{M_{total}}$
-> 
+>
 > ### Aceleración del Centro de Masa
-> 
+>
 > $\vec{a}_{CM} = \frac{d\vec{v}_{CM}}{dt} = \frac{\sum \vec{F}_{ext}}{M_{total}}$
 
 ---
@@ -45,9 +46,9 @@ dg-publish: true
 ## 🎓 Marco Teórico
 
 > [!abstract] 🧠 Conceptos Fundamentales
-> 
+>
 > **Principio de Equivalencia**: El centro de masa se comporta como si toda la masa del sistema estuviera concentrada en ese punto único.
-> 
+>
 > **Independencia de Fuerzas Internas**: Solo las fuerzas externas afectan el movimiento del centro de masa. Las fuerzas internas (colisiones, explosiones) no alteran su trayectoria.
 
 ---
@@ -55,22 +56,22 @@ dg-publish: true
 ## 🔗 Diagrama Conceptual
 
 > [!abstract] 📊 Mapa de Relaciones
-> 
-> ![[Diagramas/Centro_de_masa_(CM)_01.svg]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Centro_de_masa_(CM)_01.svg]]
 
 ---
 
 ## 🌍 Aplicaciones Prácticas
 
 > [!example] 🎯 Casos de Estudio
-> 
+>
 > ### 🏗️ Cuerpos Rígidos
-> 
+>
 > - **Regulares**: Centro geométrico = Centro de masa
 > - **Irregulares**: Puede estar fuera del cuerpo físico (ej: boomerang)
-> 
+>
 > ### 💥 Colisiones y Explosiones
-> 
+>
 > - Los objetos individuales cambian velocidad y dirección
 > - El centro de masa mantiene velocidad constante (sin fuerzas externas)
 > - **Ejemplo**: Granada que explota en el aire mantiene trayectoria parabólica en su CM
@@ -80,8 +81,8 @@ dg-publish: true
 ## 🔄 Flujo de Resolución
 
 > [!info] 🛠️ Metodología de Solución
-> 
-> ![[Diagramas/Centro_de_masa_(CM)_02.svg]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Centro_de_masa_(CM)_02.svg]]
 
 ---
 
@@ -91,13 +92,13 @@ dg-publish: true
 >
 
 > [!success] ✅ Solución Paso a Paso
-> 
+>
 > **1. Masa Total**: $$M_{total} = 1 + 2 + 3 = 6\text{ kg}$$
-> 
+>
 > **2. Componente X**: $$x_{CM} = \frac{(1)(1) + (2)(0) + (3)(-1)}{6} = \frac{-2}{6} = -\frac{1}{3}\text{ m}$$
-> 
+>
 > **3. Componente Y**: $$y_{CM} = \frac{(1)(0) + (2)(1) + (3)(-1)}{6} = \frac{-1}{6}\text{ m}$$
-> 
+>
 > **4. Resultado Final**: $$\vec{r}_{CM} = \left(-\frac{1}{3}, -\frac{1}{6}\right)\text{ m}$$
 
 ---
@@ -105,19 +106,19 @@ dg-publish: true
 ## 🔗 Conexiones Temáticas
 
 > [!note] 🌐 Relaciones Conceptuales
-> 
+>
 > ### Conservación del Momentum
-> 
+>
 > - $\vec{P}_{total} = M_{total}\vec{v}_{CM} = \text{constante}$ (sin fuerzas externas)
 > - La velocidad del CM es constante cuando se conserva el momentum
-> 
+>
 > ### [[Leyes de Newton]]
-> 
+>
 > - Segunda Ley aplicada al CM: $\sum \vec{F}_{ext} = M_{total}\vec{a}_{CM}$
 > - Simplificación de sistemas complejos a partícula puntual
-> 
+>
 > ### Dinámica de Sistemas
-> 
+>
 > - Base para análisis de Colisiones
 > - Fundamento de Explosiones y fragmentaciones
 
@@ -126,7 +127,7 @@ dg-publish: true
 ## 📝 Síntesis Clave
 
 > [!summary] 🎯 Puntos Esenciales
-> 
+>
 > - **Definición**: Punto que representa la posición promedio ponderada por masa
 > - **Fórmula Base**: $\vec{r}_{CM} = \frac{\sum m_i \vec{r}_i}{M_{total}}$
 > - **Comportamiento**: Solo afectado por fuerzas externas
@@ -137,9 +138,9 @@ dg-publish: true
 ## 📚 Referencias y Enlaces
 
 > [!quote] 🏷️ Sistema de Organización
-> 
+>
 > ### 🔗 Notas Relacionadas
-> 
+>
 > - [[Momentum Lineal y Su Conservación]]
 > - [[Principios de Conservación de la Energía]]
 > - [[Choques Uni-Bidimensionales]]
@@ -149,10 +150,17 @@ dg-publish: true
 
 ### 📖 Temas Avanzados
 > [!summary]  Para más adelante:
+>
 > - Centro de Masa vs Centro de Gravedad
 > - Sistemas de Referencia del Centro de Masa
 > - Teorema del Eje Paralelo> 
 
-tags
+> [!info] 📌 Temas Avanzados
+>
+> tags
 
-`#fisica` `#mecanica` `#centro-masa` `#dinamica` `#sistemas-particulas` `#momentum`
+> [!info] 📌 Temas Avanzados
+>
+> `#fisica` `#mecanica` `#centro-masa` `#dinamica` `#sistemas-particulas` `#momentum`
+
+**Tags:** #FISG1001 #fisica-mecanica #unidad4 #centro-de-masa-cm

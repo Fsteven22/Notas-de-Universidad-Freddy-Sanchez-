@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [FISG1001, unidad2, fisica-mecanica, dinamica, interacciones-y-fuerzas]
 ---
 
 # 🧲 Interacciones y Fuerzas Par (Acción-Reacción)
@@ -14,7 +15,9 @@ dg-publish: true
 
 ### 🌟 Importancia Conceptual
 
-![[Diagramas/Interacciones_y_Fuerzas_01.svg]]
+> [!note] 🖼️ Importancia Conceptual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Interacciones_y_Fuerzas_01.svg]]
 
 ---
 
@@ -34,7 +37,9 @@ dg-publish: true
 
 ### 🔤 Notación de Subíndices
 
-![[Diagramas/Interacciones_y_Fuerzas_02.svg]]
+> [!note] 🖼️ Notación de Subíndices
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Interacciones_y_Fuerzas_02.svg]]
 
 > [!info] 💡 Notación de Subíndices
 >
@@ -46,11 +51,15 @@ dg-publish: true
 
 ### 📋 Metodología Paso a Paso
 
-![[Diagramas/Interacciones_y_Fuerzas_03.svg]]
+> [!note] 🖼️ Metodología Paso a Paso
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Interacciones_y_Fuerzas_03.svg]]
 
 ### 🧮 Expresión Matemática Fundamental
 
-$$\vec{F}_{A/B} = -\vec{F}_{B/A}$$
+> [!info] 📌 Expresión Matemática Fundamental
+>
+> $$\vec{F}_{A/B} = -\vec{F}_{B/A}$$
 
 > [!info] 💡 Expresión Matemática Fundamental
 >
@@ -66,10 +75,13 @@ $$\vec{F}_{A/B} = -\vec{F}_{B/A}$$
 
 ### 🎯 Concepto Central
 
-![[Diagramas/Interacciones_y_Fuerzas_04.svg]]
+> [!note] 🖼️ Concepto Central
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Interacciones_y_Fuerzas_04.svg]]
 
 ### 🧠 Conceptos Clave
->[!tip] Ten en cuenta las pregunta: 
+> [!tip] Ten en cuenta las pregunta: 
+>
 > **💡 ¿Por qué no se cancelan?**
 >
 >- Las fuerzas del par actúan sobre **objetos diferentes**
@@ -90,11 +102,15 @@ $$\vec{F}_{A/B} = -\vec{F}_{B/A}$$
 
 ### 🚶 Ejemplos Cotidianos
 
-![[Diagramas/Interacciones_y_Fuerzas_05.svg]]
+> [!note] 🖼️ Ejemplos Cotidianos
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Interacciones_y_Fuerzas_05.svg]]
 
 ### 🔍 Análisis Detallado: Caminar
 
-![[Diagramas/Interacciones_y_Fuerzas_06.svg]]
+> [!note] 🖼️ Análisis Detallado: Caminar
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Interacciones_y_Fuerzas_06.svg]]
 
 > [!info] 💡 Análisis Detallado: Caminar
 >
@@ -104,7 +120,9 @@ $$\vec{F}_{A/B} = -\vec{F}_{B/A}$$
 
 ## 🔗 Relaciones con Otros Temas
 
-![[Diagramas/Interacciones_y_Fuerzas_07.svg]]
+> [!note] 🖼️ Relaciones con Otros Temas
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Interacciones_y_Fuerzas_07.svg]]
 
 ---
 
@@ -112,7 +130,9 @@ $$\vec{F}_{A/B} = -\vec{F}_{B/A}$$
 
 ### 📐 Sistema Completo con Múltiples Interacciones
 
-![[Diagramas/Interacciones_y_Fuerzas_08.svg]]
+> [!note] 🖼️ Sistema Completo con Múltiples Interacciones
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Interacciones_y_Fuerzas_08.svg]]
 
 > [!info] 💡 Sistema Completo con Múltiples Interacciones
 >
@@ -128,11 +148,15 @@ $$\vec{F}_{A/B} = -\vec{F}_{B/A}$$
 
 ### 🎯 Principios para DCL Correctos
 
-![[Diagramas/Interacciones_y_Fuerzas_09.svg]]
+> [!note] 🖼️ Principios para DCL Correctos
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Interacciones_y_Fuerzas_09.svg]]
 
 ### 📐 Ejemplo: DCL del Bloque
 
-![[Diagramas/Interacciones_y_Fuerzas_10.svg]]
+> [!note] 🖼️ Ejemplo: DCL del Bloque
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Interacciones_y_Fuerzas_10.svg]]
 
 ---
 
@@ -142,7 +166,9 @@ $$\vec{F}_{A/B} = -\vec{F}_{B/A}$$
 
 #### 📊 Análisis por Eslabones
 
-![[Diagramas/Interacciones_y_Fuerzas_11.svg]]
+> [!note] 🖼️ Análisis por Eslabones
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Interacciones_y_Fuerzas_11.svg]]
 
 > [!info] 📊 Análisis por Eslabones
 >
@@ -157,7 +183,9 @@ $$\vec{F}_{A/B} = -\vec{F}_{B/A}$$
 
 #### 🎯 Identificación de Interacciones
 
-![[Diagramas/Interacciones_y_Fuerzas_12.svg]]
+> [!note] 🖼️ Identificación de Interacciones
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Interacciones_y_Fuerzas_12.svg]]
 
 > [!info] 💡 Identificación de Interacciones
 >
@@ -171,7 +199,9 @@ $$\vec{F}_{A/B} = -\vec{F}_{B/A}$$
 
 #### ⏱️ Instante 1: Empujón Inicial
 
-![[Diagramas/Interacciones_y_Fuerzas_13.svg]]
+> [!note] 🖼️ ️ Instante 1: Empujón Inicial
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Interacciones_y_Fuerzas_13.svg]]
 
 > [!info] 💡 ⏱ Instante 1: Empujón Inicial
 >
@@ -179,7 +209,9 @@ $$\vec{F}_{A/B} = -\vec{F}_{B/A}$$
 
 #### 🔁 Instante 2: Deslizamiento
 
-![[Diagramas/Interacciones_y_Fuerzas_14.svg]]
+> [!note] 🖼️ Instante 2: Deslizamiento
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Interacciones_y_Fuerzas_14.svg]]
 
 > [!info] 💡 Instante 2: Deslizamiento
 >
@@ -187,7 +219,9 @@ $$\vec{F}_{A/B} = -\vec{F}_{B/A}$$
 
 #### 🛑 Instante 3: En Reposo Final
 
-![[Diagramas/Interacciones_y_Fuerzas_15.svg]]
+> [!note] 🖼️ Instante 3: En Reposo Final
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Interacciones_y_Fuerzas_15.svg]]
 
 > [!info] 💡 Instante 3: En Reposo Final
 >
@@ -205,20 +239,26 @@ $$\vec{F}_{A/B} = -\vec{F}_{B/A}$$
 
 ### ✅ Buenas Prácticas
 
-![[Diagramas/Interacciones_y_Fuerzas_16.svg]]
+> [!note] 🖼️ Buenas Prácticas
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Interacciones_y_Fuerzas_16.svg]]
 
 ### ❌ Errores Frecuentes
 
-![[Diagramas/Interacciones_y_Fuerzas_17.svg]]
+> [!note] 🖼️ Errores Frecuentes
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Interacciones_y_Fuerzas_17.svg]]
 
 ---
 
 ## 🧠 Síntesis de Conceptos Clave
->[!tip]
+> [!tip] 🔑 Regla de Oro
+>
 > **🔑 Regla de Oro**: Por cada fuerza que identifiques, busca inmediatamente su par de reacción en el otro objeto.
 
 ### 🌟 Puntos Esenciales para Recordar:
->[!success] Aprendimos: 
+> [!success] Aprendimos: 
+>
 >1. **🧲 Naturaleza dual**: Las fuerzas siempre aparecen en pares
 >2. **👥 Objetos diferentes**: Cada fuerza del par actúa sobre un objeto distinto
 >3. **⚖️ Magnitudes iguales**: $|\vec{F}_{A/B}| = |\vec{F}_{B/A}|$
@@ -230,15 +270,18 @@ $$\vec{F}_{A/B} = -\vec{F}_{B/A}$$
 
 ## 🔗 Enlaces y Referencias
 
-- [[Leyes de Newton]]
-- [[Fuerzas y Diagramas de Cuerpo Libre]]
-- Sistemas de Partículas
-- [[Momentum Lineal y Su Conservación]]
+> [!info] 📌 Enlaces y Referencias
+>
+> - [[Leyes de Newton]]
+> - [[Fuerzas y Diagramas de Cuerpo Libre]]
+> - Sistemas de Partículas
+> - [[Momentum Lineal y Su Conservación]]
 
 ---
 
 ## 📌 Resumen Ejecutivo
 > [!success] ✅ Resumen: fuerzas par (acción-reacción)
+>
 > Las **Fuerzas Par (Acción-Reacción)** establecen que:
 >
 >- 🧲 **Toda fuerza tiene su par**: $\vec{F}_{A/B} = -\vec{F}_{B/A}$
@@ -247,3 +290,5 @@ $$\vec{F}_{A/B} = -\vec{F}_{B/A}$$
 >- 🎯 **Clave metodológica**: Identificar interacciones antes que fuerzas
 >
 >**🌟 Principio fundamental**: Las fuerzas son manifestaciones de interacciones mutuas entre objetos.
+
+**Tags:** #FISG1001 #fisica-mecanica #unidad2 #interacciones-y-fuerzas

@@ -1,0 +1,21 @@
+flowchart TD
+    A["🌟 Sistema Rotacional"]
+    B{"🔍 ¿Torque externo neto = 0?"}
+    C["✅ Momento Angular se Conserva"]
+    D["❌ Momento Angular cambia"]
+    E["📐 L_inicial = L_final"]
+    F["⚖️ Aplicar Segunda Ley Newton"]
+    G["🔄 I₁ω₁ = I₂ω₂"]
+    H["📈 τ = dL/dt"]
+    A --> B
+    B -->|"Sí"| C
+    B -->|"No"| D
+    C --> E
+    D --> F
+    E --> G
+    F --> H
+
+    style A fill:#e1f5fe
+    style C fill:#c8e6c9
+    style D fill:#ffcdd2
+    style G fill:#fff3e0
