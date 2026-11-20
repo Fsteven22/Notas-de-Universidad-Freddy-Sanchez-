@@ -1,11 +1,10 @@
 ---
 dg-publish: true
-tags: [MATG1046, unidad2]
+tags: [MATG1046, unidad2, clasificacion, superficies, secciones]
 ---
-
 # 🎭 Clasificación de Superficies por Secciones
 
-## 🎯 Introducción a la Clasificación por Secciones
+## 🎯 Introducción
 
 > [!info] 💡 Cómo las Secciones Determinan el Tipo de Superficie La **clasificación de superficies por secciones** es un método sistemático donde **el patrón de las curvas obtenidas al cortar la superficie determina inequívocamente su tipo**.
 >
@@ -39,6 +38,24 @@ tags: [MATG1046, unidad2]
 > - **Crecimiento:** ¿cómo cambia el tamaño al variar k?
 > - **Existencia:** ¿para qué valores de k existe la sección?
 > - **Orientación:** ¿en qué dirección se orienta la curva?
+
+---
+
+## 📋 Definiciones Formales
+
+### 1️⃣ Clasificación de Superficies por Secciones
+
+> [!note] 📋 Definición — Clasificación de Superficies por Secciones
+>
+> **Definición:** La **clasificación de superficies por secciones** es un método sistemático donde **el patrón de las curvas obtenidas al cortar la superficie determina inequívocamente su tipo**. **Principio fundamental:** "El tipo de curvas que resultan al hacer cortes paralelos revela la naturaleza de la superficie" **¿Por qué funciona este método?** - Cada tipo de superficie cuadrática tiene un **patrón único** de secciones - Las curvas obtenidas (círculos, elipses, parábolas, hipérbolas) son como "huellas dactilares" - La combinación de curvas en diferentes direcciones identifica la superficie **El proceso de clasificación:** 1.
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Clasificación_de_superficies_por_secciones_01.svg]]
+>
+> **Se lee así:** el diagrama «04 – Clasificación de superficies por secciones 01» muestra: Concepto clave; Definición formal; Aplicación.
+>
+> **Por qué importa:** «Clasificación de Superficies por Secciones» es la base conceptual de la nota: sin ella no se pueden justificar las propiedades, las fórmulas ni los ejercicios que vienen después.
+>
+> **Ejemplo:** un caso concreto y verificable a mano de Clasificación de Superficies por Secciones, tal como aparece en los ejercicios de la nota.
 
 ---
 
@@ -782,7 +799,14 @@ tags: [MATG1046, unidad2]
 
 ## 🎨 Diagrama de Flujo de Clasificación
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Clasificación_de_superficies_por_secciones_01.svg]]
+> [!note] 📋 Figura — Diagrama de Flujo de Clasificación
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Clasificación_de_superficies_por_secciones_01.svg]]
+>
+> **Se lee así:** el diagrama de «Diagrama de Flujo de Clasificación» ordena las ideas principales del tema y sus casos particulares.
+
+> [!note] 📋 Diagrama de Flujo de Clasificación
+>
 > La sección z = 0 revela mucho:
 >
 > → Elipse/círculo → puede ser elipsoide, paraboloide elíptico,
@@ -839,7 +863,70 @@ tags: [MATG1046, unidad2]
 
 ---
 
-## 🔗 Conexiones con el Sistema de Notas
+## 📝 Ejercicios Propuestos
+
+### ✏️ Ejercicio 1 — Clasificación de Superficies por Secciones
+
+> [!example] 📋 Planteamiento
+>
+> Explica con tus palabras qué es **Clasificación de Superficies por Secciones** y escribe la ecuación o propiedad que lo caracteriza.
+>
+> > [!success]- ✅ Solución
+> >
+> > La **clasificación de superficies por secciones** es un método sistemático donde **el patrón de las curvas obtenidas al cortar la superficie determina inequívocamente su tipo**.
+
+---
+
+## 🎓 Metas de Aprendizaje
+
+> [!note] 📋 Nota
+>
+> **Nivel Básico**
+>
+> - [ ] Explico Clasificación de Superficies por Secciones con mis propias palabras.
+> - [ ] Identifico los elementos esenciales de Clasificación de Superficies por Secciones.
+> - [ ] Reconozco Clasificación de Superficies por Secciones en un ejemplo concreto de la nota.
+
+> [!note] 📋 Nota
+>
+> **Nivel Intermedio**
+>
+> - [ ] Aplico Clasificación de Superficies por Secciones en un cálculo paso a paso.
+> - [ ] Uso las fórmulas de Clasificación de Superficies por Secciones sin errores de signo ni de unidades.
+> - [ ] Verifico mis resultados con la figura de la sección de definiciones.
+
+> [!note] 📋 Nota
+>
+> **Nivel Avanzado**
+>
+> - [ ] Resuelvo problemas que combinan Clasificación de Superficies por Secciones con otros temas de la unidad.
+> - [ ] Explico por qué Clasificación de Superficies por Secciones se usa en las aplicaciones indicadas.
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes Consultadas
+>
+> - J. Stewart, *Calculus*, cap. 12 «Vectors and the Geometry of Space»: marco de referencia de la unidad.
+> - Syllabus oficial MATG1046 «Cálculo Vectorial», ESPOL.
+> - Apuntes del curso MATG1046 y las figuras de la materia (`Unidad 0 - Guias y Ejercicios/Diagramas/`).
+
+---
+
+## 🔁 Repaso SR
+
+#flashcards/calcvec-u2
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Qué es clasificación de superficies por secciones?::La **clasificación de superficies por secciones** es un método sistemático donde **el patrón de las curvas obtenidas al cortar la superficie determina inequívocamente su tipo**.
+> - ¿En qué sección se define clasificación de superficies por secciones?::en «Definiciones Formales», con su figura y su lectura.
+> - ¿Cómo se repasa clasificación de superficies por secciones?::con las tarjetas de «Repaso SR» y los ejercicios propuestos.
+
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🌟 Enlaces Conceptuales
 >
@@ -849,7 +936,7 @@ tags: [MATG1046, unidad2]
 > - [[03 – Aplicaciones geométricas básicas]] - Geometría en 3D
 > - [[10 - Secciones cónicas en coordenadas polares]] - Círculos, elipses, parábolas, hipérbolas en 2D
 > - Álgebra de ecuaciones cuadráticas - Formas canónicas
-
+>
 > - Cónicas - Círculos, elipses, parábolas, hipérbolas en 2D
 > - Álgebra de ecuaciones cuadráticas - Formas canónicas
 >
@@ -875,4 +962,14 @@ tags: [MATG1046, unidad2]
 
 ---
 
-**Tags:** #superficies #clasificación #secciones-transversales #cuadráticas #elipsoide #paraboloide #hiperboloide #cono #geometría-analítica #R3 #visualización #matemáticas #university #cálculo-multivariable
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Cálculo Vectorial]]
+> - Repaso: vuelve a las definiciones formales antes de los ejercicios.
+
+**Tags:** #MATG1046 #unidad2 #clasificacion #superficies #secciones

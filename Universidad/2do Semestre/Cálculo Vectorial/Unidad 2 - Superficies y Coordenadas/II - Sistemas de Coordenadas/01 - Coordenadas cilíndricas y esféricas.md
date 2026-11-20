@@ -1,11 +1,10 @@
 ---
 dg-publish: true
-tags: [MATG1046, unidad2]
+tags: [MATG1046, unidad2, coordenadas, cilindricas, esfericas]
 ---
-
 # 🌐 Coordenadas Cilíndricas y Esféricas
 
-## 🎯 Fundamentos de los Sistemas de Coordenadas
+## 🎯 Introducción
 
 > [!info] 💡 Introducción a los Sistemas de Coordenadas Curvilíneos Los **sistemas de coordenadas cilíndricas y esféricas** son extensiones naturales del sistema cartesiano que aprovechan las simetrías geométricas de ciertos problemas. Mientras que las coordenadas cartesianas (x, y, z) son ideales para geometría rectangular, las coordenadas curvilíneas simplifican enormemente problemas con simetría circular o esférica.
 >
@@ -56,6 +55,24 @@ tags: [MATG1046, unidad2]
 >     - No hay simetrías especiales
 >     - Geometría rectangular o cúbica
 >     - Simplifica los cálculos más que curvilíneas
+
+---
+
+## 📋 Definiciones Formales
+
+### 1️⃣ Coordenadas Cilíndricas y Esféricas
+
+> [!note] 📋 Definición — Coordenadas Cilíndricas y Esféricas
+>
+> **Definición:** Los **sistemas de coordenadas cilíndricas y esféricas** son extensiones naturales del sistema cartesiano que aprovechan las simetrías geométricas de ciertos problemas. Mientras que las coordenadas cartesianas (x, y, z) son ideales para geometría rectangular, las coordenadas curvilíneas simplifican enormemente problemas con simetría circular o esférica.
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Integrales_triples_en_coordenadas_cilíndricas_01.svg]]
+>
+> **Se lee así:** el diagrama «Región 3D» muestra: Usar Cilíndricas; Considerar otro sistema; Simplificar integral; Cálculo más fácil.
+>
+> **Por qué importa:** «Coordenadas Cilíndricas y Esféricas» es la base conceptual de la nota: sin ella no se pueden justificar las propiedades, las fórmulas ni los ejercicios que vienen después.
+>
+> **Ejemplo:** un caso concreto y verificable a mano de Coordenadas Cilíndricas y Esféricas, tal como aparece en los ejercicios de la nota.
 
 ---
 
@@ -1282,11 +1299,12 @@ tags: [MATG1046, unidad2]
 >
 > ```
 >
+
 ---
 
-## 🧪 Ejercicios Progresivos
->
-> [!example] 💪 Práctica Graduada
+## 📝 Ejercicios Propuestos
+
+> [!question] 💪 Práctica Graduada
 >
 > **Nivel 1 - Conversiones Básicas:** 🟢
 >
@@ -1383,10 +1401,11 @@ tags: [MATG1046, unidad2]
 >     - Encontrar dimensiones para volumen máximo
 >     - Respuesta: r = R√(2/3), h = 2R/√3
 >
+
 ---
 
 ## 🔬 Operadores Diferenciales
->
+
 > [!note] 📐 Gradiente, Divergencia, Rotacional y Laplaciano
 >
 > ### En Coordenadas Cilíndricas
@@ -1435,12 +1454,13 @@ tags: [MATG1046, unidad2]
 >
 > (Potencial de carga puntual en electrostática)
 >
+
 ---
 
 ## 🎯 Aplicaciones Avanzadas
->
+
 ### 🌌 Física y Electromagnetismo
->
+
 > [!example] ⚡ Problemas Físicos Clásicos
 >
 > **1. Ecuación de Laplace en cilíndricas:**
@@ -1499,7 +1519,7 @@ tags: [MATG1046, unidad2]
 > Campo uniforme dentro, nulo fuera
 >
 ### 🛰️ Mecánica Orbital
->
+
 > [!tip] 🌍 Movimiento de Satélites
 >
 > **Ecuación de órbita en coordenadas esféricas:**
@@ -1535,7 +1555,7 @@ tags: [MATG1046, unidad2]
 > donde a = semieje mayor
 >
 ### 🌊 Mecánica de Fluidos
->
+
 > [!warning] 💧 Flujo en Coordenadas Curvilíneas
 >
 > **1. Flujo de Poiseuille (tubería cilíndrica):**
@@ -1572,10 +1592,11 @@ tags: [MATG1046, unidad2]
 > $$\frac{\partial v_r}{\partial t} + v_r\frac{\partial v_r}{\partial r} + \frac{v_\theta}{r}\frac{\partial v_r}{\partial\theta} + v_z\frac{\partial v_r}{\partial z} - \frac{v_\theta^2}{r}$$
 > $$= -\frac{1}{\rho}\frac{\partial p}{\partial r} + \nu\left[\nabla^2v_r - \frac{v_r}{r^2} - \frac{2}{r^2}\frac{\partial v_\theta}{\partial\theta}\right]$$
 >
+
 ---
 
 ## 📚 Problemas Desafiantes
->
+
 > [!example] 🏆 Desafíos Avanzados
 >
 > **Desafío 1 - Transformación de integrales:**
@@ -1621,60 +1642,38 @@ tags: [MATG1046, unidad2]
 >
 > **Respuesta:** 4πR⁴
 >
+
 ---
 
-## 🌐 Conexiones Conceptuales
->
-> [!quote] 🔗 Enlaces con Otros Temas
->
-> **Prerequisitos:**
-> - [[02 - Coordenadas polares]] - Base para cilíndricas
-> - [[02 - Vectores en R3]] - Vectores unitarios y bases
-> - Trigonometría - Funciones circulares
-> - Cálculo Integral - Integrales múltiples
-> - [[2do Semestre/Cálculo Vectorial/Unidad 5 - Línea e Integrales Dobles/VI – Cambio de Variables en Integrales Dobles/03 – Teorema de cambio de variables.md]] - Jacobiano
->
-> **Temas relacionados:**
-> - [[03 - Superficies de revolución]] - Naturales en cilíndricas/esféricas
-> - [[01 - Distancias en ℝ³]] - Métricas en diferentes sistemas
-> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/I - Fundamentos/02 - Espacio Vectorial.md]] - Rotacional en curvilíneas
-> - [[01 – Integrales múltiples]] - Aplicaciones de coordenadas
->
-> **Aplicaciones directas:**
-> - Ecuaciones Diferenciales Parciales - Separación de variables
-> - Mecánica Clásica - Lagrangiano en coordenadas generalizadas
-> - Electromagnetismo - Simetrías de campos
-> - [[08 – Teorema espectral]] - Átomo de hidrógeno
-> - [[Momentum Lineal y Su Conservación]] - Operadores diferenciales
->
-> **Temas avanzados:**
-> - [[01 - Longitud de Curva]] - Variedades y métricas
-> - Relatividad General - Coordenadas curvilíneas en espacio-tiempo
-> - Teoría de Campos - Lagrangianos en diferentes coordenadas
-> - Elementos Finitos - Mallados en coordenadas naturales
->
-> **Aplicaciones interdisciplinarias:**
-> - Física - Problemas con simetría
-> - [[05 - Ingeniería Social y Fraudes en Línea]] - Diseño de componentes axisimétricos
-> - Astronomía - Coordenadas celestes
-> - Geofísica - Coordenadas geográficas
+## 🎓 Metas de Aprendizaje
 
-> - Física - Problemas con simetría
-> - Ingeniería - Diseño de componentes axisimétricos
-> - Astronomía - Coordenadas celestes
-> - Geofísica - Coordenadas geográficas
-> - [[05 – Proceso de Gram-Schmidt]] - Mapeo de texturas
-> - Gráficos por Computadora - Mapeo de texturas
+> [!note] 📋 Nota
 >
+> **Nivel Básico**
 >
+> - [ ] Explico Coordenadas Cilíndricas y Esféricas con mis propias palabras.
+> - [ ] Identifico los elementos esenciales de Coordenadas Cilíndricas y Esféricas.
+> - [ ] Reconozco Coordenadas Cilíndricas y Esféricas en un ejemplo concreto de la nota.
+
+> [!note] 📋 Nota
 >
+> **Nivel Intermedio**
 >
+> - [ ] Aplico Coordenadas Cilíndricas y Esféricas en un cálculo paso a paso.
+> - [ ] Uso las fórmulas de Coordenadas Cilíndricas y Esféricas sin errores de signo ni de unidades.
+> - [ ] Verifico mis resultados con la figura de la sección de definiciones.
+
+> [!note] 📋 Nota
 >
+> **Nivel Avanzado**
 >
+> - [ ] Resuelvo problemas que combinan Coordenadas Cilíndricas y Esféricas con otros temas de la unidad.
+> - [ ] Explico por qué Coordenadas Cilíndricas y Esféricas se usa en las aplicaciones indicadas.
+
 ---
 
 ## 💡 Consejos de Estudio
->
+
 > [!tip] 🧠 Estrategias de Aprendizaje
 >
 > **Para elegir el sistema correcto:**
@@ -1740,10 +1739,11 @@ tags: [MATG1046, unidad2]
 > 10. **Verificar dimensiones:** El resultado debe tener unidades correctas
 > 11. **Casos límite:** Verificar resultados conocidos (esfera, cilindro, etc.)
 >
+
 ---
 
-## 📊 Tabla de Referencia Rápida
->
+## 📚 Referencias
+
 > [!abstract] 📋 Fórmulas Esenciales
 >
 > ### Conversiones Directas
@@ -1787,10 +1787,11 @@ tags: [MATG1046, unidad2]
 > |**Divergencia**|∇·**F** = (1/ρ²)∂(ρ²F_ρ)/∂ρ + (1/ρsinφ)∂(sinφF_φ)/∂φ + (1/ρsinφ)∂F_θ/∂θ|
 > |**Laplaciano**|∇²f = (1/ρ²)∂/∂ρ(ρ²∂f/∂ρ) + (1/ρ²sinφ)∂/∂φ(sinφ∂f/∂φ) + (1/ρ²sin²φ)∂²f/∂θ²|
 >
+
 ---
 
 ## 🎓 Aplicaciones en Ingeniería
->
+
 > [!example] 🔧 Casos de Ingeniería Práctica
 >
 > **1. Diseño de Antenas**
@@ -2035,10 +2036,11 @@ tags: [MATG1046, unidad2]
 > plt.show()
 > ```
 >
+
 ---
 
 ## 🌟 Sistemas de Coordenadas Generalizados
->
+
 > [!info] 🔵 Extensión a Coordenadas Arbitrarias
 >
 > **Coordenadas curvilíneas generales (u₁, u₂, u₃):**
@@ -2080,10 +2082,11 @@ tags: [MATG1046, unidad2]
 > |Esférico|1|ρ|ρ sin φ|ρ² sin φ|
 > |Elíptico|√(a²sinh²μ + b²sin²ν)|...|...|...|
 >
+
 ---
 
 ## 🎬 Animaciones y Visualizaciones Dinámicas
->
+
 > [!tip] 🎥 Crear Visualizaciones Interactivas
 >
 > ```python
@@ -2192,10 +2195,11 @@ tags: [MATG1046, unidad2]
 > plt.show()
 > ```
 >
+
 ---
 
 ## 📝 Resumen Final
->
+
 > [!abstract] 🎓 Puntos Clave para Recordar
 >
 > ### Conceptos Fundamentales
@@ -2256,4 +2260,78 @@ tags: [MATG1046, unidad2]
 
 ---
 
-**Tags:** #coordenadas-curvilíneas #cilíndricas #esféricas #transformaciones #jacobiano #integrales-múltiples #simetría #análisis-vectorial #física #ingeniería #operadores-diferenciales #university #mathematics #R3
+
+---
+
+## 🔁 Repaso SR
+
+#flashcards/calcvec-u2
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Qué es coordenadas cilíndricas y esféricas?::Los **sistemas de coordenadas cilíndricas y esféricas** son extensiones naturales del sistema cartesiano que aprovechan las simetrías geométricas de ciertos problemas.
+> - ¿En qué sección se define coordenadas cilíndricas y esféricas?::en «Definiciones Formales», con su figura y su lectura.
+> - ¿Cómo se repasa coordenadas cilíndricas y esféricas?::con las tarjetas de «Repaso SR» y los ejercicios propuestos.
+
+---
+
+## 🔗 Conexiones
+
+> [!quote] 🔗 Enlaces con Otros Temas
+>
+> **Prerequisitos:**
+> - [[02 - Coordenadas polares]] - Base para cilíndricas
+> - [[02 - Vectores en R3]] - Vectores unitarios y bases
+> - Trigonometría - Funciones circulares
+> - Cálculo Integral - Integrales múltiples
+> - [[2do Semestre/Cálculo Vectorial/Unidad 5 - Línea e Integrales Dobles/VI – Cambio de Variables en Integrales Dobles/03 – Teorema de cambio de variables.md]] - Jacobiano
+>
+> **Temas relacionados:**
+> - [[03 - Superficies de revolución]] - Naturales en cilíndricas/esféricas
+> - [[01 - Distancias en ℝ³]] - Métricas en diferentes sistemas
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/I - Fundamentos/02 - Espacio Vectorial.md]] - Rotacional en curvilíneas
+> - [[01 – Integrales múltiples]] - Aplicaciones de coordenadas
+>
+> **Aplicaciones directas:**
+> - Ecuaciones Diferenciales Parciales - Separación de variables
+> - Mecánica Clásica - Lagrangiano en coordenadas generalizadas
+> - Electromagnetismo - Simetrías de campos
+> - [[08 – Teorema espectral]] - Átomo de hidrógeno
+> - [[Momentum Lineal y Su Conservación]] - Operadores diferenciales
+>
+> **Temas avanzados:**
+> - [[01 - Longitud de Curva]] - Variedades y métricas
+> - Relatividad General - Coordenadas curvilíneas en espacio-tiempo
+> - Teoría de Campos - Lagrangianos en diferentes coordenadas
+> - Elementos Finitos - Mallados en coordenadas naturales
+>
+> **Aplicaciones interdisciplinarias:**
+> - Física - Problemas con simetría
+> - [[05 - Ingeniería Social y Fraudes en Línea]] - Diseño de componentes axisimétricos
+> - Astronomía - Coordenadas celestes
+> - Geofísica - Coordenadas geográficas
+>
+> - Física - Problemas con simetría
+> - Ingeniería - Diseño de componentes axisimétricos
+> - Astronomía - Coordenadas celestes
+> - Geofísica - Coordenadas geográficas
+> - [[05 – Proceso de Gram-Schmidt]] - Mapeo de texturas
+> - Gráficos por Computadora - Mapeo de texturas
+>
+>
+>
+>
+>
+>
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Cálculo Vectorial]]
+> - Siguiente: [[02 - Transformaciones entre Coordenadas]].
+> - Repaso: vuelve a las definiciones formales antes de los ejercicios.
+
+**Tags:** #MATG1046 #unidad2 #coordenadas #cilindricas #esfericas

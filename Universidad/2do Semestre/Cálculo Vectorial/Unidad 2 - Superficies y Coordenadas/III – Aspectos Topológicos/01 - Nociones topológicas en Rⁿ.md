@@ -1,11 +1,10 @@
 ---
 dg-publish: true
-tags: [MATG1046, unidad2]
+tags: [MATG1046, unidad2, nociones, topologicas, nociones-topologicas]
 ---
-
 # 🌐 Nociones Topológicas en ℝⁿ
 
-## 🎯 Fundamentos de Topología en Espacios Euclidianos
+## 🎯 Introducción
 
 > [!info] 💡 Introducción a la Topología de ℝⁿ La **topología** es la rama de las matemáticas que estudia las propiedades de los espacios que se preservan bajo deformaciones continuas. En ℝⁿ, la topología proporciona un marco riguroso para conceptos intuitivos como "cercanía", "continuidad" y "límite".
 >
@@ -32,14 +31,19 @@ tags: [MATG1046, unidad2]
 > - Base para geometría diferencial y análisis funcional
 > - Aplicaciones en optimización, física matemática, y ciencia de datos
 
-
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Nociones_topologicas_en_Rn.svg]]
+> [!note] 📋 Figura — Introducción
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Nociones_topologicas_en_Rn.svg]]
+>
+> **Se lee así:** el diagrama de «Introducción» ordena las ideas principales del tema y sus casos particulares.
 
 ### 📊 Jerarquía de Conceptos
 
 > [!note] 🌟 Estructura de Ideas Topológicas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Nociones_topológicas_en_Rⁿ_01.svg]]
+>
+> **Se lee así:** el diagrama «ℝⁿ con métrica euclidiana» muestra: Bolas abiertas; Conjuntos abiertos; Conjuntos cerrados; Interior de un conjunto.
 >
 > **Niveles de abstracción:**
 >
@@ -50,6 +54,24 @@ tags: [MATG1046, unidad2]
 > |2|**Abiertos**|Uniones arbitrarias de bolas|
 > |3|**Topología**|Colección de abiertos|
 > |4|**Propiedades**|Compacidad, conexidad, etc.|
+
+---
+
+## 📋 Definiciones Formales
+
+### 1️⃣ Nociones Topológicas en ℝⁿ
+
+> [!note] 📋 Definición — Nociones Topológicas en ℝⁿ
+>
+> **Definición:** La **topología** es la rama de las matemáticas que estudia las propiedades de los espacios que se preservan bajo deformaciones continuas. En ℝⁿ, la topología proporciona un marco riguroso para conceptos intuitivos como "cercanía", "continuidad" y "límite".
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Nociones_topologicas_en_Rn.svg]]
+>
+> **Se lee así:** el diagrama «Nociones topológicas en Rⁿ» muestra: Bola abierta: B(P, r) = {Q : |PQ| < r}; Punto interior, exterior, frontera; Conjunto abierto, cerrado; Conjunto acotado y cerrado = compacto.
+>
+> **Por qué importa:** «Nociones Topológicas en ℝⁿ» es la base conceptual de la nota: sin ella no se pueden justificar las propiedades, las fórmulas ni los ejercicios que vienen después.
+>
+> **Ejemplo:** un caso concreto y verificable a mano de Nociones Topológicas en ℝⁿ, tal como aparece en los ejercicios de la nota.
 
 ---
 
@@ -1635,9 +1657,9 @@ tags: [MATG1046, unidad2]
 
 ---
 
-## 🧪 Ejercicios Progresivos
+## 📝 Ejercicios Propuestos
 
-> [!example] 💪 Práctica Graduada
+> [!question] 💪 Práctica Graduada
 >
 > **Nivel 1 - Conceptos Básicos:** 🟢
 >
@@ -1746,7 +1768,56 @@ tags: [MATG1046, unidad2]
 
 ---
 
-## 🌐 Conexiones Conceptuales
+## 🎓 Metas de Aprendizaje
+
+> [!note] 📋 Nota
+>
+> **Nivel Básico**
+>
+> - [ ] Explico Nociones Topológicas en ℝⁿ con mis propias palabras.
+> - [ ] Identifico los elementos esenciales de Nociones Topológicas en ℝⁿ.
+> - [ ] Reconozco Nociones Topológicas en ℝⁿ en un ejemplo concreto de la nota.
+
+> [!note] 📋 Nota
+>
+> **Nivel Intermedio**
+>
+> - [ ] Aplico Nociones Topológicas en ℝⁿ en un cálculo paso a paso.
+> - [ ] Uso las fórmulas de Nociones Topológicas en ℝⁿ sin errores de signo ni de unidades.
+> - [ ] Verifico mis resultados con la figura de la sección de definiciones.
+
+> [!note] 📋 Nota
+>
+> **Nivel Avanzado**
+>
+> - [ ] Resuelvo problemas que combinan Nociones Topológicas en ℝⁿ con otros temas de la unidad.
+> - [ ] Explico por qué Nociones Topológicas en ℝⁿ se usa en las aplicaciones indicadas.
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes Consultadas
+>
+> - J. Stewart, *Calculus*, cap. 12 «Vectors and the Geometry of Space»: marco de referencia de la unidad.
+> - Syllabus oficial MATG1046 «Cálculo Vectorial», ESPOL.
+> - Apuntes del curso MATG1046 y las figuras de la materia (`Unidad 0 - Guias y Ejercicios/Diagramas/`).
+
+---
+
+## 🔁 Repaso SR
+
+#flashcards/calcvec-u2
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Qué es nociones topológicas en ℝⁿ?::La **topología** es la rama de las matemáticas que estudia las propiedades de los espacios que se preservan bajo deformaciones continuas.
+> - ¿En qué sección se define nociones topológicas en ℝⁿ?::en «Definiciones Formales», con su figura y su lectura.
+> - ¿Cómo se repasa nociones topológicas en ℝⁿ?::con las tarjetas de «Repaso SR» y los ejercicios propuestos.
+
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🔗 Enlaces con Otros Temas
 >
@@ -1777,7 +1848,7 @@ tags: [MATG1046, unidad2]
 > - [[01 - Longitud de Curva]] - Variedades topológicas
 > - Topología General - Espacios abstractos
 > - [[05 - Análisis de Algoritmos II - Pseudocódigo y Tiempo Real]] - Teoría de la medida
-
+>
 > - Topología General - Espacios abstractos
 > - Análisis Real - Teoría de la medida
 >
@@ -1789,4 +1860,13 @@ tags: [MATG1046, unidad2]
 > - Biología - Morfología topológica
 
 
-**Tags:** #MATG1046 #unidad2 #calculo-vectorial
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Cálculo Vectorial]]
+> - Repaso: vuelve a las definiciones formales antes de los ejercicios.
+
+**Tags:** #MATG1046 #unidad2 #nociones #topologicas #nociones-topologicas

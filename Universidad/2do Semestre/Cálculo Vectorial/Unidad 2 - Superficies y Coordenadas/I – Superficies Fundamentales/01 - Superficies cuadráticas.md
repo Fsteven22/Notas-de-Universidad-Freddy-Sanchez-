@@ -1,11 +1,10 @@
 ---
 dg-publish: true
-tags: [MATG1046, unidad2]
+tags: [MATG1046, unidad2, superficies, cuadraticas, superficies-cuadraticas]
 ---
-
 # 📐 Superficies Cuadráticas
 
-## 🎯 Fundamentos de las Superficies Cuadráticas
+## 🎯 Introducción
 
 > [!info] 💡 Introducción a las Superficies de Segundo Grado Las **superficies cuadráticas** son superficies tridimensionales definidas por ecuaciones polinómicas de segundo grado en las variables x, y, z. Constituyen una extensión natural de las cónicas (elipse, hipérbola, parábola) al espacio tridimensional y son fundamentales en geometría analítica, física, ingeniería y computación gráfica.
 >
@@ -23,8 +22,11 @@ tags: [MATG1046, unidad2]
 > - **Euler (1748):** Clasificación de superficies cuadráticas
 > - **Monge (1795):** Geometría descriptiva y superficies
 
-
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Superficies_cuadraticas.svg]]
+> [!note] 📋 Figura — Introducción
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Superficies_cuadraticas.svg]]
+>
+> **Se lee así:** el diagrama de «Introducción» ordena las ideas principales del tema y sus casos particulares.
 
 ### 📊 Ecuación General de una Cuádrica
 
@@ -44,6 +46,24 @@ tags: [MATG1046, unidad2]
 > **Simplificación mediante transformaciones:** Mediante rotaciones y traslaciones adecuadas del sistema de coordenadas, toda superficie cuádrica puede reducirse a una **forma canónica** donde los términos cruzados desaparecen:
 >
 > $$Ax^2 + By^2 + Cz^2 + Gx + Hy + Iz + J = 0$$
+
+---
+
+## 📋 Definiciones Formales
+
+### 1️⃣ Superficies Cuadráticas
+
+> [!note] 📋 Definición — Superficies Cuadráticas
+>
+> **Definición:** Las **superficies cuadráticas** son superficies tridimensionales definidas por ecuaciones polinómicas de segundo grado en las variables x, y, z. Constituyen una extensión natural de las cónicas (elipse, hipérbola, parábola) al espacio tridimensional y son fundamentales en geometría analítica, física, ingeniería y computación gráfica.
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Superficies_cuadraticas.svg]]
+>
+> **Se lee así:** el diagrama «Superficies cuadráticas» muestra: Elipsoide: x²/a² + y²/b² + z²/c² = 1; Hiperboloide de una hoja: x²/a² + y²/b² - z²/c² = 1; Hiperboloide de dos hojas: -x²/a² - y²/b² + z²/c² = 1; Paraboloide elíptico: z = x²/a² + y²/b².
+>
+> **Por qué importa:** «Superficies Cuadráticas» es la base conceptual de la nota: sin ella no se pueden justificar las propiedades, las fórmulas ni los ejercicios que vienen después.
+>
+> **Ejemplo:** un caso concreto y verificable a mano de Superficies Cuadráticas, tal como aparece en los ejercicios de la nota.
 
 ---
 
@@ -1019,9 +1039,9 @@ tags: [MATG1046, unidad2]
 
 ---
 
-## 🧪 Ejercicios Progresivos
+## 📝 Ejercicios Propuestos
 
-> [!example] 💪 Práctica Graduada
+> [!question] 💪 Práctica Graduada
 >
 > **Nivel 1 - Identificación Básica:** 🟢
 >
@@ -1111,7 +1131,56 @@ tags: [MATG1046, unidad2]
 
 ---
 
-## 📚 Conexiones Conceptuales
+## 🎓 Metas de Aprendizaje
+
+> [!note] 📋 Nota
+>
+> **Nivel Básico**
+>
+> - [ ] Explico Superficies Cuadráticas con mis propias palabras.
+> - [ ] Identifico los elementos esenciales de Superficies Cuadráticas.
+> - [ ] Reconozco Superficies Cuadráticas en un ejemplo concreto de la nota.
+
+> [!note] 📋 Nota
+>
+> **Nivel Intermedio**
+>
+> - [ ] Aplico Superficies Cuadráticas en un cálculo paso a paso.
+> - [ ] Uso las fórmulas de Superficies Cuadráticas sin errores de signo ni de unidades.
+> - [ ] Verifico mis resultados con la figura de la sección de definiciones.
+
+> [!note] 📋 Nota
+>
+> **Nivel Avanzado**
+>
+> - [ ] Resuelvo problemas que combinan Superficies Cuadráticas con otros temas de la unidad.
+> - [ ] Explico por qué Superficies Cuadráticas se usa en las aplicaciones indicadas.
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes Consultadas
+>
+> - J. Stewart, *Calculus*, cap. 12 «Vectors and the Geometry of Space»: marco de referencia de la unidad.
+> - Syllabus oficial MATG1046 «Cálculo Vectorial», ESPOL.
+> - Apuntes del curso MATG1046 y las figuras de la materia (`Unidad 0 - Guias y Ejercicios/Diagramas/`).
+
+---
+
+## 🔁 Repaso SR
+
+#flashcards/calcvec-u2
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Qué es superficies cuadráticas?::Las **superficies cuadráticas** son superficies tridimensionales definidas por ecuaciones polinómicas de segundo grado en las variables x, y, z.
+> - ¿En qué sección se define superficies cuadráticas?::en «Definiciones Formales», con su figura y su lectura.
+> - ¿Cómo se repasa superficies cuadráticas?::con las tarjetas de «Repaso SR» y los ejercicios propuestos.
+
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🔗 Enlaces con Otros Temas
 >
@@ -1122,7 +1191,7 @@ tags: [MATG1046, unidad2]
 > - [[02 - Vectores en R3]] - Vectores normales y tangentes
 > - [[04 – Funciones vectoriales de variable vectorial]] - Para cálculos de área
 > - [[10 - Secciones cónicas en coordenadas polares]] - Base bidimensional
-
+>
 > - Ecuación de la recta en ℝ³ - Para entender generatrices
 > - [[2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/III – Rectas y Planos/02 - Relación recta–plano.md]] - Para secciones planas
 > - [[02 - Vectores en R3]] - Vectores normales y tangentes
@@ -1155,7 +1224,11 @@ tags: [MATG1046, unidad2]
 
 ## 📊 Diagrama Conceptual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Superficies_cuadráticas_01.svg]]
+> [!note] 📋 Figura — Diagrama Conceptual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Superficies_cuadráticas_01.svg]]
+>
+> **Se lee así:** el diagrama de «Diagrama Conceptual» ordena las ideas principales del tema y sus casos particulares.
 
 ---
 
@@ -1571,6 +1644,15 @@ tags: [MATG1046, unidad2]
 
 ---
 
-**Tags:** #geometría-analítica #superficies-cuadráticas #elipsoide #hiperboloide #paraboloide #cono #secciones-planas #ecuaciones-canónicas #algebra-lineal #valores-propios #geometría-3d #visualización #university #mathematics #R3
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Cálculo Vectorial]]
+> - Siguiente: [[02 - Superficies cilíndricas]].
+> - Repaso: vuelve a las definiciones formales antes de los ejercicios.
+
+**Tags:** #MATG1046 #unidad2 #superficies #cuadraticas #superficies-cuadraticas

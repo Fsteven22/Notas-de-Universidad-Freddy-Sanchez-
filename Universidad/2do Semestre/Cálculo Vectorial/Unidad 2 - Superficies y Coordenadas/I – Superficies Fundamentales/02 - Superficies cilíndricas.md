@@ -1,11 +1,10 @@
 ---
 dg-publish: true
-tags: [MATG1046, unidad2]
+tags: [MATG1046, unidad2, superficies, cilindricas, superficies-cilindricas]
 ---
-
 # 🏛️ Superficies Cilíndricas
 
-## 🎯 Fundamentos de las Superficies Cilíndricas
+## 🎯 Introducción
 
 > [!info] 💡 Introducción a las Superficies Cilíndricas Las **superficies cilíndricas** son superficies generadas por una recta (llamada generatriz) que se mueve paralelamente a sí misma a lo largo de una curva (llamada directriz). Estas superficies tienen la característica especial de que su ecuación en ℝ³ involucra solo dos de las tres coordenadas cartesianas.
 >
@@ -23,26 +22,13 @@ tags: [MATG1046, unidad2]
 > - **Descartes (1637):** Ecuaciones algebraicas de superficies
 > - **Monge (1795):** Geometría descriptiva y proyecciones
 
-
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Superficies_cilindricas.svg]]
+> [!note] 📋 Figura — Introducción
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Superficies_cilindricas.svg]]
+>
+> **Se lee así:** el diagrama de «Introducción» ordena las ideas principales del tema y sus casos particulares.
 
 ### 📐 Definición Formal
-
-> [!note] 🌟 Concepto Matemático **Definición:** Una **superficie cilíndrica** es el conjunto de todas las rectas paralelas a una dirección fija que pasan por una curva dada.
->
-> **Componentes:**
->
-> - **Directriz (C):** Curva que determina la forma de la sección transversal
-> - **Generatriz (L):** Recta que se mueve paralelamente a una dirección fija
-> - **Eje:** Dirección paralela a todas las generatrices
->
-> **Característica algebraica:** Si la directriz está en un plano y las generatrices son paralelas al eje que falta, la ecuación tiene la forma:
->
-> - Eje paralelo a **Z:** f(x, y) = 0
-> - Eje paralelo a **Y:** g(x, z) = 0
-> - Eje paralelo a **X:** h(y, z) = 0
->
-> **Propiedad fundamental:** La ecuación de una superficie cilíndrica **no contiene** una de las tres variables x, y, o z. Esta variable ausente indica la dirección del eje del cilindro.
 
 ### 🔍 Generación de Superficies Cilíndricas
 
@@ -65,11 +51,37 @@ tags: [MATG1046, unidad2]
 
 ---
 
-## 🔵 Cilindro Circular
+## 📋 Definiciones Formales
 
-### 📏 Definición y Ecuación
+### 1️⃣ Formal
 
-> [!success] 🟢 Cilindro Circular Básico **Definición:** Un **cilindro circular** es una superficie cilíndrica cuya directriz es una circunferencia.
+> [!note] 📋 Definición — Formal
+>
+> **Componentes:**
+>
+> - **Directriz (C):** Curva que determina la forma de la sección transversal
+> - **Generatriz (L):** Recta que se mueve paralelamente a una dirección fija
+> - **Eje:** Dirección paralela a todas las generatrices
+>
+> **Característica algebraica:** Si la directriz está en un plano y las generatrices son paralelas al eje que falta, la ecuación tiene la forma:
+>
+> - Eje paralelo a **Z:** f(x, y) = 0
+> - Eje paralelo a **Y:** g(x, z) = 0
+> - Eje paralelo a **X:** h(y, z) = 0
+>
+> **Propiedad fundamental:** La ecuación de una superficie cilíndrica **no contiene** una de las tres variables x, y, o z. Esta variable ausente indica la dirección del eje del cilindro.
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Superficies_cilindricas.svg]]
+>
+> **Se lee así:** el diagrama «Superficies cilíndricas» muestra: Generatriz paralela a un eje fijo; Directriz: curva en plano perpendicular; Ejemplo: x² + y² = r² (cilindro circular).
+>
+> **Por qué importa:** «Formal» es la base conceptual de la nota: sin ella no se pueden justificar las propiedades, las fórmulas ni los ejercicios que vienen después.
+>
+> **Ejemplo:** un caso concreto y verificable a mano de Formal, tal como aparece en los ejercicios de la nota.
+
+### 2️⃣ Cilindro Circular Básico
+
+> [!note] 📋 Definición — Cilindro Circular Básico
 >
 > **Ecuación canónica (eje paralelo a Z):** $$x^2 + y^2 = r^2$$
 >
@@ -87,6 +99,170 @@ tags: [MATG1046, unidad2]
 >
 > - **Eje paralelo a Y:** $x^2 + z^2 = r^2$
 > - **Eje paralelo a X:** $y^2 + z^2 = r^2$
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Superficies_cilindricas.svg]]
+>
+> **Se lee así:** el diagrama «Superficies cilíndricas» muestra: Generatriz paralela a un eje fijo; Directriz: curva en plano perpendicular; Ejemplo: x² + y² = r² (cilindro circular).
+>
+> **Por qué importa:** «Cilindro Circular Básico» es la base conceptual de la nota: sin ella no se pueden justificar las propiedades, las fórmulas ni los ejercicios que vienen después.
+>
+> **Ejemplo:** un caso concreto y verificable a mano de Cilindro Circular Básico, tal como aparece en los ejercicios de la nota.
+
+### 3️⃣ Cilindro con Sección Elíptica
+
+> [!note] 📋 Definición — Cilindro con Sección Elíptica
+>
+> **Ecuación canónica (eje paralelo a Z):** $$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$$
+>
+> donde $a, b > 0$ son los **semiejes** de la elipse directriz.
+>
+> **Características:**
+>
+> - Si $a = b$: Se reduce a un cilindro circular de radio $r = a$
+> - Si $a > b$: Elipse alargada en dirección x
+> - Si $b > a$: Elipse alargada en dirección y
+> - La variable z no aparece en la ecuación
+>
+> **Directriz:** Elipse $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ en el plano z = 0
+>
+> **Ecuaciones para otros ejes:**
+>
+> - **Eje paralelo a Y:** $\frac{x^2}{a^2} + \frac{z^2}{c^2} = 1$
+> - **Eje paralelo a X:** $\frac{y^2}{b^2} + \frac{z^2}{c^2} = 1$
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Superficies_cilindricas.svg]]
+>
+> **Se lee así:** el diagrama «Superficies cilíndricas» muestra: Generatriz paralela a un eje fijo; Directriz: curva en plano perpendicular; Ejemplo: x² + y² = r² (cilindro circular).
+>
+> **Por qué importa:** «Cilindro con Sección Elíptica» es la base conceptual de la nota: sin ella no se pueden justificar las propiedades, las fórmulas ni los ejercicios que vienen después.
+>
+> **Ejemplo:** un caso concreto y verificable a mano de Cilindro con Sección Elíptica, tal como aparece en los ejercicios de la nota.
+
+### 4️⃣ Cilindro con Directriz Parabólica
+
+> [!note] 📋 Definición — Cilindro con Directriz Parabólica
+>
+> **Ecuación canónica (eje paralelo a Z):** $$y = ax^2$$ o equivalentemente: $$x^2 = \frac{y}{a}$$
+>
+> donde $a \neq 0$ es el parámetro que determina la "abertura" de la parábola.
+>
+> **Formas alternativas:**
+>
+> - **Parábola en dirección y:** $x = ay^2$ o $y^2 = \frac{x}{a}$
+> - **Eje paralelo a Y:** $x^2 = az$ o $z = ax^2$
+> - **Eje paralelo a X:** $y^2 = az$ o $z = ay^2$
+>
+> **Características:**
+>
+> - La superficie es **ilimitada** en la dirección de la parábola
+> - Todas las secciones perpendiculares al eje son parábolas congruentes
+> - No tiene centro de simetría (solo eje y plano de simetría)
+>
+> **Directriz:** Parábola $y = ax^2$ en el plano z = 0
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Superficies_cilindricas.svg]]
+>
+> **Se lee así:** el diagrama «Superficies cilíndricas» muestra: Generatriz paralela a un eje fijo; Directriz: curva en plano perpendicular; Ejemplo: x² + y² = r² (cilindro circular).
+>
+> **Por qué importa:** «Cilindro con Directriz Parabólica» es la base conceptual de la nota: sin ella no se pueden justificar las propiedades, las fórmulas ni los ejercicios que vienen después.
+>
+> **Ejemplo:** un caso concreto y verificable a mano de Cilindro con Directriz Parabólica, tal como aparece en los ejercicios de la nota.
+
+### 5️⃣ Cilindro con Directriz Hiperbólica
+
+> [!note] 📋 Definición — Cilindro con Directriz Hiperbólica
+>
+> **Ecuación canónica (eje paralelo a Z):** $$\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$$
+>
+> donde $a, b > 0$ son constantes que determinan la forma de la hipérbola.
+>
+> **Forma alternativa:** $$\frac{y^2}{b^2} - \frac{x^2}{a^2} = 1$$
+>
+> (hipérbola con ramas en dirección y)
+>
+> **Características:**
+>
+> - La superficie consta de **dos ramas** separadas (excepto en el caso degenerado)
+> - Tiene **asíntotas cilíndricas:** $\frac{x}{a} \pm \frac{y}{b} = 0$
+> - La variable z no aparece en la ecuación
+>
+> **Directriz:** Hipérbola $\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$ en el plano z = 0
+>
+> **Ecuaciones para otros ejes:**
+>
+> - **Eje paralelo a Y:** $\frac{x^2}{a^2} - \frac{z^2}{c^2} = 1$
+> - **Eje paralelo a X:** $\frac{y^2}{b^2} - \frac{z^2}{c^2} = 1$
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Superficies_cilindricas.svg]]
+>
+> **Se lee así:** el diagrama «Superficies cilíndricas» muestra: Generatriz paralela a un eje fijo; Directriz: curva en plano perpendicular; Ejemplo: x² + y² = r² (cilindro circular).
+>
+> **Por qué importa:** «Cilindro con Directriz Hiperbólica» es la base conceptual de la nota: sin ella no se pueden justificar las propiedades, las fórmulas ni los ejercicios que vienen después.
+>
+> **Ejemplo:** un caso concreto y verificable a mano de Cilindro con Directriz Hiperbólica, tal como aparece en los ejercicios de la nota.
+
+### 6️⃣ Cilindros como Superficies Regladas
+
+> [!note] 📋 Definición — Cilindros como Superficies Regladas
+>
+> **Los cilindros son superficies regladas especiales:**
+>
+> - La recta (generatriz) se mueve manteniéndose paralela a sí misma
+> - Todas las generatrices son paralelas entre sí
+>
+> **Otras superficies regladas (para comparación):**
+>
+> - **Cono:** Generatrices pasan por un punto común (vértice)
+> - **Hiperboloide de una hoja:** Generatrices no paralelas
+> - **Paraboloide hiperbólico (silla de montar):** Dos familias de generatrices
+>
+> **Característica distintiva de cilindros:** Son las únicas superficies regladas donde **todas** las generatrices son paralelas
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Superficies_cilindricas.svg]]
+>
+> **Se lee así:** el diagrama «Superficies cilíndricas» muestra: Generatriz paralela a un eje fijo; Directriz: curva en plano perpendicular; Ejemplo: x² + y² = r² (cilindro circular).
+>
+> **Por qué importa:** «Cilindros como Superficies Regladas» es la base conceptual de la nota: sin ella no se pueden justificar las propiedades, las fórmulas ni los ejercicios que vienen después.
+>
+> **Ejemplo:** un caso concreto y verificable a mano de Cilindros como Superficies Regladas, tal como aparece en los ejercicios de la nota.
+
+### 7️⃣ Propiedad de Desarrollo
+
+> [!note] 📋 Definición — Propiedad de Desarrollo
+>
+> **Los cilindros son desarrollables:**
+>
+> - Pueden "desenrollarse" como una hoja de papel
+> - La métrica (distancias) se preserva
+> - Los ángulos se preservan
+>
+> **Aplicaciones prácticas:**
+>
+> - **Fabricación:** Chapa metálica puede doblarse en cilindros
+> - **Cartografía:** Proyecciones cilíndricas de la Tierra
+> - **Empaque:** Diseño de cajas y contenedores
+> - **Arquitectura:** Diseño de bóvedas
+>
+> **Propiedad matemática:** La curvatura gaussiana es cero: $K = 0$
+>
+> **Desarrollo del cilindro circular:**
+>
+> - Un cilindro de radio $r$ y altura $h$
+> - Se desarrolla en un rectángulo de dimensiones $2\pi r \times h$
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Superficies_cilindricas.svg]]
+>
+> **Se lee así:** el diagrama «Superficies cilíndricas» muestra: Generatriz paralela a un eje fijo; Directriz: curva en plano perpendicular; Ejemplo: x² + y² = r² (cilindro circular).
+>
+> **Por qué importa:** «Propiedad de Desarrollo» es la base conceptual de la nota: sin ella no se pueden justificar las propiedades, las fórmulas ni los ejercicios que vienen después.
+>
+> **Ejemplo:** un caso concreto y verificable a mano de Propiedad de Desarrollo, tal como aparece en los ejercicios de la nota.
+
+---
+
+## 🔵 Cilindro Circular
+
+### 📏 Definición y Ecuación
 
 ### 🔄 Cilindros Circulares Trasladados
 
@@ -143,26 +319,6 @@ tags: [MATG1046, unidad2]
 
 ### 📐 Definición y Ecuación
 
-> [!warning] 🟡 Cilindro con Sección Elíptica **Definición:** Un **cilindro elíptico** es una superficie cilíndrica cuya directriz es una elipse.
->
-> **Ecuación canónica (eje paralelo a Z):** $$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$$
->
-> donde $a, b > 0$ son los **semiejes** de la elipse directriz.
->
-> **Características:**
->
-> - Si $a = b$: Se reduce a un cilindro circular de radio $r = a$
-> - Si $a > b$: Elipse alargada en dirección x
-> - Si $b > a$: Elipse alargada en dirección y
-> - La variable z no aparece en la ecuación
->
-> **Directriz:** Elipse $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ en el plano z = 0
->
-> **Ecuaciones para otros ejes:**
->
-> - **Eje paralelo a Y:** $\frac{x^2}{a^2} + \frac{z^2}{c^2} = 1$
-> - **Eje paralelo a X:** $\frac{y^2}{b^2} + \frac{z^2}{c^2} = 1$
-
 ### 🔄 Propiedades del Cilindro Elíptico
 
 > [!note] 📋 Características Geométricas **Secciones transversales:**
@@ -214,26 +370,6 @@ tags: [MATG1046, unidad2]
 ## 📊 Cilindro Parabólico
 
 ### 📐 Definición y Ecuación
-
-> [!info] 🔵 Cilindro con Directriz Parabólica **Definición:** Un **cilindro parabólico** es una superficie cilíndrica cuya directriz es una parábola.
->
-> **Ecuación canónica (eje paralelo a Z):** $$y = ax^2$$ o equivalentemente: $$x^2 = \frac{y}{a}$$
->
-> donde $a \neq 0$ es el parámetro que determina la "abertura" de la parábola.
->
-> **Formas alternativas:**
->
-> - **Parábola en dirección y:** $x = ay^2$ o $y^2 = \frac{x}{a}$
-> - **Eje paralelo a Y:** $x^2 = az$ o $z = ax^2$
-> - **Eje paralelo a X:** $y^2 = az$ o $z = ay^2$
->
-> **Características:**
->
-> - La superficie es **ilimitada** en la dirección de la parábola
-> - Todas las secciones perpendiculares al eje son parábolas congruentes
-> - No tiene centro de simetría (solo eje y plano de simetría)
->
-> **Directriz:** Parábola $y = ax^2$ en el plano z = 0
 
 ### 🔄 Tipos y Orientaciones
 
@@ -334,29 +470,6 @@ tags: [MATG1046, unidad2]
 ## 📐 Cilindro Hiperbólico
 
 ### 📏 Definición y Ecuación
-
-> [!warning] 🟠 Cilindro con Directriz Hiperbólica **Definición:** Un **cilindro hiperbólico** es una superficie cilíndrica cuya directriz es una hipérbola.
->
-> **Ecuación canónica (eje paralelo a Z):** $$\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$$
->
-> donde $a, b > 0$ son constantes que determinan la forma de la hipérbola.
->
-> **Forma alternativa:** $$\frac{y^2}{b^2} - \frac{x^2}{a^2} = 1$$
->
-> (hipérbola con ramas en dirección y)
->
-> **Características:**
->
-> - La superficie consta de **dos ramas** separadas (excepto en el caso degenerado)
-> - Tiene **asíntotas cilíndricas:** $\frac{x}{a} \pm \frac{y}{b} = 0$
-> - La variable z no aparece en la ecuación
->
-> **Directriz:** Hipérbola $\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$ en el plano z = 0
->
-> **Ecuaciones para otros ejes:**
->
-> - **Eje paralelo a Y:** $\frac{x^2}{a^2} - \frac{z^2}{c^2} = 1$
-> - **Eje paralelo a X:** $\frac{y^2}{b^2} - \frac{z^2}{c^2} = 1$
 
 ### 🔄 Estructura del Cilindro Hiperbólico
 
@@ -554,7 +667,11 @@ tags: [MATG1046, unidad2]
 
 ## 🎨 Visualización de Superficies Cilíndricas
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Superficies_cilíndricas_01.svg]]
+> [!note] 📋 Figura — Visualización de Superficies Cilíndricas
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Superficies_cilíndricas_01.svg]]
+>
+> **Se lee así:** el diagrama de «Visualización de Superficies Cilíndricas» ordena las ideas principales del tema y sus casos particulares.
 
 ---
 
@@ -963,9 +1080,11 @@ tags: [MATG1046, unidad2]
 
 ---
 
-## 🎓 Ejercicios Progresivos
+## 📝 Ejercicios Propuestos
 
-> [!example] 💪 Práctica Graduada **Nivel 1 - Identificación:** 🟢
+> [!question] 💪 Práctica Graduada **** 🟢
+>
+> **Nivel 1 - Identificación**
 >
 > 1. **Clasificar superficies:**
 >     - a) $x^2 + y^2 = 9$
@@ -1017,36 +1136,30 @@ tags: [MATG1046, unidad2]
 
 ---
 
-## 🌐 Conexiones Conceptuales
+## 🎓 Metas de Aprendizaje
 
-> [!quote] 🔗 Enlaces con Otros Temas **Prerequisitos:**
+> [!note] 📋 Nota
 >
-> - Cónicas en el plano - Directrices de los cilindros
-> - [[02 - Vectores en R3]] - Generatrices como rectas
-> - [[01 - Rectas en R3]] - Generatrices
-> - [[02 - Planos en R3]] - Intersecciones
+> **Nivel Básico**
+>
+> - [ ] Explico Superficies Cilíndricas con mis propias palabras.
+> - [ ] Identifico los elementos esenciales de Superficies Cilíndricas.
+> - [ ] Reconozco Superficies Cilíndricas en un ejemplo concreto de la nota.
 
-> - Ecuaciones de Rectas - Generatrices
-> - Ecuaciones de Planos - Intersecciones
+> [!note] 📋 Nota
 >
-> **Relacionado directamente:**
+> **Nivel Intermedio**
 >
-> - [[01 - Superficies cuadráticas]] - Los cilindros son casos especiales
-> - [[03 - Superficies de revolución]] - Comparación con superficies rotadas
-> - [[03 - Superficies de revolución]] - Sistema natural para cilindros circulares
+> - [ ] Aplico Superficies Cilíndricas en un cálculo paso a paso.
+> - [ ] Uso las fórmulas de Superficies Cilíndricas sin errores de signo ni de unidades.
+> - [ ] Verifico mis resultados con la figura de la sección de definiciones.
+
+> [!note] 📋 Nota
 >
-> **Aplicaciones avanzadas:**
+> **Nivel Avanzado**
 >
-> - [[../../Cálculo Vectorial]] - Integrales de superficie
-> - Ecuaciones Diferenciales - Problemas en coordenadas cilíndricas
-> - [[../../../../1er Semestre/Física Mecánica/Física Mecánica]] - Laplaciano en cilindros
-> - [[01 - Longitud de Curva]] - Superficies desarrollables
->
-> **Temas posteriores:**
->
-> - [[01 - Coordenadas cilíndricas y esféricas]] - Sistemas de coordenadas
-> - [[01 - Nociones topológicas en Rⁿ]] - Conjuntos abiertos y cerrados en cilindros
-> - [[04 – Funciones vectoriales de variable vectorial]] - Flujo a través de cilindros
+> - [ ] Resuelvo problemas que combinan Superficies Cilíndricas con otros temas de la unidad.
+> - [ ] Explico por qué Superficies Cilíndricas se usa en las aplicaciones indicadas.
 
 ---
 
@@ -1096,44 +1209,7 @@ tags: [MATG1046, unidad2]
 
 ### 🎲 Superficies Regladas
 
-> [!info] 📐 Cilindros como Superficies Regladas **Definición:** Una superficie **reglada** es aquella que puede generarse por el movimiento de una recta.
->
-> **Los cilindros son superficies regladas especiales:**
->
-> - La recta (generatriz) se mueve manteniéndose paralela a sí misma
-> - Todas las generatrices son paralelas entre sí
->
-> **Otras superficies regladas (para comparación):**
->
-> - **Cono:** Generatrices pasan por un punto común (vértice)
-> - **Hiperboloide de una hoja:** Generatrices no paralelas
-> - **Paraboloide hiperbólico (silla de montar):** Dos familias de generatrices
->
-> **Característica distintiva de cilindros:** Son las únicas superficies regladas donde **todas** las generatrices son paralelas
-
 ### 📏 Superficies Desarrollables
-
-> [!success] 🟢 Propiedad de Desarrollo **Definición:** Una superficie es **desarrollable** si puede "aplanarse" en un plano sin estiramiento ni compresión.
->
-> **Los cilindros son desarrollables:**
->
-> - Pueden "desenrollarse" como una hoja de papel
-> - La métrica (distancias) se preserva
-> - Los ángulos se preservan
->
-> **Aplicaciones prácticas:**
->
-> - **Fabricación:** Chapa metálica puede doblarse en cilindros
-> - **Cartografía:** Proyecciones cilíndricas de la Tierra
-> - **Empaque:** Diseño de cajas y contenedores
-> - **Arquitectura:** Diseño de bóvedas
->
-> **Propiedad matemática:** La curvatura gaussiana es cero: $K = 0$
->
-> **Desarrollo del cilindro circular:**
->
-> - Un cilindro de radio $r$ y altura $h$
-> - Se desarrolla en un rectángulo de dimensiones $2\pi r \times h$
 
 ### 🔄 Geodésicas en Cilindros
 
@@ -1401,7 +1477,7 @@ tags: [MATG1046, unidad2]
 
 ---
 
-## 🔗 Referencias y Lecturas Adicionales
+## 📚 Referencias
 
 > [!quote] 📚 Bibliografía Recomendada **Textos fundamentales:**
 >
@@ -1455,4 +1531,65 @@ tags: [MATG1046, unidad2]
 
 ---
 
-**Tags:** #geometría-analítica #superficies-cilíndricas #cilindros #cónicas-3d #superficies-regladas #superficies-desarrollables #geometría-3d #cálculo-vectorial #parametrización #coordenadas-cilíndricas #aplicaciones-ingeniería #visualización-3d #university #mathematics #R3
+
+---
+
+## 🔁 Repaso SR
+
+#flashcards/calcvec-u2
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Qué es formal?::- **Directriz (C):** Curva que determina la forma de la sección transversal - **Generatriz (L):** Recta que se mueve paralelamente a una dirección fija - **Eje:** Dirección paralela a todas las genera
+> - ¿Qué es cilindro circular básico?::$$x^2 + y^2 = r^2$$ donde $r > 0$ es el **radio** del cilindro.
+> - ¿Qué es cilindro con sección elíptica?::$$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$$ donde $a, b > 0$ son los **semiejes** de la elipse directriz.
+> - ¿Qué es cilindro con directriz parabólica?::$$y = ax^2$$ o equivalentemente: $$x^2 = \frac{y}{a}$$ donde $a \neq 0$ es el parámetro que determina la "abertura" de la parábola.
+> - ¿Qué es cilindro con directriz hiperbólica?::$$\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$$ donde $a, b > 0$ son constantes que determinan la forma de la hipérbola.
+> - ¿Qué es cilindros como superficies regladas?::- La recta (generatriz) se mueve manteniéndose paralela a sí misma - Todas las generatrices son paralelas entre sí **Otras superficies regladas (para comparación):** - **Cono:** Generatrices pasan por
+> - ¿Qué es propiedad de desarrollo?::- Pueden "desenrollarse" como una hoja de papel - La métrica (distancias) se preserva - Los ángulos se preservan **Aplicaciones prácticas:** - **Fabricación:** Chapa metálica puede doblarse en cilindr
+> - ¿En qué sección se define superficies cilíndricas?::en «Definiciones Formales», con su figura y su lectura.
+
+---
+
+## 🔗 Conexiones
+
+> [!quote] 🔗 Enlaces con Otros Temas **Prerequisitos:**
+>
+> - Cónicas en el plano - Directrices de los cilindros
+> - [[02 - Vectores en R3]] - Generatrices como rectas
+> - [[01 - Rectas en R3]] - Generatrices
+> - [[02 - Planos en R3]] - Intersecciones
+>
+> - Ecuaciones de Rectas - Generatrices
+> - Ecuaciones de Planos - Intersecciones
+>
+> **Relacionado directamente:**
+>
+> - [[01 - Superficies cuadráticas]] - Los cilindros son casos especiales
+> - [[03 - Superficies de revolución]] - Comparación con superficies rotadas
+> - [[03 - Superficies de revolución]] - Sistema natural para cilindros circulares
+>
+> **Aplicaciones avanzadas:**
+>
+> - [[../../Cálculo Vectorial]] - Integrales de superficie
+> - Ecuaciones Diferenciales - Problemas en coordenadas cilíndricas
+> - [[../../../../1er Semestre/Física Mecánica/Física Mecánica]] - Laplaciano en cilindros
+> - [[01 - Longitud de Curva]] - Superficies desarrollables
+>
+> **Temas posteriores:**
+>
+> - [[01 - Coordenadas cilíndricas y esféricas]] - Sistemas de coordenadas
+> - [[01 - Nociones topológicas en Rⁿ]] - Conjuntos abiertos y cerrados en cilindros
+> - [[04 – Funciones vectoriales de variable vectorial]] - Flujo a través de cilindros
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Cálculo Vectorial]]
+> - Siguiente: [[03 - Superficies de revolución]].
+> - Repaso: vuelve a las definiciones formales antes de los ejercicios.
+
+**Tags:** #MATG1046 #unidad2 #superficies #cilindricas #superficies-cilindricas

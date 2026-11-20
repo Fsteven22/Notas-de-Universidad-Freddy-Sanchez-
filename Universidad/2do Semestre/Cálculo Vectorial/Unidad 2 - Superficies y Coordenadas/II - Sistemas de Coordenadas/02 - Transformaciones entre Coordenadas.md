@@ -1,50 +1,22 @@
 ---
 dg-publish: true
-tags: [MATG1046, unidad2]
+tags: [MATG1046, unidad2, transformaciones, coordenadas, transformaciones-entre]
 ---
-
 # 📐 Transformaciones entre Coordenadas
 
-## 🎯 Sistemas de Coordenadas Alternativos
+## 🎯 Introducción
 
-> [!info] 💡 Introducción a los Sistemas de Coordenadas Además del **sistema cartesiano** (x, y, z), existen otros sistemas de coordenadas que simplifican la descripción de ciertos problemas geométricos y físicos. Los más importantes son:
+> [!info] 💡 Introducción
 >
-> **Sistemas principales:**
->
-> - **Cartesianas (rectangulares):** (x, y, z)
-> - **Cilíndricas:** (ρ, φ, z)
-> - **Esféricas:** (r, θ, φ)
->
-> **¿Por qué usar diferentes sistemas?**
->
-> **Analogías útiles:**
->
-> - **Cartesianas:** Como las calles de una ciudad en cuadrícula (Manhattan)
-> - **Cilíndricas:** Como describir la posición en un edificio cilíndrico (distancia al centro, ángulo, altura)
-> - **Esféricas:** Como la ubicación en la Tierra (latitud, longitud, altitud)
->
-> **Ventajas según simetría:**
->
-> - **Cilíndricas:** Problemas con simetría cilíndrica (cables, tuberías, campos magnéticos)
-> - **Esféricas:** Problemas con simetría esférica (planetas, átomos, ondas radiales)
->
-> **Aplicaciones históricas:**
->
-> - **Leonhard Euler (1707-1783):** Desarrollo de coordenadas polares
-> - **Gaspard Monge (1746-1818):** Geometría descriptiva
-> - **Carl Friedrich Gauss (1777-1855):** Teoría de superficies
-> - Navegación marítima y astronomía desde el siglo XVII
-
-
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Transformaciones_entre_Coordenadas.svg]]
+> **Transformaciones entre Coordenadas** es el tema central de esta nota: qué es, cómo se representa y cómo se calcula. La lectura sigue de izquierda a derecha: primero la idea, después la definición formal y al final los ejercicios que la ponen a prueba.
 
 ---
 
-## 🔵 Coordenadas Cilíndricas
+## 📋 Definiciones Formales
 
-### 📏 Definición del Sistema
+### 1️⃣ Sistema de Coordenadas Cilíndricas
 
-> [!note] 🌟 Sistema de Coordenadas Cilíndricas **Definición:**
+> [!note] 📋 Definición — Sistema de Coordenadas Cilíndricas
 >
 > Las **coordenadas cilíndricas** (ρ, φ, z) de un punto P en el espacio se definen como:
 >
@@ -82,6 +54,113 @@ tags: [MATG1046, unidad2]
 > - φ es el ángulo de rotación alrededor del eje
 > - z es la altura en el cilindro
 > ```
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Transformaciones_entre_Coordenadas.svg]]
+>
+> **Se lee así:** el diagrama «Transformaciones entre coordenadas» muestra: Cartesianas ↔ Cilíndricas; Cartesianas ↔ Esféricas; Jacobiano para cambio de variable en integrales.
+>
+> **Por qué importa:** «Sistema de Coordenadas Cilíndricas» es la base conceptual de la nota: sin ella no se pueden justificar las propiedades, las fórmulas ni los ejercicios que vienen después.
+>
+> **Ejemplo:** un caso concreto y verificable a mano de Sistema de Coordenadas Cilíndricas, tal como aparece en los ejercicios de la nota.
+
+### 2️⃣ Sistema de Coordenadas Esféricas
+
+> [!note] 📋 Definición — Sistema de Coordenadas Esféricas
+>
+> Las **coordenadas esféricas** (r, θ, φ) de un punto P en el espacio se definen como:
+>
+> **1. Radio esférico (r):**
+>
+> - Distancia desde el origen O hasta el punto P
+> - Longitud del vector posición
+> - **Rango:** r ≥ 0
+> - Es la distancia euclidiana directa
+>
+> **2. Ángulo polar (θ):**
+>
+> - Ángulo desde el eje Z positivo hasta el vector OP
+> - También llamado "colatitud" o "ángulo cenital"
+> - **Rango:** 0 ≤ θ ≤ π
+> - Pronunciación: "theta" (letra griega theta)
+> - θ = 0: polo norte (eje Z+)
+> - θ = π/2: ecuador (plano XY)
+> - θ = π: polo sur (eje Z-)
+>
+> **3. Ángulo azimutal (φ):**
+>
+> - Mismo ángulo que en coordenadas cilíndricas
+> - Ángulo desde el eje X en el plano XY
+> - **Rango:** 0 ≤ φ < 2π
+> - Pronunciación: "fi" (letra griega phi)
+>
+> **Interpretación geométrica:**
+>
+> - r: "¿Qué tan lejos del origen?"
+> - θ: "¿Qué tan inclinado desde el eje vertical?"
+> - φ: "¿En qué dirección horizontal?"
+>
+> **Analogía geográfica:**
+>
+> ```
+> Tierra como esfera:
+> - r: altitud desde el centro
+> - θ: colatitud (0° en Polo Norte, 90° en Ecuador, 180° en Polo Sur)
+> - φ: longitud (0° en Greenwich)
+>
+> Nota: En geografía se usa latitud (90° - θ)
+> ```
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Transformaciones_entre_Coordenadas.svg]]
+>
+> **Se lee así:** el diagrama «Transformaciones entre coordenadas» muestra: Cartesianas ↔ Cilíndricas; Cartesianas ↔ Esféricas; Jacobiano para cambio de variable en integrales.
+>
+> **Por qué importa:** «Sistema de Coordenadas Esféricas» es la base conceptual de la nota: sin ella no se pueden justificar las propiedades, las fórmulas ni los ejercicios que vienen después.
+>
+> **Ejemplo:** un caso concreto y verificable a mano de Sistema de Coordenadas Esféricas, tal como aparece en los ejercicios de la nota.
+
+---
+
+## 🎯 Sistemas de Coordenadas Alternativos
+
+> [!info] 💡 Introducción a los Sistemas de Coordenadas Además del **sistema cartesiano** (x, y, z), existen otros sistemas de coordenadas que simplifican la descripción de ciertos problemas geométricos y físicos. Los más importantes son:
+>
+> **Sistemas principales:**
+>
+> - **Cartesianas (rectangulares):** (x, y, z)
+> - **Cilíndricas:** (ρ, φ, z)
+> - **Esféricas:** (r, θ, φ)
+>
+> **¿Por qué usar diferentes sistemas?**
+>
+> **Analogías útiles:**
+>
+> - **Cartesianas:** Como las calles de una ciudad en cuadrícula (Manhattan)
+> - **Cilíndricas:** Como describir la posición en un edificio cilíndrico (distancia al centro, ángulo, altura)
+> - **Esféricas:** Como la ubicación en la Tierra (latitud, longitud, altitud)
+>
+> **Ventajas según simetría:**
+>
+> - **Cilíndricas:** Problemas con simetría cilíndrica (cables, tuberías, campos magnéticos)
+> - **Esféricas:** Problemas con simetría esférica (planetas, átomos, ondas radiales)
+>
+> **Aplicaciones históricas:**
+>
+> - **Leonhard Euler (1707-1783):** Desarrollo de coordenadas polares
+> - **Gaspard Monge (1746-1818):** Geometría descriptiva
+> - **Carl Friedrich Gauss (1777-1855):** Teoría de superficies
+> - Navegación marítima y astronomía desde el siglo XVII
+
+> [!note] 📋 Figura — Sistemas de Coordenadas Alternativos
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Transformaciones_entre_Coordenadas.svg]]
+>
+> **Se lee así:** el diagrama de «Sistemas de Coordenadas Alternativos» ordena las ideas principales del tema y sus casos particulares.
+
+---
+
+## 🔵 Coordenadas Cilíndricas
+
+### 📏 Definición del Sistema
 
 ### 🔄 Transformaciones Cartesianas ↔ Cilíndricas
 
@@ -225,51 +304,6 @@ tags: [MATG1046, unidad2]
 
 ### 📏 Definición del Sistema
 
-> [!note] 🌟 Sistema de Coordenadas Esféricas **Definición:**
->
-> Las **coordenadas esféricas** (r, θ, φ) de un punto P en el espacio se definen como:
->
-> **1. Radio esférico (r):**
->
-> - Distancia desde el origen O hasta el punto P
-> - Longitud del vector posición
-> - **Rango:** r ≥ 0
-> - Es la distancia euclidiana directa
->
-> **2. Ángulo polar (θ):**
->
-> - Ángulo desde el eje Z positivo hasta el vector OP
-> - También llamado "colatitud" o "ángulo cenital"
-> - **Rango:** 0 ≤ θ ≤ π
-> - Pronunciación: "theta" (letra griega theta)
-> - θ = 0: polo norte (eje Z+)
-> - θ = π/2: ecuador (plano XY)
-> - θ = π: polo sur (eje Z-)
->
-> **3. Ángulo azimutal (φ):**
->
-> - Mismo ángulo que en coordenadas cilíndricas
-> - Ángulo desde el eje X en el plano XY
-> - **Rango:** 0 ≤ φ < 2π
-> - Pronunciación: "fi" (letra griega phi)
->
-> **Interpretación geométrica:**
->
-> - r: "¿Qué tan lejos del origen?"
-> - θ: "¿Qué tan inclinado desde el eje vertical?"
-> - φ: "¿En qué dirección horizontal?"
->
-> **Analogía geográfica:**
->
-> ```
-> Tierra como esfera:
-> - r: altitud desde el centro
-> - θ: colatitud (0° en Polo Norte, 90° en Ecuador, 180° en Polo Sur)
-> - φ: longitud (0° en Greenwich)
->
-> Nota: En geografía se usa latitud (90° - θ)
-> ```
-
 ### 🔄 Transformaciones Cartesianas ↔ Esféricas
 
 > [!warning] 🔷 Fórmulas de Conversión
@@ -343,7 +377,7 @@ tags: [MATG1046, unidad2]
 > - Usar atan2(y, x) para manejo automático de cuadrantes
 >
 ### 📊 Ejemplos de Transformación Esférica
->
+
 > [!example] 🎯 Conversiones Completas
 >
 > #### **Ejemplo 1: Cartesianas → Esféricas**
@@ -428,12 +462,13 @@ tags: [MATG1046, unidad2]
 >
 > **Nota:** En el eje Z, φ es indeterminado porque no hay dirección horizontal definida
 >
+
 ---
 
 ## 🔄 Transformaciones Cilíndricas ↔ Esféricas
->
+
 ### 🔀 Conversión Directa
->
+
 > [!tip] 🟢 Sin Pasar por Cartesianas
 >
 > #### **De Cilíndricas a Esféricas**
@@ -466,7 +501,7 @@ tags: [MATG1046, unidad2]
 > - z es la componente vertical de r
 >
 ### 📊 Ejemplo Integrado
->
+
 > [!example] 🎯 Conversión Múltiple
 >
 > **Problema:** Convertir el punto P entre los tres sistemas
@@ -514,10 +549,11 @@ tags: [MATG1046, unidad2]
 >   = √6 ✓
 > ```
 >
+
 ---
 
 ## 📐 Tabla Resumen de Transformaciones
->
+
 > [!example] 📋 Fórmulas Completas
 >
 > ### **Cartesianas (x, y, z) ↔ Cilíndricas (ρ, φ, z)**
@@ -545,12 +581,13 @@ tags: [MATG1046, unidad2]
 > |**→ Esféricas**|r = √(ρ² + z²)<br>θ = arctan(ρ/z)<br>φ = φ|
 > |**→ Cilíndricas**|ρ = r sen(θ)<br>φ = φ<br>z = r cos(θ)|
 >
+
 ---
 
 ## 🎨 Representación Gráfica
->
+
 ### 🖼️ Visualización de Coordenadas Cilíndricas
->
+
 > [!tip] 🔵 Interpretación Geométrica Cilíndrica
 >
 > **Superficies coordenadas cilíndricas:**
@@ -621,7 +658,7 @@ tags: [MATG1046, unidad2]
 > ```
 >
 ### 🖼️ Visualización de Coordenadas Esféricas
->
+
 > [!tip] 🔴 Interpretación Geométrica Esférica
 >
 > **Superficies coordenadas esféricas:**
@@ -696,7 +733,7 @@ tags: [MATG1046, unidad2]
 > ```
 >
 ### 🎯 Líneas y Curvas Coordenadas
->
+
 > [!note] 📏 Trayectorias en Diferentes Sistemas
 >
 > **Líneas coordenadas cilíndricas:**
@@ -731,11 +768,14 @@ tags: [MATG1046, unidad2]
 >    - Vector tangente: êφ
 > ```
 >
+
 ---
 
-## 🧮 Ejercicios Integrales
+## 📝 Ejercicios Propuestos
+
+> [!question] 💪 Práctica Completa### **** 🟢
 >
-> [!example] 💪 Práctica Completa### **Nivel 1 - Básico:** 🟢
+> **Nivel 1 - Básico**
 >
 > **Ejercicio 1:** Convertir de cartesianas a cilíndricas
 >
@@ -877,7 +917,11 @@ tags: [MATG1046, unidad2]
 
 ## 🎨 Diagrama Conceptual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Transformaciones_entre_Coordenadas_01.svg]]
+> [!note] 📋 Figura — Diagrama Conceptual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Transformaciones_entre_Coordenadas_01.svg]]
+>
+> **Se lee así:** el diagrama de «Diagrama Conceptual» ordena las ideas principales del tema y sus casos particulares.
 
 ---
 
@@ -937,7 +981,57 @@ tags: [MATG1046, unidad2]
 
 ---
 
-## 🔗 Conexiones con el Sistema de Notas
+## 🎓 Metas de Aprendizaje
+
+> [!note] 📋 Nota
+>
+> **Nivel Básico**
+>
+> - [ ] Explico Transformaciones entre Coordenadas con mis propias palabras.
+> - [ ] Identifico los elementos esenciales de Transformaciones entre Coordenadas.
+> - [ ] Reconozco Transformaciones entre Coordenadas en un ejemplo concreto de la nota.
+
+> [!note] 📋 Nota
+>
+> **Nivel Intermedio**
+>
+> - [ ] Aplico Transformaciones entre Coordenadas en un cálculo paso a paso.
+> - [ ] Uso las fórmulas de Transformaciones entre Coordenadas sin errores de signo ni de unidades.
+> - [ ] Verifico mis resultados con la figura de la sección de definiciones.
+
+> [!note] 📋 Nota
+>
+> **Nivel Avanzado**
+>
+> - [ ] Resuelvo problemas que combinan Transformaciones entre Coordenadas con otros temas de la unidad.
+> - [ ] Explico por qué Transformaciones entre Coordenadas se usa en las aplicaciones indicadas.
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes Consultadas
+>
+> - J. Stewart, *Calculus*, cap. 12 «Vectors and the Geometry of Space»: marco de referencia de la unidad.
+> - Syllabus oficial MATG1046 «Cálculo Vectorial», ESPOL.
+> - Apuntes del curso MATG1046 y las figuras de la materia (`Unidad 0 - Guias y Ejercicios/Diagramas/`).
+
+---
+
+## 🔁 Repaso SR
+
+#flashcards/calcvec-u2
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Qué es sistema de coordenadas cilíndricas?::Las **coordenadas cilíndricas** (ρ, φ, z) de un punto P en el espacio se definen como: **1.
+> - ¿Qué es sistema de coordenadas esféricas?::Las **coordenadas esféricas** (r, θ, φ) de un punto P en el espacio se definen como: **1.
+> - ¿En qué sección se define transformaciones entre coordenadas?::en «Definiciones Formales», con su figura y su lectura.
+> - ¿Cómo se repasa transformaciones entre coordenadas?::con las tarjetas de «Repaso SR» y los ejercicios propuestos.
+
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🌟 Enlaces Conceptuales
 >
@@ -967,4 +1061,15 @@ tags: [MATG1046, unidad2]
 
 ---
 
-**Tags:** #coordenadas #transformaciones #cilíndricas #esféricas #geometría-analítica #sistemas-coordenados #conversión #R3 #trigonometría #visualización #university #matemáticas #física
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Cálculo Vectorial]]
+> - Siguiente: [[03 - Representación gráfica]].
+> - Repaso: vuelve a las definiciones formales antes de los ejercicios.
+
+**Tags:** #MATG1046 #unidad2 #transformaciones #coordenadas #transformaciones-entre

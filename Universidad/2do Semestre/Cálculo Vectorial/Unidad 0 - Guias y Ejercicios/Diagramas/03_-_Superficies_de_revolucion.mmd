@@ -1,0 +1,56 @@
+flowchart TD
+    A["Superficies de Revolución"]
+    B["Generatriz"]
+    C["Eje de revolución"]
+    D["Perfil recto"]
+    D1["Cilindro circular<br/>x² + y² = r²"]
+    D2["Cono circular<br/>x² + y² = (z/k)²"]
+    D3["Esfera<br/>x² + y² + z² = r²"]
+    D4["Toro<br/>(R + r cos v)² + z² = r²"]
+    E["Perfil curvilíneo"]
+    E1["Paraboloide<br/>x² + y² = kz"]
+    E2["Hiperboloide 1 hoja<br/>x² + y² - z² = 1"]
+    E3["Elipsoide de revolución<br/>x² + y² + z²/b² = 1"]
+    F["Propiedades"]
+    F1["Simetría respecto del eje"]
+    F2["Toda sección perpendicular al eje<br/>reproduce la generatriz"]
+    F3["Área = 2π · radio · generatriz"]
+    G["Aplicaciones"]
+    G1["Piezas torneadas"]
+    G2["Recipientes y ollas"]
+    G3["Órbitas y cuerpos esféricos"]
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    A --> F
+    A --> G
+    B --> D
+    B --> E
+    C --> F
+    D --> D1
+    D --> D2
+    D --> D3
+    D --> D4
+    E --> E1
+    E --> E2
+    E --> E3
+    F --> F1
+    F --> F2
+    F --> F3
+    G --> G1
+    G --> G2
+    G --> G3
+
+    style A fill:#e3f2fd
+    style D fill:#e8f5e9
+    style E fill:#fff3e0
+    style F fill:#fff9c4
+    style G fill:#ffe0b2
+    style D1 fill:#bbdefb
+    style D2 fill:#90caf9
+    style D3 fill:#64b5f6
+    style D4 fill:#42a5f5
+    style E1 fill:#f48fb1
+    style E2 fill:#f06292
+    style E3 fill:#e91e63

@@ -2,10 +2,9 @@
 dg-publish: true
 tags: [calculo-vectorial, coordenadas, graficas]
 ---
-
 # 🎨 Representación Gráfica de Coordenadas Cilíndricas y Esféricas
 
-## 🎯 Introducción a la Visualización
+## 🎯 Introducción
 
 > [!info] 💡 Importancia de la Representación Gráfica La **visualización geométrica** de los sistemas de coordenadas cilíndricas y esféricas es fundamental para:
 >
@@ -34,6 +33,24 @@ tags: [calculo-vectorial, coordenadas, graficas]
 > - **Joseph-Louis Lagrange (1736-1813):** Mecánica en coordenadas generalizadas
 > - **Carl Friedrich Gauss (1777-1855):** Geometría diferencial y coordenadas curvilíneas
 > - Aplicaciones en navegación marítima desde el siglo XVIII
+
+---
+
+## 📋 Definiciones Formales
+
+### 1️⃣ Representación Gráfica de Coordenadas Cilíndricas y Esféricas
+
+> [!note] 📋 Definición — Representación Gráfica de Coordenadas Cilíndricas y Esféricas
+>
+> **Definición:** La **visualización geométrica** de los sistemas de coordenadas cilíndricas y esféricas es fundamental para: **Objetivos de aprendizaje:** - Comprender la geometría tridimensional de cada sistema - Identificar superficies coordenadas características - Interpretar ecuaciones en diferentes sistemas - Resolver problemas con intuición geométrica **Analogías útiles:** - **Cilíndricas:** Como los niveles de un edificio circular (altura) con direcciones radiales - **Esféricas:** Como las capas de una cebolla (radio) con líneas de latitud y longitud **Aplicaciones prácticas:** - **Ingeniería:** Diseño de antenas, tuberías, tanques - **Física:** Campos eléctricos, ondas electromagnéticas - **Astronomía:** Sistemas planetarios, coordenadas celestes - **Computación gráfica:** Modelado 3D, iluminación **Importancia histórica:** - **Leonhard Euler (1707-1783):** Desarrollo sistemático de coordenadas polares - **Joseph-Louis Lagrange (1736-1813):** Mecánica en coordenadas generalizadas - **Carl Friedrich Gauss (1777-1855):** Geometría diferencial y coordenadas curvilíneas - Aplicaciones en navegación marítima desde el siglo XVIII
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Representación_gráfica_01.svg]]
+>
+> **Se lee así:** el diagrama «Hola» despliega la estructura de Representación Gráfica de Coordenadas Cilíndricas y Esféricas.
+>
+> **Por qué importa:** «Representación Gráfica de Coordenadas Cilíndricas y Esféricas» es la base conceptual de la nota: sin ella no se pueden justificar las propiedades, las fórmulas ni los ejercicios que vienen después.
+>
+> **Ejemplo:** un caso concreto y verificable a mano de Representación Gráfica de Coordenadas Cilíndricas y Esféricas, tal como aparece en los ejercicios de la nota.
 
 ---
 
@@ -561,7 +578,7 @@ tags: [calculo-vectorial, coordenadas, graficas]
 > [!warning] 📊 Familias de Superficies Esféricas
 >
 >#### **1. Superficies r = constante**
-v
+> v
 > **Ecuación:** r = k (k > 0)
 >
 > **Geometría:** Esferas centradas en el origen
@@ -1175,9 +1192,9 @@ v
 
 ---
 
-## 🧮 Ejercicios de Visualización
+## 📝 Ejercicios Propuestos
 
-> [!example] 💪 Práctica de Representación
+> [!question] 💪 Práctica de Representación
 >
 >### **Nivel 1 - Identificación:** 🟢
 >
@@ -1327,11 +1344,19 @@ v
 
 ### 🔵 Diagrama Detallado - Cilíndricas
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Representación_gráfica_01.svg]]
+> [!note] 📋 Figura — Diagrama Detallado - Cilíndricas
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Representación_gráfica_01.svg]]
+>
+> **Se lee así:** el diagrama de «Diagrama Detallado - Cilíndricas» ordena las ideas principales del tema y sus casos particulares.
 
 ### 🔴 Diagrama Detallado - Esféricas
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Representación_gráfica_02.svg]]
+> [!note] 📋 Figura — Diagrama Detallado - Esféricas
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Representación_gráfica_02.svg]]
+>
+> **Se lee así:** el diagrama de «Diagrama Detallado - Esféricas» ordena las ideas principales del tema y sus casos particulares.
 
 ---
 
@@ -1390,7 +1415,56 @@ v
 
 ---
 
-## 🔗 Conexiones Conceptuales
+## 🎓 Metas de Aprendizaje
+
+> [!note] 📋 Nota
+>
+> **Nivel Básico**
+>
+> - [ ] Explico Representación Gráfica de Coordenadas Cilíndricas y Esféricas con mis propias palabras.
+> - [ ] Identifico los elementos esenciales de Representación Gráfica de Coordenadas Cilíndricas y Esféricas.
+> - [ ] Reconozco Representación Gráfica de Coordenadas Cilíndricas y Esféricas en un ejemplo concreto de la nota.
+
+> [!note] 📋 Nota
+>
+> **Nivel Intermedio**
+>
+> - [ ] Aplico Representación Gráfica de Coordenadas Cilíndricas y Esféricas en un cálculo paso a paso.
+> - [ ] Uso las fórmulas de Representación Gráfica de Coordenadas Cilíndricas y Esféricas sin errores de signo ni de unidades.
+> - [ ] Verifico mis resultados con la figura de la sección de definiciones.
+
+> [!note] 📋 Nota
+>
+> **Nivel Avanzado**
+>
+> - [ ] Resuelvo problemas que combinan Representación Gráfica de Coordenadas Cilíndricas y Esféricas con otros temas de la unidad.
+> - [ ] Explico por qué Representación Gráfica de Coordenadas Cilíndricas y Esféricas se usa en las aplicaciones indicadas.
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes Consultadas
+>
+> - J. Stewart, *Calculus*, cap. 12 «Vectors and the Geometry of Space»: marco de referencia de la unidad.
+> - Syllabus oficial MATG1046 «Cálculo Vectorial», ESPOL.
+> - Apuntes del curso MATG1046 y las figuras de la materia (`Unidad 0 - Guias y Ejercicios/Diagramas/`).
+
+---
+
+## 🔁 Repaso SR
+
+#flashcards/calcvec-u2
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Qué es representación gráfica de coordenadas cilíndricas y esféricas?::La **visualización geométrica** de los sistemas de coordenadas cilíndricas y esféricas es fundamental para:
+> - ¿En qué sección se define representación gráfica de coordenadas cilíndricas y esféricas?::en «Definiciones Formales», con su figura y su lectura.
+> - ¿Cómo se repasa representación gráfica de coordenadas cilíndricas y esféricas?::con las tarjetas de «Repaso SR» y los ejercicios propuestos.
+
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🌟 Enlaces con Otros Temas
 >
@@ -1421,4 +1495,14 @@ v
 
 ---
 
-**Tags:** #visualización #coordenadas #cilíndricas #esféricas #superficies-coordenadas #geometría-3D #representación-gráfica #sistemas-coordenados #vectores-unitarios #R3 #university #matemáticas #física
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Cálculo Vectorial]]
+> - Repaso: vuelve a las definiciones formales antes de los ejercicios.
+
+**Tags:** #calculo-vectorial #coordenadas #graficas

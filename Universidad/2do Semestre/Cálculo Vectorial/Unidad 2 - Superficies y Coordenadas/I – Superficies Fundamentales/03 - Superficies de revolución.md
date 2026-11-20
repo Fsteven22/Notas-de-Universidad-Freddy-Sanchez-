@@ -1,11 +1,10 @@
 ---
 dg-publish: true
-tags: [MATG1046, unidad2]
+tags: [MATG1046, unidad2, superficies, revolucion, superficies-revolucion]
 ---
-
 # 🌀 Superficies de Revolución
 
-## 🎯 Fundamentos de las Superficies de Revolución
+## 🎯 Introducción
 
 > [!info] 💡 Introducción a las Superficies Generadas por Rotación Las **superficies de revolución** son superficies tridimensionales generadas al rotar una curva plana (llamada **generatriz**) alrededor de un eje fijo (llamado **eje de revolución**). Estas superficies poseen simetría rotacional y son fundamentales en geometría, física, ingeniería y diseño industrial.
 >
@@ -43,6 +42,24 @@ tags: [MATG1046, unidad2]
 > - **Simetría de reflexión:** Simétrica respecto a planos que contienen el eje
 > - **Meridianos idénticos:** Todos los cortes meridionales son congruentes
 > - **Paralelos circulares:** Cualquier corte perpendicular al eje es un círculo
+
+---
+
+## 📋 Definiciones Formales
+
+### 1️⃣ Superficies de Revolución
+
+> [!note] 📋 Definición — Superficies de Revolución
+>
+> **Definición:** Las **superficies de revolución** son superficies tridimensionales generadas al rotar una curva plana (llamada **generatriz**) alrededor de un eje fijo (llamado **eje de revolución**). Estas superficies poseen simetría rotacional y son fundamentales en geometría, física, ingeniería y diseño industrial.
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Superficies_de_revolucion.svg]]
+>
+> **Se lee así:** el diagrama «Superficies de Revolución» muestra: Generatriz; Eje de revolución; Perfil recto; Cilindro circular · x² + y² = r².
+>
+> **Por qué importa:** «Superficies de Revolución» es la base conceptual de la nota: sin ella no se pueden justificar las propiedades, las fórmulas ni los ejercicios que vienen después.
+>
+> **Ejemplo:** un caso concreto y verificable a mano de Superficies de Revolución, tal como aparece en los ejercicios de la nota.
 
 ---
 
@@ -1171,9 +1188,9 @@ tags: [MATG1046, unidad2]
 
 ---
 
-## 🧪 Ejercicios Progresivos
+## 📝 Ejercicios Propuestos
 
-> [!example] 💪 Práctica Graduada
+> [!question] 💪 Práctica Graduada
 >
 > **Nivel 1 - Identificación:** 🟢
 >
@@ -1279,7 +1296,56 @@ tags: [MATG1046, unidad2]
 
 ---
 
-## 🌐 Conexiones Conceptuales
+## 🎓 Metas de Aprendizaje
+
+> [!note] 📋 Nota
+>
+> **Nivel Básico**
+>
+> - [ ] Explico Superficies de Revolución con mis propias palabras.
+> - [ ] Identifico los elementos esenciales de Superficies de Revolución.
+> - [ ] Reconozco Superficies de Revolución en un ejemplo concreto de la nota.
+
+> [!note] 📋 Nota
+>
+> **Nivel Intermedio**
+>
+> - [ ] Aplico Superficies de Revolución en un cálculo paso a paso.
+> - [ ] Uso las fórmulas de Superficies de Revolución sin errores de signo ni de unidades.
+> - [ ] Verifico mis resultados con la figura de la sección de definiciones.
+
+> [!note] 📋 Nota
+>
+> **Nivel Avanzado**
+>
+> - [ ] Resuelvo problemas que combinan Superficies de Revolución con otros temas de la unidad.
+> - [ ] Explico por qué Superficies de Revolución se usa en las aplicaciones indicadas.
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes Consultadas
+>
+> - J. Stewart, *Calculus*, cap. 12 «Vectors and the Geometry of Space»: marco de referencia de la unidad.
+> - Syllabus oficial MATG1046 «Cálculo Vectorial», ESPOL.
+> - Apuntes del curso MATG1046 y las figuras de la materia (`Unidad 0 - Guias y Ejercicios/Diagramas/`).
+
+---
+
+## 🔁 Repaso SR
+
+#flashcards/calcvec-u2
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Qué es superficies de revolución?::Las **superficies de revolución** son superficies tridimensionales generadas al rotar una curva plana (llamada **generatriz**) alrededor de un eje fijo (llamado **eje de revolución**).
+> - ¿En qué sección se define superficies de revolución?::en «Definiciones Formales», con su figura y su lectura.
+> - ¿Cómo se repasa superficies de revolución?::con las tarjetas de «Repaso SR» y los ejercicios propuestos.
+
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🔗 Enlaces con Otros Temas
 >
@@ -1769,7 +1835,7 @@ tags: [MATG1046, unidad2]
 
 ---
 
-## 📚 Recursos Adicionales
+## 🔗 Seguir estudiando
 
 ### 📖 Material de Referencia
 
@@ -1915,5 +1981,8 @@ tags: [MATG1046, unidad2]
 >     - Arquitectura: cúpulas, estructuras optimizadas
 >     - Diseño industrial: envases, lentes, instrumentos
 
-**Tags:** #geometría-analítica #superficies #revolución #sólidos-3d #coordenadas-cilíndricas #parametrización #curvatura #cálculo-integral #aplicaciones #university #mathematics #CAD #ingeniería #física #visualización-3d
-`
+> [!note] 📋 Resumen Final
+>
+> `
+
+**Tags:** #MATG1046 #unidad2 #superficies #revolucion #superficies-revolucion
