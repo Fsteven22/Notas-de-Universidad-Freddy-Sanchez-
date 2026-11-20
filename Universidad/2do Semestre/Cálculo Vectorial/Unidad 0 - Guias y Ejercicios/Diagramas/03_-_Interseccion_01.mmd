@@ -1,0 +1,15 @@
+flowchart TB
+    R["Intersección de rectas"]
+    subgraph Procedimiento["Procedimiento"]
+        direction TB
+        S1["Igualar ecuaciones con parámetros t y s"]
+        S2["Resolver el sistema"]
+        S3["Verificar: mismo punto en ambas"]
+    end
+    subgraph Resultado["Resultado"]
+        direction TB
+        R1["Solución única → secantes"]
+        R2["Sin solución → paralelas o alabeadas"]
+    end
+    R --> Procedimiento
+    R --> Resultado

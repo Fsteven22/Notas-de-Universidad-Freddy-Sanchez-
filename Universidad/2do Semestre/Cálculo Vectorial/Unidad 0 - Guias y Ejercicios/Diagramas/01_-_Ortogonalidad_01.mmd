@@ -1,0 +1,16 @@
+flowchart TB
+    R["⊥ Perpendicularidad"]
+    C["u ⊥ v ⟺ u · v = 0"]
+    subgraph Canonicos["Canónicos"]
+        direction TB
+        C1["i · j = 0"]
+        C2["i · k = 0"]
+        C3["j · k = 0"]
+    end
+    subgraph Ortonormal["Ortogonal + unitario"]
+        direction TB
+        O1["Base ortonormal i, j, k"]
+    end
+    R --> C
+    C --> Canonicos
+    C --> Ortonormal

@@ -1,0 +1,15 @@
+flowchart TB
+    R["[a b c] = a · (b × c)"]
+    subgraph Interpretacion["Interpretación"]
+        direction TB
+        I1["Volumen del paralelepípedo con signo"]
+        I2["[a b c] = det [a b c]"]
+        I3["A, B, C coplanares ⇔ [a b c] = 0"]
+    end
+    subgraph Propiedades["Propiedades"]
+        direction TB
+        P1["[a b c] = [c a b] = [b c a] (cíclico)"]
+        P2["[a b c] = −[a c b] (anti- conmutativo)"]
+    end
+    R --> Interpretacion
+    R --> Propiedades

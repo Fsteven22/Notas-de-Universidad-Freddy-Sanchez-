@@ -1,0 +1,15 @@
+flowchart TB
+    R["Trazas del Plano"]
+    subgraph Trazas["Trazas"]
+        direction TB
+        T1["Traza xy (z = 0): ax + by + d = 0"]
+        T2["Traza xz (y = 0): ax + cz + d = 0"]
+        T3["Traza yz (x = 0): by + cz + d = 0"]
+    end
+    subgraph Uso["Uso"]
+        direction TB
+        U1["Visualizar el plano"]
+        U2["Encontrar interceptos"]
+    end
+    R --> Trazas
+    R --> Uso

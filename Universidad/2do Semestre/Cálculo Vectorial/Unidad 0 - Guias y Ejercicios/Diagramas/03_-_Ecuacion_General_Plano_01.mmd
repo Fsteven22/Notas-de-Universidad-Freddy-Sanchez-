@@ -1,0 +1,16 @@
+flowchart TB
+    R["Plano en R³"]
+    subgraph Ecuacion["Ecuación General"]
+        direction TB
+        F1["ax + by + cz + d = 0"]
+        F2["a, b, c = componentes del normal"]
+        F3["d = distancia al origen"]
+    end
+    R --> Ecuacion
+    subgraph Normal["Vector Normal"]
+        direction TB
+        N1["n = (a, b, c)"]
+        N2["Perpendicular al plano"]
+        N3["Define orientación"]
+    end
+    R --> Normal
