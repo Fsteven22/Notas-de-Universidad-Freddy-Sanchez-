@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [FISG1001, unidad0, bienvenida-y-syllabus-fisica-mecanica]
 ---
 
 # ⚡ Física Mecánica — Bienvenida y Syllabus
@@ -59,10 +58,6 @@ tags: [FISG1001, unidad0, bienvenida-y-syllabus-fisica-mecanica]
 > [!tip] 📚 Temas a cubrir
 >
 > ![[Unidad 0 - Guias y Ejercicios/Diagramas/Bienvenida_y_Syllabus_Física_Mecánica_01.svg]]
->
-> **Se lee así:** El diagrama de estructura del curso: **Física Mecánica** se abre en **Fundamentos** y en las seis unidades numeradas — **01 Cinemática**, **02 Dinámica**, **03 Trabajo y Energía**, **04 Impulso y Colisiones**, **05 Equilibrio y Elasticidad** y **06 Hidrostática e Hidrodinámica**.
->
-> **Por qué importa:** Es el mapa del semestre y la razón del orden de las unidades: cada una reutiliza la anterior (la cinemática da las ecuaciones, la dinámica las fuerzas, el trabajo-energía la alternativa al método de fuerzas, y así sucesivamente). Sirve para ubicar dónde se está estudiando al empezar cualquier tema nuevo.
 >
 > | Unidad | Tema |
 > |---|---|

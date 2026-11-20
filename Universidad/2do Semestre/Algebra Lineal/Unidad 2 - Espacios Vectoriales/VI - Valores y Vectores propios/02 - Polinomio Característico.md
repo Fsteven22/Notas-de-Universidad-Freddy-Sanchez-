@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [MATG1049, algebra-lineal, unidad2, 02-polinomio-caracteristico]
 ---
 
 # 🎯 Polinomio Característico
@@ -33,14 +32,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-polinomio-caracteristico]
 > | **Clasificación** | Distingue matrices similares | Teoría de matrices |
 > | **Herramienta computacional** | Base para algoritmos numéricos | Cálculo práctico |
 
-> [!info] 📊 02 - Polinomio Característico 01
->
-> ![[02_-_Polinomio_Característico_01.svg]]
->
->
-> **Se lee así:** el diagrama presenta matriz a y p(λ) = det(a - λi) y polinomio característico y raíces del polinomio.
-> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_01.svg]]
 
 ---
 
@@ -53,9 +45,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-polinomio-caracteristico]
 > **Pasos fundamentales:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_02.svg]]
->
-> **Se lee así:** el diagrama presenta matriz a n×n y restar λi de a y a - λi matriz con λ y calcular determinante.
-> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Ejemplo detallado para matriz 2×2:**
 > 
@@ -206,9 +195,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-polinomio-caracteristico]
 > - $\sum_{i=1}^k m_i = n$
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_03.svg]]
->
-> **Se lee así:** el diagrama presenta polinomio característico grado n y forma expandida y forma factorizada y λⁿ + ... + c₁λ + c₀.
-> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 
 ### 🎯 Coeficientes Significativos
 
@@ -262,9 +248,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-polinomio-caracteristico]
 > **Interpretación geométrica:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_04.svg]]
->
-> **Se lee así:** el diagrama presenta coeficientes del polinomio y c_{n-1} y traza suma diagonal y determinante volumen.
-> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 
 ---
 
@@ -342,9 +325,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-polinomio-caracteristico]
 > **Métodos de cálculo:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_05.svg]]
->
-> **Se lee así:** el diagrama presenta calcular p(λ) para 3×3 y método 1: regla de sarrus y método 2: expansión por cofactores y método 3: si es triangular.
-> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Ejemplo con expansión por cofactores:**
 > 
@@ -423,9 +403,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-polinomio-caracteristico]
 > **Estrategias según estructura:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_06.svg]]
->
-> **Se lee así:** el diagrama presenta diagonal y triangular y simétrica y dispersa.
-> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Forma general n×n:**
 > 
@@ -506,9 +483,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-polinomio-caracteristico]
 > - Valores propios complejos aparecen en **pares conjugados** (si A es real)
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_07.svg]]
->
-> **Se lee así:** el diagrama presenta p(λ) = 0 y λ es valor propio y existe v ≠ 0: av = λv y det(a - λi) = 0.
-> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > ---
 > 
@@ -650,9 +624,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-polinomio-caracteristico]
 > **Diagrama de relaciones:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_08.svg]]
->
-> **Se lee así:** el diagrama presenta polinomio característico y coeficientes y raíces y traza.
-> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 
 ---
 
@@ -768,9 +739,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-polinomio-caracteristico]
 > **Resumen visual:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_09.svg]]
->
-> **Se lee así:** el diagrama presenta tipo de matriz y diagonal/triangular λ = diagonal y simétrica λ reales y antis simétrica λ imaginarios.
-> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 
 ### 🌟 Patrones Notables
 
@@ -1144,14 +1112,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-polinomio-caracteristico]
 > 
 ## 📊 Resumen Visual Completo
 
-> [!info] 📊 02 - Polinomio Característico 10
->
-> ![[02_-_Polinomio_Característico_10.svg]]
->
->
-> **Se lee así:** el diagrama presenta polinomio característico p λ = det a - λi y definición y construcción y propiedades.
-> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_10.svg]]
 
 ### Tabla Resumen Global
 
@@ -1175,17 +1136,10 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-polinomio-caracteristico]
 ## 🔗 Conexión con Próximos Temas
 
 > [!quote] 🌟 Hacia Conceptos Avanzados
->
-> **Has dominado:** dando forma al polinomio característico y sus invariantes.
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_11.svg]]
->
-> **Se lee así:** el diagrama presenta polinomio característico y base teórica y cálculo práctico y propiedades.
-> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
->
-> **Se lee así:** el mapa ubica el polinomio característico entre su base teórica y su cálculo práctico, con sus dos caras (valores propios y determinación de $\lambda$) y sus invariantes ($\text{tr}(A)$, $\det(A)$).
->
-> **Por qué importa:** es el resumen que conviene tener fresco antes de entrar a la diagonalización y al polinomio minimal.
+
+**Has dominado:**
+
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_11.svg]]
 
 **Próximos pasos:**
 
@@ -1201,14 +1155,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-polinomio-caracteristico]
 
 **Roadmap:**
 
-> [!info] 📊 02 - Polinomio Característico 12
->
-> ![[02_-_Polinomio_Característico_12.svg]]
->
->
-> **Se lee así:** el diagrama presenta polinomio característico y polinomio minimal y forma de jordan y ecuación característica.
-> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_12.svg]]
 
 ---
 

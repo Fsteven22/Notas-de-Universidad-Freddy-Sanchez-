@@ -1,71 +1,64 @@
 ---
 dg-publish: true
-tags: [FISG1001, unidad6, fisica-mecanica, fluidos, ecuacion-de-continuidad-y-bernoulli]
 ---
 
 # Ecuación de Continuidad y Bernoulli 🌊
 
 > [!info]+ Fundamentos de la Hidrodinámica La **hidrodinámica** estudia el comportamiento de los fluidos en movimiento. Dos principios fundamentales rigen este comportamiento:
->
+> 
 > 1. **Ecuación de Continuidad** - Conservación de la masa
 > 2. **Ecuación de Bernoulli** - Conservación de la energía
->
+> 
 > 💧 Estos principios explican fenómenos desde el vuelo de aviones hasta el funcionamiento de tuberías
 
-## 🧮 Ecuación de Continuidad
+## Ecuación de Continuidad
 
 > [!tip]+ Principio de Conservación de Masa
->
+> 
 > ### 🔄 Enunciado
->
+> 
 > En un fluido incompresible que circula por un conducto cerrado, el producto del área de la sección transversal por la velocidad del fluido permanece constante.
->
+> 
 > ### ⚖️ Fórmula Fundamental
->
+> 
 > $$A_1 \cdot v_1 = A_2 \cdot v_2 = \text{constante}$$
->
+> 
 > **Donde:**
->
+> 
 > - $A$: Área de la sección transversal (m²)
 > - $v$: Velocidad del fluido (m/s)
 > - Subíndices 1, 2: Diferentes puntos del conducto
 >
 
 > [!note]+ Interpretación Física
->
+> 
 > ### 📊 Relación Área-Velocidad
->
+> 
 > |Sección|Área|Velocidad|Caudal|
 > |---|---|---|---|
 > |**Ancha**|↑ Grande|↓ Lenta|Constante|
 > |**Estrecha**|↓ Pequeña|↑ Rápida|Constante|
->
+> 
 > **Caudal volumétrico**: $Q = A \cdot v$ (m³/s)
 
-## 📊 Diagrama de Continuidad
+## Diagrama de Continuidad
 
-> [!note] 🖼️ Diagrama de Continuidad
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Ecuación_de_Continuidad_y_Bernoulli_01.svg]]
->
-> **Se lee así:** Un ejemplo numérico de **tubería variable**: la **entrada** (`A₁ = 10 cm²`, `v₁ = 2 m/s`) pasa por un **estrangulamiento** (`A₂ = 5 cm²`, `v₂ = 4 m/s`) hasta la **salida** (`A₃ = 8 cm²`, `v₃ = 2,5 m/s`), con un **caudal `Q = 20 cm³/s`** que permanece **constante en todo el sistema**.
->
-> **Por qué importa:** Ilustra la continuidad con números: al reducir el área a la mitad, la velocidad se duplica; al volver a 8 cm², cae a 2,5 m/s. Y muestra que el caudal es el invariante — con él se controla que el cálculo no se haya desviado.
+![[Diagramas/Ecuación_de_Continuidad_y_Bernoulli_01.svg]]
 
-## 🧮 Ecuación de Bernoulli
+## Ecuación de Bernoulli
 
 > [!abstract]+ Principio de Conservación de Energía
->
+> 
 > ### 🎯 Enunciado Completo
->
+> 
 > Para un fluido ideal (incompresible, no viscoso) en flujo estacionario, la energía total por unidad de volumen permanece constante a lo largo de cualquier línea de corriente.
->
+> 
 > ### 🧮 Ecuación General
->
+> 
 > $$P_1 + \frac{1}{2}\rho v_1^2 + \rho g h_1 = P_2 + \frac{1}{2}\rho v_2^2 + \rho g h_2$$
->
+> 
 > ### 📋 Componentes de la Energía
->
+> 
 > |Término|Nombre|Interpretación|Unidades|
 > |---|---|---|---|
 > |$P$|**Presión estática**|Energía de presión|Pa (N/m²)|
@@ -74,118 +67,114 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, ecuacion-de-continuidad-y-be
 >
 
 > [!warning]+ Condiciones de Validez
->
+> 
 > - ⚠️ **Fluido incompresible**: $\rho$ = constante
 > - ⚠️ **Flujo no viscoso**: Sin fricción interna
 > - ⚠️ **Flujo estacionario**: Propiedades constantes en el tiempo
 > - ⚠️ **Sin trabajo externo**: No hay bombas o turbinas
 
-## 🛠️ Aplicaciones de Bernoulli
+## Aplicaciones de Bernoulli
 
 > [!example]+ Casos Prácticos Fundamentales
->
+> 
 > ### ✈️ Sustentación Aerodinámica
->
+> 
 > **Perfil alar:**
->
+> 
 > - **Superficie superior**: Aire más rápido → Presión menor
 > - **Superficie inferior**: Aire más lento → Presión mayor
 > - **Resultado**: Fuerza neta hacia arriba (sustentación)
->
+> 
 > $$\Delta P = \frac{1}{2}\rho(v_{superior}^2 - v_{inferior}^2)$$
->
+> 
 > ### 🚰 Tubo de Venturi
->
+> 
 > |Sección|Área|Velocidad|Presión|
 > |---|---|---|---|
 > |**Entrada**|Grande|Baja|Alta|
 > |**Garganta**|Pequeña|Alta|Baja|
 > |**Salida**|Grande|Baja|Alta|
 
-## 🔍 Análisis Energético Completo
+## Análisis Energético Completo
 
 > [!note]+ Transformación de Energías
->
+> 
 > ### 🔄 Balance Energético
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Ecuación_de_Continuidad_y_Bernoulli_02.svg]]
->
-> **Se lee así:** La **energía total del fluido** descompuesta en tres términos: **energía de presión `P`**, **energía cinética `½ρv²`** y **energía potencial `ρgh`**, que se **intercambian** entre sí para cumplir la **conservación `E₁ = E₂`**.
->
-> **Por qué importa:** Es la interpretación física de la ecuación de Bernoulli: cada término es una forma de energía por unidad de volumen. Por eso al estrecharse un tubo sube la velocidad a costa de la presión, y por eso una manguera sube el agua a costa de la altura.
+> 
+> ![[Diagramas/Ecuación_de_Continuidad_y_Bernoulli_02.svg]]
 >
 
 > [!tip]+ Formas Alternativas de Bernoulli
->
+> 
 > ### 📏 Diferentes Expresiones
->
+> 
 > **Por unidad de peso (Altura de carga):** $$\frac{P_1}{\rho g} + \frac{v_1^2}{2g} + h_1 = \frac{P_2}{\rho g} + \frac{v_2^2}{2g} + h_2$$
->
+> 
 > **Para flujo horizontal ($h_1 = h_2$):** $$P_1 + \frac{1}{2}\rho v_1^2 = P_2 + \frac{1}{2}\rho v_2^2$$
 
-## 🧮 Problemas Resueltos
+## Problemas Resueltos
 
 > [!example]+ Problema 1: Manguera de Jardín
->
+> 
 > ### 🏡 Cálculo de Velocidad
->
+> 
 > **Datos:**
->
+> 
 > - Diámetro de manguera: $d_1 = 2$ cm
 > - Diámetro de boquilla: $d_2 = 0.5$ cm
 > - Velocidad en manguera: $v_1 = 1$ m/s
->
+> 
 > **Solución usando Continuidad:** $$A_1 v_1 = A_2 v_2$$ $$\pi r_1^2 v_1 = \pi r_2^2 v_2$$ $$v_2 = v_1 \left(\frac{r_1}{r_2}\right)^2 = 1 \times \left(\frac{1}{0.25}\right)^2 = 16 \text{ m/s}$$
 >
 
 > [!example]+ Problema 2: Tanque con Orificio
->
+> 
 > ### 🪣 Teorema de Torricelli
->
+> 
 > **Datos:**
->
+> 
 > - Altura del líquido: $h = 2$ m
 > - Orificio a la base del tanque
 > - Presión atmosférica en superficie y orificio
->
+> 
 > **Aplicando Bernoulli (superficie-orificio):** $$P_{atm} + 0 + \rho gh = P_{atm} + \frac{1}{2}\rho v^2 + 0$$
->
+> 
 > **Velocidad de salida:** $$v = \sqrt{2gh} = \sqrt{2 \times 9.8 \times 2} = 6.26 \text{ m/s}$$
 
-## 🔧 Instrumentos de Medición
+## Instrumentos de Medición
 
 > [!abstract]+ Dispositivos Basados en Bernoulli
->
+> 
 > ### 🔧 Aplicaciones Técnicas
->
+> 
 > |Instrumento|Principio|Medición|Ecuación|
 > |---|---|---|---|
 > |**Tubo Pitot**|Presión dinámica|Velocidad|$v = \sqrt{\frac{2\Delta P}{\rho}}$|
 > |**Venturímetro**|Diferencia de presión|Caudal|$Q = A\sqrt{\frac{2\Delta P}{\rho}}$|
 > |**Placa orificio**|Contracción de flujo|Caudal|$Q = C_d A\sqrt{\frac{2\Delta P}{\rho}}$|
 
-## ⚠️ Limitaciones y Flujos Reales
+## Limitaciones y Flujos Reales
 
 > [!warning]+ Desviaciones del Modelo Ideal
->
+> 
 > ### ⚡ Efectos de la Viscosidad
->
+> 
 > **Pérdidas por fricción:** $$P_1 + \frac{1}{2}\rho v_1^2 + \rho gh_1 = P_2 + \frac{1}{2}\rho v_2^2 + \rho gh_2 + h_f$$
->
+> 
 > Donde $h_f$ representa las pérdidas de carga por fricción.
->
+> 
 > ### 🌪️ Efectos de Turbulencia
->
+> 
 > - **Flujo laminar**: Re < 2300 (Bernoulli más preciso)
 > - **Flujo turbulento**: Re > 4000 (Correcciones necesarias)
 > - **Número de Reynolds**: $Re = \frac{\rho v D}{\mu}$
 
-## 📚 Técnicas de Estudio
+## Técnicas de Estudio
 
 > [!tip]+ Mnemotecnia BERNOULLI
->
+> 
 > ### 🧠 Regla de Memorización
->
+> 
 > - **B**alance de energías siempre
 > - **E**nergía cinética + potencial + presión
 > - **R**elación inversa: área pequeña → velocidad grande
@@ -197,65 +186,65 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, ecuacion-de-continuidad-y-be
 > - **I**ncompresible el fluido
 >
 > [!study]+ Estrategia de Resolución: Método PASOS
->
+> 
 > ### 📝 Protocolo de Análisis
->
+> 
 > 1. **P**untos: Identifica puntos de análisis (1 y 2)
 > 2. **A**reas: Calcula áreas de sección si es necesario
 > 3. **S**istema: Dibuja esquema con alturas y presiones
 > 4. **O**peraciones: Aplica ecuaciones (continuidad + Bernoulli)
 > 5. **S**olución: Verifica unidades y coherencia física
 
-## 🧪 Experimentos Demostrativos
+## Experimentos Demostrativos
 
 > [!experiment]+ Demostraciones Clásicas
->
+> 
 > ### 🧪 Laboratorio Virtual
->
+> 
 > |Experimento|Material|Observación|Principio|
 > |---|---|---|---|
 > |**Efecto Magnus**|Pelota girando|Trayectoria curva|Diferencia de velocidades|
 > |**Atomizador**|Botella con tubos|Aspiración de líquido|Presión reducida por velocidad|
 > |**Chimenea natural**|Aire caliente|Tiro ascendente|Diferencia de densidades|
 
-## 🛠️ Aplicaciones Avanzadas
+## Aplicaciones Avanzadas
 
 > [!success]+ Ingeniería Moderna
->
+> 
 > ### 🚀 Tecnologías Actuales
->
+> 
 > **Aeronáutica:**
->
+> 
 > - Diseño de perfiles aerodinámicos
 > - Cálculo de sustentación y resistencia
 > - Sistemas de ventilación de cabina
->
+> 
 > **Ingeniería Civil:**
->
+> 
 > - Diseño de sistemas de distribución de agua
 > - Cálculo de pérdidas en tuberías
 > - Diseño de vertederos y canales
->
+> 
 > **Medicina:**
->
+> 
 > - Flujo sanguíneo en arterias
 > - Diseño de equipos de respiración asistida
 > - Nebulizadores y atomizadores médicos
 
-## 🔗 Referencias y Conexiones
+## Referencias y Conexiones
 
 > [!quote]+ Enlaces a Otras Notas
->
+> 
 > - [[El Principio de Arquímedes y Flotación]]
 > - [[El Principio de Pascal]]
 > - [[Viscosidad y Número de Reynolds]]
 > - [[Flujo Laminar y Ecuación de Poiseuille]]
 > - Pérdidas de Carga en Tuberías
 
-## 📝 Notas Complementarias Recomendadas
+## Notas Complementarias Recomendadas
 
 > [!info]+ Prerrequisitos
->
+> 
 > - Conceptos de Presión
 > - Energía Cinética y Potencial
 > - Densidad y Caudal
@@ -264,7 +253,7 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, ecuacion-de-continuidad-y-be
 >
 
 > [!success]+ Para Profundizar
->
+> 
 > - Flujo Turbulento vs Laminar
 > - Pérdidas por Fricción
 > - Bombas y Turbinas Hidráulicas
@@ -273,8 +262,4 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, ecuacion-de-continuidad-y-be
 
 ---
 
-> [!info] 📌 Notas Complementarias Recomendadas
->
-> **Tags**: #fisica #mecanica #hidrodinamica #bernoulli #continuidad #fluidos #energia #presion #velocidad #caudal #aplicaciones
-
-**Tags:** #FISG1001 #fisica-mecanica #unidad6 #ecuacion-de-continuidad-y-bernoulli
+**Tags**: #fisica #mecanica #hidrodinamica #bernoulli #continuidad #fluidos #energia #presion #velocidad #caudal #aplicaciones

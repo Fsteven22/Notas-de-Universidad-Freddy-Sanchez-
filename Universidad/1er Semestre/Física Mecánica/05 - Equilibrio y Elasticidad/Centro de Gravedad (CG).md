@@ -1,16 +1,15 @@
 ---
 dg-publish: true
-tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, centro-de-gravedad-cg]
 ---
 
-# Centro de Gravedad (CG) 🎯
+## Centro de Gravedad (CG) 🎯
 
 > [!info] 📍 Definición Fundamental El **centro de gravedad** es el punto imaginario donde se puede considerar que actúa la fuerza total de la gravedad sobre un objeto o sistema. Para campos gravitatorios uniformes, es equivalente al **centro de masa** y es crucial para el análisis de equilibrio y estabilidad.
 
 ### Variables Clave 📊
 
 > [!tip] 🔢 Magnitudes Principales
->
+> 
 > - **Vector posición del CG** ($\vec{r}_{CG}$): Ubicación del centro de gravedad
 > - **Vector posición de partícula** ($\vec{r}_i$): Ubicación de cada partícula componente
 > - **Masa total** ($M$): Suma de todas las masas del sistema
@@ -21,144 +20,126 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, centro-de-gravedad-cg]
 ### Ecuaciones Fundamentales ⚖️
 
 > [!warning] 🔶 Fórmulas Clave
->
+> 
 > **Para sistema de partículas discretas:** $$\vec{r}_{CG} = \frac{\sum m_i \vec{r}_i}{\sum m_i} = \frac{m_1\vec{r}_1 + m_2\vec{r}_2 + \dots}{M}$$
->
+> 
 > **Componentes cartesianas:** $$x_{CG} = \frac{\sum m_ix_i}{M}, \quad y_{CG} = \frac{\sum m_iy_i}{M}, \quad z_{CG} = \frac{\sum m_iz_i}{M}$$
->
+> 
 > **Para objetos continuos:** $$x_{CG} = \frac{1}{M}\int x ,dm, \quad y_{CG} = \frac{1}{M}\int y ,dm, \quad z_{CG} = \frac{1}{M}\int z ,dm$$
 
 ### Marco Teórico 🧠
 
 > [!info] 💡 Concepto Fundamental El CG es el punto donde podemos **concentrar todo el peso** del objeto para simplificar análisis de torque. Esto transforma un sistema complejo de fuerzas distribuidas en una **sola fuerza resultante**.
->
+> 
 > **Principio clave:** Si la línea de acción del peso pasa por el punto de apoyo, el torque gravitatorio neto es **cero**.
 
-> [!note] 🖼️ Marco Teórico
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Centro_de_Gravedad_(CG)_01.svg]]
->
-> **Se lee así:** La cadena de simplificación: un **objeto complejo** se ve como **múltiples partículas con pesos Wᵢ**, se reemplaza por **una sola fuerza W aplicada en el CG**, lo que permite un **análisis de torque simplificado** y, de ahí, la **determinación del equilibrio y la estabilidad**.
->
-> **Por qué importa:** Es la razón de existir del centro de gravedad: convierte un objeto con infinitos puntos de aplicación de peso en un solo vector. Sin esa simplificación, el análisis de torque de una viga o de un camión sería impracticable.
+![[Diagramas/Centro_de_Gravedad_(CG)_01.svg]]
 
 ### Métodos de Localización 🔍
 
 > [!tip] 🛠️ Técnicas Prácticas
->
+> 
 > **🎣 Método de Suspensión:**
->
+> 
 > 1. Colgar objeto desde punto A
 > 2. Marcar línea vertical (plomada)
 > 3. Colgar desde punto B diferente
 > 4. Marcar segunda línea vertical
 > 5. **Intersección = Centro de Gravedad**
->
+> 
 > **📏 Método de Balance:**
->
+> 
 > - Encontrar punto donde objeto se equilibra
 > - Útil para formas regulares
 
-> [!note] 🖼️ Métodos de Localización
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Centro_de_Gravedad_(CG)_02.svg]]
->
-> **Se lee así:** La construcción gráfica del CG: se traza la **línea vertical 1** desde el **punto A** y la **línea vertical 2** desde el **punto B**, y su **intersección** es el **centro de gravedad**.
->
-> **Por qué importa:** Es el método experimental (plomada) que funciona para cualquier forma, por irregular que sea: no hace falta integrar, basta con colgar el objeto de dos puntos distintos. Si las dos líneas no se cortan dentro del objeto, el CG está fuera y el objeto no puede equilibrarse sobre esa base.
+![[Diagramas/Centro_de_Gravedad_(CG)_02.svg]]
 
 ### Relación con Estabilidad 🏗️
 
 > [!warning] ⚖️ Criterios de Estabilidad
->
+> 
 > **🟢 Equilibrio Estable:**
->
+> 
 > - CG dentro de la base de apoyo
 > - Línea de acción del peso pasa por la base
->
+> 
 > **🔴 Vuelco Inminente:**
->
+> 
 > - CG en el borde de la base de apoyo
 > - Línea de acción tangente al borde
->
+> 
 > **⚫ Vuelco:**
->
+> 
 > - CG fuera de la base de apoyo
 > - Línea de acción pasa fuera de la base
 
 ### Aplicaciones Prácticas 🌍
 
 > [!tip] 🚗 Ejemplos del Mundo Real
->
+> 
 > **🚛 Diseño Automotriz:**
->
+> 
 > - CG bajo → Mayor estabilidad
 > - Reduce riesgo de vuelco en curvas
->
+> 
 > **🏗️ Construcción:**
->
+> 
 > - Torres: CG dentro de la base
 > - Grúas: Contrapesos para equilibrar CG
->
+> 
 > **🤸 Biomecánica:**
->
+> 
 > - Postura humana: CG sobre pies
 > - Deportes: Control del CG para balance
 
 ### Análisis de Casos 📝
 
 > [!warning] 📐 Ejemplo: Mesa de Tres Patas **Problema:** ¿Cuándo será estable una mesa triangular?
->
+> 
 > **Solución:**
->
+> 
 > - Mesa estable si CG del sistema (mesa + objetos) está dentro del triángulo formado por las tres patas
 > - Si se coloca objeto pesado cerca del borde, CG se desplaza
 > - Límite de estabilidad: CG en el perímetro del triángulo
->
+> 
 > **Aplicación práctica:** Distribución de peso en mesas, sillas, estructuras
 >
 
 > [!tip] 🚶 Ejemplo: Equilibrio Humano **Situación:** Persona inclinándose
->
+> 
 > **Análisis:**
->
+> 
 > - Al inclinarse, CG se desplaza horizontalmente
 > - Para no caer: CG debe permanecer sobre base de apoyo (pies)
 > - Compensación: mover otras partes del cuerpo
->
+> 
 > **Aplicación:** Análisis de postura, rehabilitación, deportes
 
-> [!note] 🖼️ Análisis de Casos
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Centro_de_Gravedad_(CG)_03.svg]]
->
-> **Se lee así:** Los tres estados de estabilidad según la posición del CG: **CG centrado** → **máxima estabilidad**; **CG en el borde** → **límite de estabilidad**; **CG exterior** → **vuelco**.
->
-> **Por qué importa:** Resume el criterio operativo en una sola frase: el objeto es estable mientras la vertical del CG caiga dentro de la base. Todo lo demás (ancho de la base, altura del CG) solo mueve esa vertical.
+![[Diagramas/Centro_de_Gravedad_(CG)_03.svg]]
 
 ### Conexiones Conceptuales 🔗
 
 > [!info] 🌐 Relaciones Interdisciplinarias
->
+> 
 > **Con Momento de Torsión:**
->
+> 
 > - CG es el punto de aplicación del peso
 > - Simplifica cálculo de torque gravitatorio
->
+> 
 > **Con Equilibrio:**
->
+> 
 > - Posición del CG determina condiciones de equilibrio
 > - Base para análisis de estabilidad
->
+> 
 > **Con Dinámica:**
->
+> 
 > - En rotación: CG se mueve en línea recta
 > - Separación de traslación y rotación
 
 ### Consideraciones de Diseño 🎯
 
 > [!tip] 🏗️ Principios de Ingeniería
->
+> 
 > - **Para estabilidad:** CG lo más bajo posible
 > - **Para maniobrabilidad:** Balance entre estabilidad y agilidad
 > - **Para eficiencia:** Distribución óptima de masa
@@ -167,7 +148,7 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, centro-de-gravedad-cg]
 ### Propiedades Importantes 📋
 
 > [!info] ⭐ Características del CG
->
+> 
 > - **Único:** Cada objeto tiene un solo CG
 > - **Puede estar fuera del objeto:** En formas cóncavas (ej: herradura)
 > - **Se mueve con el objeto:** Mantiene posición relativa
@@ -177,7 +158,7 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, centro-de-gravedad-cg]
 ### Síntesis Esencial 🎯
 
 > [!warning] 📌 Puntos Clave
->
+> 
 > - **Definición:** Punto donde actúa efectivamente todo el peso
 > - **Cálculo:** Promedio ponderado de posiciones de masa
 > - **Estabilidad:** CG dentro de base de apoyo = estable
@@ -189,7 +170,7 @@ tags: [FISG1001, unidad5, fisica-mecanica, equilibrio, centro-de-gravedad-cg]
 ## Referencias 📚
 
 > [!quote] 🔗 Enlaces a Otras Notas
->
+> 
 > - Equilibrio: Estático, Estable e Inestable
 > - [[Centro de masa (CM)]]
 > - [[1er Semestre/Física Mecánica/02 - Dinámica/Dinámica de Rotación/Torque y Equilibrio Rotacional.md]]

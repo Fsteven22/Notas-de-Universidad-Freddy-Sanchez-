@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [MATG1049, algebra-lineal, unidad2, 06-complemento-ortogonal]
 ---
 
 # 🔄 Complemento Ortogonal
@@ -27,14 +26,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 06-complemento-ortogonal]
 > |**Unicidad**|Descomposición única|Estabilidad|
 > |**Geometría**|Visualización clara|Intuición|
 
-> [!info] 📊 06 – Complemento Ortogonal 01
->
-> ![[06_–_Complemento_ortogonal_01.svg]]
->
->
-> **Se lee así:** el diagrama presenta complemento ortogonal y subespacio w y w⊥ perpendicular a w y v · w = 0 ∀w ∈ w.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Complemento_ortogonal_01.svg]]
 
 ---
 
@@ -68,9 +60,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 06-complemento-ortogonal]
 > **Interpretación geométrica:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Complemento_ortogonal_02.svg]]
->
-> **Se lee así:** el diagrama presenta v · w = 0 y espacio ℝⁿ y subespacio w y complemento w⊥.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 🔍 Criterio Práctico
 
@@ -226,9 +215,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 06-complemento-ortogonal]
 > **Diagrama de los cuatro subespacios:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Complemento_ortogonal_03.svg]]
->
-> **Se lee así:** el diagrama presenta a y fila a dim = r y nul a dim = n-r y col a dim = r.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Fórmulas de dimensión:**
 > 
@@ -739,14 +725,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 06-complemento-ortogonal]
 
 ### Mapa Conceptual
 
-> [!info] 📊 06 – Complemento Ortogonal 04
->
-> ![[06_–_Complemento_ortogonal_04.svg]]
->
->
-> **Se lee así:** el diagrama presenta complemento ortogonal y definición y w⊥ perpendicular a w y v · w = 0 ∀w∈w.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Complemento_ortogonal_04.svg]]
 
 ### Tabla de Referencia Rápida
 
@@ -1007,9 +986,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 06-complemento-ortogonal]
 > **Progresión natural:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Complemento_ortogonal_05.svg]]
->
-> **Se lee así:** el diagrama presenta complemento ortogonal y proyecciones ortogonales y mínimos cuadrados y descomposición qr.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > |Concepto Actual|Próximo Tema|Relación|
 > |---|---|---|

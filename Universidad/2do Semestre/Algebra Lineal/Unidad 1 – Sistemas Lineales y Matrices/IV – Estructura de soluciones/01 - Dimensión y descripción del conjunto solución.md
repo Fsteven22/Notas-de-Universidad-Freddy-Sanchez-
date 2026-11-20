@@ -1,9 +1,8 @@
 ---
 dg-publish: true
-tags: [MATG1049, algebra-lineal, unidad1, 01-dimension-y-descripcion-del-conjunto-solucion]
 ---
 
-# 📐 Dimensión y Descripción del Conjunto Solución
+# Dimensión y Descripción del Conjunto Solución
 
 ## 🎯 Fundamentos del Conjunto Solución
 
@@ -1713,14 +1712,7 @@ tags: [MATG1049, algebra-lineal, unidad1, 01-dimension-y-descripcion-del-conjunt
 
 ## 📊 Diagrama Conceptual
 
-> [!info] 📊 01 - Dimensión Y Descripción Del Conjunto Solución 01
->
-> ![[01_-_Dimensión_y_descripción_del_conjunto_solución_01.svg]]
->
->
-> **Se lee así:** el diagrama presenta rango a ≠ rango ab y rango a = rango ab y dim = n - rango a y sistema ax = b.
-> **Por qué importa:** conecta el álgebra con la geometría: cuántas soluciones tiene un sistema y por qué.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Dimensión_y_descripción_del_conjunto_solución_01.svg]]
 
 ## 🔗 Relación con Otros Conceptos
 
@@ -3547,14 +3539,7 @@ tags: [MATG1049, algebra-lineal, unidad1, 01-dimension-y-descripcion-del-conjunt
 
 ## 📊 Diagrama Conceptual
 
-> [!info] 📊 01 - Dimensión Y Descripción Del Conjunto Solución 02
->
-> ![[01_-_Dimensión_y_descripción_del_conjunto_solución_02.svg]]
->
->
-> **Se lee así:** el diagrama presenta rango a ≠ rango ab y rango a = rango ab y dim = n - rango a y sistema ax = b.
-> **Por qué importa:** conecta el álgebra con la geometría: cuántas soluciones tiene un sistema y por qué.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Dimensión_y_descripción_del_conjunto_solución_02.svg]]
 
 ## 🔗 Relación con Otros Conceptos
 
@@ -5711,9 +5696,6 @@ tags: [MATG1049, algebra-lineal, unidad1, 01-dimension-y-descripcion-del-conjunt
 > [!note] 🗺️ Flujo de Clasificación Visual
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Dimensión_y_descripción_del_conjunto_solución_03.svg]]
->
-> **Se lee así:** el diagrama presenta no y sistema ax = b y formar matriz ampliada a b y aplicar gauss para obtener fe.
-> **Por qué importa:** conecta el álgebra con la geometría: cuántas soluciones tiene un sistema y por qué.
 > 
 > ```
 > Leyenda del diagrama:

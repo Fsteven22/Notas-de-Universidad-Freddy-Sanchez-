@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [MATG1049, algebra-lineal, unidad1, 01-rango-de-una-matriz]
 ---
 
 # 📏 Rango de una Matriz
@@ -744,14 +743,7 @@ tags: [MATG1049, algebra-lineal, unidad1, 01-rango-de-una-matriz]
 
 ## 📊 Diagrama Conceptual del Rango
 
-> [!info] 📊 01 - Rango De Una Matriz 01
->
-> ![[01_-_Rango_de_una_Matriz_01.svg]]
->
->
-> **Se lee así:** el diagrama presenta rango de una matriz y definiciones y métodos de cálculo y aplicaciones.
-> **Por qué importa:** el rango es el número clave que clasifica cualquier sistema sin necesidad de resolverlo completamente.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Rango_de_una_Matriz_01.svg]]
 
 ## 🔗 Relación Rango-Nulidad
 

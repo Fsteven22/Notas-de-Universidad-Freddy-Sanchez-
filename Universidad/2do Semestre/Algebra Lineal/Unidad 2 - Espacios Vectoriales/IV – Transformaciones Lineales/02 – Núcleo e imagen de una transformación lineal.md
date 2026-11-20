@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [MATG1049, algebra-lineal, unidad2, 02-nucleo-e-imagen-de-una-transformacion-lineal]
 ---
 
 # 🎯 Núcleo e Imagen de una Transformación Lineal

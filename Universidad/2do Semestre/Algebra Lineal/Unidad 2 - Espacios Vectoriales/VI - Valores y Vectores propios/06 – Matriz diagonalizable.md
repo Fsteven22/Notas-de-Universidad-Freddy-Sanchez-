@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [MATG1049, algebra-lineal, unidad2, 06-matriz-diagonalizable]
 ---
 
 # 💎 Matriz Diagonalizable
@@ -27,14 +26,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 06-matriz-diagonalizable]
 > |**Comprensión**|Ver estructura esencial|Análisis de transformaciones|
 > |**Estabilidad**|Análisis de comportamiento|Sistemas dinámicos|
 
-> [!info] 📊 06 – Matriz Diagonalizable 01
->
-> ![[06_–_Matriz_diagonalizable_01.svg]]
->
->
-> **Se lee así:** el diagrama presenta matriz diagonalizable y ventajas y requisitos y proceso.
-> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Matriz_diagonalizable_01.svg]]
 
 ---
 
@@ -119,14 +111,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 06-matriz-diagonalizable]
 > Por tanto: A = PDP⁻¹ ✓
 > ```
 
-> [!info] 📊 06 – Matriz Diagonalizable 02
->
-> ![[06_–_Matriz_diagonalizable_02.svg]]
->
->
-> **Se lee así:** el diagrama presenta sí y matriz a n×n y ¿diagonalizable? y tiene n vectores propios linealmente independientes.
-> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Matriz_diagonalizable_02.svg]]
 
 ---
 
@@ -212,14 +197,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 06-matriz-diagonalizable]
 > A NO es diagonalizable. ❌
 > ```
 
-> [!info] 📊 06 – Matriz Diagonalizable 03
->
-> ![[06_–_Matriz_diagonalizable_03.svg]]
->
->
-> **Se lee así:** el diagrama presenta sí y sí para todos y no para alguno y analizar matriz a.
-> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Matriz_diagonalizable_03.svg]]
 
 ---
 
@@ -272,14 +250,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 06-matriz-diagonalizable]
 > 
 > Calcular $PD$ y $AP$, verificar que son iguales.
 
-> [!info] 📊 06 – Matriz Diagonalizable 04
->
-> ![[06_–_Matriz_diagonalizable_04.svg]]
->
->
-> **Se lee así:** el diagrama presenta sí y inicio y calcular p λ = det a-λi y encontrar raíces λ₁, ..., λₖ.
-> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Matriz_diagonalizable_04.svg]]
 
 ### 💡 Ejemplo Completo 2×2
 
@@ -593,14 +564,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 06-matriz-diagonalizable]
 
 ### Mapa Conceptual
 
-> [!info] 📊 06 – Matriz Diagonalizable 05
->
-> ![[06_–_Matriz_diagonalizable_05.svg]]
->
->
-> **Se lee así:** el diagrama presenta matriz diagonalizable y definición y a = pdp⁻¹ y d diagonal.
-> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Matriz_diagonalizable_05.svg]]
 
 ### Tabla de Referencia Rápida
 
@@ -725,9 +689,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 06-matriz-diagonalizable]
 > **Progresión natural:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Matriz_diagonalizable_06.svg]]
->
-> **Se lee así:** el diagrama presenta matriz diagonalizable y formas canónicas y diagonalización ortogonal y descomposición svd.
-> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > |Concepto Actual|Próximo Tema|Relación|
 > |---|---|---|

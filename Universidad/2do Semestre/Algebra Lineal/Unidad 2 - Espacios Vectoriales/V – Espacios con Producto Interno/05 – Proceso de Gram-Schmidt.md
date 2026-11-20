@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [MATG1049, algebra-lineal, unidad2, 05-proceso-de-gram-schmidt]
 ---
 
 # 🎯 Proceso de Gram-Schmidt
@@ -29,14 +28,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-proceso-de-gram-schmidt]
 > |**Geometría**|Crea sistemas de coordenadas ortogonales|Gráficos 3D, animación|
 > |**Señales**|Análisis de Fourier y wavelets|Procesamiento de audio/video|
 
-> [!info] 📊 05 – Proceso De Gram-Schmidt 01
->
-> ![[05_–_Proceso_de_Gram-Schmidt_01.svg]]
->
->
-> **Se lee así:** el diagrama presenta vectores originales cualquiera y gram-schmidt y vectores ortogonales perpendiculares y normalización.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_01.svg]]
 
 ---
 
@@ -49,9 +41,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-proceso-de-gram-schmidt]
 > **Transformación visual de vectores:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_02.svg]]
->
-> **Se lee así:** el diagrama presenta vectores originales v₁, v₂, v₃ y paso 1: mantener v₁ normalizar → u₁ y paso 2: proyectar v₂ eliminar componente en u₁ y paso 3: proyectar v₃ eliminar componentes en u₁, u₂.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplo concreto en 2D:**
 > 
@@ -66,9 +55,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-proceso-de-gram-schmidt]
 > **Representación gráfica del proceso:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_03.svg]]
->
-> **Se lee así:** el diagrama presenta normalizar y proyección y restar y u₁ = v₁/.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Propiedades visuales clave:**
 > 
@@ -86,9 +72,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-proceso-de-gram-schmidt]
 > **Conceptos relacionados pero distintos:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_04.svg]]
->
-> **Se lee así:** el diagrama presenta paso 1 y paso 2 y vectores linealmente independientes y gram-schmidt.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Tabla comparativa:**
 > 
@@ -143,9 +126,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-proceso-de-gram-schmidt]
 > **Proceso algorítmico:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_05.svg]]
->
-> **Se lee así:** el diagrama presenta no y inicio: v₁, v₂, ..., vₙ y k = 1 y normalizar v₁ → u₁.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Propiedades importantes:**
 > 
@@ -314,9 +294,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-proceso-de-gram-schmidt]
 > **Comparación visual:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_06.svg]]
->
-> **Se lee así:** el diagrama presenta gram-schmidt clásico y v₂ - proy₁ - proy₂ - ... y todas las proyecciones sobre vectores originales y ⚠️ acumula errores.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > Vectores casi paralelos:
 > v₁ = [1, 0, 0]
 > v₂ = [1, 1e-10, 0]
@@ -362,9 +339,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-proceso-de-gram-schmidt]
 > **Proceso de construcción:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_07.svg]]
->
-> **Se lee así:** el diagrama presenta matriz a columnas = v₁, v₂, v₃ y gram-schmidt y matriz q columnas = u₁, u₂, u₃ y matriz r coeficientes.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplo numérico:**
 > 
@@ -417,9 +391,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-proceso-de-gram-schmidt]
 > **Solución usando QR:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_08.svg]]
->
-> **Se lee así:** el diagrama presenta problema: min y ax - b y factorizar a = qr y sustituir: min.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ventajas sobre ecuaciones normales (AᵀAx = Aᵀb):**
 > 
@@ -486,9 +457,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-proceso-de-gram-schmidt]
 > **Proceso con Gram-Schmidt:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_09.svg]]
->
-> **Se lee así:** el diagrama presenta señal original y muestrear y vectores de datos y gram-schmidt.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplo: Wavelets de Haar**
 > 
@@ -535,9 +503,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-proceso-de-gram-schmidt]
 > **Caso típico: Cámara virtual**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_10.svg]]
->
-> **Se lee así:** el diagrama presenta posición cámara y vector hacia objetivo: forward y vector up aproximado y gram-schmidt: ortogonalizar.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Algoritmo:**
 > 
@@ -676,9 +641,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-proceso-de-gram-schmidt]
 > **Situaciones problemáticas:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_11.svg]]
->
-> **Se lee así:** el diagrama presenta no y vectores de entrada y ¿linealmente independientes? y ❌ gs falla.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Caso 1: Dependencia lineal**
 > 
@@ -935,14 +897,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-proceso-de-gram-schmidt]
 
 ### 🗺️ Mapa Conceptual
 
-> [!info] 📊 05 – Proceso De Gram-Schmidt 12
->
-> ![[05_–_Proceso_de_Gram-Schmidt_12.svg]]
->
->
-> **Se lee así:** el diagrama presenta gram-schmidt y concepto y ortogonalización y normalización.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Proceso_de_Gram-Schmidt_12.svg]]
 
 ---
 

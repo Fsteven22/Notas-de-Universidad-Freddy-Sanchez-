@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-segunda-ley-de-newton]
 ---
 
 # 🧪 Práctica: Segunda Ley de Newton
@@ -15,29 +14,17 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-segunda-ley-de-
 
 ## ⚙️ Variables Comunes
 
-> [!info] 📌 ️ Variables Comunes
->
-> - **Fuerza Neta** (_F_ o _Fₙₑₜₐ_): Suma vectorial de todas las fuerzas sobre un objeto o sistema. Causa de la aceleración.
+- **Fuerza Neta** (_F_ o _Fₙₑₜₐ_): Suma vectorial de todas las fuerzas sobre un objeto o sistema. Causa de la aceleración.
     
-> [!info] 📌 ️ Variables Comunes
->
-> - **Masa** (_m_): Cantidad de inercia del objeto, resistencia a cambiar su estado de movimiento.
+- **Masa** (_m_): Cantidad de inercia del objeto, resistencia a cambiar su estado de movimiento.
     
-> [!info] 📌 ️ Variables Comunes
->
-> - **Aceleración** (_a_): Cambio de velocidad por unidad de tiempo, efecto de la fuerza neta.
+- **Aceleración** (_a_): Cambio de velocidad por unidad de tiempo, efecto de la fuerza neta.
     
-> [!info] 📌 ️ Variables Comunes
->
-> - **Tiempo** (_t_): Tiempo que tarda el objeto en recorrer una distancia o cambiar velocidad.
+- **Tiempo** (_t_): Tiempo que tarda el objeto en recorrer una distancia o cambiar velocidad.
     
-> [!info] 📌 ️ Variables Comunes
->
-> - **Distancia/Desplazamiento** (Δ_x_): Distancia recorrida por el objeto.
+- **Distancia/Desplazamiento** (Δ_x_): Distancia recorrida por el objeto.
     
-> [!info] 📌 ️ Variables Comunes
->
-> - **Incertidumbre** (δ_m_, δ_t_, δ_Δx_): Margen de error en las mediciones.
+- **Incertidumbre** (δ_m_, δ_t_, δ_Δx_): Margen de error en las mediciones.
     
 
 ---
@@ -84,13 +71,9 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-segunda-ley-de-
 
 ### d. Tipo de Mediciones (Tabla 4)
 
-> [!info] 📌 d. Tipo de Mediciones (Tabla 4)
->
-> - **Directas:** Masa, ancho carrito, tiempo
+- **Directas:** Masa, ancho carrito, tiempo
     
-> [!info] 📌 d. Tipo de Mediciones (Tabla 4)
->
-> - **Indirectas:** Aceleración, velocidad, fuerza neta (calculadas)
+- **Indirectas:** Aceleración, velocidad, fuerza neta (calculadas)
     
 
 ### e. Notas Importantes
@@ -127,25 +110,15 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-segunda-ley-de-
 
 ## 🔗 Relación con Otros Temas
 
-> [!info] 📌 Relación con Otros Temas
->
-> - Cinemática: aceleración calculada con distancia y tiempo
+- Cinemática: aceleración calculada con distancia y tiempo
     
-> [!info] 📌 Relación con Otros Temas
->
-> - Fuerzas: análisis de tensión, peso, fricción
+- Fuerzas: análisis de tensión, peso, fricción
     
-> [!info] 📌 Relación con Otros Temas
->
-> - Diagramas de cuerpo libre: para identificar fuerzas
+- Diagramas de cuerpo libre: para identificar fuerzas
     
-> [!info] 📌 Relación con Otros Temas
->
-> - Linealización de datos: relación lineal _Fₙₑₜₐ = ma_
+- Linealización de datos: relación lineal _Fₙₑₜₐ = ma_
     
-> [!info] 📌 Relación con Otros Temas
->
-> - Propagación de errores: para incertidumbres en aceleración y fuerza
+- Propagación de errores: para incertidumbres en aceleración y fuerza
     
 
 ---
@@ -184,25 +157,15 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-segunda-ley-de-
 
 ## ❓ Preguntas y Respuestas Clave
 
-> [!info] 📌 Preguntas y Respuestas Clave
->
-> 1. **Incertidumbres en puntos seleccionados (_P_a_, _P_b_):**
+1. **Incertidumbres en puntos seleccionados (_P_a_, _P_b_):**
     
-> [!info] 📌 Preguntas y Respuestas Clave
->
->     - Incertidumbre en _X_ (para _L^(1/2)_) calculada por propagación de errores.
+    - Incertidumbre en _X_ (para _L^(1/2)_) calculada por propagación de errores.
         
-> [!info] 📌 Preguntas y Respuestas Clave
->
->     - Incertidumbre en _Y_ (para _T_) directa.
+    - Incertidumbre en _Y_ (para _T_) directa.
         
-> [!info] 📌 Preguntas y Respuestas Clave
->
-> 2. **Pendiente e intercepto:** Calculados con reglas de cifras significativas y análisis.
+2. **Pendiente e intercepto:** Calculados con reglas de cifras significativas y análisis.
     
-> [!info] 📌 Preguntas y Respuestas Clave
->
-> 3. **Ecuación empírica: _** $Y = mexp * X + b_exp$
+3. **Ecuación empírica: _** $Y = mexp * X + b_exp$
     
 
 > [!question] ❓ Preguntas y respuestas clave
@@ -239,21 +202,13 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-segunda-ley-de-
 
 ## 🔗 Relación con Otros Temas (Taller)
 
-> [!info] 📌 Relación con Otros Temas (Taller)
->
-> - Medición y errores
+- Medición y errores
     
-> [!info] 📌 Relación con Otros Temas (Taller)
->
-> - Cifras significativas
+- Cifras significativas
     
-> [!info] 📌 Relación con Otros Temas (Taller)
->
-> - Graficación de datos
+- Graficación de datos
     
-> [!info] 📌 Relación con Otros Temas (Taller)
->
-> - Análisis de regresión lineal
+- Análisis de regresión lineal
     
 
 ---
@@ -266,5 +221,3 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-segunda-ley-de-
 > Línea recta usada para calcular tensión de ruptura _F_.
 
 ---
-
-**Tags:** #FISG1001 #fisica-mecanica #laboratorio #practica-segunda-ley-de-newton

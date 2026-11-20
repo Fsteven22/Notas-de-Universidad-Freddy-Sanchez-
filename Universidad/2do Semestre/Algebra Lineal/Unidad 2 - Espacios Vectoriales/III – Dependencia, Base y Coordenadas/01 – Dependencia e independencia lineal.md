@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [MATG1049, algebra-lineal, unidad2, 01-dependencia-e-independencia-lineal]
 ---
 
 # 📘 Dependencia e Independencia Lineal

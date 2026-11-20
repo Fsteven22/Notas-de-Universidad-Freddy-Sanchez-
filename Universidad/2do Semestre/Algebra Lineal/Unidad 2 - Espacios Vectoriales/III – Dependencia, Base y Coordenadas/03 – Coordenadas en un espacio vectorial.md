@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [MATG1049, algebra-lineal, unidad2, 03-coordenadas-en-un-espacio-vectorial]
 ---
 
 # 📘 Coordenadas en un Espacio Vectorial

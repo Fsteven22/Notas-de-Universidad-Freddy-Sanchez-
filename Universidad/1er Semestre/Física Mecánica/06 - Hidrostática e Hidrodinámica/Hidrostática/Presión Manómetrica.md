@@ -1,21 +1,19 @@
 ---
 dg-publish: true
-tags: [FISG1001, unidad6, fisica-mecanica, fluidos, presion-manometrica]
 ---
 
-# 💧 Presión Manométrica
+# Presión Manométrica
 
-> [!quote] *"En el mundo de la ingeniería y la física aplicada, no medimos la presión absoluta que incluye el peso invisible de toda la atmósfera. Medimos la diferencia, la presión que excede lo normal, la presión manométrica: el verdadero indicador de las fuerzas adicionales que actúan en nuestros sistemas."*
+>[!quote] *"En el mundo de la ingeniería y la física aplicada, no medimos la presión absoluta que incluye el peso invisible de toda la atmósfera. Medimos la diferencia, la presión que excede lo normal, la presión manométrica: el verdadero indicador de las fuerzas adicionales que actúan en nuestros sistemas."*
 >
 
 > [!info]+ Definición Fundamental 📏
->
 > La **presión manométrica** (P_man) es la **diferencia entre la presión absoluta en un punto y la presión atmosférica local**. Es la presión que miden la mayoría de instrumentos de medición como manómetros, ya que toman como referencia la presión atmosférica.
->
+> 
 > **P_manométrica = P_absoluta - P_atmosférica**
->
+> 
 > **P_man = P_abs - P_atm**
->
+> 
 > Donde:
 > - P_man = Presión manométrica
 > - P_abs = Presión absoluta total
@@ -23,15 +21,9 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, presion-manometrica]
 >
 
 > [!note] Fundamento Teórico y Tipos de Presión 📊
->
 > ### Clasificación de Presiones
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Presión_Manómetrica_01.svg]]
->
-> **Se lee así:** Las tres presiones y sus relaciones: la **absoluta** `P_abs = P_atm + P_man`, la **atmosférica** `P_atm ≈ 101,325 kPa` y la **manométrica** `P_man = P_abs − P_atm`. Los **casos especiales** son **sobrepresión** (`P_man > 0`), **presión atmosférica** (`P_man = 0`) y **vacío parcial** (`P_man < 0`). Las **referencias** son el **vacío absoluto** (`P = 0 Pa`, referencia teórica) y el **nivel del mar** (`P_atm = 1 atm`, referencia práctica).
->
-> **Por qué importa:** Es la distinción que confunde al principio de cualquier problema: un manómetro nunca lee la presión absoluta, lee la diferencia con la atmosférica. Por eso un neumático a «30 psi» mide 30 psi por encima de la atmósfera, no 30 psi absolutos.
->
+> ![[Diagramas/Presión_Manómetrica_01.svg]]
+> 
 > ### Relaciones Fundamentales
 > - **P_abs = P_atm + P_man** (cuando P_man > 0)
 > - **P_abs = P_atm - |P_man|** (cuando P_man < 0, vacío)
@@ -39,83 +31,69 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, presion-manometrica]
 >
 
 > [!tip] Instrumentos de Medición 🔬
->
 > ### Tipos de Manómetros
->
 > | Tipo | Principio | Aplicación | Rango Típico |
 > |------|-----------|------------|--------------|
 > | 📏 **Manómetro en U** | Altura de columna líquida | Laboratorio, precisión | 0-200 kPa |
 > | ⚙️ **Manómetro Bourdon** | Deformación de tubo curvo | Industrial, robustez | 0-100 MPa |
 > | 💎 **Piezoeléctrico** | Deformación cristalina | Alta precisión, dinámico | 0-1000 MPa |
 > | 🌡️ **Digital** | Sensores electrónicos | Versatilidad, registro | Variable |
->
+> 
 > ### Manómetro en U - Principio
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Presión_Manómetrica_02.svg]]
->
-> **Se lee así:** La lectura de un **tubo en U con mercurio**: el **recipiente con gas** tiene `P_gas`, la **rama abierta** está a la **presión atmosférica** y la **diferencia de altura h** entre las dos ramas se fija por el **equilibrio de presiones**, de donde `P_gas = P_atm + ρ_Hg·g·h` y la **presión manométrica** es `ρ_Hg·g·h`.
->
-> **Por qué importa:** Es el montaje experimental que mide la presión de un gas sin tocarlo. Y muestra por qué se usa mercurio: al ser 13,6 veces más denso que el agua, la altura que hay que leer es 13,6 veces menor.
+> ![[Diagramas/Presión_Manómetrica_02.svg]]
 >
 
 > [!example] Cálculos y Ejemplos Prácticos 🧮
->
 > ### Ejemplo 1: Manómetro en U con Mercurio
 > **Problema:** Un manómetro en U conectado a un tanque muestra una diferencia de altura de mercurio de 25 cm. ¿Cuál es la presión manométrica del gas?
->
+> 
 > **Datos:**
 > - h = 25 cm = 0.25 m
 > - ρ_Hg = 13,600 kg/m³
 > - g = 9.8 m/s²
->
+> 
 > **Solución:**
 > ```
 > P_manométrica = ρ_Hg × g × h
 > P_man = 13,600 × 9.8 × 0.25 = 33,320 Pa = 33.32 kPa
 > ```
->
+> 
 > **Resultado:** La presión manométrica es 33.32 kPa por encima de la atmosférica
->
+> 
 > ### Ejemplo 2: Presión en un Tanque
 > **Problema:** Un manómetro en un tanque marca 2.5 bar. ¿Cuál es la presión absoluta si estamos al nivel del mar?
->
+> 
 > **Datos:**
 > - P_man = 2.5 bar = 250 kPa
 > - P_atm = 101.325 kPa (nivel del mar)
->
+> 
 > **Solución:**
 > ```
 > P_absoluta = P_atmosférica + P_manométrica
 > P_abs = 101.325 + 250 = 351.325 kPa = 3.51 bar
 > ```
->
+> 
 > ### Ejemplo 3: Vacío Parcial
 > **Problema:** Un vacuómetro indica -30 kPa. ¿Cuál es la presión absoluta?
->
+> 
 > **Solución:**
 > ```
 > P_absoluta = P_atmosférica + P_manométrica
 > P_abs = 101.325 + (-30) = 71.325 kPa
->
+> 
 > Porcentaje de vacío = |P_man|/P_atm × 100% = 30/101.325 × 100% = 29.6%
 > ```
 >
 > [!abstract] Aplicaciones Prácticas 🏗️
->
 > ### En Sistemas de Fluidos
 > - **🚰 Sistemas de agua potable**: Control de presión en tuberías
 > - **🔥 Calderas industriales**: Monitoreo de presión de vapor
 > - **🚗 Neumáticos**: Presión de inflado (siempre manométrica)
 > - **💨 Sistemas neumáticos**: Control de aire comprimido
->
+> 
 > ### En Procesos Industriales
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Presión_Manómetrica_03.svg]]
->
-> **Se lee así:** El mapa de aplicaciones de la presión manométrica: en **petroquímica** (reactores a presión, destilación, transporte por ductos), en **manufactura** (prensas hidráulicas, moldeado por inyección, control de calidad), en **medicina** (respiradores artificiales, cámaras hiperbáricas, equipos de diálisis) y en **alimentaria** (esterilización, envasado al vacío, procesamiento HPP).
->
-> **Por qué importa:** Muestra que casi toda la ingeniería de procesos mide diferencias de presión, no presiones absolutas: el manómetro es el instrumento porque lo que importa es cuánto hay por encima o por debajo de la atmósfera.
->
+> ![[Diagramas/Presión_Manómetrica_03.svg]]
+> 
 > ### Ventajas de la Medición Manométrica
 > - **📏 Referencia práctica**: Elimina variaciones atmosféricas normales
 > - **🔧 Simplicidad instrumental**: Manómetros más simples y económicos
@@ -124,19 +102,18 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, presion-manometrica]
 >
 
 > [!warning] Consideraciones y Limitaciones ⚠️
->
 > ### Factores que Afectan la Medición
 > - **🏔️ Altitud**: P_atm varía con la elevación (≈ -12 Pa/m)
 > - **🌡️ Temperatura**: Afecta la densidad del fluido manométrico
 > - **☁️ Condiciones meteorológicas**: Variaciones de presión atmosférica
 > - **📐 Orientación**: Manómetros deben estar correctamente nivelados
->
+> 
 > ### Errores Comunes
 > - **🔄 Confundir presión manométrica con absoluta**
 > - **📍 No considerar la altitud del lugar**
 > - **🌡️ Ignorar efectos de temperatura en el instrumento**
 > - **⏱️ No calibrar periódicamente los instrumentos**
->
+> 
 > ### Precauciones de Seguridad
 > - **💥 Sobrepresión**: Puede dañar equipos o causar accidentes
 > - **🌪️ Vacío excesivo**: Puede colapsar recipientes no diseñados
@@ -144,7 +121,6 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, presion-manometrica]
 >
 
 > [!summary]+ Fórmulas y Conversiones Clave 📊
->
 > ### Ecuaciones Fundamentales
 > ```
 > Presión Manométrica:    P_man = P_abs - P_atm
@@ -152,7 +128,7 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, presion-manometrica]
 > Manómetro en U:         P_man = ρ_fluido × g × h
 > Vacío Relativo:         Vacío% = |P_man|/P_atm × 100%
 > ```
->
+> 
 > ### Conversiones Útiles
 > ```
 > 1 bar = 100 kPa = 0.1 MPa
@@ -161,7 +137,7 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, presion-manometrica]
 > 1 mmHg = 133.322 Pa
 > 1 mH₂O = 9.807 kPa
 > ```
->
+> 
 > ### Para Manómetros Líquidos
 > ```
 > Mercurio:    P_man = 133,322 × h_mm Pa
@@ -170,7 +146,6 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, presion-manometrica]
 > ```
 >
 > [!brain]+ Técnica de Memorización: MANÓMETRO 🧠
->
 > **M** - Mide diferencia con atmósfera
 > **A** - Atmosférica es la referencia
 > **N** - Negativa indica vacío parcial
@@ -183,7 +158,6 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, presion-manometrica]
 >
 
 > [!success] Puntos Clave para Recordar 🎯
->
 > 1. **📏 Referencia atmosférica**: P_man = P_abs - P_atm
 > 2. **🔄 Signo importa**: Positiva (sobrepresión), negativa (vacío)
 > 3. **🌍 Dependencia de altitud**: P_atm varía con elevación
@@ -193,26 +167,23 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, presion-manometrica]
 
 ---
 
-## 🔗 Referencias
+## Referencias
 
 > [!quote] Notas Relacionadas
->
 > - [[Presión y Densidad]]
 > - [[El Principio de Pascal]]
 > - [[Teorema de los Vasos Comunicantes|Principio de los Vasos Comunicantes]]
 > - Módulo de Compresibilidad
 
-## 📝 Notas Recomendadas
+## Notas Recomendadas
 
 > [!info] Prerrequisitos
->
 > - [[Presión y Densidad]]
 > - [[Fuerzas y Diagramas de Cuerpo Libre]]
 > - [[Equilibrio]]
 >
 
 > [!tip] Continuación del Tema
->
 > - [[Viscosidad y Número de Reynolds]]
 > - [[Ecuación de Continuidad y Bernoulli]]
 > - [[Flujo Laminar y Ecuación de Poiseuille]]

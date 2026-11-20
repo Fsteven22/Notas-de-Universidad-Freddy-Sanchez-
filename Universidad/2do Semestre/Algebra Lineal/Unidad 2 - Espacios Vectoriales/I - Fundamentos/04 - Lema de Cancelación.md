@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [MATG1049, algebra-lineal, unidad2, 04-lema-de-cancelacion]
 ---
 
 # 🔄 Lema de Cancelación

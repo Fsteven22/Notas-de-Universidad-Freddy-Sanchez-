@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [MATG1049, algebra-lineal, unidad1, 01-algoritmo-de-gauss]
 ---
 
 # 🔢 Algoritmo de Gauss
@@ -640,14 +639,7 @@ tags: [MATG1049, algebra-lineal, unidad1, 01-algoritmo-de-gauss]
 
 ## 🎨 Diagrama del Proceso de Gauss
 
-> [!info] 📊 01 - Algoritmo De Gauss 01
->
-> ![[01_-_Algoritmo_de_Gauss_01.svg]]
->
->
-> **Se lee así:** el diagrama presenta fila 0...0 b, b≠0 y pivotes = n y pivotes &lt; n y sistema de ecuaciones.
-> **Por qué importa:** conecta el álgebra con la geometría: cuántas soluciones tiene un sistema y por qué.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Algoritmo_de_Gauss_01.svg]]
 
 ## 📝 Algoritmo Formal (Pseudocódigo)
 

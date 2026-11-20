@@ -1,19 +1,16 @@
 ---
 dg-publish: true
-tags: [FISG1001, unidad0, fisica-mecanica, fundamentos, unidades-y-magnitudes-fisicas]
 ---
 
 # Unidades y Magnitudes Físicas 📏⚖️
 
-> [!quote] 💬 Cita
->
+> [!quote]
 > *"Medir es comparar, y la física empieza cuando sabemos cómo y con qué hacerlo." — Anónimo*
 
 ---
 
 ## 📚 Introducción
 > [!info] **La base de toda medición**
->
 > En física, **medir** significa comparar una cantidad física con un patrón preestablecido.  
 > Este patrón, universalmente aceptado, es lo que conocemos como **unidad de medida**.  
 > Las magnitudes físicas permiten describir fenómenos naturales y cuantificar propiedades como la distancia, el tiempo o la masa.  
@@ -23,24 +20,18 @@ tags: [FISG1001, unidad0, fisica-mecanica, fundamentos, unidades-y-magnitudes-fi
 
 ## 🧩 Clasificación General
 > [!example] **Tipos de Magnitudes**
->
 > - **Magnitudes Fundamentales** → Definidas de forma independiente, no dependen de otras magnitudes (ej. longitud, tiempo, masa).  
 > - **Magnitudes Derivadas** → Se obtienen a partir de las fundamentales por medio de fórmulas (ej. velocidad, fuerza, energía).  
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Unidades_y_Magnitudes_Físicas_01.svg]]
->
-> **Se lee así:** El árbol de las magnitudes físicas: las **fundamentales del SI** son **7 clases** (**longitud m, masa kg, tiempo s**; **corriente A, temperatura K, cantidad de sustancia mol, luminosidad cd**) y de ellas se construyen las **derivadas** (**velocidad m/s**, **aceleración m/s²**, **fuerza N = kg·m/s²**, **trabajo J = N·m**, **potencia W = J/s**). Cierra con el **SI desde 1960** (base métrica decimal) y el principio de que **sin estándar no hay medición comparable**.
->
-> **Por qué importa:** La idea de que toda magnitud derivada se reduce a las siete fundamentales es lo que garantiza la consistencia dimensional: si `N = kg·m/s²` y `J = N·m`, entonces `W = J/s` encaja sin contradicción. Y el bloque final recuerda por qué existen los patrones: sin una unidad común, los laboratorios no podrían comparar resultados.
+> 
+> ![[Diagramas/Unidades_y_Magnitudes_Físicas_01.svg]]
 
 ---
 
 ## 📏 Magnitudes Fundamentales y sus Unidades SI
 > [!tip] **Sistema Internacional de Unidades**
->
 > El **Sistema Internacional (SI)** fue adoptado oficialmente en 1960, basado en el sistema métrico decimal.  
 > Asegura uniformidad y precisión en las mediciones, vital en ciencia e ingeniería.
->
+> 
 > | Magnitud      | Símbolo | Unidad SI | Símbolo Unidad | Ejemplo práctico |
 > |--------------|---------|-----------|----------------|------------------|
 > | Longitud     | l       | metro     | m              | Altura de una puerta ≈ 2 m |
@@ -55,9 +46,7 @@ tags: [FISG1001, unidad0, fisica-mecanica, fundamentos, unidades-y-magnitudes-fi
 
 ## 🔄 Magnitudes Derivadas Comunes
 > [!note] **Ejemplos en la vida real**
->
 > Las magnitudes derivadas permiten describir **fenómenos complejos**:
->
 > | Magnitud        | Unidad SI | Expresión en unidades fundamentales | Ejemplo |
 > |----------------|-----------|--------------------------------------|---------|
 > | Velocidad      | m/s       | m·s⁻¹                                | Un auto urbano ≈ 15 m/s (54 km/h) |
@@ -70,13 +59,11 @@ tags: [FISG1001, unidad0, fisica-mecanica, fundamentos, unidades-y-magnitudes-fi
 
 ## 📐 Notación Científica y Prefijos del SI
 > [!tip] **Escala y precisión**
->
 > La notación científica es esencial para expresar valores muy grandes o muy pequeños:
 > - 300000000 m/s → 3 × 10⁸ m/s (velocidad de la luz)
 > - 0.000001 m → 1 × 10⁻⁶ m (micrómetro)
 >
 > **Prefijos más usados**:
->
 > | Prefijo | Símbolo | Factor   |
 > |---------|---------|----------|
 > | kilo    | k       | 10³      |
@@ -90,20 +77,18 @@ tags: [FISG1001, unidad0, fisica-mecanica, fundamentos, unidades-y-magnitudes-fi
 
 ## 🛠 Aplicación en Cinemática y Dinámica
 > [!example] **Caso aplicado**
->
 > Para calcular la energía cinética rotacional de un disco:
 > 1. Se mide el **radio (m)** y la **masa (kg)**.
 > 2. Se calcula el **momento de inercia (kg·m²)**.
 > 3. Se mide la **velocidad angular (rad/s)**.
 > 4. Se aplica la fórmula: *E = ½ I ω²*.
->
+>  
 > Aquí, cada magnitud está expresada en unidades SI, asegurando coherencia.
 
 ---
 
 ## 🎯 Técnica de Estudio Recomendada
 > [!tip] **Método de Asociación Visual + Mapas Mentales**
->
 > - Crea un **mapa mental** con cada magnitud fundamental como nodo principal.
 > - Añade imágenes mentales absurdas: un **metro** con ruedas, un **reloj** con alas, una **vela** gigante encendida, etc.
 > - Usa colores para diferenciar magnitudes fundamentales (verde) y derivadas (azul).
@@ -112,16 +97,14 @@ tags: [FISG1001, unidad0, fisica-mecanica, fundamentos, unidades-y-magnitudes-fi
 ---
 
 ## 🔗 Referencias
-> [!quote] 💬 Cita
->
+> [!quote]
 > - !Sistema Internacional de Unidades (SI)
 > - !Errores y Aproximaciones en Medición
 
 ---
 
 ## 📌 Notas Recomendadas (Prerrequisitos)
-> [!important] 📌 Notas Recomendadas
->
+> [!important]
 > - Sistema Internacional de Unidades (SI)
 > - Errores y Aproximaciones en Medición
 
@@ -129,5 +112,3 @@ tags: [FISG1001, unidad0, fisica-mecanica, fundamentos, unidades-y-magnitudes-fi
 
 ## 🏷️ Tags
 #Física #Magnitudes #Unidades #Medición #Obsidian
-
-**Tags:** #FISG1001 #fisica-mecanica #fundamentos #unidades-y-magnitudes-fisicas

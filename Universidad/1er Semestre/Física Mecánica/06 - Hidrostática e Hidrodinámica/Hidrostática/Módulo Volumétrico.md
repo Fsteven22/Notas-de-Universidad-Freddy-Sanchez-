@@ -1,19 +1,18 @@
 ---
 dg-publish: true
-tags: [FISG1001, unidad6, fisica-mecanica, fluidos, modulo-volumetrico]
 ---
 
-# 💧 Módulo de Compresibilidad (Módulo Volumétrico)
+# Módulo de Compresibilidad (Módulo Volumétrico)
 
-> [!quote] _"Los fluidos, como todo en la naturaleza, responden a las fuerzas aplicadas. El módulo de compresibilidad nos revela cuán resistente es un material a cambiar su volumen bajo presión, una propiedad fundamental que gobierna desde el comportamiento del agua en las profundidades oceánicas hasta el diseño de sistemas hidráulicos industriales."_
+>[!quote] _"Los fluidos, como todo en la naturaleza, responden a las fuerzas aplicadas. El módulo de compresibilidad nos revela cuán resistente es un material a cambiar su volumen bajo presión, una propiedad fundamental que gobierna desde el comportamiento del agua en las profundidades oceánicas hasta el diseño de sistemas hidráulicos industriales."_
 >
 
 > [!info]+ Definición Fundamental 📏 El **módulo de compresibilidad** (K) o **módulo volumétrico** es una propiedad elástica que mide la **resistencia de un material a cambios de volumen** cuando se le aplica una presión uniforme. Se define como la relación entre el esfuerzo volumétrico aplicado y la deformación volumétrica resultante.
->
+> 
 > **Fórmula:** K = -ΔP / (ΔV/V₀)
->
+> 
 > Donde:
->
+> 
 > - K = Módulo de compresibilidad
 > - ΔP = Cambio de presión aplicada
 > - ΔV = Cambio de volumen
@@ -21,52 +20,48 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, modulo-volumetrico]
 >
 
 > [!note] Fundamento Teórico ⚖️
->
+> 
 > ### Base Física
->
+> 
 > El módulo de compresibilidad se fundamenta en la **ley de elasticidad volumétrica**:
->
+> 
 > - Mayor módulo K → Material más rígido (menos compresible)
 > - Menor módulo K → Material más flexible (más compresible)
 > - El signo negativo indica que un aumento de presión causa disminución de volumen
->
+> 
 > ### Relación con Otras Propiedades
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Módulo_Volumétrico_01.svg]]
->
-> **Se lee así:** El **módulo de compresibilidad K** relaciona la **presión ΔP** con la **deformación volumétrica `ΔV/V₀`**, y de él se derivan la **compresibilidad `β = 1/K`** y la **velocidad del sonido `v = √(K/ρ)`**, esta última con la **densidad del material ρ**.
->
-> **Por qué importa:** El módulo K es el equivalente volumétrico del módulo de Young: mide cuánta presión hace falta para comprimir un material un porcentaje dado. Y la fórmula de la velocidad del sonido explica por qué el sonido va más rápido en el agua que en el aire: el agua es mucho menos comprimible.
+> 
+> ![[Diagramas/Módulo_Volumétrico_01.svg]]
 >
 
 > [!tip] Tipos de Módulo de Compresibilidad 🔬
->
+> 
 > ### Módulo Isotérmico (K_T)
->
+> 
 > |Característica|Descripción|
 > |---|---|
 > |🌡️ **Condición**|Temperatura constante durante la compresión|
 > |📐 **Fórmula**|K_T = -V(∂P/∂V)_T|
 > |🎯 **Aplicación**|Procesos lentos, equilibrio térmico|
->
+> 
 > ### Módulo Adiabático (K_S)
->
+> 
 > |Característica|Descripción|
 > |---|---|
 > |🔥 **Condición**|Sin intercambio de calor (proceso adiabático)|
 > |📐 **Fórmula**|K_S = -V(∂P/∂V)_S|
 > |⚡ **Aplicación**|Procesos rápidos, ondas sonoras|
->
+> 
 > ### Relación entre Módulos
->
+> 
 > - **K_S > K_T** (el módulo adiabático siempre es mayor)
 > - **K_S/K_T = γ** (relación de calores específicos)
 >
 
 > [!example] Valores Típicos y Aplicaciones 🏗️
->
+> 
 > ### Módulos de Compresibilidad Comunes
->
+> 
 > |Material|K (GPa)|Compresibilidad|
 > |---|---|---|
 > |💎 **Diamante**|442|Extremadamente rígido|
@@ -74,57 +69,53 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, modulo-volumetrico]
 > |🌊 **Agua**|2.2|Ligeramente compresible|
 > |⛽ **Gasolina**|1.3|Más compresible|
 > |🌬️ **Aire (1 atm)**|0.0001|Altamente compresible|
->
+> 
 > ### Aplicaciones Prácticas
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Módulo_Volumétrico_02.svg]]
->
-> **Se lee así:** El mapa de aplicaciones del módulo volumétrico: en **ingeniería civil** (cimentaciones profundas, estructuras submarinas, presas y embalses), en la **industria petrolífera** (exploración marina, cálculo de reservorios, transporte por tuberías), en **sistemas hidráulicos** (frenos, prensas y elevadores) y en **geofísica** (propagación de ondas sísmicas, estudios de la corteza, exploración sísmica).
->
-> **Por qué importa:** Conecta el módulo con la sismología: las ondas sísmicas viajan a velocidad `√(K/ρ)`, así que medir su velocidad permite inferir qué material hay en el interior de la Tierra sin excavar.
+> 
+> ![[Diagramas/Módulo_Volumétrico_02.svg]]
 >
 > [!abstract] Cálculos y Ejemplos Prácticos 🧮
->
+> 
 > ### Ejemplo 1: Compresión del Agua
->
+> 
 > **Problema:** Un volumen de 1 m³ de agua se somete a una presión adicional de 10 MPa. ¿Cuál es la reducción de volumen?
->
+> 
 > **Datos:**
->
+> 
 > - V₀ = 1 m³
 > - ΔP = 10 MPa = 10 × 10⁶ Pa
 > - K_agua = 2.2 × 10⁹ Pa
->
+> 
 > **Solución:**
->
+> 
 > ```
 > K = -ΔP / (ΔV/V₀)
 > ΔV/V₀ = -ΔP/K = -(10×10⁶)/(2.2×10⁹) = -0.0045
 > ΔV = V₀ × (-0.0045) = 1 × (-0.0045) = -0.0045 m³
 > ```
->
+> 
 > **Resultado:** El agua se comprime 4.5 litros (0.45% del volumen original)
->
+> 
 > ### Ejemplo 2: Velocidad del Sonido
->
+> 
 > **Cálculo de la velocidad del sonido en el agua:**
->
+> 
 > ```
 > v = √(K/ρ) = √(2.2×10⁹ Pa / 1000 kg/m³) = √(2.2×10⁶) ≈ 1483 m/s
 > ```
 >
 
 > [!warning] Limitaciones y Consideraciones ⚠️
->
+> 
 > ### Limitaciones del Concepto
->
+> 
 > - **🔄 Validez en pequeñas deformaciones**: La ley de Hooke solo aplica para deformaciones elásticas
 > - **🌡️ Dependencia de temperatura**: K varía significativamente con la temperatura
 > - **📊 Dependencia de presión**: Para grandes presiones, K no es constante
 > - **⏱️ Efectos temporales**: Diferencia entre comportamiento estático y dinámico
->
+> 
 > ### Factores que Afectan el Módulo
->
+> 
 > - **🌡️ Temperatura**: Generalmente K disminuye con el aumento de temperatura
 > - **📈 Presión**: K puede aumentar con la presión en algunos materiales
 > - **🧪 Composición**: Impurezas y aleaciones modifican significativamente K
@@ -132,18 +123,18 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, modulo-volumetrico]
 >
 
 > [!summary]+ Fórmulas y Relaciones Clave 📊
->
+> 
 > ### Fórmulas Fundamentales
->
+> 
 > ```
 > Módulo de Compresibilidad:     K = -ΔP / (ΔV/V₀)
 > Compresibilidad:               β = 1/K = -(ΔV/V₀)/ΔP
 > Velocidad del Sonido:          v = √(K/ρ)
 > Deformación Volumétrica:       εᵥ = ΔV/V₀ = -ΔP/K
 > ```
->
+> 
 > ### Relaciones Termodinámicas
->
+> 
 > ```
 > Módulo Isotérmico:    K_T = -V(∂P/∂V)_T
 > Módulo Adiabático:    K_S = -V(∂P/∂V)_S
@@ -154,7 +145,7 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, modulo-volumetrico]
 >
 
 > [!success] Puntos Clave para Recordar 🎯
->
+> 
 > 1. **📐 Definición inversa**: K = 1/β (compresibilidad)
 > 2. **🔍 Signo negativo**: Convención física estándar
 > 3. **🌊 Líquidos vs gases**: Los líquidos son mucho menos compresibles
@@ -164,26 +155,26 @@ tags: [FISG1001, unidad6, fisica-mecanica, fluidos, modulo-volumetrico]
 
 ---
 
-## 🔗 Referencias
+## Referencias
 
 > [!quote] Notas Relacionadas
->
+> 
 > - [[Presión y Densidad]]
 > - [[El Principio de Pascal]]
 > - [[Elasticidad]]
 > - [[Ecuación de Continuidad y Bernoulli]]
 
-## 📝 Notas Recomendadas
+## Notas Recomendadas
 
 > [!info] Prerrequisitos
->
+> 
 > - [[Presión y Densidad]]
 > - [[Elasticidad]]
 > - [[Trabajo y Energía]]
 >
 
 > [!tip] Continuación del Tema
->
+> 
 > - [[Viscosidad y Número de Reynolds]]
 > - [[El Principio de Arquímedes y Flotación]]
 > - [[Flujo Laminar y Ecuación de Poiseuille]]

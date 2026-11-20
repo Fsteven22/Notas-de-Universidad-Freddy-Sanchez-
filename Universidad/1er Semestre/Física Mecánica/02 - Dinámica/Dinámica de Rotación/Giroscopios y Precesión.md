@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [FISG1001, unidad2, fisica-mecanica, dinamica, giroscopios-y-precesion]
 ---
 
 # 🌀 Giroscopios y Precesión
@@ -22,7 +21,7 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, giroscopios-y-precesion]
 ---
 
 > [!note] 📊 Variables Fundamentales
->
+> 
 > |Variable|Símbolo|Unidades|Descripción|
 > |---|---|---|---|
 > |Momento angular|$\vec{L}$|$\text{kg·m}^2/\text{s}$|Vector a lo largo del eje de rotación|
@@ -38,21 +37,21 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, giroscopios-y-precesion]
 ## ⚖️ Ecuaciones Fundamentales
 
 > [!note] 🔧 Fórmulas de Precesión
->
+> 
 > ### Relación Fundamental (Segunda Ley de Newton Rotacional)
->
+> 
 > $$\vec{\tau} = \frac{d\vec{L}}{dt}$$
->
+> 
 > ### Velocidad de Precesión (Forma Vectorial)
->
+> 
 > $$\vec{\Omega} = \frac{\vec{\tau}}{L_{rotación}} = \frac{\vec{\tau}}{I\omega}$$
->
+> 
 > ### Magnitud de la Velocidad de Precesión
->
+> 
 > $$\Omega = \frac{\tau}{I\omega} = \frac{mgr}{I\omega}$$
->
+> 
 > ### Relación Clave
->
+> 
 > **A mayor velocidad de rotación del giroscopio ($\omega$), menor velocidad de precesión ($\Omega$)**
 >
 
@@ -63,16 +62,12 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, giroscopios-y-precesion]
 ## 🔄 Mecanismo de la Precesión
 
 > [!info] 🌀 Análisis Vectorial de la Precesión
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Giroscopios_y_Precesión_01.svg]]
->
-> **Se lee así:** El diagrama sigue la cadena: un **giroscopio girando** recibe un **torque externo**, y la pregunta clave es la dirección del cambio. La respuesta es un **cambio perpendicular** al torque: el vector **L cambia de dirección**, no de módulo, lo que produce la **precesión del eje** y un equilibrio dinámico.
->
-> **Por qué importa:** Es la idea más contraintuitiva del tema: un torque no acelera el giro, lo desvía. Por eso un giroscopio no cae mientras gira y por eso la precesión se estudia con `τ = Ω × L`.
+> 
+> ![[Diagramas/Giroscopios_y_Precesión_01.svg]]
 >
 
 > [!note] 📐 Diagrama Vectorial En un giroscopio típico:
->
+> 
 > - **$\vec{L}$** apunta a lo largo del eje de rotación (regla de la mano derecha)
 > - **$\vec{\tau}$** es perpendicular a $\vec{L}$ (causado por gravedad)
 > - **$\vec{\Omega}$** es perpendicular tanto a $\vec{L}$ como a $\vec{\tau}$
@@ -83,69 +78,69 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, giroscopios-y-precesion]
 ## 🎲 Ejemplos y Aplicaciones
 
 > [!example] 🎪 Ejemplo 1: Giroscopio de Demostración
->
+> 
 > **📋 Situación:** Un disco girando rápidamente está sostenido por un extremo de su eje. En lugar de caer, precesa horizontalmente.
->
+> 
 > **🔧 Análisis:**
->
+> 
 > - **Momento angular:** $L = I\omega$ (apunta a lo largo del eje)
 > - **Torque gravitacional:** $\tau = mgr$ (perpendicular al eje)
 > - **Velocidad de precesión:** $\Omega = \frac{mgr}{I\omega}$
->
+> 
 > **📊 Comportamiento observado:**
->
+> 
 > - Si $\omega$ es grande → $\Omega$ es pequeña (precesión lenta)
 > - Si $\omega$ es pequeña → $\Omega$ es grande (precesión rápida)
 > - Si $\omega = 0$ → El giroscopio simplemente cae
 >
 
 > [!example] 🚲 Ejemplo 2: Estabilidad de la Bicicleta
->
+> 
 > **📋 Situación:** Las ruedas de una bicicleta actúan como giroscopios que proporcionan estabilidad.
->
+> 
 > **🔧 Mecanismo:**
->
+> 
 > - **Ruedas girando:** Crean momento angular $L = I\omega$
 > - **Inclinación lateral:** Aplica torque que causa precesión
 > - **Precesión resultante:** Hace que la bicicleta se enderece automáticamente
 > - **Dirección:** Para cambiar dirección, el ciclista aplica torque con el manillar
->
+> 
 > **📊 Implicaciones:**
->
+> 
 > - Velocidad mayor → Mayor estabilidad giroscópica
 > - Velocidad menor → Más difícil mantener equilibrio
 >
 
 > [!example] 🌍 Ejemplo 3: Precesión de la Tierra
->
+> 
 > **📋 Situación:** La Tierra precesa como un giroscopio gigante debido a fuerzas gravitacionales del Sol y la Luna.
->
+> 
 > **🔧 Características:**
->
+> 
 > - **Periodo de precesión:** ~26,000 años (ciclo completo)
 > - **Causa:** Torque debido a que la Tierra no es perfectamente esférica
 > - **Efecto observable:** Cambio de la estrella polar con el tiempo
 > - **Consecuencia:** Las constelaciones "se mueven" lentamente en el cielo
->
+> 
 > **📊 Magnitudes:**
->
+> 
 > - Momento angular terrestre: $L \approx 7 \times 10^{33} \text{ kg·m}^2/\text{s}$
 > - Ángulo de precesión: ~23.5° (inclinación del eje terrestre)
 >
 
 > [!example] 🚁 Ejemplo 4: Helicópteros y Efecto Giroscópico
->
+> 
 > **📋 Situación:** El rotor principal de un helicóptero crea efectos giroscópicos que afectan el control.
->
+> 
 > **🔧 Efectos giroscópicos:**
->
+> 
 > - **Rotor girando:** Crea momento angular vertical
 > - **Cambio de paso cíclico:** Aplica torque que causa precesión
 > - **Resultado:** El helicóptero se inclina 90° después del punto donde se aplicó el control
 > - **Compensación:** Los pilotos deben anticipar este efecto
->
+> 
 > **📊 Control:**
->
+> 
 > - Los controles deben aplicarse ~90° antes del efecto deseado
 > - Los sistemas de control modernos compensan automáticamente
 
@@ -154,30 +149,30 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, giroscopios-y-precesion]
 ## 🛠️ Aplicaciones Tecnológicas
 
 > [!note] 🧭 Navegación y Estabilización
->
+> 
 > ### Giroscopio de Navegación
->
+> 
 > - **Función:** Mantener referencia de dirección constante
 > - **Ventaja:** No depende de campos magnéticos
 > - **Uso:** Aviones, barcos, submarinos, naves espaciales
->
+> 
 > ### Estabilizadores Giroscópicos
->
+> 
 > - **Aplicación:** Cámaras, plataformas, vehículos
 > - **Principio:** Resistencia al cambio de orientación
 > - **Resultado:** Eliminación de vibraciones y movimientos no deseados
 >
 
 > [!note] 📱 Tecnología Moderna
->
+> 
 > ### MEMS (Microelectromechanical Systems)
->
+> 
 > - **Giroscopios microscópicos** en smartphones y tablets
 > - **Función:** Detección de rotación y orientación
 > - **Aplicaciones:** Estabilización de imagen, juegos, navegación
->
+> 
 > ### Giroscopios de Fibra Óptica
->
+> 
 > - **Principio:** Interferencia de luz en fibras ópticas
 > - **Ventajas:** Sin partes móviles, muy precisos
 > - **Uso:** Sistemas de navegación inercial de alta precisión
@@ -187,22 +182,22 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, giroscopios-y-precesion]
 ## 📈 Análisis Cuantitativo
 
 > [!example] 🧮 Cálculo de Precesión: Problema Tipo
->
+> 
 > **📋 Problema:** Un disco de masa $m = 2 \text{ kg}$ y radio $R = 0.1 \text{ m}$ gira a $\omega = 100 \text{ rad/s}$. Está sostenido en un extremo a distancia $r = 0.15 \text{ m}$ del centro de masa. Calcular la velocidad de precesión.
->
+> 
 > **🔧 Datos:**
->
+> 
 > - Momento de inercia del disco: $I = \frac{1}{2}mR^2 = \frac{1}{2}(2)(0.1)^2 = 0.01 \text{ kg·m}^2$
 > - Momento angular: $L = I\omega = (0.01)(100) = 1.0 \text{ kg·m}^2/\text{s}$
 > - Torque gravitacional: $\tau = mgr = (2)(9.8)(0.15) = 2.94 \text{ N·m}$
->
+> 
 > **📊 Resultado:** $$\Omega = \frac{\tau}{L} = \frac{2.94}{1.0} = 2.94 \text{ rad/s}$$
->
+> 
 > **Interpretación:** El eje precesa a 2.94 rad/s ≈ 28 rpm, que es mucho más lento que la rotación del disco (100 rad/s ≈ 955 rpm).
 >
 
 > [!note] 📊 Dependencia de Variables
->
+> 
 > |Variable|Efecto en $\Omega$|Explicación|
 > |---|---|---|
 > |$\omega$ ↑|$\Omega$ ↓|Mayor estabilidad giroscópica|
@@ -215,16 +210,12 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, giroscopios-y-precesion]
 ## 🔗 Conexiones Conceptuales
 
 > [!info] 🌐 Red de Conceptos
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Giroscopios_y_Precesión_02.svg]]
->
-> **Se lee así:** El mapa mental reparte el tema en cinco áreas: los **fundamentos vectoriales** (momento angular, torque como vector, producto vectorial, regla de la mano derecha), la **conservación** (momento angular, estabilidad direccional, resistencia al cambio), las **aplicaciones** (navegación, estabilización, control de vehículos, instrumentos de precisión), los **ejemplos naturales** (precesión terrestre, estabilidad de la bicicleta, efectos en helicópteros) y la **tecnología** (MEMS, fibra óptica, smartphones, drones).
->
-> **Por qué importa:** Muestra la transferencia entre escalas: una ley de tres líneas explica por qué un avión no se invierte, por qué un drone se estabiliza solo y por qué el giróscopo de un smartwatch mantiene la orientación de la pantalla.
+> 
+> ![[Diagramas/Giroscopios_y_Precesión_02.svg]]
 >
 
 > [!tip] 🎯 Estrategias de Comprensión
->
+> 
 > 1. **Visualiza** los vectores: $\vec{L}$, $\vec{\tau}$, y $\vec{\Omega}$ son perpendiculares entre sí
 > 2. **Recuerda** que el cambio es perpendicular, no en la dirección del torque
 > 3. **Usa** la regla de la mano derecha para determinar direcciones
@@ -236,16 +227,16 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, giroscopios-y-precesion]
 ## 🔬 Experimentos y Demostraciones
 
 > [!note] 🎪 Demostraciones Clásicas
->
+> 
 > ### Experimento 1: Giroscopio de Rueda de Bicicleta
->
+> 
 > - **Materiales:** Rueda de bicicleta con manijas, taburete giratorio
 > - **Procedimiento:** Persona sostiene rueda girando en taburete
 > - **Observación:** Cuando cambia orientación de rueda, persona gira
 > - **Explicación:** Conservación del momento angular total
->
+> 
 > ### Experimento 2: Precesión con Peonza
->
+> 
 > - **Materiales:** Peonza o trompo grande
 > - **Procedimiento:** Lanzar peonza y observar precesión al desacelerarse
 > - **Observación:** Precesión se acelera conforme la peonza se desacelera
@@ -253,7 +244,7 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, giroscopios-y-precesion]
 >
 
 > [!warning] ⚠️ Conceptos Erróneos Comunes
->
+> 
 > - **ERROR:** "El giroscopio desafía la gravedad"
 > - **CORRECTO:** El giroscopio responde a la gravedad, pero de forma perpendicular
 > - **ERROR:** "La precesión es independiente de la velocidad de rotación"
@@ -266,42 +257,40 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, giroscopios-y-precesion]
 ## 📚 Referencias y Enlaces
 
 > [!quote] 🔗 Links a Otras Notas
->
-> - [[Momentum Angular]] - Concepto fundamental para giroscopios
->
-> - Conservación del Momento Angular - Principio base del comportamiento
->
-> - [[Cinemática Rotacional]] - Segunda Ley de Newton rotacional
->
-> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/I - Fundamentos/02 - Espacio Vectorial.md]] - Matemáticas de torque y momento angular
->
-> - Física Mecanica/Notas antiguas/Dinámica Rotacional/Momento de Inercia - Propiedad clave del rotor
->
-> - Estabilidad de Sistemas - Aplicaciones de estabilización
->
-> - Navegación Inercial - Aplicación tecnológica
->
-> - MEMS - Giroscopios microscópicos modernos
->
-> - Mecánica Celeste - Precesión de planetas y satélites
->
+> 
+> - > [[Momentum Angular]] - Concepto fundamental para giroscopios
+>     
+> - > Conservación del Momento Angular - Principio base del comportamiento
+>     
+> - > [[Cinemática Rotacional]] - Segunda Ley de Newton rotacional
+>     
+> - > [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/I - Fundamentos/02 - Espacio Vectorial.md]] - Matemáticas de torque y momento angular
+>     
+> - > Física Mecanica/Notas antiguas/Dinámica Rotacional/Momento de Inercia - Propiedad clave del rotor
+>     
+> - > Estabilidad de Sistemas - Aplicaciones de estabilización
+>     
+> - > Navegación Inercial - Aplicación tecnológica
+>     
+> - > MEMS - Giroscopios microscópicos modernos
+>     
+> - > Mecánica Celeste - Precesión de planetas y satélites
+>     
 >
 
 > [!quote] 📖 Material de Referencia
->
-> - Tutorial: Giroscopios y precesión.pdf
->
-> - Video: Demostraciones de Walter Lewin sobre giroscopios
->
-> - Libro: "Gyroscopic Theory and Applications" - Magnus
->
-> - Artículo: "The Physics of Bicycle Stability" - Jones
->
-> - Documentación: Sistemas de navegación inercial
->
+> 
+> - > Tutorial: Giroscopios y precesión.pdf
+>     
+> - > Video: Demostraciones de Walter Lewin sobre giroscopios
+>     
+> - > Libro: "Gyroscopic Theory and Applications" - Magnus
+>     
+> - > Artículo: "The Physics of Bicycle Stability" - Jones
+>     
+> - > Documentación: Sistemas de navegación inercial
+>     
 
 ---
 
 > [!note] 🏷️ Tags #física #mecánica #giroscopios #precesión #momento-angular #dinámica-rotacional #navegación #estabilización #vectores #torque #conservación #tecnología #MEMS #bicicleta
-
-**Tags:** #FISG1001 #fisica-mecanica #unidad2 #giroscopios-y-precesion

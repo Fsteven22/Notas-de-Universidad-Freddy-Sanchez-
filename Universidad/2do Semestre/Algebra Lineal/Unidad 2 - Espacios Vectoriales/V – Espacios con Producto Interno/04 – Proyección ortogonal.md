@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 ---
 
 # 🎯 Proyección Ortogonal
@@ -29,14 +28,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 > |**Filtrado**|Extraer componentes deseadas|Procesamiento de señales, imágenes|
 > |**Geometría**|Distancias y ángulos|Colisiones, renderizado 3D|
 
-> [!info] 📊 04 – Proyección Ortogonal 01
->
-> ![[04_–_Proyección_ortogonal_01.svg]]
->
->
-> **Se lee así:** el diagrama presenta vector original v y proyectar sobre y vector u proyección 1d y subespacio w proyección nd.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_01.svg]]
 
 ---
 
@@ -70,9 +62,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 > **Interpretación geométrica:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_02.svg]]
->
-> **Se lee así:** el diagrama presenta vector v y descomponer respecto a u y componente paralela proj_u v y componente perpendicular perp_u v.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Propiedades fundamentales:**
 > 
@@ -254,9 +243,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 > **Diferencia con proyección sobre vector:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_03.svg]]
->
-> **Se lee así:** el diagrama presenta proyección y sobre vector u línea 1d y sobre subespacio w plano nd y fórmula: ⟨v,u⟩/.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Caracterización del subespacio:**
 > 
@@ -295,9 +281,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 > **Algoritmo de cálculo:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_04.svg]]
->
-> **Se lee así:** el diagrama presenta sí y vector v a proyectar y ¿base de w es ortogonal? y usar fórmula directa.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplo completo: Proyección sobre plano**
 > 
@@ -417,9 +400,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 > **Comparación de métodos:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_05.svg]]
->
-> **Se lee así:** el diagrama presenta gram-schmidt y ecuaciones normales y base arbitraria y método?.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 
@@ -442,9 +422,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 > **Algoritmo:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_06.svg]]
->
-> **Se lee así:** el diagrama presenta vector v y subespacio w y calcular proj_w v y calcular residuo: r = v - proj_w v y distancia: d =.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplo 1: Distancia punto-línea en ℝ²**
 > 
@@ -532,9 +509,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 > **Visualización:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_07.svg]]
->
-> **Se lee así:** el diagrama presenta vector v fuera de w y buscar w ∈ w más cercano y ¿cuál w minimiza y cualquier otro w mayor distancia.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Aplicación: Ajuste de curvas**
 > 
@@ -851,9 +825,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 > **Comparación de métodos:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_08.svg]]
->
-> **Se lee así:** el diagrama presenta sí y base de w y ¿es ortonormal? y p = uu^t directo.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 
@@ -872,9 +843,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 > - Minimizar ||**b** - **Ax**||² (error cuadrático)
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_09.svg]]
->
-> **Se lee así:** el diagrama presenta sí y sistema ax = b y ¿tiene solución exacta? y resolver normalmente.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ecuación normal:**
 > 
@@ -1096,9 +1064,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 > **Interpretación geométrica:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_10.svg]]
->
-> **Se lee así:** el diagrama presenta espacio v y subespacio w y complemento w⊥ y todos los vectores en w.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplos en ℝ³:**
 > 
@@ -1243,14 +1208,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 
 ### 🗺️ Mapa Conceptual
 
-> [!info] 📊 04 – Proyección Ortogonal 11
->
-> ![[04_–_Proyección_ortogonal_11.svg]]
->
->
-> **Se lee así:** el diagrama presenta proyección ortogonal y proyección sobre vector y fórmula: / y ^2 · u.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_11.svg]]
 
 ### 📋 Tabla Resumen de Fórmulas
 
@@ -1270,14 +1228,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 
 ### 🎯 Diagrama de Flujo de Decisión
 
-> [!info] 📊 04 – Proyección Ortogonal 12
->
-> ![[04_–_Proyección_ortogonal_12.svg]]
->
->
-> **Se lee así:** el diagrama presenta vector u y subespacio w y ortonormal y ortogonal.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_12.svg]]
 
 ---
 

@@ -101,8 +101,8 @@
   /* ══ TEMA CLARO (principal): mar y arena ═══════════════════════════════ */
   --nx-bg: #f4f8fa;          /* arena con tinte de mar */
   --nx-bg-soft: #eef4f7;     /* bloques de código */
-  --nx-surface: #e8f0f4;     /* tarjetas y paneles */
-  --nx-surface-hover: #dde9ef;
+  --nx-surface: #dde9ef;     /* tarjetas y paneles (más separado de bg) */
+  --nx-surface-hover: #eaf2f5;
 
   --nx-line: #cfdce3;        /* separadores */
   --nx-line-strong: #b3c7d2;
@@ -177,8 +177,8 @@
   /* ══ TEMA OSCURO (alternativo): océano profundo ═════════════════════════ */
   --nx-bg: #0b1318;          /* azul casi negro, no negro puro */
   --nx-bg-soft: #0f171d;
-  --nx-surface: #121c23;
-  --nx-surface-hover: #18242c;
+  --nx-surface: #18242c;     /* tarjetas y paneles (más separado de bg) */
+  --nx-surface-hover: #1e323a;
 
   --nx-line: #22323d;
   --nx-line-strong: #31434f;

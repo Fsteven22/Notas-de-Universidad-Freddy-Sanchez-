@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 ---
 
 # 🎯 Desigualdad de Cauchy–Schwarz
@@ -29,14 +28,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 > |**Probabilística**|Correlación y covarianza|Coeficiente de Pearson ≤ 1|
 > |**Optimización**|Límites en problemas de máximos|Teoría de aproximación|
 
-> [!info] 📊 08 - Desigualdad De Cauchy–Schwarz 01
->
-> ![[08_-_Desigualdad_de_Cauchy–Schwarz_01.svg]]
->
->
-> **Se lee así:** el diagrama presenta desigualdad de cauchy-schwarz y casos y vectores paralelos y &lt;.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_01.svg]]
 
 ---
 
@@ -110,9 +102,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 > **Visualización en ℝ²:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_02.svg]]
->
-> **Se lee así:** el diagrama presenta u y ⟨u,v⟩ y origen y extremo u.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 🔄 Formulaciones Equivalentes
 
@@ -164,9 +153,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 > **Equivalencias:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_03.svg]]
->
-> **Se lee así:** el diagrama presenta cauchy-schwarz y ⟨u,v⟩ y (σuᵢvᵢ)² ≤ (σuᵢ²)(σvᵢ²) y cos θ.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 
@@ -221,9 +207,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 > La igualdad ocurre cuando la componente ortogonal es cero, es decir, cuando **u** es paralelo a **v**.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_04.svg]]
->
-> **Se lee así:** el diagrama presenta longitud = y ⟨u,v⟩ y vector u y proyección sobre v.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 🧮 Demostración Algebraica
 
@@ -365,9 +348,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 > **Diagrama de casos:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_05.svg]]
->
-> **Se lee así:** el diagrama presenta sí y vectores u y v y ¿uno es cero? y igualdad trivial 0 = 0.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 
@@ -491,9 +471,6 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 >     
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_06.svg]]
->
-> **Se lee así:** el diagrama presenta u y u + v y u + v y origen.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 📊 Coeficiente de Correlación
 
@@ -811,14 +788,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 
 ### Mapa Conceptual
 
-> [!info] 📊 08 - Desigualdad De Cauchy–Schwarz 07
->
-> ![[08_-_Desigualdad_de_Cauchy–Schwarz_07.svg]]
->
->
-> **Se lee así:** el diagrama presenta cauchy-schwarz y enunciado y ⟨u,v⟩ y forma algebraica.
-> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_07.svg]]
 
 ### Tabla Resumen
 

@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [MATG1049, algebra-lineal, unidad2, 03-espacio-generado-por-un-conjunto-de-vectores]
 ---
 
 # 📘 Espacio Generado por un Conjunto de Vectores

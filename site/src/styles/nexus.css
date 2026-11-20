@@ -547,10 +547,10 @@ html[data-nx-dir="back"]::view-transition-new(root) {
   width: 100%;
   margin-top: 1.75rem;
   padding: 0.85rem 1rem;
-  border: 1px solid var(--nx-line);
+  border: 1px solid var(--nx-control);
   border-radius: var(--nx-radius);
   background: var(--nx-surface);
-  color: var(--nx-muted);
+  color: var(--nx-dim);
   font-family: var(--font-sans);
   font-size: 1rem;
   text-align: left;
@@ -560,7 +560,7 @@ html[data-nx-dir="back"]::view-transition-new(root) {
 .nx-hero-search:hover {
   border-color: var(--nx-accent-line);
   background: var(--nx-surface-hover);
-  color: var(--nx-dim);
+  color: var(--nx-text);
 }
 .nx-hero-search:focus-visible {
   outline: 2px solid var(--nx-neon);
@@ -572,6 +572,7 @@ html[data-nx-dir="back"]::view-transition-new(root) {
 }
 .nx-hero-search-text {
   flex: 1;
+  color: var(--nx-dim);
 }
 
 /* ── Semestres: dos columnas de texto (sin cards) ───────────────────── */
@@ -616,17 +617,15 @@ html[data-nx-dir="back"]::view-transition-new(root) {
   font-weight: 600;
 }
 /* Los estados hablan con un matiz solo: neutro para lo que no es
-   "En curso" (gris), coral para "En curso" (y favoritos).
-      · En curso                   → coral
-      · Completado / Reconstrucción → gris apagado */
+   "En curso" (coral), "Completado" (verde) y "Reconstrucción" (ámbar). */
 .nx-sem-state--en-curso {
   color: var(--nx-coral);
 }
 .nx-sem-state--completado {
-  color: var(--nx-muted);
+  color: var(--nx-done);
 }
 .nx-sem-state--reconstruccion {
-  color: var(--nx-muted);
+  color: var(--nx-warn);
 }
 .nx-sem-list {
   margin: 0.6rem 0 0;
@@ -2282,10 +2281,20 @@ html.nx-lectura .nx-note-nav {
 .nx-hecha-btn .nx-note-tools__ico {
   color: var(--nx-dim);
 }
+/* Cuando la nota está leída (es-hecha), el ícono es verde (success) aunque
+   el botón tenga aria-pressed="true" (clic justo hecho). Esto evita que el
+   acento celeste del estado presionado pise el verde de "completado". */
+.nx-hecha-btn.es-hecha .nx-note-tools__ico,
+.nx-hecha-btn.es-hecha[aria-pressed="true"] .nx-note-tools__ico {
+  color: var(--nx-done);
+}
 .nx-hecha-btn.es-hecha {
   border-color: rgba(var(--nx-accent-rgb), 0.55);
   background: rgba(var(--nx-accent-rgb), 0.1);
   color: var(--nx-text);
+}
+.nx-hecha-btn.es-hecha .nx-note-tools__ico {
+  color: var(--nx-done);
 }
 /* Estrella dentro de la lista de notas de la materia.
    No compite con el texto: solo aparece al pasar el ratón por encima
@@ -2593,5 +2602,35 @@ html.nx-lectura .nx-note-nav {
   /* El filete de coda de los títulos de sección se imprime en gris. */
   .nx-section-title::after {
     border-top-color: #cccccc !important;
+  }
+}
+
+/* ── Transiciones sutiles ────────────────────────────────────────
+   Solo para cambios de estado (hover, foco, active). Nunca son
+   animaciones continuas ni decorativas. Respetan
+   prefers-reduced-motion. */
+.nx-card,
+.nx-sem-state,
+.nx-section-title,
+.nx-section-title::after,
+.nx-badge,
+a,
+button,
+.nx-note-tools__btn,
+.nx-map label,
+.nx-explorer summary,
+.nx-explorer a {
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+/* Sin movimiento cuando el usuario lo pide. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

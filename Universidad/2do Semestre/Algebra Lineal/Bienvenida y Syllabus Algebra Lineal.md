@@ -27,13 +27,7 @@ tags: [MATG1049, algebra-lineal, syllabus]
 
 ## 📎 Documento oficial (sitio web)
 
-> [!info] 📄 Syllabus oficial EUR-ACE (MATG1049)
->
-> ![[SPA-SyllabusEUR_ACE-MATG1049.pdf]]
->
-> **Se lee así:** el PDF es el documento oficial de la cátedra: descripción del curso (formación básica, 5.8 ECTS), objetivos, contenido por unidades, metodología y evaluación.
->
-> **Por qué importa:** es la autoridad de la materia; cuando una nota y el syllabus difieran, manda el syllabus.
+![[SPA-SyllabusEUR_ACE-MATG1049.pdf]]
 
 ---
 
@@ -73,10 +67,6 @@ tags: [MATG1049, algebra-lineal, syllabus]
 > [!tip] 📚 Temas a cubrir
 >
 > ![[Unidad 0 - Guias y Ejercicios/Diagramas/Bienvenida_y_Syllabus_Algebra_Lineal_01.svg]]
->
-> **Se lee así:** el diagrama organiza el contenido del curso en sus dos unidades — Sistemas de ecuaciones lineales y matrices (4h) y Espacios vectoriales (14h) — con el bloque de transformaciones lineales (9h) como continuación.
->
-> **Por qué importa:** es el mapa oficial de la cátedra: qué se estudia y en cuántas horas, útil para planificar el trimestre.
 >
 > | Unidad | Tema | Horas |
 > |---|---|---|

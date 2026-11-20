@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [FISG1001, unidad4, fisica-mecanica, impulso, impulso-lineal]
 ---
 
 # ⚡ Impulso
@@ -11,7 +10,7 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, impulso-lineal]
 >
 
 > [!example] 🎯 Aplicaciones Clave
->
+> 
 > - 🚗 **Sistemas de seguridad**: Airbags y zonas de deformación
 > - ⚾ **Deportes**: Técnicas de golpeo y recepción
 > - 🛡️ **Protección contra impactos**: Cascos y armaduras
@@ -22,7 +21,7 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, impulso-lineal]
 ## 📊 Variables y Magnitudes
 
 > [!tip] 🔢 Tabla de Variables
->
+> 
 > |Símbolo|Magnitud|Unidad SI|Unidad Alt.|Tipo|Descripción|
 > |---|---|---|---|---|---|
 > |**\vec{J}**|Impulso|N·s|kg·m/s|Vectorial|Efecto acumulado de fuerza|
@@ -34,13 +33,7 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, impulso-lineal]
 
 ### 🔗 Relaciones Conceptuales
 
-> [!note] 🖼️ Relaciones Conceptuales
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Impulso_Lineal_01.svg]]
->
-> **Se lee así:** El mapa de la idea de impulso: la **fuerza F** y el **tiempo Δt** producen el **impulso J**, que es igual al **cambio de momentum Δp** y se traduce en un **cambio de velocidad Δv**. En paralelo, la **gráfica F vs t** da el impulso por su **área bajo la curva**.
->
-> **Por qué importa:** Conecta las tres formas de calcular el mismo cambio: `J = FΔt` si la fuerza es constante, `J = ∫F dt` si varía, y `J = Δp` si lo que se conocen son las velocidades. Son tres caminos hacia la misma incógnita.
+![[Diagramas/Impulso_Lineal_01.svg]]
 
 ---
 
@@ -49,19 +42,19 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, impulso-lineal]
 ### 📐 Definición Básica
 
 > [!note] 📝 Impulso para Fuerza Constante $$\vec{J} = \vec{F}_{promedio} \cdot \Delta t$$
->
+> 
 > **Para fuerza constante o fuerza promedio durante el intervalo**
 
 ### 🔄 Impulso para Fuerza Variable
 
 > [!warning] ⚠️ Integración Necesaria $$\vec{J} = \int_{t_i}^{t_f} \vec{F}(t) , dt$$
->
+> 
 > **El impulso es el área bajo la curva F vs t**
 
 ### ⚖️ Teorema Impulso-Momentum
 
 > [!important] 🎯 Relación Fundamental $$\vec{J}_{neto} = \Delta \vec{p} = \vec{p}_{final} - \vec{p}_{inicial}$$ $$\vec{J}_{neto} = m(\vec{v}_f - \vec{v}_i)$$
->
+> 
 > **El impulso neto es igual al cambio en el momentum lineal**
 
 ---
@@ -70,28 +63,22 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, impulso-lineal]
 
 ### 📊 Análisis de Gráfica Fuerza vs Tiempo
 
-> [!note] 🖼️ Análisis de Gráfica Fuerza vs Tiempo
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Impulso_Lineal_02.svg]]
->
-> **Se lee así:** La lectura de la **gráfica F vs t**: el eje **Y** es la fuerza, el **X** el tiempo, el **área** es el impulso `J`, la **altura promedio** es la fuerza media `F_prom` y la **base** es `Δt`. Si la fuerza es **variable** hay que **integrar**; si es **constante**, basta **multiplicar**.
->
-> **Por qué importa:** El área como impulso permite resolver fuerzas que no se pueden describir con una fórmula —el golpe de un bate, la colisión— simplemente midiendo el área de la curva. Es el mismo recurso que con `F vs x` para el trabajo.
+![[Diagramas/Impulso_Lineal_02.svg]]
 
 > [!example] 🔍 Casos Prácticos
->
+> 
 > **Fuerza Constante:**
->
+> 
 > - Área = Rectángulo
 > - J = F × Δt
->
+> 
 > **Fuerza Variable:**
->
+> 
 > - Área bajo curva
 > - J = ∫F(t)dt
->
+> 
 > **Fuerza de Impacto:**
->
+> 
 > - Pico alto, tiempo corto
 > - Útil para análisis de colisiones
 
@@ -101,16 +88,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, impulso-lineal]
 
 ### 🎯 Teorema Impulso-Momentum Explicado
 
-> [!note] 🖼️ Teorema Impulso-Momentum Explicado
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Impulso_Lineal_03.svg]]
->
-> **Se lee así:** La derivación formal: una **fuerza aplicada F** durante un **tiempo Δt** genera el **impulso `J = FΔt`**, que **cambia el momentum** (`Δp = J`) y **modifica la velocidad** (`Δv = Δp/m`). La cadena de la derecha lo demuestra desde la **segunda ley de Newton** `F = ma = m Δv/Δt`, multiplicando ambos lados por `Δt` para obtener `F·Δt = m·Δv`.
->
-> **Por qué importa:** Muestra que el impulso no es un concepto nuevo: es la segunda ley integrada en el tiempo. La utilidad práctica es que permite saltar directo al cambio de velocidad sin calcular la aceleración en cada instante.
+![[Diagramas/Impulso_Lineal_03.svg]]
 
 > [!info] 🔗 Conexión con Newton El teorema de impulso es una **reformulación integral** de la Segunda Ley:
->
+> 
 > - **Forma diferencial**: F = dp/dt
 > - **Forma integral**: J = ∫F dt = Δp
 > - **Equivalencia**: Ambas describen el mismo fenómeno físico
@@ -122,29 +103,23 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, impulso-lineal]
 ### 🚗 Sistemas de Seguridad Vehicular
 
 > [!tip] 💡 Principio de Protección **Estrategia fundamental**: Aumentar Δt para reducir F
->
+> 
 > **Razonamiento:**
->
+> 
 > - Impulso fijo: J = Δp (cambio inevitable en colisión)
 > - Fuerza reducida: F = J/Δt (↑tiempo → ↓fuerza)
 > - Resultado: Menor daño a ocupantes
 
-> [!note] 🖼️ Sistemas de Seguridad Vehicular
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Impulso_Lineal_04.svg]]
->
-> **Se lee así:** La aplicación cotidiana del impulso: con `Δt` **muy pequeño** la fuerza `F` es **muy grande** y el **daño es severo**; si `Δt` se **aumenta**, la fuerza se **reduce** y el **daño es mínimo**. El bloque final apunta a los **airbags** y las **zonas de deformación**.
->
-> **Por qué importa:** Es la razón física de todo lo que hace seguro un automóvil: el airbag no reduce la velocidad del choque, alarga el tiempo en la que se produce. Como `J = FΔt` es fijado por la colisión, más tiempo significa menos fuerza sobre el cuerpo.
+![[Diagramas/Impulso_Lineal_04.svg]]
 
 ### ⚾ Aplicaciones Deportivas
 
 > [!example] 🎾 Técnica de Recepción **Atrapar una pelota correctamente:**
->
+> 
 > 1. **Extensión**: Llevar el guante hacia la pelota
 > 2. **Cesión**: "Ceder" al impacto (aumentar Δt)
 > 3. **Resultado**: Reducir fuerza sobre la mano
->
+> 
 > **Principio**: Mismo impulso, menor fuerza máxima
 
 ---
@@ -154,40 +129,36 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, impulso-lineal]
 ### 📝 Problema 1: Impulso con Fuerza Constante
 
 > [!example] 🔍 Ejercicio Básico **Datos:**
->
+> 
 > - Masa: m = 2 kg
 > - Velocidad inicial: v₁ = 3 m/s
 > - Fuerza aplicada: F = 10 N (misma dirección)
 > - Tiempo de aplicación: Δt = 4 s
->
+> 
 > **Encontrar:** Impulso y velocidad final
 
-> [!info] 📌 Problema 1: Impulso con Fuerza Constante
->
-> **Solución:**
+**Solución:**
 
 > [!success] ✅ Paso a Paso
->
+> 
 > **1. Calcular impulso:** $$J = F \cdot \Delta t = 10 \text{ N} \times 4 \text{ s} = 40 \text{ N·s}$$
->
+> 
 > **2. Aplicar teorema impulso-momentum:** $$J = m(v_f - v_i)$$ $$40 = 2(v_f - 3)$$ $$20 = v_f - 3$$ $$v_f = 23 \text{ m/s}$$
 
 ### 🎾 Problema 2: Detención por Impulso
 
 > [!example] 🔍 Pelota de Tenis **Datos:**
->
+> 
 > - Pelota: m = 0.05 kg
 > - Velocidad inicial: v₁ = 30 m/s
 > - Impulso de frenado: J = -1.5 N·s
->
+> 
 > **Encontrar:** Velocidad final
 
-> [!info] 📌 Problema 2: Detención por Impulso
->
-> **Solución:**
+**Solución:**
 
 > [!success] ✅ Aplicación Directa $$J = m(v_f - v_i)$$ $$-1.5 = 0.05(v_f - 30)$$ $$-30 = v_f - 30$$ $$v_f = 0 \text{ m/s}$$
->
+> 
 > **Interpretación:** El impulso negativo detiene completamente la pelota.
 
 ---
@@ -195,9 +166,9 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, impulso-lineal]
 ## 💡 Estrategias y Tips
 
 > [!tip] 🎯 Metodología de Resolución
->
+> 
 > **Pasos Sistemáticos:**
->
+> 
 > 1. 🔍 Identificar sistema y fuerzas externas
 > 2. ⏰ Determinar intervalo temporal relevante
 > 3. ➕ Calcular impulso total (suma vectorial)
@@ -206,7 +177,7 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, impulso-lineal]
 >
 
 > [!warning] ❌ Errores Comunes
->
+> 
 > - Confundir impulso con trabajo (J ≠ W)
 > - Ignorar el carácter vectorial
 > - Olvidar considerar todas las fuerzas externas
@@ -214,7 +185,7 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, impulso-lineal]
 >
 
 > [!success] ✅ Buenas Prácticas
->
+> 
 > - Usar gráficas F vs t para fuerzas variables
 > - Considerar siempre la dirección
 > - Verificar consistencia de unidades
@@ -227,7 +198,7 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, impulso-lineal]
 ### ⚖️ Impulso vs Trabajo
 
 > [!warning] ⚠️ Diferencias Fundamentales
->
+> 
 > |Aspecto|Impulso (\vec{J})|Trabajo (W)|
 > |---|---|---|
 > |**Definición**|\vec{F} · Δt|\vec{F} · Δ\vec{r}|
@@ -242,21 +213,21 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, impulso-lineal]
 ## 🔗 Referencias y Enlaces
 
 > [!quote] 📚 Notas Relacionadas
->
+> 
 > ### Conceptos Fundamentales
->
+> 
 > - [[Leyes de Newton]] - Base teórica del impulso
 > - [[Momentum Lineal y Su Conservación]] - Magnitud que cambia por impulso
 > - [[Trabajo y Energía]] - Concepto análogo pero diferente
->
+> 
 > ### Aplicaciones Directas
->
+> 
 > - [[Choques Uni-Bidimensionales]] - Aplicación práctica principal
 > - [[Centro de masa (CM)]] - Para sistemas de partículas
 > - [[Cinemática Rotacional]] - Extensión al momentum angular
->
+> 
 > ### Temas Avanzados
->
+> 
 > - Mecánica Lagrangiana - Formulación generalizada
 > - Relatividad Especial - Impulso a altas velocidades
 > - Mecánica de Fluidos - Impulso en medios continuos
@@ -266,25 +237,25 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, impulso-lineal]
 ## 📋 Resumen Ejecutivo
 
 > [!summary] 📊 Puntos Clave
->
+> 
 > **⚡ Definición Central:**
->
+> 
 > - Impulso = Efecto acumulado de fuerza en tiempo
 > - \vec{J} = \vec{F}_promedio · Δt (fuerza constante)
 > - \vec{J} = ∫\vec{F}(t)dt (fuerza variable)
->
+> 
 > **🎯 Teorema Fundamental:**
->
+> 
 > - Impulso neto = Cambio de momentum
 > - \vec{J}_neto = Δ\vec{p} = m(\vec{v}_f - \vec{v}_i)
->
+> 
 > **📈 Interpretación Gráfica:**
->
+> 
 > - Área bajo curva F vs t
 > - Especialmente útil para fuerzas de impacto
->
+> 
 > **🛠️ Aplicaciones Principales:**
->
+> 
 > - Análisis de colisiones y choques
 > - Diseño de sistemas de protección
 > - Optimización de técnicas deportivas
@@ -292,5 +263,3 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, impulso-lineal]
 ---
 
 _Tags: #física #mecánica #impulso #momentum #dinámica #choques
-
-**Tags:** #FISG1001 #fisica-mecanica #unidad4 #impulso-lineal

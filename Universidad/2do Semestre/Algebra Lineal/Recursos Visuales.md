@@ -26,5 +26,4 @@ tags: [recursos-visuales, algebra-lineal]
 
 ## 🔗 Ver también
 
-> [!tip] 🔗 Índice de la Unidad 0
-> - `Unidad 0 - Guias y Ejercicios/00 - Recursos Unidad 0.md` - índice de guías, guías de estudio y material de la unidad.
+- `Unidad 0 - Guias y Ejercicios/00 - Recursos Unidad 0.md` - índice de guías, guías de estudio y material de la unidad.

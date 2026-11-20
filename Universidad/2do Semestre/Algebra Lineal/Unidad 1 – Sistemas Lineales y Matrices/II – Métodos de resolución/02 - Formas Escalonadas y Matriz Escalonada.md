@@ -1,9 +1,8 @@
 ---
 dg-publish: true
-tags: [MATG1049, algebra-lineal, unidad1, 02-formas-escalonadas-y-matriz-escalonada]
 ---
 
-# 🪜 Formas Escalonadas y Matriz Escalonada
+# Formas Escalonadas y Matriz Escalonada
 
 ## 🎯 Fundamentos de las Formas Escalonadas
 
@@ -2427,14 +2426,7 @@ tags: [MATG1049, algebra-lineal, unidad1, 02-formas-escalonadas-y-matriz-escalon
 
 ## 📊 Diagrama Conceptual de Formas Escalonadas
 
-> [!info] 📊 02 - Formas Escalonadas Y Matriz Escalonada 01
->
-> ![[02_-_Formas_Escalonadas_y_Matriz_Escalonada_01.svg]]
->
->
-> **Se lee así:** el diagrama presenta solo rango y soluciones explícitas y matriz original y algoritmo de gauss.
-> **Por qué importa:** conecta el álgebra con la geometría: cuántas soluciones tiene un sistema y por qué.
-
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Formas_Escalonadas_y_Matriz_Escalonada_01.svg]]
 
 ## 🔍 Diferencias Clave: Resumen Visual
 
