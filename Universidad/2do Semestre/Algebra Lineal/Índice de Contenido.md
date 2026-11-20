@@ -14,7 +14,13 @@ tags: [MATG1049, unidad0, recursos]
 > Syllabus EUR-ACE de la materia (MATG1049), subido desde el aula virtual.
 
 > [!note] 💛 El syllabus completo está como nota
+>
 > ![[Unidad 0 - Guias y Ejercicios/Diagramas/Bienvenida_y_Syllabus_Algebra_Lineal_01.svg]]
+>
+> **Se lee así:** el mapa del syllabus abre la materia en su portada (Álgebra Lineal, MATG1049) y despliega el árbol de las dos unidades con sus temas: Sistemas Lineales y Matrices (U1) y Espacios Vectoriales (U2), cada uno con sus bloques de fundamentos, métodos y aplicaciones.
+>
+> **Por qué importa:** es el índice visual de todo el curso; desde aquí se salta a la nota de cada tema con un solo clic.
+>
 > Ver [[Bienvenida y Syllabus Algebra Lineal|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
 
 ## 📚 Guías y material de clase

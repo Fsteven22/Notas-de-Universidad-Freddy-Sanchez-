@@ -35,7 +35,14 @@ tags: [MATG1049, algebra-lineal, unidad2, 07-teorema-de-la-descomposicion-ortogo
 > |**Geometría**|Entender distancias y ángulos|Gráficos computacionales|
 > |**Optimización**|Resolver problemas de aproximación|Regresión lineal|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_01.svg]]
+> [!info] 📊 07 – Teorema De La Descomposición Ortogonal 01
+>
+> ![[07_–_Teorema_de_la_Descomposición_Ortogonal_01.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta vector y en ℝⁿ y descomposición ortogonal y \hat{y} componente en w y z componente en w⊥.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -76,6 +83,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 07-teorema-de-la-descomposicion-ortogo
 > **Visualización de subespacios:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_02.svg]]
+>
+> **Se lee así:** el diagrama presenta subespacios de ℝ³ y dimensión 0 origen y dimensión 1 líneas y dimensión 2 planos.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Base de un subespacio:**
 > 
@@ -136,6 +146,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 07-teorema-de-la-descomposicion-ortogo
 > **Propiedades fundamentales:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_03.svg]]
+>
+> **Se lee así:** el diagrama presenta complemento ortogonal w⊥ y es un subespacio y dim w + dim w⊥ = n y w ∩ w⊥ = 0.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Teorema de la dimensión:**
 > 
@@ -250,6 +263,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 07-teorema-de-la-descomposicion-ortogo
 > **Flujo de cálculo:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_04.svg]]
+>
+> **Se lee así:** el diagrama presenta ortogonal y no ortogonal y vector y y ¿base de w?.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Propiedades de la proyección:**
 > 
@@ -285,6 +301,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 07-teorema-de-la-descomposicion-ortogo
 > **Componentes del teorema:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_05.svg]]
+>
+> **Se lee así:** el diagrama presenta teorema de descomposición y existencia y unicidad y fórmula explícita.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Notación y terminología:**
 > 
@@ -369,6 +388,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 07-teorema-de-la-descomposicion-ortogo
 > **Diagrama de la demostración:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_06.svg]]
+>
+> **Se lee así:** el diagrama presenta inicio demostración y existencia y unicidad y definir \hat{y} usando base ortogonal.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 🎯 Consecuencias Importantes
 
@@ -503,6 +525,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 07-teorema-de-la-descomposicion-ortogo
 > **Flujo del proceso:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_07.svg]]
+>
+> **Se lee así:** el diagrama presenta vector y en un subespacio w y proceso y proyección ŷ = (y·q̂)q̂ y componente ortogonal z = y − ŷ.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > Si {q₁, q₂, ..., qₖ} es base ortonormal de W:
 > - qᵢ · qⱼ = 0 para i ≠ j (ortogonales)
 > - ‖qᵢ‖ = 1 para todo i (unitarios)
@@ -629,6 +654,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 07-teorema-de-la-descomposicion-ortogo
 > **Diagrama del proceso:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_08.svg]]
+>
+> **Se lee así:** el diagrama presenta base arbitraria v₁, v₂, ..., vₖ y tomar v₁ y normalizar: q₁ = v₁/‖v₁‖ y tomar v₂.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 
@@ -664,6 +692,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 07-teorema-de-la-descomposicion-ortogo
 > **Interpretación geométrica:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_09.svg]]
+>
+> **Se lee así:** el diagrama presenta vector b fuera de col a y proyectar sobre col a y b̂ = proj_col a b y resolver a\hat{x} = b̂.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplo numérico:**
 > 
@@ -781,6 +812,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 07-teorema-de-la-descomposicion-ortogo
 > **Proceso de compresión:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_10.svg]]
+>
+> **Se lee así:** el diagrama presenta imagen original 8×8 píxeles y aplicar dct 64 coeficientes y cuantizar reducir precisión y codificar huffman.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ventaja de la ortogonalidad:**
 > 
@@ -1035,6 +1069,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 07-teorema-de-la-descomposicion-ortogo
 > **Teorema fundamental:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_11.svg]]
+>
+> **Se lee así:** el diagrama presenta descomposición ortogonal y enunciado y y = \hat{y} + z y \hat{y} ∈ w.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Fórmulas esenciales:**
 > 

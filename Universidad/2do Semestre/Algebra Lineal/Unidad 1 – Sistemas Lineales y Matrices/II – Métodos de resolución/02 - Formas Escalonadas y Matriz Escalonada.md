@@ -2427,7 +2427,14 @@ tags: [MATG1049, algebra-lineal, unidad1, 02-formas-escalonadas-y-matriz-escalon
 
 ## 📊 Diagrama Conceptual de Formas Escalonadas
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Formas_Escalonadas_y_Matriz_Escalonada_01.svg]]
+> [!info] 📊 02 - Formas Escalonadas Y Matriz Escalonada 01
+>
+> ![[02_-_Formas_Escalonadas_y_Matriz_Escalonada_01.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta solo rango y soluciones explícitas y matriz original y algoritmo de gauss.
+> **Por qué importa:** conecta el álgebra con la geometría: cuántas soluciones tiene un sistema y por qué.
+
 
 ## 🔍 Diferencias Clave: Resumen Visual
 

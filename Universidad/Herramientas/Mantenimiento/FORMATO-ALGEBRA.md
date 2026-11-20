@@ -7,20 +7,20 @@ dg-publish: false
 > [!info] 📖 Fuente única de verdad
 > Este contrato vive en `Universidad/Herramientas/Mantenimiento/` (junto al validador que lo
 > aplica), **no** dentro de la carpeta de la materia: es una herramienta de auditoría, no una nota
-> que el sitio publique. Sus hermanos son `FORMATO-CYSOC.md`, `FORMATO-DISENO.md`, `FORMATO-SBD.md`,
-> `FORMATO-POO.md` y `FORMATO-MATDISC.md`.
+> que el sitio publique. Sus hermanos son `FORMATO-SBD.md`, `FORMATO-DISENO.md`, `FORMATO-CYSOC.md`,
+> `FORMATO-POO.md`, `FORMATO-FESD.md` y `FORMATO-MATDISC.md`.
 >
-> Las **51 notas** de la materia (común a ESPOL) no comparten esqueleto fijo: son documentos de
-> clase densos, por tema, con muchos H2 (definiciones, teoremas, ejemplos, aplicaciones). A
-> diferencia de CYSOC, **no se exige un `Introducción` obligatorio**: se exige portada con H1 y
-> todos los H2 con emoji. Este contrato documenta lo que la materia ya hace y bloquea lo que la
-> rompe. **Copia el método, no el esqueleto de otras materias.**
+> **Nota de referencia:** `2do Semestre/Algebra Lineal/Unidad 1 – Sistemas Lineales y Matrices/I –
+> Sistemas de ecuaciones y representación/01 - Sistema de ecuaciones lineales en R2 y R3.md`
+> (la "01" de la I, la más estructurada de la materia: 26 H2 con emoji, 57 callouts de 9 tipos,
+> 3 embeds con lectura, tags al pie). Cada regla cita sus líneas como ejemplo literal. El
+> validador apunta a ella con `--calibrar`.
 >
-> El validador que lo aplica es `qa_formato_algebra.py` (mismas severidades y flags que
-> `qa_formato_cysoc.py`). Baseline a la fecha del contrato: **51 notas · 1345 hallazgos · 0 H**
-> tras la primera pasada (tags, emoji, embeds sueltos y errores de render reales).
+> Las **51 notas** de la materia no comparten esqueleto fijo (son documentos largos y multi-tema,
+> a diferencia de SBD). Este contrato fija lo que sí es común: frontmatter, emoji, callouts,
+> embeds con lectura y tags al pie. **Copia el método, no el esqueleto de otras materias.**
 
-## Los 16 reglas
+## Las 16 reglas
 
 ### R1 · Frontmatter
 ```
@@ -29,73 +29,79 @@ dg-publish: true
 tags: [MATG1049, algebra-lineal, unidadN, tema]
 ---
 ```
-El código de cátedra es **MATG1049** (sílabo oficial ESPOL, 5.8 ECTS). Las 4 notas raíz llevan
-`unidad0`; las de unidad 1/2 llevan `unidad1`/`unidad2` + slug. Sin `dg-publish: true` la nota no se
-publica.
+Sin `dg-publish: true` la nota no se publica (`qa_omitidas.py` la detecta). El código de cátedra
+es **MATG1049** (sílabo oficial ESPOL, 5.8 ECTS). Las 4 notas raíz ya lo llevan; las 47 notas de
+clase se taggearon en el primer pase (19/11/2026). La referencia lo cumple en sus líneas 1-4.
 
 ### R2 · Título H1 con emoji
-`# 📐 Sistemas de Ecuaciones Lineales (S.E.L.)`. Emoji visible + texto.
+`# 📐 Sistemas de Ecuaciones Lineales (S.E.L.)` — emoji visible + texto. La referencia lo cumple
+en su línea 6. **Anomalía documentada de la materia:** 6 notas tienen **dos H1** (documentos
+fusionados del dueño; p. ej. la referencia lleva un segundo H1 en su línea 614
+`# 📐 Ecuaciones de Grado 1 en ℝ² y ℝ³`). Es material del dueño, no un defecto de formato: el
+validador no lo reporta. Al escribir notas **nuevas** va un solo H1.
 
-### R3 · Secciones H2: emoji en todo H2
-Las notas son multi-tema (p. ej. Sistema Binario tiene 15+ H2). **No** se exige ninguna sección
-concreta (no hay "Introducción obligatoria": la portada ya ubica al lector). El validador solo exige:
-todo H2 abre con emoji.
+### R3 · Secciones H2 con emoji
+Todo H2 abre con emoji. La referencia tiene 26/26 (líneas 8, 25, 120, 166, 301, 472, 510, 569,
+592, 616, 651, 766, 888, 1014, 1068, 1180, 1356, 1523, 1534, 1576, 1668, 1740, 1761, 1772, 1806,
+1851). No hay esqueleto obligatorio: cada nota elige sus secciones por tema.
 
-| Perfil | Se aplica a | H2 requeridas |
-|---|---|---|
-| `clase` | `Unidad N - …/** 0N - ….md` | ninguna (**0**); emoji en todo H2 |
-| `material` | `Unidad 0 - Guias y Ejercicios/Material de clase/…` | ninguna (**0**), pero todo H2 lleva emoji |
-| `indice` | notas raíz (`Álgebra Lineal.md`, `Índice de Contenido.md`, `Recursos Visuales.md`, `Bienvenida y Syllabus….md`) | ninguna (**0**), pero todo H2 lleva emoji |
-
-> [!note] Cierre recomendado (desviación W, no error)
-> Se recomienda un cierre — `## 📚 Referencias`, `## 🎯 Metas de Aprendizaje`, `## 🔗 Conexiones`,
-> `## 📝 Ejercicios`, etc. — pero su ausencia es **W**, no error. Ver `R3-cierre-falta` en el
-> validador.
-
-### R4 · Contenido suelto vs embeds
-La prosa de estas notas vive mayoritariamente **fuera** de callouts por diseño (estilo-materia, no
-un defecto). El validador la reporta como **R4-\*** en severidad informativa (W, no H). Lo que sí
-rompe la lectura es un **embed suelto**: todo `![[...]]` va dentro de un callout o, si está
-top-level, se envuelve en uno con su lectura (ver R14).
+### R4 · Contenido dentro de callouts
+La referencia tiene **0 líneas de prosa, tabla, lista o fórmula fuera de callouts** (sus únicas
+líneas "fuera" son el frontmatter, los dos `**Tags:**` al pie y el segundo H1, todas legítimas).
+El resto de la materia es prosa densa fuera de callouts por diseño del dueño (~780 líneas en 51
+notas): el validador lo reporta como **W informativo**, no como error. Lo que sí es **H** es un
+embed suelto top-level (ver R12).
 
 ### R5 · Callout con título siempre
-`> [!note] 📋 Definición — Dimensión`: tipo + emoji + texto.
+`> [!note] 📋 Estructura Matemática Un sistema de **m ecuaciones**…` (referencia L29). Tipo +
+emoji + texto. Nunca un callout sin título.
 
 ### R6 · Línea en blanco `>` tras el encabezado del callout
-Entre `> [!tipo] emoji …` y el contenido, una línea con solo `>`. Excepción: callouts 📖 de deck
-pueden ir pegados al encabezado si su primer párrafo sigue en la misma línea lógica del encabezado.
+La referencia lo hace en sus 57 callouts (p. ej. L10-11, L29-30). Excepción admitida por la
+materia: callouts de deck 📖 que arrancan con prosa directo (no hay en la referencia; el
+validador los exime como en CYSOC).
 
-### R7 · Separador `>` en blanco ante embeds/tablas/párrafos
-Antes de un `![[...]]`, una tabla o un párrafo dentro de un callout, va una línea `>` en blanco.
+### R7 · Separadores internos dentro de un callout
+Línea `>` en blanco antes de un embed, tabla o párrafo nuevo dentro del callout. La referencia lo
+cumple en sus embeds (L282-284: header L282, `>` L283, embed L284).
 
 ### R8 · `> >` solo dentro de callout anidado
-`> >` sólo es legítimo como contenido de un callout anidado que abre con su propio `[!tipo]`.
-Un `> >` suelto es texto indentado sin estilo: se baja un nivel (`> `). El dato extra va en el
-callout padre con su emoji (`> 💡 …`, `> 📌 …`, `> ⚠️ …`), o en un callout anidado con título.
-El validador lo reporta como `R8-doble-gt-sin-callout` (H).
+El prefijo `> >` solo es legítimo como contenido de un callout anidado con su propio `[!tipo]`.
+Un `> >` suelto se renderiza como texto indentado sin estilo: se baja un nivel conservando el
+emoji. Reportado como **H** (igual que CYSOC/POO).
 
 ### R9 · Ejemplos con etiqueta en negrita
-Dentro del callout: `> **Ejemplo:**`, `> **Se lee así:**`, `> **Por qué importa:**`.
+`> **Ejemplo:**`, `> **Se lee así:**`, `> **Por qué importa:**` dentro del callout. La referencia
+usa `> **Analogías útiles:**`, `> **Importancia histórica:**` (L11-17) — mismo patrón.
 
 ### R10 · Metas de Aprendizaje con checkboxes
-`- [ ]` en la sección de metas, si la nota la tiene.
+Solo si la nota tiene la sección: contenido como `- [ ]`. **No aplica** a Álgebra (0 notas con
+esta sección; no se exige).
 
 ### R11 · Flashcards SR dentro de la sección Repaso
-`#flashcards/algebra-lineal-uN` fuera del callout; las Q/A dentro del `> [!note] 🧠 …`.
+`#flashcards/algebra-lineal-uN` fuera del callout; las Q/A dentro del `> [!note] 🧠 …`. **No
+aplica** a Álgebra (0 flashcards en la materia; no se exige).
 
 ### R12 · Rutas de assets correctas y existentes
-- SVG de diagrama: `Unidad 0 - Guias y Ejercicios/Diagramas/` (única fuente, con su `.mmd` al lado).
-- Profundidad correcta de `../` según la profundidad real de la nota.
-- Exámenes (`.pdf`/`.docx`) viven en `Unidad 0 - Guias y Ejercicios/Exámenes/`; se enlazan con
-  wikilink + alias 📎 (p. ej. `[[123456789-…__EXA-2024-1S-…-2Par.pdf|📎 Examen 2024-1S …]]`),
-  nunca embebidos visualmente.
+- SVG de diagrama: `Unidad 0 - Guias y Ejercicios/Diagramas/` (única fuente). La referencia los
+  embed así: `> ![[01_-_Sistema_de_ecuaciones_lineales_en_R2_y_R3_01.svg]]` (L284), con ruta
+  relativa `../../Unidad 0 - …` según profundidad.
+- **SVG ⇒ `.mmd` al lado:** cada SVG debe tener su fuente `.mmd` en `Diagramas/`. Estado actual
+  (19/11/2026): **248 SVG sin `.mmd`** en la materia — es el déficit real, pendiente de generar
+  con `svg_a_mmd.py` (misma herramienta que CYSOC). Mientras dure, se reporta como **W**
+  (`R12-svg-sin-mmd`), no como H.
+- **Exámenes** (`.pdf`/`.docx`) viven en `Unidad 0 - Guias y Ejercicios/Exámenes/` y se **enlazan
+  con alias 📎**, nunca se embeben visualmente.
+- Material ajeno (`_texto/`, `site/`, `Herramientas/`) no se referenncia (H).
 
 ### R13 · Tags al pie
-`**Tags:** #MATG1049 …` en la raíz al final de la nota, separado del último callout por línea en
-blanco + `---`. El validador reporta `R13-tags-final` (falta) y `R13-tags-pegado` (pegado).
+`**Tags:** #…` al final de la nota, en la raíz, separado del último callout por línea en blanco +
+`---`. La referencia lo cumple dos veces (L612 y L1891, por ser dos documentos fusionados; ver R2).
+**4 notas** de la materia aún no lo llevan: `Recursos Visuales.md`, `02 - Teorema de Rouché-
+Frobenius.md`, `04 – Suma de subespacios.md`, `04 – Matriz de cambio de base.md` (W: `R13-tags-final`).
 
 ### R14 · Todo lo visual se explica (no se transcribe)
-Cada embed (.svg de diagrama o .png) lleva en las líneas siguientes su lectura:
+Cada embed (.svg/.png) lleva en las líneas siguientes su lectura:
 
 | Etiqueta | Qué responde | Mínimo |
 |---|---|---|
@@ -105,31 +111,53 @@ Cada embed (.svg de diagrama o .png) lleva en las líneas siguientes su lectura:
 
 Etiquetas aceptadas (case-insensitive): `Se lee así` · `Por qué importa` · `Ejemplo(s)` · `Nota` ·
 `Cómo se lee` · `Verificación` · `Analogía` · `Resumen` · `Para qué sirve` · `Qué notas` · `Pista`.
-La lectura se **fundamenta en el texto visible del propio SVG** (parseando `<foreignObject>`/`<text>`),
-no se inventa.
+La lectura se **fundamenta en el texto visible del propio SVG** (parseando `<foreignObject>`/
+`<text>`), no se inventa. Fase 2 (19/11/2026): 246 lecturas insertadas; quedan 1 por pulir.
 
 ### R15 · Páginas capturadas citadas con su número
-Las capturas de decks/syllabus van en `Archivos/<Tema>/` con naming `algebra-uX-YY-NN-slug.png` y se
-citan con su página (`syllabus, p. 2`).
+Las capturas PNG de decks/syllabus van en `Archivos/<Tema>/` con naming `algebra-uX-YY-NN-slug.png`
+y se citan con su página (`syllabus, p. 2`). **No aplica hoy**: Álgebra no tiene PNG de deck
+(0 en `Archivos/`, que está vacía salvo `.gitkeep`).
 
-### R16 · SVG ⇒ `.mmd` al lado
-Cada SVG nuevo trae su fuente `.mmd` en la misma carpeta; round-trip obligatorio (`.mmd` → PNG →
-comparar con el SVG original).
+### R16 · Deck embebido = `.mmd` al lado para todo SVG
+Cada SVG recién generado trae su `.mmd` en la misma carpeta; round-trip obligatorio. **Ver R12**:
+el estado actual es 248 sin generar; la regla es de producción (para notas nuevas), no de
+auditoría retroactiva.
 
 ## Material que NO entra
-`_texto/`, PDFs de clase crudos (se capturan sus páginas), `Contenido Extra/`, docs de `Herramientas/`.
+`_texto/`, PDFs de clase crudos (se capturan sus páginas), `Contenido Extra/`, docs de
+`Herramientas/`.
 
 ## Exámenes (material real de práctica)
 Los 42 exámenes de la cátedra (14 Parcial I · 14 Parcial II · 14 Mejoramiento, 2009–2026) viven en
 `Unidad 0 - Guias y Ejercicios/Exámenes/`. Las secciones de ejercicios de cada tema son el lugar
 natural para enlazarlos con 📎; al citar un examen conviene anotar su tema (Gauss → algoritmos,
-autovalores → valores y vectores propios, etc.). **Nada de esto se publica como ejercicios resueltos
-sin fuente; se enlaza el PDF y se usa como autoridad.**
+autovalores → valores y vectores propios, etc.). **Nada se publica como ejercicios resueltos sin
+fuente; se enlaza el PDF y se usa como autoridad.**
+
+## Receta de producción (las 16 reglas en orden)
+1. Frontmatter con `MATG1049` + slug (R1).
+2. Un solo H1 con emoji (R2).
+3. H2 con emoji, sin esqueleto fijo (R3).
+4. Callouts con título, blanco `>` tras header, separadores internos (R5-R7).
+5. Diagramas: escribir el `.mmd`, renderizar, embeber, y **leerlo** (R12, R14, R16).
+6. Ejemplos con etiqueta en negrita (R9); ejercicios con solución plegada si los hay (R8).
+7. `**Tags:**` al pie, separado (R13).
+8. Auditar y corregir hasta 0 H (`qa_formato_algebra.py`).
 
 ## Cómo se audita
 ```
 py -3.12 "Universidad/Herramientas/Mantenimiento/qa_formato_algebra.py" --solo "2do Semestre/Algebra Lineal"
+py -3.12 "Universidad/Herramientas/Mantenimiento/qa_formato_algebra.py" --calibrar
 ```
-Severidades: **H** (bloquea) y **W** (desviación de formato, no bloquea salvo `--estricto`).
-`--fix-rutas` repara embeds con la profundidad incorrecta cuando la correcta existe.
-Estado al cierre de esta edición: **0 H**.
+Severidades: **H** (bloquea: callout vacío, `> >` sin anclaje, embed roto/ajeno, ruta mal
+profundizada) y **W** (desviación: prosa suelta, tags, emoji, `.mmd` faltante, lectura).
+`--fix-rutas` repara embeds con profundidad incorrecta cuando la correcta existe.
+Estado al cierre de esta edición: **51 notas, 1370 hallazgos, 0 H** (248 son `R12-svg-sin-mmd`,
+pendiente de generación masiva; el resto, W de formato).
+
+## Nota de proceso (19/11/2026)
+El contrato se reescribió sobre la nota de referencia real después de que el dueño lo pidiera
+("usar la nota de refereencia de SBD como todos los contratos y recorrerlo"). La primera versión
+(clon de CYSOC) tenía tres huecos: sin nota de referencia, `--calibrar` roto, y reglas heredadas
+(R10/R11/R15) sin medir en la materia. Este documento los cierra.

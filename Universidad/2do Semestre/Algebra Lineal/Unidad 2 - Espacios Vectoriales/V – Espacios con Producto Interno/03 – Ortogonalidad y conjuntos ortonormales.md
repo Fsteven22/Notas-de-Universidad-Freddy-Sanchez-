@@ -27,7 +27,14 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > |**Interpretabilidad**|Componentes claramente separadas|Análisis de datos, PCA|
 > |**Eficiencia**|Optimización de cálculos|Gráficos por computadora, compresión|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_01.svg]]
+> [!info] 📊 03 – Ortogonalidad Y Conjuntos Ortonormales 01
+>
+> ![[03_–_Ortogonalidad_y_conjuntos_ortonormales_01.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta concepto de ortogonalidad y producto interno cero y independencia geométrica y aplicaciones.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -75,6 +82,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Propiedades fundamentales:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_02.svg]]
+>
+> **Se lee así:** el diagrama presenta producto interno y propiedades algebraicas y conmutatividad y ⟨u,v⟩ = ⟨v,u⟩.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### ⊥ Definición de Ortogonalidad
 
@@ -87,6 +97,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Interpretación geométrica:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_03.svg]]
+>
+> **Se lee así:** el diagrama presenta = 0 y &gt; 0 y &lt; 0 y producto interno.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Casos especiales importantes:**
 > 
@@ -122,6 +135,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > $$||u + v||^2 = ||u||^2 + ||v||^2$$
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_04.svg]]
+>
+> **Se lee así:** el diagrama presenta u ⊥ v y aplicar teorema de pitágoras y u + v y ejemplo numérico.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 📐 Relación con Ángulos
 
@@ -161,6 +177,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Diagrama de decisión:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_05.svg]]
+>
+> **Se lee así:** el diagrama presenta = 0 y calcular ⟨u,v⟩ y valor? y θ = 90° ✅ ortogonales.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 
@@ -237,6 +256,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Ventajas sobre bases arbitrarias:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_06.svg]]
+>
+> **Se lee así:** el diagrama presenta base ortogonal y coordenadas simples y proyecciones directas y cálculos rápidos.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Fórmula de coordenadas:**
 > 
@@ -304,6 +326,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Relación entre conceptos:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_07.svg]]
+>
+> **Se lee así:** el diagrama presenta sí y conjunto de vectores y ¿independientes? y puede ser base.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplo clásico - Base estándar de ℝⁿ:**
 > 
@@ -356,6 +381,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Algoritmo paso a paso:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_08.svg]]
+>
+> **Se lee así:** el diagrama presenta sí y vector v y calcular norma y = √⟨v,v⟩.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplos numéricos:**
 > 
@@ -460,6 +488,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Ventajas en aplicaciones:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_09.svg]]
+>
+> **Se lee así:** el diagrama presenta bases ortonormales y computación y algoritmos estables y menor error numérico.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Algoritmo paso a paso:**
 > 
@@ -615,6 +646,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Cuándo usar alternativas:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_10.svg]]
+>
+> **Se lee así:** el diagrama presenta pequeño n&lt;20 y mediano 20-100 y grande n&gt;100 y ¿necesitas base ortonormal?.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 
@@ -647,6 +681,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Visualización:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_11.svg]]
+>
+> **Se lee así:** el diagrama presenta vector v y proyectar sobre u y proj_u v componente paralela y perp_u v componente perpendicular.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplo numérico:**
 > 
@@ -740,6 +777,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Proceso:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_12.svg]]
+>
+> **Se lee así:** el diagrama presenta imagen original n × n píxeles y transformar a base ortonormal y obtener coeficientes y descartar coeficientes pequeños.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplo con DCT (Discrete Cosine Transform):**
 > 
@@ -769,7 +809,14 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 
 ### 🗺️ Mapa Conceptual Completo
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_13.svg]]
+> [!info] 📊 03 – Ortogonalidad Y Conjuntos Ortonormales 13
+>
+> ![[03_–_Ortogonalidad_y_conjuntos_ortonormales_13.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta ortogonalidad y ortonormalidad y producto interno y definición: ⟨u,v⟩ = σuᵢvᵢ y propiedades.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ### 📋 Tabla Comparativa de Conceptos
 
@@ -786,7 +833,14 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 
 ### 🎯 Flujo de Trabajo Típico
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_14.svg]]
+> [!info] 📊 03 – Ortogonalidad Y Conjuntos Ortonormales 14
+>
+> ![[03_–_Ortogonalidad_y_conjuntos_ortonormales_14.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta sí y base arbitraria v₁, v₂, ..., vₙ y ¿ya es ortogonal? y normalizar vectores.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -911,6 +965,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Has dominado:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_15.svg]]
+>
+> **Se lee así:** el diagrama presenta producto interno y ortogonalidad y ortonormalidad y gram-schmidt.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Próximos temas naturales:**
 > 
@@ -925,6 +982,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Roadmap de evolución:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_16.svg]]
+>
+> **Se lee así:** el diagrama presenta ortogonalidad y qr factorization y proyecciones y eigen-descomposición.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > ```
 > 
@@ -961,7 +1021,14 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > |**Descomposición**|Representar vectores como combinaciones|Análisis de Fourier, compresión|
 > |**Geometría**|Ángulos y distancias simples|Gráficos por computadora, física|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_17.svg]]
+> [!info] 📊 03 – Ortogonalidad Y Conjuntos Ortonormales 17
+>
+> ![[03_–_Ortogonalidad_y_conjuntos_ortonormales_17.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta sí y vectores en ℝⁿ y ¿producto interno cero? y vectores ortogonales.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -1016,6 +1083,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Visualización en ℝ²:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_18.svg]]
+>
+> **Se lee así:** el diagrama presenta ⟨u,v⟩ = 0 y origen o y vector u y vector v.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 🧮 Propiedades del Producto Interno
 
@@ -1056,6 +1126,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Consecuencias importantes:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_19.svg]]
+>
+> **Se lee así:** el diagrama presenta propiedades del producto interno y permite definir norma y permite definir ángulo y permite proyecciones.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 📐 Norma y Normalización
 
@@ -1114,6 +1187,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Visualización de normalización:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_20.svg]]
+>
+> **Se lee así:** el diagrama presenta mantiene dirección y vector u y = 5] --&gt; y dividir por 5.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 
@@ -1196,6 +1272,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Visualización:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_21.svg]]
+>
+> **Se lee así:** el diagrama presenta conjunto ortogonal y vectores perpendiculares dos a dos y vectores no ceros y independencia lineal garantizada.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 🎨 Representación de Vectores
 
@@ -1263,6 +1342,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Flujo de cálculo:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_22.svg]]
+>
+> **Se lee así:** el diagrama presenta vector u a representar y base ortogonal v₁, v₂, ..., vₖ y calcular ⟨u, v₁⟩/ y calcular ⟨u, v₂⟩/.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 
@@ -1334,6 +1416,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Proceso de ortonormalización:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_23.svg]]
+>
+> **Se lee así:** el diagrama presenta conjunto ortogonal v₁, v₂, ..., vₖ y calcular normas y , ..., y normalizar cada vector uᵢ = vᵢ/.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 🧮 Representación en Bases Ortonormales
 
@@ -1402,6 +1487,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Visualización del proceso:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_24.svg]]
+>
+> **Se lee así:** el diagrama presenta vector v y base ortonormal u₁, u₂, ..., uₙ y c₁ = ⟨v, u₁⟩ y c₂ = ⟨v, u₂⟩.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > Entrada: Base {v₁, v₂, ..., vₙ} (linealmente independiente)
 > Salida: Base ortonormal {u₁, u₂, ..., uₙ}
 > 
@@ -1506,6 +1594,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Diagrama del proceso:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_25.svg]]
+>
+> **Se lee así:** el diagrama presenta no y base original v₁, v₂, ..., vₙ y normalizar v₁ u₁ = v₁/ y para k = 2 hasta n.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### ⚠️ Consideraciones Numéricas
 
@@ -1644,6 +1735,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > donde **\hat{y}** ∈ W y **z** ∈ W^⊥ (complemento ortogonal de W)
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_26.svg]]
+>
+> **Se lee así:** el diagrama presenta ⊥ y vector y y proyección \hat{y} ∈ w y componente z ∈ w^⊥.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 📈 Regresión Lineal y Mínimos Cuadrados
 
@@ -1821,6 +1915,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > - ⟨Q**x**, Q**y**⟩ = ⟨**x**, **y**⟩ para todos **x**, **y**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_27.svg]]
+>
+> **Se lee así:** el diagrama presenta multiplic. q y sin cambio y vector x y vector qx.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 🔄 Descomposición QR
 
@@ -1959,6 +2056,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Visualización:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_28.svg]]
+>
+> **Se lee así:** el diagrama presenta ⊥ y dim = k y dim = n-k y subespacio w.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 🔄 Teorema de Descomposición
 
@@ -2026,7 +2126,14 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 
 ### Mapa Conceptual Global
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_29.svg]]
+> [!info] 📊 03 – Ortogonalidad Y Conjuntos Ortonormales 29
+>
+> ![[03_–_Ortogonalidad_y_conjuntos_ortonormales_29.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta conjuntos ortogonales y ortonormales y producto interno y definición y propiedades.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ### Tabla Comparativa Final
 
@@ -2057,7 +2164,14 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 
 ### Diagrama de Flujo de Decisiones
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_30.svg]]
+> [!info] 📊 03 – Ortogonalidad Y Conjuntos Ortonormales 30
+>
+> ![[03_–_Ortogonalidad_y_conjuntos_ortonormales_30.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta no y representar vector y proyectar y resolver sistema.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -2234,6 +2348,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > **Roadmap:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_31.svg]]
+>
+> **Se lee así:** el diagrama presenta conjuntos ortonormales y eigenvalores y eigenvectores y diagonalización y formas cuadráticas.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Aplicaciones futuras:**
 > 

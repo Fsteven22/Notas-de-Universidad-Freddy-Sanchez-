@@ -301,6 +301,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 06-espacio-fila]
 > **INTERPRETACIÓN GEOMÉTRICA:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Espacio_fila_01.svg]]
+>
+> **Se lee así:** el diagrama presenta mismo rang y matriz a: m×n y row a ⊆ ℝⁿ y col a ⊆ ℝᵐ.
+> **Por qué importa:** conecta el álgebra con la geometría: cuántas soluciones tiene un sistema y por qué.
 > 
 > **Espacios diferentes, misma dimensión:**
 > 
@@ -338,6 +341,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 06-espacio-fila]
 > **Comparación visual Row vs Col:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Espacio_fila_02.svg]]
+>
+> **Se lee así:** el diagrama presenta espacio columna y espacio fila y matriz 3×4 y misma dim.
+> **Por qué importa:** conecta el álgebra con la geometría: cuántas soluciones tiene un sistema y por qué.
 > 
 > **CASO 1: Matriz 2×3 con filas LI**
 > 
@@ -384,6 +390,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 06-espacio-fila]
 > **Para matriz $A$ de $m \times n$ con rango $r$:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Espacio_fila_03.svg]]
+>
+> **Se lee así:** el diagrama presenta codominio: ℝᵐ y dominio: ℝⁿ y transformación y aniquilado.
+> **Por qué importa:** conecta el álgebra con la geometría: cuántas soluciones tiene un sistema y por qué.
 > 
 > **TABLA COMPARATIVA:**
 > 

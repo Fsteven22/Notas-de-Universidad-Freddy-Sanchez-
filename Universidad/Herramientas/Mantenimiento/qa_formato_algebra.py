@@ -578,8 +578,12 @@ def main():
 
     vault = raiz_por_defecto()
     if args.calibrar:
-        raiz = os.path.join(vault, "2do Semestre", "Algebra Lineal")
-        specific = None
+        # nota de referencia del contrato: la "01" de U1/I (26 H2 con emoji,
+        # 57 callouts, 0 prosa fuera de callouts; ver FORMATO-ALGEBRA.md)
+        raiz = os.path.join(vault, "2do Semestre", "Algebra Lineal",
+                            "Unidad 1 – Sistemas Lineales y Matrices",
+                            "I – Sistemas de ecuaciones y representación")
+        specific = "01 - Sistema de ecuaciones lineales en R2 y R3.md"
     elif args.solo:
         raiz = args.solo if os.path.isabs(args.solo) else os.path.join(vault, args.solo)
         specific = None

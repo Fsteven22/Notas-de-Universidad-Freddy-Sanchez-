@@ -247,6 +247,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-espacio-columna]
 > **En $\mathbb{R}^3$:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacio_columna_01.svg]]
+>
+> **Se lee así:** el diagrama presenta rank = 2 y rank = 1 y rank = 0 y matriz a: 3×2.
+> **Por qué importa:** conecta el álgebra con la geometría: cuántas soluciones tiene un sistema y por qué.
 > 
 > **Casos visuales:**
 > 
@@ -307,6 +310,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-espacio-columna]
 > **Relaciones de ortogonalidad:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacio_columna_02.svg]]
+>
+> **Se lee así:** el diagrama presenta ℝᵐ (codominio) y ℝⁿ (dominio) y ortogonal y a mapea.
+> **Por qué importa:** conecta el álgebra con la geometría: cuántas soluciones tiene un sistema y por qué.
 > 
 > **Teorema de la dimensión:**
 > 

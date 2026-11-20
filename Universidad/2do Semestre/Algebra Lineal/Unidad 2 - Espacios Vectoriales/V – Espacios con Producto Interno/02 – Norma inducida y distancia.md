@@ -21,6 +21,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > - La **distancia** es usar esa regla para medir cuán separados están dos puntos
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_01.svg]]
+>
+> **Se lee así:** el diagrama presenta también define y producto interno ⟨·,·⟩ y norma ‖·‖ y distancia d·,·.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Jerarquía de estructuras:**
 > 
@@ -48,6 +51,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > La norma $|\mathbf{v}|$ representa la **longitud** o **magnitud** del vector $\mathbf{v}$.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_02.svg]]
+>
+> **Se lee así:** el diagrama presenta vector v y producto interno consigo mismo y ⟨v, v⟩ y raíz cuadrada.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Notación:**
 > 
@@ -70,6 +76,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > **Verificación de axiomas:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_03.svg]]
+>
+> **Se lee así:** el diagrama presenta norma ‖·‖ inducida y n1: ‖v‖ ≥ 0 y n2: ‖v‖ = 0 ⟺ v = 0 y n3: ‖αv‖ =.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 📊 Demostración de Propiedades
 
@@ -140,6 +149,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > - En $\mathbb{R}^3$: Es la diagonal del paralelepípedo
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_04.svg]]
+>
+> **Se lee así:** el diagrama presenta vector v = ·3, 4 y componente x: 3 y componente y: 4 y triángulo rectángulo.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Casos especiales:**
 > 
@@ -291,6 +303,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > La distancia $d(\mathbf{u}, \mathbf{v})$ es la longitud del vector diferencia $\mathbf{u} - \mathbf{v}$.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_05.svg]]
+>
+> **Se lee así:** el diagrama presenta vectores u y v y diferencia u - v y norma de la diferencia y d·u,v = ‖u - v‖.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Expandiendo la definición:**
 > 
@@ -312,6 +327,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > **Verificación de axiomas:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_06.svg]]
+>
+> **Se lee así:** el diagrama presenta distancia d·,· y m1: d·u,v ≥ 0 y m2: d·u,v = 0 ⟺ u = v y m3: d·u,v = d·v,u.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 📊 Demostración de Propiedades
 
@@ -549,6 +567,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > ### En $\mathbb{R}^2$
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_07.svg]]
+>
+> **Se lee así:** el diagrama presenta punto u = ·3,2 y norma ‖u‖ y radio desde origen ‖u‖ = √13 y punto v = ·1,4.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > ### Bolas y Esferas
 > 
@@ -648,6 +669,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > ### Jerarquía de Estructuras
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_08.svg]]
+>
+> **Se lee así:** el diagrama presenta define y producto interno y norma y distancia.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > ### Próximo Tema
 > 
@@ -682,7 +706,14 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > |**Compresión de datos**|Estimar tamaños de representaciones|Algoritmos de compresión|
 > |**Geometría computacional**|Validar construcciones geométricas|Gráficos por computadora|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_09.svg]]
+> [!info] 📊 02 – Norma Inducida Y Distancia 09
+>
+> ![[02_–_Norma_inducida_y_distancia_09.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta distancia directa d(a,c) y d(a,b) y d(b,c) y punto a.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -729,7 +760,14 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > |**ℝⁿ estándar**|\|\|u + v\|\|₂ ≤ \|
 > |**Números complejos**|\|z₁ + z₂\| ≤ \|z₁\| + \|z₂\||Complejos|Análisis complejo|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_10.svg]]
+> [!info] 📊 02 – Norma Inducida Y Distancia 10
+>
+> ![[02_–_Norma_inducida_y_distancia_10.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta desigualdad triangular y espacios normados y espacios métricos y casos específicos.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ### 🔍 Interpretación Geométrica
 
@@ -744,6 +782,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > - C = (6, 0)
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_11.svg]]
+>
+> **Se lee así:** el diagrama presenta d(a,b) = 5 y d(b,c) = 5 y d(a,c) = 6 y a(0,0).
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Cálculo de distancias:**
 > 
@@ -765,7 +806,14 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > **Visualización de casos:**
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_12.svg]]
+> [!info] 📊 02 – Norma Inducida Y Distancia 12
+>
+> ![[02_–_Norma_inducida_y_distancia_12.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta caso 3: vectores opuestos y caso 2: desigualdad estricta y caso 1: igualdad (colineales).
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -847,6 +895,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > **Flujo lógico de la demostración:**
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_13.svg]]
+>
+> **Se lee así:** el diagrama presenta objetivo: y u + v y elevar al cuadrado y u + v.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > **Caso de igualdad:**
 > 
 > La igualdad ||u + v|| = ||u|| + ||v|| se alcanza cuando:
@@ -978,7 +1029,14 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > |**Inversa**|\| \|\|u\|
 > |**n-dimensional**|d(x,z) ≤ Σd(xᵢ,xᵢ₊₁)|Caminos en grafos|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_14.svg]]
+> [!info] 📊 02 – Norma Inducida Y Distancia 14
+>
+> ![[02_–_Norma_inducida_y_distancia_14.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta desigualdad triangular y forma básica y generalizaciones y forma inversa.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ### 🔄 Variantes Importantes
 
@@ -1033,7 +1091,14 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > |**Supremo**|C[a,b]|\|\|f+g\|
 > |**Matricial**|Mₙₓₙ(ℝ)|\|\|A+B\|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_15.svg]]
+> [!info] 📊 02 – Norma Inducida Y Distancia 15
+>
+> ![[02_–_Norma_inducida_y_distancia_15.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta norma p=1 manhattan y norma p=2 euclidiana y norma p=∞ supremo y caminos en cuadrícula.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -1133,7 +1198,14 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > **3. Jerarquía de fuerza:**
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_16.svg]]
+> [!info] 📊 02 – Norma Inducida Y Distancia 16
+>
+> ![[02_–_Norma_inducida_y_distancia_16.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta desigualdad de hölder y desigualdad de cauchy-schwarz caso especial p=q=2 y desigualdad triangular y desigualdad de minkowski generalización a normas p.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -1542,6 +1614,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > **Conexión con otras desigualdades:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_17.svg]]
+>
+> **Se lee así:** el diagrama presenta cauchy-schwarz y desigualdad triangular y minkowski y espacios métricos.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 ---
 
@@ -1552,6 +1627,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > **Has dominado:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_18.svg]]
+>
+> **Se lee así:** el diagrama presenta desigualdad triangular y definición y espacios normados y espacios métricos.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Progresión natural del aprendizaje:**
 > 
@@ -1566,6 +1644,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > **Roadmap de evolución:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_19.svg]]
+>
+> **Se lee así:** el diagrama presenta producto interno y cauchy-schwarz y desigualdad triangular y espacios métricos.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 

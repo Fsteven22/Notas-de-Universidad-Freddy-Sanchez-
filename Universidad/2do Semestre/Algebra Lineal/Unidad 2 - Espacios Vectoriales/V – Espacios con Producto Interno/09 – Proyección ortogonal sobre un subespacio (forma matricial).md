@@ -33,7 +33,14 @@ tags: [MATG1049, algebra-lineal, unidad2, 09-proyeccion-ortogonal-sobre-un-subes
 > |**Implementación numérica**|Directo en software (MATLAB, Python)|Algoritmos computacionales|
 > |**Generalización**|Mismo marco para cualquier dimensión|Escalabilidad|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_01.svg]]
+> [!info] 📊 09 – Proyección Ortogonal Sobre Un Subespacio (Forma Matricial) 01
+>
+> ![[09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_01.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta vector y en ℝⁿ y matriz de proyección p y \hat{y} = py y subespacio w.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -105,6 +112,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 09-proyeccion-ortogonal-sobre-un-subes
 > **Visualización del proceso:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_02.svg]]
+>
+> **Se lee así:** el diagrama presenta subespacio w y elegir base y formar matriz a columnas = base y calcular a^t a.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Propiedades fundamentales:**
 > 
@@ -143,6 +153,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 09-proyeccion-ortogonal-sobre-un-subes
 > **Ventajas computacionales:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_03.svg]]
+>
+> **Se lee así:** el diagrama presenta no y base de w y ¿ortonormal? y p = a a^t a ^-1 a^t.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplo en ℝ³:**
 > 
@@ -260,6 +273,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 09-proyeccion-ortogonal-sobre-un-subes
 > **Estructura de aa^T:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_04.svg]]
+>
+> **Se lee así:** el diagrama presenta vector a n×1 y a^t 1×n y aa^t n×n y matriz de rango 1.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 
@@ -328,6 +344,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 09-proyeccion-ortogonal-sobre-un-subes
 > **Visualización:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_05.svg]]
+>
+> **Se lee así:** el diagrama presenta p y y fuera de w y \hat{y} en w y \hat{y} mismo.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 🔄 Simetría
 
@@ -448,6 +467,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 09-proyeccion-ortogonal-sobre-un-subes
 > **Diagrama de espacios:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_06.svg]]
+>
+> **Se lee así:** el diagrama presenta ℝⁿ y aplicar p y resultado y im p = w rango = dim w.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 🔢 Valores y Vectores Propios
 
@@ -638,6 +660,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 09-proyeccion-ortogonal-sobre-un-subes
 > **Flujo del algoritmo:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_07.svg]]
+>
+> **Se lee así:** el diagrama presenta no y base de w: v₁,...,vₖ y formar a = v₁...vₖ y calcular a^t a.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > En lugar de usar la base original directamente:
 > 
 > 1. Aplicar Gram-Schmidt a {v₁, ..., vₖ}
@@ -821,6 +846,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 09-proyeccion-ortogonal-sobre-un-subes
 > **Interpretación geométrica:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_08.svg]]
+>
+> **Se lee así:** el diagrama presenta vector b y proyectar sobre col a y b̂ = pb y resolver a\hat{x} = b̂.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplo numérico:**
 > 
@@ -906,6 +934,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 09-proyeccion-ortogonal-sobre-un-subes
 > **Diagrama del proceso:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_09.svg]]
+>
+> **Se lee así:** el diagrama presenta señal original s y matriz p bajas frecuencias y s_bajo = ps y matriz i-p altas frecuencias.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 🖼️ Compresión y Aproximación
 
@@ -1207,6 +1238,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 09-proyeccion-ortogonal-sobre-un-subes
 > **Fórmulas fundamentales:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_10.svg]]
+>
+> **Se lee así:** el diagrama presenta proyección matricial y fórmula general y p = a a^t a ^-1 a^t y \hat{y} = py.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Tabla de fórmulas:**
 > 

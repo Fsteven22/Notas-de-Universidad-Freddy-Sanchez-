@@ -279,7 +279,14 @@ tags: [MATG1049, algebra-lineal, unidad1, 01-sistema-de-ecuaciones-lineales-en-r
 
 ### 📊 Diagrama de Clasificación
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Sistema_de_ecuaciones_lineales_en_R2_y_R3_01.svg]]
+> [!info] 📊 01 - Sistema De Ecuaciones Lineales En R2 Y R3 01
+>
+> ![[01_-_Sistema_de_ecuaciones_lineales_en_R2_y_R3_01.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta no y sistema de ecuaciones lineales y ¿tiene solución? y incompatible ❌ sin solución ecuaciones contradictorias.
+> **Por qué importa:** conecta el álgebra con la geometría: cuántas soluciones tiene un sistema y por qué.
+
 
 ### 📋 Tabla Resumen Comparativa
 
@@ -1515,7 +1522,14 @@ tags: [MATG1049, algebra-lineal, unidad1, 01-sistema-de-ecuaciones-lineales-en-r
 
 ## 🎨 Diagrama de Flujo para Resolver S.E.L.
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Sistema_de_ecuaciones_lineales_en_R2_y_R3_02.svg]]
+> [!info] 📊 01 - Sistema De Ecuaciones Lineales En R2 Y R3 02
+>
+> ![[01_-_Sistema_de_ecuaciones_lineales_en_R2_y_R3_02.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta sí y sistema de ecuaciones lineales y escribir matriz ampliada ab y aplicar eliminación de gauss.
+> **Por qué importa:** conecta el álgebra con la geometría: cuántas soluciones tiene un sistema y por qué.
+
 
 ## 🧪 Ejercicios Progresivos
 
@@ -1746,7 +1760,14 @@ tags: [MATG1049, algebra-lineal, unidad1, 01-sistema-de-ecuaciones-lineales-en-r
 
 ## 🎨 Visualización de Soluciones
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Sistema_de_ecuaciones_lineales_en_R2_y_R3_03.svg]]
+> [!info] 📊 01 - Sistema De Ecuaciones Lineales En R2 Y R3 03
+>
+> ![[01_-_Sistema_de_ecuaciones_lineales_en_R2_y_R3_03.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta solución de s.e.l. en ℝ² y ℝ³ y en ℝ² 2 ecuaciones, 2 incógnitas y en ℝ³ 3 ecuaciones, 3 incógnitas y compatible determinado rectas se intersectan 1 punto.
+> **Por qué importa:** conecta el álgebra con la geometría: cuántas soluciones tiene un sistema y por qué.
+
 
 ## 🌐 Conexiones Conceptuales
 

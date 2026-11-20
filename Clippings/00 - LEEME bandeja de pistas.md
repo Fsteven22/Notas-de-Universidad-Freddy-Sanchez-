@@ -3626,9 +3626,9 @@ el commit de esta línea de PUSHEADO.
 
 ### `opencode` — Álgebra Lineal: piloto MATG1049, contrato + primer pase (0 H) — 19/11/2026
 
-> [!warning] **PUSHEO EN CURSO**
+> [!success] **PUSHEADO `dc5f40fc`** · 19/11/2026 — `master` = `origin/master` = `dc5f40fc` (sin `--force`).
 >
-> Anuncio previo al push — se cierra con el bloque `PUSHEADO <hash>`.
+> Lo que sigue es el detalle del contenido del push.
 >
 > **Álgebra Lineal (MATG1049), 51 notas — baseline medido y primer lote de fixes, sin romper nada (51 notas pasan, 0 hallazgos de clase H):**
 > - Nuevo `Universidad/Herramientas/Mantenimiento/FORMATO-ALGEBRA.md` (contrato de la materia, adaptado del patrón CYSOC pero con esqueleto libre y exigencia de emoji en todo H2) y `qa_formato_algebra.py` (mismo motor que el validador CYSOC).
@@ -3645,5 +3645,42 @@ el commit de esta línea de PUSHEADO.
 > Archivos en este push:
 > - `Universidad/2do Semestre/Algebra Lineal/**` (51 notas: tags/emoji/fixes)
 > - `Universidad/Herramientas/Mantenimiento/FORMATO-ALGEBRA.md` (nuevo), `qa_formato_algebra.py` (nuevo)
+> - `Clippings/00 - LEEME bandeja de pistas.md`
+
+---
+
+### `opencode` — Álgebra Lineal: contrato reescrito sobre la nota de referencia + fase 2 (lecturas R14) — 19/11/2026
+
+> [!warning] **PUSHEO EN CURSO**
+>
+> Anuncio previo al push — se cierra con el bloque `PUSHEADO <hash>`.
+>
+> **Contrato reescrito (a petición del dueño, "usar la nota de refereencia de SBD como todos los contratos"):**
+> - `FORMATO-ALGEBRA.md` ahora cita literalmente la **nota de referencia** `U1/I/01 - Sistema de
+>   ecuaciones lineales en R2 y R3.md` (26 H2 con emoji, 57 callouts de 9 tipos, 3 embeds con
+>   lectura, tags al pie; 0 prosa fuera de callouts). Cada regla lleva sus líneas como ejemplo.
+> - Documentadas las anomalías de la materia (material del dueño, no defectos): **6 notas con dos
+>   H1** (documentos fusionados) y **4 con dos `**Tags:**`** al pie; el validador no las reporta.
+> - Reglas que **no aplican** a Álgebra se marcaron como tales (R10 metas, R11 flashcards, R15
+>   capturas PNG): 0 ocurrencias en la materia.
+> - `qa_formato_algebra.py`: `--calibrar` apuntaba a `None` (roto); ahora apunta a la nota de
+>   refereencia. Verificado: la referencia da **5 W, 0 H**.
+>
+> **Fase 2 (mecánica, 246 cambios):**
+> - 190 embeds dentro de callout ganaron su lectura R14 (`**Se lee así:**` + `**Por qué importa:**`),
+>   fundamentada en el texto visible de cada SVG.
+> - 56 embeds top-level envueltos en `> [!info] 📊 …` con su lectura.
+> - Cerrados los 2 últimos R14/R4 de la materia (embed del syllabus en Bienvenida + Índice; lista
+>   suelta en Recursos Visuales).
+>
+> **QA:** 51 notas · **1367 W · 0 H**. Restante, todo W: R4-prosa-top 781 (estilo de la materia,
+> documentado en el contrato) · R12-svg-sin-mmd 248 (déficit real de `.mmd`, pendiente de generar) ·
+> R7 220 · R6 99 · R14-deck 7 · R3-h2-emoji 6 · R13 4 · R12-clase 2.
+>
+> Backup de las 27 notas transformadas en `%TEMP%\opencode\backup_algebra_fase2_20261119_2133`.
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Algebra Lineal/**` (30 notas)
+> - `Universidad/Herramientas/Mantenimiento/FORMATO-ALGEBRA.md`, `qa_formato_algebra.py`
 > - `Clippings/00 - LEEME bandeja de pistas.md`
 

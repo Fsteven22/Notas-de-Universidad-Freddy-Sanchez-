@@ -353,6 +353,9 @@ tags: [MATG1049, algebra-lineal, unidad2, 01-transformaciones-lineales]
 > La dimensión del dominio se "conserva": parte se "pierde" en el núcleo y parte se "proyecta" en la imagen.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Transformaciones_lineales_01.svg]]
+>
+> **Se lee así:** el diagrama presenta mapea a y isomorfism y v dim = n y ker t dim = k.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > **DEMOSTRACIÓN (esquema):**
 > 
