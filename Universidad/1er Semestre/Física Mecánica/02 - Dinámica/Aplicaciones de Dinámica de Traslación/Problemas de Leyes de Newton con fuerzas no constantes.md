@@ -106,6 +106,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, problemas-de-leyes-de-newto
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Leyes_de_Newton_con_fuerzas_no_constantes_01.svg]]
 >
+> **Se lee así:** El diagrama parte de `ma = F` con **F no constante** y la clasifica en dos resistencias: la **lineal** `F = −bv` (fluidos viscosos, ley de Stokes, con velocidad terminal `v_t = mg/b`) y la **cuadrática** `F = −cv²` (altas velocidades, turbulencia, con `v_t = √(mg/c)`). Luego fija el método según de qué dependa la fuerza: `F(t)` se integra dos veces para obtener `x(t)`, `F(x)` lleva a `mv dv/dx = F(x)` y `F(v)` a `dv/F(v) = dt/m` separando variables. Cierra con la **velocidad terminal**, donde `a = 0` y el peso equilibra la resistencia.
+>
+> **Por qué importa:** Es el mapa de decisión que evita integrar a ciegas: la forma de la fuerza determina el método. Y el comportamiento asintótico es siempre el mismo: la resistencia crece con la velocidad hasta igualar al peso, y entonces el cuerpo se estabiliza.
+>
 
 > [!note] **Ecuaciones Diferenciales Fundamentales** 📐
 >

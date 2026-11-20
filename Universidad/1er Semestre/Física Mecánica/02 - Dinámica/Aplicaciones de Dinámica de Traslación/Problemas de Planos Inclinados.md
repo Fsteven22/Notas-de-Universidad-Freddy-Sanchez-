@@ -85,6 +85,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, problemas-de-planos-inclina
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Planos_Inclinados_01.svg]]
 >
+> **Se lee así:** El esquema resuelve el caso completo de un bloque en un plano de ángulo θ: el peso se descompone en **mg sin θ** a lo largo del plano (la fuerza que lo desliza) y **mg cos θ** perpendicular, de donde la normal **N = W cos θ**; la fricción es **f = μN = μW cos θ**; la aceleración sale **g(sin θ + μ cos θ)** al subir y **g(sin θ − μ cos θ)** al bajar. Añade el **ángulo crítico θc = arctan(μ_s)** (por debajo, el bloque reposa; por encima, desliza), la **geometría** h = L sin θ y d = L cos θ, y el caso de **sistemas conectados**: un DCL por objeto, tensión común y misma aceleración.
+>
+> **Por qué importa:** El ángulo crítico es la idea más potente del diagrama: compara la componente que empuja con la fricción máxima, y el cociente entre ambas da exactamente arctan(μ_s). Todo lo demás son las dos mismas fórmulas de siempre con la normal ya corregida por el ángulo.
+>
 
 > [!note] **Relaciones Trigonométricas Esenciales** 📐
 >

@@ -78,6 +78,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, problemas-con-rozamiento]
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_con_rozamiento_01.svg]]
 >
+> **Se lee así:** El diagrama de dependencias de la fricción: la **fuerza de fricción** depende de la **normal N**, del **coeficiente μ** y de la **naturaleza de las superficies**; la normal depende del **peso** y de las **fuerzas externas perpendiculares**; μ depende del **material** y de la **rugosidad**; y la naturaleza de la superficie, a su vez, de la **temperatura**, la **humedad** y los **contaminantes**.
+>
+> **Por qué importa:** Corrige la idea de que la fricción es «una fuerza constante»: en un DCL su valor sale de `f = μN`, y N cambia según cómo esté inclinado el plano o empujado el objeto. Por eso primero se calcula la normal y solo después la fricción.
+>
 
 > [!note] **Leyes de la Fricción** 📐
 >

@@ -87,6 +87,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, problemas-de-cuerdas-y-pole
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Problemas_de_Cuerdas_y_Poleas_ideales_01.svg]]
 >
+> **Se lee así:** El esquema recoge las hipótesis de la polea ideal: la **longitud total de la cuerda es constante**, la **tensión es uniforme en cada tramo** y la polea trabaja **sin fricción**. De la cuerda se deriva la aceleración común; de la masa, que `ΣF = ma` deja **una sola variable independiente**; y de la polea, que su **masa está concentrada en el centro**, su **momento de inercia es despreciable** y la relación cinemática es **x₂ = 2x₁**.
+>
+> **Por qué importa:** La polea ideal no es un adorno: «tensión uniforme» es lo que permite escribir una sola T en los dos cuerpos, y «momento de inercia despreciable» es lo que justifica que la polea no se oppose a la rotación. Si la polea tiene inercia, hay que añadir una ecuación de rotación y el sistema ya no se resuelve con dos ecuaciones.
+>
 
 > [!note] **Relaciones Cinemáticas Fundamentales** 📐
 >

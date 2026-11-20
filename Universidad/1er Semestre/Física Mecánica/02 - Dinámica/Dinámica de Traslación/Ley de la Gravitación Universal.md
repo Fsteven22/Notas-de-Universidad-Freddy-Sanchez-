@@ -19,6 +19,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, ley-de-la-gravitacion-unive
 > [!note] 🖼️ Contexto Fundamental
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Ley_de_la_Gravitación_Universal_01.svg]]
+>
+> **Se lee así:** El diagrama abre la gravitación universal hacia cuatro escalas: el **sistema solar** (el Sol atrae a los planetas), el **sistema Tierra-Luna** (la Tierra atrae a la Luna), los **objetos en la superficie** (de ahí el peso) y las **escalas galácticas** (la estructura cósmica).
+>
+> **Por qué importa:** Muestra que una sola ley cubre desde el peso de una mochila hasta la dinámica de las galaxias. Cambia la escala, no la fórmula: `F = G m₁m₂/r²` sirve en los cuatro casos.
 
 ---
 
@@ -63,6 +67,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, ley-de-la-gravitacion-unive
 > [!note] 🖼️ Aceleración Gravitacional
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Ley_de_la_Gravitación_Universal_02.svg]]
+>
+> **Se lee así:** La cadena que lleva de la Tierra al peso de un objeto: la **masa de la Tierra** y el **radio de la Tierra** entran con la **constante G** y producen la **gravedad en la superficie**, que a su vez da el **peso de los objetos**.
+>
+> **Por qué importa:** Explica por qué el peso es `P = mg`: m es la masa del objeto, pero g no es una constante universal, es el valor local de `G M_Tierra / R_Tierra²`. La gravedad varía ligeramente con la latitud y la altitud.
 
 ---
 
@@ -89,6 +97,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, ley-de-la-gravitacion-unive
 > [!note] 🖼️ Dependencia de Variables
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Ley_de_la_Gravitación_Universal_03.svg]]
+>
+> **Se lee así:** El diagrama de dependencias: la fuerza gravitacional es **proporcional a m₁ × m₂** y **proporcional a 1/r²**. De ahí las dos consecuencias: más masa significa más fuerza, y más distancia significa menos fuerza.
+>
+> **Por qué importa:** El inverso de la distancia al cuadrado es la parte no intuitiva: si duplicas la distancia, la fuerza cae a la **cuarta parte**, no a la mitad. Es lo que explica por qué las fuerzas gravitacionales son dominantes en lo macro y despreciables en lo micro.
 
 ---
 
@@ -137,6 +149,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, ley-de-la-gravitacion-unive
 > [!note] 🖼️ Fuerza vs. Distancia
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Ley_de_la_Gravitación_Universal_04.svg]]
+>
+> **Se lee así:** Una escala visual de tres casos: con **r pequeño** la fuerza es grande (**zona de alta gravedad**), con **r mediano** es moderada (**zona intermedia**) y con **r grande** es pequeña (**zona de baja gravedad**), con el color marcando las tres regiones.
+>
+> **Por qué importa:** Convierte el 1/r² en una intuición: cerca de una masa enorme (o dentro de un cuerpo muy denso) domina la gravedad; lejos, el resto de fuerzas casi desaparece. Es el mapa mental de la variación de g dentro y fuera de un planeta.
 
 ---
 
@@ -169,6 +185,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, ley-de-la-gravitacion-unive
 > [!note] 🖼️ Conexiones Conceptuales
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Ley_de_la_Gravitación_Universal_05.svg]]
+>
+> **Se lee así:** El mapa mental organiza la gravitación universal en cuatro frentes: los **fundamentos matemáticos** (ley del inverso cuadrado, fuerza siempre atractiva, proporcional a las masas), las **aplicaciones astronómicas** (órbitas planetarias, sistema Tierra-Luna, trayectorias espaciales), los **efectos terrestres** (peso de objetos, mareas oceánicas, variaciones altitudinales) y los **principios físicos** (fuerza conservativa, energía potencial, dinámica newtoniana).
+>
+> **Por qué importa:** Añade el puente hacia la unidad siguiente: la gravitación es conservativa, así que la energía potencial gravitatoria `U = -Gm₁m₂/r` es la que permite luego aplicar la conservación de la energía.
 
 > [!success] Relaciones Clave
 >
@@ -204,6 +224,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, ley-de-la-gravitacion-unive
 > [!note] 🖼️ Síntesis Conceptual
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Ley_de_la_Gravitación_Universal_06.svg]]
+>
+> **Se lee así:** El mapa de aplicaciones en dos columnas: **cósmicas** (sistema solar, sistema Tierra-Luna, misiones espaciales) y **terrestres** (peso de objetos, mareas, satélites), ambas colgando de la fórmula universal.
+>
+> **Por qué importa:** Separa las dos familias de ejercicios: los que piden la **fuerza** y los que piden trayectorias. En las aplicaciones cósmicas la ley se combina con la segunda ley para obtener la órbita; en las terrestres, normalmente basta con la aceleración en la superficie.
 
 ---
 

@@ -86,6 +86,10 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, fuerzas-y-diagramas-de-cuer
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Fuerzas_y_Diagramas_de_Cuerpo_Libre_01.svg]]
 >
+> **Se lee así:** El protocolo de ocho pasos para construir un DCL: **1)** identificar el objeto de interés, **2)** aislarlo mentalmente, **3)** dibujarlo como punto o forma simple, **4)** identificar todas las superficies de contacto, **5)** dibujar las fuerzas de contacto, **6)** agregar las fuerzas de campo (el peso), **7)** etiquetar cada fuerza claramente y **8)** verificar que no falten fuerzas.
+>
+> **Por qué importa:** El paso 4 es el que más fuerzas deja pasar: cada superficie de contacto aporta su normal y, si hay movimiento relativo, su fricción. El paso 8 es la red de seguridad: si no puedes nombrar de dónde sale cada flecha, esa flecha no va en el diagrama.
+>
 > **Reglas importantes:**
 >
 > - Solo incluir fuerzas que actúan SOBRE el objeto
