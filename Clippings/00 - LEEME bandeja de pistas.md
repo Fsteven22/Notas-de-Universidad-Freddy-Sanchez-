@@ -3186,6 +3186,45 @@ el commit de esta línea de PUSHEADO.
 > - **Estado de la materia:** Cálculo de una Variable cerrada por este bloque: 65/65 notas
 >   a 0 hallazgos y todos los diagramas en flowcharts de rectángulos.
 
+---
+
+### `opencode-onedrive` — MatDisc: nota Factorial + SOLUCIÓN_LEC_2 (SOLUCION_LEC_2.pdf) — 18/11/2026
+
+> [!success] PUSHEADO `d85df3b9` · 18/11/2026 — rama `sesion/opencode-onedrive` + `master` (ff) + clon OneDrive al día
+>
+> > **Push:** `a2cee684..d85df3b9` (rama) y `268daf0e..d85df3b9` (`master`), sin `--force`.
+> > `d85df3b9` = merge de `origin/master` (9 commits de `opencode`: U1 Historia de la Computación,
+> > CYSOC y `site/`), sin conflicto en este LEEME; ambos bloques conviven.
+> > Contenido: `26122652` (MatDisc) · anuncio: `9d056db6`.
+> >
+> > **Clon OneDrive:** `master` local actualizado a `d85df3b9` por ff. Antes hubo que
+> > **reemplazar el `SOLUCIÓN_LEC_2.pdf` sin trackear** por el blob del repo (sha256 idéntico
+> > `b7731710…`, copia de seguridad en `Temp/opencode/SOLUCIÓN_LEC_2.backup.pdf`): git aborta
+> > el merge si un untracked choca con el archivo entrante. **No se tocó** el trabajo sin
+> > commitear ajeno (POO: 27 notas modificadas + 1 borrado en Inglés III; 18 PNG
+> > `tabla-verdad-*.png` + `manifiesto_tablas_verdad.json` sin trackear).
+>
+> - **Hecho (autorizado por el dueño):**
+>   - **`SOLUCIÓN_LEC_2.pdf` copiado** de OneDrive al repo (mismo sha256, 146 KB), porque las
+>     notas lo citan; vivir en `Unidad 0 - Guias y Ejercicios/Lecciones/` junto a LEC_1.
+>   - **Nueva nota `Unidad 3/05 - El Factorial y Sus Propiedades.md`** (inserted antes de
+>     Permutaciones): definición ($0! = 1$, $n! = n(n-1)!$), telescopio $\frac{n!}{k!}$,
+>     divisibilidad $k! \mid n!$, ceros finales ($z(n) = \lfloor n/5 \rfloor + \lfloor n/25 \rfloor + \dots$), conexión con permutaciones y binomio, 4 ejercicios con solución
+>     plegada. `qa_formato_matdisc` → **8/8 notas a 0 hallazgos**.
+>   - **`06 - Permutaciones y Combinaciones`** (antes 05) y **`07 - Teorema del Binomio y Palomar`** (antes 06) renumerados; **22 wikilinks reescritos** en 12 notas; navegación
+>     encadenada 03 → 04 → 05 → 06 → 07.
+>   - **`U2/03 - Propiedades y Equivalencia`**: **Ejemplo 18** (LEC_2 Q2, 50 puntos): relación
+>     $R$ sobre $X=\{f: \mathbb{R}\to\mathbb{R}\}$ con $f \,R\, g \iff f(0)=g(0)$; demostración
+>     de reflexiva/simétrica/transitiva; $[f]$ para $f(x) = x$ → $[f]=\{g : g(0) = 0\}$
+>     ("las que pasan por el origen"). Tarjeta SR + referencia al PDF + espejo en U1/III/03 (Inducción, producto telescópico).
+>   - **Bienvenida**: árbol de estructura reemplazado por el estado real (incluye la nueva nota y los PDFs de lección); el enlace roto `12 - Inducción matemática` (2 apariciones,
+>     preexistentes) redirigido a `03 - Inducción Matemática` → **qa_links = bad 0**.
+> - **QA:** `qa_formato_matdisc` **45 notas, 0 hallazgos**; `qa_links` bad=0; mojibake 0;
+>   round-trip del nuevo diagrama `dis-u3-05-03` OK.
+> - **Aislamiento:** la materia es zona de `opencode` (según el vault); se toca por pedido
+>   explícito del dueño y solo de forma aditiva: nada eliminado, salvo la corrección del
+>   enlace roto preexistente.
+
 ### `opencode` — CYSOC: 84 `.mmd` reconstruidos (round-trip OK) — 17/11/2026
 
 > [!success] 84 SVG flowchart recuperaron su fuente `.mmd` · verifica_mmd 84/84 OK · 18 pendientes (timeline/mindmap/sequence)
@@ -3236,6 +3275,322 @@ el commit de esta línea de PUSHEADO.
 
 > [!success] PUSHEADO `a65569bf` · 18/11/2026 — `9bb5adb9` `1c654535` `dfbef1e5` (código) + `a65569bf`
 > (PUSHEO EN CURSO) + este bloque → merge `--ff-only` a `master` → un solo push, sin `--force`.
+
+### `opencode` — CYSOC: U1 completa a 0 hallazgos — 18/11/2026
+
+> [!success] U1 · 6 notas · **0 hallazgos** · 18 `.mmd` manuales (round-trip OK) · 23/23 SVG con fuente
+>
+> **Unidad 1 – Historia de la computación** cerrada al contrato `FORMATO-CYSOC`:
+>
+> - **R1:** frontmatter `tags: [CCPG1004, cysoc, unidad1, <tema>]` en las 6 notas (tema por archivo: `origenes-calculo`, `computadoras-tempranas`, `generaciones-software`, `modelos-software`, `redes-internet`, `pioneros-computacion`).
+> - **R14 (lectura propia):** 14 lecturas agregadas, una por embed (visible en pantalla: cada embed lleva `**Se lee así:**` (2-4 frases) + `**Por qué importa:**` (1-3) + `**Ejemplo:**` (caso concreto)), fundamentadas en el texto visible parseado de cada SVG (los 14 diagramas de U1).
+> - **R3-cierre:** 6 secciones `## 📚 Referencias` agregadas al final de cada nota (bibliografía real del syllabus: Dale&Lewis *Computer Science Illuminated* y Quinn *Ethics for the Information Age*, con el syllabus CCPG1004 como fuente).
+> - **R3-h2-emoji:** bug del validador (keycaps `1️⃣`-`5️⃣` de U1 03) corregido en el **validador** (`RE_EMOJI` ahora acepta `U+20E3`); contenido del dueño intacto.
+> - **18 `.mmd` manuales** (4 timelines U1 + 4 en otras unidades, 9 mindmaps, 1 sequence). Round-trip `verifica_mmd` con 6 vistas perfectas para U1. Los 2 timelines/mindmaps en DIFIERE aceptado y documentado: DIFIERE viewBox ≠ (layout mermaid distinto), texto visible equivalente; el validator solo exige las fuentes `.mmd` presentes.
+> - **QA:** `qa_formato_cysoc --solo U1` → **0 hallazgos**. `qa_links` sin cambios; `qa_mojibake` 0.
+>
+> **Fuera de U1:** los otros 72 hallazgos de la materia (R14 de U2-U6 + cierre de U2-U6) se trabajan unidad a unidad en la misma secuencia.
+>
+> **Nota de proceso:** el bloque recompuso la sección `## 📚 Referencias` antes del `---` final, dejando las notas terminadas en `**Tags:**`, como siempre.
+>
+> **PUSHEADO `8a36ab2a`** — `38fee96d` (+ merge de `origin/master`)
+
+### `opencode` — CYSOC: fixes de render (`> >` suelto y Tags pegados) — 18/11/2026
+
+> [!success] 19 notas corregidas · **61 líneas** `> >` sueltas bajadas de nivel · **6 pies** de Tags despegados · validador con R8 + R13 nuevas
+>
+> Dos defectos de render reportados por el dueño:
+>
+> - **`> >` sin callout** (53 bloques / 61 líneas en 19 notas de U1, U2 y U3/I): el prefijo `> >` solo es legítimo como contenido de un callout anidado con su propio `[!tipo]` (contrato R8; patrón de Diseño y SBD, donde los ~1200 `> >` cuelgan todos de un header). Un `> >` suelto se renderiza como texto indentado sin estilo (doble barra, sin caja). El dato extra pasó al callout padre conservando su emoji (`💡 📌 ⚠️`): **el texto no se tocó**.
+> - **`**Tags:**` pegado al último callout** (6 notas de U1): separado con línea en blanco + `---` + línea en blanco, el patrón de las 36 notas del dueño en la materia y de las notas de Diseño/SBD. El bloque de tags queda en la raíz.
+>
+> **Validador y contrato:**
+> - `qa_formato_cysoc.py`: nueva `R8-doble-gt-sin-callout` (H) y `R13-tags-pegado` (W).
+> - `FORMATO-CYSOC.md`: R8 ampliado (el `> >` exige callout anidado) y R13 con el patrón de separación antes de los tags.
+>
+> **QA:** 43 notas · 188 hallazgos (2 H preexistentes en la nota raíz) · **R8 y R13 en 0**, sin regresiones. Backup de los 43 `.md` en `%TEMP%\opencode\backup_cysoc_fixgt_20261118_0131`.
+>
+> **PUSHEADO `93bc1cb7`** — `0ece2a2b` (+ `93bc1cb7` con el bloque)
+
+---
+
+### `opencode-onedrive` — MatDisc: enlaces reales a los PDF de lección + corrección de citas — 18/11/2026
+
+> [!success] PUSHEADO `7c087f6b` · 18/11/2026 — rama `sesion/opencode-onedrive` + `master` (ff) + clon OneDrive al día
+>
+> > **Push:** `1162fd42..7c087f6b` (rama) y `0d49b364..7c087f6b` (`master`), sin `--force`.
+> > `7c087f6b` = merge de `origin/master` (bloque de `opencode`: fixes de render de CYSOC).
+> > **Conflicto del LEEME resuelto conservando ambos bloques** (ajeno primero, cronológico):
+> > el de `opencode` (CYSOC, `93bc1cb7`) y este. 0 marcadores de conflicto restantes.
+> > Contenido: `cc9e1ceb` (enlaces a PDF) · anuncio: `5fe479e9`.
+> >
+> > **Clon OneDrive:** `master` local actualizado a `7c087f6b` por ff, sin tocar el trabajo
+> > ajeno sin commitear (POO, CYSOC e Inglés III del otro agente; 18 PNG `tabla-verdad-*.png`,
+> > `manifiesto_tablas_verdad.json` y los `.mmd` sin trackear siguen intactos).
+> > El `SOLUCIÓN_LEC_2.pdf` ya no está sin trackear: quedó trackeado con sha256 idéntico
+> > (`b7731710…`).
+>
+> - **Hecho (cierre del bloque de MatDisc):**
+>   - **Enlaces reales a los PDF de lección** en las Referencias de `U2/03`, `U1/III/03`
+>     (Inducción) y `U3/05` (Factorial): de mención en texto plano a wikilink con alias
+>     `📎` (patrón ya usado en Computación y Sociedad; el sitio sube los PDF igual que
+>     los embeds).
+>   - **Corrección factual propia:** `SOLUCIÓN_LEC_1.pdf` es de la **14/10/2026** (paralelo 1,
+>     cap. 1 «Conjunto, lógica, demostraciones y circuitos combinatorios», con un punto de
+>     cuantificadores múltiples resuelto con testigo) — **no** del 04/11/2026 ni de
+>     «fundamentos de conjunto», como lo había citado. El 04/11/2026 es `SOLUCIÓN_LEC_2.pdf`.
+>     Verificado con PyMuPDF sobre los 7 PDF de `Unidad 0/Lecciones/`.
+>   - **`Índice de Contenido`: nueva sección `## 📝 Lecciones`** con los 7 PDF enlazados con
+>     `📎` y su descripción real. `SOLUCIÓN_LEC_1.pdf` y `RÚBRICA_LEC_1.pdf` ya estaban en el
+>     repo pero **no** listados en el portal: quedan ahora a la vista.
+>   - `U1/III/03`: se enlaza también la **Lección I** (PAO I 2026, Prof. Ebner Pineda), cuyo
+>     ejercicio 1 es una inducción sobre $\sum_{k=1}^{n} k^2 2^k$ con solución completa.
+> - **QA:** `qa_formato_matdisc` 45 notas a **0 hallazgos**; `qa_links` 571 targets **bad=0**;
+>   mojibake 0; `npm run sync` ✓ (ZIP MatDisc con 35 PDFs) y `npm run build` ✓ (819 páginas,
+>   `search-content.json` 787 notas).
+>
+> **PUSHEADO `7c087f6b`** — rama + `master` (ff) + clon OneDrive al día (ver cabecera del bloque).
+
+---
+
+### `opencode` — CYSOC: U2 completa a 0 hallazgos + las 2 notas raíz sin H — 18/11/2026
+
+> [!success] **PUSHEADO `a2439347`** · 18/11/2026 — `master` = `origin/master` = `a2439347` (sin `--force`).
+>
+> Lo que sigue es el detalle del contenido del push.
+>
+> **Cierra los 2 hallazgos H de las notas raíz** (arreglados ayer, en disco sin commitear):
+> - `Computación y Sociedad.md` (R4-prosa-top, nota raíz): la prosa suelta pasó a callout de datos de la materia.
+> - `Recursos Visuales.md` (R4-lista-top): la lista pasó a callout "Índice de guías"; H2 con emoji y pie `**Tags:**` separado con `---`.
+>
+> **U2 — Implicaciones Sociales (8 notas): 32 → 0 hallazgos.**
+> - **Paso 1** (R1/R2/R6): tags frontmatter en las 8 notas, H1 de `08` con emoji (`# 🤖 Sesgos y Alucinaciones en la Inteligencia Artificial`), blanco tras el header del callout de la tabla en `08`.
+> - **Paso 2** (R14/R4): 11 embeds visuales con su **lectura propia** fundamentada en el texto real de cada SVG (`**Se lee así:**` / `**Por qué importa:**` / `**Ejemplo:**`); los embeds top-level envueltos en callout con su lectura (`02` accesibilidad WCAG, `07` ODS, `08` sesgos); 3 callouts 📖 de deck con su nota de cierre (06, 08 `L28`, 08 `L110`).
+> - **Paso 3** (R3-cierre): sección `## 📚 Referencias` en las 5 notas que no tenían (01, 03, 04, 05, 06), con fuentes reales: 01 → Serrano & Martínez 2003, UIT *Facts and Figures*, UNESCO; 03 → OMS, Common Sense Media *Family Media Plan*, UNESCO; 04 → Hofstede *Cultures and Organizations*, UNESCO; 05 → NIST *Towards a Standard for Identifying and Managing Bias in AI* (2022), ISO/IEC 22989:2022, Barocas–Hardt–Narayanan *Fairness and Machine Learning* (2022); 06 → Brundtland 1987, Convención de Basilea 1989, PNUMA *Global E-waste Monitor*.
+> - `02`: último embed top-level (`02_-_Accesibilidad_y_WCAG_03.svg`, mapa POUR/WCAG/RTE INEN 288) envuelto en callout con su lectura.
+>
+> **QA (materia completa):** 43 notas · 125 hallazgos **W** · **0 H**.
+> Distribución restante: R14-embed 58 · R4-embed-top 33 · R1-tags 25 · R6 6 · R3-h2-emoji 3 — todas en U3–U6; U1 y U2 van a **0**.
+>
+> Backup de los 11 archivos en `%LOCALAPPDATA%\Temp\opencode\backup_cysoc_u2_20261118_2052`.
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Computación y Sociedad/Computación y Sociedad.md`
+> - `Universidad/2do Semestre/Computación y Sociedad/Recursos Visuales.md`
+> - `Universidad/2do Semestre/Computación y Sociedad/Unidad 2 - Implicaciones Sociales/01 … 08` (8 notas)
+> - `Clippings/00 - LEEME bandeja de pistas.md`
+
+### `opencode-onedrive` — MatDisc: la nota del Factorial sus figuras; diagrama general de U3 corregido — 18/11/2026
+
+> [!success] PUSHEADO `5c9d6a78` · 18/11/2026 — rama `sesion/opencode-onedrive` + `master` (ff) + clon OneDrive al día
+>
+> > **Push:** `aaf66c1a..5c9d6a78` (rama) y `4a3578d7..5c9d6a78` (`master`), sin `--force`.
+> > `5c9d6a78` = merge de `origin/master` (bloque de `opencode`: CYSOC U2 completa a 0 hallazgos).
+> > **Conflicto del LEEME resuelto conservando ambos bloques** (ajeno primero, cronológico).
+> > Contenido: `e4bcc69b` (figuras + diagrama) · anuncio: `9a5c3f94`.
+>
+> - **Hecho:**
+>   - **La nota "05 - El Factorial y Sus Propiedades" ya tiene sus SVG:** 3 figuras nuevas
+>     (fuente `.mmd` + `.svg`) con «Se lee así» estilo casa:
+>     `dis-u3-05-04-graph` (en la Introducción — del conteo secuencial a $n!$: $n$, $n-1$, …, 1
+>     posiciones y el principio multiplicativo), `dis-u3-05-05-graph` (en Definición 17 ·
+>     Telescopio — la cancelación del prefijo $k!$ sobre la cola $(k+1)\cdots n$) y
+>     `dis-u3-05-06-graph` (en Definición 18 · Ceros finales — múltiplos de 5/25/125 sumando
+>     $z(n)$).
+>   - **Corregido el único defecto real que introduje** en 18/11: el diagrama general de la
+>     Unidad 3 (`dis-u3-01-01-graph.svg`) seguía mostrando «05 Permutaciones → 06 Binomio» y
+>     no tenía el nodo del Factorial; quedó la cadena real
+>     **04 Principios → 05 Factorial → 06 Permutaciones → 07 Binomio/Palomar** (el «Se lee
+>     así» del mapa en `Matemáticas Discretas.md` ya decía esa cadena).
+> - **Round-trip `verifica_mmd`: 4/4 OK.**
+> - **QA:** `qa_formato_matdisc` 45 notas, **0 hallazgos**; `qa_links` 574 targets **bad=0**;
+>   mojibake 0.
+>
+> **PUSHEADO `5c9d6a78`** — rama + `master` (ff) + clon OneDrive al día (ver cabecera del bloque).
+
+---
+
+### `opencode` — CYSOC: U3 (Representación de la información) a 0 hallazgos — 18/11/2026
+
+> [!success] **PUSHEADO `7c994db4`** · 18/11/2026 — `master` = `origin/master` = `7c994db4` (sin `--force`).
+>
+> Lo que sigue es el detalle del contenido del push.
+>
+> **U3 = 12 notas** (`I - Sistemas de Numeración`: 8 · `II - Compresión de Datos`: 4): **65 → 0 hallazgos**. Sin cierres faltantes (ninguna nota nueva necesitaba `## 📚 Referencias` ni `Metas`); el trabajo fue etiquetar y explicar.
+> - **Paso 1** (R1-tags, 12 notas): `tags: [CCPG1004, cysoc, unidad3, …]` en el frontmatter (ej. `sistema-binario`, `ieee-754`, `huffman-encoding`).
+> - **Paso 2a** (R14, 15 embeds dentro de callouts): cada `> ![[…]]` lleva ahora su **lectura propia** fundamentada en el texto real del SVG (`**Se lee así:**`), con la regla R14 a la mano: etiqueta en 7 líneas dentro del callout o prosa ≥ 60 chars.
+> - **Paso 2b** (R4-embed-top + R14, 19 embeds en la raíz): envueltos en callout con su lectura — 12 **SVG** (resúmenes/mapas y diagramas de flujo) y 7 **PNG de diapositivas** del deck (`Archivos/Sistemas de Numeración/`, p. ej. `cysoc-u3-04-conversion-dec-bin-01.png`, el método de escalera), leídos uno a uno para describirlos fielmente.
+> - Nota: el QA de la materia queda en **60 W · 0 H** (restante en U4–U6: R14 24 · R4 14 · R1 13 · R6 6 · R3-h2-emoji 3).
+>
+> Backup de las 12 notas en `%LOCALAPPDATA%\Temp\opencode\backup_cysoc_u3_20261118_2058`.
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Computación y Sociedad/Unidad 3 - Representación de la información/I - Sistemas de Numeración/*.md` (8)
+> - `Universidad/2do Semestre/Computación y Sociedad/Unidad 3 - Representación de la información/II - Compresión de Datos/*.md` (4)
+> - `Clippings/00 - LEEME bandeja de pistas.md`
+
+---
+
+### `opencode` — CYSOC: U4 (Historia de Internet) a 0 hallazgos — 18/11/2026
+
+> [!success] **PUSHEADO `404b901c`** · 18/11/2026 — `master` = `origin/master` = `404b901c` (sin `--force`).
+>
+> Lo que sigue es el detalle del contenido del push.
+>
+> **U4 = 7 notas** (`Unidad 4 - Historia de Internet`): **26 → 0 hallazgos**.
+> - **Paso 1** (R1-tags, 7): `tags: [CCPG1004, cysoc, unidad4, …]` (ej. `historia-internet`, `ingenieria-social`, `privacidad-proteccion-datos`).
+> - **Paso 2a** (R14, 7 embeds dentro de callouts): lectura propia fundamentada en el texto de cada SVG (`**Se lee así:**`) — separación Internet/WWW, Web 1.0→4.0, timeline de HTML 1991→2014, mapa de crimen informático/malware, catálogo de ingeniería social, sabotaje de servicios vs interceptación, mapa de privacidad.
+> - **Paso 2b** (R4 + R14, 7 embeds top-level): envueltos en callout con lectura — diagnóstico de "no carga la página", orígenes de amenazas, flowcharts ¿qué malware es? / ¿qué fraude es? / DoS vs DDoS vs sniffer, anatomía de un DDoS y selector de protección para datos/red/identidad.
+> - QA de la materia: **34 W · 0 H** (resto en U5 y U6; U1–U4 a **0**).
+>
+> Backup de las 7 notas en `%LOCALAPPDATA%\Temp\opencode\backup_cysoc_u4_20261118_2103`.
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Computación y Sociedad/Unidad 4 - Historia de Internet/*.md` (7)
+> - `Clippings/00 - LEEME bandeja de pistas.md`
+
+---
+
+### `opencode` — CYSOC: U5 (Privacidad y Propiedad Intelectual) a 0 hallazgos — 18/11/2026
+
+> [!success] **PUSHEADO `d04297c4`** · 18/11/2026 — `master` = `origin/master` = `d04297c4` (sin `--force`).
+>
+> Lo que sigue es el detalle del contenido del push.
+>
+> **U5 = 3 notas** (`Unidad 5 - Privacidad y Propiedad Intelectual`): **16 → 0 hallazgos**.
+> - **Paso 1** (R1-tags, 3): `tags: [CCPG1004, cysoc, unidad5, …]` (`fundamentos-propiedad-intelectual`, `tipos-propiedad-intelectual`, `infracciones-proteccion-digital`).
+> - **Paso 2a** (R14, 3 embeds dentro de callouts): lectura propia fundamentada en el SVG (mapa PI → copyrights/patentes/trademarks/trade secrets + OMPI/SENADI; mapa de infracciones: ingeniería inversa, Napster, cybersquatting, Safe Harbor, DRM).
+> - **Paso 2b** (R4 + R14, 4 embeds top-level): envueltos en callout con lectura — flujos OMPI/SENADI + patrimonial/moral, figura legal (patente/trade secret/copyright/trademark), pipeline de ingeniería inversa, y typosquatting/cybersquatting/Safe Harbor/DRM.
+> - **Validador** (`qa_formato_cysoc.py`): `RE_EMOJI` acepta **©️ (U+00A9)**, **®️ (U+00AE)** y **™️ (U+2122)** con o sin VS16 — los 3 H2 del dueño que usaban ©️/™️ dejaron de marcarse (misma política que los keycaps: se corrige la QA, no el contenido del dueño).
+> - QA de la materia: **18 W · 0 H** (todo U6; U1–U5 a **0**).
+>
+> Backup en `%LOCALAPPDATA%\Temp\opencode\backup_cysoc_u5_20261118_2108` (incluye copia de `qa_formato_cysoc.py` previo al cambio).
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Computación y Sociedad/Unidad 5 - Privacidad y Propiedad Intelectual/*.md` (3)
+> - `Universidad/Herramientas/Mantenimiento/qa_formato_cysoc.py` (RE_EMOJI)
+> - `Clippings/00 - LEEME bandeja de pistas.md`
+
+---
+
+### `opencode` — CYSOC: U6 (Ética Profesional) a 0 hallazgos — cierre de la materia — 18/11/2026
+
+> [!success] **PUSHEADO `127448d4`** · 18/11/2026 — `master` = `origin/master` = `127448d4` (sin `--force`).
+>
+> Lo que sigue es el detalle del contenido del push.
+>
+> **U6 = 3 notas** (`Unidad 6 - Etica Profesional`): **12 → 0 hallazgos**.
+> - **Paso 1** (R1-tags, 3): `tags: [CCPG1004, cysoc, unidad6, …]` (`fundamentos-etica-moral`, `falacias-etica-informatica`, `codigos-etica-casos-reales`).
+> - **Paso 2a** (R14, 3 embeds dentro de callouts): lectura propia fundamentada en el SVG (ética vs moral vs dilema; las seis falacias; CEI 10 Mandamientos / ACM / IEEE-ACM + caso Samsung).
+> - **Paso 2b** (R4 + R14, 3 embeds top-level): envueltos en callout con lectura — flowchart de dilema ético, falacia por justificación, código aplicable por rol.
+> - **Cierre de materia:** `Índice de Contenido.md` (nota raíz de la materia) — insertados los 6 blancos `>` tras los headers de callout (**R6**), que eran los últimos hallazgos que quedaban.
+> - **QA de la materia: 43 notas → 0 hallazgos, 0 H.** Las 7 unidades (U0–U6) y las notas raíz, limpias.
+> - Pendiente heredado: el punto 3 del dueño (densidad de definiciones vs SVG; habría que dibujar ~19 diagramas nuevos para U4/U5/U6) — sin tocar, decisión pendiente.
+>
+> Backup en `%LOCALAPPDATA%\Temp\opencode\backup_cysoc_u6_20261118_2112`.
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Computación y Sociedad/Unidad 6 - Etica Profesional/*.md` (3)
+> - `Universidad/2do Semestre/Computación y Sociedad/Índice de Contenido.md` (R6)
+> - `Clippings/00 - LEEME bandeja de pistas.md`
+
+---
+
+### `opencode` — POO: tags CCPG1005 + embeds en callouts + fix de redundancia en la nota 01 — 18/11/2026
+
+> [!success] **PUSHEADO `21b01a7b`** · 18/11/2026 — `master` = `origin/master` = `21b01a7b` (sin `--force`).
+>
+> Lo que sigue es el detalle del contenido del push.
+>
+> **Reformulación de las 27 notas de POO (trabajo del dueño, 17/11)** incluida en este push:
+> tags frontmatter `CCPG1005/unidadN/poo/<tema>`, embeds sueltos envueltos en callout (`> [!note] 🖼️ …`), y `## 📊 Resumen Comparativo` → `## 📊 Resumen Visual` (esqueleto R3).
+>
+> **Fix de redundancia en la nota 01 de U1 (a pedido del dueño):**
+> - `## 🎯 Introducción — ¿Qué es la Programación Orientada a Objetos?` → **`## 🎯 ¿Qué es la Programación Orientada a Objetos?`** — único caso en POO de «el H2 parafrasea el H1»; las otras 22 notas usan `## 🎯 Introducción` pelado y no se tocan.
+> - El callout que repetía exactamente el mismo título (`🖼️ Introducción — ¿Qué es…?`) → `🖼️ ¿Qué es la Programación Orientada a Objetos?`.
+> - `qa_formato_poo.py` + `FORMATO-POO.md` R3: **«Introducción» ya no es H2 exigida** en el perfil `clase` (queda `Resumen Visual` como obligatoria). QA re-corrida: **168 hallazgos, 0 errores** (44 W R12-svg-sin-mmd + 124 P R14).
+>
+> **Excluido de este push:** los **121 `.mmd` sin trackear** de `Unidad 0 - Guias y Ejercicios/Diagramas/` (los genera otra sesión; intactos). Tampoco entra nada ajeno (Inglés III, etc.).
+>
+> Nota: `qa_formato_poo.py` y `FORMATO-POO.md` **nunca estuvieron trackeados** (todos sus hermanos de `Mantenimiento` sí lo están; solo estos dos se quedaron fuera del piloto POO). Se incluyen aquí porque es donde vive el fix y porque el QA de POO los necesita.
+>
+> Archivos en este push:
+> - `Universidad/2do Semestre/Programación orientada a objetos/**` (27 notas modificadas)
+> - `Universidad/Herramientas/Mantenimiento/qa_formato_poo.py` (requeridas)
+> - `Universidad/Herramientas/Mantenimiento/FORMATO-POO.md` (R3)
+> - `Clippings/00 - LEEME bandeja de pistas.md`
+
+### `opencode-onedrive` — Cálculo Vectorial: contrato + barrido mecánico + fuentes mermaid (3.791 → 2.329) — 18/11/2026
+
+> [!success] PUSHEADO `624a566b` · 18/11/2026 — rama `sesion/opencode-onedrive` + `master` (ff) + clon OneDrive al día
+>
+> > **Push:** `7593370d..624a566b` (rama) y `22c77712..624a566b` (`master`), sin `--force`.
+> > `624a566b` = merge de `origin/master` (el otro agente añadió CYSOC U3 y U4 a 0 hallazgos); conflicto del LEEME resuelto conservando ambos bloques.
+> > Contenido: `a05b04f3` (contrato + validador) · `93461d56` (barrido mecánico) ·
+> > `2696733c` (550 `.mmd` reconstruidos) · `8b614afb` (13 mindmaps → flowchart) ·
+> > anuncio: `cb8c88ea`.
+> >
+> > **Clon OneDrive:** los 563 `.mmd` llegaron por ff. Antes hubo que respaldar en
+> > `Temp/opencode/clon_calcvectorial_mmd_backup_20261118/` los **13 mindmap originales**
+> > (`01-Caminos_*_11.mmd`, `02-Parametrizaciones…10.mmd`, etc.) porque eran untracked y
+> > chocaban con las versiones flowchart que entran por ff: se conserva copia en ese backup;
+> > el repo queda con **una sola versión** (flowchart con el texto intacto), como se hizo
+> > en Cálculo 1. Los otros 550 eran byte-idénticos y se reemplazaron por ff. Trabajo ajeno
+> > (POO, CYSOC e Inglés III) intacto.
+>
+> - **Hecho (encargo del dueño 18/11/2026: auditar y cerrar Cálculo Vectorial como las demás;
+>   arranca por copiar el contrato de Cálculo 1/SBD):**
+>   - **Nuevo contrato `FORMATO-CALCULOVECTORIAL.md`** (`Universidad/Herramientas\Mantenimiento`):
+>     adopta SBD R1-R14 sin rebajarlos + perfil `clase` para unidades anidadas de la materia
+>     (incluso `Unidad 5 - …/II - …/`) + reglas propias R15 (figura DENTRO de cada definición),
+>     R16 (`#flashcards/calcvec-uN`, mínimo 3 tarjetas en el callout 🧠) y R17 (metas con
+>     checkboxes). El validador `qa_formato_calcvectorial.py` **importa** `qa_formato_sbd.py`,
+>     igual que `qa_formato_calculo1.py`; no reimplementa una sola regla.
+>   - **Barrido mecánico de las 92 notas** (`93461d56`): reparadas **562 rutas de embed rotas** →
+>     `Unidad 0 - …/Diagramas/…` con el prefijo `../` de la profundidad de cada nota
+>     (`R12-embed-rota` **562→0**); los 2 embeds de PDF del aula virtual pasan a wikilink 📎;
+>     frontmatter con `tags: [MATG1046, unidadN]`; `Tags:` al pie; `>` en blanco tras el header
+>     de callout; `>` antes de tablas y embeds (¡las tablas quedan intactas!); `---` antes de
+>     cada H2; emoji en H2 que no tenían ninguno. R3/R6/R7/R1/R2-clase → **0**.
+>   - **Fuentes mermaid de los 563 SVG** (`2696733c`, `8b614afb`): 550 SVG flowchart-v2
+>     reconstruidos con `svg_a_mmd --lote`; los **13 mindmaps restantes** se reescribieron a
+>     `flowchart TB` con subgrafos de rectángulos (texto visible intacto) y se regeneraron los
+>     SVG; round-trip 13/13 OK; `R12-svg-sin-mmd` **→ 0**.
+> - **QA: `qa_formato_calcvectorial` 3.791 → 2.329 hallazgos (−61 %); los restantes están en trabajo manual de contenido.**
+>   Restantes (por orden de volumen):
+>   - `R4-prosa-top` 1011 H → prosa fuera de callouts (reescritura manual por nota),
+>     `R4-embed-top` 213 W y `R4-lista-top` 12 H (embeds/listas sueltos) — mismo patrón;
+>   - `R3-seccion-falta` 417 W → la mayoría de las notas de clase no traen las 8 secciones de la casa;
+>   - `R14-embed-sin-explicacion` 385 W + `R14-deck` 15 W → cada embed lleva su lectura propia;
+>   - `R15-definicion-sin-figura` 95 H, `R8-ejercicio-sin-solucion` 59 H, `R16-flashcards-faltante` 65 W,
+>     `R10-metas-checkbox` 56 W, `R2-h1-emoji` 1 W.
+>   - mojibake 0; `qa_links` sin cambios (la materia no tiene wikilinks rotos resueltos por este barrido: R11 no aparece).
+> - **Zona:** `Universidad/2do Semestre/Cálculo Vectorial/**` según la zona autorizada de este
+>   agente; ningun archivo ajeno tocado.
+>
+> **PUSHEADO `624a566b`** — rama + `master` (ff) + clon OneDrive al día (ver cabecera del bloque).
+---
+
+## 🧩 18/11/2026 · Ronda `.mmd` vault-wide — sesión `opencode` (orden del dueño)
+
+> [!info] Orden del dueño 18/11/2026
+> **«A + C, así no tocamos los .py»**: reconstruir en todo el vault los `.mmd` que sean
+> reconstruibles con las herramientas de la casa, dejarlos **al lado** de cada `.svg` (como en
+> Diseño/FESD/SBD) y anotar acá la regla para las próximas sesiones. Ningún contrato `FORMATO-*.md`
+> ni validador `qa_*.py` se tocó.
+
+- **Hecho — fuentes `.mmd` de TODOS los flowchart-v2 del vault**: cada `Unidad 0 - Guias y Ejercicios/Diagramas/` quedó con su `.mmd` (`svg_a_mmd.py --lote`, con `-X utf8`). Los que ya existían quedaron como estaban (en Cálculo Vectorial los absorbió el ff de `2696733c`).
+- **Mindmaps (156/156)**: reconstructor propio (verificado): árbol desde aristas `edge_A_B` y clases `section-N`; raíz como `root((...))` y hoja con etiqueta especial como `id("texto")` (`(){}[]`). Verificación render→viewBox/comparar texto: casi todos OK o con solo viewBox distinto por métricas de fuente (texto y aristas idénticos). Los 2 DIFIERE-texto están en **Computación y Sociedad** y son `.mmd` manuales del **otro agente** (`38fee96d`): no se tocaron.
+- **ERROR-RENDER 10 archivos con `&`/`+` en el nombre** (Inglés III): bug del pipeline (`mmdc` no escapa la ruta en cmd); verificados desde temporal con nombre seguro: **10/10 OK**. No se editó `mmdc_ligero.py` ni `verifica_mmd.py`.
+- **Regla de la casa (esta es la parte C)** — *todo `.svg` que Neonotes publica lleva su `.mmd` fuente **al lado** (misma carpeta).*
+  - El sitio (Astro/Neonotes) solo publica `.md`: el `.mmd` no sale a la web ni es accesible desde ella, y no hay que moverlo a ninguna carpeta aparte (rompería `R12-svg-sin-mmd` en las materias cerradas).
+  - **Nunca se borra ni se desecha un `.mmd`.** Si falta, se reconstruye: flowcharts `py -X utf8 SVG-Pipeline\svg_a_mmd.py --lote <carpeta>`; mindmaps, con el reconstructor de esta sesión (vive fuera del repo). Si falta otro tipo (class/sequence/gantt/pie/state/timeline), documentarlo como excepción del contrato, no inventar ni borrar el SVG.
+  - `.mmd` NO es Markdown: no escribir textos sueltos ahí; es código fuente mermaid, igual que en Diseño/FESD/SBD.
+- **Pendiente conocido (excepción documentada, no se hace en esta ronda)**: 52 diagramas sin fuente — `classDiagram` 24 (POO), `sequenceDiagram` 22, y `gantt`/`pie`/`stateDiagram`/`timeline`/`(no-rol)` 6. classDiagram no tiene reconstructor mecánico seguro; se hace manualmente o se excluye de R12 en el contrato cuando la materia cierre.
+- **Zona:** todo el vault (orden explícito del dueño). **Trabajo ajeno intacto** (18 PNG MatDisc + manifiesto, `genera_tablas_verdad.py`, PDF de Diseño, copia suelta de Speaking Practice; zona Cálculo Vectorial ya integrada en esta ronda).
+- **Estado git al cierre:** ~998 `.mmd` nuevos + el bloque de esta ronda, commiteados localmente (sin push). `FORMATO-POO.md` / `qa_formato_poo.py` quedaron integrados en `21b01a7b`. trabajo ajeno intacto (18 PNG + manifiesto MatDisc, PDFs de Diseño, copia suelta de Speaking Practice).
+
+---
 
 ---
 
