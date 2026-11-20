@@ -1442,7 +1442,7 @@ tags: [gradiente, derivadas, direccionales]
 
 ---
 
-## 🎯 Introducción
+## 🧭 Por qué las Derivadas Direccionales
 
 > [!info] 💡 ¿Por qué son importantes las Derivadas Direccionales?
 >
@@ -2712,7 +2712,7 @@ tags: [gradiente, derivadas, direccionales]
 
 ---
 
-## 🔗 Conexiones con Otros Temas
+## 🔗 Prerrequisitos y Temas Relacionados
 
 > [!quote] 🌐 Relaciones Importantes
 >

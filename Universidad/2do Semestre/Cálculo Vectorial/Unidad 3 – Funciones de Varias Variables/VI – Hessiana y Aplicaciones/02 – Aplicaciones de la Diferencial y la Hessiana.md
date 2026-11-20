@@ -2003,7 +2003,7 @@ tags: [aplicaciones, diferencial, hessiana]
 
 ---
 
-## 📚 Referencias y Lectura Adicional
+## 📚 Recursos y Lectura Adicional
 
 > [!note] 📖 Para Seguir Aprendiendo
 >

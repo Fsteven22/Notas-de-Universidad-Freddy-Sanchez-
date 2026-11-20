@@ -1522,7 +1522,7 @@ tags: [limite, funciones, varias]
 
 ---
 
-## 🔗 Conexiones con Otros Temas
+## 🔗 Prerrequisitos y Temas Relacionados
 
 > [!quote] 🌐 Relaciones
 >

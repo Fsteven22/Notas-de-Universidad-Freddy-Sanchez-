@@ -2152,7 +2152,7 @@ tags: [superficies, nivel, superficies-nivel]
 
 ---
 
-## 📚 Referencias y Recursos Adicionales
+## 📚 Recursos y Lecturas Complementarias
 
 > [!quote] 📖 Para Profundizar
 >

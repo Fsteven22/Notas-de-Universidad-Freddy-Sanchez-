@@ -1624,7 +1624,7 @@ tags: [continuidad, varias, variables]
 
 ---
 
-## 🔗 Conexiones con Otros Temas
+## 🔗 Prerrequisitos y Temas Relacionados
 
 > [!quote] 🌐 Relaciones Importantes
 >
