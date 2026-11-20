@@ -3734,9 +3734,9 @@ las 10 copias a `%TEMP%\opencode`.
 
 ### `opencode` — 1er Semestre: limpieza de PDFs de Cálculo + Inglés III (3er Semestre) — 20/11/2026
 
-> [!warning] **PUSHEO EN CURSO**
+> [!success] **PUSHEADO `153ebbe9`** · 20/11/2026 — `master` = `origin/master` = `d59b0eae` al momento del push (merge de `origin/master` + este commit; sin `--force`).
 >
-> Anuncio previo al push — se cierra con el bloque `PUSHEADO <hash>`.
+> Lo que sigue es el detalle del contenido del push.
 
 **Limpieza de los PDFs preexistentes de Cálculo (con OK del dueño):**
 - Los 16 PDFs que ya estaban en el vault venían de la API con *wrapper MIME/multipart*: abren en
