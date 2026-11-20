@@ -1,0 +1,33 @@
+flowchart TD
+    A["Programa Java"]
+    B{"Operaciones<br/>de E/S"}
+    C["📖 LECTURA"]
+    D["✍️ ESCRITURA"]
+    E["🔍 CONSULTA"]
+    C1["Cargar configuración"]
+    C2["Leer datos existentes"]
+    C3["Importar archivos"]
+    D1["Guardar progreso"]
+    D2["Generar reportes"]
+    D3["Exportar datos"]
+    E1["Verificar existencia"]
+    E2["Obtener metadatos"]
+    E3["Listar directorios"]
+    A --> B
+    B --> C
+    B --> D
+    B --> E
+    C --> C1
+    C --> C2
+    C --> C3
+    D --> D1
+    D --> D2
+    D --> D3
+    E --> E1
+    E --> E2
+    E --> E3
+
+    style A fill:#e1f5ff
+    style C fill:#e1ffe1
+    style D fill:#fff4e1
+    style E fill:#f0e1ff

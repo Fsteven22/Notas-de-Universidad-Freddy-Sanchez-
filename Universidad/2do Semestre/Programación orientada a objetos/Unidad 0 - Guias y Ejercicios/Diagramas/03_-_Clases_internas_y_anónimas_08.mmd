@@ -1,0 +1,20 @@
+flowchart TD
+    A["Limitaciones<br/>Clases Anónimas"]
+    B["❌ No reutilizable"]
+    C["❌ Solo 1 interfaz/clase"]
+    D["❌Sin constructor<br/>personalizado"]
+    E["❌ Dificulta debugging"]
+    B1["Cada uso requiere<br/>nueva declaración"]
+    C1["No múltiples interfaces"]
+    D1["Solo constructor<br/>de la clase padre"]
+    E1["Nombres autogenerados<br/>Clase$1, Clase$2..."]
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    B --> B1
+    C --> C1
+    D --> D1
+    E --> E1
+
+    style A fill:#ffe1e1

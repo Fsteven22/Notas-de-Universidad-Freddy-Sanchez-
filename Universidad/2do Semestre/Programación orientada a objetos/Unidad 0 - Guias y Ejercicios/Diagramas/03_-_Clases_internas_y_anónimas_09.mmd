@@ -1,0 +1,14 @@
+flowchart LR
+    A["Clase Interna<br/>Normal"]
+    B["Requiere instancia<br/>de externa"]
+    C["Acceso total a<br/>miembros de instancia"]
+    D["Clase Interna<br/>Estática"]
+    E["Independiente de<br/>instancia externa"]
+    F["Solo miembros<br/>estáticos de externa"]
+    A --> B
+    A --> C
+    D --> E
+    D --> F
+
+    style A fill:#e1ffe1
+    style D fill:#f0e1ff

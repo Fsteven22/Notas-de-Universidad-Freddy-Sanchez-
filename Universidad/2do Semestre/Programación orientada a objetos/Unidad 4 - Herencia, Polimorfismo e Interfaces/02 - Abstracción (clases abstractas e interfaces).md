@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1005, unidad4, poo, abstraccion]
 ---
 
 # 🎭 Abstracción (Clases Abstractas e Interfaces)
@@ -25,7 +26,9 @@ dg-publish: true
 > |**Flexibilidad**|Permite cambiar implementaciones sin afectar el código cliente|Mantenimiento sencillo|
 > |**Diseño robusto**|Fuerza una estructura clara|Menos errores|
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_01.svg]]
+> [!note] 🖼️ Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_01.svg]]
 
 ---
 
@@ -719,7 +722,9 @@ dg-publish: true
 
 ### 🗺️ Mapa Mental Completo
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_06.svg]]
+> [!note] 🖼️ ️ Mapa Mental Completo
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_06.svg]]
 
 ### 📋 Tabla de Decisión Rápida
 

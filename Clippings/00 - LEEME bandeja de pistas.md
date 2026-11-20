@@ -3848,3 +3848,36 @@ push. Archivos de este cierre: `FORMATO-FISICA.md`, `qa_formato_fisica.py`, este
 > - Comunicación son **25 archivos `.doc/.docx`**, no PDFs. El criterio vigente es "solo PDFs".
 > - Cálculo Vectorial tiene 12 PDFs **con wrapper MIME** aún en disco (12 archivos → 5 hashes
 >   únicos, o sea 7 son duplicados exactos).
+
+---
+
+### `opencode` — POO: recuperación tras el merge `b5a4fdd2` + estado real — 20/11/2026
+
+> [!danger] **POO fue revertida por el merge `b5a4fdd2` (20/11 00:21) — recuperada desde `3c044d82`**
+>
+> El merge `b5a4fdd2` («integra Física/Álgebra/1er Sem…») resolvió `Universidad/` quedándose con
+> la **versión de `origin`** (`28f2dcd5`), que NO contenía nada posterior a `21b01a7b`. Efectos:
+> - Las 27 notas de POO volvieron al estado **anterior a `21b01a7b`** (se perdieron líneas `>`,
+>   H2 con emoji, enlaces 📎 del syllabus, tags y bloques de `21b01a7b`).
+> - `FORMATO-POO.md` y `qa_formato_poo.py` **desaparecieron de HEAD y de `origin/master`** (solo
+>   sobreviven en `3c044d82` y en la rama `backup-pre-transformador-cv`).
+> - Los 121 `.mmd` de la ronda `.mmd` en POO (commit `8b612bb5`) también se descartaron.
+> - Mismo patrón que los exámenes perdidos (bloque anterior): el merge descarta la línea local.
+>   **Revisar otros merges parecidos** (`dc5f40fc`, `fdd14bcd`, `b5a4fdd2`) por si descartaron
+>   más material local en otras materias.
+
+**Recuperación aplicada (sesión `opencode`, worktree `wt-opencode`):**
+- Restauradas las 27 notas + 121 `.mmd` desde `3c044d82` (`git checkout 3c044d82 -- <POO>`).
+- Recuperados `FORMATO-POO.md` (212 líneas) y `qa_formato_poo.py` (600 líneas) a
+  `Universidad/Herramientas/Mantenimiento/`.
+- **QA real de POO (27 notas): 0 H · 44 W (svg sin `.mmd`) · 124 P (lecturas R14)** — 168
+  hallazgos, NO los 405 que daba el árbol revertido. Las lecturas pendientes son la 2ª ronda.
+- Nota: los 3 PDFs EXA con wrapper MIME (patrón `form-data` de la API, igual que Álgebra) se
+  limpiaron y su payload coincide con el PDF canónico.
+
+**Convención de nombres (importante):** los exámenes de POO en `origin/master` (`05545a9e`)
+usan **espacios** en los nombres (`20111SFIEC046221 1.PDF`); las variantes con `_` son de un
+checkout local y no deben reintroducirse. No borrar las copias con espacios.
+
+**Estado git de esta sesión:** HEAD = `8a454a5f` (incluye los 5 commits remotos hasta
+`05545a9e`); el único local sin pushear era `14349ff5` (cierre R14 Física). Sin push nuevo.

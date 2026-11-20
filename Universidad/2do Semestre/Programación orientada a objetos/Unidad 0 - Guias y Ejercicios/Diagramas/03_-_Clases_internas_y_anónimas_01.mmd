@@ -1,0 +1,36 @@
+flowchart TD
+    A["Clases en Java"]
+    B{"Tipos de Clases<br/>Internas"}
+    C["🏠 Clases Internas<br/>Miembro"]
+    D["⚡ Clases Internas<br/>Locales"]
+    E["🎭 Clases<br/>Anónimas"]
+    F["📌 Clases Internas<br/>Estáticas"]
+    C1["Asociadas a instancia"]
+    C2["Acceso a miembros<br/>de la externa"]
+    D1["Definidas en método"]
+    D2["Scope limitado"]
+    E1["Sin nombre"]
+    E2["Uso único"]
+    E3["Muy común en Java"]
+    F1["Independientes"]
+    F2["Sin acceso a instancia<br/>externa"]
+    A --> B
+    B --> C
+    B --> D
+    B --> E
+    B --> F
+    C --> C1
+    C --> C2
+    D --> D1
+    D --> D2
+    E --> E1
+    E --> E2
+    E --> E3
+    F --> F1
+    F --> F2
+
+    style A fill:#e1f5ff
+    style C fill:#e1ffe1
+    style D fill:#fff4e1
+    style E fill:#ffe1f5
+    style F fill:#f0e1ff

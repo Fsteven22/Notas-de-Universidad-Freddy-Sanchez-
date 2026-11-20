@@ -1,0 +1,23 @@
+flowchart TD
+    A["Programa Java"]
+    B{"Tipo de<br/>Ejecución"}
+    C["🐢 Secuencial<br/>Un hilo"]
+    D["⚡ Concurrente<br/>Múltiples hilos"]
+    C1["Tareas ejecutan<br/>una tras otra"]
+    C2["Subutilización<br/>de CPU"]
+    C3["UI puede<br/>congelarse"]
+    D1["Tareas ejecutan<br/>simultáneamente"]
+    D2["Aprovecha<br/>multinúcleo"]
+    D3["UI siempre<br/>responsiva"]
+    A --> B
+    B --> C
+    B --> D
+    C --> C1
+    C --> C2
+    C --> C3
+    D --> D1
+    D --> D2
+    D --> D3
+
+    style C fill:#ffe1e1
+    style D fill:#e1ffe1

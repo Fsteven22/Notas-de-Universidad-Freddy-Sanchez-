@@ -1,0 +1,21 @@
+flowchart TD
+    A["ArrayList Vacío<br/>size = 0"]
+    B["Capacidad inicial<br/>10 espacios"]
+    C["Agregar elementos"]
+    D["size = 1, 2, 3..."]
+    E{"¿Capacidad<br/>llena?"}
+    F["Agregar<br/>normalmente"]
+    G["Crear array<br/>más grande"]
+    H["Copiar elementos"]
+    I["Capacidad x 1.5"]
+    A --> B
+    C --> D
+    D --> E
+    E -->|"No"| F
+    E -->|"Sí"| G
+    G --> H
+    H --> I
+
+    style A fill:#e1f5ff
+    style G fill:#fff4e1
+    style I fill:#e1ffe1

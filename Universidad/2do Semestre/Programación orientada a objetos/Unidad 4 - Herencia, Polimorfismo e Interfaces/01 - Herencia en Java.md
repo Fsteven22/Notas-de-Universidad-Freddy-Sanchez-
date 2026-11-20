@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1005, unidad4, poo, herencia]
 ---
 
 # 👨‍👩‍👧‍👦 Herencia en Java
@@ -27,7 +28,9 @@ dg-publish: true
 > - Un Perro **ES-UN** Animal ✅
 > - Un Coche **TIENE-UN** Motor ❌ (composición, no herencia)
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Herencia_en_Java_01.svg]]
+> [!note] 🖼️ Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Herencia_en_Java_01.svg]]
 
 > [!tip] 🎯 ¿Cuándo Usar Herencia?
 > 
@@ -1090,7 +1093,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Herencia_en_Java_05.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Herencia_en_Java_05.svg]]
 
 > [!quote] 💡 Puntos Clave
 > 

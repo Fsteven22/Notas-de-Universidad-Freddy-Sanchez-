@@ -1,0 +1,20 @@
+flowchart TD
+    A["Entrar try"]
+    B{"¿Excepción?"}
+    C["Ejecutar todo try"]
+    D["Saltar a catch<br/>correspondiente"]
+    E{"¿Hay finally?"}
+    F["Ejecutar finally"]
+    G["Continuar programa"]
+    A --> B
+    B -->|"No"| C
+    B -->|"Sí"| D
+    C --> E
+    D --> E
+    E -->|"Sí"| F
+    E -->|"No"| G
+    F --> G
+
+    style C fill:#e1ffe1
+    style D fill:#fff4e1
+    style F fill:#e1f5ff

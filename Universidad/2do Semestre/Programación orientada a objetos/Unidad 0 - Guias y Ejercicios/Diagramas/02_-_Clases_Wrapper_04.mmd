@@ -1,0 +1,19 @@
+flowchart TD
+    A["String 123"]
+    B["int 123"]
+    C["Integer 123"]
+    D["String 123"]
+    E["double 123.0"]
+    A -->|"parseInt"| B
+    A -->|"valueOf"| C
+    B -->|"autoboxing"| C
+    C -->|"unboxing"| B
+    B -->|"toString"| D
+    C -->|"toString"| D
+    C -->|"unboxing"| B
+    C -->|"doubleValue"| E
+
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style C fill:#ffe1e1
+    style D fill:#e1f5ff

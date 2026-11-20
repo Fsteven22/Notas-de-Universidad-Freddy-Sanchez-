@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1005, unidad3, poo, uml]
 ---
 
 # 📐 UML y Diagrama de Clases
@@ -21,7 +22,9 @@ dg-publish: true
 > |**Documentación**|Representación visual del sistema|Más fácil de entender que código|
 > |**Análisis**|Identificar problemas de diseño|Corregir antes de implementar|
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_01.svg]]
+> [!note] 🖼️ Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_01.svg]]
 
 > [!note] 🎯 Enfoque de este Tema
 > 
@@ -309,7 +312,9 @@ dg-publish: true
 > |¿Clase A contiene Clase B pero B puede existir independiente?|**Agregación** `o--`|Siguiente pregunta|
 > |¿Clase A solo usa temporalmente Clase B?|**Dependencia** `..>`|**Asociación** `--`|
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_16.svg]]
+> [!note] 🖼️ Comparativa de Relaciones
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_16.svg]]
 
 ---
 
@@ -330,7 +335,9 @@ dg-publish: true
 
 ## 📋 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_17.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_17.svg]]
 
 > [!quote] 💡 Recuerda
 > 

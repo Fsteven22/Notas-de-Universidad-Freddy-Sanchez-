@@ -1,0 +1,15 @@
+flowchart LR
+    A["int x = 5"]
+    B["Integer obj = x"]
+    C["int y = obj"]
+    D["Primitivo"]
+    E["Objeto"]
+    F["Primitivo"]
+    A -->|"Autoboxing"| B
+    B -->|"Unboxing"| C
+    D -->|"envuelve"| E
+    E -->|"desenvuelve"| F
+
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style C fill:#e1f5ff

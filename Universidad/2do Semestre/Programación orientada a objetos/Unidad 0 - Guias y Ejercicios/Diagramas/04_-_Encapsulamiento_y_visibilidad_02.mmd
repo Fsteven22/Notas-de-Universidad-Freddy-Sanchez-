@@ -1,0 +1,35 @@
+flowchart TD
+    A{"¿Qué estás<br/>declarando?"}
+    B["Atributo"]
+    C["Método"]
+    D["Clase"]
+    E{"¿Debe ser<br/>modificable<br/>externamente?"}
+    F["🔴 private"]
+    G["🟢 private + getter/setter"]
+    H["🟢 public - Raramente"]
+    I{"¿Parte de la<br/>interfaz pública?"}
+    J["🟢 public"]
+    K["🔴 private"]
+    L["🟡 protected"]
+    M{"¿Usada<br/>externamente?"}
+    N["🟢 public"]
+    O["🟠 default"]
+    A --> B
+    A --> C
+    A --> D
+    B --> E
+    E -->|"No"| F
+    E -->|"Sí, con control"| G
+    E -->|"Sí, libremente"| H
+    C --> I
+    I -->|"Sí"| J
+    I -->|"No"| K
+    I -->|"Solo herencia"| L
+    D --> M
+    M -->|"Sí"| N
+    M -->|"Solo en paquete"| O
+
+    style F fill:#ffe1e1
+    style G fill:#e1ffe1
+    style J fill:#e1ffe1
+    style K fill:#ffe1e1
