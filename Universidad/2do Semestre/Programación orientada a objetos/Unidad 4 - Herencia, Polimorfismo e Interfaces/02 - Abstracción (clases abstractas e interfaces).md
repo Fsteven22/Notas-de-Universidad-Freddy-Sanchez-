@@ -29,7 +29,6 @@ tags: [CCPG1005, unidad4, poo, abstraccion]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_01.svg]]
-> **Se lee así:** Diagrama de flujo TD con 7 bloques y 6 conexiones. Los bloques son: Mundo Real Complejo, Abstracción, Modelo Simplificado, Clases Abstractas, Interfaces. Las 6 conexiones muestran el flujo entre los bloques.
 
 ---
 
@@ -42,7 +41,6 @@ tags: [CCPG1005, unidad4, poo, abstraccion]
 > Java ofrece **dos formas** de implementar abstracción:
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_02.svg]]
-> **Se lee así:** Diagrama de flujo LR con 9 bloques y 8 conexiones. Los bloques son: Abstracción, Clases Abstractas, Interfaces, Herencia simple, Puede tener estado. Las 8 conexiones muestran el flujo entre los bloques.
 > 
 > **Tabla comparativa rápida:**
 > 
@@ -465,7 +463,6 @@ tags: [CCPG1005, unidad4, poo, abstraccion]
 > **Usa INTERFAZ cuando:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_04.svg]]
-> **Se lee así:** Diagrama de flujo TD con 6 bloques y 8 conexiones. Los bloques son: "¿Necesitas...?", Herencia múltiple, Capacidades compartidas, Clases no relacionadas, Contrato puro. Las 8 conexiones muestran el flujo entre los bloques.
 > 
 > - Quieres que clases no relacionadas compartan capacidades
 > - Necesitas herencia múltiple
@@ -705,7 +702,6 @@ tags: [CCPG1005, unidad4, poo, abstraccion]
 > **4. No abuses de la herencia**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_05.svg]]
-> **Se lee así:** Diagrama de flujo TD con 4 bloques y 3 conexiones. Los bloques son: ¿Necesitas abstraer?, "¿Relación ES-UN verdadera?", ✅ Usar herencia, ✅ Usar composición. Las 3 conexiones muestran el flujo entre los bloques.
 > 
 > **5. Documenta tus abstracciones**
 > 
@@ -729,7 +725,6 @@ tags: [CCPG1005, unidad4, poo, abstraccion]
 > [!note] 🖼️ ️ Mapa Mental Completo
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_06.svg]]
-> **Se lee así:** Diagrama de flujo LR con 16 bloques y 0 conexiones.
 
 ### 📋 Tabla de Decisión Rápida
 

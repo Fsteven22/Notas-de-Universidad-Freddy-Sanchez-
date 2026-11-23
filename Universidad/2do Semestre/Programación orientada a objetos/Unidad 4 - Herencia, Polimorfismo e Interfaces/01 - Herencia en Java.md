@@ -31,7 +31,6 @@ tags: [CCPG1005, unidad4, poo, herencia]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Herencia_en_Java_01.svg]]
-> **Se lee así:** Diagrama de flujo TD con 4 bloques y 3 conexiones. Los bloques son: Empleado nombre, salario trabajar, calcularSalario, Gerente departamento, bono gestionarEquipo, Vendedor zona, comision realizarVenta, Programador lenguajes, proyecto programar. Las 3 conexiones muestran el flujo entre los bloques.
 
 > [!tip] 🎯 ¿Cuándo Usar Herencia?
 > 
@@ -729,7 +728,6 @@ tags: [CCPG1005, unidad4, poo, herencia]
 > **Lineal - Un nivel de herencia:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Herencia_en_Java_02.svg]]
-> **Se lee así:** [!example] 📊 Jerarquía Simple **Lineal - Un nivel de herencia:**
 > 
 > ```java
 > public class Persona {
@@ -749,7 +747,6 @@ tags: [CCPG1005, unidad4, poo, herencia]
 > **Múltiples niveles - Herencia en cadena:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Herencia_en_Java_03.svg]]
-> **Se lee así:** [!example] 🌲 Jerarquía Multinivel **Múltiples niveles - Herencia en cadena:**
 > 
 > ```java
 > public class Persona {
@@ -789,7 +786,6 @@ tags: [CCPG1005, unidad4, poo, herencia]
 > **Una superclase, múltiples subclases:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Herencia_en_Java_04.svg]]
-> **Se lee así:** [!example] 🌿 Jerarquía Jerárquica **Una superclase, múltiples subclases:**
 
 ---
 
@@ -1100,7 +1096,6 @@ tags: [CCPG1005, unidad4, poo, herencia]
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Herencia_en_Java_05.svg]]
-> **Se lee así:** Diagrama de flujo LR con 11 bloques y 0 conexiones.
 
 > [!quote] 💡 Puntos Clave
 > 

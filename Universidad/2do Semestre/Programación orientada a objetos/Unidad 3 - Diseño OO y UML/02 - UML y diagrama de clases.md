@@ -41,7 +41,6 @@ tags: [CCPG1005, unidad3, poo, uml]
 > Una clase se representa como un **rectángulo dividido en 3 secciones**:
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_02.svg]]
-> **Se lee así:** 📋 Estructura de una Clase en UML Una clase se representa como un **rectángulo dividido en 3 secciones**:
 > 
 > **Secciones:**
 > 
@@ -87,7 +86,6 @@ tags: [CCPG1005, unidad3, poo, uml]
 > **Ejemplos:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_03.svg]]
-> **Se lee así:** [visibilidad] nombreMétodo(parámetro: tipo): tipoRetorno **Ejemplos:**
 > 
 > **Equivalente en Java:**
 > 
@@ -151,7 +149,6 @@ tags: [CCPG1005, unidad3, poo, uml]
 > Indica que una clase **conoce** o **usa** otra clase.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_06.svg]]
-> **Se lee así:** **Símbolo:** Línea simple `--` Indica que una clase **conoce** o **usa** otra clase.
 > 
 > **Multiplicidad:**
 > 
@@ -193,7 +190,6 @@ tags: [CCPG1005, unidad3, poo, uml]
 > Una clase **usa** temporalmente otra (parámetro, variable local).
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_09.svg]]
-> **Se lee así:** **Símbolo:** Flecha punteada `..>` Una clase **usa** temporalmente otra (parámetro, variable local).
 
 ---
 
@@ -224,7 +220,6 @@ tags: [CCPG1005, unidad3, poo, uml]
 > [!example] 🎯 Tipos Enumerados
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_12.svg]]
-> **Se lee así:** [!example] 🎯 Tipos Enumerados
 
 ---
 
@@ -235,23 +230,18 @@ tags: [CCPG1005, unidad3, poo, uml]
 > [!example] 💳 Diagrama Completo
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_13.svg]]
-> **Se lee así:** Diagrama de flujo que muestra la estructura de un sistema bancario: clases, atributos, métodos y relaciones entre ellas.
-> **Por qué importa:** Ilustra cómo se modela un sistema OO completo con UML, integrando clases, atributos, métodos y relaciones en un solo diagrama.
 
 ### 🎓 Sistema Universitario
 
 > [!example] 📖 Gestión Académica
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_14.svg]]
-> **Se lee así:** Diagrama de flujo que muestra la estructura de un sistema universitario: facultades, carreras, materias, estudiantes y profesores, con sus relaciones.
-> **Por qué importa:** Ilustra cómo se modela un sistema OO con herencia, composición y asociaciones múltiples en UML.
 
 ### 🛒 Sistema de Comercio
 
 > [!example] 🏪 E-commerce
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_15.svg]]
-> **Se lee así:** [!example] 🏪 E-commerce
 
 ---
 
@@ -325,7 +315,6 @@ tags: [CCPG1005, unidad3, poo, uml]
 > [!note] 🖼️ Comparativa de Relaciones
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_16.svg]]
-> **Se lee así:** Diagrama de flujo TD con 11 bloques y 10 conexiones. Los bloques son: "¿B ES-UN A?", Herencia, "¿B implementa interfaz A?", Implementación, "¿A contiene B y B depende de A?". Las 10 conexiones muestran el flujo entre los bloques.
 
 ---
 

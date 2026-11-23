@@ -94,31 +94,4 @@ tags: [CCPG1005, poo, java, mapa-de-contenido]
 
 ---
 
-## 📋 Exámenes disponibles
-
-> [!info] 📄 Exámenes de POO
->
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2019-1S-PROGRAMACIÓN ORIENTADA A OBJETOS-3-Mejora.pdf\|EXA-2019-1S-PROGRAMACIÓN ORIENTADA A OBJETOS-3-Mejora.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2025-2S-PROGRAMACIÓN ORIENTADA A OBJETOS-2-Mejora.pdf\|EXA-2025-2S-PROGRAMACIÓN ORIENTADA A OBJETOS-2-Mejora.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/20111SFIEC046221 1.PDF\|20111SFIEC046221 1.PDF]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/20111SFIEC046221 2.PDF\|20111SFIEC046221 2.PDF]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/20111SFIEC046221 3.PDF\|20111SFIEC046221 3.PDF]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/20111SFIEC046223 3.PDF\|20111SFIEC046223 3.PDF]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/20112SFIEC046221 1.PDF\|20112SFIEC046221 1.PDF]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/20112SFIEC046221 3.PDF\|20112SFIEC046221 3.PDF]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/20112SFIEC046222 2.PDF\|20112SFIEC046222 2.PDF]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/20121SFIEC046221 1.PDF\|20121SFIEC046221 1.PDF]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/20121SFIEC046221 2.PDF\|20121SFIEC046221 2.PDF]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/20121SFIEC046221 3.PDF\|20121SFIEC046221 3.PDF]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/20122SFIEC046222 2.PDF\|20122SFIEC046222 2.PDF]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/20122SFIEC046222 3.PDF\|20122SFIEC046222 3.PDF]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/20122SFIEC046223 1.PDF\|20122SFIEC046223 1.PDF]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/20131SFIEC046222 1.PDF\|20131SFIEC046222 1.PDF]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/program orient 10-2-09 01.pdf\|program orient 10-2-09 01.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/program orient 3-3-09 01.pdf\|program orient 3-3-09 01.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/program orient 9-12-8 01.pdf\|program orient 9-12-8 01.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/program orient 9-12-8 02.pdf\|program orient 9-12-8 02.pdf]]
-
----
-
 **Tags:** #POO #java #ESPOL #CCPG1005
