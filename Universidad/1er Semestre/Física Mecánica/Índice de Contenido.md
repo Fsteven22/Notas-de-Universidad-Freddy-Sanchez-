@@ -31,6 +31,71 @@ tags: [FISG1001, unidad0, recursos]
 
 ---
 
+## 📝 Exámenes
+
+> [!example] 🗂️ Banco de exámenes resueltos (42)
+>
+> Exámenes reales de DSpace (con solución y rúbrica), agrupados por año y tipo. Son **integrales**: cada uno cubre varias unidades de la materia.
+>
+> **2016 · 8 examenes**
+>
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2016-2S-FÍSICA I-4-1Par.pdf|2S 2016 — 1.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2016-2S-FÍSICA I-5-1Par.pdf|2S 2016 — 1.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2016-2S-FÍSICA I-1-2Par.pdf|2S 2016 — 2.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2016-2S-FÍSICA I-4-2Par.pdf|2S 2016 — 2.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2016-2S-FÍSICA I-5-2Par.pdf|2S 2016 — 2.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2016-2S-FÍSICA I-1-Mejora.pdf|2S 2016 — Mejora]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2016-2S-FÍSICA I-4-Mejora.pdf|2S 2016 — Mejora]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2016-2S-FÍSICA I-5-Mejora.pdf|2S 2016 — Mejora]]
+>
+> **2017 · 13 examenes**
+>
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-1S-FÍSICA I-1-1Par.pdf|1S 2017 — 1.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-1S-FÍSICA I-2-1Par (2).pdf|1S 2017 — 1.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-1S-FÍSICA I-2-1Par.pdf|1S 2017 — 1.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-1S-FÍSICA I-1-2Par.pdf|1S 2017 — 2.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-1S-FÍSICA I-2-2Par.pdf|1S 2017 — 2.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-1S-FÍSICA I-3-2Par.pdf|1S 2017 — 2.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-1S-FÍSICA I-5-2Par.pdf|1S 2017 — 2.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-1S-FÍSICA I-12-Mejora.pdf|1S 2017 — Mejora]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-1S-FÍSICA I-2-Mejora.pdf|1S 2017 — Mejora]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-1S-FÍSICA I-3-Mejora.pdf|1S 2017 — Mejora]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-2S-FÍSICA I-2-1Par.pdf|2S 2017 — 1.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-2S-FÍSICA I-2-2Par.pdf|2S 2017 — 2.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-2S-FÍSICA I-3-Mejora.pdf|2S 2017 — Mejora]]
+>
+> **2018 · 7 examenes**
+>
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2018-1S-FÍSICA I-2-1Par.pdf|1S 2018 — 1.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2018-1S-FÍSICA I-1-2Par.pdf|1S 2018 — 2.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2018-1S-FÍSICA I-1-Mejora.pdf|1S 2018 — Mejora]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2018-1S-FÍSICA I-2-Mejora.pdf|1S 2018 — Mejora]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2018-2S-FÍSICA I-2-1Par.pdf|2S 2018 — 1.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2018-2S-FÍSICA I-2-2Par.pdf|2S 2018 — 2.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2018-2S-FÍSICA I-2-Mejora.pdf|2S 2018 — Mejora]]
+>
+> **2019 · 7 examenes**
+>
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2019-1S-FÍSICA I-1-1Par.pdf|1S 2019 — 1.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2019-1S-FÍSICA I-1-2Par.pdf|1S 2019 — 2.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2019-1S-FÍSICA I-1-Mejora.pdf|1S 2019 — Mejora]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2019-2S-FÍSICA I-1-1Par.pdf|2S 2019 — 1.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2019-2S-FÍSICA I-1-2Par.pdf|2S 2019 — 2.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2019-2S-FÍSICA I-4-2Par.pdf|2S 2019 — 2.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2019-2S-FÍSICA I-6-Mejora.pdf|2S 2019 — Mejora]]
+>
+> **2020 · 7 examenes**
+>
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2020-0S-FÍSICA I-1-1Par (2).pdf|0S 2020 — 1.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2020-0S-FÍSICA I-1-1Par (3).pdf|0S 2020 — 1.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2020-0S-FÍSICA I-1-1Par (4).pdf|0S 2020 — 1.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2020-0S-FÍSICA I-1-1Par.pdf|0S 2020 — 1.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2020-0S-FÍSICA I-1-2Par.pdf|0S 2020 — 2.ª Parcial]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2020-0S-FÍSICA I-1-Mejora.pdf|0S 2020 — Mejora]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2020-0S-FÍSICA I-2-Mejora.pdf|0S 2020 — Mejora]]
+
+---
+
 ## 🔗 Navegación
 
 > [!tip] Enlaces rápidos
