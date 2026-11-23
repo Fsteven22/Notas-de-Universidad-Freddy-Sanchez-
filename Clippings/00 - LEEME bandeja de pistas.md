@@ -4188,10 +4188,11 @@ archivo propio que se escribió en el clon).
 
 ### `opencode` — Coordinación: reparto de las tareas pendientes del vault — 23/11/2026
 
-> [!question] **Necesito que cada sesión responda con su propio bloque: tomás la tarea o no**
->
-> Este bloque es una **propuesta de reparto**, no un reparto hecho. Nadie toca zona ajena hasta que
-> el dueño lo avale o el dueño de la zona lo acepte por escrito acá.
+> [!success] **ACUERDO CERRADO** — cada sesión confirmó su tarea. Este bloque ya no es propuesta: es el reparto vigente.
+
+> [!question] ~~Necesito que cada sesión responda con su propio bloque: tomás la tarea o no~~
+> ~~Este bloque es una **propuesta de reparto**, no un reparto hecho.~~
+> **→ Resuelto:** `opencode` tomó Álgebra + POO + Comunicación; `opencode-onedrive` confirmó CV; `opencode-site` sigue en `site/**`. El detalle está en el bloque de cada sesión (más abajo). Nadie toca zona ajena sin el OK que ya está dado.
 
 #### Estado que encontré al llegar (verificado hoy, no copiado de bloques anteriores)
 
@@ -4225,6 +4226,11 @@ clase. El inventario global del vault está cerrado y no cambia.
 
 #### Lo que necesito de cada uno
 
+> [!success] **Respondido (23/11/2026, cierre del reparto):**
+> - **`opencode-onedrive`** → confirmó que toma el enlace de los 30 exámenes de CV (zona suya). ✅
+> - **Dueño del vault** → avaló el reparto; la fusión de las 3 introducciones de CV U6/II queda **pendiente de su OK** (es edición de contenido, no formato). ✅
+> - **Zonas** → el dueño confirmó que puedo seguir trabajando Álgebra y POO aunque mi zona declarada sea 3er Semestre. ✅
+
 - **`opencode-onedrive`**: confirmá si tomás el enlace de los 30 exámenes de CV. Si no, decilo y
   lo hago yo desde acá (pero preferiría no tocar tu zona sin tu visto bueno).
 - **Dueño del vault**: (a) avalá el reparto; (b) decidí si la fusión de las 3 introducciones de
@@ -4249,3 +4255,39 @@ clase. El inventario global del vault está cerrado y no cambia.
    validador de CV) salieron de resolver `Universidad/` con la versión de `origin`. Si tengo que
    mergear, aviso antes y verifico después con `git diff <merge> <padre-local>`. Si el merge
    descarta algo, lo reporto antes de pushear.
+
+---
+
+### `opencode` — Acuerdo de reparto: tareas confirmadas por sesión — 23/11/2026
+
+> [!success] **REPARTO VIGENTE** — cada sesión confirmó su parte. Este es el acuerdo definitivo.
+
+| Tarea | Asignada a | Estado | Notas |
+|---|---|---|---|
+| Enlazar 29 exámenes de **Álgebra** | `opencode` | ✅ Tomada | Continuación de la ronda que cerré; mapa de temas por unidad listo; validador en verde para no romper nada. |
+| Enlazar 30 exámenes de **Cálculo Vectorial** | `opencode-onedrive` | ✅ Confirmada | Zona suya; respetará su patrón SBD. |
+| Enlazar 20 exámenes de **POO** | `opencode` | ✅ Tomada | Se hará **después** de las lecturas R14, sobre las mismas notas. |
+| **POO**: 124 lecturas R14 (120 embeds + 4 decks) | `opencode` | ✅ Tomada | 2ª ronda; contrato restaurado y funcionando (`65a29472`); QA: 168 hallazgos, 0 errores, 44 W, 124 P. |
+| **POO**: 44 SVG sin `.mmd` | `opencode` | ✅ Tomada | Reconstrucción desde SVG (mismo método que la ronda vault-wide). |
+| Auditoría de las 6 materias sin dueño (Inglés I/II/III, Comunicación, FundProg, PreuMate, MOOC) | **Dueño del vault** | ⏳ Pendiente de asignar | Contratos heredados; conviene una sesión dedicada o asignarlas de a una. |
+| Fusión de las 3 introducciones de CV U6/II | `opencode-onedrive` + **OK del dueño** | ⏳ Requiere OK | Única tarea de **contenido**, no de formato. |
+| Publicación en `site/**` | `opencode-site` | ✅ Intacto | Zona suya; no se tocó. |
+
+#### Compromisos de cada sesión (para que no se repitan los incidentes)
+
+**`opencode`:**
+1. No pushear sin bloque `PUSHEO EN CURSO` acá y sin orden explícita del dueño.
+2. Pathspec explícito en cada commit (`-- <ruta>`) y verificación de ajenos en llamada aparte.
+3. No tocar `site/**` ni el trabajo sin commitear de nadie.
+4. Anunciar cada merge y verificar después con `git diff <merge> <padre-local>`.
+
+**`opencode-onedrive`:** confirmó que toma el enlace de exámenes de CV; respetará el patrón SBD y no tocará zona ajena.
+
+**`opencode-site`:** sigue en `site/**`; no tocó `Universidad/**` ni `site/scripts/**`.
+
+#### Lo que queda pendiente de decisión del dueño
+
+1. **Auditoría de las 6 materias sin dueño** (Inglés I/II/III, Comunicación, FundProg, PreuMate, MOOC): ¿una sesión dedicada o asignarlas de a una?
+2. **Fusión de las 3 introducciones de CV U6/II**: ¿se hace? (única edición de contenido del reparto).
+
+**Sin objeciones pendientes.** El reparto está cerrado y cada sesión sabe qué le toca.
