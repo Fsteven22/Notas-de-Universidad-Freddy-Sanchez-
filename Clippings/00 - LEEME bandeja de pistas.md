@@ -3970,52 +3970,80 @@ duplicados). No hay más pérdidas locales detectadas.
 
 ---
 
-### `opencode` — Álgebra Lineal: QA de 1367 a 781 hallazgos · 0 H · nota de referencia en 0 — 21/11/2026
+### `opencode` — Álgebra Lineal (MATG1049): contrato + validador + normalización completa — 21/11/2026
 
-> [!success] **PUSHEADO `11120ad2`** · 21/11/2026 — `master` = `origin/master` = `11120ad2` (sin `--force`).
+> [!success] **PUSHEADO `11120ad2`** · 21/11/2026 — contenido en `11120ad2`, cierre en `f73ea653`.
+> En ese momento `master` = `origin/master`; sin `--force`, sin arrastrar trabajo ajeno.
 
-**Resultado:** `qa_formato_algebra.py --solo "2do Semestre/Algebra Lineal"` → **51 notas, 781 W,
-0 H, 0 P**. La nota de referencia (`U1/I/01 - Sistema de ecuaciones lineales en R2 y R3.md`) pasa
-de 5 W a **0 hallazgos**.
+**Resultado:** `qa_formato_algebra.py --solo "2do Semestre/Algebra Lineal"` → **51 notas · 781 W ·
+0 H · 0 P**. La **nota de referencia** (`U1/I/01 - Sistema de ecuaciones lineales en R2 y R3.md`)
+pasa de 5 W a **0 hallazgos**, que es lo que la convierte en patrón válido para `--calibrar`.
 
-**Lo importante no es el número, sino por qué bajó.** De las 1367 desviaciones, **586 eran
-falsos positivos** de tres reglas heredadas de CYSOC/Física que no encajaban con el material real
-de esta materia. Se corrigieron en el validador, no en las notas:
+#### El contrato, rehecho sobre una nota real
 
-| Regla | Antes | Ahora | Motivo |
+A petición del dueño ("usar la nota de referencia de SBD como en todos los contratos y recorrerlo"),
+`FORMATO-ALGEBRA.md` dejó de ser un clon de CYSOC y ahora **cita líneas literales** de
+`U1/I/01 - Sistema de ecuaciones lineales en R2 y R3.md`: 26 H2 con emoji, 57 callouts de 9 tipos,
+3 embeds con lectura, tags al pie. Cada regla lleva su ejemplo con número de línea y `--calibrar`
+apunta a ella.
+
+Tres huecos de la primera versión que este documento cierra:
+
+1. **Sin nota de referencia** → ahora existe y `--calibrar` la usa (antes `specific = None`, roto).
+2. **Reglas heredadas sin medir** (R10 metas, R11 flashcards, R15 capturas PNG) → marcadas como
+   **no aplican** a Álgebra: 0 ocurrencias medidas en las 51 notas.
+3. **Anomalías del material del dueño sin documentar** → 6 notas con **dos H1** (documentos
+   fusionados; la propia referencia lleva un segundo H1 en su L614) y 4 con **dos `**Tags:**`** al
+   pie. Son contenido suyo, no defectos: el validador no las reporta, pero el contrato las nombra
+   para que nadie las "arregle" por error.
+
+#### 586 de las 1367 desviaciones eran falsos positivos del validador
+
+Lo importante del número no es que bajara, sino **por qué**. Tres reglas heredadas de CYSOC/Física
+no encajaban con el material real de esta materia. Se corrigieron **en el validador, no en las
+notas** (mismo criterio ya aplicado con keycaps y ©️/™️):
+
+| Regla | Antes | Ahora | Motivo real |
 |---|---|---|---|
-| `R14-deck-sin-explicacion` | 7 | **0** | Marcaba *todo* callout 📖 sin etiqueta de lectura. Aquí la mayoría son prosa pura (definiciones, taxonomías, bibliografía) y **no embeben nada**. Ahora solo salta si el callout trae un `![[…]]` con `.png`/`.svg`. Igual que **R14.4 de Física**. |
-| `R7-separador-antes` | 220 | **0** | El clasificador leía como tabla cualquier línea que abriera con `\|`. El **arte ASCII** (rectas, planos), las **matrices numpy** dentro de ``` y los dibujos generaban cientos de avisos. Ahora exige una separadora markdown real (`\| --- \| ---: \|`) en la línea siguiente y no interpreta el interior de un fence. |
-| `R12-svg-sin-mmd` | 248 | **0** | No era un déficit. Los 247 SVG de `Unidad 0/Diagramas/` **ya tenían** su `.mmd` (los generó otra sesión en `c4088779`). Verificado par a par que cada fuente corresponde al contenido de su SVG. |
+| `R14-deck-sin-explicacion` | 7 | **0** | Marcaba *todo* callout 📖 sin etiqueta de lectura. En Álgebra la mayoría son **prosa pura** —definiciones, taxonomías, bibliografía— y **no embeben nada**. Ahora solo dispara si el callout contiene un `![[…]]` con `.png`/`.svg`. Mismo criterio que **R14.4 de Física**. |
+| `R7-separador-antes` | 220 | **0** | `clasifica()` trataba como tabla cualquier línea que abriera con `\|`. El **arte ASCII** (rectas, planos), las **matrices numpy** dentro de bloques ``` y los dibujos generaban cientos de avisos. Ahora exige una **separadora markdown real** (`\| --- \| ---: \|`) en la línea siguiente, y no interpreta el interior de un fence. |
+| `R12-svg-sin-mmd` | 248 | **0** | **No era un déficit.** Los 247 SVG de `Unidad 0/Diagramas/` ya tenían su `.mmd` (los generó otra sesión en `c4088779`). Verificado **par a par** que cada fuente corresponde al contenido de su SVG: 247/247 con texto, 0 vacíos. |
 
-**Hallazgos reales cerrados a mano (19):**
-- `R6-sin-blanco-header`: **99 → 0**. Sí eran reales: callouts con el contenido pegado al
-  header. Insertada la línea `>` en blanco (23 en las 4 notas raíz + 76 en 11 notas de clase).
-- 6 H2 sin emoji (`Álgebra Lineal.md` 4, `Recursos Visuales.md` 2).
-- 4 notas sin `**Tags:**` al pie (`Recursos Visuales`, `Teorema de Rouché-Frobenius`,
-  `Suma de subespacios`, `Matriz de cambio de base`).
-- 2 PDFs **embebidos** en vez de enlazados (`Bienvenida y Syllabus`, `Índice de Contenido`):
-  ahora van con wikilink y alias 📎, como pide R12.
+#### Hallazgos reales cerrados a mano (19)
 
-**Verificación posterior:** 51 notas, **0 problemas estructurales** (bloques ``` balanceados,
-tags al pie, H2 con emoji). Contrato `FORMATO-ALGEBRA.md` actualizado con las cuatro correcciones
-y su motivo.
+- **`R6-sin-blanco-header`: 99 → 0.** Estos sí eran reales: callouts con el contenido pegado al
+  header. Insertada la línea `>` en blanco — 23 en las 4 notas raíz + 76 en 11 notas de clase.
+- **6 H2 sin emoji**: `Álgebra Lineal.md` (4: unidades 1-4) y `Recursos Visuales.md` (2).
+- **4 notas sin `**Tags:**` al pie**: `Recursos Visuales`, `Teorema de Rouché-Frobenius`,
+  `Suma de subespacios`, `Matriz de cambio de base`.
+- **2 PDFs embebidos** en vez de enlazados (`Bienvenida y Syllabus`, `Índice de Contenido`):
+  ahora van con wikilink y alias 📎, como exige R12.
 
-**Lo que queda son los 781 `R4-prosa-top`**, W informativo por diseño: el estilo de esta materia
-es prosa densa fuera de callouts y el contrato lo acepta explícitamente. No es deuda técnica.
+**Verificación posterior:** 51 notas, **0 problemas estructurales** — bloques ``` balanceados,
+`**Tags:**` al pie, H2 con emoji. Contrato actualizado con las cuatro correcciones y su motivo.
+
+#### Lo que queda
+
+Los **781 `R4-prosa-top`** son **W informativo por diseño**: el estilo de esta materia es prosa
+densa fuera de callouts y el contrato lo acepta explícitamente. **No es deuda técnica.**
+
+#### Siguiente paso previsto
+
+Enlazar los **29 exámenes** de `Unidad 0 - Guias y Ejercicios/Exámenes/` desde las secciones de
+ejercicios de cada nota, con wikilink y alias 📎, anotando el tema de cada examen.
 
 ---
 
 ### `opencode` — Estado consolidado y pendientes (cierre de sesión) — 22/11/2026
 
 > [!info] Resumen para retomar la sesión sin perder contexto
-> HEAD local = `661c978f` · origin/master = `a7801013` · **3 commits locales sin pushear** (ver abajo).
+> HEAD local = `f73ea653` · origin/master = `f73ea653` · **nada pendiente de pushear**.
 
 **Materias cerradas (0 H · 0 W · 0 P reales):**
 | Materia | Estado | Evidencia |
 |---|---|---|
 | Física Mecánica | **0/0/0** | `qa_formato_fisica.py` → 108 notas, 0 hallazgos; R14 cerrada (228 lecturas, commits `b25e89ff`→`14349ff5`) |
-| Álgebra Lineal | **0 H · 781 W · 0 P** | `qa_formato_algebra.py` → 51 notas; los 781 son `R4-prosa-top` W informativo por diseño (prosa densa); `11120ad2` pusheado |
+| Álgebra Lineal | **0 H · 781 W · 0 P** | `qa_formato_algebra.py` → 51 notas; nota de referencia en 0; los 781 son `R4-prosa-top` W informativo por diseño (prosa densa); `11120ad2` pusheado, cierre `f73ea653` |
 | Matemáticas Discretas | **0** | `qa_formato_matdisc.py` → 44 notas, 0 hallazgos |
 
 **Materias con contrato y trabajo en curso:**
@@ -4025,18 +4053,20 @@ es prosa densa fuera de callouts y el contrato lo acepta explícitamente. No es 
 | Cálculo Vectorial | trabajada por otro agente (SBD, 0 hallazgos) | — |
 | Otras (Inglés I/II/III, Comunicación, CYSOC, Fund. Programación, PreuMate, MOOC) | contratos y QA heredados; `.mmd` restaurados | auditoría de formato pendiente, sin dueño asignado |
 
-**Commits locales sin pushear (3):**
-- `65a29472` — recuperación POO (27 notas + contrato + validador)
-- `18d4064e` — 673 `.mmd` + `verifica_fuentes_mmd.py`
-- `661c978f` — bloque de auditoría en Clippings
-> **No pushear sin orden explícita del dueño.**
+**Commits locales sin pushear: NINGUNO.** Los 3 que quedaban (`65a29472` recuperación POO,
+`18d4064e` 673 `.mmd`, `661c978f` bloque de auditoría) ya están en `origin/master`.
 
 **Hallazgo estructural (importante para futuras sesiones):** los merges `dc5f40fc`/`fdd14bcd`/`b5a4fdd2` (19-20/11) resolvieron `Universidad/` con la versión de `origin` (`28f2dcd5`) y descartaron **todo el trabajo local posterior a `21b01a7b`**. Afectó a POO (recuperada), `verifica_fuentes_mmd.py` (recuperado) y 673 `.mmd` de la ronda `8b612bb5` (recuperados). El resto del vault está sano. **Lección:** los merges que mezclan `origin` con trabajo local sin commitear pueden descartar material; verificar `git diff <merge> <padre-local>` tras cada merge.
 
-**Trabajo ajeno intacto (no tocar):** exámenes de Álgebra/Comunicación/CV (otra sesión, `05545a9e`/`6512dd6b`), notas de Álgebra modificadas (tags/lecturas R14 del otro agente, 51 `.md` en su árbol), figuras PNG de MatDisc, `genera_tablas_verdad.py`, PDFs de Diseño, `D` de Speaking Practice, ~60 exámenes de Álgebra Lineal.
+**Trabajo ajeno intacto (no tocar):** notas de Álgebra modificadas (tags/lecturas R14 del otro agente, 51 `.md` en su árbol), figuras PNG de MatDisc, `genera_tablas_verdad.py`, PDFs de Diseño, `D` de Speaking Practice. Los exámenes de Álgebra/Comunicación/CalcVectorial que antes se marcaban como ajenos **ya están commiteados y pusheados** (`05545a9e`/`6512dd6b`/`11120ad2`).
 
 **Convenciones vigentes (recordatorio):**
 - Commits con **pathspec** (`git commit -F <msg> -- <ruta>`); verificación de ajenos en llamada separada.
 - PDFs de clase como **enlace `📎 [[ruta.pdf|alias]]`**, nunca embed.
 - Fuentes `.mmd` **al lado** del `.svg` (regla A+C); no borrar los 673 restaurados.
 - Exámenes de POO con **espacios** en el nombre (`05545a9e`); no reintroducir variantes con `_`.
+
+**Exámenes del vault (inventario cerrado el 20-21/11):** 1er Sem Cálculo 49 · FundProg 41 ·
+Física 42 · Inglés I 0 · 2do Sem Álgebra 29 · CalcVectorial 30 · Comunicación 19 · POO 20 ·
+Inglés II 0 · CSC 0 · 3er Sem FESD 24 · MatDisc 17 · SBD 11 · DiseñoSW 8 · Inglés III 4.
+Sin exámenes porque no existen en DSpace: Inglés I, Inglés II, Computación y Sociedad.
