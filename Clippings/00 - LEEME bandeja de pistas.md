@@ -3921,7 +3921,7 @@ materias. Los originales de todo lo movido están en `%TEMP%\opencode\backup_*`.
 | 2º | Comunicación | 19 |
 | 2º | Programación Orientada a Objetos | 20 |
 | 2º | Inglés II | **0** — no existe en DSpace |
-| 2º | Computación y Sociedad | **0** — no existe en DSpace |
+| 2º | Computación y Sociedad | **5** — estaban en DSpace; se bajaron el 23/11 (`6e280c9c`) |
 | 3º | FESD | 24 |
 | 3º | Matemáticas Discretas | 17 |
 | 3º | Sistema de Bases de Datos | 11 |
@@ -4071,7 +4071,22 @@ ejercicios de cada nota, con wikilink y alias 📎, anotando el tema de cada exa
 **Exámenes del vault (inventario cerrado el 20-21/11):** 1er Sem Cálculo 49 · FundProg 41 ·
 Física 42 · Inglés I 0 · 2do Sem Álgebra 29 · CalcVectorial 30 · Comunicación 19 · POO 20 ·
 Inglés II 0 · CSC 0 · 3er Sem FESD 24 · MatDisc 17 · SBD 11 · DiseñoSW 8 · Inglés III 4.
-Sin exámenes porque no existen en DSpace: Inglés I, Inglés II, Computación y Sociedad.
+Sin exámenes porque no existen en DSpace: **solo Inglés I e Inglés II** (verificado con el patrón
+`EXA-<año>-<sem>-INGLÉS I-` / `-INGLÉS II-`, no por búsqueda libre).
+
+> [!warning] **Corrección del 23/11/2026: el "0 en DSpace" de Computación y Sociedad era falso**
+>
+> El inventario del 20/11 marcó CSC como "no existe en DSpace". Es incorrecto: hay **6 items**
+> (`EXA-2016-1S-…-1-1Par`, `…-1-2Par` ×2, `…-1-Mejora`, `EXA-2016-2S-…-1-1Par`, `…-1-2Par`),
+> de los cuales 2 son el mismo examen digitalizado dos veces (99,3% de palabras iguales). Quedaron
+> **5 exámenes únicos**, bajados en `6e280c9c`.
+>
+> **Causa del error:** se buscó por texto libre (`"computación y sociedad examen"`) en vez de por el
+> **patrón de nombre** que usa la colección `Exámenes` (`EXA-<año>-<sem>-<MATERIA>-<n>-<tipo>.pdf`).
+> **Regla para el futuro:** un "0 en DSpace" solo es válido si se verificó con el patrón exacto.
+>
+> **Segundo dato corregido:** Comunicación tiene **19 PDFs**, no 18 — el conteo se hizo antes de
+> convertir los 6 `.docx` con contenido real (los otros 6 eran solo metadatos de Draw).
 
 ---
 
@@ -4334,3 +4349,69 @@ clase. El inventario global del vault está cerrado y no cambia.
 2. **Los 2 BADs de Comunicación** (`Escucha Activa Parte 1/2_OCR.pdf`): el fix de 1 línea está identificado (dejarlos como texto), pendiente de aplicar.
 
 **Sin objeciones pendientes.** El reparto está cerrado y cada sesión sabe qué le toca.
+
+---
+
+### `opencode` — Exámenes: CSC no estaba en 0 (corrección de inventario) — 23/11/2026
+
+> [!success] **PUSHEADO `6e280c9c`** · 23/11/2026 — 5 exámenes nuevos de Computación y Sociedad.
+
+> [!danger] **El "0 en DSpace" de Computación y Sociedad era falso**
+>
+> El inventario del 20/11 lo marcó como materia sin exámenes. **Sí los hay: 6 items**, todos de
+> 2016 y todos PDF.
+>
+> | Item | Tipo |
+> |---|---|
+> | `EXA-2016-1S-COMPUTACIÓN Y SOCIEDAD-1-1Par.pdf` | 1Par |
+> | `EXA-2016-1S-COMPUTACIÓN Y SOCIEDAD-1-2Par.pdf` (×2 items) | 2Par |
+> | `EXA-2016-1S-COMPUTACIÓN Y SOCIEDAD-1-Mejora.pdf` | Mejora |
+> | `EXA-2016-2S-COMPUTACIÓN Y SOCIEDAD-1-1Par.pdf` | 1Par |
+> | `EXA-2016-2S-COMPUTACIÓN Y SOCIEDAD-1-2Par.pdf` | 2Par |
+>
+> Los dos `2016-1S-…-1-2Par` son **el mismo examen digitalizado dos veces**: 99,3% de similitud de
+> palabras, y la única diferencia real es el apellido del docente ("Saraguro-Bravo" vs "Saraguro")
+> más saltos de línea. Se conservó la versión con el apellido completo; la copia está en
+> `%TEMP%\opencode\backup_csc_20261123_1303`. **Total: 5 exámenes únicos.**
+
+**Causa del error (importante para no repetirlo):** se buscó por **texto libre**
+(`"computación y sociedad examen"`) en lugar de por el **patrón de nombre** que usa la colección
+`Exámenes`: `EXA-<año>-<sem>-<MATERIA>-<n>-<tipo>.pdf`. La búsqueda libre devuelve ruido y
+resultados incompletos; el patrón exacto los encontró a la primera.
+
+**Regla nueva:** un "0 en DSpace" solo es válido si se verificó con el patrón
+`^EXA-\d{4}-\dS-<MATERIA>-` y dio 0 resultados. Con búsqueda libre no vale.
+
+**Segundo dato corregido:** Comunicación tiene **19 PDFs**, no 18. El conteo del 20/11 se hizo
+antes de convertir los `.docx`: 19 tenían contenido real (51.489 palabras) y 6 eran solo metadatos
+de Draw sin `word/document.xml`.
+
+#### Inventario actualizado
+
+| Semestre | Materia | Exámenes |
+|---|---|---|
+| 1º | Cálculo de una Variable | 49 |
+| 1º | Fundamentos de Programación | 41 |
+| 1º | Física Mecánica | 42 |
+| 1º | Inglés I | **0** — verificado con patrón, no existe |
+| 2º | Álgebra Lineal | 29 |
+| 2º | Cálculo Vectorial | 30 |
+| 2º | Comunicación | 19 |
+| 2º | **Computación y Sociedad** | **5** (antes decía 0) |
+| 2º | Programación Orientada a Objetos | 20 |
+| 2º | Inglés II | **0** — verificado con patrón, no existe |
+| 3º | FESD | 24 + 3 `.docx` |
+| 3º | Matemáticas Discretas | 17 |
+| 3º | Sistema de Bases de Datos | 31 |
+| 3º | Diseño de Software | 8 (+1 PDF de examen PAO fuera de `Exámenes/`) |
+| 3º | Inglés III | 4 |
+
+**Total: 322 exámenes en el vault.**
+
+> [!note] Dos faltantes menores detectados al comparar DSpace contra el vault
+>
+> - `EXA-2023-1S-CÁLCULO DE UNA VARIABLE-8-1Par.pdf` (1 examen de Cálculo, zona de `opencode-onedrive`)
+> - `EXA-2016-2S-FUNDAMENTOS DE PROGRAMACIÓN-8-Mejora.pdf` (1 de FundProg, zona de `opencode-site`)
+>
+> Son 2 archivos sueltos que no estaban en el recorte de 14/14/14. No los bajé porque son zona
+> ajena; los reporto para que sus dueños decidan.
