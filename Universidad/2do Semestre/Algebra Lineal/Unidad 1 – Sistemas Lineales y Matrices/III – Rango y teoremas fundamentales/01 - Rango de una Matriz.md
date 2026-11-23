@@ -1464,4 +1464,12 @@ tags: [MATG1049, algebra-lineal, unidad1, 01-rango-de-una-matriz]
 
 ---
 
+
+## 📝 Exámenes de la materia
+
+> [!info] Exámenes reales de DSpace que cubren este tema
+>
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2020-1S-ÁLGEBRA LINEAL-2-Mejora.pdf\|EXA-2020-1S-ÁLGEBRA LINEAL-2-Mejora.pdf]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/ÁLGEBRA LINEAL 2015-2S (ICM) 3ª evaluación - 07.pdf\|ÁLGEBRA LINEAL 2015-2S (ICM) 3ª evaluación - 07.pdf]]
+
 **Tags:** #rango-matriz #teorema-rouche-frobenius #forma-escalonada #independencia-lineal #sistemas-lineales #clasificacion-sistemas #algoritmo-gauss #espacios-vectoriales #algebra-lineal #university #mathematics #linear-algebra #computational-methods

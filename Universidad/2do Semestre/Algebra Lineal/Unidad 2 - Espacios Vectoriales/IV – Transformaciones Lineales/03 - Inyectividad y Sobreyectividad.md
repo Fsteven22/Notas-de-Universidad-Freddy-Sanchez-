@@ -1015,4 +1015,11 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-inyectividad-y-sobreyectividad]
 
 ---
 
+
+## 📝 Exámenes de la materia
+
+> [!info] Exámenes reales de DSpace que cubren este tema
+>
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-1S-ÁLGEBRA LINEAL-3-Mejora.pdf\|EXA-2021-1S-ÁLGEBRA LINEAL-3-Mejora.pdf]]
+
 **Tags:** #algebra-lineal #transformaciones-lineales #inyectividad #sobreyectividad #biyectividad #isomorfismo #nucleo #imagen #rank-nullity #invertibilidad #espacios-vectoriales

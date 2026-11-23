@@ -610,6 +610,16 @@ tags: [MATG1049, algebra-lineal, unidad1, 01-sistema-de-ecuaciones-lineales-en-r
 
 ---
 
+
+## 📝 Exámenes de la materia
+
+> [!info] Exámenes reales de DSpace que cubren este tema
+>
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-2S-ÁLGEBRA LINEAL-1-Mejora.pdf\|EXA-2021-2S-ÁLGEBRA LINEAL-1-Mejora.pdf]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-1S-ÁLGEBRA LINEAL-8-1Par.pdf\|EXA-2022-1S-ÁLGEBRA LINEAL-8-1Par.pdf]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-1S-ÁLGEBRA LINEAL-4-Mejora.pdf\|EXA-2023-1S-ÁLGEBRA LINEAL-4-Mejora.pdf]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-1S-ÁLGEBRA LINEAL-8-Mejora.pdf\|EXA-2023-1S-ÁLGEBRA LINEAL-8-Mejora.pdf]]
+
 **Tags:** #sistemas-ecuaciones-lineales #SEL #algebra-lineal #compatible #incompatible #determinado #indeterminado #metodos-solucion #sustitucion #igualacion #eliminacion #interpretacion-geometrica #clasificacion-sistemas #university #mathematics #linear-algebra
 
 # 📐 Ecuaciones de Grado 1 en ℝ² y ℝ³
