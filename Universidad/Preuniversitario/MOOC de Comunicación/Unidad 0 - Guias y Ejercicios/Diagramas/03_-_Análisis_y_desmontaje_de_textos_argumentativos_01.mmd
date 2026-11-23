@@ -1,0 +1,17 @@
+flowchart TD
+    A["Leer el texto completo"]
+    B["Identificar la tesis (aplicar los 5 filtros)"]
+    C["Aislar los argumentos que la sostienen"]
+    D["Validar la evidencia de cada argumento"]
+    E{"¿Evidencia solida y relevante?"}
+    F["Marcar como argumento debil o posible falacia"]
+    G["Marcar como argumento solido"]
+    H["Redactar conclusion del analisis"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E -->|"No"| F
+    E -->|"Sí"| G
+    F --> H
+    G --> H

@@ -1,0 +1,15 @@
+flowchart LR
+    A["Matriz A"]
+    B["Filas/cols<br/>indep"]
+    C["r(A)"]
+    D{"r = n?"}
+    E["Invertible"]
+    F["Singular"]
+    A --> B
+    B --> C
+    C --> D
+    D -->|"Sí"| E
+    D -->|"No"| F
+
+    style C fill:#e1ffe1
+    style F fill:#ffe1e1

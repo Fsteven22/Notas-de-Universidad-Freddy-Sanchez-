@@ -1,0 +1,17 @@
+flowchart LR
+    A["Emisor"]
+    B["Mensaje"]
+    C["Canal"]
+    D["Receptor"]
+    E["Retroalimentacion"]
+    F["Codigo"]
+    G["Contexto"]
+    H["Ruido"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> A
+    F --> B
+    G --> D
+    H --> C

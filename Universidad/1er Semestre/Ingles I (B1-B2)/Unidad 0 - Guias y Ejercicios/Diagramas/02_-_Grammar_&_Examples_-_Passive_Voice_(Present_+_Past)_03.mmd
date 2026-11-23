@@ -1,0 +1,15 @@
+flowchart TD
+    A{"¿Usar BY?"}
+    B{"¿Es importante<br/>QUIÉN lo hizo?"}
+    C["✅ USE by + agent"]
+    D["❌ OMIT by + agent"]
+    E["This book was written<br/>by García Márquez"]
+    F["Coffee is grown<br/>in Colombia"]
+    A --> B
+    B -->|"Sí"| C
+    B -->|"No"| D
+    C --> E
+    D --> F
+
+    style C fill:#e1ffe1
+    style D fill:#ffe1e1

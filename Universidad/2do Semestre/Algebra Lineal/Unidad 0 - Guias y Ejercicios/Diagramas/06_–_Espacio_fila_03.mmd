@@ -1,0 +1,16 @@
+flowchart TD
+    A["Row A<br/>Espacio Fila<br/>dim = r"]
+    B["Nul A<br/>Espacio Nulo<br/>dim = n-r"]
+    C["Col A<br/>Espacio Columna<br/>dim = r"]
+    D["Nul Aᵀ<br/>Nulo Izquierdo<br/>dim = m-r"]
+    E["0"]
+    A -->|"transformación"| C
+    B -->|"aniquilado"| E
+    A -->|"ortogonal"| B
+    C -->|"ortogonal"| D
+    A -->|"transformación"| C
+
+    style A fill:#c8e6c9
+    style B fill:#ffccbc
+    style C fill:#bbdefb
+    style D fill:#ffccbc

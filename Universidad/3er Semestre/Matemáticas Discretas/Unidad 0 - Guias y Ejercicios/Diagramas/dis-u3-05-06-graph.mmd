@@ -1,0 +1,8 @@
+flowchart LR
+    A["n! termina en ceros"] --> B["Cada 5 aporta un cero"]
+    B --> C["Multiplos de 5: suelo(n / 5)"]
+    B --> D["Multiplos de 25: suelo(n / 25)"]
+    B --> E["Multiplos de 125: suelo(n / 125)"]
+    C --> F["z(n) = suma de los cocientes"]
+    D --> F
+    E --> F

@@ -1,0 +1,23 @@
+flowchart TD
+    A["🎯 Secuencia<br/>Lista, String, Range"]
+    B{"🔄 ¿Hay elementos?"}
+    C["📦 Tomar siguiente elemento"]
+    D["🎯 Asignar a variable temporal"]
+    E["⚡ Ejecutar bloque de código"]
+    F{"🛑 ¿break?"}
+    H["🏁 Fin del bucle"]
+    G{"⏭️ ¿continue?"}
+    A --> B
+    B -->|"Sí"| C
+    C --> D
+    D --> E
+    E --> F
+    F -->|"Sí"| H
+    F -->|"No"| G
+    G -->|"Sí"| B
+    G -->|"Sí"| B
+    B -->|"No"| H
+
+    style A fill:#e1f5fe
+    style E fill:#f3e5f5
+    style H fill:#e8f5e8

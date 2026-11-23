@@ -1,0 +1,17 @@
+flowchart TD
+    A["Vector v"]
+    B["Calcular norma<br/>||v|| = √⟨v,v⟩"]
+    C{"||v|| = 0?"}
+    D["❌ Error<br/>No se puede normalizar"]
+    E["Dividir cada componente<br/>û = v/||v||"]
+    F["Verificar: ||û|| = 1"]
+    G["✅ Vector normalizado"]
+    A --> B
+    B --> C
+    C -->|"Sí"| D
+    C -->|"No"| E
+    E --> F
+    F --> G
+
+    style D fill:#ffe1e1
+    style G fill:#e1ffe1

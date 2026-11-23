@@ -1,0 +1,24 @@
+flowchart TD
+    A["Sistema Ax = b"]
+    B{"Comparar m y n"}
+    C["Sistema Cuadrado"]
+    D["Subdeterminado"]
+    E["Sobredeterminado"]
+    F{"det A ≠ 0?"}
+    G["Solución única<br/>x = A⁻¹b"]
+    H["Infinitas o ninguna"]
+    I["Infinitas soluciones<br/>o ninguna"]
+    J["Generalmente<br/>sin solución exacta"]
+    A --> B
+    B -->|"m = n"| C
+    B -->|"m < n"| D
+    B -->|"m > n"| E
+    C --> F
+    F -->|"Sí"| G
+    F -->|"No"| H
+    D --> I
+    E --> J
+
+    style C fill:#e1ffe1
+    style D fill:#fff4e1
+    style E fill:#ffe1e1

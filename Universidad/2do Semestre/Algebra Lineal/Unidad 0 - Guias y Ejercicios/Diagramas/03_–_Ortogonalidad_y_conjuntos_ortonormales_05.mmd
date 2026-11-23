@@ -1,0 +1,24 @@
+flowchart TD
+    A["Calcular ⟨u,v⟩"]
+    B{"Valor?"}
+    C["θ = 90°<br/>✅ ORTOGONALES"]
+    D["Calcular ||u|| y ||v||"]
+    E["cos θ = ⟨u,v⟩ / ||u|| ||v||"]
+    F["θ = arccos valor"]
+    G["Relación<br/>perpendicular"]
+    H{"θ < 90°?"}
+    I["Ángulo agudo"]
+    J["Ángulo obtuso"]
+    A --> B
+    B -->|"= 0"| C
+    B -->|"≠ 0"| D
+    D --> E
+    E --> F
+    C --> G
+    F --> H
+    H -->|"Sí"| I
+    H -->|"No"| J
+
+    style C fill:#e1ffe1
+    style I fill:#fff4e1
+    style J fill:#ffe1e1

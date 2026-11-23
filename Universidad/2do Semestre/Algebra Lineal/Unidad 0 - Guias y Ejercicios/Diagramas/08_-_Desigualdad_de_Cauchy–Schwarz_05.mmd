@@ -1,0 +1,21 @@
+flowchart TD
+    A{"Vectores u y v"}
+    B{"¿Uno es cero?"}
+    C["Igualdad trivial<br/>0 = 0"]
+    D{"¿Paralelos?"}
+    E["Igualdad alcanzada<br/>|⟨u,v⟩| = ||u|| ||v||"]
+    F{"¿Ortogonales?"}
+    G["Desigualdad estricta<br/>0 < ||u|| ||v||"]
+    H["Desigualdad estricta<br/>|⟨u,v⟩| < ||u|| ||v||"]
+    A --> B
+    B -->|"Sí"| C
+    B -->|"No"| D
+    D -->|"Sí"| E
+    D -->|"No"| F
+    F -->|"Sí"| G
+    F -->|"No"| H
+
+    style C fill:#e1ffe1
+    style E fill:#e1ffe1
+    style G fill:#fff4e1
+    style H fill:#fff4e1

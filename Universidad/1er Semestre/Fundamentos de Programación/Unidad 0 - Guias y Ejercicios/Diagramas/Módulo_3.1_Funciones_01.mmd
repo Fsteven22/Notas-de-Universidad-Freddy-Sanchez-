@@ -1,0 +1,29 @@
+flowchart TD
+    A["🚀 Programa Principal"]
+    B{"📞 Llamada a Función"}
+    C["📥 Recibir Argumentos"]
+    D["🎯 Asignar a Parámetros"]
+    E["⚙️ Ejecutar Código de la Función"]
+    F{"📤 ¿Hay return?"}
+    G["↩️ Devolver Valor"]
+    H["↩️ Devolver None"]
+    I["📨 Continuar Programa Principal"]
+    J["🔧 Variables Locales"]
+    K["🗑️ Se destruyen al terminar"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F -->|"Sí"| G
+    F -->|"No"| H
+    G --> I
+    H --> I
+    E --> J
+    J --> K
+
+    style A fill:#e3f2fd
+    style E fill:#f3e5f5
+    style G fill:#e8f5e8
+    style H fill:#fff3e0
+    style J fill:#fce4ec

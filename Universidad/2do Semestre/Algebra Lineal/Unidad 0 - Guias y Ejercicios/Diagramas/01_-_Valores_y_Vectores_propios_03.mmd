@@ -1,0 +1,20 @@
+flowchart LR
+    A["Vector v"]
+    B{"¿Es vector propio?"}
+    C["Av cambia<br/>dirección y magnitud"]
+    D["Av = λv<br/>solo escala"]
+    E["λ > 1: estira"]
+    F["0 < λ < 1: contrae"]
+    G["λ < 0: invierte"]
+    A -->|"Multiplicar por A"| B
+    B -->|"No"| C
+    B -->|"Sí"| D
+    D --> E
+    D --> F
+    D --> G
+
+    style C fill:#ffe1e1
+    style D fill:#e1ffe1
+    style E fill:#ccffcc
+    style F fill:#fff4cc
+    style G fill:#ffcccc

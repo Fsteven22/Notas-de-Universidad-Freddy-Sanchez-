@@ -1,0 +1,43 @@
+flowchart TD
+    A["🎯 Entrada del Usuario"]
+    B{"📝 ¿Entrada vacía?"}
+    C["❌ Error: Campo requerido"]
+    D{"🔍 ¿Formato correcto?"}
+    E["❌ Error: Formato inválido"]
+    F{"📏 ¿Longitud válida?"}
+    G["❌ Error: Longitud incorrecta"]
+    H{"🎯 ¿Rango válido?"}
+    I["❌ Error: Fuera de rango"]
+    J{"🔒 ¿Reglas de negocio?"}
+    K["❌ Error: Regla violada"]
+    L["✅ Entrada válida"]
+    M{"🔄 ¿Reintentar?"}
+    N["🛑 Finalizar"]
+    O["📦 Procesar datos"]
+    A --> B
+    B -->|"Sí"| C
+    B -->|"No"| D
+    D -->|"No"| E
+    D -->|"Sí"| F
+    F -->|"No"| G
+    F -->|"Sí"| H
+    H -->|"No"| I
+    H -->|"Sí"| J
+    J -->|"No"| K
+    J -->|"Sí"| L
+    C --> M
+    E --> M
+    G --> M
+    I --> M
+    K --> M
+    M -->|"Sí"| A
+    M -->|"No"| N
+    L --> O
+
+    style C fill:#ffebee
+    style E fill:#ffebee
+    style G fill:#ffebee
+    style I fill:#ffebee
+    style K fill:#ffebee
+    style L fill:#e8f5e8
+    style O fill:#e8f5e8

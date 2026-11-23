@@ -1,0 +1,15 @@
+flowchart LR
+    A["Base Arbitraria"]
+    B{"Método?"}
+    C["Ortonormalizar<br/>luego proyectar"]
+    D["Resolver AᵀAx=Aᵀv"]
+    E["+ Interpretación geométrica<br/>+ Estable numéricamente<br/>- Más pasos"]
+    F["+ Directo<br/>+ Matricial<br/>- Puede ser inestable"]
+    A --> B
+    B -->|"Gram-Schmidt"| C
+    B -->|"Ecuaciones normales"| D
+    C --> E
+    D --> F
+
+    style C fill:#e1ffe1
+    style D fill:#fff4e1

@@ -1,0 +1,25 @@
+flowchart TD
+    A["Vector v"]
+    B["Descomponer respecto a u"]
+    C["Componente paralela<br/>proj_u v"]
+    D["Componente perpendicular<br/>perp_u v"]
+    E["Fórmula: (⟨v,u⟩/||u||²)u"]
+    F["Fórmula: v - proj_u v"]
+    G["En la dirección de u"]
+    H["Ortogonal a u"]
+    I["||proj_u v|| = |⟨v,u⟩|/||u||"]
+    J["⟨perp_u v, u⟩ = 0"]
+    A --> B
+    B --> C
+    B --> D
+    C --> E
+    D --> F
+    E --> G
+    F --> H
+    G --> I
+    H --> J
+
+    style C fill:#e1ffe1
+    style D fill:#fff4e1
+    style I fill:#e1f5ff
+    style J fill:#f0e1ff

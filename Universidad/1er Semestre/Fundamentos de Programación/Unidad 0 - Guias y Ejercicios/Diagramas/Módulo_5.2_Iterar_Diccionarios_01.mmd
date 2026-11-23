@@ -1,0 +1,36 @@
+flowchart TD
+    A["🗂️ Diccionario"]
+    B{"Métodos de Iteración"}
+    C["🔑 .keys()"]
+    D["📦 .values()"]
+    E["🧩 .items()"]
+    C1["for clave in dict.keys()"]
+    C2["Solo necesitas las claves"]
+    C3["Verificaciones, filtros"]
+    D1["for valor in dict.values()"]
+    D2["Cálculos estadísticos"]
+    D3["Suma, promedio, máx/mín"]
+    E1["for clave, valor in dict.items()"]
+    E2["Acceso completo a datos"]
+    E3["Análisis complejos"]
+    A --> B
+    B --> C
+    B --> D
+    B --> E
+    C --> C1
+    C --> C2
+    C --> C3
+    D --> D1
+    D --> D2
+    D --> D3
+    E --> E1
+    E --> E2
+    E --> E3
+
+    style A fill:#e1f5fe
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style E fill:#c8e6c9
+    style E1 fill:#a5d6a7
+    style E2 fill:#a5d6a7
+    style E3 fill:#a5d6a7

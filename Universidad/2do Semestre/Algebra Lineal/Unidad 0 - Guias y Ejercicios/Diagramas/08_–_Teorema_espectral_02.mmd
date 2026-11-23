@@ -1,0 +1,15 @@
+flowchart LR
+    A["Espacio Original"]
+    B["Sistema de<br/>Ejes Principales"]
+    C["Escalado en<br/>Ejes Principales"]
+    D["Regreso al<br/>Espacio Original"]
+    E["Transformación A"]
+    F["Rotar + Escalar + Rotar"]
+    A -->|"Q^T"| B
+    B -->|"Λ escalar"| C
+    C -->|"Q"| D
+    E -->|"equivale a"| F
+
+    style B fill:#e1ffe1
+    style C fill:#fff4e1
+    style E fill:#e1f5ff

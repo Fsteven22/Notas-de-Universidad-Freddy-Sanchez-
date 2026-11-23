@@ -1,0 +1,19 @@
+flowchart TD
+    A["Vector v"]
+    B["Proyectar sobre u"]
+    C["proj_u v<br/>Componente paralela"]
+    D["perp_u v<br/>Componente perpendicular"]
+    E["En dirección de u"]
+    F["Ortogonal a u"]
+    G["v = proj_u v + perp_u v"]
+    A --> B
+    B --> C
+    B --> D
+    C --> E
+    D --> F
+    E --> G
+    F --> G
+
+    style C fill:#e1ffe1
+    style D fill:#fff4e1
+    style G fill:#e1f5ff

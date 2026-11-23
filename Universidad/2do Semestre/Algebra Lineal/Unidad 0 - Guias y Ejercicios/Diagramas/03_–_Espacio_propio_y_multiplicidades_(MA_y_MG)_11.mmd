@@ -1,0 +1,30 @@
+flowchart TD
+    A["Matriz A"]
+    B["Calcular polinomio característico"]
+    C["Factorizar p_A(λ)"]
+    D["Identificar valores propios"]
+    E["Determinar MA de cada λ"]
+    F["Para cada valor propio λᵢ"]
+    G["Formar A − λᵢI"]
+    H["Resolver (A − λᵢI)v = 0"]
+    I["Encontrar base de E_λᵢ"]
+    J["Calcular MG(λᵢ)"]
+    K{"¿MG(λᵢ) = MA(λᵢ)?"}
+    L["DIAGONALIZABLE"]
+    M["NO diagonalizable"]
+    N["Formar matriz P"]
+    O["Formar matriz D"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+    J --> K
+    K -->|"Sí, todos"| L
+    K -->|"No"| M
+    L --> N
+    L --> O

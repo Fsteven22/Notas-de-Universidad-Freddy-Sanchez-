@@ -1,0 +1,24 @@
+flowchart TD
+    T["Tesis propuesta"]
+    F1{"¿Es debatible?"}
+    X1["Rechazar"]
+    F2{"¿Es específica?"}
+    X2["Rechazar"]
+    F3{"¿Es aseverativa?"}
+    X3["Rechazar"]
+    F4{"¿Tiene certeza enunciativa?"}
+    X4["Rechazar"]
+    F5{"¿Estructura gramatical completa?"}
+    X5["Rechazar"]
+    OK["Tesis válida"]
+    T --> F1
+    F1 -->|"No, es un hecho"| X1
+    F1 -->|"Sí"| F2
+    F2 -->|"No, es una generalización absoluta"| X2
+    F2 -->|"Sí"| F3
+    F3 -->|"No, es pregunta retórica"| X3
+    F3 -->|"Sí"| F4
+    F4 -->|"No, es condicional hipotético"| X4
+    F4 -->|"Sí"| F5
+    F5 -->|"No, es frase nominal/infinitivo"| X5
+    F5 -->|"Sí"| OK

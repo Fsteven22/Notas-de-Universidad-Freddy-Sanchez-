@@ -1,0 +1,38 @@
+flowchart TD
+    A["Sistema de Ecuaciones Lineales"]
+    B["Escribir matriz ampliada AB"]
+    C["Aplicar eliminación de Gauss"]
+    D["Obtener forma escalonada"]
+    E{"¿Hay fila<br/>0 0 ... 0  k<br/>con k ≠ 0?"}
+    F["Sistema INCOMPATIBLE<br/>Sin solución"]
+    G["Calcular rangos"]
+    H{"¿rang A =<br/>rang AB?"}
+    I{"¿rang A = n?<br/>n = núm. incógnitas"}
+    J["Sistema COMPATIBLE<br/>DETERMINADO<br/>Solución única"]
+    K["Sistema COMPATIBLE<br/>INDETERMINADO<br/>Infinitas soluciones"]
+    L["Sustitución regresiva"]
+    M["Expresar en forma paramétrica<br/>Variables libres = n - rang A"]
+    N["Solución: x₁, x₂, ..., xₙ"]
+    O["Solución: f s, t, ..."]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E -->|"Sí"| F
+    E -->|"No"| G
+    G --> H
+    H -->|"No"| F
+    H -->|"Sí"| I
+    I -->|"Sí"| J
+    I -->|"No"| K
+    J --> L
+    K --> M
+    L --> N
+    M --> O
+
+    style A fill:#e3f2fd
+    style F fill:#ffcdd2
+    style J fill:#c8e6c9
+    style K fill:#fff9c4
+    style N fill:#a5d6a7
+    style O fill:#ffe082

@@ -1,0 +1,21 @@
+flowchart TD
+    A["1. Q ortogonal"]
+    B["2. Q^T Q = I"]
+    C["3. Q Q^T = I"]
+    D["4. Q^-1 = Q^T"]
+    E["5. Columnas ortonormales"]
+    F["6. Filas ortonormales"]
+    G["7. Preserva producto"]
+    H["8. Preserva norma"]
+    I["9. det = ±1"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I --> A
+
+    style A fill:#e1f5ff
