@@ -4080,7 +4080,7 @@ Sin exámenes porque no existen en DSpace: Inglés I, Inglés II, Computación y
 > - **88/88 notas** de Cálculo Vectorial U1–U6 con **0 hallazgos** del validador oficial, con el validador **realmente ejecutado** (0 fallos de ejecución).
 > - **616 SVG / 616 `.mmd`** en `Unidad 0/Diagramas/`: 0 SVG sin fuente, 0 fuentes sin SVG.
 > - Rama `sesion/opencode-onedrive` = `master` = `origin/master` = `origin/sesion/opencode-onedrive` = **`ddde00f7`**.
-> - Clon OneDrive verificado: **1361 archivos CV, 0 discrepancias** contra `origin/master`, HEAD e índice del clon **sin mover**, 1254 cambios ajenos intactos.
+> - Clon OneDrive verificado: **1361 archivos CV, 0 discrepancias** contra `origin/master`, HEAD e índice del clon **sin mover**, 1255 cambios ajenos intactos (el +1 es este propio bloque del LEEME).
 
 #### ⚠️ Hallazgo importante: el QA anterior era un falso positivo (validador ausente)
 
@@ -4179,4 +4179,5 @@ Sin exámenes porque no existen en DSpace: Inglés I, Inglés II, Computación y
 - **Publicación en el sitio**: no se tocó `site/src/**` ni `site/public/**` en esta ronda.
 
 **Material ajeno respetado:** Física, Álgebra, POO, Programación, los 30 PDFs de exámenes y los
-1254 cambios sin commit del clon OneDrive quedaron intactos.
+1254 cambios sin commit del clon OneDrive quedaron intactos (el LEEME de este bloque es el único
+archivo propio que se escribió en el clon).
