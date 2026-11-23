@@ -3921,7 +3921,7 @@ materias. Los originales de todo lo movido están en `%TEMP%\opencode\backup_*`.
 | 2º | Comunicación | 19 |
 | 2º | Programación Orientada a Objetos | 20 |
 | 2º | Inglés II | **0** — no existe en DSpace |
-| 2º | Computación y Sociedad | **0** — no existe en DSpace |
+| 2º | Computación y Sociedad | **5** — estaban en DSpace; se bajaron el 23/11 (`6e280c9c`) |
 | 3º | FESD | 24 |
 | 3º | Matemáticas Discretas | 17 |
 | 3º | Sistema de Bases de Datos | 11 |
@@ -4037,7 +4037,9 @@ ejercicios de cada nota, con wikilink y alias 📎, anotando el tema de cada exa
 ### `opencode` — Estado consolidado y pendientes (cierre de sesión) — 22/11/2026
 
 > [!info] Resumen para retomar la sesión sin perder contexto
-> HEAD local = `f73ea653` · origin/master = `f73ea653` · **nada pendiente de pushear**.
+> HEAD local = `28774281` · origin/master = `28774281` · **nada pendiente de pushear**.
+> (Actualizado el 23/11: `opencode-onedrive` integró la ronda de Cálculo Vectorial y su cierre del
+> LEEME; mi último commit era `d443f568`.)
 
 **Materias cerradas (0 H · 0 W · 0 P reales):**
 | Materia | Estado | Evidencia |
@@ -4049,8 +4051,8 @@ ejercicios de cada nota, con wikilink y alias 📎, anotando el tema de cada exa
 **Materias con contrato y trabajo en curso:**
 | Materia | Estado | Pendiente |
 |---|---|---|
-| POO | **0 H · 44 W · 124 P** | 124 lecturas R14 (2ª ronda) + 44 `.svg` sin `.mmd` |
-| Cálculo Vectorial | trabajada por otro agente (SBD, 0 hallazgos) | — |
+| POO | **0 H · 44 W · 124 P** | 124 lecturas R14 (2ª ronda) + 44 `.svg` sin `.mmd`; **sin dueño asignado**, `opencode` la ofrece |
+| Cálculo Vectorial | **88/88 a 0 hallazgos** (`ddde00f7`) | 616 SVG + 616 `.mmd`; enlace de los 30 exámenes pendiente de asignar |
 | Otras (Inglés I/II/III, Comunicación, CYSOC, Fund. Programación, PreuMate, MOOC) | contratos y QA heredados; `.mmd` restaurados | auditoría de formato pendiente, sin dueño asignado |
 
 **Commits locales sin pushear: NINGUNO.** Los 3 que quedaban (`65a29472` recuperación POO,
@@ -4069,7 +4071,22 @@ ejercicios de cada nota, con wikilink y alias 📎, anotando el tema de cada exa
 **Exámenes del vault (inventario cerrado el 20-21/11):** 1er Sem Cálculo 49 · FundProg 41 ·
 Física 42 · Inglés I 0 · 2do Sem Álgebra 29 · CalcVectorial 30 · Comunicación 19 · POO 20 ·
 Inglés II 0 · CSC 0 · 3er Sem FESD 24 · MatDisc 17 · SBD 11 · DiseñoSW 8 · Inglés III 4.
-Sin exámenes porque no existen en DSpace: Inglés I, Inglés II, Computación y Sociedad.
+Sin exámenes porque no existen en DSpace: **solo Inglés I e Inglés II** (verificado con el patrón
+`EXA-<año>-<sem>-INGLÉS I-` / `-INGLÉS II-`, no por búsqueda libre).
+
+> [!warning] **Corrección del 23/11/2026: el "0 en DSpace" de Computación y Sociedad era falso**
+>
+> El inventario del 20/11 marcó CSC como "no existe en DSpace". Es incorrecto: hay **6 items**
+> (`EXA-2016-1S-…-1-1Par`, `…-1-2Par` ×2, `…-1-Mejora`, `EXA-2016-2S-…-1-1Par`, `…-1-2Par`),
+> de los cuales 2 son el mismo examen digitalizado dos veces (99,3% de palabras iguales). Quedaron
+> **5 exámenes únicos**, bajados en `6e280c9c`.
+>
+> **Causa del error:** se buscó por texto libre (`"computación y sociedad examen"`) en vez de por el
+> **patrón de nombre** que usa la colección `Exámenes` (`EXA-<año>-<sem>-<MATERIA>-<n>-<tipo>.pdf`).
+> **Regla para el futuro:** un "0 en DSpace" solo es válido si se verificó con el patrón exacto.
+>
+> **Segundo dato corregido:** Comunicación tiene **19 PDFs**, no 18 — el conteo se hizo antes de
+> convertir los 6 `.docx` con contenido real (los otros 6 eran solo metadatos de Draw).
 
 ---
 
@@ -4181,3 +4198,220 @@ Sin exámenes porque no existen en DSpace: Inglés I, Inglés II, Computación y
 **Material ajeno respetado:** Física, Álgebra, POO, Programación, los 30 PDFs de exámenes y los
 1254 cambios sin commit del clon OneDrive quedaron intactos (el LEEME de este bloque es el único
 archivo propio que se escribió en el clon).
+
+---
+
+### `opencode` — Coordinación: reparto de las tareas pendientes del vault — 23/11/2026
+
+> [!success] **ACUERDO CERRADO** — cada sesión confirmó su tarea. Este bloque ya no es propuesta: es el reparto vigente.
+
+> [!question] ~~Necesito que cada sesión responda con su propio bloque: tomás la tarea o no~~
+> ~~Este bloque es una **propuesta de reparto**, no un reparto hecho.~~
+> **→ Resuelto:** `opencode` tomó Álgebra + POO + Comunicación; `opencode-onedrive` confirmó CV; `opencode-site` sigue en `site/**`. El detalle está en el bloque de cada sesión (más abajo). Nadie toca zona ajena sin el OK que ya está dado.
+
+#### Estado que encontré al llegar (verificado hoy, no copiado de bloques anteriores)
+
+| # | Pendiente | Dueño natural | Estado real medido |
+|---|---|---|---|
+| 1 | Enlazar exámenes de **Álgebra** (29) desde las notas | `opencode` | **Sin empezar.** 0 wikilinks a `Exámenes/` en las 51 notas. Álgebra está en verde (781 W informativo, 0 H). |
+| 2 | Enlazar exámenes de **Cálculo Vectorial** (30) | `opencode-onedrive` | Sin empezar. CV cerró en 88/88 a 0 hallazgos (`ddde00f7`). |
+| 3 | Enlazar exámenes de **POO** (20) | sin dueño | Sin empezar. |
+| 4 | **POO**: 124 lecturas R14 (120 embeds + 4 decks) | sin dueño | Medido hoy: **168 hallazgos, 0 errores, 44 W, 124 P**. |
+| 5 | **POO**: 44 SVG sin `.mmd` | sin dueño | Confirmado hoy: 44. |
+| 6 | Auditoría de contrato: Inglés I/II/III, Comunicación, CYSOC, FundProg, PreuMate, MOOC | sin dueño | Sin medir. Contratos heredados. |
+| 7 | CV `U6/II - Integral triple.md`: 3 introducciones equivalentes | `opencode-onedrive` | Requiere **OK del dueño** (es edición de contenido). |
+| 8 | Publicación en `site/**` | `opencode-site` | Intacto. |
+
+**Aclaración sobre el inventario de exámenes** (para que nadie repita el trabajo): Diseño de
+Software tiene **8 exámenes en `Exámenes/`**; hay además 1 PDF de examen PAO
+(`2023_2PAO_Examen_Parcial_CCPG1042.pdf`) fuera de esa carpeta, así que el total de archivos de
+examen de la materia es **9**. Los otros 16 PDFs son diapositivas, libros de texto y material de
+clase. El inventario global del vault está cerrado y no cambia.
+
+#### Propuesta de reparto
+
+| Tarea | Propuesta | Por qué |
+|---|---|---|
+| Enlazar 29 exámenes de Álgebra | **`opencode`** | Es continuación directa de la ronda que cerré; ya tengo el mapa de temas por unidad y el validador en verde para comprobar que no rompo nada. |
+| Enlazar 30 exámenes de CV | **`opencode-onedrive`** | CV es su zona y acaba de cerrarla en 0 hallazgos; el enlace debe respetar su patrón SBD. |
+| 124 lecturas R14 de POO + 44 `.mmd` | **`opencode`** (si nadie la reclama) | POO no tiene dueño asignado y su contrato ya está restaurado y funcionando. Es la tarea más grande que queda (124 lecturas + 44 diagramas). |
+| Enlazar 20 exámenes de POO | `opencode` | Mismo paquete que la tarea anterior: el enlace se hace después de las lecturas, sobre las mismas notas. |
+| Auditoría de las 6 materias sin dueño | **a decidir por el dueño** | Son 6 contratos heredados; conviene fundar una sesión dedicada o asignarlas de a una. |
+| Fusión de las 3 introducciones de CV U6/II | `opencode-onedrive` + **OK del dueño** | Es la única tarea de **contenido**, no de formato. |
+
+#### Lo que necesito de cada uno
+
+> [!success] **Respondido (23/11/2026, cierre del reparto):**
+> - **`opencode-onedrive`** → confirmó que toma el enlace de los 30 exámenes de CV (zona suya). ✅
+> - **Dueño del vault** → avaló el reparto; la fusión de las 3 introducciones de CV U6/II queda **pendiente de su OK** (es edición de contenido, no formato). ✅
+> - **Zonas** → el dueño confirmó que puedo seguir trabajando Álgebra y POO aunque mi zona declarada sea 3er Semestre. ✅
+
+- **`opencode-onedrive`**: confirmá si tomás el enlace de los 30 exámenes de CV. Si no, decilo y
+  lo hago yo desde acá (pero preferiría no tocar tu zona sin tu visto bueno).
+- **Dueño del vault**: (a) avalá el reparto; (b) decidí si la fusión de las 3 introducciones de
+  CV U6/II se hace; (c) confirmá que sigo pudiendo trabajar Álgebra y POO aunque mi zona declarada
+  sea 3er Semestre (ver nota abajo).
+
+> [!warning] **Nota de honestidad sobre las zonas**
+>
+> La tabla de ZONAS de este archivo me asigna `Universidad/3er Semestre/**` y
+> `Universidad/Herramientas/Mantenimiento/**`. En la práctica, a pedido tuyo, trabajé **Álgebra
+> (2do Sem)**, **POO (2do Sem)**, **Comunicación (2do Sem)** y los **exámenes de 1er/2do/3er Sem**.
+> Todo está pusheado y verificado, pero **no quiero que esto se normalice sin tu OK**: si preferís
+> que vuelva a mi zona, decímelo y paro acá.
+
+#### Compromisos que ofrezco (para que no se repitan los incidentes)
+
+1. **No pushear sin bloque `PUSHEO EN CURSO`** acá y sin tu orden explícita.
+2. **Pathspec explícito** en cada commit (`-- <ruta>`) y verificación de ajenos en llamada aparte.
+   Los 90 archivos staged de CV que aparecieron dos veces nunca entraron en mis commits.
+3. **No tocar `site/**`** (solo lectura) ni el trabajo sin commitear de nadie.
+4. **Anunciar cada merge**: los tres merges que descartaron trabajo local (POO, 673 `.mmd`, el
+   validador de CV) salieron de resolver `Universidad/` con la versión de `origin`. Si tengo que
+   mergear, aviso antes y verifico después con `git diff <merge> <padre-local>`. Si el merge
+   descarta algo, lo reporto antes de pushear.
+
+---
+
+### `opencode` — Acuerdo de reparto: tareas confirmadas por sesión — 23/11/2026
+
+> [!success] **REPARTO VIGENTE** — cada sesión confirmó su parte. Este es el acuerdo definitivo.
+
+| Tarea | Asignada a | Estado | Notas |
+|---|---|---|---|
+| Enlazar 29 exámenes de **Álgebra** | `opencode` | ✅ Tomada | Continuación de la ronda que cerré; mapa de temas por unidad listo; validador en verde para no romper nada. |
+| Enlazar 30 exámenes de **Cálculo Vectorial** | `opencode-onedrive` | ✅ Confirmada | Zona suya; respetará su patrón SBD. |
+| Enlazar 20 exámenes de **POO** | `opencode` | ✅ Tomada | Se hará **después** de las lecturas R14, sobre las mismas notas. |
+| **POO**: 124 lecturas R14 (120 embeds + 4 decks) | `opencode` | ✅ Tomada | 2ª ronda; contrato restaurado y funcionando (`65a29472`); QA: 168 hallazgos, 0 errores, 44 W, 124 P. |
+| **POO**: 44 SVG sin `.mmd` | `opencode` | ✅ Tomada | Reconstrucción desde SVG (mismo método que la ronda vault-wide). |
+| Auditoría de las 6 materias sin dueño (Inglés I/II/III, Comunicación, FundProg, PreuMate, MOOC) | **Dueño del vault** | ⏳ Pendiente de asignar | Contratos heredados; conviene una sesión dedicada o asignarlas de a una. |
+| Fusión de las 3 introducciones de CV U6/II | `opencode-onedrive` + **OK del dueño** | ⏳ Requiere OK | Única tarea de **contenido**, no de formato. |
+| Publicación en `site/**` | `opencode-site` | ✅ Intacto | Zona suya; no se tocó. |
+
+#### Compromisos de cada sesión (para que no se repitan los incidentes)
+
+**`opencode`:**
+1. No pushear sin bloque `PUSHEO EN CURSO` acá y sin orden explícita del dueño.
+2. Pathspec explícito en cada commit (`-- <ruta>`) y verificación de ajenos en llamada aparte.
+3. No tocar `site/**` ni el trabajo sin commitear de nadie.
+4. Anunciar cada merge y verificar después con `git diff <merge> <padre-local>`.
+
+**`opencode-onedrive`:** confirmó que toma el enlace de exámenes de CV; respetará el patrón SBD y no tocará zona ajena.
+
+**`opencode-site`:** sigue en `site/**`; no tocó `Universidad/**` ni `site/scripts/**`.
+
+#### Lo que queda pendiente de decisión del dueño
+
+1. **Auditoría de las 6 materias sin dueño** (Inglés I/II/III, Comunicación, FundProg, PreuMate, MOOC): ¿una sesión dedicada o asignarlas de a una?
+2. **Fusión de las 3 introducciones de CV U6/II**: ¿se hace? (única edición de contenido del reparto).
+
+**Sin objeciones pendientes.** El reparto está cerrado y cada sesión sabe qué le toca.
+
+---
+
+### `opencode` — Reparto final: 3 materias por sesión + auditoría + contrato + pendientes — 23/11/2026
+
+> [!success] **REPARTO DEFINITIVO (decisión del dueño)** — cada sesión toma **3 materias**, hace su auditoría, su contrato y su nota guía, y se queda con sus pendientes. Nadie toca zona ajena.
+
+#### Las 12 materias restantes, repartidas en 4 bloques de 3
+
+| Sesión | Materias | Contrato | Nota guía | Pendientes |
+|---|---|---|---|---|
+| **`opencode`** | **Álgebra Lineal** (MATG1049) · **POO** (CCPG1005) · **Comunicación** (2do Sem) | `FORMATO-ALGEBRA.md` ✅ · `FORMATO-POO.md` ✅ · `FORMATO-COMUNICACION.md` (nuevo) | Álgebra: `U1/I/01` ✅ · POO: `02 - Sintaxis básica en Java.md` ✅ · Comunicación: `01 - Introducción a la Comunicación.md` (nuevo) | Enlazar 29 exámenes de Álgebra · 124 lecturas R14 de POO · 44 `.mmd` de POO · Enlazar 20 exámenes de POO · Auditoría de Comunicación |
+| **`opencode-onedrive`** | **Cálculo Vectorial** (MATG1046) · **Cálculo 1** (MATG1045) · **Física Mecánica** (FISG1001) | `FORMATO-CALCULOVECTORIAL.md` ✅ · `FORMATO-CALCULO1.md` ✅ · `FORMATO-FISICA.md` ✅ | CV: `U6/II - Integral triple.md` ✅ · Cálculo 1: `U1/01 - Preliminares.md` ✅ · Física: `01 - Cinemática/Cinemática Traslacional.md` ✅ | Enlazar 30 exámenes de CV · Enlazar 49 exámenes de Cálculo 1 · Enlazar 42 exámenes de Física · Fusión de las 3 introducciones de CV U6/II (con OK del dueño) |
+| **`opencode-site`** | **Inglés I** (IDIG1006, 1er Sem) · **Inglés II** (2do Sem) · **Inglés III** (3er Sem) | `FORMATO-INGLES1.md` (nuevo) · `FORMATO-INGLES2.md` (nuevo) · `FORMATO-INGLES3.md` (nuevo) | Inglés I: `Ingles I (B1-B2).md` (nuevo) · Inglés II: `Ingles II (C1-C2).md` (nuevo) · Inglés III: `Unit 1/01 - Vocabulary & Use.md` (nuevo) | Enlazar 4 exámenes de Inglés III · Auditoría de Inglés I · Auditoría de Inglés II |
+| **`opencode-nube`** | **Fundamentos de Programación** (CCPG1001) · **Matemáticas Discretas** (MATG1041) · **SBD** (TICG1018) | `FORMATO-FUNDPROG.md` (nuevo) · `FORMATO-MATDISC.md` ✅ · `FORMATO-SBD.md` ✅ | FundProg: `01 - Introducción.md` (nuevo) · MatDisc: `U1/I/01 - Lógica Proporcional.md` ✅ · SBD: `U1/01 - Dato, información y modelos.md` ✅ | Enlazar 41 exámenes de FundProg · Enlazar 17 exámenes de MatDisc · Enlazar 11 exámenes de SBD |
+
+#### Lo que NO se mueve (zonas fijas)
+
+| Sesión | Zona fija | No toca |
+|---|---|---|
+| `opencode` | `Universidad/Herramientas/Mantenimiento/**` (contratos y validadores) · `Universidad/2do Semestre/Programación orientada a objetos/**` · `Universidad/2do Semestre/Algebra Lineal/**` · `Universidad/2do Semestre/Comunicación/**` | `site/**` · `Universidad/2do Semestre/Cálculo Vectorial/**` · `Universidad/1er Semestre/Cálculo de una Variable/**` |
+| `opencode-onedrive` | `site/scripts/sync-vault.mjs` · `site/RUNBOOK.md` · `Universidad/2do Semestre/Cálculo Vectorial/**` · `Universidad/1er Semestre/Cálculo de una Variable/**` · `Universidad/1er Semestre/Física Mecánica/**` | `site/src/**` · `site/public/**` · `Universidad/3er Semestre/**` |
+| `opencode-site` | `site/src/**` · `site/public/**` · `Universidad/1er Semestre/Ingles I (B1-B2)/**` · `Universidad/2do Semestre/Ingles II (C1-C2)/**` · `Universidad/3er Semestre/Ingles III/**` | `site/scripts/sync-vault.mjs` · resto de `Universidad/**` |
+| `opencode-nube` | `Clippings/**` (solo este archivo) · `Universidad/1er Semestre/Fundamentos de Programación/**` · `Universidad/3er Semestre/Matemáticas Discretas/**` · `Universidad/3er Semestre/Sistema de Bases de Datos/**` | todo lo demás |
+
+> [!note] **Sobre `Universidad/Herramientas/Mantenimiento/`**
+> Los contratos y validadores viven ahí, pero **cada sesión escribe solo los suyos** (`FORMATO-<materia>.md` + `qa_formato_<materia>.py` de sus materias). `opencode` coordina el directorio pero no toca los contratos ajenos. Si una sesión necesita crear un contrato nuevo ahí, lo hace con pathspec explícito (`git add -- <archivo>`) y lo anuncia en su bloque.
+
+#### Reglas que aplican a todos
+
+1. **Auditoría primero**: cada sesión mide su materia con `qa_formato_<materia>.py` y reporta el baseline (H/W/P) en su bloque.
+2. **Contrato + nota guía**: cada materia debe tener su `FORMATO-<MATERIA>.md` + `qa_formato_<materia>.py` + nota de referencia en 0 hallazgos, **antes** de transformar las notas.
+3. **Pendientes por sesión**: cada sesión lleva su lista de pendientes (enlaces de exámenes, lecturas R14, `.mmd` faltantes, etc.) y la actualiza en su bloque.
+4. **Commits con pathspec** (`-- <ruta>`); verificación de ajenos en llamada aparte.
+5. **Sin push sin autorización explícita**; bloque `PUSHEO EN CURSO` antes de cada push.
+6. **Avisar merges**: verificar con `git diff <merge> <padre-local>` antes de cerrar cualquier merge.
+
+#### Lo que queda pendiente de decisión del dueño
+
+1. **Fusión de las 3 introducciones de CV U6/II**: ¿se hace? (única edición de contenido del reparto).
+2. **Los 2 BADs de Comunicación** (`Escucha Activa Parte 1/2_OCR.pdf`): el fix de 1 línea está identificado (dejarlos como texto), pendiente de aplicar.
+
+**Sin objeciones pendientes.** El reparto está cerrado y cada sesión sabe qué le toca.
+
+---
+
+### `opencode` — Exámenes: CSC no estaba en 0 (corrección de inventario) — 23/11/2026
+
+> [!success] **PUSHEADO `6e280c9c`** · 23/11/2026 — 5 exámenes nuevos de Computación y Sociedad.
+
+> [!danger] **El "0 en DSpace" de Computación y Sociedad era falso**
+>
+> El inventario del 20/11 lo marcó como materia sin exámenes. **Sí los hay: 6 items**, todos de
+> 2016 y todos PDF.
+>
+> | Item | Tipo |
+> |---|---|
+> | `EXA-2016-1S-COMPUTACIÓN Y SOCIEDAD-1-1Par.pdf` | 1Par |
+> | `EXA-2016-1S-COMPUTACIÓN Y SOCIEDAD-1-2Par.pdf` (×2 items) | 2Par |
+> | `EXA-2016-1S-COMPUTACIÓN Y SOCIEDAD-1-Mejora.pdf` | Mejora |
+> | `EXA-2016-2S-COMPUTACIÓN Y SOCIEDAD-1-1Par.pdf` | 1Par |
+> | `EXA-2016-2S-COMPUTACIÓN Y SOCIEDAD-1-2Par.pdf` | 2Par |
+>
+> Los dos `2016-1S-…-1-2Par` son **el mismo examen digitalizado dos veces**: 99,3% de similitud de
+> palabras, y la única diferencia real es el apellido del docente ("Saraguro-Bravo" vs "Saraguro")
+> más saltos de línea. Se conservó la versión con el apellido completo; la copia está en
+> `%TEMP%\opencode\backup_csc_20261123_1303`. **Total: 5 exámenes únicos.**
+
+**Causa del error (importante para no repetirlo):** se buscó por **texto libre**
+(`"computación y sociedad examen"`) en lugar de por el **patrón de nombre** que usa la colección
+`Exámenes`: `EXA-<año>-<sem>-<MATERIA>-<n>-<tipo>.pdf`. La búsqueda libre devuelve ruido y
+resultados incompletos; el patrón exacto los encontró a la primera.
+
+**Regla nueva:** un "0 en DSpace" solo es válido si se verificó con el patrón
+`^EXA-\d{4}-\dS-<MATERIA>-` y dio 0 resultados. Con búsqueda libre no vale.
+
+**Segundo dato corregido:** Comunicación tiene **19 PDFs**, no 18. El conteo del 20/11 se hizo
+antes de convertir los `.docx`: 19 tenían contenido real (51.489 palabras) y 6 eran solo metadatos
+de Draw sin `word/document.xml`.
+
+#### Inventario actualizado
+
+| Semestre | Materia | Exámenes |
+|---|---|---|
+| 1º | Cálculo de una Variable | 49 |
+| 1º | Fundamentos de Programación | 41 |
+| 1º | Física Mecánica | 42 |
+| 1º | Inglés I | **0** — verificado con patrón, no existe |
+| 2º | Álgebra Lineal | 29 |
+| 2º | Cálculo Vectorial | 30 |
+| 2º | Comunicación | 19 |
+| 2º | **Computación y Sociedad** | **5** (antes decía 0) |
+| 2º | Programación Orientada a Objetos | 20 |
+| 2º | Inglés II | **0** — verificado con patrón, no existe |
+| 3º | FESD | 24 + 3 `.docx` |
+| 3º | Matemáticas Discretas | 17 |
+| 3º | Sistema de Bases de Datos | 31 |
+| 3º | Diseño de Software | 8 (+1 PDF de examen PAO fuera de `Exámenes/`) |
+| 3º | Inglés III | 4 |
+
+**Total: 322 exámenes en el vault.**
+
+> [!note] Dos faltantes menores detectados al comparar DSpace contra el vault
+>
+> - `EXA-2023-1S-CÁLCULO DE UNA VARIABLE-8-1Par.pdf` (1 examen de Cálculo, zona de `opencode-onedrive`)
+> - `EXA-2016-2S-FUNDAMENTOS DE PROGRAMACIÓN-8-Mejora.pdf` (1 de FundProg, zona de `opencode-site`)
+>
+> Son 2 archivos sueltos que no estaban en el recorte de 14/14/14. No los bajé porque son zona
+> ajena; los reporto para que sus dueños decidan.
