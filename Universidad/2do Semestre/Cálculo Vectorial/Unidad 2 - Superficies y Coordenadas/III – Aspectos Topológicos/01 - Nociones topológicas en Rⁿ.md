@@ -6,7 +6,9 @@ tags: [MATG1046, unidad2, nociones, topologicas, nociones-topologicas]
 
 ## 🎯 Introducción
 
-> [!info] 💡 Introducción a la Topología de ℝⁿ La **topología** es la rama de las matemáticas que estudia las propiedades de los espacios que se preservan bajo deformaciones continuas. En ℝⁿ, la topología proporciona un marco riguroso para conceptos intuitivos como "cercanía", "continuidad" y "límite".
+> [!info] 💡 Introducción a la Topología de ℝⁿ
+>
+> La **topología** es la rama de las matemáticas que estudia las propiedades de los espacios que se preservan bajo deformaciones continuas. En ℝⁿ, la topología proporciona un marco riguroso para conceptos intuitivos como "cercanía", "continuidad" y "límite".
 >
 > **Analogías útiles:**
 >

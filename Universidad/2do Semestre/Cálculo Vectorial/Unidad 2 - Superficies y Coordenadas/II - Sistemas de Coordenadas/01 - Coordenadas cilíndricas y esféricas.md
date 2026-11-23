@@ -6,7 +6,9 @@ tags: [MATG1046, unidad2, coordenadas, cilindricas, esfericas]
 
 ## 🎯 Introducción
 
-> [!info] 💡 Introducción a los Sistemas de Coordenadas Curvilíneos Los **sistemas de coordenadas cilíndricas y esféricas** son extensiones naturales del sistema cartesiano que aprovechan las simetrías geométricas de ciertos problemas. Mientras que las coordenadas cartesianas (x, y, z) son ideales para geometría rectangular, las coordenadas curvilíneas simplifican enormemente problemas con simetría circular o esférica.
+> [!info] 💡 Introducción a los Sistemas de Coordenadas Curvilíneos
+>
+> Los **sistemas de coordenadas cilíndricas y esféricas** son extensiones naturales del sistema cartesiano que aprovechan las simetrías geométricas de ciertos problemas. Mientras que las coordenadas cartesianas (x, y, z) son ideales para geometría rectangular, las coordenadas curvilíneas simplifican enormemente problemas con simetría circular o esférica.
 >
 > **Analogías útiles:**
 >

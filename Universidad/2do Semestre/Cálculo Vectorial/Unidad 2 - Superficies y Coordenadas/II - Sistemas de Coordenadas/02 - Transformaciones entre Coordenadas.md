@@ -122,7 +122,9 @@ tags: [MATG1046, unidad2, transformaciones, coordenadas, transformaciones-entre]
 
 ## 🎯 Sistemas de Coordenadas Alternativos
 
-> [!info] 💡 Introducción a los Sistemas de Coordenadas Además del **sistema cartesiano** (x, y, z), existen otros sistemas de coordenadas que simplifican la descripción de ciertos problemas geométricos y físicos. Los más importantes son:
+> [!info] 💡 Introducción a los Sistemas de Coordenadas
+>
+> Además del **sistema cartesiano** (x, y, z), existen otros sistemas de coordenadas que simplifican la descripción de ciertos problemas geométricos y físicos. Los más importantes son:
 >
 > **Sistemas principales:**
 >
@@ -164,7 +166,9 @@ tags: [MATG1046, unidad2, transformaciones, coordenadas, transformaciones-entre]
 
 ### 🔄 Transformaciones Cartesianas ↔ Cilíndricas
 
-> [!warning] 🔷 Fórmulas de Conversión#### **De Cilíndricas a Cartesianas**
+> [!warning] 🔷 Fórmulas de Conversión####
+>
+> **De Cilíndricas a Cartesianas**
 >
 > **Dadas coordenadas cilíndricas (ρ, φ, z):**
 >
@@ -773,7 +777,9 @@ tags: [MATG1046, unidad2, transformaciones, coordenadas, transformaciones-entre]
 
 ## 📝 Ejercicios Propuestos
 
-> [!question] 💪 Práctica Completa### **** 🟢
+> [!question] 💪 Práctica Completa###
+>
+> **** 🟢
 >
 > **Nivel 1 - Básico**
 >

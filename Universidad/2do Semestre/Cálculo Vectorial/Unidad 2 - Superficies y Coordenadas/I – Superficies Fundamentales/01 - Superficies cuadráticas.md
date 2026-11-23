@@ -6,7 +6,9 @@ tags: [MATG1046, unidad2, superficies, cuadraticas, superficies-cuadraticas]
 
 ## 🎯 Introducción
 
-> [!info] 💡 Introducción a las Superficies de Segundo Grado Las **superficies cuadráticas** son superficies tridimensionales definidas por ecuaciones polinómicas de segundo grado en las variables x, y, z. Constituyen una extensión natural de las cónicas (elipse, hipérbola, parábola) al espacio tridimensional y son fundamentales en geometría analítica, física, ingeniería y computación gráfica.
+> [!info] 💡 Introducción a las Superficies de Segundo Grado
+>
+> Las **superficies cuadráticas** son superficies tridimensionales definidas por ecuaciones polinómicas de segundo grado en las variables x, y, z. Constituyen una extensión natural de las cónicas (elipse, hipérbola, parábola) al espacio tridimensional y son fundamentales en geometría analítica, física, ingeniería y computación gráfica.
 >
 > **Analogías útiles:**
 >
@@ -30,7 +32,9 @@ tags: [MATG1046, unidad2, superficies, cuadraticas, superficies-cuadraticas]
 
 ### 📊 Ecuación General de una Cuádrica
 
-> [!note] 🌟 Forma General La ecuación más general de una superficie cuádrica en ℝ³ es:
+> [!note] 🌟 Forma General
+>
+> La ecuación más general de una superficie cuádrica en ℝ³ es:
 >
 > $$Ax^2 + By^2 + Cz^2 + Dxy + Exz + Fyz + Gx + Hy + Iz + J = 0$$
 >

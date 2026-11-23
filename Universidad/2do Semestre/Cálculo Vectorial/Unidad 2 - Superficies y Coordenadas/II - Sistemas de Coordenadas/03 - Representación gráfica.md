@@ -6,7 +6,9 @@ tags: [calculo-vectorial, coordenadas, graficas]
 
 ## 🎯 Introducción
 
-> [!info] 💡 Importancia de la Representación Gráfica La **visualización geométrica** de los sistemas de coordenadas cilíndricas y esféricas es fundamental para:
+> [!info] 💡 Importancia de la Representación Gráfica
+>
+> La **visualización geométrica** de los sistemas de coordenadas cilíndricas y esféricas es fundamental para:
 >
 > **Objetivos de aprendizaje:**
 >
@@ -58,7 +60,9 @@ tags: [calculo-vectorial, coordenadas, graficas]
 
 ### 📐 Componentes del Sistema Cilíndrico
 
-> [!note] 🌟 Anatomía de las Coordenadas Cilíndricas **Los tres parámetros (ρ, φ, z):**
+> [!note] 🌟 Anatomía de las Coordenadas Cilíndricas
+>
+> **Los tres parámetros (ρ, φ, z):**
 >
 > **1. Radio cilíndrico (ρ):**
 >
@@ -137,7 +141,9 @@ tags: [calculo-vectorial, coordenadas, graficas]
 
 ### 🎨 Superficies Coordenadas Cilíndricas
 
-> [!warning] 📊 Familias de Superficies Las **superficies coordenadas** se obtienen fijando una de las tres coordenadas:
+> [!warning] 📊 Familias de Superficies
+>
+> Las **superficies coordenadas** se obtienen fijando una de las tres coordenadas:
 >
 > #### **1. Superficies ρ = constante**
 > **Ecuación:** ρ = k (k > 0)
@@ -279,7 +285,9 @@ tags: [calculo-vectorial, coordenadas, graficas]
 
 ### 📏 Líneas Coordenadas Cilíndricas
 
-> [!tip] 🔗 Curvas de Intersección Las **líneas coordenadas** son las intersecciones de dos superficies coordenadas:
+> [!tip] 🔗 Curvas de Intersección
+>
+> Las **líneas coordenadas** son las intersecciones de dos superficies coordenadas:
 >
 > #### **1. Líneas radiales (ρ variable, φ y z fijos)
 > **
@@ -399,7 +407,9 @@ tags: [calculo-vectorial, coordenadas, graficas]
 
 ### 🎯 Vectores Unitarios en Cilíndricas
 
-> [!success] ➡️ Base Ortonormal Local En coordenadas cilíndricas, la base ortonormal **varía con la posición**:
+> [!success] ➡️ Base Ortonormal Local
+>
+> En coordenadas cilíndricas, la base ortonormal **varía con la posición**:
 >
 > **1. Vector radial unitario (êρ):**
 >
@@ -482,7 +492,9 @@ tags: [calculo-vectorial, coordenadas, graficas]
 
 ### 📐 Componentes del Sistema Esférico
 
-> [!note] 🌟 Anatomía de las Coordenadas Esféricas **Los tres parámetros (r, θ, φ):**
+> [!note] 🌟 Anatomía de las Coordenadas Esféricas
+>
+> **Los tres parámetros (r, θ, φ):**
 >
 > **1. Radio esférico (r):**
 >
@@ -863,7 +875,9 @@ tags: [calculo-vectorial, coordenadas, graficas]
 
 ### 🎯 Vectores Unitarios en Esféricas
 
-> [!success] ➡️ Base Ortonormal Local Esférica En coordenadas esféricas, la base ortonormal **varía con la posición**:
+> [!success] ➡️ Base Ortonormal Local Esférica
+>
+> En coordenadas esféricas, la base ortonormal **varía con la posición**:
 >
 > **1. Vector radial unitario (êr):**
 >

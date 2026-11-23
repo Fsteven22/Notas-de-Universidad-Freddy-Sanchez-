@@ -6,7 +6,9 @@ tags: [MATG1046, unidad2, superficies, revolucion, superficies-revolucion]
 
 ## 🎯 Introducción
 
-> [!info] 💡 Introducción a las Superficies Generadas por Rotación Las **superficies de revolución** son superficies tridimensionales generadas al rotar una curva plana (llamada **generatriz**) alrededor de un eje fijo (llamado **eje de revolución**). Estas superficies poseen simetría rotacional y son fundamentales en geometría, física, ingeniería y diseño industrial.
+> [!info] 💡 Introducción a las Superficies Generadas por Rotación
+>
+> Las **superficies de revolución** son superficies tridimensionales generadas al rotar una curva plana (llamada **generatriz**) alrededor de un eje fijo (llamado **eje de revolución**). Estas superficies poseen simetría rotacional y son fundamentales en geometría, física, ingeniería y diseño industrial.
 >
 > **Analogías útiles:**
 >

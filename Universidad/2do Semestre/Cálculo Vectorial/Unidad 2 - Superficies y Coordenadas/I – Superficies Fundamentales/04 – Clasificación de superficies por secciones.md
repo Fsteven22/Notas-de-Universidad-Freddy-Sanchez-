@@ -6,7 +6,9 @@ tags: [MATG1046, unidad2, clasificacion, superficies, secciones]
 
 ## 🎯 Introducción
 
-> [!info] 💡 Cómo las Secciones Determinan el Tipo de Superficie La **clasificación de superficies por secciones** es un método sistemático donde **el patrón de las curvas obtenidas al cortar la superficie determina inequívocamente su tipo**.
+> [!info] 💡 Cómo las Secciones Determinan el Tipo de Superficie
+>
+> La **clasificación de superficies por secciones** es un método sistemático donde **el patrón de las curvas obtenidas al cortar la superficie determina inequívocamente su tipo**.
 >
 > **Principio fundamental:**
 >
