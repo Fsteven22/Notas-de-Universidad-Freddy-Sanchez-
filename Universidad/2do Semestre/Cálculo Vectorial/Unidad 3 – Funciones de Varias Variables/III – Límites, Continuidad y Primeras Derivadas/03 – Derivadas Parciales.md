@@ -481,7 +481,9 @@ tags: [derivadas, parciales, derivadas-parciales]
 
 ### Ejemplo 8: Verificación del Teorema de Schwarz
 
-> [!example] 📝 Ejemplo 8: Comprobar $f_{xy} = f_{yx}$
+> [!example] 📝 Ejemplo 8: Comprobar
+>
+> $f_{xy} = f_{yx}$
 >
 > **Función:** $$f(x,y) = e^{x^2y}$$
 >
@@ -525,7 +527,9 @@ tags: [derivadas, parciales, derivadas-parciales]
 
 ## 📊 Derivadas Parciales en Tres Variables
 
-> [!note] 🎲 Extensión a $\mathbb{R}^3$
+> [!note] 🎲 Extensión a
+>
+> $\mathbb{R}^3$
 >
 > Para una función $f(x,y,z)$, tenemos **tres derivadas parciales de primer orden:**
 >
@@ -561,7 +565,9 @@ tags: [derivadas, parciales, derivadas-parciales]
 
 ### Ejemplo 9: Función de Tres Variables
 
-> [!example] 📝 Ejemplo 9: Derivadas en $\mathbb{R}^3$
+> [!example] 📝 Ejemplo 9: Derivadas en
+>
+> $\mathbb{R}^3$
 >
 > **Función:** $$f(x,y,z) = x^2yz + xy^2z + xyz^2$$
 >

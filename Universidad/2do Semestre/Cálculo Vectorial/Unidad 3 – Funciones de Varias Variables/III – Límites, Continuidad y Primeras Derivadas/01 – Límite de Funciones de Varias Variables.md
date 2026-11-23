@@ -414,7 +414,9 @@ tags: [limite, funciones, varias]
 
 ## 📚 Ejemplos Detallados
 
-> [!example] 📝 Ejemplo 11: Límite con Indeterminación $\frac{0}{0}$
+> [!example] 📝 Ejemplo 11: Límite con Indeterminación
+>
+> $\frac{0}{0}$
 >
 > $$\lim_{(x,y) \to (0,0)} \frac{x^3 + y^3}{x^2 + y^2}$$
 >
@@ -568,7 +570,9 @@ tags: [limite, funciones, varias]
 
 ## 🌟 Límites en Tres Variables
 
-> [!note] 🎲 Extensión a $\mathbb{R}^3$
+> [!note] 🎲 Extensión a
+>
+> $\mathbb{R}^3$
 >
 > ### Definición
 >

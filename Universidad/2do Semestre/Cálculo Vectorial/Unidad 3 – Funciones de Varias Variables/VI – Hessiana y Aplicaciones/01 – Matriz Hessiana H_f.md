@@ -155,7 +155,9 @@ tags: [matriz, hessiana, matriz-hessiana]
 
 ### Caso 1: Funciones de Dos Variables
 
-> [!example] 📊 Hessiana en $\mathbb{R}^2$
+> [!example] 📊 Hessiana en
+>
+> $\mathbb{R}^2$
 >
 > **Función:** $f(x,y)$
 >
@@ -204,7 +206,9 @@ tags: [matriz, hessiana, matriz-hessiana]
 
 ### Caso 2: Funciones de Tres Variables
 
-> [!example] 📊 Hessiana en $\mathbb{R}^3$
+> [!example] 📊 Hessiana en
+>
+> $\mathbb{R}^3$
 >
 > **Función:** $f(x,y,z)$
 >
@@ -564,7 +568,9 @@ tags: [matriz, hessiana, matriz-hessiana]
 
 ## 🎯 Criterio de Sylvester (Generalización)
 
-> [!note] 📐 Criterio para $n$ Variables
+> [!note] 📐 Criterio para
+>
+> $n$ Variables
 >
 > Para una función $f: \mathbb{R}^n \to \mathbb{R}$ con matriz hessiana $H_f$, definimos los **menores principales líderes**:
 >

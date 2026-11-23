@@ -976,7 +976,9 @@ tags: [derivadas, orden, superior]
 
 ### Ejemplo 11: Caso Indeterminado
 
-> [!example] 📝 Ejemplo 11: Cuando $D = 0$
+> [!example] 📝 Ejemplo 11: Cuando
+>
+> $D = 0$
 >
 > **Función:** $$f(x,y) = x^4 + y^4$$
 >
@@ -1267,7 +1269,9 @@ tags: [derivadas, orden, superior]
 
 ### Ejemplo 14: Aproximación en Punto No Trivial
 
-> [!example] 📝 Ejemplo 14: Taylor alrededor de $(1,2)$
+> [!example] 📝 Ejemplo 14: Taylor alrededor de
+>
+> $(1,2)$
 >
 > **Función:** $$f(x,y) = x^2y + y^2$$
 >
@@ -1363,7 +1367,9 @@ tags: [derivadas, orden, superior]
 
 ### Ejemplo 15: Función en Tres Variables
 
-> [!example] 📝 Ejemplo 15: Cálculo en $\mathbb{R}^3$
+> [!example] 📝 Ejemplo 15: Cálculo en
+>
+> $\mathbb{R}^3$
 >
 > **Función:** $$f(x,y,z) = x^2y + y^2z + z^2x$$
 >

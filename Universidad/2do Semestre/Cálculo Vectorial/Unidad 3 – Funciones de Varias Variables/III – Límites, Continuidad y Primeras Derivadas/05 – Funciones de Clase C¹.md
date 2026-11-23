@@ -1655,7 +1655,9 @@ tags: [funciones, clase, funciones-clase]
 
 ## 🌐 Extensión a Funciones Vectoriales
 
-> [!note] 🎯 C¹ para Funciones $\mathbb{R}^n \to \mathbb{R}^m$
+> [!note] 🎯 C¹ para Funciones
+>
+> $\mathbb{R}^n \to \mathbb{R}^m$
 >
 > ### Definición para Funciones Vectoriales
 >

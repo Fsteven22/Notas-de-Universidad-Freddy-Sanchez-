@@ -2179,7 +2179,9 @@ tags: [gradiente, derivadas, direccionales]
 
 ## 🔄 Derivadas Direccionales en Tres Variables
 
-> [!note] 🎲 Extensión a $\mathbb{R}^3$
+> [!note] 🎲 Extensión a
+>
+> $\mathbb{R}^3$
 >
 > ### Definición
 >

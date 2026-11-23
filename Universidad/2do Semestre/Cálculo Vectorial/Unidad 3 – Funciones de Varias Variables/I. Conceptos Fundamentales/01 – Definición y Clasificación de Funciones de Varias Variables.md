@@ -6,7 +6,9 @@ tags: [definicion, clasificacion, funciones]
 
 ## 🎯 Introducción
 
-> [!info] 💡 Del Cálculo de Una Variable al Cálculo Multivariable Hasta ahora hemos trabajado con funciones de **una variable**: $f(x) = x^2$, donde tenemos una entrada y una salida.
+> [!info] 💡 Del Cálculo de Una Variable al Cálculo Multivariable
+>
+> Hasta ahora hemos trabajado con funciones de **una variable**: $f(x) = x^2$, donde tenemos una entrada y una salida.
 >
 > Ahora extendemos estos conceptos a funciones de **varias variables**: $f(x,y) = x^2 + y^2$, donde tenemos múltiples entradas.
 >
@@ -41,7 +43,9 @@ tags: [definicion, clasificacion, funciones]
 
 ### 🔍 Definición
 
-> [!example] 🟢 Función Escalar: $f: \mathbb{R}^n \to \mathbb{R}$
+> [!example] 🟢 Función Escalar:
+>
+> $f: \mathbb{R}^n \to \mathbb{R}$
 >
 > **Definición formal:** Una **función escalar de $n$ variables** es una regla que asigna a cada punto $(x_1, x_2, ..., x_n)$ en $\mathbb{R}^n$ exactamente **un número real** $w$.
 >
@@ -195,7 +199,9 @@ tags: [definicion, clasificacion, funciones]
 
 ### 🔍 Definición
 
-> [!example] 🔵 Función Vectorial: $\vec{F}: \mathbb{R}^n \to \mathbb{R}^m$
+> [!example] 🔵 Función Vectorial:
+>
+> $\vec{F}: \mathbb{R}^n \to \mathbb{R}^m$
 >
 > **Definición formal:** Una **función vectorial** asigna a cada punto en $\mathbb{R}^n$ un **vector** en $\mathbb{R}^m$.
 >
@@ -212,7 +218,9 @@ tags: [definicion, clasificacion, funciones]
 
 ### 📚 Ejemplos de Funciones Vectoriales
 
-> [!example] 📝 Ejemplo 1: Campo Vectorial en el Plano ($\mathbb{R}^2 \to \mathbb{R}^2$)
+> [!example] 📝 Ejemplo 1: Campo Vectorial en el Plano
+>
+> ($\mathbb{R}^2 \to \mathbb{R}^2$)
 >
 > **Función:** $\vec{F}(x,y) = \langle -y, x \rangle$
 >
@@ -233,7 +241,9 @@ tags: [definicion, clasificacion, funciones]
 > **Interpretación física:** Este campo vectorial representa una **rotación antihoraria** alrededor del origen. Imagina un fluido girando.
 >
 
-> [!example] 📝 Ejemplo 2: Curva Parametrizada ($\mathbb{R} \to \mathbb{R}^2$)
+> [!example] 📝 Ejemplo 2: Curva Parametrizada
+>
+> ($\mathbb{R} \to \mathbb{R}^2$)
 >
 > **Función:** $\vec{r}(t) = \langle \cos(t), \sin(t) \rangle$
 >
@@ -254,7 +264,9 @@ tags: [definicion, clasificacion, funciones]
 > **Verificación:** $$x^2 + y^2 = \cos^2(t) + \sin^2(t) = 1$$
 >
 
-> [!example] 📝 Ejemplo 3: Hélice en el Espacio ($\mathbb{R} \to \mathbb{R}^3$)
+> [!example] 📝 Ejemplo 3: Hélice en el Espacio
+>
+> ($\mathbb{R} \to \mathbb{R}^3$)
 >
 > **Función:** $\vec{r}(t) = \langle \cos(t), \sin(t), t \rangle$
 >
@@ -278,7 +290,9 @@ tags: [definicion, clasificacion, funciones]
 > **Aplicación:** Modelo del resorte, escalera de caracol, ADN.
 >
 
-> [!example] 📝 Ejemplo 4: Campo Gravitatorio ($\mathbb{R}^3 \to \mathbb{R}^3$)
+> [!example] 📝 Ejemplo 4: Campo Gravitatorio
+>
+> ($\mathbb{R}^3 \to \mathbb{R}^3$)
 >
 > **Función:** $$\vec{F}(x,y,z) = -\frac{GM}{(x^2+y^2+z^2)^{3/2}}\langle x, y, z \rangle$$
 >
@@ -301,7 +315,9 @@ tags: [definicion, clasificacion, funciones]
 > **Interpretación física:** Describe el campo gravitatorio creado por un objeto masivo en el origen.
 >
 
-> [!example] 📝 Ejemplo 5: Campo de Velocidades ($\mathbb{R}^2 \to \mathbb{R}^2$)
+> [!example] 📝 Ejemplo 5: Campo de Velocidades
+>
+> ($\mathbb{R}^2 \to \mathbb{R}^2$)
 >
 > **Función:** $\vec{v}(x,y) = \langle 2y, -x \rangle$
 >
@@ -316,7 +332,9 @@ tags: [definicion, clasificacion, funciones]
 > **Aplicación:** Modelar corrientes de agua, viento, campos eléctricos.
 >
 
-> [!example] 📝 Ejemplo 6: Transformación Lineal ($\mathbb{R}^2 \to \mathbb{R}^2$)
+> [!example] 📝 Ejemplo 6: Transformación Lineal
+>
+> ($\mathbb{R}^2 \to \mathbb{R}^2$)
 >
 > **Función:** $\vec{T}(x,y) = \langle 2x + y, x - 3y \rangle$
 >

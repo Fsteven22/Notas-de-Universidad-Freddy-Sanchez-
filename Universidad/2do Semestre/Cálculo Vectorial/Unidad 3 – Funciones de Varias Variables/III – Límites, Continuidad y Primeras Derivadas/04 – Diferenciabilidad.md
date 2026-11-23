@@ -2244,7 +2244,9 @@ tags: [diferenciabilidad, plano, tangente]
 
 ### 🔄 Recordatorio: Caso Unidimensional
 
-> [!note] 📊 Diferenciabilidad en $\mathbb{R}$
+> [!note] 📊 Diferenciabilidad en
+>
+> $\mathbb{R}$
 >
 > ### Definición
 >

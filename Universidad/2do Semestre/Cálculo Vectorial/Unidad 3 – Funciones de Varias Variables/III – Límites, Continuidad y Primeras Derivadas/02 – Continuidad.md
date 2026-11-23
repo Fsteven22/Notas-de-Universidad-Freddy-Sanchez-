@@ -1445,7 +1445,9 @@ tags: [continuidad, varias, variables]
 
 ## 🔄 Extensión a Tres Variables
 
-> [!note] 🎲 Continuidad en $\mathbb{R}^3$
+> [!note] 🎲 Continuidad en
+>
+> $\mathbb{R}^3$
 >
 > ### Definición
 >

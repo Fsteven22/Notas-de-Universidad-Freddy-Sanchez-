@@ -6,7 +6,9 @@ tags: [grafico, funcion, grafico-funcion]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Cómo Visualizar Funciones de Dos Variables? En funciones de **una variable** $y = f(x)$, la gráfica es una **curva** en el plano $\mathbb{R}^2$.
+> [!info] 💡 ¿Cómo Visualizar Funciones de Dos Variables?
+>
+> En funciones de **una variable** $y = f(x)$, la gráfica es una **curva** en el plano $\mathbb{R}^2$.
 >
 > En funciones de **dos variables** $z = f(x,y)$, la gráfica es una **superficie** en el espacio $\mathbb{R}^3$.
 >
@@ -48,7 +50,9 @@ tags: [grafico, funcion, grafico-funcion]
 
 ### 🎯 Ejes Cartesianos en el Espacio
 
-> [!example] 🟢 El Espacio Tridimensional $\mathbb{R}^3$
+> [!example] 🟢 El Espacio Tridimensional
+>
+> $\mathbb{R}^3$
 >
 > **Sistema de coordenadas:**
 >
@@ -600,7 +604,9 @@ tags: [grafico, funcion, grafico-funcion]
 
 ## 📊 Ejemplo Completo Paso a Paso
 
-> [!example] 🎓 Análisis Detallado: $z = 9 - x^2 - y^2$
+> [!example] 🎓 Análisis Detallado:
+>
+> $z = 9 - x^2 - y^2$
 >
 > **Paso 1: Dominio**
 >

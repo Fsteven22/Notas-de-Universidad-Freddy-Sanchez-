@@ -6,7 +6,9 @@ tags: [derivadas, funciones, compuestas]
 
 ## 🎯 Introducción
 
-> [!info] 💡 Introducción a la Derivación de Funciones Compuestas Las **derivadas de funciones compuestas** en notación matricial extienden la regla de la cadena del cálculo univariado al contexto multivariable. Son fundamentales para entender cómo se propagan los cambios a través de transformaciones sucesivas.
+> [!info] 💡 Introducción a la Derivación de Funciones Compuestas
+>
+> Las **derivadas de funciones compuestas** en notación matricial extienden la regla de la cadena del cálculo univariado al contexto multivariable. Son fundamentales para entender cómo se propagan los cambios a través de transformaciones sucesivas.
 >
 > **Analogías útiles:**
 >
@@ -82,7 +84,9 @@ tags: [derivadas, funciones, compuestas]
 
 ### 📊 Enunciado General
 
-> [!warning] 📢 Teorema Fundamental de la Composición **Teorema (Regla de la Cadena):**
+> [!warning] 📢 Teorema Fundamental de la Composición
+>
+> **Teorema (Regla de la Cadena):**
 >
 > Si g: ℝⁿ → ℝᵐ es diferenciable en **x₀** y f: ℝᵐ → ℝᵖ es diferenciable en **y₀ = g(x₀)**, entonces la composición h = f ∘ g es diferenciable en **x₀** y:
 >
@@ -112,7 +116,9 @@ tags: [derivadas, funciones, compuestas]
 
 ### 🧮 Forma Explícita con Componentes
 
-> [!example] 📝 Expresión Detallada de la Regla de la Cadena **Caso general:**
+> [!example] 📝 Expresión Detallada de la Regla de la Cadena
+>
+> **Caso general:**
 >
 > Sea h(x) = f(g(x)) donde:
 >
@@ -146,7 +152,9 @@ tags: [derivadas, funciones, compuestas]
 
 ### 🔵 Caso 1: Función Escalar de Función Vectorial (ℝⁿ → ℝ)
 
-> [!success] 🎯 Composición que Resulta en Escalar **Configuración:**
+> [!success] 🎯 Composición que Resulta en Escalar
+>
+> **Configuración:**
 >
 > ```
 > g: ℝⁿ → ℝᵐ    (función vectorial)
@@ -197,7 +205,9 @@ tags: [derivadas, funciones, compuestas]
 
 ### 🟢 Caso 2: Función Vectorial de Función Vectorial (ℝⁿ → ℝᵖ)
 
-> [!tip] 🔗 Composición General Vectorial **Configuración:**
+> [!tip] 🔗 Composición General Vectorial
+>
+> **Configuración:**
 >
 > ```
 > g: ℝⁿ → ℝᵐ    (función vectorial)
@@ -254,7 +264,9 @@ tags: [derivadas, funciones, compuestas]
 
 ### 🟡 Caso 3: Cadena de Tres o Más Funciones
 
-> [!warning] ⛓️ Composiciones Múltiples **Configuración:**
+> [!warning] ⛓️ Composiciones Múltiples
+>
+> **Configuración:**
 >
 > ```
 > g: ℝⁿ → ℝᵐ
@@ -318,7 +330,9 @@ tags: [derivadas, funciones, compuestas]
 
 ### 📐 Notación de Leibniz
 
-> [!note] ✍️ Forma Clásica de las Derivadas **Para h(x₁, ..., xₙ) = f(g₁(x), ..., gₘ(x)):**
+> [!note] ✍️ Forma Clásica de las Derivadas
+>
+> **Para h(x₁, ..., xₙ) = f(g₁(x), ..., gₘ(x)):**
 >
 > **La derivada parcial de h respecto a x_j:**
 >
@@ -350,7 +364,9 @@ tags: [derivadas, funciones, compuestas]
 
 ### 🌲 Diagrama de Árbol de Dependencias
 
-> [!example] 🌳 Visualización de Variables Dependientes **Ejemplo: z = f(x, y) donde x = g(t), y = h(t)**
+> [!example] 🌳 Visualización de Variables Dependientes
+>
+> **Ejemplo: z = f(x, y) donde x = g(t), y = h(t)**
 >
 > ```
 >                     z
@@ -391,7 +407,9 @@ tags: [derivadas, funciones, compuestas]
 
 ### 🔀 Variables Independientes vs Dependientes
 
-> [!warning] ⚠️ Cuidado con la Notación Ambigua **Problema común:**
+> [!warning] ⚠️ Cuidado con la Notación Ambigua
+>
+> **Problema común:**
 >
 > La notación ∂f/∂x puede significar cosas diferentes según el contexto.
 >
@@ -898,7 +916,9 @@ tags: [derivadas, funciones, compuestas]
 
 ### 📐 Cambio de Coordenadas
 
-> [!note] 🔄 Transformaciones entre Sistemas de Coordenadas **Aplicación fundamental:** Expresar funciones y derivadas en diferentes sistemas coordenados.
+> [!note] 🔄 Transformaciones entre Sistemas de Coordenadas
+>
+> **Aplicación fundamental:** Expresar funciones y derivadas en diferentes sistemas coordenados.
 >
 > ---
 >

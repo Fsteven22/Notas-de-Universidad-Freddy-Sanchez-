@@ -6,7 +6,9 @@ tags: [interpretacion, geometrica, plano]
 
 ## 🎯 Introducción
 
-> [!info] 💡 Introducción al Plano Tangente La **interpretación geométrica del plano tangente** es fundamental para entender cómo las funciones de varias variables se comportan localmente. Mientras que en cálculo de una variable la derivada nos da la **pendiente de la recta tangente**, en ℝ³ las derivadas parciales nos permiten construir un **plano tangente** que aproxima la superficie cerca de un punto.
+> [!info] 💡 Introducción al Plano Tangente
+>
+> La **interpretación geométrica del plano tangente** es fundamental para entender cómo las funciones de varias variables se comportan localmente. Mientras que en cálculo de una variable la derivada nos da la **pendiente de la recta tangente**, en ℝ³ las derivadas parciales nos permiten construir un **plano tangente** que aproxima la superficie cerca de un punto.
 >
 > **Analogías útiles:**
 >
@@ -277,7 +279,9 @@ tags: [interpretacion, geometrica, plano]
 
 ### 🎨 Visualización Geométrica
 
-> [!note] 🌄 La Superficie y su Plano Tangente **Contexto:**
+> [!note] 🌄 La Superficie y su Plano Tangente
+>
+> **Contexto:**
 >
 > Consideremos una superficie definida por una función z = f(x, y) en ℝ³.
 >
@@ -309,7 +313,9 @@ tags: [interpretacion, geometrica, plano]
 
 ### 📏 Ecuación del Plano Tangente
 
-> [!warning] 📐 Fórmula Fundamental **Dada una función z = f(x, y) diferenciable en el punto (x₀, y₀):**
+> [!warning] 📐 Fórmula Fundamental
+>
+> **Dada una función z = f(x, y) diferenciable en el punto (x₀, y₀):**
 >
 > **El plano tangente a la superficie en P₀ = (x₀, y₀, f(x₀, y₀)) tiene ecuación:**
 >
@@ -344,7 +350,9 @@ tags: [interpretacion, geometrica, plano]
 
 ### 🔍 Derivación de la Ecuación
 
-> [!tip] 🧮 ¿De dónde viene la fórmula? **Método 1: Usando las rectas tangentes**
+> [!tip] 🧮 ¿De dónde viene la fórmula?
+>
+> **Método 1: Usando las rectas tangentes**
 >
 > **Paso 1 - Curva en dirección x:**
 >
@@ -406,7 +414,9 @@ tags: [interpretacion, geometrica, plano]
 
 ### 📊 Ejemplos Detallados
 
-> [!example] 🎯 Casos Resueltos Paso a Paso **Ejemplo 1: Paraboloide simple**
+> [!example] 🎯 Casos Resueltos Paso a Paso
+>
+> **Ejemplo 1: Paraboloide simple**
 >
 > Encontrar el plano tangente a z = f(x, y) = x² + y² en el punto (1, 2, 5).
 >
@@ -526,7 +536,9 @@ tags: [interpretacion, geometrica, plano]
 
 ### 🔢 Ejemplos de Aproximación
 
-> [!example] 💡 Aplicaciones Prácticas **Ejemplo 1: Estimación simple**
+> [!example] 💡 Aplicaciones Prácticas
+>
+> **Ejemplo 1: Estimación simple**
 >
 > Usar aproximación lineal para estimar f(2.1, 3.05) si f(x, y) = x²y y conocemos f y sus derivadas en (2, 3).
 >
@@ -664,7 +676,9 @@ tags: [interpretacion, geometrica, plano]
 
 ### 📊 Comparación Visual
 
-> [!tip] 👁️ Diferencias y Similitudes **Cerca del punto de tangencia:**
+> [!tip] 👁️ Diferencias y Similitudes
+>
+> **Cerca del punto de tangencia:**
 >
 > |Distancia desde P₀|Superficie S|Plano Tangente T|Diferencia|
 > |---|---|---|---|
@@ -701,7 +715,9 @@ tags: [interpretacion, geometrica, plano]
 
 ### 🎯 Error de Aproximación
 
-> [!warning] ⚠️ Cuantificando el Error **Teorema del error:**
+> [!warning] ⚠️ Cuantificando el Error
+>
+> **Teorema del error:**
 >
 > Si f tiene derivadas parciales segundas continuas en una región alrededor de (x₀, y₀), entonces:
 >
@@ -755,7 +771,9 @@ tags: [interpretacion, geometrica, plano]
 
 ### 📐 Cálculo de Segundas Derivadas
 
-> [!example] 🎯 Ejemplos Paso a Paso **Ejemplo 1: Función polinomial**
+> [!example] 🎯 Ejemplos Paso a Paso
+>
+> **Ejemplo 1: Función polinomial**
 >
 > Calcular todas las segundas derivadas de f(x, y) = x³y² + 2xy³
 >
@@ -865,7 +883,9 @@ tags: [interpretacion, geometrica, plano]
 
 ### 🌍 Aplicaciones en Ciencias
 
-> [!tip] 🔬 Usos Prácticos **1. Física - Análisis de superficies:**
+> [!tip] 🔬 Usos Prácticos
+>
+> **1. Física - Análisis de superficies:**
 >
 > - **Óptica:** Superficies reflectantes, el plano tangente determina el ángulo de reflexión
 > - **Mecánica:** Fuerzas normales a superficies
@@ -905,7 +925,9 @@ tags: [interpretacion, geometrica, plano]
 
 ### 💼 Problemas Aplicados
 
-> [!example] 🎯 Casos Reales **Problema 1: Producción industrial**
+> [!example] 🎯 Casos Reales
+>
+> **Problema 1: Producción industrial**
 >
 > Una fábrica produce Q(x, y) = 100x⁰·⁶y⁰·⁴ unidades, donde x = trabajadores, y = horas-máquina. Actualmente x = 50, y = 80.
 >
@@ -1006,7 +1028,9 @@ tags: [interpretacion, geometrica, plano]
 
 ## 📝 Ejercicios Propuestos
 
-> [!example] 💪 Práctica Completa **** 🟢
+> [!example] 💪 Práctica Completa
+>
+> **** 🟢
 >
 > **Nivel 1 - Básico**
 >
@@ -1137,7 +1161,9 @@ tags: [interpretacion, geometrica, plano]
 
 ### 🌊 Superficies de Nivel y Gradiente
 
-> [!success] 🎯 Conexión Profunda **Superficies de nivel:**
+> [!success] 🎯 Conexión Profunda
+>
+> **Superficies de nivel:**
 >
 > Para una función F(x, y, z), una **superficie de nivel** es:
 >
@@ -1175,7 +1201,9 @@ tags: [interpretacion, geometrica, plano]
 
 ## 💡 Consejos y Errores Comunes
 
-> [!tip] 🧠 Guía de Estudio **Estrategias de aprendizaje:**
+> [!tip] 🧠 Guía de Estudio
+>
+> **Estrategias de aprendizaje:**
 >
 > 1. **Visualización 3D:**
 >     - Usar software: GeoGebra 3D, Wolfram Alpha, Desmos 3D
@@ -1303,7 +1331,9 @@ tags: [interpretacion, geometrica, plano]
 
 ## 🔗 Conexiones
 
-> [!quote] 🌟 Red de Conocimientos **Prerequisites (Prerrequisitos):**
+> [!quote] 🌟 Red de Conocimientos
+>
+> **Prerequisites (Prerrequisitos):**
 >
 > - [[02 - Vectores en R3]] - Base vectorial
 > - [[Derivadas Parciales]] - Herramienta fundamental

@@ -6,7 +6,9 @@ tags: [funciones, vectoriales, funciones-vectoriales]
 
 ## 🎯 Introducción
 
-> [!info] 💡 Concepto Fundamental Una **función vectorial** es una función que asigna a cada número real (o a números en un intervalo) un vector en el espacio.
+> [!info] 💡 Concepto Fundamental
+>
+> Una **función vectorial** es una función que asigna a cada número real (o a números en un intervalo) un vector en el espacio.
 >
 > **Definición intuitiva:**
 >
@@ -449,7 +451,9 @@ tags: [funciones, vectoriales, funciones-vectoriales]
 
 ### 🛤️ Curvas Parametrizadas
 
-> [!warning] 📍 La Función Vectorial como Curva **Concepto fundamental:**
+> [!warning] 📍 La Función Vectorial como Curva
+>
+> **Concepto fundamental:**
 >
 > Una función vectorial **r**(t) define una **curva parametrizada** en el espacio.
 >
@@ -511,7 +515,9 @@ tags: [funciones, vectoriales, funciones-vectoriales]
 
 ### 🔄 Reparametrización
 
-> [!tip] 🔀 Diferentes Parámetros para la Misma Curva **Concepto:**
+> [!tip] 🔀 Diferentes Parámetros para la Misma Curva
+>
+> **Concepto:**
 >
 > Dos funciones vectoriales diferentes pueden representar la **misma curva** con diferente parametrización.
 >
@@ -552,7 +558,9 @@ tags: [funciones, vectoriales, funciones-vectoriales]
 
 ### 📏 Límites y Continuidad
 
-> [!success] ➡️ Análisis de Funciones Vectoriales **Límite de una función vectorial:**
+> [!success] ➡️ Análisis de Funciones Vectoriales
+>
+> **Límite de una función vectorial:**
 >
 > **Definición:**
 >
@@ -702,7 +710,9 @@ tags: [funciones, vectoriales, funciones-vectoriales]
 
 ### 📐 Reglas de Derivación
 
-> [!success] 🧮 Propiedades de la Derivada Vectorial Sean **r**(t) y **s**(t) funciones vectoriales, f(t) función escalar, y c constante:
+> [!success] 🧮 Propiedades de la Derivada Vectorial Sean
+>
+> **r**(t) y **s**(t) funciones vectoriales, f(t) función escalar, y c constante:
 >
 > **1. Derivada de suma:**
 >
@@ -832,7 +842,9 @@ tags: [funciones, vectoriales, funciones-vectoriales]
 
 ### 🚀 Movimiento en el Espacio
 
-> [!warning] 📍 Posición, Velocidad y Aceleración **Interpretación física:**
+> [!warning] 📍 Posición, Velocidad y Aceleración
+>
+> **Interpretación física:**
 >
 > Si **r**(t) representa la posición de una partícula en el tiempo t:
 >

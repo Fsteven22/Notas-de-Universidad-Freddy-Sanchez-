@@ -734,7 +734,9 @@ tags: [aplicaciones, diferencial, hessiana]
 
 ### Ejemplo 12: Tres Variables
 
-> [!example] 📝 Ejemplo 12: Función en $\mathbb{R}^3$
+> [!example] 📝 Ejemplo 12: Función en
+>
+> $\mathbb{R}^3$
 >
 > **Función:** $$f(x,y,z) = x^2 + 2y^2 + 3z^2 - 2xy$$
 >

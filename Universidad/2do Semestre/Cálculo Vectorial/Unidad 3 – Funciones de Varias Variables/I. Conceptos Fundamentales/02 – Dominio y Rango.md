@@ -6,7 +6,9 @@ tags: [dominio, rango, dominio-rango]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Por qué son importantes el Dominio y Rango? Al igual que en funciones de una variable, necesitamos saber:
+> [!info] 💡 ¿Por qué son importantes el Dominio y Rango?
+>
+> Al igual que en funciones de una variable, necesitamos saber:
 >
 > - **Dominio:** ¿Dónde está definida la función? ¿Qué valores de entrada son válidos?
 > - **Rango:** ¿Qué valores puede tomar la función? ¿Cuál es el conjunto de salidas posibles?
@@ -937,7 +939,9 @@ tags: [dominio, rango, dominio-rango]
 
 ## 📊 Resumen Visual: Tipos de Dominios Comunes
 
-> [!note] 🗺️ Galería de Dominios en $\mathbb{R}^2$
+> [!note] 🗺️ Galería de Dominios en
+>
+> $\mathbb{R}^2$
 >
 > |Descripción|Condición|Representación|
 > |---|---|---|

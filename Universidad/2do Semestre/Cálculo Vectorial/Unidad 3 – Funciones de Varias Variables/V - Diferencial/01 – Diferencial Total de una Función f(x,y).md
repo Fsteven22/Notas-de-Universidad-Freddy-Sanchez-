@@ -748,7 +748,9 @@ tags: [diferencial, total, funcion]
 
 ### Ejemplo 12: Aproximación de una Raíz
 
-> [!example] 📝 Ejemplo 12: Calcular $\sqrt{(4.02)^2 + (2.97)^2}$
+> [!example] 📝 Ejemplo 12: Calcular
+>
+> $\sqrt{(4.02)^2 + (2.97)^2}$
 >
 > **Función:** $f(x,y) = \sqrt{x^2 + y^2}$
 >
@@ -782,7 +784,9 @@ tags: [diferencial, total, funcion]
 
 ### Ejemplo 13: Aproximación de Función Exponencial
 
-> [!example] 📝 Ejemplo 13: Calcular $e^{0.02}\cos(0.03)$
+> [!example] 📝 Ejemplo 13: Calcular
+>
+> $e^{0.02}\cos(0.03)$
 >
 > **Función:** $f(x,y) = e^x\cos(y)$
 >
@@ -1381,7 +1385,9 @@ tags: [diferencial, total, funcion]
 
 ### 🌐 Coordenadas Cilíndricas
 
-> [!note] 🔵 Cilíndricas $(r, \theta, z)$
+> [!note] 🔵 Cilíndricas
+>
+> $(r, \theta, z)$
 >
 > **Transformación:**
 >
@@ -1405,7 +1411,9 @@ tags: [diferencial, total, funcion]
 
 ### 🌍 Coordenadas Esféricas
 
-> [!note] 🔴 Esféricas $(\rho, \theta, \phi)$
+> [!note] 🔴 Esféricas
+>
+> $(\rho, \theta, \phi)$
 >
 > **Transformación:**
 >

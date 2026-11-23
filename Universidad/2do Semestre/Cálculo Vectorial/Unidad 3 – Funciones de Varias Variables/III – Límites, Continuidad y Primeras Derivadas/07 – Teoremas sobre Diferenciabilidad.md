@@ -102,7 +102,9 @@ tags: [teoremas, diferenciabilidad, teoremas-sobre]
 
 ### 🎯 Versión para Funciones Vectoriales
 
-> [!example] 🟡 Extensión a $\vec{F}: \mathbb{R}^n \to \mathbb{R}^m$
+> [!example] 🟡 Extensión a
+>
+> $\vec{F}: \mathbb{R}^n \to \mathbb{R}^m$
 >
 > **Teorema:** Sea $\vec{F}: U \subseteq \mathbb{R}^n \to \mathbb{R}^m$ donde $U$ es abierto.
 >

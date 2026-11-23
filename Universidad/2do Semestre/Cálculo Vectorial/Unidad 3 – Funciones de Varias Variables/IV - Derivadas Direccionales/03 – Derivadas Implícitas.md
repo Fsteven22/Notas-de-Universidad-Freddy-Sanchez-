@@ -327,7 +327,9 @@ tags: [derivadas, implicitas, derivadas-implicitas]
 
 ### 📐 Caso General: Dos Variables Independientes
 
-> [!example] 🔵 Caso: $F(x, y, z) = 0$ define $z = z(x, y)$
+> [!example] 🔵 Caso:
+>
+> $F(x, y, z) = 0$ define $z = z(x, y)$
 >
 > **Situación:** La ecuación $F(x, y, z) = 0$ define implícitamente $z$ como función de $x$ e $y$.
 >
@@ -1056,7 +1058,9 @@ tags: [derivadas, implicitas, derivadas-implicitas]
 
 ### ⚠️ Trampa 1: Puntos Singulares
 
-> [!warning] 🚨 Cuidado con $\nabla F = \vec{0}$
+> [!warning] 🚨 Cuidado con
+>
+> $\nabla F = \vec{0}$
 >
 > **Problema:** En puntos donde $F_x = F_y = 0$, la fórmula no aplica.
 >

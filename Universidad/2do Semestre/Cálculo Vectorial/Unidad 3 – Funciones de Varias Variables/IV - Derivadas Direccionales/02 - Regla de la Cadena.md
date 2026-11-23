@@ -140,7 +140,9 @@ tags: [regla, cadena, regla-cadena]
 
 ### 🌟 Caso 1: Función Real de Variables Intermedias
 
-> [!example] 🔵 Caso: $z = f(x, y)$ con $x = x(t)$, $y = y(t)$
+> [!example] 🔵 Caso:
+>
+> $z = f(x, y)$ con $x = x(t)$, $y = y(t)$
 >
 > **Situación:** Función $z = f(x,y)$ donde $x$ e $y$ dependen de una variable $t$.
 >
@@ -182,7 +184,9 @@ tags: [regla, cadena, regla-cadena]
 
 ### 🌟 Caso 2: Función de Dos Variables Independientes
 
-> [!example] 🔵 Caso: $z = f(x, y)$ con $x = x(s,t)$, $y = y(s,t)$
+> [!example] 🔵 Caso:
+>
+> $z = f(x, y)$ con $x = x(s,t)$, $y = y(s,t)$
 >
 > **Situación:** $z$ depende de $x$ e $y$, que a su vez dependen de $s$ y $t$.
 >
