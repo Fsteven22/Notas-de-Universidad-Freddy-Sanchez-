@@ -78,30 +78,4 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 
 ---
 
-## 📋 Exámenes disponibles
-
-> [!info] 📄 Exámenes de Comunicación II
->
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-1S-COMUNICACIÓN II-1-1Par.pdf\|EXA-2017-1S-COMUNICACIÓN II-1-1Par.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-1S-COMUNICACIÓN II-1-Mejora.pdf\|EXA-2017-1S-COMUNICACIÓN II-1-Mejora.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-1S-COMUNICACIÓN II-122-1Par.pdf\|EXA-2017-1S-COMUNICACIÓN II-122-1Par.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-1S-COMUNICACIÓN II-2-1Par.pdf\|EXA-2017-1S-COMUNICACIÓN II-2-1Par.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-1S-COMUNICACIÓN II-2-Mejora.pdf\|EXA-2017-1S-COMUNICACIÓN II-2-Mejora.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-1S-COMUNICACIÓN II-4-1Par.pdf\|EXA-2017-1S-COMUNICACIÓN II-4-1Par.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-1S-COMUNICACIÓN II-4-2Par.pdf\|EXA-2017-1S-COMUNICACIÓN II-4-2Par.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-2S-COMUNICACIÓN II-1-Mejora.pdf\|EXA-2017-2S-COMUNICACIÓN II-1-Mejora.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-2S-COMUNICACIÓN II-125-2Par.pdf\|EXA-2017-2S-COMUNICACIÓN II-125-2Par.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-2S-COMUNICACIÓN II-125-Mejora.pdf\|EXA-2017-2S-COMUNICACIÓN II-125-Mejora.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-2S-COMUNICACIÓN II-126-2Par.pdf\|EXA-2017-2S-COMUNICACIÓN II-126-2Par.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-2S-COMUNICACIÓN II-126-Mejora.pdf\|EXA-2017-2S-COMUNICACIÓN II-126-Mejora.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-2S-COMUNICACIÓN II-127-2Par.pdf\|EXA-2017-2S-COMUNICACIÓN II-127-2Par.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-2S-COMUNICACIÓN II-127-Mejora.pdf\|EXA-2017-2S-COMUNICACIÓN II-127-Mejora.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-2S-COMUNICACIÓN II-128-2Par.pdf\|EXA-2017-2S-COMUNICACIÓN II-128-2Par.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-2S-COMUNICACIÓN II-128-Mejora (v1).pdf\|EXA-2017-2S-COMUNICACIÓN II-128-Mejora (v1).pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2017-2S-COMUNICACIÓN II-128-Mejora.pdf\|EXA-2017-2S-COMUNICACIÓN II-128-Mejora.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2018-1S-COMUNICACIÓN II-11-1Par.pdf\|EXA-2018-1S-COMUNICACIÓN II-11-1Par.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2018-1S-COMUNICACIÓN II-128-Mejora.pdf\|EXA-2018-1S-COMUNICACIÓN II-128-Mejora.pdf]]
-
----
-
 **Tags:** #comunicacion #ESPOL #IDIG2012

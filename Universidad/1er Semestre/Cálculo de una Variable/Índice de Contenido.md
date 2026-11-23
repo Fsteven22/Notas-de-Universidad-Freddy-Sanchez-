@@ -34,87 +34,42 @@ tags: [MATG1045, unidad0, recursos, indice-de-contenido, examenes]
 
 ## 📝 Exámenes
 
-> [!example] 🗂️ Banco de exámenes resueltos (49)
+> [!example] 📋 Los 16 PDF son 6 exámenes distintos
 >
-> Exámenes reales de DSpace (con solución y rúbrica), agrupados por año y tipo. Son **integrales**: cada uno cubre varias unidades de la materia. Seis de ellos —los más representativos de 2021-2023— tienen además capturas página por página más abajo.
+> El material que subiste a `Unidad 0 - Guias y Ejercicios/Exámenes/` son 16 archivos, pero solo **6
+> exámenes diferentes**: varios están repetidos con distinto número de copia (el número del nombre
+> es el del parcial, no el de la persona). El texto extraído de cada grupo es idéntico, así que las
+> capturas se hicieron de un representante por grupo.
 >
-> **2018 · 2 examenes**
+> | Examen | Fecha | Tipo | Páginas | Formato del archivo |
+> |---|---|---|---|---|
+> | 2021 · 2S | 22/nov/2021 | 1.er parcial | 15 | `EXA-2021-2S-…-{7,15,17}-1Par.pdf` |
+> | 2022 · 0S | 22/abr/2022 | 2.a evaluación | 8 | `EXA-2022-0S-…-1-Mejora.pdf` |
+> | 2022 · 1S | 04/jul/2022 | 1.er parcial | 18 | `EXA-2022-1S-…-{1,2,4,6,9,18,21}-1Par.pdf` + 2 copias con sufijo ` (1)` |
+> | 2023 · 0S | 31/03/2023 | 1.a evaluación | 7 | `EXA-2023-0S-…-1-1Par.pdf` |
+> | 2023 · 0S | 21/04/2023 | 2.a evaluación | 7 | `EXA-2023-0S-…-1-2Par.pdf` |
+> | 2023 · 0S | 28/04/2023 | 3.a evaluación | 7 | `EXA-2023-0S-…-1-Mejora.pdf` |
 >
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2018-2S-CÁLCULO DE UNA VARIABLE-2-2Par.pdf|2S 2018 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2018-2S-CÁLCULO DE UNA VARIABLE-3-Mejora.pdf|2S 2018 — Mejora]]
+> **Todos los archivos, para descargar:**
 >
-> **2019 · 4 examenes**
->
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2019-1S-CÁLCULO DE UNA VARIABLE-1-2Par.pdf|1S 2019 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2019-1S-CÁLCULO DE UNA VARIABLE-1-Mejora.pdf|1S 2019 — Mejora]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2019-2S-CÁLCULO DE UNA VARIABLE-1-2Par.pdf|2S 2019 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2019-2S-CÁLCULO DE UNA VARIABLE-1-Mejora.pdf|2S 2019 — Mejora]]
->
-> **2020 · 7 examenes**
->
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2020-0S-CÁLCULO DE UNA VARIABLE-1-1Par.pdf|0S 2020 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2020-0S-CÁLCULO DE UNA VARIABLE-1-2Par.pdf|0S 2020 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2020-0S-CÁLCULO DE UNA VARIABLE-1-Mejora.pdf|0S 2020 — Mejora]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2020-1S-CÁLCULO DE UNA VARIABLE-3-1Par.pdf|1S 2020 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2020-1S-CÁLCULO DE UNA VARIABLE-1-Mejora.pdf|1S 2020 — Mejora]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2020-2S-CÁLCULO DE UNA VARIABLE-1-1Par.pdf|2S 2020 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2020-2S-CÁLCULO DE UNA VARIABLE-1-Mejora.pdf|2S 2020 — Mejora]]
->
-> **2021 · 8 examenes**
->
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-0S-CÁLCULO DE UNA VARIABLE-1-1Par.pdf|0S 2021 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-0S-CÁLCULO DE UNA VARIABLE-1-2Par.pdf|0S 2021 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-1S-CÁLCULO DE UNA VARIABLE-1-1Par.pdf|1S 2021 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-1S-CÁLCULO DE UNA VARIABLE-1-2Par.pdf|1S 2021 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-1S-CÁLCULO DE UNA VARIABLE-1-Mejora.pdf|1S 2021 — Mejora]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-2S-CÁLCULO DE UNA VARIABLE-15-1Par.pdf|2S 2021 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-2S-CÁLCULO DE UNA VARIABLE-3-2Par.pdf|2S 2021 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-2S-CÁLCULO DE UNA VARIABLE-1-Mejora.pdf|2S 2021 — Mejora]]
->
-> **2022 · 8 examenes**
->
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-0S-CÁLCULO DE UNA VARIABLE-1-1Par.pdf|0S 2022 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-0S-CÁLCULO DE UNA VARIABLE-1-Mejora.pdf|0S 2022 — Mejora]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-1S-CÁLCULO DE UNA VARIABLE-1-1Par.pdf|1S 2022 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-1S-CÁLCULO DE UNA VARIABLE-18-1Par.pdf|1S 2022 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-1S-CÁLCULO DE UNA VARIABLE-1-2Par.pdf|1S 2022 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-2S-CÁLCULO DE UNA VARIABLE-1-1Par.pdf|2S 2022 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-2S-CÁLCULO DE UNA VARIABLE-1-2Par.pdf|2S 2022 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-2S-CÁLCULO DE UNA VARIABLE-1-Mejora.pdf|2S 2022 — Mejora]]
->
-> **2023 · 8 examenes**
->
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-0S-CÁLCULO DE UNA VARIABLE-1-1Par.pdf|0S 2023 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-0S-CÁLCULO DE UNA VARIABLE-1-2Par.pdf|0S 2023 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-0S-CÁLCULO DE UNA VARIABLE-1-Mejora.pdf|0S 2023 — Mejora]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-1S-CÁLCULO DE UNA VARIABLE-1-1Par.pdf|1S 2023 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-1S-CÁLCULO DE UNA VARIABLE-1-Mejora.pdf|1S 2023 — Mejora]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-2S-CÁLCULO DE UNA VARIABLE-1-1Par.pdf|2S 2023 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-2S-CÁLCULO DE UNA VARIABLE-1-2Par.pdf|2S 2023 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-2S-CÁLCULO DE UNA VARIABLE-1-Mejora.pdf|2S 2023 — Mejora]]
->
-> **2024 · 6 examenes**
->
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2024-1S-CÁLCULO DE UNA VARIABLE-1-1Par.pdf|1S 2024 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2024-1S-CÁLCULO DE UNA VARIABLE-2-2Par.pdf|1S 2024 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2024-1S-CÁLCULO DE UNA VARIABLE-2-Mejora.pdf|1S 2024 — Mejora]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2024-2S-CÁLCULO DE UNA VARIABLE-2-1Par.pdf|2S 2024 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2024-2S-CÁLCULO DE UNA VARIABLE-2-2Par.pdf|2S 2024 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2024-2S-CÁLCULO DE UNA VARIABLE-2-Mejora.pdf|2S 2024 — Mejora]]
->
-> **2025 · 5 examenes**
->
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2025-0S-CÁLCULO DE UNA VARIABLE-1-2Par.pdf|0S 2025 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2025-1S-CÁLCULO DE UNA VARIABLE-1-1Par.pdf|1S 2025 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2025-1S-CÁLCULO DE UNA VARIABLE-1-2Par.pdf|1S 2025 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2025-2S-CÁLCULO DE UNA VARIABLE-14-1Par.pdf|2S 2025 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2025-2S-CÁLCULO DE UNA VARIABLE-29-Mejora.pdf|2S 2025 — Mejora]]
->
-> **2026 · 1 examen**
->
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2026-1S-CÁLCULO DE UNA VARIABLE-2-1Par.pdf|1S 2026 — 1.ª Parcial]]
-
----
+> | Archivo | Qué es |
+> |---|---|
+> | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-2S-CÁLCULO DE UNA VARIABLE-15-1Par.pdf]] | 2021 · II PAO · 1.er parcial · 15 páginas. |
+> | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-2S-CÁLCULO DE UNA VARIABLE-17-1Par.pdf]] | 2021 · II PAO · 1.er parcial · 15 páginas (otra copia). |
+> | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-2S-CÁLCULO DE UNA VARIABLE-7-1Par.pdf]] | 2021 · II PAO · 1.er parcial · 15 páginas (otra copia). |
+> | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-0S-CÁLCULO DE UNA VARIABLE-1-Mejora.pdf]] | 2022 · PAE · 2.a evaluación · 8 páginas · 8 temas. |
+> | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-1S-CÁLCULO DE UNA VARIABLE-1-1Par.pdf]] | 2022 · I PAO · 1.er parcial · 18 páginas · 44 preguntas. |
+> | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-1S-CÁLCULO DE UNA VARIABLE-1-1Par (1).pdf]] | 2022 · I PAO · 1.er parcial · 18 páginas · 44 preguntas (otra copia). |
+> | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-1S-CÁLCULO DE UNA VARIABLE-2-1Par.pdf]] | 2022 · I PAO · 1.er parcial · 18 páginas (otra copia). |
+> | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-1S-CÁLCULO DE UNA VARIABLE-4-1Par.pdf]] | 2022 · I PAO · 1.er parcial · 18 páginas (otra copia). |
+> | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-1S-CÁLCULO DE UNA VARIABLE-6-1Par.pdf]] | 2022 · I PAO · 1.er parcial · 18 páginas (otra copia). |
+> | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-1S-CÁLCULO DE UNA VARIABLE-6-1Par (1).pdf]] | 2022 · I PAO · 1.er parcial · 18 páginas (otra copia). |
+> | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-1S-CÁLCULO DE UNA VARIABLE-9-1Par.pdf]] | 2022 · I PAO · 1.er parcial · 18 páginas (otra copia). |
+> | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-1S-CÁLCULO DE UNA VARIABLE-18-1Par.pdf]] | 2022 · I PAO · 1.er parcial · 18 páginas (otra copia). |
+> | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-1S-CÁLCULO DE UNA VARIABLE-21-1Par.pdf]] | 2022 · I PAO · 1.er parcial · 18 páginas (otra copia). |
+> | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-0S-CÁLCULO DE UNA VARIABLE-1-1Par.pdf]] | 2023 · PAE · 1.a evaluación · 7 páginas. |
+> | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-0S-CÁLCULO DE UNA VARIABLE-1-2Par.pdf]] | 2023 · PAE · 2.a evaluación · 7 páginas. |
+> | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-0S-CÁLCULO DE UNA VARIABLE-1-Mejora.pdf]] | 2023 · PAE · 3.a evaluación · 7 páginas. |
 
 ### 📄 2021 · 2S · 1.er parcial — 22/noviembre/2021
 

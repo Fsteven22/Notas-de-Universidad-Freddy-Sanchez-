@@ -1,461 +1,194 @@
 ---
 dg-publish: true
----
-	
-# Cinemática Traslacional 🚗
-
-> [!quote] _"El movimiento es relativo, pero las leyes que lo gobiernan son absolutas. La cinemática nos enseña a describir el 'cómo' del movimiento antes de preguntarnos el 'por qué'."_ - Galileo Galilei
-
+tags: [FISG1001, unidad1, cinematica, movimiento-rectilineo, mrua, caida-libre]
 ---
 
-## 📋 Conceptos Fundamentales
+# 🚗 Cinemática Traslacional
 
-> [!info] 🎯 **Definición de Cinemática Traslacional** La cinemática traslacional estudia el movimiento de los cuerpos en línea recta (unidimensional) o en el plano/espacio (bidimensional/tridimensional) sin considerar las causas que producen dicho movimiento.
-> 
+> [!quote] 💡 "El movimiento es relativo, pero las leyes que lo gobiernan son absolutas."
+>
+> La cinemática traslacional estudia el movimiento de los cuerpos sin considerar las causas que lo producen. Describe la "cómo" del movimiento: posición, velocidad y aceleración como funciones del tiempo.
+
+---
+
+## 🎯 Introducción
+
+> [!info] 📖 ¿Qué es la Cinemática Traslacional?
+>
+> La **cinemática traslacional** estudia el movimiento de los cuerpos en línea recta (unidimensional) o en el plano/espacio (bidimensional/tridimensional) sin considerar las causas que producen dicho movimiento.
+>
+> > **Se lee así:** la cinemática describe el movimiento (posición, velocidad, aceleración) como función del tiempo, sin analizar sus causas; eso corresponde a la dinámica.
+>
 > **Características principales:**
-> 
+>
 > - Se enfoca en describir el movimiento, no en explicar sus causas
 > - Variables principales: posición, velocidad y aceleración
 > - El tiempo es el parámetro independiente
 > - Los objetos se consideran partículas puntuales
 
-## 🔢 Variables Cinemáticas Fundamentales
+> [!note] 📋 Figura — Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Cinemática_Traslacional_01.svg]]
+>
+> **Se lee así:** el diagrama muestra la clasificación del movimiento traslacional: MRU (velocidad constante) y MRUA (aceleración constante), con sus respectivas gráficas posición-tiempo y velocidad-tiempo.
 
-> [!tip] 📍 **Posición (x, r)** **Definición:** Ubicación de un objeto en el espacio respecto a un sistema de referencia.
-> 
-> **Características:**
-> 
-> - En 1D: $x(t)$ - coordenada en una línea
+---
+
+## 📋 Definiciones Formales
+
+### 1️⃣ Posición
+
+> [!note] 📋 Definición — Posición
+>
+> La **posición** es la ubicación de un objeto en el espacio respecto a un sistema de referencia.
+>
+> - En 1D: $x(t)$ — coordenada en una línea
 > - En 2D/3D: $\vec{r}(t) = x(t)\hat{i} + y(t)\hat{j} + z(t)\hat{k}$
-> - **Desplazamiento:** $Δx = x_f - x_i$ (cambio de posición)
-> - **Distancia:** Longitud total recorrida (siempre positiva)
-> 
+> - **Desplazamiento:** $\Delta x = x_f - x_i$ (cambio de posición)
+> - **Distancia:** longitud total recorrida (siempre positiva)
+>
 > **Unidades:** metros (m), kilómetros (km), centímetros (cm)
 >
+> > [!note] 📋 Figura — Posición
+> > >
+> > > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Cinemática_Traslacional_01.svg]]
+> > >
+> > > **Se lee así:** el diagrama ubica un punto P en el espacio mediante su vector posición $\vec{r}$ desde el origen del sistema de referencia.
 
-> [!tip] ⚡ **Velocidad (v)** **Definición:** Razón de cambio de la posición con respecto al tiempo.
-> 
-> **Velocidad promedio:** $$\bar{v} = \frac{\Delta x}{\Delta t} = \frac{x_f - x_i}{t_f - t_i}$$
-> 
-> **Velocidad instantánea:** $$v = \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t} = \frac{dx}{dt}$$
-> 
+### 2️⃣ Velocidad
+
+> [!note] 📋 Definición — Velocidad
+>
+> La **velocidad** es la razón de cambio de la posición con respecto al tiempo.
+>
+> **Velocidad promedio:** $\bar{v} = \frac{\Delta x}{\Delta t} = \frac{x_f - x_i}{t_f - t_i}$
+>
+> **Velocidad instantánea:** $v = \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t} = \frac{dx}{dt}$
+>
 > **Características:**
-> 
+>
 > - Es una cantidad vectorial (tiene magnitud y dirección)
-> - **Rapidez:** Magnitud de la velocidad (escalar)
-> - Unidades: m/s, km/h, cm/s
+> - **Rapidez:** magnitud de la velocidad (escalar)
+> - **Unidades:** m/s, km/h, cm/s
 >
+> > [!note] 📋 Figura — Velocidad
+> > >
+> > > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Cinemática_Traslacional_02.svg]]
+> > >
+> > > **Se lee así:** el diagrama clasifica el movimiento en MRU (velocidad constante) y MRUA (aceleración constante), con sus respectivas gráficas posición-tiempo y velocidad-tiempo.
 
-> [!tip] 🚀 **Aceleración (a)** **Definición:** Razón de cambio de la velocidad con respecto al tiempo.
-> 
-> **Aceleración promedio:** $$\bar{a} = \frac{\Delta v}{\Delta t} = \frac{v_f - v_i}{t_f - t_i}$$
-> 
-> **Aceleración instantánea:** $$a = \lim_{\Delta t \to 0} \frac{\Delta v}{\Delta t} = \frac{dv}{dt} = \frac{d^2x}{dt^2}$$
-> 
+### 3️⃣ Aceleración
+
+> [!note] 📋 Definición — Aceleración
+>
+> La **aceleración** es la razón de cambio de la velocidad con respecto al tiempo.
+>
+> **Aceleración promedio:** $\bar{a} = \frac{\Delta v}{\Delta t} = \frac{v_f - v_i}{t_f - t_i}$
+>
+> **Aceleración instantánea:** $a = \lim_{\Delta t \to 0} \frac{\Delta v}{\Delta t} = \frac{dv}{dt} = \frac{d^2x}{dt^2}$
+>
 > **Interpretación:**
-> 
-> - a > 0: Aceleración (aumenta velocidad)
-> - a < 0: Desaceleración (disminuye velocidad)
-> - a = 0: Velocidad constante
-> - Unidades: m/s², km/h², cm/s²
-
-## 📊 Ecuaciones de la Cinemática
-
-> [!warning] 🧮 **Ecuaciones para Aceleración Constante (MRUA)** Estas cinco ecuaciones describen completamente el movimiento rectilíneo uniformemente acelerado:
-> 
-> |Ecuación|Fórmula|Variables ausentes|
-> |---|---|---|
-> |**Velocidad-tiempo**|$v = v_0 + at$|No incluye x|
-> |**Posición-tiempo**|$x = x_0 + v_0t + \frac{1}{2}at^2$|No incluye v|
-> |**Velocidad-posición**|$v^2 = v_0^2 + 2a(x-x_0)$|No incluye t|
-> |**Posición promedio**|$x = x_0 + \frac{(v_0 + v)t}{2}$|No incluye a|
-> |**Posición desde reposo**|$x = x_0 + \frac{1}{2}at^2$|Para v₀ = 0|
-> 
-> **Variables:**
-> 
-> - x₀, v₀ = posición y velocidad inicial
-> - x, v = posición y velocidad final
-> - a = aceleración constante
-> - t = tiempo
-
-## 📈 Tipos de Movimiento Traslacional
-
-> [!info] 🔄 **Clasificación del Movimiento**
-> 
-> ![[Diagramas/Cinemática_Traslacional_01.svg]]
 >
-
-> [!tip] 🎯 **Movimiento Rectilíneo Uniforme (MRU)** **Características:**
-> 
-> - Velocidad constante (a = 0)
-> - La gráfica x vs t es una línea recta
-> - Ecuación: x = x₀ + vt
-> 
-> **Ejemplos:** Tren en vía recta, luz en el vacío
+> - $a > 0$: aceleración (aumenta velocidad)
+> - $a < 0$: desaceleración (disminuye velocidad)
+> - $a = 0$: velocidad constante
+> - **Unidades:** m/s², km/h², cm/s²
 >
-
-> [!tip] 🎯 **Movimiento Rectilíneo Uniformemente Acelerado (MRUA)** **Características:**
-> 
-> - Aceleración constante (a ≠ 0)
-> - La gráfica v vs t es una línea recta
-> - La gráfica x vs t es una parábola
-> 
-> **Ejemplos:** Caída libre, auto acelerando uniformemente
-
-## 🧠 Técnica de Estudio: Método VEXAT
-
-> [!tip] 🎓 **Estrategia de Aprendizaje: Mnemotecnia VEXAT** Para resolver problemas de cinemática, usa el método **VEXAT**:
-> 
-> **V - Variables** conocidas e incógnitas **E - Ecuación** apropiada a usar **X - eXaminar** el tipo de movimiento **A - Aplicar** la fórmula correcta **T - Todos** los valores deben tener unidades correctas
-> 
-> **Tabla de decisión para elegir ecuaciones:**
-> 
-> |Si necesitas encontrar|Y conoces|Usa la ecuación|
-> |---|---|---|
-> |v|v₀, a, t|v = v₀ + at|
-> |x|v₀, a, t|x = x₀ + v₀t + ½at²|
-> |v|v₀, a, x|v² = v₀² + 2a(x-x₀)|
-> |x|v₀, v, t|x = x₀ + (v₀+v)t/2|
-> |t|v₀, v, a|t = (v-v₀)/a|
-
-## 🧪 Casos Especiales Importantes
-
-> [!example] 🍎 **Caída Libre** **Definición:** Movimiento bajo la influencia exclusiva de la gravedad.
-> 
-> **Características:**
-> 
-> - Aceleración: a = g = 9.8 m/s² (hacia abajo)
-> - Ecuaciones de MRUA con a = -g (si y⁺ es hacia arriba)
-> - Tiempo de subida = tiempo de bajada
-> - Velocidad inicial = -velocidad final (en mismo punto)
-> 
-> **Ecuaciones especiales:**
-> 
-> - Altura máxima: $h_{max} = \frac{v_0^2}{2g}$
-> - Tiempo total de vuelo: $t_{total} = \frac{2v_0}{g}$
-> - Tiempo para alcanzar altura h: $t = \frac{v_0 \pm \sqrt{v_0^2 - 2gh}}{g}$
->
-
-> [!example] 🚗 **Frenado de Vehículos** **Problema típico:** Un auto viaja a 72 km/h y frena con desaceleración constante hasta detenerse en 50 m.
-> 
-> **Solución paso a paso:**
-> 
-> 1. **Convertir unidades:** $72 km/h = 20 m/s$
-> 2. **Identificar variables:** $v₀ = 20 m/s, v = 0, x = 50 m$
-> 3. **Elegir ecuación:** $v² = v₀² + 2ax$
-> 4. **Resolver:** $0² = 20² + 2a(50) → a = -4 m/s²$
-> 5. **Tiempo:** $t = (v-v₀)/a = (0-20)/(-4) = 5 s$
-
-## 📊 Interpretación de Gráficas
-
-> [!warning] 📈 **Análisis Gráfico del Movimiento**
-> 
-> **Gráfica Posición vs Tiempo (x-t):**
-> 
-> - Pendiente = velocidad instantánea
-> - Línea recta = velocidad constante
-> - Curva = aceleración presente
-> - Pendiente horizontal = reposo
-> 
-> **Gráfica Velocidad vs Tiempo (v-t):**
-> 
-> - Pendiente = aceleración instantánea
-> - Área bajo la curva = desplazamiento
-> - Línea recta = aceleración constante
-> - Línea horizontal = MRU
-> 
-> **Gráfica Aceleración vs Tiempo (a-t):**
-> 
-> - Área bajo la curva = cambio de velocidad
-> - Línea horizontal = MRUA
-> - a = 0 = MRU
-
-## 🔍 Referencias y Conexiones
-
-> [!quote] 📚 **Referencias a otras notas**
-> 
-> - [[Cinemática Rotacional]] - Movimiento angular, analogías
-> - [[Vectores]] - Para movimiento en 2D y 3D
-> - [[01 - Derivada y Definición Formal]] - Definiciones de velocidad y aceleración
-> - [[01 - Antiderivadas (Primitivas)]] - Para recuperar posición desde aceleración
-> - [[Leyes de Newton]] - Causas del movimiento (dinámica)
-
-## 📖 Notas Recomendadas para Complementar
-
-> [!info] 🎯 **Prerrequisitos y Temas Relacionados**
-> 
-> **Prerrequisitos esenciales:**
-> 
-> - Álgebra - Manipulación de ecuaciones
-> - [[01 - Funciones]] - Conceptos de función del tiempo
-> - Gráficas - Interpretación de gráficas x-t, v-t, a-t
-> - [[Vectores]] - Para movimiento bidimensional
-> 
-> **Temas complementarios:**
-> 
-> - Movimiento Parabólico - Extensión 2D
-> - [[Fuerzas y Diagramas de Cuerpo Libre]] - Causas del movimiento
-> - [[Trabajo y Energía]] - Enfoque energético del movimiento
-> - [[Momentum Lineal y Su Conservación]] - Conservación en colisiones
-
-## 🎮 Simulación Mental de Problemas
-
-> [!tip] 🧩 **Técnica de Visualización** Para cada problema, construye mentalmente:
-> 
-> 1. **🎬 La "película" del movimiento:**
->     
-> 
-> - ¿El objeto acelera, desacelera o mantiene velocidad?
->     
-> - ¿Cambia de dirección?
->     
-> - ¿Cuál es el estado inicial y final?
->     
-> 
-> 2. **📊 Los gráficos esperados:**
->     
-> 
-> - ¿Cómo se vería la gráfica x-t?
->     
-> - ¿Y la gráfica v-t?
->     
-> - ¿La aceleración es positiva, negativa o cero?
->     
-> 
-> 3. **🔢 El resultado razonable:**
->     
-> 
-> - ¿El resultado tiene sentido físicamente?
-> - ¿Las unidades son correctas?
-> - ¿El orden de magnitud es razonable?
+> > [!note] 📋 Figura — Aceleración
+> > >
+> > > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Cinemática_Traslacional_02.svg]]
+> > >
+> > > **Se lee así:** el diagrama muestra la progresión del movimiento: MRU, MRUA, caída libre y movimiento en plano, con sus características distintivas.
 
 ---
 
-**Tags:** #fisica-mecanica #cinematica #movimiento-rectilineo #mrua #mru #caida-libre #graficas-cinematicas #ecuaciones-movimiento
-# Cinemática Traslacional 🚗
+## 📝 Ejercicios Propuestos
 
-> [!quote] _"El movimiento es relativo, pero las leyes que lo gobiernan son absolutas. La cinemática nos enseña a describir el 'cómo' del movimiento antes de preguntarnos el 'por qué'."_ - Galileo Galilei
+> [!example] 🍎 Caída Libre
+>
+> **Problema:** Un objeto cae libremente desde el reposo desde una altura de 45 m. Calcular el tiempo de caída y la velocidad al llegar al suelo.
+>
+> **Datos:** $h = 45$ m, $v_0 = 0$, $g = 9.8$ m/s²
+>
+> > [!success]- ✅ Solución
+> >
+> > **Paso 1:** Elegir sistema de coordenadas (eje y hacia arriba, origen en el suelo).
+> >
+> > **Paso 2:** Aplicar ecuación de posición: $y = y_0 + v_0t - \frac{1}{2}gt^2$
+> >
+> > **Paso 3:** Sustituir: $0 = 45 + 0 \cdot t - \frac{1}{2}(9.8)t^2$
+> >
+> > **Paso 4:** Despejar $t$: $4.9t^2 = 45 \Rightarrow t = \sqrt{45/4.9} \approx 3.03$ s
+> >
+> > **Paso 5:** Calcular velocidad final: $v = v_0 - gt = 0 - 9.8(3.03) \approx -29.7$ m/s
+> >
+> > **Respuesta:** $t \approx 3.03$ s, $v \approx -29.7$ m/s (hacia abajo)
 
 ---
 
-## 📋 Conceptos Fundamentales
+## 🎯 Metas de Aprendizaje
 
-> [!info] 🎯 **Definición de Cinemática Traslacional** La cinemática traslacional estudia el movimiento de los cuerpos en línea recta (unidimensional) o en el plano/espacio (bidimensional/tridimensional) sin considerar las causas que producen dicho movimiento.
-> 
-> **Características principales:**
-> 
-> - Se enfoca en describir el movimiento, no en explicar sus causas
-> - Variables principales: posición, velocidad y aceleración
-> - El tiempo es el parámetro independiente
-> - Los objetos se consideran partículas puntuales
-
-## 🔢 Variables Cinemáticas Fundamentales
-
-> [!tip] 📍 **Posición (x, r)** **Definición:** Ubicación de un objeto en el espacio respecto a un sistema de referencia.
-> 
-> **Características:**
-> 
-> - En 1D: $x(t)$ - coordenada en una línea
-> - En 2D/3D: $\vec{r}(t) = x(t)\hat{i} + y(t)\hat{j} + z(t)\hat{k}$
-> - **Desplazamiento:** $Δx = x_f - x_i$ (cambio de posición)
-> - **Distancia:** Longitud total recorrida (siempre positiva)
-> 
-> **Unidades:** metros (m), kilómetros (km), centímetros (cm)
+> [!note] 📋 Nivel Básico
 >
+> - [ ] Explico qué es la cinemática traslacional con mis propias palabras.
+> - [ ] Distinguo posición, velocidad y aceleración.
+> - [ ] Identifico MRU y MRUA en un problema.
 
-> [!tip] ⚡ **Velocidad (v)** **Definición:** Razón de cambio de la posición con respecto al tiempo.
-> 
-> **Velocidad promedio:** $$\bar{v} = \frac{\Delta x}{\Delta t} = \frac{x_f - x_i}{t_f - t_i}$$
-> 
-> **Velocidad instantánea:** $$v = \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t} = \frac{dx}{dt}$$
-> 
-> **Características:**
-> 
-> - Es una cantidad vectorial (tiene magnitud y dirección)
-> - **Rapidez:** Magnitud de la velocidad (escalar)
-> - Unidades: m/s, km/h, cm/s
+> [!note] 📋 Nivel Intermedio
 >
+> - [ ] Aplico las ecuaciones de MRUA para resolver problemas de movimiento.
+> - [ ] Interpreto gráficas posición-tiempo y velocidad-tiempo.
+> - [ ] Resuelvo problemas de caída libre y frenado.
 
-> [!tip] 🚀 **Aceleración (a)** **Definición:** Razón de cambio de la velocidad con respecto al tiempo.
-> 
-> **Aceleración promedio:** $$\bar{a} = \frac{\Delta v}{\Delta t} = \frac{v_f - v_i}{t_f - t_i}$$
-> 
-> **Aceleración instantánea:** $$a = \lim_{\Delta t \to 0} \frac{\Delta v}{\Delta t} = \frac{dv}{dt} = \frac{d^2x}{dt^2}$$
-> 
-> **Interpretación:**
-> 
-> - a > 0: Aceleración (aumenta velocidad)
-> - a < 0: Desaceleración (disminuye velocidad)
-> - a = 0: Velocidad constante
-> - Unidades: m/s², km/h², cm/s²
-
-## 📊 Ecuaciones de la Cinemática
-
-> [!warning] 🧮 **Ecuaciones para Aceleración Constante (MRUA)** Estas cinco ecuaciones describen completamente el movimiento rectilíneo uniformemente acelerado:
-> 
-> |Ecuación|Fórmula|Variables ausentes|
-> |---|---|---|
-> |**Velocidad-tiempo**|$v = v_0 + at$|No incluye x|
-> |**Posición-tiempo**|$x = x_0 + v_0t + \frac{1}{2}at^2$|No incluye v|
-> |**Velocidad-posición**|$v^2 = v_0^2 + 2a(x-x_0)$|No incluye t|
-> |**Posición promedio**|$x = x_0 + \frac{(v_0 + v)t}{2}$|No incluye a|
-> |**Posición desde reposo**|$x = x_0 + \frac{1}{2}at^2$|Para v₀ = 0|
-> 
-> **Variables:**
-> 
-> - x₀, v₀ = posición y velocidad inicial
-> - x, v = posición y velocidad final
-> - a = aceleración constante
-> - t = tiempo
-
-## 📈 Tipos de Movimiento Traslacional
-
-> [!info] 🔄 **Clasificación del Movimiento**
-> 
-> ![[Diagramas/Cinemática_Traslacional_02.svg]]
+> [!note] 📋 Nivel Avanzado
 >
-
-> [!tip] 🎯 **Movimiento Rectilíneo Uniforme (MRU)** **Características:**
-> 
-> - Velocidad constante (a = 0)
-> - La gráfica x vs t es una línea recta
-> - Ecuación: x = x₀ + vt
-> 
-> **Ejemplos:** Tren en vía recta, luz en el vacío
->
-
-> [!tip] 🎯 **Movimiento Rectilíneo Uniformemente Acelerado (MRUA)** **Características:**
-> 
-> - Aceleración constante (a ≠ 0)
-> - La gráfica v vs t es una línea recta
-> - La gráfica x vs t es una parábola
-> 
-> **Ejemplos:** Caída libre, auto acelerando uniformemente
-
-## 🧠 Técnica de Estudio: Método VEXAT
-
-> [!tip] 🎓 **Estrategia de Aprendizaje: Mnemotecnia VEXAT** Para resolver problemas de cinemática, usa el método **VEXAT**:
-> 
-> **V - Variables** conocidas e incógnitas **E - Ecuación** apropiada a usar **X - eXaminar** el tipo de movimiento **A - Aplicar** la fórmula correcta **T - Todos** los valores deben tener unidades correctas
-> 
-> **Tabla de decisión para elegir ecuaciones:**
-> 
-> |Si necesitas encontrar|Y conoces|Usa la ecuación|
-> |---|---|---|
-> |v|v₀, a, t|v = v₀ + at|
-> |x|v₀, a, t|x = x₀ + v₀t + ½at²|
-> |v|v₀, a, x|v² = v₀² + 2a(x-x₀)|
-> |x|v₀, v, t|x = x₀ + (v₀+v)t/2|
-> |t|v₀, v, a|t = (v-v₀)/a|
-
-## 🧪 Casos Especiales Importantes
-
-> [!example] 🍎 **Caída Libre** **Definición:** Movimiento bajo la influencia exclusiva de la gravedad.
-> 
-> **Características:**
-> 
-> - Aceleración: a = g = 9.8 m/s² (hacia abajo)
-> - Ecuaciones de MRUA con a = -g (si y⁺ es hacia arriba)
-> - Tiempo de subida = tiempo de bajada
-> - Velocidad inicial = -velocidad final (en mismo punto)
-> 
-> **Ecuaciones especiales:**
-> 
-> - Altura máxima: $h_{max} = \frac{v_0^2}{2g}$
-> - Tiempo total de vuelo: $t_{total} = \frac{2v_0}{g}$
-> - Tiempo para alcanzar altura h: $t = \frac{v_0 \pm \sqrt{v_0^2 - 2gh}}{g}$
->
-
-> [!example] 🚗 **Frenado de Vehículos** **Problema típico:** Un auto viaja a 72 km/h y frena con desaceleración constante hasta detenerse en 50 m.
-> 
-> **Solución paso a paso:**
-> 
-> 1. **Convertir unidades:** $72 km/h = 20 m/s$
-> 2. **Identificar variables:** $v₀ = 20 m/s, v = 0, x = 50 m$
-> 3. **Elegir ecuación:** $v² = v₀² + 2ax$
-> 4. **Resolver:** $0² = 20² + 2a(50) → a = -4 m/s²$
-> 5. **Tiempo:** $t = (v-v₀)/a = (0-20)/(-4) = 5 s$
-
-## 📊 Interpretación de Gráficas
-
-> [!warning] 📈 **Análisis Gráfico del Movimiento**
-> 
-> **Gráfica Posición vs Tiempo (x-t):**
-> 
-> - Pendiente = velocidad instantánea
-> - Línea recta = velocidad constante
-> - Curva = aceleración presente
-> - Pendiente horizontal = reposo
-> 
-> **Gráfica Velocidad vs Tiempo (v-t):**
-> 
-> - Pendiente = aceleración instantánea
-> - Área bajo la curva = desplazamiento
-> - Línea recta = aceleración constante
-> - Línea horizontal = MRU
-> 
-> **Gráfica Aceleración vs Tiempo (a-t):**
-> 
-> - Área bajo la curva = cambio de velocidad
-> - Línea horizontal = MRUA
-> - a = 0 = MRU
-
-## 🔍 Referencias y Conexiones
-
-> [!quote] 📚 **Referencias a otras notas**
-> 
-> - [[Cinemática Rotacional]] - Movimiento angular, analogías
-> - [[Vectores]] - Para movimiento en 2D y 3D
-> - [[01 - Derivada y Definición Formal]] - Definiciones de velocidad y aceleración
-> - [[01 - Antiderivadas (Primitivas)]] - Para recuperar posición desde aceleración
-> - [[Leyes de Newton]] - Causas del movimiento (dinámica)
-
-## 📖 Notas Recomendadas para Complementar
-
-> [!info] 🎯 **Prerrequisitos y Temas Relacionados**
-> 
-> **Prerrequisitos esenciales:**
-> 
-> - Álgebra - Manipulación de ecuaciones
-> - [[01 - Funciones]] - Conceptos de función del tiempo
-> - Gráficas - Interpretación de gráficas x-t, v-t, a-t
-> - [[Vectores]] - Para movimiento bidimensional
-> 
-> **Temas complementarios:**
-> 
-> - Movimiento Parabólico - Extensión 2D
-> - [[Fuerzas y Diagramas de Cuerpo Libre]] - Causas del movimiento
-> - [[Trabajo y Energía]] - Enfoque energético del movimiento
-> - [[Momentum Lineal y Su Conservación]] - Conservación en colisiones
-
-## 🎮 Simulación Mental de Problemas
-
-> [!tip] 🧩 **Técnica de Visualización** Para cada problema, construye mentalmente:
-> 
-> 1. **🎬 La "película" del movimiento:**
-> 
-> - ¿El objeto acelera, desacelera o mantiene velocidad?
->     
-> - ¿Cambia de dirección?
->     
-> - ¿Cuál es el estado inicial y final?
->     
-> 
-> 2. **📊 Los gráficos esperados:**
-> 
-> - ¿Cómo se vería la gráfica x-t?
->     
-> - ¿Y la gráfica v-t?
->     
-> - ¿La aceleración es positiva, negativa o cero?
->     
-> 
-> 3. **🔢 El resultado razonable:**
-> 
-> - ¿El resultado tiene sentido físicamente?
-> - ¿Las unidades son correctas?
-> - ¿El orden de magnitud es razonable?
+> - [ ] Resuelvo problemas que combinan varios tipos de movimiento.
+> - [ ] Analiza el movimiento en 2D y 3D usando vectores posición.
 
 ---
 
-**Tags:** #fisica-mecanica #cinematica #movimiento-rectilineo #mrua #mru #caida-libre #graficas-cinematicas #ecuaciones-movimiento
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes Consultadas
+>
+> - J. Serway, R. Jewett, *Física para Ciencias e Ingeniería*, cap. 2 «Movimiento en una dimensión».
+> - Apuntes del curso FISG1001 «Física Mecánica», ESPOL.
+> - Diagramas de la materia (`Unidad 0 - Guias y Ejercicios/Diagramas/`).
+
+---
+
+## 🔁 Repaso SR
+
+#flashcards/fisica-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Qué estudia la cinemática traslacional?::El movimiento de los cuerpos sin considerar sus causas (posición, velocidad, aceleración como funciones del tiempo).
+> - ¿Cuál es la diferencia entre velocidad y rapidez?::La velocidad es vectorial (tiene dirección); la rapidez es escalar (solo magnitud).
+> - ¿Qué describe una gráfica x-t con pendiente constante?::Movimiento Rectilíneo Uniforme (MRU), velocidad constante.
+> - ¿Qué es el desplazamiento?::El cambio de posición $\Delta x = x_f - x_i$, puede ser negativo.
+> - ¿Cuál es la aceleración en caída libre?::$g = 9.8$ m/s² hacia abajo (constante).
+
+---
+
+## 🔗 Conexiones
+
+> [!quote] 🌟 Continuando el Aprendizaje
+>
+> - **Cinemática Rotacional:** movimiento angular, analogías con el movimiento lineal.
+> - **Dinámica:** causas del movimiento (leyes de Newton).
+> - **Vectores:** movimiento en 2D y 3D.
+> - **Trabajo y Energía:** enfoque energético del movimiento.
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Próximos pasos
+>
+> - [[Cinemática Rotacional]] — movimiento angular y sus analogías con el lineal.
+> - [[Vectores]] — conceptos de función del tiempo en 2D y 3D.
+> - [[Leyes de Newton]] — causas del movimiento (dinámica).
+> - Repaso: vuelve a las definiciones formales antes de los ejercicios.
+
+**Tags:** #FISG1001 #unidad1 #cinematica #movimiento-rectilineo #mrua #caida-libre
