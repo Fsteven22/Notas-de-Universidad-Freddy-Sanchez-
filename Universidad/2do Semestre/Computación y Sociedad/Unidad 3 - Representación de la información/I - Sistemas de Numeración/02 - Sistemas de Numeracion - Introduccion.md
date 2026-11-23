@@ -10,6 +10,8 @@ dg-publish: true
 > Un **sistema de numeración** define un conjunto de **signos** (símbolos) y **reglas** para expresar números. No es la única forma posible de representar cantidades — a lo largo de la historia han existido sistemas muy distintos entre sí, cada uno con sus propios símbolos y convenciones de combinación.
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Sistemas_de_Numeracion_-_Introduccion_01.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Sistemas_de_Numeracion_-_Introduccion_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -36,6 +38,8 @@ dg-publish: true
 > En el mundo de la computación, prácticamente todo el trabajo de representación numérica gira en torno a **cuatro sistemas**:
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Sistemas_de_Numeracion_-_Introduccion_02.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Sistemas_de_Numeracion_-_Introduccion_02.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 >
 > |Sistema|Base|Dígitos disponibles|
 > |---|---|---|

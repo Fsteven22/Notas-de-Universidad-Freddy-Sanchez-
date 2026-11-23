@@ -52,6 +52,5 @@ tags: [recursos-visuales, computacion-y-sociedad]
 > | --- | --- | --- | --- |
 > | Ética profesional — busca videos aquí | [Buscar en YouTube](https://www.youtube.com/results?search_query=2do+Semestre/Computación+y+Sociedad+Ética+profesional+explicado) | — | Videos explicativos de esta unidad |
 
-## 🔗 Ver también
-
-- `Unidad 0 - Guias y Ejercicios/00 - Recursos Unidad 0.md` - índice de guías, guías de estudio y material de la unidad.
+> [!info] 🔗 Ver también
+> - `Unidad 0 - Guias y Ejercicios/00 - Recursos Unidad 0.md` - índice de guías, guías de estudio y material de la unidad.

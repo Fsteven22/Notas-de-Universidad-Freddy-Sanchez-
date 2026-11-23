@@ -11,6 +11,8 @@ dg-publish: true
 > Hasta ahora hemos visto amenazas contra la información y la privacidad de las personas. Esta nota cambia de eje: no se trata de proteger datos personales, sino de proteger **creaciones de la mente** — ideas, obras, invenciones — que también tienen valor y también pueden ser robadas o usadas sin autorización.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Fundamentos_de_Propiedad_Intelectual_01.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Fundamentos_de_Propiedad_Intelectual_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

@@ -15,6 +15,8 @@ dg-publish: true
 > HTML (HyperText Markup Language) es el lenguaje que estructura el contenido de cualquier página web. Su evolución —de un lenguaje simple para enlazar documentos de texto, a una plataforma capaz de soportar aplicaciones completas— explica en buena parte cómo fue posible el salto de la [[02 - Evolución de la Web|Web 1.0 estática a la Web 2.0+ dinámica]].
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Evolución_del_HTML_01.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Evolución_del_HTML_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

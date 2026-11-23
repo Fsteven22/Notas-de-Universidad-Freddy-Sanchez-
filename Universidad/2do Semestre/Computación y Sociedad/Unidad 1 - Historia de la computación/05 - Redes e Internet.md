@@ -11,6 +11,8 @@ dg-publish: true
 > Durante décadas, las computadoras trabajaron de forma aislada. La necesidad de compartir información y recursos impulsó el desarrollo de las redes, que eventualmente evolucionaron hasta formar la Internet que conocemos hoy.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Redes_e_Internet_01.svg]]
+> **Se lee así:** Diagrama que ilustra 05_-_Redes_e_Internet_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -33,6 +35,8 @@ dg-publish: true
 > ### Expansión de ARPANET
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Redes_e_Internet_02.svg]]
+> **Se lee así:** Diagrama que ilustra 05_-_Redes_e_Internet_02.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -127,6 +131,8 @@ dg-publish: true
 > [!summary] 📅 De ARPANET a la WWW
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Redes_e_Internet_05.svg]]
+> **Se lee así:** Diagrama que ilustra 05_-_Redes_e_Internet_05.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

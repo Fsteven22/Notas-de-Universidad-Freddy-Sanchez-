@@ -11,6 +11,8 @@ dg-publish: true
 > En el lenguaje cotidiano usamos "ética" y "moral" casi como sinónimos. Pero en el contexto profesional — y especialmente en computación, donde las decisiones técnicas tienen consecuencias sociales reales — vale la pena distinguirlos con precisión, porque **no responden a la misma pregunta**.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Fundamentos_de_Ética_y_Moral_01.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Fundamentos_de_Ética_y_Moral_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

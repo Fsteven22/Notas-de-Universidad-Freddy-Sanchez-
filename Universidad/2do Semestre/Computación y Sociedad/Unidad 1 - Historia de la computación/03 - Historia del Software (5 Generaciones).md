@@ -11,6 +11,8 @@ dg-publish: true
 > A medida que el hardware se volvió más potente, la forma de comunicarse con las máquinas también tuvo que evolucionar. Lo que comenzó como secuencias de ceros y unos se transformó progresivamente en lenguajes cada vez más cercanos al lenguaje humano.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Historia_del_Software_(5_Generaciones)_01.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Historia_del_Software_(5_Generaciones)_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -170,6 +172,8 @@ dg-publish: true
 > [!summary] 📅 Evolución de los lenguajes de programación
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Historia_del_Software_(5_Generaciones)_05.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Historia_del_Software_(5_Generaciones)_05.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

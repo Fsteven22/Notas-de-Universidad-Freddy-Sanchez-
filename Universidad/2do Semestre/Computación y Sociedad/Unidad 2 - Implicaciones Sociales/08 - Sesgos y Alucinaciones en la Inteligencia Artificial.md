@@ -26,6 +26,8 @@ dg-publish: true
 ### ¿Qué es un Sesgo?
 
 > [!note] 📖 Definición
+> **Se lee así:** Este callout de deck explica un concepto visual clave.
+> **Por qué importa:** Ayuda a entender la relación entre los elementos del diagrama.
 > 
 > Según el estándar **ISO/IEC 22989**, un sesgo es la _"diferencia sistemática de trato de determinados objetos, personas o grupos en comparación con otros"_. A diferencia de un error aleatorio, el sesgo sigue un **patrón repetible y predecible**.
 > 
@@ -108,6 +110,8 @@ dg-publish: true
 ### ¿Qué es una Alucinación?
 
 > [!note] 📖 Definición
+> **Se lee así:** Este callout de deck explica un concepto visual clave.
+> **Por qué importa:** Ayuda a entender la relación entre los elementos del diagrama.
 > 
 > Una **alucinación en IA** es un fenómeno en el que un modelo genera una respuesta que parece completamente coherente y segura, pero que es **falsa, inexacta o inventada**, sin base en la realidad verificable.
 > 
@@ -212,6 +216,8 @@ dg-publish: true
 > |**Ejemplo**|Algoritmo que favorece CVs masculinos|IA que inventa una sentencia judicial|
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Sesgos_y_Alucinaciones_en_la_Inteligencia_Artificial_03.svg]]
+> **Se lee así:** Diagrama que ilustra 08_-_Sesgos_y_Alucinaciones_en_la_Inteligencia_Artificial_03.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

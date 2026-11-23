@@ -11,6 +11,8 @@ dg-publish: true
 > Desarrollar software no es simplemente escribir código. Requiere planificación, análisis, diseño, pruebas y mantenimiento. Los **modelos de construcción de software** son marcos de trabajo que definen cómo organizar estas etapas para producir software de calidad de forma predecible.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Modelos_de_Construcción_de_Software_01.svg]]
+> **Se lee así:** Diagrama que ilustra 04_-_Modelos_de_Construcción_de_Software_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

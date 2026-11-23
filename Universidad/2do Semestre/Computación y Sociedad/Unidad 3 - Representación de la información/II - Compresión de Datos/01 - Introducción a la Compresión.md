@@ -14,6 +14,8 @@ dg-publish: true
 > - Sin compresión, plataformas como Netflix o Spotify serían imposibles de operar al costo de ancho de banda que usarías sin comprimir.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Compresión_01.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Introducción_a_la_Compresión_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

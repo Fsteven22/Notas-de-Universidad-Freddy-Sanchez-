@@ -11,6 +11,8 @@ dg-publish: true
 > La historia de la computación no es solo la historia de las máquinas — es la historia de las personas que las imaginaron, diseñaron y construyeron. Cada pionero aportó una pieza fundamental al gran rompecabezas que hoy llamamos computación moderna.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Pioneros_de_la_Computación_01.svg]]
+> **Se lee así:** Diagrama que ilustra 06_-_Pioneros_de_la_Computación_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -146,6 +148,8 @@ dg-publish: true
 > | **Legado** | Base de prácticamente todas las computadoras actuales |
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Pioneros_de_la_Computación_02.svg]]
+> **Se lee así:** Diagrama que ilustra 06_-_Pioneros_de_la_Computación_02.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 >
 > ---
 >
@@ -202,6 +206,8 @@ dg-publish: true
 > [!summary] 📅 Todos los pioneros en perspectiva
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Pioneros_de_la_Computación_03.svg]]
+> **Se lee así:** Diagrama que ilustra 06_-_Pioneros_de_la_Computación_03.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

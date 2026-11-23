@@ -14,6 +14,8 @@ dg-publish: true
 > - Hoy en día, ASCII sigue siendo la base de Unicode (el estándar moderno que soporta miles de idiomas y emojis), ya que los primeros 128 caracteres de Unicode son idénticos a ASCII.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Keyword_Encoding_y_ASCII_01.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Keyword_Encoding_y_ASCII_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

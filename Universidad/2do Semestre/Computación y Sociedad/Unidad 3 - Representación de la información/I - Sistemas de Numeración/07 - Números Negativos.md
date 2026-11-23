@@ -14,6 +14,8 @@ dg-publish: true
 > - Hoy en día, **complemento a 2** es el estándar universal: lo usan procesadores x86, ARM, RISC-V, y prácticamente cualquier lenguaje de programación cuando trabajas con tipos `int` con signo.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Números_Negativos_01.svg]]
+> **Se lee así:** Diagrama que ilustra 07_-_Números_Negativos_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

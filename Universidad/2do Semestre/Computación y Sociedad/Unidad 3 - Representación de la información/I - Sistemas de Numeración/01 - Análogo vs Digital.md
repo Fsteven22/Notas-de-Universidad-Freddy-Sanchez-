@@ -10,6 +10,8 @@ dg-publish: true
 > Antes de hablar de sistemas numéricos hay que resolver una pregunta previa: las computadoras manejan texto, números, imágenes, audio y video, pero **¿cómo representan físicamente** toda esa información? La respuesta es que **toda información viaja como una señal eléctrica**, y existen dos formas fundamentalmente distintas de codificar esa señal: **analógica** y **digital**.
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Análogo_vs_Digital_01.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Análogo_vs_Digital_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 >
 > |Tipo de señal|Naturaleza|Ejemplo físico|
 > |---|---|---|
@@ -62,6 +64,8 @@ dg-publish: true
 > Una computadora no almacena literalmente un "1" o un "0" — almacena un **nivel de voltaje**, y ese voltaje se interpreta como bit según el rango en el que caiga:
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Análogo_vs_Digital_02.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Análogo_vs_Digital_02.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 >
 > |Rango de voltaje|Estado lógico|Bit|
 > |---|---|---|

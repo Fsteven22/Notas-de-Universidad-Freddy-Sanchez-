@@ -13,6 +13,8 @@ dg-publish: true
 > _Arturo Serrano, Evelio Martínez — "La Brecha Digital: Mitos y Realidades", México, 2003_
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Brecha_Digital_01.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Brecha_Digital_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

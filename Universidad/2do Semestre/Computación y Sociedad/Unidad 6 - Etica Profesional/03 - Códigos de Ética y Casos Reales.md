@@ -11,6 +11,8 @@ dg-publish: true
 > Las dos notas anteriores cubrieron la teoría: la diferencia entre ética y moral, qué es un dilema ético, y las falacias que distorsionan el juicio ético en computación. Esta nota cierra el bloque con la parte **institucional y práctica**: los códigos formales que la industria de la computación ha adoptado para guiar la conducta profesional, y un caso real donde la ética profesional se puso a prueba.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Códigos_de_Ética_y_Casos_Reales_01.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Códigos_de_Ética_y_Casos_Reales_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

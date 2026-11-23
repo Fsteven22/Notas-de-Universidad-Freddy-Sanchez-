@@ -11,6 +11,8 @@ dg-publish: true
 > Ya vimos que el **derecho de autor** protege obras literarias y artísticas (incluyendo software). Pero no todo lo que una empresa o persona quiere proteger es una "obra" — a veces es una invención, un nombre comercial, o una fórmula secreta. Cada uno de estos casos tiene **su propia figura legal**, con reglas y duración distintas.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Tipos_de_Propiedad_Intelectual_-_Patentes,_Trademarks_y_Trade_Secrets_01.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Tipos_de_Propiedad_Intelectual_-_Patentes,_Trademarks_y_Trade_Secrets_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

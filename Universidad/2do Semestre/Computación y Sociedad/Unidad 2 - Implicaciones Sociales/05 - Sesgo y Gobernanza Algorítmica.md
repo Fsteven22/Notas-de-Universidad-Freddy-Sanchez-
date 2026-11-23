@@ -13,6 +13,8 @@ dg-publish: true
 > Los algoritmos son diseñados por personas, entrenados con datos generados por personas, y desplegados en contextos sociales con historia. Todo eso introduce **sesgo**.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Sesgo_y_Gobernanza_Algorítmica_01.svg]]
+> **Se lee así:** Diagrama que ilustra 05_-_Sesgo_y_Gobernanza_Algorítmica_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -113,6 +115,8 @@ dg-publish: true
 > El objetivo es que la automatización no elimine la rendición de cuentas: si un sistema toma una decisión que perjudica a alguien, debe haber un responsable humano identificable.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Sesgo_y_Gobernanza_Algorítmica_02.svg]]
+> **Se lee así:** Diagrama que ilustra 05_-_Sesgo_y_Gobernanza_Algorítmica_02.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 >
 
 > [!note] 🔧 Principios de la Gobernanza Algorítmica

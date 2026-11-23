@@ -14,6 +14,8 @@ dg-publish: true
 > - Es especialmente efectivo en datos con **muchas repeticiones consecutivas**: imágenes con áreas de color sólido, faxes, iconos simples, o ciertos tipos de datos de sensores.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Run_Length_Encoding_01.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Run_Length_Encoding_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

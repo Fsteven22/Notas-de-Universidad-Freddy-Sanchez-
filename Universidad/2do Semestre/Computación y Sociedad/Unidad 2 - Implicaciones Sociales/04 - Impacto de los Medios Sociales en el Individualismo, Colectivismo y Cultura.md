@@ -11,6 +11,8 @@ dg-publish: true
 > Los medios sociales pueden verse desde dos perspectivas contrapuestas sobre su efecto en la sociedad:
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Impacto_de_los_Medios_Sociales_en_el_Individualismo,_Colectivismo_y_Cultura_01.svg]]
+> **Se lee así:** Diagrama que ilustra 04_-_Impacto_de_los_Medios_Sociales_en_el_Individualismo,_Colectivismo_y_Cultura_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

@@ -11,6 +11,8 @@ dg-publish: true
 > Cada dispositivo electrónico que usamos tiene un ciclo de vida con impacto ambiental en todas sus etapas: fabricación, uso y descarte. La tecnología que conecta al mundo también genera una de las corrientes de residuos de más rápido crecimiento en la historia.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Impacto_Ambiental,_Desechos_Electrónicos_y_Desarrollo_Sostenible_01.svg]]
+> **Se lee así:** Diagrama que ilustra 06_-_Impacto_Ambiental,_Desechos_Electrónicos_y_Desarrollo_Sostenible_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -116,6 +118,8 @@ dg-publish: true
 ## 🌍 Desarrollo Sostenible
 
 > [!important] 📖 Definición y origen
+> **Se lee así:** Este callout de deck explica un concepto visual clave.
+> **Por qué importa:** Ayuda a entender la relación entre los elementos del diagrama.
 > 
 > El **Desarrollo Sostenible** fue definido por la Comisión Brundtland de la ONU en 1987 como:
 > 

@@ -11,6 +11,8 @@ dg-publish: true
 > Entre finales del siglo XIX y mediados del XX, los avances en electromecánica y electrónica permitieron dar el salto de las calculadoras mecánicas a las primeras computadoras programables. Este período sentó las bases de la arquitectura que usamos hasta hoy.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Computadoras_Modernas_Tempranas_01.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Computadoras_Modernas_Tempranas_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -96,6 +98,8 @@ dg-publish: true
 > ### Arquitectura Von Neumann
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Computadoras_Modernas_Tempranas_03.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Computadoras_Modernas_Tempranas_03.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 >
 > | Componente | Función |
 > |---|---|
@@ -120,6 +124,8 @@ dg-publish: true
 > [!summary] 📅 De Hollerith a Von Neumann
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Computadoras_Modernas_Tempranas_04.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Computadoras_Modernas_Tempranas_04.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

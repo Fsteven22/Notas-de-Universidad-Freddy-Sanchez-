@@ -11,6 +11,8 @@ dg-publish: true
 > Las dos notas anteriores definieron **qué** se protege y **con qué figura legal**. Esta nota cierra el bloque con la parte práctica: **cómo se infringe** la propiedad intelectual en el mundo digital, y **qué mecanismos existen** para hacer cumplir esa protección — desde la ingeniería inversa de un producto, hasta el registro de dominios falsos, pasando por la responsabilidad legal de las plataformas y el cifrado técnico del contenido.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Infracciones_y_Protección_Digital_01.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Infracciones_y_Protección_Digital_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

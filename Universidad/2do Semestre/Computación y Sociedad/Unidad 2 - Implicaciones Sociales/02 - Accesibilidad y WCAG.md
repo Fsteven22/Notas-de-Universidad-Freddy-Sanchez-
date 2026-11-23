@@ -11,6 +11,8 @@ dg-publish: true
 > La **accesibilidad** es la posibilidad que tengan todas las personas _sin_ que medien **exclusiones de ningún tipo**, como ser culturales, físicas o técnicas, para acceder a un servicio o llegar a visitar un lugar o utilizar un objeto.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Accesibilidad_y_WCAG_01.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Accesibilidad_y_WCAG_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

@@ -14,6 +14,8 @@ dg-publish: true
 > - Para que Huffman funcione sin ambigüedad al decodificar, los códigos que genera son siempre **códigos prefijos** — el concepto que vemos primero antes de construir el árbol de Huffman.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Códigos_Prefijos_y_Huffman_Encoding_01.svg]]
+> **Se lee así:** Diagrama que ilustra 04_-_Códigos_Prefijos_y_Huffman_Encoding_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

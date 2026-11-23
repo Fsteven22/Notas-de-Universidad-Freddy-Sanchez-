@@ -15,6 +15,8 @@ dg-publish: true
 > Internet (con ARPANET como antecesora) existió casi **25 años antes** que la Web. La red y sus protocolos se construyeron primero; la Web fue una aplicación construida **encima** de esa red ya existente, para hacerla usable por personas comunes y no solo especialistas.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Historia_de_Internet_y_Cómo_Funciona_01.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Historia_de_Internet_y_Cómo_Funciona_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

@@ -11,6 +11,8 @@ dg-publish: true
 > No todo ataque informático busca robar información. Algunos tienen un objetivo distinto: **interrumpir un servicio**, dejarlo inaccesible, o simplemente **observar el tráfico** que circula por una red para recolectar información sin que nadie lo note. Esta nota cubre esas dos familias de ataque: el **sabotaje de servicios** (DoS/DDoS) y la **interceptación de tráfico** (sniffers, botnets como infraestructura).
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Sabotaje_y_Ataques_de_Red_01.svg]]
+> **Se lee así:** Diagrama que ilustra 06_-_Sabotaje_y_Ataques_de_Red_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

@@ -13,6 +13,8 @@ dg-publish: true
 > Cada acción individual en plataformas tecnológicas tiene consecuencias colectivas, tanto positivas como negativas.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Implicaciones_Sociales_de_la_Computación_en_un_Mundo_Conectado_01.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Implicaciones_Sociales_de_la_Computación_en_un_Mundo_Conectado_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

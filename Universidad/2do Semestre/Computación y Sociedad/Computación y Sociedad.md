@@ -5,7 +5,8 @@ tags: [CCPG1004, computacion-sociedad, mapa-de-contenido]
 
 # 🟦 Computación y Sociedad
 
-**Código:** CCPG1004 · **Semestre:** 2do · [[Bienvenida y Syllabus Computación y Sociedad|Ver Syllabus completo]]
+> [!info] ℹ️ Información de la materia
+> **Código:** CCPG1004 · **Semestre:** 2do · [[Bienvenida y Syllabus Computación y Sociedad|Ver Syllabus completo]]
 
 > [!info] ℹ️ Mapa de contenido de la materia
 > Acceso directo a las 6 unidades; la Unidad 3 se divide en los subtemas del syllabus (carpetas I-II). Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
