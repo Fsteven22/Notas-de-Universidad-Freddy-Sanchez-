@@ -30,6 +30,8 @@ tags: [CCPG1005, unidad1, poo, clases]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Definición_de_clases_y_constructores_01.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Definición_de_clases_y_constructores_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -125,6 +127,8 @@ tags: [CCPG1005, unidad1, poo, clases]
 > ```
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Definición_de_clases_y_constructores_02.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Definición_de_clases_y_constructores_02.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -145,6 +149,8 @@ tags: [CCPG1005, unidad1, poo, clases]
 > **Flujo de creación de objetos:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Definición_de_clases_y_constructores_03.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Definición_de_clases_y_constructores_03.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > ```java
 > public class Producto {
@@ -388,6 +394,8 @@ tags: [CCPG1005, unidad1, poo, clases]
 > ```
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Definición_de_clases_y_constructores_04.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Definición_de_clases_y_constructores_04.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

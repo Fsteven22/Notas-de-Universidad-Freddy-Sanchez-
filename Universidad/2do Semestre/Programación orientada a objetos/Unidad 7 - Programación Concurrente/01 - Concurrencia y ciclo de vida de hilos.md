@@ -31,6 +31,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_01.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Concurrencia_y_ciclo_de_vida_de_hilos_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -146,6 +148,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > [!info] 🎢 Diagrama de Estados
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_04.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Concurrencia_y_ciclo_de_vida_de_hilos_04.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Descripción de cada estado:**
 > 
@@ -520,6 +524,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > **Flujo de decisión:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_05.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Concurrencia_y_ciclo_de_vida_de_hilos_05.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -696,6 +702,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > **⚠️ ADVERTENCIAS IMPORTANTES:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_06.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Concurrencia_y_ciclo_de_vida_de_hilos_06.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Mejores prácticas:**
 > 
@@ -835,6 +843,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > **¿Por qué falla?**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_07.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Concurrencia_y_ciclo_de_vida_de_hilos_07.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Visualización del problema:**
 > 
@@ -891,6 +901,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > **¿Cómo funciona synchronized?**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_08.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Concurrencia_y_ciclo_de_vida_de_hilos_08.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Formas de usar synchronized:**
 > 
@@ -1222,6 +1234,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > [!note] 🖼️ ️ Mapa Mental Completo
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_10.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Concurrencia_y_ciclo_de_vida_de_hilos_10.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### 📋 Tabla Comparativa Final
 

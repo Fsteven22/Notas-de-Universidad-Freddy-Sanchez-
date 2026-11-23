@@ -29,6 +29,8 @@ tags: [CCPG1005, unidad1, poo, sintaxis]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Sintaxis_básica_en_Java_01.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Sintaxis_básica_en_Java_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -77,6 +79,8 @@ tags: [CCPG1005, unidad1, poo, sintaxis]
 > |`main()`|✅ Sí|Punto de inicio del programa|
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Sintaxis_básica_en_Java_02.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Sintaxis_básica_en_Java_02.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### 🎪 El Método main
 
@@ -222,6 +226,8 @@ tags: [CCPG1005, unidad1, poo, sintaxis]
 > **Diferencia clave: Primitivos vs Referencias**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Sintaxis_básica_en_Java_03.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Sintaxis_básica_en_Java_03.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -469,6 +475,8 @@ tags: [CCPG1005, unidad1, poo, sintaxis]
 ### 💬 Tipos de Comentarios
 
 > [!success] 📖 Documentar el Código
+> **Se lee así:** Este callout de deck explica un concepto visual clave.
+> **Por qué importa:** Ayuda a entender la relación entre los elementos del diagrama.
 > 
 > ```java
 > public class Comentarios {

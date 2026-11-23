@@ -41,6 +41,8 @@ tags: [CCPG1005, unidad3, poo, uml]
 > Una clase se representa como un **rectángulo dividido en 3 secciones**:
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_02.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_UML_y_diagrama_de_clases_02.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Secciones:**
 > 
@@ -86,6 +88,8 @@ tags: [CCPG1005, unidad3, poo, uml]
 > **Ejemplos:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_03.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_UML_y_diagrama_de_clases_03.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Equivalente en Java:**
 > 
@@ -149,6 +153,8 @@ tags: [CCPG1005, unidad3, poo, uml]
 > Indica que una clase **conoce** o **usa** otra clase.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_06.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_UML_y_diagrama_de_clases_06.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Multiplicidad:**
 > 
@@ -190,6 +196,8 @@ tags: [CCPG1005, unidad3, poo, uml]
 > Una clase **usa** temporalmente otra (parámetro, variable local).
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_09.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_UML_y_diagrama_de_clases_09.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -220,6 +228,8 @@ tags: [CCPG1005, unidad3, poo, uml]
 > [!example] 🎯 Tipos Enumerados
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_12.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_UML_y_diagrama_de_clases_12.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -230,18 +240,24 @@ tags: [CCPG1005, unidad3, poo, uml]
 > [!example] 💳 Diagrama Completo
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_13.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_UML_y_diagrama_de_clases_13.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### 🎓 Sistema Universitario
 
 > [!example] 📖 Gestión Académica
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_14.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_UML_y_diagrama_de_clases_14.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### 🛒 Sistema de Comercio
 
 > [!example] 🏪 E-commerce
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_15.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_UML_y_diagrama_de_clases_15.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -315,6 +331,8 @@ tags: [CCPG1005, unidad3, poo, uml]
 > [!note] 🖼️ Comparativa de Relaciones
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_UML_y_diagrama_de_clases_16.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_UML_y_diagrama_de_clases_16.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

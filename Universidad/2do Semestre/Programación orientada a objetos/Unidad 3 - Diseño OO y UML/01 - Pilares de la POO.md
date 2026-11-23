@@ -23,6 +23,8 @@ tags: [CCPG1005, unidad3, poo, pilares]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_01.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Pilares_de_la_POO_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -139,6 +141,8 @@ tags: [CCPG1005, unidad3, poo, pilares]
 > [!note] 🖼️ Concepto
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_02.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Pilares_de_la_POO_02.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### 🛠️ Implementación
 
@@ -255,6 +259,8 @@ tags: [CCPG1005, unidad3, poo, pilares]
 > [!note] 🖼️ Concepto
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_03.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Pilares_de_la_POO_03.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### 🛠️ Implementación
 
@@ -374,6 +380,8 @@ tags: [CCPG1005, unidad3, poo, pilares]
 > [!note] 🖼️ Concepto
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_04.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Pilares_de_la_POO_04.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### 🛠️ Clases Abstractas
 
@@ -539,6 +547,8 @@ tags: [CCPG1005, unidad3, poo, pilares]
 > [!note] 🖼️ Relación entre los Pilares
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_05.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Pilares_de_la_POO_05.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 > [!example] 🚗 Ejemplo Integrador
 > 
@@ -599,6 +609,8 @@ tags: [CCPG1005, unidad3, poo, pilares]
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_06.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Pilares_de_la_POO_06.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 > [!success] ✅ Checklist de Aplicación
 > 

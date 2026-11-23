@@ -111,6 +111,8 @@ tags: [CCPG1005, unidad1, poo, static]
 > **Visualización del proceso:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Miembros_estáticos_(static)_03.svg]]
+> **Se lee así:** Diagrama que ilustra 05_-_Miembros_estáticos_(static)_03.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Uso práctico:**
 > 
@@ -177,6 +179,8 @@ tags: [CCPG1005, unidad1, poo, static]
 > **Razón de las restricciones:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Miembros_estáticos_(static)_04.svg]]
+> **Se lee así:** Diagrama que ilustra 05_-_Miembros_estáticos_(static)_04.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### 🧮 Métodos Utilitarios
 
@@ -423,6 +427,8 @@ tags: [CCPG1005, unidad1, poo, static]
 > **Visualización en memoria:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Miembros_estáticos_(static)_06.svg]]
+> **Se lee así:** Diagrama que ilustra 05_-_Miembros_estáticos_(static)_06.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -435,6 +441,8 @@ tags: [CCPG1005, unidad1, poo, static]
 > **1. Cuándo usar static:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Miembros_estáticos_(static)_07.svg]]
+> **Se lee así:** Diagrama que ilustra 05_-_Miembros_estáticos_(static)_07.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **2. Constantes siempre public static final:**
 > 
@@ -503,6 +511,8 @@ tags: [CCPG1005, unidad1, poo, static]
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Miembros_estáticos_(static)_08.svg]]
+> **Se lee así:** Diagrama que ilustra 05_-_Miembros_estáticos_(static)_08.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 > [!quote] 🎓 Puntos Clave para Recordar
 > 

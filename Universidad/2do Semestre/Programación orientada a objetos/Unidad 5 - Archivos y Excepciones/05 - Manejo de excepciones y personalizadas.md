@@ -19,6 +19,8 @@ tags: [CCPG1005, unidad5, poo, excepciones]
 > - **Con manejo** → Muestra mensaje "Servicio temporalmente no disponible, intente más tarde"
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_01.svg]]
+> **Se lee así:** Diagrama que ilustra 05_-_Manejo_de_excepciones_y_personalizadas_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -140,6 +142,8 @@ tags: [CCPG1005, unidad5, poo, excepciones]
 > **Ventajas del wrapping:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_02.svg]]
+> **Se lee así:** Diagrama que ilustra 05_-_Manejo_de_excepciones_y_personalizadas_02.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -209,6 +213,8 @@ tags: [CCPG1005, unidad5, poo, excepciones]
 > **Estructura jerárquica:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_03.svg]]
+> **Se lee así:** Diagrama que ilustra 05_-_Manejo_de_excepciones_y_personalizadas_03.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Implementación:**
 > 
@@ -271,6 +277,8 @@ tags: [CCPG1005, unidad5, poo, excepciones]
 > **Regla de decisión:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_04.svg]]
+> **Se lee así:** Diagrama que ilustra 05_-_Manejo_de_excepciones_y_personalizadas_04.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Excepción VERIFICADA (extends Exception):**
 > 
@@ -885,6 +893,8 @@ tags: [CCPG1005, unidad5, poo, excepciones]
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_05.svg]]
+> **Se lee así:** Diagrama que ilustra 05_-_Manejo_de_excepciones_y_personalizadas_05.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

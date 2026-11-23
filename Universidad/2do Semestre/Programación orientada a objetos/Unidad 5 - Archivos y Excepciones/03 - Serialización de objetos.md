@@ -26,6 +26,8 @@ tags: [CCPG1005, unidad5, poo, serializacion]
 > - **Deserializar** → Recibir las cajas, rearmar el mueble
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Serialización_de_objetos_01.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Serialización_de_objetos_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -129,6 +131,8 @@ tags: [CCPG1005, unidad5, poo, serializacion]
 > **Proceso:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Serialización_de_objetos_02.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Serialización_de_objetos_02.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Código básico:**
 > 
@@ -209,6 +213,8 @@ tags: [CCPG1005, unidad5, poo, serializacion]
 > **Proceso:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Serialización_de_objetos_03.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Serialización_de_objetos_03.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Código básico:**
 > 
@@ -449,6 +455,8 @@ tags: [CCPG1005, unidad5, poo, serializacion]
 > |**Mejor para**|Objetos Java complejos|APIs, configs|Documentos|Grandes volúmenes|
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Serialización_de_objetos_04.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Serialización_de_objetos_04.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -503,6 +511,8 @@ tags: [CCPG1005, unidad5, poo, serializacion]
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Serialización_de_objetos_05.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Serialización_de_objetos_05.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

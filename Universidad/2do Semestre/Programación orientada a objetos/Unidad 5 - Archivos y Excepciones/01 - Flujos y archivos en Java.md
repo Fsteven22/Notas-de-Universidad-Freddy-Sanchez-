@@ -18,6 +18,8 @@ tags: [CCPG1005, unidad5, poo, flujos]
 > - **Destino** → Desembocadura (pantalla, archivo, red)
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Flujos_y_archivos_en_Java_01.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Flujos_y_archivos_en_Java_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -40,12 +42,16 @@ tags: [CCPG1005, unidad5, poo, flujos]
 > [!note] 🖼️ Flujos de Bytes vs Caracteres
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Flujos_y_archivos_en_Java_02.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Flujos_y_archivos_en_Java_02.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### 📊 Jerarquía Completa
 
 > [!note] 🌳 Árbol de Clases de E/S
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Flujos_y_archivos_en_Java_03.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Flujos_y_archivos_en_Java_03.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -54,6 +60,8 @@ tags: [CCPG1005, unidad5, poo, flujos]
 ### 📥 Flujos de Entrada (Input Streams)
 
 > [!example] 📖 Lectura de Datos
+> **Se lee así:** Este callout de deck explica un concepto visual clave.
+> **Por qué importa:** Ayuda a entender la relación entre los elementos del diagrama.
 > 
 > **Propósito:** Traer datos DESDE una fuente HACIA el programa.
 > 
@@ -198,6 +206,8 @@ tags: [CCPG1005, unidad5, poo, flujos]
 > [!summary] 🎯 Guía Rápida de Decisión
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Flujos_y_archivos_en_Java_06.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Flujos_y_archivos_en_Java_06.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > |Pregunta|Respuesta|Clase a usar|
 > |---|---|---|

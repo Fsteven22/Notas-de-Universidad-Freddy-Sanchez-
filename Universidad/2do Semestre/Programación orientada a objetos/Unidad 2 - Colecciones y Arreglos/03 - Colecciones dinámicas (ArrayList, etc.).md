@@ -21,6 +21,8 @@ tags: [CCPG1005, unidad2, poo, colecciones]
 > **Problema que resuelven:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_01.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Colecciones_dinámicas_(ArrayList,_etc.)_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Comparación rápida:**
 > 
@@ -91,6 +93,8 @@ tags: [CCPG1005, unidad2, poo, colecciones]
 > **Visualización interna:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_02.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Colecciones_dinámicas_(ArrayList,_etc.)_02.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### ➕ Operaciones Básicas
 
@@ -326,6 +330,8 @@ tags: [CCPG1005, unidad2, poo, colecciones]
 > **Estructura interna:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_03.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Colecciones_dinámicas_(ArrayList,_etc.)_03.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Comparación de rendimiento:**
 > 
@@ -383,6 +389,8 @@ tags: [CCPG1005, unidad2, poo, colecciones]
 > **Propiedades del HashSet:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_05.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Colecciones_dinámicas_(ArrayList,_etc.)_05.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Uso básico:**
 > 
@@ -458,6 +466,8 @@ tags: [CCPG1005, unidad2, poo, colecciones]
 > **Concepto:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_06.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Colecciones_dinámicas_(ArrayList,_etc.)_06.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Sintaxis básica:**
 > 
@@ -576,6 +586,8 @@ tags: [CCPG1005, unidad2, poo, colecciones]
 > **Árbol de decisión:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_07.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Colecciones_dinámicas_(ArrayList,_etc.)_07.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

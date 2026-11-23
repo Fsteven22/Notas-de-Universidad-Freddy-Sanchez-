@@ -29,6 +29,8 @@ tags: [CCPG1005, unidad4, poo, polimorfismo]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_01.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Polimorfismo,_enlace_dinámico_y_casting_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -472,6 +474,8 @@ tags: [CCPG1005, unidad4, poo, polimorfismo]
 > ```
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_04.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Polimorfismo,_enlace_dinámico_y_casting_04.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### 🛠️ Upcasting en Detalle
 
@@ -1134,6 +1138,8 @@ tags: [CCPG1005, unidad4, poo, polimorfismo]
 > [!note] 🖼️ ️ Mapa Mental Completo
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_05.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Polimorfismo,_enlace_dinámico_y_casting_05.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### 📋 Tabla Resumen Final
 

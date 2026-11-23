@@ -21,6 +21,8 @@ tags: [CCPG1005, unidad5, poo, excepciones]
 > - **Sin manejo** → Accidente, daños mayores
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Excepciones_en_Java_01.svg]]
+> **Se lee así:** Diagrama que ilustra 04_-_Excepciones_en_Java_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -350,6 +352,8 @@ tags: [CCPG1005, unidad5, poo, excepciones]
 > **Cadena de propagación:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Excepciones_en_Java_04.svg]]
+> **Se lee así:** Diagrama que ilustra 04_-_Excepciones_en_Java_04.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -716,6 +720,8 @@ tags: [CCPG1005, unidad5, poo, excepciones]
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Excepciones_en_Java_05.svg]]
+> **Se lee así:** Diagrama que ilustra 04_-_Excepciones_en_Java_05.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

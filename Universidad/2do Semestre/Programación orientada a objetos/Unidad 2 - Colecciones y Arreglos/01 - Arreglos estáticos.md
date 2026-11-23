@@ -152,6 +152,8 @@ tags: [CCPG1005, unidad2, poo, arreglos]
 > **Visualización de inicialización:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Arreglos_estáticos_02.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Arreglos_estáticos_02.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -192,6 +194,8 @@ tags: [CCPG1005, unidad2, poo, arreglos]
 > **Representación visual:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Arreglos_estáticos_03.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Arreglos_estáticos_03.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **⚠️ Error común - ArrayIndexOutOfBoundsException:**
 > 
@@ -287,6 +291,8 @@ tags: [CCPG1005, unidad2, poo, arreglos]
 > **Flujo de decisión:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Arreglos_estáticos_04.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Arreglos_estáticos_04.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -402,6 +408,8 @@ tags: [CCPG1005, unidad2, poo, arreglos]
 > **Visualización del problema:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Arreglos_estáticos_05.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Arreglos_estáticos_05.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **✅ Formas correctas de copiar:**
 > 
@@ -552,6 +560,8 @@ tags: [CCPG1005, unidad2, poo, arreglos]
 > **Visualización de matriz 3x3:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Arreglos_estáticos_06.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Arreglos_estáticos_06.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Inicialización:**
 > 

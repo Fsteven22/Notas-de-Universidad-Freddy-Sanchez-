@@ -17,6 +17,8 @@ tags: [CCPG1005, unidad6, poo, gui]
 > - **GUI** → Como una conversación cara a cara: gestos, expresiones, señales visuales
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Principios_de_las_GUI_01.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Principios_de_las_GUI_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Ventajas de las GUI:**
 > 
@@ -35,6 +37,8 @@ tags: [CCPG1005, unidad6, poo, gui]
 > [!note] 📚 Evolución de las Bibliotecas
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Principios_de_las_GUI_02.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Principios_de_las_GUI_02.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Comparación:**
 > 
@@ -192,6 +196,8 @@ tags: [CCPG1005, unidad6, poo, gui]
 > - ✅ Diseño responsivo
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Principios_de_las_GUI_04.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Principios_de_las_GUI_04.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### 🌊 FlowLayout
 
@@ -428,6 +434,8 @@ tags: [CCPG1005, unidad6, poo, gui]
 > **4. Jerarquía visual**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Principios_de_las_GUI_05.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Principios_de_las_GUI_05.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **5. Agrupación lógica**
 > 
@@ -661,6 +669,8 @@ tags: [CCPG1005, unidad6, poo, gui]
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Principios_de_las_GUI_07.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Principios_de_las_GUI_07.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

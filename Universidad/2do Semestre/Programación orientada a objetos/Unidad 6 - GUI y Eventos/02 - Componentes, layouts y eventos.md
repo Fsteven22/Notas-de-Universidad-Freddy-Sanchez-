@@ -740,6 +740,8 @@ tags: [CCPG1005, unidad6, poo, gui]
 > [!info] 🔄 Arquitectura de Eventos
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Componentes,_layouts_y_eventos_02.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Componentes,_layouts_y_eventos_02.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Componentes del modelo:**
 > 
@@ -1150,6 +1152,8 @@ tags: [CCPG1005, unidad6, poo, gui]
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Componentes,_layouts_y_eventos_03.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Componentes,_layouts_y_eventos_03.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

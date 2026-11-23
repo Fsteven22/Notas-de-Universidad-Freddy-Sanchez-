@@ -31,6 +31,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_01.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Concurrencia_con_GUI_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -49,6 +51,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > - Actualizar el estado visual de la interfaz
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_02.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Concurrencia_con_GUI_02.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Regla de Oro de Swing:**
 > 
@@ -182,6 +186,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > **Problemas observados:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_03.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Concurrencia_con_GUI_03.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Síntomas de EDT bloqueado:**
 > 
@@ -302,6 +308,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > **Flujo de ejecución:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_05.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Concurrencia_con_GUI_05.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### 🎨 Ejemplo Completo: Procesador de Archivos
 
@@ -554,6 +562,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > **Flujo de ejecución:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_07.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Concurrencia_con_GUI_07.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### ⏰ invokeAndWait
 
@@ -611,6 +621,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > **⚠️ PELIGROS de invokeAndWait:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_08.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Concurrencia_con_GUI_08.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Reglas de uso:**
 > 
@@ -1075,6 +1087,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > **Por qué ocurre:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_09.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Concurrencia_con_GUI_09.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Solución:**
 > 
@@ -1394,6 +1408,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > [!note] 🖼️ ️ Mapa Mental Completo
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_10.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Concurrencia_con_GUI_10.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### 📋 Tabla Comparativa Final
 
@@ -1411,6 +1427,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > **Decisión rápida:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_11.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Concurrencia_con_GUI_11.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 

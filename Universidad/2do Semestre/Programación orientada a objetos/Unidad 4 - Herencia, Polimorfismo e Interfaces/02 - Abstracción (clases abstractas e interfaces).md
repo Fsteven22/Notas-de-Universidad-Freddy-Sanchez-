@@ -29,6 +29,8 @@ tags: [CCPG1005, unidad4, poo, abstraccion]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_01.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Abstracción_(clases_abstractas_e_interfaces)_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -41,6 +43,8 @@ tags: [CCPG1005, unidad4, poo, abstraccion]
 > Java ofrece **dos formas** de implementar abstracción:
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_02.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Abstracción_(clases_abstractas_e_interfaces)_02.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Tabla comparativa rápida:**
 > 
@@ -463,6 +467,8 @@ tags: [CCPG1005, unidad4, poo, abstraccion]
 > **Usa INTERFAZ cuando:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_04.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Abstracción_(clases_abstractas_e_interfaces)_04.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > - Quieres que clases no relacionadas compartan capacidades
 > - Necesitas herencia múltiple
@@ -702,6 +708,8 @@ tags: [CCPG1005, unidad4, poo, abstraccion]
 > **4. No abuses de la herencia**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_05.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Abstracción_(clases_abstractas_e_interfaces)_05.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **5. Documenta tus abstracciones**
 > 
@@ -725,6 +733,8 @@ tags: [CCPG1005, unidad4, poo, abstraccion]
 > [!note] 🖼️ ️ Mapa Mental Completo
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_06.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Abstracción_(clases_abstractas_e_interfaces)_06.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### 📋 Tabla de Decisión Rápida
 

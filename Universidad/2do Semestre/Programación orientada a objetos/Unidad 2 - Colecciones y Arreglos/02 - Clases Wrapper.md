@@ -20,6 +20,8 @@ tags: [CCPG1005, unidad2, poo, wrapper]
 > **Problema que resuelven:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Clases_Wrapper_01.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Clases_Wrapper_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Tabla de correspondencia:**
 > 
@@ -172,6 +174,8 @@ tags: [CCPG1005, unidad2, poo, wrapper]
 > **Visualización del caché:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Clases_Wrapper_03.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Clases_Wrapper_03.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -247,6 +251,8 @@ tags: [CCPG1005, unidad2, poo, wrapper]
 > **Diagrama de conversiones:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Clases_Wrapper_04.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Clases_Wrapper_04.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### 🧮 Métodos de Utilidad
 
@@ -399,6 +405,8 @@ tags: [CCPG1005, unidad2, poo, wrapper]
 > **Visualización en memoria:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Clases_Wrapper_05.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Clases_Wrapper_05.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Mejor práctica:**
 > 
@@ -578,6 +586,8 @@ tags: [CCPG1005, unidad2, poo, wrapper]
 > **Guía de decisión:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Clases_Wrapper_06.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Clases_Wrapper_06.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Mejores prácticas:**
 > 
@@ -705,5 +715,7 @@ tags: [CCPG1005, unidad2, poo, wrapper]
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Clases_Wrapper_07.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Clases_Wrapper_07.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 **Tags:** #CCPG1005 #poo #wrapper #unidad2

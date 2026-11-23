@@ -31,6 +31,8 @@ tags: [CCPG1005, unidad5, poo, archivos]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_01.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Lectura_y_escritura_de_archivos_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -61,6 +63,8 @@ tags: [CCPG1005, unidad5, poo, archivos]
 > **Lectura de archivos:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_03.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Lectura_y_escritura_de_archivos_03.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Escritura de archivos:**
 > 
@@ -86,6 +90,8 @@ tags: [CCPG1005, unidad5, poo, archivos]
 > **Proceso paso a paso:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_05.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Lectura_y_escritura_de_archivos_05.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Métodos de lectura:**
 > 
@@ -181,6 +187,8 @@ tags: [CCPG1005, unidad5, poo, archivos]
 > **Comparación de estrategias:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_06.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Lectura_y_escritura_de_archivos_06.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -304,6 +312,8 @@ tags: [CCPG1005, unidad5, poo, archivos]
 > **Comparación de modos:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_08.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Lectura_y_escritura_de_archivos_08.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -446,6 +456,8 @@ tags: [CCPG1005, unidad5, poo, archivos]
 > **Flujo de exploración:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_10.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Lectura_y_escritura_de_archivos_10.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -556,6 +568,8 @@ tags: [CCPG1005, unidad5, poo, archivos]
 > **Flujo de ejecución:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_12.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Lectura_y_escritura_de_archivos_12.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -629,6 +643,8 @@ tags: [CCPG1005, unidad5, poo, archivos]
 > **5. Elegir el nivel correcto de abstracción**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_13.svg]]
+> **Se lee así:** Diagrama que ilustra 02_-_Lectura_y_escritura_de_archivos_13.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### 🔄 Patrón Común: Copiar Archivo
 

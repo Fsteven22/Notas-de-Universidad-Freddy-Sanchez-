@@ -30,6 +30,8 @@ tags: [CCPG1005, unidad1, poo, encapsulamiento]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Encapsulamiento_y_visibilidad_01.svg]]
+> **Se lee así:** Diagrama que ilustra 04_-_Encapsulamiento_y_visibilidad_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -81,6 +83,8 @@ tags: [CCPG1005, unidad1, poo, encapsulamiento]
 > [!success] 📋 Guía de Decisión
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Encapsulamiento_y_visibilidad_02.svg]]
+> **Se lee así:** Diagrama que ilustra 04_-_Encapsulamiento_y_visibilidad_02.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Reglas generales:**
 > 
@@ -771,6 +775,8 @@ tags: [CCPG1005, unidad1, poo, encapsulamiento]
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Encapsulamiento_y_visibilidad_03.svg]]
+> **Se lee así:** Diagrama que ilustra 04_-_Encapsulamiento_y_visibilidad_03.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 > [!example] 🎯 Práctica 2: Clase Temperatura
 > 

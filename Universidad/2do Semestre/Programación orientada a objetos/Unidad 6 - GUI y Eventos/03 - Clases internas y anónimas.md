@@ -31,6 +31,8 @@ tags: [CCPG1005, unidad6, poo, clases-internas]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_01.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Clases_internas_y_anónimas_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -41,6 +43,8 @@ tags: [CCPG1005, unidad6, poo, clases-internas]
 > [!note] 🌳 Organización de Clases Internas
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_02.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Clases_internas_y_anónimas_02.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Comparación de características:**
 > 
@@ -107,6 +111,8 @@ tags: [CCPG1005, unidad6, poo, clases-internas]
 > **Características clave:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_04.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Clases_internas_y_anónimas_04.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### 🛠️ Creación e Instanciación
 
@@ -169,6 +175,8 @@ tags: [CCPG1005, unidad6, poo, clases-internas]
 > **Flujo de creación:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_05.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Clases_internas_y_anónimas_05.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### 💼 Casos de Uso Reales
 
@@ -459,6 +467,8 @@ tags: [CCPG1005, unidad6, poo, clases-internas]
 > **Estructura visual:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_07.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Clases_internas_y_anónimas_07.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Características:**
 > 
@@ -664,6 +674,8 @@ tags: [CCPG1005, unidad6, poo, clases-internas]
 > **Limitaciones:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_08.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Clases_internas_y_anónimas_08.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > 
 > 
@@ -734,6 +746,8 @@ tags: [CCPG1005, unidad6, poo, clases-internas]
 > **Diferencias clave con clases internas normales:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_09.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Clases_internas_y_anónimas_09.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > **Tabla comparativa:**
 > 
@@ -793,6 +807,8 @@ tags: [CCPG1005, unidad6, poo, clases-internas]
 > **Comparación visual de instanciación:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_10.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Clases_internas_y_anónimas_10.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### 💼 Casos de Uso
 
@@ -1455,6 +1471,8 @@ tags: [CCPG1005, unidad6, poo, clases-internas]
 > [!note] 🖼️ ️ Mapa Mental Completo
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_12.svg]]
+> **Se lee así:** Diagrama que ilustra 03_-_Clases_internas_y_anónimas_12.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ### 📋 Tabla de Decisión Rápida
 

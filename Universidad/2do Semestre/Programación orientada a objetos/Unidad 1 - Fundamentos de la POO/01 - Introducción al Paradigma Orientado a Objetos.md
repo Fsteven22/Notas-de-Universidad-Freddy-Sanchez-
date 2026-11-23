@@ -29,6 +29,8 @@ tags: [CCPG1005, unidad1, poo, introduccion]
 > [!note] 🖼️ ¿Qué es la Programación Orientada a Objetos?
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_01.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Introducción_al_Paradigma_Orientado_a_Objetos_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -214,6 +216,8 @@ tags: [CCPG1005, unidad1, poo, introduccion]
 > - Distingue entre parámetros y atributos con el mismo nombre
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_03.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Introducción_al_Paradigma_Orientado_a_Objetos_03.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -293,6 +297,8 @@ tags: [CCPG1005, unidad1, poo, introduccion]
 > La **herencia** permite crear nuevas clases basadas en clases existentes, heredando sus atributos y métodos.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_04.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Introducción_al_Paradigma_Orientado_a_Objetos_04.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > ```java
 > // Clase base (superclase/padre)

@@ -31,6 +31,8 @@ tags: [CCPG1005, unidad4, poo, herencia]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Herencia_en_Java_01.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Herencia_en_Java_01.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 > [!tip] 🎯 ¿Cuándo Usar Herencia?
 > 
@@ -728,6 +730,8 @@ tags: [CCPG1005, unidad4, poo, herencia]
 > **Lineal - Un nivel de herencia:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Herencia_en_Java_02.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Herencia_en_Java_02.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > ```java
 > public class Persona {
@@ -747,6 +751,8 @@ tags: [CCPG1005, unidad4, poo, herencia]
 > **Múltiples niveles - Herencia en cadena:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Herencia_en_Java_03.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Herencia_en_Java_03.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 > 
 > ```java
 > public class Persona {
@@ -786,6 +792,8 @@ tags: [CCPG1005, unidad4, poo, herencia]
 > **Una superclase, múltiples subclases:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Herencia_en_Java_04.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Herencia_en_Java_04.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 ---
 
@@ -1096,6 +1104,8 @@ tags: [CCPG1005, unidad4, poo, herencia]
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Herencia_en_Java_05.svg]]
+> **Se lee así:** Diagrama que ilustra 01_-_Herencia_en_Java_05.svg.
+> **Por qué importa:** Ayuda a visualizar y entender mejor el concepto explicado.
 
 > [!quote] 💡 Puntos Clave
 > 
