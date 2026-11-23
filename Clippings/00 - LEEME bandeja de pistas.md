@@ -4291,3 +4291,43 @@ clase. El inventario global del vault está cerrado y no cambia.
 2. **Fusión de las 3 introducciones de CV U6/II**: ¿se hace? (única edición de contenido del reparto).
 
 **Sin objeciones pendientes.** El reparto está cerrado y cada sesión sabe qué le toca.
+
+---
+
+### `opencode` — Reparto final: 3 materias por sesión + auditoría + contrato + pendientes — 23/11/2026
+
+> [!success] **REPARTO DEFINITIVO (decisión del dueño)** — cada sesión toma **3 materias**, hace su auditoría, su contrato y su nota guía, y se queda con sus pendientes. Nadie toca zona ajena.
+
+#### Las 12 materias restantes, repartidas en 4 bloques de 3
+
+| Sesión | Materias | Contrato | Nota guía | Pendientes |
+|---|---|---|---|---|
+| **`opencode`** | **Álgebra Lineal** (MATG1049) · **POO** (CCPG1005) · **Comunicación** (2do Sem) | `FORMATO-ALGEBRA.md` ✅ · `FORMATO-POO.md` ✅ · `FORMATO-COMUNICACION.md` (nuevo) | Álgebra: `U1/I/01` ✅ · POO: `02 - Sintaxis básica en Java.md` ✅ · Comunicación: `01 - Introducción a la Comunicación.md` (nuevo) | Enlazar 29 exámenes de Álgebra · 124 lecturas R14 de POO · 44 `.mmd` de POO · Enlazar 20 exámenes de POO · Auditoría de Comunicación |
+| **`opencode-onedrive`** | **Cálculo Vectorial** (MATG1046) · **Cálculo 1** (MATG1045) · **Física Mecánica** (FISG1001) | `FORMATO-CALCULOVECTORIAL.md` ✅ · `FORMATO-CALCULO1.md` ✅ · `FORMATO-FISICA.md` ✅ | CV: `U6/II - Integral triple.md` ✅ · Cálculo 1: `U1/01 - Preliminares.md` ✅ · Física: `01 - Cinemática/Cinemática Traslacional.md` ✅ | Enlazar 30 exámenes de CV · Enlazar 49 exámenes de Cálculo 1 · Enlazar 42 exámenes de Física · Fusión de las 3 introducciones de CV U6/II (con OK del dueño) |
+| **`opencode-site`** | **Inglés III** (3er Sem) · **Fundamentos de Programación** (CCPG1001) · **Inglés I** (IDIG1006) | `FORMATO-INGLES3.md` (nuevo) · `FORMATO-FUNDPROG.md` (nuevo) · `FORMATO-INGLES1.md` (nuevo) | Inglés III: `Unit 1/01 - Vocabulary & Use.md` (nuevo) · FundProg: `01 - Introducción.md` (nuevo) · Inglés I: `Unit 1/01 - Greetings.md` (nuevo) | Enlazar 4 exámenes de Inglés III · Enlazar 41 exámenes de FundProg · Auditoría de Inglés I |
+| **`opencode-nube`** | **Matemáticas Discretas** (MATG1041) · **SBD** (TICG1018) · **Diseño de Software** (CCPG1042) | `FORMATO-MATDISC.md` ✅ · `FORMATO-SBD.md` ✅ · `FORMATO-DISENO.md` ✅ | MatDisc: `U1/I/01 - Lógica Proporcional.md` ✅ · SBD: `U1/01 - Dato, información y modelos.md` ✅ · Diseño: `U1/01 - Introducción.md` ✅ | Enlazar 17 exámenes de MatDisc · Enlazar 11 exámenes de SBD · Enlazar 8 exámenes de Diseño · Enlazar 1 PDF de examen PAO de Diseño |
+
+#### Lo que NO se mueve (zonas fijas)
+
+| Sesión | Zona fija | No toca |
+|---|---|---|
+| `opencode` | `Universidad/Herramientas/Mantenimiento/**` (contratos y validadores) | `site/**` · `Universidad/2do Semestre/Cálculo Vectorial/**` · `Universidad/1er Semestre/Cálculo de una Variable/**` |
+| `opencode-onedrive` | `site/scripts/sync-vault.mjs` · `site/RUNBOOK.md` | `site/src/**` · `site/public/**` · `Universidad/3er Semestre/**` |
+| `opencode-site` | `site/src/**` · `site/public/**` | `site/scripts/sync-vault.mjs` · `Universidad/**` |
+| `opencode-nube` | `Clippings/**` (solo este archivo) | todo lo demás |
+
+#### Reglas que aplican a todos
+
+1. **Auditoría primero**: cada sesión mide su materia con `qa_formato_<materia>.py` y reporta el baseline (H/W/P) en su bloque.
+2. **Contrato + nota guía**: cada materia debe tener su `FORMATO-<MATERIA>.md` + `qa_formato_<materia>.py` + nota de referencia en 0 hallazgos, **antes** de transformar las notas.
+3. **Pendientes por sesión**: cada sesión lleva su lista de pendientes (enlaces de exámenes, lecturas R14, `.mmd` faltantes, etc.) y la actualiza en su bloque.
+4. **Commits con pathspec** (`-- <ruta>`); verificación de ajenos en llamada aparte.
+5. **Sin push sin autorización explícita**; bloque `PUSHEO EN CURSO` antes de cada push.
+6. **Avisar merges**: verificar con `git diff <merge> <padre-local>` antes de cerrar cualquier merge.
+
+#### Lo que queda pendiente de decisión del dueño
+
+1. **Fusión de las 3 introducciones de CV U6/II**: ¿se hace? (única edición de contenido del reparto).
+2. **Los 2 BADs de Comunicación** (`Escucha Activa Parte 1/2_OCR.pdf`): el fix de 1 línea está identificado (dejarlos como texto), pendiente de aplicar.
+
+**Sin objeciones pendientes.** El reparto está cerrado y cada sesión sabe qué le toca.
