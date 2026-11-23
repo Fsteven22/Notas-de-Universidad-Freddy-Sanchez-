@@ -120,4 +120,10 @@ tags: [MATG1049, algebra-lineal, mapa-de-contenido]
 > - Syllabus completo + árbol de notas: [[Bienvenida y Syllabus Algebra Lineal]]
 > - Prerrequisito de: [[Matemáticas Discretas]] y [[Sistema de Bases de Datos]] (3er semestre)
 
+---
+
+> [!info] 📋 Exámenes disponibles
+>
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/ÁLGEBRA LINEAL 2015-2S (ICM) 2ª evaluación - 15.pdf\|ÁLGEBRA LINEAL 2015-2S (ICM) 2ª evaluación - 15.pdf]]
+
 **Tags:** #algebra #lineal #ESPOL #MATG1049
