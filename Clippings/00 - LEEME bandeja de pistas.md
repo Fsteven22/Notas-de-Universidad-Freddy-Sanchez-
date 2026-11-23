@@ -4304,17 +4304,20 @@ clase. El inventario global del vault está cerrado y no cambia.
 |---|---|---|---|---|
 | **`opencode`** | **Álgebra Lineal** (MATG1049) · **POO** (CCPG1005) · **Comunicación** (2do Sem) | `FORMATO-ALGEBRA.md` ✅ · `FORMATO-POO.md` ✅ · `FORMATO-COMUNICACION.md` (nuevo) | Álgebra: `U1/I/01` ✅ · POO: `02 - Sintaxis básica en Java.md` ✅ · Comunicación: `01 - Introducción a la Comunicación.md` (nuevo) | Enlazar 29 exámenes de Álgebra · 124 lecturas R14 de POO · 44 `.mmd` de POO · Enlazar 20 exámenes de POO · Auditoría de Comunicación |
 | **`opencode-onedrive`** | **Cálculo Vectorial** (MATG1046) · **Cálculo 1** (MATG1045) · **Física Mecánica** (FISG1001) | `FORMATO-CALCULOVECTORIAL.md` ✅ · `FORMATO-CALCULO1.md` ✅ · `FORMATO-FISICA.md` ✅ | CV: `U6/II - Integral triple.md` ✅ · Cálculo 1: `U1/01 - Preliminares.md` ✅ · Física: `01 - Cinemática/Cinemática Traslacional.md` ✅ | Enlazar 30 exámenes de CV · Enlazar 49 exámenes de Cálculo 1 · Enlazar 42 exámenes de Física · Fusión de las 3 introducciones de CV U6/II (con OK del dueño) |
-| **`opencode-site`** | **Inglés III** (3er Sem) · **Fundamentos de Programación** (CCPG1001) · **Inglés I** (IDIG1006) | `FORMATO-INGLES3.md` (nuevo) · `FORMATO-FUNDPROG.md` (nuevo) · `FORMATO-INGLES1.md` (nuevo) | Inglés III: `Unit 1/01 - Vocabulary & Use.md` (nuevo) · FundProg: `01 - Introducción.md` (nuevo) · Inglés I: `Unit 1/01 - Greetings.md` (nuevo) | Enlazar 4 exámenes de Inglés III · Enlazar 41 exámenes de FundProg · Auditoría de Inglés I |
-| **`opencode-nube`** | **Matemáticas Discretas** (MATG1041) · **SBD** (TICG1018) · **Diseño de Software** (CCPG1042) | `FORMATO-MATDISC.md` ✅ · `FORMATO-SBD.md` ✅ · `FORMATO-DISENO.md` ✅ | MatDisc: `U1/I/01 - Lógica Proporcional.md` ✅ · SBD: `U1/01 - Dato, información y modelos.md` ✅ · Diseño: `U1/01 - Introducción.md` ✅ | Enlazar 17 exámenes de MatDisc · Enlazar 11 exámenes de SBD · Enlazar 8 exámenes de Diseño · Enlazar 1 PDF de examen PAO de Diseño |
+| **`opencode-site`** | **Inglés I** (IDIG1006, 1er Sem) · **Inglés II** (2do Sem) · **Inglés III** (3er Sem) | `FORMATO-INGLES1.md` (nuevo) · `FORMATO-INGLES2.md` (nuevo) · `FORMATO-INGLES3.md` (nuevo) | Inglés I: `Ingles I (B1-B2).md` (nuevo) · Inglés II: `Ingles II (C1-C2).md` (nuevo) · Inglés III: `Unit 1/01 - Vocabulary & Use.md` (nuevo) | Enlazar 4 exámenes de Inglés III · Auditoría de Inglés I · Auditoría de Inglés II |
+| **`opencode-nube`** | **Fundamentos de Programación** (CCPG1001) · **Matemáticas Discretas** (MATG1041) · **SBD** (TICG1018) | `FORMATO-FUNDPROG.md` (nuevo) · `FORMATO-MATDISC.md` ✅ · `FORMATO-SBD.md` ✅ | FundProg: `01 - Introducción.md` (nuevo) · MatDisc: `U1/I/01 - Lógica Proporcional.md` ✅ · SBD: `U1/01 - Dato, información y modelos.md` ✅ | Enlazar 41 exámenes de FundProg · Enlazar 17 exámenes de MatDisc · Enlazar 11 exámenes de SBD |
 
 #### Lo que NO se mueve (zonas fijas)
 
 | Sesión | Zona fija | No toca |
 |---|---|---|
-| `opencode` | `Universidad/Herramientas/Mantenimiento/**` (contratos y validadores) | `site/**` · `Universidad/2do Semestre/Cálculo Vectorial/**` · `Universidad/1er Semestre/Cálculo de una Variable/**` |
-| `opencode-onedrive` | `site/scripts/sync-vault.mjs` · `site/RUNBOOK.md` | `site/src/**` · `site/public/**` · `Universidad/3er Semestre/**` |
-| `opencode-site` | `site/src/**` · `site/public/**` | `site/scripts/sync-vault.mjs` · `Universidad/**` |
-| `opencode-nube` | `Clippings/**` (solo este archivo) | todo lo demás |
+| `opencode` | `Universidad/Herramientas/Mantenimiento/**` (contratos y validadores) · `Universidad/2do Semestre/Programación orientada a objetos/**` · `Universidad/2do Semestre/Algebra Lineal/**` · `Universidad/2do Semestre/Comunicación/**` | `site/**` · `Universidad/2do Semestre/Cálculo Vectorial/**` · `Universidad/1er Semestre/Cálculo de una Variable/**` |
+| `opencode-onedrive` | `site/scripts/sync-vault.mjs` · `site/RUNBOOK.md` · `Universidad/2do Semestre/Cálculo Vectorial/**` · `Universidad/1er Semestre/Cálculo de una Variable/**` · `Universidad/1er Semestre/Física Mecánica/**` | `site/src/**` · `site/public/**` · `Universidad/3er Semestre/**` |
+| `opencode-site` | `site/src/**` · `site/public/**` · `Universidad/1er Semestre/Ingles I (B1-B2)/**` · `Universidad/2do Semestre/Ingles II (C1-C2)/**` · `Universidad/3er Semestre/Ingles III/**` | `site/scripts/sync-vault.mjs` · resto de `Universidad/**` |
+| `opencode-nube` | `Clippings/**` (solo este archivo) · `Universidad/1er Semestre/Fundamentos de Programación/**` · `Universidad/3er Semestre/Matemáticas Discretas/**` · `Universidad/3er Semestre/Sistema de Bases de Datos/**` | todo lo demás |
+
+> [!note] **Sobre `Universidad/Herramientas/Mantenimiento/`**
+> Los contratos y validadores viven ahí, pero **cada sesión escribe solo los suyos** (`FORMATO-<materia>.md` + `qa_formato_<materia>.py` de sus materias). `opencode` coordina el directorio pero no toca los contratos ajenos. Si una sesión necesita crear un contrato nuevo ahí, lo hace con pathspec explícito (`git add -- <archivo>`) y lo anuncia en su bloque.
 
 #### Reglas que aplican a todos
 
