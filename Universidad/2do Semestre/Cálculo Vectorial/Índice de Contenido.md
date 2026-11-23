@@ -34,63 +34,7 @@ tags: [MATG1046, unidad0, recursos]
 ## 📥 Pendiente de cargar
 
 > [!warning] 📬 Material que falta
-> Las carpetas `Diapositivas/`, `Figuras/`, `Lecciones/`, `Material de clase/` y `Talleres/` (dentro de `Unidad 0 - Guias y Ejercicios/`) están creadas y vacías. Cuando llegue material (capturas de clase, exámenes pasados, talleres), soltarlo en la subcarpeta que corresponda y nombrarlo con contexto.
-
----
-
-## 📝 Exámenes
-
-> [!example] 🗂️ Banco de exámenes resueltos (30)
->
-> Exámenes reales de DSpace (con solución y rúbrica), agrupados por año y tipo. Son **integrales**: cada uno cubre varias unidades de la materia.
->
-> **2020 · 3 exámenes**
->
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2020-1S-CÁLCULO VECTORIAL-10-Mejora.pdf|1S 2020 — Mejora]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2020-2S-CÁLCULO VECTORIAL-14-1Par.pdf|2S 2020 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2020-2S-CÁLCULO VECTORIAL-14-2Par.pdf|2S 2020 — 2.ª Parcial]]
->
-> **2021 · 6 exámenes**
->
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-1S-CÁLCULO VECTORIAL-5-1Par.pdf|1S 2021 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-1S-CÁLCULO VECTORIAL-5-2Par.pdf|1S 2021 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-1S-CÁLCULO VECTORIAL-5-Mejora.pdf|1S 2021 — Mejora]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-2S-CÁLCULO VECTORIAL-5-1Par.pdf|2S 2021 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-2S-CÁLCULO VECTORIAL-5-2Par.pdf|2S 2021 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-2S-CÁLCULO_VECTORIAL-11-Mejora.pdf|2S 2021 — Mejora]]
->
-> **2022 · 5 exámenes**
->
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-1S-CÁLCULO VECTORIAL-3-1Par.pdf|1S 2022 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-1S-CÁLCULO VECTORIAL-3-2Par.pdf|1S 2022 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-2S-CÁLCULO VECTORIAL-11-1Par.pdf|2S 2022 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-2S-CÁLCULO VECTORIAL-11-2Par.pdf|2S 2022 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-2S-CÁLCULO VECTORIAL-11-Mejora.pdf|2S 2022 — Mejora]]
->
-> **2023 · 12 exámenes**
->
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-0S-CÁLCULO VECTORIAL-1-1Par.pdf|0S 2023 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-0S-CÁLCULO VECTORIAL-1-Mejora.pdf|0S 2023 — Mejora]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-1S-CÁLCULO VECTORIAL-2-1Par.pdf|1S 2023 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-1S-CÁLCULO VECTORIAL-3-1Par.pdf|1S 2023 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-1S-CÁLCULO VECTORIAL-2-2Par.pdf|1S 2023 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-1S-CÁLCULO VECTORIAL-3-2Par.pdf|1S 2023 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-1S-CÁLCULO VECTORIAL-2-Mejora.pdf|1S 2023 — Mejora]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-1S-CÁLCULO_VECTORIAL-3-Mejora.pdf|1S 2023 — Mejora]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-2S-CÁLCULO VECTORIAL-10-1Par.pdf|2S 2023 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-2S-CÁLCULO VECTORIAL-10-2Par.pdf|2S 2023 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-2S-CÁLCULO VECTORIAL-2-2Par.pdf|2S 2023 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-2S-CÁLCULO_VECTORIAL-10-Mejora.pdf|2S 2023 — Mejora]]
->
-> **2024 · 1 examen**
->
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2024-1S-CÁLCULO VECTORIAL-7-1Par.pdf|1S 2024 — 1.ª Parcial]]
->
-> **2025 · 3 exámenes**
->
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2025-2S-CÁLCULO VECTORIAL-16-1Par.pdf|2S 2025 — 1.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2025-2S-CÁLCULO VECTORIAL-16-2Par.pdf|2S 2025 — 2.ª Parcial]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2025-2S-CÁLCULO_VECTORIAL-16-Mejora.pdf|2S 2025 — Mejora]]
+> Las carpetas `Diapositivas/`, `Exámenes/`, `Figuras/`, `Lecciones/`, `Material de clase/` y `Talleres/` (dentro de `Unidad 0 - Guias y Ejercicios/`) están creadas y vacías. Cuando llegue material (capturas de clase, exámenes pasados, talleres), soltarlo en la subcarpeta que corresponda y nombrarlo con contexto.
 
 ---
 

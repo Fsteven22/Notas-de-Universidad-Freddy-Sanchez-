@@ -120,7 +120,7 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 >
 > **How to read it:** el diagrama muestra qué adjetivos suelen aparecer juntos en descripciones reales — *light and waterproof* para ropa deportiva, *natural and warm* para ropa de invierno.
 >
-> **Why it matters:** una descripción con adjetivos que no van juntos (*fragile and waterproof*) suena mal aunque la gramática sea correcta.
+> **Why it matters:** una descripción con dos adjetivos que no van juntos (*fragile and waterproof*) suena mal aunque la gramática sea correcta.
 >
 > **Example:** *This bottle is made of glass. It's fragile but recyclable.*
 
@@ -195,7 +195,7 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 >
 > **How to read it:** el diagrama traza el camino desde fábrica hasta cliente — store, ship, export/import, deliver.
 >
-> **Why it matters:** cada verbo responde a una pregunta diferente — *dónde se fabrica* (producción), *cómo viaja* (transporte), *quién lo recibe* (delivery).
+> **Why it matters:** cada verbo responde a una pregunta diferente — *dónde se fabrica* (producción), *cómo viaja* (transport), *quién lo recibe* (delivery).
 >
 > **Example:** *We manufacture in Spain, store in Rotterdam, export to Chile, and deliver to the customer in 5 days.*
 
@@ -305,7 +305,7 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 >
 > **How to read it:** cada rama toma un producto y construye las tres frases — material, producción, distribución.
 >
-> **Why it matters:** esta es la estructura exacta que pide el examen, y la estructura que la siguiente nota convierte en voz pasiva.
+> **Why it matters:** esta es la estructura exacta que pide el examen, y la estructura que la siguiente nota convierte en el passive voice.
 >
 > **Example:** *These boots are made of leather* (material). *They are manufactured in Italy* (production). *They are shipped worldwide* (distribution).
 
@@ -313,7 +313,7 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 
 ## 🌍 E. Real Applications
 
-> [!example] 💼 Situaciones Prácticas
+> [!example] 💼 Situations where you need this
 >
 > **Shopping for clothes**
 >
@@ -411,8 +411,8 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 > >
 > > 1. **Raincoat:** This raincoat is made of polyester. It's waterproof and light.
 > > 2. **Wooden chair:** This chair is made of wood. It's natural and strong.
-> > 3. **Glass vase:** This vase is made of glass. It's fragile and beautiful.
-> >
+> > 3. **Glass vase:** This vase is made of glass. It's fragile but beautiful.
+>
 > > **Alternative answers (also correct):**
 > >
 > > - This raincoat is made of polyester. It's light and waterproof.
