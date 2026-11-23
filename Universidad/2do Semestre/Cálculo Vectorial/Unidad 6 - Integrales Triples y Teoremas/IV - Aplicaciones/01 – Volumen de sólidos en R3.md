@@ -439,7 +439,9 @@ tags: [volumen, solidos, volumen-solidos]
 
 ### 🏗️ Ingeniería y Física
 
-> [!note] 🔧 Casos Reales> **1. Tanque de almacenamiento**
+> [!note] 🔧 Casos Reales>
+>
+> **1. Tanque de almacenamiento**
 >
 > Tanque cilíndrico con tapa semiesférica de radio $R = 2$ m y altura cilíndrica $h = 5$ m.
 >

@@ -6,7 +6,9 @@ tags: [propiedades, integrales, multiples]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Qué son las Propiedades de las Integrales Múltiples? Las **propiedades de las integrales múltiples** son reglas fundamentales que nos permiten manipular, simplificar y evaluar integrales de funciones de varias variables de manera más eficiente. Estas propiedades extienden los conceptos familiares de las integrales de una variable al espacio multidimensional.
+> [!info] 💡 ¿Qué son las Propiedades de las Integrales Múltiples?
+>
+> Las **propiedades de las integrales múltiples** son reglas fundamentales que nos permiten manipular, simplificar y evaluar integrales de funciones de varias variables de manera más eficiente. Estas propiedades extienden los conceptos familiares de las integrales de una variable al espacio multidimensional.
 >
 > **Analogía práctica:** Imagina que estás calculando el volumen de agua en un recipiente complejo:
 >

@@ -6,7 +6,9 @@ tags: [integral, triple, integral-triple]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Qué es una Integral Triple? La **integral triple** es la extensión natural de las integrales dobles al espacio tridimensional. Mientras que las integrales dobles nos permiten calcular áreas y volúmenes bajo superficies, las **integrales triples** nos permiten calcular volúmenes, masas, centros de masa y otras propiedades de sólidos en el espacio tridimensional.
+> [!info] 💡 ¿Qué es una Integral Triple?
+>
+> La **integral triple** es la extensión natural de las integrales dobles al espacio tridimensional. Mientras que las integrales dobles nos permiten calcular áreas y volúmenes bajo superficies, las **integrales triples** nos permiten calcular volúmenes, masas, centros de masa y otras propiedades de sólidos en el espacio tridimensional.
 >
 > **Analogía práctica:** Imagina que necesitas calcular la masa total de un objeto 3D con densidad variable:
 >
@@ -41,7 +43,9 @@ tags: [integral, triple, integral-triple]
 
 ## 🎯 De la Integral Doble a la Triple
 
-> [!info] 💡 ¿Qué es una Integral Triple? La **integral triple** extiende el concepto de integración a funciones de tres variables, permitiéndonos calcular volúmenes, masas, centros de masa y otras cantidades físicas en regiones tridimensionales.
+> [!info] 💡 ¿Qué es una Integral Triple?
+>
+> La **integral triple** extiende el concepto de integración a funciones de tres variables, permitiéndonos calcular volúmenes, masas, centros de masa y otras cantidades físicas en regiones tridimensionales.
 >
 > **Analogía práctica:** Si una integral doble calcula el "volumen bajo una superficie", una integral triple puede calcular:
 >
@@ -72,7 +76,9 @@ tags: [integral, triple, integral-triple]
 
 ## 🎯 La Integral Triple como Medida de Masa
 
-> [!info] 💡 ¿Qué es una Integral Triple? La **integral triple** extiende el concepto de integral a funciones de tres variables, permitiéndonos calcular volúmenes, masas, centros de masa y otras propiedades de sólidos tridimensionales.
+> [!info] 💡 ¿Qué es una Integral Triple?
+>
+> La **integral triple** extiende el concepto de integral a funciones de tres variables, permitiéndonos calcular volúmenes, masas, centros de masa y otras propiedades de sólidos tridimensionales.
 >
 > **Analogía práctica:** Imagina calcular la masa total de un objeto 3D con densidad variable:
 >

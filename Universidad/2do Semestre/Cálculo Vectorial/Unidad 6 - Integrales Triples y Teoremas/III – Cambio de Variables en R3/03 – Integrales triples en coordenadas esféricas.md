@@ -122,7 +122,9 @@ tags: [integrales, triples, coordenadas]
 
 ## 🧮 Elemento de Volumen en Esféricas
 
-> [!warning] ⚠️ El Jacobiano: Factor $\rho^2\sin\phi$
+> [!warning] ⚠️ El Jacobiano: Factor
+>
+> $\rho^2\sin\phi$
 >
 > **Elemento diferencial de volumen:**
 >

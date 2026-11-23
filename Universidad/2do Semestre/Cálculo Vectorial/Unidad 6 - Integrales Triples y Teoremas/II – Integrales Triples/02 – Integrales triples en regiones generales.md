@@ -6,7 +6,9 @@ tags: [integrales, triples, regiones]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Qué son las Integrales Triples? Las **integrales triples** son una extensión natural de las integrales dobles al espacio tridimensional. Permiten calcular volúmenes, masas, centros de masa y otros conceptos físicos en regiones del espacio **R³**.
+> [!info] 💡 ¿Qué son las Integrales Triples?
+>
+> Las **integrales triples** son una extensión natural de las integrales dobles al espacio tridimensional. Permiten calcular volúmenes, masas, centros de masa y otros conceptos físicos en regiones del espacio **R³**.
 >
 > **Analogía práctica:** Imagina un escultor trabajando con un bloque de mármol:
 >

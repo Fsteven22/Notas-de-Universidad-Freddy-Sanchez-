@@ -101,7 +101,9 @@ tags: [integrales, triples, coordenadas]
 
 ## 🧮 Elemento de Volumen en Cilíndricas
 
-> [!warning] ⚠️ El Jacobiano: Factor $r$
+> [!warning] ⚠️ El Jacobiano: Factor
+>
+> $r$
 >
 > **Elemento diferencial de volumen:**
 >
@@ -634,7 +636,9 @@ tags: [integrales, triples, coordenadas]
 
 ## 📊 Comparación: Cartesianas vs Cilíndricas
 
-> [!note] 🔄 Cuándo Preferir Cada Sistema
+> [!note] 🔄 Cuándo Preferir
+>
+> Cada Sistema
 >
 > **Ejemplo comparativo: Cilindro $x^2 + y^2 \leq 1$, $0 \leq z \leq 2$**
 >

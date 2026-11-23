@@ -6,7 +6,9 @@ tags: [teorema, valor, medio]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Qué es el Teorema del Valor Medio? El **Teorema del Valor Medio para Integrales Triples** es una extensión natural del teorema clásico al espacio tridimensional. Establece que para funciones continuas sobre regiones acotadas, existe un punto donde la función toma su "valor promedio".
+> [!info] 💡 ¿Qué es el Teorema del Valor Medio?
+>
+> El **Teorema del Valor Medio para Integrales Triples** es una extensión natural del teorema clásico al espacio tridimensional. Establece que para funciones continuas sobre regiones acotadas, existe un punto donde la función toma su "valor promedio".
 >
 > **Analogía práctica:** Imagina medir la temperatura en todos los puntos de una habitación:
 >

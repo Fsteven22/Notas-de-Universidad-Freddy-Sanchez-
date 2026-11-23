@@ -6,7 +6,9 @@ tags: [integrales, multiples, integrales-multiples]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Qué son las Integrales Múltiples? Las **integrales múltiples** son una extensión natural de las integrales definidas de una variable a funciones de varias variables. Permiten calcular volúmenes, masas, centroides y otras magnitudes en espacios de dimensión superior.
+> [!info] 💡 ¿Qué son las Integrales Múltiples?
+>
+> Las **integrales múltiples** son una extensión natural de las integrales definidas de una variable a funciones de varias variables. Permiten calcular volúmenes, masas, centroides y otras magnitudes en espacios de dimensión superior.
 >
 > **Analogía práctica:** Imagina que necesitas calcular:
 >

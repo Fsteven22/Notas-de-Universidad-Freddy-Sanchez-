@@ -6,7 +6,9 @@ tags: [teorema, cambio, variable]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Qué es el Cambio de Variable? El **Teorema de Cambio de Variable** (o **Teorema de Sustitución**) es una herramienta fundamental que permite transformar integrales triples complejas en otras más simples mediante un cambio de coordenadas. Es la extensión tridimensional del cambio de variable en integrales simples.
+> [!info] 💡 ¿Qué es el Cambio de Variable?
+>
+> El **Teorema de Cambio de Variable** (o **Teorema de Sustitución**) es una herramienta fundamental que permite transformar integrales triples complejas en otras más simples mediante un cambio de coordenadas. Es la extensión tridimensional del cambio de variable en integrales simples.
 >
 > **Analogía práctica:** Imagina describir la ubicación de un punto:
 >
