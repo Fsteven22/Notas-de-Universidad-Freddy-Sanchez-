@@ -166,6 +166,7 @@ tags: [IDIG2012, unidad1, comunicacion-grupal, taller1, comunicacion]
 ## 📝 Ejercicios Propuestos
 
 > [!info] ℹ️ Cómo trabajarlos
+>
 > Práctica directa para el Taller 1 y el trabajo en equipo. Tapa la solución, resuelve, compara.
 
 ### ✏️ Ejercicio 1 — Monta tu Phillips 6-6

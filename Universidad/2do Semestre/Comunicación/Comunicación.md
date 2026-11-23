@@ -8,6 +8,7 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 **Código:** IDIG2012 · **Semestre:** 2do · [[Bienvenida y Syllabus Comunicación|Ver Syllabus completo]]
 
 > [!info] ℹ️ Mapa de contenido de la materia
+>
 > Esta nota es el acceso directo a Comunicación (IDIG2012). Aquí se navega por cada unidad y nota. Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ---
@@ -15,6 +16,7 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 ## Unidad I — Comunicación efectiva *(4h)*
 
 > [!note] Notas de la unidad
+>
 > - [[01 - Escucha activa, empatía y barreras]]
 > - [[02 - Comunicación grupal y toma de decisiones]]
 > - [[03 - Comunicación estratégica, IIR y pitch personal]]
@@ -24,6 +26,7 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 ## Unidad II — Pensamiento complejo y crítico *(4h)*
 
 > [!note] Notas de la unidad
+>
 > - [[01 - Pensamiento complejo vs pensamiento lineal]]
 > - [[02 - Pensamiento crítico y perfil prosumidor]]
 
@@ -32,6 +35,7 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 ## Unidad III — Redacción *(6h)*
 
 > [!note] Notas de la unidad
+>
 > - [[01 - Texto expositivo]]
 > - [[02 - Informes técnicos y ejecutivos, síntesis y paráfrasis]]
 > - [[03 - IA ética y prompts para redacción]]
@@ -44,6 +48,7 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 ## Unidad IV — Comportamiento comunicacional *(14h)*
 
 > [!note] Notas de la unidad
+>
 > - [[01 - Argumentación efectiva, convencer vs persuadir]]
 > - [[02 - Storytelling para comunicar ciencia]]
 > - [[03 - Voz, cuerpo, formatos y práctica TED]]
@@ -58,6 +63,7 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 - [[Índice de Contenido|00 - Índice de Contenido]]
 
 > [!tip] 🆕 Talleres convertidos a nota
+>
 > Los PDFs de los talleres de redacción (*Precisión y claridad*, *Concordancia y cohesión* y *Normas APA*) ya viven como notas temáticas en la **Unidad III** (04–06). Los PDFs originales siguen embebidos en el [[Índice de Contenido|Índice de Contenido]].
 
 ---

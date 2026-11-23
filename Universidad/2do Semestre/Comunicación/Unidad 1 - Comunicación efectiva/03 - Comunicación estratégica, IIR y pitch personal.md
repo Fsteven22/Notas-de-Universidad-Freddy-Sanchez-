@@ -175,6 +175,7 @@ tags: [IDIG2012, unidad1, estrategia, iir, pitch, comunicacion]
 ## 📝 Ejercicios Propuestos
 
 > [!info] ℹ️ Cómo trabajarlos
+>
 > Lo evaluable de S3: mapa de públicos, mensaje adaptado y pitch. Tapa la solución, resuelve, compara.
 
 ### ✏️ Ejercicio 1 — Mapea tus públicos

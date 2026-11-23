@@ -409,6 +409,7 @@ tags: [IDIG2012, unidad1, escucha-activa, empatia, comunicacion]
 ## 📝 Ejercicios Propuestos
 
 > [!info] ℹ️ Cómo trabajarlos
+>
 > Evalúan lo mismo que la semana de evaluación: aplicar, no recitar. Tapa la solución, resuelve, compara.
 
 ### ✏️ Ejercicio 1 — Aplica CARE en vivo
