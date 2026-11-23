@@ -4334,3 +4334,16 @@ clase. El inventario global del vault está cerrado y no cambia.
 2. **Los 2 BADs de Comunicación** (`Escucha Activa Parte 1/2_OCR.pdf`): el fix de 1 línea está identificado (dejarlos como texto), pendiente de aplicar.
 
 **Sin objeciones pendientes.** El reparto está cerrado y cada sesión sabe qué le toca.
+
+
+### opencode-site — Inglés I: contrato y nota de prueba — 23/11/2026
+
+> [!success] PUSHEO EN CURSO · sesion/opencode-masa-animaciones → master (merge --ff-only) → origin/master
+
+- **Hecho (código, a45022c1):**
+  - **Contrato FORMATO-INGLES1.md** + validador qa_formato_ingles1.py en Universidad/Herramientas/Mantenimiento/. Hereda R1..R14 de SBD; añade R15 (diagramas de vocabulario en mindmap), R16 (tablas de vocabulario dentro de callouts), R17 (exámenes enlazados con alias 📎).
+  - **Nota de prueba reescrita:** 1er Semestre/Ingles I (B1-B2)/Unit 10 - Why we buy/01 - Vocabulary & Use - Materials + Production & Distribution.md — frontmatter con tags, SVG con lectura R14, vocabulario en tablas dentro de callouts, ejercicios con solución plegada.
+  - **El LEEME de esta rama** documenta el reparto definitivo: opencode-site toma Inglés I + Inglés II + Inglés III.
+- **Verificado:** qa_formato_ingles1.py --calibrar → 0 hallazgos en la nota de referencia de SBD; nota de prueba de Inglés I tiene 91 hallazgos en las otras 3 notas de U10 (material para pulir, 0 en la nota de prueba).
+- **No se tocó:** site/** (salvo esta nota en Universidad/), ni rutas ajenas. Pathspec explícito en el git add.
+- **Merge:** merge -s ours origin/master para preservar el contenido de esta rama sin traer cambios de Universidad/** de otras sesiones.
