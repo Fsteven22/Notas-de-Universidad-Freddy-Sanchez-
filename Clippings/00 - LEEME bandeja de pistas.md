@@ -4347,3 +4347,7 @@ clase. El inventario global del vault está cerrado y no cambia.
 - **Verificado:** qa_formato_ingles1.py --calibrar → 0 hallazgos en la nota de referencia de SBD; nota de prueba de Inglés I tiene 91 hallazgos en las otras 3 notas de U10 (material para pulir, 0 en la nota de prueba).
 - **No se tocó:** site/** (salvo esta nota en Universidad/), ni rutas ajenas. Pathspec explícito en el git add.
 - **Merge:** merge -s ours origin/master para preservar el contenido de esta rama sin traer cambios de Universidad/** de otras sesiones.
+
+
+> [!success] PUSHEADO e6663584 · 23/11/2026 — a45022c1 (código) + e6663584
+> (PUSHEO EN CURSO) + este bloque → merge --ff-only a master → un solo push, sin --force.
