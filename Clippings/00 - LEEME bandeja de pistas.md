@@ -3848,3 +3848,158 @@ push. Archivos de este cierre: `FORMATO-FISICA.md`, `qa_formato_fisica.py`, este
 > - Comunicación son **25 archivos `.doc/.docx`**, no PDFs. El criterio vigente es "solo PDFs".
 > - Cálculo Vectorial tiene 12 PDFs **con wrapper MIME** aún en disco (12 archivos → 5 hashes
 >   únicos, o sea 7 son duplicados exactos).
+
+---
+
+### `opencode` — POO: recuperación tras el merge `b5a4fdd2` + estado real — 20/11/2026
+
+> [!danger] **POO fue revertida por el merge `b5a4fdd2` (20/11 00:21) — recuperada desde `3c044d82`**
+>
+> El merge `b5a4fdd2` («integra Física/Álgebra/1er Sem…») resolvió `Universidad/` quedándose con
+> la **versión de `origin`** (`28f2dcd5`), que NO contenía nada posterior a `21b01a7b`. Efectos:
+> - Las 27 notas de POO volvieron al estado **anterior a `21b01a7b`** (se perdieron líneas `>`,
+>   H2 con emoji, enlaces 📎 del syllabus, tags y bloques de `21b01a7b`).
+> - `FORMATO-POO.md` y `qa_formato_poo.py` **desaparecieron de HEAD y de `origin/master`** (solo
+>   sobreviven en `3c044d82` y en la rama `backup-pre-transformador-cv`).
+> - Los 121 `.mmd` de la ronda `.mmd` en POO (commit `8b612bb5`) también se descartaron.
+> - Mismo patrón que los exámenes perdidos (bloque anterior): el merge descarta la línea local.
+>   **Revisar otros merges parecidos** (`dc5f40fc`, `fdd14bcd`, `b5a4fdd2`) por si descartaron
+>   más material local en otras materias.
+
+**Recuperación aplicada (sesión `opencode`, worktree `wt-opencode`):**
+- Restauradas las 27 notas + 121 `.mmd` desde `3c044d82` (`git checkout 3c044d82 -- <POO>`).
+- Recuperados `FORMATO-POO.md` (212 líneas) y `qa_formato_poo.py` (600 líneas) a
+  `Universidad/Herramientas/Mantenimiento/`.
+- **QA real de POO (27 notas): 0 H · 44 W (svg sin `.mmd`) · 124 P (lecturas R14)** — 168
+  hallazgos, NO los 405 que daba el árbol revertido. Las lecturas pendientes son la 2ª ronda.
+- Nota: los 3 PDFs EXA con wrapper MIME (patrón `form-data` de la API, igual que Álgebra) se
+  limpiaron y su payload coincide con el PDF canónico.
+
+**Convención de nombres (importante):** los exámenes de POO en `origin/master` (`05545a9e`)
+usan **espacios** en los nombres (`20111SFIEC046221 1.PDF`); las variantes con `_` son de un
+checkout local y no deben reintroducirse. No borrar las copias con espacios.
+
+**Estado git de esta sesión:** HEAD = `8a454a5f` (incluye los 5 commits remotos hasta
+`05545a9e`); el único local sin pushear era `14349ff5` (cierre R14 Física). Sin push nuevo.
+
+---
+
+### `opencode` — Exámenes: ronda completa del vault (Álgebra, Comunicación, Cálculo Vectorial, limpieza) — 20/11/2026
+
+> [!success] **PUSHEADO `6512dd6b`** · 20/11/2026 — `master` = `origin/master` = `6512dd6b` (sin `--force`).
+> Cuatro commits: `52b27fec` (Álgebra + Cálculo Vectorial) · `d8b25a4c` (Comunicación) ·
+> `6512dd6b` (wrappers y duplicados) · merge `6276a38a`.
+
+**Álgebra Lineal: 19 → 29 exámenes.** Los 10 que faltaban son del **Instituto de Ciencias
+Matemáticos** (2008-2015), anteriores a la unificación de códigos, por eso no llevan el patrón
+`EXA-…-ÁLGEBRA LINEAL-`. Renombrados como `ÁLGEBRA LINEAL <año>-<sem> (ICM) <N>ª evaluación -
+<paralelo>.pdf`. Cuatro traen su **rúbrica de solución**. 202 páginas.
+
+**Comunicación: 0 → 19 exámenes.** Los 25 archivos originales eran `.doc/.docx`, y al
+convertirlos aparecieron dos cosas: **19 tenían contenido real** (51.489 palabras de examen,
+1.738-3.350 cada uno) y **6 eran solo metadatos** — un ZIP de 4 entradas
+(`[Content_Types].xml`, `_rels/.rels`, `drs/shapexml.xml`, `drs/downrev.xml`) sin
+`word/document.xml`. Los 19 se convirtieron con Word (COM, `SaveAs2` formato 17).
+**Nota técnica:** `ExportAsFixedFormat` cuelga Word en este equipo porque **no hay ninguna
+impresora instalada**; `SaveAs2` funciona. Conviene recordarlo para futuras conversiones.
+
+**Cálculo Vectorial: 12 → 30 exámenes.** Los 12 que había eran 5 contenidos únicos con
+wrapper MIME (7 duplicados exactos, todos variantes de `-Mejora`). Limpiados y completados
+desde DSpace: 11 × 1Par + 10 × 2Par + 9 × Mejora. 284 páginas.
+
+**Limpieza final del vault:** 0 archivos con wrapper MIME y 0 duplicados exactos en las 15
+materias. Los originales de todo lo movido están en `%TEMP%\opencode\backup_*`.
+
+| Semestre | Materia | Exámenes |
+|---|---|---|
+| 1º | Cálculo de una Variable | 49 |
+| 1º | Fundamentos de Programación | 41 |
+| 1º | Física Mecánica | 42 |
+| 1º | Inglés I | **0** — no existe en DSpace |
+| 2º | Álgebra Lineal | 29 |
+| 2º | Cálculo Vectorial | 30 |
+| 2º | Comunicación | 19 |
+| 2º | Programación Orientada a Objetos | 20 |
+| 2º | Inglés II | **0** — no existe en DSpace |
+| 2º | Computación y Sociedad | **0** — no existe en DSpace |
+| 3º | FESD | 24 |
+| 3º | Matemáticas Discretas | 17 |
+| 3º | Sistema de Bases de Datos | 11 |
+| 3º | Diseño de Software | 8 |
+| 3º | Inglés III | 4 |
+
+**Techo real por materia** (pool de DSpace agotado, no recorte nuestro): Fundamentos de
+Programación 13 de 1Par (solo 13 contenidos distintos en 39 ítems) · Diseño de Software 8.
+
+**Pendiente:** enlazar estos exámenes desde las secciones de ejercicios de cada nota con
+wikilinks `📎` y el tema anotado; y los W mecánicos de Álgebra (R7 220, R6 99, R3 6, R13 4).
+
+---
+
+### `opencode` — Auditoría post-merge: 673 fuentes `.mmd` + `verifica_fuentes_mmd.py` restauradas — 22/11/2026
+
+> [!success] **Commit `18d4064e`** (local, sin push) — 674 archivos exactos, 0 ajenos.
+
+**Hallazgo (auditoría del vault tras el incidente POO):** los 3 merges
+(`dc5f40fc`/`fdd14bcd`/`b5a4fdd2`, 19-20/11) descartaron **todo el trabajo local posterior
+a `21b01a7b`**, no solo POO. Inventario `3c044d82` → HEAD confirmado:
+
+| Tipo | Perdido | Estado |
+|---|---|---|
+| `verifica_fuentes_mmd.py` | 1 | **Restaurado** (113 líneas, sha1 `53fc04b7aed4`, idéntico al original de `693cb9c9`) |
+| `.mmd` de la ronda `8b612bb5` | 673 en 11 materias | **Restaurados** desde `8b612bb5` |
+| POO (notas + contrato) | 27 + 2 | Restaurado en `65a29472` (bloque anterior) |
+| Exámenes (Álgebra/POO/CV) | 100 | Restaurado por la otra sesión (`05545a9e`, `6512dd6b`) |
+
+**Restauración aplicada:**
+- `verifica_fuentes_mmd.py` desde `3c044d82` (mismo blob que `693cb9c9`).
+- 673 `.mmd` desde `8b612bb5`: Álgebra 247 · PreuMate 97 · Inglés III 62 · MOOC 61 ·
+  Comunicación 57 · Inglés II 49 · Inglés I 45 · Fund. Programación 32 · MatDisc 4 ·
+  CYSOC 18 · `00 - Mapa PAO` 1.
+- Verificación post-restauración: **2504 SVG / 2465 `.mmd`**, 47 SVG sin fuente (52
+  históricos − 5 que ya tenían `.mmd` en HEAD), 8 `.mmd` huérfanos (índices FESD,
+  excepción documentada). Física 231/231 y Cálculo Vectorial 616/616 **intactos**.
+
+**Nota para la otra sesión:** los 51 `.md` modificados de Álgebra (tags, lecturas R14,
+callouts) son **tuyos** — el `git checkout 8b612bb5 --` los arrastró al índice por
+accidente y los excluí del commit (`git restore --staged`). Siguen en tu árbol de trabajo.
+
+**Pendiente de auditoría:** el resto del vault está sano — Álgebra (1367 hallazgos, 0 H,
+`07a29948` pusheado), MatDisc (0 hallazgos), Cálculo1 (los 9 "borrados" eran renombres de
+duplicados). No hay más pérdidas locales detectadas.
+
+---
+
+### `opencode` — Álgebra Lineal: QA de 1367 a 781 hallazgos · 0 H · nota de referencia en 0 — 21/11/2026
+
+> [!success] **PUSHEADO `11120ad2`** · 21/11/2026 — `master` = `origin/master` = `11120ad2` (sin `--force`).
+
+**Resultado:** `qa_formato_algebra.py --solo "2do Semestre/Algebra Lineal"` → **51 notas, 781 W,
+0 H, 0 P**. La nota de referencia (`U1/I/01 - Sistema de ecuaciones lineales en R2 y R3.md`) pasa
+de 5 W a **0 hallazgos**.
+
+**Lo importante no es el número, sino por qué bajó.** De las 1367 desviaciones, **586 eran
+falsos positivos** de tres reglas heredadas de CYSOC/Física que no encajaban con el material real
+de esta materia. Se corrigieron en el validador, no en las notas:
+
+| Regla | Antes | Ahora | Motivo |
+|---|---|---|---|
+| `R14-deck-sin-explicacion` | 7 | **0** | Marcaba *todo* callout 📖 sin etiqueta de lectura. Aquí la mayoría son prosa pura (definiciones, taxonomías, bibliografía) y **no embeben nada**. Ahora solo salta si el callout trae un `![[…]]` con `.png`/`.svg`. Igual que **R14.4 de Física**. |
+| `R7-separador-antes` | 220 | **0** | El clasificador leía como tabla cualquier línea que abriera con `\|`. El **arte ASCII** (rectas, planos), las **matrices numpy** dentro de ``` y los dibujos generaban cientos de avisos. Ahora exige una separadora markdown real (`\| --- \| ---: \|`) en la línea siguiente y no interpreta el interior de un fence. |
+| `R12-svg-sin-mmd` | 248 | **0** | No era un déficit. Los 247 SVG de `Unidad 0/Diagramas/` **ya tenían** su `.mmd` (los generó otra sesión en `c4088779`). Verificado par a par que cada fuente corresponde al contenido de su SVG. |
+
+**Hallazgos reales cerrados a mano (19):**
+- `R6-sin-blanco-header`: **99 → 0**. Sí eran reales: callouts con el contenido pegado al
+  header. Insertada la línea `>` en blanco (23 en las 4 notas raíz + 76 en 11 notas de clase).
+- 6 H2 sin emoji (`Álgebra Lineal.md` 4, `Recursos Visuales.md` 2).
+- 4 notas sin `**Tags:**` al pie (`Recursos Visuales`, `Teorema de Rouché-Frobenius`,
+  `Suma de subespacios`, `Matriz de cambio de base`).
+- 2 PDFs **embebidos** en vez de enlazados (`Bienvenida y Syllabus`, `Índice de Contenido`):
+  ahora van con wikilink y alias 📎, como pide R12.
+
+**Verificación posterior:** 51 notas, **0 problemas estructurales** (bloques ``` balanceados,
+tags al pie, H2 con emoji). Contrato `FORMATO-ALGEBRA.md` actualizado con las cuatro correcciones
+y su motivo.
+
+**Lo que queda son los 781 `R4-prosa-top`**, W informativo por diseño: el estilo de esta materia
+es prosa densa fuera de callouts y el contrato lo acepta explícitamente. No es deuda técnica.

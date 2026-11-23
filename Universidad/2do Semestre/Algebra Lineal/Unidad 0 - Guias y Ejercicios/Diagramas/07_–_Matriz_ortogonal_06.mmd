@@ -1,0 +1,17 @@
+flowchart LR
+    A["Matriz Ortogonal"]
+    B{"det Q = ?"}
+    C["🔄 Rotación"]
+    D["🪞 Reflexión"]
+    E["Preserva orientación"]
+    F["Invierte orientación"]
+    A --> B
+    B -->|"det = +1"| C
+    B -->|"det = -1"| D
+    C --> E
+    D --> F
+
+    style C fill:#e1ffe1
+    style D fill:#fff4e1
+    style E fill:#e1ffe1
+    style F fill:#fff4e1

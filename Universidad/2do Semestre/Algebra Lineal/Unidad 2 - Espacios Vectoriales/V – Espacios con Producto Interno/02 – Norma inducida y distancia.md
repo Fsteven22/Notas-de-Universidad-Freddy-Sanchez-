@@ -509,6 +509,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > Combinando:
 > |‖u‖ - ‖v‖| ≤ ‖u - v‖ = d(u, v)
+>
 > ```
 > 
 > **Interpretación:**
@@ -729,6 +730,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u + v|| ≤ ||u|| + ||v||
+>
 > ```
 > 
 > **Interpretación:** La norma de la suma de dos vectores nunca excede la suma de sus normas individuales.
@@ -749,6 +751,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u + v|| = √(⟨u + v, u + v⟩) ≤ ||u|| + ||v||
+>
 > ```
 > 
 > **Comparación de formulaciones:**
@@ -829,6 +832,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > |⟨u, v⟩| ≤ ||u|| · ||v||
+>
 > ```
 > 
 > **Demostración de la Desigualdad Triangular:**
@@ -841,12 +845,14 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u + v||² ≤ (||u|| + ||v||)²
+>
 > ```
 > 
 > **Paso 2:** Expandir el lado izquierdo usando el producto interno
 > 
 > ```
 > ||u + v||² = ⟨u + v, u + v⟩
+>
 >            = ⟨u, u⟩ + ⟨u, v⟩ + ⟨v, u⟩ + ⟨v, v⟩
 >            = ||u||² + 2⟨u, v⟩ + ||v||²
 > ```
@@ -863,6 +869,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u||² + 2⟨u, v⟩ + ||v||² ≤ ||u||² + 2||u|| · ||v|| + ||v||²
+>
 > ```
 > 
 > Simplificando (restando ||u||² + ||v||² de ambos lados):
@@ -883,6 +890,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > |⟨u, v⟩| ≤ ||u|| · ||v||
+>
 > ```
 > 
 > Lo que implica:
@@ -894,6 +902,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > Por lo tanto, la desigualdad se cumple. ∎
 > 
 > **Flujo lógico de la demostración:**
+>
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_13.svg]]
 >
 > **Se lee así:** el diagrama presenta objetivo: y u + v y elevar al cuadrado y u + v.
@@ -930,6 +939,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u|| = √(1² + 2² + 2²) = √(1 + 4 + 4) = √9 = 3
+>
 > ||v|| = √(2² + 1² + 2²) = √(4 + 1 + 4) = √9 = 3
 > ```
 > 
@@ -943,12 +953,14 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u + v|| = √(3² + 3² + 4²) = √(9 + 9 + 16) = √34 ≈ 5.831
+>
 > ```
 > 
 > **Paso 4:** Verificar la desigualdad
 > 
 > ```
 > ||u + v|| ≤ ||u|| + ||v||
+>
 > 5.831 ≤ 3 + 3
 > 5.831 ≤ 6 ✓
 > ```
@@ -979,6 +991,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u + v|| ≤ ||u|| + ||v||
+>
 > ||v + u|| ≤ ||v|| + ||u||  (es lo mismo)
 > ```
 > 
@@ -988,6 +1001,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u₁ + u₂ + ... + uₙ|| ≤ ||u₁|| + ||u₂|| + ... + ||uₙ||
+>
 > ```
 > 
 > **Demostración por inducción:**
@@ -997,6 +1011,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u₁ + ... + uₙ|| = ||(u₁ + ... + uₙ₋₁) + uₙ||
+>
 >                   ≤ ||u₁ + ... + uₙ₋₁|| + ||uₙ||     (caso base)
 >                   ≤ (||u₁|| + ... + ||uₙ₋₁||) + ||uₙ||  (hipótesis inductiva)
 >                   = ||u₁|| + ... + ||uₙ||
@@ -1008,6 +1023,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > | ||u|| - ||v|| | ≤ ||u - v||
+>
 > ```
 > 
 > **Interpretación:** La diferencia de normas nunca excede la norma de la diferencia.
@@ -1018,6 +1034,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u + v||_W ≤ ||u||_V + ||v||_V
+>
 > ```
 > 
 > **Tabla resumen de propiedades:**
@@ -1070,6 +1087,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||f + g||_p ≤ ||f||_p + ||g||_p
+>
 > ```
 > 
 > donde ||f||_p = (∫|f(x)|ᵖ dx)^(1/p)
@@ -1080,6 +1098,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||A + B|| ≤ ||A|| + ||B||
+>
 > ```
 > 
 > **Comparación de variantes:**
@@ -1116,6 +1135,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > |error(x + y)| ≤ |error(x)| + |error(y)|
+>
 > ```
 > 
 > **Ejemplo: Suma de 3 números con error**
@@ -1127,6 +1147,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > Error en suma:
 > |(x̃ + ỹ + z̃) - (x + y + z)| ≤ |εₓ| + |εᵧ| + |εᵧ|
+>
 > |6.2 - 6.0| ≤ 0.1 + 0.1 + 0.2
 > 0.2 ≤ 0.4 ✓
 > ```
@@ -1221,19 +1242,23 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > | ||u|| - ||v|| | ≤ ||u - v||
+>
 > ```
 > 
 > **Demostración:** Por desigualdad triangular:
 > 
 > ```
 > ||u|| = ||u - v + v|| ≤ ||u - v|| + ||v||
+>
 > ⇒ ||u|| - ||v|| ≤ ||u - v||
 > 
 > Similarmente:
 > ||v|| - ||u|| ≤ ||u - v||
+>
 > 
 > Por lo tanto:
 > | ||u|| - ||v|| | ≤ ||u - v||
+>
 > ```
 > 
 > **2. Convergencia en espacios normados:**
@@ -1244,6 +1269,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > | ||uₙ|| - ||u|| | ≤ ||uₙ - u|| → 0
+>
 > ```
 > 
 > **3. Desigualdad del paralelogramo (relacionada):**
@@ -1252,6 +1278,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u + v||² + ||u - v||² = 2(||u||² + ||v||²)
+>
 > ```
 > 
 > **4. Acotación de series:**
@@ -1260,6 +1287,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > || Σvₙ || ≤ Σ||vₙ||
+>
 > ```
 
 ### 🎯 Aplicaciones Teóricas
@@ -1290,6 +1318,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||T(u) - T(v)|| ≤ k||u - v||, 0 < k < 1
+>
 > ```
 > 
 > **4. Análisis funcional:**
@@ -1298,6 +1327,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||T(u + v)|| ≤ ||T(u)|| + ||T(v)||
+>
 > ```
 
 ---
@@ -1319,6 +1349,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u|| = √(1² + 2² + 2²)
+>
 >       = √(1 + 4 + 4)
 >       = √9
 >       = 3
@@ -1328,6 +1359,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||v|| = √(3² + 0² + 4²)
+>
 >       = √(9 + 0 + 16)
 >       = √25
 >       = 5
@@ -1343,6 +1375,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u + v|| = √(4² + 2² + 6²)
+>
 >           = √(16 + 4 + 36)
 >           = √56
 >           ≈ 7.483
@@ -1352,6 +1385,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u + v|| ≤ ||u|| + ||v||
+>
 > 7.483 ≤ 3 + 5
 > 7.483 ≤ 8 ✓
 > ```
@@ -1380,6 +1414,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > Verificar igualdad:
 > ||u + v|| = ||u|| + ||v||
+>
 > (1+λ)√5 = √5 + λ√5
 > (1+λ)√5 = (1+λ)√5 ✓
 > ```
@@ -1394,6 +1429,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u + v + w|| ≤ ||u|| + ||v|| + ||w||
+>
 > ```
 > 
 > **Solución:**
@@ -1402,6 +1438,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u + v + w|| = ||(u + v) + w||
+>
 >               ≤ ||u + v|| + ||w||        (desigualdad triangular)
 >               ≤ (||u|| + ||v||) + ||w||  (desigualdad triangular nuevamente)
 >               = ||u|| + ||v|| + ||w||
@@ -1413,12 +1450,14 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u + v|| ≤ ||u|| + ||v||
+>
 > ```
 > 
 > Supongamos cierto para n vectores. Para n+1:
 > 
 > ```
 > ||u₁ + ... + uₙ + uₙ₊₁|| = ||(u₁ + ... + uₙ) + uₙ₊₁||
+>
 >                           ≤ ||u₁ + ... + uₙ|| + ||uₙ₊₁||
 >                           ≤ (||u₁|| + ... + ||uₙ||) + ||uₙ₊₁||
 >                           = ||u₁|| + ... + ||uₙ|| + ||uₙ₊₁||
@@ -1451,6 +1490,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u|| = 3 km
+>
 > ||v|| = 4 km
 > ||u + v|| = √(3² + 4²) = √25 = 5 km
 > ```
@@ -1459,6 +1499,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u + v|| ≤ ||u|| + ||v||
+>
 > 5 ≤ 3 + 4
 > 5 ≤ 7 ✓
 > ```
@@ -1479,6 +1520,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > | ||u|| - ||v|| | ≤ ||u - v||
+>
 > ```
 > 
 > **Solución:**
@@ -1489,10 +1531,12 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u|| = ||(u - v) + v||
+>
 >       ≤ ||u - v|| + ||v||
 > 
 > Por lo tanto:
 > ||u|| - ||v|| ≤ ||u - v||    ...(1)
+>
 > ```
 > 
 > **Parte 2:** Demostrar ||v|| - ||u|| ≤ ||u - v||
@@ -1501,11 +1545,13 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||v|| = ||(v - u) + u||
+>
 >       ≤ ||v - u|| + ||u||
 >       = ||u - v|| + ||u||     (||v - u|| = ||u - v||)
 > 
 > Por lo tanto:
 > ||v|| - ||u|| ≤ ||u - v||    ...(2)
+>
 > ```
 > 
 > **Parte 3:** Combinar ambos resultados
@@ -1514,6 +1560,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u|| - ||v|| ≤ ||u - v||
+>
 > ||v|| - ||u|| ≤ ||u - v||
 > 
 > ⇒ -||u - v|| ≤ ||u|| - ||v|| ≤ ||u - v||
@@ -1535,12 +1582,14 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > | ||u|| - ||v|| | ≤ ||u + v|| ≤ ||u|| + ||v||
+>
 > ```
 > 
 > **Cota inferior:**
 > 
 > ```
 > ||u + v|| ≥ | ||u|| - ||v|| |
+>
 >          = | 3 - 4 |
 >          = 1
 > ```
@@ -1551,6 +1600,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > 
 > ```
 > ||u + v|| ≤ ||u|| + ||v||
+>
 >          = 3 + 4
 >          = 7
 > ```
@@ -1566,6 +1616,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > v = (-4, 0)
 > u + v = (-1, 0)
 > ||u + v|| = 1 ✓
+>
 > ```
 > 
 > _Máximo (vectores paralelos):_
@@ -1575,6 +1626,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 > v = (4, 0)
 > u + v = (7, 0)
 > ||u + v|| = 7 ✓
+>
 > ```
 > 
 > **Respuesta:**

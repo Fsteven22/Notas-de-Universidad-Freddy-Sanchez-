@@ -1,0 +1,24 @@
+flowchart TD
+    A["Vector Original v"]
+    B{"Proyectar sobre"}
+    C["Vector u<br/>Proyección 1D"]
+    D["Subespacio W<br/>Proyección nD"]
+    E["Componente paralela<br/>proj_u v"]
+    F["Componente perpendicular<br/>v - proj_u v"]
+    G["Aproximación en W<br/>proj_W v"]
+    H["Error perpendicular<br/>v - proj_W v"]
+    I["v = proj + perp"]
+    A --> B
+    B --> C
+    B --> D
+    C --> E
+    C --> F
+    D --> G
+    D --> H
+    E --> I
+    F --> I
+
+    style A fill:#e1f5ff
+    style C fill:#e1ffe1
+    style D fill:#fff4e1
+    style I fill:#f0e1ff

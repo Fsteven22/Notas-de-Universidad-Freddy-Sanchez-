@@ -1,0 +1,20 @@
+flowchart TD
+    A["Abrir recurso<br/>try"]
+    B["Ejecutar código"]
+    C{"¿Excepción?"}
+    D["Cerrar automáticamente"]
+    E["Cerrar automáticamente"]
+    F["Ejecutar catch"]
+    G["Continuar programa"]
+    A --> B
+    B --> C
+    C -->|"No"| D
+    C -->|"Sí"| E
+    E --> F
+    D --> G
+    F --> G
+
+    style A fill:#e1f5ff
+    style D fill:#e1ffe1
+    style E fill:#e1ffe1
+    style F fill:#fff4e1

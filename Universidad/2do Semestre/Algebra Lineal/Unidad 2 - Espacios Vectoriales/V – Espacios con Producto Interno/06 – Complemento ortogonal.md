@@ -157,6 +157,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 06-complemento-ortogonal]
 > En particular, tomando w = v:
 > v · v = 0
 > ||v||² = 0
+>
 > 
 > Por tanto: v = 0 ✓
 > ```

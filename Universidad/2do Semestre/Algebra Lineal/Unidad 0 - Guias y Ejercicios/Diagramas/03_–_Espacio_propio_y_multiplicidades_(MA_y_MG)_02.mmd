@@ -1,0 +1,25 @@
+flowchart TD
+    A["E_λ = Nul(A - λI)"]
+    B["¿Contiene 0?"]
+    C["✓"]
+    D["¿Cerrado bajo suma?"]
+    E["A(v₁+v₂) = λ(v₁+v₂)?"]
+    F["✓"]
+    G["¿Cerrado bajo mult. escalar?"]
+    H["A(cv) = λ(cv)?"]
+    I["✓"]
+    J["E_λ es subespacio"]
+    A --> B
+    B -->|"Sí: A0 = λ0"| C
+    A --> D
+    D -->|"v₁,v₂ ∈ E_λ"| E
+    E -->|"Sí"| F
+    A --> G
+    G -->|"v ∈ E_λ, c ∈ ℝ"| H
+    H -->|"Sí"| I
+    C --> J
+    F --> J
+    I --> J
+
+    style A fill:#e1f5ff
+    style J fill:#e1ffe1

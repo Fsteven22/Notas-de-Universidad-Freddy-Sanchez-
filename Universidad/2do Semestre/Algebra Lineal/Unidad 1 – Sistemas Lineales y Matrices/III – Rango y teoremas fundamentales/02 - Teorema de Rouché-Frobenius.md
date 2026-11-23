@@ -1932,9 +1932,11 @@ tags: [MATG1049, algebra-lineal, unidad1, 02-teorema-de-rouche-frobenius]
 >     R₁=2Ω        R₂=3Ω
 >   ───/\/\/\───●───/\/\/\───
 >   |           |            |
+>
 >   |           |            |
 >  V₁=12V      R₃=4Ω       V₂=6V
 >   |           |            |
+>
 >   |           |            |
 >   ─────────────●───────────
 > ```
@@ -2765,3 +2767,6 @@ tags: [MATG1049, algebra-lineal, unidad1, 02-teorema-de-rouche-frobenius]
 > - Mathematica/WolframAlpha - Cálculos simbólicos
 > - GeoGebra - Visualización geométrica
 
+---
+
+**Tags:** #MATG1049 #algebra-lineal #unidad1 #rango #teorema-de-rouche-frobenius #sistemas-lineales #compatibilidad #soluciones

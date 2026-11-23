@@ -1,0 +1,17 @@
+flowchart TD
+    A{"Tipo de<br/>operación?"}
+    B["Solo metadatos"]
+    C["Lectura/escritura"]
+    D["Usar File"]
+    E{"Buffer?"}
+    F["FileReader/<br/>FileWriter"]
+    G["✅ BufferedReader/<br/>BufferedWriter"]
+    A --> B
+    A --> C
+    B --> D
+    C --> E
+    E -->|"Archivo pequeño"| F
+    E -->|"Uso general"| G
+
+    style D fill:#e1f5ff
+    style G fill:#e1ffe1

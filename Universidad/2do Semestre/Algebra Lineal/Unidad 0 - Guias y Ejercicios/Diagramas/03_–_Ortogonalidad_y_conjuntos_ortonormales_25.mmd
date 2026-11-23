@@ -1,0 +1,20 @@
+flowchart TD
+    A["Base original<br/>v₁, v₂, ..., vₙ"]
+    B["Normalizar v₁<br/>u₁ = v₁/||v₁||"]
+    C["Para k = 2 hasta n"]
+    D["Restar proyecciones<br/>wₖ = vₖ - Σ⟨vₖ,uⱼ⟩uⱼ"]
+    E["Normalizar<br/>uₖ = wₖ/||wₖ||"]
+    F{"¿Terminado?"}
+    G["Base ortonormal<br/>u₁, u₂, ..., uₙ"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F -->|"No"| C
+    F -->|"Sí"| G
+
+    style A fill:#ffe1e1
+    style D fill:#fff4e1
+    style E fill:#e1f5ff
+    style G fill:#e1ffe1

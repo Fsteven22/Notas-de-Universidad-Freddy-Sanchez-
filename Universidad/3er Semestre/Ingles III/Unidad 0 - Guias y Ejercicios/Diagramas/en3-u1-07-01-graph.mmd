@@ -1,0 +1,17 @@
+flowchart TD
+    A["Dices una norma"]
+    B{"¿Qué fuerza tiene?"}
+    C["must / have to"]
+    D["must not"]
+    E{"¿Es necesario?"}
+    F["don't have to"]
+    G["should"]
+    A --> B
+    B -->|"Ley o regla fuerte"| C
+    B -->|"Prohibición"| D
+    C --> E
+    E -->|"No"| F
+    B -->|"Consejo"| G
+
+    style D fill:#ffe1e1
+    style F fill:#e1ffe1

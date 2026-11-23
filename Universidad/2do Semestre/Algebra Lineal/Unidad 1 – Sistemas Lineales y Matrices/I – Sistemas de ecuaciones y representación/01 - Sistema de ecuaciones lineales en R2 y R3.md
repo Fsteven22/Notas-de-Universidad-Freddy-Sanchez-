@@ -134,6 +134,7 @@ tags: [MATG1049, algebra-lineal, unidad1, 01-sistema-de-ecuaciones-lineales-en-r
 > Caso 1: Una solución          Caso 2: Sin solución
 >    y                              y
 >    |  \    /                      |  ║    ║
+>
 >    |   \  /                       |  ║    ║
 >    |    \/  ← Punto único         |  ║    ║  ← Paralelas
 >    |    /\                        |  ║    ║

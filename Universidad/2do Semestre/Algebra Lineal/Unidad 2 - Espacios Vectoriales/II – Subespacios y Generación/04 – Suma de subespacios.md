@@ -1922,3 +1922,5 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-suma-de-subespacios]
 
 ---
 
+**Tags:** #MATG1049 #algebra-lineal #unidad2 #subespacios #suma-de-subespacios #generacion #base
+

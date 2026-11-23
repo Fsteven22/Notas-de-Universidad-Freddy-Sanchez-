@@ -562,6 +562,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 01-valores-y-vectores-propios]
 > 
 > Valores propios: λ = i, -i
 > |λ| = ∄(0² + 1²) = 1 ✓
+>
 > ```
 > 
 > ---
@@ -935,6 +936,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 01-valores-y-vectores-propios]
 ## 🎯 Casos Comunes y Atajos
 
 > [!tip] ⚄ Trucos para Resolver Más Rápido
+>
 > **1. Matrices 2×2**
 > 
 > Para $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$:

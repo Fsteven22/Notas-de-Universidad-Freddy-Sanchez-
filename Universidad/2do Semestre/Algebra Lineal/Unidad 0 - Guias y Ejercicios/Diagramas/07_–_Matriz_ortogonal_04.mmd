@@ -1,0 +1,28 @@
+flowchart TD
+    A["Matriz Q cuadrada"]
+    B{"¿Calcular Q^T Q?"}
+    C["Multiplicar matrices"]
+    D{"¿Resultado = I?"}
+    E["✅ ES ORTOGONAL"]
+    F["❌ NO ES ORTOGONAL"]
+    G["Extraer columnas"]
+    H["Verificar producto punto<br/>entre cada par"]
+    I{"¿Todos = 0?"}
+    J["Calcular norma<br/>de cada columna"]
+    K{"¿Todas = 1?"}
+    A --> B
+    B -->|"Sí"| C
+    C --> D
+    D -->|"Sí"| E
+    D -->|"No"| F
+    B -->|"No"| G
+    G --> H
+    H --> I
+    I -->|"No"| F
+    I -->|"Sí"| J
+    J --> K
+    K -->|"Sí"| E
+    K -->|"No"| F
+
+    style E fill:#e1ffe1
+    style F fill:#ffe1e1

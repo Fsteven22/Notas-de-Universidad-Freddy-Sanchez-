@@ -1,0 +1,22 @@
+flowchart TD
+    A{"¿Necesitas un<br/>nombre?"}
+    B{"¿Método simple?"}
+    C{"¿Acceso a<br/>instancia externa?"}
+    D["✅ Clase Anónima"]
+    E["✅ Clase Local"]
+    F{"¿Scope<br/>específico?"}
+    G["✅ Clase Interna<br/>Estática"]
+    H["✅ Clase Interna<br/>Miembro"]
+    A -->|"No"| B
+    A -->|"Sí"| C
+    B -->|"Sí - 1 método"| D
+    B -->|"No - múltiples"| E
+    C -->|"Sí"| F
+    C -->|"No"| G
+    F -->|"Método"| E
+    F -->|"Clase completa"| H
+
+    style D fill:#ffe1f5
+    style E fill:#fff4e1
+    style G fill:#f0e1ff
+    style H fill:#e1ffe1

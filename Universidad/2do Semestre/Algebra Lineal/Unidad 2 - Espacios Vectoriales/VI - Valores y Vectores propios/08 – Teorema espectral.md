@@ -356,10 +356,13 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-teorema-espectral]
 > Antes (círculo):           Después (elipse):
 >        y                          y
 >        |                          |
+>
 >    1   •                      5   •
 >        |                          |
+>
 > -------+------- x          -------+------- x
 >        |                          |
+>
 >        •  1                       •  3
 > 
 > Los ejes de la elipse son q₁ y q₂

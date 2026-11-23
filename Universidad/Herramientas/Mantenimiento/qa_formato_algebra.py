@@ -65,6 +65,10 @@ RE_CALL_CONT = re.compile(r"^\s*(?P<gg>(?:>\s*)+)(?P<resto>.*)$")
 RE_EMBED = re.compile(r"!\[\[([^\]]+)\]\]")
 RE_LISTITEM = re.compile(r"^\s*(?:[-*+]|\d+[.)])\s+")
 RE_TABLE = re.compile(r"^\s*\|")
+# Separador de tabla markdown real: | --- | :---: | ---: |
+RE_TABLE_SEP = re.compile(r"^\s*\|?\s*:?-{2,}:?\s*(\|\s*:?-{2,}:?\s*)+\|?\s*$")
+# Cierre de bloque de codigo: solo ``` (con o sin lenguaje al abrir).
+RE_FENCE_ONLY = re.compile(r"^```\s*$")
 RE_QA = re.compile(r"::")
 RE_TAGS_FOOT = re.compile(r"^\s*\*\*Tags:\*\*")
 
@@ -151,8 +155,16 @@ def clasifica(rest):
         return "blank"
     if "![[" in s or s.startswith("[["):
         return "embed"
+    # Una tabla markdown real necesita: (a) la linea actual, (b) una separadora
+    # | --- | ---: | en la linea siguiente del callout, y (c) al menos 3 "|".
+    # Las matrices y el arte ASCII de las notas llevan "|" sueltos (barras de
+    # rectas, dibujos) pero no pasan el test: sin esto daban cientos de falsos R7.
+    if RE_TABLE.match(s) and s.count("|") >= 2:
+        return "table_sep_maybe"
     if RE_TABLE.match(s):
         return "table"
+    if RE_TABLE_SEP.match(s):
+        return "table_sep"
     if s.startswith("```"):
         return "fence"
     if RE_LISTITEM.match(s):
@@ -356,19 +368,45 @@ def auditar(nota_path, raiz, hallazgos, basenames_idx=None, vault=None):
         if b["depth"] != 1:
             continue
         previa = None
-        for idx, depth, rest in b["lineas"]:
+        idx = 0
+        L = len(b["lineas"])
+        en_fence = False
+        while idx < L:
+            idx0, depth, rest = b["lineas"][idx]
+            tipo = clasifica(rest)
+            if en_fence:
+                # dentro del bloque: solo un ``` a secas lo cierra; el resto es
+                # contenido literal (matrices numpy, arte ASCII, pseudocodigo).
+                if RE_FENCE_ONLY.match(rest.strip()):
+                    en_fence = False
+                previa = None
+                idx += 1
+                continue
             if depth != b["depth"]:
                 previa = None
+                idx += 1
                 continue
-            tipo = clasifica(rest)
+            if tipo == "fence":
+                en_fence = True
+                previa = None
+                idx += 1
+                continue
             if tipo == "blank":
                 previa = None
+                idx += 1
                 continue
+            # una tabla real = cabecera + separadora | --- | ---: |. La cabecera
+            # se reconoce porque la linea SIGUIENTE del callout es el separador.
+            if tipo == "table_sep_maybe":
+                sig = b["lineas"][idx + 1] if idx + 1 < L else None
+                es_tabla = bool(sig) and sig[1] == b["depth"] and clasifica(sig[2]) == "table_sep"
+                tipo = "table" if es_tabla else "prose"
             if tipo == "table" and previa not in (None, "table"):
-                hallazgos.append((rel, idx + 1, "R7-separador-antes", tipo + " " + rest[:44]))
+                hallazgos.append((rel, idx0 + 1, "R7-separador-antes", tipo + " " + rest[:44]))
             elif tipo == "embed" and previa is not None:
-                hallazgos.append((rel, idx + 1, "R7-separador-antes", tipo + " " + rest[:44]))
+                hallazgos.append((rel, idx0 + 1, "R7-separador-antes", tipo + " " + rest[:44]))
             previa = tipo
+            idx += 1
 
     # ---------- R10/R11 metas y flashcards
     # R10 solo aplica dentro de la seccion 'Metas de Aprendizaje': en Diseno
@@ -505,8 +543,13 @@ def auditar(nota_path, raiz, hallazgos, basenames_idx=None, vault=None):
             hallazgos.append((rel, i + 1, "R14-embed-sin-explicacion",
                               "embed visual sin lectura propia: %s" % ln.strip()[:50]))
 
-    # (b) cada callout 📖 de deck lleva al menos una etiqueta de lectura.
-    #     Excepcion: los callouts 📖 de 'Fuentes' son bibliografia.
+    #     (b) cada callout 📖 que contenga un embed visual lleva una etiqueta de lectura.
+    #     Corregido el 21/11/2026 (mismo criterio que R14.4 de Física): la regla
+    #     heredada marcaba TODO callout 📖 sin etiqueta, pero en Álgebra la mayoría
+    #     son prosa pura (definiciones, taxonomías, bibliografía) que no embeben
+    #     nada y por tanto no necesitan lectura. Solo dispara si hay un embed
+    #     (![[...]] con .png/.svg) dentro del callout.
+    #     Excepcion adicional: los callouts 📖 de 'Fuentes' son bibliografia.
     i = 0
     n = len(lineas)
     while i < n:
@@ -527,7 +570,10 @@ def auditar(nota_path, raiz, hallazgos, basenames_idx=None, vault=None):
                 break
             interior.append(mm.group("resto"))
             j += 1
-        if "\U0001F4D6" in titulo and depth == 1 and "Fuente" not in titulo:
+        trae_embed = any(
+            "![[" in x and (".png" in x.lower() or ".svg" in x.lower()) for x in interior)
+        if ("\U0001F4D6" in titulo and depth == 1 and "Fuente" not in titulo
+                and trae_embed):
             if not any(ETIQUETAS_EXPL.search(x) for x in interior):
                 hallazgos.append((rel, i + 1, "R14-deck-sin-explicacion",
                                   "callout de deck sin lectura: %s" % titulo[:50]))

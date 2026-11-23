@@ -1,0 +1,13 @@
+flowchart LR
+    A["Polígono"]
+    B{"Datos?"}
+    C["P=na<br/>A=P·ap/2"]
+    D["Shoelace"]
+    E["Pick"]
+    A --> B
+    B -->|"Regular"| C
+    B -->|"Vértices"| D
+    B -->|"Retícula"| E
+
+    style C fill:#e1ffe1
+    style E fill:#e1f5ff

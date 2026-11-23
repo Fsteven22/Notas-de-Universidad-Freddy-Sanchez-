@@ -1,0 +1,23 @@
+flowchart TD
+    A["3 fuentes leídas"]
+    B{"¿Qué informe<br/>piden?"}
+    C["📄 Técnico"]
+    D["📋 Ejecutivo"]
+    C1["Completo: método + datos"]
+    C2["5-8 páginas / manuscrito S5"]
+    C3["Para docente / pares"]
+    D1["1 página: hallazgo + decisión"]
+    D2["Para directivo sin tiempo"]
+    D3["Verbos de acción"]
+    A --> B
+    B --> C
+    B --> D
+    C --> C1
+    C --> C2
+    C --> C3
+    D --> D1
+    D --> D2
+    D --> D3
+
+    style C fill:#e1f5ff
+    style D fill:#e1ffe1

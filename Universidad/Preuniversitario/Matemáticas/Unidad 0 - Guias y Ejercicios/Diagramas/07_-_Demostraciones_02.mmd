@@ -1,0 +1,22 @@
+flowchart TD
+    A["Que quiero demostrar?"]
+    B{"Es para todo n natural?"}
+    C["Induccion<br/>(simple o fuerte)"]
+    D{"La tesis es P a Q?"}
+    E["Directa"]
+    F["Contrapositiva"]
+    G["Contradiccion"]
+    H["Casos"]
+    I{"Es existencial: existe x?"}
+    J["Constructiva"]
+    K["No constructiva"]
+    A --> B
+    B -->|"Si"| C
+    B -->|"No"| D
+    D -->|"Conexion directa clara"| E
+    D -->|"Negar Q da mas info"| F
+    D -->|"Tesis niega existencia<br/>o posibilidad"| G
+    D -->|"Hay particion natural<br/>de casos"| H
+    A --> I
+    I -->|"Puedo exhibir x"| J
+    I -->|"Solo pruebo que existe"| K

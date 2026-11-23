@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [FISG1001, unidad2, fisica-mecanica, dinamica, momento-de-inercia]
 ---
 
 # ⚡ Momento de Inercia
@@ -12,7 +11,7 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, momento-de-inercia]
 ## 🔧 Variables y Magnitudes
 
 > [!tip] 📏 Magnitudes Principales
->
+> 
 > - **Momento de Inercia** ($I$): Resistencia rotacional en kg⋅m²
 > - **Masa** ($m$): Masa del objeto en kilogramos [kg]
 > - **Distancia al eje** ($r$): Distancia perpendicular al eje de rotación [m]
@@ -24,24 +23,24 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, momento-de-inercia]
 ## 🧮 Fórmulas Fundamentales
 
 > [!note] 📐 Ecuaciones Clave
->
+> 
 > ### Partícula Puntual
->
+> 
 > $$I = mr^2$$
->
+> 
 > ### Sistema de Partículas
->
+> 
 > $$I = \sum m_i r_i^2$$
->
+> 
 > ### Cuerpos Rígidos Estándar
->
+> 
 > - **Anillo delgado**: $I = MR^2$
 > - **Disco sólido**: $I = \frac{1}{2}MR^2$
 > - **Esfera sólida**: $I = \frac{2}{5}MR^2$
 > - **Varilla (eje central)**: $I = \frac{1}{12}ML^2$
->
+> 
 > ### Teorema de Ejes Paralelos
->
+> 
 > $$I = I_{CM} + Md^2$$ donde $I_{CM}$ es el momento de inercia respecto al centro de masa y $d$ es la distancia entre ejes.
 
 ---
@@ -49,14 +48,14 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, momento-de-inercia]
 ## 🎓 Marco Teórico
 
 > [!abstract] 🧠 Conceptos Fundamentales
->
+> 
 > **Dependencia de la Distribución**: El momento de inercia no solo depende de la masa total, sino de **cómo se distribuye esa masa** respecto al eje de rotación. Masa más alejada del eje → mayor momento de inercia.
->
+> 
 > **Analogía con Masa Lineal**:
->
+> 
 > - Masa lineal → resistencia al cambio de velocidad lineal
 > - Momento de inercia → resistencia al cambio de velocidad angular
->
+> 
 > **Principio Clave**: Cuanto más lejos esté la masa del eje de rotación, mayor será su contribución al momento de inercia (relación cuadrática con la distancia).
 
 ---
@@ -64,33 +63,29 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, momento-de-inercia]
 ## 🔗 Diagrama Conceptual
 
 > [!abstract] 📊 Mapa de Relaciones
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Momento_de_Inercia_01.svg]]
->
-> **Se lee así:** El mapa del **momento de inercia I**: depende de la **masa m** y de la **distribución de la masa** medida como **r²**; cada **geometría** tiene su fórmula específica (anillo MR², disco ½MR², esfera ⅖MR², varilla 1/12 ML²), y el **teorema de ejes paralelos** `I = I_CM + Md²` permite desplazar el eje. Con él aparecen las dos ecuaciones de la dinámica rotacional: `τ = Iα` y `K_rot = ½Iω²`.
->
-> **Por qué importa:** Es el resumen conceptual del tema: I es la «masa rotacional», o sea la resistencia de un cuerpo a cambiar su rotación. Todo lo demás (torque, energía rotacional, conservación del momento) se expresa en función de I.
+> 
+> ![[Diagramas/Momento_de_Inercia_01.svg]]
 
 ---
 
 ## 🌍 Aplicaciones Prácticas
 
 > [!example] 🎯 Casos de Estudio
->
+> 
 > ### 🧊 Patinador de Hielo
->
+> 
 > - **Brazos extendidos**: Gran momento de inercia → rotación lenta
 > - **Brazos pegados**: Menor momento de inercia → rotación rápida
 > - **Principio**: Conservación del momento angular ($L = I\omega = \text{constante}$)
->
+> 
 > ### 🚗 Ruedas de Automóvil
->
+> 
 > - **Distribución**: Masa concentrada en el borde (como anillo)
 > - **Efecto**: Alto momento de inercia para su masa total
 > - **Consecuencia**: Requiere más torque para acelerar/frenar
->
+> 
 > ### 🏌️ Bate de Béisbol
->
+> 
 > - **Eje en las manos**: Momento de inercia alto → difícil de mover
 > - **Eje en el centro**: Momento de inercia menor → más fácil de girar
 
@@ -99,19 +94,15 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, momento-de-inercia]
 ## 🔄 Metodología de Cálculo
 
 > [!info] 🛠️ Flujo de Resolución
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Momento_de_Inercia_02.svg]]
->
-> **Se lee así:** El procedimiento de cálculo en pasos: **identificar el sistema**, decidir si es **partícula** (`I = mr²`), **sistema de partículas** (`I = Σmᵢrᵢ²`) o **cuerpo rígido** (buscar la geometría), aplicar la **fórmula específica** y preguntarse si el **eje pasa por el centro de masa**: si no, usar el teorema de ejes paralelos `I = I_CM + Md²` antes de dar el resultado final.
->
-> **Por qué importa:** Es la hoja de ruta para no calcular mal un momento de inercia: el error más común es usar la fórmula del disco sobre un anillo, o aplicar la del centro de masas a un eje que no pasa por el CM.
+> 
+> ![[Diagramas/Momento_de_Inercia_02.svg]]
 
 ---
 
 ## 📊 Ejercicios Resueltos
 
 > [!warning] 🧮 Problema 1: Varilla con Masas Puntuales **Enunciado**: Varilla sin masa de 1.0 m con masa de 1.0 kg en un extremo y 2.0 kg en el otro. Calcular momento de inercia respecto al centro.
->
+> 
 > > [!success] ✅ Solución **Datos**: $m_1 = 1.0\text{ kg}$, $m_2 = 2.0\text{ kg}$, $L = 1.0\text{ m}$
 > > 
 > > **Distancias al centro**: $r_1 = r_2 = 0.5\text{ m}$
@@ -120,7 +111,7 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, momento-de-inercia]
 >
 
 > [!warning] 🧮 Problema 2: Cilindro Rodando **Enunciado**: Cilindro sólido de masa $M$ y radio $R$ rueda sobre una superficie. Calcular momento de inercia respecto al punto de contacto.
->
+> 
 > > [!success] ✅ Solución **Momento de inercia del centro**: $I_{CM} = \frac{1}{2}MR^2$
 > > 
 > > **Distancia entre ejes**: $d = R$
@@ -132,24 +123,24 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, momento-de-inercia]
 ## 🔗 Conexiones Temáticas
 
 > [!note] 🌐 Relaciones Conceptuales
->
+> 
 > ### [[Cinemática Rotacional]]
->
+> 
 > - **Segunda Ley de Newton rotacional**: $\sum \tau = I\alpha$
 > - El momento de inercia es la "masa rotacional" en esta ecuación
->
+> 
 > ### [[1er Semestre/Física Mecánica/01 - Cinemática/Cinemática Rotacional.md]]
->
+> 
 > - **Fórmula**: $K_{rot} = \frac{1}{2}I\omega^2$
 > - Análoga a $K = \frac{1}{2}mv^2$ pero para rotación
->
+> 
 > ### [[Centro de masa (CM)]]
->
+> 
 > - **Teorema de ejes paralelos** conecta momento de inercia con centro de masa
 > - Permite calcular $I$ para cualquier eje conociendo $I_{CM}$
->
+> 
 > ### [[Momentum Angular]]
->
+> 
 > - **Relación**: $L = I\omega$
 > - **Conservación**: Explica fenómenos como el patinador girando
 
@@ -158,7 +149,7 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, momento-de-inercia]
 ## 📈 Comparación de Geometrías
 
 > [!tip] 📊 Tabla de Momentos de Inercia
->
+> 
 > |**Geometría**|**Momento de Inercia**|**Factor**|
 > |---|---|---|
 > |Partícula puntual|$mr^2$|1.00|
@@ -167,7 +158,7 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, momento-de-inercia]
 > |Esfera sólida|$\frac{2}{5}MR^2$|0.40|
 > |Esfera hueca|$\frac{2}{3}MR^2$|0.67|
 > |Varilla (centro)|$\frac{1}{12}ML^2$|0.083|
->
+> 
 > **Observación**: A mayor concentración de masa cerca del eje, menor momento de inercia.
 
 ---
@@ -175,7 +166,7 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, momento-de-inercia]
 ## 📝 Síntesis Clave
 
 > [!summary] 🎯 Puntos Esenciales
->
+> 
 > - **Definición**: Resistencia rotacional análoga a la masa lineal
 > - **Dependencia**: Proporcional a $mr^2$ (masa × distancia²)
 > - **Geometría**: Cada forma tiene su fórmula específica
@@ -187,9 +178,9 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, momento-de-inercia]
 ## 📚 Referencias y Enlaces
 
 > [!quote]  🏷️ Sistema de Organización
->
+> 
 > ### 🔗 Notas Relacionadas
->
+> 
 > - [[Cinemática Rotacional]]
 > - [[Momentum Angular]]
 > - [[1er Semestre/Física Mecánica/01 - Cinemática/Cinemática Rotacional.md]]
@@ -197,9 +188,9 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, momento-de-inercia]
 > - Torque y Momento de Torsión
 > - Conservación del Momento Angular
 > - Teorema de Ejes Paralelos
->
+> 
 > ### 📖 Temas Avanzados
->
+> 
 > - [[1er Semestre/Física Mecánica/02 - Dinámica/Dinámica de Rotación/Momento de Inercia.md]]
 > - Movimientos de Rodadura
 > - [[Giroscopios y Precesión]]
@@ -207,5 +198,3 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, momento-de-inercia]
 ### Tags
 
 #fisica #mecanica #rotacion #momento-inercia #dinamica-rotacional #energia-cinetica
-
-**Tags:** #FISG1001 #fisica-mecanica #unidad2 #momento-de-inercia

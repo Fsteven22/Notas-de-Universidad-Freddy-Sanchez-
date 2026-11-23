@@ -153,11 +153,28 @@ py -3.12 "Universidad/Herramientas/Mantenimiento/qa_formato_algebra.py" --calibr
 Severidades: **H** (bloquea: callout vacío, `> >` sin anclaje, embed roto/ajeno, ruta mal
 profundizada) y **W** (desviación: prosa suelta, tags, emoji, `.mmd` faltante, lectura).
 `--fix-rutas` repara embeds con profundidad incorrecta cuando la correcta existe.
-Estado al cierre de esta edición: **51 notas, 1370 hallazgos, 0 H** (248 son `R12-svg-sin-mmd`,
-pendiente de generación masiva; el resto, W de formato).
+Estado al cierre de esta edición (21/11/2026): **51 notas, 781 hallazgos, 0 H**. Los 781 son
+únicamente `R4-prosa-top`, **W informativo por diseño**: el estilo de la materia es prosa densa
+fuera de callouts y el contrato lo acepta. La nota de referencia da **0 hallazgos**.
 
 ## Nota de proceso (19/11/2026)
 El contrato se reescribió sobre la nota de referencia real después de que el dueño lo pidiera
 ("usar la nota de refereencia de SBD como todos los contratos y recorrerlo"). La primera versión
 (clon de CYSOC) tenía tres huecos: sin nota de referencia, `--calibrar` roto, y reglas heredadas
 (R10/R11/R15) sin medir en la materia. Este documento los cierra.
+
+## Nota de proceso (21/11/2026) — el validador aprendió de los datos
+Al recorrer las 1367 desviaciones que quedaban se vio que **tres reglas heredadas producían
+falsos positivos** con el material real de esta materia. Se corrigieron en el validador, no en
+las notas (mismo criterio que ya se aplicó con keycaps y ©️/™️):
+
+| Regla | Antes | Ahora | Por qué |
+|---|---|---|---|
+| `R14-deck-sin-explicacion` | 7 | **0** | Marcaba *todo* callout 📖 sin etiqueta de lectura. En Álgebra la mayoría son prosa pura (definiciones, taxonomías, bibliografía) y **no embeben nada**. Ahora solo dispara si el callout trae un `![[…]]` con `.png`/`.svg` dentro. Mismo criterio que **R14.4 de Física**. |
+| `R7-separador-antes` | 220 | **0** | El clasificador trataba como tabla cualquier línea que abriera con `\|`, así que el **arte ASCII** (rectas, planos, matrices dibujadas) y los **bloques ```** generaban cientos de avisos. Ahora exige una **separadora markdown real** (`\| --- \| ---: \|`) en la línea siguiente, y no interpreta el interior de un fence. |
+| `R6-sin-blanco-header` | 99 | **0** | Era un hallazgo **real**: 99 callouts con contenido pegado al header. Corregido insertando la línea `>` en blanco (23 en las 4 notas raíz + 76 en 11 notas de clase). |
+| `R12-svg-sin-mmd` | 248 | **0** | No era un déficit: los 247 SVG de `Unidad 0/Diagramas/` **ya tenían** su `.mmd` (los generó otra sesión en `c4088779`). Verificado par a par que el `.mmd` corresponde al contenido del SVG. |
+
+Los 19 hallazgos quirúrgicos (6 H2 sin emoji, 4 notas sin `**Tags:**`, 2 PDF embebidos en vez de
+enlazados, 7 falsos R14) se cerraron a mano. Verificación posterior: 51 notas, **0 problemas
+estructurales** (fences balanceados, tags al pie, H2 con emoji).

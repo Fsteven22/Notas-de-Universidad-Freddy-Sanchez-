@@ -109,6 +109,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-proceso-de-gram-schmidt]
 > 
 > v₁ · v₂ = 3·0 + 0·(-2) = 0  ✓ Ortogonales
 > ||v₁|| = 3 ≠ 1  ✗ No unitario
+>
 > ||v₂|| = 2 ≠ 1  ✗ No unitario
 > 
 > Vectores ORTONORMALES:
@@ -117,6 +118,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-proceso-de-gram-schmidt]
 > 
 > u₁ · u₂ = 0     ✓ Ortogonales
 > ||u₁|| = 1      ✓ Unitario
+>
 > ||u₂|| = 1      ✓ Unitario
 > ```
 
@@ -735,6 +737,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-proceso-de-gram-schmidt]
 ## 🎓 Ejercicios Guiados
 
 > [!example] 💪 Práctica Progresiva
+>
 > ### **Nivel Básico:**
 > 
 > **Ejercicio 1: Ortogonalizar 2 vectores en ℝ²**
@@ -794,6 +797,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-proceso-de-gram-schmidt]
 > ```
 > Paso 1: u₁
 > ||v₁|| = √(1 + 0 + 1) = √2
+>
 > u₁ = [1/√2, 0, 1/√2]
 > 
 > Paso 2: u₂

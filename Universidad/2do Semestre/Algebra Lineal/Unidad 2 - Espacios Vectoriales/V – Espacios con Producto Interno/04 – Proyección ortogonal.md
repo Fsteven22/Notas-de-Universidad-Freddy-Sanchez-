@@ -95,6 +95,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 > 
 > PASO 2: Calcular ||u||²
 > ||u||² = 1² + 0² = 1
+>
 > 
 > PASO 3: Aplicar fórmula
 > proj_u(v) = (3/1)(1, 0) = (3, 0)
@@ -121,6 +122,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 > 
 > PASO 2: Calcular ||u||²
 > ||u||² = 3² + 4² = 9 + 16 = 25
+>
 > 
 > PASO 3: Aplicar fórmula
 > proj_u(v) = (23/25)(3, 4) = (69/25, 92/25) = (2.76, 3.68)
@@ -144,6 +146,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 > 
 > PASO 2: Calcular ||u||²
 > ||u||² = 1² + 1² + 0² = 2
+>
 > 
 > PASO 3: Aplicar fórmula
 > proj_u(v) = (3/2)(1, 1, 0) = (3/2, 3/2, 0) = (1.5, 1.5, 0)
@@ -312,11 +315,13 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 > PASO 1: Proyección sobre u₁
 > ⟨v, u₁⟩ = 1(1) + 2(0) + 3(0) = 1
 > ||u₁||² = 1
+>
 > proj_u₁(v) = (1/1)(1, 0, 0) = (1, 0, 0)
 > 
 > PASO 2: Proyección sobre u₂
 > ⟨v, u₂⟩ = 1(0) + 2(1) + 3(0) = 2
 > ||u₂||² = 1
+>
 > proj_u₂(v) = (2/1)(0, 1, 0) = (0, 2, 0)
 > 
 > PASO 3: Sumar proyecciones
@@ -388,6 +393,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 >    = (1,2) - (8/5, 4/5)
 >    = (-3/5, 6/5)
 > ||u₂||² = 9/25 + 36/25 = 45/25 = 9/5
+>
 > 
 > proj_W(v) = [(5·2 + 5·1)/5](2,1) + [(5·(-3/5) + 5·(6/5))/(9/5)](-3/5, 6/5)
 >           = (15/5)(2,1) + [(−15/5 + 30/5)/(9/5)](-3/5, 6/5)
@@ -522,6 +528,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 > 
 > ```
 > ||v - w||² = ||v - proj_W(v) + proj_W(v) - w||²
+>
 >            = ||perp_W(v)||² + ||proj_W(v) - w||²  [Pitágoras]
 >            ≥ ||perp_W(v)||²  [porque el segundo término ≥ 0]
 >            = ||v - proj_W(v)||²
@@ -1130,6 +1137,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 ### 🔍 Cálculo del Complemento Ortogonal
 
 > [!example] 🛠️ Métodos de Construcción
+>
 > **Método 1: A partir de base**
 > 
 > Si W = span{v₁, v₂, ..., vₖ}, entonces w ∈ W⊥ si y solo si:
@@ -1294,6 +1302,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 > ```
 > ⟨v, u⟩ = 4(1) + 3(0) = 4
 > ||u||² = 1
+>
 > proj_u(v) = 4(1, 0) = (4, 0)
 > perp_u(v) = (4, 3) - (4, 0) = (0, 3)
 > ```
@@ -1305,6 +1314,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 > ```
 > ⟨v, u⟩ = 3
 > ||u||² = 1
+>
 > proj_u(v) = 3(0, 0, 1) = (0, 0, 3)
 > [Extrae solo componente z]
 > ```
@@ -1316,6 +1326,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 > ```
 > Línea: W = span{(1, 1)}
 > ||u||² = 2
+>
 > ⟨v, u⟩ = 2(1) + 5(1) = 7
 > proj_u(v) = (7/2)(1, 1) = (3.5, 3.5)
 > 

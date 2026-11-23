@@ -1,0 +1,17 @@
+flowchart LR
+    A["Modelo 3D<br/>Vértices"]
+    B["Rotación Q₁<br/>Matriz ortogonal"]
+    C["Escalado S"]
+    D["Traslación T"]
+    E["Proyección<br/>Pantalla 2D"]
+    F["Ortogonalidad"]
+    G["✅ Sin deformación<br/>✅ Inversión rápida"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    F --> B
+    F --> G
+
+    style B fill:#e1ffe1
+    style F fill:#e1f5ff

@@ -1,0 +1,13 @@
+flowchart TD
+    A["Reportas"]
+    B{"¿Afirmación o pregunta?"}
+    C["present→past, past→past perfect"]
+    D["sin ?, sujeto antes del verbo, if si es yes/no"]
+    E["verbo + that + backshift"]
+    A --> B
+    B -->|"Afirmación"| C
+    B -->|"Pregunta"| D
+    C --> E
+    D --> E
+
+    style E fill:#e1ffe1

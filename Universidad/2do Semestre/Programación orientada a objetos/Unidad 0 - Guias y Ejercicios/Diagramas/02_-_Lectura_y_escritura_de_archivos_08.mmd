@@ -1,0 +1,21 @@
+flowchart TD
+    A{"Modo de<br/>escritura?"}
+    B["Sobrescribir"]
+    C["Append"]
+    D["FileWriter archivo"]
+    E["FileWriter archivo, true"]
+    F["❌ Contenido anterior<br/>se pierde"]
+    G["✅ Contenido anterior<br/>se conserva"]
+    H["Regenerar archivo<br/>completo"]
+    I["Agregar al final<br/>logs, históricos"]
+    A --> B
+    A --> C
+    B --> D
+    C --> E
+    D --> F
+    E --> G
+    F --> H
+    G --> I
+
+    style B fill:#ffe1e1
+    style C fill:#e1ffe1

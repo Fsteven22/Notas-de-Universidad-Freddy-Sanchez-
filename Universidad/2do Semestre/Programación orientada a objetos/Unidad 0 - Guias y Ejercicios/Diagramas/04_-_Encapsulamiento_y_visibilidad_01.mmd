@@ -1,0 +1,19 @@
+flowchart TD
+    A["Usuario"]
+    B["Interfaz Pública"]
+    C["Métodos públicos"]
+    D{"Validación"}
+    E["Modificar<br/>Atributos Privados"]
+    F["Rechazar<br/>operación"]
+    G["Atributos Privados"]
+    A --> B
+    B --> C
+    C --> D
+    D -->|"✅ Válido"| E
+    D -->|"❌ Inválido"| F
+    G --> E
+
+    style A fill:#e1f5ff
+    style C fill:#e1ffe1
+    style E fill:#fff4e1
+    style G fill:#ffe1e1

@@ -1,0 +1,29 @@
+flowchart TD
+    A["📁 Archivos"]
+    B["📄 CSV"]
+    C["📊 Excel"]
+    D["🌐 JSON"]
+    E["🔄 Otros"]
+    F["pd.read_csv"]
+    G["df.to_csv"]
+    H["pd.read_excel"]
+    I["df.to_excel"]
+    J["pd.read_json"]
+    K["df.to_json"]
+    L["Parquet, SQL, HTML"]
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    B --> F
+    B --> G
+    C --> H
+    C --> I
+    D --> J
+    D --> K
+    E --> L
+
+    style A fill:#fff3e0,stroke:#e65100
+    style B fill:#e8f5e8,stroke:#2e7d32
+    style C fill:#e3f2fd,stroke:#1565c0
+    style D fill:#fce4ec,stroke:#c2185b

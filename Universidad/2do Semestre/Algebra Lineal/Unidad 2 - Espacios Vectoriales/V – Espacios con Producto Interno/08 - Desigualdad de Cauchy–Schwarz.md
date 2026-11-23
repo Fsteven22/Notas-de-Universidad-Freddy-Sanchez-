@@ -69,9 +69,11 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 > 
 > Lado izquierdo:
 > |⟨u, v⟩| = |3(1) + 4(2)| = |11| = 11
+>
 > 
 > Lado derecho:
 > ||u|| ||v|| = √(9 + 16) · √(1 + 4)
+>
 >             = 5 · √5
 >             ≈ 11.18
 > 
@@ -196,18 +198,23 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 > 
 > Por el teorema de Pitágoras:
 > ||u||² = ||proj_v(u)||² + ||componente ortogonal||²
+>
 > 
 > Paso 4: Como el segundo término es no negativo:
 > ||u||² ≥ ||proj_v(u)||²
+>
 > 
 > Sustituyendo:
 > ||u||² ≥ (⟨u,v⟩/||v||)²
+>
 > 
 > Paso 5: Multiplicar ambos lados por ||v||²:
 > ||u||² ||v||² ≥ ⟨u,v⟩²
+>
 > 
 > Tomando raíz cuadrada:
 > ||u|| ||v|| ≥ |⟨u,v⟩|  ∎
+>
 > ```
 > 
 > **Interpretación visual:**
@@ -256,6 +263,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 > 
 > Tomando raíz cuadrada:
 > |⟨u,v⟩| ≤ ||u|| ||v||  ∎
+>
 > ```
 > 
 > **Interpretación:** El hecho de que ‖**u** + t**v**‖² sea siempre no negativo impone una restricción en el producto interno.
@@ -334,6 +342,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 > 
 > ⟨u, v⟩ = 2 + 8 + 18 = 28
 > ||u|| ||v|| = √56 · √14 = √784 = 28 ✅
+>
 > 
 > Ejemplo 2 - Igualdad NO alcanzada:
 > u = (1, 0)
@@ -341,6 +350,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 > 
 > ⟨u, v⟩ = 1
 > ||u|| ||v|| = 1 · √2 ≈ 1.414
+>
 > 1 < 1.414 ✅ (desigualdad estricta)
 > 
 > Ejemplo 3 - Dirección opuesta:
@@ -350,6 +360,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 > 
 > ⟨u, v⟩ = -3 - 12 = -15
 > |⟨u, v⟩| = 15
+>
 > ||u|| ||v|| = √45 · √5 = √225 = 15 ✅
 > ```
 > 
@@ -450,6 +461,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 > 
 > ```
 > ||u + v||² = ⟨u + v, u + v⟩
+>
 >            = ⟨u,u⟩ + 2⟨u,v⟩ + ⟨v,v⟩
 >            = ||u||² + 2⟨u,v⟩ + ||v||²
 >            ≤ ||u||² + 2|⟨u,v⟩| + ||v||²
@@ -458,6 +470,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 > 
 > Tomando raíz cuadrada:
 > ||u + v|| ≤ ||u|| + ||v||  ∎
+>
 > ```
 > 
 > **Interpretación geométrica:**
@@ -622,6 +635,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 > 
 > Lado izquierdo:
 > |1·3| + |2·4| = 3 + 8 = 11
+>
 > 
 > Lado derecho:
 > (1³ + 2³)^(1/3) · (3^(3/2) + 4^(3/2))^(2/3)
@@ -677,6 +691,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 > 
 > Verificación:
 > |32| ≤ 32.83 ✅
+>
 > 
 > b) Cálculos:
 > ⟨u, v⟩ = 1(1) + (−1)(1) = 0
@@ -688,6 +703,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 > 
 > Verificación:
 > |0| ≤ 2 ✅
+>
 > (Vectores ortogonales)
 > ```
 >
@@ -706,6 +722,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 > 
 > Paso 2: Normas
 > ||u|| = 1
+>
 > ||v|| = √3
 > 
 > Paso 3: Coseno
@@ -766,9 +783,11 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 > 
 > Paso 2: Lado izquierdo
 > ||u + v|| = √(16 + 36) = √52 ≈ 7.21
+>
 > 
 > Paso 3: Lado derecho
 > ||u|| = √(9 + 16) = 5
+>
 > ||v|| = √(1 + 4) = √5 ≈ 2.24
 > ||u|| + ||v|| ≈ 7.24
 > 
@@ -792,14 +811,17 @@ tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 > 
 > Paso 2: Norma de f
 > ||f||² = ∫₀¹ 1² dx = 1
+>
 > ||f|| = 1
 > 
 > Paso 3: Norma de g
 > ||g||² = ∫₀¹ x² dx = [x³/3]₀¹ = 1/3
+>
 > ||g|| = 1/√3
 > 
 > Paso 4: Verificar
 > |⟨f,g⟩| = 1/2
+>
 > ||f|| ||g|| = 1 · (1/√3) = 1/√3 ≈ 0.577
 > 
 > 1/2 = 0.5 ≤ 0.577 ✅

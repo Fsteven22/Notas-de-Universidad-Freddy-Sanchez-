@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [FISG1001, unidad2, fisica-mecanica, dinamica, rodadura]
 ---
 
 # 🎯 Rodadura
@@ -22,7 +21,7 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, rodadura]
 ---
 
 > [!note] 📊 Variables Comunes
->
+> 
 > |Variable|Símbolo|Descripción|
 > |---|---|---|
 > |Masa|$M$|Masa del objeto que rueda|
@@ -40,63 +39,59 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, rodadura]
 # 🔧 Método Dinámico
 
 > [!tip] 🎯 Cuándo Usar el Método Dinámico
->
+> 
 > - Cuando necesitas encontrar **fuerzas** (especialmente fricción)
 > - Cuando requieres calcular **aceleraciones**
 > - Para análisis detallado de todas las fuerzas actuantes
 >
 
 > [!note] ⚖️ Sistema de Ecuaciones Fundamentales
->
+> 
 > ### 1️⃣ Segunda Ley de Newton (Lineal)
->
+> 
 > $$\sum F_{ext} = M\vec{a}_{CM}$$
->
+> 
 > ### 2️⃣ Segunda Ley de Newton (Rotacional)
->
+> 
 > $$\sum \tau_{ext} = I\alpha$$
->
+> 
 > ### 3️⃣ Condición de Rodadura Sin Deslizar
->
+> 
 > $$a_{CM} = \alpha R$$
 >
 
 > [!info] 🔄 Proceso de Resolución (Método Dinámico)
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Rodadura_01.svg]]
->
-> **Se lee así:** El **método dinámico** combina tres piezas: Newton lineal (`ΣF = M a_CM`), Newton rotacional (`τ total = Iα`) y la condición de **rodar sin deslizar** (`a_CM = αR`). En el ejemplo del disco, `F − f_s = M a` y `f_s R = ½MR²α`, de donde `a_CM = 2F/3M` y `f_s = F/3`. El método es el indicado **cuando se necesitan fuerzas o aceleraciones**.
->
-> **Por qué importa:** Las tres ecuaciones son necesarias y son tres incógnitas (a, f_s y α): sin la condición de rodadura sin deslizar el sistema no cierra. Y el resultado `f_s = F/3` muestra que la fricción estática es imprescindible: es la que hace girar al disco.
+> 
+> ![[Diagramas/Rodadura_01.svg]]
 
 ## 🎲 Ejemplos Método Dinámico
 
 > [!example] 🔵 Ejemplo 1: Disco con Fuerza Aplicada
->
+> 
 > **📋 Problema:** Un disco de masa $M$ y radio $R$ rueda sin deslizar debido a una fuerza constante $F$. Encontrar la aceleración y la fuerza de fricción.
->
+> 
 > **🔧 Solución paso a paso:**
->
+> 
 > 1. **Dinámica lineal:** $F - f_s = Ma_{CM}$
 > 2. **Dinámica rotacional:** $f_s R = I\alpha = \frac{1}{2}MR^2\alpha$
 > 3. **Rodadura sin deslizar:** $a_{CM} = \alpha R$
->
+> 
 > **📊 Resultado:**
->
+> 
 > - Aceleración: $a_{CM} = \frac{2F}{3M}$
 > - Fricción: $f_s = \frac{F}{3}$
 >
 
 > [!example] 🔺 Ejemplo 2: Cilindro en Plano Inclinado
->
+> 
 > **📋 Problema:** Un cilindro rueda por un plano inclinado de ángulo $\theta$. Encontrar la aceleración del centro de masa.
->
+> 
 > **🔧 Solución:**
->
+> 
 > 1. **Componente gravitacional:** $Mg\sin\theta - f_s = Ma_{CM}$
 > 2. **Torque de fricción:** $f_s R = I\alpha$
 > 3. **Condición de rodadura:** $a_{CM} = \alpha R$
->
+> 
 > **📊 Resultado:** $$a_{CM} = \frac{g\sin\theta}{1+\frac{I}{MR^2}}$$
 
 ---
@@ -104,7 +99,7 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, rodadura]
 # ⚡ Método Energético
 
 > [!tip] 🎯 Cuándo Usar el Método Energético
->
+> 
 > - Cuando solo necesitas **velocidades finales** o **alturas**
 > - Para **comparar diferentes objetos** rodando
 > - Cuando las fuerzas no conservativas **no realizan trabajo**
@@ -112,55 +107,51 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, rodadura]
 >
 
 > [!note] 🔋 Ecuaciones Fundamentales
->
+> 
 > ### Energía Cinética Total de Rodadura
->
+> 
 > $$K_{total} = K_{trasl} + K_{rot} = \frac{1}{2}Mv_{CM}^2 + \frac{1}{2}I\omega^2$$
->
+> 
 > ### Condición de Rodadura (Energético)
->
+> 
 > $$v_{CM} = \omega R$$
->
+> 
 > ### Principio de Conservación
->
+> 
 > $$E_{inicial} = E_{final}$$ $$K_{total,i} + U_{g,i} = K_{total,f} + U_{g,f}$$
 >
 
 > [!info] 🔄 Proceso de Resolución (Método Energético)
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Rodadura_02.svg]]
->
-> **Se lee así:** El **método energético**: la energía inicial es `Mgh` (partiendo del reposo) y la final `½Mv² + ½Iω²`; con la condición de rodadura sin deslizar `ω = v/R` se obtiene `Mgh = ½Mv²(1 + β)` y por tanto `v = √(2gh/(1+β))`. Para un cilindro con β = ½, `v = (2/3)√(gh)`. Es el método indicado **cuando no hay fuerzas no conservativas y solo se quiere la velocidad**.
->
-> **Por qué importa:** Una sola ecuación donde el método dinámico necesitaba tres. El factor `1 + β` mide cuánta energía se va en rotación: cuanto mayor es β (más lejos el centro de masas del eje), menos velocidad final.
+> 
+> ![[Diagramas/Rodadura_02.svg]]
 
 ## 🎲 Ejemplos Método Energético
 
 > [!example] 🔵 Ejemplo 1: Cilindro Rodando por Plano Inclinado
->
+> 
 > **📋 Problema:** Un cilindro de masa $M$ y radio $R$ parte del reposo y rueda por un plano inclinado de altura $h$. ¿Cuál es la velocidad de su centro de masa en la base?
->
+> 
 > **🔧 Solución:**
->
+> 
 > 1. **Energía inicial:** $E_i = U_g = Mgh$
 > 2. **Energía final:** $E_f = K_{total} = \frac{1}{2}Mv_{CM}^2 + \frac{1}{2}I\omega^2$
 > 3. **Condición de rodadura:** $\omega = v_{CM}/R$
 > 4. **Conservación:** $Mgh = \frac{1}{2}Mv_{CM}^2 + \frac{1}{2}I\left(\frac{v_{CM}}{R}\right)^2$
->
+> 
 > **📊 Resultado:** $$v_{CM} = \sqrt{\frac{2gh}{1+\frac{I}{MR^2}}}$$
 >
 
 > [!example] 🏁 Ejemplo 2: Carrera de Objetos
->
+> 
 > **📋 Problema:** Un disco y un aro con la misma masa y radio se sueltan desde la misma altura. ¿Cuál llega primero?
->
+> 
 > **🔧 Análisis:**
->
+> 
 > |Objeto|Momento de Inercia|Velocidad Final|
 > |---|---|---|
 > |Disco|$I = \frac{1}{2}MR^2$|$v = \sqrt{\frac{4gh}{3}}$|
 > |Aro|$I = MR^2$|$v = \sqrt{gh}$|
->
+> 
 > **📊 Resultado:** El disco llega primero (mayor velocidad final)
 
 ---
@@ -168,24 +159,20 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, rodadura]
 ## 📈 Distribución de Energía Cinética
 
 > [!info] 🔋 Análisis Energético La fracción de energía que se convierte en rotación depende del momento de inercia:
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Rodadura_03.svg]]
->
-> **Se lee así:** La carrera de la rodadura: con la misma masa y el mismo radio, el **disco** (β = ½) llega con `v = √(4gh/3)` y el **aro** (β = 1) con `v = √(gh)`. El disco **llega primero** porque una fracción mayor de su energía está en la traslación, y el **orden de llegada** es esfera → cilindro → aro.
->
-> **Por qué importa:** Permite explicar por qué en una carrera los cuerpos llegan en ese orden sin necesidad de conocer las fuerzas: la energía se reparte entre traslación y rotación, y el reparto depende solo de la geometría. La regla es «menos β, más rápido».
+> 
+> ![[Diagramas/Rodadura_03.svg]]
 >
 
 > [!note] 📊 Comparación de Velocidades Finales
->
+> 
 > Para la misma altura $h$:
->
+> 
 > $$v_{esfera} > v_{cilindro} > v_{aro}$$
 
 ---
 
 > [!summary] ⚖️ Comparación de Métodos
->
+> 
 > |Aspecto|Método Dinámico|Método Energético|
 > |---|---|---|
 > |**🎯 Objetivo**|Fuerzas y aceleraciones|Velocidades y alturas|
@@ -196,59 +183,54 @@ tags: [FISG1001, unidad2, fisica-mecanica, dinamica, rodadura]
 >
 
 > [!tip] 🎯 Estrategia de Selección **Usa método dinámico** cuando necesites fuerzas o aceleraciones
->
+> 
 > **Usa método energético** cuando solo necesites velocidades finales
 
 ---
 
 > [!info] 🔗 Conexiones Conceptuales
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Rodadura_04.svg]]
->
-> **Se lee así:** El cuadro comparativo final: el método **dinámico** persigue **fuerzas y aceleraciones**, necesita **3 ecuaciones simultáneas** y da un **análisis completo del movimiento**; el **energético** persigue **velocidades y alturas**, necesita **1 ecuación de conservación** y da un **resultado final rápido**. La regla de elección es explícita: fuerzas → dinámico, solo velocidades → energético.
->
-> **Por qué importa:** Es la decisión de método que ahorra más tiempo en un examen. Intentar un método energético cuando piden la fuerza de fricción es el error más común: la energía no dice nada sobre las fuerzas internas.
+> 
+> ![[Diagramas/Rodadura_04.svg]]
 
 ---
 
 ## 📚 Referencias y Enlaces
 
 > [!quote] 🔗 Links a Otras Notas
->
-> - Dinámica Lineal - Segunda Ley de Newton
->
-> - [[Cinemática Rotacional]] - Torque y momento de inercia
->
-> - [[Cinemática Rotacional]] - Relaciones angulares
->
-> - Física Mecanica/Notas antiguas/Dinámica Rotacional/Momento de Inercia - Valores para diferentes formas
->
-> - Fricción Estática - Fuerza clave en rodadura
->
-> - [[1er Semestre/Física Mecánica/03 - Trabajo y Energía/Principios de Conservación de la Energía.md]] - Fundamento del método energético
->
-> - [[Fuerzas y Diagramas de Cuerpo Libre]] - Análisis de fuerzas
-> - [[1er Semestre/Física Mecánica/02 - Dinámica/Dinámica de Traslación/Fuerzas y Diagramas de Cuerpo Libre.md]] - Análisis de fuerzas
->
-> - [[Trabajo y Energía]] - Conceptos energéticos
->
-> - Energía Cinética - Traslacional y rotacional
->
+> 
+> - > Dinámica Lineal - Segunda Ley de Newton
+>     
+> - > [[Cinemática Rotacional]] - Torque y momento de inercia
+>     
+> - > [[Cinemática Rotacional]] - Relaciones angulares
+>     
+> - > Física Mecanica/Notas antiguas/Dinámica Rotacional/Momento de Inercia - Valores para diferentes formas
+>     
+> - > Fricción Estática - Fuerza clave en rodadura
+>     
+> - > [[1er Semestre/Física Mecánica/03 - Trabajo y Energía/Principios de Conservación de la Energía.md]] - Fundamento del método energético
+>     
+> - > [[Fuerzas y Diagramas de Cuerpo Libre]] - Análisis de fuerzas
+
+> - > [[1er Semestre/Física Mecánica/02 - Dinámica/Dinámica de Traslación/Fuerzas y Diagramas de Cuerpo Libre.md]] - Análisis de fuerzas
+>     
+> - > [[Trabajo y Energía]] - Conceptos energéticos
+>     
+> - > Energía Cinética - Traslacional y rotacional
+>     
 >
 
 > [!quote] 📖 Material de Referencia
->
-> - Tutorial: S25 Rodadura método dinámico.pdf
->
-> - Tutorial: S26 Rodadura método energético.pdf
->
-> - Libro de texto: Capítulo de Dinámica Rotacional
->
-> - Problemas resueltos: Colección de ejercicios
->
+> 
+> - > Tutorial: S25 Rodadura método dinámico.pdf
+>     
+> - > Tutorial: S26 Rodadura método energético.pdf
+>     
+> - > Libro de texto: Capítulo de Dinámica Rotacional
+>     
+> - > Problemas resueltos: Colección de ejercicios
+>     
 
 ---
 
 > [!note] 🏷️ Tags #física #mecánica #dinámica #rotación #rodadura #newton #torque #fricción #energía-cinética #método-dinámico #método-energético #conservación-energía #plano-inclinado #momento-inercia #velocidad-angular
-
-**Tags:** #FISG1001 #fisica-mecanica #unidad2 #rodadura

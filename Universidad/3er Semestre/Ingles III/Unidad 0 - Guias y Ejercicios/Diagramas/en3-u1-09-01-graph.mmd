@@ -1,0 +1,17 @@
+flowchart TD
+    A["Discusión"]
+    B["Abre con opinión"]
+    C["Retoma al anterior"]
+    D{"¿De acuerdo?"}
+    E["Suma ejemplo"]
+    F["Discrepa con respeto"]
+    G["Invita a otro"]
+    A --> B
+    B --> C
+    C --> D
+    D -->|"Sí"| E
+    D -->|"No"| F
+    E --> G
+    F --> G
+
+    style G fill:#e1ffe1

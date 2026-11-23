@@ -1,0 +1,35 @@
+flowchart TD
+    A["Clase: Auto"]
+    B["Atributos"]
+    C["Métodos"]
+    D["Constructores"]
+    B1["marca: String"]
+    B2["modelo: String"]
+    B3["velocidad: int"]
+    C1["acelerar"]
+    C2["frenar"]
+    C3["mostrarInfo"]
+    D1["Auto"]
+    D2["Auto marca, modelo"]
+    E["Objetos"]
+    E1["auto1: Toyota Corolla"]
+    E2["auto2: Honda Civic"]
+    A --> B
+    A --> C
+    A --> D
+    B --> B1
+    B --> B2
+    B --> B3
+    C --> C1
+    C --> C2
+    C --> C3
+    D --> D1
+    D --> D2
+    A --> E
+    E --> E1
+    E --> E2
+
+    style A fill:#fff4e1
+    style B fill:#e1f5ff
+    style C fill:#e1ffe1
+    style D fill:#f0e1ff

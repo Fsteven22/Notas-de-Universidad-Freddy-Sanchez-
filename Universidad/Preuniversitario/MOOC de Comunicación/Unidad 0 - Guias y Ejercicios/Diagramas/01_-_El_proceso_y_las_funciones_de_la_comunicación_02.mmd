@@ -1,0 +1,17 @@
+flowchart LR
+    A["Emisor"]
+    B["Codifica mensaje"]
+    C["Canal"]
+    D["Receptor"]
+    E["Decodifica y responde"]
+    F["Codigo compartido"]
+    G["Contexto"]
+    H["Ruido"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> A
+    F --> B
+    G --> C
+    H --> D

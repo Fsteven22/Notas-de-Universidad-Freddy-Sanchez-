@@ -1,0 +1,23 @@
+flowchart TD
+    COMMA["❓ Coma"]
+    C1["Enumeraciones:<br/>sillas, manteles, lámparas"]
+    C2["Incisos, vocativos y<br/>separación de conectores:<br/>Mi papá, por su parte, no dejó de extrañar"]
+    SEMI["❓ Punto y coma"]
+    S1["Une oraciones autónomas con<br/>relación de sentido:<br/>Revisamos el currículo; concluimos que hay que corregirlo"]
+    S2["Separa elementos de una<br/>enumeración que ya tiene comas"]
+    COLON["❓ Dos puntos"]
+    D1["Completar, aclarar o resumir:<br/>A continuación coloco mis recomendaciones:"]
+    D2["Detiene el discurso y llama<br/>la atención sobre lo que sigue"]
+    DOT["❓ Punto"]
+    P1["Punto y seguido:<br/>se amplía la idea en el mismo párrafo"]
+    P2["Punto y aparte:<br/>cierra un párrafo"]
+    P3["Punto final:<br/>cierra el texto"]
+    COMMA --> C1
+    C1 --> C2
+    SEMI --> S1
+    S1 --> S2
+    COLON --> D1
+    D1 --> D2
+    DOT --> P1
+    P1 --> P2
+    P2 --> P3

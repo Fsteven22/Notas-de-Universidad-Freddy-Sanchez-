@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-de-giroscopio]
 ---
 
 # 🌀 Práctica de Laboratorio: Giroscopio
@@ -11,7 +10,7 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-de-giroscopio]
 >
 
 > [!tip] 🎯 **Objetivos de la Práctica**
->
+> 
 > - **Comprobar experimentalmente el fenómeno de precesión**
 > - Calcular el momento de inercia del disco del giroscopio experimentalmente
 > - Presentar la relación entre la velocidad angular de precesión y la velocidad de giro del disco
@@ -23,24 +22,24 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-de-giroscopio]
 ### Principios Fundamentales
 
 > [!warning] ⚠️ **Conceptos Clave** **Momento Angular (L)**: $\vec{L} = I\vec{\omega}$
->
+> 
 > - I = momento de inercia
 > - ω = velocidad angular
->
+> 
 > **Precesión**: Movimiento del eje de rotación alrededor de otro eje
->
+> 
 > **Nutación**: Oscilación del eje de precesión
 
 ### Ecuaciones Principales
 
 > [!note] 📐 **Fórmulas Fundamentales**
->
+> 
 > **Relación Momento-Torque:** $\vec{\tau_m} = \frac{d\vec{L}}{dt}$
->
+> 
 > **Velocidad de Precesión:** $\Omega = \frac{\tau_m}{L} = \frac{wr}{I_G\omega_G}$
->
+> 
 > Donde:
->
+> 
 > - Ω = velocidad angular de precesión
 > - τₘ = torque neto aplicado
 > - L = momento angular del disco
@@ -49,18 +48,12 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-de-giroscopio]
 > - I_G = momento de inercia del giroscopio
 > - ω_G = velocidad angular de giro del disco
 
-> [!note] 🖼️ Ecuaciones Principales
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Práctica_de_Giroscopio_01.svg]]
->
-> **Se lee así:** La física de la **precesión del giroscopio**: el **torque del peso** `τ = w·r = m·g·r` y el **momentum angular** `L = I_G·ω_G` del disco se combinan en `τ = dL/dt`, de donde sale la **velocidad de precesión** `Ω = τ/L = w·r/(I_G·ω_G)`; el resultado es que **el eje traza un semicírculo rotando uniforme**. El montaje usa un **giroscopio de 3 ejes con contrapeso y masa de 10 g**, **barrera de luz ±0,001 s** y **cronómetro ±0,01 s**.
->
-> **Por qué importa:** Es el experimento clásico que demuestra que un torque no acelera el eje hacia abajo sino que lo hace girar: `dL/dt` es perpendicular a `L`, así que cambia la dirección de `L` pero no su magnitud. La fórmula de `Ω` también predice que el giroscopio lento precesa más rápido, que es lo contrario a la intuición.
+![[Diagramas/Práctica_de_Giroscopio_01.svg]]
 
 ## 🛠️ Materiales y Equipos
 
 > [!tip] 📦 **Lista de Materiales del Laboratorio**
->
+> 
 > - **Giroscopio de tres ejes** (con disco de giro y eje central)
 > - **Barrera de luz con contador** (precisión: ±0.001 s)
 > - **Contrapeso** (para equilibrio del sistema)
@@ -75,7 +68,7 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-de-giroscopio]
 ### Parte 1: Configuración del Sistema
 
 > [!info] 🔧 **Preparación Inicial**
->
+> 
 > 1. **Medir la distancia r** con regla entre el punto de apoyo del giroscopio y la ranura del extremo opuesto al disco donde se colocará el portamasas
 > 2. **Fijar el contrapeso** para lograr un ángulo de 90° con el eje del disco (equilibrio horizontal)
 > 3. **Colocar los soportes de referencia** en cada extremo del eje del disco, asegurando que estén colineales con el eje
@@ -83,7 +76,7 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-de-giroscopio]
 ### Parte 2: Ejecución del Experimento
 
 > [!warning] ⚠️ **Procedimiento Detallado**
->
+> 
 > 1. **Aplicar torque** en la periferia del disco para hacerlo girar sobre su eje
 > 2. **Sostener el punto de apoyo** con la mano mientras el disco gira y el eje está en equilibrio
 > 3. **Retirar cuidadosamente la mano** del apoyo
@@ -98,9 +91,9 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-de-giroscopio]
 ### Parte 3: Mediciones y Datos
 
 > [!note] 📊 **Tabla de Datos Experimentales**
->
+> 
 > **Distancia medida**: r = 26.5 ± 0.05 cm **Masa colgante**: m = 10.00 ± 0.01 g
->
+> 
 > |Obs.|Tiempo Giro Inicial (s)|Tiempo Giro Final (s)|Tiempo Precesión ½ vuelta (s)|
 > |---|---|---|---|
 > |1|0.265 ± 0.001|0.246 ± 0.001|30.50 ± 0.01|
@@ -115,34 +108,28 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-de-giroscopio]
 ### Cálculos Requeridos
 
 > [!tip] 🧮 **Análisis Cuantitativo**
->
+> 
 > **1. Velocidad angular de giro del disco:** $\omega_G = \frac{2\pi}{T_{giro}} \text{ (rad/s)}$
->
+> 
 > **2. Velocidad angular de precesión:** $\Omega = \frac{\pi}{T_{precesión}} \text{ (rad/s)} \text{ [para media vuelta]}$
->
+> 
 > **3. Momento de inercia experimental:** $I_G = \frac{mgr}{\Omega \cdot \omega_G}$
->
+> 
 > **4. Promedio de velocidades de giro:** $\omega_{G,promedio} = \frac{\omega_{inicial} + \omega_{final}}{2}$
->
+> 
 > **5. Incertidumbres:**
->
+> 
 > - Tiempos barrera de luz: ±0.001 s
 > - Tiempos cronómetro: ±0.01 s
 > - Distancia: ±0.05 cm
 > - Masa: ±0.01 g
 
-> [!note] 🖼️ Cálculos Requeridos
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Práctica_de_Giroscopio_02.svg]]
->
-> **Se lee así:** Las **fórmulas del reporte**: `ω_G = 2π/T_giro` para la velocidad del disco (media vuelta), `Ω = π/T_precesión` para el eje, la **inercia experimental** `I_G^esp = m·g·r/(Ω·ω_G)` y el **promedio** `ω_G = (ω_final + ω_inicial)/2`. Las **incertidumbres** provienen de la **barrera de luz ±0,001 s** y el **cronómetro ±0,01 s**, la **distancia ±0,05 cm** y la **masa ±0,01 g**. Cierra con la **fricción del disco**: `T_giro` crece al final.
->
-> **Por qué importa:** El detalle de la fricción es el que hay que interpretar en el informe: la precesión se mantiene porque `Ω` depende del torque, pero el disco frena y `ω_G` baja, así que `Ω` debería subir ligeramente. Comparar `I_G^esp` con el teórico sin comentar esa deriva deja el análisis incompleto.
+![[Diagramas/Práctica_de_Giroscopio_02.svg]]
 
 ## 🔍 Fenómenos Observados
 
 > [!info] 👁️ **Observaciones del Experimento**
->
+> 
 > - **Equilibrio inicial**: El contrapeso mantiene el eje horizontal a 90° antes del experimento
 > - **Precesión controlada**: Al colocar la masa de 10g, el giroscopio describe una semicircunferencia entre las referencias
 > - **Movimiento uniforme**: La precesión ocurre a velocidad angular constante durante la media vuelta
@@ -152,7 +139,7 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-de-giroscopio]
 ## ⚠️ Fuentes de Error
 
 > [!warning] 📏 **Errores Experimentales Identificados**
->
+> 
 > - **Precisión de instrumentos**:
 >     - Barrera de luz: ±0.001 s
 >     - Cronómetro digital: ±0.01 s
@@ -168,7 +155,7 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-de-giroscopio]
 ## 🎓 Técnica Mnemotécnica
 
 > [!tip] 🧠 **Método GIROL para recordar conceptos**
->
+> 
 > - **G**irar: El disco debe girar para funcionar
 > - **I**nercia: Momento de inercia determina comportamiento
 > - **R**esistir: Resiste cambios en orientación
@@ -178,7 +165,7 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-de-giroscopio]
 ### Regla Mnemotécnica para la Fórmula
 
 > [!note] 💭 **"MaGDa Invita Omega"** $$\Omega_p = \frac{mgd}{I\omega}$$
->
+> 
 > - **Ma**: masa (m)
 > - **G**: gravedad (g)
 > - **Da**: distancia (d)
@@ -188,7 +175,7 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-de-giroscopio]
 ## 🏆 Aplicaciones Prácticas
 
 > [!info] 🌐 **Usos del Giroscopio**
->
+> 
 > - **Navegación**: Brújulas giroscópicas en barcos y aviones
 > - **Estabilización**: Sistemas de control en vehículos
 > - **Instrumentos**: Horizonte artificial en aviación
@@ -198,8 +185,9 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-de-giroscopio]
 ## 📚 Referencias
 
 > [!quote] 🔗 **Enlaces a Otras Notas**
->
+> 
 > - [[Momentum Angular]]
+
 > - [[1er Semestre/Física Mecánica/04 - Impulso y Colisiones (Lineal)/Momentum Lineal y Su Conservación.md]]
 > - Rotación de Cuerpos Rígidos
 > - [[Torque y Equilibrio Rotacional]]
@@ -209,7 +197,7 @@ tags: [FISG1001, unidad0, fisica-mecanica, laboratorio, practica-de-giroscopio]
 ## 📖 Notas Recomendadas
 
 > [!tip] 📋 **Para Complementar el Estudio**
->
+> 
 > - [[1er Semestre/Física Mecánica/02 - Dinámica/Dinámica de Rotación/Momentum Angular.md]]
 > - Movimiento de Precesión en Trompos
 > - Efectos Giroscópicos en Ingeniería

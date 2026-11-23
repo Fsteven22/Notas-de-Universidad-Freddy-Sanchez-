@@ -1,0 +1,14 @@
+flowchart LR
+    A["Vector en base B"]
+    B["Vector en base E"]
+    C["Transformado en E"]
+    D["Resultado en base B"]
+    A -->|"P"| B
+    B -->|"[T]_E"| C
+    C -->|"P⁻¹"| D
+    A -->|"[T]_B"| D
+
+    style A fill:#e1ffe1
+    style B fill:#fff4e1
+    style C fill:#fff4e1
+    style D fill:#e1ffe1

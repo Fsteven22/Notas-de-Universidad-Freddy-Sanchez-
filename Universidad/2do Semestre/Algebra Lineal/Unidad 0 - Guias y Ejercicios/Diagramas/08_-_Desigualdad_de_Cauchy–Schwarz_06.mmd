@@ -1,0 +1,18 @@
+flowchart LR
+    A["Origen"]
+    B["Punto B"]
+    C["Punto C"]
+    D["u + v"]
+    E["Longitud u"]
+    F["Longitud v"]
+    G["Desigualdad triangular"]
+    A -->|"u"| B
+    A -->|"v"| C
+    B -->|"v"| D
+    A -->|"u + v"| D
+    B -->|"||u||"| E
+    C -->|"||v||"| F
+    D -->|"||u + v|| ≤ ||u|| + ||v||"| G
+
+    style A fill:#e1f5ff
+    style G fill:#e1ffe1

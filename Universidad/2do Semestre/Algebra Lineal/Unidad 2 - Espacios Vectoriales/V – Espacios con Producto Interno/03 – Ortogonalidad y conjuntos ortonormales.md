@@ -165,6 +165,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > 
 > Paso 2: Calcular normas
 > ||u|| = √(1² + 2² + 2²) = √9 = 3
+>
 > ||v|| = √(2² + (-1)² + 0²) = √5
 > 
 > Paso 3: Calcular ángulo
@@ -282,6 +283,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > 
 > Paso 1: Calcular normas al cuadrado
 > ||u₁||² = 1² + 1² + 0² = 2
+>
 > ||u₂||² = 1² + (-1)² + 0² = 2
 > ||u₃||² = 0² + 0² + 1² = 1
 > 
@@ -347,6 +349,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > 
 > Normalidad:
 > ||e₁|| = √(1²) = 1  ✓
+>
 > ||e₂|| = √(1²) = 1  ✓
 > ||e₃|| = √(1²) = 1  ✓
 > ```
@@ -361,6 +364,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > Verificación:
 > ⟨u₁, u₂⟩ = (√2/2)(-√2/2) + (√2/2)(√2/2) = -1/2 + 1/2 = 0  ✓
 > ||u₁|| = √((√2/2)² + (√2/2)²) = √(1/2 + 1/2) = 1  ✓
+>
 > ||u₂|| = 1  ✓
 > ```
 
@@ -391,22 +395,26 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > Ejemplo 1: Vector simple
 > v = (3, 4)
 > ||v|| = √(3² + 4²) = √25 = 5
+>
 > 
 > û = (3/5, 4/5) = (0.6, 0.8)
 > 
 > Verificación:
 > ||û|| = √(0.6² + 0.8²) = √(0.36 + 0.64) = √1 = 1  ✓
+>
 > ```
 > 
 > ```
 > Ejemplo 2: Vector en ℝ³
 > v = (1, 2, 2)
 > ||v|| = √(1² + 2² + 2²) = √9 = 3
+>
 > 
 > û = (1/3, 2/3, 2/3) ≈ (0.333, 0.667, 0.667)
 > 
 > Verificación:
 > ||û|| = √((1/3)² + (2/3)² + (2/3)²) = √(1/9 + 4/9 + 4/9) = √(9/9) = 1  ✓
+>
 > ```
 > 
 > **Convertir base ortogonal a ortonormal:**
@@ -480,6 +488,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > 
 > Paso 3: Verificar norma
 > ||v||² = 2² + (-3)² + 5² = 4 + 9 + 25 = 38
+>
 <
 > ||v|| = √38 ✓
 > 
@@ -548,6 +557,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > Calcular proyección de v₂ sobre w₁:
 > ⟨v₂, w₁⟩ = 1(1) + 1(1) + 0(1) = 2
 > ||w₁||² = 3
+>
 > 
 > Proyección: (⟨v₂,w₁⟩/||w₁||²)w₁ = (2/3)(1, 1, 1) = (2/3, 2/3, 2/3)
 > 
@@ -606,6 +616,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > 
 > Normas unitarias:
 > ||u₁|| = √(3 · (1/√3)²) = √(3/3) = 1  ✓
+>
 > ||u₂|| = √(2 · (1/√6)² + (2/√6)²) = √(6/6) = 1  ✓
 > ||u₃|| = √(2 · (1/√2)²) = √(2/2) = 1  ✓
 > ```
@@ -695,6 +706,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > 
 > Paso 2: Calcular norma al cuadrado
 > ||u||² = 1² + 0² = 1
+>
 > 
 > Paso 3: Proyección
 > proj_u(v) = (2/1)(1, 0) = (2, 0)
@@ -942,6 +954,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 >            = (1,1,0) - (1/2)(1,0,1)
 >            = (1/2, 1, -1/2)
 >       ||w₂|| = √(1/4 + 1 + 1/4) = √(3/2)
+>
 > 
 > Paso 3: w₃ = (0,1,1) - proj_{w₁}(0,1,1) - proj_{w₂}(0,1,1)
 >       [Cálculos similares...]
@@ -1158,12 +1171,14 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > 
 > Paso 1: Calcular norma
 > ||u|| = √(3² + 4²) = √(9 + 16) = √25 = 5
+>
 > 
 > Paso 2: Dividir por la norma
 > û = (3/5, 4/5) = (0.6, 0.8)
 > 
 > Verificación:
 > ||û|| = √(0.6² + 0.8²) = √(0.36 + 0.64) = √1 = 1 ✅
+>
 > 
 > Ejemplo 2 - Normalizar en ℝ³:
 > v = (1, 2, 2)
@@ -1173,6 +1188,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > 
 > Verificación:
 > ||v̂|| = √(1/9 + 4/9 + 4/9) = √(9/9) = 1 ✅
+>
 > ```
 > 
 > **Propiedades de la norma:**
@@ -1380,6 +1396,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > 
 > Paso 1: Calcular normas
 > ||v₁|| = √(9 + 16) = 5
+>
 > ||v₂|| = √(16 + 9) = 5
 > 
 > Paso 2: Normalizar
@@ -1528,6 +1545,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > ━━━ PASO 1: Primer vector ━━━
 > w₁ = v₁ = (1, 1, 1)
 > ||w₁|| = √(1² + 1² + 1²) = √3
+>
 > 
 > u₁ = w₁/||w₁|| = (1/√3, 1/√3, 1/√3)
 > 
@@ -1543,6 +1561,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > 
 > Normalizar:
 > ||w₂|| = √(4/9 + 1/9 + 1/9) = √(6/9) = √(2/3)
+>
 > 
 > u₂ = w₂/||w₂|| = (-2/3, 1/3, 1/3) / √(2/3)
 >    = (-√2/√3, 1/(√2·√3), 1/(√2·√3))
@@ -1563,6 +1582,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > 
 > Normalizar:
 > ||w₃|| = √(0 + 1/4 + 1/4) = √(1/2) = 1/√2
+>
 > 
 > u₃ = (0, -1/2, 1/2) / (1/√2)
 >    = (0, -1/√2, 1/√2)
@@ -1949,6 +1969,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > Paso 1: Primera columna de Q
 > a₁ = (1, 1, 1)
 > ||a₁|| = √3
+>
 > q₁ = a₁/||a₁|| = (1/√3, 1/√3, 1/√3)
 > 
 > Paso 2: Segunda columna de Q
@@ -2105,6 +2126,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > 
 > Pitágoras:
 > ||y||² = 3² + 4² + 5² = 50
+>
 > ||\hat{y}||² + ||z||² = 25 + 25 = 50 ✅
 > ```
 > 
@@ -2216,12 +2238,14 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > ```
 > a) Calcular norma:
 > ||v|| = √(3² + 4²) = √25 = 5
+>
 > 
 > Normalizar:
 > v̂ = (3/5, 4/5) = (0.6, 0.8)
 > 
 > b) Calcular norma:
 > ||w|| = √(1² + 2² + 2²) = √9 = 3
+>
 > 
 > Normalizar:
 > ŵ = (1/3, 2/3, 2/3)
@@ -2241,6 +2265,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > Paso 1: Primer vector
 > w₁ = v₁ = (1, 1, 0)
 > ||w₁|| = √(1 + 1 + 0) = √2
+>
 > u₁ = (1/√2, 1/√2, 0)
 > 
 > Paso 2: Segundo vector
@@ -2255,6 +2280,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonorma
 > 
 > Normalizar:
 > ||w₂|| = √(1/4 + 1/4 + 1) = √(3/2)
+>
 > u₂ = (1/2, −1/2, 1) / √(3/2)
 >    = (1/√6, −1/√6, 2/√6)
 > 

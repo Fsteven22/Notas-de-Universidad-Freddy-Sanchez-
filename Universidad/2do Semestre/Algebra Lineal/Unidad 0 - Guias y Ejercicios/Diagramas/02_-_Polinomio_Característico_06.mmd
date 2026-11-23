@@ -1,0 +1,19 @@
+flowchart TD
+    A["Matriz n×n"]
+    B{"¿Tipo?"}
+    C["Leer diagonal<br/>O(n)"]
+    D["Leer diagonal<br/>O(n)"]
+    E["Métodos<br/>especializados"]
+    F["Aprovechar<br/>estructura"]
+    G["QR o<br/>Hessenberg"]
+    A --> B
+    B -->|"Diagonal"| C
+    B -->|"Triangular"| D
+    B -->|"Simétrica"| E
+    B -->|"Dispersa"| F
+    B -->|"Densa"| G
+
+    style C fill:#e1ffe1
+    style D fill:#e1ffe1
+    style E fill:#fff4e1
+    style G fill:#ffe1e1

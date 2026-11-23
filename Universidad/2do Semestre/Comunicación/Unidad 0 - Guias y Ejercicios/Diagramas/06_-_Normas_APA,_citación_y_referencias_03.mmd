@@ -1,0 +1,16 @@
+flowchart TD
+    A{"🎙️ ¿Cómo citar<br/>este texto?"}
+    B["✏️ Cita textual corta:<br/>en el mismo párrafo,<br/>entre comillas, con autor,<br/>año y página.<br/>Punto después del paréntesis"]
+    C["📄 Cita textual larga:<br/>en párrafo aparte, con sangría,<br/>sin comillas.<br/>Punto antes del paréntesis"]
+    D["🔁 Parafraseo:<br/>ideas del autor en tu redacción,<br/>narrativa o parentética,<br/>solo autor y año"]
+    E{"🗣️ ¿Aparece el autor<br/>en la redacción?"}
+    F["Narrativa:<br/>Saracco 2019 señala que..."]
+    G["Parentética:<br/>Saracco, 2019"]
+    A -->|"Copia literal<br/>menos de 40 palabras"| B
+    A -->|"Copia literal<br/>40 palabras o más"| C
+    A -->|"Redactaste con<br/>palabras propias"| D
+    B --> E
+    C --> E
+    D --> E
+    E -->|"Sí"| F
+    E -->|"No"| G

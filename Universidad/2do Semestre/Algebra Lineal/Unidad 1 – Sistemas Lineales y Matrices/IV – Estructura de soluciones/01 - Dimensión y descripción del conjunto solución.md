@@ -8,6 +8,7 @@ tags: [MATG1049, algebra-lineal, unidad1, 01-dimension-y-descripcion-del-conjunt
 ## 🎯 Fundamentos del Conjunto Solución
 
 > [!info] 💡 Introducción al Conjunto Solución
+>
 > El **conjunto solución** de un sistema lineal compatible es el conjunto de todos los vectores que satisfacen el sistema. Su estructura depende fundamentalmente de la relación entre el número de variables y el rango de la matriz.
 > 
 > **Analogías útiles:**
@@ -1829,6 +1830,7 @@ tags: [MATG1049, algebra-lineal, unidad1, 01-dimension-y-descripcion-del-conjunt
 ## 🎯 Fundamentos del Conjunto Solución
 
 > [!info] 💡 Introducción al Conjunto Solución
+>
 > El **conjunto solución** de un sistema lineal compatible es el conjunto de todos los vectores que satisfacen el sistema. Su estructura depende fundamentalmente de la relación entre el número de variables y el rango de la matriz.
 > 
 > **Analogías útiles:**
@@ -5597,6 +5599,7 @@ tags: [MATG1049, algebra-lineal, unidad1, 01-dimension-y-descripcion-del-conjunt
 > 
 > det(A) = |1  2| = 4 - 6 = -2
 >          |3  4|
+>
 > 
 > x = det([5   2]) / det(A) = (20-22)/(-2) = 1
 >         [11  4]
@@ -6967,5 +6970,3 @@ tags: [MATG1049, algebra-lineal, unidad1, 01-dimension-y-descripcion-del-conjunt
 > ✓ Análisis completo en sistemas paramétricos (+3 pts)
 > ✓ Identificación correcta de todas las columnas pivote (+2 pts)
 > ```
-
-

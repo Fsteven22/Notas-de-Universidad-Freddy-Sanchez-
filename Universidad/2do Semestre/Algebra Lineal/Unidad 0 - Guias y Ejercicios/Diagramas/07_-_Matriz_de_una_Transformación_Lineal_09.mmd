@@ -1,0 +1,15 @@
+flowchart TD
+    A["Transformación T"]
+    B{"det[T] ≠ 0?"}
+    C["✅ Invertible"]
+    D["❌ No invertible"]
+    E["Existe [T]⁻¹"]
+    F["Información perdida"]
+    A --> B
+    B -->|"Sí"| C
+    B -->|"No"| D
+    C --> E
+    D --> F
+
+    style C fill:#e1ffe1
+    style D fill:#ffe1e1

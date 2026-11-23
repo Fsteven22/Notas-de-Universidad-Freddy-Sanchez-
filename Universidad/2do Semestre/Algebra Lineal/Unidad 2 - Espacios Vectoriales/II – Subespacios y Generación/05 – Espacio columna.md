@@ -8,6 +8,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-espacio-columna]
 ## 🌟 Concepto Fundamental
 
 > [!info] Definición Intuitiva
+>
 > **El espacio columna de una matriz es el subespacio vectorial generado por sus columnas. Representa todos los vectores que pueden obtenerse como combinaciones lineales de las columnas de la matriz. Este concepto es fundamental para entender qué sistemas lineales tienen solución y cuál es el rango de una transformación lineal.**
 > 
 > **Características clave:**
@@ -20,6 +21,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-espacio-columna]
 ### 📖 Contexto Histórico
 
 > [!note] Desarrollo del Concepto
+>
 > **Orígenes (1850-1900):**
 > - **Cayley (1858):** Teoría de matrices
 >   - Primera formulación sistemática
@@ -54,6 +56,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-espacio-columna]
 ## 📊 Definición Formal
 
 > [!important] Espacio Columna
+>
 > **Definición:**
 > 
 > Sea $A$ una matriz $m \times n$:
@@ -85,6 +88,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-espacio-columna]
 ## 🎯 Propiedades Fundamentales
 
 > [!success] Características del Espacio Columna
+>
 > **Teorema: Col(A) es un subespacio**
 > 
 > **DEMOSTRACIÓN:**
@@ -146,6 +150,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-espacio-columna]
 ## 🔍 Cálculo del Espacio Columna
 
 > [!tip] Método de Reducción por Filas
+>
 > **Algoritmo para encontrar base de Col(A):**
 > 
 > **PROCEDIMIENTO:**
@@ -204,6 +209,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-espacio-columna]
 ## 📈 Relación con el Rango
 
 > [!important] Rango y Dimensión
+>
 > **Teorema del rango:**
 > 
 > Para matriz $A$ de $m \times n$:
@@ -244,6 +250,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-espacio-columna]
 ## 🎨 Interpretación Geométrica
 
 > [!note] Visualización del Espacio Columna
+>
 > **En $\mathbb{R}^3$:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacio_columna_01.svg]]
@@ -284,6 +291,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-espacio-columna]
 ## 🔗 Relación con Otros Subespacios
 
 > [!success] Cuatro Subespacios Fundamentales
+>
 > **Para matriz $A$ de $m \times n$:**
 > 
 > **CUATRO SUBESPACIOS:**
@@ -340,6 +348,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-espacio-columna]
 ## 💡 Ejemplos Resueltos
 
 > [!example] Problemas Detallados
+>
 > **Problema 1: Encontrar base y dimensión**
 > 
 > Sea 
@@ -498,6 +507,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-espacio-columna]
 ## ⚡ Propiedades del Rango
 
 > [!important] Teoremas sobre el Rango
+>
 > **Propiedades básicas:**
 > 
 > Para matrices $A$ y $B$ apropiadas:
@@ -546,6 +556,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-espacio-columna]
 ## 🎯 Aplicaciones del Espacio Columna
 
 > [!note] Usos Prácticos
+>
 > **Consistencia de sistemas:**
 > 
 > **CRITERIO DE CONSISTENCIA:**
@@ -589,6 +600,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-espacio-columna]
 ## ⚠️ Errores Comunes
 
 > [!warning] Malentendidos Frecuentes
+>
 > **1. "Usar columnas de la forma reducida"**
 > 
 > ✗ **FALSO**
@@ -690,6 +702,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-espacio-columna]
 ## 🔗 Conexiones con Otros Temas
 
 > [!quote] Enlaces Conceptuales
+>
 > **Fundamentos previos:**
 > - [[01 - Vectores en espacios vectoriales (definición y propiedades)|01 - Vectores en espacios vectoriales]] - Espacios y subespacios
 > - [[02 – Combinación lineal]] - Generación de vectores
@@ -711,6 +724,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-espacio-columna]
 ## 📚 Recursos Adicionales
 
 > [!note] Herramientas y Referencias
+>
 > **Software de álgebra lineal:**
 > 
 > - **MATLAB**
@@ -733,6 +747,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-espacio-columna]
 ## 📖 Bibliografía Esencial
 
 > [!tip] Lecturas Recomendadas
+>
 > **Nivel introductorio:**
 > - **Lay, D. C.** (2016). _Álgebra Lineal y sus Aplicaciones_ (5ª ed.). Pearson.
 >   - Cap. 4: Espacios vectoriales

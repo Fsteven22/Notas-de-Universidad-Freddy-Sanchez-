@@ -950,6 +950,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 03-espacio-propio-y-multiplicidades]
 ## 🎯 Estrategia de Análisis
 
 > [!tip] 🗺️ Guía Paso a Paso
+>
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_11.svg]]
 >
 > **Se lee así:** el diagrama presenta sí, todos y matriz a y calcular polinomio característico y factorizar p_a(λ).

@@ -74,6 +74,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-combinacion-lineal]
 >       |
 >       |    • w = c₁v₁ + c₂v₂
 >       |   /|
+>
 >       |  / |
 >       | /  | c₂v₂
 >       |/   |
@@ -1569,6 +1570,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-combinacion-lineal]
 >       |
 >       |  • w = 2v₁ + 1.5v₂
 >       | /|\
+>
 >       |/ | \1.5v₂
 >       •  |  \
 >      /|  |   \

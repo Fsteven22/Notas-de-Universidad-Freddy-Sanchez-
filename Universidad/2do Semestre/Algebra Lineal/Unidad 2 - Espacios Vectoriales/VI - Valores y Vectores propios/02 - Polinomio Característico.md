@@ -361,6 +361,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-polinomio-caracteristico]
 > 
 > det = (2-λ)·|2-λ   1  | - 1·|1    1  | + 0
 >             | 1   2-λ |     |0   2-λ |
+>
 > 
 >     = (2-λ)[(2-λ)² - 1] - 1[(2-λ)]
 > 
@@ -746,6 +747,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-polinomio-caracteristico]
 > p(λ) = λ² + 1
 > λ = ±i
 > |λ| = 1 ✅
+>
 > ```
 > 
 > ---
@@ -847,6 +849,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-polinomio-caracteristico]
 ## 📝 Ejercicios Guiados
 
 > [!example] 💪 Práctica Paso a Paso
+>
 > ### **Nivel Básico:**
 > 
 > **Ejercicio 1: Cálculo directo 2×2**
@@ -1057,6 +1060,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-polinomio-caracteristico]
 > 
 > det = (a-λ)|a-λ   b | - b| c    b | + c| c    a-λ|
 >             | c   a-λ|     | b   a-λ|     | b     c |
+>
 > 
 > = (a-λ)[(a-λ)² - bc] - b[c(a-λ) - b²] + c[c² - b(a-λ)]
 > 

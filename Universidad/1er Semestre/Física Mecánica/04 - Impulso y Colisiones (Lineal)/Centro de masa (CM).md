@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-tags: [FISG1001, unidad4, fisica-mecanica, impulso, centro-de-masa-cm]
 ---
 
 # 🎯 Centro de Masa
@@ -12,7 +11,7 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, centro-de-masa-cm]
 ## 🔧 Variables y Magnitudes
 
 > [!tip] 📏 Magnitudes Principales
->
+> 
 > - **Posición del centro de masa** ($\vec{r}_{CM}$): Vector posición en metros [m]
 > - **Masa de partícula** ($m_i$): Masa individual en kilogramos [kg]
 > - **Masa total** ($M_{total}$): Suma de todas las masas [kg]
@@ -24,21 +23,21 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, centro-de-masa-cm]
 ## 🧮 Fórmulas Fundamentales
 
 > [!note] 📐 Ecuaciones Clave
->
+> 
 > ### Posición del Centro de Masa
->
+> 
 > $\vec{r}_{CM} = \frac{\sum m_i \vec{r}_i}{M_{total}} = \frac{m_1\vec{r}_1 + m_2\vec{r}_2 + ...}{m_1 + m_2 + ...}$
->
+> 
 > ### Componentes Cartesianas
->
+> 
 > $x_{CM} = \frac{\sum m_i x_i}{M_{total}} \qquad y_{CM} = \frac{\sum m_i y_i}{M_{total}}$
->
+> 
 > ### Velocidad del Centro de Masa
->
+> 
 > $\vec{v}_{CM} = \frac{d\vec{r}_{CM}}{dt} = \frac{\sum m_i \vec{v}_i}{M_{total}} = \frac{\vec{P}_{total}}{M_{total}}$
->
+> 
 > ### Aceleración del Centro de Masa
->
+> 
 > $\vec{a}_{CM} = \frac{d\vec{v}_{CM}}{dt} = \frac{\sum \vec{F}_{ext}}{M_{total}}$
 
 ---
@@ -46,9 +45,9 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, centro-de-masa-cm]
 ## 🎓 Marco Teórico
 
 > [!abstract] 🧠 Conceptos Fundamentales
->
+> 
 > **Principio de Equivalencia**: El centro de masa se comporta como si toda la masa del sistema estuviera concentrada en ese punto único.
->
+> 
 > **Independencia de Fuerzas Internas**: Solo las fuerzas externas afectan el movimiento del centro de masa. Las fuerzas internas (colisiones, explosiones) no alteran su trayectoria.
 
 ---
@@ -56,26 +55,22 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, centro-de-masa-cm]
 ## 🔗 Diagrama Conceptual
 
 > [!abstract] 📊 Mapa de Relaciones
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Centro_de_masa_(CM)_01.svg]]
->
-> **Se lee así:** El mapa del centro de masa: de un **sistema de partículas** se calculan la **posición** (`r_CM = Σmᵢrᵢ / M_total`), la **velocidad** (`v_CM = P_total / M_total`) y la **aceleración** (`a_CM = ΣF_ext / M_total`). Las **fuerzas internas** **no afectan al CM**, y esa simplificación permite tratar el conjunto como una **partícula única**.
->
-> **Por qué importa:** Es la razón de existir del CM: basta conocer las fuerzas externas para describir su trayectoria, sin importar qué pasa dentro del sistema. Por eso el centro de masa de un cohete sigue una parábola aunque el cohete se mueva de forma complicada.
+> 
+> ![[Diagramas/Centro_de_masa_(CM)_01.svg]]
 
 ---
 
 ## 🌍 Aplicaciones Prácticas
 
 > [!example] 🎯 Casos de Estudio
->
+> 
 > ### 🏗️ Cuerpos Rígidos
->
+> 
 > - **Regulares**: Centro geométrico = Centro de masa
 > - **Irregulares**: Puede estar fuera del cuerpo físico (ej: boomerang)
->
+> 
 > ### 💥 Colisiones y Explosiones
->
+> 
 > - Los objetos individuales cambian velocidad y dirección
 > - El centro de masa mantiene velocidad constante (sin fuerzas externas)
 > - **Ejemplo**: Granada que explota en el aire mantiene trayectoria parabólica en su CM
@@ -85,12 +80,8 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, centro-de-masa-cm]
 ## 🔄 Flujo de Resolución
 
 > [!info] 🛠️ Metodología de Solución
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Centro_de_masa_(CM)_02.svg]]
->
-> **Se lee así:** El procedimiento de cálculo en cadena: **identificar las partículas**, **determinar las masas mᵢ**, **localizar las posiciones rᵢ**, **calcular la masa total M**, **aplicar la fórmula del CM** para obtener `r_CM` y, **si se requiere**, derivar `v_CM` y después `a_CM`.
->
-> **Por qué importa:** Fija el orden: primero la posición (que es un dato geométrico), luego la velocidad y por último la aceleración, que es la que depende de las fuerzas. Saltar directamente a `a_CM` sin pasar por `r_CM` es el error típico cuando el problema da un diagrama de posiciones.
+> 
+> ![[Diagramas/Centro_de_masa_(CM)_02.svg]]
 
 ---
 
@@ -100,13 +91,13 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, centro-de-masa-cm]
 >
 
 > [!success] ✅ Solución Paso a Paso
->
+> 
 > **1. Masa Total**: $$M_{total} = 1 + 2 + 3 = 6\text{ kg}$$
->
+> 
 > **2. Componente X**: $$x_{CM} = \frac{(1)(1) + (2)(0) + (3)(-1)}{6} = \frac{-2}{6} = -\frac{1}{3}\text{ m}$$
->
+> 
 > **3. Componente Y**: $$y_{CM} = \frac{(1)(0) + (2)(1) + (3)(-1)}{6} = \frac{-1}{6}\text{ m}$$
->
+> 
 > **4. Resultado Final**: $$\vec{r}_{CM} = \left(-\frac{1}{3}, -\frac{1}{6}\right)\text{ m}$$
 
 ---
@@ -114,19 +105,19 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, centro-de-masa-cm]
 ## 🔗 Conexiones Temáticas
 
 > [!note] 🌐 Relaciones Conceptuales
->
+> 
 > ### Conservación del Momentum
->
+> 
 > - $\vec{P}_{total} = M_{total}\vec{v}_{CM} = \text{constante}$ (sin fuerzas externas)
 > - La velocidad del CM es constante cuando se conserva el momentum
->
+> 
 > ### [[Leyes de Newton]]
->
+> 
 > - Segunda Ley aplicada al CM: $\sum \vec{F}_{ext} = M_{total}\vec{a}_{CM}$
 > - Simplificación de sistemas complejos a partícula puntual
->
+> 
 > ### Dinámica de Sistemas
->
+> 
 > - Base para análisis de Colisiones
 > - Fundamento de Explosiones y fragmentaciones
 
@@ -135,7 +126,7 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, centro-de-masa-cm]
 ## 📝 Síntesis Clave
 
 > [!summary] 🎯 Puntos Esenciales
->
+> 
 > - **Definición**: Punto que representa la posición promedio ponderada por masa
 > - **Fórmula Base**: $\vec{r}_{CM} = \frac{\sum m_i \vec{r}_i}{M_{total}}$
 > - **Comportamiento**: Solo afectado por fuerzas externas
@@ -146,9 +137,9 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, centro-de-masa-cm]
 ## 📚 Referencias y Enlaces
 
 > [!quote] 🏷️ Sistema de Organización
->
+> 
 > ### 🔗 Notas Relacionadas
->
+> 
 > - [[Momentum Lineal y Su Conservación]]
 > - [[Principios de Conservación de la Energía]]
 > - [[Choques Uni-Bidimensionales]]
@@ -158,17 +149,10 @@ tags: [FISG1001, unidad4, fisica-mecanica, impulso, centro-de-masa-cm]
 
 ### 📖 Temas Avanzados
 > [!summary]  Para más adelante:
->
 > - Centro de Masa vs Centro de Gravedad
 > - Sistemas de Referencia del Centro de Masa
 > - Teorema del Eje Paralelo> 
 
-> [!info] 📌 Temas Avanzados
->
-> tags
+tags
 
-> [!info] 📌 Temas Avanzados
->
-> `#fisica` `#mecanica` `#centro-masa` `#dinamica` `#sistemas-particulas` `#momentum`
-
-**Tags:** #FISG1001 #fisica-mecanica #unidad4 #centro-de-masa-cm
+`#fisica` `#mecanica` `#centro-masa` `#dinamica` `#sistemas-particulas` `#momentum`

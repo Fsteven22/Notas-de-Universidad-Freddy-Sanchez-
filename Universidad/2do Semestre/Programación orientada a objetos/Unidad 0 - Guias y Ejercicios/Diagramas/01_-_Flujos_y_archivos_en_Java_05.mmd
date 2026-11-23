@@ -1,0 +1,13 @@
+flowchart TD
+    A["Abrir flujo"]
+    B["Usar flujo"]
+    C{"¿Cerrado?"}
+    D["Fuga de recursos<br/>Archivos bloqueados"]
+    E["Recursos liberados<br/>Todo OK"]
+    A --> B
+    B --> C
+    C -->|"❌ No"| D
+    C -->|"✅ Sí"| E
+
+    style D fill:#ffe1e1
+    style E fill:#e1ffe1

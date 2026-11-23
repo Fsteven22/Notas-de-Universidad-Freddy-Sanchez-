@@ -1,0 +1,39 @@
+flowchart TD
+    A["Sistema de Ecuaciones"]
+    B["Formar Matriz Ampliada"]
+    C{"Fase 1: Eliminación"}
+    D["Columna 1:<br/>Crear ceros debajo del pivote"]
+    E["Columna 2:<br/>Crear ceros debajo del pivote"]
+    F["Continuar...<br/>hasta la última columna"]
+    G["Forma Escalonada Obtenida"]
+    H{"Análisis"}
+    I["❌ Incompatible<br/>Sin solución"]
+    J["✓ Compatible Determinado<br/>Solución única"]
+    K["∞ Compatible Indeterminado<br/>Infinitas soluciones"]
+    L["Fase 2:<br/>Sustitución Regresiva"]
+    M["Fase 2:<br/>Sustitución con parámetros"]
+    N["Solución Única"]
+    O["Solución Paramétrica"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H -->|"Fila 0...0 b, b≠0"| I
+    H -->|"pivotes = n"| J
+    H -->|"pivotes < n"| K
+    J --> L
+    K --> M
+    L --> N
+    M --> O
+
+    style A fill:#e3f2fd
+    style B fill:#fff9c4
+    style G fill:#c8e6c9
+    style I fill:#ffcdd2
+    style J fill:#bbdefb
+    style K fill:#ffe0b2
+    style N fill:#a5d6a7
+    style O fill:#ffcc80

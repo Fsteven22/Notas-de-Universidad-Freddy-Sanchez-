@@ -29,7 +29,7 @@ tags: [MATG1049, algebra-lineal, syllabus]
 
 > [!info] 📄 Syllabus oficial EUR-ACE (MATG1049)
 >
-> ![[SPA-SyllabusEUR_ACE-MATG1049.pdf]]
+> 📎 [[SPA-SyllabusEUR_ACE-MATG1049.pdf|Ver el PDF completo del syllabus]]
 >
 > **Se lee así:** el PDF es el documento oficial de la cátedra: descripción del curso (formación básica, 5.8 ECTS), objetivos, contenido por unidades, metodología y evaluación.
 >

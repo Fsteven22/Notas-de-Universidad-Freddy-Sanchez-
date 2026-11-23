@@ -309,6 +309,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-nucleo-e-imagen-de-una-transformaci
 >     Ker(T)          complemento U
 >    (dim = k)        (dim = n-k)
 >        |                 |
+>
 >        |                 | isomorfismo
 >        ↓                 ↓
 >        0              Im(T)
@@ -744,6 +745,7 @@ tags: [MATG1049, algebra-lineal, unidad2, 02-nucleo-e-imagen-de-una-transformaci
 >       /   \
 >   Ker(T)   U
 >      |      |
+>
 >      |      | T (isomorfismo)
 >      ↓      ↓
 >      0   Im(T)

@@ -1042,10 +1042,13 @@ tags: [MATG1049, algebra-lineal, unidad1, 03-matriz-asociada-a-un-s-e-l-y-sistem
 >       |
 >     3 •---L₁ (x+y=3)
 >       |  /|
+>
 >     2 | / |
 >       |/  |
+>
 >     1 •---+---L₂ (x-y=1)
 >       |   |
+>
 >       +---+---+--- x
 >           1   2
 > 

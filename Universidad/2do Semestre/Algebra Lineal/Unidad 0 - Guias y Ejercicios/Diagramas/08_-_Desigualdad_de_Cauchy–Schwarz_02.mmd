@@ -1,0 +1,17 @@
+flowchart LR
+    A["Origen"]
+    B["Extremo u"]
+    C["Extremo v"]
+    D["Proyección"]
+    E["Longitud v"]
+    F["⟨u,v⟩ ≤ ||u|| ||v||"]
+    G["Siempre cierto"]
+    A -->|"u"| B
+    A -->|"v"| C
+    B -->|"⟨u,v⟩"| D
+    C -->|"||v||"| E
+    F --> G
+
+    style A fill:#e1f5ff
+    style F fill:#e1ffe1
+    style G fill:#e1ffe1

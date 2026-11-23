@@ -1,0 +1,15 @@
+flowchart TD
+    A["Vectores linealmente<br/>independientes"]
+    B{"Gram-Schmidt"}
+    C["Vectores<br/>ORTOGONALES"]
+    D["Vectores<br/>ORTONORMALES"]
+    E["Perpendiculares<br/>uᵢ · uⱼ = 0"]
+    F["Perpendiculares<br/>Y unitarios<br/>||uᵢ|| = 1"]
+    A --> B
+    B -->|"Paso 1"| C
+    C -->|"Paso 2"| D
+    C --> E
+    D --> F
+
+    style C fill:#fff4e1
+    style D fill:#e1ffe1

@@ -1,0 +1,27 @@
+flowchart TD
+    A["Problema: taller sale mal"]
+    B{"¿Cómo lo piensas?"}
+    C["❌ Lineal"]
+    D["✅ Complejo"]
+    C1["Una causa"]
+    C2["Culpa individual"]
+    C3["Parche que falla"]
+    C4["Se repite"]
+    D1["Mapea actores y relaciones"]
+    D2["Detecta patrones emergentes"]
+    D3["Interviene en 2-3 puntos"]
+    D4["Aprendizaje del sistema"]
+    A --> B
+    B --> C
+    B --> D
+    C --> C1
+    C --> C2
+    C --> C3
+    C --> C4
+    D --> D1
+    D --> D2
+    D --> D3
+    D --> D4
+
+    style C fill:#ffe1e1
+    style D fill:#e1ffe1

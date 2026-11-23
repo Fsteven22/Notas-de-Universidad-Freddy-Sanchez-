@@ -1,0 +1,25 @@
+flowchart TD
+    A["Tarea de redacción"]
+    B{"¿Cómo usas IA?"}
+    C["❌ Delegar todo"]
+    D["✅ Asistir + verificar"]
+    C1["Pegas sin leer"]
+    C2["Citas inventadas"]
+    C3["Cero + reporte"]
+    D1["Prompt con contexto"]
+    D2["Verificas 2-3 fuentes"]
+    D3["Redacción final propia"]
+    D4["Declara uso"]
+    A --> B
+    B --> C
+    B --> D
+    C --> C1
+    C --> C2
+    C --> C3
+    D --> D1
+    D --> D2
+    D --> D3
+    D --> D4
+
+    style C fill:#ffe1e1
+    style D fill:#e1ffe1

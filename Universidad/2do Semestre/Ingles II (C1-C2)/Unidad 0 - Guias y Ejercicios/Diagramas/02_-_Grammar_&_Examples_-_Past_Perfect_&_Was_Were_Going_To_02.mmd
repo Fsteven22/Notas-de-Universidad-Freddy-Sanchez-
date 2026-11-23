@@ -1,0 +1,19 @@
+flowchart TD
+    A["¿Qué quiero expresar?"]
+    B["Past Perfect<br/>(had + participio)"]
+    C["¿Qué matiz quiero dar?"]
+    D["was/were going to"]
+    E["was/were supposed to"]
+    F{"¿Incluyo el verbo be?"}
+    G["✅ was/were + going to/supposed to"]
+    H["❌ Error común — nunca omitir be"]
+    A -->|"Cuál de dos eventos pasados ocurrió primero"| B
+    A -->|"Un plan pasado que no se cumplió"| C
+    C -->|"Intención personal que cambió"| D
+    C -->|"Obligación/expectativa externa que no se cumplió"| E
+    D --> F
+    E --> F
+    F -->|"Sí, siempre"| G
+    F -->|"No"| H
+
+    style A fill:#1e3a5f,color:#fff

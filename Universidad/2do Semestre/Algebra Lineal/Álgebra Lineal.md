@@ -8,32 +8,38 @@ tags: [MATG1049, algebra-lineal, mapa-de-contenido]
 **Código:** MATG1049 · **Semestre:** 2do · [[Bienvenida y Syllabus Algebra Lineal|Ver Syllabus completo]]
 
 > [!info] ℹ️ Mapa de contenido de la materia
+>
 > Acceso directo a las notas de Álgebra Lineal, agrupadas por los subtemas del syllabus (carpetas I-VI de cada unidad). Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ---
 
-## Unidad 1 — Sistemas Lineales y Matrices *(4h)*
+## 📊 Unidad 1 — Sistemas Lineales y Matrices *(4h)*
 
 > [!note] I — Sistemas de ecuaciones y representación
+>
 > - [[01 - Sistema de ecuaciones lineales en R2 y R3]]
 
 > [!note] II — Métodos de resolución
+>
 > - [[01 - Algoritmo de Gauss]]
 > - [[02 - Formas Escalonadas y Matriz Escalonada]]
 
 > [!note] III — Rango y teoremas fundamentales
+>
 > - [[01 - Rango de una Matriz]]
 > - [[02 - Teorema de Rouché-Frobenius]]
 > - [[03 - Matriz asociada a un S.E.L. y sistema aumentado]]
 
 > [!note] IV — Estructura de soluciones
+>
 > - [[01 - Dimensión y descripción del conjunto solución]]
 
 ---
 
-## Unidad 2 — Espacios Vectoriales y Transformaciones Lineales *(14h)*
+## 📐 Unidad 2 — Espacios Vectoriales y Transformaciones Lineales *(14h)*
 
 > [!note] I — Fundamentos
+>
 > - [[01 - Vectores en espacios vectoriales (definición y propiedades)]]
 > - [[02 - Espacio Vectorial]]
 > - [[03 - Operaciones en un espacio vectorial (conmutativa, asociativa, neutro, inverso, etc.)]]
@@ -42,6 +48,7 @@ tags: [MATG1049, algebra-lineal, mapa-de-contenido]
 > - [[06 - Operaciones No Convencionales]]
 
 > [!note] II — Subespacios y Generación
+>
 > - [[01 - Subespacios Vectoriales]]
 > - [[02 – Combinación lineal]]
 > - [[03 – Espacio generado por un conjunto de vectores]]
@@ -50,12 +57,14 @@ tags: [MATG1049, algebra-lineal, mapa-de-contenido]
 > - [[06 – Espacio fila]]
 
 > [!note] III — Dependencia, Base y Coordenadas
+>
 > - [[01 – Dependencia e independencia lineal]]
 > - [[02 – Base y dimensión]]
 > - [[03 – Coordenadas en un espacio vectorial]]
 > - [[04 – Matriz de cambio de base]]
 
 > [!note] IV — Transformaciones Lineales
+>
 > - [[01 – Transformaciones lineales]]
 > - [[02 – Núcleo e imagen de una transformación lineal]]
 > - [[03 - Inyectividad y Sobreyectividad]]
@@ -67,9 +76,10 @@ tags: [MATG1049, algebra-lineal, mapa-de-contenido]
 
 ---
 
-## Unidad 3 — Espacios con Producto Interno *(6h)*
+## 📏 Unidad 3 — Espacios con Producto Interno *(6h)*
 
 > [!note] V — Espacios con Producto Interno
+>
 > - [[01 – Producto interno]]
 > - [[02 – Norma inducida y distancia]]
 > - [[03 – Ortogonalidad y conjuntos ortonormales]]
@@ -82,9 +92,10 @@ tags: [MATG1049, algebra-lineal, mapa-de-contenido]
 
 ---
 
-## Unidad 4 — Valores y Vectores Propios *(9h)*
+## 🔢 Unidad 4 — Valores y Vectores Propios *(9h)*
 
 > [!note] VI — Valores y Vectores propios
+>
 > - [[01 - Valores y Vectores propios]]
 > - [[02 - Polinomio Característico]]
 > - [[03 – Espacio propio y multiplicidades (MA y MG)]]
@@ -98,12 +109,14 @@ tags: [MATG1049, algebra-lineal, mapa-de-contenido]
 ## 📂 Unidad 0 — Guías y Ejercicios
 
 > [!note] Material de la materia
+>
 > - 📄 [[Índice de Contenido|00 - Índice de Contenido]]
 > Aún no hay PDFs cargados; el Leeme explica cómo se publican cuando lleguen.
 
 ---
 
 > [!quote] 🔗 Conexiones
+>
 > - Syllabus completo + árbol de notas: [[Bienvenida y Syllabus Algebra Lineal]]
 > - Prerrequisito de: [[Matemáticas Discretas]] y [[Sistema de Bases de Datos]] (3er semestre)
 

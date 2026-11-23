@@ -669,6 +669,14 @@ details.nx-fc p {
     max-width: 100% !important;
     break-inside: avoid;
   }
+  /* Las imágenes SVG dentro de notas respetan el fondo del tema:
+     evitan el rectángulo blanco hardcodeado de muchos exportes SVG. */
+  .note-prose img[src$=".svg"] {
+    background-color: var(--nx-bg) !important;
+  }
+  :root[data-theme="dark"] .note-prose img[src$=".svg"] {
+    filter: brightness(0.35);
+  }
 }
 
 /* ── Alias de ancla ─────────────────────────────────────────────────

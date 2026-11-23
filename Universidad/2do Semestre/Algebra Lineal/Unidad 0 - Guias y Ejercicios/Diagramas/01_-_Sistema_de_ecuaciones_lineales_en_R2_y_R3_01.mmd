@@ -1,0 +1,20 @@
+flowchart TD
+    A["Sistema de Ecuaciones Lineales"]
+    B{"¿Tiene solución?"}
+    C["Incompatible<br/>❌ Sin solución<br/>Ecuaciones contradictorias"]
+    D["Compatible<br/>✓ Con solución"]
+    E{"¿Cuántas soluciones?"}
+    F["Compatible Determinado<br/>🎯 Solución única<br/>rango A = rango AB = n"]
+    G["Compatible Indeterminado<br/>∞ Infinitas soluciones<br/>rango A = rango AB < n"]
+    A --> B
+    B -->|"NO"| C
+    B -->|"SÍ"| D
+    D --> E
+    E -->|"UNA"| F
+    E -->|"INFINITAS"| G
+
+    style A fill:#e3f2fd
+    style C fill:#ffcdd2
+    style D fill:#c8e6c9
+    style F fill:#bbdefb
+    style G fill:#ffe0b2

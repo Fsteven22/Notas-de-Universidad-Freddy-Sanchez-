@@ -1,0 +1,20 @@
+flowchart LR
+    A["Vector x"]
+    B["Rotar: V^T x"]
+    C["Escalar: Σ V^T x"]
+    D["Rotar: U Σ V^T x"]
+    E["Resultado: Ax"]
+    F["Ortogonal V"]
+    G["Valores singulares"]
+    H["Ortogonal U"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    F --> B
+    G --> C
+    H --> D
+
+    style B fill:#e1ffe1
+    style C fill:#fff4e1
+    style D fill:#e1ffe1

@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1005, unidad5, poo, excepciones]
 ---
 
 # ⚠️ Excepciones en Java
@@ -712,7 +713,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Excepciones_en_Java_05.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Excepciones_en_Java_05.svg]]
 
 ---
 

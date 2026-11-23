@@ -1,0 +1,14 @@
+flowchart TD
+    A["Quiero incluir la opinión de alguien"]
+    B{"¿Es una fuente oficial/institucional?"}
+    C["'A spokesman from... said...'"]
+    D{"¿Su opinión contrasta con la anterior?"}
+    E["'One [rol] said...'"]
+    F["'However, a [rol] disagreed...'"]
+    A --> B
+    B -->|"Sí"| C
+    B -->|"No, es una persona afectada directamente"| D
+    D -->|"No, refuerza la idea anterior"| E
+    D -->|"Sí, contrasta"| F
+
+    style A fill:#1e3a5f,color:#fff

@@ -553,6 +553,7 @@ tags: [MATG1049, algebra-lineal, unidad1, 01-rango-de-una-matriz]
 > Rango 2 (máximo):        Rango 1:              Rango 0:
 >     y                       y                      y
 >     |  ↗                    |  ↗  ↗               |
+>
 >     | ↗                     | ↗  ↗                | (0,0)
 >     |→                      |→  ↗                 |
 >     +----x                  +----x                +----x
@@ -619,6 +620,7 @@ tags: [MATG1049, algebra-lineal, unidad1, 01-rango-de-una-matriz]
 > 
 > Menores 2×2: | 1  2| = 4 - 4 = 0
 >              | 2  4|
+>
 > 
 >              | 1  3| = 6 - 6 = 0
 >              | 2  6|

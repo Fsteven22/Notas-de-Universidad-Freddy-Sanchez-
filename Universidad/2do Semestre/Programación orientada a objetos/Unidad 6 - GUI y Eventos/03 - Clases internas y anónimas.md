@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1005, unidad6, poo, clases-internas]
 ---
 
 # 🎭 Clases Internas y Anónimas (Vista General)
@@ -27,7 +28,9 @@ dg-publish: true
 > |**Código más legible**|Clases auxiliares cerca de donde se usan|Comparadores específicos|
 > |**Reducir namespace**|Evitar contaminación del espacio de nombres|Clases helper internas|
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_01.svg]]
+> [!note] 🖼️ Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_01.svg]]
 
 ---
 
@@ -1449,7 +1452,9 @@ dg-publish: true
 ### 🗺️ Mapa Mental Completo
 
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_12.svg]]
+> [!note] 🖼️ ️ Mapa Mental Completo
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_12.svg]]
 
 ### 📋 Tabla de Decisión Rápida
 

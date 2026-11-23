@@ -86,8 +86,10 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-matriz-semejante]
 >        P⁻¹
 >    v -----> v'
 >    |        |
+>
 >  A |        | B
 >    |        |
+>
 >    ↓        ↓
 >   Av ----> Bv'
 >        P⁻¹

@@ -1,0 +1,14 @@
+flowchart LR
+    A["Sólido"]
+    B{"Caras<br/>planas?"}
+    C["Poliedro<br/>Euler"]
+    D["Redondo<br/>revolución"]
+    E["Prisma/Pirámide<br/>Regular"]
+    A --> B
+    B -->|"Sí"| C
+    B -->|"No"| D
+    C --> E
+    D --> E
+
+    style C fill:#e1ffe1
+    style D fill:#e1f5ff
