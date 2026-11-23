@@ -209,6 +209,8 @@ tags: [CCPG1005, unidad5, poo, serializacion]
 > **Proceso:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Serialización_de_objetos_03.svg]]
+> **Se lee así:** Diagrama de flujo que muestra el proceso de deserialización: leer un archivo, reconstruir el objeto y asignar sus atributos.
+> **Por qué importa:** Ilustra cómo un objeto serializado en disco se reconstruye en memoria, paso a paso, con el flujo de datos y el estado del objeto.
 > 
 > **Código básico:**
 > 
