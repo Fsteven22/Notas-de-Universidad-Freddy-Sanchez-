@@ -3967,3 +3967,39 @@ accidente y los excluí del commit (`git restore --staged`). Siguen en tu árbol
 **Pendiente de auditoría:** el resto del vault está sano — Álgebra (1367 hallazgos, 0 H,
 `07a29948` pusheado), MatDisc (0 hallazgos), Cálculo1 (los 9 "borrados" eran renombres de
 duplicados). No hay más pérdidas locales detectadas.
+
+---
+
+### `opencode` — Álgebra Lineal: QA de 1367 a 781 hallazgos · 0 H · nota de referencia en 0 — 21/11/2026
+
+> [!success] **PUSHEADO `11120ad2`** · 21/11/2026 — `master` = `origin/master` = `11120ad2` (sin `--force`).
+
+**Resultado:** `qa_formato_algebra.py --solo "2do Semestre/Algebra Lineal"` → **51 notas, 781 W,
+0 H, 0 P**. La nota de referencia (`U1/I/01 - Sistema de ecuaciones lineales en R2 y R3.md`) pasa
+de 5 W a **0 hallazgos**.
+
+**Lo importante no es el número, sino por qué bajó.** De las 1367 desviaciones, **586 eran
+falsos positivos** de tres reglas heredadas de CYSOC/Física que no encajaban con el material real
+de esta materia. Se corrigieron en el validador, no en las notas:
+
+| Regla | Antes | Ahora | Motivo |
+|---|---|---|---|
+| `R14-deck-sin-explicacion` | 7 | **0** | Marcaba *todo* callout 📖 sin etiqueta de lectura. Aquí la mayoría son prosa pura (definiciones, taxonomías, bibliografía) y **no embeben nada**. Ahora solo salta si el callout trae un `![[…]]` con `.png`/`.svg`. Igual que **R14.4 de Física**. |
+| `R7-separador-antes` | 220 | **0** | El clasificador leía como tabla cualquier línea que abriera con `\|`. El **arte ASCII** (rectas, planos), las **matrices numpy** dentro de ``` y los dibujos generaban cientos de avisos. Ahora exige una separadora markdown real (`\| --- \| ---: \|`) en la línea siguiente y no interpreta el interior de un fence. |
+| `R12-svg-sin-mmd` | 248 | **0** | No era un déficit. Los 247 SVG de `Unidad 0/Diagramas/` **ya tenían** su `.mmd` (los generó otra sesión en `c4088779`). Verificado par a par que cada fuente corresponde al contenido de su SVG. |
+
+**Hallazgos reales cerrados a mano (19):**
+- `R6-sin-blanco-header`: **99 → 0**. Sí eran reales: callouts con el contenido pegado al
+  header. Insertada la línea `>` en blanco (23 en las 4 notas raíz + 76 en 11 notas de clase).
+- 6 H2 sin emoji (`Álgebra Lineal.md` 4, `Recursos Visuales.md` 2).
+- 4 notas sin `**Tags:**` al pie (`Recursos Visuales`, `Teorema de Rouché-Frobenius`,
+  `Suma de subespacios`, `Matriz de cambio de base`).
+- 2 PDFs **embebidos** en vez de enlazados (`Bienvenida y Syllabus`, `Índice de Contenido`):
+  ahora van con wikilink y alias 📎, como pide R12.
+
+**Verificación posterior:** 51 notas, **0 problemas estructurales** (bloques ``` balanceados,
+tags al pie, H2 con emoji). Contrato `FORMATO-ALGEBRA.md` actualizado con las cuatro correcciones
+y su motivo.
+
+**Lo que queda son los 781 `R4-prosa-top`**, W informativo por diseño: el estilo de esta materia
+es prosa densa fuera de callouts y el contrato lo acepta explícitamente. No es deuda técnica.
