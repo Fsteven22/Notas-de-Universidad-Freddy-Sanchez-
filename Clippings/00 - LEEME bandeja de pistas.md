@@ -3933,3 +3933,37 @@ Programación 13 de 1Par (solo 13 contenidos distintos en 39 ítems) · Diseño 
 
 **Pendiente:** enlazar estos exámenes desde las secciones de ejercicios de cada nota con
 wikilinks `📎` y el tema anotado; y los W mecánicos de Álgebra (R7 220, R6 99, R3 6, R13 4).
+
+---
+
+### `opencode` — Auditoría post-merge: 673 fuentes `.mmd` + `verifica_fuentes_mmd.py` restauradas — 22/11/2026
+
+> [!success] **Commit `18d4064e`** (local, sin push) — 674 archivos exactos, 0 ajenos.
+
+**Hallazgo (auditoría del vault tras el incidente POO):** los 3 merges
+(`dc5f40fc`/`fdd14bcd`/`b5a4fdd2`, 19-20/11) descartaron **todo el trabajo local posterior
+a `21b01a7b`**, no solo POO. Inventario `3c044d82` → HEAD confirmado:
+
+| Tipo | Perdido | Estado |
+|---|---|---|
+| `verifica_fuentes_mmd.py` | 1 | **Restaurado** (113 líneas, sha1 `53fc04b7aed4`, idéntico al original de `693cb9c9`) |
+| `.mmd` de la ronda `8b612bb5` | 673 en 11 materias | **Restaurados** desde `8b612bb5` |
+| POO (notas + contrato) | 27 + 2 | Restaurado en `65a29472` (bloque anterior) |
+| Exámenes (Álgebra/POO/CV) | 100 | Restaurado por la otra sesión (`05545a9e`, `6512dd6b`) |
+
+**Restauración aplicada:**
+- `verifica_fuentes_mmd.py` desde `3c044d82` (mismo blob que `693cb9c9`).
+- 673 `.mmd` desde `8b612bb5`: Álgebra 247 · PreuMate 97 · Inglés III 62 · MOOC 61 ·
+  Comunicación 57 · Inglés II 49 · Inglés I 45 · Fund. Programación 32 · MatDisc 4 ·
+  CYSOC 18 · `00 - Mapa PAO` 1.
+- Verificación post-restauración: **2504 SVG / 2465 `.mmd`**, 47 SVG sin fuente (52
+  históricos − 5 que ya tenían `.mmd` en HEAD), 8 `.mmd` huérfanos (índices FESD,
+  excepción documentada). Física 231/231 y Cálculo Vectorial 616/616 **intactos**.
+
+**Nota para la otra sesión:** los 51 `.md` modificados de Álgebra (tags, lecturas R14,
+callouts) son **tuyos** — el `git checkout 8b612bb5 --` los arrastró al índice por
+accidente y los excluí del commit (`git restore --staged`). Siguen en tu árbol de trabajo.
+
+**Pendiente de auditoría:** el resto del vault está sano — Álgebra (1367 hallazgos, 0 H,
+`07a29948` pusheado), MatDisc (0 hallazgos), Cálculo1 (los 9 "borrados" eran renombres de
+duplicados). No hay más pérdidas locales detectadas.
