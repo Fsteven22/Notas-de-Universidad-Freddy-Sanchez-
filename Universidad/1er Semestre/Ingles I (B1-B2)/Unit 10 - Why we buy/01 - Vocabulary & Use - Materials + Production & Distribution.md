@@ -7,38 +7,35 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 
 ## 🎯 Introducción
 
-> [!info] 💡 Why this vocabulary matters
+> [!info] 💡 ¿Por qué es importante este vocabulario?
 >
-> The vocabulary of **materials, production and distribution** is the language of
-> the things you use every day. It lets you describe a product, read its label,
-> follow where it came from and say why you chose it.
+> El vocabulario de **materiales, producción y distribución** es fundamental para:
 >
-> **How to use this note:**
+> - **Describir productos** en situaciones cotidianas y profesionales
+> - **Entender etiquetas** y especificaciones técnicas
+> - **Hablar sobre comercio internacional** y cadenas de suministro
+> - **Expresar preferencias** basadas en características de materiales
+> - **Participar en conversaciones** sobre consumo responsable y sostenibilidad
 >
-> 1. **Materials** — what a product is made of, and the adjectives that describe it.
-> 2. **Production** — the verbs of the process: grow, pick, manufacture, produce.
-> 3. **Distribution** — how it travels: ship, export, import, deliver.
-> 4. **Collocations and real phrases** — the combinations that native speakers actually use.
-> 5. **Practice** — exercises with folded solutions.
+> **Analogía práctica:** Imagina que eres un detective de productos. Cada objeto tiene una "historia" que contar: de qué está hecho, dónde se fabricó, cómo llegó hasta ti. Este vocabulario te da las herramientas para descifrar esa historia.
 >
-> **Why it connects to what comes next:** the next note is *Passive Voice*
-> ("is made", "was produced"). This vocabulary is the material that the passive
-> voice operates on: you cannot say *Shoes are made in Italy* without knowing
-> *made*, *shoes*, *Italy*.
-
-> [!info] 📊 The whole unit on one page
+> **¿Dónde lo usarás?**
+>
+> | Situación | Ejemplo de Uso |
+> |---|---|
+> | **Shopping** | "Is this jacket waterproof?" |
+> | **Business** | "We manufacture shoes in Italy" |
+> | **Travel** | "This product is made of natural materials" |
+> | **Sustainability** | "I prefer products made from recycled plastic" |
+> | **Product reviews** | "The material is soft but very strong" |
 >
 > ![[Diagramas/01_-_Vocabulary_&_Use_-_Materials_+_Production_&_Distribution_01.svg]]
 >
-> **How to read it:** the diagram splits the unit in three columns — *Materials*
-> on the left (what the product is made of), *Production* in the centre (the verbs
-> that create it), *Distribution* on the right (the verbs that move it).
+> **How to read it:** el mapa divide la unidad en tres columnas — *Materials* a la izquierda (de qué está hecho el producto), *Production* en el centro (los verbos que lo crean), *Distribution* a la derecha (los verbos que lo mueven).
 >
-> **Why it matters:** most mistakes in this unit come from mixing the three columns
-> — saying *the product is exported of cotton* instead of *made of cotton*.
+> **Why it matters:** la mayoría de los errores en esta unidad vienen de mezclar las tres columnas — decir *the product is exported of cotton* en vez de *made of cotton*.
 >
-> **Example:** describing your own backpack — *It is made of polyester* (material),
-> *it is manufactured in China* (production), *it is shipped by sea* (distribution).
+> **Example:** describiendo tu propia mochila — *It is made of polyester* (material), *it is manufactured in China* (production), *it is shipped by sea* (distribution).
 
 ---
 
@@ -48,28 +45,25 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 >
 > | Material | Spanish | Pronunciation | Common products |
 > |---|---|---|---|
-> | **Cotton** | Algodón | /ˈkɒt.ən/ | T-shirts, jeans, towels |
-> | **Glass** | Vidrio | /ɡlɑːs/ | Bottles, windows, mirrors |
-> | **Leather** | Cuero | /ˈleð.ər/ | Shoes, jackets, bags |
-> | **Metal** | Metal | /ˈmet.əl/ | Cars, tools, jewelry |
-> | **Plastic** | Plástico | /ˈplæs.tɪk/ | Bottles, toys, packaging |
-> | **Polyester** | Poliéster | /ˌpɒl.iˈes.tər/ | Sportswear, curtains |
-> | **Stone** | Piedra | /stəʊn/ | Buildings, countertops |
-> | **Wood** | Madera | /wʊd/ | Furniture, floors, paper |
-> | **Wool** | Lana | /wʊl/ | Sweaters, blankets, coats |
+> | **Cotton** | Algodón | /ˈkɒt.ən/ ("cotón") | T-shirts, jeans, towels |
+> | **Glass** | Vidrio | /ɡlɑːs/ ("glas") | Bottles, windows, mirrors |
+> | **Leather** | Cuero | /ˈleð.ər/ ("ledor") | Shoes, jackets, bags |
+> | **Metal** | Metal | /ˈmet.əl/ ("metal") | Cars, tools, jewelry |
+> | **Plastic** | Plástico | /ˈplæs.tɪk/ ("plástico") | Bottles, toys, packaging |
+> | **Polyester** | Poliéster | /ˌpɒl.iˈes.tər/ ("poliéster") | Sportswear, curtains |
+> | **Stone** | Piedra | /stəʊn/ ("stoan") | Buildings, countertops |
+> | **Wood** | Madera | /wʊd/ ("uúd") | Furniture, floors, paper |
+> | **Wool** | Lana | /wʊl/ ("uul") | Sweaters, blankets, coats |
 
 > [!example] 🧱 Materiales en imagen
 >
 > ![[Diagramas/01_-_Vocabulary_&_Use_-_Materials_+_Production_&_Distribution_02.svg]]
 >
-> **How to read it:** each row pairs a material with the products it typically
-> becomes, grouped by origin — natural, animal or synthetic.
+> **How to read it:** cada esfera une un material con los productos que suelen estar hechos de él, agrupados por origen — natural, animal o sintético.
 >
-> **Why it matters:** the grouping is what lets you guess an unknown material from
-> its behaviour: natural fibres breathe, synthetics repel water.
+> **Why it matters:** la agrupación es lo que te permite adivinar un material desconocido por su comportamiento: las fibras naturales transpiran, las sintéticas repelen el agua.
 >
-> **Example:** if a jacket is *waterproof and light*, it is almost certainly
-> synthetic — polyester or plastic, not cotton.
+> **Example:** si una chaqueta es *waterproof and light*, casi seguro es sintética — poliéster o plástico, no algodón.
 
 > [!example] 💬 Examples in context
 >
@@ -108,7 +102,7 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 
 > [!example] 📋 Typical characteristics by material
 >
-> | Material | Typical characteristics |
+> | Material | Typical Characteristics |
 > |---|---|
 > | **Cotton** | Natural, soft, warm, absorbent |
 > | **Glass** | Fragile, hard, transparent |
@@ -124,18 +118,15 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 >
 > ![[Diagramas/01_-_Vocabulary_&_Use_-_Materials_+_Production_&_Distribution_03.svg]]
 >
-> **How to read it:** the diagram shows which adjectives cluster together in real
-> descriptions — *light and waterproof* for sportswear, *natural and warm* for
-> winter clothing.
+> **How to read it:** el diagrama muestra qué adjetivos suelen aparecer juntos en descripciones reales — *light and waterproof* para ropa deportiva, *natural and warm* para ropa de invierno.
 >
-> **Why it matters:** a description with two adjectives that do not collocate
-> (*fragile and waterproof*) sounds wrong even if the grammar is correct.
+> **Why it matters:** una descripción con adjetivos que no van juntos (*fragile and waterproof*) suena mal aunque la gramática sea correcta.
 >
 > **Example:** *This bottle is made of glass. It's fragile but recyclable.*
 
 > [!success] 🗣️ Model phrases for describing products
 >
-> **Pattern:** This [product] is made of [material]. It's [adjective] and [adjective].
+> **Pattern:** This [product] is made of [material]. It's [adj1] and [adj2].
 >
 > - This backpack is made of polyester. It's light and waterproof.
 > - The table is made of wood. It's natural and warm.
@@ -144,9 +135,9 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 
 ---
 
-## 🏭 B. Production (Verbs)
+## 🏭 B. Production & Distribution (Verbs)
 
-> [!note] 🔨 Production verbs
+> [!note] 🔨 Verbos de Producción
 >
 > | Verb | Spanish | Type | Example |
 > |---|---|---|---|
@@ -162,14 +153,11 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 >
 > ![[Diagramas/01_-_Vocabulary_&_Use_-_Materials_+_Production_&_Distribution_04.svg]]
 >
-> **How to read it:** the diagram follows one product from raw material to
-> finished good — grow, pick, manufacture, produce.
+> **How to read it:** el diagrama sigue un producto desde materia prima hasta producto terminado — grow, pick, manufacture, produce.
 >
-> **Why it matters:** the order is not interchangeable: you *pick* coffee before
-> you *manufacture* the tin, never the other way around.
+> **Why it matters:** el orden no se puede cambiar: primero *pick* el café, después *manufacture* la lata, nunca al revés.
 >
-> **Example:** *Ecuador grows bananas. Workers pick them. The company produces
-> boxes. The boxes are shipped abroad.*
+> **Example:** *Ecuador grows bananas. Workers pick them. The company produces boxes. The boxes are shipped abroad.*
 
 > [!example] 🌾 Examples by category
 >
@@ -190,11 +178,7 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 > - Designers design new models every year.
 > - Factories produce millions of units.
 
----
-
-## 🚚 C. Distribution (Verbs)
-
-> [!tip] 🚛 Distribution verbs
+> [!tip] 🚚 Verbos de Distribución
 >
 > | Verb | Spanish | Stage | Example |
 > |---|---|---|---|
@@ -209,27 +193,13 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 >
 > ![[Diagramas/01_-_Vocabulary_&_Use_-_Materials_+_Production_&_Distribution_05.svg]]
 >
-> **How to read it:** the diagram traces the path from factory to customer —
-> store, ship, export/import, deliver.
+> **How to read it:** el diagrama traza el camino desde fábrica hasta cliente — store, ship, export/import, deliver.
 >
-> **Why it matters:** each verb answers a different question — *where it is made*
-> (production), *how it travels* (transport), *who receives it* (delivery).
+> **Why it matters:** cada verbo responde a una pregunta diferente — *dónde se fabrica* (producción), *cómo viaja* (transporte), *quién lo recibe* (delivery).
 >
-> **Example:** *We manufacture in Spain, store in Rotterdam, export to Chile,
-> and deliver to the customer in 5 days.*
+> **Example:** *We manufacture in Spain, store in Rotterdam, export to Chile, and deliver to the customer in 5 days.*
 
-> [!example] 📦 Common patterns
->
-> | Pattern | Example |
-> |---|---|
-> | **export** + product + **to/from** + place | Ecuador exports bananas to Europe |
-> | **import** + product + **from** + place | We import electronics from China |
-> | **ship** + product + **by** + method | They ship furniture by sea |
-> | **deliver** + product + **to** + customer | DHL delivers packages to your door |
-> | **transport** + product + **by** + vehicle | They transport oil by tanker |
-> | **store** + product + **in** + location | We store wine in cool cellars |
-
-> [!tip] 🚢 Transport methods
+> [!example] 🚛 Transport methods
 >
 > - by sea / ship → slow but cheap (furniture, cars)
 > - by air / plane → fast but expensive (electronics, flowers)
@@ -238,9 +208,9 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 
 ---
 
-## 📚 D. Mini-glossary EN → ES
+## 📚 C. Mini-Glosario EN → ES
 
-> [!quote] 📖 Quick reference
+> [!quote] 📖 Referencia Rápida Completa
 >
 > ### Materials
 >
@@ -271,7 +241,7 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 > | Warm | Cálido | Keeps heat |
 > | Waterproof | Impermeable | Repels water |
 >
-> ### Production verbs
+> ### Production Verbs
 >
 > | English | Spanish | Context |
 > |---|---|---|
@@ -283,7 +253,7 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 > | Pick | Recoger/Cosechar | Harvest |
 > | Produce | Producir | General creation |
 >
-> ### Distribution verbs
+> ### Distribution Verbs
 >
 > | English | Spanish | Context |
 > |---|---|---|
@@ -296,7 +266,7 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 
 ---
 
-## 💬 E. Collocations & Real Phrases
+## 💬 D. Collocations & Real Phrases
 
 > [!success] 🎯 High-frequency combinations
 >
@@ -333,20 +303,17 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 >
 > ![[Diagramas/01_-_Vocabulary_&_Use_-_Materials_+_Production_&_Distribution_06.svg]]
 >
-> **How to read it:** each branch takes one product and builds the three sentences
-> — material, production, distribution.
+> **How to read it:** cada rama toma un producto y construye las tres frases — material, producción, distribución.
 >
-> **Why it matters:** this is the exact structure the exam asks for, and the
-> structure the next note turns into the passive voice.
+> **Why it matters:** esta es la estructura exacta que pide el examen, y la estructura que la siguiente nota convierte en voz pasiva.
 >
-> **Example:** *These boots are made of leather (material). They are manufactured
-> in Italy (production). They are shipped worldwide (distribution).*
+> **Example:** *These boots are made of leather* (material). *They are manufactured in Italy* (production). *They are shipped worldwide* (distribution).
 
 ---
 
-## 🌍 F. Real Applications
+## 🌍 E. Real Applications
 
-> [!example] 💼 Situations where you need this
+> [!example] 💼 Situaciones Prácticas
 >
 > **Shopping for clothes**
 >
@@ -362,17 +329,14 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 > - *Manager:* Where do we manufacture our products?
 > - *Team:* We manufacture shoes in Italy and bags in Spain.
 > - *Manager:* And our materials?
-> - *Team:* We import high-quality leather from Argentina and export finished
->   products to over 50 countries.
+> - *Team:* We import high-quality leather from Argentina and export finished products to over 50 countries.
 > - *Manager:* How do we ship them?
 > - *Team:* Small orders go by air, large orders by sea.
 >
 > **Product review**
 >
-> ⭐⭐⭐⭐⭐
-> "This backpack is made of strong, waterproof material. It's light but very
-> durable. I've used it for 2 years and it still looks new. The company ships
-> fast — I received it in 3 days. Highly recommended!"
+> > ⭐⭐⭐⭐⭐
+> > "This backpack is made of strong, waterproof material. It's light but very durable. I've used it for 2 years and it still looks new. The company ships fast — I received it in 3 days. Highly recommended!"
 >
 > **Sustainability discussion**
 >
@@ -388,7 +352,7 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 > |---|---|
 > | **Smartphone** | This phone is made of metal and glass. It's manufactured in China and shipped worldwide. It's light but strong, with a waterproof design. |
 > | **Sweater** | This sweater is made of 100% natural wool. It's soft, warm, and comfortable. It's hand-made in Peru using traditional methods. |
-> | **Water bottle** | This bottle is made of recycled plastic. It's light, durable, and BPA-free. We manufacture it locally and deliver within 24 hours. |
+> | **Water Bottle** | This bottle is made of recycled plastic. It's light, durable, and BPA-free. We manufacture it locally and deliver within 24 hours. |
 > | **Furniture** | This table is made of solid wood. It's heavy and very strong. We produce it in our local workshop and ship it assembled or flat-packed. |
 
 ---
@@ -437,7 +401,7 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 
 > [!tip] 💪 Exercise 3: Describe these products
 >
-> **Pattern:** This [product] is made of [material]. It's [adjective] and [adjective].
+> **Pattern:** This [product] is made of [material]. It's [adj] and [adj].
 >
 > 6. Raincoat (polyester, waterproof, light)
 > 7. Wooden chair (wood, natural, strong)
@@ -463,14 +427,11 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 >
 > ![[Diagramas/01_-_Vocabulary_&_Use_-_Materials_+_Production_&_Distribution_07.svg]]
 >
-> **How to read it:** one page with the three blocks — materials, production,
-> distribution — and the adjectives that go with each.
+> **How to read it:** una sola página con los tres bloques — materiales, producción y distribución — y los adjetivos que van con cada uno.
 >
-> **Why it matters:** if you can reproduce this page from memory, you have the
-> vocabulary of the unit.
+> **Why it matters:** si puedes reproducir esta página de memoria, tienes el vocabulario de la unidad.
 >
-> **Example:** covering the right column and recalling *exports bananas to
-> Europe* from *export + product + to + place*.
+> **Example:** tapando la columna derecha y recordando *exports bananas to Europe* desde *export + product + to + place*.
 
 ---
 
@@ -492,16 +453,14 @@ tags: [IDIG1006, unit10, materials, production, distribution]
 > - Passive: Shoes **are made** in Italy.
 > - Active: They exported the coffee yesterday.
 > - Passive: The coffee **was exported** yesterday.
-
-> [!info] 🔗 How vocabulary connects to grammar
+>
+> **How vocabulary connects to grammar:**
 >
 > ![[Diagramas/01_-_Vocabulary_&_Use_-_Materials_+_Production_&_Distribution_08.svg]]
 >
-> **How to read it:** each verb of this note is shown in active and passive form,
-> with the object moving to the front.
+> **How to read it:** cada verbo de esta nota se muestra en forma activa y pasiva, con el objeto moviéndose al frente.
 >
-> **Why it matters:** the passive exists to put the product first — exactly the
-> vocabulary you just learned.
+> **Why it matters:** la voz pasiva existe para poner el producto primero — exactamente el vocabulario que acabas de aprender.
 >
 > **Example:** *They manufacture cars in Japan* → *Cars are manufactured in Japan.*
 
