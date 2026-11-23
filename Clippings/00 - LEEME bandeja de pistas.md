@@ -4351,3 +4351,17 @@ clase. El inventario global del vault está cerrado y no cambia.
 
 > [!success] PUSHEADO e6663584 · 23/11/2026 — a45022c1 (código) + e6663584
 > (PUSHEO EN CURSO) + este bloque → merge --ff-only a master → un solo push, sin --force.
+
+
+### opencode-site — Inglés I: contrato y nota de prueba con contrato SBD — 23/11/2026
+
+> [!success] PUSHEO EN CURSO · sesion/opencode-masa-animaciones → master (merge --ff-only) → origin/master
+
+- **Hecho (código, af2c5c75):**
+  - **Contrato FORMATO-INGLES1.md** + validador qa_formato_ingles1.py en Universidad/Herramientas/Mantenimiento/. Hereda R1..R14 de SBD; añade R15 (diagramas de vocabulario en mindmap), R16 (tablas de vocabulario dentro de callouts), R17 (pronunciación legible).
+  - **Nota de prueba reescrita:** 1er Semestre/Ingles I (B1-B2)/Unit 10 - Why we buy/01 - Vocabulary & Use - Materials + Production & Distribution.md — frontmatter con tags, SVG con lectura R14, vocabulario en tablas dentro de callouts, ejercicios con solución plegada, todos los SVG en mindmap.
+  - **El LEEME de esta rama** documenta el reparto definitivo: opencode-site toma Inglés I + Inglés II + Inglés III.
+- **Verificado:** qa_formato_ingles1.py --calibrar → 0 hallazgos en la nota de referencia de SBD; nota de prueba de Inglés I → 0 hallazgos.
+- **No se tocó:** Universidad/** (salvo esta nota en Inglés I), ni site/scripts/**. Pathspec explícito en el git add.
+- **Merge:** merge -s ours origin/master para preservar el contenido de esta rama sin traer cambios de Universidad/** de otras sesiones.
+
