@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 01-transformaciones-lineales]
 ---
 
 # 🔄 Transformaciones Lineales
@@ -7,6 +8,7 @@ dg-publish: true
 ## 🌟 Concepto Fundamental
 
 > [!info] Definición Intuitiva
+>
 > **Una transformación lineal es una función entre espacios vectoriales que preserva las operaciones de suma de vectores y multiplicación por escalares. Representa el concepto más fundamental del álgebra lineal: funciones que mantienen la estructura lineal del espacio.**
 > 
 > **Características clave:**
@@ -19,6 +21,7 @@ dg-publish: true
 ### 📖 Contexto Histórico
 
 > [!note] Desarrollo del Concepto
+>
 > **Orígenes geométricos (1800-1850):**
 > - **Möbius (1827):** Coordenadas baricéntricas
 >   - Primeras transformaciones sistemáticas
@@ -70,6 +73,7 @@ dg-publish: true
 ## 📊 Definición Formal
 
 > [!important] Transformación Lineal
+>
 > **Definición:**
 > 
 > Sean $V$ y $W$ espacios vectoriales sobre el mismo campo $\mathbb{F}$ (usualmente $\mathbb{R}$ o $\mathbb{C}$).
@@ -107,6 +111,7 @@ dg-publish: true
 ## 🎯 Propiedades Fundamentales
 
 > [!success] Consecuencias de la Linealidad
+>
 > **Teorema: Propiedades básicas**
 > 
 > Si $T: V \to W$ es lineal, entonces:
@@ -166,6 +171,7 @@ dg-publish: true
 ## 🔢 Representación Matricial
 
 > [!important] Matrices y Transformaciones Lineales
+>
 > **Teorema fundamental de representación:**
 > 
 > Sea $T: \mathbb{R}^n \to \mathbb{R}^m$ una transformación lineal.
@@ -216,6 +222,7 @@ dg-publish: true
 ## 🎨 Transformaciones Geométricas en ℝ²
 
 > [!note] Transformaciones Estándar en el Plano
+>
 > **1. ROTACIÓN (ángulo θ en sentido antihorario):**
 > 
 > $$R_\theta\begin{pmatrix}\begin{bmatrix} x \\ y \end{bmatrix}\end{pmatrix} = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix}\begin{bmatrix} x \\ y \end{bmatrix}$$
@@ -231,6 +238,7 @@ dg-publish: true
 >      |     (0,1)
 >      |      ↑
 >      |      |
+>
 >      |      | rotación 90°
 >      |      |
 >      +------→------- x
@@ -286,6 +294,7 @@ dg-publish: true
 ## 🔍 Núcleo e Imagen
 
 > [!important] Subespacios Fundamentales
+>
 > **DEFINICIONES:**
 > 
 > Sea $T: V \to W$ transformación lineal.
@@ -337,6 +346,7 @@ dg-publish: true
 ## 📐 Teorema del Rango-Nulidad
 
 > [!success] Teorema Fundamental de las Transformaciones Lineales
+>
 > **Teorema del Rango-Nulidad (Rank-Nullity Theorem):**
 > 
 > Sea $T: V \to W$ transformación lineal donde $V$ es de dimensión finita.
@@ -352,6 +362,9 @@ dg-publish: true
 > La dimensión del dominio se "conserva": parte se "pierde" en el núcleo y parte se "proyecta" en la imagen.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Transformaciones_lineales_01.svg]]
+>
+> **Se lee así:** el diagrama presenta mapea a y isomorfism y v dim = n y ker t dim = k.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > **DEMOSTRACIÓN (esquema):**
 > 
@@ -386,6 +399,7 @@ dg-publish: true
 ## 🔄 Inyectividad y Sobreyectividad
 
 > [!tip] Tipos de Transformaciones
+>
 > **DEFINICIONES:**
 > 
 > Sea $T: V \to W$ transformación lineal.
@@ -471,6 +485,7 @@ dg-publish: true
 ## 💡 Ejemplos Resueltos
 
 > [!example] Problemas Detallados
+>
 > **Problema 1: Verificar linealidad**
 > 
 > Determinar si las siguientes funciones son transformaciones lineales:
@@ -603,6 +618,7 @@ dg-publish: true
 ## ⚡ Isomorfismos
 
 > [!important] Espacios Isomorfos
+>
 > **DEFINICIÓN:**
 > 
 > Espacios vectoriales $V$ y $W$ son **isomorfos** (notación: $V \cong W$) si existe transformación lineal $T: V \to W$ que es biyectiva.
@@ -647,6 +663,7 @@ dg-publish: true
 ## ⚠️ Errores Comunes
 
 > [!warning] Malentendidos Frecuentes
+>
 > **1. "T(vec{u} + \vec{v}) = T(\vec{u}) + T(\vec{v}) implica linealidad"**
 > 
 > ⚠️ **INCOMPLETO**
@@ -722,6 +739,7 @@ dg-publish: true
 ## 🔗 Conexiones con Otros Temas
 
 > [!quote] Enlaces Conceptuales
+>
 > **Fundamentos previos:**
 > - [[01 - Vectores en espacios vectoriales (definición y propiedades)|01 - Vectores en espacios vectoriales]] - Espacios vectoriales
 > - [[02 – Combinación lineal]] - Estructura lineal
@@ -744,6 +762,7 @@ dg-publish: true
 ## 📚 Recursos Adicionales
 
 > [!note] Herramientas y Referencias
+>
 > **Software de álgebra lineal:**
 > 
 > - **MATLAB**
@@ -783,6 +802,7 @@ dg-publish: true
 ## 📖 Bibliografía Esencial
 
 > [!tip] Lecturas Recomendadas
+>
 > **Nivel introductorio:**
 > - **Lay, D. C.** (2016). _Álgebra Lineal y sus Aplicaciones_ (5ª ed.). Pearson.
 >   - **Cap. 1.8-1.9:** Transformaciones lineales ⭐

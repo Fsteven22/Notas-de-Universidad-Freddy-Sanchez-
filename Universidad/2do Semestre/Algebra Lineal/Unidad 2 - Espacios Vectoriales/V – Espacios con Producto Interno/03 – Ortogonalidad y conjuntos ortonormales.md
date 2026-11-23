@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 03-ortogonalidad-y-conjuntos-ortonormales]
 ---
 
 # 📐 Ortogonalidad y Ortonormalidad
@@ -26,7 +27,14 @@ dg-publish: true
 > |**Interpretabilidad**|Componentes claramente separadas|Análisis de datos, PCA|
 > |**Eficiencia**|Optimización de cálculos|Gráficos por computadora, compresión|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_01.svg]]
+> [!info] 📊 03 – Ortogonalidad Y Conjuntos Ortonormales 01
+>
+> ![[03_–_Ortogonalidad_y_conjuntos_ortonormales_01.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta concepto de ortogonalidad y producto interno cero y independencia geométrica y aplicaciones.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -74,6 +82,9 @@ dg-publish: true
 > **Propiedades fundamentales:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_02.svg]]
+>
+> **Se lee así:** el diagrama presenta producto interno y propiedades algebraicas y conmutatividad y ⟨u,v⟩ = ⟨v,u⟩.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### ⊥ Definición de Ortogonalidad
 
@@ -86,6 +97,9 @@ dg-publish: true
 > **Interpretación geométrica:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_03.svg]]
+>
+> **Se lee así:** el diagrama presenta = 0 y &gt; 0 y &lt; 0 y producto interno.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Casos especiales importantes:**
 > 
@@ -121,6 +135,9 @@ dg-publish: true
 > $$||u + v||^2 = ||u||^2 + ||v||^2$$
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_04.svg]]
+>
+> **Se lee así:** el diagrama presenta u ⊥ v y aplicar teorema de pitágoras y u + v y ejemplo numérico.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 📐 Relación con Ángulos
 
@@ -148,6 +165,7 @@ dg-publish: true
 > 
 > Paso 2: Calcular normas
 > ||u|| = √(1² + 2² + 2²) = √9 = 3
+>
 > ||v|| = √(2² + (-1)² + 0²) = √5
 > 
 > Paso 3: Calcular ángulo
@@ -160,6 +178,9 @@ dg-publish: true
 > **Diagrama de decisión:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_05.svg]]
+>
+> **Se lee así:** el diagrama presenta = 0 y calcular ⟨u,v⟩ y valor? y θ = 90° ✅ ortogonales.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 
@@ -236,6 +257,9 @@ dg-publish: true
 > **Ventajas sobre bases arbitrarias:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_06.svg]]
+>
+> **Se lee así:** el diagrama presenta base ortogonal y coordenadas simples y proyecciones directas y cálculos rápidos.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Fórmula de coordenadas:**
 > 
@@ -259,6 +283,7 @@ dg-publish: true
 > 
 > Paso 1: Calcular normas al cuadrado
 > ||u₁||² = 1² + 1² + 0² = 2
+>
 > ||u₂||² = 1² + (-1)² + 0² = 2
 > ||u₃||² = 0² + 0² + 1² = 1
 > 
@@ -303,6 +328,9 @@ dg-publish: true
 > **Relación entre conceptos:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_07.svg]]
+>
+> **Se lee así:** el diagrama presenta sí y conjunto de vectores y ¿independientes? y puede ser base.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplo clásico - Base estándar de ℝⁿ:**
 > 
@@ -321,6 +349,7 @@ dg-publish: true
 > 
 > Normalidad:
 > ||e₁|| = √(1²) = 1  ✓
+>
 > ||e₂|| = √(1²) = 1  ✓
 > ||e₃|| = √(1²) = 1  ✓
 > ```
@@ -335,6 +364,7 @@ dg-publish: true
 > Verificación:
 > ⟨u₁, u₂⟩ = (√2/2)(-√2/2) + (√2/2)(√2/2) = -1/2 + 1/2 = 0  ✓
 > ||u₁|| = √((√2/2)² + (√2/2)²) = √(1/2 + 1/2) = 1  ✓
+>
 > ||u₂|| = 1  ✓
 > ```
 
@@ -355,6 +385,9 @@ dg-publish: true
 > **Algoritmo paso a paso:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_08.svg]]
+>
+> **Se lee así:** el diagrama presenta sí y vector v y calcular norma y = √⟨v,v⟩.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplos numéricos:**
 > 
@@ -362,22 +395,26 @@ dg-publish: true
 > Ejemplo 1: Vector simple
 > v = (3, 4)
 > ||v|| = √(3² + 4²) = √25 = 5
+>
 > 
 > û = (3/5, 4/5) = (0.6, 0.8)
 > 
 > Verificación:
 > ||û|| = √(0.6² + 0.8²) = √(0.36 + 0.64) = √1 = 1  ✓
+>
 > ```
 > 
 > ```
 > Ejemplo 2: Vector en ℝ³
 > v = (1, 2, 2)
 > ||v|| = √(1² + 2² + 2²) = √9 = 3
+>
 > 
 > û = (1/3, 2/3, 2/3) ≈ (0.333, 0.667, 0.667)
 > 
 > Verificación:
 > ||û|| = √((1/3)² + (2/3)² + (2/3)²) = √(1/9 + 4/9 + 4/9) = √(9/9) = 1  ✓
+>
 > ```
 > 
 > **Convertir base ortogonal a ortonormal:**
@@ -451,6 +488,7 @@ dg-publish: true
 > 
 > Paso 3: Verificar norma
 > ||v||² = 2² + (-3)² + 5² = 4 + 9 + 25 = 38
+>
 <
 > ||v|| = √38 ✓
 > 
@@ -459,6 +497,9 @@ dg-publish: true
 > **Ventajas en aplicaciones:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_09.svg]]
+>
+> **Se lee así:** el diagrama presenta bases ortonormales y computación y algoritmos estables y menor error numérico.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Algoritmo paso a paso:**
 > 
@@ -516,6 +557,7 @@ dg-publish: true
 > Calcular proyección de v₂ sobre w₁:
 > ⟨v₂, w₁⟩ = 1(1) + 1(1) + 0(1) = 2
 > ||w₁||² = 3
+>
 > 
 > Proyección: (⟨v₂,w₁⟩/||w₁||²)w₁ = (2/3)(1, 1, 1) = (2/3, 2/3, 2/3)
 > 
@@ -574,6 +616,7 @@ dg-publish: true
 > 
 > Normas unitarias:
 > ||u₁|| = √(3 · (1/√3)²) = √(3/3) = 1  ✓
+>
 > ||u₂|| = √(2 · (1/√6)² + (2/√6)²) = √(6/6) = 1  ✓
 > ||u₃|| = √(2 · (1/√2)²) = √(2/2) = 1  ✓
 > ```
@@ -614,6 +657,9 @@ dg-publish: true
 > **Cuándo usar alternativas:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_10.svg]]
+>
+> **Se lee así:** el diagrama presenta pequeño n&lt;20 y mediano 20-100 y grande n&gt;100 y ¿necesitas base ortonormal?.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 
@@ -646,6 +692,9 @@ dg-publish: true
 > **Visualización:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_11.svg]]
+>
+> **Se lee así:** el diagrama presenta vector v y proyectar sobre u y proj_u v componente paralela y perp_u v componente perpendicular.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplo numérico:**
 > 
@@ -657,6 +706,7 @@ dg-publish: true
 > 
 > Paso 2: Calcular norma al cuadrado
 > ||u||² = 1² + 0² = 1
+>
 > 
 > Paso 3: Proyección
 > proj_u(v) = (2/1)(1, 0) = (2, 0)
@@ -739,6 +789,9 @@ dg-publish: true
 > **Proceso:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_12.svg]]
+>
+> **Se lee así:** el diagrama presenta imagen original n × n píxeles y transformar a base ortonormal y obtener coeficientes y descartar coeficientes pequeños.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplo con DCT (Discrete Cosine Transform):**
 > 
@@ -768,7 +821,14 @@ dg-publish: true
 
 ### 🗺️ Mapa Conceptual Completo
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_13.svg]]
+> [!info] 📊 03 – Ortogonalidad Y Conjuntos Ortonormales 13
+>
+> ![[03_–_Ortogonalidad_y_conjuntos_ortonormales_13.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta ortogonalidad y ortonormalidad y producto interno y definición: ⟨u,v⟩ = σuᵢvᵢ y propiedades.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ### 📋 Tabla Comparativa de Conceptos
 
@@ -785,7 +845,14 @@ dg-publish: true
 
 ### 🎯 Flujo de Trabajo Típico
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_14.svg]]
+> [!info] 📊 03 – Ortogonalidad Y Conjuntos Ortonormales 14
+>
+> ![[03_–_Ortogonalidad_y_conjuntos_ortonormales_14.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta sí y base arbitraria v₁, v₂, ..., vₙ y ¿ya es ortogonal? y normalizar vectores.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -887,6 +954,7 @@ dg-publish: true
 >            = (1,1,0) - (1/2)(1,0,1)
 >            = (1/2, 1, -1/2)
 >       ||w₂|| = √(1/4 + 1 + 1/4) = √(3/2)
+>
 > 
 > Paso 3: w₃ = (0,1,1) - proj_{w₁}(0,1,1) - proj_{w₂}(0,1,1)
 >       [Cálculos similares...]
@@ -910,6 +978,9 @@ dg-publish: true
 > **Has dominado:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_15.svg]]
+>
+> **Se lee así:** el diagrama presenta producto interno y ortogonalidad y ortonormalidad y gram-schmidt.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Próximos temas naturales:**
 > 
@@ -924,6 +995,9 @@ dg-publish: true
 > **Roadmap de evolución:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_16.svg]]
+>
+> **Se lee así:** el diagrama presenta ortogonalidad y qr factorization y proyecciones y eigen-descomposición.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > ```
 > 
@@ -960,7 +1034,14 @@ dg-publish: true
 > |**Descomposición**|Representar vectores como combinaciones|Análisis de Fourier, compresión|
 > |**Geometría**|Ángulos y distancias simples|Gráficos por computadora, física|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_17.svg]]
+> [!info] 📊 03 – Ortogonalidad Y Conjuntos Ortonormales 17
+>
+> ![[03_–_Ortogonalidad_y_conjuntos_ortonormales_17.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta sí y vectores en ℝⁿ y ¿producto interno cero? y vectores ortogonales.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -1015,6 +1096,9 @@ dg-publish: true
 > **Visualización en ℝ²:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_18.svg]]
+>
+> **Se lee así:** el diagrama presenta ⟨u,v⟩ = 0 y origen o y vector u y vector v.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 🧮 Propiedades del Producto Interno
 
@@ -1055,6 +1139,9 @@ dg-publish: true
 > **Consecuencias importantes:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_19.svg]]
+>
+> **Se lee así:** el diagrama presenta propiedades del producto interno y permite definir norma y permite definir ángulo y permite proyecciones.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 📐 Norma y Normalización
 
@@ -1084,12 +1171,14 @@ dg-publish: true
 > 
 > Paso 1: Calcular norma
 > ||u|| = √(3² + 4²) = √(9 + 16) = √25 = 5
+>
 > 
 > Paso 2: Dividir por la norma
 > û = (3/5, 4/5) = (0.6, 0.8)
 > 
 > Verificación:
 > ||û|| = √(0.6² + 0.8²) = √(0.36 + 0.64) = √1 = 1 ✅
+>
 > 
 > Ejemplo 2 - Normalizar en ℝ³:
 > v = (1, 2, 2)
@@ -1099,6 +1188,7 @@ dg-publish: true
 > 
 > Verificación:
 > ||v̂|| = √(1/9 + 4/9 + 4/9) = √(9/9) = 1 ✅
+>
 > ```
 > 
 > **Propiedades de la norma:**
@@ -1113,6 +1203,9 @@ dg-publish: true
 > **Visualización de normalización:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_20.svg]]
+>
+> **Se lee así:** el diagrama presenta mantiene dirección y vector u y = 5] --&gt; y dividir por 5.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 
@@ -1195,6 +1288,9 @@ dg-publish: true
 > **Visualización:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_21.svg]]
+>
+> **Se lee así:** el diagrama presenta conjunto ortogonal y vectores perpendiculares dos a dos y vectores no ceros y independencia lineal garantizada.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 🎨 Representación de Vectores
 
@@ -1262,6 +1358,9 @@ dg-publish: true
 > **Flujo de cálculo:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_22.svg]]
+>
+> **Se lee así:** el diagrama presenta vector u a representar y base ortogonal v₁, v₂, ..., vₖ y calcular ⟨u, v₁⟩/ y calcular ⟨u, v₂⟩/.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 
@@ -1297,6 +1396,7 @@ dg-publish: true
 > 
 > Paso 1: Calcular normas
 > ||v₁|| = √(9 + 16) = 5
+>
 > ||v₂|| = √(16 + 9) = 5
 > 
 > Paso 2: Normalizar
@@ -1333,6 +1433,9 @@ dg-publish: true
 > **Proceso de ortonormalización:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_23.svg]]
+>
+> **Se lee así:** el diagrama presenta conjunto ortogonal v₁, v₂, ..., vₖ y calcular normas y , ..., y normalizar cada vector uᵢ = vᵢ/.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 🧮 Representación en Bases Ortonormales
 
@@ -1401,6 +1504,9 @@ dg-publish: true
 > **Visualización del proceso:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_24.svg]]
+>
+> **Se lee así:** el diagrama presenta vector v y base ortonormal u₁, u₂, ..., uₙ y c₁ = ⟨v, u₁⟩ y c₂ = ⟨v, u₂⟩.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > Entrada: Base {v₁, v₂, ..., vₙ} (linealmente independiente)
 > Salida: Base ortonormal {u₁, u₂, ..., uₙ}
 > 
@@ -1439,6 +1545,7 @@ dg-publish: true
 > ━━━ PASO 1: Primer vector ━━━
 > w₁ = v₁ = (1, 1, 1)
 > ||w₁|| = √(1² + 1² + 1²) = √3
+>
 > 
 > u₁ = w₁/||w₁|| = (1/√3, 1/√3, 1/√3)
 > 
@@ -1454,6 +1561,7 @@ dg-publish: true
 > 
 > Normalizar:
 > ||w₂|| = √(4/9 + 1/9 + 1/9) = √(6/9) = √(2/3)
+>
 > 
 > u₂ = w₂/||w₂|| = (-2/3, 1/3, 1/3) / √(2/3)
 >    = (-√2/√3, 1/(√2·√3), 1/(√2·√3))
@@ -1474,6 +1582,7 @@ dg-publish: true
 > 
 > Normalizar:
 > ||w₃|| = √(0 + 1/4 + 1/4) = √(1/2) = 1/√2
+>
 > 
 > u₃ = (0, -1/2, 1/2) / (1/√2)
 >    = (0, -1/√2, 1/√2)
@@ -1505,6 +1614,9 @@ dg-publish: true
 > **Diagrama del proceso:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_25.svg]]
+>
+> **Se lee así:** el diagrama presenta no y base original v₁, v₂, ..., vₙ y normalizar v₁ u₁ = v₁/ y para k = 2 hasta n.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### ⚠️ Consideraciones Numéricas
 
@@ -1643,6 +1755,9 @@ dg-publish: true
 > donde **\hat{y}** ∈ W y **z** ∈ W^⊥ (complemento ortogonal de W)
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_26.svg]]
+>
+> **Se lee así:** el diagrama presenta ⊥ y vector y y proyección \hat{y} ∈ w y componente z ∈ w^⊥.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 📈 Regresión Lineal y Mínimos Cuadrados
 
@@ -1820,6 +1935,9 @@ dg-publish: true
 > - ⟨Q**x**, Q**y**⟩ = ⟨**x**, **y**⟩ para todos **x**, **y**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_27.svg]]
+>
+> **Se lee así:** el diagrama presenta multiplic. q y sin cambio y vector x y vector qx.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 🔄 Descomposición QR
 
@@ -1851,6 +1969,7 @@ dg-publish: true
 > Paso 1: Primera columna de Q
 > a₁ = (1, 1, 1)
 > ||a₁|| = √3
+>
 > q₁ = a₁/||a₁|| = (1/√3, 1/√3, 1/√3)
 > 
 > Paso 2: Segunda columna de Q
@@ -1958,6 +2077,9 @@ dg-publish: true
 > **Visualización:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_28.svg]]
+>
+> **Se lee así:** el diagrama presenta ⊥ y dim = k y dim = n-k y subespacio w.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 🔄 Teorema de Descomposición
 
@@ -2004,6 +2126,7 @@ dg-publish: true
 > 
 > Pitágoras:
 > ||y||² = 3² + 4² + 5² = 50
+>
 > ||\hat{y}||² + ||z||² = 25 + 25 = 50 ✅
 > ```
 > 
@@ -2025,7 +2148,14 @@ dg-publish: true
 
 ### Mapa Conceptual Global
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_29.svg]]
+> [!info] 📊 03 – Ortogonalidad Y Conjuntos Ortonormales 29
+>
+> ![[03_–_Ortogonalidad_y_conjuntos_ortonormales_29.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta conjuntos ortogonales y ortonormales y producto interno y definición y propiedades.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ### Tabla Comparativa Final
 
@@ -2056,7 +2186,14 @@ dg-publish: true
 
 ### Diagrama de Flujo de Decisiones
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_30.svg]]
+> [!info] 📊 03 – Ortogonalidad Y Conjuntos Ortonormales 30
+>
+> ![[03_–_Ortogonalidad_y_conjuntos_ortonormales_30.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta no y representar vector y proyectar y resolver sistema.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -2101,12 +2238,14 @@ dg-publish: true
 > ```
 > a) Calcular norma:
 > ||v|| = √(3² + 4²) = √25 = 5
+>
 > 
 > Normalizar:
 > v̂ = (3/5, 4/5) = (0.6, 0.8)
 > 
 > b) Calcular norma:
 > ||w|| = √(1² + 2² + 2²) = √9 = 3
+>
 > 
 > Normalizar:
 > ŵ = (1/3, 2/3, 2/3)
@@ -2126,6 +2265,7 @@ dg-publish: true
 > Paso 1: Primer vector
 > w₁ = v₁ = (1, 1, 0)
 > ||w₁|| = √(1 + 1 + 0) = √2
+>
 > u₁ = (1/√2, 1/√2, 0)
 > 
 > Paso 2: Segundo vector
@@ -2140,6 +2280,7 @@ dg-publish: true
 > 
 > Normalizar:
 > ||w₂|| = √(1/4 + 1/4 + 1) = √(3/2)
+>
 > u₂ = (1/2, −1/2, 1) / √(3/2)
 >    = (1/√6, −1/√6, 2/√6)
 > 
@@ -2233,6 +2374,9 @@ dg-publish: true
 > **Roadmap:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_31.svg]]
+>
+> **Se lee así:** el diagrama presenta conjuntos ortonormales y eigenvalores y eigenvectores y diagonalización y formas cuadráticas.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Aplicaciones futuras:**
 > 

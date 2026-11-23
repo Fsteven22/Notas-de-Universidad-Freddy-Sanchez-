@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 05-espacio-columna]
 ---
 
 # 📐 Espacio Columna
@@ -7,6 +8,7 @@ dg-publish: true
 ## 🌟 Concepto Fundamental
 
 > [!info] Definición Intuitiva
+>
 > **El espacio columna de una matriz es el subespacio vectorial generado por sus columnas. Representa todos los vectores que pueden obtenerse como combinaciones lineales de las columnas de la matriz. Este concepto es fundamental para entender qué sistemas lineales tienen solución y cuál es el rango de una transformación lineal.**
 > 
 > **Características clave:**
@@ -19,6 +21,7 @@ dg-publish: true
 ### 📖 Contexto Histórico
 
 > [!note] Desarrollo del Concepto
+>
 > **Orígenes (1850-1900):**
 > - **Cayley (1858):** Teoría de matrices
 >   - Primera formulación sistemática
@@ -53,6 +56,7 @@ dg-publish: true
 ## 📊 Definición Formal
 
 > [!important] Espacio Columna
+>
 > **Definición:**
 > 
 > Sea $A$ una matriz $m \times n$:
@@ -84,6 +88,7 @@ dg-publish: true
 ## 🎯 Propiedades Fundamentales
 
 > [!success] Características del Espacio Columna
+>
 > **Teorema: Col(A) es un subespacio**
 > 
 > **DEMOSTRACIÓN:**
@@ -145,6 +150,7 @@ dg-publish: true
 ## 🔍 Cálculo del Espacio Columna
 
 > [!tip] Método de Reducción por Filas
+>
 > **Algoritmo para encontrar base de Col(A):**
 > 
 > **PROCEDIMIENTO:**
@@ -203,6 +209,7 @@ dg-publish: true
 ## 📈 Relación con el Rango
 
 > [!important] Rango y Dimensión
+>
 > **Teorema del rango:**
 > 
 > Para matriz $A$ de $m \times n$:
@@ -243,9 +250,13 @@ dg-publish: true
 ## 🎨 Interpretación Geométrica
 
 > [!note] Visualización del Espacio Columna
+>
 > **En $\mathbb{R}^3$:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacio_columna_01.svg]]
+>
+> **Se lee así:** el diagrama presenta rank = 2 y rank = 1 y rank = 0 y matriz a: 3×2.
+> **Por qué importa:** conecta el álgebra con la geometría: cuántas soluciones tiene un sistema y por qué.
 > 
 > **Casos visuales:**
 > 
@@ -280,6 +291,7 @@ dg-publish: true
 ## 🔗 Relación con Otros Subespacios
 
 > [!success] Cuatro Subespacios Fundamentales
+>
 > **Para matriz $A$ de $m \times n$:**
 > 
 > **CUATRO SUBESPACIOS:**
@@ -306,6 +318,9 @@ dg-publish: true
 > **Relaciones de ortogonalidad:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacio_columna_02.svg]]
+>
+> **Se lee así:** el diagrama presenta ℝᵐ (codominio) y ℝⁿ (dominio) y ortogonal y a mapea.
+> **Por qué importa:** conecta el álgebra con la geometría: cuántas soluciones tiene un sistema y por qué.
 > 
 > **Teorema de la dimensión:**
 > 
@@ -333,6 +348,7 @@ dg-publish: true
 ## 💡 Ejemplos Resueltos
 
 > [!example] Problemas Detallados
+>
 > **Problema 1: Encontrar base y dimensión**
 > 
 > Sea 
@@ -491,6 +507,7 @@ dg-publish: true
 ## ⚡ Propiedades del Rango
 
 > [!important] Teoremas sobre el Rango
+>
 > **Propiedades básicas:**
 > 
 > Para matrices $A$ y $B$ apropiadas:
@@ -539,6 +556,7 @@ dg-publish: true
 ## 🎯 Aplicaciones del Espacio Columna
 
 > [!note] Usos Prácticos
+>
 > **Consistencia de sistemas:**
 > 
 > **CRITERIO DE CONSISTENCIA:**
@@ -582,6 +600,7 @@ dg-publish: true
 ## ⚠️ Errores Comunes
 
 > [!warning] Malentendidos Frecuentes
+>
 > **1. "Usar columnas de la forma reducida"**
 > 
 > ✗ **FALSO**
@@ -683,6 +702,7 @@ dg-publish: true
 ## 🔗 Conexiones con Otros Temas
 
 > [!quote] Enlaces Conceptuales
+>
 > **Fundamentos previos:**
 > - [[01 - Vectores en espacios vectoriales (definición y propiedades)|01 - Vectores en espacios vectoriales]] - Espacios y subespacios
 > - [[02 – Combinación lineal]] - Generación de vectores
@@ -704,6 +724,7 @@ dg-publish: true
 ## 📚 Recursos Adicionales
 
 > [!note] Herramientas y Referencias
+>
 > **Software de álgebra lineal:**
 > 
 > - **MATLAB**
@@ -726,6 +747,7 @@ dg-publish: true
 ## 📖 Bibliografía Esencial
 
 > [!tip] Lecturas Recomendadas
+>
 > **Nivel introductorio:**
 > - **Lay, D. C.** (2016). _Álgebra Lineal y sus Aplicaciones_ (5ª ed.). Pearson.
 >   - Cap. 4: Espacios vectoriales

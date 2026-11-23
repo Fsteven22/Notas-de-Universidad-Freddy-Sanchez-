@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 08-teorema-espectral]
 ---
 
 # 📐 Teorema Espectral
@@ -26,7 +27,14 @@ dg-publish: true
 > |**Universalidad**|Aplica a gran variedad de matrices|Física, estadística, ML|
 > |**Interpretación**|Da significado geométrico profundo|Visualización de datos|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_–_Teorema_espectral_01.svg]]
+> [!info] 📊 08 – Teorema Espectral 01
+>
+> ![[08_–_Teorema_espectral_01.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta teorema espectral y matrices simétricas y matrices hermitianas y operadores normales.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
+
 
 ---
 
@@ -60,6 +68,9 @@ dg-publish: true
 > **Visualización geométrica:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_–_Teorema_espectral_02.svg]]
+>
+> **Se lee así:** el diagrama presenta q^t y λ escalar y equivale a y espacio original.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Ejemplo en ℝ²:**
 > 
@@ -214,6 +225,9 @@ dg-publish: true
 > **4. Interpretación geométrica**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_–_Teorema_espectral_03.svg]]
+>
+> **Se lee así:** el diagrama presenta matriz simétrica a y define transformación y en coordenadas estándar: mezcla componentes y cambio a base de vectores propios.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 
 ---
 
@@ -342,10 +356,13 @@ dg-publish: true
 > Antes (círculo):           Después (elipse):
 >        y                          y
 >        |                          |
+>
 >    1   •                      5   •
 >        |                          |
+>
 > -------+------- x          -------+------- x
 >        |                          |
+>
 >        •  1                       •  3
 > 
 > Los ejes de la elipse son q₁ y q₂
@@ -712,6 +729,9 @@ dg-publish: true
 > **Jerarquía de matrices:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_–_Teorema_espectral_04.svg]]
+>
+> **Se lee así:** el diagrama presenta operadores normales aa† = a†a y hermitianas a = a† y unitarias a†a = i y antihhermitianas a† = -a.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Teorema espectral para operadores normales:**
 > 
@@ -1200,6 +1220,9 @@ dg-publish: true
 > **Aplicaciones principales:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_–_Teorema_espectral_05.svg]]
+>
+> **Se lee así:** el diagrama presenta teorema espectral y formas cuadráticas y clasificación y optimización.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Fórmulas clave:**
 > 

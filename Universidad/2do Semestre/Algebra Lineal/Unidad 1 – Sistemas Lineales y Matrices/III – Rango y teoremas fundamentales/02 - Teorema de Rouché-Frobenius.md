@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad1, 02-teorema-de-rouche-frobenius]
 ---
 
 # 🔍 Teorema de Rouché-Frobenius
@@ -1931,9 +1932,11 @@ dg-publish: true
 >     R₁=2Ω        R₂=3Ω
 >   ───/\/\/\───●───/\/\/\───
 >   |           |            |
+>
 >   |           |            |
 >  V₁=12V      R₃=4Ω       V₂=6V
 >   |           |            |
+>
 >   |           |            |
 >   ─────────────●───────────
 > ```
@@ -2643,7 +2646,7 @@ dg-publish: true
 > 
 > ### Mensaje final
 > 
-> > _"El Teorema de Rouché-Frobenius no solo nos dice si un sistema tiene solución, sino que nos revela la estructura profunda de las relaciones lineales. Es la puerta de entrada al pensamiento matemático moderno."_
+> _"El Teorema de Rouché-Frobenius no solo nos dice si un sistema tiene solución, sino que nos revela la estructura profunda de las relaciones lineales. Es la puerta de entrada al pensamiento matemático moderno."_
 > 
 > ¡Sigue practicando y explorando las maravillas del álgebra lineal! 🚀
 
@@ -2764,3 +2767,6 @@ dg-publish: true
 > - Mathematica/WolframAlpha - Cálculos simbólicos
 > - GeoGebra - Visualización geométrica
 
+---
+
+**Tags:** #MATG1049 #algebra-lineal #unidad1 #rango #teorema-de-rouche-frobenius #sistemas-lineales #compatibilidad #soluciones

@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 06-espacio-fila]
 ---
 
 # 📐 Espacio Fila
@@ -7,6 +8,7 @@ dg-publish: true
 ## 🌟 Concepto Fundamental
 
 > [!info] Definición Intuitiva
+>
 > **El espacio fila de una matriz es el subespacio vectorial generado por sus filas. Representa todos los vectores que pueden obtenerse como combinaciones lineales de las filas de la matriz. Este concepto es el dual del espacio columna y comparte con él la misma dimensión (el rango), aunque viven en espacios diferentes.**
 > 
 > **Características clave:**
@@ -19,6 +21,7 @@ dg-publish: true
 ### 📖 Contexto Histórico
 
 > [!note] Desarrollo del Concepto
+>
 > **Orígenes duales (1850-1880):**
 > - **Sylvester (1850):** Concepto de rango
 >   - Introducción del término "rank"
@@ -55,6 +58,7 @@ dg-publish: true
 ## 📊 Definición Formal
 
 > [!important] Espacio Fila
+>
 > **Definición:**
 > 
 > Sea $A$ una matriz $m \times n$:
@@ -101,6 +105,7 @@ dg-publish: true
 ## 🎯 Propiedades Fundamentales
 
 > [!success] Características del Espacio Fila
+>
 > **Teorema: Row(A) es un subespacio**
 > 
 > **DEMOSTRACIÓN:**
@@ -169,6 +174,7 @@ dg-publish: true
 ## 🔥 Propiedad Clave: Preservación por Operaciones de Fila
 
 > [!warning] Diferencia Crítica con Espacio Columna
+>
 > **Teorema: Las operaciones elementales por filas PRESERVAN el espacio fila**
 > 
 > Si $B$ se obtiene de $A$ mediante operaciones elementales por filas:
@@ -221,6 +227,7 @@ dg-publish: true
 ## 🔍 Cálculo del Espacio Fila
 
 > [!tip] Método de Reducción por Filas
+>
 > **Algoritmo para encontrar base de Row(A):**
 > 
 > **PROCEDIMIENTO:**
@@ -287,6 +294,7 @@ dg-publish: true
 ## 📈 Relación Fila-Columna
 
 > [!important] Teorema Fundamental del Rango
+>
 > **Igualdad de dimensiones:**
 > 
 > Para cualquier matriz $A$:
@@ -300,6 +308,9 @@ dg-publish: true
 > **INTERPRETACIÓN GEOMÉTRICA:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Espacio_fila_01.svg]]
+>
+> **Se lee así:** el diagrama presenta mismo rang y matriz a: m×n y row a ⊆ ℝⁿ y col a ⊆ ℝᵐ.
+> **Por qué importa:** conecta el álgebra con la geometría: cuántas soluciones tiene un sistema y por qué.
 > 
 > **Espacios diferentes, misma dimensión:**
 > 
@@ -334,9 +345,13 @@ dg-publish: true
 ## 🎨 Interpretación Geométrica
 
 > [!note] Visualización del Espacio Fila
+>
 > **Comparación visual Row vs Col:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Espacio_fila_02.svg]]
+>
+> **Se lee así:** el diagrama presenta espacio columna y espacio fila y matriz 3×4 y misma dim.
+> **Por qué importa:** conecta el álgebra con la geometría: cuántas soluciones tiene un sistema y por qué.
 > 
 > **CASO 1: Matriz 2×3 con filas LI**
 > 
@@ -380,9 +395,13 @@ dg-publish: true
 ## 🔗 Los Cuatro Subespacios Fundamentales
 
 > [!success] Teorema de los Cuatro Subespacios
+>
 > **Para matriz $A$ de $m \times n$ con rango $r$:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Espacio_fila_03.svg]]
+>
+> **Se lee así:** el diagrama presenta codominio: ℝᵐ y dominio: ℝⁿ y transformación y aniquilado.
+> **Por qué importa:** conecta el álgebra con la geometría: cuántas soluciones tiene un sistema y por qué.
 > 
 > **TABLA COMPARATIVA:**
 > 
@@ -438,6 +457,7 @@ dg-publish: true
 ## 💡 Ejemplos Resueltos
 
 > [!example] Problemas Detallados
+>
 > **Problema 1: Encontrar base de Row(A)**
 > 
 > Sea 
@@ -629,6 +649,7 @@ dg-publish: true
 ## ⚡ Propiedades Adicionales
 
 > [!important] Teoremas sobre Espacio Fila
+>
 > **Propiedades de preservación:**
 > 
 > **P1)** Si $B = PA$ donde $P$ es invertible:
@@ -685,6 +706,7 @@ dg-publish: true
 ## 🎯 Aplicaciones del Espacio Fila
 
 > [!note] Usos Prácticos
+>
 > **1. Sistemas de ecuaciones:**
 > 
 > **Interpretación dual:**
@@ -741,6 +763,7 @@ dg-publish: true
 ## ⚠️ Errores Comunes
 
 > [!warning] Malentendidos Frecuentes
+>
 > **1. "Row(A) usa filas de la matriz original"**
 > 
 > ❌ **INCOMPLETO**
@@ -846,6 +869,7 @@ dg-publish: true
 ## 🔗 Conexiones con Otros Temas
 
 > [!quote] Enlaces Conceptuales
+>
 > **Fundamentos previos:**
 > - [[01 - Vectores en espacios vectoriales (definición y propiedades)|01 - Vectores en espacios vectoriales]] - Subespacios
 > - [[02 – Combinación lineal]] - Span
@@ -869,6 +893,7 @@ dg-publish: true
 ## 📚 Recursos Adicionales
 
 > [!note] Herramientas y Referencias
+>
 > **Software de álgebra lineal:**
 > 
 > - **MATLAB**
@@ -902,6 +927,7 @@ dg-publish: true
 ## 📖 Bibliografía Esencial
 
 > [!tip] Lecturas Recomendadas
+>
 > **Nivel introductorio:**
 > - **Lay, D. C.** (2016). _Álgebra Lineal y sus Aplicaciones_ (5ª ed.). Pearson.
 >   - Cap. 4.6: Rango

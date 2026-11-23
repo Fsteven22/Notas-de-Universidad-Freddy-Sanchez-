@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 08-teorema-de-la-dimension]
 ---
 
 # 📐 Teorema de la Dimensión (Rango–Nulidad)
@@ -672,6 +673,7 @@ dg-publish: true
 ## 🔗 Relación con Otros Teoremas
 
 > [!note] Conexiones Fundamentales 
+>
 > **1. TEOREMA DE ISOMORFISMO (First Isomorphism Theorem)**
 > 
 > Para $T: V \to W$ lineal: $$\boxed{V/\text{Ker}(T) \cong \text{Im}(T)}$$
@@ -831,6 +833,7 @@ dg-publish: true
 ## 🔗 Conexiones con Otros Temas
 
 > [!quote] Enlaces Conceptuales 
+>
 > **Fundamentos previos:**
 > 
 > - [[01 - Vectores en espacios vectoriales (definición y propiedades)|01 - Vectores en espacios vectoriales]] - Espacios vectoriales

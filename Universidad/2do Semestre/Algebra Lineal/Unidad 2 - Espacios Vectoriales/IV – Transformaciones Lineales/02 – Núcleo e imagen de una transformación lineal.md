@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 02-nucleo-e-imagen-de-una-transformacion-lineal]
 ---
 
 # 🎯 Núcleo e Imagen de una Transformación Lineal
@@ -308,6 +309,7 @@ dg-publish: true
 >     Ker(T)          complemento U
 >    (dim = k)        (dim = n-k)
 >        |                 |
+>
 >        |                 | isomorfismo
 >        ↓                 ↓
 >        0              Im(T)
@@ -743,6 +745,7 @@ dg-publish: true
 >       /   \
 >   Ker(T)   U
 >      |      |
+>
 >      |      | T (isomorfismo)
 >      ↓      ↓
 >      0   Im(T)

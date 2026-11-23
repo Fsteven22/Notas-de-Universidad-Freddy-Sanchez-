@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 04-matriz-de-cambio-de-base]
 ---
 
 # 📘 Matriz de Cambio de Base
@@ -1606,6 +1607,7 @@ dg-publish: true
 > ```
 > P_{C <- B}:
 > [[ 0.33333333  0.66666667]
+>
 >  [ 1.          0.33333333]]
 > 
 > [u]_B = [2 3]
@@ -1613,10 +1615,12 @@ dg-publish: true
 > 
 > P^{-1} (debería ser P_{B <- C}):
 > [[-0.2  0.4]
+>
 >  [ 0.6  0.2]]
 > 
 > P * P^{-1}:
 > [[1. 0.]
+>
 >  [0. 1.]]
 > ```
 >
@@ -2112,3 +2116,7 @@ dg-publish: true
 > - **Principiante** → Ejemplos 1-3, Ejercicios 1-5
 > - **Intermedio** → Ejemplos 4-5, Ejercicios 6-10
 > - **Avanzado** → Aplicaciones, Ejercicios 11-15, Teoría Profunda
+
+---
+
+**Tags:** #MATG1049 #algebra-lineal #unidad2 #matriz-cambio-de-base #coordenadas #transformaciones #representacion-matricial

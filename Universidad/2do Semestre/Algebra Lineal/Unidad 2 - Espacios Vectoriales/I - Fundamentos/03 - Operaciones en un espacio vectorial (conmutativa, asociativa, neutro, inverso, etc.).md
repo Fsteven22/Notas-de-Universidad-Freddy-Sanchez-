@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 03-operaciones-en-un-espacio-vectorial]
 ---
 
 # 🔄 Operaciones en un Espacio Vectorial
@@ -115,6 +116,7 @@ dg-publish: true
 > α < 0: estira/comprime e invierte dirección
 > α = 0: produce vector cero
 > |α| = 1: preserva longitud (±1 invierte)
+>
 > 
 > Ejemplo en ℝ²:
 > 3(2, 1) = (6, 3)

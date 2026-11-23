@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 04-proyeccion-ortogonal]
 ---
 
 # 🎯 Proyección Ortogonal
@@ -28,7 +29,14 @@ dg-publish: true
 > |**Filtrado**|Extraer componentes deseadas|Procesamiento de señales, imágenes|
 > |**Geometría**|Distancias y ángulos|Colisiones, renderizado 3D|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_01.svg]]
+> [!info] 📊 04 – Proyección Ortogonal 01
+>
+> ![[04_–_Proyección_ortogonal_01.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta vector original v y proyectar sobre y vector u proyección 1d y subespacio w proyección nd.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -62,6 +70,9 @@ dg-publish: true
 > **Interpretación geométrica:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_02.svg]]
+>
+> **Se lee así:** el diagrama presenta vector v y descomponer respecto a u y componente paralela proj_u v y componente perpendicular perp_u v.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Propiedades fundamentales:**
 > 
@@ -84,6 +95,7 @@ dg-publish: true
 > 
 > PASO 2: Calcular ||u||²
 > ||u||² = 1² + 0² = 1
+>
 > 
 > PASO 3: Aplicar fórmula
 > proj_u(v) = (3/1)(1, 0) = (3, 0)
@@ -110,6 +122,7 @@ dg-publish: true
 > 
 > PASO 2: Calcular ||u||²
 > ||u||² = 3² + 4² = 9 + 16 = 25
+>
 > 
 > PASO 3: Aplicar fórmula
 > proj_u(v) = (23/25)(3, 4) = (69/25, 92/25) = (2.76, 3.68)
@@ -133,6 +146,7 @@ dg-publish: true
 > 
 > PASO 2: Calcular ||u||²
 > ||u||² = 1² + 1² + 0² = 2
+>
 > 
 > PASO 3: Aplicar fórmula
 > proj_u(v) = (3/2)(1, 1, 0) = (3/2, 3/2, 0) = (1.5, 1.5, 0)
@@ -243,6 +257,9 @@ dg-publish: true
 > **Diferencia con proyección sobre vector:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_03.svg]]
+>
+> **Se lee así:** el diagrama presenta proyección y sobre vector u línea 1d y sobre subespacio w plano nd y fórmula: ⟨v,u⟩/.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Caracterización del subespacio:**
 > 
@@ -281,6 +298,9 @@ dg-publish: true
 > **Algoritmo de cálculo:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_04.svg]]
+>
+> **Se lee así:** el diagrama presenta sí y vector v a proyectar y ¿base de w es ortogonal? y usar fórmula directa.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplo completo: Proyección sobre plano**
 > 
@@ -295,11 +315,13 @@ dg-publish: true
 > PASO 1: Proyección sobre u₁
 > ⟨v, u₁⟩ = 1(1) + 2(0) + 3(0) = 1
 > ||u₁||² = 1
+>
 > proj_u₁(v) = (1/1)(1, 0, 0) = (1, 0, 0)
 > 
 > PASO 2: Proyección sobre u₂
 > ⟨v, u₂⟩ = 1(0) + 2(1) + 3(0) = 2
 > ||u₂||² = 1
+>
 > proj_u₂(v) = (2/1)(0, 1, 0) = (0, 2, 0)
 > 
 > PASO 3: Sumar proyecciones
@@ -371,6 +393,7 @@ dg-publish: true
 >    = (1,2) - (8/5, 4/5)
 >    = (-3/5, 6/5)
 > ||u₂||² = 9/25 + 36/25 = 45/25 = 9/5
+>
 > 
 > proj_W(v) = [(5·2 + 5·1)/5](2,1) + [(5·(-3/5) + 5·(6/5))/(9/5)](-3/5, 6/5)
 >           = (15/5)(2,1) + [(−15/5 + 30/5)/(9/5)](-3/5, 6/5)
@@ -400,6 +423,9 @@ dg-publish: true
 > **Comparación de métodos:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_05.svg]]
+>
+> **Se lee así:** el diagrama presenta gram-schmidt y ecuaciones normales y base arbitraria y método?.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 
@@ -422,6 +448,9 @@ dg-publish: true
 > **Algoritmo:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_06.svg]]
+>
+> **Se lee así:** el diagrama presenta vector v y subespacio w y calcular proj_w v y calcular residuo: r = v - proj_w v y distancia: d =.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplo 1: Distancia punto-línea en ℝ²**
 > 
@@ -499,6 +528,7 @@ dg-publish: true
 > 
 > ```
 > ||v - w||² = ||v - proj_W(v) + proj_W(v) - w||²
+>
 >            = ||perp_W(v)||² + ||proj_W(v) - w||²  [Pitágoras]
 >            ≥ ||perp_W(v)||²  [porque el segundo término ≥ 0]
 >            = ||v - proj_W(v)||²
@@ -509,6 +539,9 @@ dg-publish: true
 > **Visualización:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_07.svg]]
+>
+> **Se lee así:** el diagrama presenta vector v fuera de w y buscar w ∈ w más cercano y ¿cuál w minimiza y cualquier otro w mayor distancia.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Aplicación: Ajuste de curvas**
 > 
@@ -825,6 +858,9 @@ dg-publish: true
 > **Comparación de métodos:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_08.svg]]
+>
+> **Se lee así:** el diagrama presenta sí y base de w y ¿es ortonormal? y p = uu^t directo.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 
@@ -843,6 +879,9 @@ dg-publish: true
 > - Minimizar ||**b** - **Ax**||² (error cuadrático)
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_09.svg]]
+>
+> **Se lee así:** el diagrama presenta sí y sistema ax = b y ¿tiene solución exacta? y resolver normalmente.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ecuación normal:**
 > 
@@ -1064,6 +1103,9 @@ dg-publish: true
 > **Interpretación geométrica:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_10.svg]]
+>
+> **Se lee así:** el diagrama presenta espacio v y subespacio w y complemento w⊥ y todos los vectores en w.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplos en ℝ³:**
 > 
@@ -1095,6 +1137,7 @@ dg-publish: true
 ### 🔍 Cálculo del Complemento Ortogonal
 
 > [!example] 🛠️ Métodos de Construcción
+>
 > **Método 1: A partir de base**
 > 
 > Si W = span{v₁, v₂, ..., vₖ}, entonces w ∈ W⊥ si y solo si:
@@ -1208,7 +1251,14 @@ dg-publish: true
 
 ### 🗺️ Mapa Conceptual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_11.svg]]
+> [!info] 📊 04 – Proyección Ortogonal 11
+>
+> ![[04_–_Proyección_ortogonal_11.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta proyección ortogonal y proyección sobre vector y fórmula: / y ^2 · u.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ### 📋 Tabla Resumen de Fórmulas
 
@@ -1228,7 +1278,14 @@ dg-publish: true
 
 ### 🎯 Diagrama de Flujo de Decisión
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_12.svg]]
+> [!info] 📊 04 – Proyección Ortogonal 12
+>
+> ![[04_–_Proyección_ortogonal_12.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta vector u y subespacio w y ortonormal y ortogonal.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -1245,6 +1302,7 @@ dg-publish: true
 > ```
 > ⟨v, u⟩ = 4(1) + 3(0) = 4
 > ||u||² = 1
+>
 > proj_u(v) = 4(1, 0) = (4, 0)
 > perp_u(v) = (4, 3) - (4, 0) = (0, 3)
 > ```
@@ -1256,6 +1314,7 @@ dg-publish: true
 > ```
 > ⟨v, u⟩ = 3
 > ||u||² = 1
+>
 > proj_u(v) = 3(0, 0, 1) = (0, 0, 3)
 > [Extrae solo componente z]
 > ```
@@ -1267,6 +1326,7 @@ dg-publish: true
 > ```
 > Línea: W = span{(1, 1)}
 > ||u||² = 2
+>
 > ⟨v, u⟩ = 2(1) + 5(1) = 7
 > proj_u(v) = (7/2)(1, 1) = (3.5, 3.5)
 > 

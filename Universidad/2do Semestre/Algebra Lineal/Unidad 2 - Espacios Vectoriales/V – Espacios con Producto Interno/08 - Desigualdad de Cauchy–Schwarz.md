@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 08-desigualdad-de-cauchy-schwarz]
 ---
 
 # 🎯 Desigualdad de Cauchy–Schwarz
@@ -28,7 +29,14 @@ dg-publish: true
 > |**Probabilística**|Correlación y covarianza|Coeficiente de Pearson ≤ 1|
 > |**Optimización**|Límites en problemas de máximos|Teoría de aproximación|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_01.svg]]
+> [!info] 📊 08 - Desigualdad De Cauchy–Schwarz 01
+>
+> ![[08_-_Desigualdad_de_Cauchy–Schwarz_01.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta desigualdad de cauchy-schwarz y casos y vectores paralelos y &lt;.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -61,9 +69,11 @@ dg-publish: true
 > 
 > Lado izquierdo:
 > |⟨u, v⟩| = |3(1) + 4(2)| = |11| = 11
+>
 > 
 > Lado derecho:
 > ||u|| ||v|| = √(9 + 16) · √(1 + 4)
+>
 >             = 5 · √5
 >             ≈ 11.18
 > 
@@ -102,6 +112,9 @@ dg-publish: true
 > **Visualización en ℝ²:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_02.svg]]
+>
+> **Se lee así:** el diagrama presenta u y ⟨u,v⟩ y origen y extremo u.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 🔄 Formulaciones Equivalentes
 
@@ -153,6 +166,9 @@ dg-publish: true
 > **Equivalencias:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_03.svg]]
+>
+> **Se lee así:** el diagrama presenta cauchy-schwarz y ⟨u,v⟩ y (σuᵢvᵢ)² ≤ (σuᵢ²)(σvᵢ²) y cos θ.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 
@@ -182,18 +198,23 @@ dg-publish: true
 > 
 > Por el teorema de Pitágoras:
 > ||u||² = ||proj_v(u)||² + ||componente ortogonal||²
+>
 > 
 > Paso 4: Como el segundo término es no negativo:
 > ||u||² ≥ ||proj_v(u)||²
+>
 > 
 > Sustituyendo:
 > ||u||² ≥ (⟨u,v⟩/||v||)²
+>
 > 
 > Paso 5: Multiplicar ambos lados por ||v||²:
 > ||u||² ||v||² ≥ ⟨u,v⟩²
+>
 > 
 > Tomando raíz cuadrada:
 > ||u|| ||v|| ≥ |⟨u,v⟩|  ∎
+>
 > ```
 > 
 > **Interpretación visual:**
@@ -207,6 +228,9 @@ dg-publish: true
 > La igualdad ocurre cuando la componente ortogonal es cero, es decir, cuando **u** es paralelo a **v**.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_04.svg]]
+>
+> **Se lee así:** el diagrama presenta longitud = y ⟨u,v⟩ y vector u y proyección sobre v.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 🧮 Demostración Algebraica
 
@@ -239,6 +263,7 @@ dg-publish: true
 > 
 > Tomando raíz cuadrada:
 > |⟨u,v⟩| ≤ ||u|| ||v||  ∎
+>
 > ```
 > 
 > **Interpretación:** El hecho de que ‖**u** + t**v**‖² sea siempre no negativo impone una restricción en el producto interno.
@@ -317,6 +342,7 @@ dg-publish: true
 > 
 > ⟨u, v⟩ = 2 + 8 + 18 = 28
 > ||u|| ||v|| = √56 · √14 = √784 = 28 ✅
+>
 > 
 > Ejemplo 2 - Igualdad NO alcanzada:
 > u = (1, 0)
@@ -324,6 +350,7 @@ dg-publish: true
 > 
 > ⟨u, v⟩ = 1
 > ||u|| ||v|| = 1 · √2 ≈ 1.414
+>
 > 1 < 1.414 ✅ (desigualdad estricta)
 > 
 > Ejemplo 3 - Dirección opuesta:
@@ -333,6 +360,7 @@ dg-publish: true
 > 
 > ⟨u, v⟩ = -3 - 12 = -15
 > |⟨u, v⟩| = 15
+>
 > ||u|| ||v|| = √45 · √5 = √225 = 15 ✅
 > ```
 > 
@@ -348,6 +376,9 @@ dg-publish: true
 > **Diagrama de casos:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_05.svg]]
+>
+> **Se lee así:** el diagrama presenta sí y vectores u y v y ¿uno es cero? y igualdad trivial 0 = 0.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 
@@ -430,6 +461,7 @@ dg-publish: true
 > 
 > ```
 > ||u + v||² = ⟨u + v, u + v⟩
+>
 >            = ⟨u,u⟩ + 2⟨u,v⟩ + ⟨v,v⟩
 >            = ||u||² + 2⟨u,v⟩ + ||v||²
 >            ≤ ||u||² + 2|⟨u,v⟩| + ||v||²
@@ -438,6 +470,7 @@ dg-publish: true
 > 
 > Tomando raíz cuadrada:
 > ||u + v|| ≤ ||u|| + ||v||  ∎
+>
 > ```
 > 
 > **Interpretación geométrica:**
@@ -471,6 +504,9 @@ dg-publish: true
 >     
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_06.svg]]
+>
+> **Se lee así:** el diagrama presenta u y u + v y u + v y origen.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 📊 Coeficiente de Correlación
 
@@ -599,6 +635,7 @@ dg-publish: true
 > 
 > Lado izquierdo:
 > |1·3| + |2·4| = 3 + 8 = 11
+>
 > 
 > Lado derecho:
 > (1³ + 2³)^(1/3) · (3^(3/2) + 4^(3/2))^(2/3)
@@ -654,6 +691,7 @@ dg-publish: true
 > 
 > Verificación:
 > |32| ≤ 32.83 ✅
+>
 > 
 > b) Cálculos:
 > ⟨u, v⟩ = 1(1) + (−1)(1) = 0
@@ -665,6 +703,7 @@ dg-publish: true
 > 
 > Verificación:
 > |0| ≤ 2 ✅
+>
 > (Vectores ortogonales)
 > ```
 >
@@ -683,6 +722,7 @@ dg-publish: true
 > 
 > Paso 2: Normas
 > ||u|| = 1
+>
 > ||v|| = √3
 > 
 > Paso 3: Coseno
@@ -743,9 +783,11 @@ dg-publish: true
 > 
 > Paso 2: Lado izquierdo
 > ||u + v|| = √(16 + 36) = √52 ≈ 7.21
+>
 > 
 > Paso 3: Lado derecho
 > ||u|| = √(9 + 16) = 5
+>
 > ||v|| = √(1 + 4) = √5 ≈ 2.24
 > ||u|| + ||v|| ≈ 7.24
 > 
@@ -769,14 +811,17 @@ dg-publish: true
 > 
 > Paso 2: Norma de f
 > ||f||² = ∫₀¹ 1² dx = 1
+>
 > ||f|| = 1
 > 
 > Paso 3: Norma de g
 > ||g||² = ∫₀¹ x² dx = [x³/3]₀¹ = 1/3
+>
 > ||g|| = 1/√3
 > 
 > Paso 4: Verificar
 > |⟨f,g⟩| = 1/2
+>
 > ||f|| ||g|| = 1 · (1/√3) = 1/√3 ≈ 0.577
 > 
 > 1/2 = 0.5 ≤ 0.577 ✅
@@ -788,7 +833,14 @@ dg-publish: true
 
 ### Mapa Conceptual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_07.svg]]
+> [!info] 📊 08 - Desigualdad De Cauchy–Schwarz 07
+>
+> ![[08_-_Desigualdad_de_Cauchy–Schwarz_07.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta cauchy-schwarz y enunciado y ⟨u,v⟩ y forma algebraica.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ### Tabla Resumen
 

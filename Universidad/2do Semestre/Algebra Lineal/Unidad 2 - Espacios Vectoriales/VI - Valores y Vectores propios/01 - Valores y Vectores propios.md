@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 01-valores-y-vectores-propios]
 ---
 
 # 🎯 Valores y Vectores Propios en Álgebra Lineal
@@ -32,7 +33,14 @@ dg-publish: true
 > | **Vibraciones** | Modos naturales de oscilación | Análisis estructural, cuerdas |
 > | **Ranking** | Importancia de elementos | PageRank de Google |
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_01.svg]]
+> [!info] 📊 01 - Valores Y Vectores Propios 01
+>
+> ![[01_-_Valores_y_Vectores_propios_01.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta matriz a y transformación y vectores generales cambian dirección y vectores propios mantienen dirección.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
+
 
 ---
 
@@ -45,6 +53,9 @@ dg-publish: true
 > **Comparación visual de vectores:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_02.svg]]
+>
+> **Se lee así:** el diagrama presenta vector cualquiera y transformación a y cambia dirección y magnitud y vector propio.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Ejemplo concreto:**
 > 
@@ -60,6 +71,9 @@ dg-publish: true
 > **Representación gráfica:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_03.svg]]
+>
+> **Se lee así:** el diagrama presenta multiplicar por a y vector v y ¿es vector propio? y av cambia dirección y magnitud.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Casos especiales de valores propios:**
 > 
@@ -98,6 +112,9 @@ dg-publish: true
 > **Proceso paso a paso:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_04.svg]]
+>
+> **Se lee así:** el diagrama presenta matriz a y formar a - λi y calcular determinante y igualar a cero.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Ejemplo detallado (2×2):**
 > 
@@ -209,6 +226,9 @@ dg-publish: true
 > **Casos especiales:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_05.svg]]
+>
+> **Se lee así:** el diagrama presenta tipo de matriz y diagonal y triangular y simétrica.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 
 ---
 
@@ -226,6 +246,9 @@ dg-publish: true
 > **Proceso algorítmico:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_06.svg]]
+>
+> **Se lee así:** el diagrama presenta valor propio λ conocido y formar a - λi y plantear sistema homogéneo y reducir a forma escalonada.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Ejemplo completo:**
 > 
@@ -306,6 +329,9 @@ dg-publish: true
 > **Base de vectores propios:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_07.svg]]
+>
+> **Se lee así:** el diagrama presenta sí y matriz a n×n y ¿n vectores propios linealmente independientes? y a es diagonalizable.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 
 ---
 
@@ -338,10 +364,16 @@ dg-publish: true
 > **Visualización geométrica:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_08.svg]]
+>
+> **Se lee así:** el diagrama presenta p⁻¹¹ y d escala y a transforma complicado y espacio original.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Proceso de diagonalización:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_09.svg]]
+>
+> **Se lee así:** el diagrama presenta sí y matriz a y calcular valores propios λ y calcular vectores propios v.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 
 ### 📊 Ejemplo Completo
 
@@ -455,6 +487,9 @@ dg-publish: true
 > Si A = Aᵄ (simétrica):
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_10.svg]]
+>
+> **Se lee así:** el diagrama presenta matriz simétrica a = aᵄ y λ siempre reales y vectores propios ortogonales y siempre diagonalizable.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Ventajas:**
 > - Q⁻ = Qᵄ (fácil de calcular)
@@ -504,6 +539,9 @@ dg-publish: true
 > **Regla:** Multiplicidad geométrica ≄ Multiplicidad algebraica
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_11.svg]]
+>
+> **Se lee así:** el diagrama presenta sí y λ con multiplicidad m y geométrica = algebraica? y ✓ diagonalizable en ese λ.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 
 ### 🔢 Casos Especiales
 
@@ -524,6 +562,7 @@ dg-publish: true
 > 
 > Valores propios: λ = i, -i
 > |λ| = ∄(0² + 1²) = 1 ✓
+>
 > ```
 > 
 > ---
@@ -589,6 +628,9 @@ dg-publish: true
 > **Resumen comparativo:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_12.svg]]
+>
+> **Se lee así:** el diagrama presenta tipo de matriz y ortogonal y proyección λ ∄ {0,1} y markov λ_max=1.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 
 ---
 ## 🎓 Ejercicios Guiados
@@ -865,7 +907,14 @@ dg-publish: true
 
 ### Mapa Conceptual General
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_13.svg]]
+> [!info] 📊 01 - Valores Y Vectores Propios 13
+>
+> ![[01_-_Valores_y_Vectores_propios_13.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta valores y vectores propios y definición y av = λv y λ es valor propio.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
+
 
 ### Tabla Resumen Completa
 
@@ -887,6 +936,7 @@ dg-publish: true
 ## 🎯 Casos Comunes y Atajos
 
 > [!tip] ⚄ Trucos para Resolver Más Rápido
+>
 > **1. Matrices 2×2**
 > 
 > Para $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$:
@@ -940,10 +990,17 @@ dg-publish: true
 ## 🔗 Conexión con Próximos Temas
 
 > [!quote] 🌟 Continuando el Aprendizaje
-
-**Has dominado:**
-
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_14.svg]]
+>
+> **Has dominado:**
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_14.svg]]
+>
+> **Se lee así:** el diagrama presenta valores y vectores propios y fundamentos y definición av=λv y ecuación característica.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
+>
+> **Se lee así:** el mapa resume todo el tema — definición ($Av = \lambda v$, ecuación característica), técnicas (cálculo de $\lambda$ y $v$, diagonalización, métodos numéricos), propiedades (matrices especiales, multiplicidad) y aplicaciones (sistemas dinámicos, PCA, PageRank, vibraciones).
+>
+> **Por qué importa:** es el puente entre la teoría de valores y vectores propios y lo que viene: el polinomio característico y la diagonalización.
 
 
 ---

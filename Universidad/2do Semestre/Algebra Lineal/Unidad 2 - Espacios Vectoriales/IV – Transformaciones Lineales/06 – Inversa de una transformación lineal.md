@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 06-inversa-de-una-transformacion-lineal]
 ---
 
 # 🔄 Inversa de una Transformación Lineal
@@ -7,6 +8,7 @@ dg-publish: true
 ## 🌟 Concepto Fundamental
 
 > [!info] Definición Intuitiva
+>
 > **La inversa de una transformación lineal es una transformación que "deshace" el efecto de la original, regresando cada vector a su posición inicial. Es el proceso de "reversa" algebraico que permite recuperar la entrada original a partir de la salida. Solo existe cuando la transformación es biyectiva (isomorfismo), garantizando que cada salida tiene exactamente una entrada asociada.**
 >
 > **Características clave:**
@@ -20,6 +22,7 @@ dg-publish: true
 ### 📖 Contexto Histórico
 
 > [!note] Desarrollo del Concepto
+>
 > **Raíces en funciones inversas (1600-1800):**
 > - **Descartes (1637):** Geometría analítica
 >   - Funciones y sus inversas geométricas
@@ -128,6 +131,7 @@ dg-publish: true
 ## 📊 Definiciones Formales
 
 > [!important] Transformación Lineal Inversa
+>
 > **DEFINICIÓN (Inversa de una Transformación):**
 >
 > Sea $T: V \to W$ una transformación lineal. La **inversa** de $T$ (si existe) es una transformación lineal $T^{-1}: W \to V$ que satisface:
@@ -150,6 +154,7 @@ dg-publish: true
 > $$\boxed{T^{-1} \text{ existe} \iff T \text{ es biyectiva (isomorfismo)}}$$
 >
 > [!important] Transformación Invertible
+>
 > **DEFINICIÓN (Transformación Invertible):**
 >
 > Una transformación lineal $T: V \to W$ es **invertible** si existe su inversa $T^{-1}: W \to V$.
@@ -168,6 +173,7 @@ dg-publish: true
 > 7. Si $T$ está representada por matriz $A$ (cuadrada), entonces $\det(A) \neq 0$
 >
 > [!important] Propiedades Fundamentales de la Inversa
+>
 > **TEOREMA (Propiedades de T⁻¹):**
 >
 > Si $T: V \to W$ es invertible, entonces:
@@ -200,6 +206,7 @@ dg-publish: true
 ## 🎯 Teoremas Fundamentales
 
 > [!success] Teorema de Existencia y Unicidad
+>
 > **TEOREMA 1: Existencia y unicidad de la inversa** ⭐⭐⭐
 >
 > Sea $T: V \to W$ transformación lineal.
@@ -278,6 +285,7 @@ dg-publish: true
 >
 
 > [!success] Teorema de Composición de Inversas
+>
 > **TEOREMA 2: Inversa de una composición** ⭐
 >
 > Sean $T: U \to V$ y $S: V \to W$ transformaciones lineales invertibles.
@@ -322,6 +330,7 @@ dg-publish: true
 >
 
 > [!success] Teorema de Representación Matricial
+>
 > **TEOREMA 3: Matriz de la inversa** ⭐⭐
 >
 > Sea $T: V \to W$ transformación lineal invertible, con matrices asociadas $[T]_{\mathcal{B}_V}^{\mathcal{B}_W}$ y $[T^{-1}]_{\mathcal{B}_W}^{\mathcal{B}_V}$ respecto a bases $\mathcal{B}_V$ de $V$ y $\mathcal{B}_W$ de $W$.
@@ -364,6 +373,7 @@ dg-publish: true
 >
 
 > [!success] Teorema del Grupo Lineal General
+>
 > **TEOREMA 4: GL(V) como grupo** ⭐
 >
 > El conjunto de todas las transformaciones lineales invertibles de $V$ en sí mismo forma un **grupo** bajo composición:
@@ -409,6 +419,7 @@ dg-publish: true
 ## 💎 Ejemplos Resueltos Detallados
 
 > [!example] Cálculo de Inversas Directamente
+>
 > **EJEMPLO 1: Inversa en ℝ²**
 >
 > Sea $T: \mathbb{R}^2 \to \mathbb{R}^2$ definida por:
@@ -579,6 +590,7 @@ dg-publish: true
 >
 
 > [!example] Inversas de Composiciones
+>
 > **EJEMPLO 4: Composición de rotaciones**
 >
 > Sean $R_{\theta}: \mathbb{R}^2 \to \mathbb{R}^2$ y $R_{\phi}: \mathbb{R}^2 \to \mathbb{R}^2$ rotaciones con matrices:
@@ -660,6 +672,7 @@ dg-publish: true
 >
 
 > [!example] Aplicaciones Prácticas
+>
 > **EJEMPLO 6: Cambio de coordenadas**
 >
 > En $\mathbb{R}^2$, considerar dos bases:
@@ -729,6 +742,7 @@ dg-publish: true
 ## 🎭 Métodos de Cálculo
 
 > [!tip] Técnicas para Encontrar Inversas
+>
 > **MÉTODO 1: Inversión de matrices (casos pequeños)**
 >
 > Para matrices $2 \times 2$:
@@ -798,6 +812,7 @@ dg-publish: true
 ## 📐 Propiedades Algebraicas Adicionales
 
 > [!note] Álgebra de Transformaciones Inversas
+>
 > **PROPIEDAD 1: Involución**
 > $$\boxed{(T^{-1})^{-1} = T}$$
 >
@@ -861,6 +876,7 @@ dg-publish: true
 ## ⚠️ Errores Comunes
 
 > [!warning] Malentendidos Frecuentes
+>
 > **1. "T⁻¹ significa 1/T"**
 >
 > ❌ **FALSO**
@@ -981,6 +997,7 @@ dg-publish: true
 ## 🔍 Casos Especiales Importantes
 
 > [!note] Transformaciones con Propiedades Especiales
+>
 > **CASO 1: Transformaciones Ortogonales**
 >
 > Una transformación $T: \mathbb{R}^n \to \mathbb{R}^n$ es **ortogonal** si preserva el producto interno:
@@ -1058,6 +1075,7 @@ dg-publish: true
 ## 🎯 Aplicaciones Importantes
 
 > [!tip] Aplicaciones en Diversas Áreas
+>
 > **APLICACIÓN 1: Sistemas de ecuaciones lineales**
 >
 > Si $A$ es invertible, el sistema $A\vec{x} = \vec{b}$ tiene **solución única**:
@@ -1151,6 +1169,7 @@ dg-publish: true
 ## 📊 Tabla de Referencia Rápida
 
 > [!note] Guía de Consulta
+>
 > **CONDICIONES DE INVERTIBILIDAD:**
 >
 > | Condición | Equivalencia |
@@ -1198,6 +1217,7 @@ dg-publish: true
 ## 🔗 Conexiones con Otros Temas
 
 > [!quote] Enlaces Conceptuales
+>
 > **Fundamentos previos:**
 > - [[01 – Transformaciones lineales]] - Definición básica
 > - [[02 – Núcleo e imagen de una transformación lineal]] - Caracterización de inyectividad
@@ -1229,6 +1249,7 @@ dg-publish: true
 ## 🧮 Ejercicios Resueltos Adicionales
 
 > [!example] Problemas de Práctica
+>
 > **EJERCICIO 1: Verificación de inversa**
 >
 > Verificar que $T: \mathbb{R}^3 \to \mathbb{R}^3$ y $S: \mathbb{R}^3 \to \mathbb{R}^3$ son inversas una de otra:
@@ -1326,6 +1347,7 @@ dg-publish: true
 ## 🎓 Conceptos Clave - Resumen
 
 > [!important] Ideas Fundamentales para Recordar
+>
 > **DEFINICIÓN CENTRAL:**
 > $$\boxed{T^{-1} \text{ existe} \iff T \text{ es biyectiva (isomorfismo)}}$$
 >

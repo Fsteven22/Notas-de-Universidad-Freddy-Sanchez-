@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 06-complemento-ortogonal]
 ---
 
 # 🔄 Complemento Ortogonal
@@ -26,7 +27,14 @@ dg-publish: true
 > |**Unicidad**|Descomposición única|Estabilidad|
 > |**Geometría**|Visualización clara|Intuición|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Complemento_ortogonal_01.svg]]
+> [!info] 📊 06 – Complemento Ortogonal 01
+>
+> ![[06_–_Complemento_ortogonal_01.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta complemento ortogonal y subespacio w y w⊥ perpendicular a w y v · w = 0 ∀w ∈ w.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -60,6 +68,9 @@ dg-publish: true
 > **Interpretación geométrica:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Complemento_ortogonal_02.svg]]
+>
+> **Se lee así:** el diagrama presenta v · w = 0 y espacio ℝⁿ y subespacio w y complemento w⊥.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 🔍 Criterio Práctico
 
@@ -146,6 +157,7 @@ dg-publish: true
 > En particular, tomando w = v:
 > v · v = 0
 > ||v||² = 0
+>
 > 
 > Por tanto: v = 0 ✓
 > ```
@@ -215,6 +227,9 @@ dg-publish: true
 > **Diagrama de los cuatro subespacios:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Complemento_ortogonal_03.svg]]
+>
+> **Se lee así:** el diagrama presenta a y fila a dim = r y nul a dim = n-r y col a dim = r.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Fórmulas de dimensión:**
 > 
@@ -725,7 +740,14 @@ dg-publish: true
 
 ### Mapa Conceptual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Complemento_ortogonal_04.svg]]
+> [!info] 📊 06 – Complemento Ortogonal 04
+>
+> ![[06_–_Complemento_ortogonal_04.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta complemento ortogonal y definición y w⊥ perpendicular a w y v · w = 0 ∀w∈w.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ### Tabla de Referencia Rápida
 
@@ -986,6 +1008,9 @@ dg-publish: true
 > **Progresión natural:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Complemento_ortogonal_05.svg]]
+>
+> **Se lee así:** el diagrama presenta complemento ortogonal y proyecciones ortogonales y mínimos cuadrados y descomposición qr.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > |Concepto Actual|Próximo Tema|Relación|
 > |---|---|---|

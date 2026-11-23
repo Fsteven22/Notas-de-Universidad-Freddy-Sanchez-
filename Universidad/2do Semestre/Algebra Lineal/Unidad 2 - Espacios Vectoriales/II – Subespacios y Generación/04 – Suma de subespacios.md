@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 04-suma-de-subespacios]
 ---
 
 # 🔷 Suma de Subespacios
@@ -1920,4 +1921,6 @@ dg-publish: true
 > - **Direct Sum** en nLab (categorías)
 
 ---
+
+**Tags:** #MATG1049 #algebra-lineal #unidad2 #subespacios #suma-de-subespacios #generacion #base
 

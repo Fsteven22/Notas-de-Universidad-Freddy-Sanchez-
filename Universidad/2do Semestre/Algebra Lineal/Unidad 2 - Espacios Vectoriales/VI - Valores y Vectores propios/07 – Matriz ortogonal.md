@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 07-matriz-ortogonal]
 ---
 
 # 📊 Matriz Ortogonal 
@@ -32,7 +33,14 @@ dg-publish: true
 > |**Estabilidad numérica**|No amplifica errores|Computación científica|
 > |**Cambios de base**|Transforma coordenadas|Física, ingeniería|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_01.svg]]
+> [!info] 📊 07 – Matriz Ortogonal 01
+>
+> ![[07_–_Matriz_ortogonal_01.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta matriz ortogonal q y columnas ortonormales y filas ortonormales y q^t · q = i.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
+
 
 ---
 
@@ -86,6 +94,9 @@ dg-publish: true
 > **Visualización geométrica:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_02.svg]]
+>
+> **Se lee así:** el diagrama presenta origen y vector u y vector v y ángulo = 90°.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **4. Vectores ortonormales:**
 > 
@@ -170,6 +181,9 @@ dg-publish: true
 > **Propiedades equivalentes:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_03.svg]]
+>
+> **Se lee así:** el diagrama presenta matriz ortogonal q y q^t q = i y q q^t = i y q^-1 = q^t.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Matriz identidad como matriz ortogonal:**
 > 
@@ -234,6 +248,9 @@ dg-publish: true
 > **Flujo de verificación:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_04.svg]]
+>
+> **Se lee así:** el diagrama presenta sí y matriz q cuadrada y ¿calcular q^t q? y multiplicar matrices.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Casos de matrices NO ortogonales:**
 > 
@@ -300,6 +317,9 @@ dg-publish: true
 > **Visualización geométrica:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_05.svg]]
+>
+> **Se lee así:** el diagrama presenta vector original y aplicar r θ y vector rotado y propiedades:.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Composición de rotaciones:**
 > 
@@ -385,6 +405,9 @@ dg-publish: true
 > **Comparación rotación vs reflexión:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_06.svg]]
+>
+> **Se lee así:** el diagrama presenta det = +1 y det = -1 y matriz ortogonal y det q = ?.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Tabla comparativa:**
 > 
@@ -484,6 +507,9 @@ dg-publish: true
 > **Importancia computacional:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_07.svg]]
+>
+> **Se lee así:** el diagrama presenta no y necesito calcular q^-1 y ¿q es ortogonal? y algoritmo general eliminación gaussiana o n³ operaciones.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Ejemplo práctico:**
 > 
@@ -590,6 +616,9 @@ dg-publish: true
 > **Visualización:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_08.svg]]
+>
+> **Se lee así:** el diagrama presenta matriz ortogonal q y preserva normas qv = v y preserva productos qu · qv = u · v y preserva distancias d qu,qv = d u,v.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Ejemplo completo:**
 > 
@@ -636,6 +665,9 @@ dg-publish: true
 > - **det(Q) = -1**: Invierte orientación (reflexión)
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_09.svg]]
+>
+> **Se lee así:** el diagrama presenta +1 y matriz ortogonal q y det q = ? y rotación propia so n.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Ejemplos:**
 > 
@@ -749,6 +781,9 @@ dg-publish: true
 > **Pipeline gráfico:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_10.svg]]
+>
+> **Se lee así:** el diagrama presenta modelo 3d vértices y rotación q₁ matriz ortogonal y escalado s y traslación t.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 
 ### 🔬 Física y Mecánica
 
@@ -849,6 +884,9 @@ dg-publish: true
 > **Visualización:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_11.svg]]
+>
+> **Se lee así:** el diagrama presenta datos originales x correlacionados y aplicar pca calcular q ortogonal y datos transformados y = x q y propiedades de q.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Otras aplicaciones estadísticas:**
 > 
@@ -979,6 +1017,9 @@ dg-publish: true
 > **Flujo del algoritmo:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_12.svg]]
+>
+> **Se lee así:** el diagrama presenta columnas de a y primera columna a₁ y normalizar: q₁ = a₁/‖a₁‖ y segunda columna a₂.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Aplicaciones:**
 > 
@@ -1025,6 +1066,9 @@ dg-publish: true
 > 3. **U**: Rotación en espacio destino
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_13.svg]]
+>
+> **Se lee así:** el diagrama presenta vector x y rotar: v^t x y escalar: σ v^t x y rotar: u σ v^t x.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Ejemplo en ℝ²:**
 > 
@@ -1154,6 +1198,9 @@ dg-publish: true
 > **Aplicaciones:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_14.svg]]
+>
+> **Se lee así:** el diagrama presenta descomposición espectral a = qλq^t y potencias de matriz y función de matriz y formas cuadráticas.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Cálculo de funciones matriciales:**
 > 
@@ -1192,6 +1239,9 @@ dg-publish: true
 > **Esquema de equivalencias:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_15.svg]]
+>
+> **Se lee así:** el diagrama presenta 1. q ortogonal y 2. q^t q = i y 3. q q^t = i y 4. q^-1 = q^t.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Demostración de algunas implicaciones:**
 > 
@@ -1249,6 +1299,9 @@ dg-publish: true
 > **Estructura de grupo:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_16.svg]]
+>
+> **Se lee así:** el diagrama presenta conjunto de matrices ortogonales n×n y operación: multiplicación y ✅ cerradura: q₁q₂ ortogonal y ✅ asociatividad: q₁ q₂q₃ = q₁q₂ q₃.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Propiedades adicionales:**
 > 
@@ -1290,6 +1343,9 @@ dg-publish: true
 > **Relación entre O(n) y SO(n):**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_17.svg]]
+>
+> **Se lee así:** el diagrama presenta o n matrices ortogonales y det = +1 y det = -1 y so n rotaciones.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Ejemplos en dimensiones bajas:**
 > 
@@ -1544,6 +1600,9 @@ dg-publish: true
 > **Definiciones fundamentales:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_18.svg]]
+>
+> **Se lee así:** el diagrama presenta matriz ortogonal y definición matemática y q^t q = i y q^-1 = q^t.
+> **Por qué importa:** un vector propio es una dirección que la transformación solo escala, sin girar.
 > 
 > **Propiedades esenciales:**
 > 

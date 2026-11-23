@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 05-espacios-isomorfos]
 ---
 
 # 🔄 Espacios Isomorfos
@@ -26,7 +27,14 @@ dg-publish: true
 > |**Biyección**|Correspondencia uno a uno|No se pierde ni duplica información|
 > |**Invertibilidad**|Transformación reversible|Puedo ir y volver sin pérdida|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_01.svg]]
+> [!info] 📊 05 – Espacios Isomorfos 01
+>
+> ![[05_–_Espacios_isomorfos_01.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta isomorfismo t y misma dimensión y se preservan y espacio v.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
+
 
 > [!notes] *Definición formal:*
 > 
@@ -69,7 +77,14 @@ dg-publish: true
 
 **Ejemplo visual:**
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_02.svg]]
+> [!info] 📊 05 – Espacios Isomorfos 02
+>
+> ![[05_–_Espacios_isomorfos_02.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta espacio w y transformación t y espacio v y se mapea a.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
+
 
 ### ✅ Criterios para Verificar Isomorfismo
 
@@ -82,6 +97,9 @@ dg-publish: true
 > **Proceso de verificación:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_03.svg]]
+>
+> **Se lee así:** el diagrama presenta no y ¿v ≅ w? y ¿dim v = dim w? y ❌ no son isomorfos garantizado.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > **Checklist para verificar isomorfismo:**
 > 
@@ -199,12 +217,18 @@ dg-publish: true
 > 4. $(T^{-1})^{-1} = T$
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_04.svg]]
+>
+> **Se lee así:** el diagrama presenta t y t⁻¹ ∘ t = i_v y t ∘ t⁻¹ = i_w.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > **Teorema 2: Composición de isomorfismos**
 > 
 > Si $T: U \to V$ y $S: V \to W$ son isomorfismos, entonces $S \circ T: U \to W$ es un isomorfismo.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_05.svg]]
+>
+> **Se lee así:** el diagrama presenta t y s ∘ t.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > **Demostración:**
 > 
@@ -273,6 +297,9 @@ dg-publish: true
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_06.svg]]
 >
+> **Se lee así:** el diagrama presenta t y (2, -3, 5) ∈ ℝ³ y 2 - 3x + 5x² ∈ 𝒫₂ ℝ y (a, b, c).
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
+>
 
 > [!example] 🔢 Ejemplo 2: $\mathbb{R}^4 \cong M_{2 \times 2}(\mathbb{R})$
 > 
@@ -325,6 +352,9 @@ dg-publish: true
 > Este isomorfismo muestra que trabajar con polinomios de grado ≤ n es equivalente a trabajar con vectores en $\mathbb{R}^{n+1}$.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_07.svg]]
+>
+> **Se lee así:** el diagrama presenta t y equivalen y polinomio p x = a₀ + a₁x + ... + aₙxⁿ y vector a₀, a₁, ..., aₙ.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 
 ---
 
@@ -363,6 +393,9 @@ dg-publish: true
 > **Diagrama conceptual:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_08.svg]]
+>
+> **Se lee así:** el diagrama presenta isomorfismo de coordenadas y v _ℬ y se traducen a y espacio abstracto v dim v = n.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 >
 
 > [!example] 📐 Ejemplo: Coordenadas en $\mathcal{P}_2(\mathbb{R})$
@@ -431,6 +464,9 @@ dg-publish: true
 > **Diagrama:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_09.svg]]
+>
+> **Se lee así:** el diagrama presenta p_𝒞←ℬ y p_ℬ←𝒞 y [v]_ℬ coordenadas en base ℬ y [v]_𝒞 coordenadas en base 𝒞.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > **Propiedades:**
 > 
@@ -491,6 +527,9 @@ dg-publish: true
 > 4. Traducir solución al espacio original
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_10.svg]]
+>
+> **Se lee así:** el diagrama presenta isomorfismo t y resolver y problema en espacio abstracto v y problema en ℝⁿ.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > **Ejemplo: Encontrar base ortogonal en $\mathcal{P}_2(\mathbb{R})$**
 > 
@@ -524,6 +563,9 @@ dg-publish: true
 > **Perspectiva 2:** Matrices 2×2 (arreglos numéricos)
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_11.svg]]
+>
+> **Se lee así:** el diagrama presenta isomorfismo y mismo objeto matemático y transformación lineal t: ℝ² → ℝ² y matriz a ∈ m₂ₓ₂ ℝ.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 > 
 > **Ventajas:**
 > 
@@ -537,7 +579,14 @@ dg-publish: true
 
 ### Mapa Conceptual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_12.svg]]
+> [!info] 📊 05 – Espacios Isomorfos 12
+>
+> ![[05_–_Espacios_isomorfos_12.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta espacios isomorfos y definición y transformación lineal y biyectiva.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
+
 
 ### Tabla Resumen
 
@@ -571,7 +620,14 @@ dg-publish: true
 
 ### Diagrama de Flujo: ¿Son Isomorfos?
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_13.svg]]
+> [!info] 📊 05 – Espacios Isomorfos 13
+>
+> ![[05_–_Espacios_isomorfos_13.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta no y ¿v ≅ w? y ¿mismo campo? y ❌ no son isomorfos.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
+
 
 ---
 
@@ -649,6 +705,9 @@ dg-publish: true
 > **Roadmap:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacios_isomorfos_14.svg]]
+>
+> **Se lee así:** el diagrama presenta espacios isomorfos y transformaciones lineales y valores y vectores propios y diagonalización.
+> **Por qué importa:** una transformación lineal queda completamente determinada por la imagen de una base.
 
 ---
 

@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 02-norma-inducida-y-distancia]
 ---
 
 # 📏 Norma Inducida y Distancia
@@ -20,6 +21,9 @@ dg-publish: true
 > - La **distancia** es usar esa regla para medir cuán separados están dos puntos
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_01.svg]]
+>
+> **Se lee así:** el diagrama presenta también define y producto interno ⟨·,·⟩ y norma ‖·‖ y distancia d·,·.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Jerarquía de estructuras:**
 > 
@@ -47,6 +51,9 @@ dg-publish: true
 > La norma $|\mathbf{v}|$ representa la **longitud** o **magnitud** del vector $\mathbf{v}$.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_02.svg]]
+>
+> **Se lee así:** el diagrama presenta vector v y producto interno consigo mismo y ⟨v, v⟩ y raíz cuadrada.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Notación:**
 > 
@@ -69,6 +76,9 @@ dg-publish: true
 > **Verificación de axiomas:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_03.svg]]
+>
+> **Se lee así:** el diagrama presenta norma ‖·‖ inducida y n1: ‖v‖ ≥ 0 y n2: ‖v‖ = 0 ⟺ v = 0 y n3: ‖αv‖ =.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 📊 Demostración de Propiedades
 
@@ -139,6 +149,9 @@ dg-publish: true
 > - En $\mathbb{R}^3$: Es la diagonal del paralelepípedo
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_04.svg]]
+>
+> **Se lee así:** el diagrama presenta vector v = ·3, 4 y componente x: 3 y componente y: 4 y triángulo rectángulo.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Casos especiales:**
 > 
@@ -290,6 +303,9 @@ dg-publish: true
 > La distancia $d(\mathbf{u}, \mathbf{v})$ es la longitud del vector diferencia $\mathbf{u} - \mathbf{v}$.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_05.svg]]
+>
+> **Se lee así:** el diagrama presenta vectores u y v y diferencia u - v y norma de la diferencia y d·u,v = ‖u - v‖.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Expandiendo la definición:**
 > 
@@ -311,6 +327,9 @@ dg-publish: true
 > **Verificación de axiomas:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_06.svg]]
+>
+> **Se lee así:** el diagrama presenta distancia d·,· y m1: d·u,v ≥ 0 y m2: d·u,v = 0 ⟺ u = v y m3: d·u,v = d·v,u.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 📊 Demostración de Propiedades
 
@@ -476,7 +495,7 @@ dg-publish: true
 > ### Desigualdad Triangular Inversa
 > 
 > $$\big| |\mathbf{u}| - |\mathbf{v}| \big| \leq d(\mathbf{u}, \mathbf{v})$$
-> > **Demostración:**
+> **Demostración:**
 > 
 > ```
 > Por desigualdad triangular:
@@ -490,6 +509,7 @@ dg-publish: true
 > 
 > Combinando:
 > |‖u‖ - ‖v‖| ≤ ‖u - v‖ = d(u, v)
+>
 > ```
 > 
 > **Interpretación:**
@@ -548,6 +568,9 @@ dg-publish: true
 > ### En $\mathbb{R}^2$
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_07.svg]]
+>
+> **Se lee así:** el diagrama presenta punto u = ·3,2 y norma ‖u‖ y radio desde origen ‖u‖ = √13 y punto v = ·1,4.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > ### Bolas y Esferas
 > 
@@ -647,6 +670,9 @@ dg-publish: true
 > ### Jerarquía de Estructuras
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_08.svg]]
+>
+> **Se lee así:** el diagrama presenta define y producto interno y norma y distancia.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > ### Próximo Tema
 > 
@@ -681,7 +707,14 @@ dg-publish: true
 > |**Compresión de datos**|Estimar tamaños de representaciones|Algoritmos de compresión|
 > |**Geometría computacional**|Validar construcciones geométricas|Gráficos por computadora|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_09.svg]]
+> [!info] 📊 02 – Norma Inducida Y Distancia 09
+>
+> ![[02_–_Norma_inducida_y_distancia_09.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta distancia directa d(a,c) y d(a,b) y d(b,c) y punto a.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -697,6 +730,7 @@ dg-publish: true
 > 
 > ```
 > ||u + v|| ≤ ||u|| + ||v||
+>
 > ```
 > 
 > **Interpretación:** La norma de la suma de dos vectores nunca excede la suma de sus normas individuales.
@@ -717,6 +751,7 @@ dg-publish: true
 > 
 > ```
 > ||u + v|| = √(⟨u + v, u + v⟩) ≤ ||u|| + ||v||
+>
 > ```
 > 
 > **Comparación de formulaciones:**
@@ -728,7 +763,14 @@ dg-publish: true
 > |**ℝⁿ estándar**|\|\|u + v\|\|₂ ≤ \|
 > |**Números complejos**|\|z₁ + z₂\| ≤ \|z₁\| + \|z₂\||Complejos|Análisis complejo|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_10.svg]]
+> [!info] 📊 02 – Norma Inducida Y Distancia 10
+>
+> ![[02_–_Norma_inducida_y_distancia_10.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta desigualdad triangular y espacios normados y espacios métricos y casos específicos.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ### 🔍 Interpretación Geométrica
 
@@ -743,6 +785,9 @@ dg-publish: true
 > - C = (6, 0)
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_11.svg]]
+>
+> **Se lee así:** el diagrama presenta d(a,b) = 5 y d(b,c) = 5 y d(a,c) = 6 y a(0,0).
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Cálculo de distancias:**
 > 
@@ -764,7 +809,14 @@ dg-publish: true
 > 
 > **Visualización de casos:**
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_12.svg]]
+> [!info] 📊 02 – Norma Inducida Y Distancia 12
+>
+> ![[02_–_Norma_inducida_y_distancia_12.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta caso 3: vectores opuestos y caso 2: desigualdad estricta y caso 1: igualdad (colineales).
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -780,6 +832,7 @@ dg-publish: true
 > 
 > ```
 > |⟨u, v⟩| ≤ ||u|| · ||v||
+>
 > ```
 > 
 > **Demostración de la Desigualdad Triangular:**
@@ -792,12 +845,14 @@ dg-publish: true
 > 
 > ```
 > ||u + v||² ≤ (||u|| + ||v||)²
+>
 > ```
 > 
 > **Paso 2:** Expandir el lado izquierdo usando el producto interno
 > 
 > ```
 > ||u + v||² = ⟨u + v, u + v⟩
+>
 >            = ⟨u, u⟩ + ⟨u, v⟩ + ⟨v, u⟩ + ⟨v, v⟩
 >            = ||u||² + 2⟨u, v⟩ + ||v||²
 > ```
@@ -814,6 +869,7 @@ dg-publish: true
 > 
 > ```
 > ||u||² + 2⟨u, v⟩ + ||v||² ≤ ||u||² + 2||u|| · ||v|| + ||v||²
+>
 > ```
 > 
 > Simplificando (restando ||u||² + ||v||² de ambos lados):
@@ -834,6 +890,7 @@ dg-publish: true
 > 
 > ```
 > |⟨u, v⟩| ≤ ||u|| · ||v||
+>
 > ```
 > 
 > Lo que implica:
@@ -845,7 +902,11 @@ dg-publish: true
 > Por lo tanto, la desigualdad se cumple. ∎
 > 
 > **Flujo lógico de la demostración:**
+>
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_13.svg]]
+>
+> **Se lee así:** el diagrama presenta objetivo: y u + v y elevar al cuadrado y u + v.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > **Caso de igualdad:**
 > 
 > La igualdad ||u + v|| = ||u|| + ||v|| se alcanza cuando:
@@ -878,6 +939,7 @@ dg-publish: true
 > 
 > ```
 > ||u|| = √(1² + 2² + 2²) = √(1 + 4 + 4) = √9 = 3
+>
 > ||v|| = √(2² + 1² + 2²) = √(4 + 1 + 4) = √9 = 3
 > ```
 > 
@@ -891,12 +953,14 @@ dg-publish: true
 > 
 > ```
 > ||u + v|| = √(3² + 3² + 4²) = √(9 + 9 + 16) = √34 ≈ 5.831
+>
 > ```
 > 
 > **Paso 4:** Verificar la desigualdad
 > 
 > ```
 > ||u + v|| ≤ ||u|| + ||v||
+>
 > 5.831 ≤ 3 + 3
 > 5.831 ≤ 6 ✓
 > ```
@@ -927,6 +991,7 @@ dg-publish: true
 > 
 > ```
 > ||u + v|| ≤ ||u|| + ||v||
+>
 > ||v + u|| ≤ ||v|| + ||u||  (es lo mismo)
 > ```
 > 
@@ -936,6 +1001,7 @@ dg-publish: true
 > 
 > ```
 > ||u₁ + u₂ + ... + uₙ|| ≤ ||u₁|| + ||u₂|| + ... + ||uₙ||
+>
 > ```
 > 
 > **Demostración por inducción:**
@@ -945,6 +1011,7 @@ dg-publish: true
 > 
 > ```
 > ||u₁ + ... + uₙ|| = ||(u₁ + ... + uₙ₋₁) + uₙ||
+>
 >                   ≤ ||u₁ + ... + uₙ₋₁|| + ||uₙ||     (caso base)
 >                   ≤ (||u₁|| + ... + ||uₙ₋₁||) + ||uₙ||  (hipótesis inductiva)
 >                   = ||u₁|| + ... + ||uₙ||
@@ -956,6 +1023,7 @@ dg-publish: true
 > 
 > ```
 > | ||u|| - ||v|| | ≤ ||u - v||
+>
 > ```
 > 
 > **Interpretación:** La diferencia de normas nunca excede la norma de la diferencia.
@@ -966,6 +1034,7 @@ dg-publish: true
 > 
 > ```
 > ||u + v||_W ≤ ||u||_V + ||v||_V
+>
 > ```
 > 
 > **Tabla resumen de propiedades:**
@@ -977,7 +1046,14 @@ dg-publish: true
 > |**Inversa**|\| \|\|u\|
 > |**n-dimensional**|d(x,z) ≤ Σd(xᵢ,xᵢ₊₁)|Caminos en grafos|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_14.svg]]
+> [!info] 📊 02 – Norma Inducida Y Distancia 14
+>
+> ![[02_–_Norma_inducida_y_distancia_14.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta desigualdad triangular y forma básica y generalizaciones y forma inversa.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ### 🔄 Variantes Importantes
 
@@ -1011,6 +1087,7 @@ dg-publish: true
 > 
 > ```
 > ||f + g||_p ≤ ||f||_p + ||g||_p
+>
 > ```
 > 
 > donde ||f||_p = (∫|f(x)|ᵖ dx)^(1/p)
@@ -1021,6 +1098,7 @@ dg-publish: true
 > 
 > ```
 > ||A + B|| ≤ ||A|| + ||B||
+>
 > ```
 > 
 > **Comparación de variantes:**
@@ -1032,7 +1110,14 @@ dg-publish: true
 > |**Supremo**|C[a,b]|\|\|f+g\|
 > |**Matricial**|Mₙₓₙ(ℝ)|\|\|A+B\|
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_15.svg]]
+> [!info] 📊 02 – Norma Inducida Y Distancia 15
+>
+> ![[02_–_Norma_inducida_y_distancia_15.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta norma p=1 manhattan y norma p=2 euclidiana y norma p=∞ supremo y caminos en cuadrícula.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -1050,6 +1135,7 @@ dg-publish: true
 > 
 > ```
 > |error(x + y)| ≤ |error(x)| + |error(y)|
+>
 > ```
 > 
 > **Ejemplo: Suma de 3 números con error**
@@ -1061,6 +1147,7 @@ dg-publish: true
 > 
 > Error en suma:
 > |(x̃ + ỹ + z̃) - (x + y + z)| ≤ |εₓ| + |εᵧ| + |εᵧ|
+>
 > |6.2 - 6.0| ≤ 0.1 + 0.1 + 0.2
 > 0.2 ≤ 0.4 ✓
 > ```
@@ -1132,7 +1219,14 @@ dg-publish: true
 > 
 > **3. Jerarquía de fuerza:**
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_16.svg]]
+> [!info] 📊 02 – Norma Inducida Y Distancia 16
+>
+> ![[02_–_Norma_inducida_y_distancia_16.svg]]
+>
+>
+> **Se lee así:** el diagrama presenta desigualdad de hölder y desigualdad de cauchy-schwarz caso especial p=q=2 y desigualdad triangular y desigualdad de minkowski generalización a normas p.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
+
 
 ---
 
@@ -1148,19 +1242,23 @@ dg-publish: true
 > 
 > ```
 > | ||u|| - ||v|| | ≤ ||u - v||
+>
 > ```
 > 
 > **Demostración:** Por desigualdad triangular:
 > 
 > ```
 > ||u|| = ||u - v + v|| ≤ ||u - v|| + ||v||
+>
 > ⇒ ||u|| - ||v|| ≤ ||u - v||
 > 
 > Similarmente:
 > ||v|| - ||u|| ≤ ||u - v||
+>
 > 
 > Por lo tanto:
 > | ||u|| - ||v|| | ≤ ||u - v||
+>
 > ```
 > 
 > **2. Convergencia en espacios normados:**
@@ -1171,6 +1269,7 @@ dg-publish: true
 > 
 > ```
 > | ||uₙ|| - ||u|| | ≤ ||uₙ - u|| → 0
+>
 > ```
 > 
 > **3. Desigualdad del paralelogramo (relacionada):**
@@ -1179,6 +1278,7 @@ dg-publish: true
 > 
 > ```
 > ||u + v||² + ||u - v||² = 2(||u||² + ||v||²)
+>
 > ```
 > 
 > **4. Acotación de series:**
@@ -1187,6 +1287,7 @@ dg-publish: true
 > 
 > ```
 > || Σvₙ || ≤ Σ||vₙ||
+>
 > ```
 
 ### 🎯 Aplicaciones Teóricas
@@ -1217,6 +1318,7 @@ dg-publish: true
 > 
 > ```
 > ||T(u) - T(v)|| ≤ k||u - v||, 0 < k < 1
+>
 > ```
 > 
 > **4. Análisis funcional:**
@@ -1225,6 +1327,7 @@ dg-publish: true
 > 
 > ```
 > ||T(u + v)|| ≤ ||T(u)|| + ||T(v)||
+>
 > ```
 
 ---
@@ -1246,6 +1349,7 @@ dg-publish: true
 > 
 > ```
 > ||u|| = √(1² + 2² + 2²)
+>
 >       = √(1 + 4 + 4)
 >       = √9
 >       = 3
@@ -1255,6 +1359,7 @@ dg-publish: true
 > 
 > ```
 > ||v|| = √(3² + 0² + 4²)
+>
 >       = √(9 + 0 + 16)
 >       = √25
 >       = 5
@@ -1270,6 +1375,7 @@ dg-publish: true
 > 
 > ```
 > ||u + v|| = √(4² + 2² + 6²)
+>
 >           = √(16 + 4 + 36)
 >           = √56
 >           ≈ 7.483
@@ -1279,6 +1385,7 @@ dg-publish: true
 > 
 > ```
 > ||u + v|| ≤ ||u|| + ||v||
+>
 > 7.483 ≤ 3 + 5
 > 7.483 ≤ 8 ✓
 > ```
@@ -1307,6 +1414,7 @@ dg-publish: true
 > 
 > Verificar igualdad:
 > ||u + v|| = ||u|| + ||v||
+>
 > (1+λ)√5 = √5 + λ√5
 > (1+λ)√5 = (1+λ)√5 ✓
 > ```
@@ -1321,6 +1429,7 @@ dg-publish: true
 > 
 > ```
 > ||u + v + w|| ≤ ||u|| + ||v|| + ||w||
+>
 > ```
 > 
 > **Solución:**
@@ -1329,6 +1438,7 @@ dg-publish: true
 > 
 > ```
 > ||u + v + w|| = ||(u + v) + w||
+>
 >               ≤ ||u + v|| + ||w||        (desigualdad triangular)
 >               ≤ (||u|| + ||v||) + ||w||  (desigualdad triangular nuevamente)
 >               = ||u|| + ||v|| + ||w||
@@ -1340,12 +1450,14 @@ dg-publish: true
 > 
 > ```
 > ||u + v|| ≤ ||u|| + ||v||
+>
 > ```
 > 
 > Supongamos cierto para n vectores. Para n+1:
 > 
 > ```
 > ||u₁ + ... + uₙ + uₙ₊₁|| = ||(u₁ + ... + uₙ) + uₙ₊₁||
+>
 >                           ≤ ||u₁ + ... + uₙ|| + ||uₙ₊₁||
 >                           ≤ (||u₁|| + ... + ||uₙ||) + ||uₙ₊₁||
 >                           = ||u₁|| + ... + ||uₙ|| + ||uₙ₊₁||
@@ -1378,6 +1490,7 @@ dg-publish: true
 > 
 > ```
 > ||u|| = 3 km
+>
 > ||v|| = 4 km
 > ||u + v|| = √(3² + 4²) = √25 = 5 km
 > ```
@@ -1386,6 +1499,7 @@ dg-publish: true
 > 
 > ```
 > ||u + v|| ≤ ||u|| + ||v||
+>
 > 5 ≤ 3 + 4
 > 5 ≤ 7 ✓
 > ```
@@ -1406,6 +1520,7 @@ dg-publish: true
 > 
 > ```
 > | ||u|| - ||v|| | ≤ ||u - v||
+>
 > ```
 > 
 > **Solución:**
@@ -1416,10 +1531,12 @@ dg-publish: true
 > 
 > ```
 > ||u|| = ||(u - v) + v||
+>
 >       ≤ ||u - v|| + ||v||
 > 
 > Por lo tanto:
 > ||u|| - ||v|| ≤ ||u - v||    ...(1)
+>
 > ```
 > 
 > **Parte 2:** Demostrar ||v|| - ||u|| ≤ ||u - v||
@@ -1428,11 +1545,13 @@ dg-publish: true
 > 
 > ```
 > ||v|| = ||(v - u) + u||
+>
 >       ≤ ||v - u|| + ||u||
 >       = ||u - v|| + ||u||     (||v - u|| = ||u - v||)
 > 
 > Por lo tanto:
 > ||v|| - ||u|| ≤ ||u - v||    ...(2)
+>
 > ```
 > 
 > **Parte 3:** Combinar ambos resultados
@@ -1441,6 +1560,7 @@ dg-publish: true
 > 
 > ```
 > ||u|| - ||v|| ≤ ||u - v||
+>
 > ||v|| - ||u|| ≤ ||u - v||
 > 
 > ⇒ -||u - v|| ≤ ||u|| - ||v|| ≤ ||u - v||
@@ -1462,12 +1582,14 @@ dg-publish: true
 > 
 > ```
 > | ||u|| - ||v|| | ≤ ||u + v|| ≤ ||u|| + ||v||
+>
 > ```
 > 
 > **Cota inferior:**
 > 
 > ```
 > ||u + v|| ≥ | ||u|| - ||v|| |
+>
 >          = | 3 - 4 |
 >          = 1
 > ```
@@ -1478,6 +1600,7 @@ dg-publish: true
 > 
 > ```
 > ||u + v|| ≤ ||u|| + ||v||
+>
 >          = 3 + 4
 >          = 7
 > ```
@@ -1493,6 +1616,7 @@ dg-publish: true
 > v = (-4, 0)
 > u + v = (-1, 0)
 > ||u + v|| = 1 ✓
+>
 > ```
 > 
 > _Máximo (vectores paralelos):_
@@ -1502,6 +1626,7 @@ dg-publish: true
 > v = (4, 0)
 > u + v = (7, 0)
 > ||u + v|| = 7 ✓
+>
 > ```
 > 
 > **Respuesta:**
@@ -1541,6 +1666,9 @@ dg-publish: true
 > **Conexión con otras desigualdades:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_17.svg]]
+>
+> **Se lee así:** el diagrama presenta cauchy-schwarz y desigualdad triangular y minkowski y espacios métricos.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 ---
 
@@ -1551,6 +1679,9 @@ dg-publish: true
 > **Has dominado:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_18.svg]]
+>
+> **Se lee así:** el diagrama presenta desigualdad triangular y definición y espacios normados y espacios métricos.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Progresión natural del aprendizaje:**
 > 
@@ -1565,6 +1696,9 @@ dg-publish: true
 > **Roadmap de evolución:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_–_Norma_inducida_y_distancia_19.svg]]
+>
+> **Se lee así:** el diagrama presenta producto interno y cauchy-schwarz y desigualdad triangular y espacios métricos.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 

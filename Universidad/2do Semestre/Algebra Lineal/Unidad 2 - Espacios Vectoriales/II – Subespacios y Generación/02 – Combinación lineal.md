@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 02-combinacion-lineal]
 ---
 
 # 📘 Combinación Lineal
@@ -73,6 +74,7 @@ dg-publish: true
 >       |
 >       |    • w = c₁v₁ + c₂v₂
 >       |   /|
+>
 >       |  / |
 >       | /  | c₂v₂
 >       |/   |
@@ -1376,7 +1378,7 @@ dg-publish: true
 > 
 > **Pregunta central del álgebra lineal:**
 > 
-> > "¿Puedo construir este vector usando estos otros vectores?"
+> "¿Puedo construir este vector usando estos otros vectores?"
 > 
 > Esta pregunta aparece en:
 > 
@@ -1568,6 +1570,7 @@ dg-publish: true
 >       |
 >       |  • w = 2v₁ + 1.5v₂
 >       | /|\
+>
 >       |/ | \1.5v₂
 >       •  |  \
 >      /|  |   \
@@ -1889,7 +1892,7 @@ dg-publish: true
 > 
 > ### La Esencia del Álgebra Lineal
 > 
-> > "El álgebra lineal es el estudio de qué se puede construir mediante combinaciones lineales, y cómo."
+> "El álgebra lineal es el estudio de qué se puede construir mediante combinaciones lineales, y cómo."
 > 
 > **Todo se reduce a esta pregunta:**
 > 

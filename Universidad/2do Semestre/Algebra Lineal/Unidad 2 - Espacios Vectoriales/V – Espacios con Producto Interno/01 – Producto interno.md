@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, unidad2, 01-producto-interno]
 ---
 
 # 📐 Producto Interno
@@ -21,6 +22,9 @@ dg-publish: true
 > **Desde lo conocido a lo abstracto:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Producto_interno_01.svg]]
+>
+> **Se lee así:** el diagrama presenta producto punto en ℝⁿ u·v = u₁v₁ + ... + uₙvₙ y generalización y producto interno ⟨u,v⟩ espacio abstracto v y mantiene propiedades esenciales.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 
@@ -46,6 +50,9 @@ dg-publish: true
 > **Visualización de los axiomas:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Producto_interno_02.svg]]
+>
+> **Se lee así:** el diagrama presenta producto interno ⟨·,·⟩ y pi1: linealidad y pi2: simetría y pi3: positividad.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > ### Axiomas para Espacios Complejos
 > 
@@ -147,6 +154,9 @@ dg-publish: true
 > **Aplicación práctica:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Producto_interno_03.svg]]
+>
+> **Se lee así:** el diagrama presenta datos: temperatura, humedad, presión y pesos: 1, 3, 2 y producto ponderado y humedad tiene más impacto en el resultado.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 📊 Ejemplo 3: Producto Interno en $C[a,b]$
 
@@ -164,6 +174,9 @@ dg-publish: true
 > - Si $f$ y $g$ tienen signos opuestos en algunos lugares: el producto puede ser pequeño o cero
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Producto_interno_04.svg]]
+>
+> **Se lee así:** el diagrama presenta funciones f y g y multiplicar punto a punto f·x·g·x y integrar sobre [a,b] y ⟨f,g⟩ = ∫ f·x·g·x dx.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplo 1: Funciones polinomiales**
 > 
@@ -250,6 +263,9 @@ dg-publish: true
 > **Aplicación en polinomios ortogonales:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Producto_interno_05.svg]]
+>
+> **Se lee así:** el diagrama presenta intervalo y función peso y definen familia de polinomios ortogonales y ejemplos y w·x = 1 en [-1,1] → polinomios de legendre.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ### 📊 Ejemplo 5: Producto de Frobenius en Matrices
 
@@ -371,6 +387,9 @@ dg-publish: true
 > **Interpretación geométrica:**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Producto_interno_06.svg]]
+>
+> **Se lee así:** el diagrama presenta paralelogramo con lados u y v y suma de cuadrados de diagonales y = 2 × suma de cuadrados de los lados.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Ejemplo numérico:**
 > 
@@ -410,6 +429,9 @@ dg-publish: true
 > donde $|\mathbf{v}| = \sqrt{\langle \mathbf{v}, \mathbf{v} \rangle}$ es la norma inducida.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Producto_interno_07.svg]]
+>
+> **Se lee así:** el diagrama presenta &gt; 0 y &lt; 0 y ⟨u,v⟩ y signo del producto.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 > 
 > **Casos especiales:**
 > 
@@ -464,6 +486,9 @@ dg-publish: true
 > ### Checklist de Verificación
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Producto_interno_08.svg]]
+>
+> **Se lee así:** el diagrama presenta no y candidato a producto interno y pi1: linealidad? y ❌ no es producto interno.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 
@@ -579,6 +604,9 @@ dg-publish: true
 > - **Análisis multivariado**
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Producto_interno_09.svg]]
+>
+> **Se lee así:** el diagrama presenta producto interno y geometría y ángulos y distancias.
+> **Por qué importa:** ilustra un concepto clave del álgebra lineal.
 
 ---
 
