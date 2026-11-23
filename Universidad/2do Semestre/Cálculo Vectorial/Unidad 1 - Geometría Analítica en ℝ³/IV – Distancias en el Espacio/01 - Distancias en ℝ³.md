@@ -6,7 +6,9 @@ tags: [distancias, fundamentos, distancia]
 
 ## 🎯 Introducción
 
-> [!info] 💡 Introducción a las Métricas en el Espacio Tridimensional Las **distancias en ℝ³** son medidas que cuantifican la separación entre diferentes objetos geométricos (puntos, rectas, planos) en el espacio tridimensional. Estas métricas son fundamentales para la geometría analítica y tienen aplicaciones directas en física, ingeniería, computación gráfica y análisis espacial.
+> [!info] 💡 Introducción a las Métricas en el Espacio Tridimensional
+>
+> Las **distancias en ℝ³** son medidas que cuantifican la separación entre diferentes objetos geométricos (puntos, rectas, planos) en el espacio tridimensional. Estas métricas son fundamentales para la geometría analítica y tienen aplicaciones directas en física, ingeniería, computación gráfica y análisis espacial.
 >
 > **Analogías útiles:**
 >

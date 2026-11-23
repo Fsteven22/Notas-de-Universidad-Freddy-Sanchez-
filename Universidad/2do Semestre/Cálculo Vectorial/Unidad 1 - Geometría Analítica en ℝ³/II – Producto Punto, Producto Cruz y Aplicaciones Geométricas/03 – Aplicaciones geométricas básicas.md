@@ -156,7 +156,9 @@ tags: [MATG1046, unidad1, aplicaciones-geometricas, proyeccion-escalar, proyecci
 
 ### 📍 Fórmula de Distancia
 
-> [!warning] 🎯 Teorema Fundamental de Distancia **Dados dos puntos A = (x₁, y₁, z₁) y B = (x₂, y₂, z₂):**
+> [!warning] 🎯 Teorema Fundamental de Distancia
+>
+> **Dados dos puntos A = (x₁, y₁, z₁) y B = (x₂, y₂, z₂):**
 >
 > La **distancia** entre A y B es:
 >
@@ -183,7 +185,9 @@ tags: [MATG1046, unidad1, aplicaciones-geometricas, proyeccion-escalar, proyecci
 
 ### 📊 Ejemplos de Distancia
 
-> [!example] 🎯 Casos Resueltos **Ejemplo 1: Distancia básica**
+> [!example] 🎯 Casos Resueltos
+>
+> **Ejemplo 1: Distancia básica**
 >
 > Calcular la distancia entre A = (1, 2, 3) y B = (4, 6, 8)
 >
@@ -245,7 +249,9 @@ tags: [MATG1046, unidad1, aplicaciones-geometricas, proyeccion-escalar, proyecci
 
 ### 🔺 Fórmula del Ángulo
 
-> [!success] 🎯 Cálculo de Ángulos usando Producto Punto **Dados dos vectores u y v no nulos:**
+> [!success] 🎯 Cálculo de Ángulos usando Producto Punto
+>
+> **Dados dos vectores u y v no nulos:**
 >
 > El **ángulo θ** entre ellos (0° ≤ θ ≤ 180°) se calcula mediante:
 >
@@ -278,7 +284,9 @@ tags: [MATG1046, unidad1, aplicaciones-geometricas, proyeccion-escalar, proyecci
 
 ### 📊 Ejemplos de Ángulos
 
-> [!example] 🎯 Cálculos Detallados **Ejemplo 1: Ángulo entre vectores básicos**
+> [!example] 🎯 Cálculos Detallados
+>
+> **Ejemplo 1: Ángulo entre vectores básicos**
 >
 > Calcular el ángulo entre **u** = (1, 2, 2) y **v** = (2, 1, -2)
 >
@@ -372,7 +380,9 @@ tags: [MATG1046, unidad1, aplicaciones-geometricas, proyeccion-escalar, proyecci
 
 ### 📊 Ejemplos de Proyecciones
 
-> [!example] 🎯 Casos Prácticos **Ejemplo 1: Proyección básica**
+> [!example] 🎯 Casos Prácticos
+>
+> **Ejemplo 1: Proyección básica**
 >
 > Proyectar **v** = (3, 4, 0) sobre **u** = (1, 0, 0)
 >
@@ -479,7 +489,9 @@ tags: [MATG1046, unidad1, aplicaciones-geometricas, proyeccion-escalar, proyecci
 
 ### 🔷 Área mediante Producto Cruz
 
-> [!success] 📐 Cálculo de Áreas con Vectores **Para un paralelogramo formado por vectores u y v:**
+> [!success] 📐 Cálculo de Áreas con Vectores
+>
+> **Para un paralelogramo formado por vectores u y v:**
 >
 > **A_paralelogramo = ||u × v||**
 >
@@ -514,7 +526,9 @@ tags: [MATG1046, unidad1, aplicaciones-geometricas, proyeccion-escalar, proyecci
 
 ### 📊 Ejemplos de Áreas
 
-> [!example] 🎯 Cálculo de Áreas **Ejemplo 1: Área de paralelogramo**
+> [!example] 🎯 Cálculo de Áreas
+>
+> **Ejemplo 1: Área de paralelogramo**
 >
 > Calcular el área del paralelogramo formado por **u** = (2, 0, 0) y **v** = (1, 3, 0)
 >
@@ -622,7 +636,9 @@ tags: [MATG1046, unidad1, aplicaciones-geometricas, proyeccion-escalar, proyecci
 
 ### 📊 Ejemplos de Volúmenes
 
-> [!example] 🎯 Cálculos de Volumen **Ejemplo 1: Volumen básico de paralelepípedo**
+> [!example] 🎯 Cálculos de Volumen
+>
+> **Ejemplo 1: Volumen básico de paralelepípedo**
 >
 > Calcular el volumen del paralelepípedo formado por: **u** = (2, 0, 0), **v** = (0, 3, 0), **w** = (0, 0, 4)
 >
@@ -726,7 +742,9 @@ tags: [MATG1046, unidad1, aplicaciones-geometricas, proyeccion-escalar, proyecci
 
 ### 🎯 Distancia de Punto a Recta
 
-> [!tip] 📏 Distancia Punto-Recta en ℝ³ **Problema:** Encontrar la distancia de un punto P₀ a una recta L que pasa por P₁ con dirección **v**.
+> [!tip] 📏 Distancia Punto-Recta en ℝ³
+>
+> **Problema:** Encontrar la distancia de un punto P₀ a una recta L que pasa por P₁ con dirección **v**.
 >
 > **Fórmula:**
 >
@@ -766,7 +784,9 @@ tags: [MATG1046, unidad1, aplicaciones-geometricas, proyeccion-escalar, proyecci
 
 ### 🎯 Distancia de Punto a Plano
 
-> [!note] 📏 Distancia Punto-Plano **Problema:** Encontrar la distancia de un punto P₀ a un plano.
+> [!note] 📏 Distancia Punto-Plano
+>
+> **Problema:** Encontrar la distancia de un punto P₀ a un plano.
 >
 > **Si el plano tiene ecuación:** ax + by + cz = d
 >
@@ -805,7 +825,9 @@ tags: [MATG1046, unidad1, aplicaciones-geometricas, proyeccion-escalar, proyecci
 
 ### 🎯 Ángulo entre Rectas
 
-> [!success] 📐 Ángulo entre Dos Rectas **Problema:** Encontrar el ángulo entre dos rectas con vectores directores **u** y **v**.
+> [!success] 📐 Ángulo entre Dos Rectas
+>
+> **Problema:** Encontrar el ángulo entre dos rectas con vectores directores **u** y **v**.
 >
 > **Fórmula:**
 >
@@ -831,7 +853,9 @@ tags: [MATG1046, unidad1, aplicaciones-geometricas, proyeccion-escalar, proyecci
 
 ### 🎯 Ángulo entre Planos
 
-> [!info] 📐 Ángulo entre Dos Planos **Problema:** Encontrar el ángulo entre dos planos con vectores normales **n₁** y **n₂**.
+> [!info] 📐 Ángulo entre Dos Planos
+>
+> **Problema:** Encontrar el ángulo entre dos planos con vectores normales **n₁** y **n₂**.
 >
 > **Fórmula:**
 >

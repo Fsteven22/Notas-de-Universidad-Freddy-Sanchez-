@@ -89,7 +89,9 @@ tags: [MATG1046, unidad1, producto-cruz, producto-vectorial, areas, torque, dete
 
 ## 🛠️ Cálculo del Producto Cruz
 
-> [!example] 📊 Método del Determinante **Método práctico:**
+> [!example] 📊 Método del Determinante
+>
+> **Método práctico:**
 >
 > **Paso 1:** Formar el determinante 3×3
 >
@@ -185,7 +187,9 @@ tags: [MATG1046, unidad1, producto-cruz, producto-vectorial, areas, torque, dete
 
 ### ✋ Determinación del Sentido
 
-> [!tip] 👉 Método Visual **La regla de la mano derecha determina el sentido de u × v:**
+> [!tip] 👉 Método Visual
+>
+> **La regla de la mano derecha determina el sentido de u × v:**
 >
 > **Método 1 - Dedos curvados:**
 >
@@ -272,7 +276,9 @@ tags: [MATG1046, unidad1, producto-cruz, producto-vectorial, areas, torque, dete
 
 ### ⚖️ Propiedades Algebraicas
 
-> [!note] 🔢 Propiedades Fundamentales **1. Anticonmutativa:**
+> [!note] 🔢 Propiedades Fundamentales
+>
+> **1. Anticonmutativa:**
 >
 > ```
 > u × v = -(v × u)
@@ -328,7 +334,9 @@ tags: [MATG1046, unidad1, producto-cruz, producto-vectorial, areas, torque, dete
 
 ### 🎯 Propiedades Geométricas
 
-> [!warning] 📏 Interpretación Geométrica **1. Perpendicularidad:**
+> [!warning] 📏 Interpretación Geométrica
+>
+> **1. Perpendicularidad:**
 >
 > ```
 > (u × v) ⊥ u
@@ -384,7 +392,9 @@ tags: [MATG1046, unidad1, producto-cruz, producto-vectorial, areas, torque, dete
 
 ### 🔺 Área de Triángulos
 
-> [!success] 📐 Fórmula del Área **Dados tres puntos A, B, C en ℝ³:**
+> [!success] 📐 Fórmula del Área
+>
+> **Dados tres puntos A, B, C en ℝ³:**
 >
 > **Método 1 - Usando vectores:**
 >
@@ -433,7 +443,9 @@ tags: [MATG1046, unidad1, producto-cruz, producto-vectorial, areas, torque, dete
 
 ### ▱ Área de Paralelogramos
 
-> [!info] 📐 Paralelogramo Formado por Vectores **Dados dos vectores u y v:**
+> [!info] 📐 Paralelogramo Formado por Vectores
+>
+> **Dados dos vectores u y v:**
 >
 > **Área del paralelogramo:**
 >
@@ -487,7 +499,9 @@ tags: [MATG1046, unidad1, producto-cruz, producto-vectorial, areas, torque, dete
 
 ### 🔷 Área de Polígonos Generales
 
-> [!tip] 🔢 Polígonos en el Espacio **Para un polígono con vértices P₁, P₂, ..., Pₙ:**
+> [!tip] 🔢 Polígonos en el Espacio
+>
+> **Para un polígono con vértices P₁, P₂, ..., Pₙ:**
 >
 > **Método de triangulación:**
 >
@@ -588,7 +602,9 @@ tags: [MATG1046, unidad1, producto-cruz, producto-vectorial, areas, torque, dete
 
 ### 🧲 Fuerza Magnética
 
-> [!info] ⚡ Fuerza de Lorentz **La fuerza sobre una carga en movimiento en un campo magnético:**
+> [!info] ⚡ Fuerza de Lorentz
+>
+> **La fuerza sobre una carga en movimiento en un campo magnético:**
 >
 > **\vec{F} = q(\vec{v} × \vec{B})**
 >
@@ -780,7 +796,9 @@ tags: [MATG1046, unidad1, producto-cruz, producto-vectorial, areas, torque, dete
 
 ### 🔺 Volumen de Tetraedros
 
-> [!example] 📐 Pirámide Triangular **Dado un tetraedro con vértices A, B, C, D:**
+> [!example] 📐 Pirámide Triangular
+>
+> **Dado un tetraedro con vértices A, B, C, D:**
 >
 > **Volumen = (1/6)|A\vec{B} · (A\vec{C} × A\vec{D})|**
 >
@@ -821,7 +839,9 @@ tags: [MATG1046, unidad1, producto-cruz, producto-vectorial, areas, torque, dete
 
 ### 📐 Vector Normal a un Plano
 
-> [!tip] ⊥ Perpendicular al Plano **Dados dos vectores u y v en un plano:**
+> [!tip] ⊥ Perpendicular al Plano
+>
+> **Dados dos vectores u y v en un plano:**
 >
 > **Un vector perpendicular al plano es:** **\vec{n} = u × v**
 >
@@ -877,7 +897,9 @@ tags: [MATG1046, unidad1, producto-cruz, producto-vectorial, areas, torque, dete
 
 ### 📏 Distancia de Punto a Recta
 
-> [!success] 📐 Distancia Perpendicular **Dados:**
+> [!success] 📐 Distancia Perpendicular
+>
+> **Dados:**
 >
 > - Punto P
 > - Recta que pasa por Q con dirección \vec{v}
@@ -918,7 +940,9 @@ tags: [MATG1046, unidad1, producto-cruz, producto-vectorial, areas, torque, dete
 
 ## 🔄 Identidades Vectoriales
 
-> [!note] 🧮 Fórmulas Importantes **1. Producto vectorial triple (BAC-CAB):**
+> [!note] 🧮 Fórmulas Importantes
+>
+> **1. Producto vectorial triple (BAC-CAB):**
 >
 > ```
 > u × (v × w) = v(u · w) - w(u · v)
@@ -1108,7 +1132,9 @@ tags: [MATG1046, unidad1, producto-cruz, producto-vectorial, areas, torque, dete
 
 ## 💡 Consejos y Errores Comunes
 
-> [!tip] 🧠 Estrategias de Aprendizaje **Para dominar el producto cruz:**
+> [!tip] 🧠 Estrategias de Aprendizaje
+>
+> **Para dominar el producto cruz:**
 >
 > **1. Memorizar la fórmula del determinante:**
 >

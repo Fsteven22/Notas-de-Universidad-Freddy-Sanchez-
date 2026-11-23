@@ -6,7 +6,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ## 🎯 Introducción
 
-> [!info] 💡 Introducción a los Planos en el Espacio Los **planos en ℝ³** son superficies planas bidimensionales que se extienden infinitamente en el espacio tridimensional. Son uno de los objetos geométricos fundamentales en geometría analítica espacial.
+> [!info] 💡 Introducción a los Planos en el Espacio
+>
+> Los **planos en ℝ³** son superficies planas bidimensionales que se extienden infinitamente en el espacio tridimensional. Son uno de los objetos geométricos fundamentales en geometría analítica espacial.
 >
 > **Analogías útiles:**
 >
@@ -31,7 +33,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### 🔢 Elementos que Definen un Plano
 
-> [!note] 🌟 Formas de Determinar un Plano Un plano en ℝ³ queda completamente determinado por:
+> [!note] 🌟 Formas de Determinar un Plano
+>
+> Un plano en ℝ³ queda completamente determinado por:
 >
 > 1. **Tres puntos no colineales**
 >     - Puntos: P₁, P₂, P₃
@@ -384,7 +388,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### 🎯 Deducción de la Ecuación
 
-> [!tip] 📝 Cómo Obtener la Ecuación General **Dado:** Un punto P₀(x₀, y₀, z₀) en el plano y un vector normal **n** = (a, b, c)
+> [!tip] 📝 Cómo Obtener la Ecuación General
+>
+> **Dado:** Un punto P₀(x₀, y₀, z₀) en el plano y un vector normal **n** = (a, b, c)
 >
 > **Procedimiento:**
 >
@@ -399,7 +405,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### ✅ Ejemplo de Obtención
 
-> [!example] 💪 Caso Práctico: Ecuación desde Punto y Normal **Problema:** Encontrar la ecuación del plano que pasa por P₀(2, -1, 3) y tiene vector normal **n** = (1, 2, -2)
+> [!example] 💪 Caso Práctico: Ecuación desde Punto y Normal
+>
+> **Problema:** Encontrar la ecuación del plano que pasa por P₀(2, -1, 3) y tiene vector normal **n** = (1, 2, -2)
 >
 > **Solución:**
 >
@@ -435,7 +443,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### 📏 Forma de Interceptos
 
-> [!warning] 🟡 Ecuación por Interceptos Si el plano intercepta los ejes en a, b, c (todos ≠ 0):
+> [!warning] 🟡 Ecuación por Interceptos
+>
+> Si el plano intercepta los ejes en a, b, c (todos ≠ 0):
 >
 > $$\frac{x}{a} + \frac{y}{b} + \frac{z}{c} = 1$$
 >
@@ -457,7 +467,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### 🔵 Planos Paralelos a los Ejes
 
-> [!example] 📦 Planos Coordenados y Paralelos **Planos coordenados:**
+> [!example] 📦 Planos Coordenados y Paralelos
+>
+> **Planos coordenados:**
 >
 > 1. **Plano xy** (z = 0)
 >     - Normal: **n** = (0, 0, 1)
@@ -483,7 +495,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### 🔶 Planos que Pasan por el Origen
 
-> [!tip] 🎯 Casos Particulares Si un plano pasa por el origen (0, 0, 0):
+> [!tip] 🎯 Casos Particulares
+>
+> Si un plano pasa por el origen (0, 0, 0):
 >
 > $$ax + by + cz = 0$$
 >
@@ -507,7 +521,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### 🎯 Método 1: Tres Puntos No Colineales
 
-> [!example] 💪 Plano por Tres Puntos **Problema:** Encontrar el plano que pasa por P₁(1, 2, 3), P₂(2, 0, 1), P₃(0, 1, 2)
+> [!example] 💪 Plano por Tres Puntos
+>
+> **Problema:** Encontrar el plano que pasa por P₁(1, 2, 3), P₂(2, 0, 1), P₃(0, 1, 2)
 >
 > **Procedimiento:**
 >
@@ -531,7 +547,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### 🎯 Método 2: Punto y Dos Vectores Directores
 
-> [!success] 🟢 Vectores Directores Conocidos **Problema:** Plano por P₀(1, -1, 2) con vectores **u** = (2, 1, 0) y **v** = (1, 0, 3)
+> [!success] 🟢 Vectores Directores Conocidos
+>
+> **Problema:** Plano por P₀(1, -1, 2) con vectores **u** = (2, 1, 0) y **v** = (1, 0, 3)
 >
 > **Paso 1:** Calcular vector normal $$\mathbf{n} = \mathbf{u} \times \mathbf{v} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \ 2 & 1 & 0 \ 1 & 0 & 3 \end{vmatrix}$$
 >
@@ -541,7 +559,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### 🎯 Método 3: Recta y Punto Externo
 
-> [!note] 📏 Plano por Recta y Punto **Problema:** Plano que contiene la recta L: (x, y, z) = (1, 0, 2) + t(2, 1, -1) y el punto P(3, 2, 1)
+> [!note] 📏 Plano por Recta y Punto
+>
+> **Problema:** Plano que contiene la recta L: (x, y, z) = (1, 0, 2) + t(2, 1, -1) y el punto P(3, 2, 1)
 >
 > **Paso 1:** Identificar elementos
 >
@@ -559,7 +579,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### 🎯 Método 4: Dos Rectas Paralelas
 
-> [!info] 🔄 Rectas Paralelas Generan Plano **Problema:** Plano que contiene las rectas paralelas:
+> [!info] 🔄 Rectas Paralelas Generan Plano
+>
+> **Problema:** Plano que contiene las rectas paralelas:
 >
 > - L₁: (x, y, z) = (1, 0, 1) + s(2, 1, 0)
 > - L₂: (x, y, z) = (0, 1, 2) + t(2, 1, 0)
@@ -574,7 +596,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### 🎯 Método 5: Dos Rectas Secantes
 
-> [!warning] 🔶 Rectas que se Intersectan **Problema:** Plano que contiene las rectas secantes:
+> [!warning] 🔶 Rectas que se Intersectan
+>
+> **Problema:** Plano que contiene las rectas secantes:
 >
 > - L₁: (x, y, z) = (1, 1, 0) + s(1, 0, 1)
 > - L₂: (x, y, z) = (1, 1, 0) + t(0, 1, 1)
@@ -595,7 +619,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### 📊 Tipos de Configuraciones
 
-> [!note] 🎯 Clasificación de Planos Dados dos planos π₁: a₁x + b₁y + c₁z + d₁ = 0 y π₂: a₂x + b₂y + c₂z + d₂ = 0
+> [!note] 🎯 Clasificación de Planos
+>
+> Dados dos planos π₁: a₁x + b₁y + c₁z + d₁ = 0 y π₂: a₂x + b₂y + c₂z + d₂ = 0
 >
 > Con vectores normales **n₁** = (a₁, b₁, c₁) y **n₂** = (a₂, b₂, c₂)
 >
@@ -676,7 +702,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### 🖼️ Interpretación Geométrica
 
-> [!success] 🟢 Visualización del Plano **Elementos clave para graficar:**
+> [!success] 🟢 Visualización del Plano
+>
+> **Elementos clave para graficar:**
 >
 > **1. Interceptos con los ejes:** Para ax + by + cz + d = 0:
 >
@@ -704,7 +732,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### 📊 Gráfica de Ejemplo
 
-> [!example] 🎨 Construcción Visual **Plano:** 2x + 3y + 6z = 12
+> [!example] 🎨 Construcción Visual
+>
+> **Plano:** 2x + 3y + 6z = 12
 >
 > **Paso 1: Forma de interceptos** $$\frac{x}{6} + \frac{y}{4} + \frac{z}{2} = 1$$
 >
@@ -736,7 +766,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### 💪 Problema 1: Plano por Condiciones Múltiples
 
-> [!example] 📝 Ejercicio Completo **Problema:** Encontrar la ecuación del plano que:
+> [!example] 📝 Ejercicio Completo
+>
+> **Problema:** Encontrar la ecuación del plano que:
 >
 > - Pasa por el punto P(1, 2, -1)
 > - Es perpendicular al vector **v** = (2, -1, 3)
@@ -769,7 +801,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### 💪 Problema 2: Plano Equidistante
 
-> [!example] 🎯 Problema de Distancias **Problema:** Encontrar el plano que pasa por el origen y es equidistante de los puntos A(2, 0, 0) y B(0, 4, 0).
+> [!example] 🎯 Problema de Distancias
+>
+> **Problema:** Encontrar el plano que pasa por el origen y es equidistante de los puntos A(2, 0, 0) y B(0, 4, 0).
 >
 > **Análisis:** El plano debe ser el plano mediador del segmento AB.
 >
@@ -806,7 +840,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### 💪 Problema 3: Familia de Planos
 
-> [!success] 🟢 Planos Paralelos **Problema:** Encontrar la ecuación del plano paralelo a π: 2x - y + 3z = 7 que pasa por P(1, -2, 3).
+> [!success] 🟢 Planos Paralelos
+>
+> **Problema:** Encontrar la ecuación del plano paralelo a π: 2x - y + 3z = 7 que pasa por P(1, -2, 3).
 >
 > **Solución:**
 >
@@ -827,7 +863,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### 💪 Problema 4: Intersección de Tres Planos
 
-> [!info] 🔷 Sistema de Tres Ecuaciones **Problema:** Analizar la intersección de:
+> [!info] 🔷 Sistema de Tres Ecuaciones
+>
+> **Problema:** Analizar la intersección de:
 >
 > - π₁: x + y + z = 6
 > - π₂: 2x - y + z = 3
@@ -950,7 +988,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### 💻 En Computación Gráfica
 
-> [!success] 🖥️ Renderizado y Modelado 3D **Aplicaciones clave:**
+> [!success] 🖥️ Renderizado y Modelado 3D
+>
+> **Aplicaciones clave:**
 >
 > **1. Culling de caras:**
 >
@@ -992,7 +1032,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### 🏗️ En Ingeniería y Arquitectura
 
-> [!note] 🏛️ Diseño Estructural **Aplicaciones fundamentales:**
+> [!note] 🏛️ Diseño Estructural
+>
+> **Aplicaciones fundamentales:**
 >
 > **1. Diseño de superficies:**
 >
@@ -1026,7 +1068,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### ✈️ En Física y Mecánica
 
-> [!info] ⚡ Movimiento y Fuerzas **Aplicaciones en física:**
+> [!info] ⚡ Movimiento y Fuerzas
+>
+> **Aplicaciones en física:**
 >
 > **1. Planos inclinados:**
 >
@@ -1061,7 +1105,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### 🔬 En Cristalografía
 
-> [!tip] 💎 Planos Cristalinos **Índices de Miller:**
+> [!tip] 💎 Planos Cristalinos
+>
+> **Índices de Miller:**
 >
 > **Definición:** Sistema para identificar planos en estructuras cristalinas
 >
@@ -1088,7 +1134,9 @@ tags: [planos, fundamentos, ecuacion]
 
 ### 🎮 En Desarrollo de Videojuegos
 
-> [!success] 🕹️ Game Development **Usos específicos:**
+> [!success] 🕹️ Game Development
+>
+> **Usos específicos:**
 >
 > **1. Física de colisiones:**
 >
