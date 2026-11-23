@@ -29,8 +29,6 @@ tags: [CCPG1005, unidad1, poo, sintaxis]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Sintaxis_básica_en_Java_01.svg]]
-> **Se lee así:** Diagrama de flujo LR con 7 bloques y 6 conexiones. Los bloques son: Código Java, "¿Sintaxis correcta?", ❌ Error de compilación, ✅ Compilador, Bytecode. Las 6 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 
@@ -79,8 +77,6 @@ tags: [CCPG1005, unidad1, poo, sintaxis]
 > |`main()`|✅ Sí|Punto de inicio del programa|
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Sintaxis_básica_en_Java_02.svg]]
-> **Se lee así:** Diagrama de flujo TD con 8 bloques y 7 conexiones. Los bloques son: Archivo .java, package, imports, class MiClase, Atributos. Las 7 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ### 🎪 El Método main
 
@@ -226,8 +222,6 @@ tags: [CCPG1005, unidad1, poo, sintaxis]
 > **Diferencia clave: Primitivos vs Referencias**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Sintaxis_básica_en_Java_03.svg]]
-> **Se lee así:** Diagrama de flujo LR con 5 bloques y 3 conexiones. Los bloques son: Variable Primitiva, Valor directo en memoria, Variable de Referencia, Dirección de memoria, Objeto real en heap. Las 3 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 

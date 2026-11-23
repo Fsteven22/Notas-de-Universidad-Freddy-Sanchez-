@@ -104,7 +104,7 @@ tags: [IDIG2012, unidad3, ia-etica, prompts, redaccion]
 
 > [!example] 🧪 Prompt Completo Anotado (plantilla de la cátedra)
 >
-> "Piensa como un asistente con 10 años de experiencia; organiza una reunión de dos horas para revisar proyectos, discutir desafíos y planificar nuevas iniciativas del servicio universitario. Incluye al director, responsables y técnicos. Crea una agenda profesional y clara con los temas, responsables y resultados esperados. Por ejemplo: 'Agenda: Reunión de Planificación del Servicio Universitario, duración: 2 horas, fecha: [Colocar fecha], lugar: Sala de Juntas, Edificio Central'."
+> > "Piensa como un asistente con 10 años de experiencia; organiza una reunión de dos horas para revisar proyectos, discutir desafíos y planificar nuevas iniciativas del servicio universitario. Incluye al director, responsables y técnicos. Crea una agenda profesional y clara con los temas, responsables y resultados esperados. Por ejemplo: 'Agenda: Reunión de Planificación del Servicio Universitario, duración: 2 horas, fecha: [Colocar fecha], lugar: Sala de Juntas, Edificio Central'."
 >
 > | Elemento | Dónde está en el prompt |
 > |---|---|

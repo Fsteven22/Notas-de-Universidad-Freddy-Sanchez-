@@ -440,11 +440,8 @@ def auditar(nota_path, raiz, hallazgos, es_referencia=False):
             hallazgos.append((rel, i + 1, "R14-embed-sin-explicacion",
                               "embed visual sin lectura propia: %s" % ln.strip()[:50]))
 
-    # (b) cada callout 📖 de deck **con embed** lleva al menos una etiqueta de lectura.
-    #     Excepcion 1: los callouts 📖 de 'Fuentes' son bibliografia.
-    #     Excepcion 2 (R14.4): solo lo visual exige lectura; un callout 📖 de prosa
-    #     pura (Contexto, Explicación Teórica, Material de Referencia) sin imagen
-    #     dentro no es un deck y no se marca.
+    # (b) cada callout 📖 de deck lleva al menos una etiqueta de lectura.
+    #     Excepcion: los callouts 📖 de 'Fuentes' son bibliografia.
     i = 0
     n = len(lineas)
     while i < n:
@@ -466,15 +463,7 @@ def auditar(nota_path, raiz, hallazgos, es_referencia=False):
             interior.append(mm.group("resto"))
             j += 1
         if "\U0001F4D6" in titulo and depth == 1 and "Fuente" not in titulo:
-            # R14.4: solo se exige lectura al callout que trae material visual
-            # dentro (captura PNG de deck o embed de imagen). La prosa sola
-            # no es un deck.
-            hay_embed = any(
-                re.search(r"!\[[^\]]*\]\([^)]*\.(?:png|jpe?g|gif|webp|svg)", x, re.I)
-                or re.search(r"!\[\[[^\]]*\.(?:png|jpe?g|gif|webp|svg)", x, re.I)
-                for x in interior
-            )
-            if hay_embed and not any(ETIQUETAS_EXPL.search(x) for x in interior):
+            if not any(ETIQUETAS_EXPL.search(x) for x in interior):
                 hallazgos.append((rel, i + 1, "R14-deck-sin-explicacion",
                                   "callout de deck sin lectura: %s" % titulo[:50]))
         i = j

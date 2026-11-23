@@ -29,8 +29,6 @@ tags: [CCPG1005, unidad1, poo, introduccion]
 > [!note] 🖼️ ¿Qué es la Programación Orientada a Objetos?
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_01.svg]]
-> **Se lee así:** Diagrama de flujo LR con 6 bloques y 5 conexiones. Los bloques son: Mundo Real, Concepto, Clase, Objeto 1, Objeto 2. Las 5 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 
@@ -216,8 +214,6 @@ tags: [CCPG1005, unidad1, poo, introduccion]
 > - Distingue entre parámetros y atributos con el mismo nombre
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_03.svg]]
-> **Se lee así:** Diagrama de flujo LR con 6 bloques y 7 conexiones. Los bloques son: new Producto args, Constructor, this.nombre = nombre, this.precio = precio, this.stock = stock. Las 7 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 
@@ -297,8 +293,6 @@ tags: [CCPG1005, unidad1, poo, introduccion]
 > La **herencia** permite crear nuevas clases basadas en clases existentes, heredando sus atributos y métodos.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_04.svg]]
-> **Se lee así:** [!tip] 🌳 Reutilizar y Especializar La **herencia** permite crear nuevas clases basadas en clases existentes, heredando s
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > ```java
 > // Clase base (superclase/padre)

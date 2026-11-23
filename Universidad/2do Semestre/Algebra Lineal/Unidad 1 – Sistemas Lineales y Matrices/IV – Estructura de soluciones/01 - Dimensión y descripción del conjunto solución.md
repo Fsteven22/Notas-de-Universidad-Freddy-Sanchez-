@@ -4354,16 +4354,6 @@ tags: [MATG1049, algebra-lineal, unidad1, 01-dimension-y-descripcion-del-conjunt
 
 ---
 
-
-## 📝 Exámenes de la materia
-
-> [!info] Exámenes reales de DSpace que cubren este tema
->
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-2S-ÁLGEBRA LINEAL-1-1Par.pdf\|EXA-2022-2S-ÁLGEBRA LINEAL-1-1Par.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2024-2S-ÁLGEBRA LINEAL-8-1Par.pdf\|EXA-2024-2S-ÁLGEBRA LINEAL-8-1Par.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2025-1S-ÁLGEBRA LINEAL-4-1Par.pdf\|EXA-2025-1S-ÁLGEBRA LINEAL-4-1Par.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2026-1S-ÁLGEBRA LINEAL-3-1Par.pdf\|EXA-2026-1S-ÁLGEBRA LINEAL-3-1Par.pdf]]
-
 **Tags:** #dimension-solucion #conjunto-solucion #forma-parametrica #forma-vectorial #espacio-nulo #sistemas-lineales #algebra-lineal #espacio-afin #subespacio #parametros-libres #variables-libres #interpretacion-geometrica #university #mathematics #linear-algebra**Verificación:**
 
 # Clasificación de Soluciones de un Sistema de Ecuaciones Lineales (S.E.L.)

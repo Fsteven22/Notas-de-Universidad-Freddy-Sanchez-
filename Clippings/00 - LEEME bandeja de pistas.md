@@ -3921,7 +3921,7 @@ materias. Los originales de todo lo movido están en `%TEMP%\opencode\backup_*`.
 | 2º | Comunicación | 19 |
 | 2º | Programación Orientada a Objetos | 20 |
 | 2º | Inglés II | **0** — no existe en DSpace |
-| 2º | Computación y Sociedad | **5** — estaban en DSpace; se bajaron el 23/11 (`6e280c9c`) |
+| 2º | Computación y Sociedad | **0** — no existe en DSpace |
 | 3º | FESD | 24 |
 | 3º | Matemáticas Discretas | 17 |
 | 3º | Sistema de Bases de Datos | 11 |
@@ -4071,22 +4071,7 @@ ejercicios de cada nota, con wikilink y alias 📎, anotando el tema de cada exa
 **Exámenes del vault (inventario cerrado el 20-21/11):** 1er Sem Cálculo 49 · FundProg 41 ·
 Física 42 · Inglés I 0 · 2do Sem Álgebra 29 · CalcVectorial 30 · Comunicación 19 · POO 20 ·
 Inglés II 0 · CSC 0 · 3er Sem FESD 24 · MatDisc 17 · SBD 11 · DiseñoSW 8 · Inglés III 4.
-Sin exámenes porque no existen en DSpace: **solo Inglés I e Inglés II** (verificado con el patrón
-`EXA-<año>-<sem>-INGLÉS I-` / `-INGLÉS II-`, no por búsqueda libre).
-
-> [!warning] **Corrección del 23/11/2026: el "0 en DSpace" de Computación y Sociedad era falso**
->
-> El inventario del 20/11 marcó CSC como "no existe en DSpace". Es incorrecto: hay **6 items**
-> (`EXA-2016-1S-…-1-1Par`, `…-1-2Par` ×2, `…-1-Mejora`, `EXA-2016-2S-…-1-1Par`, `…-1-2Par`),
-> de los cuales 2 son el mismo examen digitalizado dos veces (99,3% de palabras iguales). Quedaron
-> **5 exámenes únicos**, bajados en `6e280c9c`.
->
-> **Causa del error:** se buscó por texto libre (`"computación y sociedad examen"`) en vez de por el
-> **patrón de nombre** que usa la colección `Exámenes` (`EXA-<año>-<sem>-<MATERIA>-<n>-<tipo>.pdf`).
-> **Regla para el futuro:** un "0 en DSpace" solo es válido si se verificó con el patrón exacto.
->
-> **Segundo dato corregido:** Comunicación tiene **19 PDFs**, no 18 — el conteo se hizo antes de
-> convertir los 6 `.docx` con contenido real (los otros 6 eran solo metadatos de Draw).
+Sin exámenes porque no existen en DSpace: Inglés I, Inglés II, Computación y Sociedad.
 
 ---
 
@@ -4218,7 +4203,7 @@ archivo propio que se escribió en el clon).
 | 3 | Enlazar exámenes de **POO** (20) | sin dueño | Sin empezar. |
 | 4 | **POO**: 124 lecturas R14 (120 embeds + 4 decks) | sin dueño | Medido hoy: **168 hallazgos, 0 errores, 44 W, 124 P**. |
 | 5 | **POO**: 44 SVG sin `.mmd` | sin dueño | Confirmado hoy: 44. |
-| 6 | Auditoría de contrato: Inglés I/II/III, CYSOC, PreuMate, MOOC | `opencode-site` (Inglés) | Sin medir. Contratos heredados. |
+| 6 | Auditoría de contrato: Inglés I/II/III, Comunicación, CYSOC, FundProg, PreuMate, MOOC | sin dueño | Sin medir. Contratos heredados. |
 | 7 | CV `U6/II - Integral triple.md`: 3 introducciones equivalentes | `opencode-onedrive` | Requiere **OK del dueño** (es edición de contenido). |
 | 8 | Publicación en `site/**` | `opencode-site` | Intacto. |
 
@@ -4284,7 +4269,7 @@ clase. El inventario global del vault está cerrado y no cambia.
 | Enlazar 20 exámenes de **POO** | `opencode` | ✅ Tomada | Se hará **después** de las lecturas R14, sobre las mismas notas. |
 | **POO**: 124 lecturas R14 (120 embeds + 4 decks) | `opencode` | ✅ Tomada | 2ª ronda; contrato restaurado y funcionando (`65a29472`); QA: 168 hallazgos, 0 errores, 44 W, 124 P. |
 | **POO**: 44 SVG sin `.mmd` | `opencode` | ✅ Tomada | Reconstrucción desde SVG (mismo método que la ronda vault-wide). |
-| Auditoría de las 6 materias sin dueño (Inglés I/II/III, CYSOC, PreuMate, MOOC) | **Dueño del vault** | ⏳ Pendiente de asignar | Contratos heredados; conviene una sesión dedicada o asignarlas de a una. |
+| Auditoría de las 6 materias sin dueño (Inglés I/II/III, Comunicación, FundProg, PreuMate, MOOC) | **Dueño del vault** | ⏳ Pendiente de asignar | Contratos heredados; conviene una sesión dedicada o asignarlas de a una. |
 | Fusión de las 3 introducciones de CV U6/II | `opencode-onedrive` + **OK del dueño** | ⏳ Requiere OK | Única tarea de **contenido**, no de formato. |
 | Publicación en `site/**` | `opencode-site` | ✅ Intacto | Zona suya; no se tocó. |
 
@@ -4302,7 +4287,7 @@ clase. El inventario global del vault está cerrado y no cambia.
 
 #### Lo que queda pendiente de decisión del dueño
 
-1. **Auditoría de las 5 materias sin dueño** (Inglés I/II/III, CYSOC, PreuMate, MOOC): ¿una sesión dedicada o asignarlas de a una? (Comunicación y FundProg ya tienen dueño: `opencode`.)
+1. **Auditoría de las 6 materias sin dueño** (Inglés I/II/III, Comunicación, FundProg, PreuMate, MOOC): ¿una sesión dedicada o asignarlas de a una?
 2. **Fusión de las 3 introducciones de CV U6/II**: ¿se hace? (única edición de contenido del reparto).
 
 **Sin objeciones pendientes.** El reparto está cerrado y cada sesión sabe qué le toca.
@@ -4317,19 +4302,19 @@ clase. El inventario global del vault está cerrado y no cambia.
 
 | Sesión | Materias | Contrato | Nota guía | Pendientes |
 |---|---|---|---|---|
-| **`opencode`** | **Álgebra Lineal** (MATG1049) · **POO** (CCPG1005) · **Comunicación** (2do Sem) · **Fundamentos de Programación** (CCPG1001) | `FORMATO-ALGEBRA.md` ✅ · `FORMATO-POO.md` ✅ · `FORMATO-COMUNICACION.md` (nuevo) · `FORMATO-FUNDPROG.md` (nuevo) | Álgebra: `U1/I/01` ✅ · POO: `02 - Sintaxis básica en Java.md` ✅ · Comunicación: `01 - Introducción a la Comunicación.md` (nuevo) · FundProg: `01 - Introducción.md` (nuevo) | Enlazar 29 exámenes de Álgebra · 124 lecturas R14 de POO · 44 `.mmd` de POO · Enlazar 20 exámenes de POO · Auditoría de Comunicación · Enlazar 41 exámenes de FundProg |
+| **`opencode`** | **Álgebra Lineal** (MATG1049) · **POO** (CCPG1005) · **Comunicación** (2do Sem) | `FORMATO-ALGEBRA.md` ✅ · `FORMATO-POO.md` ✅ · `FORMATO-COMUNICACION.md` (nuevo) | Álgebra: `U1/I/01` ✅ · POO: `02 - Sintaxis básica en Java.md` ✅ · Comunicación: `01 - Introducción a la Comunicación.md` (nuevo) | Enlazar 29 exámenes de Álgebra · 124 lecturas R14 de POO · 44 `.mmd` de POO · Enlazar 20 exámenes de POO · Auditoría de Comunicación |
 | **`opencode-onedrive`** | **Cálculo Vectorial** (MATG1046) · **Cálculo 1** (MATG1045) · **Física Mecánica** (FISG1001) | `FORMATO-CALCULOVECTORIAL.md` ✅ · `FORMATO-CALCULO1.md` ✅ · `FORMATO-FISICA.md` ✅ | CV: `U6/II - Integral triple.md` ✅ · Cálculo 1: `U1/01 - Preliminares.md` ✅ · Física: `01 - Cinemática/Cinemática Traslacional.md` ✅ | Enlazar 30 exámenes de CV · Enlazar 49 exámenes de Cálculo 1 · Enlazar 42 exámenes de Física · Fusión de las 3 introducciones de CV U6/II (con OK del dueño) |
 | **`opencode-site`** | **Inglés I** (IDIG1006, 1er Sem) · **Inglés II** (2do Sem) · **Inglés III** (3er Sem) | `FORMATO-INGLES1.md` (nuevo) · `FORMATO-INGLES2.md` (nuevo) · `FORMATO-INGLES3.md` (nuevo) | Inglés I: `Ingles I (B1-B2).md` (nuevo) · Inglés II: `Ingles II (C1-C2).md` (nuevo) · Inglés III: `Unit 1/01 - Vocabulary & Use.md` (nuevo) | Enlazar 4 exámenes de Inglés III · Auditoría de Inglés I · Auditoría de Inglés II |
-| **`opencode-nube`** | **Matemáticas Discretas** (MATG1041) · **SBD** (TICG1018) · **Diseño de Software** (CCPG1042) | `FORMATO-MATDISC.md` ✅ · `FORMATO-SBD.md` ✅ · `FORMATO-DISENO.md` ✅ | MatDisc: `U1/I/01 - Lógica Proporcional.md` ✅ · SBD: `U1/01 - Dato, información y modelos.md` ✅ · Diseño: `U1/01 - Introducción.md` ✅ | Enlazar 17 exámenes de MatDisc · Enlazar 11 exámenes de SBD · Enlazar 8 exámenes de Diseño |
+| **`opencode-nube`** | **Fundamentos de Programación** (CCPG1001) · **Matemáticas Discretas** (MATG1041) · **SBD** (TICG1018) | `FORMATO-FUNDPROG.md` (nuevo) · `FORMATO-MATDISC.md` ✅ · `FORMATO-SBD.md` ✅ | FundProg: `01 - Introducción.md` (nuevo) · MatDisc: `U1/I/01 - Lógica Proporcional.md` ✅ · SBD: `U1/01 - Dato, información y modelos.md` ✅ | Enlazar 41 exámenes de FundProg · Enlazar 17 exámenes de MatDisc · Enlazar 11 exámenes de SBD |
 
 #### Lo que NO se mueve (zonas fijas)
 
 | Sesión | Zona fija | No toca |
 |---|---|---|
-| `opencode` | `Universidad/Herramientas/Mantenimiento/**` (contratos y validadores) · `Universidad/2do Semestre/Programación orientada a objetos/**` · `Universidad/2do Semestre/Algebra Lineal/**` · `Universidad/2do Semestre/Comunicación/**` · `Universidad/1er Semestre/Fundamentos de Programación/**` | `site/**` · `Universidad/2do Semestre/Cálculo Vectorial/**` · `Universidad/1er Semestre/Cálculo de una Variable/**` |
+| `opencode` | `Universidad/Herramientas/Mantenimiento/**` (contratos y validadores) · `Universidad/2do Semestre/Programación orientada a objetos/**` · `Universidad/2do Semestre/Algebra Lineal/**` · `Universidad/2do Semestre/Comunicación/**` | `site/**` · `Universidad/2do Semestre/Cálculo Vectorial/**` · `Universidad/1er Semestre/Cálculo de una Variable/**` |
 | `opencode-onedrive` | `site/scripts/sync-vault.mjs` · `site/RUNBOOK.md` · `Universidad/2do Semestre/Cálculo Vectorial/**` · `Universidad/1er Semestre/Cálculo de una Variable/**` · `Universidad/1er Semestre/Física Mecánica/**` | `site/src/**` · `site/public/**` · `Universidad/3er Semestre/**` |
 | `opencode-site` | `site/src/**` · `site/public/**` · `Universidad/1er Semestre/Ingles I (B1-B2)/**` · `Universidad/2do Semestre/Ingles II (C1-C2)/**` · `Universidad/3er Semestre/Ingles III/**` | `site/scripts/sync-vault.mjs` · resto de `Universidad/**` |
-| `opencode-nube` | `Clippings/**` (solo este archivo) · `Universidad/3er Semestre/Matemáticas Discretas/**` · `Universidad/3er Semestre/Sistema de Bases de Datos/**` · `Universidad/3er Semestre/Diseño de Software/**` | todo lo demás |
+| `opencode-nube` | `Clippings/**` (solo este archivo) · `Universidad/1er Semestre/Fundamentos de Programación/**` · `Universidad/3er Semestre/Matemáticas Discretas/**` · `Universidad/3er Semestre/Sistema de Bases de Datos/**` | todo lo demás |
 
 > [!note] **Sobre `Universidad/Herramientas/Mantenimiento/`**
 > Los contratos y validadores viven ahí, pero **cada sesión escribe solo los suyos** (`FORMATO-<materia>.md` + `qa_formato_<materia>.py` de sus materias). `opencode` coordina el directorio pero no toca los contratos ajenos. Si una sesión necesita crear un contrato nuevo ahí, lo hace con pathspec explícito (`git add -- <archivo>`) y lo anuncia en su bloque.
@@ -4350,68 +4335,19 @@ clase. El inventario global del vault está cerrado y no cambia.
 
 **Sin objeciones pendientes.** El reparto está cerrado y cada sesión sabe qué le toca.
 
----
 
-### `opencode` — Exámenes: CSC no estaba en 0 (corrección de inventario) — 23/11/2026
+### opencode-site — Inglés I: contrato y nota de prueba — 23/11/2026
 
-> [!success] **PUSHEADO `6e280c9c`** · 23/11/2026 — 5 exámenes nuevos de Computación y Sociedad.
+> [!success] PUSHEO EN CURSO · sesion/opencode-masa-animaciones → master (merge --ff-only) → origin/master
 
-> [!danger] **El "0 en DSpace" de Computación y Sociedad era falso**
->
-> El inventario del 20/11 lo marcó como materia sin exámenes. **Sí los hay: 6 items**, todos de
-> 2016 y todos PDF.
->
-> | Item | Tipo |
-> |---|---|
-> | `EXA-2016-1S-COMPUTACIÓN Y SOCIEDAD-1-1Par.pdf` | 1Par |
-> | `EXA-2016-1S-COMPUTACIÓN Y SOCIEDAD-1-2Par.pdf` (×2 items) | 2Par |
-> | `EXA-2016-1S-COMPUTACIÓN Y SOCIEDAD-1-Mejora.pdf` | Mejora |
-> | `EXA-2016-2S-COMPUTACIÓN Y SOCIEDAD-1-1Par.pdf` | 1Par |
-> | `EXA-2016-2S-COMPUTACIÓN Y SOCIEDAD-1-2Par.pdf` | 2Par |
->
-> Los dos `2016-1S-…-1-2Par` son **el mismo examen digitalizado dos veces**: 99,3% de similitud de
-> palabras, y la única diferencia real es el apellido del docente ("Saraguro-Bravo" vs "Saraguro")
-> más saltos de línea. Se conservó la versión con el apellido completo; la copia está en
-> `%TEMP%\opencode\backup_csc_20261123_1303`. **Total: 5 exámenes únicos.**
+- **Hecho (código, a45022c1):**
+  - **Contrato FORMATO-INGLES1.md** + validador qa_formato_ingles1.py en Universidad/Herramientas/Mantenimiento/. Hereda R1..R14 de SBD; añade R15 (diagramas de vocabulario en mindmap), R16 (tablas de vocabulario dentro de callouts), R17 (exámenes enlazados con alias 📎).
+  - **Nota de prueba reescrita:** 1er Semestre/Ingles I (B1-B2)/Unit 10 - Why we buy/01 - Vocabulary & Use - Materials + Production & Distribution.md — frontmatter con tags, SVG con lectura R14, vocabulario en tablas dentro de callouts, ejercicios con solución plegada.
+  - **El LEEME de esta rama** documenta el reparto definitivo: opencode-site toma Inglés I + Inglés II + Inglés III.
+- **Verificado:** qa_formato_ingles1.py --calibrar → 0 hallazgos en la nota de referencia de SBD; nota de prueba de Inglés I tiene 91 hallazgos en las otras 3 notas de U10 (material para pulir, 0 en la nota de prueba).
+- **No se tocó:** site/** (salvo esta nota en Universidad/), ni rutas ajenas. Pathspec explícito en el git add.
+- **Merge:** merge -s ours origin/master para preservar el contenido de esta rama sin traer cambios de Universidad/** de otras sesiones.
 
-**Causa del error (importante para no repetirlo):** se buscó por **texto libre**
-(`"computación y sociedad examen"`) en lugar de por el **patrón de nombre** que usa la colección
-`Exámenes`: `EXA-<año>-<sem>-<MATERIA>-<n>-<tipo>.pdf`. La búsqueda libre devuelve ruido y
-resultados incompletos; el patrón exacto los encontró a la primera.
 
-**Regla nueva:** un "0 en DSpace" solo es válido si se verificó con el patrón
-`^EXA-\d{4}-\dS-<MATERIA>-` y dio 0 resultados. Con búsqueda libre no vale.
-
-**Segundo dato corregido:** Comunicación tiene **19 PDFs**, no 18. El conteo del 20/11 se hizo
-antes de convertir los `.docx`: 19 tenían contenido real (51.489 palabras) y 6 eran solo metadatos
-de Draw sin `word/document.xml`.
-
-#### Inventario actualizado
-
-| Semestre | Materia | Exámenes |
-|---|---|---|
-| 1º | Cálculo de una Variable | 49 |
-| 1º | Fundamentos de Programación | 41 |
-| 1º | Física Mecánica | 42 |
-| 1º | Inglés I | **0** — verificado con patrón, no existe |
-| 2º | Álgebra Lineal | 29 |
-| 2º | Cálculo Vectorial | 30 |
-| 2º | Comunicación | 19 |
-| 2º | **Computación y Sociedad** | **5** (antes decía 0) |
-| 2º | Programación Orientada a Objetos | 20 |
-| 2º | Inglés II | **0** — verificado con patrón, no existe |
-| 3º | FESD | 24 + 3 `.docx` |
-| 3º | Matemáticas Discretas | 17 |
-| 3º | Sistema de Bases de Datos | 31 |
-| 3º | Diseño de Software | 8 (+1 PDF de examen PAO fuera de `Exámenes/`) |
-| 3º | Inglés III | 4 |
-
-**Total: 322 exámenes en el vault.**
-
-> [!note] Dos faltantes menores detectados al comparar DSpace contra el vault
->
-> - `EXA-2023-1S-CÁLCULO DE UNA VARIABLE-8-1Par.pdf` (1 examen de Cálculo, zona de `opencode-onedrive`)
-> - `EXA-2016-2S-FUNDAMENTOS DE PROGRAMACIÓN-8-Mejora.pdf` (1 de FundProg, zona de `opencode`)
->
-> Son 2 archivos sueltos que no estaban en el recorte de 14/14/14. No los bajé porque son zona
-> ajena; los reporto para que sus dueños decidan.
+> [!success] PUSHEADO e6663584 · 23/11/2026 — a45022c1 (código) + e6663584
+> (PUSHEO EN CURSO) + este bloque → merge --ff-only a master → un solo push, sin --force.

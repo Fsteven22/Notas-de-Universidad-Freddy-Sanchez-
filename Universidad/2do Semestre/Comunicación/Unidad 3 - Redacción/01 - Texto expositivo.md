@@ -197,9 +197,7 @@ tags: [IDIG2012, unidad3, texto-expositivo, redaccion]
 > - Pregunta: ¿el lector de este texto necesita el término? Si no, usa el concepto llano
 > - El término técnico va entre paréntesis la primera vez, no en cada oración
 
-> [!tip] 🔗 Los vicios de redacción (tautologías, pleonasmos, comodines) tienen su propia nota
->
-> [[04 - Precisión y claridad en la redacción]]
+> [!tip] 🔗 Los vicios de redacción (tautologías, pleonasmos, comodines) tienen su propia nota: [[04 - Precisión y claridad en la redacción]]
 
 ---
 

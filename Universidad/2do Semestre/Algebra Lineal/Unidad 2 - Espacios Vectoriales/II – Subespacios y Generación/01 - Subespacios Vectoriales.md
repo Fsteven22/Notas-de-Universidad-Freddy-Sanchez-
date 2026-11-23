@@ -1761,13 +1761,4 @@ tags: [MATG1049, algebra-lineal, unidad2, 01-subespacios-vectoriales]
 
 ---
 
-
-## 📝 Exámenes de la materia
-
-> [!info] Exámenes reales de DSpace que cubren este tema
->
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-2S-ÁLGEBRA LINEAL-1-2Par.pdf\|EXA-2021-2S-ÁLGEBRA LINEAL-1-2Par.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2023-2S-ÁLGEBRA LINEAL-3-2Par.pdf\|EXA-2023-2S-ÁLGEBRA LINEAL-3-2Par.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/ÁLGEBRA LINEAL 2015-2S (ICM) 2ª evaluación - 07.pdf\|ÁLGEBRA LINEAL 2015-2S (ICM) 2ª evaluación - 07.pdf]]
-
 **Tags:** #algebra-lineal #subespacios-vectoriales #espacios-vectoriales #span #suma-directa #interseccion #generadores #algebra-abstracta #geometria-lineal
