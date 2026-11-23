@@ -17,6 +17,7 @@ tags: [CCPG1005, unidad6, poo, gui]
 > - **GUI** → Como una conversación cara a cara: gestos, expresiones, señales visuales
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Principios_de_las_GUI_01.svg]]
+> **Se lee así:** Diagrama de flujo LR con 3 bloques y 4 conexiones. Los bloques son: Usuario, GUI Interfaz Gráfica, Programa Java. Las 4 conexiones muestran el flujo entre los bloques.
 > 
 > **Ventajas de las GUI:**
 > 
@@ -35,6 +36,7 @@ tags: [CCPG1005, unidad6, poo, gui]
 > [!note] 📚 Evolución de las Bibliotecas
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Principios_de_las_GUI_02.svg]]
+> **Se lee así:** 📚 Evolución de las Bibliotecas **Comparación:**
 > 
 > **Comparación:**
 > 
@@ -192,6 +194,7 @@ tags: [CCPG1005, unidad6, poo, gui]
 > - ✅ Diseño responsivo
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Principios_de_las_GUI_04.svg]]
+> **Se lee así:** Diagrama de flujo TD con 6 bloques y 5 conexiones. Los bloques son: Layout Managers, FlowLayout Flujo izq→der, BorderLayout 5 regiones, GridLayout Cuadrícula, BoxLayout Línea/Columna. Las 5 conexiones muestran el flujo entre los bloques.
 
 ### 🌊 FlowLayout
 
@@ -428,6 +431,7 @@ tags: [CCPG1005, unidad6, poo, gui]
 > **4. Jerarquía visual**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Principios_de_las_GUI_05.svg]]
+> **Se lee así:** Diagrama de flujo TD con 4 bloques y 3 conexiones. Los bloques son: Título grande, Subtítulo mediano, Contenido normal, Notas pequeñas. Las 3 conexiones muestran el flujo entre los bloques.
 > 
 > **5. Agrupación lógica**
 > 
@@ -661,6 +665,7 @@ tags: [CCPG1005, unidad6, poo, gui]
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Principios_de_las_GUI_07.svg]]
+> **Se lee así:** Diagrama de flujo LR con 27 bloques y 0 conexiones.
 
 ---
 

@@ -29,6 +29,7 @@ tags: [CCPG1005, unidad4, poo, polimorfismo]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_01.svg]]
+> **Se lee así:** Diagrama de flujo TD con 8 bloques y 7 conexiones. Los bloques son: Una Referencia Animal, "Polimorfismo", Perro, Gato, Pájaro. Las 7 conexiones muestran el flujo entre los bloques.
 
 ---
 
@@ -472,6 +473,7 @@ tags: [CCPG1005, unidad4, poo, polimorfismo]
 > ```
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_04.svg]]
+> **Se lee así:** Diagrama de flujo LR con 3 bloques y 4 conexiones. Los bloques son: Animal Superclase, Perro Subclase, Gato Subclase. Las 4 conexiones muestran el flujo entre los bloques.
 
 ### 🛠️ Upcasting en Detalle
 
@@ -1134,6 +1136,7 @@ tags: [CCPG1005, unidad4, poo, polimorfismo]
 > [!note] 🖼️ ️ Mapa Mental Completo
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_05.svg]]
+> **Se lee así:** Diagrama de flujo LR con 17 bloques y 0 conexiones.
 
 ### 📋 Tabla Resumen Final
 

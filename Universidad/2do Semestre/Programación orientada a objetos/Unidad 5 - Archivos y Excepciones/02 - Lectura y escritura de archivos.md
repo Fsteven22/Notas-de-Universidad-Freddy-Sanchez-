@@ -31,6 +31,7 @@ tags: [CCPG1005, unidad5, poo, archivos]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_01.svg]]
+> **Se lee así:** Diagrama de flujo TD con 14 bloques y 13 conexiones. Los bloques son: Programa Java, "Operaciones de E/S", 📖 LECTURA, ✍️ ESCRITURA, 🔍 CONSULTA. Las 13 conexiones muestran el flujo entre los bloques.
 
 ---
 
@@ -61,6 +62,7 @@ tags: [CCPG1005, unidad5, poo, archivos]
 > **Lectura de archivos:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_03.svg]]
+> **Se lee así:** [!example] ⚡ Cómo Fluyen los Datos **Lectura de archivos:**
 > 
 > **Escritura de archivos:**
 > 
@@ -86,6 +88,7 @@ tags: [CCPG1005, unidad5, poo, archivos]
 > **Proceso paso a paso:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_05.svg]]
+> **Se lee así:** Diagrama de flujo LR con 6 bloques y 6 conexiones. Los bloques son: 1. Verificar existencia, 2. Abrir archivo, 3. Leer contenido, 4. Procesar datos, "¿Más datos?". Las 6 conexiones muestran el flujo entre los bloques.
 > 
 > **Métodos de lectura:**
 > 
@@ -181,6 +184,7 @@ tags: [CCPG1005, unidad5, poo, archivos]
 > **Comparación de estrategias:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_06.svg]]
+> **Se lee así:** Diagrama de flujo TD con 8 bloques y 9 conexiones. Los bloques son: "Tamaño del archivo?", < 1 MB, 1-100 MB, > 100 MB, Cargar todo en memoria. Las 9 conexiones muestran el flujo entre los bloques.
 
 ---
 
@@ -304,6 +308,7 @@ tags: [CCPG1005, unidad5, poo, archivos]
 > **Comparación de modos:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_08.svg]]
+> **Se lee así:** Diagrama de flujo TD con 9 bloques y 8 conexiones. Los bloques son: "Modo de escritura?", Sobrescribir, Append, FileWriter archivo, FileWriter archivo, true. Las 8 conexiones muestran el flujo entre los bloques.
 
 ---
 
@@ -446,6 +451,7 @@ tags: [CCPG1005, unidad5, poo, archivos]
 > **Flujo de exploración:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_10.svg]]
+> **Se lee así:** Diagrama de flujo TD con 7 bloques y 8 conexiones. Los bloques son: Directorio raíz, listFiles, "Para cada File", "¿Es directorio?", Recursión: explorar subdirectorio. Las 8 conexiones muestran el flujo entre los bloques.
 
 ---
 
@@ -556,6 +562,7 @@ tags: [CCPG1005, unidad5, poo, archivos]
 > **Flujo de ejecución:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_12.svg]]
+> **Se lee así:** Diagrama de flujo TD con 7 bloques y 7 conexiones. Los bloques son: Abrir recurso try, Ejecutar código, "¿Excepción?", Cerrar automáticamente, Cerrar automáticamente. Las 7 conexiones muestran el flujo entre los bloques.
 
 ---
 
@@ -629,6 +636,7 @@ tags: [CCPG1005, unidad5, poo, archivos]
 > **5. Elegir el nivel correcto de abstracción**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_13.svg]]
+> **Se lee así:** Diagrama de flujo TD con 7 bloques y 6 conexiones. Los bloques son: "Tipo de operación?", Solo metadatos, Lectura/escritura, Usar File, "Buffer?". Las 6 conexiones muestran el flujo entre los bloques.
 
 ### 🔄 Patrón Común: Copiar Archivo
 

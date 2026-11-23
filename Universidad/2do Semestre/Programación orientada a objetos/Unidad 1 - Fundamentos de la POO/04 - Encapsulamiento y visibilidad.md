@@ -30,6 +30,7 @@ tags: [CCPG1005, unidad1, poo, encapsulamiento]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Encapsulamiento_y_visibilidad_01.svg]]
+> **Se lee así:** Diagrama de flujo TD con 7 bloques y 6 conexiones. Los bloques son: Usuario, Interfaz Pública, Métodos públicos, "Validación", Modificar Atributos Privados. Las 6 conexiones muestran el flujo entre los bloques.
 
 ---
 
@@ -81,6 +82,7 @@ tags: [CCPG1005, unidad1, poo, encapsulamiento]
 > [!success] 📋 Guía de Decisión
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Encapsulamiento_y_visibilidad_02.svg]]
+> **Se lee así:** Diagrama de flujo TD con 15 bloques y 14 conexiones. Los bloques son: "¿Qué estás declarando?", Atributo, Método, Clase, "¿Debe ser modificable externamente?". Las 14 conexiones muestran el flujo entre los bloques.
 > 
 > **Reglas generales:**
 > 
@@ -771,6 +773,7 @@ tags: [CCPG1005, unidad1, poo, encapsulamiento]
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Encapsulamiento_y_visibilidad_03.svg]]
+> **Se lee así:** Diagrama de flujo LR con 25 bloques y 0 conexiones.
 
 > [!example] 🎯 Práctica 2: Clase Temperatura
 > 

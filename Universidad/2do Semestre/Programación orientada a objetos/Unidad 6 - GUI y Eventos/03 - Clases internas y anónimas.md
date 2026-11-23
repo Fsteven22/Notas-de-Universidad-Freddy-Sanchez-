@@ -31,6 +31,7 @@ tags: [CCPG1005, unidad6, poo, clases-internas]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_01.svg]]
+> **Se lee así:** Diagrama de flujo TD con 15 bloques y 14 conexiones. Los bloques son: Clases en Java, "Tipos de Clases Internas", 🏠 Clases Internas Miembro, ⚡ Clases Internas Locales, 🎭 Clases Anónimas. Las 14 conexiones muestran el flujo entre los bloques.
 
 ---
 
@@ -41,6 +42,7 @@ tags: [CCPG1005, unidad6, poo, clases-internas]
 > [!note] 🌳 Organización de Clases Internas
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_02.svg]]
+> **Se lee así:** 🌳 Organización de Clases Internas **Comparación de características:**
 > 
 > **Comparación de características:**
 > 
@@ -107,6 +109,7 @@ tags: [CCPG1005, unidad6, poo, clases-internas]
 > **Características clave:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_04.svg]]
+> **Se lee así:** Diagrama de flujo TD con 8 bloques y 7 conexiones. Los bloques son: Clase Interna Miembro, Acceso a TODO de la externa, Requiere instancia de externa, Puede tener cualquier modificador, Referencia implícita Externa.this. Las 7 conexiones muestran el flujo entre los bloques.
 
 ### 🛠️ Creación e Instanciación
 
@@ -169,6 +172,7 @@ tags: [CCPG1005, unidad6, poo, clases-internas]
 > **Flujo de creación:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_05.svg]]
+> **Se lee así:** Diagrama de flujo LR con 5 bloques y 4 conexiones. Los bloques son: 1. Crear ClaseExterna, 2. Obtener referencia externa, 3. Usar externa.new ClaseInterna, 4. Instancia interna creada, 5. Vinculada a instancia externa. Las 4 conexiones muestran el flujo entre los bloques.
 
 ### 💼 Casos de Uso Reales
 
@@ -459,6 +463,7 @@ tags: [CCPG1005, unidad6, poo, clases-internas]
 > **Estructura visual:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_07.svg]]
+> **Se lee así:** Diagrama de flujo LR con 5 bloques y 4 conexiones. Los bloques son: new Interface/Class, Paréntesis constructor, Llaves: cuerpo de la clase, Implementar métodos, Punto y coma final;. Las 4 conexiones muestran el flujo entre los bloques.
 > 
 > **Características:**
 > 
@@ -664,6 +669,7 @@ tags: [CCPG1005, unidad6, poo, clases-internas]
 > **Limitaciones:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_08.svg]]
+> **Se lee así:** Diagrama de flujo TD con 9 bloques y 8 conexiones. Los bloques son: Limitaciones Clases Anónimas, ❌ No reutilizable, ❌ Solo 1 interfaz/clase, ❌Sin constructor personalizado, ❌ Dificulta debugging. Las 8 conexiones muestran el flujo entre los bloques.
 > 
 > 
 > 
@@ -734,6 +740,7 @@ tags: [CCPG1005, unidad6, poo, clases-internas]
 > **Diferencias clave con clases internas normales:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_09.svg]]
+> **Se lee así:** Diagrama de flujo LR con 6 bloques y 4 conexiones. Los bloques son: Clase Interna Normal, Requiere instancia de externa, Acceso total a miembros de instancia, Clase Interna Estática, Independiente de instancia externa. Las 4 conexiones muestran el flujo entre los bloques.
 > 
 > **Tabla comparativa:**
 > 
@@ -793,6 +800,7 @@ tags: [CCPG1005, unidad6, poo, clases-internas]
 > **Comparación visual de instanciación:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_10.svg]]
+> **Se lee así:** **Comparación visual de instanciación:** [!example] 🎯 Ejemplos Prácticos
 
 ### 💼 Casos de Uso
 
@@ -1455,6 +1463,7 @@ tags: [CCPG1005, unidad6, poo, clases-internas]
 > [!note] 🖼️ ️ Mapa Mental Completo
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Clases_internas_y_anónimas_12.svg]]
+> **Se lee así:** Diagrama de flujo LR con 21 bloques y 0 conexiones.
 
 ### 📋 Tabla de Decisión Rápida
 

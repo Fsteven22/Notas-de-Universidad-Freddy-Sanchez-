@@ -111,6 +111,7 @@ tags: [CCPG1005, unidad1, poo, static]
 > **Visualización del proceso:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Miembros_estáticos_(static)_03.svg]]
+> **Se lee así:** **Visualización del proceso:** **Uso práctico:**
 > 
 > **Uso práctico:**
 > 
@@ -177,6 +178,7 @@ tags: [CCPG1005, unidad1, poo, static]
 > **Razón de las restricciones:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Miembros_estáticos_(static)_04.svg]]
+> **Se lee así:** Diagrama de flujo TD con 7 bloques y 5 conexiones. Los bloques son: Método static, "¿Existe objeto?", Acceso a miembros static ✅ PERMITIDO, Acceso a miembros de instancia ❌ PROHIBIDO, Método de instancia. Las 5 conexiones muestran el flujo entre los bloques.
 
 ### 🧮 Métodos Utilitarios
 
@@ -423,6 +425,7 @@ tags: [CCPG1005, unidad1, poo, static]
 > **Visualización en memoria:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Miembros_estáticos_(static)_06.svg]]
+> **Se lee así:** Diagrama de flujo TD con 8 bloques y 7 conexiones. Los bloques son: Área Static Clase Persona, totalPersonas = 3 COMPARTIDA, Objeto 1: Ana, nombre = Ana, Objeto 2: Luis. Las 7 conexiones muestran el flujo entre los bloques.
 
 ---
 
@@ -435,6 +438,7 @@ tags: [CCPG1005, unidad1, poo, static]
 > **1. Cuándo usar static:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Miembros_estáticos_(static)_07.svg]]
+> **Se lee así:** Diagrama de flujo TD con 5 bloques y 4 conexiones. Los bloques son: "¿El valor/comportamiento es común a TODAS las instancias?", ✅ Usar static, ❌ Usar instancia, Ejemplos: - Contadores globales - Constantes - Métodos utilitarios, Ejemplos: - Atributos personales - Estado del objeto. Las 4 conexiones muestran el flujo entre los bloques.
 > 
 > **2. Constantes siempre public static final:**
 > 
@@ -503,6 +507,7 @@ tags: [CCPG1005, unidad1, poo, static]
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Miembros_estáticos_(static)_08.svg]]
+> **Se lee así:** Diagrama de flujo LR con 10 bloques y 0 conexiones.
 
 > [!quote] 🎓 Puntos Clave para Recordar
 > 
