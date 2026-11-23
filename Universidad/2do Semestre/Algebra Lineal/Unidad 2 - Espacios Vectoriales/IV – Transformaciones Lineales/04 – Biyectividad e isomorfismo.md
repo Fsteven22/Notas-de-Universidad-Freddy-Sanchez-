@@ -903,11 +903,4 @@ tags: [MATG1049, algebra-lineal, unidad2, 04-biyectividad-e-isomorfismo]
 
 ---
 
-
-## 📝 Exámenes de la materia
-
-> [!info] Exámenes reales de DSpace que cubren este tema
->
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/ÁLGEBRA LINEAL 2010-1S (ICM) 2ª evaluación - Auditoría y CPA.pdf\|ÁLGEBRA LINEAL 2010-1S (ICM) 2ª evaluación - Auditoría y CPA.pdf]]
-
 **Tags:** #algebra-lineal #isomorfismo #biyectividad #transformaciones-lineales #equivalencia-estructural #teoremas-de-noether #clasificacion-dimensional #invertibilidad #grupo-lineal #espacios-isomorfos

@@ -19,8 +19,6 @@ tags: [CCPG1005, unidad5, poo, excepciones]
 > - **Con manejo** → Muestra mensaje "Servicio temporalmente no disponible, intente más tarde"
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_01.svg]]
-> **Se lee así:** Diagrama de flujo TD con 5 bloques y 4 conexiones. Los bloques son: Operación normal, "¿Error?", 💥 Programa termina Usuario frustrado, ⚠️ Mensaje amigable Alternativas ofrecidas, ✅ Usuario satisfecho Continúa usando app. Las 4 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 
@@ -142,8 +140,6 @@ tags: [CCPG1005, unidad5, poo, excepciones]
 > **Ventajas del wrapping:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_02.svg]]
-> **Se lee así:** Diagrama de flujo LR con 4 bloques y 3 conexiones. Los bloques son: IOException Técnica, ErrorAlmacenamientoException De negocio, ❌ Usuario no entiende 'FileNotFoundException', ✅ Usuario entiende 'Error al guardar estudiante'. Las 3 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 
@@ -213,8 +209,6 @@ tags: [CCPG1005, unidad5, poo, excepciones]
 > **Estructura jerárquica:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_03.svg]]
-> **Se lee así:** [!note] 📊 Organizar Excepciones por Dominio **Estructura jerárquica:**
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > **Implementación:**
 > 
@@ -277,8 +271,6 @@ tags: [CCPG1005, unidad5, poo, excepciones]
 > **Regla de decisión:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_04.svg]]
-> **Se lee así:** Diagrama de flujo TD con 7 bloques y 6 conexiones. Los bloques son: "¿El llamador puede recuperarse?", ¿Es un error de programación?, ¿Es una condición esperada de negocio?, RuntimeException No verificada, Exception Verificada. Las 6 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > **Excepción VERIFICADA (extends Exception):**
 > 
@@ -893,8 +885,6 @@ tags: [CCPG1005, unidad5, poo, excepciones]
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_05.svg]]
-> **Se lee así:** Diagrama de flujo LR con 18 bloques y 0 conexiones.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 

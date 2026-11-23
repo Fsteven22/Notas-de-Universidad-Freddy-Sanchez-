@@ -31,8 +31,6 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_01.svg]]
-> **Se lee así:** Diagrama de flujo TD con 12 bloques y 11 conexiones. Los bloques son: Usuario hace clic, "¿Dónde se ejecuta la operación?", ❌ Thread de GUI, ✅ Thread de Trabajo, UI se congela. Las 11 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 
@@ -51,8 +49,6 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > - Actualizar el estado visual de la interfaz
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_02.svg]]
-> **Se lee así:** Diagrama de flujo LR con 9 bloques y 8 conexiones. Los bloques son: Usuario, Eventos, Event Dispatch Thread, Renderizado, Listeners. Las 8 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > **Regla de Oro de Swing:**
 > 
@@ -186,8 +182,6 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > **Problemas observados:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_03.svg]]
-> **Se lee así:** **Problemas observados:** **Síntomas de EDT bloqueado:**
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > **Síntomas de EDT bloqueado:**
 > 
@@ -308,8 +302,6 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > **Flujo de ejecución:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_05.svg]]
-> **Se lee así:** **Flujo de ejecución:** [!example] 💼 Caso de Uso Real
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ### 🎨 Ejemplo Completo: Procesador de Archivos
 
@@ -562,8 +554,6 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > **Flujo de ejecución:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_07.svg]]
-> **Se lee así:** **Flujo de ejecución:** [!warning] ⚠️ Ejecución Síncrona (Usar con Precaución)
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ### ⏰ invokeAndWait
 
@@ -621,8 +611,6 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > **⚠️ PELIGROS de invokeAndWait:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_08.svg]]
-> **Se lee así:** Diagrama de flujo TD con 6 bloques y 5 conexiones. Los bloques son: invokeAndWait, "¿Llamado desde el EDT?", 💀 DEADLOCK, "¿EDT ocupado?", ⏳ Worker espera. Las 5 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > **Reglas de uso:**
 > 
@@ -1087,8 +1075,6 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > **Por qué ocurre:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_09.svg]]
-> **Se lee así:** **Por qué ocurre:** **Solución:**
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > **Solución:**
 > 
@@ -1408,8 +1394,6 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > [!note] 🖼️ ️ Mapa Mental Completo
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_10.svg]]
-> **Se lee así:** Diagrama de flujo LR con 13 bloques y 0 conexiones.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ### 📋 Tabla Comparativa Final
 
@@ -1427,8 +1411,6 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > **Decisión rápida:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_11.svg]]
-> **Se lee así:** Diagrama de flujo TD con 7 bloques y 6 conexiones. Los bloques son: "¿Cuánto tarda la operación?", < 100ms, > 100ms, ✅ Ejecutar en EDT directamente, "¿Necesitas actualizar UI?". Las 6 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 

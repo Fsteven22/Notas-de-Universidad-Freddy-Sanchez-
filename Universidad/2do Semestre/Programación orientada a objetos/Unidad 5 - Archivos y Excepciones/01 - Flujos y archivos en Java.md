@@ -18,8 +18,6 @@ tags: [CCPG1005, unidad5, poo, flujos]
 > - **Destino** → Desembocadura (pantalla, archivo, red)
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Flujos_y_archivos_en_Java_01.svg]]
-> **Se lee así:** Diagrama de flujo LR con 3 bloques y 2 conexiones. Los bloques son: 📁 Origen Archivo, ☕ Programa Java, 📄 Destino Archivo. Las 2 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 
@@ -42,16 +40,12 @@ tags: [CCPG1005, unidad5, poo, flujos]
 > [!note] 🖼️ Flujos de Bytes vs Caracteres
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Flujos_y_archivos_en_Java_02.svg]]
-> **Se lee así:** Diagrama de flujo TD con 11 bloques y 10 conexiones. Los bloques son: Flujos en Java, Flujos de Bytes, Flujos de Caracteres, InputStream Lectura, OutputStream Escritura. Las 10 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ### 📊 Jerarquía Completa
 
 > [!note] 🌳 Árbol de Clases de E/S
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Flujos_y_archivos_en_Java_03.svg]]
-> **Se lee así:** [!note] 🌳 Árbol de Clases de E/S
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 
@@ -204,8 +198,6 @@ tags: [CCPG1005, unidad5, poo, flujos]
 > [!summary] 🎯 Guía Rápida de Decisión
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Flujos_y_archivos_en_Java_06.svg]]
-> **Se lee así:** Diagrama de flujo TD con 9 bloques y 8 conexiones. Los bloques son: "¿Tipo de archivo?", Texto, Binario, "¿Operación?", "¿Operación?". Las 8 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > |Pregunta|Respuesta|Clase a usar|
 > |---|---|---|

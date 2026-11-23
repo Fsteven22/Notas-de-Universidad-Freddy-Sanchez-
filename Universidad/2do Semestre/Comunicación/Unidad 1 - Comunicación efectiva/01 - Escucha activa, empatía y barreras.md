@@ -27,13 +27,7 @@ tags: [IDIG2012, unidad1, escucha-activa, empatia, comunicacion]
 > | **Trabajo en equipo** | Decisiones apresuradas | Decisiones con información completa |
 > | **Liderazgo** | Equipo se siente ignorado | Equipo se siente validado |
 
-> [!info] 🔀 Oír vs. escuchar de un vistazo
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Escucha_activa,_empatía_y_barreras_01.svg]]
->
-> **Se lee así:** el diagrama arranca con un emisor que habla y se bifurca según cómo escucha el receptor. En la rama de la **escucha pasiva** oye palabras, prepara su respuesta, interrumpe o juzga y termina en un malentendido. En la rama de la **escucha activa** comprende el contenido, capta la intención y la emoción, confirma y retroalimenta, y llega a un acuerdo claro.
->
-> **Por qué importa:** es el mapa de toda la unidad: cada técnica que viene después (CARE, reformular, nombrar la emoción) cuelga de una de esas dos ramas.
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Escucha_activa,_empatía_y_barreras_01.svg]]
 
 ---
 
@@ -46,10 +40,6 @@ tags: [IDIG2012, unidad1, escucha-activa, empatia, comunicacion]
 > Es el propósito detrás del mensaje: informar, pedir, persuadir, expresar emoción. Escuchar activamente es detectar esa intención, no solo las palabras.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Escucha_activa,_empatía_y_barreras_02.svg]]
->
-> **Se lee así:** el diagrama apila los tres niveles sobre un mismo mensaje. En la superficie quedan las **palabras** (nivel 1, oír); debajo está el **contenido** (nivel 2, entender); y en el fondo la **emoción y el contexto** (nivel 3, empatizar). Solo la escucha activa llega hasta el fondo y devuelve una respuesta ajustada.
->
-> **Por qué importa:** explica por qué asentir no basta: si te quedas en las palabras, respondes a un mensaje que el otro no envió.
 >
 > **Comparación visual:**
 >
@@ -105,10 +95,6 @@ tags: [IDIG2012, unidad1, escucha-activa, empatia, comunicacion]
 > El material de clase define **tres componentes inseparables**:
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Escucha_activa,_empatía_y_barreras_04.svg]]
->
-> **Se lee así:** el diagrama despliega la escucha activa en tres pasos encadenados: primero **comprensión y retención** del contenido, después la **identificación de la intención comunicativa** (qué quiere el otro: informar, pedir, persuadir, desahogar) y por último la **identificación y gestión de las emociones**, propias y ajenas.
->
-> **Por qué importa:** si saltas el tercer componente, la conversación se siente correcta pero el otro no se siente escuchado; los tres son inseparables, no una lista de la que se pueda escoger.
 >
 > | Componente | Qué Hace | Clave |
 > |---|---|---|
@@ -186,10 +172,6 @@ tags: [IDIG2012, unidad1, escucha-activa, empatia, comunicacion]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Escucha_activa,_empatía_y_barreras_05.svg]]
 >
-> **Se lee así:** el diagrama parte de un mensaje claro y lanza la pregunta "¿qué barrera aparece?", con tres ramas. La **percepción selectiva** hace que solo oigas lo que te conviene; los **juicios de valor** te llevan a etiquetar antes de entender; y las **emociones** (ansiedad, enojo) distorsionan lo que llega.
->
-> **Por qué importa:** son los tres filtros que se activan sin que decidas; reconocerlos en el momento es lo que permite aplicar el antídoto en vez de reaccionar.
->
 > **Síntomas y antídotos:**
 >
 > | Barrera | Ejemplo | Antídoto CARE |
@@ -248,10 +230,6 @@ tags: [IDIG2012, unidad1, escucha-activa, empatia, comunicacion]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Escucha_activa,_empatía_y_barreras_06.svg]]
 >
-> **Se lee así:** la cadena es en cuatro pasos: observo una acción o una emoción, las **neuronas espejo** se activan, se produce una **simulación interna** de esa experiencia, y de ahí sale la **resonancia empática** — entiendo y siento lo que sientes.
->
-> **Por qué importa:** por eso la empatía se entrena: cada vez que escuchas de verdad, el cerebro repite el circuito; no es un don fijo.
->
 > **Implicación práctica:** la escucha activa no es solo técnica — activa el sistema de neuronas espejo, mejorando la empatía natural con práctica deliberada.
 >
 
@@ -260,10 +238,6 @@ tags: [IDIG2012, unidad1, escucha-activa, empatia, comunicacion]
 > **Empatía no es estar de acuerdo, es entender el marco del otro.**
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Escucha_activa,_empatía_y_barreras_07.svg]]
->
-> **Se lee así:** el diagrama alterna dos voces — "yo escucho" y "otro habla" — con cinco pasos: **pausa**, **pregunto**, **explica**, **reflejo** (no juzgo aún, valido la emoción) y **confirma**. La empatía operativa es esa secuencia, no una actitud.
->
-> **Por qué importa:** convierte "ser empático" en algo que se puede ejecutar paso a paso en una conversación real.
 >
 > **Frases plantilla:**
 >
@@ -419,13 +393,7 @@ tags: [IDIG2012, unidad1, escucha-activa, empatia, comunicacion]
 
 ## 📊 Resumen Visual
 
-> [!info] 🗺️ Todo la unidad en un vistazo
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Escucha_activa,_empatía_y_barreras_08.svg]]
->
-> **Se lee así:** el mapa cierra la unidad con seis bloques: **niveles** (oír, entender, empatizar), **componentes** (comprensión, intención, gestión emocional), **barreras** (percepción selectiva, juicios de valor, emociones, ruido y filtros mentales), **empatía** (neuronas espejo, empatía operativa), **antídotos** (CARE, reformular, nombrar la emoción) y **equipo** (confirmar requerimiento, feedback sin juicio).
->
-> **Por qué importa:** si solo recuerdas una imagen de la unidad, que sea esta: reúne el diagnóstico (barreras) y el tratamiento (antídotos) en la misma página.
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Escucha_activa,_empatía_y_barreras_08.svg]]
 
 > [!success] 🔍 Comparación Final
 >
@@ -441,7 +409,6 @@ tags: [IDIG2012, unidad1, escucha-activa, empatia, comunicacion]
 ## 📝 Ejercicios Propuestos
 
 > [!info] ℹ️ Cómo trabajarlos
->
 > Evalúan lo mismo que la semana de evaluación: aplicar, no recitar. Tapa la solución, resuelve, compara.
 
 ### ✏️ Ejercicio 1 — Aplica CARE en vivo
@@ -497,21 +464,23 @@ tags: [IDIG2012, unidad1, escucha-activa, empatia, comunicacion]
 #flashcards/comunicacion-u1
 
 > [!note] 🧠 Repasa con el plugin Spaced Repetition
->
-> - ¿Oír vs escuchar?::Involuntario sin esfuerzo vs acto intencional consciente.
-> - ¿3 componentes de la escucha activa?::Comprensión-retención, intención comunicativa y gestión emocional.
-> - ¿CARE?::Concentrarse, Asentir, Reformular, Emocionar (nombrar la emoción).
-> - ¿Qué son las neuronas espejo?::Se activan al observar y al actuar: base biológica de la empatía.
-> - ¿3 barreras del syllabus + antídoto común?::Percepción selectiva, juicios de valor, emociones; antídoto: reformular y nombrar.
-> - ¿6 elementos del proceso clásico?::Emisor, receptor, código, canal, mensaje y contexto (+ retroalimentación y ruido).
-> - ¿Efectiva vs asertiva?::Efectiva = claridad de transmisión; asertiva = decir lo tuyo respetando al otro.
-> - ¿6 técnicas CCL en orden?::Atender, suspender juicio, reflejar, aclarar, resumir, compartir (y después: actuar).
-> - ¿Por qué actuar después de escuchar?::Percepción de "me escucharon" 2x mayor; sin acción no cuenta.
-> - ¿5 barreras externas (Ruiz Mitjana)?::Semánticas, psicológicas, fisiológicas, físicas y administrativas.
-> - ¿4 etapas del mensaje asertivo?::Hechos → sentimientos → consecuencias → solución (Forner).
-> <!--SR:!2026-10-11,4,270-->
-> <!--SR:!2026-10-10,3,250-->
-> <!--SR:!2026-10-08,1,230-->
+
+- ¿Oír vs escuchar?::Involuntario sin esfuerzo vs acto intencional consciente.
+<!--SR:!2026-10-11,4,270-->
+- ¿3 componentes de la escucha activa?::Comprensión-retención, intención comunicativa y gestión emocional.
+<!--SR:!2026-10-10,3,250-->
+- ¿CARE?::Concentrarse, Asentir, Reformular, Emocionar (nombrar la emoción).
+<!--SR:!2026-10-08,1,230-->
+- ¿Qué son las neuronas espejo?::Se activan al observar y al actuar: base biológica de la empatía.
+<!--SR:!2026-10-10,3,250-->
+- ¿3 barreras del syllabus + antídoto común?::Percepción selectiva, juicios de valor, emociones; antídoto: reformular y nombrar.
+- ¿6 elementos del proceso clásico?::Emisor, receptor, código, canal, mensaje y contexto (+ retroalimentación y ruido).
+- ¿Efectiva vs asertiva?::Efectiva = claridad de transmisión; asertiva = decir lo tuyo respetando al otro.
+- ¿6 técnicas CCL en orden?::Atender, suspender juicio, reflejar, aclarar, resumir, compartir (y después: actuar).
+- ¿Por qué actuar después de escuchar?::Percepción de "me escucharon" 2x mayor; sin acción no cuenta.
+- ¿5 barreras externas (Ruiz Mitjana)?::Semánticas, psicológicas, fisiológicas, físicas y administrativas.
+- ¿4 etapas del mensaje asertivo?::Hechos → sentimientos → consecuencias → solución (Forner).
+<!--SR:!2026-10-10,3,250-->
 
 ---
 

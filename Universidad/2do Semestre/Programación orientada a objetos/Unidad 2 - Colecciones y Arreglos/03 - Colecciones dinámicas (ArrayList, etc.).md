@@ -21,8 +21,6 @@ tags: [CCPG1005, unidad2, poo, colecciones]
 > **Problema que resuelven:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_01.svg]]
-> **Se lee así:** Diagrama de flujo TD con 8 bloques y 6 conexiones. Los bloques son: Arreglo Estático, ❌ Tamaño fijo new int 5, ❌ No se puede cambiar tamaño, ❌ Operaciones manuales, ArrayList Dinámico. Las 6 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > **Comparación rápida:**
 > 
@@ -93,8 +91,6 @@ tags: [CCPG1005, unidad2, poo, colecciones]
 > **Visualización interna:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_02.svg]]
-> **Se lee así:** Diagrama de flujo TD con 9 bloques y 7 conexiones. Los bloques son: ArrayList Vacío size = 0, Capacidad inicial 10 espacios, Agregar elementos, size = 1, 2, 3..., "¿Capacidad llena?". Las 7 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ### ➕ Operaciones Básicas
 
@@ -330,8 +326,6 @@ tags: [CCPG1005, unidad2, poo, colecciones]
 > **Estructura interna:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_03.svg]]
-> **Se lee así:** Diagrama de flujo LR con 8 bloques y 6 conexiones. Los bloques son: 0: Ana, 1: Luis, 2: María, Array continuo en memoria, Ana. Las 6 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > **Comparación de rendimiento:**
 > 
@@ -389,8 +383,6 @@ tags: [CCPG1005, unidad2, poo, colecciones]
 > **Propiedades del HashSet:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_05.svg]]
-> **Se lee así:** Diagrama de flujo TD con 5 bloques y 4 conexiones. Los bloques son: HashSet, ❌ No permite duplicados, ❌ No tiene orden, ✅ Búsqueda muy rápida O 1, ✅ Ideal para unicidad. Las 4 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > **Uso básico:**
 > 
@@ -466,8 +458,6 @@ tags: [CCPG1005, unidad2, poo, colecciones]
 > **Concepto:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_06.svg]]
-> **Se lee así:** Diagrama de flujo LR con 9 bloques y 5 conexiones. Los bloques son: HashMap, Clave: DNI, Valor: Nombre, 12345678, Ana García. Las 5 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > **Sintaxis básica:**
 > 
@@ -586,8 +576,6 @@ tags: [CCPG1005, unidad2, poo, colecciones]
 > **Árbol de decisión:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_07.svg]]
-> **Se lee así:** Diagrama de flujo TD con 9 bloques y 8 conexiones. Los bloques son: "¿Qué necesitas?", Lista ordenada, Elementos únicos, Pares clave-valor, "¿Qué operaciones?". Las 8 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 

@@ -1234,13 +1234,4 @@ tags: [MATG1049, algebra-lineal, unidad1, 01-algoritmo-de-gauss]
 
 ---
 
-
-## 📝 Exámenes de la materia
-
-> [!info] Exámenes reales de DSpace que cubren este tema
->
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2024-1S-ÁLGEBRA LINEAL-10-1Par.pdf\|EXA-2024-1S-ÁLGEBRA LINEAL-10-1Par.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2024-1S-ÁLGEBRA LINEAL-5-1Par.pdf\|EXA-2024-1S-ÁLGEBRA LINEAL-5-1Par.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2025-1S-ÁLGEBRA LINEAL-3-1Par.pdf\|EXA-2025-1S-ÁLGEBRA LINEAL-3-1Par.pdf]]
-
 **Tags:** #algoritmo-gauss #eliminacion-gaussiana #forma-escalonada #matriz-ampliada #operaciones-elementales #sustitucion-regresiva #pivoteo #sistemas-lineales #metodos-numericos #algebra-lineal #university #mathematics #computational-methods

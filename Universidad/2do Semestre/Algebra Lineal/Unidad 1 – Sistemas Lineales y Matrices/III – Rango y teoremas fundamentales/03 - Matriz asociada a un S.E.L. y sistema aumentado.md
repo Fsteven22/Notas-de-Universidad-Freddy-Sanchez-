@@ -1259,16 +1259,4 @@ tags: [MATG1049, algebra-lineal, unidad1, 03-matriz-asociada-a-un-s-e-l-y-sistem
 
 ---
 
-
-## 📝 Exámenes de la materia
-
-> [!info] Exámenes reales de DSpace que cubren este tema
->
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-1S-ÁLGEBRA LINEAL-3-1Par.pdf\|EXA-2021-1S-ÁLGEBRA LINEAL-3-1Par.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2025-2S-ÁLGEBRA LINEAL-10-Mejora.pdf\|EXA-2025-2S-ÁLGEBRA LINEAL-10-Mejora.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/ÁLGEBRA LINEAL 2010-1S (ICM) 2ª evaluación - 0411.pdf\|ÁLGEBRA LINEAL 2010-1S (ICM) 2ª evaluación - 0411.pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/ÁLGEBRA LINEAL 2012-1S (ICM) 2ª evaluación - 06 (con rúbrica).pdf\|ÁLGEBRA LINEAL 2012-1S (ICM) 2ª evaluación - 06 (con rúbrica).pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/ÁLGEBRA LINEAL 2012-1S (ICM) 2ª evaluación - 07 (con rúbrica).pdf\|ÁLGEBRA LINEAL 2012-1S (ICM) 2ª evaluación - 07 (con rúbrica).pdf]]
-> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/ÁLGEBRA LINEAL 2012-1S (ICM) 2ª evaluación - 10.pdf\|ÁLGEBRA LINEAL 2012-1S (ICM) 2ª evaluación - 10.pdf]]
-
 **Tags:** #álgebra-lineal #sistemas-ecuaciones #matrices #matriz-aumentada #eliminación-gaussiana #gauss-jordan #forma-escalonada #RREF #operaciones-elementales #geometría #mermaid #matemáticas

@@ -21,8 +21,6 @@ tags: [CCPG1005, unidad5, poo, excepciones]
 > - **Sin manejo** → Accidente, daños mayores
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Excepciones_en_Java_01.svg]]
-> **Se lee así:** Diagrama de flujo LR con 7 bloques y 7 conexiones. Los bloques son: Programa ejecutándose, "¿Ocurre error?", Continuar normal, Lanzar Excepción, "¿Manejada?". Las 7 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 
@@ -352,8 +350,6 @@ tags: [CCPG1005, unidad5, poo, excepciones]
 > **Cadena de propagación:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Excepciones_en_Java_04.svg]]
-> **Se lee así:** Diagrama de flujo TD con 7 bloques y 6 conexiones. Los bloques son: metodoA throws IOException, metodoB throws IOException, metodoC throws IOException, main try-catch, "¿Manejada?". Las 6 conexiones muestran el flujo entre los bloques.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 
@@ -720,8 +716,6 @@ tags: [CCPG1005, unidad5, poo, excepciones]
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Excepciones_en_Java_05.svg]]
-> **Se lee así:** Diagrama de flujo LR con 17 bloques y 0 conexiones.
-> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 
