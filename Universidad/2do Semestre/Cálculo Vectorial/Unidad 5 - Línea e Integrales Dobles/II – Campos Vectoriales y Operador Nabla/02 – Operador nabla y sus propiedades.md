@@ -6,7 +6,9 @@ tags: [propiedades, operador, nabla]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Qué es el Operador Nabla? El **operador nabla** (∇) es un operador diferencial vectorial fundamental en cálculo vectorial. Actúa como un "vector de derivadas parciales" que se aplica a campos escalares y vectoriales para obtener información sobre cómo cambian en el espacio.
+> [!info] 💡 ¿Qué es el Operador Nabla?
+>
+> El **operador nabla** (∇) es un operador diferencial vectorial fundamental en cálculo vectorial. Actúa como un "vector de derivadas parciales" que se aplica a campos escalares y vectoriales para obtener información sobre cómo cambian en el espacio.
 >
 > **Analogía práctica:** Imagina un explorador con tres brújulas especiales:
 >

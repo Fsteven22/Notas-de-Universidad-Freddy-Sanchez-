@@ -6,7 +6,9 @@ tags: [integrales, iteradas, dobles]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Qué es una Integral Iterada? Una **integral iterada** es el proceso de calcular una integral múltiple evaluándola como una secuencia de integrales simples, una dentro de otra. Es la herramienta fundamental para calcular integrales dobles y triples en la práctica.
+> [!info] 💡 ¿Qué es una Integral Iterada?
+>
+> Una **integral iterada** es el proceso de calcular una integral múltiple evaluándola como una secuencia de integrales simples, una dentro de otra. Es la herramienta fundamental para calcular integrales dobles y triples en la práctica.
 >
 > **Analogía práctica:** Imagina que necesitas contar personas en un estadio rectangular:
 >
@@ -621,7 +623,9 @@ tags: [integrales, iteradas, dobles]
 
 ### 🔷 Funciones Separables
 
-> [!success] ✨ Cuando $f(x,y) = g(x) \cdot h(y)$
+> [!success] ✨ Cuando
+>
+> $f(x,y) = g(x) \cdot h(y)$
 >
 > Si la función es **separable**, la integral se factoriza:
 >

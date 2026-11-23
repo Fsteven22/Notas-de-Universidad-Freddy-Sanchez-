@@ -6,7 +6,9 @@ tags: [integrales, dobles, integrales-dobles]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Qué es una Integral Doble? La **integral doble** es una extensión natural de la integral definida a funciones de dos variables. Mientras que una integral simple calcula áreas bajo curvas, una **integral doble calcula volúmenes bajo superficies** o el valor acumulado de una función sobre una región bidimensional.
+> [!info] 💡 ¿Qué es una Integral Doble?
+>
+> La **integral doble** es una extensión natural de la integral definida a funciones de dos variables. Mientras que una integral simple calcula áreas bajo curvas, una **integral doble calcula volúmenes bajo superficies** o el valor acumulado de una función sobre una región bidimensional.
 >
 > **Analogía práctica:** Imagina que necesitas calcular la cantidad total de lluvia caída sobre una ciudad:
 >

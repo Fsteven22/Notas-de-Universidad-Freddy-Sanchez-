@@ -6,7 +6,9 @@ tags: [teorema, cambio, variables]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Qué es el Cambio de Variables? El **Teorema de Cambio de Variables** (también llamado **transformación de coordenadas**) es una técnica fundamental en cálculo multivariable que permite simplificar integrales dobles complejas mediante la transformación del dominio de integración a un sistema de coordenadas más conveniente.
+> [!info] 💡 ¿Qué es el Cambio de Variables?
+>
+> El **Teorema de Cambio de Variables** (también llamado **transformación de coordenadas**) es una técnica fundamental en cálculo multivariable que permite simplificar integrales dobles complejas mediante la transformación del dominio de integración a un sistema de coordenadas más conveniente.
 >
 > **Analogía práctica:** Imagina que necesitas calcular el área de un terreno circular. Puedes intentar hacerlo con coordenadas rectangulares (x, y), dividiendo el círculo en pequeños rectángulos, o usar coordenadas polares (r, θ) donde el círculo se describe naturalmente. El segundo enfoque es mucho más simple.
 >

@@ -6,7 +6,9 @@ tags: [campos, conservativos, campos-conservativos]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Qué es un Campo Conservativo? Un **campo conservativo** es un campo vectorial especial donde el trabajo realizado al mover un objeto depende únicamente de los puntos inicial y final, no del camino seguido. Es una de las propiedades más importantes en física y matemáticas aplicadas.
+> [!info] 💡 ¿Qué es un Campo Conservativo?
+>
+> Un **campo conservativo** es un campo vectorial especial donde el trabajo realizado al mover un objeto depende únicamente de los puntos inicial y final, no del camino seguido. Es una de las propiedades más importantes en física y matemáticas aplicadas.
 >
 > **Analogía práctica:** Imagina caminar por una montaña:
 >
@@ -1055,7 +1057,9 @@ tags: [campos, conservativos, campos-conservativos]
 
 ## 🛣️ La Independencia del Camino
 
-> [!info] 💡 ¿Qué es la Independencia del Camino? La **independencia del camino** es una propiedad fundamental de ciertas integrales de línea donde el valor de la integral depende únicamente de los puntos inicial y final, no de la trayectoria específica seguida entre ellos.
+> [!info] 💡 ¿Qué es la Independencia del Camino?
+>
+> La **independencia del camino** es una propiedad fundamental de ciertas integrales de línea donde el valor de la integral depende únicamente de los puntos inicial y final, no de la trayectoria específica seguida entre ellos.
 >
 > **Analogía práctica:** Imagina viajar entre dos ciudades:
 >
@@ -1933,7 +1937,9 @@ tags: [campos, conservativos, campos-conservativos]
 
 ## 🎁 Campos Potenciales
 
-> [!info] 💡 ¿Qué es un Campo Potencial? En **Cálculo Vectorial**, un **campo potencial** (o función potencial) es una función escalar φ cuyo gradiente genera un campo vectorial **F**. Esta relación establece una conexión fundamental entre campos escalares y vectoriales.
+> [!info] 💡 ¿Qué es un Campo Potencial?
+>
+> En **Cálculo Vectorial**, un **campo potencial** (o función potencial) es una función escalar φ cuyo gradiente genera un campo vectorial **F**. Esta relación establece una conexión fundamental entre campos escalares y vectoriales.
 >
 > **Analogía práctica:** Imagina una colina con diferentes alturas:
 >

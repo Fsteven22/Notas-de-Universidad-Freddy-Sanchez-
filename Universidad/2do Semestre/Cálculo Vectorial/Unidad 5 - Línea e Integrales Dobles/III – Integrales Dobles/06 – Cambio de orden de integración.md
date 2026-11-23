@@ -6,7 +6,9 @@ tags: [cambio, orden, integracion]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Qué es el Cambio de Orden? El **cambio de orden de integración** es una técnica fundamental que consiste en reescribir una integral iterada intercambiando el orden en que se integran las variables. Esta habilidad es esencial para resolver integrales que de otra manera serían imposibles o extremadamente difíciles.
+> [!info] 💡 ¿Qué es el Cambio de Orden?
+>
+> El **cambio de orden de integración** es una técnica fundamental que consiste en reescribir una integral iterada intercambiando el orden en que se integran las variables. Esta habilidad es esencial para resolver integrales que de otra manera serían imposibles o extremadamente difíciles.
 >
 > **Analogía práctica:** Imagina que estás contando personas en un estadio. Puedes:
 >

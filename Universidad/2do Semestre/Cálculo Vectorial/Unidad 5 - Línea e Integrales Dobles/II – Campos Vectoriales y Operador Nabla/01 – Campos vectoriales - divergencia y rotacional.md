@@ -6,7 +6,9 @@ tags: [campos, vectoriales, divergencia]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Qué son los Campos Vectoriales? Un **campo vectorial** es una función que asigna un vector a cada punto del espacio. Es como tener una "flecha" en cada ubicación que indica dirección y magnitud de alguna cantidad física.
+> [!info] 💡 ¿Qué son los Campos Vectoriales?
+>
+> Un **campo vectorial** es una función que asigna un vector a cada punto del espacio. Es como tener una "flecha" en cada ubicación que indica dirección y magnitud de alguna cantidad física.
 >
 > **Analogía práctica:** Imagina el viento en un día tormentoso. En cada punto del espacio hay:
 >
@@ -674,7 +676,9 @@ tags: [campos, vectoriales, divergencia]
 
 ### 📝 Método General
 
-> [!success] 🎯 Procedimiento para Hallar $f$ tal que $\nabla f = \mathbf{F}$
+> [!success] 🎯 Procedimiento para Hallar
+>
+> $f$ tal que $\nabla f = \mathbf{F}$
 >
 > **Paso 0:** Verificar que $\mathbf{F}$ sea conservativo
 >

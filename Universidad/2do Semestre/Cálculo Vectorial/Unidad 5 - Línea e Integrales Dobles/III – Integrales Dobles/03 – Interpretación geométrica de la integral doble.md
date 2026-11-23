@@ -6,7 +6,9 @@ tags: [interpretacion, geometrica, integral]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Qué es la Integral Doble? La **integral doble** es una extensión natural de la integral simple que nos permite calcular volúmenes, áreas y otras magnitudes en el espacio bidimensional. Mientras la integral simple calcula el área bajo una curva, la integral doble calcula el **volumen bajo una superficie**.
+> [!info] 💡 ¿Qué es la Integral Doble?
+>
+> La **integral doble** es una extensión natural de la integral simple que nos permite calcular volúmenes, áreas y otras magnitudes en el espacio bidimensional. Mientras la integral simple calcula el área bajo una curva, la integral doble calcula el **volumen bajo una superficie**.
 >
 > **Analogía práctica:** Imagina que eres un arquitecto calculando el volumen de agua que puede contener una piscina de fondo irregular. La integral doble te permite:
 >

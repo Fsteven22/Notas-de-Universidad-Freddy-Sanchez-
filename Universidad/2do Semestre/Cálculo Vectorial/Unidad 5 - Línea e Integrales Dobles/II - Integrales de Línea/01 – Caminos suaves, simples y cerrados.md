@@ -6,7 +6,9 @@ tags: [caminos, suaves, simples]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Qué es un Camino en Cálculo Vectorial? Un **camino** (o curva parametrizada) es una función que describe el movimiento de un punto en el espacio a medida que un parámetro (generalmente el tiempo) varía. Es la representación matemática de una trayectoria.
+> [!info] 💡 ¿Qué es un Camino en Cálculo Vectorial?
+>
+> Un **camino** (o curva parametrizada) es una función que describe el movimiento de un punto en el espacio a medida que un parámetro (generalmente el tiempo) varía. Es la representación matemática de una trayectoria.
 >
 > **Analogía práctica:** Imagina que eres un dron volando sobre una ciudad:
 >

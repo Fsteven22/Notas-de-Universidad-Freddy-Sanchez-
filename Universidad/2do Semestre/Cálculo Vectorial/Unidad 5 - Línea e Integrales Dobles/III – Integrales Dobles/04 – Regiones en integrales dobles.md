@@ -6,7 +6,9 @@ tags: [regiones, integrales, dobles]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Qué es una Región de Integración? La **región de integración** es el dominio bidimensional sobre el cual calculamos la integral doble. Entender y describir correctamente estas regiones es fundamental para establecer los límites de integración correctos.
+> [!info] 💡 ¿Qué es una Región de Integración?
+>
+> La **región de integración** es el dominio bidimensional sobre el cual calculamos la integral doble. Entender y describir correctamente estas regiones es fundamental para establecer los límites de integración correctos.
 >
 > **Analogía práctica:** Imagina que eres un topógrafo midiendo el volumen de tierra en un terreno. La región de integración es el **límite del terreno en el mapa** (vista desde arriba), mientras que la función integrada representa la elevación en cada punto.
 >
@@ -132,7 +134,9 @@ tags: [regiones, integrales, dobles]
 
 ### 🔺 Regiones Tipo I (Verticalmente Simples)
 
-> [!note] ⬆️ Regiones Delimitadas por Funciones de $x$
+> [!note] ⬆️ Regiones Delimitadas por Funciones de
+>
+> $x$
 >
 > **Definición:**
 >
@@ -219,7 +223,9 @@ tags: [regiones, integrales, dobles]
 
 ### 🔻 Regiones Tipo II (Horizontalmente Simples)
 
-> [!note] ↔️ Regiones Delimitadas por Funciones de $y$
+> [!note] ↔️ Regiones Delimitadas por Funciones de
+>
+> $y$
 >
 > **Definición:**
 >

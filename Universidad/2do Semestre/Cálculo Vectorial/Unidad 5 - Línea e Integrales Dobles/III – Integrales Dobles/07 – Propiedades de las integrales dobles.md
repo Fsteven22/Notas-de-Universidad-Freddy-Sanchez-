@@ -6,7 +6,9 @@ tags: [propiedades, integrales, dobles]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Qué son las Propiedades de las Integrales Dobles? Las **propiedades de las integrales dobles** son reglas algebraicas y geométricas que nos permiten simplificar cálculos, descomponer problemas complejos y relacionar integrales con las características de las funciones y regiones involucradas.
+> [!info] 💡 ¿Qué son las Propiedades de las Integrales Dobles?
+>
+> Las **propiedades de las integrales dobles** son reglas algebraicas y geométricas que nos permiten simplificar cálculos, descomponer problemas complejos y relacionar integrales con las características de las funciones y regiones involucradas.
 >
 > **Analogía práctica:** Imagina que necesitas calcular el peso total de objetos en un almacén:
 >

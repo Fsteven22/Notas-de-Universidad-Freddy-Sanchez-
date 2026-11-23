@@ -6,7 +6,9 @@ tags: [propiedades, integrales, linea]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Por qué estudiar las propiedades? Las **propiedades de las integrales de línea** son herramientas fundamentales que simplifican cálculos complejos y revelan conexiones profundas entre geometría, física y matemáticas.
+> [!info] 💡 ¿Por qué estudiar las propiedades?
+>
+> Las **propiedades de las integrales de línea** son herramientas fundamentales que simplifican cálculos complejos y revelan conexiones profundas entre geometría, física y matemáticas.
 >
 > **Analogía práctica:** Imagina que necesitas calcular el trabajo realizado al mover un objeto por diferentes caminos:
 >
@@ -641,7 +643,9 @@ tags: [propiedades, integrales, linea]
 
 ## 🌐 Conectando Matemáticas con la Realidad
 
-> [!info] 💡 Conectando Matemáticas con la Realidad Las integrales de línea no son solo objetos matemáticos abstractos: tienen **significados geométricos y físicos profundos** que nos ayudan a entender fenómenos del mundo real.
+> [!info] 💡 Conectando Matemáticas con la Realidad
+>
+> Las integrales de línea no son solo objetos matemáticos abstractos: tienen **significados geométricos y físicos profundos** que nos ayudan a entender fenómenos del mundo real.
 >
 > **¿Por qué son importantes estas interpretaciones?**
 >

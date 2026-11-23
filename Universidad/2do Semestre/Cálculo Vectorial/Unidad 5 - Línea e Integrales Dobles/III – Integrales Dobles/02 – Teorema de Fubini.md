@@ -6,7 +6,9 @@ tags: [teorema, fubini, teorema-fubini]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Qué es el Teorema de Fubini? El **Teorema de Fubini** es uno de los resultados fundamentales en cálculo multivariable. Establece las condiciones bajo las cuales una **integral doble** (o múltiple) puede calcularse como **integrales iteradas** (sucesivas integrales simples), y garantiza que el resultado es **independiente del orden de integración**.
+> [!info] 💡 ¿Qué es el Teorema de Fubini?
+>
+> El **Teorema de Fubini** es uno de los resultados fundamentales en cálculo multivariable. Establece las condiciones bajo las cuales una **integral doble** (o múltiple) puede calcularse como **integrales iteradas** (sucesivas integrales simples), y garantiza que el resultado es **independiente del orden de integración**.
 >
 > **Analogía práctica:** Imagina que necesitas contar todas las personas en un estadio:
 >

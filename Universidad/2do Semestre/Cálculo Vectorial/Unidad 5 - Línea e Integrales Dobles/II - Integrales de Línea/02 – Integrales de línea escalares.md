@@ -6,7 +6,9 @@ tags: [integrales, linea, escalares]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Qué es una Integral de Línea Escalar? La **integral de línea escalar** es una extensión de la integral definida que permite integrar funciones a lo largo de curvas en el plano o el espacio. Mientras que las integrales definidas integran sobre intervalos rectos y las integrales dobles sobre regiones planas, **las integrales de línea integran sobre trayectorias curvas**.
+> [!info] 💡 ¿Qué es una Integral de Línea Escalar?
+>
+> La **integral de línea escalar** es una extensión de la integral definida que permite integrar funciones a lo largo de curvas en el plano o el espacio. Mientras que las integrales definidas integran sobre intervalos rectos y las integrales dobles sobre regiones planas, **las integrales de línea integran sobre trayectorias curvas**.
 >
 > **Analogía práctica:** Imagina que necesitas calcular el costo total de pintar una cerca curva:
 >

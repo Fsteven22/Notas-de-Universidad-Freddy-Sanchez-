@@ -6,7 +6,9 @@ tags: [integrales, linea, vectoriales]
 
 ## 🎯 Introducción
 
-> [!info] 💡 ¿Qué es una Integral de Línea Vectorial? La **integral de línea vectorial** (o integral de flujo a lo largo de una curva) mide la acumulación del efecto de un **campo vectorial** a lo largo de una trayectoria. Mientras que las integrales de línea escalares integran funciones sobre curvas, **las integrales vectoriales miden cómo un campo vectorial "empuja" o "jala" a lo largo de una curva**.
+> [!info] 💡 ¿Qué es una Integral de Línea Vectorial?
+>
+> La **integral de línea vectorial** (o integral de flujo a lo largo de una curva) mide la acumulación del efecto de un **campo vectorial** a lo largo de una trayectoria. Mientras que las integrales de línea escalares integran funciones sobre curvas, **las integrales vectoriales miden cómo un campo vectorial "empuja" o "jala" a lo largo de una curva**.
 >
 > **Analogía práctica:** Imagina caminar contra el viento a lo largo de un sendero:
 >
