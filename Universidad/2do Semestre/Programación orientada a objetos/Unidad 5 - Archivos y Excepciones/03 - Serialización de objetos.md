@@ -26,6 +26,7 @@ tags: [CCPG1005, unidad5, poo, serializacion]
 > - **Deserializar** → Recibir las cajas, rearmar el mueble
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Serialización_de_objetos_01.svg]]
+> **Se lee así:** Diagrama de flujo LR con 4 bloques y 3 conexiones. Los bloques son: 🪑 Objeto Java en memoria, 📦 Bytes secuencia, 💾 Archivo o Red, 🪑 Objeto Java reconstruido. Las 3 conexiones muestran el flujo entre los bloques.
 
 ---
 
@@ -129,6 +130,7 @@ tags: [CCPG1005, unidad5, poo, serializacion]
 > **Proceso:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Serialización_de_objetos_02.svg]]
+> **Se lee así:** [!example] 💾 Guardar Objetos en Archivo **Proceso:**
 > 
 > **Código básico:**
 > 
@@ -209,6 +211,8 @@ tags: [CCPG1005, unidad5, poo, serializacion]
 > **Proceso:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Serialización_de_objetos_03.svg]]
+> **Se lee así:** Diagrama de flujo que muestra el proceso de deserialización: leer un archivo, reconstruir el objeto y asignar sus atributos.
+> **Por qué importa:** Ilustra cómo un objeto serializado en disco se reconstruye en memoria, paso a paso, con el flujo de datos y el estado del objeto.
 > 
 > **Código básico:**
 > 
@@ -449,6 +453,7 @@ tags: [CCPG1005, unidad5, poo, serializacion]
 > |**Mejor para**|Objetos Java complejos|APIs, configs|Documentos|Grandes volúmenes|
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Serialización_de_objetos_04.svg]]
+> **Se lee así:** Diagrama de flujo TD con 10 bloques y 9 conexiones. Los bloques son: "¿Qué usar?", "¿Solo Java?", Serialización Java, "¿Formato?", Datos estructurados simples. Las 9 conexiones muestran el flujo entre los bloques.
 
 ---
 
@@ -503,6 +508,7 @@ tags: [CCPG1005, unidad5, poo, serializacion]
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Serialización_de_objetos_05.svg]]
+> **Se lee así:** Diagrama de flujo LR con 19 bloques y 0 conexiones.
 
 ---
 

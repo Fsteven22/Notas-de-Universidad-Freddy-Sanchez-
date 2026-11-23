@@ -31,6 +31,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_01.svg]]
+> **Se lee así:** Diagrama de flujo TD con 10 bloques y 9 conexiones. Los bloques son: Programa Java, "Tipo de Ejecución", 🐢 Secuencial Un hilo, ⚡ Concurrente Múltiples hilos, Tareas ejecutan una tras otra. Las 9 conexiones muestran el flujo entre los bloques.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 
@@ -146,6 +148,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > [!info] 🎢 Diagrama de Estados
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_04.svg]]
+> **Se lee así:** [!info] 🎢 Diagrama de Estados **Descripción de cada estado:**
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > **Descripción de cada estado:**
 > 
@@ -520,6 +524,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > **Flujo de decisión:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_05.svg]]
+> **Se lee así:** Diagrama de flujo TD con 7 bloques y 6 conexiones. Los bloques son: "¿Qué tipo de tarea?", Lógica inline simple, Clase con estado complejo, Método existente, ✅ Lambda. Las 6 conexiones muestran el flujo entre los bloques.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 
@@ -696,6 +702,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > **⚠️ ADVERTENCIAS IMPORTANTES:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_06.svg]]
+> **Se lee así:** Diagrama de flujo TD con 8 bloques y 7 conexiones. Los bloques son: Prioridades en Java, ⚠️ NO son garantías, Dependen del SO, Scheduler puede ignorarlas, Comportamiento varía. Las 7 conexiones muestran el flujo entre los bloques.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > **Mejores prácticas:**
 > 
@@ -835,6 +843,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > **¿Por qué falla?**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_07.svg]]
+> **Se lee así:** **¿Por qué falla?** **Visualización del problema:**
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > **Visualización del problema:**
 > 
@@ -891,6 +901,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > **¿Cómo funciona synchronized?**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_08.svg]]
+> **Se lee así:** **¿Cómo funciona synchronized?** **Formas de usar synchronized:**
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > **Formas de usar synchronized:**
 > 
@@ -1222,6 +1234,8 @@ tags: [CCPG1005, unidad7, poo, concurrencia]
 > [!note] 🖼️ ️ Mapa Mental Completo
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_10.svg]]
+> **Se lee así:** Diagrama de flujo LR con 28 bloques y 0 conexiones.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ### 📋 Tabla Comparativa Final
 

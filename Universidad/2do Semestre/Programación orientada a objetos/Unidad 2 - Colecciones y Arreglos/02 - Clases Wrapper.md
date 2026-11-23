@@ -20,6 +20,8 @@ tags: [CCPG1005, unidad2, poo, wrapper]
 > **Problema que resuelven:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Clases_Wrapper_01.svg]]
+> **Se lee así:** Diagrama de flujo TD con 8 bloques y 7 conexiones. Los bloques son: Necesitas usar tipos primitivos, "¿En qué contexto?", ❌ ArrayList int no funciona, ❌ No se puede usar int, ❌ Primitivos no aceptan null. Las 7 conexiones muestran el flujo entre los bloques.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > **Tabla de correspondencia:**
 > 
@@ -172,6 +174,8 @@ tags: [CCPG1005, unidad2, poo, wrapper]
 > **Visualización del caché:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Clases_Wrapper_03.svg]]
+> **Se lee así:** Diagrama de flujo TD con 8 bloques y 5 conexiones. Los bloques son: Integer.valueOf 100, "¿Valor en caché?", Retornar objeto del caché, Crear nuevo objeto, Integer a = 100 Integer b = 100. Las 5 conexiones muestran el flujo entre los bloques.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 
@@ -247,6 +251,8 @@ tags: [CCPG1005, unidad2, poo, wrapper]
 > **Diagrama de conversiones:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Clases_Wrapper_04.svg]]
+> **Se lee así:** Diagrama de flujo TD con 5 bloques y 8 conexiones. Los bloques son: String 123, int 123, Integer 123, String 123, double 123.0. Las 8 conexiones muestran el flujo entre los bloques.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ### 🧮 Métodos de Utilidad
 
@@ -399,6 +405,8 @@ tags: [CCPG1005, unidad2, poo, wrapper]
 > **Visualización en memoria:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Clases_Wrapper_05.svg]]
+> **Se lee así:** Diagrama de flujo TD con 11 bloques y 6 conexiones. Los bloques son: Integer a = 100, Objeto: 100 en caché, Integer b = 100, Integer c = 200, Objeto 1: 200. Las 6 conexiones muestran el flujo entre los bloques.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > **Mejor práctica:**
 > 
@@ -578,6 +586,8 @@ tags: [CCPG1005, unidad2, poo, wrapper]
 > **Guía de decisión:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Clases_Wrapper_06.svg]]
+> **Se lee así:** Diagrama de flujo TD con 7 bloques y 8 conexiones. Los bloques son: "¿Para qué lo necesitas?", Variables locales cálculos, Colecciones ArrayList, HashMap, Puede ser null, Métodos de utilidad parseInt, etc. Las 8 conexiones muestran el flujo entre los bloques.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > **Mejores prácticas:**
 > 
@@ -705,5 +715,7 @@ tags: [CCPG1005, unidad2, poo, wrapper]
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Clases_Wrapper_07.svg]]
+> **Se lee así:** Diagrama de flujo LR con 11 bloques y 0 conexiones.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 **Tags:** #CCPG1005 #poo #wrapper #unidad2
