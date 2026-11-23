@@ -4070,3 +4070,113 @@ ejercicios de cada nota, con wikilink y alias 📎, anotando el tema de cada exa
 Física 42 · Inglés I 0 · 2do Sem Álgebra 29 · CalcVectorial 30 · Comunicación 19 · POO 20 ·
 Inglés II 0 · CSC 0 · 3er Sem FESD 24 · MatDisc 17 · SBD 11 · DiseñoSW 8 · Inglés III 4.
 Sin exámenes porque no existen en DSpace: Inglés I, Inglés II, Computación y Sociedad.
+
+---
+
+### `opencode-onedrive` — Cálculo Vectorial: ronda de callouts cerrada + validador resucitado — 22/11/2026
+
+> [!success] Estado final verificado
+>
+> - **88/88 notas** de Cálculo Vectorial U1–U6 con **0 hallazgos** del validador oficial, con el validador **realmente ejecutado** (0 fallos de ejecución).
+> - **616 SVG / 616 `.mmd`** en `Unidad 0/Diagramas/`: 0 SVG sin fuente, 0 fuentes sin SVG.
+> - Rama `sesion/opencode-onedrive` = `master` = `origin/master` = `origin/sesion/opencode-onedrive` = **`ddde00f7`**.
+> - Clon OneDrive verificado: **1361 archivos CV, 0 discrepancias** contra `origin/master`, HEAD e índice del clon **sin mover**, 1254 cambios ajenos intactos.
+
+#### ⚠️ Hallazgo importante: el QA anterior era un falso positivo (validador ausente)
+
+> [!warning] Un merge `ours` de otra sesión borró el validador de CV del repo
+>
+> `FORMATO-CALCULOVECTORIAL.md` y `qa_formato_calcvectorial.py` (commit `990d83c3`, R18/R19)
+> **desaparecieron del repo y de `origin/master`** al resolver un merge con estrategia `ours`
+> (`91f5c5ca Merge origin/master (ours)`). Siguen vivos **solo en el clon OneDrive** (en disco, sin versionar).
+>
+> **Consecuencia:** el script de QA que se venía usando **no encontraba el validador**, el subproceso
+> fallaba en silencio y el contador reportaba **0 hallazgos sin haber validado nada**. El
+> "88/88 a 0" de las rondas anteriores **no era evidencia**: era un falso positivo.
+>
+> **Se corrigió en tres pasos:**
+> 1. `qa_final.py` ahora **aborta** si el validador no existe y **cuenta los fallos de ejecución** por separado (`fallos de ejecucion: 0`), en vez de sumarlos como 0 hallazgos.
+> 2. El validador y el contrato se restauraron desde `990d83c3` (byte a byte idénticos a los del clon) y se commitearon en `ddde00f7`.
+> 3. El QA se **re-ejecutó desde cero** con el validador presente: **88/88 a 0 hallazgos, 0 fallos**. La transformación de las notas sí era correcta; lo que faltaba era la evidencia.
+>
+> **Lección para toda sesión:** un QA que no comprueba que su validador existe (y que corre) no es un QA. Verificar `hallazgos=N` **y** `returncode` antes de reportar 0.
+
+#### Ronda de calidad: separación del contenido pegado al encabezado de callout
+
+> [!info] 230 casos en 57 notas — transformación mecánica, cero pérdidas de texto
+>
+> En el patrón SBD el header de un callout lleva **solo el título**; el cuerpo va en la línea
+> siguiente, separado por `>` en blanco. Quedaban **230 callouts** cuyo contenido estaba pegado al
+> header (p. ej. `> [!example] 📝 Ejemplo 1: Campo Vectorial en el Plano ($\mathbb{R}^2 \to \mathbb{R}^2$)`).
+>
+> **Transformador mecánico** (`separa_callout.py`): solo mueve texto, nunca borra ni reescribe.
+> - Heurística de corte: `**` / `$` / marcador de frase en mayúscula (≥16 caracteres), nunca tras preposición.
+> - **No parte paréntesis**: si el corte cae dentro de `(...)`, retrocede al `(` correspondiente (6 casos revisados a mano).
+> - Recorte por longitud solo si la cola no arranca por `**`/`$`.
+> - Confianza: **168 alta / 56 media / 6 baja** (los 6 revisados manualmente: correctos).
+> - Inserta `>` en blanco entre la cola movida y el contenido siguiente.
+>
+> **Verificación de no-pérdida:** comparador `verifica_texto.py` que concatena el texto íntegro de
+> cada nota (ignorando la estructura de callout) y compara HEAD vs working tree →
+> **57/57 notas con contenido IDÉNTICO, 0 diferencias**. El transformador **no movió ni un carácter**.
+
+#### Commits atómicos de la ronda
+
+| Commit | Unidad | Alcance |
+|---|---|---|
+| `0b41464a` | U1 | 5 notas — separación de callouts |
+| `4776cff5` | U2 | 8 notas |
+| `e8fb3ef8` | U3 | 19 notas |
+| `386b88ff` | U5 | 15 notas |
+| `60b62180` | U6 | 10 notas |
+| `bfad720f` | — | Merge `origin/master` (19 commits ajenos: Álgebra, exámenes, Programación) |
+| `57716a7a` | — | Merge `origin/master` (2 commits de documentación) |
+| `ddde00f7` | — | **Restaura contrato + validador de CV** (revertidos por un merge `ours` ajeno) |
+
+> [!danger] Conflictos de merge: 669 diagramas + 31 notas en riesgo
+>
+> Al integrar `origin/master` aparecieron **57 notas de CV en conflicto** y el merge iba a
+> **borrar 669 diagramas** (616 `.mmd` + 53 `.svg`) y **revertir 31 notas** a su versión
+> pre-transformación (1.730 líneas frente a 268).
+>
+> **Diagnóstico:** mi rama es el **superseto correcto** — 616 `.mmd` + 616 `.svg` con fuente;
+> los 563 `.mmd` comunes con `origin/master` eran **idénticos** (0 diferencias de contenido) y
+> `origin/master` **no tenía ni un archivo propio** de diagramas. El lado remoto tenía la versión
+> *pre-transformación*, no una mejora.
+>
+> **Resolución:** `checkout --ours` en los 57 conflictos + restauración de los 700 archivos de CV
+> desde HEAD. El merge quedó con **0 conflictos** y el árbol de CV **idéntico** al previo
+> (`655295560700` → `655295560700`). Lo único que CV ganó del remoto: los **30 PDFs de exámenes**.
+>
+> **Lección (la misma del incidente POO):** los merges con estrategia `ours` sobre `Universidad/`
+> descartan trabajo local. Verificar `git diff <merge> <padre-local>` **y el recuento de
+> archivos por extensión** antes de cerrar el merge.
+
+#### Sincronización del clon OneDrive
+
+> [!tip] `sync_selectivo_v2.py` — más seguro que el `sync_selectivo.py` anterior
+>
+> El clon **no admite fast-forward** (tiene commit local del otro agente), así que se sincroniza
+> con **checkout selectivo de paths**: solo `Universidad/2do Semestre/Cálculo Vectorial` + las 2
+> herramientas. **No mueve el HEAD**, no hace merge/pull, no toca Física/Álgebra/POO/Clippings.
+>
+> **Guarda reforzada:** aborta solo si hay en CV un archivo rastreado cuyo contenido en disco
+> **no coincide con ninguna versión publicada** (trabajo local que se perdería). Verificado:
+> **0 archivos en esa condición** → los 88 `.md` del clon eran la versión ya publicada y los 669
+> diagramas estaban *untracked* (porque el remoto los había revertido), no perdidos.
+>
+> **Índice preservado:** tras el checkout se hace `git reset` de los paths, para no alterar lo que
+> el otro agente tenga preparado para commitear (0 staged antes → 0 staged después).
+> Backup del estado anterior en `%TEMP%\opencode\backup_onedrive_cv_v2`.
+
+#### Lo que queda pendiente (requiere autorización del dueño)
+
+- **Fusión de contenido redundante** en `Unidad 6/II - Integral triple.md`: hay **3 Introducciones
+  equivalentes** (ya con títulos distintos, pero el texto se repite). Es **edición de contenido**,
+  fuera del alcance mecánico → **no se hizo**.
+- **Enlazar los 30 exámenes de CV** desde las secciones de ejercicios de cada nota, con wikilink
+  `📎` y el tema anotado (pendiente general del vault, ya inventariados).
+- **Publicación en el sitio**: no se tocó `site/src/**` ni `site/public/**` en esta ronda.
+
+**Material ajeno respetado:** Física, Álgebra, POO, Programación, los 30 PDFs de exámenes y los
+1254 cambios sin commit del clon OneDrive quedaron intactos.
