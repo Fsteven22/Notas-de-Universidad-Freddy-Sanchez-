@@ -5,32 +5,21 @@ tags: [FISG1001, unidad1, cinematica, movimiento-rectilineo, mrua, caida-libre]
 
 # 🚗 Cinemática Traslacional
 
-> [!quote] 💡 "El movimiento es relativo, pero las leyes que lo gobiernan son absolutas."
+> [!info] 📖 ¿Qué es la Cinemática Traslacional?
 >
-> La cinemática traslacional estudia el movimiento de los cuerpos sin considerar las causas que lo producen. Describe la "cómo" del movimiento: posición, velocidad y aceleración como funciones del tiempo.
+> La **cinemática traslacional** estudia el movimiento de los cuerpos en línea recta (unidimensional) o en el plano/espacio (bidimensional/tridimensional) sin considerar las causas que lo producen.
+>
+> **Se lee así:** describe el "cómo" del movimiento —posición, velocidad y aceleración como funciones del tiempo— sin analizar sus causas; eso corresponde a la dinámica.
 
 ---
 
 ## 🎯 Introducción
 
-> [!info] 📖 ¿Qué es la Cinemática Traslacional?
+> [!info] 📋 Importancia de la Cinemática Traslacional
 >
-> La **cinemática traslacional** estudia el movimiento de los cuerpos en línea recta (unidimensional) o en el plano/espacio (bidimensional/tridimensional) sin considerar las causas que producen dicho movimiento.
+> La cinemática traslacional es la rama de la física que estudia el movimiento de los cuerpos sin considerar las fuerzas que lo originan. Es el punto de partida para entender cualquier fenómeno de movimiento en el universo.
 >
-> > **Se lee así:** la cinemática describe el movimiento (posición, velocidad, aceleración) como función del tiempo, sin analizar sus causas; eso corresponde a la dinámica.
->
-> **Características principales:**
->
-> - Se enfoca en describir el movimiento, no en explicar sus causas
-> - Variables principales: posición, velocidad y aceleración
-> - El tiempo es el parámetro independiente
-> - Los objetos se consideran partículas puntuales
-
-> [!note] 📋 Figura — Introducción
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Cinemática_Traslacional_01.svg]]
->
-> **Se lee así:** el diagrama muestra la clasificación del movimiento traslacional: MRU (velocidad constante) y MRUA (aceleración constante), con sus respectivas gráficas posición-tiempo y velocidad-tiempo.
+> **Se lee así:** sin la cinemática no podríamos describir ni predecir el movimiento de objetos cotidianos como vehículos, planetas o proyectiles.
 
 ---
 
@@ -49,11 +38,9 @@ tags: [FISG1001, unidad1, cinematica, movimiento-rectilineo, mrua, caida-libre]
 >
 > **Unidades:** metros (m), kilómetros (km), centímetros (cm)
 >
-> > [!note] 📋 Figura — Posición
-> > >
-> > > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Cinemática_Traslacional_01.svg]]
-> > >
-> > > **Se lee así:** el diagrama ubica un punto P en el espacio mediante su vector posición $\vec{r}$ desde el origen del sistema de referencia.
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Cinemática_Traslacional_01.svg]]
+>
+> **Se lee así:** el diagrama ubica un punto P en el espacio mediante su vector posición $\vec{r}$ desde el origen del sistema de referencia.
 
 ### 2️⃣ Velocidad
 
@@ -71,11 +58,9 @@ tags: [FISG1001, unidad1, cinematica, movimiento-rectilineo, mrua, caida-libre]
 > - **Rapidez:** magnitud de la velocidad (escalar)
 > - **Unidades:** m/s, km/h, cm/s
 >
-> > [!note] 📋 Figura — Velocidad
-> > >
-> > > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Cinemática_Traslacional_02.svg]]
-> > >
-> > > **Se lee así:** el diagrama clasifica el movimiento en MRU (velocidad constante) y MRUA (aceleración constante), con sus respectivas gráficas posición-tiempo y velocidad-tiempo.
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Cinemática_Traslacional_02.svg]]
+>
+> **Se lee así:** el diagrama clasifica el movimiento en MRU (velocidad constante) y MRUA (aceleración constante), con sus respectivas gráficas posición-tiempo y velocidad-tiempo.
 
 ### 3️⃣ Aceleración
 
@@ -94,17 +79,15 @@ tags: [FISG1001, unidad1, cinematica, movimiento-rectilineo, mrua, caida-libre]
 > - $a = 0$: velocidad constante
 > - **Unidades:** m/s², km/h², cm/s²
 >
-> > [!note] 📋 Figura — Aceleración
-> > >
-> > > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Cinemática_Traslacional_02.svg]]
-> > >
-> > > **Se lee así:** el diagrama muestra la progresión del movimiento: MRU, MRUA, caída libre y movimiento en plano, con sus características distintivas.
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/Cinemática_Traslacional_02.svg]]
+>
+> **Se lee así:** el diagrama muestra la progresión del movimiento: MRU, MRUA, caída libre y movimiento en plano, con sus características distintivas.
 
 ---
 
 ## 📝 Ejercicios Propuestos
 
-> [!example] 🍎 Caída Libre
+> [!example] 🍎 Ejercicio 1: Caída Libre
 >
 > **Problema:** Un objeto cae libremente desde el reposo desde una altura de 45 m. Calcular el tiempo de caída y la velocidad al llegar al suelo.
 >
@@ -123,6 +106,46 @@ tags: [FISG1001, unidad1, cinematica, movimiento-rectilineo, mrua, caida-libre]
 > > **Paso 5:** Calcular velocidad final: $v = v_0 - gt = 0 - 9.8(3.03) \approx -29.7$ m/s
 > >
 > > **Respuesta:** $t \approx 3.03$ s, $v \approx -29.7$ m/s (hacia abajo)
+
+> [!example] 🚗 Ejercicio 2: Frenado de Vehículo
+>
+> **Problema:** Un auto viaja a 72 km/h y frena con desaceleración constante hasta detenerse en 50 m. Calcular la aceleración y el tiempo de frenado.
+>
+> **Datos:** $v_0 = 72$ km/h, $v = 0$, $x = 50$ m
+>
+> > [!success]- ✅ Solución
+> >
+> > **Paso 1:** Convertir unidades: $72$ km/h $= 20$ m/s
+> >
+> > **Paso 2:** Identificar variables: $v_0 = 20$ m/s, $v = 0$, $x = 50$ m
+> >
+> > **Paso 3:** Elegir ecuación: $v^2 = v_0^2 + 2ax$
+> >
+> > **Paso 4:** Resolver para la aceleración: $0^2 = 20^2 + 2a(50) \Rightarrow 100a = -400 \Rightarrow a = -4$ m/s²
+> >
+> > **Paso 5:** Calcular el tiempo: $t = (v - v_0)/a = (0 - 20)/(-4) = 5$ s
+> >
+> > **Respuesta:** $a = -4$ m/s², $t = 5$ s
+
+> [!example] ⚽ Ejercicio 3: Lanzamiento Vertical
+>
+> **Problema:** Se lanza un balón verticalmente hacia arriba con velocidad inicial de 15 m/s. Calcular la altura máxima que alcanza y el tiempo total de vuelo.
+>
+> **Datos:** $v_0 = 15$ m/s, $g = 9.8$ m/s²
+>
+> > [!success]- ✅ Solución
+> >
+> > **Paso 1:** En la altura máxima, la velocidad es cero: $v = 0$
+> >
+> > **Paso 2:** Aplicar ecuación: $v^2 = v_0^2 - 2gh_{max}$
+> >
+> > **Paso 3:** Despejar la altura máxima: $0 = 15^2 - 2(9.8)h_{max} \Rightarrow 19.6h_{max} = 225 \Rightarrow h_{max} \approx 11.5$ m
+> >
+> > **Paso 4:** Tiempo de subida: $t = v_0/g = 15/9.8 \approx 1.53$ s
+> >
+> > **Paso 5:** Tiempo total de vuelo: $t_{total} = 2t = 2(1.53) \approx 3.06$ s
+> >
+> > **Respuesta:** $h_{max} \approx 11.5$ m, $t_{total} \approx 3.06$ s
 
 ---
 
@@ -143,7 +166,7 @@ tags: [FISG1001, unidad1, cinematica, movimiento-rectilineo, mrua, caida-libre]
 > [!note] 📋 Nivel Avanzado
 >
 > - [ ] Resuelvo problemas que combinan varios tipos de movimiento.
-> - [ ] Analiza el movimiento en 2D y 3D usando vectores posición.
+> - [ ] Analizo el movimiento en 2D y 3D usando vectores posición.
 
 ---
 
@@ -153,7 +176,7 @@ tags: [FISG1001, unidad1, cinematica, movimiento-rectilineo, mrua, caida-libre]
 >
 > - J. Serway, R. Jewett, *Física para Ciencias e Ingeniería*, cap. 2 «Movimiento en una dimensión».
 > - Apuntes del curso FISG1001 «Física Mecánica», ESPOL.
-> - Diagramas de la materia (`Unidad 0 - Guias y Ejercicios/Diagramas/`).
+> - Guías y ejercicios de la materia (`Unidad 0 - Guias y Ejercicios/`).
 
 ---
 
@@ -184,11 +207,12 @@ tags: [FISG1001, unidad1, cinematica, movimiento-rectilineo, mrua, caida-libre]
 
 ## 🔗 Seguir estudiando
 
-> [!info] 📚 Próximos pasos
+> [!info] 📚 Próximos pasos y material complementario
 >
 > - [[Cinemática Rotacional]] — movimiento angular y sus analogías con el lineal.
 > - [[Vectores]] — conceptos de función del tiempo en 2D y 3D.
 > - [[Leyes de Newton]] — causas del movimiento (dinámica).
+> - [[Guías y Ejercicios (Prof. Zambrano)]] — guías de taller y ejercicios resueltos de la Unidad 0.
 > - Repaso: vuelve a las definiciones formales antes de los ejercicios.
 
 **Tags:** #FISG1001 #unidad1 #cinematica #movimiento-rectilineo #mrua #caida-libre
