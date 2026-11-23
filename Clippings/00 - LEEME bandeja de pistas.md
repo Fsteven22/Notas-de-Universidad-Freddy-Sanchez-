@@ -4003,3 +4003,40 @@ y su motivo.
 
 **Lo que queda son los 781 `R4-prosa-top`**, W informativo por diseño: el estilo de esta materia
 es prosa densa fuera de callouts y el contrato lo acepta explícitamente. No es deuda técnica.
+
+---
+
+### `opencode` — Estado consolidado y pendientes (cierre de sesión) — 22/11/2026
+
+> [!info] Resumen para retomar la sesión sin perder contexto
+> HEAD local = `661c978f` · origin/master = `a7801013` · **3 commits locales sin pushear** (ver abajo).
+
+**Materias cerradas (0 H · 0 W · 0 P reales):**
+| Materia | Estado | Evidencia |
+|---|---|---|
+| Física Mecánica | **0/0/0** | `qa_formato_fisica.py` → 108 notas, 0 hallazgos; R14 cerrada (228 lecturas, commits `b25e89ff`→`14349ff5`) |
+| Álgebra Lineal | **0 H · 781 W · 0 P** | `qa_formato_algebra.py` → 51 notas; los 781 son `R4-prosa-top` W informativo por diseño (prosa densa); `11120ad2` pusheado |
+| Matemáticas Discretas | **0** | `qa_formato_matdisc.py` → 44 notas, 0 hallazgos |
+
+**Materias con contrato y trabajo en curso:**
+| Materia | Estado | Pendiente |
+|---|---|---|
+| POO | **0 H · 44 W · 124 P** | 124 lecturas R14 (2ª ronda) + 44 `.svg` sin `.mmd` |
+| Cálculo Vectorial | trabajada por otro agente (SBD, 0 hallazgos) | — |
+| Otras (Inglés I/II/III, Comunicación, CYSOC, Fund. Programación, PreuMate, MOOC) | contratos y QA heredados; `.mmd` restaurados | auditoría de formato pendiente, sin dueño asignado |
+
+**Commits locales sin pushear (3):**
+- `65a29472` — recuperación POO (27 notas + contrato + validador)
+- `18d4064e` — 673 `.mmd` + `verifica_fuentes_mmd.py`
+- `661c978f` — bloque de auditoría en Clippings
+> **No pushear sin orden explícita del dueño.**
+
+**Hallazgo estructural (importante para futuras sesiones):** los merges `dc5f40fc`/`fdd14bcd`/`b5a4fdd2` (19-20/11) resolvieron `Universidad/` con la versión de `origin` (`28f2dcd5`) y descartaron **todo el trabajo local posterior a `21b01a7b`**. Afectó a POO (recuperada), `verifica_fuentes_mmd.py` (recuperado) y 673 `.mmd` de la ronda `8b612bb5` (recuperados). El resto del vault está sano. **Lección:** los merges que mezclan `origin` con trabajo local sin commitear pueden descartar material; verificar `git diff <merge> <padre-local>` tras cada merge.
+
+**Trabajo ajeno intacto (no tocar):** exámenes de Álgebra/Comunicación/CV (otra sesión, `05545a9e`/`6512dd6b`), notas de Álgebra modificadas (tags/lecturas R14 del otro agente, 51 `.md` en su árbol), figuras PNG de MatDisc, `genera_tablas_verdad.py`, PDFs de Diseño, `D` de Speaking Practice, ~60 exámenes de Álgebra Lineal.
+
+**Convenciones vigentes (recordatorio):**
+- Commits con **pathspec** (`git commit -F <msg> -- <ruta>`); verificación de ajenos en llamada separada.
+- PDFs de clase como **enlace `📎 [[ruta.pdf|alias]]`**, nunca embed.
+- Fuentes `.mmd` **al lado** del `.svg` (regla A+C); no borrar los 673 restaurados.
+- Exámenes de POO con **espacios** en el nombre (`05545a9e`); no reintroducir variantes con `_`.
