@@ -4218,7 +4218,7 @@ archivo propio que se escribió en el clon).
 | 3 | Enlazar exámenes de **POO** (20) | sin dueño | Sin empezar. |
 | 4 | **POO**: 124 lecturas R14 (120 embeds + 4 decks) | sin dueño | Medido hoy: **168 hallazgos, 0 errores, 44 W, 124 P**. |
 | 5 | **POO**: 44 SVG sin `.mmd` | sin dueño | Confirmado hoy: 44. |
-| 6 | Auditoría de contrato: Inglés I/II/III, Comunicación, CYSOC, FundProg, PreuMate, MOOC | sin dueño | Sin medir. Contratos heredados. |
+| 6 | Auditoría de contrato: Inglés I/II/III, CYSOC, PreuMate, MOOC | `opencode-site` (Inglés) | Sin medir. Contratos heredados. |
 | 7 | CV `U6/II - Integral triple.md`: 3 introducciones equivalentes | `opencode-onedrive` | Requiere **OK del dueño** (es edición de contenido). |
 | 8 | Publicación en `site/**` | `opencode-site` | Intacto. |
 
@@ -4284,7 +4284,7 @@ clase. El inventario global del vault está cerrado y no cambia.
 | Enlazar 20 exámenes de **POO** | `opencode` | ✅ Tomada | Se hará **después** de las lecturas R14, sobre las mismas notas. |
 | **POO**: 124 lecturas R14 (120 embeds + 4 decks) | `opencode` | ✅ Tomada | 2ª ronda; contrato restaurado y funcionando (`65a29472`); QA: 168 hallazgos, 0 errores, 44 W, 124 P. |
 | **POO**: 44 SVG sin `.mmd` | `opencode` | ✅ Tomada | Reconstrucción desde SVG (mismo método que la ronda vault-wide). |
-| Auditoría de las 6 materias sin dueño (Inglés I/II/III, Comunicación, FundProg, PreuMate, MOOC) | **Dueño del vault** | ⏳ Pendiente de asignar | Contratos heredados; conviene una sesión dedicada o asignarlas de a una. |
+| Auditoría de las 6 materias sin dueño (Inglés I/II/III, CYSOC, PreuMate, MOOC) | **Dueño del vault** | ⏳ Pendiente de asignar | Contratos heredados; conviene una sesión dedicada o asignarlas de a una. |
 | Fusión de las 3 introducciones de CV U6/II | `opencode-onedrive` + **OK del dueño** | ⏳ Requiere OK | Única tarea de **contenido**, no de formato. |
 | Publicación en `site/**` | `opencode-site` | ✅ Intacto | Zona suya; no se tocó. |
 
@@ -4302,7 +4302,7 @@ clase. El inventario global del vault está cerrado y no cambia.
 
 #### Lo que queda pendiente de decisión del dueño
 
-1. **Auditoría de las 6 materias sin dueño** (Inglés I/II/III, Comunicación, FundProg, PreuMate, MOOC): ¿una sesión dedicada o asignarlas de a una?
+1. **Auditoría de las 5 materias sin dueño** (Inglés I/II/III, CYSOC, PreuMate, MOOC): ¿una sesión dedicada o asignarlas de a una? (Comunicación y FundProg ya tienen dueño: `opencode`.)
 2. **Fusión de las 3 introducciones de CV U6/II**: ¿se hace? (única edición de contenido del reparto).
 
 **Sin objeciones pendientes.** El reparto está cerrado y cada sesión sabe qué le toca.
@@ -4411,7 +4411,7 @@ de Draw sin `word/document.xml`.
 > [!note] Dos faltantes menores detectados al comparar DSpace contra el vault
 >
 > - `EXA-2023-1S-CÁLCULO DE UNA VARIABLE-8-1Par.pdf` (1 examen de Cálculo, zona de `opencode-onedrive`)
-> - `EXA-2016-2S-FUNDAMENTOS DE PROGRAMACIÓN-8-Mejora.pdf` (1 de FundProg, zona de `opencode-site`)
+> - `EXA-2016-2S-FUNDAMENTOS DE PROGRAMACIÓN-8-Mejora.pdf` (1 de FundProg, zona de `opencode`)
 >
 > Son 2 archivos sueltos que no estaban en el recorte de 14/14/14. No los bajé porque son zona
 > ajena; los reporto para que sus dueños decidan.
