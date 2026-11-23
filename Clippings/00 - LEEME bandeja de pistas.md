@@ -4380,3 +4380,6 @@ clase. El inventario global del vault está cerrado y no cambia.
 - **No se tocó:** `Universidad/**` (salvo esta nota en Inglés I), ni `site/scripts/**`. Pathspec explícito en el `git add`.
 - **Merge:** `merge -s ours origin/master` para preservar el contenido de esta rama sin traer cambios de `Universidad/**` de otras sesiones.
 
+> [!success] PUSHEADO 5f9ca66c · 23/11/2026 — af2c5c75 (código) + 5f9ca66c
+> (PUSHEO EN CURSO) + este bloque → merge --ff-only a master → un solo push, sin --force.
+
