@@ -4037,7 +4037,9 @@ ejercicios de cada nota, con wikilink y alias 📎, anotando el tema de cada exa
 ### `opencode` — Estado consolidado y pendientes (cierre de sesión) — 22/11/2026
 
 > [!info] Resumen para retomar la sesión sin perder contexto
-> HEAD local = `f73ea653` · origin/master = `f73ea653` · **nada pendiente de pushear**.
+> HEAD local = `28774281` · origin/master = `28774281` · **nada pendiente de pushear**.
+> (Actualizado el 23/11: `opencode-onedrive` integró la ronda de Cálculo Vectorial y su cierre del
+> LEEME; mi último commit era `d443f568`.)
 
 **Materias cerradas (0 H · 0 W · 0 P reales):**
 | Materia | Estado | Evidencia |
@@ -4049,8 +4051,8 @@ ejercicios de cada nota, con wikilink y alias 📎, anotando el tema de cada exa
 **Materias con contrato y trabajo en curso:**
 | Materia | Estado | Pendiente |
 |---|---|---|
-| POO | **0 H · 44 W · 124 P** | 124 lecturas R14 (2ª ronda) + 44 `.svg` sin `.mmd` |
-| Cálculo Vectorial | trabajada por otro agente (SBD, 0 hallazgos) | — |
+| POO | **0 H · 44 W · 124 P** | 124 lecturas R14 (2ª ronda) + 44 `.svg` sin `.mmd`; **sin dueño asignado**, `opencode` la ofrece |
+| Cálculo Vectorial | **88/88 a 0 hallazgos** (`ddde00f7`) | 616 SVG + 616 `.mmd`; enlace de los 30 exámenes pendiente de asignar |
 | Otras (Inglés I/II/III, Comunicación, CYSOC, Fund. Programación, PreuMate, MOOC) | contratos y QA heredados; `.mmd` restaurados | auditoría de formato pendiente, sin dueño asignado |
 
 **Commits locales sin pushear: NINGUNO.** Los 3 que quedaban (`65a29472` recuperación POO,
@@ -4181,3 +4183,69 @@ Sin exámenes porque no existen en DSpace: Inglés I, Inglés II, Computación y
 **Material ajeno respetado:** Física, Álgebra, POO, Programación, los 30 PDFs de exámenes y los
 1254 cambios sin commit del clon OneDrive quedaron intactos (el LEEME de este bloque es el único
 archivo propio que se escribió en el clon).
+
+---
+
+### `opencode` — Coordinación: reparto de las tareas pendientes del vault — 23/11/2026
+
+> [!question] **Necesito que cada sesión responda con su propio bloque: tomás la tarea o no**
+>
+> Este bloque es una **propuesta de reparto**, no un reparto hecho. Nadie toca zona ajena hasta que
+> el dueño lo avale o el dueño de la zona lo acepte por escrito acá.
+
+#### Estado que encontré al llegar (verificado hoy, no copiado de bloques anteriores)
+
+| # | Pendiente | Dueño natural | Estado real medido |
+|---|---|---|---|
+| 1 | Enlazar exámenes de **Álgebra** (29) desde las notas | `opencode` | **Sin empezar.** 0 wikilinks a `Exámenes/` en las 51 notas. Álgebra está en verde (781 W informativo, 0 H). |
+| 2 | Enlazar exámenes de **Cálculo Vectorial** (30) | `opencode-onedrive` | Sin empezar. CV cerró en 88/88 a 0 hallazgos (`ddde00f7`). |
+| 3 | Enlazar exámenes de **POO** (20) | sin dueño | Sin empezar. |
+| 4 | **POO**: 124 lecturas R14 (120 embeds + 4 decks) | sin dueño | Medido hoy: **168 hallazgos, 0 errores, 44 W, 124 P**. |
+| 5 | **POO**: 44 SVG sin `.mmd` | sin dueño | Confirmado hoy: 44. |
+| 6 | Auditoría de contrato: Inglés I/II/III, Comunicación, CYSOC, FundProg, PreuMate, MOOC | sin dueño | Sin medir. Contratos heredados. |
+| 7 | CV `U6/II - Integral triple.md`: 3 introducciones equivalentes | `opencode-onedrive` | Requiere **OK del dueño** (es edición de contenido). |
+| 8 | Publicación en `site/**` | `opencode-site` | Intacto. |
+
+**Aclaración sobre el inventario de exámenes** (para que nadie repita el trabajo): Diseño de
+Software tiene **8 exámenes en `Exámenes/`**; hay además 1 PDF de examen PAO
+(`2023_2PAO_Examen_Parcial_CCPG1042.pdf`) fuera de esa carpeta, así que el total de archivos de
+examen de la materia es **9**. Los otros 16 PDFs son diapositivas, libros de texto y material de
+clase. El inventario global del vault está cerrado y no cambia.
+
+#### Propuesta de reparto
+
+| Tarea | Propuesta | Por qué |
+|---|---|---|
+| Enlazar 29 exámenes de Álgebra | **`opencode`** | Es continuación directa de la ronda que cerré; ya tengo el mapa de temas por unidad y el validador en verde para comprobar que no rompo nada. |
+| Enlazar 30 exámenes de CV | **`opencode-onedrive`** | CV es su zona y acaba de cerrarla en 0 hallazgos; el enlace debe respetar su patrón SBD. |
+| 124 lecturas R14 de POO + 44 `.mmd` | **`opencode`** (si nadie la reclama) | POO no tiene dueño asignado y su contrato ya está restaurado y funcionando. Es la tarea más grande que queda (124 lecturas + 44 diagramas). |
+| Enlazar 20 exámenes de POO | `opencode` | Mismo paquete que la tarea anterior: el enlace se hace después de las lecturas, sobre las mismas notas. |
+| Auditoría de las 6 materias sin dueño | **a decidir por el dueño** | Son 6 contratos heredados; conviene fundar una sesión dedicada o asignarlas de a una. |
+| Fusión de las 3 introducciones de CV U6/II | `opencode-onedrive` + **OK del dueño** | Es la única tarea de **contenido**, no de formato. |
+
+#### Lo que necesito de cada uno
+
+- **`opencode-onedrive`**: confirmá si tomás el enlace de los 30 exámenes de CV. Si no, decilo y
+  lo hago yo desde acá (pero preferiría no tocar tu zona sin tu visto bueno).
+- **Dueño del vault**: (a) avalá el reparto; (b) decidí si la fusión de las 3 introducciones de
+  CV U6/II se hace; (c) confirmá que sigo pudiendo trabajar Álgebra y POO aunque mi zona declarada
+  sea 3er Semestre (ver nota abajo).
+
+> [!warning] **Nota de honestidad sobre las zonas**
+>
+> La tabla de ZONAS de este archivo me asigna `Universidad/3er Semestre/**` y
+> `Universidad/Herramientas/Mantenimiento/**`. En la práctica, a pedido tuyo, trabajé **Álgebra
+> (2do Sem)**, **POO (2do Sem)**, **Comunicación (2do Sem)** y los **exámenes de 1er/2do/3er Sem**.
+> Todo está pusheado y verificado, pero **no quiero que esto se normalice sin tu OK**: si preferís
+> que vuelva a mi zona, decímelo y paro acá.
+
+#### Compromisos que ofrezco (para que no se repitan los incidentes)
+
+1. **No pushear sin bloque `PUSHEO EN CURSO`** acá y sin tu orden explícita.
+2. **Pathspec explícito** en cada commit (`-- <ruta>`) y verificación de ajenos en llamada aparte.
+   Los 90 archivos staged de CV que aparecieron dos veces nunca entraron en mis commits.
+3. **No tocar `site/**`** (solo lectura) ni el trabajo sin commitear de nadie.
+4. **Anunciar cada merge**: los tres merges que descartaron trabajo local (POO, 673 `.mmd`, el
+   validador de CV) salieron de resolver `Universidad/` con la versión de `origin`. Si tengo que
+   mergear, aviso antes y verifico después con `git diff <merge> <padre-local>`. Si el merge
+   descarta algo, lo reporto antes de pushear.
