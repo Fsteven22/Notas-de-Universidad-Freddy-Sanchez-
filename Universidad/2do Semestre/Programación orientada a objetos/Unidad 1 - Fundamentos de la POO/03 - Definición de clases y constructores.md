@@ -30,6 +30,8 @@ tags: [CCPG1005, unidad1, poo, clases]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Definición_de_clases_y_constructores_01.svg]]
+> **Se lee así:** Diagrama de flujo TD con 15 bloques y 14 conexiones. Los bloques son: Clase: Auto, Atributos, Métodos, Constructores, marca: String. Las 14 conexiones muestran el flujo entre los bloques.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 
@@ -125,6 +127,8 @@ tags: [CCPG1005, unidad1, poo, clases]
 > ```
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Definición_de_clases_y_constructores_02.svg]]
+> **Se lee así:** Diagrama de flujo TD con 8 bloques y 4 conexiones. Los bloques son: public, Acceso desde toda la aplicación, protected, Acceso desde paquete + herencia, default. Las 4 conexiones muestran el flujo entre los bloques.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 
@@ -145,6 +149,8 @@ tags: [CCPG1005, unidad1, poo, clases]
 > **Flujo de creación de objetos:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Definición_de_clases_y_constructores_03.svg]]
+> **Se lee así:** - Se invoca con la palabra clave `new` - Puede estar sobrecargado (múltiples versiones)
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > ```java
 > public class Producto {
@@ -388,6 +394,8 @@ tags: [CCPG1005, unidad1, poo, clases]
 > ```
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Definición_de_clases_y_constructores_04.svg]]
+> **Se lee así:** Diagrama de flujo LR con 5 bloques y 4 conexiones. Los bloques son: this, "Contexto", this.atributo Referencia a campo, this args Llamada a constructor, método this Pasar objeto actual. Las 4 conexiones muestran el flujo entre los bloques.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 

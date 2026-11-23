@@ -1666,4 +1666,12 @@ tags: [MATG1049, algebra-lineal, unidad2, 01-vectores-en-espacios-vectoriales]
 
 ---
 
+
+## 📝 Exámenes de la materia
+
+> [!info] Exámenes reales de DSpace que cubren este tema
+>
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2020-1S-ÁLGEBRA LINEAL-2-2Par.pdf\|EXA-2020-1S-ÁLGEBRA LINEAL-2-2Par.pdf]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2020-1S-ÁLGEBRA LINEAL-5-2Par.pdf\|EXA-2020-1S-ÁLGEBRA LINEAL-5-2Par.pdf]]
+
 **Tags:** #espacios-vectoriales #algebra-lineal #vectores #base #dimension #independencia-lineal #subespacios #combinaciones-lineales #axiomas #estructuras-algebraicas #generador #coordenadas

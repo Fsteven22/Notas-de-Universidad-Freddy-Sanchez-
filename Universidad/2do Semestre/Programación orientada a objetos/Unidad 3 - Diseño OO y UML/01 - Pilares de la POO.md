@@ -23,6 +23,8 @@ tags: [CCPG1005, unidad3, poo, pilares]
 > [!note] 🖼️ Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_01.svg]]
+> **Se lee así:** Diagrama de flujo LR con 15 bloques y 0 conexiones.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 
@@ -139,6 +141,8 @@ tags: [CCPG1005, unidad3, poo, pilares]
 > [!note] 🖼️ Concepto
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_02.svg]]
+> **Se lee así:** Diagrama de flujo TD con 3 bloques y 2 conexiones. Los bloques son: Empleado nombre salarioBase calcularSalario, Gerente bono, Vendedor comision. Las 2 conexiones muestran el flujo entre los bloques.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ### 🛠️ Implementación
 
@@ -255,6 +259,8 @@ tags: [CCPG1005, unidad3, poo, pilares]
 > [!note] 🖼️ Concepto
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_03.svg]]
+> **Se lee así:** Diagrama de flujo TD con 6 bloques y 5 conexiones. Los bloques son: Animal referencia, "Tipo Real", new Perro, new Gato, hacerSonido → Guau. Las 5 conexiones muestran el flujo entre los bloques.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ### 🛠️ Implementación
 
@@ -374,6 +380,8 @@ tags: [CCPG1005, unidad3, poo, pilares]
 > [!note] 🖼️ Concepto
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_04.svg]]
+> **Se lee así:** Diagrama de flujo TD con 7 bloques y 6 conexiones. Los bloques son: ABSTRACCIÓN, Clases Abstractas, Interfaces, Métodos concretos + abstractos, Herencia simple. Las 6 conexiones muestran el flujo entre los bloques.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ### 🛠️ Clases Abstractas
 
@@ -539,6 +547,8 @@ tags: [CCPG1005, unidad3, poo, pilares]
 > [!note] 🖼️ Relación entre los Pilares
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_05.svg]]
+> **Se lee así:** Diagrama de flujo LR con 8 bloques y 7 conexiones. Los bloques son: Encapsulación, Base de todo, Herencia, Reutiliza código encapsulado, Polimorfismo. Las 7 conexiones muestran el flujo entre los bloques.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 > [!example] 🚗 Ejemplo Integrador
 > 
@@ -599,6 +609,8 @@ tags: [CCPG1005, unidad3, poo, pilares]
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Pilares_de_la_POO_06.svg]]
+> **Se lee así:** Diagrama de flujo LR con 18 bloques y 0 conexiones.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 > [!success] ✅ Checklist de Aplicación
 > 

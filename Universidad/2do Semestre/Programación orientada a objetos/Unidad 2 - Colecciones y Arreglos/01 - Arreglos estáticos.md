@@ -152,6 +152,8 @@ tags: [CCPG1005, unidad2, poo, arreglos]
 > **Visualización de inicialización:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Arreglos_estáticos_02.svg]]
+> **Se lee así:** Diagrama de flujo LR con 8 bloques y 9 conexiones. Los bloques son: int[, Formas de inicializar, Declaración con valores: {1, 2, 3}, Bucle for, Asignación directa o Arrays.fill(). Las 9 conexiones muestran el flujo entre los bloques.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 
@@ -192,6 +194,8 @@ tags: [CCPG1005, unidad2, poo, arreglos]
 > **Representación visual:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Arreglos_estáticos_03.svg]]
+> **Se lee así:** Diagrama de flujo TD con 9 bloques y 7 conexiones. Los bloques son: frutas (length = 5), [0, [1, [2, [3. Las 7 conexiones muestran el flujo entre los bloques.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > **⚠️ Error común - ArrayIndexOutOfBoundsException:**
 > 
@@ -287,6 +291,8 @@ tags: [CCPG1005, unidad2, poo, arreglos]
 > **Flujo de decisión:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Arreglos_estáticos_04.svg]]
+> **Se lee así:** Diagrama de flujo TD con 6 bloques y 6 conexiones. Los bloques son: "¿Necesitas el índice?", Usar for tradicional, "¿Vas a modificar elementos?", Usar for-each, for i = 0; i < arr.length. Las 6 conexiones muestran el flujo entre los bloques.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 
 ---
 
@@ -402,6 +408,8 @@ tags: [CCPG1005, unidad2, poo, arreglos]
 > **Visualización del problema:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Arreglos_estáticos_05.svg]]
+> **Se lee así:** Diagrama de flujo LR con 3 bloques y 2 conexiones. Los bloques son: original, Memoria: 1,2,3,4,5, copia. Las 2 conexiones muestran el flujo entre los bloques.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > **✅ Formas correctas de copiar:**
 > 
@@ -552,6 +560,8 @@ tags: [CCPG1005, unidad2, poo, arreglos]
 > **Visualización de matriz 3x3:**
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Arreglos_estáticos_06.svg]]
+> **Se lee así:** Diagrama de flujo TD con 7 bloques y 6 conexiones. Los bloques son: matriz[3, Fila 0, Fila 1, Fila 2, [0. Las 6 conexiones muestran el flujo entre los bloques.
+> **Por qué importa:** Ilustra el concepto explicado en la nota.
 > 
 > **Inicialización:**
 > 

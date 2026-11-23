@@ -1473,4 +1473,12 @@ tags: [MATG1049, algebra-lineal, unidad2, 05-teoremas-fundamentales-del-espacio-
 
 ---
 
+
+## 📝 Exámenes de la materia
+
+> [!info] Exámenes reales de DSpace que cubren este tema
+>
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/ÁLGEBRA LINEAL 2012-1S (ICM) 3ª evaluación - 02 (con rúbrica).pdf\|ÁLGEBRA LINEAL 2012-1S (ICM) 3ª evaluación - 02 (con rúbrica).pdf]]
+> - 📎 [[Unidad 0 - Guias y Ejercicios/Exámenes/ÁLGEBRA LINEAL 2012-1S (ICM) 3ª evaluación - 06 (con rúbrica).pdf\|ÁLGEBRA LINEAL 2012-1S (ICM) 3ª evaluación - 06 (con rúbrica).pdf]]
+
 **Tags:** #espacio-vectorial #teoremas-fundamentales #axiomas #demostraciones #álgebra-lineal #rigor-matemático #unicidad #cancelación #producto-nulo #opuestos #vector-cero #fundamentos
