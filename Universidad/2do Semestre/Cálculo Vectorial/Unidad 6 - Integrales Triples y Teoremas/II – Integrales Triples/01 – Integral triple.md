@@ -41,6 +41,72 @@ tags: [integral, triple, integral-triple]
 
 ---
 
+## 🎯 De la Integral Doble a la Triple
+
+> [!info] 💡 ¿Qué es una Integral Triple?
+>
+> La **integral triple** extiende el concepto de integración a funciones de tres variables, permitiéndonos calcular volúmenes, masas, centros de masa y otras cantidades físicas en regiones tridimensionales.
+>
+> **Analogía práctica:** Si una integral doble calcula el "volumen bajo una superficie", una integral triple puede calcular:
+>
+> - **Masa total** de un sólido con densidad variable
+> - **Carga total** en una región con densidad de carga
+> - **Volumen** de un sólido en el espacio
+> - **Momento de inercia** de un objeto 3D
+>
+> **¿Por qué son importantes?**
+>
+> |Aspecto|Descripción|Ejemplo|
+> |---|---|---|
+> |**Volúmenes**|Calcular volumen de sólidos complejos|Volumen bajo superficie|
+> |**Masa total**|Con densidad variable|$M = \iiint_V \rho(x,y,z) , dV$|
+> |**Centro de masa**|Punto de equilibrio|$\bar{x} = \frac{1}{M}\iiint x\rho , dV$|
+> |**Momento de inercia**|Rotación de sólidos|$I = \iiint r^2 \delta , dV$|
+> |**Probabilidades**|Distribuciones 3D|Funciones de densidad|
+
+> [!note] 📋 Figura — Introducción
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Integral_triple_02.svg]]
+>
+> **Se lee así:** el diagrama de «Introducción» ordena las ideas principales del tema y sus casos particulares.
+
+# 📦 Integral Triple
+
+---
+
+## 🎯 La Integral Triple como Medida de Masa
+
+> [!info] 💡 ¿Qué es una Integral Triple?
+>
+> La **integral triple** extiende el concepto de integral a funciones de tres variables, permitiéndonos calcular volúmenes, masas, centros de masa y otras propiedades de sólidos tridimensionales.
+>
+> **Analogía práctica:** Imagina calcular la masa total de un objeto 3D con densidad variable:
+>
+> - **Integral simple** → Masa de un alambre (1D)
+> - **Integral doble** → Masa de una lámina plana (2D)
+> - **Integral triple** → Masa de un sólido 3D
+>
+> Cada dimensión adicional requiere una integración más.
+>
+> **¿Por qué son importantes?**
+>
+> |Aspecto|Descripción|Aplicación|
+> |---|---|---|
+> |**Volumen**|Región tridimensional|Capacidad de tanques, edificios|
+> |**Masa**|Con densidad variable|Física, ingeniería|
+> |**Centro de masa**|Punto de equilibrio|Diseño estructural|
+> |**Momento de inercia**|Resistencia a rotación|Mecánica, ingeniería|
+> |**Carga total**|Distribución de densidad|Electromagnetismo|
+> |**Probabilidad**|Distribuciones 3D|Estadística multivariable|
+
+> [!note] 📋 Figura — Introducción
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Integral_triple_03.svg]]
+>
+> **Se lee así:** el diagrama de «Introducción» ordena las ideas principales del tema y sus casos particulares.
+
+---
+
 ## 📋 Definiciones Formales
 
 ### 1️⃣ Sistema Cilíndrico

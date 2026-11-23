@@ -7,24 +7,17 @@ dg-publish: false
 > [!info] 📖 Fuente única de verdad
 > Este contrato vive en `Universidad/Herramientas/Mantenimiento/` (junto al validador que lo
 > aplica), **no** dentro de la carpeta de la materia: es una herramienta de auditoría, no una nota
-> que el sitio publique. Sus hermanos son `FORMATO-SBD.md`, `FORMATO-ALGEBRA.md`,
-> `FORMATO-CALCULO1.md`, `FORMATO-CALCULOVECTORIAL.md`, `FORMATO-POO.md`, `FORMATO-FESD.md`,
-> `FORMATO-DISENO.md`, `FORMATO-CYSOC.md` y `FORMATO-MATDISC.md`.
+> que el sitio publique.
 >
 > **Nota de referencia:** `3er Semestre/Sistema de Bases de Datos/Unidad 1 - Modelos de Datos y ER/01 - Dato, información y modelos de datos.md`
-> (la referencia canónica de la casa, la misma que usan `FORMATO-ALGEBRA.md` y
-> `FORMATO-CALCULO1.md` por herencia). El validador la audita con `--calibrar`.
+> (la "01" de la U1 de SBD, la más estructurada: 8 H2 con emoji, cada definición en su propio
+> callout, cada diagrama SVG con lectura propia, tablas de vocabulario dentro de callouts,
+> ejercicios con solución plegada, tags al pie).
 >
-> **Nota de prueba de esta materia:** `1er Semestre/Ingles I (B1-B2)/Unit 10 - Why we buy/01 - Vocabulary & Use - Materials + Production & Distribution.md`
-> (reescrita el 23/11/2026 como ejemplo de cómo se aplica el contrato a Inglés:
-> 8 SVG con lectura, ejercicios con solución plegada, frontmatter con tags,
-> vocabulario en tablas dentro de callouts). Sirve para medir el contrato contra
-> material real de Inglés; **no** es la referencia del validador.
->
-> Las **notas de clase de Inglés** no comparten un esqueleto fijo (cada unidad mezcla
-> Vocabulary, Grammar, Functional Language y Reading/Writing/Speaking). Este contrato fija lo
-> que sí es común: frontmatter, emoji, callouts, embeds con lectura, ejercicios con solución
-> plegada y tags al pie. **Copia el método, no el esqueleto de otras materias.**
+> Las **18 notas** de Inglés I no comparten un esqueleto rígido (cada unidad mezcla Vocabulary,
+> Grammar, Functional Language y Reading/Writing/Speaking). Este contrato fija lo que sí es
+> común: frontmatter, emoji, callouts, embeds con lectura, ejercicios con solución plegada y
+> tags al pie. **Copia el método, no el esqueleto de otras materias.**
 
 ## Las reglas
 
@@ -32,41 +25,40 @@ dg-publish: false
 ```
 ---
 dg-publish: true
-tags: [IDIG1006, unit10, materials, production]
+tags: [IDIG1006, unidadN, tema]
 ---
 ```
 Sin `dg-publish: true` la nota no se publica (`qa_omitidas.py` la detecta). El código de
-cátedra es **IDIG1006** (sílabo oficial ESPOL). La referencia lo cumple en sus líneas 1-4.
+cátedra es **IDIG1006** (sílabo oficial ESPOL).
 
 ### R2 · Título H1 con emoji
 `# 🎯 Vocabulary & Use: Materials + Production & Distribution` — emoji visible + texto. La
 referencia lo cumple en su línea 6. Al escribir notas **nuevas** va un solo H1.
 
 ### R3 · Secciones H2 con emoji
-Todo H2 abre con emoji. La referencia tiene 9/9 (`🎯 Introducción`, `🧵 A. Materials`,
-`🏭 B. Production`, `🚚 C. Distribution`, `📚 D. Mini-glossary`, `💬 E. Collocations`,
-`🌍 F. Real Applications`, `🎯 Quick Practice`, `📊 Visual Summary`,
-`🔗 Connection to Next Topics`, `🔗 Seguir estudiando`). No hay esqueleto obligatorio: cada
-nota elige sus secciones por tema.
+Todo H2 abre con emoji. No hay esqueleto fijo: cada nota elige sus secciones por tema
+(Vocabulary, Grammar, Functional Language, Reading/Writing/Speaking).
 
-### R4 · Contenido dentro de callouts
+### R4 · Todo el contenido dentro de callouts
 La referencia tiene **0 líneas de prosa, tabla, lista o fórmula fuera de callouts** (sus
-únicas líneas "fuera" son el frontmatter, el H1, los H2, los `---` y los `**Tags:**` al pie,
-todas legítimas). Un embed suelto top-level se reporta como **H** (`R4-embed-top`).
+únicas líneas "fuera" son el frontmatter, los dos `**Tags:**` al pie y el H1, todas legítimas).
+Un embed suelto top-level se reporta como **H** (`R4-embed-top`).
 
 ### R5 · Callout con título siempre
-`> [!info] 💡 Why this vocabulary matters` (referencia L10). Tipo + emoji + texto. Nunca un
+`> [!info] 💡 ¿Por qué es importante este vocabulario?` — tipo + emoji + texto. Nunca un
 callout sin título.
 
 ### R6 · Línea en blanco `>` tras el encabezado del callout
-La referencia lo hace en sus 25 callouts (p. ej. L11-12, L33-34). Excepción admitida:
-callouts de bibliografía 📖 que arrancan con prosa directo.
+```
+> [!info] 💡 Título
+>
+> El cuerpo del callout…
+```
 
 ### R7 · Separadores internos dentro de un callout
-Línea `>` en blanco antes de un embed, tabla o párrafo nuevo dentro del callout. La
-referencia lo cumple en sus embeds (L55-57: header, `>`, embed).
+Línea `>` en blanco antes de un embed, tabla o párrafo nuevo dentro del callout.
 
-### R8 · Solución anidada y plegada en los ejercicios
+### R8 · `> >` solo como callout anidado con su propio `[!tipo]`
 ```
 > [!tip] 💪 Exercises
 >
@@ -76,17 +68,22 @@ referencia lo cumple en sus embeds (L55-57: header, `>`, embed).
 > >
 > > 1. **cotton**
 ```
-Prefijo `> >` en dos niveles, y el `success` **plegado** (`[!success]-`). La referencia lo
-cumple en sus 3 ejercicios (L~370, L~391, L~419).
+Prefijo `> >` en dos niveles, y el `success` **plegado** (`[!success]-`): el enunciado se ve, la
+solución se abre cuando la quieres. **Un `> >` suelto (sin `[!tipo]` propio) se renderiza como
+texto indentado sin estilo y se reporta como `R8-doble-gt-sin-callout`.**
 
-### R9 · Ejemplos con etiqueta en negrita
-Dentro del callout: `> **Ejemplo:**`, `> **Se lee así:**`, `> **Por qué importa:**`,
-`> **Pattern:**`, `> **How to read it:**`. La referencia usa las tres etiquetas de lectura
-R14 además de `**Pattern:**` y `**How to read it:**`.
+### R9 · Ejemplos con título en su propio callout
+Cada ejemplo va en su propio callout con título, nunca como texto suelto:
+```
+> [!example] 💬 Ejemplo en contexto
+>
+> - This shirt is made of cotton.
+> - The window is made of glass.
+```
 
 ### R10 · Metas de Aprendizaje con checkboxes
-Solo si la nota tiene la sección. **No aplica** a Inglés I (0 notas con esta sección; no se
-exige).
+Solo si la nota tiene la sección: contenido como `- [ ]`. **No aplica** a Inglés I (0 notas con
+esta sección; no se exige).
 
 ### R11 · Flashcards SR dentro de la sección Repaso
 `#flashcards/ingles1-uN` fuera del callout; las Q/A dentro del `> [!note] 🧠 …`. **No aplica**
@@ -121,9 +118,9 @@ inventa.
 
 ### R15 · Diagramas de vocabulario en `mindmap` (regla propia de esta materia)
 > [!important] 🎯 La regla que diferencia esta materia
-> Los diagramas que **agrupan** vocabulario (materiales, verbos, adjetivos,
-> collocations) van en **mermaid `mindmap`**, no en `flowchart`. Un `mindmap`
-> tiene nodo raíz y ramas jerárquicas — es lo que espera un mapa de vocabulario.
+> Los diagramas que **agrupan** vocabulario (materiales, verbos, adjetivos, collocations) van
+> en **mermaid `mindmap`**, no en `flowchart`. Un `mindmap` tiene nodo raíz y ramas
+> jerárquicas — es lo que espera un mapa de vocabulario.
 >
 > ```
 > mindmap
@@ -135,40 +132,32 @@ inventa.
 >         Plastic
 > ```
 >
-> Los `flowchart` se reservan para **procesos** (production chain, distribution
-> chain, passive voice transformation) donde el orden de los pasos importa.
+> Los `flowchart` se reservan para **procesos** (production chain, distribution chain,
+> passive voice transformation) donde el orden de los pasos importa.
 >
-> **Por qué:** un `flowchart` de vocabulario (cajas conectadas con flechas)
-> sugiere secuencia — *primero esto, luego aquello* — cuando el vocabulario no
-> tiene orden: es un conjunto jerárquico. El `mindmap` comunica "esto es un árbol
-> de categorías", no "esto es un camino".
->
-> **Cómo se convierte:** si un `.mmd` empieza con `flowchart` y su contenido es
-> una taxonomía (categoría → elementos), se reescribe a `mindmap` con `root((Tema))`
-> y las categorías como ramas.
+> **Por qué:** un `flowchart` de vocabulario (cajas conectadas con flechas) sugiere secuencia
+> — *primero esto, luego aquello* — cuando el vocabulario no tiene orden: es un conjunto
+> jerárquico. El `mindmap` comunica "esto es un árbol de categorías", no "esto es un camino".
 
-### R16 · Vocabulario en tablas dentro de callouts (regla propia de esta materia)
-> [!important] 🎯 La regla que diferencia esta materia
-> El vocabulario (materiales, verbos, adjetivos, collocations) va en **tablas markdown
-> dentro de callouts** `[!example]` o `[!success]`, con columnas fijas:
-> `English | Spanish | Pronunciation/Context | Example/Products`.
->
-> ```
-> > [!example] 📦 Basic materials
-> >
-> > | Material | Spanish | Pronunciation | Common products |
-> > |---|---|---|---|
-> > | **Cotton** | Algodón | /ˈkɒt.ən/ | T-shirts, jeans |
-> ```
->
-> **Por qué:** en Inglés la tabla es el formato canónico de vocabulario (el del libro
-> *Evolve*), y el callout la mantiene dentro de la estructura del sitio. Una lista suelta
-> fuera de callout rompe R4.
-
-### R17 · Enlaces a exámenes con alias 📎
+### R16 · Enlaces a exámenes con alias 📎
 Los exámenes viven en `Unidad 0 - Guias y Ejercicios/Exámenes/` y se **enlazan con alias**
 `[[…|📎 Examen …]]`, nunca se embeben visualmente. **No aplica hoy** (Inglés I no tiene
 exámenes en `Exámenes/`; el pendiente de enlazar 4 exámenes es de Inglés III).
+
+### R17 · Pronunciación legible (regla propia de esta materia)
+> [!important] 🎯 La regla que diferencia esta materia
+> La pronunciación se escribe con símbolos fonéticos **reconocibles** y, cuando sea posible,
+> con una aproximación fonética en español entre paréntesis. Nunca símbolos fonéticos sueltos
+> sin contexto.
+>
+> ```
+> /kɒt.ən/ → "cotón" (algodón)
+> /ˈleð.ər/ → "ledor" (cuero)
+> ```
+>
+> **Por qué:** un símbolo como `/wʊl/` sin más no se lee; el estudiante no sabe si es "ul",
+> "ool" o "uol". La aproximación entre paréntesis hace que el símbolo sea accesible desde el
+> primer día.
 
 ## Material que NO entra
 `_texto/`, PDFs de clase crudos (se capturan sus páginas), `Contenido Extra/`, docs de
@@ -179,12 +168,12 @@ exámenes en `Exámenes/`; el pendiente de enlazar 4 exámenes es de Inglés III
 2. Un solo H1 con emoji (R2).
 3. H2 con emoji, sin esqueleto fijo (R3).
 4. Callouts con título, blanco `>` tras header, separadores internos (R5-R7).
-5. Diagramas de vocabulario en `mindmap` (R15); procesos en `flowchart`.
-6. Vocabulario en tablas dentro de callouts (R16).
+5. Vocabulario en tablas dentro de callouts (R16).
+6. Diagramas de vocabulario en `mindmap`, procesos en `flowchart` (R15).
 7. Embeber el SVG, y **leerlo** con las tres etiquetas (R12, R14).
 8. Ejercicios con solución plegada (R8).
-8. `**Tags:**` al pie, separado (R13).
-9. Auditar y corregir hasta 0 H (`qa_formato_ingles1.py`).
+9. `**Tags:**` al pie, separado (R13).
+10. Auditar y corregir hasta 0 H (`qa_formato_ingles1.py`).
 
 ## Cómo se audita
 ```
