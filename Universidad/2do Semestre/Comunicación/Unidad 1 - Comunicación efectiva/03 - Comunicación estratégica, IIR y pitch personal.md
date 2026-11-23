@@ -214,16 +214,16 @@ tags: [IDIG2012, unidad1, estrategia, iir, pitch, comunicacion]
 #flashcards/comunicacion-u1
 
 > [!note] 🧠 Repasa con el plugin Spaced Repetition
-
-- ¿Capriotti, Massoni y Aljure en 1 línea cada uno?::Imagen coherente desde la identidad / diálogos co-creados, no emisión unilateral / vincular objetivos con públicos mediante planificación.
-- ¿Identidad, imagen y reputación?::Quién soy y mis valores / cómo me perciben los otros / juicio sostenido en el tiempo sobre mi actuar.
-- ¿Mapa de públicos y sus criterios?::Actores que afectan o son afectados; se prioriza por poder, interés, cercanía, actitud o frecuencia.
-- ¿4 preguntas para planificar un mensaje?::¿Qué? ¿A quién? ¿Con qué propósito? ¿Por qué canal?
-- ¿Caso "Espol nos reprobó" (I/I/R)?::Identidad: exigente pero justo (lo que proyecta). Imagen: estricto vs inspirador (percepción individual). Reputación: "sales preparado" (opinión colectiva en el tiempo).
-- ¿4 acciones para gestionar tu I+I+R?::Definir identidad y propósito; coherencia dicho-hecho; comunicar claro y profesional; educación continua.
-- ¿Estructura del pitch personal S3?::Quién soy (20s) + qué hago (40s) + prueba (30s) + cierre/qué aporto (20s); total 1:45–2:00.
-- ¿Elevator clásico vs S3?::Clásico ≤60s para despertar interés; S3 2min para probar credibilidad (5 pasos IEBS caben en los 4 bloques).
-- ¿Fórmula PAR?::Problema → Acción → Resultado con número, para el bloque Prueba.
+>
+> - ¿Capriotti, Massoni y Aljure en 1 línea cada uno?::Imagen coherente desde la identidad / diálogos co-creados, no emisión unilateral / vincular objetivos con públicos mediante planificación.
+> - ¿Identidad, imagen y reputación?::Quién soy y mis valores / cómo me perciben los otros / juicio sostenido en el tiempo sobre mi actuar.
+> - ¿Mapa de públicos y sus criterios?::Actores que afectan o son afectados; se prioriza por poder, interés, cercanía, actitud o frecuencia.
+> - ¿4 preguntas para planificar un mensaje?::¿Qué? ¿A quién? ¿Con qué propósito? ¿Por qué canal?
+> - ¿Caso "Espol nos reprobó" (I/I/R)?::Identidad: exigente pero justo (lo que proyecta). Imagen: estricto vs inspirador (percepción individual). Reputación: "sales preparado" (opinión colectiva en el tiempo).
+> - ¿4 acciones para gestionar tu I+I+R?::Definir identidad y propósito; coherencia dicho-hecho; comunicar claro y profesional; educación continua.
+> - ¿Estructura del pitch personal S3?::Quién soy (20s) + qué hago (40s) + prueba (30s) + cierre/qué aporto (20s); total 1:45–2:00.
+> - ¿Elevator clásico vs S3?::Clásico ≤60s para despertar interés; S3 2min para probar credibilidad (5 pasos IEBS caben en los 4 bloques).
+> - ¿Fórmula PAR?::Problema → Acción → Resultado con número, para el bloque Prueba.
 
 ## ✅ Metas de Aprendizaje
 
