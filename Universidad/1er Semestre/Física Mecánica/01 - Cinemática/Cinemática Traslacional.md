@@ -5,21 +5,27 @@ tags: [FISG1001, unidad1, cinematica, movimiento-rectilineo, mrua, caida-libre]
 
 # 🚗 Cinemática Traslacional
 
-> [!info] 📖 ¿Qué es la Cinemática Traslacional?
+> [!info] 📋 Cita motivadora
 >
-> La **cinemática traslacional** estudia el movimiento de los cuerpos en línea recta (unidimensional) o en el plano/espacio (bidimensional/tridimensional) sin considerar las causas que lo producen.
+> "El movimiento es relativo, pero las leyes que lo gobiernan son absolutas." — Galileo Galilei
 >
-> **Se lee así:** describe el "cómo" del movimiento —posición, velocidad y aceleración como funciones del tiempo— sin analizar sus causas; eso corresponde a la dinámica.
+> La cinemática traslacional estudia el movimiento de los cuerpos en línea recta (unidimensional) o en el plano/espacio (bidimensional/tridimensional) sin considerar las causas que lo producen. Describe la "cómo" del movimiento: posición, velocidad y aceleración como funciones del tiempo.
 
 ---
 
 ## 🎯 Introducción
 
-> [!info] 📋 Importancia de la Cinemática Traslacional
+> [!info] 📋 ¿Qué es la Cinemática Traslacional?
 >
-> La cinemática traslacional es la rama de la física que estudia el movimiento de los cuerpos sin considerar las fuerzas que lo originan. Es el punto de partida para entender cualquier fenómeno de movimiento en el universo.
+> La **cinemática traslacional** estudia el movimiento de los cuerpos en línea recta (unidimensional) o en el plano/espacio (bidimensional/tridimensional) sin considerar las causas que lo producen.
 >
-> **Se lee así:** sin la cinemática no podríamos describir ni predecir el movimiento de objetos cotidianos como vehículos, planetas o proyectiles.
+> **Se lee así:** describe el "cómo" del movimiento —posición, velocidad y aceleración como función del tiempo— sin analizar sus causas; eso corresponde a la dinámica.
+
+> [!info] 📊 Por qué estudiamos la cinemática
+>
+> Sin la cinemática no podríamos describir ni predecir el movimiento de objetos cotidianos como vehículos, planetas o proyectiles. Es el punto de partida para entender cualquier fenómeno de movimiento en el universo.
+>
+> **Se lee así:** la cinemática proporciona el lenguaje matemático para describir el movimiento antes de analizar sus causas.
 
 ---
 
@@ -147,6 +153,22 @@ tags: [FISG1001, unidad1, cinematica, movimiento-rectilineo, mrua, caida-libre]
 > >
 > > **Respuesta:** $h_{max} \approx 11.5$ m, $t_{total} \approx 3.06$ s
 
+> [!example] 🎢 Ejercicio 4: Montaña Rusa
+>
+> **Problema:** Un carrito de montaña rusa parte del reposo en la cima de una colina de 30 m de altura. Si no hay fricción, ¿cuál es su velocidad al llegar al fondo?
+>
+> **Datos:** $h = 30$ m, $v_0 = 0$, $g = 9.8$ m/s²
+>
+> > [!success]- ✅ Solución
+> >
+> > **Paso 1:** Aplicar ecuación de MRUA: $v^2 = v_0^2 + 2gh$
+> >
+> > **Paso 2:** Sustituir: $v^2 = 0 + 2(9.8)(30) = 588$
+> >
+> > **Paso 3:** Despejar $v$: $v = \sqrt{588} \approx 24.2$ m/s
+> >
+> > **Respuesta:** $v \approx 24.2$ m/s
+
 ---
 
 ## 🎯 Metas de Aprendizaje
@@ -212,7 +234,8 @@ tags: [FISG1001, unidad1, cinematica, movimiento-rectilineo, mrua, caida-libre]
 > - [[Cinemática Rotacional]] — movimiento angular y sus analogías con el lineal.
 > - [[Vectores]] — conceptos de función del tiempo en 2D y 3D.
 > - [[Leyes de Newton]] — causas del movimiento (dinámica).
-> - [[Guías y Ejercicios (Prof. Zambrano)]] — guías de taller y ejercicios resueltos de la Unidad 0.
+> - [[Unidad 0 - Guias y Ejercicios/Guías y Ejercicios (Prof. Zambrano)|Guías y Ejercicios (Prof. Zambrano)]] — guías de taller y ejercicios resueltos de la Unidad 0 para practicar cinemática.
+> - [[Unidad 0 - Guias y Ejercicios/Diagramas/Cinemática_Traslacional_01.svg]] — diagrama de posición para repasar conceptos visuales.
 > - Repaso: vuelve a las definiciones formales antes de los ejercicios.
 
 **Tags:** #FISG1001 #unidad1 #cinematica #movimiento-rectilineo #mrua #caida-libre
