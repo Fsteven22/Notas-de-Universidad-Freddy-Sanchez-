@@ -1,288 +1,218 @@
 ---
 dg-publish: true
+tags: [FISG1001, unidad1, cinematica, velocidad-relativa, navegacion]
 ---
 
-# Velocidad Relativa para Barcos y Aviones
+# 🚤 Velocidad Relativa para Barcos y Aviones
 
->[!quote] _"La velocidad no es solo moverse rápido, es saber en qué dirección ir cuando el mundo se mueve contigo"_ - Navegación en acción
+## 🎯 Introducción
 
----
-
-## 📋 Definición y Concepto Fundamental
-
-> [!info] 🎯 **¿Qué es la Velocidad Relativa?** Es la **velocidad de un objeto** medida **respecto a otro objeto** que también puede estar en movimiento. En problemas de navegación, consideramos cómo los **medios en movimiento** (aire, agua) afectan el movimiento de vehículos.
-> 
-> **🔑 Ecuación fundamental:** $$\vec{v}_{AB} = \vec{v}_A - \vec{v}_B$$
-> 
-> Donde $\vec{v}_{AB}$ es la velocidad de A **relativa** a B
-
----
-
-## ✈️ Tipos de Problemas de Velocidad Relativa
-
-> [!tip] 🌪️ **Aviones con Viento** **Situación:** Aeronave volando en un medio (aire) que se mueve con respecto a tierra
-> 
-> ![[Diagramas/Velocidad_Relativa_para_Barcos_y_Aviones_01.svg]]
-> 
-> **Casos típicos:**
-> 
-> - ✈️ Vuelos comerciales con viento de cola/frente
-> - 🚁 Helicópteros en corrientes de aire
-> - 🪂 Paracaidistas con viento lateral
+> [!info] 💡 ¿Por Qué la Velocidad Relativa Importa en la Navegación?
 >
-
-> [!warning] 🚢 **Barcos en Corrientes** **Situación:** Embarcación navegando en agua que fluye respecto a la costa
-> 
-> ![[Diagramas/Velocidad_Relativa_para_Barcos_y_Aviones_02.svg]]
-> 
-> **Casos típicos:**
-> 
-> - ⛵ Veleros cruzando ríos
-> - 🛥️ Lanchas en corrientes marinas
-> - 🚤 Travesías en canales con flujo
+> Un avión no vuela solo respecto al aire: el aire se mueve respecto a la tierra. Un barco no navega solo respecto al agua: la corriente se mueve respecto a la costa. La velocidad que mide el GPS (respecto a tierra) es distinta de la que marca el velocímetro (respecto al medio). Esta nota enseña a combinar vectores de velocidad para predecir la trayectoria real de cualquier vehículo en un medio en movimiento.
 >
-
-> [!note] 🌧️ **Lluvia y Movimiento** **Situación:** Observador en movimiento percibiendo lluvia con velocidad aparente
-> 
-> **Ejemplos típicos:**
-> 
-> - 🚗 Lluvia vista desde un automóvil
-> - 🚂 Gotas en ventanillas de trenes
-> - 🏃‍♂️ Persona corriendo bajo la lluvia
-
----
-
-## 🧭 Sistemas de Referencia y Navegación
-
-> [!abstract] 📐 **Marcos de Referencia Importantes**
-> 
-> ### 🌍 Referencia Terrestre (Fija)
-> 
-> - **Definición:** Sistema fijo respecto a la superficie terrestre
-> - **Uso:** Navegación GPS, mapas, destinos finales
-> - **Símbolo:** Subíndice "g" (ground) - $\vec{v}_g$
-> 
-> ### 💨 Referencia del Medio (Aire/Agua)
-> 
-> - **Definición:** Sistema fijo respecto al fluido en movimiento
-> - **Uso:** Instrumentos del vehículo, velocímetros
-> - **Símbolo:** Subíndice "a" (air) o "w" (water) - $\vec{v}_a$, $\vec{v}_w$
-> 
-> ### 🚁 Referencia del Vehículo
-> 
-> - **Definición:** Sistema fijo al vehículo en movimiento
-> - **Uso:** Observaciones desde dentro del vehículo
-> - **Símbolo:** Subíndice del vehículo - $\vec{v}_v$
-
----
-
-## 📐 Metodología de Resolución
-
-> [!example] 🛠️ **Pasos para Resolver Problemas de Velocidad Relativa**
-> 
-> ### Paso 1: Identificar los Sistemas de Referencia
-> 
-> - **Sistema fijo:** Generalmente la Tierra
-> - **Sistema móvil:** El medio (aire, agua)
-> - **Objeto:** El vehículo (avión, barco)
-> 
-> ### Paso 2: Definir las Velocidades Conocidas
-> 
-> - $\vec{v}_{vehículo/medio}$: Velocidad del vehículo respecto al medio
-> - $\vec{v}_{medio/tierra}$: Velocidad del medio respecto a tierra
-> - $\vec{v}_{vehículo/tierra}$: Velocidad resultante (generalmente lo que buscamos)
-> 
-> ### Paso 3: Aplicar la Ecuación Vectorial
-> 
-> $$\vec{v}_{vehículo/tierra} = \vec{v}_{vehículo/medio} + \vec{v}_{medio/tierra}$$
-> 
-> ### Paso 4: Descomponer en Componentes
-> 
-> - Establecer sistema de coordenadas (Norte-Este, x-y)
-> - Descomponer cada vector en componentes
-> - Sumar componentes correspondientes
-> 
-> ### Paso 5: Calcular Magnitud y Dirección
-> 
-> - $|\vec{v}| = \sqrt{v_x^2 + v_y^2}$
-> - $\theta = \arctan\left(\frac{v_y}{v_x}\right)$
-
----
-
-## 🧮 Casos Específicos y Configuraciones
-
-> [!abstract] 📊 **Tabla de Configuraciones Comunes**
-> 
-> |Configuración|Descripción|Fórmula de Magnitud|Dirección|
-> |---|---|---|---|
-> |**Viento de Cola**|$\vec{v}_w \parallel \vec{v}_a$ (mismo sentido)|$v_g = v_a + v_w$|$\theta = \theta_a$|
-> |**Viento de Frente**|$\vec{v}_w \parallel \vec{v}_a$ (opuesto)|$v_g = v_a - v_w$|$\theta = \theta_a$|
-> |**Viento Lateral**|$\vec{v}_w \perp \vec{v}_a$|$v_g = \sqrt{v_a^2 + v_w^2}$|$\theta = \arctan(v_w/v_a)$|
-> |**Corriente Cruzada**|Barco perpendicular a corriente|$v_g = \sqrt{v_{ba}^2 + v_c^2}$|$\theta = \arctan(v_c/v_{ba})$|
-
----
-
-## 🎯 Problemas Específicos de Navegación
-
-> [!tip] 🧭 **Problema del Rumbo de Compensación** **Situación:** Determinar qué rumbo debe seguir un vehículo para alcanzar un destino específico cuando hay viento/corriente lateral.
-> 
-> ![[Diagramas/Velocidad_Relativa_para_Barcos_y_Aviones_03.svg]]
-> 
-> **Método:**
-> 
-> 1. Calcular el vector de deriva: $\vec{v}_{deriva} = \vec{v}_{medio}$
-> 2. El rumbo compensado debe anular la deriva
-> 3. $\vec{v}_{deseada} = \vec{v}_{vehículo/medio} + \vec{v}_{compensación}$
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Velocidad_Relativa_para_Barcos_y_Aviones_01.svg]]
 >
-
-> [!warning] ⏱️ **Problema del Tiempo de Viaje** **Situación:** Calcular cuánto tiempo tarda un viaje considerando el efecto del medio
-> 
-> **Factores clave:**
-> 
-> - **Distancia real recorrida** vs **distancia en línea recta**
-> - **Velocidad efectiva** respecto a tierra
-> - **Trayectoria curva** debido a deriva
-> 
-> **Fórmula básica:** $$t = \frac{d_{tierra}}{|\vec{v}_{tierra}|}$$
+> **Se lee así:** el diagrama muestra que la velocidad del avión respecto a tierra es la suma vectorial de su velocidad respecto al aire más la velocidad del viento respecto a tierra.
 
 ---
 
-## 💡 Ejemplos Resueltos
+## 📋 Definiciones Formales
 
-> [!example] ✈️ **Ejemplo 1: Avión con Viento Lateral** **Problema:** Un avión vuela hacia el Norte a 300 km/h respecto al aire. Hay un viento del Oeste de 50 km/h. Determinar la velocidad resultante respecto a tierra.
-> 
-> **Solución:**
-> 
-> **Datos:**
-> 
-> - $\vec{v}_{avión/aire} = 300\hat{j}$ km/h (Norte)
-> - $\vec{v}_{viento/tierra} = 50\hat{i}$ km/h (Este)
-> 
-> **Sistema de coordenadas:** Este (+x), Norte (+y)
-> 
-> **Ecuación vectorial:** $$\vec{v}_{avión/tierra} = \vec{v}_{avión/aire} + \vec{v}_{viento/tierra}$$ $$\vec{v}_{avión/tierra} = 300\hat{j} + 50\hat{i} = 50\hat{i} + 300\hat{j}$$
-> 
-> **Magnitud:** $$|\vec{v}_{avión/tierra}| = \sqrt{50^2 + 300^2} = \sqrt{2500 + 90000} = \sqrt{92500} = 304.1 \text{ km/h}$$
-> 
-> **Dirección:** $$\theta = \arctan\left(\frac{50}{300}\right) = \arctan(0.167) = 9.46°$$
-> 
-> **Respuesta:** El avión vuela a 304.1 km/h en dirección 9.46° al Este del Norte.
+### 1️⃣ Velocidad Relativa
+
+> [!note] 📋 Definición — Velocidad Relativa
 >
+> La **velocidad relativa** es la velocidad de un objeto medida respecto a otro objeto de referencia que también puede estar en movimiento. Se expresa como la diferencia vectorial entre dos velocidades absolutas.
+>
+> **Ecuación fundamental:** $\vec{v}_{AB} = \vec{v}_A - \vec{v}_B$
+>
+> Donde $\vec{v}_{AB}$ es la velocidad de A respecto a B.
+>
+> - Es una cantidad vectorial (tiene magnitud y dirección)
+> - Siempre requiere especificar "respecto a qué" se mide
+> - **Unidades:** m/s, km/h
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Velocidad_Relativa_para_Barcos_y_Aviones_01.svg]]
+>
+> **Se lee así:** el diagrama muestra que la velocidad resultante es la suma vectorial de la velocidad del vehículo respecto al medio y la velocidad del medio respecto a tierra.
 
-> [!example] 🚢 **Ejemplo 2: Barco Cruzando Río** **Problema:** Un barco quiere cruzar un río de 200 m de ancho perpendicularmente. La corriente fluye a 3 m/s hacia el Este. El barco puede navegar a 5 m/s respecto al agua. ¿Qué rumbo debe seguir y cuánto tiempo tardará?
-> 
-> **Solución:**
-> 
-> **Objetivo:** Velocidad resultante perpendicular a las orillas ($\vec{v}_{tierra} = v_y\hat{j}$)
-> 
-> **Datos:**
-> 
-> - Ancho del río: $d = 200$ m
-> - $\vec{v}_{corriente} = 3\hat{i}$ m/s
-> - $|\vec{v}_{barco/agua}| = 5$ m/s
-> 
-> **Para cruzar perpendicularmente:** La componente Este de la velocidad del barco debe cancelar la corriente: $$v_{barco,x} = -3 \text{ m/s}$$
-> 
-> **Componente Norte del barco:** $$v_{barco,y} = \sqrt{5^2 - (-3)^2} = \sqrt{25 - 9} = \sqrt{16} = 4 \text{ m/s}$$
-> 
-> **Rumbo del barco:** $$\theta = \arctan\left(\frac{-3}{4}\right) = -36.87°$$ (36.87° al Oeste del Norte)
-> 
-> **Tiempo de cruce:** $$t = \frac{d}{v_{tierra,y}} = \frac{200}{4} = 50 \text{ s}$$
-> 
-> **Respuesta:** El barco debe navegar 36.87° al Oeste del Norte y tardará 50 segundos en cruzar.
+### 2️⃣ Sistemas de Referencia
 
----
+> [!note] 📋 Definición — Sistemas de Referencia
+>
+> Un **sistema de referencia** es el punto de vista desde el cual se mide el movimiento. En navegación se distinguen tres sistemas principales:
+>
+> - **Terrestre (fija):** respecto a la superficie terrestre (GPS, mapas) — símbolo $\vec{v}_g$
+> - **Del medio (aire/agua):** respecto al fluido en movimiento (velocímetros) — símbolo $\vec{v}_a$ o $\vec{v}_w$
+> - **Del vehículo:** respecto al vehículo en movimiento (observador interno) — símbolo $\vec{v}_v$
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Velocidad_Relativa_para_Barcos_y_Aviones_02.svg]]
+>
+> **Se lee así:** el diagrama muestra cómo la velocidad del barco respecto al agua y la velocidad de la corriente se combinan para dar la velocidad del barco respecto a tierra.
 
-## 🎨 Representación Gráfica y Diagramas
+### 3️⃣ Vector de Deriva y Rumbo de Compensación
 
-> [!note] 📈 **Diagrama de Vectores de Velocidad**
-> 
-> ![[Diagramas/Velocidad_Relativa_para_Barcos_y_Aviones_04.svg]]
-> 
-> **🎯 Interpretación del diagrama:**
-> 
-> - **Vectores en paralelo:** Suma/resta directa
-> - **Vectores perpendiculares:** Teorema de Pitágoras
-> - **Vectores en ángulo:** Descomposición en componentes
-
----
-
-## 🧠 Técnica Mnemotécnica: "VIMAR"
-
-> [!tip] 🎯 **Método VIMAR para Velocidad Relativa**
-> 
-> **V** - **V**ectorizar todas las velocidades conocidas **I** - **I**dentificar sistemas de referencia (tierra, medio, vehículo) **M** - **M**arcar la ecuación fundamental: $\vec{v}_{AC} = \vec{v}_{AB} + \vec{v}_{BC}$ **A** - **A**plicar descomposición en componentes x, y **R** - **R**esultar magnitud y dirección final
-> 
-> **🔄 Regla nemotécnica:** _"Viento Intenso Mueve Avión Rápido"_
-> 
-> **🎴 Flashcards recomendadas:**
-> 
-> - Cara: Configuración (viento lateral, corriente cruzada, etc.)
-> - Reverso: Fórmula y método de solución
+> [!note] 📋 Definición — Deriva y Rumbo de Compensación
+>
+> La **deriva** es el desplazamiento lateral no deseado causado por el medio en movimiento (viento o corriente). El **rumbo de compensación** es la dirección que debe tomar el vehículo para anular la deriva y alcanzar el destino deseado.
+>
+> - **Deriva:** $\vec{v}_{deriva} = \vec{v}_{medio}$
+> - **Ecuación de compensación:** $\vec{v}_{deseada} = \vec{v}_{vehículo/medio} + \vec{v}_{compensación}$
+> - El rumbo compensado debe anular la componente lateral de la deriva
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Velocidad_Relativa_para_Barcos_y_Aviones_03.svg]]
+>
+> **Se lee así:** el diagrama muestra cómo el rumbo compensado apunta contra la deriva para que la velocidad resultante lleve al vehículo directamente al destino.
 
 ---
 
-## ⚠️ Errores Comunes y Consejos
+## 📝 Ejercicios Propuestos
 
-> [!warning] 🚫 **Errores Frecuentes**
-> 
-> ### ❌ Error 1: Confundir Sistemas de Referencia
-> 
-> **Problema:** No distinguir entre velocidad respecto al medio vs respecto a tierra **Solución:** Siempre especificar claramente "respecto a qué" se mide cada velocidad
-> 
-> ### ❌ Error 2: Suma Escalar en lugar de Vectorial
-> 
-> **Problema:** Sumar magnitudes sin considerar direcciones **Solución:** Siempre trabajar con componentes o usar ley de cosenos
-> 
-> ### ❌ Error 3: Ignorar la Deriva
-> 
-> **Problema:** Asumir que el vehículo llega exactamente donde apunta **Solución:** Calcular el vector resultante incluyendo el efecto del medio
-> 
-> ### ❌ Error 4: Signos Incorrectos en Componentes
-> 
-> **Problema:** No establecer claramente direcciones positivas/negativas **Solución:** Dibujar sistema de coordenadas y mantener consistencia
+### ✏️ Ejercicio 1 — Avión con Viento Lateral
+
+> [!example] 📋 Planteamiento
+>
+> Un avión vuela hacia el Norte a 300 km/h respecto al aire. Hay un viento del Oeste de 50 km/h. Determinar la velocidad resultante respecto a tierra (magnitud y dirección).
+>
+> **Datos:** $\vec{v}_{avión/aire} = 300\hat{j}$ km/h, $\vec{v}_{viento/tierra} = 50\hat{i}$ km/h
+>
+> > [!success]- ✅ Solución
+> >
+> > **Paso 1:** Aplicar ecuación vectorial: $\vec{v}_{avión/tierra} = \vec{v}_{avión/aire} + \vec{v}_{viento/tierra} = 50\hat{i} + 300\hat{j}$
+> >
+> > **Paso 2:** Calcular magnitud: $|\vec{v}| = \sqrt{50^2 + 300^2} = \sqrt{92500} \approx 304.1$ km/h
+> >
+> > **Paso 3:** Calcular dirección: $\theta = \arctan(50/300) = \arctan(0.167) \approx 9.46°$
+> >
+> > **Respuesta:** 304.1 km/h, 9.46° al Este del Norte
+
+### ✏️ Ejercicio 2 — Barco Cruzando Río
+
+> [!example] 📋 Planteamiento
+>
+> Un barco quiere cruzar un río de 200 m de ancho perpendicularmente. La corriente fluye a 3 m/s hacia el Este. El barco navega a 5 m/s respecto al agua. ¿Qué rumbo debe seguir y cuánto tardará?
+>
+> **Datos:** $d = 200$ m, $\vec{v}_{corriente} = 3\hat{i}$ m/s, $|\vec{v}_{barco/agua}| = 5$ m/s
+>
+> > [!success]- ✅ Solución
+> >
+> > **Paso 1:** Para cruzar perpendicularmente, cancelar la corriente: $v_{barco,x} = -3$ m/s
+> >
+> > **Paso 2:** Componente Norte: $v_{barco,y} = \sqrt{5^2 - 3^2} = \sqrt{16} = 4$ m/s
+> >
+> > **Paso 3:** Rumbo: $\theta = \arctan(-3/4) = -36.87°$ (36.87° Oeste del Norte)
+> >
+> > **Paso 4:** Tiempo: $t = 200 / 4 = 50$ s
+> >
+> > **Respuesta:** 36.87° al Oeste del Norte, 50 segundos
+
+### ✏️ Ejercicio 3 — Rumbo de Compensación
+
+> [!example] 📋 Planteamiento
+>
+> Un piloto quiere volar directamente al Norte. Hay viento del Sur a 40 km/h y el avión vuela a 200 km/h respecto al aire. ¿Qué rumbo debe tomar y cuál es su velocidad respecto a tierra?
+>
+> **Datos:** $\vec{v}_{viento/tierra} = -40\hat{j}$ km/h (Sur), $|\vec{v}_{avión/aire}| = 200$ km/h, destino al Norte
+>
+> > [!success]- ✅ Solución
+> >
+> > **Paso 1:** La componente Norte del avión debe superar el viento: $v_y = 200 \sin(\theta) - 40$
+> >
+> > **Paso 2:** Para ir directo al Norte, la componente Este debe ser cero: el avión apunta al Oeste
+> >
+> > **Paso 3:** $\sin(\theta) = 40/200 = 0.2$, por lo que $\theta = \arcsin(0.2) \approx 11.5°$ al Oeste del Norte
+> >
+> > **Paso 4:** Velocidad respecto a tierra: $v_g = 200 \cos(11.5°) - 40 \approx 196 - 40 = 156$ km/h
+> >
+> > **Respuesta:** Rumbo 11.5° Oeste del Norte, $v_g \approx 156$ km/h
+
+### ✏️ Ejercicio 4 — Velocidad Relativa en 2D
+
+> [!example] 📋 Planteamiento
+>
+> Un barco se desplaza a 10 km/h respecto al agua en dirección 30° al Norte del Este. Hay una corriente de 4 km/h hacia el Este. Calcular la velocidad del barco respecto a tierra.
+>
+> **Datos:** $|\vec{v}_{barco/agua}| = 10$ km/h, dirección 30° N de E, $\vec{v}_{corriente} = 4\hat{i}$ km/h
+>
+> > [!success]- ✅ Solución
+> >
+> > **Paso 1:** Descomponer velocidad del barco: $v_x = 10\cos(30°) = 8.66$, $v_y = 10\sin(30°) = 5$
+> >
+> > **Paso 2:** Sumar corriente: $v_{tierra,x} = 8.66 + 4 = 12.66$, $v_{tierra,y} = 5$
+> >
+> > **Paso 3:** Magnitud: $|\vec{v}_{tierra}| = \sqrt{12.66^2 + 5^2} = \sqrt{160.3 + 25} = \sqrt{185.3} \approx 13.6$ km/h
+> >
+> > **Paso 4:** Dirección: $\theta = \arctan(5/12.66) \approx 21.5°$ al Norte del Este
+> >
+> > **Respuesta:** 13.6 km/h, 21.5° al Norte del Este
 
 ---
 
-## 🚀 Aplicaciones Avanzadas
+## 🎯 Metas de Aprendizaje
 
-> [!abstract] 🛰️ **Navegación por Instrumentos**
-> 
-> ### GPS vs Velocímetro
-> 
-> - **GPS:** Mide velocidad respecto a tierra
-> - **Velocímetro del vehículo:** Mide velocidad respecto al medio
-> - **Diferencia:** Revela la velocidad del medio
-> 
-> ### Corrección de Deriva
-> 
-> - **Navegación aérea:** Compensación automática de viento
-> - **Navegación marítima:** Cálculo de set y drift
-> - **Sistemas inerciales:** Detección de aceleraciones relativas
+> [!note] 📋 Nivel Básico
+>
+> - [ ] Defino velocidad relativa y explico por qué depende del sistema de referencia.
+> - [ ] Distinguo velocidad respecto al medio vs respecto a tierra.
+> - [ ] Aplico $\vec{v}_{AB} = \vec{v}_A - \vec{v}_B$ en problemas simples.
 
----
+> [!note] 📋 Nivel Intermedio
+>
+> - [ ] Resuelvo problemas de viento lateral y corrientes cruzadas.
+> - [ ] Calculo rumbos de compensación para anular la deriva.
+> - [ ] Descompono vectores en componentes x, y y recombino.
 
-## 🔗 Referencias
-
-> [!quote] 📚 **Notas Relacionadas**
-> 
-> - [[Problemas de Encuentro]] - Para encuentros con velocidad relativa
-> - [[Vectores]] - Operaciones vectoriales fundamentales
-> - [[Cinemática Traslacional]] - Conceptos base de movimiento
-> - Transformaciones de Galileo - Relatividad clásica
-> - Análisis Gráfico del Movimiento - Representación visual
+> [!note] 📋 Nivel Avanzado
+>
+> - [ ] Resuelvo problemas de navegación con múltiples medios en movimiento.
+> - [ ] Analizo trayectorias curvas debidas a deriva en 2D y 3D.
 
 ---
 
-## 📝 Notas Recomendadas como Prerrequisitos
+## 📚 Referencias
 
-> [!info] 🎓 **Conocimientos Previos Necesarios**
-> 
-> - [[Vectores]] - Suma vectorial y componentes
-> - Trigonometría - Descomposición y ángulos
-> - Sistemas de Coordenadas - Referencias cartesianas
-> - Navegación por Coordenadas - Rumbo y orientación
+> [!quote] 📖 Fuentes Consultadas
+>
+> - J. Serway, R. Jewett, *Física para Ciencias e Ingeniería*, cap. 4 «Movimiento en dos y tres dimensiones».
+> - Apuntes del curso FISG1001 «Física Mecánica», ESPOL.
+> - Diagramas de la materia (`Unidad 0 - Guias y Ejercicios/Diagramas/`).
 
 ---
 
-#velocidad-relativa #navegación #vectores #aeronáutica #náutica #marcos-referencia #cinemática-aplicada
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/fisica-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Qué es la velocidad relativa?::Velocidad de un objeto medida respecto a otro objeto en movimiento: $\vec{v}_{AB} = \vec{v}_A - \vec{v}_B$.
+> - ¿Cuáles son los 3 sistemas de referencia en navegación?::Terrestre (tierra), del medio (aire/agua), del vehículo.
+> - ¿Qué es la deriva?::Desplazamiento lateral causado por el medio en movimiento (viento o corriente).
+> - ¿Cómo se calcula el rumbo de compensación?::Apuntando contra la deriva para que la velocidad resultante vaya al destino.
+> - ¿Cuál es la ecuación de velocidad respecto a tierra?::$\vec{v}_{vehículo/tierra} = \vec{v}_{vehículo/medio} + \vec{v}_{medio/tierra}$.
+
+---
+
+## 🔗 Conexiones
+
+> [!quote] 🔗 Notas Relacionadas
+>
+> - [[Cinemática Traslacional]] — conceptos base de movimiento y vectores.
+> - [[Vectores]] — operaciones vectoriales y descomposición en componentes.
+> - [[Problemas de Encuentro]] — aplicación de velocidad relativa a encuentros.
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - [[Problemas de Tiempo-Distancia]] — cinemática aplicada a desplazamientos.
+> - [[Problemas de Persecución]] — movimiento relativo entre dos objetos.
+> - [[Unidad 0 - Guias y Ejercicios/Diagramas/Velocidad_Relativa_para_Barcos_y_Aviones_04.svg]] — diagrama de representación gráfica para repasar visualmente.
+> - Repaso: vuelve a las definiciones formales antes de los ejercicios.
+
+---
+
+**Tags:** #FISG1001 #unidad1 #cinematica #velocidad-relativa #navegacion
